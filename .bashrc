@@ -8,6 +8,8 @@ set -o vi
 
 TERM=terminator
 
+eval $(dircolors ~/.dircolors)                                                                       
+
 PS1="\[\e[1;32m\][\u@\W]\[\e[1;36m\]$\[\033[0m\] "
 
 export TERM
