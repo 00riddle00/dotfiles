@@ -65,6 +65,7 @@ alias app='cd /home/riddle/VirtualBox\ VMs/dienynas/app'
 alias u2='cd /home/riddle/CS/2_semester/programavimas_c/code/U2'
 alias dw='cd /home/riddle/Downloads/'
 alias srv='cd /srv/http/'
+alias del='cd ~/deluge'
 
 # pacman
 alias pacs='sudo pacman -S' 
@@ -107,6 +108,7 @@ alias vv='sudo vim'
 alias tt='sudo dolphin4 ./'
 alias play='vlc'
 alias t='thunar'
+alias ag='autokey-gtk'
 
 # git
 alias gd='git diff'
@@ -154,6 +156,9 @@ alias tof='synclient TouchpadOff=1'
 # screen setup
 alias xport='xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
 alias xland='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
+alias xon='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
+alias xof='xrandr --output HDMI-1 --off'
+
 
 # c lang
 alias t='./test'
@@ -176,4 +181,11 @@ alias qenv='deactivate'
 alias db='python manage.py dbshell'
 alias syncdb='python manage.py syncdb'
 alias runs='python manage.py runserver'
+
+
+#################################################
+
+alias pu='s pip uninstall'
+alias mim='vv /home/riddle/.config/mimeapps.list'
+alias glg='git lg'
 
