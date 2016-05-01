@@ -1,0 +1,19 @@
+#include <stdio.h>
+    
+int print_number(int n, int m, int x)    
+{
+    int m1;
+    m1 = m/3;
+ 
+    //space
+    printf((n+1) * "#");
+
+    // line 1
+    if(x==1)
+    {       
+    
+    }
+
+
+
+}

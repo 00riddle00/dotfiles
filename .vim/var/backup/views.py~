@@ -1,0 +1,594 @@
+import csv
+
+from rest_framework import viewsets, status
+from rest_framework.decorators import list_route, detail_route
+from rest_framework.response import Response
+
+import pandas
+
+from app.backend.authentication.models import User
+from app.backend.company.models import Company
+from app.backend.workshop.line.models import Line
+from app.backend.workshop.line.machine.models import Machine
+from app.backend.workshop.line.machine.asset.models import Asset
+from app.backend.workshop.line.packet.models import Packet
+from app.backend.workshop.line.machine.asset.asset_job.models import AssetJob
+from app.backend.task.template.serializers import ElementSerializer
+from app.backend.task.template.models import Template as TemplateDocument
+from app.backend.helpers.crud import update_instance, add_parents_child
+from app.backend.helpers.exceptions import APIError, exception_error
+from app.backend.helpers.gcm import GCM
+from app.backend.helpers.helpers import (
+    get_document,
+    document_exists,
+    set_dynamic_document,
+)
+from app.backend.helpers.slack import Slack
+
+from .models import Task, Template
+from .serializers import TaskSerializer, TaskHeadSerializer
+
+
+
+class TaskViewSet(viewsets.ViewSet):
+    field_models = {
+        'company': Company,
+        'user': User,
+    }
+
+    # Variables used in asset CSV import
+    user = None
+    file = None
+    df = None     # pandas dataframe
+    lines = dict()
+    shifts = dict()
+    users = dict()
+
+    def list(self, request):
+        try:
+            task = Task.objects.filter(is_finished=False, user=request.user.id)
+            serializer = TaskSerializer(task, many=True)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    # Shortened task list for debugging
+    @list_route(methods=['GET'], url_path='head')
+    def list_head(self, request):
+        try:
+            task = Task.objects.filter(is_finished=False)
+            serializer = TaskHeadSerializer(task, many=True)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    @list_route(methods=['GET'], url_path='finished-head')
+    def list_hfinished_head(self, request):
+        try:
+            task = Task.objects.filter(is_finished=True)
+            serializer = TaskHeadSerializer(task, many=True)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    @list_route(methods=['GET'], url_path='all')
+    def list_all(self, request):
+        try:
+            task = Task.objects.filter(is_finished=False)
+            serializer = TaskSerializer(task, many=True)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    def create(self, request):
+        try:
+            template = request.data.get('template')
+            if not template:
+                raise APIError('Parametras "template" yra privalomas')
+
+            template = get_document(TemplateDocument, id=template)
+            if not template:
+                raise APIError(
+                    'Šablonas (Template) nerastas', status.HTTP_404_NOT_FOUND)
+
+
+            user = request.data.get('user')
+            if user:
+                user = get_document(User, id=user)
+                if not user:
+                    raise APIError('Tokio vartotojo nėra')
+                company = user.company
+            else:
+                user = None
+                company = request.user.company
+
+            template = set_dynamic_document(
+                TemplateDocument,
+                template,
+                Template,
+            )
+
+            del template.company
+
+            task = Task(
+                name=request.data.get('name'),
+                user=user,
+                company=company,
+                template=template,
+                status=1,
+            )
+
+            task.save()
+
+            serializer = TaskSerializer(task)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_201_CREATED)
+
+    def retrieve(self, request, pk=None):
+        try:
+            task = get_document(Task, id=pk)
+            if not task:
+                raise APIError('Tokios užduoties nėra', status.HTTP_404_NOT_FOUND)
+
+            serializer = TaskSerializer(task)
+            data = serializer.data
+
+            return Response(data, status=status.HTTP_200_OK)
+        except Exception as e:
+            return exception_error(e, request)
+
+    def update(self, request, pk=None):
+        try:
+            task = get_document(Task, id=pk)
+            if not task:
+                raise APIError('Tokios užduoties nėra', status.HTTP_404_NOT_FOUND)
+
+            if request.data.get('user'):
+                if not get_document(User, id=request.data.get('user')):
+                    raise APIError('Tokio vartotojo nėra')
+
+            kwargs = {
+                'field_models': self.field_models,
+            }
+
+            non_updatable = [
+                'template',
+            ]
+
+            task = update_instance(task, request, non_updatable, **kwargs)
+            task.save()
+
+            serializer = TaskSerializer(task)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    def destroy(self, request, pk=None):
+        try:
+            task = get_document(Task, id=pk)
+            if not task:
+                raise APIError('Tokios užduoties nėra', status.HTTP_404_NOT_FOUND)
+
+            task.delete()
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+    @list_route(methods=['GET'], url_path='finished')
+    def finished(self, request):
+        try:
+            task = Task.objects.filter(is_finished=True)
+            serializer = TaskSerializer(task, many=True)
+            data = serializer.data
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    @list_route(methods=['POST'], url_path='sync')
+    def sync(self, request, pk=None):
+        try:
+            if not request.data:
+                raise APIError('Failas nerastas')
+
+            element_response = list()
+
+            for entry in request.data:
+                if 'task_id' not in entry:
+                    raise APIError('Užduoties ID yra privalomas')
+
+                task = get_document(Task, id=entry['task_id'])
+                if not task:
+                    raise APIError('Tokios užduoties nėra', status.HTTP_404_NOT_FOUND)
+
+                """If element was provided, require value field and
+                update element.
+                """
+                if 'element_id' in entry:
+
+                    if 'value' not in entry:
+                        raise APIError('Elemento reikšmė (value) yra privaloma')
+
+                    element_found = False
+                    for point in task.template.points:
+                        for element in point.elements:
+                            if str(element.id) == entry['element_id']:
+                                element_found = True
+
+                                element.value = entry['value']
+                                element.belongs_to = str(task.id)
+                                element_response.append(element)
+
+                    if not element_found:
+                        raise APIError(
+                            'Elementas {} nerastas'.format(entry['element_id']))
+
+                """ If status was provided, require comment if needed and add
+                entry to task log """
+
+                if 'status' in entry:
+                    status_document = request.user.company.statuses.filter(
+                        number=entry['status']).first()
+
+                    if not status_document:
+                        raise APIError('Netinkamas statuso kodas')
+
+                    task.status = entry['status']
+
+                    """If task is completed, rejected or canceled, mark it
+                    as finished.
+                    """
+                    statuses_to_finish = (2, 3, 4, 13, 14,)
+                    if entry['status'] in statuses_to_finish:
+                        task.is_finished = True
+
+                task.save()
+
+        except Exception as e:
+            return exception_error(e, request)
+
+        serializer = ElementSerializer(element_response, many=True)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    # Excel import part
+
+    lines = dict()
+    machines = dict()
+    assets = dict()
+    asset_jobs = dict()
+    shifts = dict()
+    packets = dict()
+    users = dict()
+
+
+
+    def get_line(self, i):
+
+        line = Line.objects.get(number=str(self.df.iat[i, 0]))
+
+        self.modified_lines.append(line.number)
+
+        self.lines['%s' % (i)] = str(line.id)
+        self.lines['%s_number' % (i)] = str(line.number)
+
+    def get_machine(self, i):
+
+        machine = Machine.objects.get(number=str(self.df.iat[i, 2]))
+
+        self.machines['%s' % (i)] = str(machine.id)
+        self.machines['%s_number' % (i)] = str(machine.number)
+
+    def get_asset(self, i):
+
+        asset = Asset.objects.get(number=str(self.df.iat[i, 4]))
+
+        self.assets['%s' % (i)] = str(asset.id)
+        self.assets['%s_number' % (i)] = str(asset.number)
+
+    def create_asset_job(self, i):
+        asset_job_new = AssetJob.objects.create(
+            name=str(self.df.iat[i, 6]),
+            asset=self.assets['%s' % (i)],
+            packet=self.packets['%s' % (i)],
+        )
+
+        add_parents_child(asset_job_new, self.packets['%s' % (i)], 'asset_job', 'packet')
+
+    def create_packet(self, i):
+        if str(self.df.iat[i, 7]) == self.packets['%s_name' % (i - 1)]:
+            self.packets['%s' % (i)] = self.packets['%s' % (i - 1)]
+            self.packets['%s_name' % (i)] = self.packets['%s_name' % (i - 1)]
+            del (self.packets['%s' % (i - 1)])
+            del (self.packets['%s_name' % (i - 1)])
+        else:
+            self.create_packet_new(i)
+
+    def create_packet_new(self, i):
+
+        packet_new = Packet.objects.create(
+            name=str(self.df.iat[i, 7]),
+            line=self.lines['%s' % (i)],
+        )
+        self.packets['%s' % (i)] = str(packet_new.id)
+        self.packets['%s_name' % (i)] = str(packet_new.name)
+
+        add_parents_child(packet_new, self.lines['%s' % (i)], 'packet', 'line')
+
+    def create_objects(self, n):
+        i = 0
+        while i <= n:
+            print('i = ', i)
+            if any(self.lines):
+                if str(self.df.iat[i, 0]) == self.lines['%s_number' % (i - 1)]:
+                    self.lines['%s' % (i)] = self.lines['%s' % (i - 1)]
+                    self.lines['%s_number' % (i)] = self.lines['%s_number' % (i - 1)]
+                    del (self.lines['%s' % (i - 1)])
+                    del (self.lines['%s_number' % (i - 1)])
+                else:
+
+                    self.get_line(i)
+                    self.get_machine(i)
+                    self.get_asset(i)
+                    self.create_packet_new(i)
+                    self.create_asset_job(i)
+
+                    i += 1
+                    continue
+
+                if str(self.df.iat[i, 2]) == self.machines['%s_number' % (i - 1)]:
+                    self.machines['%s' % (i)] = self.machines['%s' % (i - 1)]
+                    self.machines['%s_number' % (i)] = self.machines['%s_number' % (i - 1)]
+                    del (self.machines['%s' % (i - 1)])
+                    del (self.machines['%s_number' % (i - 1)])
+                else:
+                    self.get_machine(i)
+                    self.get_asset(i)
+
+                    self.create_packet(i)
+                    self.create_asset_job(i)
+
+                    i += 1
+                    continue
+
+                if str(self.df.iat[i, 4]) == self.assets['%s_number' % (i - 1)]:
+                    self.assets['%s' % (i)] = self.assets['%s' % (i - 1)]
+                    self.assets['%s_number' % (i)] = self.assets['%s_number' % (i - 1)]
+                    del (self.assets['%s' % (i - 1)])
+                    del (self.assets['%s_number' % (i - 1)])
+
+                    self.create_packet(i)
+                    self.create_asset_job(i)
+                else:
+                    self.get_asset(i)
+
+                    self.create_packet(i)
+                    self.create_asset_job(i)
+
+                    i += 1
+                    continue
+
+            else:
+
+                self.get_line(i)
+                self.get_machine(i)
+                self.get_asset(i)
+                self.create_packet_new(i)
+                self.create_asset_job(i)
+
+            i += 1
+
+    def validation_error(self, message):
+        Slack.import_report(self.file, 'tasks', 'invalid', self.user, message)
+        raise APIError(message)
+
+    def validate_duplicate_ids(self, col_nr):
+
+        col_names = list(self.df.columns.values)
+
+        col_name = col_names[col_nr]
+
+        # oc - object column
+        oc = self.df[['%s' % (col_name)]]
+
+        # ol - object list
+        ol = pandas.Series(oc['%s' % (col_name)].tolist())
+
+        # ou - object unique values
+        ou = ol.loc[ol.shift(1) != ol]
+
+        # ob - object non-consecutive duplicate values boolean
+        ob = ou.duplicated()
+
+        # Only True values from ob
+        duplicates = ob[ob == True]
+
+        if not duplicates.empty:
+            dup_names = list(map(lambda x: self.df.iat[x, col_nr], duplicates.index.values))
+            dup_rows = list(map(lambda x: x + 2, duplicates.index.values))
+
+            error_msg = list('Pasikartojančios reikšmės "%s" stulpelyje: ' % (col_name))
+            for (name, row) in zip(dup_names, dup_rows):
+                error_msg.append('"%s", eilutė(s): %s' % (name, row))
+                error_msg = ''.join(error_msg)
+                self.validation_error(error_msg)
+
+    @list_route(methods=['POST'], url_path='import')
+    def import_asset_jobs(self, request):
+        try:
+            self.modified_lines = []
+
+            # Parameter used for sending Slack import report
+            self.user = str(request.user.email)
+
+            if not request.data:
+                self.validation_error('Failas nerastas')
+            key_list = []
+            for key in request.data:
+                key_list.append(key)
+
+            if len(key_list) > 1:
+                self.validation_error('Turėtų būti tik vienas parametrų laukelis')
+
+            self.file = request.data.get('file')
+
+            if not self.file:
+                self.validation_error('Failas nerastas')
+
+            if not self.file.name.endswith('.csv'):
+                self.validation_error('Įkeltas failas nėra CSV formato')
+
+            try:
+                # df - pandas dataframe object (generated from csv file).
+                self.df = pandas.read_csv(
+                    self.file,
+                    encoding='utf-8',
+                    quotechar='"',
+                    delimiter=';',
+                    quoting=csv.QUOTE_ALL
+                )
+            except:
+                self.validation_error('CSV failas nėra validus')
+
+
+            # Required column count for task import CSV file
+            if not len(self.df.columns) == 8:
+                self.validation_error("""
+                    CSV failas nėra validus(galimai parinkti netinkami CSV
+                    parametrai (delimiter, quotation)""")
+
+
+            nan_values = pandas.isnull(self.df).any(1).nonzero()[0]
+
+            if nan_values.any():
+                self.validation_error('Tušti laukeliai negalimi (eilutė(s): %s)' % \
+                      (', '.join(map(str, map(lambda x: x + 2, nan_values)))))
+
+            # Column numbers with objects ID
+            col_nr = 0
+            self.validate_duplicate_ids(col_nr)
+
+            n = len(self.df.index) - 1
+
+            updated_lines = self.df[[0]].drop_duplicates()
+            updated_machines = self.df[[2]].drop_duplicates()
+            updated_assets = self.df[[4]].drop_duplicates()
+
+            # Reinitializing dicts
+            self.lines = dict()
+            self.shifts = dict()
+            self.users = dict()
+
+            for value in updated_lines.index.values:
+                entry = updated_lines.loc[[value]]
+                if not document_exists(Line, number=entry.iat[0, 0]):
+                    self.validation_error('Linija "%s" neegzistuoja (eilutė(s): %s)' % (entry.iat[0, 0], value + 2))
+
+            for value in updated_machines.index.values:
+                entry = updated_machines.loc[[value]]
+                if not document_exists(Machine, number=entry.iat[0, 0]):
+                    self.validation_error('Mašina "%s" neegzistuoja (eilutė(s): %s)' % (entry.iat[0, 0], value + 2))
+
+            for value in updated_assets.index.values:
+                entry = updated_assets.loc[[value]]
+                if not document_exists(Asset, number=entry.iat[0, 0]):
+                    self.validation_error('Assetas "%s" neegzistuoja (eilutė(s): %s)' % (entry.iat[0, 0], value + 2))
+
+            i = 0
+            while i <= n:
+                if not str(self.df.iat[i, 7]).isdigit():
+                    self.validation_error('Netinkamas paketo pavadinimas: "%s" (eilutė(s): %s)' \
+                                       % (str(self.df.iat[i, 7]), i + 2))
+                i += 1
+
+
+            for value in updated_lines.index.values:
+                entry = updated_lines.loc[[value]].iat[0,0]
+
+                if document_exists(Line, number=entry):
+                    line = Line.objects.get(number=entry)
+
+                    for packet in line.packets:
+                        for asset_job in packet.asset_jobs:
+                            asset_job.delete()
+                        packet.delete()
+
+                    for shift in line.shifts:
+                        shift.delete()
+                    for cycle in line.cycles:
+                        cycle.delete()
+
+                    line.packets = []
+                    line.shifts = []
+                    line.cycles = []
+                    line.users = []
+                    line.save()
+
+                    # Sending GCM to remove existing unfinished tasks in mobile app
+                    #  because of newly imported data
+                    task_heads = Task.objects.exclude('template').filter(
+                        line=line.id, is_finished=False)
+                    for task_head in task_heads:
+                        user = task_head.user
+
+                        # checking if user actually exists (it could have been deleted)
+                        if hasattr(user, 'email'):
+                            task_head.is_finished = True
+
+                            serializer = TaskSerializer(task_head)
+                            data = serializer.data
+
+                            to_gcm = {
+                                'task': data,
+                            }
+
+                            if user.gcm_id:
+                                GCM.send(user, 'task_ended', to_gcm)
+
+                    # Removing existing unfinished tasks from database
+                    tasks = Task.objects.filter(line=line.id, is_finished=False)
+                    for task in tasks:
+                        task.delete()
+
+            self.create_objects(n)
+
+        except Exception as e:
+
+            if e.__class__.__name__ != 'APIError':
+                for entry in self.modified_lines:
+                    line = Line.objects.get(number=entry)
+                    for packet in line.packets:
+                        for asset_job in packet.asset_jobs:
+                            asset_job.delete()
+                        packet.delete()
+                    line.packets = []
+                    line.save()
+
+                Slack.import_report(self.file, 'tasks', 'fail', self.user)
+
+            return exception_error(e, request)
+
+        Slack.import_report(self.file, 'tasks', 'success', self.user)
+
+        return Response(status=status.HTTP_201_CREATED)

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head lang="lt">
+    <title>{{ metadata.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ metadata.description }}">
+    <meta name="keywords" content="{{ metadata.keywords }}">
+
+    <meta name="csrf-token" content="FoRIwWvVF8QIXTlSjFALQd8cx2FMvAaodufp2WZ0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext' rel='stylesheet' type='text/css'>
+
+
+    {% load staticfiles %}
+
+    <style type="text/css">
+        @font-face { 
+        font-family: 'fontNameRegular'; 
+        src:local('fontName Regular'),
+            local('fontName'), 
+            url({% static 'fonts/Novecentosanswide-Ligth.otf' %})  format('opentype');
+        }
+    </style>
+
+
+
+
+    {% load compress %}
+    {% compress css %}
+    <link media="all" type="text/x-scss" rel="stylesheet" href="{% static "sass/master.scss" %}" />
+    {% endcompress %}
+
+    <link rel="shortcut icon" type="image/png" href="{% static "img/ad_logo.ico" %}"/>
+
+    {% load i18n %}
+    {% get_current_language as LANGUAGE_CODE %}
+
+    {% if LANGUAGE_CODE == 'lt' %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-70777022-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+    {% elif LANGUAGE_CODE == 'lv' %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-70777022-2', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+    {% elif LANGUAGE_CODE == 'et' %}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-70777022-3', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+    {% endif %}
+
+</head>
+<body>
+
+    <div id="header">
+       <div id="header-block">
+            <div id="logo">
+                <a href=".">
+                <img src="{% static "img/ad_logo.png" %}" alt="ad-logo"/>
+                </a>
+            </div>
+            <div id="flag-box">
+                    <div id="flag-line">
+                    {% for lang in languages %}
+                        <div class="flag">
+                            <a href="/{{ lang.code }}/" >
+                                <img src="{{ lang.image.url }}" alt="{{ lang.code }} flag" />
+                            </a>
+                        </div>
+                    {% endfor %}
+                    </div>
+            </div>
+            <div id="lt-link-box">
+                <div id="link-text">{{ header_text.string }}</div>
+                <div class="red-button" onclick="ga('send', 'event', 'button', 'click', 'Click here');">
+                    {% for block in content_blocks %}
+                    {% if block.id == 1 %}
+                    <a href="#{{ block.order }}">{{ header_button.string }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slider">
+        <div id="slider-block" style="background-image: url('{{ slider.image.url }}')"</div>
+        <div id="slogan">
+            <div id="slogan-top">Maldos neužves</div>
+            <div id="slogan-bottom">Užves ad akumuliatoriai</div>
+        </div>
+            <div id="slider-box">
+                {% for elem in sliderbox %}
+                <div class="blokas">
+                    <div class="slider-logo">{% if elem.image %}<img src="{{ elem.image.url }}" alt="slider-icon" >{% endif %}</div>
+                    <div class="slider-text">{{ elem.text | safe }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="triangle"></div>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="menu-block">
+            {% for block in content_blocks %}
+            <div class="button"><a href="#{{ block.order }}">{{ block.title }}</a></div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="content">
+            {% for block in content_blocks %}
+                {% if block.id == 1 %}
+                    <div class="heading" id="{{ block.order }}"><h1>{{ block.title }}</h1></div>
+                    <div id="choose-city">{{ map_choose_city.string }}</div>
+                    <div id="dropdown">
+                        <ul class="parent">
+                          <li>
+                            <div id="chosen-city">Vilnius</div>
+                            <div id="arrow"><div>
+                          </li>
+                        </ul>
+                          <ul class ="child">
+                            {% for city in city_list %}
+                              <li onclick="ga('send', 'event', 'City', 'click', '{{ city.name }}');">{{ city.name }}</li>
+                            {% endfor %}
+                          </ul>
+                    </div>
+                    <div class="map-form">
+                        <div id="map-canvas"></div>
+                            {% for shop in shop_list %}
+                            <div class="map-information-label" id="marker_{{ forloop.counter0 }}">
+                                <div class="map-information-header">
+                                    <div class="marker-icon">
+                                        <img src="{% static "img/marker_active2.png" %}">
+                                    </div>
+                                    <div class="header-button">
+                                        <div class="map-info-heading">{{ map_heading.string }}</div>
+                                    </div>
+                                    <div class="close-icon"></div>
+                                </div>
+                                <div class="map-information-content">
+                                    <div class="content-label-box">
+                                        <div class="content-label">
+                                            <div class="label-box">{{ map_company_name.string }}</div>
+                                            <div class="label-box">{{ shop.name }}</div>
+                                        </div>
+                                        <div class="content-label">
+                                            <div class="label-box">{{ map_city.string }}</div>
+                                            <div class="label-box">{{ shop.city }}</div>
+                                        </div>
+                                        <div class="content-label">
+                                            <div class="label-box">{{ map_address.string }}</div>
+                                            <div class="label-box">{{ shop.address }}</div>
+                                        </div>
+                                        <div class="content-label">
+                                            <div class="label-box">{{ map_contacts.string }}</div>
+                                            <div class="label-box">{{ shop.contacts }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% elif block.id == 2 %}
+                    <div class="heading" id="{{ block.order }}"><h1>{{ block.title }}</h1></div>
+                    <div class="content-block">
+                        <div id="image-ak"><img src="{{ battery.image.url }}" alt="AD-akumuliatoriai"></div>
+                        <div id="text">
+                            <div id="text-top">
+                                {{ content_block_text.string }}
+                            </div>
+                            <div id="text-bottom">
+                                <div class="number">1</div>
+                                <div class="number-text">{{ content_block_text_1.string }}</div>
+                                <div class="number">2</div>
+                                <div class="number-text">{{ content_block_text_2.string }}</div>
+                                <div class="number">3</div>
+                                <div class="number-text-more">{{ content_block_text_3.string }}</div>
+                            </div>
+                            <div class="read-more" onclick="ga('send', 'event', 'button', 'click', 'Read more');"><a href="{{ read_more_link.string }}">{{ read_more.string }}</a></div>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="heading" id="{{ block.order }}"><h1>{{ block.title }}</h1></div>
+                    <div class="content-block">{{ block.content | safe }}</div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+
+    <div id="footer">
+        {% if footer %}
+            <div id="footer-content">
+                {{ footer.text | safe }}
+            </div>
+        {% endif %}
+    </div>
+
+
+<script src="{% static "js/jquery.js" %}"></script>
+<script src="{% static "js/ajaxq.js" %}"></script>
+<script src="{% static "js/main.js" %}"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript">
+jQuery.noConflict();
+
+(function ($) {
+
+    function initialize() {
+        var map_marker = "{% static "img/marker.png" %}";
+        var map_marker_active = "{% static "img/marker_active.png" %}";
+        var selected_marker;
+
+
+        var shopPositions = [
+            {% for shop in shop_list %}
+                new google.maps.LatLng({{ shop.location }}),
+            {% endfor %}
+        ];
+
+        markers = [
+            'marker_0',
+        ];
+
+        var mapPosition = new google.maps.LatLng(54.7125625, 25.287445);
+
+        var mapOptions = {
+            center: mapPosition,
+            zoom: 12,
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: false,
+            scaleControl: false,
+            streetViewControl: true,
+            overviewMapControl: false
+        };
+
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+
+         $('.parent li').on('click', function (e) {
+                e.stopPropagation();
+                $('.child').show();
+                $('#arrow').css("background-image", "url('/static/img/up_arrow.png')");
+        });
+
+
+        $('body').not('.parent li').on('click', function(){
+                $('.child').hide();
+            });
+
+         $('.child li').on('click', function () {
+                var city = $(this).html();
+                console.log(city);
+                $('.child').hide();
+                $('#arrow').css("background-image", "url('/static/img/down_arrow.png')");
+                $('#chosen-city').html(city);
+                var geocoder = new google.maps.Geocoder();
+
+                geocoder.geocode( { 'address': city}, function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        map.setCenter(results[0].geometry.location);
+                        map.setZoom(12);
+                    } else {
+                        console.log("Geocode was not successful for the following reason: " + status);
+                    }
+                });
+         });
+
+        var shopIds = [
+            {% for shop in shop_list %}
+                {{ shop.id }},
+            {% endfor %}
+        ];
+
+        for (var i in shopIds) {
+             markers[i] = new google.maps.Marker({
+                position: shopPositions[i],
+                map: map,
+                icon: map_marker,
+                id: i
+             });
+
+         google.maps.event.addListener(markers[i], 'click', function () {
+             for (var i in shopIds) {
+                 markers[i].setIcon(map_marker);
+                 $('#marker_' + i).hide();
+            }
+
+             if (selected_marker == this.id) {
+                 this.setIcon(map_marker);
+                 $('#marker_' + this.id).fadeOut('slow', function() {});
+                 selected_marker = null;
+             } else {
+                 this.setIcon(map_marker_active);
+                 $('#marker_' + this.id).fadeIn('slow', function() {});
+                 selected_marker = this.id;
+             }
+         });
+
+         $('.close-icon').on('click', function () {
+             for (var i in shopIds) {
+                 markers[i].setIcon(map_marker);
+                 $('#marker_' + i).hide();
+             }
+
+             selected_marker = null;
+         });
+
+
+     }
+ }
+ google.maps.event.addDomListener(window, 'load', initialize);
+}(jQuery));
+
+</script>
+
+</body>
+</html>

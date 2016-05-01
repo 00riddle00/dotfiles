@@ -1,0 +1,8 @@
+phone = {'phone': '+370 624 62239'}
+phone = phone['phone']
+phone = phone.replace(' ', '')
+print(phone)
+
+
+
+

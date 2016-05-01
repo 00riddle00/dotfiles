@@ -1,0 +1,732 @@
+import random
+from sys import exit
+
+
+
+class Daiktas(object):
+    
+
+    def __init__(self):
+        self.tipas = "paprastas/stebuklingas/ginklas"
+        self.pavadinimas = "pavadinimas"
+        self.duoda = "duoda"
+        self.slove = 0
+        #dar vienas parametras - ar eina i sbros ar ne 
+
+
+    def use(self):
+        print playername[1], "panaudoja daikta -", self.pavadinimas, "uz tai gauna", self.duoda
+
+
+
+class Character(object):
+
+    def __init__(self, name):
+        self.name = name
+        self.strength = 0 
+        self.intelligence = 0
+        #self.description
+        #self.strength
+        #self.intelligence
+
+    def info(self):
+        print "\n", self.name, "\nName:", playername[0], "\n\nStrength:", self.strength, "\nIntelligence:", self.intelligence
+        print self.description, "\n"
+
+
+
+class Field(object):
+
+    def __init__(self, name):
+        self.name = name
+       
+    def entrance(self):
+        #self.howmuch = howmuch
+        #self.margin = margin
+        
+        #self.additional
+        print "\nWelcome to", self.name, "\b!\n"
+        print "Entrance: dice +", self.howmuch, "at least", self.margin, self.additional
+
+
+        dice()
+        
+        # scout is used as an example for now
+        self.m1 = m + scout.intelligence
+        #m1 = charater's attribute(either strength or intelligence) + dice(m)
+        if self.m1 >= self.margin:
+            print "You have entered", self.name, "\b!"
+            self.entered = True
+            print self.description
+        else:
+            print "You did not succeed. Wait until the next turn."
+            self.entered = False
+   
+
+
+
+class Map(object):
+    
+    def buildmap(self):
+        
+        if player4 == False:
+            if player3 == False:
+                self.map = "16(4x4)"
+            else:
+                self.map = "20(4x5)"
+        else:
+            self.map = "25(5x5)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Engine(object):
+
+
+    def __init__(self):
+
+        self.p1 = 1
+        self.p2 = 1
+        self.p3 = 1
+        self.p4 = 1
+        self.p5 = 1
+        self.p6 = 1
+
+   
+    
+    def dice_loop(self):
+    
+        self.i = 1
+
+        while self.i < 7:
+      
+            print "\r%d" % self.i,
+        
+            self.i += 1
+    
+
+    def dice(self): 
+      
+        raw_input("Roll a dice(Enter) > ")
+
+        for self.ii in range(1,50000):
+            self.dice_loop()
+        self.ii = random.randint(1,6)
+        print "\r%d" %self.ii 
+        self.m = self.ii
+        return self.m
+
+    def characters_description(self):
+        
+        print ''' 
+
+Charater descriptions: character_descriptions.py (import later)
+
+        '''
+
+
+    def change_player(self, nr):
+        self.nr = nr 
+        global playername
+        playername = []
+
+    
+        if self.nr == 1:
+            playername = [player1]
+        if self.nr == 2:
+            playername = [player2]
+        if self.nr == 3:
+            playername = [player3]
+        if self.nr == 4:
+            playername = [player4]
+        if self.nr == 11:
+            playername = playername1
+        if self.nr == 12:
+            playername = playername2
+        if self.nr == 13 and player3:
+            playername = playername3
+        if self.nr == 14 and player4:
+            playername = playername4
+
+
+        return playername    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    def intro(self):
+    
+        global player1, player2, player3, player4
+        global player_nr
+
+        print "Welcome to The Treacherous Forest!"
+
+        print "How many people are playing?"
+
+
+
+        player_nr = input("> ")
+
+        while player_nr not in range(2,5):
+            print "The number of players should be from 2 to 4!"
+            player_nr = input("> ")
+
+
+        if player_nr == 2:
+            player1 = raw_input("Blue player> ")
+            player2 = raw_input("Green player> ")
+            player3 = False
+            player4 = False
+        elif player_nr == 3:
+            player1 = raw_input("Blue player> ")
+            player2 = raw_input("Green player> ")
+            player3 = raw_input("Red player> ")
+            player4 = False
+        else:
+            player1 = raw_input("Blue player> ")
+            player2 = raw_input("Green player> ")
+            player3 = raw_input("Red player> ")
+            player4 = raw_input("Yellow player> ")
+  
+        #print the list of players
+        print "\nPlayer(1):", player1, "\nPlayer(2):", player2
+        if player3:
+            print "Player(3):", player3
+        if player4: 
+            print "Player(4):", player4
+
+
+
+   
+        self.proceed = raw_input("\nContinue(y/n)? ") 
+
+        if self.proceed == "y" or self.proceed == "Y" or self.proceed == "yes" or self.proceed == "Yes":
+            print "\nGood luck!\n"
+        else:
+            exit(1)
+
+
+
+
+    def congrats(self):
+        
+
+       
+        self.sp = playername[0] + ", congratulations, you have chosen"
+
+        if playername[1] == 'scout':
+            print self.sp, "Pecheneg Scout!"
+        if playername[1] == "merchant":
+            print self.sp, "Swedish Merchant!"
+        if playername[1] == "sage":
+            print self.sp, "Kiev Sage!"
+        if playername[1] == "viking":
+            print self.sp, "Visitant Viking!"
+        if playername[1] == "archer":
+            print self.sp, "Chernigov Archer!"
+        if playername[1] == "witch":
+            print self.sp, "Steppe Witch-doctor!"
+
+        self.manual1 = ("\nPress \"info\" to read character's description\nPress \"inv\" to check your inventory"
+                "\nPress \"map\" to view map"
+                "\nPress \"continue\" to continue the game")
+
+        print self.manual1        
+
+
+    
+    def choosing(self):
+
+        if playername[0] == player1:
+            print "\nBlue player(" + player1, "\b): choose your character!"
+        if playername[0] == player2:
+            print "\nGreen player(" + player2, "\b): choose your character!"
+        if playername[0] == player3:
+            print "\nRed player(" + player3, "\b): choose your character!"
+        if playername[0] == player4:
+            print "\nYellow player(" + player4, "\b): choose your character!"
+    
+    
+    
+        print '''
+1.Pecheneg Scout
+2.Swedish Merchant
+3.Kiev Sage
+4.Visitant Viking
+5.Chernigov Archer
+6.Steppe Witch-doctor
+
+Detailed description(d)
+
+'''
+
+        self.choice = raw_input("> ")
+
+
+
+
+        if self.choice == "1" or self.choice == "scout" or self.choice == "Scout":
+            if self.p1 == 1:
+               
+                playername.append('scout')
+                
+                scout.strength += 3 
+                scout.intelligence += 3
+                
+                
+                scout.description = ('''
+                \n+1 with Citizens\n-1 with Monsters
+                \nAbility to hire any fellow traveler for 1 item
+                ''')
+                self.congrats()
+       
+
+                self.p1 += 1
+
+
+            else:
+                print "Pecheneg Scout is already taken!\n", 20 * "_"
+                self.choosing()
+                return(False)            
+        
+
+       
+
+        if self.choice == "2" or self.choice == "merchant" or self.choice == "Merchant":
+            if self.p2 == 1:
+                
+                playername.append('merchant') 
+                
+                merchant.strength += 3
+                merchant.intelligence += 3
+
+                merchant.description = ('''
+                \n+1 with Citizens\n-1 with Undead
+                \nThe Translator is hired for free
+                ''')
+
+                
+                self.congrats()
+
+
+                self.p2 += 1
+
+            else:
+                print "Swedish Merchant is already taken!\n", 20 * "_"
+
+                self.choosing()
+                return(False) 
+ 
+        if self.choice == "3" or self.choice == "sage" or self.choice == "Sage":
+            if self.p3 == 1:
+                playername.append('sage')
+
+                sage.strength += 2
+                sage.intelligence += 4
+
+                sage.description = ('''
+                \n +1 with Wizards\n-1 with Water Creatures 
+                \nFortune-teller is hired for free
+                ''')
+
+
+                self.congrats()
+
+                self.p3 += 1
+
+            else:
+                print "Kiev Sage is already taken!\n", 20 * "_"
+
+                self.choosing()
+                return(False) 
+
+        if self.choice == "4" or self.choice == "viking" or self.choice == "Viking":
+            if self.p4 == 1:
+
+                playername.append('viking')
+
+                viking.strength += 4
+                viking.intelligence += 2
+
+                viking.description = ('''
+                \n-1 with Wizards
+                \nEx-convict is hired for free
+                ''')
+
+
+                self.congrats()
+ 
+                self.p4 += 1
+
+            else:
+                print "Visiting Viking is already taken!\n", 20 * "_"
+ 
+                self.choosing()
+                return(False) 
+
+        if self.choice == "5" or self.choice == "archer" or self.choice == "Archer":
+            if self.p5 == 1:
+
+
+                playername.append('archer')
+
+                archer.strength += 3
+                archer.intelligence += 3
+
+                archer.description = ('''
+                \n+1 with Bandits\n-1 with Undead
+                \nWarrior is hired for free
+                ''')
+
+                self.congrats()
+ 
+                self.p5 += 1
+
+            else:
+                print "Chernigov Archer is already taken!\n", 20 * "_"
+                self.choosing()
+                return(False) 
+
+        if self.choice == "6" or self.choice == "witch" or self.choice == "Witch":
+            if self.p6 == 1:
+
+                playername.append('witch')
+
+                witch.strength += 2
+                witch.intelligence += 4
+
+                witch.description = ('''
+   
+                \nSorcerer is hired for free
+                ''')
+                
+                self.congrats()
+
+                self.p6 += 1
+
+            else:
+                print "Steppe Witch-doctor is already taken!\n", 20 * "_"
+                self.choosing()
+                return(False) 
+
+        if self.choice == "d" or self.choice == "D":
+            self.characters_description()
+            raw_input("(Continue?) > ")
+            print self.p1, "TEST2"
+            self.choosing()
+
+  
+        #else:
+        #    self.parse_fail()
+        #    print "\n", 20 * "_ "
+        #    self.choosing()
+
+
+
+    def menu_commands(self): 
+        if action == "info": 
+            if playername[1] == 'scout':
+                scout.info()
+            if playername[1] == 'merchant':
+                merchant.info()
+            if playername[1] == 'sage':
+                sage.info()
+            if playername[1] == 'viking':
+                viking.info()
+            if playername[1] == 'archer':
+                archer.info()
+            if playername[1] == 'witch':
+                witch.info()
+
+
+
+            else:
+                return(False)
+    
+    
+        if action == "inv" or action == "i":
+            print "\nYour inventory: \n\n"
+        
+
+        if action == "map":
+            print "MAP..."
+
+
+
+        if action == "rules":
+            print "self.rules()..."
+
+
+        if action == "use item":
+            print "inv_use()..." 
+            
+
+
+
+
+
+    def choices(self):
+
+        self.change_player(1)
+    
+        self.choosing()
+        self.prompt()
+    
+        global playername1
+        playername1 = playername[:]
+
+        self.change_player(2)
+        self.choosing()
+        self.prompt()
+
+        global playername2
+        playername2 = playername[:]
+    
+
+        if player3:
+            self.change_player(3)
+            self.choosing()
+        else:
+            return (False)
+
+        if player3:
+            global playername3
+            playername3 = playername[:]
+
+
+        self.prompt()
+    
+
+        if player4:
+            self.change_player(4)
+            self.choosing()
+        else:
+            return (False)
+
+        if player4:
+            global playername4
+            playername4 = playername[:]
+
+
+        self.prompt()
+
+        return playername1, playername2, playername3, playername4
+
+
+
+
+
+
+    def prompt(self):
+        global action
+        action = raw_input("> ")
+        self.menu_commands() 
+        if action == "continue" or action == "c":
+            return(False)
+        else: 
+            self.prompt()
+
+    def parse(self, action):
+        print "parsing..."
+
+
+    def parse_fail(self):
+        print "\nparse fail"
+        return(False)
+    
+    def use_fail(self):
+        print "use fail..."
+
+
+    def skip_move(self):
+        print "skip move..."
+
+   
+    def players_meet(self):
+        print "players meet..."
+
+    def encounter(self):
+        print "encounter..."
+
+    def move_into(self):
+        print "move into..."
+
+    def move_fail(self):
+        print "move fail..."
+
+    def rules(self):
+        print "rules..."
+
+    def simulate_play(self):
+        print "simulate play..."
+
+    
+    def endgame(self):
+        print "endgame..."
+
+
+
+'''
+
+def kur_eini():
+
+
+    kur = raw_input("kur einate? (siaure, pietus, rytus, vakarus) > ")
+    if kur == "vakarus" or kur == "pietus":
+        print "Sioje vietoje baigiasi Uzburtasis Miskas, taciau jo kerai neleidzia jums is jo istrukti!"
+        kur_eini()
+    elif kur == "siaure" or kur == "rytus":
+        rnd.entrance()
+
+
+
+
+d_kolpak = Daiktas()
+d_kolpak.tipas = "paprastas"
+d_kolpak.pavadinimas = "Kolpak"
+d_kolpak.duoda = "+2 proto su Burtininkais"
+d_kolpak.slove = 1
+
+
+
+
+#@OBJEKTU SAVYBES
+
+
+ozero = Field("Ozero")
+ozero.koreik = "Protas"
+ozero.riba = 7
+ozero.papildomas = " "
+ozero.aprasymas = "Sutinkama: Vodnaja Necist\nPatikrinkite bet kokia uzversta kaimynine zemes korta ir padekite ja atgal"
+
+
+
+
+
+kurgan = Field("Kurgan")
+kurgan.koreik = "Jega"
+kurgan.riba = 8
+kurgan.papildomas = "(6 Zvalgui)"
+kurgan.aprasymas = "Sutinkama: Nezit/Kudesnik\nRandama: 1 daiktas (stebuklingas/ginklas)"
+
+
+pole = Field("Zakoldovanoe pole")
+pole.koreik = "Protas"
+pole.riba = 5
+pole.papildomas = " "
+pole.aprasymas = "Sutinkama: Nezit (-1 kovoje)\nRandama: 1 daiktas (stebuklingas/ginklas)"
+
+
+
+rasputie = Field("Rasputie")
+rasputie.koreik = "Protas"
+rasputie.riba = 6
+rasputie.papildomas = "(4 Vikingui), arba parandate palydova"
+rasputie.aprasymas = "Randama: 1 daiktas (paprastas/stebuklingas)"
+        
+
+obriv = Field("Obriv")
+obriv.koreik = "Jega"
+obriv.riba = 6
+obriv.papildomas = "(6 Lankininkui)"
+obriv.aprasymas = "Sutinkama: Siaubunai/Plesikai (-1 jegos musyje)"
+
+
+lesnaja = Field("Lesnaja Glusc")
+lesnaja.koreik = "Jega"
+lesnaja.riba = 5
+lesnaja.papildomas = " "
+lesnaja.aprasymas = "Sutinkama: Siaubunai/Plesikai\nRandama: 1 daiktas (paprastas/stebuklingas)"
+
+
+
+
+kartos = [ozero, kurgan, pole, rasputie, obriv, lesnaja]
+
+
+r1 = random.choice(kartos) 
+r2 = random.choice(kartos) 
+r3 = random.choice(kartos) 
+r4 = random.choice(kartos) 
+
+#kai issirenka, isbraukti is listo.
+
+#@EIGA
+
+
+
+
+
+
+intro()
+
+karta = Map()
+
+karta.buildmap()
+
+
+
+'''
+
+
+
+
+
+           
+            
+
+
+
+
+
+
+
+
+
+
+
+scout = Character("Pecheneg Scout")
+merchant = Character("Swedish Merchant")
+sage = Character("Kiev Sage")
+viking = Character("Visitant Viking")
+archer = Character("Chernigov Archer")
+witch = Character("Steppe Witch-doctor")
+
+
+
+
+
+
+def setup():
+
+    game_engine = Engine()
+    
+    game_engine.intro()
+
+    game_engine.choices()
+
+    print "\nGame continues...\n"
+
+
+setup()

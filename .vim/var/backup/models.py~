@@ -1,0 +1,222 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+from django.db import models
+from ordered_model.models import OrderedModel
+from hvad.models import TranslatableModel, TranslatedFields
+from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import get_language
+from django.core.exceptions import ObjectDoesNotExist
+from geoposition.fields import GeopositionField
+
+
+class Common(models.Model):
+
+    is_active = models.CharField(
+        max_length=10,
+        choices=[('1', 'Active'), ('0', 'Inactive')],
+        verbose_name='status'
+    )
+
+    class Meta:
+        abstract = True
+
+
+class Language(OrderedModel):
+    image = models.ImageField(upload_to='media/', null=True, blank=True, verbose_name='flag')
+    language = models.CharField(max_length=100)
+    code = models.CharField(max_length=10)
+    is_default = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.language
+
+    def save(self, *args, **kwargs):
+        if self.is_default:
+            try:
+                temp = Language.objects.get(is_default=True)
+                if self != temp:
+                    temp.is_default = False
+                    temp.save()
+            except Language.DoesNotExist:
+                pass
+        super(Language, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name_plural = '1. Languages'
+
+
+class SliderBox(TranslatableModel, OrderedModel):
+
+    translations = TranslatedFields(
+        image = models.ImageField(upload_to='media/', null=True, blank=True),
+        text = models.CharField(max_length=200),
+    )
+
+
+    def __str__(self):
+        try:
+             string = self._meta.translations_model.objects.get(language_code='en', master__pk=self.pk).text
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+        try:
+             string = self._meta.translations_model.objects.get(language_code='lt', master__pk=self.pk).text
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+        try:
+             string = self._meta.translations_model.objects.get(language_code='lv', master__pk=self.pk).text
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+        try:
+             string = self._meta.translations_model.objects.get(language_code='et', master__pk=self.pk).text
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+
+
+    class Meta:
+        verbose_name_plural = '2. Slider Text'
+
+
+class ContentBlock(Common, TranslatableModel, OrderedModel):
+
+    translations = TranslatedFields(
+        title = models.CharField(max_length=100),
+        content = models.TextField(blank=True),
+    )
+
+    def __str__(self):
+        try:
+             string = self._meta.translations_model.objects.get(language_code='en', master__pk=self.pk).title
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+        try:
+             string = self._meta.translations_model.objects.get(language_code='lt', master__pk=self.pk).title
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+        try:
+             string = self._meta.translations_model.objects.get(language_code='lv', master__pk=self.pk).title
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+        try:
+             string = self._meta.translations_model.objects.get(language_code='et', master__pk=self.pk).title
+        except ObjectDoesNotExist:
+            pass
+        else:
+            return string
+
+
+    class Meta:
+        verbose_name_plural = '3. Content Blocks'
+
+
+class Footer(Common, TranslatableModel, OrderedModel):
+
+    translations = TranslatedFields(
+        text = models.TextField(blank=True),
+    )
+
+    def __str__(self):
+        return 'Footer'
+
+    class Meta:
+        verbose_name_plural = '4. Footer'
+
+
+class Shops(models.Model):
+    name = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    address = models.CharField(max_length=100)
+    contacts = models.CharField(max_length=100)
+    location = GeopositionField()
+
+    country_code = models.CharField(
+        max_length=10,
+        choices=[('lt', 'lt'), ('lv', 'lv'), ('et', 'et')],
+        verbose_name='Country code'
+    )
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'Shops'
+
+
+class City(OrderedModel):
+    name = models.CharField(max_length=100)
+    location = GeopositionField()
+
+    country_code = models.CharField(
+        max_length=10,
+        choices=[('lt', 'lt'), ('lv', 'lv'), ('et', 'et')],
+        verbose_name='Country code'
+    )
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'Map Cities'
+
+
+class Images(TranslatableModel, OrderedModel):
+
+    code = models.CharField(max_length=50, blank=False)
+
+    translations = TranslatedFields(
+        image = models.ImageField(upload_to='media/', null=True, blank=True),
+    )
+
+    def __str__(self):
+        name = self.code.replace("_", " ")
+        return name.title()
+
+    class Meta:
+        verbose_name_plural = 'Images'
+
+
+class Strings(TranslatableModel, OrderedModel):
+
+    code = models.CharField(max_length=50, blank=False)
+
+    translations = TranslatedFields(
+        string = models.TextField(blank=True),
+    )
+
+    def __str__(self):
+        name = self.code.replace("_", " ")
+        return name.title()
+
+
+    class Meta:
+        verbose_name_plural = 'Text (and links)'
+
+
+class MetaData(TranslatableModel):
+
+    translations = TranslatedFields(
+        title = models.CharField(max_length=50, blank=True),
+        description = models.TextField(blank=True),
+        keywords = models.TextField(blank=True, verbose_name='keywords (separated by commas)'),
+    )
+
+    def __str__(self):
+        return 'Meta data'
+
+    class Meta:
+        verbose_name_plural = 'Meta data'

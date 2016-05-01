@@ -1,0 +1,42 @@
+<?php
+
+namespace OsosTVS\Providers\frontend;
+
+use Illuminate\Support\ServiceProvider;
+use OsosTVS\Models\Language;
+
+class LanguageProvider extends ServiceProvider
+{
+    public static $views = [
+        'frontend.index'
+    ];
+
+    /**
+     * Bootstrap the application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+
+        //$languages = Language::active()->get();
+
+        if(isset($languages)) {
+            for ($i = 0; $i < count(static::$views); $i++) {
+                view()->composer(static::$views[$i], function($view) use ($languages) {
+                    $view->with('providerLanguages', $languages);
+                });
+            }
+        }
+    }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}

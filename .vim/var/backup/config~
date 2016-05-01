@@ -1,0 +1,67 @@
+[global_config]
+  always_split_with_profile = True
+  focus = system
+  suppress_multiple_term_dialog = True
+  title_font = Ubuntu Mono 8
+  title_transmit_bg_color = "#d30102"
+[keybindings]
+  broadcast_off = <Alt>backslash
+  close_term = <Primary>x
+  close_window = <Primary><Shift>p
+  edit_window_title = <Super>r
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  go_up = <Alt>k
+  layout_launcher = <Primary><Alt>o
+  new_tab = <Primary>t
+  next_tab = <Primary>w
+  prev_tab = <Primary>q
+  reset = <Primary>q
+  split_horiz = <Super>v
+  split_vert = <Super>h
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_10 = <Alt>minus
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = matrix
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      profile = matrix
+      type = Terminal
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+  [[matrix]]
+    background_image = None
+    cursor_color = "#83f52c"
+    foreground_color = "#1ecc4a"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[solarized-dark]]
+    background_color = "#002b36"
+    background_image = None
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[solarized-light]]
+    background_color = "#eee8d5"
+    background_image = None
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"

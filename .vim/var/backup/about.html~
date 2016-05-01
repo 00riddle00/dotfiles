@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load trans blocktrans from i18n %}
+
+
+{% block content %}
+  <div class="about">
+    <h1>{% trans "About Summer Python Workshop" %}</h1>
+
+    <p>{% blocktrans %}During this event everybody can learn how to program in
+    Python and Django by creating <a href="http://pylab.lt">pylab.lt</a>
+    website.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Every workshop participant has to choose individual task,
+    which he would be able to complete in one week. Two hours long meeting is
+    held each week, during which participants present how they managed to complete
+    their tasks and what issues they faced. Advanced programmers give advices and
+    help to solve problems during this meeting. Participants can choose next tasks
+    if they managed to finish their task successfully.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}"Summer Python workshop" meetings are held every Monday
+    from 18:00 till 20:00 at Čiurlionio g. 13-1.{% endblocktrans %}</p>
+
+    <iframe width="830" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+    src="http://www.openstreetmap.org/export/embed.html?bbox=25.25760054588318%2C54.67979232084423%2C25.268651247024533%2C54.685194624174684&amp;layer=mapnik&amp;marker=54.682490461170204%2C25.263125896453857"
+    class="border-1px"></iframe>
+
+    <h1>{% trans "Python workshops policy" %}</h1>
+
+    <p>{% blocktrans %}Each Python workshop starts with initial meeting, during
+    which participants vote on which project they want to work during this workshop.
+    The initial meeting is a bit longer than usual meetings and is mainly devoted
+    to clarify aims and user stories for the chosen project.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Intellectual property and source code created during Python
+    workshops by participants belong to Python workshops.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Python workshop's strategical and financial solutions are
+    made democratically: Python workshops participants vote and majority's will is
+    executed.{% endblocktrans %}</p>
+
+    <p>{% trans "Each Python workshops participant has to:" %}
+    <ul>
+      <li>{% trans "Accept open source and open knowledge ideologies." %}</li>
+      <li>{% blocktrans %}Respect and protect human rights and liberties.
+          Especially right for privacy.{% endblocktrans %}</li>
+    </ul></p>
+
+    <p>{% blocktrans %}Python workshops participants can suggest ideas, which
+    could be implemented during Python workshops.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Good quality open source code is created during Python
+    workshops, hence projects are released under open source licences, unless
+    Python workshops community decide otherwise.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Income from Python workshops projects has to be
+    allocated only for Python workshops community's prosper. For example,
+    expenses for domains, servers, rent, municipality or hackathon organization
+    can be covered, also permanent employees for Python workshops can be
+    employed.{% endblocktrans %}</p>
+
+</div>
+{% endblock %}
