@@ -1,0 +1,26 @@
+{
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "prompt": false,
+    "type": "script",
+    "description": "List Menu",
+    "abbreviation": {
+        "ignoreCase": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]",
+        "abbreviations": [],
+        "immediate": false,
+        "backspace": true
+    },
+    "filter": {
+        "isRecursive": false,
+        "regex": null
+    },
+    "store": {},
+    "usageCount": 0,
+    "omitTrigger": false,
+    "modes": [],
+    "showInTrayMenu": false
+}

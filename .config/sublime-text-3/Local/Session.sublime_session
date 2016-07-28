@@ -1,0 +1,478 @@
+{
+	"folder_history":
+	[
+		"/home/riddle",
+		"/home/riddle/osos/edienynas"
+	],
+	"last_version": 3114,
+	"last_window_id": 3,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 1018.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 212.0,
+				"last_filter": ":w",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":r",
+						"Set Syntax: R"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						":e",
+						":e - Revert"
+					]
+				],
+				"width": 392.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/riddle/osos/grigeo/grigeo_plan",
+				"/home/riddle/.config/openbox/rc.xml",
+				"/home/riddle/tmp1/gnome_alt_key",
+				"/home/riddle/main/coding/config",
+				"/home/riddle/c1/tmp",
+				"/home/riddle/osos/scard/scard_plan",
+				"/home/riddle/dotfiles/jetbrains.txt",
+				"/home/riddle/logins/dokeriai",
+				"/home/riddle/osos/edienynas/tests",
+				"/home/riddle/osos/edienynas/test_template",
+				"/media/riddle/EE3C-E544/NEW/scard_plan",
+				"/home/riddle/tmp1/test_output.txt",
+				"/home/riddle/backups/id_rsa",
+				"/home/riddle/docker/scard-docker/id_rsa.pub",
+				"/home/riddle/logins/grigeo-live",
+				"/home/riddle/Downloads/scard_plan",
+				"/home/riddle/.ssh/known_hosts",
+				"/home/riddle/tmp1/eimantas",
+				"/home/riddle/c1/bashrc_vagrant.txt",
+				"/home/riddle/main/YOUTRACK",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/riddle/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/riddle/main/set usr",
+				"/home/riddle/main/key usr"
+			],
+			"find":
+			{
+				"height": 23.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"Alt-z",
+					"kraken",
+					"docker bui",
+					"adbal",
+					"vps",
+					"ovh",
+					"vps",
+					"ovh",
+					"92",
+					"lxml",
+					"ignore"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 42.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 960.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/riddle/main/coding/config",
+					"settings":
+					{
+						"buffer_size": 5949,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 212.0,
+				"last_filter": ":w",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						":q",
+						"Snippet: Sequence (from,to,by)"
+					],
+					[
+						":r",
+						"Set Syntax: R"
+					],
+					[
+						":e",
+						":e - Revert"
+					]
+				],
+				"width": 392.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/riddle/logins/dokeriai",
+				"/home/riddle/osos/scard/scard_plan",
+				"/home/riddle/wiki/wiki",
+				"/home/riddle/.xinitrc",
+				"/home/riddle/.Xresources",
+				"/home/riddle/.xscreensaver",
+				"/home/riddle/c1/tmp",
+				"/home/riddle/.config/xfce4-dict/xfce4-dict.rc",
+				"/home/riddle/.cinnamon/configs/keyboard@cinnamon.org/keyboard@cinnamon.org.json",
+				"/home/riddle/.cinnamon/configs/user@cinnamon.org/user@cinnamon.org.json",
+				"/home/riddle/.tmux.conf",
+				"/home/riddle/.Xsession",
+				"/home/riddle/.i3/config",
+				"/home/riddle/osos/grigeo/grigeo_plan",
+				"/home/riddle/osos/edienynas/tests",
+				"/home/riddle/osos/edienynas/test_template",
+				"/home/riddle/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml",
+				"/home/riddle/Downloads/simplify/authorized_keys",
+				"/home/riddle/Downloads/simplify/Dockerfile",
+				"/home/riddle/.config/openbox/rc.xml",
+				"/home/riddle/tmp1/gnome_alt_key",
+				"/home/riddle/main/coding/config",
+				"/home/riddle/dotfiles/jetbrains.txt",
+				"/media/riddle/EE3C-E544/NEW/scard_plan",
+				"/home/riddle/tmp1/test_output.txt",
+				"/home/riddle/backups/id_rsa",
+				"/home/riddle/docker/scard-docker/id_rsa.pub",
+				"/home/riddle/logins/grigeo-live",
+				"/home/riddle/Downloads/scard_plan",
+				"/home/riddle/.ssh/known_hosts",
+				"/home/riddle/tmp1/eimantas",
+				"/home/riddle/c1/bashrc_vagrant.txt",
+				"/home/riddle/main/YOUTRACK",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/riddle/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/riddle/main/set usr",
+				"/home/riddle/main/key usr"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"docker run",
+					"docker build",
+					"Alt-z",
+					"kraken",
+					"docker bui",
+					"adbal",
+					"vps",
+					"ovh",
+					"vps",
+					"ovh",
+					"92",
+					"lxml",
+					"ignore"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/riddle/main/coding/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 5949,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5134,
+										5134
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/R/R.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3598.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,1920,0,2876,1053,3840,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 38.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

@@ -1,0 +1,150 @@
+# BlackWhite by lyrae | thrynk.deviantart.com
+
+# Window geometry
+padding.width: 2
+border.width: 2
+window.client.padding.width: 1
+window.client.padding.height: 1
+window.handle.width: 1
+
+#Menu geometry
+menu.border.width: 2
+menu.overlap: 1
+
+# Border colors
+window.active.border.color: #75d1c7
+window.inactive.border.color: #6b8d94
+menu.border.color: #75d1c7
+window.active.client.color: #000000
+window.inactive.client.color: #000000
+
+# Text shadows
+window.active.label.text.font: shadow=n
+window.inactive.label.text.font: shadow=n
+menu.items.font: shadow=n
+menu.title.text.font: shadow=n
+
+# Window title justification
+window.label.text.justify: left
+
+# Active window
+window.active.title.bg: Envy Code R
+window.active.title.bg.color: #000
+window.active.title.bg.colorTo: #000
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #75d1c7
+
+window.active.handle.bg: Envy Code R
+window.active.handle.bg.color: #000000
+window.active.handle.bg.colorTo: #aa0000
+
+window.active.grip.bg: Envy Code R
+window.active.grip.bg.color: #000000
+window.active.grip.bg.colorTo: #000000
+
+window.active.button.unpressed.bg: Envy Code R
+window.active.button.unpressed.bg.color: #000000
+window.active.button.unpressed.bg.colorTo: #000000
+window.active.button.unpressed.bg.border.color: #000000
+window.active.button.unpressed.image.color: #000000
+
+window.active.button.pressed.bg: Envy Code R
+window.active.button.pressed.bg.color: #333333
+window.active.button.pressed.bg.colorTo: #333333
+window.active.button.pressed.bg.border.color: #222222
+window.active.button.pressed.image.color: #75d1c7
+
+window.active.button.disabled.bg: Envy Code R
+window.active.button.disabled.bg.color: #222222
+window.active.button.disabled.bg.colorTo: #222222
+window.active.button.disabled.bg.border.color: #222222
+window.active.button.disabled.image.color: #000000
+
+window.active.button.toggled.bg: Envy Code R
+window.active.button.toggled.bg.color: #222222
+window.active.button.toggled.bg.colorTo: #222222
+window.active.button.toggled.bg.border.color: #222222
+window.active.button.toggled.image.color: #c0c0c0
+
+window.active.button.hover.bg: Envy Code R
+window.active.button.hover.bg.color: #ff1313
+window.active.button.hover.bg.colorTo: #ff1313
+window.active.button.hover.bg.border.color: #222222
+window.active.button.hover.image.color: #c0c0c0
+
+# Inactive windows
+window.inactive.title.bg: Envy Code R
+window.inactive.title.bg.color: #000000
+window.inactive.title.bg.colorTo: #000000
+
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #6b8d94
+
+window.inactive.handle.bg: Envy Code R
+window.inactive.handle.bg.color: #000000
+window.inactive.handle.bg.colorTo: #000000
+
+window.inactive.grip.bg: Envy Code R
+window.inactive.grip.bg.color: #000000
+window.inactive.grip.bg.colorTo: #000000
+
+window.inactive.button.unpressed.bg: Envy Code R
+window.inactive.button.unpressed.bg.color: #000000
+window.inactive.button.unpressed.bg.colorTo: #000000
+window.inactive.button.unpressed.bg.border.color: #000000
+window.inactive.button.unpressed.image.color: #000000
+
+window.inactive.button.pressed.bg: Envy Code R
+window.inactive.button.pressed.bg.color: #222222
+window.inactive.button.pressed.bg.colorTo: #aa2222
+window.inactive.button.pressed.bg.border.color: #ff2222
+window.inactive.button.pressed.image.color: #ff2222
+
+window.inactive.button.disabled.bg: Envy Code R
+window.inactive.button.disabled.bg.color: #222222
+window.inactive.button.disabled.bg.colorTo: #222222
+window.inactive.button.disabled.bg.border.color: #222222
+window.inactive.button.disabled.image.color: #222222
+
+window.inactive.button.toggled.bg: Envy Code R
+window.inactive.button.toggled.bg.color: #aa2222
+window.inactive.button.toggled.bg.colorTo: #aa2222
+window.inactive.button.toggled.bg.border.color: #aa2222
+window.inactive.button.toggled.image.color: #aa2222
+
+window.inactive.button.hover.bg: Envy Code R
+window.inactive.button.hover.bg.color: #992222
+window.inactive.button.hover.bg.colorTo: #992222
+window.inactive.button.hover.bg.border.color: #992222
+window.inactive.button.hover.image.color: #000000
+
+# Menus
+menu.title.bg: Envy Code R
+menu.title.bg.color: #000000
+menu.title.bg.colorTo: #000000
+menu.title.text.color: #75d1c7
+menu.title.text.justify: Left
+
+menu.items.bg: Envy Code R
+menu.items.bg.color: #000000
+menu.items.text.color: #75d1c7
+menu.items.disabled.text.color: #222222
+
+menu.items.active.bg: Envy Code R
+menu.items.active.bg.color: #75d1c7
+menu.items.active.bg.colorTo: #75d1c7
+menu.items.active.text.color: #000000
+menu.items.active.disabled.text.color: #222222
+
+#osd
+osd.border.width: 0
+osd.border.color:  #75d1c7
+
+osd.bg: flat border vertical gradient
+osd.bg.color: #000000
+osd.bg.colorTo: #000000
+osd.bg.border.color: #75d1c7
+
+osd.label.bg: parentrelative
+
+osd.label.text.color: #75d1c7

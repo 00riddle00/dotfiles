@@ -1,0 +1,19 @@
+[$Version]
+update_info=kded.upd:kde3.0
+
+[DirSelect Dialog]
+DirSelectDialog Size=791,582
+History Items[$e]=
+
+[General]
+TerminalApplication[$e]=terminator
+
+[KDE]
+ShowDeleteCommand=false
+SingleClick=true
+
+[KShortcutsDialog Settings]
+Dialog Size=676,1055
+
+[PreviewSettings]
+MaximumRemoteSize=0

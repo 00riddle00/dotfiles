@@ -1,0 +1,16 @@
+[Added Associations]
+image/png=mirage-4.desktop;mirage-3.desktop;mirage-2.desktop;
+image/svg+xml=mirage-5.desktop;
+inode/directory=Xfce Terminal.desktop;
+text/csv=libreoffice-2.desktop;libreoffice.desktop;
+text/html=google-chrome.desktop;
+text/plain=subl-2.desktop;subl.desktop;
+text/x-matlab=subl-3.desktop;
+video/x-matroska=vlc-2.desktop;
+
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop

@@ -1,0 +1,54 @@
+# gmrun configuration file
+# gmrun is (C) Mihai Bazon, <mishoo@infoiasi.ro>
+# GPL v2.0 applies
+
+# Set terminal
+Terminal = terminator
+TermExec = ${Terminal} -e
+AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
+out = openbox --exit
+
+# Set window geometry (except height)
+Width = 250
+Top = 10
+Left = 10
+
+# History size
+History = 256
+
+# Shows last history line selected when invoked
+ShowLast = 1
+
+# Show files starting with '.'
+# Default is 0 (off), set it to 1 if you want "hidden" files to show up
+# in the completion window
+ShowDotFiles = 0
+
+# Timeout (in milliseconds) after which gmrun will simulate a TAB press
+# Set this to NULL if don't like this feature.
+TabTimeout = 0
+
+# URL handlers
+# If the entered text is "http://www.google.com" then:
+#   - %u gets replaced with the whole URL ("http://www.google.com")
+#   - %s gets replaced with "//www.google.com".  This is useful for URL-s
+#     like "man:printf" --> %s will get replaced with "printf"
+URL_http = firefox -remote "openURL(%u, new-window)"
+URL_mailto = mozilla -remote "mailto(%s)"
+URL_man = ${TermExec} 'man %s'
+URL_t = ${TermExec} '%s'
+URL_info = ${TermExec} 'info %s'
+URL_pd = ${TermExec} 'perldoc %s'
+URL_file = dolphin4 /home/riddle/%s
+URL_readme = ${TermExec} 'less /usr/doc/%s/README'
+URL_info = ${TermExec} 'info %s'
+URL_sh = sh -c '%s'
+URL_s = google-chrome-stable 'http://www.google.com/search?q=%s'
+URL_out = ${TermExec} 'openbox --exit'
+URL_i = ${TermExec} 'google-chrome-stable %s'
+
+# extension handlers
+EXT:doc,rtf = AbiWord %s
+EXT:txt,cc,cpp,h,java,html,htm,epl,tex,latex,js,css,xml,xsl,am = emacs %s
+EXT:ps = gv %s
+EXT:pdf = xpdf %s

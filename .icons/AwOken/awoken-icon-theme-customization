@@ -1,0 +1,181 @@
+#!/bin/bash
+
+CURDIR=`pwd`
+
+# Version of the iconset:
+VER="2.5"
+# Name of the iconset (normal, big, little):
+ICNST="AwOken"
+ICNSTG="AWOKEN"
+ICNSTP="awoken"
+# File in which are present configuration options:
+CONFFILE="$HOME/."$ICNST"rc"
+# Path for the DA installation:
+CONFDIR="$HOME/.icons"
+# Path for the ppa installation:
+USRDIR="/usr/share/icons"
+
+echo "*************************************************************************"
+echo "Initial settings. Current Release: $VER"
+echo " "
+echo "Please consider a small donation (1$ goes a long way) via PayPal to 'alecive87@gmail.com'"
+echo "*************************************************************************"
+# Checks if zenity is installed, if not continue with the old fashioned script.
+if [ -x /usr/bin/zenity ]; then 
+  echo "SUCCESS! Zenity was found."
+  ZEN="1"
+	
+  zenity --info --title="$ICNSTG $VER Customization script" --text="***********************************************************************************************\n\t\t\t\t\t\t\t<b>$ICNST $VER CUSTOMIZATION SCRIPT</b>\n\nThanks for choosing $ICNST iconset, and welcome to the latest version of $ICNST customization script.\n\nSince the ever growing nature of this software, it's more than welcome any notification of any bug you will (surely) find.\nIf so, please send me a mail to <i>'alecive87@gmail.com'</i>, trying to explain briefly the problem you encountered. If necessary (as often is), be sure to attach the whole terminal output, so I can easily manage the issue.\n\n***********************************************************************************************\n\nIf you like efforts that i put in this work, or you think that I'm a nice guy, or that anyway I deserve a contribution, please consider a small donation (1$ goes a long way) via PayPal to <i>'alecive87@gmail.com'</i>.\n\n***********************************************************************************************\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  Click the Close button to continue."
+else
+  echo "WARNING: Zenity not found. Please install zenity to use this script from 2.0 Version."
+  echo "         Anyway, I'll run the script in the old terminal fashion."
+  ZEN="0"
+fi
+
+if [ -d $USRDIR/$ICNST ]; then
+	INSTALLATION="ppa"
+	DIR=$USRDIR
+elif [ -d $CONFDIR/$ICNST ]; then
+	INSTALLATION="DA_download"
+	DIR=$CONFDIR
+else
+	echo "It seems that the set is not in a expected location (or there's a bug in the script). If you think there's a bug, please send me a mail or a message in whatever way you prefer."
+	echo "I'll stop here."
+	exit
+fi
+
+echo "Installation directory -> $DIR/$ICNST " 
+echo "Installation modality -> $INSTALLATION"
+echo "*************************************************************************"
+extraset=(`ls $CONFDIR | grep $ICNST-`)
+echo "Now I'll search if there are already colored iconsets in your $CONFDIR directory."
+echo "I found these: ${extraset[@]}"
+
+if [ $ZEN == 1 ]; then
+    RES=""
+    for i in ${extraset[@]}; do
+        RES="$RES FALSE Customize_$i"
+    done
+
+    OPTION=`zenity --title="$ICNSTG $VER Customization script" --list --text="Select an option from below:\t\t\t\t\t\t\t" --radiolist --column "" --column "" TRUE "Take a look at the README pdf with instructions" FALSE "Customize Clear version" FALSE "Customize Dark version" FALSE "Customize White version" $RES FALSE 'Colorize the iconset' FALSE "Remove a colored iconset" FALSE "Quit" --height="400"`
+elif [ $ZEN == 0 ]; then
+    RES=""
+    for i in ${extraset[@]}; do
+        RES="$RES Customize_$i"
+    done
+    
+    echo "Select an option of choice from below:" 
+    PS3="What option do you prefer? "
+    select OPTION in "Take a look at the README pdf with instructions" "Customize Clear version" "Customize Dark version" "Customize White version" $RES "Colorize the iconset" "Remove a colored iconset" "Quit"
+    do
+        break
+    done
+fi
+
+#************************************************************************
+if [ "$OPTION" = "" ]; then
+    if [ $ZEN == 1 ]; then
+        zenity --warning --text="\nERROR: You selected nothing\!\nRe-run the script and select a proper option." --title="ERROR"
+    else
+    	echo "Wrong choice! Remember to type the number of your choice."
+    fi
+else
+	echo "You chose: $OPTION"
+#************************************************************************
+	if [ "$OPTION" = "Customize Clear version" ]; then
+	  if [ -f $DIR/$ICNST/$ICNSTP-icon-theme-customization-clear ]; then
+		echo "Now I'll run customization script for Clear version."
+		echo "*************************************************************************"
+		bash $DIR/$ICNST/$ICNSTP-icon-theme-customization-clear
+      else
+        echo "It seems that there isn't any customization script for the clear iconset located in $DIR/$ICNST."
+      fi
+#************************************************************************
+	elif [ "$OPTION" = "Customize Dark version" ]; then
+	  if [ -f $DIR/$ICNST"Dark"/$ICNSTP-icon-theme-customization-dark ]; then
+		echo "Now I'll run customization script for Dark version."
+		echo "*************************************************************************"
+		bash $DIR/$ICNST"Dark"/$ICNSTP-icon-theme-customization-dark
+      else
+        echo "It seems that there isn't any customization script for the dark iconset located in $DIR/$ICNST"Dark.
+      fi
+#************************************************************************
+	elif [ "$OPTION" = "Customize White version" ]; then
+	  if [ -f $DIR/$ICNST"White"/$ICNSTP-icon-theme-customization-white ]; then
+		echo "Now I'll run customization script for White version."
+		echo "*************************************************************************"
+		bash $DIR/$ICNST"White"/$ICNSTP-icon-theme-customization-white
+      else
+        echo "It seems that there isn't any customization script for the white iconset located in $DIR/$ICNST"White.
+      fi
+#************************************************************************
+	elif [ "$OPTION" = "Colorize the iconset" ]; then
+      if [ -x /usr/bin/convert ]; then 
+        echo "Now I'll run colorization script for $ICNST iconset."
+        bash $DIR/$ICNST/extra/colorscripts/colorize.sh $DIR
+      else
+        if [ $ZEN == 1 ]; then
+          zenity --warning --text="\nERROR: It seems you don't have imagemagick installed. Please install it before running this part of the script.\n\nQuick tip for Ubuntu users: search and install 'imagemagick' from Ubuntu Software Center or simply type in a terminal: 'sudo apt-get install imagemagick'." --title="ERROR"
+        else
+    	  echo -e "ERROR: It seems you don't have imagemagick installed. Please install it before running this part of the script.\n\nQuick tip for Ubuntu users: search and install 'imagemagick' from Ubuntu Software Center or simply type in a terminal: 'sudo apt-get install imagemagick'."
+        fi
+        echo "Now I'll quit."
+      fi
+#************************************************************************
+	elif [ "$OPTION" = "Remove a colored iconset" ]; then
+	  if [ $ZEN == 1 ]; then
+	    RES=""
+        for i in ${extraset[@]}; do
+          RES="$RES FALSE $i"
+        done
+        ICONSET=`zenity --title="$ICNSTG $VER Customization script" --list --text="Select the iconset that you want to remove:" --radiolist --column "" --column "" $RES --height="370"`
+	  elif [ $ZEN == 0 ]; then
+        echo "Select the iconset that you want to remove (type the number of choice):"
+        select ICONSET in ${extraset[@]}
+        do
+          break
+        done
+	  fi
+
+      if [ "$ICONSET" = "" ]; then
+        if [ $ZEN == 1 ]; then
+          zenity --warning --text="\nERROR: You selected nothing\!\nRe-run the script and select a proper option." --title="ERROR"
+        else
+    	  echo "Wrong choice! Remember to type the number of your choice. I'll exit here."
+        fi
+      else
+          echo "You chose: $ICONSET"
+          rm -rf $CONFDIR/$ICONSET
+	        if [ -f ~/.${ICNST}rc-${ICONSET:7:9} ]; then
+    	      rm ~/.${ICNST}rc-${ICONSET:7:9}
+  	      fi
+      fi
+    echo "DONE. Remember to choose another iconset if the deleted one was your current iconset."
+	#************************************************************************
+	# This option explains by itself - but after viewing pdf file, user might want to
+	# customize the set, so it re-prints the question
+	elif [ "$OPTION" = "Take a look at the README pdf with instructions" ]; then
+		  echo "Now I'll open readme file (if xdg-open is supported)."
+		  if [ -f $DIR/$ICNST/Installation_and_Instructions.pdf ]; then
+			xdg-open $DIR/$ICNST/Installation_and_Instructions.pdf &
+		  else
+			echo "Sorry, I cannot find the file, or xdg-open doesn't exist on your pc."
+		  fi
+#************************************************************************
+	elif [ "$OPTION" = "Quit" ]; then
+		  echo "Now I'll quit."
+  else
+      OPTION=${OPTION:10}
+	    if [ -f $CONFDIR/$OPTION/$ICNSTP-icon-theme-customization-${OPTION:7} ]; then
+		      echo "Now I'll run customization script for $ICNST iconset colored with ${OPTION:7:3}/${OPTION:10:3}/${OPTION:13:3} color."
+		      echo "*************************************************************************"
+		      bash $CONFDIR/$OPTION/$ICNSTP-icon-theme-customization-${OPTION:7}
+      else
+          echo "It seems that there isn't any customization file for the colored iconset located in $CONFDIR/$OPTION/."
+      fi
+	fi
+fi
+
+
+
+

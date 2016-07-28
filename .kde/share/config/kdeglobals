@@ -1,0 +1,152 @@
+[$Version]
+update_info=kded.upd:kde3.0,kdeui.upd:kde4/migrate_from_kde3_icon_theme
+
+[Appmenu Style]
+Style=InApplication
+
+[ColorEffects:Disabled]
+Color=56,56,56
+ColorAmount=-0.8
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+IntensityAmount=0.25
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=0,0,0
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.4
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=66,65,64
+BackgroundNormal=189,195,199
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=150,191,240
+ForegroundInactive=127,140,141
+ForegroundLink=52,152,219
+ForegroundNegative=231,76,60
+ForegroundNeutral=243,156,18
+ForegroundNormal=52,73,94
+ForegroundPositive=120,183,83
+ForegroundVisited=155,89,182
+
+[Colors:Selection]
+BackgroundAlternate=22,68,120
+BackgroundNormal=22,160,133
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=150,191,240
+ForegroundInactive=77,77,77
+ForegroundLink=52,152,219
+ForegroundNegative=231,76,60
+ForegroundNeutral=243,156,18
+ForegroundNormal=236,240,241
+ForegroundPositive=120,183,83
+ForegroundVisited=155,89,182
+
+[Colors:Tooltip]
+BackgroundAlternate=17,51,86
+BackgroundNormal=77,77,77
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=150,191,240
+ForegroundInactive=127,140,141
+ForegroundLink=52,152,219
+ForegroundNegative=231,76,60
+ForegroundNeutral=243,156,18
+ForegroundNormal=236,240,241
+ForegroundPositive=120,183,83
+ForegroundVisited=155,89,182
+
+[Colors:View]
+BackgroundAlternate=236,240,241
+BackgroundNormal=236,240,241
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=52,152,219
+ForegroundInactive=127,140,141
+ForegroundLink=52,152,219
+ForegroundNegative=231,76,60
+ForegroundNeutral=243,156,18
+ForegroundNormal=52,73,94
+ForegroundPositive=120,183,83
+ForegroundVisited=155,89,182
+
+[Colors:Window]
+BackgroundAlternate=52,51,50
+BackgroundNormal=236,240,241
+DecorationFocus=22,160,133
+DecorationHover=26,188,156
+ForegroundActive=150,191,240
+ForegroundInactive=127,140,141
+ForegroundLink=52,152,219
+ForegroundNegative=231,76,60
+ForegroundNeutral=243,156,18
+ForegroundNormal=52,73,94
+ForegroundPositive=120,183,83
+ForegroundVisited=155,89,182
+
+[General]
+ColorScheme=HexGrey
+XftHintStyle=hintmedium
+shadeSortColumn=true
+widgetStyle=qtcurve
+
+[KDE]
+ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=true
+contrast=7
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=6
+
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Previews=false
+Show Bookmarks=false
+Show Full Path=false
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=133
+View Style=Simple
+listViewIconSize=0
+
+[KShortcutsDialog Settings]
+Dialog Size=862,561
+
+[Locale]
+TimeFormat=%H:%M:%S
+
+[Shortcuts]
+Activate Next Tab=Ctrl+W
+Activate Previous Tab=Ctrl+Q
+Close=Ctrl+Esc
+Quit=
+
+[Toolbar style]
+ToolButtonStyle=TextBesideIcon
+ToolButtonStyleOtherToolbars=TextBesideIcon
+
+[WM]
+activeBackground=52,73,94
+activeBlend=189,195,199
+activeForeground=26,188,156
+inactiveBackground=52,73,94
+inactiveBlend=189,195,199
+inactiveForeground=127,140,141

@@ -1,0 +1,50 @@
+# "Arch Conky" #
+
+# Default Fonts
+use_xft yes
+xftfont Karat:bold:size=12
+
+override_utf8_locale yes
+text_buffer_size 2048
+
+# Performance Settings
+update_interval 1
+total_run_times 0
+double_buffer yes
+no_buffers yes
+net_avg_samples 2
+
+# Window Settings
+own_window yes
+#own_window_class conky
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,skip_taskbar,sticky,skip_pager
+
+# Window border
+draw_borders no
+draw_shades yes
+
+# Default Color
+default_color E0DFDE
+color1 1793D1
+
+# Color Title.
+color0 DD3A21
+
+# Size and position
+minimum_size 1366 80
+#2 monitors
+#gap_x 500
+#gap_y 0
+#
+#Laptop
+gap_x 150
+gap_y 0
+
+alignment top_left
+
+TEXT
+${GOTO 30}${font Karat:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Karat:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}${color1}Proc ${GOTO 330}:${color}${GOTO 345}${cpu cpu0}%${if_match "${addr eth0}" != "No Address"}${GOTO 435}${color1}IP eth0${GOTO 515}:${color}${GOTO 530}${addr eth0}${else}${if_match "${addr wlan0}" != "No Address"}${GOTO 435}${color1}IP wlan0${GOTO 515}:${color}${GOTO 530}${addr wlan0}${else}${GOTO 435}${color1}IP Locale${GOTO 515}:${color}${GOTO 530}Non Connecté${endif}${endif}${voffset 20}
+${GOTO 40}${voffset 6}${font Karat:bold:size=12}${color1}${time %A %d }${color}${time %B %Y}${font}${voffset -24}${GOTO 330}${color1}:${color}${GOTO 345}${cpu cpu1}%${GOTO 435}${color1}SSID${GOTO 515}:${color}${GOTO 530}${if_match "${addr eth0}" == "No Address"}${if_up wlan0}${wireless_essid wlan0}${else}N/A${endif}${endif}${voffset 6}
+${GOTO 280}${color1}Ram ${GOTO 330}${color1}:${color}${GOTO 345}${memperc}%${GOTO 435}${color1}Signal${GOTO 515}:${color}${GOTO 530}${if_match "${addr eth0}" == "No Address"}${if_up wlan0}${if_match "unk" != "${wireless_link_qual_perc wlan0}"}${wireless_link_qual_perc wlan0}%${else}N/A${endif}${else}N/A${endif}${endif}

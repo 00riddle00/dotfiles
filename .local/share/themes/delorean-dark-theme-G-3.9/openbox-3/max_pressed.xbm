@@ -1,0 +1,4 @@
+#define max_pressed_width 6
+#define max_pressed_height 6
+static unsigned char max_pressed_bits[] = {
+0x3f, 0x3f, 0x21, 0x21, 0x21, 0x3f };

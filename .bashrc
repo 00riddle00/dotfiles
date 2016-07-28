@@ -1,4 +1,6 @@
-# Master .bashrc file for personal laptop running Arch Linux
+if [ -n "$DISPLAY" ]; then
+  xset b off
+fi
 
 if [ $(tty) == "/dev/tty1" ]; then
 startx
@@ -19,6 +21,8 @@ setxkbmap -option grp:alt_shift_toggle us,lt
 setxkbmap -option caps:escape
 
 archey 
+#screenfetch
+
 
 eval $(dircolors ~/.dircolors)
 
@@ -61,7 +65,9 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias root='cd /'
 
-alias app='cd /home/riddle/VirtualBox\ VMs/dienynas/app'
+alias di='cd /home/riddle/VirtualBox\ VMs/dienynas/app'
+alias sca='cd /home/riddle/VirtualBox\ VMs/scard-api/'
+alias gri='cd /home/riddle/VirtualBox\ VMs/grigiskes-api/app'
 alias u2='cd /home/riddle/CS/2_semester/programavimas_c/code/U2'
 alias dw='cd /home/riddle/Downloads/'
 alias srv='cd /srv/http/'
@@ -92,19 +98,19 @@ alias out='sudo openbox --exit'
 # config
 alias vr='vim ~/.vimrc'
 alias br='vv ~/.bashrc'
-alias term='vv .config/terminator/config'
+alias termc='vv .config/terminator/config'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 # programs
 alias x='startx'
 alias vbox='virtualbox'
-alias au='audacity'
 alias read='acroread'
 alias chrome='google-chrome-stable'
 alias fox='firefox'
 alias v='vim'
 alias vv='sudo vim'
+alias t='dolphin4 ./'
 alias tt='sudo dolphin4 ./'
 alias play='vlc'
 alias t='thunar'
@@ -125,6 +131,19 @@ alias gch='git checkout'
 alias vu='vagrant up'
 alias vs='vagrant ssh'
 
+# vagrant grigeo
+alias runs='python manage.py runserver 0.0.0.0:8000'
+alias gri='cd /vagrant/grigiskes-api/app/'
+alias venv='source ../env/bin/activate'
+alias senv='source ../scard-env/bin/activate'
+
+# vagrant dienynas
+alias di='cd /vagrant/dienynas/app/'
+alias sca='cd /vagrant/scard-api/'
+alias runsg='python manage.py global runserver 0.0.0.0:8000'
+alias runsa='python manage.py admin runserver 0.0.0.0:8000'
+alias runst='python manage.py teacher runserver 0.0.0.0:8000'
+
 # programs & actions
 alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cf='fortune | cowsay' 
@@ -142,12 +161,11 @@ alias reapache='systemctl restart httpd'
 alias net='sudo systemctl start dhcpcd@enp9s0.service'
 alias wn='sudo netctl start Namai7'
 alias wr='sudo netctl start Riddle00'
-alias wo='sudo netctl start OSOS'
+alias wo='sudo netctl start OSOS5'
 alias wifi='sudo wifi-menu'
 alias wifion='sudo ip link set wlp8s0 up'
-alias nowifi='sudo ip link set wlp8s0 down'
+alias wifiof='sudo ip link set wlp8s0 down'
 alias pp='ping -c 3 www.google.com'
-alias pings='ping -c 3 8.8.8.8'
 
 # touchpad
 alias ton='synclient TouchpadOff=0'
@@ -162,7 +180,8 @@ alias xof='xrandr --output HDMI-1 --off'
 
 # c lang
 alias t='./test'
-alias ms='make test'
+alias ms='make rebuild'
+#alias ms='make test'
 alias vt='vlt ./test'
 alias vl='valgrind'
 alias vlt='valgrind --track-origins=yes --leak-check=full'
@@ -177,13 +196,13 @@ alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 # django
 alias cs='python manage.py collectstatic --noinput'
 alias venv='source ../env/bin/activate'
+alias senv='source env/bin/activate'
 alias qenv='deactivate'
-alias db='python manage.py dbshell'
-alias syncdb='python manage.py syncdb'
 alias runs='python manage.py runserver'
 
 
-#################################################
+############################################################################
+############################################################################
 
 alias pu='s pip uninstall'
 alias mim='vv /home/riddle/.config/mimeapps.list'
@@ -193,6 +212,73 @@ alias gpo='git push origin tomo_pakeitimai'
 
 alias tmp='cd ~/tmp1'
 alias te='v tests.py'
+alias doker='sudo systemctl start docker.service'
+alias tmp2='cd ~/tmp2'
 
 
+alias reb='make rebuild'
+alias exe='./main.exe'
+alias cl='cd /home/riddle/c_lang/LCTHW'
+alias ya='yaourt --noconfirm'
+
+
+alias no='killall mpg123'
+
+alias matrix='./shell_scripts/matrixon.sh'
+alias matrixof='./shell_scripts/matrixof.sh'
+
+alias r='ranger'
+alias vf='vifm'
+
+alias xconf='cd /home/riddle/.config/xfce4/xfconf/xfce-perchannel-xml'
+
+alias genkeys='cpr tmp1/keys2.xml .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml && cpr tmp1/keys2.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml'
+
+alias xout='xfce4-session-logout'
+alias pmp='python manage.py'
+
+alias cki='conky -c .conky/stats && conky -c .conky/conkyrc_HUD && conky -c .conky/archconky'
+alias ckil='killall conky'
+
+#ubuntu
+alias smartgit="/usr/share/smartgit/bin/smartgit.sh"
+alias update="sudo apt-get update"
+alias whatip="curl http://icanhazip.com"
+alias xampp="sudo python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"
+alias lamp="cd /opt/lampp/htdocs"
+alias apt="sudo apt-get install"
+alias uwifi="wicd-gtk"
+alias serv="cd /var/www"
+alias ureapache="sudo systemctl restart apache2"
+
+# new
+alias vrc='vim ~/.vimrc'
+alias ww='python ~/welcome.py'
+alias hi='mpg123 ~/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
+
+# openbox
+alias tint='vv ~/.config/tint2/tint2rc'
+alias stopit='killall mpg123'
+alias kil='kill -9'
+alias term='vim ~/.config/terminator/config'
+
+# general
+alias xfce='exec xfce4-session'
+
+alias xl='xrandr --output VGA-0 --rotate left'
+alias xn='xrandr --output VGA-0 --rotate normal' 
+
+
+alias aptr='sudo apt-get remove'
+alias dp='sudo dpkg -i'
+alias up='sudo apt-get update'
+alias upg='sudo apt-get upgrade'
+
+alias mchef='/home/riddle/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
+alias lock='gnome-screensaver-command -l'
+
+alias au='ps aux | grep -i'
+alias pic='scrot -s /home/riddle/Screenshots/screenshot-%F-%H%M%S.png'
+
+alias mig='pmp makemigrations && pmp migrate'
 

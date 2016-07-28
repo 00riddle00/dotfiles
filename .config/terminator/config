@@ -1,0 +1,72 @@
+[global_config]
+  always_split_with_profile = True
+  title_transmit_bg_color = "#d30102"
+  suppress_multiple_term_dialog = True
+  handle_size = 1
+  focus = system
+[keybindings]
+  close_window = <Primary><Shift>p
+  switch_to_tab_10 = <Alt>minus
+  go_right = <Alt>l
+  new_tab = <Primary>t
+  group_all = F9
+  split_vert = <Super>h
+  prev_tab = <Primary>q
+  switch_to_tab_6 = Menu
+  switch_to_tab_7 = Menu
+  switch_to_tab_4 = Menu
+  switch_to_tab_5 = Menu
+  cycle_next = Menu
+  switch_to_tab_3 = Menu
+  broadcast_off = <Alt>backslash
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = Menu
+  switch_to_tab_8 = Menu
+  switch_to_tab_9 = Menu
+  insert_padded = Menu
+  close_term = <Primary><Shift>Insert
+  go_left = <Alt>h
+  reset = Menu
+  go_up = <Alt>k
+  next_tab = <Primary>w
+  split_horiz = <Super>v
+  go_down = <Alt>j
+  edit_window_title = <Super>r
+[profiles]
+  [[default]]
+    background_image = None
+    font = Impact Condensed 10
+  [[solarized-dark]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_image = None
+    use_system_font = False
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    show_titlebar = False
+    font = Source Code Pro Medium 10
+    background_color = "#002b36"
+  [[matrix]]
+    scrollbar_position = hidden
+    background_image = None
+    palette = "#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c"
+    cursor_color = "#83f52c"
+    foreground_color = "#1ecc4a"
+    show_titlebar = False
+  [[solarized-light]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_color = "#eee8d5"
+    background_image = None
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = solarized-dark
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      profile = solarized-dark
+      type = Window
+[plugins]

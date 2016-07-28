@@ -1,0 +1,29 @@
+[1]
+Description=Window settings for firefox
+clientmachine=tomas-osos
+clientmachinematch=0
+noborder=false
+noborderrule=2
+title=Mozilla Firefox
+titlematch=0
+types=1
+windowrole=browser
+windowrolematch=1
+wmclass=navigator firefox
+wmclasscomplete=true
+wmclassmatch=1
+
+[2]
+Description=(Default) Disable focus stealing prevention for XV
+fsplevel=0
+fsplevelrule=2
+types=4294967295
+wmclass=^xv .*
+wmclasscomplete=true
+wmclassmatch=3
+
+[Directories]
+dir_config[$d]
+
+[General]
+count=2

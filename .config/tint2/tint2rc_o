@@ -1,0 +1,97 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+#rounded = 3
+#border_width = 1
+#background_color = #000000 20
+#border_color = #000000 20
+
+rounded = 10
+border_width = 1
+background_color = #000000 65
+border_color = #29D0D2 30
+
+#rounded = 3
+#border_width = 0
+#background_color = #175455 60
+#border_color = #ffffff 70
+
+#rounded = 3
+#border_width = 0
+#background_color = #175455 18
+#border_color = #ffffff 70
+
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = all
+panel_position = left center vertical
+panel_size = 95% 35
+panel_margin = 1 1
+panel_padding = 15 3 15
+font_shadow = 0
+panel_background_id = 1
+wm_menu = 0
+panel_items = LTCBS
+
+
+
+# Launchers
+launcher_icon_theme = Faenza
+launcher_padding = 5 0 10
+launcher_background_id = 9
+launcher_icon_size = 85
+
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = multi_desktop
+taskbar_padding = 0 0 0
+taskbar_background_id = 2
+
+#---------------------------------------------
+# TASK
+#---------------------------------------------
+task_icon = 10
+task_text = 0
+task_width = 25
+task_centered = 0
+task_padding = 0 2
+task_font = kiloji 10
+task_font_color = #333333 80
+task_active_font_color = #333333 100
+task_background_id = 3
+task_active_background_id = 3
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray_padding = 2 2 2
+systray_background_id =2
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+#time1_format = %H:%M
+#time1_font = sans 8
+#time2_format = %A %d %B
+#time2_font = sans 6
+#clock_font_color = #ffffff 76
+#clock_padding = 4 4
+#clock_background_id = 1
+#clock_lclick_command = /usr/bin/gsimplecal
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = close
+mouse_right = none
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
+

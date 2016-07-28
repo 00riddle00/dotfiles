@@ -1,13 +1,8 @@
 [user]
-	email = tomasgiedraitis@gmail.com
-	name = 00riddle00
+	email = tomas.g@osos.lt
+	name = Tomas Giedraitis
 [core]
 	editor = vim
-[color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
 [credential]
 	helper = cache --timeout=3600
 [merge]
@@ -21,15 +16,3 @@
         graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
   # Pretty log
         lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-
-    d = diff
-    l = log
-    s = status
-    c = commit
-    p = push
-    a = add
-    aa = add -all
-    r = rm
-    b = branch
-    ch = checkout
-    rso = remote show origin
