@@ -18,6 +18,7 @@ export PS1="\[\e[1;32m\][\u@\W]\[\e[1;36m\]$\[\033[0m\] "
 export PAGER=less
 
 setxkbmap -option grp:alt_shift_toggle us,lt
+#setxkbmap -option grp:alt_shift_toggle us,lt,il
 setxkbmap -option caps:escape
 
 archey 
@@ -54,6 +55,11 @@ alias tar='tar -xvf'
 alias q='exit'
 alias re='reboot'
 alias off='poweroff'
+
+# make cmd aliases
+# TODO check if not already exists 
+# TODO add cmd to change exist. alias
+function ma() { echo alias $1="'$2'" >> ~/.bashrc; bash; }
 
 # combine cd & ls
 function cdd() { cd $1; ls;}
@@ -110,8 +116,8 @@ alias chrome='google-chrome-stable'
 alias fox='firefox'
 alias v='vim'
 alias vv='sudo vim'
-alias t='dolphin4 ./'
-alias tt='sudo dolphin4 ./'
+alias tt='dolphin4 ./'
+alias rtt='sudo dolphin4 ./'
 alias play='vlc'
 alias t='thunar'
 alias ag='autokey-gtk'
@@ -224,8 +230,8 @@ alias ya='yaourt --noconfirm'
 
 alias no='killall mpg123'
 
-alias matrix='./shell_scripts/matrixon.sh'
-alias matrixof='./shell_scripts/matrixof.sh'
+alias matrix='~/.riddle-sh-scripts/matrixon.sh'
+alias reality='~/.riddle-sh-scripts/matrixof.sh'
 
 alias r='ranger'
 alias vf='vifm'
@@ -271,7 +277,7 @@ alias xn='xrandr --output VGA-0 --rotate normal'
 
 alias aptr='sudo apt-get remove'
 alias dp='sudo dpkg -i'
-alias up='sudo apt-get update'
+#alias up='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
 
 alias mchef='/home/riddle/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
@@ -281,4 +287,19 @@ alias au='ps aux | grep -i'
 alias pic='scrot -s /home/riddle/Screenshots/screenshot-%F-%H%M%S.png'
 
 alias mig='pmp makemigrations && pmp migrate'
+
+alias home='xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1'
+alias il='feh ~/main/il.png'
+
+alias tm='conky -c .conky/archconky &'
+
+
+alias sca='cd ~/VirtualBox\ VMs/scard-api'
+alias libre='libreoffice'
+alias tmp3='cd ~/tmp3/'
+alias show='mirage'
+alias yaup='yaourt -Syu --aur --noconfirm'
+
+
+
 

@@ -395,10 +395,10 @@
         <command>wmctrl -a postman</command>
       </action>
     </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        <command>/home/riddle/shell_scripts/clion.sh</command>
-      </action>
+    <keybind key="W-m">
+        <action name="Execute">
+            <command>/home/riddle/.riddle-sh-scripts/clion.sh</command>
+        </action>
     </keybind>
     <keybind key="W-F12">
       <action name="Execute">
@@ -448,18 +448,23 @@
     <!--
     <keybind key="Escape">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/gmrun.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/gmrun.sh</command>
       </action>
     </keybind>
     -->
     <keybind key="W-p">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/pycharm.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/pycharm.sh</command>
       </action>
     </keybind>
-    <keybind key="W-f">
+    <!--<keybind key="W-f">-->
+    <!--<action name="Execute">-->
+    <!--<command>/home/riddle/.riddle-sh-scripts/filezilla.sh</command>-->
+    <!--</action>-->
+    <!--</keybind>-->
+    <keybind key="W-z">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/filezilla.sh</command>
+        <command>xterm</command>
       </action>
     </keybind>
     <!--
@@ -471,24 +476,24 @@
     -->
     <keybind key="F1">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/chrome.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/chrome.sh</command>
       </action>
     </keybind>
     <!--
     <keybind key="F1">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/vim.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/vim.sh</command>
       </action>
     </keybind>
     -->
     <keybind key="F2">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/shell1.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/shell1.sh</command>
       </action>
     </keybind>
     <keybind key="A-F4">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/tabs.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/tabs.sh</command>
       </action>
     </keybind>
     <keybind key="W-a">
@@ -503,7 +508,7 @@
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/calc.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/calc.sh</command>
       </action>
     </keybind>
     <keybind key="F6">
@@ -513,7 +518,7 @@
     </keybind>
     <keybind key="F4">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/firefox.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/firefox.sh</command>
       </action>
     </keybind>
     <keybind key="W-n">
@@ -548,28 +553,29 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>/home/riddle/shell_scripts/dolphin.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/dolphin.sh</command>
       </action>
     </keybind>
-
-    <keybind key="W-g">
-      <action name="Execute">
-        <command>/home/riddle/shell_scripts/gitkraken.sh</command>
-      </action>
-    </keybind>
-
-    <keybind key="W-l">
-      <action name="Execute">
-        <command>/home/riddle/shell_scripts/libre.sh</command>
-      </action>
-    </keybind>
-    <!--
     <keybind key="A-e">
       <action name="Execute">
         <command>dolphin4</command>
       </action>
     </keybind>
-    -->
+    <keybind key="W-g">
+      <action name="Execute">
+        <command>/home/riddle/.riddle-sh-scripts/smartgit.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>/home/riddle/.riddle-sh-scripts/libre.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>wmctrl -a "Developer Tools"</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

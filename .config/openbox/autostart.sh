@@ -12,11 +12,12 @@
 # HDMI left VGA 90
 # xrandr --output VGA-0 --auto --rotate left --output HDMI-0 --auto --left-of VGA-0
 
-# HDMI left eDP  (OSOS)
-# xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1
+
+# HDMI left eDP  (HOME)
+xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1
 
 # OSOS 2 screens atomik
-xrandr --output HDMI-1 --auto --output DVI-D-1 --auto --right-of HDMI-1
+# xrandr --output HDMI-1 --auto --output DVI-D-1 --auto --right-of HDMI-1
 
  # VGA left eDP (Home)
 # xrandr --output VGA-1 --auto --output eDP-1 --auto --right-of VGA-1
@@ -28,5 +29,6 @@ xrandr --output HDMI-1 --auto --output DVI-D-1 --auto --right-of HDMI-1
 
 autokey-gtk &
 gnome-screensaver & 
-feh --bg-scale ~/candy/debian3.png &
+feh --bg-scale ~/.riddle-candy/wallpapers/arch.jpg &
+#feh --bg-scale ~/.riddle-candy/wallpapers/black-wallpaper.jpg &
 conky -c .conky/archconky &
