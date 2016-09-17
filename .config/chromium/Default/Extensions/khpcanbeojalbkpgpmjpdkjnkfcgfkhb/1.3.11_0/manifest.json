@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": "wheel.png"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "main.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Make scroll behavior smooth, ease-in-out manner, customizable with dynamically plotted curve. With edge bounce feature like iOS.",
+   "icons": {
+      "128": "wheel.png",
+      "48": "wheel.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAxYiX0LqH1RY3T9uCtPgfhziMnukqMqu9njbMpowy9HHCejXSyHONM5SICnPnQAmST7Xr6my0QDES9TXXnjL3S7RroUr7zcdGfKZciCs/dO8cKn+hVsvxOl/xYthHnO9d+WSTf/rfgyczBowTOSGY9VXCJ0J9NQKb4B0sIzG6dwIDAQAB",
+   "manifest_version": 2,
+   "name": "Chromium Wheel Smooth Scroller",
+   "options_page": "options.html",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3.11",
+   "web_accessible_resources": [ "edgebgbot.png", "edgebgtop.png" ]
+}

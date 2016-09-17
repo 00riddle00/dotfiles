@@ -1,0 +1,31 @@
+{
+    "sendMode": "kb",
+    "showInTrayMenu": false,
+    "type": "phrase",
+    "modes": [
+        3
+    ],
+    "description": "Previous tab",
+    "usageCount": 10,
+    "hotkey": {
+        "hotKey": "q",
+        "modifiers": [
+            "<ctrl>"
+        ]
+    },
+    "matchCase": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "wordChars": "[\\w]",
+        "backspace": true,
+        "triggerInside": false,
+        "ignoreCase": false,
+        "immediate": false
+    },
+    "prompt": false,
+    "filter": {
+        "regex": ".*Google.*Chrome",
+        "isRecursive": false
+    },
+    "omitTrigger": false
+}

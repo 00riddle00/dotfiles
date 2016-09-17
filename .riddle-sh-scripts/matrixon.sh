@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 sed -i 's/.* profile.*/      profile = matrix/' ~/.config/terminator/config &
 killall terminator &
 thunar &

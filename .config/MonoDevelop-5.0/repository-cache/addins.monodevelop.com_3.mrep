@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repository xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>MonoDevelop Add-in Repository</Name>
+  <Url>http://addins.monodevelop.com/Stable/Linux/5.10.1/root.mrep</Url>
+  <Addin>
+    <Url>DavesAddin.DavesAddin-1.3.mpack</Url>
+    <Addin>
+      <Id>DavesAddin</Id>
+      <Namespace>DavesAddin</Namespace>
+      <Name>Daves Addins</Name>
+      <Version>1.3</Version>
+      <BaseVersion />
+      <Author>Dave Humphreys</Author>
+      <Copyright>Dave Humphreys</Copyright>
+      <Url>https://github.com/newky2k/daves-monodevelop-addins</Url>
+      <Description>Daves Addin.  Extensions for MonoDevelop/Xamarin Studio to improve productivity. Edit/Folding/Collapse to Definitions to collapse the source code(Ctrl-M-O). Solution &gt; Update Versions to Update Soltuion, Project, AssemblyInfo, Android, iOS and Mac Application versions numbers in one go</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.DesignerSupport</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.SourceEditor2</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">21173</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>Eto.Addin.XamarinStudio-2.2.0.2.mpack</Url>
+    <Addin>
+      <Id>XamarinStudio</Id>
+      <Namespace>Eto.Addin</Namespace>
+      <Name>Eto.Forms Support Addin</Name>
+      <Version>2.2.0.2</Version>
+      <BaseVersion />
+      <Author>Curtis Wensley</Author>
+      <Copyright>Curtis Wensley</Copyright>
+      <Url />
+      <Description>Addin to easily start developing with the Eto.Forms cross platform UI framework.
+
+Provides:
+
+- File and Project templates for C#, VB.NET, and F#.
+- Autocomplete for the Xaml view editor.
+- Xaml, Json, and Code based live form preview.</Description>
+      <Category>Eto.Forms</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">9188621</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MaterialIconsGenerator.material-icons-generator-plugin-1.4.mpack</Url>
+    <Addin>
+      <Id>material-icons-generator-plugin</Id>
+      <Namespace>MaterialIconsGenerator</Namespace>
+      <Name>Material icons generator</Name>
+      <Version>1.4</Version>
+      <BaseVersion />
+      <Author>Nika Nikabadze</Author>
+      <Copyright>Nika</Copyright>
+      <Url>https://github.com/interisti/material-icons-generator-plugin</Url>
+      <Description>This plugin help you to set material design icons to your Android project.</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">184713</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.AddinMaker-1.2.1.mpack</Url>
+    <Addin>
+      <Id>AddinMaker</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>Addin Maker</Name>
+      <Version>1.2.1</Version>
+      <BaseVersion />
+      <Author>Michael Hutchinson</Author>
+      <Copyright>Xamarin Inc.</Copyright>
+      <Url>http://github.com/mhutch/MonoDevelop.AddinMaker</Url>
+      <Description>Makes it easy to create and edit addins</Description>
+      <Category>Addin Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.7</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.7</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Xml</AddinId>
+          <Version>5.7</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.DesignerSupport</AddinId>
+          <Version>5.7</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">30649</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.D-2.14.5.mpack</Url>
+    <Addin>
+      <Id>D</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>D Language Binding</Name>
+      <Version>2.14.5</Version>
+      <BaseVersion />
+      <Author>Alexander Bothe</Author>
+      <Copyright>Alexander Bothe</Copyright>
+      <Url>http://mono-d.alexanderbothe.com</Url>
+      <Description>D Language Binding</Description>
+      <Category>Language bindings</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">643282</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.FSharpBinding-5.5.0.mpack</Url>
+    <Addin>
+      <Id>FSharpBinding</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>F# Language Binding</Name>
+      <Version>5.5.0</Version>
+      <BaseVersion />
+      <Author>F# Software Foundation (fsharp.org)</Author>
+      <Copyright>F# Software Foundation (fsharp.org)</Copyright>
+      <Url>http://github.com/fsharp/fsharpbinding</Url>
+      <Description>F# Language Binding (for Xamarin Studio/MonoDevelop 5.5). Install F# before using, see http://fsharp.org</Description>
+      <Category>Language bindings</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">5650454</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.Gendarme-0.5.0.mpack</Url>
+    <Addin>
+      <Id>MonoDevelop.Gendarme</Id>
+      <Namespace />
+      <Name>Gendarme Support</Name>
+      <Version>0.5.0</Version>
+      <BaseVersion />
+      <Author>Anas EL HAJJAJI</Author>
+      <Copyright>APL 2.0</Copyright>
+      <Url>https://github.com/anaselhajjaji/MonoDevelop.Gendarme</Url>
+      <Description>Provides gendarme support to MonoDevelop</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">623666</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.Java.Mimetypes-1.0.mpack</Url>
+    <Addin>
+      <Id>Java.Mimetypes</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>Java Mimetypes</Name>
+      <Version>1.0</Version>
+      <BaseVersion />
+      <Author>Julian Adams</Author>
+      <Copyright>MIT/X11</Copyright>
+      <Url>http://www.monodevelop.com</Url>
+      <Description>Adds x-java mimetype to .java files to enable syntax coloring</Description>
+      <Category>Source Editor Extensions</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">1828</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.StyleCop-1.0.1.9.mpack</Url>
+    <Addin>
+      <Id>StyleCop</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>StyleCop Support</Name>
+      <Version>1.0.1.9</Version>
+      <BaseVersion />
+      <Author>Alexander Jochum</Author>
+      <Copyright>APL 2.0</Copyright>
+      <Url />
+      <Description>Provides StyleCop support to MonoDevelop</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">2404453</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.Tizen.MonoDevelop.Tizen-1.0.1.mpack</Url>
+    <Addin>
+      <Id>MonoDevelop.Tizen</Id>
+      <Namespace>MonoDevelop.Tizen</Namespace>
+      <Name>Tizen development</Name>
+      <Version>1.0.1</Version>
+      <BaseVersion />
+      <Author>Kitsilano Software Inc., Kitsilano Software Inc.</Author>
+      <Copyright>Copyright (c) 2014 Kitsilano Software Inc.</Copyright>
+      <Url />
+      <Description>Support for developing and deploying LGPLv2-compliant applications using Mono for Tizen. If your application is not LGPLv2-compliant then you will need to purchase a commercial license from Xamarin. See http://xamarin.com/licensing.</Description>
+      <Category>Mobile Development</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">43538</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.Unitay.Mimetypes-1.0.mpack</Url>
+    <Addin>
+      <Id>Unitay.Mimetypes</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>Unity Mimetypes</Name>
+      <Version>1.0</Version>
+      <BaseVersion />
+      <Author>Julian Adams</Author>
+      <Copyright>MIT/X11</Copyright>
+      <Url>http://www.monodevelop.com</Url>
+      <Description>Adds CG/HLSL mimetype to .shader and .cginc files to enable syntax coloring</Description>
+      <Category>Source Editor Extensions</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">1874</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.VersionControl.Mercurial-1.0.mpack</Url>
+    <Addin>
+      <Id>VersionControl.Mercurial</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>Mercurial support</Name>
+      <Version>1.0</Version>
+      <BaseVersion />
+      <Author>Svetoslav Karasev</Author>
+      <Copyright>(c) 2015 Karasev Svetoslav</Copyright>
+      <Url>https://github.com/svedm/monodevelop-hg-addin</Url>
+      <Description>Mercurial support for the Version Control Add-in</Description>
+      <Category>Version Control</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.VersionControl</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>VersionControl</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">32821</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.WakaTime-1.0.6.mpack</Url>
+    <Addin>
+      <Id>WakaTime</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>WakaTime</Name>
+      <Version>1.0.6</Version>
+      <BaseVersion />
+      <Author>Zhmayev Yaroslav (salaros)</Author>
+      <Copyright>MIT</Copyright>
+      <Url>https://github.com/salaros/monodevelop-wakatime</Url>
+      <Description>WakaTime is a productivity and time tracking tool for programmers. Once the WakaTime plugin is installed, you get a dashboard with reports about your programming by time, language, project, and branch.</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">193380</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.WebSharper-3.5.14.0.mpack</Url>
+    <Addin>
+      <Id>WebSharper</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>WebSharper</Name>
+      <Version>3.5.14.0</Version>
+      <BaseVersion />
+      <Author>IntelliFactory</Author>
+      <Copyright>Copyright (c) 2008-2014 IntelliFactory</Copyright>
+      <Url />
+      <Description>Provides WebSharper support for MonoDevelop and Xamarin Studio</Description>
+      <Category>Web Development</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">679611</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.XUnit.MonoDevelop.XUnit2-0.5.3.mpack</Url>
+    <Addin>
+      <Id>MonoDevelop.XUnit2</Id>
+      <Namespace>MonoDevelop.XUnit</Namespace>
+      <Name>xUnit.NET 2 testing framework support</Name>
+      <Version>0.6.6</Version>
+      <BaseVersion />
+      <Author>Sergey Khabibullin/Lex Li/Zheng Wang</Author>
+      <Copyright>MIT/X11</Copyright>
+      <Url />
+      <Description>Integrates xUnit.NET 2 into the MonoDevelop / Xamarin Studio IDE.</Description>
+      <Category>Testing</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">339230</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.XUnit.MonoDevelop.XUnit2-0.5.5.mpack</Url>
+    <Addin>
+      <Id>MonoDevelop.XUnit2</Id>
+      <Namespace>MonoDevelop.XUnit</Namespace>
+      <Name>xUnit.NET 2 testing framework support</Name>
+      <Version>0.5.5</Version>
+      <BaseVersion />
+      <Author>Sergey Khabibullin/Lex Li</Author>
+      <Copyright>MIT X11</Copyright>
+      <Url />
+      <Description>Integrates xUnit.NET 2 into the MonoDevelop / Xamarin Studio IDE.</Description>
+      <Category>Testing</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.NUnit</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">79156</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.XUnit.XUnit-0.5.mpack</Url>
+    <Addin>
+      <Id>MonoDevelop.XUnit2</Id>
+      <Namespace>MonoDevelop.XUnit</Namespace>
+      <Name>xUnit.NET 2 testing framework support</Name>
+      <Version>0.6.6</Version>
+      <BaseVersion />
+      <Author>Sergey Khabibullin/Lex Li/Zheng Wang</Author>
+      <Copyright>MIT/X11</Copyright>
+      <Url />
+      <Description>Integrates xUnit.NET 2 into the MonoDevelop / Xamarin Studio IDE.</Description>
+      <Category>Testing</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">339230</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.Xwt-1.1.2.mpack</Url>
+    <Addin>
+      <Id>Xwt</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>Xwt Project Support</Name>
+      <Version>1.1.2</Version>
+      <BaseVersion />
+      <Author>Vsevolod Kukol</Author>
+      <Copyright>Vsevolod Kukol</Copyright>
+      <Url>https://github.com/sevoku/MonoDevelop.Xwt.git</Url>
+      <Description>Adds Xwt cross-platform UI project and file templates, including executable projects for supported Xwt backends and automatic platform detection.</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Debugger</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.VersionControl.Git</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.VersionControl</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.9</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">675815</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>Olo.BuildTools.Other-1.0.mpack</Url>
+    <Addin>
+      <Id>Other</Id>
+      <Namespace>Olo.BuildTools</Namespace>
+      <Name>Olo.BuildTools</Name>
+      <Version>1.0</Version>
+      <BaseVersion />
+      <Author>Olo</Author>
+      <Copyright>2014 Olo</Copyright>
+      <Url>http://github.com/ololabs/xs-addins</Url>
+      <Description>Some tools used as part of the build process at Olo</Description>
+      <Category />
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">2708</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>ServiceStackXS.ServiceStackXS-0.4.mpack</Url>
+    <Addin>
+      <Id>ServiceStackXS</Id>
+      <Namespace>ServiceStackXS</Namespace>
+      <Name>ServiceStackXS</Name>
+      <Version>0.5</Version>
+      <BaseVersion />
+      <Author>ServiceStack</Author>
+      <Copyright>ServiceStack</Copyright>
+      <Url>https://github.com/ServiceStack/ServiceStackVS</Url>
+      <Description>An extension to work with the ServiceStack framework.</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies />
+      <OptionalDependencies />
+      <Properties>
+        <Property name="Name">ServiceStackXS</Property>
+        <Property name="Description">An extension to work with the ServiceStack framework.</Property>
+        <Property name="Author">ServiceStack</Property>
+        <Property name="Url">https://github.com/ServiceStack/ServiceStackVS</Property>
+        <Property name="Icon32">_addin_files/4a2b29b2.png</Property>
+        <Property name="DownloadSize">630084</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>ShowInGithub.ShowInGithub-1.0.2.mpack</Url>
+    <Addin>
+      <Id>ShowInGithub</Id>
+      <Namespace>ShowInGithub</Namespace>
+      <Name>Show in Github</Name>
+      <Version>1.0.3</Version>
+      <BaseVersion />
+      <Author>Lluis Sanchez Gual</Author>
+      <Copyright>Xamarin, Inc (http://www.xamarin.com)</Copyright>
+      <Url />
+      <Description>Adds a command to the text editor context menu which will jump to the current file and line in Github</Description>
+      <Category>Version Control</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>6.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>6.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.VersionControl</AddinId>
+          <Version>6.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.SourceEditor2</AddinId>
+          <Version>6.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">6979</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>SpecialCopy.JSONCopy-1.0.2.mpack</Url>
+    <Addin>
+      <Id>JSONCopy</Id>
+      <Namespace>SpecialCopy</Namespace>
+      <Name>JSON Copy</Name>
+      <Version>1.0.2</Version>
+      <BaseVersion />
+      <Author>Prashant Cholachagudda</Author>
+      <Copyright>Prashant Cholachagudda</Copyright>
+      <Url />
+      <Description>Paste JSON as C# class</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Ide</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>::MonoDevelop.Core</AddinId>
+          <Version>5.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">282325</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+</Repository>

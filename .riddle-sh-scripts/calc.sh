@@ -1,11 +1,11 @@
 #!/bin/sh
 
-open="qalculate"
+open="qalculate-gtk"
 focus="qalculate"
 
  
 # no app started, so start one
-if [ -z  "`wmctrl -lx | grep qalculate`" ]; then
+if [ -z  "`wmctrl -lx | grep $focus`" ]; then
     $open &
 # app is opened, so focus on it
 else

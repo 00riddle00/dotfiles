@@ -6,6 +6,7 @@ if [ $(tty) == "/dev/tty1" ]; then
 startx
 fi
 
+
 # Turn off Touchpad 
 synclient TouchpadOff=1
 
@@ -64,6 +65,11 @@ function ma() { echo alias $1="'$2'" >> ~/.bashrc; bash; }
 # combine cd & ls
 function cdd() { cd $1; ls;}
 
+# find command in history
+function his() { history | grep $1; }
+
+
+
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -78,6 +84,7 @@ alias u2='cd /home/riddle/CS/2_semester/programavimas_c/code/U2'
 alias dw='cd /home/riddle/Downloads/'
 alias srv='cd /srv/http/'
 alias del='cd ~/deluge'
+alias h='history'
 
 # pacman
 alias pacs='sudo pacman -S' 
@@ -217,9 +224,11 @@ alias ads='cd /home/riddle/CS/2_semester/ads'
 alias gpo='git push origin tomo_pakeitimai'
 
 alias tmp='cd ~/tmp1'
+alias tmp1='tmp'
+alias tmp2='cd ~/tmp2'
+alias tmp3='cd ~/tmp3'
 alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
-alias tmp2='cd ~/tmp2'
 
 
 alias reb='make rebuild'
@@ -293,6 +302,7 @@ alias il='feh ~/main/il.png'
 
 alias tm='conky -c .conky/archconky &'
 
+alias sub='/usr/bin/subl'
 
 alias sca='cd ~/VirtualBox\ VMs/scard-api'
 alias libre='libreoffice'
@@ -300,6 +310,9 @@ alias tmp3='cd ~/tmp3/'
 alias show='mirage'
 alias yaup='yaourt -Syu --aur --noconfirm'
 
+alias scard='cd ~/osos/scard/'
 
+alias um='sudo umount /dev/sdb1'
+alias fl='sudo fdisk -l'
 
-
+alias main='cd ~/main'
