@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>2</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -287,6 +287,7 @@
     <keybind key="C-W-Down">
       <action name="MoveToEdgeSouth"/>
     </keybind>
+
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
@@ -295,6 +296,7 @@
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
+
     <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
@@ -303,6 +305,7 @@
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
+
     <keybind key="W-z">
       <action name="Iconify"/>
     </keybind>
@@ -343,6 +346,8 @@
         </finalactions>
       </action>
     </keybind>
+
+    <!-- Keybindings for window switching (alternative) -->
     <keybind key="W-j">
       <action name="NextWindow">
         <bar>no</bar>
@@ -363,6 +368,11 @@
         </finalactions>
       </action>
     </keybind>
+ 
+
+
+
+
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
@@ -392,13 +402,13 @@
     </keybind>
     <keybind key="W-q">
       <action name="Execute">
-        <command>wmctrl -a postman</command>
+        <command>/home/riddle/.riddle-sh-scripts/postman.sh</command>
       </action>
     </keybind>
     <keybind key="W-m">
-        <action name="Execute">
-            <command>/home/riddle/.riddle-sh-scripts/clion.sh</command>
-        </action>
+      <action name="Execute">
+        <command>/home/riddle/.riddle-sh-scripts/maxima.sh</command>
+      </action>
     </keybind>
     <keybind key="W-F12">
       <action name="Execute">
@@ -452,16 +462,25 @@
       </action>
     </keybind>
     -->
-    <keybind key="W-p">
+
+    <!--<keybind key="W-p">-->
+      <!--<action name="Execute">-->
+        <!--<command>/home/riddle/.riddle-sh-scripts/pycharm.sh</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+
+    <keybind key="W-i">
       <action name="Execute">
-        <command>/home/riddle/.riddle-sh-scripts/pycharm.sh</command>
+        <command>/home/riddle/.riddle-sh-scripts/idea.sh</command>
       </action>
     </keybind>
-    <!--<keybind key="W-f">-->
-    <!--<action name="Execute">-->
-    <!--<command>/home/riddle/.riddle-sh-scripts/filezilla.sh</command>-->
-    <!--</action>-->
-    <!--</keybind>-->
+
+    <keybind key="W-f">
+      <action name="Execute">
+        <command>/home/riddle/.riddle-sh-scripts/filezilla.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-z">
       <action name="Execute">
         <command>xterm</command>
@@ -498,12 +517,12 @@
     </keybind>
     <keybind key="W-a">
       <action name="Execute">
-        <command>audacious</command>
+        <command>/home/riddle/.riddle-sh-scripts/lang.sh</command>
       </action>
     </keybind>
-    <keybind key="banana">
+    <keybind key="A-a">
       <action name="Execute">
-        <command>audacious -r</command>
+        <command>/home/riddle/.riddle-sh-scripts/lang_many.sh</command>
       </action>
     </keybind>
     <keybind key="F10">
@@ -523,17 +542,12 @@
     </keybind>
     <keybind key="W-n">
       <action name="Execute">
-        <command>killall -SIGUSR2 openbox</command>
+        <command>google-chrome-stable --profile-directory=Default --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki</command>
       </action>
     </keybind>
     <keybind key="F3">
       <action name="Execute">
         <command>subl</command>
-      </action>
-    </keybind>
-    <keybind key="Insert">
-      <action name="Execute">
-        <command>obconf</command>
       </action>
     </keybind>
     <keybind key="F12">
@@ -558,7 +572,7 @@
     </keybind>
     <keybind key="A-e">
       <action name="Execute">
-        <command>dolphin4</command>
+        <command>dolphin</command>
       </action>
     </keybind>
     <keybind key="W-g">
@@ -566,8 +580,14 @@
         <command>/home/riddle/.riddle-sh-scripts/smartgit.sh</command>
       </action>
     </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>/home/riddle/.riddle-sh-scripts/gimp.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-l">
       <action name="Execute">
+        <!--<command>thunar</command>-->
         <command>/home/riddle/.riddle-sh-scripts/libre.sh</command>
       </action>
     </keybind>
@@ -576,6 +596,16 @@
         <command>wmctrl -a "Developer Tools"</command>
       </action>
     </keybind>
+    <!--<keybind key="W-v">-->
+    <!--<action name="Execute">-->
+    <!--<command>wmctrl -a "Developer Tools"</command>-->
+    <!--</action>-->
+    <!--</keybind>-->
+    <!--<keybind key="A-c">-->
+    <!--<action name="Execute">-->
+    <!--<command>/home/riddle/.riddle-sh-scripts/clion.sh</command>-->
+    <!--</action>-->
+    <!--</keybind>-->
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -968,8 +998,6 @@
     # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
 
-    <decor>no</decor>
-    # enable or disable window decorations
 
     <shade>no</shade>
     # make the window shaded when it appears, or not

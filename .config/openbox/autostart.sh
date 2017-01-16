@@ -27,8 +27,10 @@ xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1
 # book
  #xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1
 
-autokey-gtk &
+#autokey-gtk &
 gnome-screensaver & 
-feh --bg-scale ~/.riddle-candy/wallpapers/arch.jpg &
-#feh --bg-scale ~/.riddle-candy/wallpapers/black-wallpaper.jpg &
+#feh --bg-scale ~/.riddle-candy/wallpapers/linux.png &
+#feh --bg-scale ~/.riddle-candy/wallpapers/arch.jpg &
+feh --bg-scale ~/.riddle-candy/wallpapers/black_arch.jpg &
 conky -c .conky/archconky &
+nohup autokey-gtk & disown

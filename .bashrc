@@ -2,13 +2,13 @@ if [ -n "$DISPLAY" ]; then
   xset b off
 fi
 
-if [ $(tty) == "/dev/tty1" ]; then
-startx
-fi
+#if [ $(tty) == "/dev/tty1" ]; then
+#startx
+#fi
 
 
 # Turn off Touchpad 
-synclient TouchpadOff=1
+#synclient TouchpadOff=1
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -18,12 +18,17 @@ export TERM=terminator
 export PS1="\[\e[1;32m\][\u@\W]\[\e[1;36m\]$\[\033[0m\] "
 export PAGER=less
 
-setxkbmap -option grp:alt_shift_toggle us,lt
-#setxkbmap -option grp:alt_shift_toggle us,lt,il
+#eval $(thefuck --alias) 
+
+setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
+#setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il
 setxkbmap -option caps:escape
 
-archey 
+#archey && fortune | cowsay
 #screenfetch
+#archey
+#quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
+
 
 
 eval $(dircolors ~/.dircolors)
@@ -40,8 +45,10 @@ alias letr='s chmod -R 777'
 alias ls='ls --color=auto'
 alias lsr='ls -R'
 alias lf='lsblk -f'
-alias lsl='ls -l'
 alias lsa='ls -a'
+alias lsl='ls -l'
+alias lsla='ls -al'
+alias lsal='ls -al'
 alias lc='ls | cat'
 alias cpr='s cp -r'
 alias rmr='s rm -r'
@@ -49,7 +56,10 @@ alias mvr='s mv -r'
 alias grepi='grep -i'
 alias pag='ps aux | grepi'
 alias c='clear'
-alias kil='kill -9'
+#alias c='cd'
+#alias l='ls'
+#alias d='clear'
+alias kil='sudo kill -9'
 alias more='less'
 alias clock='s date +%T -s'
 alias tar='tar -xvf'
@@ -61,6 +71,10 @@ alias off='poweroff'
 # TODO check if not already exists 
 # TODO add cmd to change exist. alias
 function ma() { echo alias $1="'$2'" >> ~/.bashrc; bash; }
+
+function de() { sudo udisks --unmount /dev/$1; }
+
+function op() { nohup $1 & disown;}
 
 # combine cd & ls
 function cdd() { cd $1; ls;}
@@ -96,8 +110,8 @@ alias mps='makepkg -s'
 alias mp='makepkg'
 alias y='yaourt'
 alias what='sudo pacman -Qs'
-alias pl='sudo pacman -Qe'
 alias pld='sudo pacman -Q'
+alias pl='sudo pacman -Qe'
 
 # openbox
 alias openbox='exec openbox-session'
@@ -172,10 +186,10 @@ alias reapache='systemctl restart httpd'
 
 # inet
 alias net='sudo systemctl start dhcpcd@enp9s0.service'
-alias wn='sudo netctl start Namai7'
-alias wr='sudo netctl start Riddle00'
-alias wo='sudo netctl start OSOS5'
-alias wifi='sudo wifi-menu'
+alias wn='sudo netctl start home'
+#alias wr='sudo netctl start Riddle00'
+alias wr='sudo netctl start modem'
+alias wifi='sudo wifi-menu -o'
 alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias pp='ping -c 3 www.google.com'
@@ -185,10 +199,12 @@ alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
 # screen setup
-alias xport='xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
-alias xland='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
-alias xon='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
-alias xof='xrandr --output HDMI-1 --off'
+alias xport='xrandr --output HDMI1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
+alias xland='xrandr --output HDMI1 --auto --rotate normal --output eDP1 --auto --right-of HDMI1'
+alias xexof='xrandr --output HDMI1 --off'
+alias xexon='xrandr --output HDMI1 --auto'
+alias xof='xrandr --output eDP1 --off'
+alias xon='xrandr --output eDP1 --auto'
 
 
 # c lang
@@ -229,6 +245,7 @@ alias tmp2='cd ~/tmp2'
 alias tmp3='cd ~/tmp3'
 alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
+alias dok='cd ~/docker'
 
 
 alias reb='make rebuild'
@@ -274,7 +291,7 @@ alias hi='mpg123 ~/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 # openbox
 alias tint='vv ~/.config/tint2/tint2rc'
 alias stopit='killall mpg123'
-alias kil='kill -9'
+alias kil='sudo kill -9'
 alias term='vim ~/.config/terminator/config'
 
 # general
@@ -316,3 +333,31 @@ alias um='sudo umount /dev/sdb1'
 alias fl='sudo fdisk -l'
 
 alias main='cd ~/main'
+
+alias vi='cd ~/VirtualBox\ VMs/'
+alias viu='cd ~/VirtualBox\ VMs/ && vu'
+alias vis='cd ~/VirtualBox\ VMs/ && vs'
+
+alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
+
+alias auk='/home/riddle/.riddle-sh-scripts/autokey.sh'
+
+
+alias sh='cd ~/.riddle-sh-scripts/'
+alias ne='netctl'
+
+alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
+alias gg='google-chrome-stable'
+alias con='vv ~/.config/terminator/config'
+alias tmp4='cd ~/tmp4'
+alias ur='urxvt'
+alias mk='./make_zip.sh paysera_test'
+alias tb='tail -n 10 ~/.bashrc'
+alias orphans='pacman -Qdt'
+alias orphans2='pacman -Qdtd'
+
+
+
+
+
+
