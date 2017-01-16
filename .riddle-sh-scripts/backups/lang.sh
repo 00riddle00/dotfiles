@@ -7,7 +7,6 @@ h=$Y
 
 xdotool search --name "BOOK" windowactivate --sync mousemove $w $h 
 seq 2 | xargs -Iz xdotool click 1
-xdotool sleep 1
 xdotool key ctrl+c
 
 xdotool search --name "AUDIO" windowactivate --sync mousemove --window %1 750 530 && xdotool click 1

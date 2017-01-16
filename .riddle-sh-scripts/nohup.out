@@ -1,0 +1,4 @@
+/usr/lib/python3.5/site-packages/autokey/gtkapp.py:24: PyGIWarning: Gtk was imported without specifying a version first. Use gi.require_version('Gtk', '3.0') before import to ensure that the right version gets loaded.
+  from gi.repository import Gtk, Gdk, GObject, GLib
+/usr/lib/python3.5/site-packages/autokey/gtkapp.py:24: PyGIWarning: Gtk was imported without specifying a version first. Use gi.require_version('Gtk', '3.0') before import to ensure that the right version gets loaded.
+  from gi.repository import Gtk, Gdk, GObject, GLib

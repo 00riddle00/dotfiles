@@ -1,0 +1,63 @@
+
+###########################
+init
+###########################
+
+dotfiles(pub, priv) + relink +(+/root also) 
+vim config
+dir stucture+dolhpin panel
+mail
+
+
+pkgs::::::
+apt-get install $(grep -vE "^\s*#" filename  | tr "\n" " ")
+
+bzip2
+conky
+emacs
+dolphin
+feh
+filezilla
+fontconfig
+gimp
+git
+gnome-screensaver
+gzip
+htop
+konsole
+lxappearance
+lxappearance-obconf
+libreoffice
+lxc
+mirage
+obconf
+qalculate
+qalculate-gtk
+screenfetch
+scrot
+sudo
+terminator
+thunar
+tmux
+unzip
+vim
+wmctrl
+zip
+
+
+teamviewer
+smargit
+jetbrains
+thunderbird
+sublime
+google-chrome
+
+#########################
+micro
+#########################
+
+dev tools (chrome, fox)
+autokey
+fonts+zoom
+keys (opbox, apps, web)
+

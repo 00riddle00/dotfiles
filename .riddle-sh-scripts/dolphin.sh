@@ -1,7 +1,7 @@
 #!/bin/sh
 
-dolphin_open="dolphin4"
-dolphin_focus="dolphin4"
+dolphin_open="dolphin"
+dolphin_focus="dolphin"
 
  
 # no dolphin started, so start one
