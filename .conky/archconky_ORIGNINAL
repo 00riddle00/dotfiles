@@ -1,0 +1,54 @@
+# "Arch Conky" #
+
+# Default Fonts
+use_xft yes
+xftfont Karat:bold:size=12
+
+override_utf8_locale yes
+text_buffer_size 2048
+
+# Performance Settings
+update_interval 1
+total_run_times 0
+double_buffer yes
+no_buffers yes
+net_avg_samples 2
+
+# Window Settings
+own_window yes
+#own_window_class conky
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,skip_taskbar,sticky,skip_pager
+
+# Window border
+draw_borders no
+draw_shades yes
+
+# Default Color
+default_color E0DFDE
+color1 27f3c6
+#color1 83F52C
+#color1 00CC00
+#color1 1793D1
+
+# Color Title.
+color0 DD3A21
+
+# Size and position
+minimum_size 650 80
+#2 monitors
+#gap_x 500
+#gap_y 0
+#
+#Laptop
+#gap_x 300
+gap_y 0
+
+
+gap_x 2250
+
+alignment top_left
+
+TEXT
+${GOTO 30}${font Karat:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Karat:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}

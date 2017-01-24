@@ -1,0 +1,35 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "b4g_19.png",
+         "38": "b4g_38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Boomerang - Send this page later"
+   },
+   "content_scripts": [ {
+      "js": [ "uninstall_old.js" ],
+      "matches": [ "http://mail.google.com/*", "https://mail.google.com/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "b4g.js" ],
+      "matches": [ "http://mail.google.com/*", "https://mail.google.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Allows you to schedule messages to be sent or returned at a later date.",
+   "icons": {
+      "128": "b4g_128.png",
+      "16": "b4g_16.png",
+      "48": "b4g_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCOOy8sdOfAZSG6yaC04QxPpC4vrGG7rdyfM7kJq9qE2+Uzvbe5XELHCNpatSzoZ6mahMiruq1ToAfaOijZtH3s4BduG6nVNTSI3gcdF+9Bto29a3xN/ySg9ectFMIfopSfkGbfrwtzzk9DHrF0GvoKhOu1p+peHzhMSjSyYRluwIDAQAB",
+   "manifest_version": 2,
+   "name": "Boomerang for Gmail",
+   "permissions": [ "management", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.6"
+}

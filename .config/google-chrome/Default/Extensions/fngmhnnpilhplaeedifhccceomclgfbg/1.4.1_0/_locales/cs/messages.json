@@ -1,0 +1,404 @@
+{
+   "editThis_": {
+      "message": ""
+   },
+   "editThis_AN_adsDescription": {
+      "message": "Zobrazovat nerušivé reklamy na některých stránkách, které procházím."
+   },
+   "editThis_AN_optInDescription": {
+      "message": "Dovolte nám sdílení Vašich údajů při prohlížení. Všechna data jsou anonymní"
+   },
+   "editThis_Alert_deleteAll": {
+      "message": "Smazat všechny cookie z aktuální stránky?"
+   },
+   "editThis_Alert_deleteCookie": {
+      "message": "Smazat cookie"
+   },
+   "editThis_Alert_deleteRule": {
+      "message": "Smazat toto pravidlo"
+   },
+   "editThis_Alert_submitAll": {
+      "message": "Odeslat změnu cookie"
+   },
+   "editThis_Amount": {
+      "message": "Částka"
+   },
+   "editThis_Blocked_Cookies": {
+      "message": "Chráněno"
+   },
+   "editThis_Blocked_Def": {
+      "message": "Pokud chcete programově odstranit cookie při každém jejím vytvoření, přidejte filtr a o nic víc se nestarejte"
+   },
+   "editThis_Charity_Message": {
+      "message": "You will help children in need all over the world, because $1% of the revenues go to"
+   },
+   "editThis_ContextMenu": {
+      "message": "Editovat cookies"
+   },
+   "editThis_Contribute_Bitcoins": {
+      "message": "Contribute in Bitcoins"
+   },
+   "editThis_Contribute_PayPal": {
+      "message": "Contribute with PayPal"
+   },
+   "editThis_Copied_clipboard": {
+      "message": "Cookies byly zkopírovány do schránky"
+   },
+   "editThis_Copy_Cookies": {
+      "message": "Exportovat cookies"
+   },
+   "editThis_Copy_Cookies_Type": {
+      "message": "Vyberte preferovaný exportní formát pro cookies"
+   },
+   "editThis_Details": {
+      "message": "Podrobnosti"
+   },
+   "editThis_Donate": {
+      "message": "Přispět"
+   },
+   "editThis_Donation_Date": {
+      "message": "Datum příspěvku"
+   },
+   "editThis_Encode_Cookie_Value": {
+      "message": "Zakóduj hodnotu cookies (pro každou cookie \u003Ca href=\"http://curl.haxx.se/rfc/cookie_spec.html\">http://curl.haxx.se/rfc/cookie_spec.html\u003C/a>) (Doporučeno)\\n"
+   },
+   "editThis_Flag_Cookie": {
+      "message": "Nahlásit cookie"
+   },
+   "editThis_Flag_CookieWithDomain": {
+      "message": "Block by domain"
+   },
+   "editThis_Flag_CookieWithName": {
+      "message": "Block by name"
+   },
+   "editThis_Flag_CookieWithValue": {
+      "message": "Block by value"
+   },
+   "editThis_Flag_New_Cookie": {
+      "message": "Nahlásit novou cookie"
+   },
+   "editThis_Humanitarian_Program": {
+      "message": "Humanitární program"
+   },
+   "editThis_Is_ReadOnly": {
+      "message": "Chráněno"
+   },
+   "editThis_Max_Date": {
+      "message": "Nastavte maximální platnost cookie"
+   },
+   "editThis_Max_Date_Option": {
+      "message": "Přepsat maximální platnost cookie"
+   },
+   "editThis_Money_Raised": {
+      "message": "Money raised so far"
+   },
+   "editThis_Options": {
+      "message": "Možnosti"
+   },
+   "editThis_Paste_Cookie_Here": {
+      "message": "Sem vložte cookies pro importování. Povolené formáty jsou:"
+   },
+   "editThis_Paste_Cookies": {
+      "message": "Importovat cookies"
+   },
+   "editThis_Protected_Cookies": {
+      "message": "Chráněné cookies"
+   },
+   "editThis_Rate_ETC": {
+      "message": "Ohodnotit EditThisCookie"
+   },
+   "editThis_Rate_Us_Intro": {
+      "message": "V případě, že se Vám líbí EditThisCookie, ohodnoďte jej na Chrome Web Store."
+   },
+   "editThis_ReadOnly_Def": {
+      "message": "A protected cookie is a cookie which can't be modified by any website or extension"
+   },
+   "editThis_Save": {
+      "message": "Uložit"
+   },
+   "editThis_Send_Donations_To": {
+      "message": "You can send donations to:"
+   },
+   "editThis_Set_ReadOnly": {
+      "message": "Nastavit jen pro čtení"
+   },
+   "editThis_ShowCommandsLabels": {
+      "message": "Show labels next to icons"
+   },
+   "editThis_Show_Alerts": {
+      "message": "Vždy se zeptat na potvrzení"
+   },
+   "editThis_Show_Christmas_Icon": {
+      "message": "Show the Santa's hat icon"
+   },
+   "editThis_Show_ContextMenu": {
+      "message": "Zobrazovat \"Upravit cookies\" v kontextovém menu"
+   },
+   "editThis_Show_ContextMenu_helper": {
+      "message": "Pokud povolíte tuto volbu, budete moci skrýt ikonu v panelech nástrojů prostřednictvím kliknutí pravého tlačítka myši."
+   },
+   "editThis_Show_DevTools_Panel": {
+      "message": "Show the DevTools panel"
+   },
+   "editThis_Show_Domain": {
+      "message": "Zobrazit doménu u každé cookie"
+   },
+   "editThis_Show_Domain_Before_Name": {
+      "message": "Show the domain before the cookie's name"
+   },
+   "editThis_Show_Flag_And_Delete_All": {
+      "message": "Show \"Block and delete all\" button"
+   },
+   "editThis_Sort_Cookies": {
+      "message": "Sort cookies"
+   },
+   "editThis_Sort_Cookies_Alpha": {
+      "message": "by name"
+   },
+   "editThis_Sort_Cookies_Domain_Alpha": {
+      "message": "by domain and name"
+   },
+   "editThis_Source_Code": {
+      "message": "Zdrojový kód"
+   },
+   "editThis_Source_Code_Intro": {
+      "description": "It will read: Check EditThisCookie's source code on GitHub",
+      "message": "Check EditThisCookie's source code on $1"
+   },
+   "editThis_Use_Custom_Locale": {
+      "message": "Zvolit jiný jazyk"
+   },
+   "editThis_addNew": {
+      "message": "Přidat novou cookie"
+   },
+   "editThis_addRule": {
+      "message": "Přidat toto pravidlo"
+   },
+   "editThis_adsInfoAndSettings": {
+      "message": "informace a nastavení"
+   },
+   "editThis_advertisements": {
+      "message": "Reklama"
+   },
+   "editThis_amountByHand": {
+      "message": "to enter the amount by hand click here"
+   },
+   "editThis_backToList": {
+      "message": "Zpátky na seznam"
+   },
+   "editThis_bugsFeatureRequest": {
+      "message": "Chyby / Připravované funkce"
+   },
+   "editThis_bugsFeatureRequestIntro": {
+      "message": "Našlii jste chybu nebo máte návrh pro zlepšení? Řekněte nám o tom!"
+   },
+   "editThis_cancel": {
+      "message": "Zrušit"
+   },
+   "editThis_contacts": {
+      "message": "Kontakty"
+   },
+   "editThis_contactsIntro": {
+      "message": "Pošlete nám email"
+   },
+   "editThis_cookiesCreated": {
+      "message": "Cookie vytvořena"
+   },
+   "editThis_cookiesDeleted": {
+      "message": "Cookies smazány"
+   },
+   "editThis_cookiesExported": {
+      "message": "Cookies vyexportovány"
+   },
+   "editThis_cookiesFlagged": {
+      "message": "Označené cookies smazány"
+   },
+   "editThis_cookiesImported": {
+      "message": "Cookies byly naimportovány"
+   },
+   "editThis_cookiesModified": {
+      "message": "Modifikace (změna) cookies"
+   },
+   "editThis_cookiesProtected": {
+      "message": "Read-only cookies protected"
+   },
+   "editThis_cookiesShortened": {
+      "message": "Cookies' expiration shortened"
+   },
+   "editThis_day": {
+      "message": "Dny"
+   },
+   "editThis_deleteAll": {
+      "message": "Smazat Vše"
+   },
+   "editThis_description": {
+      "message": "EditThisCookie je manažer cookies. Můžete přidávat, mazat, upravovat, hledat, chránit a blokovat cookies!"
+   },
+   "editThis_domain": {
+      "message": "Doména"
+   },
+   "editThis_donations": {
+      "message": "Příspěvky"
+   },
+   "editThis_expiration": {
+      "message": "Expirace"
+   },
+   "editThis_flagAll": {
+      "message": "Označit a smazat vše"
+   },
+   "editThis_getting_started": {
+      "message": "Getting started"
+   },
+   "editThis_gospelBookTitle": {
+      "message": "The Gospel of the Flying Spaghetti Monster"
+   },
+   "editThis_help": {
+      "message": "Nápověda"
+   },
+   "editThis_helpIntro": {
+      "message": "Zde můžete nalézt vysvětlení pro některé základní funkce tohoto rozšíření"
+   },
+   "editThis_hostOnly": {
+      "message": "HostOnly"
+   },
+   "editThis_hour": {
+      "message": "Hodiny"
+   },
+   "editThis_httpOnly": {
+      "message": "HttpOnly"
+   },
+   "editThis_iWantDonate": {
+      "description": "I want to donate X euros",
+      "message": "Chci přispět"
+   },
+   "editThis_minutes": {
+      "message": "Minuty"
+   },
+   "editThis_month": {
+      "message": "Měsíce"
+   },
+   "editThis_name": {
+      "message": "Jméno"
+   },
+   "editThis_newFilter": {
+      "message": "New filter"
+   },
+   "editThis_no": {
+      "message": "No"
+   },
+   "editThis_noBlockAdded": {
+      "message": "No block rules added"
+   },
+   "editThis_noReadOnlyAdded": {
+      "message": "No cookies protected yet"
+   },
+   "editThis_noStatsNotice": {
+      "message": "Žádná data"
+   },
+   "editThis_no_cookies": {
+      "message": "No cookies here!"
+   },
+   "editThis_path": {
+      "message": "Cesta"
+   },
+   "editThis_paypalSupportIntro": {
+      "description": "It will read: Support us using PayPal. Move the slider to change the amount",
+      "message": "We develop high quality open source software and we give it away for free. \u003Cbr>\u003Cbr> Support us using $1. Move the slider to change the amount"
+   },
+   "editThis_ppBenefit1": {
+      "message": "You will get a tiny little place in my heart"
+   },
+   "editThis_ppBenefit2": {
+      "message": "Vaše jméno bude přidáno na Stěnu Slávy"
+   },
+   "editThis_ppBenefit3": {
+      "message": "You'll receive a thank you email"
+   },
+   "editThis_ppBenefit4": {
+      "message": "Můžete vyjmenovat chyby pro EditThisCookie a já jej velmi rychle opravím"
+   },
+   "editThis_ppBenefit5": {
+      "message": "Můžete si říct jakoukoliv funkci kterou chcete implementovat a já ji udělám! (jen nežádejte nemožné :P )"
+   },
+   "editThis_ppBenefit6": {
+      "message": "Pokud se někdy potkáme, koupím vám italskou kávu a 'Babbà'"
+   },
+   "editThis_ppBenefit7": {
+      "message": "Jste velmi štědrý. Pokud se někdy potkáme, dáme si spolu pár piv (hej, pivo je důležité)"
+   },
+   "editThis_ppBenefit8": {
+      "message": "And an Italian pizza!"
+   },
+   "editThis_ppBenefit9": {
+      "message": "Be the cause of my very first heart stroke. All you have to do is donate now!"
+   },
+   "editThis_reloadAfterChanges": {
+      "message": "Reload the page after submitting the changes"
+   },
+   "editThis_reset": {
+      "message": "Reset"
+   },
+   "editThis_search": {
+      "message": "Hledat"
+   },
+   "editThis_seconds": {
+      "message": "Vteřiny"
+   },
+   "editThis_secure": {
+      "message": "Bezpečnost"
+   },
+   "editThis_session": {
+      "message": "Relace"
+   },
+   "editThis_skipCacheOnReload": {
+      "message": "Skip the cache when page reloads"
+   },
+   "editThis_stats": {
+      "message": "Statistiky"
+   },
+   "editThis_statsIntro": {
+      "message": "Zde můžete najít, jak se používat rozšíření. Tyto data byly shromažďována pouze od července 2012."
+   },
+   "editThis_statsSharePolicy": {
+      "message": "Zaručujeme, že Vaše osobní data nebudou nikdy sdílena!"
+   },
+   "editThis_statsSince": {
+      "message": "Statistika cookid od: $1"
+   },
+   "editThis_storeID": {
+      "message": "StoreID"
+   },
+   "editThis_support": {
+      "message": "Podpoř nás"
+   },
+   "editThis_support_etc": {
+      "message": "Support EditThisCookie"
+   },
+   "editThis_time": {
+      "message": "Čas"
+   },
+   "editThis_timesUsed": {
+      "message": "EditThisCookie použito $1 krát"
+   },
+   "editThis_translation": {
+      "message": "Překlad"
+   },
+   "editThis_translationIntro": {
+      "message": "Pomozte nám přeložit toto rozšíření do vašeho jazyka"
+   },
+   "editThis_updated": {
+      "message": "has been updated. Click here to check what's new."
+   },
+   "editThis_useRegularExpressions": {
+      "message": "Můžete použít regulární výrazy"
+   },
+   "editThis_value": {
+      "message": "Hodnota"
+   },
+   "editThis_year": {
+      "message": "Roky"
+   },
+   "editThis_yes": {
+      "message": "Yes"
+   }
+}

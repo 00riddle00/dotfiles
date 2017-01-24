@@ -1,0 +1,19 @@
+2017/01/24-12:11:17.218 21358 Reusing MANIFEST /home/riddle/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2017/01/24-12:11:17.288 21358 Recovering log #1905
+2017/01/24-12:11:17.722 21358 Reusing old log /home/riddle/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/001905.log 
+2017/01/24-12:11:17.844 21358 Delete type=2 #1901
+2017/01/24-12:11:19.112 21358 Current memtable full; waiting...
+2017/01/24-12:11:19.112 21978 Level-0 table #1910: started
+2017/01/24-12:11:19.400 21978 Level-0 table #1910: 305755 bytes OK
+2017/01/24-12:11:20.139 21978 Delete type=0 #1905
+2017/01/24-12:11:21.240 21978 Level-0 table #1912: started
+2017/01/24-12:11:21.240 21978 Level-0 table #1912: 0 bytes OK
+2017/01/24-12:11:21.814 21978 Delete type=0 #1909
+2017/01/24-12:11:21.814 21978 Manual compaction at level-0 from ' '\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' (\x01\x00\x00\x00' @ 0 : 0; will stop at ' '\x01\x00\x00\x05' @ 15732 : 1
+2017/01/24-12:11:21.814 21978 Compacting 1@0 + 1@1 files
+2017/01/24-12:11:22.420 21978 Generated table #1913@0: 51 keys, 306309 bytes
+2017/01/24-12:11:22.420 21978 Compacted 1@0 + 1@1 files => 306309 bytes
+2017/01/24-12:11:22.595 21978 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/01/24-12:11:22.595 21978 Delete type=2 #1907
+2017/01/24-12:11:22.595 21978 Delete type=2 #1910
+2017/01/24-12:11:22.596 21978 Manual compaction at level-0 from ' '\x01\x00\x00\x05' @ 15732 : 1 .. ' (\x01\x00\x00\x00' @ 0 : 0; will stop at (end)

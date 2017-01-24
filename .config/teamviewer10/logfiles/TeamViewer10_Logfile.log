@@ -1,0 +1,2145 @@
+2015/05/10 19:58:23.258  2318    8562560 g0   Logger started.
+2015/05/10 19:58:23.259  2318    8562560 g0   DeleteOldDumps: found 0 ".core" dump files ...
+2015/05/10 19:58:23.259  2318    8562560 g0   DeleteOldDumps: found 0 ".stack" dump files ...
+2015/05/10 19:58:23.261  2318    8562560 g0   systemd: logind service available
+2015/05/10 19:58:23.335  2318    8562560 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2015/05/10 19:58:23.409  2318    8562560 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1431276396138901) active=1 type=tty class=user state=active timestamp=1431276399647083 service=login defaultCG= leader=401 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2015/05/10 19:58:23.409  2318    8562560 g0   Session Information provided by systemd
+2015/05/10 19:58:23.409  2318    8562560 g0   XSocket observer: watching /tmp/.X11-unix
+2015/05/10 19:58:23.409  2318    8562560 g0   XSocket observer: adding XSession: 0
+2015/05/10 19:58:23.421  2318    8562560 g0   XSession[0]: Retrieved XAuth from commandline
+2015/05/10 19:58:23.422  2318    8562560 g0   systemd: no active session found for display :0, assuming login screen
+2015/05/10 19:58:23.429  2318    8562560 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2015/05/10 19:58:23.429  2318    8562560 g0   TVGuiSlave.64: Running
+2015/05/10 19:58:23.523  2318 4222052096 g0   Audio: PulseAudio enabled
+2015/05/10 19:58:23.528  2318 4213659392 g0   PulseAudio: Connected to server 'unix:/run/user/1000/pulse/native' (protocol version 30, library version 6.0.0
+2015/05/10 19:58:23.529  2318 4222052096 g0   PulseAudio: Connection established
+2015/05/10 19:58:23.529  2318 4213659392 g0   PulseAudio: Exit main loop (0), err=-2
+2015/05/10 19:58:23.530  2318    8562560 g0   XSM: Initialised X Session Management (xfce4-session, 4.12.1) [17]
+2015/05/10 19:58:23.531  2318 4213659392 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2015/05/10 19:58:24.832  2318 4213659392 g0   XClipboard: Shutting down event loop
+2015/05/10 19:58:24.836  2318    8562560 g0   TVGuiSlave.64: Terminated
+2015/05/10 19:58:29.037  2413  689641344 g0   Logger started.
+2015/05/10 19:58:29.038  2413  689641344 g0   DeleteOldDumps: found 0 ".core" dump files ...
+2015/05/10 19:58:29.038  2413  689641344 g0   DeleteOldDumps: found 0 ".stack" dump files ...
+2015/05/10 19:58:29.040  2413  689641344 g0   systemd: logind service available
+2015/05/10 19:58:29.115  2413  689641344 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2015/05/10 19:58:29.189  2413  689641344 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1431276396138901) active=1 type=tty class=user state=active timestamp=1431276399647083 service=login defaultCG= leader=401 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2015/05/10 19:58:29.189  2413  689641344 g0   Session Information provided by systemd
+2015/05/10 19:58:29.189  2413  689641344 g0   XSocket observer: watching /tmp/.X11-unix
+2015/05/10 19:58:29.189  2413  689641344 g0   XSocket observer: adding XSession: 0
+2015/05/10 19:58:29.204  2413  689641344 g0   XSession[0]: Retrieved XAuth from commandline
+2015/05/10 19:58:29.205  2413  689641344 g0   systemd: no active session found for display :0, assuming login screen
+2015/05/10 19:58:29.212  2413  689641344 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2015/05/10 19:58:29.212  2413  689641344 g0   TVGuiSlave.64: Running
+2015/05/10 19:58:29.305  2413  608163584 g0   Audio: PulseAudio enabled
+2015/05/10 19:58:29.310  2413  599770880 g0   PulseAudio: Connected to server 'unix:/run/user/1000/pulse/native' (protocol version 30, library version 6.0.0
+2015/05/10 19:58:29.310  2413  608163584 g0   PulseAudio: Connection established
+2015/05/10 19:58:29.310  2413  599770880 g0   PulseAudio: Exit main loop (0), err=-2
+2015/05/10 19:58:29.311  2413  599770880 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2015/05/10 19:58:29.313  2413  689641344 g0   XSM: Initialised X Session Management (xfce4-session, 4.12.1) [10]
+2015/05/10 19:58:44.039  2413  599770880 g0   XClipboard: Shutting down event loop
+2015/05/10 19:58:44.043  2413  689641344 g0   TVGuiSlave.64: Terminated
+2015/05/10 19:58:57.029  2551 1907828608 g0   Logger started.
+2015/05/10 19:58:57.030  2551 1907828608 g0   DeleteOldDumps: found 0 ".core" dump files ...
+2015/05/10 19:58:57.030  2551 1907828608 g0   DeleteOldDumps: found 0 ".stack" dump files ...
+2015/05/10 19:58:57.032  2551 1907828608 g0   systemd: logind service available
+2015/05/10 19:58:57.105  2551 1907828608 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2015/05/10 19:58:57.179  2551 1907828608 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1431276396138901) active=1 type=tty class=user state=active timestamp=1431276399647083 service=login defaultCG= leader=401 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2015/05/10 19:58:57.179  2551 1907828608 g0   Session Information provided by systemd
+2015/05/10 19:58:57.179  2551 1907828608 g0   XSocket observer: watching /tmp/.X11-unix
+2015/05/10 19:58:57.179  2551 1907828608 g0   XSocket observer: adding XSession: 0
+2015/05/10 19:58:57.192  2551 1907828608 g0   XSession[0]: Retrieved XAuth from commandline
+2015/05/10 19:58:57.193  2551 1907828608 g0   systemd: no active session found for display :0, assuming login screen
+2015/05/10 19:58:57.199  2551 1907828608 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2015/05/10 19:58:57.200  2551 1907828608 g0   TVGuiSlave.64: Running
+2015/05/10 19:58:57.290  2551 1826350848 g0   Audio: PulseAudio enabled
+2015/05/10 19:58:57.295  2551 1744828160 g0   PulseAudio: Connected to server 'unix:/run/user/1000/pulse/native' (protocol version 30, library version 6.0.0
+2015/05/10 19:58:57.296  2551 1826350848 g0   PulseAudio: Connection established
+2015/05/10 19:58:57.296  2551 1744828160 g0   PulseAudio: Exit main loop (0), err=-2
+2015/05/10 19:58:57.298  2551 1744828160 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2015/05/10 19:58:57.301  2551 1907828608 g0   XSM: Initialised X Session Management (xfce4-session, 4.12.1) [10]
+2015/05/10 19:58:56.282     8    30 G0   Logger started.
+2015/05/10 19:58:56.418     8    30 G0!! SetProcessStartupOptions(): SetProcessDEPPolicy() failed! LE=120, Errorcode=12180
+2015/05/10 19:58:57.011     8    30 G0   TVW X ErrorHandler org 7e3c086e, def 7e2369e0 cur 7d52790c
+2015/05/10 19:58:57.016     8    30 G0   Wine: Wine DLL initialized
+2015/05/10 19:58:57.016     8    30 G0   Wine: wine-1.6
+
+2015/05/10 19:58:57.017     8    30 G0   TVW SID0: SpawnSlave: pid 0
+2015/05/10 19:58:57.024     8    30 G0   TVW SID0: SpawnSlave: loading TVGuiSlave.64
+2015/05/10 19:58:57.030     8    30 G0   TVW ObserveFork: OK
+2015/05/10 19:58:57.030     8    30 G0   Wine: Spawned slave process with type 0
+2015/05/10 19:58:57.031     8    30 G0   TVW SID1: SpawnSlave: pid 0
+2015/05/10 19:58:57.037     8    30 G0   TVW SID1: SpawnSlave: loading TVGuiDelegate
+2015/05/10 19:58:57.038     8    30 G0   TVW ReadSlave [1]: Socket closed
+2015/05/10 19:58:57.038     8    30 G0!! TVW ObserveFork(ID = 1): read -2, Errorcode=12180
+2015/05/10 19:58:57.038     8    30 G0!! TVW SpawnSlave(type = 1): Death by exit [127], Errorcode=12180
+2015/05/10 19:58:57.038     8    30 G0!! TVW SpawnSlave(type = 1): failed, exiting, Errorcode=12180
+2015/05/10 19:58:57.038     8    30 G0!!!Wine: Unable to spawn slave process of type 1, Errorcode=12180
+2015/05/10 19:58:57.040     8    30 G0   Starting GUI master for slave type 0
+2015/05/10 19:58:57.040     8    30 G0   Starting GUI master for slave type 1
+2015/05/10 19:58:57.041     8    30 G0!!!WineGuiMaster[1]: Slave terminated unexpectedly, Errorcode=12180
+2015/05/10 19:58:57.058     8    30 G0   Monitors: X11 Windowing System, \\.\DISPLAY1, 3000x1920 (0,0), flags=21, dpi=96
+2015/05/10 19:58:57.200     8    30 G0   Slave connected to GUI master
+                    
+                    
+                    
+Start:              2015/05/10 19:58:57.207 (UTC+2:00)
+Version:            10.0.41499 Dev 
+ID:                 0
+Loglevel:           LogAll (0)
+License:            0
+Server:             master8.teamviewer.com
+IC:                 0
+CPU:                x86 Family 6 Model 42 Stepping 7, GenuineIntel
+CPU extensions:     g9
+OS:                 Lx Arch Linux (32-bit)
+IP:                 192.168.1.73
+Proxy-Settings:     Type=0 IP= User=
+AppPath:            C:\TeamViewer\TeamViewer.exe
+UserAccount:        riddle
+
+2015/05/10 19:58:57.289     8    30 G0   CMain::LoadResourceDLLs(): No custom resource dll found
+2015/05/10 19:58:57.299     8    30 G0   Win32_GUI::FontReallyExists: 'Segoe UI' found 0 matches.
+2015/05/10 19:58:57.299     8    30 G0   Win32_GUI::FontReallyExists: 'Liberation Sans' found 0 matches.
+2015/05/10 19:58:57.314     8    30 G0   Opening local TCP connection to 127.0.0.1:5939
+2015/05/10 19:58:57.314     8    30 G0   Local TCP connection established
+2015/05/10 19:58:57.315     8    30 G0   Process ID:  L 2476 /  W 8
+2015/05/10 19:58:57.417     8    30 G0   SettingsIPCReception receive a SYNCHRONISE Settings command : UserSettings
+2015/05/10 19:58:57.417     8    30 G0   Received Control_InitIPC_Response processtype=1
+2015/05/10 19:58:57.417     8    30 G0   Received Control_InitIPC_Response runningProcesses=3
+2015/05/10 19:58:57.417     8    30 G0   Control_InitIPC_Response: all processes 3 completely initialized
+2015/05/10 19:58:57.429     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2015/05/10 19:58:57.433     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2015/05/10 19:58:58.195     8     9 G0   Account::SetNewLoginState: 2
+2015/05/10 19:58:59.077     8     9 G0!! GetSimpleDisplayCertNameFromFile: File 'C:\TeamViewer\tv_w32.dll' does not exist., Errorcode=2
+2015/05/10 19:58:59.078     8     9 G0!! VerifyTeamViewerSignature() : WinVerifyTrust failed, result=2, Errorcode=2
+2015/05/10 19:58:59.078     8     9 G0!! MachineHooks: Library not found, Errorcode=2
+2015/05/10 19:58:59.080     8     9 G0   MachineID m=0 - 0
+2015/05/10 19:58:59.083     8     9 G0   TVUpdate::Init() Version-URL: download.teamviewer.com/download/update/ Update-URL: download.teamviewer.com/download/update/
+2015/05/10 19:58:59.084     8     9 G0   CMain::ShowIntroScreen()::Show Intro Screen
+2015/05/10 19:58:59.185     8     9 G0   IncomingChatCommandRegistration::StartRegistration: registering for ready state properties
+2015/05/10 19:58:59.187     8     9 G0   IncomingChatCommandRegistration::RegisterIncomingCommands: Registered successfully for incoming commands (after 0 retries)
+2015/05/10 19:58:59.187     8     9 G0!! DragDropRegistration: could not register window, HR=80040155
+2015/05/10 19:58:59.188     8     9 G0   AccountLoginGUI::CreateLoginKey(): [OnlineState] System is set to Visible.
+2015/05/10 19:58:59.247     8     9 G0   Tray created!
+2015/05/10 19:58:59.248     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=424784311 ka=1 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=1
+2015/05/10 19:58:59.253     8    26 G0   IDLabelContent::UpdateImpl() IDs changed: SessionID "424784311", TSUserID "0", ServerID "0"
+2015/05/10 19:58:59.284     8     9 G0   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2015/05/10 19:58:59.284     8     9 G0   Account::TryAutoLogin: enabled: 0
+2015/05/10 19:58:59.284     8     9 G0!! ServerControl: RegisterPowerSettingNotification failed with error 0
+2015/05/10 19:58:59.405  2551 1728042752 g0   PulseAudio: Connected to server 'unix:/run/user/1000/pulse/native' (protocol version 30, library version 6.0.0
+2015/05/10 19:58:59.405  2551 1826350848 g0   PulseAudio: Connection established
+2015/05/10 19:58:59.406     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2015/05/10 19:58:59.406     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2015/05/10 19:58:59.410  2551 1728042752 g0   PulseAudio: Exit main loop (0), err=-2
+2015/05/10 19:59:04.085     8    25 G0!  IntroScreen::CloseOnError(): startedViaMenuItem=0, current state=7
+2015/05/10 19:59:04.085     8    25 G0   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2015/05/10 19:59:04.086     8    25 G0   Account::TryAutoLogin: enabled: 0
+2015/05/10 19:59:16.302     8     9 G0   Account::SetNewLoginState: 3
+2015/05/10 19:59:16.369     8     9 G0   AccountLogin::Start: Trying account authentication
+2015/05/10 19:59:16.520     8     9 G0   AccountLogin::HandleChallenge: Try V2Login
+2015/05/10 19:59:16.715     8     9 G0   AccountLogin::OnResponseSuccess: Authentication successful
+2015/05/10 19:59:16.715     8     9 G0   Account::LoginInternal: Login with V2 Account
+2015/05/10 19:59:16.924     8     9 G0   Account Login complete, inCompany = 0, with rights 0
+2015/05/10 19:59:16.951     8     9 G0   Account::SetNewLoginState: 4
+2015/05/10 19:59:16.980     8     9 G0!! AccountPictureStorage::ReadJsonFile: Failed to open stream onto C:\users\riddle\Local Settings\Application Data\TeamViewer\AccountPictureCache\30063380\pictures.cache, Errorcode=2
+2015/05/10 19:59:16.980     8     9 G0!! AccountPictureStorage::ReadPictures. Metafile C:\users\riddle\Local Settings\Application Data\TeamViewer\AccountPictureCache\30063380\pictures.cache could not be parsed., Errorcode=2
+2015/05/10 19:59:16.984     8     9 G0   ChatRoomManager::InitializeAccountChat: AccountId = 30063380
+2015/05/10 19:59:17.699     8    27 G0   QueryRooms::Execute[queryChatRoomsResponseCb]: No rooms received
+2015/05/10 19:59:17.700     8    26 G0   ChatRoomManager::QueryRoomsInternal[queryRoomsResultCb]: Success: Received no rooms
+2015/05/10 20:00:32.262     8    25 G0   Connection incoming, sessionID = -1244269423
+2015/05/10 20:00:32.570     8    26 G0   Received Control_InitIPC processtype=4
+2015/05/10 20:00:32.605     8     9 G0   TVW X Error 8 on ???, Req 42.0 (#1292 r58720278): BadMatch (invalid parameter attributes)
+2015/05/10 20:00:32.631     8     9 G0   Wine: HwndToWindow 00020136 -> 3800015
+2015/05/10 20:00:32.631     8     9 G0   Wine: HwndToWindow 00020134 -> 3800016
+2015/05/10 20:00:36.301     8     9 G0   Wine: HwndToWindow 00020136 -> 3800015
+2015/05/10 20:00:36.302     8     9 G0   Wine: HwndToWindow 00020134 -> 3800016
+2015/05/10 20:00:36.439     8    27 G0   VoIP: using pipeline factory async = 1
+2015/05/10 20:00:36.440     8    27 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: Building pipeline finished
+2015/05/10 20:00:36.442  2551 1719650048 g0   PulseAudio: Connected to server 'unix:/run/user/1000/pulse/native' (protocol version 30, library version 6.0.0
+2015/05/10 20:00:36.442  2551 1826350848 g0   PulseAudio: Connection established
+2015/05/10 20:00:36.443     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2015/05/10 20:00:36.443     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2015/05/10 20:00:36.529     8    27 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2015/05/10 20:00:36.530     8    27 G0   Resetting Cache. Cache disabled.
+2015/05/10 20:00:36.531     8    27 G0   CServerSessionRecorder::AutoStart: AutoStart recording function called and not activated (auto recording of incoming RemoteControl not activated)
+2015/05/10 20:00:36.531     8    27 G0   WindowObserverGUI::SessionStart: 1; type: 1
+2015/05/10 20:00:36.572     8    26 G0   CParticipantManagerBase participant TGIIFriday (1) (ID [424784311,-1244269423]) was added with the role 3
+2015/05/10 20:00:36.573     8    26 G0   New Participant added in CParticipantManager TGIIFriday (1) ([424784311,-1244269423])
+2015/05/10 20:00:36.574     8    27 G0   CParticipantManagerBase participant TGIIFriday (ID [672029672,2]) was added with the role 6
+2015/05/10 20:00:36.574     8    27 G0   New Participant added in CParticipantManager TGIIFriday ([672029672,2])
+2015/05/10 20:00:36.576     8    36 G0    VoIP: Receiver: Participant channel "TGIIFriday (672 029 672)" [672029672,2]: VoIPBCommandReceiver: created
+2015/05/10 20:00:36.577     8    36 G0   VoIP: Receiver: Channel created for participant [672029672,2] called "TGIIFriday (672 029 672)" [672029672,2]
+2015/05/10 20:00:36.763     8     9 G0   Wine: MakeSticky 00020136 
+2015/05/10 20:00:37.530     8    38 G0   MM: Number of Audio Devices changed
+2015/05/10 20:00:37.653     8    26 G0   DT: Sending InitSignal to DT 3855362094
+2015/05/10 20:00:37.654     8    26 G0   DataTransceiverInstanceTVStreams::SendFileInfos: DT:3855362094 NumFiles:1
+2015/05/10 20:00:37.654     8    26 G0   CParticipantManagerBase::CheckAndSubscribeNewStream(): Subscribe stream now streamID=2 type=5 required=1 supported=1
+2015/05/10 20:00:37.655  2551 1826350848 g0   CClipboardChangeListener::RegisterForClipboardChanges
+2015/05/10 20:00:37.655     8    26 G0   ServerThreadInfo connected to 672029672, client version is 10.0.2712 CL, OS=8214
+2015/05/10 20:00:37.655     8    26 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2015/05/10 20:00:37.656     8    26 G0   CServerThreadInfo::Received_AccessControlSettings: RCAccessControl: RemoteControl='Allowed', FileTransfer='Allowed', ControlRemoteTV='Allowed', SwitchSides='Allowed', AllowDisableRemoteInput='Allowed', AllowVPN='Allowed', AllowPartnerViewDesktop='Allowed', ShareMyFiles='Allowed', ShareFilesWithMe='Allowed', PrintOnMyPrinters='Allowed', PrintOnRemotePrinters='Allowed'
+2015/05/10 20:00:37.727     8    28 G0   ServerThreadInfo connected to 672029672, client version is 10.0.2712 CL, OS=8214
+2015/05/10 20:00:37.727     8    28 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2015/05/10 20:00:37.812     8    28 G0   Display buffers allocated: width = 1080, height = 1920, bpp = 8
+2015/05/10 20:00:37.813     8    28 G0   RA: Creating audio server, max bandwidth 
+2015/05/10 20:00:37.813     8    37 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2015/05/10 20:00:37.813     8    28 G0   RA: Change quality by capacity (350)
+2015/05/10 20:00:37.814     8    28 G0   RA: Audio quality set to 32000
+2015/05/10 20:00:37.814     8    28 G0   RA: RemoteAudioSender get started
+2015/05/10 20:00:37.814     8    28 G0   RA: Control stream will get created
+2015/05/10 20:00:37.817     8    27 G0   RA: Controlstream succesfull registered with id 9
+2015/05/10 20:00:37.856     8    39 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2015/05/10 20:00:37.857     8    39 G0   RA: RemoteAudioSender unable to start audio processor
+2015/05/10 20:00:46.893     8    28 G0   RA: Change quality by capacity (49399)
+2015/05/10 20:00:46.894     8    28 G0   RA: Audio quality set to 125000
+2015/05/10 20:00:46.894     8    28 G0   RA: RemoteAudioSender stopping...
+2015/05/10 20:00:47.950     8    25 G0   Display buffers allocated: width = 1080, height = 1920, bpp = 32
+2015/05/10 20:00:47.951     8    25 G0   RA: RemoteAudioSender get started
+2015/05/10 20:00:47.951     8    25 G0   RA: Control stream will get created
+2015/05/10 20:00:47.955     8    28 G0   RA: Controlstream succesfull registered with id 10
+2015/05/10 20:00:47.993     8    40 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2015/05/10 20:00:47.993     8    40 G0   RA: RemoteAudioSender unable to start audio processor
+2015/05/10 20:00:49.796     8    28 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 32
+2015/05/10 20:00:49.796     8    28 G0   RA: RemoteAudioSender get started
+2015/05/10 20:00:53.023     8    27 G0   Display buffers allocated: width = 1080, height = 1920, bpp = 32
+2015/05/10 20:00:53.024     8    27 G0   RA: RemoteAudioSender get started
+2015/05/10 20:00:56.973     8    28 G0   RA: RemoteAudioSender get stopped
+2015/05/10 20:00:56.974     8    28 G0   RA: RemoteAudioSender stopping...
+2015/05/10 20:00:56.976     8     9 G0!! ITVWidgetViewWin::OnDestroy(): Message filtering could not be reset!
+2015/05/10 20:00:57.623     8    28 G0   RA: RemoteAudioSender get stopped
+2015/05/10 20:00:57.624  2551 1826350848 g0   CClipboardChangeListener::UnregisterFromClipboardChanges
+2015/05/10 20:00:57.626     8    28 G0   WindowObserverGUI::SessionEnded: 0
+2015/05/10 20:00:57.637     8    28 G0   VoIP: Receiver: Terminate
+2015/05/10 20:00:57.638  2551 1719650048 g0   PulseAudio: Exit main loop (0), err=-2
+2015/05/10 20:00:57.639     8    26 G0   VoIP: Receiver: ThreadPool:StopThreads
+2015/05/10 20:04:08.428  2551 1744828160 g0   XClipboard: RequestClipboard as TARGETS (444)
+2015/05/10 20:04:08.434  2551 1744828160 g0   XClipboard: Plain data for 'TARGETS'
+2015/05/10 20:04:08.462  2551 1744828160 g0   XClipboard: RequestClipboard as UTF8_STRING (301)
+2015/05/10 20:04:08.462  2551 1744828160 g0   XClipboard: RequestClipboard as TARGETS (444)
+2015/05/10 20:04:08.497  2551 1744828160 g0   XClipboard: Plain data for 'UTF8_STRING'
+2015/05/10 20:04:08.498  2551 1744828160 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=26, c=52)
+2015/05/10 20:04:08.499  2551 1744828160 g0   XClipboard: Plain data for 'TARGETS'
+2015/05/10 20:04:08.499  2551 1744828160 g0   XClipboard: RequestClipboard as UTF8_STRING (301)
+2015/05/10 20:04:08.555  2551 1744828160 g0   XClipboard: Plain data for 'UTF8_STRING'
+2015/05/10 20:04:08.559  2551 1744828160 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=26, c=52)
+2015/05/10 20:04:28.202  2551 1744828160 g0   XClipboard: RequestClipboard as TARGETS (444)
+2015/05/10 20:04:28.204  2551 1744828160 g0   XClipboard: Plain data for 'TARGETS'
+2015/05/10 20:04:28.205  2551 1744828160 g0   XClipboard: RequestClipboard as UTF8_STRING (301)
+2015/05/10 20:04:28.209  2551 1744828160 g0   XClipboard: Plain data for 'UTF8_STRING'
+2015/05/10 20:04:28.218  2551 1744828160 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=78, c=156)
+2015/05/10 20:04:28.218  2551 1744828160 g0   XClipboard: RequestClipboard as TARGETS (444)
+2015/05/10 20:04:28.224  2551 1744828160 g0   XClipboard: Plain data for 'TARGETS'
+2015/05/10 20:04:28.224  2551 1744828160 g0   XClipboard: RequestClipboard as UTF8_STRING (301)
+2015/05/10 20:04:28.228  2551 1744828160 g0   XClipboard: Plain data for 'UTF8_STRING'
+2015/05/10 20:04:28.229  2551 1744828160 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=78, c=156)
+2015/05/10 20:07:35.912     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is idle. TimeUntilIdle: 300 seconds
+2015/05/10 20:07:36.205     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 2
+2015/05/10 20:07:59.187     8     9 G0   CMainWindow::TrackIdleTime(): System goes idle. (IdleTime=323727)
+2015/05/10 20:08:38.252     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is back to active
+2015/05/10 20:08:38.337     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 0
+2015/05/10 20:13:42.543     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is idle. TimeUntilIdle: 300 seconds
+2015/05/10 20:13:42.685     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 2
+2015/05/10 20:13:59.186     8     9 G0   CMainWindow::TrackIdleTime(): System goes idle. (IdleTime=318247)
+2015/05/10 20:19:59.169  2551 1907828608 g0   XSM: Session is terminating
+2015/05/10 20:19:59.171     8     9 G0   CMainWindow::OnEndSession: Received ENDSESSION_LOGOFF
+2015/05/10 20:19:59.172     8     9 G0   CServerGUI::StopSessionRecordings: Handling 0 Clients
+2015/05/10 20:19:59.173     8     9 G0   SessionManagerServer::StopSessionRecordings: Handling 0 ServerThreadInfos
+2015/05/10 20:19:59.174     8     9 G0   CMainWindow::InitCloseTV(): Prepare to close TeamViewer
+2015/05/10 20:19:59.175     8     9 G0   ChatRoomManager::OnGuiExitEvent: Reset account registration
+2015/05/10 20:19:59.175     8     9 G0!! ServerControl: UnregisterPowerSettingNotification failed with error 0
+2015/05/10 20:19:59.178     8     9 G0!! BuddyPageList.OnDestroy: RemoveMessageFilter failed
+2015/05/10 20:19:59.182     8     9 G0   Chat::Stop: Stopping chat
+2015/05/10 20:19:59.182     8     9 G0   ChatRoomManager::Reset: keepMachineChats 0, quiet 1
+2015/05/10 20:19:59.183     8     9 G0   IncomingChatCommandRegistration::UnregisterIncomingCommands: Unregistering incoming commands
+2015/05/10 20:19:59.183     8     9 G0!! MainWindow.OnDestroy: WTSUnRegisterSessionNotification failed with error 0
+2015/05/10 20:19:59.187     8     9 G0   CMainWindow::OnDestroy(): Closing TeamViewer
+2015/05/10 20:19:59.194     8     9 G0   CMainWindow::OnEndSession: ShutdownIPC
+2015/05/10 20:19:59.195     8     9 G0!! ChatProviderRegistration::HandleProviderResponse: CallbackResult = 2
+2015/05/10 20:19:59.195     8     9 G0!! RemoteManagementProviderRegistration::HandleProviderResponse: CallbackResult = 2
+2015/05/10 20:19:59.202     8     9 G0   Account::SetNewLoginState: 2
+2015/05/10 20:19:59.261     8    25 G0   CTcpProcessConnector::HandleRead(): Socket gracefully closed (PID=2458)
+2015/05/10 20:19:59.262     8    25 G0   CTcpProcessConnector::CloseConnection(): PID=2458
+2015/05/10 20:19:59.262     8    25 G0!  InterProcessBase::EventFunction(): IPC-Connection Closed
+2015/05/10 20:19:59.263     8    25 G0   CTcpProcessConnector::CloseConnection(): PID=2458
+2015/05/10 20:19:59.264     8     9 G0!  Can't create/delete tray icon.
+2015/05/10 20:19:59.286     8    25 G0   CTcpProcessConnector::CloseConnection(): Shutdown socket returned error 10058: Unknown error
+2015/05/10 20:19:59.287     8    25 G0!! CTcpProcessConnector::CloseConnection(): Shutdown socket returned error 10009: Unknown error, Errorcode=317
+2015/05/10 20:19:59.308     8     9 G0   TVW Terminating GUI slave
+2015/05/10 20:19:59.309     8     9 G0   Wine: Wine DLL freed
+2015/05/10 20:19:59.476  2551 1744828160 g0   XClipboard: Shutting down event loop
+2015/05/10 20:19:59.509  2551 1907828608 g0   TVGuiSlave.64: Terminated
+2016/01/30 03:15:55.405  4174 2634872704 g1   Logger started.
+2016/01/30 03:15:55.405  4174 2634872704 g1   DeleteOldDumps: found 0 ".core" dump files ...
+2016/01/30 03:15:55.405  4174 2634872704 g1   DeleteOldDumps: found 0 ".stack" dump files ...
+2016/01/30 03:15:55.406  4174 2634872704 g1   systemd: logind service available
+2016/01/30 03:15:55.406  4174 2634872704 g1   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c3', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/01/30 03:15:55.407  4174 2634872704 g1   SystemdSession: New session c3 [path=/org/freedesktop/login1/session/c3, TTY=tty2 seat=seat0 display= vtnr=2 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1454116432215973) active=1 type=tty class=user state=active timestamp=1454116431008630 service=login defaultCG= leader=3791 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c3, type=3 user=riddle tty=2 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/01/30 03:15:55.407  4174 2634872704 g1   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=1(1454063680215973) active=0 type=tty class=user state=online timestamp=1454063684889689 service=login defaultCG= leader=413 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10001 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=0 reliable=1 info=0]
+2016/01/30 03:15:55.407  4174 2634872704 g1   Session Information provided by systemd
+2016/01/30 03:15:55.407  4174 2634872704 g1   XSocket observer: watching /tmp/.X11-unix
+2016/01/30 03:15:55.407  4174 2634872704 g1   XSocket observer: adding XSession: 1
+2016/01/30 03:15:55.415  4174 2634872704 g1   XSession[1]: Retrieved XAuth from environment (!)
+2016/01/30 03:15:55.415  4174 2634872704 g1   XSocket observer: adding XSession: 0
+2016/01/30 03:15:55.423  4174 2634872704 g1!  XSession[0]: Unable to get XAuth
+2016/01/30 03:15:55.423  4174 2634872704 g1!  XSession[0]: Unable to open XAuthority file ""
+2016/01/30 03:15:55.423  4174 2634872704 g1   systemd: no active session found for display :1, assuming login screen
+2016/01/30 03:15:55.423  4174 2634872704 g1   systemd: no active session found for display :0 on pseudo TTY
+2016/01/30 03:15:55.450  4174 2634872704 g1!! XClipboard: Cannot open DISPLAY!, Errorcode=11
+2016/01/30 03:15:55.450  4174 2634872704 g1   TVGuiSlave.64: Running
+2016/01/30 03:15:55.496  4174 2553292544 g1   Audio: PulseAudio enabled
+2016/01/30 03:15:55.551  4174 2634872704 g1!  XSM: No X Session Management for current session available (yet)
+2016/01/30 03:15:55.565  4174 2544899840 g1!! PulseAudio: Context failed: Connection refused, Errorcode=2
+2016/01/30 03:15:55.565  4174 2544899840 g1!! PulseAudio: Unable to connect to server, no server running?, Errorcode=2
+2016/01/30 03:15:55.565  4174 2553292544 g1!! Audio: Unable to initialise PulseAudio, Errorcode=2
+2016/01/30 03:15:55.565  4174 2553292544 g1!! XClipboard: failed to start, Errorcode=2
+2016/01/30 03:15:55.728  4174 2544899840 g1!!!Crash: Coredump has been written at '/home/riddle/.config/teamviewer10/logfiles/TVGuiSlave.64_FI_10.0.41499_2016-01-30-031555.core', Errorcode=14
+2016/01/30 03:15:55.728  4174 2544899840 g1   Process received fatal SIGSEGV
+2016/01/30 03:16:24.949  4314 1463281536 g1   Logger started.
+2016/01/30 03:16:24.950  4314 1463281536 g1   DeleteOldDumps: found 1 ".core" dump files ...
+2016/01/30 03:16:24.950  4314 1463281536 g1   DeleteOldDumps: found 1 ".stack" dump files ...
+2016/01/30 03:16:24.950  4314 1463281536 g1   systemd: logind service available
+2016/01/30 03:16:24.951  4314 1463281536 g1   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c3', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/01/30 03:16:24.952  4314 1463281536 g1   SystemdSession: New session c3 [path=/org/freedesktop/login1/session/c3, TTY=tty2 seat=seat0 display= vtnr=2 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1454116432215973) active=1 type=tty class=user state=active timestamp=1454116431008630 service=login defaultCG= leader=3791 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c3, type=3 user=riddle tty=2 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/01/30 03:16:24.952  4314 1463281536 g1   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=1(1454063680215973) active=0 type=tty class=user state=online timestamp=1454063684889689 service=login defaultCG= leader=413 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10001 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=0 reliable=1 info=0]
+2016/01/30 03:16:24.952  4314 1463281536 g1   Session Information provided by systemd
+2016/01/30 03:16:24.952  4314 1463281536 g1   XSocket observer: watching /tmp/.X11-unix
+2016/01/30 03:16:24.952  4314 1463281536 g1   XSocket observer: adding XSession: 1
+2016/01/30 03:16:24.960  4314 1463281536 g1   XSession[1]: Retrieved XAuth from environment (!)
+2016/01/30 03:16:24.961  4314 1463281536 g1   XSocket observer: adding XSession: 0
+2016/01/30 03:16:24.970  4314 1463281536 g1!  XSession[0]: Unable to get XAuth
+2016/01/30 03:16:24.970  4314 1463281536 g1!  XSession[0]: Unable to open XAuthority file ""
+2016/01/30 03:16:24.970  4314 1463281536 g1   systemd: no active session found for display :1, assuming login screen
+2016/01/30 03:16:24.970  4314 1463281536 g1   systemd: no active session found for display :0 on pseudo TTY
+2016/01/30 03:16:24.972  4314 1463281536 g1!! XClipboard: Cannot open DISPLAY!, Errorcode=11
+2016/01/30 03:16:24.972  4314 1463281536 g1   TVGuiSlave.64: Running
+2016/01/30 03:16:25.012  4314 1381701376 g1   Audio: PulseAudio enabled
+2016/01/30 03:16:25.014  4314 1373308672 g1!! PulseAudio: Context failed: Connection refused, Errorcode=2
+2016/01/30 03:16:25.014  4314 1373308672 g1!! PulseAudio: Unable to connect to server, no server running?, Errorcode=2
+2016/01/30 03:16:25.014  4314 1381701376 g1!! Audio: Unable to initialise PulseAudio, Errorcode=2
+2016/01/30 03:16:25.014  4314 1381701376 g1!! XClipboard: failed to start, Errorcode=2
+2016/01/30 03:16:25.176  4314 1373308672 g1!!!Crash: Coredump has been written at '/home/riddle/.config/teamviewer10/logfiles/TVGuiSlave.64_FI_10.0.41499_2016-01-30-031625.core', Errorcode=14
+2016/01/30 03:16:25.176  4314 1373308672 g1   Process received fatal SIGSEGV
+2016/01/30 03:16:38.087  4463 1804351360 g1   Logger started.
+2016/01/30 03:16:38.087  4463 1804351360 g1   DeleteOldDumps: found 2 ".core" dump files ...
+2016/01/30 03:16:38.087  4463 1804351360 g1   DeleteOldDumps: found 2 ".stack" dump files ...
+2016/01/30 03:16:38.088  4463 1804351360 g1   systemd: logind service available
+2016/01/30 03:16:38.088  4463 1804351360 g1   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c3', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/01/30 03:16:38.089  4463 1804351360 g1   SystemdSession: New session c3 [path=/org/freedesktop/login1/session/c3, TTY=tty2 seat=seat0 display= vtnr=2 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1454116432215973) active=1 type=tty class=user state=active timestamp=1454116431008630 service=login defaultCG= leader=3791 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c3, type=3 user=riddle tty=2 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/01/30 03:16:38.089  4463 1804351360 g1   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=1(1454063680215973) active=0 type=tty class=user state=online timestamp=1454063684889689 service=login defaultCG= leader=413 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10001 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=0 reliable=1 info=0]
+2016/01/30 03:16:38.089  4463 1804351360 g1   Session Information provided by systemd
+2016/01/30 03:16:38.089  4463 1804351360 g1   XSocket observer: watching /tmp/.X11-unix
+2016/01/30 03:16:38.090  4463 1804351360 g1   XSocket observer: adding XSession: 1
+2016/01/30 03:16:38.098  4463 1804351360 g1   XSession[1]: Retrieved XAuth from environment (!)
+2016/01/30 03:16:38.098  4463 1804351360 g1   XSocket observer: adding XSession: 0
+2016/01/30 03:16:38.107  4463 1804351360 g1!  XSession[0]: Unable to get XAuth
+2016/01/30 03:16:38.107  4463 1804351360 g1!  XSession[0]: Unable to open XAuthority file ""
+2016/01/30 03:16:38.107  4463 1804351360 g1   systemd: no active session found for display :1, assuming login screen
+2016/01/30 03:16:38.107  4463 1804351360 g1   systemd: no active session found for display :0 on pseudo TTY
+2016/01/30 03:16:38.109  4463 1804351360 g1!! XClipboard: Cannot open DISPLAY!, Errorcode=11
+2016/01/30 03:16:38.109  4463 1804351360 g1   TVGuiSlave.64: Running
+2016/01/30 03:16:38.148  4463 1722771200 g1   Audio: PulseAudio enabled
+2016/01/30 03:16:38.150  4463 1714378496 g1!! PulseAudio: Context failed: Connection refused, Errorcode=2
+2016/01/30 03:16:38.150  4463 1714378496 g1!! PulseAudio: Unable to connect to server, no server running?, Errorcode=2
+2016/01/30 03:16:38.150  4463 1722771200 g1!! Audio: Unable to initialise PulseAudio
+2016/01/30 03:16:38.150  4463 1722771200 g1!! XClipboard: failed to start
+2016/01/30 03:16:37.756     8    30 G1   Logger started.
+2016/01/30 03:16:37.854     8    30 G1!! SetProcessStartupOptions(): SetProcessDEPPolicy() failed! LE=120, Errorcode=12180
+2016/01/30 03:16:38.080     8    30 G1   TVW X ErrorHandler org 7e3b286e, def 7e21f9e0 cur 7d50890c
+2016/01/30 03:16:38.082     8    30 G1   Wine: Wine DLL initialized
+2016/01/30 03:16:38.082     8    30 G1   Wine: wine-1.6
+
+2016/01/30 03:16:38.082     8    30 G1   TVW SID0: SpawnSlave: pid 0
+2016/01/30 03:16:38.084     8    30 G1   TVW SID0: SpawnSlave: loading TVGuiSlave.64
+2016/01/30 03:16:38.087     8    30 G1   TVW ObserveFork: OK
+2016/01/30 03:16:38.087     8    30 G1   Wine: Spawned slave process with type 0
+2016/01/30 03:16:38.088     8    30 G1   TVW SID1: SpawnSlave: pid 0
+2016/01/30 03:16:38.090     8    30 G1   TVW SID1: SpawnSlave: loading TVGuiDelegate
+2016/01/30 03:16:38.091     8    30 G1   TVW ReadSlave [1]: Socket closed
+2016/01/30 03:16:38.091     8    30 G1!! TVW ObserveFork(ID = 1): read -2, Errorcode=12180
+2016/01/30 03:16:38.091     8    30 G1!! TVW SpawnSlave(type = 1): Death by exit [127], Errorcode=12180
+2016/01/30 03:16:38.091     8    30 G1!! TVW SpawnSlave(type = 1): failed, exiting, Errorcode=12180
+2016/01/30 03:16:38.091     8    30 G1!!!Wine: Unable to spawn slave process of type 1, Errorcode=12180
+2016/01/30 03:16:38.092     8    30 G1   Starting GUI master for slave type 0
+2016/01/30 03:16:38.092     8    30 G1   Starting GUI master for slave type 1
+2016/01/30 03:16:38.092     8    30 G1!!!WineGuiMaster[1]: Slave terminated unexpectedly, Errorcode=12180
+2016/01/30 03:16:38.098     8    30 G1   Monitors: X11 Windowing System, \\.\DISPLAY1, 1920x1080 (0,0), flags=21, dpi=96
+2016/01/30 03:16:38.109     8    30 G1   Slave connected to GUI master
+                    
+                    
+                    
+Start:              2016/01/30 03:16:38.113 (UTC+2:00)
+Version:            10.0.41499 Dev 
+ID:                 0
+Loglevel:           LogAll (0)
+License:            0
+Server:             master14.teamviewer.com
+IC:                 0
+CPU:                x86 Family 6 Model 60 Stepping 3, GenuineIntel
+CPU extensions:     h9
+OS:                 Lx Arch Linux (32-bit)
+IP:                 192.168.1.70
+Proxy-Settings:     Type=0 IP= User=
+AppPath:            C:\TeamViewer\TeamViewer.exe
+UserAccount:        riddle
+
+2016/01/30 03:16:38.148     8    30 G1   CMain::LoadResourceDLLs(): No custom resource dll found
+2016/01/30 03:16:38.151     8    30 G1   Win32_GUI::FontReallyExists: 'Segoe UI' found 0 matches.
+2016/01/30 03:16:38.151     8    30 G1   Win32_GUI::FontReallyExists: 'Liberation Sans' found 4 matches.
+2016/01/30 03:16:38.158     8    30 G1   Opening local TCP connection to 127.0.0.1:5939
+2016/01/30 03:16:38.158     8    30 G1   Local TCP connection established
+2016/01/30 03:16:38.159     8    30 G1   Process ID:  L 4384 /  W 8
+2016/01/30 03:16:38.266     8    30 G1   SettingsIPCReception receive a SYNCHRONISE Settings command : UserSettings
+2016/01/30 03:16:38.266     8    30 G1   Received Control_InitIPC_Response processtype=1
+2016/01/30 03:16:38.266     8    30 G1   Received Control_InitIPC_Response runningProcesses=3
+2016/01/30 03:16:38.266     8    30 G1   Control_InitIPC_Response: all processes 3 completely initialized
+2016/01/30 03:16:38.274     8    30 G1   ProxySearch: no PAC script detected via WPAD
+2016/01/30 03:16:38.279     8    30 G1   ProxySearch: no PAC script detected via WPAD
+2016/01/30 03:16:38.285     8     9 G1   TVW X Error 3 on ???, Req 2.0 (#484 r18874371): BadWindow (invalid Window parameter)
+2016/01/30 03:16:38.311  4463 1714378496 g1!!!Crash: Coredump has been written at '/home/riddle/.config/teamviewer10/logfiles/TVGuiSlave.64_FI_10.0.41499_2016-01-30-031638.core', Errorcode=14
+2016/01/30 03:16:38.311  4463 1714378496 g1   Process received fatal SIGSEGV
+2016/01/30 03:16:38.325     8    21 G1   TVW ReadSlave [0]: Socket closed
+2016/01/30 03:16:38.325     8    21 G1!!!WineGuiMaster[0]: Slave terminated unexpectedly, Errorcode=2
+2016/01/30 03:16:38.971     8     9 G1   Account::SetNewLoginState: 2
+2016/01/30 03:16:41.053     8     9 G1!! GetSimpleDisplayCertNameFromFile: File 'C:\TeamViewer\tv_w32.dll' does not exist., Errorcode=2
+2016/01/30 03:16:41.053     8     9 G1!! VerifyTeamViewerSignature() : WinVerifyTrust failed, result=2, Errorcode=2
+2016/01/30 03:16:41.054     8     9 G1!! MachineHooks: Library not found, Errorcode=2
+2016/01/30 03:16:41.056     8     9 G1   MachineID m=0 - 0
+2016/01/30 03:16:41.058     8     9 G1   TVUpdate::Init() Version-URL: download.teamviewer.com/download/update/ Update-URL: download.teamviewer.com/download/update/
+2016/01/30 03:16:41.095     8     9 G1   IncomingChatCommandRegistration::StartRegistration: registering for ready state properties
+2016/01/30 03:16:41.096     8     9 G1   IncomingChatCommandRegistration::RegisterIncomingCommands: Registered successfully for incoming commands (after 0 retries)
+2016/01/30 03:16:41.097     8     9 G1!! DragDropRegistration: could not register window, HR=80040155
+2016/01/30 03:16:41.097     8     9 G1   AccountLoginGUI::CreateLoginKey(): [OnlineState] System is set to Visible.
+2016/01/30 03:16:41.112     8     9 G1   Tray created!
+2016/01/30 03:16:41.115     8     9 G1   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=1 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=1
+2016/01/30 03:16:41.116     8    25 G1   IDLabelContent::UpdateImpl() IDs changed: SessionID "974085255", TSUserID "0", ServerID "0"
+2016/01/30 03:16:41.126     8     9 G1   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2016/01/30 03:16:41.126     8     9 G1   Account::TryAutoLogin: enabled: 0
+2016/01/30 03:16:41.126     8     9 G1!! ServerControl: RegisterPowerSettingNotification failed with error 0
+2016/01/30 03:16:51.053     8    32 G1   Timeout for master message.
+2016/01/30 03:16:51.338     8    32 G1   Timeout for master message.
+2016/01/30 03:16:51.339     8    32 G1   Timeout for master message.
+2016/01/30 03:16:51.339     8    32 G1   Timeout for master message.
+2016/01/30 03:16:51.339     8    32 G1   Timeout for master message.
+2016/01/30 03:16:51.339     8    32 G1   Timeout for master message.
+2016/01/30 03:16:51.339     8    32 G1   Timeout for master message.
+2016/01/30 03:17:04.573     8     9 G1   Account::SetNewLoginState: 3
+2016/01/30 03:17:04.599     8     9 G1   AccountLogin::Start: Trying account authentication
+2016/01/30 03:17:24.589     8     9 G1!! BuddyList: SignIn failed. (SignIn Timeout), Errorcode=5
+2016/01/30 03:17:24.594     8     9 G1!! BuddyPageList.OnDestroy: RemoveMessageFilter failed
+2016/01/30 03:17:24.597     8     9 G1   TVW X Error 3 on ???, Req 2.0 (#4914 r18874382): BadWindow (invalid Window parameter)
+2016/01/30 03:17:34.608     8     9 G1!! AccountLogin::Error: Authentication failed with error 2
+2016/01/30 03:17:34.609     8     9 G1   Account::SetNewLoginState: 2
+2016/01/30 03:17:35.684     8     9 G1   Account::SetNewLoginState: 3
+2016/01/30 03:17:35.718     8     9 G1   AccountLogin::Start: Trying account authentication
+2016/01/30 03:17:44.411     8     9 G1   Trying connection to 424784311, mode = 1
+2016/01/30 03:17:44.412     8    34 G1   CLogin::run()
+2016/01/30 03:17:44.643     8    34 G1   CLoginClient::NegotiateVersionClient()
+2016/01/30 03:17:45.463     8    34 G1   CLoginClient::AuthenticateClient()
+2016/01/30 03:17:52.914     8    34 G1   VoIP: using pipeline factory async = 1
+2016/01/30 03:17:52.914     8    34 G1   VoIP: Receiver: VoiceReceiverAudioPipeline: Building pipeline finished
+2016/01/30 03:17:52.994     8    34 G1   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/01/30 03:17:52.994     8    34 G1   RA: RemoteAudioReceiver::Factory started
+2016/01/30 03:17:52.995     8    34 G1   Resetting Cache. Cache disabled.
+2016/01/30 03:17:52.995     8    34 G1   Default keyboard layout: 04090409
+2016/01/30 03:17:52.995     8    34 G1   ClientSessionrecorder: Autostart recording function called but not activated.
+2016/01/30 03:17:52.995     8    34 G1   Client: RemoteDesktop 033E4498 created (rdp-id = 0)
+2016/01/30 03:17:52.998     8     9 G1   TVW X Error 8 on ???, Req 42.0 (#992 r18874389): BadMatch (invalid parameter attributes)
+2016/01/30 03:17:53.009     8     9 G1   CClientWindow::OnCreate(): Local display is 1920x1080
+2016/01/30 03:17:53.091     8    41 G1   ClientThread started
+2016/01/30 03:17:53.091     8    41 G1   ClientThread: Waiting for ParticipantManager synchronization
+2016/01/30 03:17:53.212     8    34 G1   CLogin::run() leave
+2016/01/30 03:17:53.213     8    26 G1   CParticipantManagerBase participant Arch-Linux (ID [974085255,544090254]) was added with the role 6
+2016/01/30 03:17:53.214     8    26 G1   New Participant added in CParticipantManager Arch-Linux ([974085255,544090254])
+2016/01/30 03:17:53.214     8    26 G1   ClientSessionrecorder: Autostart recording function called but not activated.
+2016/01/30 03:17:53.216     8    25 G1   CParticipantManagerBase participant Arch-Linux (1) (ID [424784311,1915413589]) was added with the role 3
+2016/01/30 03:17:53.216     8    25 G1   New Participant added in CParticipantManager Arch-Linux (1) ([424784311,1915413589])
+2016/01/30 03:17:53.217     8    37 G1    VoIP: Receiver: Participant channel "Arch-Linux (1) (424 784 311)" [424784311,1915413589]: VoIPBCommandReceiver: created
+2016/01/30 03:17:53.217     8    37 G1   VoIP: Receiver: Channel created for participant [424784311,1915413589] called "Arch-Linux (1) (424 784 311)" [424784311,1915413589]
+2016/01/30 03:17:53.218     8    25 G1   ClientSessionrecorder: Autostart recording function called but not activated.
+2016/01/30 03:17:53.236     8    28 G1   CParticipantManagerBase::CheckAndSubscribeNewStream(): Subscribe stream now streamID=1 type=5 required=1 supported=1
+2016/01/30 03:17:53.242     8    41 G1   Client connection to 424784311, server version is 10.0.41499 , OS=32768 Participant=[424784311,1915413589]
+2016/01/30 03:17:53.242     8    41 G1!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/01/30 03:17:53.243     8    41 G1   Client::SendInfo, resolution settings: mode = 1, width = 0, height = 0, selected monitor = 0
+2016/01/30 03:17:53.243     8    41 G1   ConnectionAccessSettings: RCAccessControl: RemoteControl='Allowed', FileTransfer='Allowed', ControlRemoteTV='Allowed', SwitchSides='Allowed', AllowDisableRemoteInput='Allowed', AllowVPN='Allowed', AllowPartnerViewDesktop='Allowed', ShareMyFiles='Allowed', ShareFilesWithMe='Allowed', PrintOnMyPrinters='Allowed', PrintOnRemotePrinters='Allowed'
+2016/01/30 03:17:54.457     8    25 G1   RemoteDesktop 033E4498: StreamID=3
+2016/01/30 03:17:54.460     8    41 G1!!!DataTransceiver.CallGuiCallback: callback empty
+2016/01/30 03:17:54.460     8    41 G1!!!DataTransceiver.CallGuiCallback: callback empty
+2016/01/30 03:17:54.461     8    41 G1   Client connection to 424784311, server version is 10.0.41499 , OS=32768 Participant=[424784311,1915413589]
+2016/01/30 03:17:54.461     8    41 G1!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/01/30 03:17:54.462     8    41 G1   Client::SendInfo, resolution settings: mode = 1, width = 0, height = 0, selected monitor = 0
+2016/01/30 03:17:54.530     8    41 G1   Server display is 1368x768x8, quali=100, monitors=0/1, sw=0, tilsize=0, scaling=1
+2016/01/30 03:17:54.576     8    41 G1   Caching activated, partners version is 2, own version is 2
+2016/01/30 03:17:54.576     8    41 G1   Compress: Caching active, partners version is 2, own version is 2
+2016/01/30 03:17:54.642     8    32 G1   Timeout for master message.
+2016/01/30 03:17:54.642     8    32 G1   Timeout for master message.
+2016/01/30 03:17:54.643     8    32 G1   Timeout for master message.
+2016/01/30 03:17:54.643     8    32 G1   Timeout for master message.
+2016/01/30 03:17:55.414     8    32 G1   Timeout for master message.
+2016/01/30 03:17:55.414     8    32 G1   Timeout for master message.
+2016/01/30 03:17:55.414     8    32 G1   Timeout for master message.
+2016/01/30 03:17:55.415     8    32 G1   Timeout for master message.
+2016/01/30 03:17:55.693     8     9 G1!! BuddyList: SignIn failed. (SignIn Timeout)
+2016/01/30 03:17:55.700     8     9 G1!! BuddyPageList.OnDestroy: RemoveMessageFilter failed
+2016/01/30 03:17:56.415     8    32 G1   Timeout for master message.
+2016/01/30 03:17:56.415     8    32 G1   Timeout for master message.
+2016/01/30 03:17:56.416     8    32 G1   Timeout for master message.
+2016/01/30 03:17:56.416     8    32 G1   Timeout for master message.
+2016/01/30 03:17:56.799     8     9 G1   TVW X Error 3 on ???, Req 2.0 (#11780 r18874415): BadWindow (invalid Window parameter)
+2016/01/30 03:17:57.417     8    32 G1   Timeout for master message.
+2016/01/30 03:17:57.418     8    32 G1   Timeout for master message.
+2016/01/30 03:17:57.419     8    32 G1   Timeout for master message.
+2016/01/30 03:17:57.419     8    32 G1   Timeout for master message.
+2016/01/30 03:17:58.418     8    32 G1   Timeout for master message.
+2016/01/30 03:17:58.418     8    32 G1   Timeout for master message.
+2016/01/30 03:17:58.419     8    32 G1   Timeout for master message.
+2016/01/30 03:17:58.420     8    32 G1   Timeout for master message.
+2016/01/30 03:17:59.418     8    32 G1   Timeout for master message.
+2016/01/30 03:17:59.418     8    32 G1   Timeout for master message.
+2016/01/30 03:17:59.419     8    32 G1   Timeout for master message.
+2016/01/30 03:17:59.419     8    32 G1   Timeout for master message.
+2016/01/30 03:18:00.420     8    32 G1   Timeout for master message.
+2016/01/30 03:18:00.420     8    32 G1   Timeout for master message.
+2016/01/30 03:18:00.421     8    32 G1   Timeout for master message.
+2016/01/30 03:18:00.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:01.419     8    32 G1   Timeout for master message.
+2016/01/30 03:18:01.420     8    32 G1   Timeout for master message.
+2016/01/30 03:18:01.421     8    32 G1   Timeout for master message.
+2016/01/30 03:18:01.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:02.421     8    32 G1   Timeout for master message.
+2016/01/30 03:18:02.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:02.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:02.423     8    32 G1   Timeout for master message.
+2016/01/30 03:18:03.420     8    32 G1   Timeout for master message.
+2016/01/30 03:18:03.421     8    32 G1   Timeout for master message.
+2016/01/30 03:18:03.421     8    32 G1   Timeout for master message.
+2016/01/30 03:18:03.421     8    32 G1   Timeout for master message.
+2016/01/30 03:18:04.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:04.456     8    32 G1   Timeout for master message.
+2016/01/30 03:18:04.456     8    32 G1   Timeout for master message.
+2016/01/30 03:18:04.457     8    32 G1   Timeout for master message.
+2016/01/30 03:18:04.534     8    41 G1   Server display is 1366x768x32, quali=95, monitors=0/1, sw=0, tilsize=64, scaling=1
+2016/01/30 03:18:05.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:05.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:05.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:05.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:05.732     8     9 G1!! AccountLogin::Error: Authentication failed with error 2
+2016/01/30 03:18:05.732     8     9 G1   Account::SetNewLoginState: 2
+2016/01/30 03:18:06.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:06.423     8    32 G1   Timeout for master message.
+2016/01/30 03:18:06.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:06.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:07.422     8    32 G1   Timeout for master message.
+2016/01/30 03:18:07.423     8    32 G1   Timeout for master message.
+2016/01/30 03:18:07.423     8    32 G1   Timeout for master message.
+2016/01/30 03:18:07.423     8    32 G1   Timeout for master message.
+2016/01/30 03:18:08.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:08.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:08.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:08.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:09.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:09.424     8    32 G1   Timeout for master message.
+2016/01/30 03:18:09.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:09.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:10.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:10.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:10.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:10.426     8    32 G1   Timeout for master message.
+2016/01/30 03:18:11.425     8    32 G1   Timeout for master message.
+2016/01/30 03:18:11.426     8    32 G1   Timeout for master message.
+2016/01/30 03:18:11.426     8    32 G1   Timeout for master message.
+2016/01/30 03:18:11.427     8    32 G1   Timeout for master message.
+2016/01/30 03:18:12.427     8    32 G1   Timeout for master message.
+2016/01/30 03:18:12.427     8    32 G1   Timeout for master message.
+2016/01/30 03:18:12.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:12.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:13.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:13.452     8    32 G1   Timeout for master message.
+2016/01/30 03:18:13.453     8    32 G1   Timeout for master message.
+2016/01/30 03:18:13.454     8    32 G1   Timeout for master message.
+2016/01/30 03:18:14.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:14.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:14.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:14.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:15.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:15.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:15.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:15.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:16.428     8    32 G1   Timeout for master message.
+2016/01/30 03:18:16.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:16.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:16.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:17.457     8    32 G1   Timeout for master message.
+2016/01/30 03:18:17.458     8    32 G1   Timeout for master message.
+2016/01/30 03:18:17.458     8    32 G1   Timeout for master message.
+2016/01/30 03:18:17.458     8    32 G1   Timeout for master message.
+2016/01/30 03:18:18.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:18.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:18.429     8    32 G1   Timeout for master message.
+2016/01/30 03:18:18.430     8    32 G1   Timeout for master message.
+2016/01/30 03:18:19.430     8    32 G1   Timeout for master message.
+2016/01/30 03:18:19.430     8    32 G1   Timeout for master message.
+2016/01/30 03:18:19.430     8    32 G1   Timeout for master message.
+2016/01/30 03:18:19.430     8    32 G1   Timeout for master message.
+2016/01/30 03:18:20.431     8    32 G1   Timeout for master message.
+2016/01/30 03:18:20.432     8    32 G1   Timeout for master message.
+2016/01/30 03:18:20.432     8    32 G1   Timeout for master message.
+2016/01/30 03:18:20.433     8    32 G1   Timeout for master message.
+2016/01/30 03:18:21.432     8    32 G1   Timeout for master message.
+2016/01/30 03:18:21.433     8    32 G1   Timeout for master message.
+2016/01/30 03:18:21.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:21.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:22.466     8    32 G1   Timeout for master message.
+2016/01/30 03:18:22.466     8    32 G1   Timeout for master message.
+2016/01/30 03:18:22.467     8    32 G1   Timeout for master message.
+2016/01/30 03:18:22.468     8    32 G1   Timeout for master message.
+2016/01/30 03:18:23.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:23.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:23.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:23.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:24.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:24.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:24.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:24.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:25.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:25.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:25.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:25.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:26.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:26.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:26.434     8    32 G1   Timeout for master message.
+2016/01/30 03:18:26.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:27.301     8     9 G1   TVW X Error 3 on ???, Req 2.0 (#39547 r18874417): BadWindow (invalid Window parameter)
+2016/01/30 03:18:27.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:27.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:27.436     8    32 G1   Timeout for master message.
+2016/01/30 03:18:27.437     8    32 G1   Timeout for master message.
+2016/01/30 03:18:28.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:28.435     8    32 G1   Timeout for master message.
+2016/01/30 03:18:28.436     8    32 G1   Timeout for master message.
+2016/01/30 03:18:28.436     8    32 G1   Timeout for master message.
+2016/01/30 03:18:29.464     8    32 G1   Timeout for master message.
+2016/01/30 03:18:29.464     8    32 G1   Timeout for master message.
+2016/01/30 03:18:29.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:29.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:30.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:30.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:30.456     8    32 G1   Timeout for master message.
+2016/01/30 03:18:30.456     8    32 G1   Timeout for master message.
+2016/01/30 03:18:31.437     8    32 G1   Timeout for master message.
+2016/01/30 03:18:31.438     8    32 G1   Timeout for master message.
+2016/01/30 03:18:31.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:31.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:32.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:32.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:32.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:32.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:33.439     8    32 G1   Timeout for master message.
+2016/01/30 03:18:33.440     8    32 G1   Timeout for master message.
+2016/01/30 03:18:33.441     8    32 G1   Timeout for master message.
+2016/01/30 03:18:33.441     8    32 G1   Timeout for master message.
+2016/01/30 03:18:34.440     8    32 G1   Timeout for master message.
+2016/01/30 03:18:34.441     8    32 G1   Timeout for master message.
+2016/01/30 03:18:34.442     8    32 G1   Timeout for master message.
+2016/01/30 03:18:34.443     8    32 G1   Timeout for master message.
+2016/01/30 03:18:35.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:35.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:35.466     8    32 G1   Timeout for master message.
+2016/01/30 03:18:35.467     8    32 G1   Timeout for master message.
+2016/01/30 03:18:36.442     8    32 G1   Timeout for master message.
+2016/01/30 03:18:36.442     8    32 G1   Timeout for master message.
+2016/01/30 03:18:36.442     8    32 G1   Timeout for master message.
+2016/01/30 03:18:36.443     8    32 G1   Timeout for master message.
+2016/01/30 03:18:37.442     8    32 G1   Timeout for master message.
+2016/01/30 03:18:37.443     8    32 G1   Timeout for master message.
+2016/01/30 03:18:37.443     8    32 G1   Timeout for master message.
+2016/01/30 03:18:37.443     8    32 G1   Timeout for master message.
+2016/01/30 03:18:38.464     8    32 G1   Timeout for master message.
+2016/01/30 03:18:38.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:38.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:38.465     8    32 G1   Timeout for master message.
+2016/01/30 03:18:39.444     8    32 G1   Timeout for master message.
+2016/01/30 03:18:39.444     8    32 G1   Timeout for master message.
+2016/01/30 03:18:39.445     8    32 G1   Timeout for master message.
+2016/01/30 03:18:39.445     8    32 G1   Timeout for master message.
+2016/01/30 03:18:40.474     8    32 G1   Timeout for master message.
+2016/01/30 03:18:40.475     8    32 G1   Timeout for master message.
+2016/01/30 03:18:40.475     8    32 G1   Timeout for master message.
+2016/01/30 03:18:40.476     8    32 G1   Timeout for master message.
+2016/01/30 03:18:41.469     8    32 G1   Timeout for master message.
+2016/01/30 03:18:41.469     8    32 G1   Timeout for master message.
+2016/01/30 03:18:41.470     8    32 G1   Timeout for master message.
+2016/01/30 03:18:41.471     8    32 G1   Timeout for master message.
+2016/01/30 03:18:42.446     8    32 G1   Timeout for master message.
+2016/01/30 03:18:42.446     8    32 G1   Timeout for master message.
+2016/01/30 03:18:42.446     8    32 G1   Timeout for master message.
+2016/01/30 03:18:42.446     8    32 G1   Timeout for master message.
+2016/01/30 03:18:43.475     8    32 G1   Timeout for master message.
+2016/01/30 03:18:43.476     8    32 G1   Timeout for master message.
+2016/01/30 03:18:43.478     8    32 G1   Timeout for master message.
+2016/01/30 03:18:43.479     8    32 G1   Timeout for master message.
+2016/01/30 03:18:44.448     8    32 G1   Timeout for master message.
+2016/01/30 03:18:44.449     8    32 G1   Timeout for master message.
+2016/01/30 03:18:44.449     8    32 G1   Timeout for master message.
+2016/01/30 03:18:44.450     8    32 G1   Timeout for master message.
+2016/01/30 03:18:45.448     8    32 G1   Timeout for master message.
+2016/01/30 03:18:45.449     8    32 G1   Timeout for master message.
+2016/01/30 03:18:45.450     8    32 G1   Timeout for master message.
+2016/01/30 03:18:45.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:46.287     8     9 G1   TVW X Error 3 on ???, Req 2.0 (#52993 r18874418): BadWindow (invalid Window parameter)
+2016/01/30 03:18:46.475     8    32 G1   Timeout for master message.
+2016/01/30 03:18:46.477     8    32 G1   Timeout for master message.
+2016/01/30 03:18:46.478     8    32 G1   Timeout for master message.
+2016/01/30 03:18:46.478     8    32 G1   Timeout for master message.
+2016/01/30 03:18:47.449     8    32 G1   Timeout for master message.
+2016/01/30 03:18:47.450     8    32 G1   Timeout for master message.
+2016/01/30 03:18:47.450     8    32 G1   Timeout for master message.
+2016/01/30 03:18:47.450     8    32 G1   Timeout for master message.
+2016/01/30 03:18:48.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:48.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:48.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:48.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:49.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:49.451     8    32 G1   Timeout for master message.
+2016/01/30 03:18:49.452     8    32 G1   Timeout for master message.
+2016/01/30 03:18:49.454     8    32 G1   Timeout for master message.
+2016/01/30 03:18:50.475     8    32 G1   Timeout for master message.
+2016/01/30 03:18:50.476     8    32 G1   Timeout for master message.
+2016/01/30 03:18:50.477     8    32 G1   Timeout for master message.
+2016/01/30 03:18:50.477     8    32 G1   Timeout for master message.
+2016/01/30 03:18:51.452     8    32 G1   Timeout for master message.
+2016/01/30 03:18:51.452     8    32 G1   Timeout for master message.
+2016/01/30 03:18:51.452     8    32 G1   Timeout for master message.
+2016/01/30 03:18:51.452     8    32 G1   Timeout for master message.
+2016/01/30 03:18:52.489     8    32 G1   Timeout for master message.
+2016/01/30 03:18:52.489     8    32 G1   Timeout for master message.
+2016/01/30 03:18:52.490     8    32 G1   Timeout for master message.
+2016/01/30 03:18:52.491     8    32 G1   Timeout for master message.
+2016/01/30 03:18:53.471     8    32 G1   Timeout for master message.
+2016/01/30 03:18:53.473     8    32 G1   Timeout for master message.
+2016/01/30 03:18:53.474     8    32 G1   Timeout for master message.
+2016/01/30 03:18:53.475     8    32 G1   Timeout for master message.
+2016/01/30 03:18:54.454     8    32 G1   Timeout for master message.
+2016/01/30 03:18:54.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:54.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:54.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:55.453     8    32 G1   Timeout for master message.
+2016/01/30 03:18:55.454     8    32 G1   Timeout for master message.
+2016/01/30 03:18:55.454     8    32 G1   Timeout for master message.
+2016/01/30 03:18:55.454     8    32 G1   Timeout for master message.
+2016/01/30 03:18:56.471     8    32 G1   Timeout for master message.
+2016/01/30 03:18:56.472     8    32 G1   Timeout for master message.
+2016/01/30 03:18:56.472     8    32 G1   Timeout for master message.
+2016/01/30 03:18:56.472     8    32 G1   Timeout for master message.
+2016/01/30 03:18:57.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:57.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:57.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:57.455     8    32 G1   Timeout for master message.
+2016/01/30 03:18:58.462     8    32 G1   Timeout for master message.
+2016/01/30 03:18:58.463     8    32 G1   Timeout for master message.
+2016/01/30 03:18:58.463     8    32 G1   Timeout for master message.
+2016/01/30 03:18:58.463     8    32 G1   Timeout for master message.
+2016/01/30 03:18:59.471     8    32 G1   Timeout for master message.
+2016/01/30 03:18:59.471     8    32 G1   Timeout for master message.
+2016/01/30 03:18:59.472     8    32 G1   Timeout for master message.
+2016/01/30 03:18:59.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:00.459     8    32 G1   Timeout for master message.
+2016/01/30 03:19:00.459     8    32 G1   Timeout for master message.
+2016/01/30 03:19:00.460     8    32 G1   Timeout for master message.
+2016/01/30 03:19:00.461     8    32 G1   Timeout for master message.
+2016/01/30 03:19:01.485     8    32 G1   Timeout for master message.
+2016/01/30 03:19:01.485     8    32 G1   Timeout for master message.
+2016/01/30 03:19:01.485     8    32 G1   Timeout for master message.
+2016/01/30 03:19:01.486     8    32 G1   Timeout for master message.
+2016/01/30 03:19:02.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:02.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:02.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:02.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:03.460     8    32 G1   Timeout for master message.
+2016/01/30 03:19:03.461     8    32 G1   Timeout for master message.
+2016/01/30 03:19:03.461     8    32 G1   Timeout for master message.
+2016/01/30 03:19:03.461     8    32 G1   Timeout for master message.
+2016/01/30 03:19:04.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:04.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:04.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:04.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:04.971     8    41 G1   Server display is 960x720x32, quali=95, monitors=0/1, sw=0, tilsize=64, scaling=1
+2016/01/30 03:19:05.010     8    41 G1   Server display is 960x720x32, quali=95, monitors=0/1, sw=0, tilsize=64, scaling=1
+2016/01/30 03:19:05.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:05.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:05.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:05.473     8    32 G1   Timeout for master message.
+2016/01/30 03:19:06.464     8    32 G1   Timeout for master message.
+2016/01/30 03:19:06.464     8    32 G1   Timeout for master message.
+2016/01/30 03:19:06.465     8    32 G1   Timeout for master message.
+2016/01/30 03:19:06.466     8    32 G1   Timeout for master message.
+2016/01/30 03:19:07.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:07.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:07.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:07.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:08.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:08.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:08.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:08.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:09.505     8    32 G1   Timeout for master message.
+2016/01/30 03:19:09.506     8    32 G1   Timeout for master message.
+2016/01/30 03:19:09.507     8    32 G1   Timeout for master message.
+2016/01/30 03:19:09.507     8    32 G1   Timeout for master message.
+2016/01/30 03:19:10.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:10.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:10.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:10.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:11.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:11.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:11.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:11.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:12.159     8    41 G1   Server display is 1366x768x32, quali=95, monitors=0/1, sw=0, tilsize=64, scaling=1
+2016/01/30 03:19:12.223     8    41 G1   Server display is 1366x768x32, quali=95, monitors=0/1, sw=0, tilsize=64, scaling=1
+2016/01/30 03:19:12.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:12.502     8    32 G1   Timeout for master message.
+2016/01/30 03:19:12.503     8    32 G1   Timeout for master message.
+2016/01/30 03:19:12.504     8    32 G1   Timeout for master message.
+2016/01/30 03:19:13.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:13.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:13.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:13.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:14.470     8    32 G1   Timeout for master message.
+2016/01/30 03:19:14.470     8    32 G1   Timeout for master message.
+2016/01/30 03:19:14.470     8    32 G1   Timeout for master message.
+2016/01/30 03:19:14.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:15.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:15.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:15.471     8    32 G1   Timeout for master message.
+2016/01/30 03:19:15.472     8    32 G1   Timeout for master message.
+2016/01/30 03:19:16.504     8    32 G1   Timeout for master message.
+2016/01/30 03:19:16.505     8    32 G1   Timeout for master message.
+2016/01/30 03:19:16.505     8    32 G1   Timeout for master message.
+2016/01/30 03:19:16.506     8    32 G1   Timeout for master message.
+2016/01/30 03:19:17.497     8    32 G1   Timeout for master message.
+2016/01/30 03:19:17.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:17.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:17.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:18.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:18.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:18.493     8    32 G1   Timeout for master message.
+2016/01/30 03:19:18.494     8    32 G1   Timeout for master message.
+2016/01/30 03:19:19.477     8    32 G1   Timeout for master message.
+2016/01/30 03:19:19.478     8    32 G1   Timeout for master message.
+2016/01/30 03:19:19.478     8    32 G1   Timeout for master message.
+2016/01/30 03:19:19.478     8    32 G1   Timeout for master message.
+2016/01/30 03:19:20.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:20.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:20.512     8    32 G1   Timeout for master message.
+2016/01/30 03:19:20.512     8    32 G1   Timeout for master message.
+2016/01/30 03:19:21.474     8    32 G1   Timeout for master message.
+2016/01/30 03:19:21.474     8    32 G1   Timeout for master message.
+2016/01/30 03:19:21.475     8    32 G1   Timeout for master message.
+2016/01/30 03:19:21.475     8    32 G1   Timeout for master message.
+2016/01/30 03:19:21.925     8     9 G1!! CFileTransferWindowClient: InitSystemImageList() failed
+2016/01/30 03:19:21.957     8    42 G1   File transfer client started.
+2016/01/30 03:19:22.065     8     9 G1   The connection has been established successfully.
+2016/01/30 03:19:22.477     8     9 G1   \
+2016/01/30 03:19:22.481     8    32 G1   Timeout for master message.
+2016/01/30 03:19:22.481     8    32 G1   Timeout for master message.
+2016/01/30 03:19:22.482     8    32 G1   Timeout for master message.
+2016/01/30 03:19:22.482     8    32 G1   Timeout for master message.
+2016/01/30 03:19:23.327     8     9 G1   TVW X Error 3 on ???, Req 2.0 (#82464 r18874461): BadWindow (invalid Window parameter)
+2016/01/30 03:19:23.507     8    32 G1   Timeout for master message.
+2016/01/30 03:19:23.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:23.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:23.509     8    32 G1   Timeout for master message.
+2016/01/30 03:19:24.497     8    32 G1   Timeout for master message.
+2016/01/30 03:19:24.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:24.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:24.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:24.885     8    42 G1   Ending Clientthread... 
+2016/01/30 03:19:24.885     8    42 G1   The Clientthread has ended. 
+2016/01/30 03:19:25.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:25.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:25.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:25.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:26.484     8    32 G1   Timeout for master message.
+2016/01/30 03:19:26.485     8    32 G1   Timeout for master message.
+2016/01/30 03:19:26.485     8    32 G1   Timeout for master message.
+2016/01/30 03:19:26.485     8    32 G1   Timeout for master message.
+2016/01/30 03:19:27.479     8    32 G1   Timeout for master message.
+2016/01/30 03:19:27.479     8    32 G1   Timeout for master message.
+2016/01/30 03:19:27.479     8    32 G1   Timeout for master message.
+2016/01/30 03:19:27.479     8    32 G1   Timeout for master message.
+2016/01/30 03:19:28.504     8    32 G1   Timeout for master message.
+2016/01/30 03:19:28.505     8    32 G1   Timeout for master message.
+2016/01/30 03:19:28.506     8    32 G1   Timeout for master message.
+2016/01/30 03:19:28.507     8    32 G1   Timeout for master message.
+2016/01/30 03:19:29.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:29.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:29.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:29.500     8    32 G1   Timeout for master message.
+2016/01/30 03:19:30.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:30.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:30.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:30.490     8    32 G1   Timeout for master message.
+2016/01/30 03:19:31.482     8    32 G1   Timeout for master message.
+2016/01/30 03:19:31.482     8    32 G1   Timeout for master message.
+2016/01/30 03:19:31.482     8    32 G1   Timeout for master message.
+2016/01/30 03:19:31.482     8    32 G1   Timeout for master message.
+2016/01/30 03:19:32.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:32.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:32.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:32.512     8    32 G1   Timeout for master message.
+2016/01/30 03:19:33.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:33.510     8    32 G1   Timeout for master message.
+2016/01/30 03:19:33.510     8    32 G1   Timeout for master message.
+2016/01/30 03:19:33.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:34.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:34.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:34.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:34.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:35.504     8    32 G1   Timeout for master message.
+2016/01/30 03:19:35.507     8    32 G1   Timeout for master message.
+2016/01/30 03:19:35.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:35.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:36.486     8    32 G1   Timeout for master message.
+2016/01/30 03:19:36.487     8    32 G1   Timeout for master message.
+2016/01/30 03:19:36.487     8    32 G1   Timeout for master message.
+2016/01/30 03:19:36.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:37.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:37.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:37.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:37.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:38.488     8    32 G1   Timeout for master message.
+2016/01/30 03:19:38.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:38.490     8    32 G1   Timeout for master message.
+2016/01/30 03:19:38.490     8    32 G1   Timeout for master message.
+2016/01/30 03:19:39.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:39.509     8    32 G1   Timeout for master message.
+2016/01/30 03:19:39.510     8    32 G1   Timeout for master message.
+2016/01/30 03:19:39.512     8    32 G1   Timeout for master message.
+2016/01/30 03:19:40.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:40.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:40.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:40.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:41.489     8    32 G1   Timeout for master message.
+2016/01/30 03:19:41.490     8    32 G1   Timeout for master message.
+2016/01/30 03:19:41.490     8    32 G1   Timeout for master message.
+2016/01/30 03:19:41.490     8    32 G1   Timeout for master message.
+2016/01/30 03:19:42.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:42.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:42.512     8    32 G1   Timeout for master message.
+2016/01/30 03:19:42.512     8    32 G1   Timeout for master message.
+2016/01/30 03:19:43.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:43.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:43.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:43.502     8    32 G1   Timeout for master message.
+2016/01/30 03:19:44.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:44.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:44.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:44.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:45.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:45.491     8    32 G1   Timeout for master message.
+2016/01/30 03:19:45.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:45.492     8    32 G1   Timeout for master message.
+2016/01/30 03:19:46.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:46.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:46.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:46.509     8    32 G1   Timeout for master message.
+2016/01/30 03:19:47.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:47.498     8    32 G1   Timeout for master message.
+2016/01/30 03:19:47.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:47.500     8    32 G1   Timeout for master message.
+2016/01/30 03:19:48.494     8    32 G1   Timeout for master message.
+2016/01/30 03:19:48.494     8    32 G1   Timeout for master message.
+2016/01/30 03:19:48.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:48.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:49.493     8    32 G1   Timeout for master message.
+2016/01/30 03:19:49.494     8    32 G1   Timeout for master message.
+2016/01/30 03:19:49.494     8    32 G1   Timeout for master message.
+2016/01/30 03:19:49.494     8    32 G1   Timeout for master message.
+2016/01/30 03:19:50.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:50.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:50.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:50.497     8    32 G1   Timeout for master message.
+2016/01/30 03:19:51.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:51.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:51.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:51.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:52.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:52.495     8    32 G1   Timeout for master message.
+2016/01/30 03:19:52.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:52.496     8    32 G1   Timeout for master message.
+2016/01/30 03:19:53.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:53.502     8    32 G1   Timeout for master message.
+2016/01/30 03:19:53.502     8    32 G1   Timeout for master message.
+2016/01/30 03:19:53.502     8    32 G1   Timeout for master message.
+2016/01/30 03:19:54.521     8    32 G1   Timeout for master message.
+2016/01/30 03:19:54.521     8    32 G1   Timeout for master message.
+2016/01/30 03:19:54.522     8    32 G1   Timeout for master message.
+2016/01/30 03:19:54.522     8    32 G1   Timeout for master message.
+2016/01/30 03:19:55.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:55.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:55.509     8    32 G1   Timeout for master message.
+2016/01/30 03:19:55.510     8    32 G1   Timeout for master message.
+2016/01/30 03:19:56.515     8    32 G1   Timeout for master message.
+2016/01/30 03:19:56.516     8    32 G1   Timeout for master message.
+2016/01/30 03:19:56.516     8    32 G1   Timeout for master message.
+2016/01/30 03:19:56.518     8    32 G1   Timeout for master message.
+2016/01/30 03:19:57.499     8    32 G1   Timeout for master message.
+2016/01/30 03:19:57.500     8    32 G1   Timeout for master message.
+2016/01/30 03:19:57.500     8    32 G1   Timeout for master message.
+2016/01/30 03:19:57.500     8    32 G1   Timeout for master message.
+2016/01/30 03:19:58.508     8    32 G1   Timeout for master message.
+2016/01/30 03:19:58.509     8    32 G1   Timeout for master message.
+2016/01/30 03:19:58.510     8    32 G1   Timeout for master message.
+2016/01/30 03:19:58.511     8    32 G1   Timeout for master message.
+2016/01/30 03:19:59.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:59.501     8    32 G1   Timeout for master message.
+2016/01/30 03:19:59.502     8    32 G1   Timeout for master message.
+2016/01/30 03:19:59.502     8    32 G1   Timeout for master message.
+2016/01/30 03:20:00.502     8    32 G1   Timeout for master message.
+2016/01/30 03:20:00.502     8    32 G1   Timeout for master message.
+2016/01/30 03:20:00.502     8    32 G1   Timeout for master message.
+2016/01/30 03:20:00.502     8    32 G1   Timeout for master message.
+2016/01/30 03:20:01.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:01.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:01.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:01.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:02.504     8    32 G1   Timeout for master message.
+2016/01/30 03:20:02.504     8    32 G1   Timeout for master message.
+2016/01/30 03:20:02.505     8    32 G1   Timeout for master message.
+2016/01/30 03:20:02.506     8    32 G1   Timeout for master message.
+2016/01/30 03:20:03.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:03.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:03.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:03.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:04.506     8    32 G1   Timeout for master message.
+2016/01/30 03:20:04.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:04.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:04.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:05.505     8    32 G1   Timeout for master message.
+2016/01/30 03:20:05.506     8    32 G1   Timeout for master message.
+2016/01/30 03:20:05.506     8    32 G1   Timeout for master message.
+2016/01/30 03:20:05.506     8    32 G1   Timeout for master message.
+2016/01/30 03:20:06.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:06.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:06.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:06.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:07.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:07.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:07.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:07.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:08.507     8    32 G1   Timeout for master message.
+2016/01/30 03:20:08.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:08.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:08.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:09.508     8    32 G1   Timeout for master message.
+2016/01/30 03:20:09.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:09.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:09.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:10.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:10.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:10.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:10.509     8    32 G1   Timeout for master message.
+2016/01/30 03:20:11.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:11.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:11.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:11.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:12.510     8    32 G1   Timeout for master message.
+2016/01/30 03:20:12.510     8    32 G1   Timeout for master message.
+2016/01/30 03:20:12.510     8    32 G1   Timeout for master message.
+2016/01/30 03:20:12.510     8    32 G1   Timeout for master message.
+2016/01/30 03:20:13.510     8    32 G1   Timeout for master message.
+2016/01/30 03:20:13.510     8    32 G1   Timeout for master message.
+2016/01/30 03:20:13.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:13.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:14.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:14.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:14.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:14.511     8    32 G1   Timeout for master message.
+2016/01/30 03:20:15.512     8    32 G1   Timeout for master message.
+2016/01/30 03:20:15.512     8    32 G1   Timeout for master message.
+2016/01/30 03:20:15.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:15.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:16.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:16.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:16.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:16.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:17.548     8    32 G1   Timeout for master message.
+2016/01/30 03:20:17.548     8    32 G1   Timeout for master message.
+2016/01/30 03:20:17.548     8    32 G1   Timeout for master message.
+2016/01/30 03:20:17.548     8    32 G1   Timeout for master message.
+2016/01/30 03:20:18.512     8    32 G1   Timeout for master message.
+2016/01/30 03:20:18.512     8    32 G1   Timeout for master message.
+2016/01/30 03:20:18.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:18.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:19.512     8    32 G1   Timeout for master message.
+2016/01/30 03:20:19.512     8    32 G1   Timeout for master message.
+2016/01/30 03:20:19.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:19.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:20.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:20.513     8    32 G1   Timeout for master message.
+2016/01/30 03:20:20.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:20.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:21.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:21.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:21.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:21.515     8    32 G1   Timeout for master message.
+2016/01/30 03:20:22.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:22.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:22.514     8    32 G1   Timeout for master message.
+2016/01/30 03:20:22.515     8    32 G1   Timeout for master message.
+2016/01/30 03:20:23.515     8    32 G1   Timeout for master message.
+2016/01/30 03:20:23.515     8    32 G1   Timeout for master message.
+2016/01/30 03:20:23.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:23.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:24.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:24.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:24.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:24.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:25.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:25.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:25.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:25.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:26.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:26.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:26.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:26.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:27.516     8    32 G1   Timeout for master message.
+2016/01/30 03:20:27.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:27.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:27.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:28.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:28.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:28.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:28.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:29.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:29.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:29.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:29.521     8    32 G1   Timeout for master message.
+2016/01/30 03:20:30.517     8    32 G1   Timeout for master message.
+2016/01/30 03:20:30.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:30.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:30.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:31.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:31.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:31.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:31.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:32.518     8    32 G1   Timeout for master message.
+2016/01/30 03:20:32.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:32.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:32.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:33.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:33.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:33.519     8    32 G1   Timeout for master message.
+2016/01/30 03:20:33.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:34.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:34.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:34.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:34.520     8    32 G1   Timeout for master message.
+2016/01/30 03:20:35.557     8    32 G1   Timeout for master message.
+2016/01/30 03:20:35.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:35.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:35.559     8    32 G1   Timeout for master message.
+2016/01/30 03:20:36.521     8    32 G1   Timeout for master message.
+2016/01/30 03:20:36.521     8    32 G1   Timeout for master message.
+2016/01/30 03:20:36.522     8    32 G1   Timeout for master message.
+2016/01/30 03:20:36.522     8    32 G1   Timeout for master message.
+2016/01/30 03:20:37.522     8    32 G1   Timeout for master message.
+2016/01/30 03:20:37.522     8    32 G1   Timeout for master message.
+2016/01/30 03:20:37.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:37.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:38.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:38.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:38.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:38.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:39.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:39.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:39.523     8    32 G1   Timeout for master message.
+2016/01/30 03:20:39.524     8    32 G1   Timeout for master message.
+2016/01/30 03:20:40.524     8    32 G1   Timeout for master message.
+2016/01/30 03:20:40.524     8    32 G1   Timeout for master message.
+2016/01/30 03:20:40.524     8    32 G1   Timeout for master message.
+2016/01/30 03:20:40.525     8    32 G1   Timeout for master message.
+2016/01/30 03:20:41.557     8    32 G1   Timeout for master message.
+2016/01/30 03:20:41.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:41.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:41.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:42.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:42.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:42.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:42.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:43.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:43.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:43.526     8    32 G1   Timeout for master message.
+2016/01/30 03:20:43.527     8    32 G1   Timeout for master message.
+2016/01/30 03:20:44.527     8    32 G1   Timeout for master message.
+2016/01/30 03:20:44.527     8    32 G1   Timeout for master message.
+2016/01/30 03:20:44.527     8    32 G1   Timeout for master message.
+2016/01/30 03:20:44.527     8    32 G1   Timeout for master message.
+2016/01/30 03:20:45.527     8    32 G1   Timeout for master message.
+2016/01/30 03:20:45.528     8    32 G1   Timeout for master message.
+2016/01/30 03:20:45.528     8    32 G1   Timeout for master message.
+2016/01/30 03:20:45.529     8    32 G1   Timeout for master message.
+2016/01/30 03:20:46.528     8    32 G1   Timeout for master message.
+2016/01/30 03:20:46.529     8    32 G1   Timeout for master message.
+2016/01/30 03:20:46.529     8    32 G1   Timeout for master message.
+2016/01/30 03:20:46.529     8    32 G1   Timeout for master message.
+2016/01/30 03:20:46.734     8     9 G1   Connection closed by user
+2016/01/30 03:20:46.756     8     9 G1   VoIP: Receiver: Terminate
+2016/01/30 03:20:46.757     8    28 G1   VoIP: Receiver: ThreadPool:StopThreads
+2016/01/30 03:20:47.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:47.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:47.558     8    32 G1   Timeout for master message.
+2016/01/30 03:20:47.559     8    32 G1   Timeout for master message.
+2016/01/30 03:20:48.530     8    32 G1   Timeout for master message.
+2016/01/30 03:20:48.530     8    32 G1   Timeout for master message.
+2016/01/30 03:20:48.530     8    32 G1   Timeout for master message.
+2016/01/30 03:20:48.530     8    32 G1   Timeout for master message.
+2016/01/30 03:20:49.530     8    32 G1   Timeout for master message.
+2016/01/30 03:20:49.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:49.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:49.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:50.555     8    32 G1   Timeout for master message.
+2016/01/30 03:20:50.555     8    32 G1   Timeout for master message.
+2016/01/30 03:20:50.556     8    32 G1   Timeout for master message.
+2016/01/30 03:20:50.556     8    32 G1   Timeout for master message.
+2016/01/30 03:20:51.549     8    32 G1   Timeout for master message.
+2016/01/30 03:20:51.549     8    32 G1   Timeout for master message.
+2016/01/30 03:20:51.549     8    32 G1   Timeout for master message.
+2016/01/30 03:20:51.549     8    32 G1   Timeout for master message.
+2016/01/30 03:20:52.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:52.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:52.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:52.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:53.561     8    32 G1   Timeout for master message.
+2016/01/30 03:20:53.562     8    32 G1   Timeout for master message.
+2016/01/30 03:20:53.562     8    32 G1   Timeout for master message.
+2016/01/30 03:20:53.562     8    32 G1   Timeout for master message.
+2016/01/30 03:20:54.531     8    32 G1   Timeout for master message.
+2016/01/30 03:20:54.532     8    32 G1   Timeout for master message.
+2016/01/30 03:20:54.532     8    32 G1   Timeout for master message.
+2016/01/30 03:20:54.532     8    32 G1   Timeout for master message.
+2016/01/30 03:20:55.000     8     9 G1   Account::SetNewLoginState: 3
+2016/01/30 03:20:55.042     8     9 G1   AccountLogin::Start: Trying account authentication
+2016/01/30 03:20:55.532     8    32 G1   Timeout for master message.
+2016/01/30 03:20:55.533     8    32 G1   Timeout for master message.
+2016/01/30 03:20:55.533     8    32 G1   Timeout for master message.
+2016/01/30 03:20:55.534     8    32 G1   Timeout for master message.
+2016/01/30 03:20:56.533     8    32 G1   Timeout for master message.
+2016/01/30 03:20:56.533     8    32 G1   Timeout for master message.
+2016/01/30 03:20:56.533     8    32 G1   Timeout for master message.
+2016/01/30 03:20:56.534     8    32 G1   Timeout for master message.
+2016/01/30 03:21:15.008     8     9 G1!! BuddyList: SignIn failed. (SignIn Timeout)
+2016/01/30 03:21:15.017     8     9 G1!! BuddyPageList.OnDestroy: RemoveMessageFilter failed
+2016/01/30 03:21:25.062     8     9 G1!! AccountLogin::Error: Authentication failed with error 2
+2016/01/30 03:21:25.063     8     9 G1   Account::SetNewLoginState: 2
+2016/03/08 00:16:08.831 14194 4239067008 g0   Logger started.
+2016/03/08 00:16:08.844 14194 4239067008 g0   DeleteOldDumps: found 3 ".core" dump files ...
+2016/03/08 00:16:08.844 14194 4239067008 g0   DeleteOldDumps: found 3 ".stack" dump files ...
+2016/03/08 00:16:09.103 14194 4239067008 g0   systemd: logind service available
+2016/03/08 00:16:09.133 14194 4239067008 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/03/08 00:16:09.133 14194 4239067008 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=1(1457381673619051) active=1 type=tty class=user state=active timestamp=1457381676317758 service=login defaultCG= leader=541 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/03/08 00:16:09.133 14194 4239067008 g0   Session Information provided by systemd
+2016/03/08 00:16:09.133 14194 4239067008 g0   XSocket observer: watching /tmp/.X11-unix
+2016/03/08 00:16:09.139 14194 4239067008 g0   XSocket observer: adding XSession: 0
+2016/03/08 00:16:09.217 14194 4239067008 g0   XSession[0]: Retrieved XAuth from environment (!)
+2016/03/08 00:16:09.217 14194 4239067008 g0   systemd: no active session found for display :0, assuming login screen
+2016/03/08 00:16:09.272 14194 4239067008 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2016/03/08 00:16:09.272 14194 4239067008 g0   TVGuiSlave.64: Running
+2016/03/08 00:16:09.418 14194 4157507328 g0   Audio: PulseAudio enabled
+2016/03/08 00:16:09.422 14194 4149114624 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/03/08 00:16:09.422 14194 4157507328 g0   PulseAudio: Connection established
+2016/03/08 00:16:09.422 14194 4149114624 g0   PulseAudio: Exit main loop (0), err=-2
+2016/03/08 00:16:09.422 14194 4149114624 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2016/03/08 00:16:09.474 14194 4239067008 g0!  XSM: No X Session Management for current session available (yet)
+2016/03/08 00:16:07.959     8    30 G0   Logger started.
+2016/03/08 00:16:08.094     8    30 G0!! SetProcessStartupOptions(): SetProcessDEPPolicy() failed! LE=120, Errorcode=12180
+2016/03/08 00:16:08.658     8    30 G0   TVW X ErrorHandler org 7e3ac86e, def 7e2149e0 cur 7d4fd90c
+2016/03/08 00:16:08.673     8    30 G0   Wine: Wine DLL initialized
+2016/03/08 00:16:08.673     8    30 G0   Wine: wine-1.6
+
+2016/03/08 00:16:08.674     8    30 G0   TVW SID0: SpawnSlave: pid 0
+2016/03/08 00:16:08.677     8    30 G0   TVW SID0: SpawnSlave: loading TVGuiSlave.64
+2016/03/08 00:16:08.777     8    30 G0!! TVW ObserveFork(ID = 0): read 0, Errorcode=12180
+2016/03/08 00:16:08.844     8    30 G0   TVW ObserveFork: OK
+2016/03/08 00:16:08.844     8    30 G0   Wine: Spawned slave process with type 0
+2016/03/08 00:16:08.845     8    30 G0   TVW SID1: SpawnSlave: pid 0
+2016/03/08 00:16:08.848     8    30 G0   TVW SID1: SpawnSlave: loading TVGuiDelegate
+2016/03/08 00:16:08.948     8    30 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=12180
+2016/03/08 00:16:09.048     8    30 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=12180
+2016/03/08 00:16:09.113     8    30 G0   TVW ReadSlave [1]: Socket closed
+2016/03/08 00:16:09.113     8    30 G0!! TVW ObserveFork(ID = 1): read -2, Errorcode=12180
+2016/03/08 00:16:09.113     8    30 G0!! TVW SpawnSlave(type = 1): Death by exit [127], Errorcode=12180
+2016/03/08 00:16:09.113     8    30 G0!! TVW SpawnSlave(type = 1): failed, exiting, Errorcode=12180
+2016/03/08 00:16:09.113     8    30 G0!!!Wine: Unable to spawn slave process of type 1, Errorcode=12180
+2016/03/08 00:16:09.114     8    30 G0   Starting GUI master for slave type 0
+2016/03/08 00:16:09.114     8    30 G0   Starting GUI master for slave type 1
+2016/03/08 00:16:09.114     8    30 G0!!!WineGuiMaster[1]: Slave terminated unexpectedly, Errorcode=12180
+2016/03/08 00:16:09.125     8    30 G0   Monitors: X11 Windowing System, \\.\DISPLAY1, 3840x1080 (0,0), flags=21, dpi=96
+2016/03/08 00:16:09.272     8    30 G0   Slave connected to GUI master
+                    
+                    
+                    
+Start:              2016/03/08 00:16:09.275 (UTC+2:00)
+Version:            10.0.41499 Dev 
+ID:                 0
+Loglevel:           LogAll (0)
+License:            0
+Server:             master6.teamviewer.com
+IC:                 0
+CPU:                x86 Family 6 Model 60 Stepping 3, GenuineIntel
+CPU extensions:     h9
+OS:                 Lx Arch Linux (32-bit)
+IP:                 192.168.1.67
+Proxy-Settings:     Type=0 IP= User=
+AppPath:            C:\TeamViewer\TeamViewer.exe
+UserAccount:        riddle
+
+2016/03/08 00:16:09.417     8    30 G0   CMain::LoadResourceDLLs(): No custom resource dll found
+2016/03/08 00:16:09.423     8    30 G0   Win32_GUI::FontReallyExists: 'Segoe UI' found 0 matches.
+2016/03/08 00:16:09.424     8    30 G0   Win32_GUI::FontReallyExists: 'Liberation Sans' found 4 matches.
+2016/03/08 00:16:09.432     8    30 G0   Opening local TCP connection to 127.0.0.1:5939
+2016/03/08 00:16:09.433     8    30 G0   Local TCP connection established
+2016/03/08 00:16:09.439     8    30 G0   Process ID:  L 14114 /  W 8
+2016/03/08 00:16:09.523     8    30 G0   SettingsIPCReception receive a SYNCHRONISE Settings command : UserSettings
+2016/03/08 00:16:09.523     8    30 G0   Received Control_InitIPC_Response processtype=1
+2016/03/08 00:16:09.523     8    30 G0   Received Control_InitIPC_Response runningProcesses=3
+2016/03/08 00:16:09.524     8    30 G0   Control_InitIPC_Response: all processes 3 completely initialized
+2016/03/08 00:16:09.530     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/03/08 00:16:09.534     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/03/08 00:16:09.560     8     9 G0!! GetSimpleDisplayCertNameFromFile: File 'C:\TeamViewer\tv_w32.dll' does not exist., Errorcode=2
+2016/03/08 00:16:09.560     8     9 G0!! VerifyTeamViewerSignature() : WinVerifyTrust failed, result=2, Errorcode=2
+2016/03/08 00:16:09.560     8     9 G0!! MachineHooks: Library not found, Errorcode=2
+2016/03/08 00:16:09.581     8     9 G0   MachineID m=0 - 1
+2016/03/08 00:16:09.582     8     9 G0   TVUpdate::Init() Version-URL: download.teamviewer.com/download/update/ Update-URL: download.teamviewer.com/download/update/
+2016/03/08 00:16:09.725     8     9 G0   IncomingChatCommandRegistration::StartRegistration: registering for ready state properties
+2016/03/08 00:16:09.725     8     9 G0!! DragDropRegistration: could not register window, HR=80040155
+2016/03/08 00:16:09.725     8     9 G0   AccountLoginGUI::CreateLoginKey(): [OnlineState] System is set to Visible.
+2016/03/08 00:16:09.744     8     9 G0   Tray created!
+2016/03/08 00:16:09.747     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=0 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=0
+2016/03/08 00:16:09.750     8    26 G0   IDLabelContent::UpdateImpl() IDs changed: SessionID "974085255", TSUserID "0", ServerID "0"
+2016/03/08 00:16:09.763     8     9 G0   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2016/03/08 00:16:09.763     8     9 G0   Account::TryAutoLogin: enabled: 0
+2016/03/08 00:16:09.764     8     9 G0!! ServerControl: RegisterPowerSettingNotification failed with error 0
+2016/03/08 00:16:09.838     8    27 G0   IncomingChatCommandRegistration::RegisterIncomingCommands: Registered successfully for incoming commands (after 0 retries)
+2016/03/08 00:16:09.853 14194 4132329216 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/03/08 00:16:09.853 14194 4157507328 g0   PulseAudio: Connection established
+2016/03/08 00:16:09.853     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/03/08 00:16:09.853     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/03/08 00:16:09.854     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/03/08 00:16:09.854 14194 4132329216 g0   PulseAudio: Exit main loop (0), err=-2
+2016/03/08 00:16:09.868     8     9 G0   Account::SetNewLoginState: 2
+2016/03/08 00:16:09.872     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=1 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=1
+2016/03/08 00:16:11.743     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#2504 r50331654): BadWindow (invalid Window parameter)
+2016/03/08 00:16:21.246     8     9 G0   Account::SetNewLoginState: 3
+2016/03/08 00:16:21.279     8     9 G0   AccountLogin::Start: Trying account authentication
+2016/03/08 00:16:21.399     8     9 G0   AccountLogin::HandleChallenge: Try V2Login
+2016/03/08 00:16:21.452     8     9 G0!! AccountLogin::Error: Authentication failed with error 24
+2016/03/08 00:16:21.461     8     9 G0   Account::SetNewLoginState: 2
+2016/03/08 00:16:22.580     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#16840 r50331658): BadWindow (invalid Window parameter)
+2016/03/08 00:16:53.670     8    25 G0   Connection incoming, sessionID = 1127987210
+2016/03/08 00:16:53.932     8    25 G0   Received Control_InitIPC processtype=4
+2016/03/08 00:16:53.945     8     9 G0   TVW X Error 8 on ???, Req 42.0 (#835 r50331662): BadMatch (invalid parameter attributes)
+2016/03/08 00:16:53.961     8     9 G0   Wine: HwndToWindow 00020132 -> 300000d
+2016/03/08 00:16:53.961     8     9 G0   Wine: HwndToWindow 00020136 -> 300000e
+2016/03/08 00:23:09.725     8     9 G0   CMainWindow::TrackIdleTime(): System goes idle. (IdleTime=334938)
+2016/03/08 00:42:47.590 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:47.591 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:47.593 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:47.593 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:47.694 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:47.694 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=2340, c=2340)
+2016/03/08 00:42:47.694 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:47.700 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=598, c=1196)
+2016/03/08 00:42:52.093 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:52.094 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:52.094 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:52.094 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:52.098 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:52.098 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=678, c=678)
+2016/03/08 00:42:52.106 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:52.107 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=120, c=240)
+2016/03/08 00:42:52.977 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:52.978 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:52.978 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:52.978 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:53.011 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:53.011 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=370, c=370)
+2016/03/08 00:42:53.024 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:53.024 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=2, c=4)
+2016/03/08 00:42:53.318 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:53.320 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:53.327 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:53.327 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:53.333 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:53.333 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=370, c=370)
+2016/03/08 00:42:53.333 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:53.333 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=2, c=4)
+2016/03/08 00:42:57.998 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:58.009 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:58.009 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:58.009 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:58.018 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:58.018 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=1998, c=1998)
+2016/03/08 00:42:58.020 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:58.020 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=144, c=288)
+2016/03/08 00:42:58.675 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:58.686 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:58.687 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:58.687 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:58.701 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:58.703 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=370, c=370)
+2016/03/08 00:42:58.704 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:58.704 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=2, c=4)
+2016/03/08 00:42:59.211 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:42:59.212 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:42:59.213 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:42:59.213 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:42:59.221 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:42:59.221 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=370, c=370)
+2016/03/08 00:42:59.222 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:42:59.222 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=2, c=4)
+2016/03/08 00:44:27.557 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:44:27.559 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:44:27.559 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:44:27.559 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:44:27.560 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:44:27.560 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=442, c=442)
+2016/03/08 00:44:27.560 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:44:27.560 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=20, c=40)
+2016/03/08 00:45:00.932 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:45:00.932 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:45:00.932 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:45:00.932 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:45:00.940 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:45:00.940 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=5334, c=5334)
+2016/03/08 00:45:00.940 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:45:00.940 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=604, c=1208)
+2016/03/08 00:45:24.365 14194 4149114624 g0   XClipboard: RequestClipboard as TARGETS (524)
+2016/03/08 00:45:24.368 14194 4149114624 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/08 00:45:24.368 14194 4149114624 g0   XClipboard: RequestClipboard as text/html (630)
+2016/03/08 00:45:24.368 14194 4149114624 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/08 00:45:24.379 14194 4149114624 g0   XClipboard: Plain data for 'text/html'
+2016/03/08 00:45:24.379 14194 4149114624 g0   XClipboard: Got clipboard as 'text/html', size (n=3870, c=3870)
+2016/03/08 00:45:24.379 14194 4149114624 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/03/08 00:45:24.379 14194 4149114624 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=404, c=808)
+2016/03/08 00:54:46.200 14194 4239067008 g0   Process received SIGINT from process: 0
+2016/03/08 00:54:46.200 14194 4149114624 g0   XClipboard: Shutting down event loop
+2016/03/08 00:54:46.300 14194 4239067008 g0   TVGuiSlave.64: Terminated
+2016/03/28 15:15:46.080  8085 2667001728 g0   Logger started.
+2016/03/28 15:15:46.092  8085 2667001728 g0   DeleteOldDumps: found 3 ".core" dump files ...
+2016/03/28 15:15:46.092  8085 2667001728 g0   DeleteOldDumps: found 3 ".stack" dump files ...
+2016/03/28 15:15:46.274  8085 2667001728 g0   systemd: logind service available
+2016/03/28 15:15:46.304  8085 2667001728 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/03/28 15:15:46.305  8085 2667001728 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=1(1459144321315580) active=1 type=tty class=user state=active timestamp=1459144324511403 service=login defaultCG= leader=494 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/03/28 15:15:46.305  8085 2667001728 g0   Session Information provided by systemd
+2016/03/28 15:15:46.305  8085 2667001728 g0   XSocket observer: watching /tmp/.X11-unix
+2016/03/28 15:15:46.332  8085 2667001728 g0   XSocket observer: adding XSession: 0
+2016/03/28 15:15:46.426  8085 2667001728 g0   XSession[0]: Retrieved XAuth from environment (!)
+2016/03/28 15:15:46.428  8085 2667001728 g0   systemd: no active session found for display :0, assuming login screen
+2016/03/28 15:15:46.488  8085 2667001728 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2016/03/28 15:15:46.488  8085 2667001728 g0   TVGuiSlave.64: Running
+2016/03/28 15:15:46.633  8085 2585442048 g0   Audio: PulseAudio enabled
+2016/03/28 15:15:46.635  8085 2577049344 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/03/28 15:15:46.635  8085 2585442048 g0   PulseAudio: Connection established
+2016/03/28 15:15:46.635  8085 2577049344 g0   PulseAudio: Exit main loop (0), err=-2
+2016/03/28 15:15:46.636  8085 2577049344 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2016/03/28 15:15:46.690  8085 2667001728 g0!  XSM: No X Session Management for current session available (yet)
+2016/03/28 15:15:45.372     8    30 G0   Logger started.
+2016/03/28 15:15:45.515     8    30 G0!! SetProcessStartupOptions(): SetProcessDEPPolicy() failed! LE=120, Errorcode=12180
+2016/03/28 15:15:45.984     8    30 G0   TVW X ErrorHandler org 7e39986e, def 7e2019e0 cur 7d48990c
+2016/03/28 15:15:45.987     8    30 G0   Wine: Wine DLL initialized
+2016/03/28 15:15:45.987     8    30 G0   Wine: wine-1.6
+
+2016/03/28 15:15:45.987     8    30 G0   TVW SID0: SpawnSlave: pid 0
+2016/03/28 15:15:45.989     8    30 G0   TVW SID0: SpawnSlave: loading TVGuiSlave.64
+2016/03/28 15:15:46.090     8    30 G0!! TVW ObserveFork(ID = 0): read 0, Errorcode=12180
+2016/03/28 15:15:46.093     8    30 G0   TVW ObserveFork: OK
+2016/03/28 15:15:46.093     8    30 G0   Wine: Spawned slave process with type 0
+2016/03/28 15:15:46.093     8    30 G0   TVW SID1: SpawnSlave: pid 0
+2016/03/28 15:15:46.096     8    30 G0   TVW SID1: SpawnSlave: loading TVGuiDelegate
+2016/03/28 15:15:46.196     8    30 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=12180
+2016/03/28 15:15:46.296     8    30 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=12180
+2016/03/28 15:15:46.350     8    30 G0   TVW ReadSlave [1]: Socket closed
+2016/03/28 15:15:46.350     8    30 G0!! TVW ObserveFork(ID = 1): read -2, Errorcode=12180
+2016/03/28 15:15:46.350     8    30 G0!! TVW SpawnSlave(type = 1): Death by exit [127], Errorcode=12180
+2016/03/28 15:15:46.350     8    30 G0!! TVW SpawnSlave(type = 1): failed, exiting, Errorcode=12180
+2016/03/28 15:15:46.350     8    30 G0!!!Wine: Unable to spawn slave process of type 1, Errorcode=12180
+2016/03/28 15:15:46.351     8    30 G0   Starting GUI master for slave type 0
+2016/03/28 15:15:46.352     8    30 G0   Starting GUI master for slave type 1
+2016/03/28 15:15:46.352     8    30 G0!!!WineGuiMaster[1]: Slave terminated unexpectedly, Errorcode=12180
+2016/03/28 15:15:46.358     8    30 G0   Monitors: X11 Windowing System, \\.\DISPLAY1, 3840x1080 (0,0), flags=21, dpi=96
+2016/03/28 15:15:46.488     8    30 G0   Slave connected to GUI master
+                    
+                    
+                    
+Start:              2016/03/28 15:15:46.492 (UTC+2:00)
+Version:            10.0.41499 Dev 
+ID:                 0
+Loglevel:           LogAll (0)
+License:            0
+Server:             master8.teamviewer.com
+IC:                 0
+CPU:                x86 Family 6 Model 60 Stepping 3, GenuineIntel
+CPU extensions:     h9
+OS:                 Lx Arch Linux (32-bit)
+IP:                 192.168.1.68
+Proxy-Settings:     Type=0 IP= User=
+AppPath:            C:\TeamViewer\TeamViewer.exe
+UserAccount:        riddle
+
+2016/03/28 15:15:46.633     8    30 G0   CMain::LoadResourceDLLs(): No custom resource dll found
+2016/03/28 15:15:46.636     8    30 G0   Win32_GUI::FontReallyExists: 'Segoe UI' found 0 matches.
+2016/03/28 15:15:46.637     8    30 G0   Win32_GUI::FontReallyExists: 'Liberation Sans' found 4 matches.
+2016/03/28 15:15:46.642     8    30 G0   Opening local TCP connection to 127.0.0.1:5939
+2016/03/28 15:15:46.643     8    30 G0   Local TCP connection established
+2016/03/28 15:15:46.643     8    30 G0   Process ID:  L 8002 /  W 8
+2016/03/28 15:15:46.745     8    30 G0   SettingsIPCReception receive a SYNCHRONISE Settings command : UserSettings
+2016/03/28 15:15:46.745     8    30 G0   Received Control_InitIPC_Response processtype=1
+2016/03/28 15:15:46.745     8    30 G0   Received Control_InitIPC_Response runningProcesses=3
+2016/03/28 15:15:46.746     8    30 G0   Control_InitIPC_Response: all processes 3 completely initialized
+2016/03/28 15:15:46.752     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/03/28 15:15:46.756     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/03/28 15:15:46.787     8     9 G0!! GetSimpleDisplayCertNameFromFile: File 'C:\TeamViewer\tv_w32.dll' does not exist., Errorcode=2
+2016/03/28 15:15:46.787     8     9 G0!! VerifyTeamViewerSignature() : WinVerifyTrust failed, result=2, Errorcode=2
+2016/03/28 15:15:46.787     8     9 G0!! MachineHooks: Library not found, Errorcode=2
+2016/03/28 15:15:46.789     8     9 G0   MachineID m=0 - 1
+2016/03/28 15:15:46.790     8     9 G0   TVUpdate::Init() Version-URL: download.teamviewer.com/download/update/ Update-URL: download.teamviewer.com/download/update/
+2016/03/28 15:15:46.907     8     9 G0   IncomingChatCommandRegistration::StartRegistration: registering for ready state properties
+2016/03/28 15:15:46.907     8     9 G0!! DragDropRegistration: could not register window, HR=80040155
+2016/03/28 15:15:46.907     8     9 G0   AccountLoginGUI::CreateLoginKey(): [OnlineState] System is set to Visible.
+2016/03/28 15:15:46.922     8     9 G0   Tray created!
+2016/03/28 15:15:46.925     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=0 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=0
+2016/03/28 15:15:46.927     8    27 G0   IDLabelContent::UpdateImpl() IDs changed: SessionID "974085255", TSUserID "0", ServerID "0"
+2016/03/28 15:15:46.936     8     9 G0   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2016/03/28 15:15:46.936     8     9 G0   Account::TryAutoLogin: enabled: 1
+2016/03/28 15:15:46.937     8     9 G0!! Account::TryAutoLogin: loginName=1 password=0 loginToken=0 loginTokenID=0
+2016/03/28 15:15:46.937     8     9 G0!! ServerControl: RegisterPowerSettingNotification failed with error 0
+2016/03/28 15:15:47.028  8085 2560263936 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/03/28 15:15:47.028  8085 2585442048 g0   PulseAudio: Connection established
+2016/03/28 15:15:47.029     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/03/28 15:15:47.029     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/03/28 15:15:47.029     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/03/28 15:15:47.029     8    25 G0   IncomingChatCommandRegistration::RegisterIncomingCommands: Registered successfully for incoming commands (after 0 retries)
+2016/03/28 15:15:47.031  8085 2560263936 g0   PulseAudio: Exit main loop (0), err=-2
+2016/03/28 15:15:47.041     8     9 G0   Account::SetNewLoginState: 2
+2016/03/28 15:15:47.042     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=1 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=1
+2016/03/28 15:15:50.175     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#2814 r50331654): BadWindow (invalid Window parameter)
+2016/03/28 15:15:52.062     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#2999 r50331656): BadWindow (invalid Window parameter)
+2016/03/28 15:16:35.856     8     9 G0   Trying connection to 511898330, mode = 1
+2016/03/28 15:16:35.857     8    34 G0   CLogin::run()
+2016/03/28 15:16:36.021     8    34 G0   CLoginClient::NegotiateVersionClient()
+2016/03/28 15:16:38.549     8    34 G0   CLoginClient::AuthenticateClient()
+2016/03/28 15:16:53.674     8    34 G0   VoIP: using pipeline factory async = 1
+2016/03/28 15:16:53.674     8    34 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: Building pipeline finished
+2016/03/28 15:16:53.676  8085 2348807936 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/03/28 15:16:53.676  8085 2585442048 g0   PulseAudio: Connection established
+2016/03/28 15:16:53.676     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/03/28 15:16:53.677     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/03/28 15:16:53.677     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/03/28 15:16:53.753     8    34 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/03/28 15:16:53.754     8    34 G0   RA: RemoteAudioReceiver::Factory started
+2016/03/28 15:16:53.754     8    34 G0   Resetting Cache. Cache disabled.
+2016/03/28 15:16:53.754     8    34 G0   Default keyboard layout: 04090409
+2016/03/28 15:16:53.754     8    34 G0   ClientSessionrecorder: Autostart recording function called but not activated.
+2016/03/28 15:16:53.754     8    34 G0   Client: RemoteDesktop 034E76E0 created (rdp-id = 0)
+2016/03/28 15:16:53.756     8     9 G0   TVW X Error 8 on ???, Req 42.0 (#897 r50331664): BadMatch (invalid parameter attributes)
+2016/03/28 15:16:53.763     8     9 G0   CClientWindow::OnCreate(): Local display is 3840x1080
+2016/03/28 15:16:53.826     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#7556 r50331673): BadWindow (invalid Window parameter)
+2016/03/28 15:16:53.955     8    41 G0   ClientThread started
+2016/03/28 15:16:53.956     8    41 G0   ClientThread: Waiting for ParticipantManager synchronization
+2016/03/28 15:16:53.956     8    34 G0   CLogin::run() leave
+2016/03/28 15:16:53.958     8    27 G0   CParticipantManagerBase participant Arch-Linux (ID [974085255,539854837]) was added with the role 6
+2016/03/28 15:16:53.958     8    27 G0   New Participant added in CParticipantManager Arch-Linux ([974085255,539854837])
+2016/03/28 15:16:53.959     8    27 G0   ClientSessionrecorder: Autostart recording function called but not activated.
+2016/03/28 15:16:54.017     8    28 G0   CParticipantManagerBase participant  (ID [511898330,292237278]) was added with the role 3
+2016/03/28 15:16:54.017     8    28 G0   New Participant added in CParticipantManager  ([511898330,292237278])
+2016/03/28 15:16:54.018     8    28 G0   ClientSessionrecorder: Autostart recording function called but not activated.
+2016/03/28 15:16:54.018     8    37 G0    VoIP: Receiver: Participant channel "511 898 330" [511898330,292237278]: VoIPBCommandReceiver: created
+2016/03/28 15:16:54.018     8    37 G0   VoIP: Receiver: Channel created for participant [511898330,292237278] called "511 898 330" [511898330,292237278]
+2016/03/28 15:16:54.059     8    25 G0   CParticipantManagerBase::CheckAndSubscribeNewStream(): Subscribe stream now streamID=1 type=5 required=1 supported=1
+2016/03/28 15:16:54.754     8    39 G0   MM: Number of Audio Devices changed
+2016/03/28 15:16:54.811     8    27 G0   CParticipantManagerBase InteractionDefaults arrived : CInteractionDefaults = (0) [ 0,2,0,0,2,0,0]
+2016/03/28 15:16:55.133     8    41 G0!!!DataTransceiver.CallGuiCallback: callback empty
+2016/03/28 15:16:55.138     8    41 G0!!!DataTransceiver.CallGuiCallback: callback empty
+2016/03/28 15:16:55.144  8085 2585442048 g0   CClipboardChangeListener::RegisterForClipboardChanges
+2016/03/28 15:16:55.144     8    41 G0   Client connection to 511898330, server version is 9.0.41110 , OS=8 Participant=[511898330,292237278]
+2016/03/28 15:16:55.145     8    41 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/03/28 15:16:55.145     8    41 G0   Client::SendInfo, resolution settings: mode = 1, width = 0, height = 0, selected monitor = 0
+2016/03/28 15:16:55.145     8    41 G0   ConnectionAccessSettings: RCAccessControl: RemoteControl='Allowed', FileTransfer='Allowed', ControlRemoteTV='Allowed', SwitchSides='Allowed', AllowDisableRemoteInput='Allowed', AllowVPN='Allowed', AllowPartnerViewDesktop='Allowed', ShareMyFiles='Allowed', ShareFilesWithMe='Allowed', PrintOnMyPrinters='Allowed', PrintOnRemotePrinters='Allowed'
+2016/03/28 15:16:55.227     8    41 G0   Client connection to 511898330, server version is 9.0.41110 , OS=8 Participant=[511898330,292237278]
+2016/03/28 15:16:55.227     8    41 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/03/28 15:16:55.227     8    41 G0   Client::SendInfo, resolution settings: mode = 1, width = 0, height = 0, selected monitor = 0
+2016/03/28 15:16:55.410     8    27 G0   RemoteDesktop 034E76E0: StreamID=5
+2016/03/28 15:16:55.508     8    41 G0   Server display is 1280x1024x8, quali=100, monitors=0/1, sw=0, tilsize=0, scaling=1
+2016/03/28 15:16:55.509     8    41 G0   Caching activated, partners version is 2, own version is 2
+2016/03/28 15:16:55.509     8    41 G0   Compress: Caching active, partners version is 2, own version is 2
+2016/03/28 15:17:05.490     8    41 G0   Server display is 1280x1024x32, quali=80, monitors=0/1, sw=0, tilsize=64, scaling=1
+2016/03/28 15:19:44.772  8085 2577049344 g0   XClipboard: RequestClipboard as TARGETS (535)
+2016/03/28 15:19:44.773  8085 2577049344 g0   XClipboard: Plain data for 'TARGETS'
+2016/03/28 15:19:44.773  8085 2577049344 g0   XClipboard: RequestClipboard as text/html (541)
+2016/03/28 15:19:44.773  8085 2577049344 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/03/28 15:19:44.774  8085 2577049344 g0   XClipboard: INCR property data for text/html on 0x3200001
+2016/03/28 15:19:44.784  8085 2577049344 g0   XClipboard: Got clipboard as 'text/html', size (n=736235, c=736235)
+2016/03/28 15:19:44.784  8085 2577049344 g0   XClipboard: INCR property data for UTF8_STRING on 0x3200001
+2016/03/28 15:19:44.785  8085 2560263936 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/03/28 15:19:44.797  8085 2577049344 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=734819, c=838230)
+2016/03/28 15:19:45.791  8085 2560263936 g0   CClipboardController::SendClipboardContent: (2 data formats)
+2016/03/28 15:21:01.775  8085 2577049344 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2016/03/28 15:21:01.776  8085 2577049344 g0   XClipboard: Got SelectionRequest from 0x160000a for property=_QT_SELECTION target=TARGETS (_23357717/@23357717)
+2016/03/28 15:21:01.776  8085 2577049344 g0   XClipboard: Annnouncing TARGETS: text/plain;charset=ISO-10646-UCS-2 UTF8_STRING text/plain;charset=utf-8 text/plain;charset=UTF-8 text/plain TEXT TVClipboard TARGETS MULTIPLE TIMESTAMP
+2016/03/28 15:25:05.776  8085 2577049344 g0   XClipboard: RequestClipboard as TARGETS (535)
+2016/03/28 15:25:05.776  8085 2577049344 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2016/03/28 15:25:05.776  8085 2577049344 g0!  XClipboard: TARGETS not available
+2016/03/28 15:25:05.776  8085 2577049344 g0   XClipboard: Got SelectionRequest from 0x160000a for property=_QT_SELECTION target=TARGETS (_23601717/@23357717)
+2016/03/28 15:25:05.776  8085 2577049344 g0!  XClipboard: Not selection owner (win 0x3200001 != 0x3200001 || time 23357717 < 23601717)
+2016/03/28 15:25:05.827  8085 2577049344 g0   XClipboard: Got SelectionRequest from 0x160000a for property=_QT_SELECTION target=TARGETS (_23601717/@23357717)
+2016/03/28 15:25:05.827  8085 2577049344 g0!  XClipboard: Not selection owner (win 0x3200001 != 0x3200001 || time 23357717 < 23601717)
+2016/03/28 15:25:05.877  8085 2577049344 g0   XClipboard: Got SelectionRequest from 0x160000a for property=_QT_SELECTION target=TARGETS (_23601717/@23357717)
+2016/03/28 15:25:05.877  8085 2577049344 g0!  XClipboard: Not selection owner (win 0x3200001 != 0x3200001 || time 23357717 < 23601717)
+2016/03/28 15:25:05.928  8085 2577049344 g0   XClipboard: Got SelectionRequest from 0x160000a for property=_QT_SELECTION target=TARGETS (_23601717/@23601717)
+2016/03/28 15:25:05.928  8085 2577049344 g0   XClipboard: Annnouncing TARGETS: text/plain;charset=ISO-10646-UCS-2 UTF8_STRING text/plain;charset=utf-8 text/plain;charset=UTF-8 text/plain TEXT TVClipboard TARGETS MULTIPLE TIMESTAMP
+2016/03/28 15:26:17.640     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#335152 r50331694): BadWindow (invalid Window parameter)
+2016/03/28 15:26:18.270     8     9 G0   Connection closed by user
+2016/03/28 15:26:18.298  8085 2585442048 g0   CClipboardChangeListener::UnregisterFromClipboardChanges
+2016/03/28 15:26:18.299     8    41 G0   VoIP: Receiver: Terminate
+2016/03/28 15:26:18.300  8085 2348807936 g0   PulseAudio: Exit main loop (0), err=-2
+2016/03/28 15:26:18.300     8    25 G0   VoIP: Receiver: ThreadPool:StopThreads
+2016/03/28 15:26:23.847     8     9 G0   CMainWindow::InitCloseTV(): Prepare to close TeamViewer
+2016/03/28 15:26:23.847     8     9 G0!! ServerControl: UnregisterPowerSettingNotification failed with error 0
+2016/03/28 15:26:23.852     8     9 G0   Chat::Stop: Stopping chat
+2016/03/28 15:26:23.852     8     9 G0   ChatRoomManager::Reset: keepMachineChats 0, quiet 1
+2016/03/28 15:26:23.852     8     9 G0   IncomingChatCommandRegistration::UnregisterIncomingCommands: Unregistering incoming commands
+2016/03/28 15:26:23.852     8     9 G0!! MainWindow.OnDestroy: WTSUnRegisterSessionNotification failed with error 0
+2016/03/28 15:26:23.855     8     9 G0   CMainWindow::OnDestroy(): Closing TeamViewer
+2016/03/28 15:26:23.864     8     9 G0   TVW X Error 9 on ???, Req 55.0 (#336707 r50331650): BadDrawable (invalid Pixmap or Window parameter)
+2016/03/28 15:26:23.915  8085 2577049344 g0   XClipboard: RequestClipboard as TARGETS (535)
+2016/03/28 15:26:23.915  8085 2577049344 g0   XClipboard: Shutting down event loop
+2016/03/28 15:26:23.917  8085 2585442048 g0!! X Error 3 on :0, Req 19.0 (#110 r52428801): BadWindow (invalid Window parameter), Errorcode=11
+2016/03/28 15:26:23.917  8085 2585442048 g0!! X Error 3 on :0, Req 24.0 (#111 r52428801): BadWindow (invalid Window parameter), Errorcode=11
+2016/03/28 15:26:23.918     8    28 G0   CTcpProcessConnector::HandleRead(): Socket gracefully closed (PID=1213)
+2016/03/28 15:26:23.918     8    28 G0   CTcpProcessConnector::CloseConnection(): PID=1213
+2016/03/28 15:26:23.918     8    28 G0!  InterProcessBase::EventFunction(): IPC-Connection Closed
+2016/03/28 15:26:23.918     8    28 G0   CTcpProcessConnector::CloseConnection(): PID=1213
+2016/03/28 15:26:23.932     8    28 G0   CTcpProcessConnector::CloseConnection(): Shutdown socket returned error 10058: Unknown error
+2016/03/28 15:26:23.933     8    28 G0!! CTcpProcessConnector::CloseConnection(): Shutdown socket returned error 10009: Unknown error, Errorcode=317
+2016/03/28 15:26:23.936     8     9 G0   TVW Terminating GUI slave
+2016/03/28 15:26:23.936     8     9 G0   Wine: Wine DLL freed
+2016/03/28 15:26:23.936  8085 2667001728 g0   TVGuiSlave.64: Terminated
+2016/05/27 18:28:26.269  7962 1228605312 g0   Logger started.
+2016/05/27 18:28:26.280  7962 1228605312 g0   DeleteOldDumps: found 3 ".core" dump files ...
+2016/05/27 18:28:26.280  7962 1228605312 g0   DeleteOldDumps: found 3 ".stack" dump files ...
+2016/05/27 18:28:26.544  7962 1228605312 g0   systemd: logind service available
+2016/05/27 18:28:26.545  7962 1228605312 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/05/27 18:28:26.545  7962 1228605312 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=1(1464356929724914) active=1 type=tty class=user state=active timestamp=1464356931904409 service=login defaultCG= leader=576 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/05/27 18:28:26.545  7962 1228605312 g0   Session Information provided by systemd
+2016/05/27 18:28:26.545  7962 1228605312 g0   XSocket observer: watching /tmp/.X11-unix
+2016/05/27 18:28:26.546  7962 1228605312 g0   XSocket observer: adding XSession: 0
+2016/05/27 18:28:26.558  7962 1228605312 g0   XSession[0]: Retrieved XAuth from environment (!)
+2016/05/27 18:28:26.558  7962 1228605312 g0   systemd: no active session found for display :0, assuming login screen
+2016/05/27 18:28:26.645  7962 1228605312 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2016/05/27 18:28:26.645  7962 1228605312 g0   TVGuiSlave.64: Running
+2016/05/27 18:28:26.814  7962 1147123456 g0   Audio: PulseAudio enabled
+2016/05/27 18:28:26.815  7962 1138730752 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/27 18:28:26.816  7962 1147123456 g0   PulseAudio: Connection established
+2016/05/27 18:28:26.816  7962 1138730752 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/27 18:28:26.816  7962 1138730752 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2016/05/27 18:28:26.848  7962 1228605312 g0!  XSM: No X Session Management for current session available (yet)
+2016/05/27 18:28:24.190     8     9 G0   Logger started.
+2016/05/27 18:28:24.480     8     9 G0!! SetProcessStartupOptions(): SetProcessDEPPolicy() failed! LE=120, Errorcode=2
+2016/05/27 18:28:26.144     8     9 G0   TVW X ErrorHandler org 7e1b386e, def 7e0189e0 cur 7d2a590c
+2016/05/27 18:28:26.148     8     9 G0   Wine: Wine DLL initialized
+2016/05/27 18:28:26.148     8     9 G0   Wine: wine-1.6
+
+2016/05/27 18:28:26.148     8     9 G0   TVW SID0: SpawnSlave: pid 0
+2016/05/27 18:28:26.152     8     9 G0   TVW SID0: SpawnSlave: loading TVGuiSlave.64
+2016/05/27 18:28:26.252     8     9 G0!! TVW ObserveFork(ID = 0): read 0, Errorcode=2
+2016/05/27 18:28:26.282     8     9 G0   TVW ObserveFork: OK
+2016/05/27 18:28:26.282     8     9 G0   Wine: Spawned slave process with type 0
+2016/05/27 18:28:26.282     8     9 G0   TVW SID1: SpawnSlave: pid 0
+2016/05/27 18:28:26.286     8     9 G0   TVW SID1: SpawnSlave: loading TVGuiDelegate
+2016/05/27 18:28:26.386     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/27 18:28:26.486     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/27 18:28:26.586     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/27 18:28:26.589     8     9 G0   TVW ReadSlave [1]: Socket closed
+2016/05/27 18:28:26.589     8     9 G0!! TVW ObserveFork(ID = 1): read -2, Errorcode=2
+2016/05/27 18:28:26.589     8     9 G0!! TVW SpawnSlave(type = 1): failed, exiting, Errorcode=2
+2016/05/27 18:28:26.589     8     9 G0!!!Wine: Unable to spawn slave process of type 1, Errorcode=2
+2016/05/27 18:28:26.589     8     9 G0   Starting GUI master for slave type 0
+2016/05/27 18:28:26.590     8     9 G0   Starting GUI master for slave type 1
+2016/05/27 18:28:26.590     8     9 G0!!!WineGuiMaster[1]: Slave terminated unexpectedly, Errorcode=2
+2016/05/27 18:28:26.622     8     9 G0   Monitors: X11 Windowing System, \\.\DISPLAY1, 1920x1080 (0,0), flags=21, dpi=96
+2016/05/27 18:28:26.646     8     9 G0   Slave connected to GUI master
+                    
+                    
+                    
+Start:              2016/05/27 18:28:26.669 (UTC+2:00)
+Version:            10.0.41499 Dev 
+ID:                 0
+Loglevel:           LogAll (0)
+License:            0
+Server:             master11.teamviewer.com
+IC:                 0
+CPU:                x86 Family 6 Model 60 Stepping 3, GenuineIntel
+CPU extensions:     h9
+OS:                 Lx Arch Linux (32-bit)
+IP:                 192.168.8.100,172.17.0.1
+Proxy-Settings:     Type=0 IP= User=
+AppPath:            C:\TeamViewer\TeamViewer.exe
+UserAccount:        riddle
+
+2016/05/27 18:28:26.814     8     9 G0   CMain::LoadResourceDLLs(): No custom resource dll found
+2016/05/27 18:28:26.816     8     9 G0   Win32_GUI::FontReallyExists: 'Segoe UI' found 0 matches.
+2016/05/27 18:28:26.817     8     9 G0   Win32_GUI::FontReallyExists: 'Liberation Sans' found 4 matches.
+2016/05/27 18:28:26.823     8     9 G0   Opening local TCP connection to 127.0.0.1:5939
+2016/05/27 18:28:26.823     8     9 G0   Local TCP connection established
+2016/05/27 18:28:26.823     8     9 G0   Process ID:  L 7821 /  W 8
+2016/05/27 18:28:26.963     8     9 G0   SettingsIPCReception receive a SYNCHRONISE Settings command : UserSettings
+2016/05/27 18:28:26.963     8     9 G0   Received Control_InitIPC_Response processtype=1
+2016/05/27 18:28:26.963     8     9 G0   Received Control_InitIPC_Response runningProcesses=3
+2016/05/27 18:28:26.963     8     9 G0   Control_InitIPC_Response: all processes 3 completely initialized
+2016/05/27 18:28:27.056     8     9 G0!! GetSimpleDisplayCertNameFromFile: File 'C:\TeamViewer\tv_w32.dll' does not exist., Errorcode=2
+2016/05/27 18:28:27.056     8     9 G0!! VerifyTeamViewerSignature() : WinVerifyTrust failed, result=2, Errorcode=2
+2016/05/27 18:28:27.057     8     9 G0!! MachineHooks: Library not found, Errorcode=2
+2016/05/27 18:28:27.075     8     9 G0   MachineID m=0 - 1
+2016/05/27 18:28:27.078     8     9 G0   TVUpdate::Init() Version-URL: download.teamviewer.com/download/update/ Update-URL: download.teamviewer.com/download/update/
+2016/05/27 18:28:27.241     8     9 G0   IncomingChatCommandRegistration::StartRegistration: registering for ready state properties
+2016/05/27 18:28:27.241     8     9 G0!! DragDropRegistration: could not register window, HR=80040155
+2016/05/27 18:28:27.242     8     9 G0   AccountLoginGUI::CreateLoginKey(): [OnlineState] System is set to Visible.
+2016/05/27 18:28:27.258     8     9 G0   Tray created!
+2016/05/27 18:28:27.261     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=0 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=0
+2016/05/27 18:28:27.264     8    25 G0   IDLabelContent::UpdateImpl() IDs changed: SessionID "974085255", TSUserID "0", ServerID "0"
+2016/05/27 18:28:27.275     8     9 G0   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2016/05/27 18:28:27.275     8     9 G0   Account::TryAutoLogin: enabled: 1
+2016/05/27 18:28:27.275     8     9 G0!! Account::TryAutoLogin: loginName=1 password=0 loginToken=0 loginTokenID=0
+2016/05/27 18:28:27.275     8     9 G0!! ServerControl: RegisterPowerSettingNotification failed with error 0
+2016/05/27 18:28:27.365  7962 1121945344 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/27 18:28:27.366  7962 1147123456 g0   PulseAudio: Connection established
+2016/05/27 18:28:27.366     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/05/27 18:28:27.367  7962 1121945344 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/27 18:28:27.385     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/05/27 18:28:27.623     8     9 G0   Account::SetNewLoginState: 2
+2016/05/27 18:28:27.625     8    27 G0   IncomingChatCommandRegistration::RegisterIncomingCommands: Registered successfully for incoming commands (after 0 retries)
+2016/05/27 18:28:27.632     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=1 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=1
+2016/05/27 18:28:27.668     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/05/27 18:28:37.392     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#3215 r35651592): BadWindow (invalid Window parameter)
+2016/05/27 18:28:40.011     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#3635 r35651593): BadWindow (invalid Window parameter)
+2016/05/27 18:28:46.564     8     9 G0   Account::SetNewLoginState: 3
+2016/05/27 18:28:46.585     8     9 G0   AccountLogin::Start: Trying account authentication
+2016/05/27 18:28:46.819     8     9 G0   AccountLogin::HandleChallenge: Try V2Login
+2016/05/27 18:28:46.983     8     9 G0   AccountLogin::OnResponseSuccess: Authentication successful
+2016/05/27 18:28:46.983     8     9 G0   Account::LoginInternal: Login with V2 Account
+2016/05/27 18:28:47.061     8     9 G0   Account Login complete, inCompany = 0, with rights 0
+2016/05/27 18:28:47.071     8     9 G0   Account::SetNewLoginState: 4
+2016/05/27 18:28:47.259     8     9 G0   ChatRoomManager::InitializeAccountChat: AccountId = 30063380
+2016/05/27 18:28:47.807     8    26 G0   QueryRooms::Execute[queryChatRoomsResponseCb]: No rooms received
+2016/05/27 18:28:47.807     8    27 G0   ChatRoomManager::QueryRoomsInternal[queryRoomsResultCb]: Success: Received no rooms
+2016/05/27 18:28:54.057     8     9 G0   Trying connection to 424784311, mode = 1
+2016/05/27 18:28:54.057     8    34 G0   CLogin::run()
+2016/05/27 18:28:54.255     8    34 G0   CLogin::run() leave
+2016/05/27 18:29:06.479     8     9 G0   CBuddyList::ItemDelete(): Deleting buddy/machine Arch-Linux.
+2016/05/27 18:29:48.003     8    25 G0   Connection incoming, sessionID = 1850132064
+2016/05/27 18:29:48.510     8    27 G0   Received Control_InitIPC processtype=4
+2016/05/27 18:29:48.523     8     9 G0   TVW X Error 8 on ???, Req 42.0 (#1464 r35651617): BadMatch (invalid parameter attributes)
+2016/05/27 18:29:48.534     8     9 G0   Wine: HwndToWindow 00040164 -> 2200020
+2016/05/27 18:29:48.534     8     9 G0   Wine: HwndToWindow 00030174 -> 2200021
+2016/05/27 18:29:51.662     8     9 G0   Wine: HwndToWindow 00040164 -> 2200020
+2016/05/27 18:29:51.665     8     9 G0   Wine: HwndToWindow 00030174 -> 2200021
+2016/05/27 18:29:51.833     8    27 G0   VoIP: using pipeline factory async = 1
+2016/05/27 18:29:51.833     8    27 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: Building pipeline finished
+2016/05/27 18:29:51.834  7962 1113552640 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/27 18:29:51.834  7962 1147123456 g0   PulseAudio: Connection established
+2016/05/27 18:29:51.834     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/05/27 18:29:51.834     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/05/27 18:29:51.835     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/05/27 18:29:51.911     8    27 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/05/27 18:29:51.911     8    27 G0   Resetting Cache. Cache disabled.
+2016/05/27 18:29:51.912     8    27 G0   CServerSessionRecorder::AutoStart: AutoStart recording function called and not activated (auto recording of incoming RemoteControl not activated)
+2016/05/27 18:29:51.912     8    27 G0   WindowObserverGUI::SessionStart: 1; type: 1
+2016/05/27 18:29:52.121     8     9 G0   Wine: MakeSticky 00040164 
+2016/05/27 18:29:52.912     8    39 G0   MM: Number of Audio Devices changed
+2016/05/27 18:29:53.598     8    26 G0   CParticipantManagerBase participant TGIIFriday (1) (ID [974085255,1850132064]) was added with the role 3
+2016/05/27 18:29:53.598     8    26 G0   New Participant added in CParticipantManager TGIIFriday (1) ([974085255,1850132064])
+2016/05/27 18:29:53.599     8    26 G0   CParticipantManagerBase participant TGIIFriday (ID [859794590,2]) was added with the role 6
+2016/05/27 18:29:53.599     8    26 G0   New Participant added in CParticipantManager TGIIFriday ([859794590,2])
+2016/05/27 18:29:53.600     8    37 G0    VoIP: Receiver: Participant channel "TGIIFriday (859 794 590)" [859794590,2]: VoIPBCommandReceiver: created
+2016/05/27 18:29:53.601     8    37 G0   VoIP: Receiver: Channel created for participant [859794590,2] called "TGIIFriday (859 794 590)" [859794590,2]
+2016/05/27 18:29:54.433     8    26 G0   DT: Sending InitSignal to DT 656599927
+2016/05/27 18:29:54.433     8    26 G0   DataTransceiverInstanceTVStreams::SendFileInfos: DT:656599927 NumFiles:1
+2016/05/27 18:29:54.433     8    26 G0   CParticipantManagerBase::CheckAndSubscribeNewStream(): Subscribe stream now streamID=2 type=5 required=1 supported=1
+2016/05/27 18:29:54.433     8    26 G0   CParticipantManagerBase InteractionDefaults arrived : CInteractionDefaults = (0) [ 0,2,0,0,2,0,0]
+2016/05/27 18:29:54.721  7962 1147123456 g0   CClipboardChangeListener::RegisterForClipboardChanges
+2016/05/27 18:29:54.721     8    26 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 18:29:54.722     8    26 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 18:29:54.731     8    28 G0   CServerThreadInfo::Received_AccessControlSettings: RCAccessControl: RemoteControl='Allowed', FileTransfer='Allowed', ControlRemoteTV='Allowed', SwitchSides='Allowed', AllowDisableRemoteInput='Allowed', AllowVPN='Allowed', AllowPartnerViewDesktop='Allowed', ShareMyFiles='Allowed', ShareFilesWithMe='Allowed', PrintOnMyPrinters='Allowed', PrintOnRemotePrinters='Allowed'
+2016/05/27 18:29:54.771     8    27 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 18:29:54.771     8    27 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 18:29:54.879     8    26 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 8
+2016/05/27 18:29:54.880     8    26 G0   RA: Creating audio server, max bandwidth 
+2016/05/27 18:29:54.880     8    38 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/05/27 18:29:54.880     8    26 G0   RA: Change quality by capacity (350)
+2016/05/27 18:29:54.880     8    26 G0   RA: Audio quality set to 32000
+2016/05/27 18:29:54.880     8    26 G0   RA: RemoteAudioSender get started
+2016/05/27 18:29:54.880     8    26 G0   RA: Control stream will get created
+2016/05/27 18:29:54.881     8    25 G0   RA: Controlstream succesfull registered with id 9
+2016/05/27 18:29:55.504     8    40 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2016/05/27 18:29:55.504     8    40 G0   RA: RemoteAudioSender unable to start audio processor
+2016/05/27 18:30:00.937  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:30:00.952  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:30:00.952  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:30:00.955  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:30:00.956  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:30:00.956  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:30:02.861     8    27 G0   RA: Change quality by capacity (1878)
+2016/05/27 18:30:02.861     8    27 G0   RA: Audio quality set to 62500
+2016/05/27 18:30:02.861     8    27 G0   RA: RemoteAudioSender stopping...
+2016/05/27 18:30:04.898     8    27 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 32
+2016/05/27 18:30:04.898     8    27 G0   RA: RemoteAudioSender get started
+2016/05/27 18:30:04.898     8    27 G0   RA: Control stream will get created
+2016/05/27 18:30:04.899     8    25 G0   RA: Controlstream succesfull registered with id 10
+2016/05/27 18:30:04.988     8    41 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2016/05/27 18:30:04.988     8    41 G0   RA: RemoteAudioSender unable to start audio processor
+2016/05/27 18:30:17.156     8     9 G0   Wine: MakeSticky 00030174 
+2016/05/27 18:31:12.762  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:31:12.762  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:31:12.762  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:31:12.762  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:31:12.762  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=212, c=424)
+2016/05/27 18:31:12.762  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:33:22.144  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:33:22.155  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:33:22.155  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:33:22.160  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:33:22.160  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:33:22.160  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:33:33.058  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:33:33.073  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:33:33.073  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:33:33.073  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:33:33.073  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:33:33.073  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:35:04.612  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:35:04.624  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:35:04.624  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:35:04.628  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:35:04.628  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:35:04.628  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:35:16.395     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is idle. TimeUntilIdle: 300 seconds
+2016/05/27 18:35:16.495     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 2
+2016/05/27 18:35:27.242     8     9 G0   CMainWindow::TrackIdleTime(): System goes idle. (IdleTime=311028)
+2016/05/27 18:44:32.266  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:44:32.281  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:44:32.281  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:44:32.282  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:44:32.282  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:44:32.282  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:48:54.374  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:48:54.384  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:48:54.384  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:48:54.389  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:48:54.389  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:48:54.389  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 18:58:34.781  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 18:58:34.797  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 18:58:34.797  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 18:58:34.801  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 18:58:34.801  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 18:58:34.801  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 19:09:05.267     8    27 G0   RA: RemoteAudioSender get stopped
+2016/05/27 19:09:05.267     8    27 G0   RA: RemoteAudioSender stopping...
+2016/05/27 19:09:05.268     8     9 G0!! ITVWidgetViewWin::OnDestroy(): Message filtering could not be reset!
+2016/05/27 19:09:06.018     8     9 G0   Wine: MakeSticky 00030174 
+2016/05/27 19:09:06.020     8    27 G0   RA: RemoteAudioSender get stopped
+2016/05/27 19:09:06.020  7962 1147123456 g0   CClipboardChangeListener::UnregisterFromClipboardChanges
+2016/05/27 19:09:06.020     8    27 G0   WindowObserverGUI::SessionEnded: 0
+2016/05/27 19:09:06.021     8    27 G0   VoIP: Receiver: Terminate
+2016/05/27 19:09:06.021  7962 1113552640 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/27 19:09:06.021     8    28 G0   VoIP: Receiver: ThreadPool:StopThreads
+2016/05/27 19:16:19.548     8    26 G0   Connection incoming, sessionID = 1054317180
+2016/05/27 19:16:19.710     8    25 G0   Received Control_InitIPC processtype=4
+2016/05/27 19:16:19.720     8     9 G0   TVW X Error 8 on ???, Req 42.0 (#2411 r35651630): BadMatch (invalid parameter attributes)
+2016/05/27 19:16:19.729     8     9 G0   Wine: HwndToWindow 00040172 -> 220002d
+2016/05/27 19:16:19.729     8     9 G0   Wine: HwndToWindow 00040156 -> 220002e
+2016/05/27 19:16:33.065     8    25 G0   Connection incoming, sessionID = -480029139
+2016/05/27 19:16:36.081     8     9 G0   Wine: HwndToWindow 00040172 -> 220002d
+2016/05/27 19:16:36.081     8     9 G0   Wine: HwndToWindow 00040156 -> 220002e
+2016/05/27 19:16:36.082     8    28 G0   VoIP: using pipeline factory async = 1
+2016/05/27 19:16:36.082     8    28 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: Building pipeline finished
+2016/05/27 19:16:36.083  7962 1113552640 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/27 19:16:36.083  7962 1147123456 g0   PulseAudio: Connection established
+2016/05/27 19:16:36.083     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/05/27 19:16:36.083     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/05/27 19:16:36.083     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/05/27 19:16:36.161     8    28 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/05/27 19:16:36.161     8    28 G0   Resetting Cache. Cache disabled.
+2016/05/27 19:16:36.161     8    28 G0   CServerSessionRecorder::AutoStart: AutoStart recording function called and not activated (auto recording of incoming RemoteControl not activated)
+2016/05/27 19:16:36.161     8    28 G0   WindowObserverGUI::SessionStart: 1; type: 1
+2016/05/27 19:16:36.370     8     9 G0   Wine: MakeSticky 00040172 
+2016/05/27 19:16:36.541     8    26 G0   CParticipantManagerBase participant TGIIFriday (1) (ID [974085255,-480029139]) was added with the role 3
+2016/05/27 19:16:36.541     8    26 G0   New Participant added in CParticipantManager TGIIFriday (1) ([974085255,-480029139])
+2016/05/27 19:16:36.542     8    26 G0   CParticipantManagerBase participant TGIIFriday (ID [859794590,4]) was added with the role 6
+2016/05/27 19:16:36.542     8    26 G0   New Participant added in CParticipantManager TGIIFriday ([859794590,4])
+2016/05/27 19:16:36.543     8    44 G0    VoIP: Receiver: Participant channel "TGIIFriday (859 794 590)" [859794590,4]: VoIPBCommandReceiver: created
+2016/05/27 19:16:36.543     8    44 G0   VoIP: Receiver: Channel created for participant [859794590,4] called "TGIIFriday (859 794 590)" [859794590,4]
+2016/05/27 19:16:37.161     8    46 G0   MM: Number of Audio Devices changed
+2016/05/27 19:16:37.373     8    26 G0   DT: Sending InitSignal to DT 4241321978
+2016/05/27 19:16:37.373     8    26 G0   DataTransceiverInstanceTVStreams::SendFileInfos: DT:4241321978 NumFiles:1
+2016/05/27 19:16:37.373     8    26 G0   CParticipantManagerBase::CheckAndSubscribeNewStream(): Subscribe stream now streamID=2 type=5 required=1 supported=1
+2016/05/27 19:16:37.373     8    26 G0   CParticipantManagerBase InteractionDefaults arrived : CInteractionDefaults = (0) [ 0,2,0,0,2,0,0]
+2016/05/27 19:16:37.629  7962 1147123456 g0   CClipboardChangeListener::RegisterForClipboardChanges
+2016/05/27 19:16:37.629     8    28 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 19:16:37.629     8    28 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 19:16:37.678     8    25 G0   CServerThreadInfo::Received_AccessControlSettings: RCAccessControl: RemoteControl='Allowed', FileTransfer='Allowed', ControlRemoteTV='Allowed', SwitchSides='Allowed', AllowDisableRemoteInput='Allowed', AllowVPN='Allowed', AllowPartnerViewDesktop='Allowed', ShareMyFiles='Allowed', ShareFilesWithMe='Allowed', PrintOnMyPrinters='Allowed', PrintOnRemotePrinters='Allowed'
+2016/05/27 19:16:37.678     8    25 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 19:16:37.678     8    25 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 19:16:37.764     8    25 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 8
+2016/05/27 19:16:37.764     8    25 G0   RA: Creating audio server, max bandwidth 
+2016/05/27 19:16:37.764     8    44 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/05/27 19:16:37.764     8    25 G0   RA: Change quality by capacity (350)
+2016/05/27 19:16:37.764     8    25 G0   RA: Audio quality set to 32000
+2016/05/27 19:16:37.764     8    25 G0   RA: RemoteAudioSender get started
+2016/05/27 19:16:37.764     8    25 G0   RA: Control stream will get created
+2016/05/27 19:16:37.765     8    26 G0   RA: Controlstream succesfull registered with id 8
+2016/05/27 19:16:37.829     8    47 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2016/05/27 19:16:37.829     8    47 G0   RA: RemoteAudioSender unable to start audio processor
+2016/05/27 19:16:44.049  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 19:16:44.061  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 19:16:44.061  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 19:16:44.065  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 19:16:44.065  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 19:16:44.065  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 19:16:47.818     8    25 G0   RA: Change quality by capacity (2394)
+2016/05/27 19:16:47.819     8    25 G0   RA: Audio quality set to 125000
+2016/05/27 19:16:47.819     8    25 G0   RA: RemoteAudioSender stopping...
+2016/05/27 19:16:47.938     8    28 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 32
+2016/05/27 19:16:47.938     8    28 G0   RA: RemoteAudioSender get started
+2016/05/27 19:16:47.938     8    28 G0   RA: Control stream will get created
+2016/05/27 19:16:47.938     8    27 G0   RA: Controlstream succesfull registered with id 10
+2016/05/27 19:16:48.121     8    48 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2016/05/27 19:16:48.121     8    48 G0   RA: RemoteAudioSender unable to start audio processor
+2016/05/27 19:17:23.112     8    27 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 19:17:23.112     8    27 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 19:17:39.424     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is back to active
+2016/05/27 19:17:39.544     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 0
+2016/05/27 19:17:49.172     8    26 G0   RA: RemoteAudioSender get stopped
+2016/05/27 19:17:49.172     8    26 G0   RA: RemoteAudioSender stopping...
+2016/05/27 19:17:49.173     8     9 G0!! ITVWidgetViewWin::OnDestroy(): Message filtering could not be reset!
+2016/05/27 19:17:49.382     8    26 G0   RA: RemoteAudioSender get stopped
+2016/05/27 19:17:49.383  7962 1147123456 g0   CClipboardChangeListener::UnregisterFromClipboardChanges
+2016/05/27 19:17:49.383     8    26 G0   WindowObserverGUI::SessionEnded: 0
+2016/05/27 19:17:49.383     8    26 G0   VoIP: Receiver: Terminate
+2016/05/27 19:17:49.383  7962 1113552640 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/27 19:17:49.383     8    27 G0   VoIP: Receiver: ThreadPool:StopThreads
+2016/05/27 19:17:51.128     8    27 G0   Connection incoming, sessionID = -861369706
+2016/05/27 19:17:51.290     8    27 G0   Received Control_InitIPC processtype=4
+2016/05/27 19:17:51.297     8     9 G0   TVW X Error 8 on ???, Req 42.0 (#3031 r35651642): BadMatch (invalid parameter attributes)
+2016/05/27 19:17:51.307     8     9 G0   Wine: HwndToWindow 00050140 -> 2200039
+2016/05/27 19:17:51.307     8     9 G0   Wine: HwndToWindow 000E0142 -> 220003a
+2016/05/27 19:17:54.671     8     9 G0   Wine: HwndToWindow 00050140 -> 2200039
+2016/05/27 19:17:54.671     8     9 G0   Wine: HwndToWindow 000E0142 -> 220003a
+2016/05/27 19:17:54.672     8    25 G0   VoIP: using pipeline factory async = 1
+2016/05/27 19:17:54.672     8    25 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: Building pipeline finished
+2016/05/27 19:17:54.673  7962 1113552640 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/27 19:17:54.673  7962 1147123456 g0   PulseAudio: Connection established
+2016/05/27 19:17:54.673     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/05/27 19:17:54.673     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/05/27 19:17:54.673     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/05/27 19:17:54.751     8    25 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/05/27 19:17:54.751     8    25 G0   Resetting Cache. Cache disabled.
+2016/05/27 19:17:54.751     8    25 G0   CServerSessionRecorder::AutoStart: AutoStart recording function called and not activated (auto recording of incoming RemoteControl not activated)
+2016/05/27 19:17:54.751     8    25 G0   WindowObserverGUI::SessionStart: 1; type: 1
+2016/05/27 19:17:54.960     8     9 G0   Wine: MakeSticky 00050140 
+2016/05/27 19:17:55.324     8    25 G0   CParticipantManagerBase participant TGIIFriday (1) (ID [974085255,-861369706]) was added with the role 3
+2016/05/27 19:17:55.324     8    25 G0   New Participant added in CParticipantManager TGIIFriday (1) ([974085255,-861369706])
+2016/05/27 19:17:55.325     8    26 G0   CParticipantManagerBase participant TGIIFriday (ID [859794590,5]) was added with the role 6
+2016/05/27 19:17:55.325     8    26 G0   New Participant added in CParticipantManager TGIIFriday ([859794590,5])
+2016/05/27 19:17:55.325     8    51 G0    VoIP: Receiver: Participant channel "TGIIFriday (859 794 590)" [859794590,5]: VoIPBCommandReceiver: created
+2016/05/27 19:17:55.326     8    51 G0   VoIP: Receiver: Channel created for participant [859794590,5] called "TGIIFriday (859 794 590)" [859794590,5]
+2016/05/27 19:17:55.751     8    53 G0   MM: Number of Audio Devices changed
+2016/05/27 19:17:56.155     8    26 G0   DT: Sending InitSignal to DT 2243374718
+2016/05/27 19:17:56.155     8    26 G0   DataTransceiverInstanceTVStreams::SendFileInfos: DT:2243374718 NumFiles:1
+2016/05/27 19:17:56.155     8    26 G0   CParticipantManagerBase::CheckAndSubscribeNewStream(): Subscribe stream now streamID=2 type=5 required=1 supported=1
+2016/05/27 19:17:56.156     8    26 G0   CParticipantManagerBase InteractionDefaults arrived : CInteractionDefaults = (0) [ 0,2,0,0,2,0,0]
+2016/05/27 19:17:56.481  7962 1147123456 g0   CClipboardChangeListener::RegisterForClipboardChanges
+2016/05/27 19:17:56.481     8    25 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 19:17:56.481     8    25 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 19:17:56.482     8    27 G0   CServerThreadInfo::Received_AccessControlSettings: RCAccessControl: RemoteControl='Allowed', FileTransfer='Allowed', ControlRemoteTV='Allowed', SwitchSides='Allowed', AllowDisableRemoteInput='Allowed', AllowVPN='Allowed', AllowPartnerViewDesktop='Allowed', ShareMyFiles='Allowed', ShareFilesWithMe='Allowed', PrintOnMyPrinters='Allowed', PrintOnRemotePrinters='Allowed'
+2016/05/27 19:17:56.487     8    25 G0   ServerThreadInfo connected to 859794590, client version is 11.0.4905 CL, OS=8215
+2016/05/27 19:17:56.487     8    25 G0!! WindowsSessionStateManager::getWindowsSessionLocked(): locking state unknown.
+2016/05/27 19:17:56.614     8    27 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 8
+2016/05/27 19:17:56.615     8    27 G0   RA: Creating audio server, max bandwidth 
+2016/05/27 19:17:56.615     8    52 G0   VoIP: Receiver: VoiceReceiverAudioPipeline: VoiceReceiverAudioPipeline RegisterPlaybackDataObserver
+2016/05/27 19:17:56.615     8    27 G0   RA: Change quality by capacity (350)
+2016/05/27 19:17:56.615     8    27 G0   RA: Audio quality set to 32000
+2016/05/27 19:17:56.615     8    27 G0   RA: RemoteAudioSender get started
+2016/05/27 19:17:56.615     8    27 G0   RA: Control stream will get created
+2016/05/27 19:17:56.616     8    26 G0   RA: Controlstream succesfull registered with id 9
+2016/05/27 19:17:56.714     8    54 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2016/05/27 19:17:56.715     8    54 G0   RA: RemoteAudioSender unable to start audio processor
+2016/05/27 19:18:05.302     8    25 G0   RA: Change quality by capacity (1659)
+2016/05/27 19:18:05.302     8    25 G0   RA: Audio quality set to 62500
+2016/05/27 19:18:05.302     8    25 G0   RA: RemoteAudioSender stopping...
+2016/05/27 19:18:06.788     8    26 G0   Display buffers allocated: width = 1920, height = 1080, bpp = 32
+2016/05/27 19:18:06.788     8    26 G0   RA: RemoteAudioSender get started
+2016/05/27 19:18:06.788     8    26 G0   RA: Control stream will get created
+2016/05/27 19:18:06.789     8    26 G0   RA: Controlstream succesfull registered with id 10
+2016/05/27 19:18:06.879     8    55 G0!  RA: CreateInstance MMDeviceEnumerator failed
+2016/05/27 19:18:06.879     8    55 G0   RA: RemoteAudioSender unable to start audio processor
+2016/05/27 19:21:44.449  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 19:21:44.450  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 19:21:44.450  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 19:21:44.450  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 19:21:44.450  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=24, c=48)
+2016/05/27 19:21:44.450  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 19:23:12.124     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is idle. TimeUntilIdle: 300 seconds
+2016/05/27 19:23:12.203     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 2
+2016/05/27 19:23:27.241     8     9 G0   CMainWindow::TrackIdleTime(): System goes idle. (IdleTime=316732)
+2016/05/27 19:23:29.494  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 19:23:29.494  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 19:23:29.494  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 19:23:29.494  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 19:23:29.495  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=24, c=48)
+2016/05/27 19:23:29.495  7962 1121945344 g0   CClipboardController::SendClipboardContent: (1 data formats)
+2016/05/27 19:34:48.458     8    27 G0   RA: RemoteAudioSender get stopped
+2016/05/27 19:34:48.458     8    27 G0   RA: RemoteAudioSender stopping...
+2016/05/27 19:34:48.459     8     9 G0!! ITVWidgetViewWin::OnDestroy(): Message filtering could not be reset!
+2016/05/27 19:34:49.073     8    27 G0   RA: RemoteAudioSender get stopped
+2016/05/27 19:34:49.074     8    27 G0   WindowObserverGUI::SessionEnded: 0
+2016/05/27 19:34:49.074  7962 1147123456 g0   CClipboardChangeListener::UnregisterFromClipboardChanges
+2016/05/27 19:34:49.074     8    27 G0   VoIP: Receiver: Terminate
+2016/05/27 19:34:49.074  7962 1113552640 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/27 19:34:49.074     8    28 G0   VoIP: Receiver: ThreadPool:StopThreads
+2016/05/27 20:35:23.679  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 20:35:23.690  7962 1138730752 g0   XClipboard: Plain data for 'TARGETS'
+2016/05/27 20:35:23.690  7962 1138730752 g0   XClipboard: RequestClipboard as UTF8_STRING (326)
+2016/05/27 20:35:23.691  7962 1138730752 g0   XClipboard: Plain data for 'UTF8_STRING'
+2016/05/27 20:35:23.691  7962 1138730752 g0   XClipboard: Got clipboard as 'UTF8_STRING', size (n=1, c=2)
+2016/05/27 20:35:42.918     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is back to active
+2016/05/27 20:35:43.065     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 0
+2016/05/27 20:37:24.828  7962 1228605312 g0   Process received SIGTERM from process: 7791
+2016/05/27 20:37:24.829  7962 1138730752 g0   XClipboard: RequestClipboard as TARGETS (548)
+2016/05/27 20:37:24.829  7962 1138730752 g0   XClipboard: Shutting down event loop
+2016/05/27 20:37:24.893  7962 1147123456 g0!! X Error 3 on :0, Req 19.0 (#156 r48234497): BadWindow (invalid Window parameter), Errorcode=11
+2016/05/27 20:37:24.893  7962 1147123456 g0!! X Error 3 on :0, Req 24.0 (#157 r48234497): BadWindow (invalid Window parameter), Errorcode=11
+2016/05/27 20:37:24.929  7962 1228605312 g0   TVGuiSlave.64: Terminated
+2016/05/29 17:09:32.742  1797  494753664 g0   Logger started.
+2016/05/29 17:09:32.858  1797  494753664 g0   DeleteOldDumps: found 3 ".core" dump files ...
+2016/05/29 17:09:32.858  1797  494753664 g0   DeleteOldDumps: found 3 ".stack" dump files ...
+2016/05/29 17:09:33.203  1797  494753664 g0   systemd: logind service available
+2016/05/29 17:09:33.257  1797  494753664 g0   systemd: New seat seat0 [path=/org/freedesktop/login1/seat/seat0, activeSession='c1', canGraphical=1, canTTY=1, canMultiSession=1]
+2016/05/29 17:09:33.258  1797  494753664 g0   SystemdSession: New session c1 [path=/org/freedesktop/login1/session/c1, TTY=tty1 seat=seat0 display= vtnr=1 uid=SysUser_Lin: riddle [uid=1000, gid=100 home=/home/riddle gecos= shell=/bin/bash] idle=0(1464530760236207) active=1 type=tty class=user state=active timestamp=1464530760166538 service=login defaultCG= leader=544 audit=0 remote=0 rHost= rUser= killProc=0] SysSession_Lin: 10000 [id=c1, type=3 user=riddle tty=1 pseudotty=0 state=user active=1 reliable=1 info=0]
+2016/05/29 17:09:33.258  1797  494753664 g0   Session Information provided by systemd
+2016/05/29 17:09:33.258  1797  494753664 g0   XSocket observer: watching /tmp/.X11-unix
+2016/05/29 17:09:33.308  1797  494753664 g0   XSocket observer: adding XSession: 0
+2016/05/29 17:09:33.446  1797  494753664 g0   XSession[0]: Retrieved XAuth from environment (!)
+2016/05/29 17:09:33.446  1797  494753664 g0   systemd: no active session found for display :0, assuming login screen
+2016/05/29 17:09:33.608  1797  494753664 g0   XClipboard: Initialised XFixes (base=87, error=140)
+2016/05/29 17:09:33.608  1797  494753664 g0   TVGuiSlave.64: Running
+2016/05/29 17:09:34.129  1797  413271808 g0   Audio: PulseAudio enabled
+2016/05/29 17:09:34.131  1797  335542016 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/29 17:09:34.131  1797  413271808 g0   PulseAudio: Connection established
+2016/05/29 17:09:34.131  1797  335542016 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/29 17:09:34.131  1797  335542016 g0   XClipboard: Plain data for 'CLIP_TEMPORARY'
+2016/05/29 17:09:34.209  1797  494753664 g0!  XSM: No X Session Management for current session available (yet)
+2016/05/29 17:09:26.072     8     9 G0   Logger started.
+2016/05/29 17:09:27.501     8     9 G0!! SetProcessStartupOptions(): SetProcessDEPPolicy() failed! LE=120, Errorcode=2
+2016/05/29 17:09:32.472     8     9 G0   TVW X ErrorHandler org 7e1aa86e, def 7e00f9e0 cur 7d2ff90c
+2016/05/29 17:09:32.476     8     9 G0   Wine: Wine DLL initialized
+2016/05/29 17:09:32.476     8     9 G0   Wine: wine-1.6
+
+2016/05/29 17:09:32.477     8     9 G0   TVW SID0: SpawnSlave: pid 0
+2016/05/29 17:09:32.480     8     9 G0   TVW SID0: SpawnSlave: loading TVGuiSlave.64
+2016/05/29 17:09:32.580     8     9 G0!! TVW ObserveFork(ID = 0): read 0, Errorcode=2
+2016/05/29 17:09:32.680     8     9 G0!! TVW ObserveFork(ID = 0): read 0, Errorcode=2
+2016/05/29 17:09:32.780     8     9 G0!! TVW ObserveFork(ID = 0): read 0, Errorcode=2
+2016/05/29 17:09:32.859     8     9 G0   TVW ObserveFork: OK
+2016/05/29 17:09:32.859     8     9 G0   Wine: Spawned slave process with type 0
+2016/05/29 17:09:32.860     8     9 G0   TVW SID1: SpawnSlave: pid 0
+2016/05/29 17:09:32.863     8     9 G0   TVW SID1: SpawnSlave: loading TVGuiDelegate
+2016/05/29 17:09:32.963     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/29 17:09:33.064     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/29 17:09:33.164     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/29 17:09:33.264     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/29 17:09:33.364     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/29 17:09:33.464     8     9 G0!! TVW ObserveFork(ID = 1): read 0, Errorcode=2
+2016/05/29 17:09:33.540     8     9 G0   TVW ReadSlave [1]: Socket closed
+2016/05/29 17:09:33.540     8     9 G0!! TVW ObserveFork(ID = 1): read -2, Errorcode=2
+2016/05/29 17:09:33.540     8     9 G0!! TVW SpawnSlave(type = 1): Death by exit [127], Errorcode=2
+2016/05/29 17:09:33.540     8     9 G0!! TVW SpawnSlave(type = 1): failed, exiting, Errorcode=2
+2016/05/29 17:09:33.540     8     9 G0!!!Wine: Unable to spawn slave process of type 1, Errorcode=2
+2016/05/29 17:09:33.540     8     9 G0   Starting GUI master for slave type 0
+2016/05/29 17:09:33.541     8     9 G0   Starting GUI master for slave type 1
+2016/05/29 17:09:33.541     8     9 G0!!!WineGuiMaster[1]: Slave terminated unexpectedly, Errorcode=2
+2016/05/29 17:09:33.568     8     9 G0   Monitors: X11 Windowing System, \\.\DISPLAY1, 3840x1080 (0,0), flags=21, dpi=96
+2016/05/29 17:09:33.608     8     9 G0   Slave connected to GUI master
+                    
+                    
+                    
+Start:              2016/05/29 17:09:33.752 (UTC+2:00)
+Version:            10.0.41499 Dev 
+ID:                 0
+Loglevel:           LogAll (0)
+License:            0
+Server:             master13.teamviewer.com
+IC:                 0
+CPU:                x86 Family 6 Model 60 Stepping 3, GenuineIntel
+CPU extensions:     h9
+OS:                 Lx Arch Linux (32-bit)
+IP:                 192.168.1.71
+Proxy-Settings:     Type=0 IP= User=
+AppPath:            C:\TeamViewer\TeamViewer.exe
+UserAccount:        riddle
+
+2016/05/29 17:09:34.129     8     9 G0   CMain::LoadResourceDLLs(): No custom resource dll found
+2016/05/29 17:09:34.132     8     9 G0   Win32_GUI::FontReallyExists: 'Segoe UI' found 0 matches.
+2016/05/29 17:09:34.132     8     9 G0   Win32_GUI::FontReallyExists: 'Liberation Sans' found 4 matches.
+2016/05/29 17:09:34.138     8     9 G0   Opening local TCP connection to 127.0.0.1:5939
+2016/05/29 17:09:34.138     8     9 G0   Local TCP connection established
+2016/05/29 17:09:34.139     8     9 G0   Process ID:  L 1527 /  W 8
+2016/05/29 17:09:34.225     8     9 G0   MachineID m=0 - 1
+2016/05/29 17:09:34.226     8     9 G0   SettingsIPCReception receive a SYNCHRONISE Settings command : UserSettings
+2016/05/29 17:09:34.226     8     9 G0   Received Control_InitIPC_Response processtype=1
+2016/05/29 17:09:34.226     8     9 G0   Received Control_InitIPC_Response runningProcesses=3
+2016/05/29 17:09:34.226     8     9 G0   Control_InitIPC_Response: all processes 3 completely initialized
+2016/05/29 17:09:34.462     8     9 G0!! GetSimpleDisplayCertNameFromFile: File 'C:\TeamViewer\tv_w32.dll' does not exist., Errorcode=2
+2016/05/29 17:09:34.462     8     9 G0!! VerifyTeamViewerSignature() : WinVerifyTrust failed, result=2, Errorcode=2
+2016/05/29 17:09:34.462     8     9 G0!! MachineHooks: Library not found, Errorcode=2
+2016/05/29 17:09:34.463     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/05/29 17:09:34.470     8    30 G0   ProxySearch: no PAC script detected via WPAD
+2016/05/29 17:09:34.473     8     9 G0   TVUpdate::Init() Version-URL: download.teamviewer.com/download/update/ Update-URL: download.teamviewer.com/download/update/
+2016/05/29 17:09:34.923     8     9 G0   IncomingChatCommandRegistration::StartRegistration: registering for ready state properties
+2016/05/29 17:09:34.924     8     9 G0   IncomingChatCommandRegistration::RegisterIncomingCommands: Registered successfully for incoming commands (after 0 retries)
+2016/05/29 17:09:34.924     8     9 G0!! DragDropRegistration: could not register window, HR=80040155
+2016/05/29 17:09:34.924     8     9 G0   AccountLoginGUI::CreateLoginKey(): [OnlineState] System is set to Visible.
+2016/05/29 17:09:34.940     8     9 G0   Tray created!
+2016/05/29 17:09:34.944     8     9 G0   CMainWindow::ShouldShowDynamicPassword(): dynPw=1 allowIncoming=1 id=974085255 ka=1 lanAllowed=0 lanOnly=0 networkState=1 showDynPwd=1
+2016/05/29 17:09:34.945     8    26 G0   IDLabelContent::UpdateImpl() IDs changed: SessionID "974085255", TSUserID "0", ServerID "0"
+2016/05/29 17:09:34.959     8     9 G0   CMainWindowFull::SetVisibleDependingOnWindowState(): P_FORCE_WINSTATE_ONCE = WinState_Undefined
+2016/05/29 17:09:34.959     8     9 G0   Account::TryAutoLogin: enabled: 1
+2016/05/29 17:09:34.959     8     9 G0!! ServerControl: RegisterPowerSettingNotification failed with error 0
+2016/05/29 17:09:35.049  1797  318756608 g0   PulseAudio: Connected to server '/run/user/1000/pulse/native' (protocol version 30, library version 8.0.0
+2016/05/29 17:09:35.050  1797  413271808 g0   PulseAudio: Connection established
+2016/05/29 17:09:35.050     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_03.0.hdmi-stereo, Built-in Audio Digital Stereo (HDMI) {0bf28c71-28d4-5264-8eb3-4eff115ea691}
+2016/05/29 17:09:35.050     8    22 G0   Mixer: Device added: alsa_output.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {47a6ec9c-0926-5233-b1a1-d125eb058546}
+2016/05/29 17:09:35.050     8    22 G0   Mixer: Device added: alsa_input.pci-0000_00_1b.0.analog-stereo, Built-in Audio Analog Stereo {4f128769-8fee-5b51-8080-a60fdb1820f7}
+2016/05/29 17:09:35.051  1797  318756608 g0   PulseAudio: Exit main loop (0), err=-2
+2016/05/29 17:09:35.057     8     9 G0   Account::SetNewLoginState: 2
+2016/05/29 17:09:35.063     8     9 G0   Account::SetNewLoginState: 3
+2016/05/29 17:09:35.084     8     9 G0   AccountLogin::Start: Trying account authentication
+2016/05/29 17:09:35.240     8     9 G0   AccountLogin::HandleChallenge: Try V2Login
+2016/05/29 17:09:35.379     8     9 G0   AccountLogin::OnResponseSuccess: Authentication successful
+2016/05/29 17:09:35.379     8     9 G0   Account::LoginInternal: Login with V2 Account
+2016/05/29 17:09:35.466     8     9 G0   Account Login complete, inCompany = 0, with rights 0
+2016/05/29 17:09:35.467     8     9 G0   Account::SetNewLoginState: 4
+2016/05/29 17:09:35.679     8     9 G0   ChatRoomManager::InitializeAccountChat: AccountId = 30063380
+2016/05/29 17:09:36.142     8    25 G0   QueryRooms::Execute[queryChatRoomsResponseCb]: No rooms received
+2016/05/29 17:09:36.142     8    28 G0   ChatRoomManager::QueryRoomsInternal[queryRoomsResultCb]: Success: Received no rooms
+2016/05/29 17:09:54.335     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#3390 r41943047): BadWindow (invalid Window parameter)
+2016/05/29 17:10:30.126     8     9 G0   TVW X Error 3 on ???, Req 2.0 (#4608 r41943050): BadWindow (invalid Window parameter)
+2016/05/29 17:15:30.955     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is idle. TimeUntilIdle: 300 seconds
+2016/05/29 17:15:31.072     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 2
+2016/05/29 17:15:34.924     8     9 G0   CMainWindow::TrackIdleTime(): System goes idle. (IdleTime=304737)
+2016/05/29 17:32:21.613     8     9 G0   CBuddyWindow::OnTimer(): [OnlineState] System is back to active
+2016/05/29 17:32:21.777     8     9 G0   CBuddyWindow::SetAccountVisibilityTimer(): [OnlineState] ResultCB, state changed to: 0
+2016/05/29 17:32:31.023  1797  494753664 g0   Process received SIGINT from process: 0
+2016/05/29 17:32:31.023  1797  335542016 g0   XClipboard: Shutting down event loop
+2016/05/29 17:32:31.123  1797  494753664 g0   TVGuiSlave.64: Terminated

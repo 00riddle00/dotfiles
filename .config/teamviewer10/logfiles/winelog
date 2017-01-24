@@ -1,0 +1,45 @@
+fixme:service:scmdatabase_autostart_services Auto-start service L"MountMgr" failed to start: 2
+fixme:service:scmdatabase_autostart_services Auto-start service L"PlugPlay" failed to start: 2
+fixme:actctx:parse_depend_manifests Could not find dependent assembly L"Microsoft.Windows.Common-Controls" (6.0.0.0)
+fixme:ole:CoInitializeSecurity ((nil),-1,(nil),(nil),0,3,(nil),0,(nil)) - stub!
+fixme:heap:HeapSetInformation (nil) 1 (nil) 0
+fixme:process:SetProcessDEPPolicy (3): stub
+fixme:ver:GetCurrentPackageId (0x32f8e4 (nil)): stub
+Invalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 key/opt/teamviewer/tv_bin/TVGuiDelegate: error while loading shared libraries: libjpeg.so.62: cannot open shared object file: No such file or directory
+fixme:process:SetProcessShutdownParameters (00000100, 00000000): partial stub.
+fixme:win:EnumDisplayDevicesW ((null),0,0x32d590,0x00000000), stub!
+fixme:win:EnumDisplayDevicesW (L"\\\\.\\DISPLAY1",0,0x32d8d8,0x00000000), stub!
+fixme:win:EnumDisplayDevicesW ((null),1,0x32d590,0x00000000), stub!
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:module:load_library unsupported flag(s) used (flags: 0x00000060)
+fixme:resource:GetGuiResources (0xffffffff,0): stub
+fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenElevation, ...) semi-stub
+fixme:winhttp:WinHttpDetectAutoProxyConfigUrl discovery via DHCP not supported
+fixme:nls:GetGeoInfoW -1 4 0x32f9a4 3 0
+fixme:bitmap:CreateBitmapIndirect planes = 0
+fixme:msg:ChangeWindowMessageFilter 233 00000001
+fixme:msg:ChangeWindowMessageFilter 4a 00000001
+fixme:msg:ChangeWindowMessageFilter 407 00000001
+fixme:msg:ChangeWindowMessageFilter 49 00000001
+fixme:msg:pack_message msg 14 (WM_ERASEBKGND) not supported yet
+fixme:msg:pack_message msg 14 (WM_ERASEBKGND) not supported yet
+fixme:wtsapi:WTSRegisterSessionNotification Stub 0x1006a 0x00000000
+err:ole:marshal_object couldn't get IPSFactory buffer for interface {00000131-0000-0000-c000-000000000046}
+err:ole:marshal_object couldn't get IPSFactory buffer for interface {00000122-0000-0000-c000-000000000046}
+err:ole:StdMarshalImpl_MarshalInterface Failed to create ifstub, hres=0x80040155
+err:ole:CoMarshalInterface Failed to marshal the interface {00000122-0000-0000-c000-000000000046}, 80040155
+fixme:msg:ChangeWindowMessageFilter c056 00000001
+fixme:bitmap:CreateBitmapIndirect planes = 0
+fixme:bitmap:CreateBitmapIndirect planes = 0
+fixme:nls:GetGeoInfoW -1 4 0x32fc44 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32fa2c 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32fa2c 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32fa2c 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32fa2c 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32fa2c 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32fa2c 3 0
+fixme:nls:GetGeoInfoW -1 4 0x32f434 3 0
+err:secur32:SECUR32_initSchannelSP TLS library not found, SSL connections will fail
+fixme:console:CONSOLE_DefaultHandler Terminating process 8 on event 0

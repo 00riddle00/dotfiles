@@ -1,0 +1,15 @@
+{
+   "description": "A highly customized dark theme for Devtools.",
+   "devtools_page": "devtools.html",
+   "homepage_url": "https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmYrcr8F2mUhRkJmtgwfvO88gA3qgJCblS1W9zKP/UthFNcYX7NO6X07plCqKW5+AXpxerOUg2/IJNVxHgMKWM3nwLOoWgcpkZi4MvAcVp6wgLvhAyfzLLQNftFLauyUMxv/aYQ99xqW5SwFDtemnhAn0OuaQUSULrxsJ0X2pVUJBmS0p+PXz7A3AnTT6rorXvuIajLQBdt81Llj5rkJ9sCFFy5hzQYvo0BdMl5SInTEfvlmrbvkl7g5vKJxJkYOH+JhaHf4HRtYNW6aRLWSPay8mIs8Jd2FyLgsvUfumzzPO2VSgH5vv4SX7zDY6tUBA0BjWK9z7+8Ogqm829Sp8BQIDAQAB",
+   "manifest_version": 2,
+   "name": "DevTools Theme: Zero Dark Matrix",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2.5"
+}

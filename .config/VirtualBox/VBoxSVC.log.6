@@ -1,0 +1,37 @@
+VirtualBox XPCOM Server 5.1.12 r112440 linux.amd64 (Jan 11 2017 16:15:50) release log
+00:00:00.010348 main     Log opened 2017-01-24T10:32:29.359744000Z
+00:00:00.010350 main     Build Type: release
+00:00:00.010354 main     OS Product: Linux
+00:00:00.010354 main     OS Release: 4.8.13-1-ARCH
+00:00:00.010355 main     OS Version: #1 SMP PREEMPT Fri Dec 9 07:24:34 CET 2016
+00:00:00.010376 main     DMI Product Name: 20378
+00:00:00.010383 main     DMI Product Version: Lenovo Y50-70
+00:00:00.010424 main     Host RAM: 7904MB (7.7GB) total, 5469MB (5.3GB) available
+00:00:00.010428 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.010429 main     Process ID: 24440
+00:00:00.010429 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.011791 main     IPC socket path: /tmp/.vbox-riddle-ipc/ipcd
+00:00:00.122284 nspr-2   VirtualBox: object creation starts
+00:00:00.123272 nspr-2   Home directory: '/home/riddle/.config/VirtualBox'
+00:00:00.132925 nspr-2   Loading settings file "/home/riddle/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.219289 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp8s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.230994 nspr-2   NAT: resolv.conf: nameserver 192.168.8.1
+00:00:00.231017 nspr-2   HostDnsMonitor: old information
+00:00:00.231019 nspr-2     no server entries
+00:00:00.231021 nspr-2     no domain set
+00:00:00.231023 nspr-2     no search string entries
+00:00:00.231024 nspr-2   HostDnsMonitor: new information
+00:00:00.231026 nspr-2     server 1: 192.168.8.1
+00:00:00.231028 nspr-2     no domain set
+00:00:00.231029 nspr-2     no search string entries
+00:00:00.231033 nspr-2   HostDnsMonitorProxy::notify
+00:00:00.270112 nspr-2   VD: VDInit finished
+00:00:00.270963 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.438048 nspr-2   Loading settings file "/home/riddle/VirtualBox VMs/VirtualBoxVMs_default_1464096994674_51263/VirtualBoxVMs_default_1464096994674_51263.vbox" with version "1.12-linux"
+00:00:00.441513 nspr-2   VirtualBox: object created
+00:00:00.543344 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp8s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:05.554450 main     VirtualBox: object deletion starts
+00:00:05.554491 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={4afe423b-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Medium '/home/riddle/VirtualBox VMs/VirtualBoxVMs_default_1464096994674_51263/box-disk1.vmdk' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:05.942939 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={0169423f-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:10.651107 main     {00007f6b5c016500} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
+00:00:10.745325 main     VirtualBox: object deleted

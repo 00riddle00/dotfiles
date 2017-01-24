@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+A"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "cambridge.js" ],
+      "matches": [ "*://*.cam.ac.uk/*" ]
+   } ],
+   "description": "This extension lets you customise the title of any tab.",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo5Gd1pPw4Upe5bwuGwIa0CW7KTIbhLwpTUsZJjA7dI+SxSzOuUAm4mgpdalrxHUwpN8ZRBO1HeohQ9k18YxcPn7F44reF8vb3uEu3R5GEwQKtwJdAjmUsQn3M3/DJZNJS8nu0XSryIh3BKvVSOVBU09Em4NVBBuzkrLjZtHNYCas4xvE6+NkLXdUWKfqZU+Eye5Zu/8VTZux8zAzcH9LOSqvc0Le45bRciJghWmv2E2JItclgdwT9n/4FBymFZu027VNrf2uGIsZd7sOgdUbxf95VqotmCCor2hYtAf04PVM7Wy2R29xOScEhXbAqRZbaNuZoqFrqL0Md+fwf/I2WwIDAQAB",
+   "manifest_version": 2,
+   "name": "RenameTab",
+   "permissions": [ "tabs", "http://*/", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1"
+}

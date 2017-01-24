@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "js/analytics.js", "js/jquery.min.js", "js/signals.min.js", "js/icon-animation.js", "js/load-default-options.js", "js/backgroundpage.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/icon_19.png",
+         "38": "img/icon_38.png"
+      },
+      "default_title": "Clear Cache"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Clear your cache and browsing data with a single click of a button.",
+   "icons": {
+      "128": "img/icon_128.png",
+      "16": "img/icon_16.png",
+      "48": "img/icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC0Tx8cgLN3RHLtYSs1ZQ//YX2lD7ZwaePflRoQvJObHPmJ/cs45wckNOJnet5HxtmXacW8fDAJ7XZpLwIw+I9MWuL8FWCcNVxWo4AYzwaSw1HjR1K+GLY2A74a3siDCT0oUBSK0tp479GoojL00WMq5CcravoGQ7/7MUEHjJjT0wIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "22",
+   "name": "Clear Cache",
+   "options_page": "options.html",
+   "permissions": [ "browsingData", "tabs", "cookies", "\u003Call_urls>" ],
+   "short_name": "Clear Cache",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.2"
+}

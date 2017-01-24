@@ -218,8 +218,8 @@ alias vll='vlt --leak-check=full --show-leak-kinds=all ./test'
 alias vllv='vlt --leak-check=full --show-leak-kinds=all -v ./test'
 
 # python
-alias python='python3.5'
-alias p='python3.5'
+alias python='python3.4'
+alias p='python3.4'
 alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 
 # django
@@ -361,3 +361,6 @@ alias orphans2='pacman -Qdtd'
 
 
 
+alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
+alias vof='s ipsec down MBS && s ipsec down JIRA'
+alias bt='tail -n 20 ~/.bashrc'

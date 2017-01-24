@@ -1,0 +1,19 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://stopwatch.zeemind.com/?s=free-app"
+      },
+      "urls": [ "*://stopwatch.zeemind.com/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMTnu97rrW+4AuPtBbytzE8gvnBXgwD1MFFOJaGaWMOFR/g2l5ltAuiQsEETrWYCEqRKOdiS0tu3aRgK25t1JrQ4qkr52JktxR7HjT50NIEsjy5DGfpwdEltBYY93WUNhHhOj0/FmS2ZBmUYc7VD6OPHGHaV53LCg2Wjin/NjWrwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.8",
+   "web_accessible_resources": [ "icon_128.png" ]
+}

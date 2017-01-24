@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg xmlns="http://www.w3.org/2000/svg" height="134px" width="606px" version="1.1" y="0" x="0" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 606 134">
+ <g transform="translate(522,24)">
+  <symbol id="ic_x5F_add_x0D_" viewBox="0 -24 24 24">
+   <path d="m19-13h-6v-6h-2v6h-6v2h6v6h2v-6h6v-2z" fill="#fff"/>
+   <polygon points="24 -24 0 -24 0 0 24 0" fill="none"/>
+  </symbol>
+  <use id="XMLID_179_" xlink:href="#ic_x5F_add_x0D_" transform="scale(1 -1)" height="24" width="24" y="-24" overflow="visible"/>
+ </g>
+ <g transform="translate(316,24)">
+  <path id="Shape" d="m5.97 13.099c-1.397 0-2.47 1.132-2.47 2.529v10.341c0 1.401 1.073 2.531 2.47 2.531s2.53-1.135 2.53-2.531v-10.341c0-1.398-1.132-2.529-2.53-2.529z"/>
+  <path id="Shape_1_" d="m36.5 15.611c0-1.388-1.127-2.512-2.515-2.512s-2.485 1.126-2.485 2.512v10.374c0 1.392 1.099 2.515 2.485 2.515 1.389 0 2.515-1.127 2.515-2.515v-10.374z"/>
+  <path id="Shape_2_" d="m9.617 13.513h-0.117v15.617c0 1.304 1.066 2.368 2.369 2.368h1.631v5.443c0 1.309 1.401 2.367 2.709 2.367s2.29-1.061 2.291-2.367v-5.443h3v5.443c0 1.309 1.372 2.367 2.68 2.367 1.309 0 2.32-1.061 2.32-2.367v-5.443h1.633c1.304 0 2.367-1.064 2.367-2.368v-15.617h-20.883z"/>
+  <path id="Shape_3_" d="m30.481 12.5v-0.959c-0.031-0.324-0.08-0.644-0.146-0.958-0.588-2.777-2.112-5.131-4.772-6.497l1.637-3.018c0.1-0.188 0.031-0.421-0.156-0.521-0.188-0.102-0.42-0.032-0.521 0.154l-1.655 3.056c-1.406-0.604-2.984-0.943-4.653-0.943-1.679 0-3.27 0.344-4.686 0.957l-1.664-3.069c-0.101-0.187-0.334-0.256-0.522-0.154-0.187 0.101-0.256 0.334-0.155 0.521l1.644 3.033c-2.533 1.312-4.382 3.523-5.047 6.143-0.173 0.68-0.264 1.203-0.264 1.929 0 0.108 0.003 0.217 0.007 0.325l20.953 0.001zm-5.413-5.621c0.557 0 1.008 0.45 1.008 1.007 0 0.556-0.451 1.007-1.008 1.007s-1.006-0.451-1.006-1.007c0-0.557 0.452-1.007 1.006-1.007zm-9.751 0c0.556 0 1.007 0.45 1.007 1.007 0 0.556-0.451 1.007-1.007 1.007s-1.007-0.451-1.007-1.007c0.001-0.557 0.451-1.007 1.007-1.007z"/>
+ </g>
+ <g transform="translate(64,24)">
+  <path d="m28.773 21.596c-0.039-4.234 3.467-6.293 3.627-6.39-1.986-2.894-5.062-3.289-6.143-3.32-2.584-0.271-5.09 1.546-6.406 1.546-1.344 0-3.371-1.52-5.555-1.476-2.811 0.044-5.44 1.671-6.883 4.199-2.977 5.153-0.757 12.726 2.096 16.891 1.426 2.041 3.094 4.318 5.275 4.237 2.135-0.088 2.932-1.36 5.508-1.36 2.553 0 3.301 1.36 5.525 1.31 2.291-0.037 3.734-2.049 5.109-4.107 1.648-2.337 2.311-4.641 2.336-4.759-0.049-0.019-4.444-1.698-4.489-6.771z"/>
+  <path d="m24.57 9.146c1.146-1.436 1.934-3.389 1.715-5.372-1.662 0.074-3.738 1.149-4.936 2.554-1.06 1.237-2.004 3.265-1.76 5.173 1.866 0.139 3.782-0.942 4.981-2.355z"/>
+ </g>
+ <g transform="translate(356,48)">
+  <path d="m0 0h24v24h-24v-24z" fill="none"/>
+  <path d="m20 11h-12.2l5.6-5.6-1.4-1.4-8 8 8 8 1.4-1.4-5.6-5.6h12.2v-2z" fill="#fff"/>
+ </g>
+ <g transform="translate(316)">
+  <symbol id="ic_x5F_close" viewBox="-12 -12 24 24">
+   <polygon points="7 5.586 5.586 7 0 1.414 -5.586 7 -7 5.586 -1.414 0 -7 -5.586 -5.586 -7 0 -1.414 5.586 -7 7 -5.586 1.414 0"/>
+   <polygon points="12 -12 -12 -12 -12 12 12 12" fill="none"/>
+  </symbol>
+  <use xlink:href="#ic_x5F_close" transform="matrix(1 0 0 -1 12 12)" height="24" width="24" y="-12" x="-12" overflow="visible"/>
+ </g>
+ <g transform="translate(300,112)">
+  <g id="Isolation_Mode">
+   <g id="XMLID_167_">
+    <path d="m14 12.9l-1.1 1.1-2.9-2.9-2.9 2.9-1.1-1.1 2.9-2.9-2.9-2.9 1.1-1.1 2.9 2.9 2.9-2.9 1.1 1.1-2.9 2.9 2.9 2.9z"/>
+    <rect width="20" height="20" fill="none"/>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(356)"><!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+  <title>Comments_Dark_24dp</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="Comments_Dark_24dp" sketch:type="MSArtboardGroup">
+    <g id="ic_insert_comment_black_24dp" sketch:type="MSLayerGroup">
+     <path id="Shape" sketch:type="MSShapeGroup" d="m0 0h24v24h-24v-24z"/>
+     <path id="Shape" sketch:type="MSShapeGroup" fill="#000" d="m20 2h-16c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h14l4 4v-18c0-1.1-0.9-2-2-2zm-2 12h-12v-2h12v2zm0-3h-12v-2h12v2zm0-3h-12v-2h12v2z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(404,96)">
+  <path d="m14 13.125c0 0.483-0.392 0.875-0.875 0.875h-12.25c-0.483 0-0.875-0.392-0.875-0.875v-12.25c0-0.483 0.392-0.875 0.875-0.875h12.25c0.483 0 0.875 0.392 0.875 0.875v12.25z" fill="#4285F4"/>
+  <rect y="6" x="3" height="1" width="8" fill="#fff"/>
+  <rect y="4" x="3" height="1" width="8" fill="#fff"/>
+  <rect y="8" x="3" height="1" width="4" fill="#fff"/>
+  <rect width="16" height="16" fill="none"/>
+ </g>
+ <g transform="translate(64,64)">
+  <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z" fill="#fff"/>
+  <polygon points="20 10 29 10 29 17" fill="#E4E4E4"/>
+  <polygon points="29 10 20 10 20 1" fill="#F7F7F7"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.939 1.702l-0.045 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m22 28.125c0 0.483-0.392 0.875-0.875 0.875h-12.25c-0.483 0-0.875-0.392-0.875-0.875v-12.25c0-0.483 0.392-0.875 0.875-0.875h12.25c0.483 0 0.875 0.392 0.875 0.875v12.25z" fill="#4285F4"/>
+  <rect y="21" x="11" height="1" width="8" fill="#fff"/>
+  <rect y="19" x="11" height="1" width="8" fill="#fff"/>
+  <rect y="23" x="11" height="1" width="4" fill="#fff"/>
+  <rect y="15" x="8" height="16" width="16" fill="none"/>
+ </g>
+ <g transform="translate(268,24)">
+  <g opacity=".03">
+   <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z"/>
+  </g>
+  <polygon points="20 10 29 10 29 17" fill="#ddd"/>
+  <polygon points="29 10 20 10 20 1" fill="#eee"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.939 1.702l-0.045 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m22 28.125c0 0.483-0.392 0.875-0.875 0.875h-12.25c-0.483 0-0.875-0.392-0.875-0.875v-12.25c0-0.483 0.392-0.875 0.875-0.875h12.25c0.483 0 0.875 0.392 0.875 0.875v12.25z" fill="#4285F4"/>
+  <rect y="21" x="11" height="1" width="8" fill="#fff"/>
+  <rect y="19" x="11" height="1" width="8" fill="#fff"/>
+  <rect y="23" x="11" height="1" width="4" fill="#fff"/>
+  <rect y="15" x="8" height="16" width="16" fill="none"/>
+ </g>
+ <g transform="translate(356,110)">
+  <symbol id="ic_x5F_arrowDropDown_x0D_" viewBox="0 -24 24 24">
+   <polygon points="7 -10 12 -15 17 -10"/>
+   <polygon points="24 -24 0 -24 0 0 24 0" fill="none"/>
+  </symbol>
+  <use id="XMLID_51_" xlink:href="#ic_x5F_arrowDropDown_x0D_" transform="scale(1 -1)" height="24" width="24" y="-24" overflow="visible"/>
+ </g>
+ <g transform="translate(428,99)">
+  <path d="m7 10l5 5 5-5z" fill="#fff"/>
+  <path d="m0 0h24v24h-24z" fill="none"/>
+ </g>
+ <g transform="translate(118)">
+  <path d="m3 17.25v3.75h3.75l11.06-11.06-3.75-3.75-11.06 11.06zm17.71-10.21c0.39-0.39 0.39-1.02 0-1.41l-2.34-2.34c-0.39-0.39-1.02-0.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+  <path d="m0 0h24v24h-24z" fill="none"/>
+ </g>
+ <g transform="translate(356,96)">
+  <polygon points="10.744 13 13.106 13 8.187 5.96 12.318 0 9.869 0 6.981 4.375 4.236 0 1.788 0 5.92 5.96 1 13 8 13 8 11 4.5 11 6.981 7.292" fill="#2FC586"/>
+  <rect width="14" height="14" fill="none"/>
+ </g>
+ <g transform="translate(576,37)">
+  <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z" fill="#fff"/>
+  <polygon points="20 10 29 10 29 17" fill="#E4E4E4"/>
+  <polygon points="29 10 20 10 20 1" fill="#F7F7F7"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <polygon points="18.744 28 21.106 28 16.187 20.96 20.318 15 17.869 15 14.981 19.375 12.236 15 9.788 15 13.92 20.96 9 28 16 28 16 26 12.5 26 14.981 22.292" fill="#2FC586"/>
+  <rect y="15" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(428,38)">
+  <g opacity=".03">
+   <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z"/>
+  </g>
+  <polygon points="20 10 29 10 29 17" fill="#ddd"/>
+  <polygon points="29 10 20 10 20 1" fill="#eee"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <polygon points="18.744 28 21.106 28 16.187 20.96 20.318 15 17.869 15 14.981 19.375 12.236 15 9.788 15 13.92 20.96 9 28 16 28 16 26 12.5 26 14.981 22.292" fill="#2FC586"/>
+  <rect y="15" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(252,88)">
+  <path d="m16.59 8.59l-4.59 4.58-4.59-4.58-1.41 1.41 6 6 6-6z" fill="#fff"/>
+  <path d="m0 0h24v24h-24z" fill="none"/>
+ </g>
+ <g transform="translate(522,72)">
+  <g id="ic_x5F_folder_x5F_flat_black">
+   <path d="m2 18c0 1.104 0.896 2 2 2h16c1.104 0 2-0.896 2-2v-10c0-1.104-0.896-2-2-2h-8.586l-1.707-1.707c-0.195-0.195-0.451-0.293-0.707-0.291l-5-0.002c-1.104 0-2 0.896-2 2v12z"/>
+   <rect width="24" height="24" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(94,88)">
+  <symbol id="ic_x5F_folder_x5F_flat" viewBox="0 -24 24 24">
+   <path d="m2-18c0-1.104 0.896-2 2-2h16c1.104 0 2 0.896 2 2v10c0 1.104-0.896 2-2 2h-8.586l-1.707 1.707c-0.195 0.195-0.451 0.293-0.707 0.291l-5 0.002c-1.104 0-2-0.896-2-2v-12z" fill="#fff"/>
+   <polygon points="24 -24 0 -24 0 0 24 0" fill="none"/>
+  </symbol>
+  <use id="XMLID_388_" xlink:href="#ic_x5F_folder_x5F_flat" transform="scale(1 -1)" height="24" width="24" y="-24" overflow="visible"/>
+ </g>
+ <g transform="translate(428)"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title>forms_14</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="forms_14" fill="#673AB7" sketch:type="MSLayerGroup">
+    <g id="Page-1" sketch:type="MSShapeGroup">
+     <g id="forms_14--1">
+      <g id="Group">
+       <path id="Shape" d="m12.4 0h-10.8c-0.9 0-1.6 0.7-1.6 1.6v10.8c0 0.9 0.7 1.6 1.6 1.6h10.8c0.9 0 1.6-0.7 1.6-1.6v-10.8c0-0.9-0.7-1.6-1.6-1.6zm-8.4 11h-2v-2h2v2zm0-3h-2v-2h2v2zm0-3h-2v-2h2v2zm8 6h-7v-2h7v2zm0-3h-7v-2h7v2zm0-3h-7v-2h7v2z"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(576)"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title>forms_hover_30_37</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="forms_hover_30_37" sketch:type="MSLayerGroup">
+    <g id="Page-1" sketch:type="MSShapeGroup">
+     <g id="forms_hover_30_37">
+      <g id="Group">
+       <g id="Shape">
+        <g id="Group" transform="translate(0 1)">
+         <path id="Shape" fill="#fff" d="m28.9 9h-9v-9h-18c-0.7 0-1 1-1 1v33c0 0.5 0.5 1 1 1h25.9c0.6 0 1.1-0.5 1.1-1v-25z"/>
+         <path id="Shape" fill="#E4E4E4" d="m19.9 9h9v7l-9-7z"/>
+         <path id="Shape" fill="#F7F7F7" d="m28.9 9h-9v-9l9 9z"/>
+        </g>
+        <g id="Group" fill="#000" fill-opacity=".07">
+         <path id="Shape" d="m19.9 1l9 9v7 18c0 0.5-0.5 1-1.1 1h-25.9c-0.5 0-1-0.5-1-1v-33s0.3-1 1-1h18zm0.4-1h-0.4-18c-1 0-1.7 0.9-1.9 1.7l5.6843e-14 0.1v0.2 33c0 1 1 2 2 2h25.9c1.1 0 2.1-1 2.1-2v-18-7-0.4l-0.3-0.3-9-9-0.4-0.3z"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+    <path id="Shape" sketch:type="MSShapeGroup" fill="#673AB7" d="m20.4 15h-10.8c-0.9 0-1.6 0.7-1.6 1.6v10.8c0 0.9 0.7 1.6 1.6 1.6h10.8c0.9 0 1.6-0.7 1.6-1.6v-10.8c0-0.9-0.7-1.6-1.6-1.6zm-8.4 11h-2v-2h2v2zm0-3h-2v-2h2v2zm0-3h-2v-2h2v2zm8 6h-7v-2h7v2zm0-3h-7v-2h7v2zm0-3h-7v-2h7v2z"/>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(118,24)"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title>Slice 1</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="forms_normal_30_37" sketch:type="MSLayerGroup">
+    <g id="Page-1">
+     <g id="forms_normal_30_37" sketch:type="MSShapeGroup">
+      <g id="Page-1">
+       <g id="forms_normal_30_37">
+        <g id="Page-1">
+         <g id="forms_normal_30_37">
+          <g id="Page-1">
+           <g id="forms_normal_30_37">
+            <g id="Group">
+             <g id="Shape" transform="translate(1 1)">
+              <g id="Group" opacity=".03" fill="#000">
+               <g id="Shape">
+                <path d="m28 9h-9v-9h-18c-0.7 0-1 1-1 1v33c0 0.5 0.5 1 1 1h25.9c0.6 0 1.1-0.5 1.1-1v-25z"/>
+               </g>
+              </g>
+              <path d="m19 9h9v7l-9-7z" fill="#ddd"/>
+              <path d="m28 9h-9v-9l9 9z" fill="#eee"/>
+             </g>
+             <g id="Shape" opacity=".07" fill="#000">
+              <path d="m20 1l9 9v7 18c0 0.5-0.5 1-1.1 1h-25.9c-0.5 0-1-0.5-1-1v-33s0.3-1 1-1h18zm0.4-1h-0.4-18c-1 0-1.7 0.9-1.9 1.7v0.1 0.2 33c0 1 1 2 2 2h25.9c1.1 0 2.1-1 2.1-2v-18-7-0.4l-0.3-0.3-9-9-0.4-0.3z"/>
+             </g>
+            </g>
+            <path id="Shape" fill="#673AB7" d="m20.4 15h-10.8c-0.9 0-1.6 0.7-1.6 1.6v10.8c0 0.9 0.7 1.6 1.6 1.6h10.8c0.9 0 1.6-0.7 1.6-1.6v-10.8c0-0.9-0.7-1.6-1.6-1.6zm-8.4 11h-2v-2h2v2zm0-3h-2v-2h2v2zm0-3h-2v-2h2v2zm8 6h-7v-2h7v2zm0-3h-7v-2h7v2zm0-3h-7v-2h7v2z"/>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(300,64)">
+  <g id="ic_x5F_viewModule">
+   <path d="m4 11h5v-6h-5v6zm0 7h5v-6h-5v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5v-6h-5v6zm6-6v6h5v-6h-5z"/>
+   <rect width="24" height="24" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(118,109)">
+  <g id="ic_x5F_viewModule">
+   <path d="m4 11h5v-6h-5v6zm0 7h5v-6h-5v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5v-6h-5v6zm6-6v6h5v-6h-5z" fill="#fff"/>
+   <polygon points="24 24 0 24 0 0 24 0" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(522,96)">
+  <path d="m0 0h24v24h-24z" fill="none"/>
+  <path d="m12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm1 15h-2v-6h2v6zm0-8h-2v-2h2v2z"/>
+ </g>
+ <g transform="translate(546,85)">
+  <rect y="4" x="3" height="16" width="18" fill="none"/>
+  <path d="m13.857 6c0-1.104-0.896-2-2-2-1.105 0-2 0.896-2 2s0.895 2 2 2c1.104 0 2-0.896 2-2zm0 12c0-1.104-0.896-2-2-2-1.105 0-2 0.896-2 2s0.895 2 2 2c1.104 0 2-0.896 2-2zm0-6c0-1.104-0.896-2-2-2-1.105 0-2 0.896-2 2s0.895 2 2 2c1.104 0 2-0.896 2-2z"/>
+  <rect x="7.857" height="24" width="8" fill="none"/>
+ </g>
+ <g transform="translate(428,75)">
+  <path d="m12 8c1.1 0 2-0.9 2-2s-0.9-2-2-2-2 0.9-2 2 0.9 2 2 2zm0 2c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zm0 6c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z" fill="#fff"/>
+ </g>
+ <g transform="translate(268)">
+  <g id="ic_x5F_list_x0D_">
+   <path d="m3 13h3v-3h-3v3zm0 5h3v-3h-3v3zm0-10h3v-3h-3v3zm5 5h13v-3h-13v3zm0 5h13v-3h-13v3zm0-13v3h13v-3h-13z"/>
+   <rect width="24" height="24" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(94,64)">
+  <g id="ic_x5F_list_x0D_">
+   <path d="m3 13h3v-3h-3v3zm0 5h3v-3h-3v3zm0-10h3v-3h-3v3zm5 5h13v-3h-13v3zm0 5h13v-3h-13v3zm0-13v3h13v-3h-13z" fill="#fff"/>
+   <polygon points="24 24 0 24 0 0 24 0" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(404,72)">
+  <path d="m0 0h24v24h-24v-24z" fill="none"/>
+  <path d="m3 18h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z"/>
+ </g>
+ <g transform="translate(276,102)">
+  <path d="m0 0h24v24h-24v-24z" fill="none"/>
+  <path d="m3 18h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z" fill="#fff"/>
+ </g>
+ <g transform="translate(220)">
+  <defs>
+   <path id="nav_classic_sites_24_SVGID_1_" d="m21.5 21.5h-19c-0.8 0-1.5-0.7-1.5-1.5v-16c0-0.8 0.7-1.5 1.5-1.5h19c0.8 0 1.5 0.7 1.5 1.5v16c0 0.8-0.7 1.5-1.5 1.5z"/>
+  </defs>
+  <clipPath id="nav_classic_sites_24_SVGID_2_">
+   <use overflow="visible" xlink:href="#nav_classic_sites_24_SVGID_1_"/>
+  </clipPath>
+  <g clip-path="url(#nav_classic_sites_24_SVGID_2_)">
+   <path d="m1 5.5h22v8h-22v-8z" fill="#4285F4"/>
+   <path d="m1 13.5h11v8h-11v-8z" fill="#E1E1E1"/>
+   <path d="m12 13.5h11v8h-11v-8z" fill="#3367D6"/>
+   <path d="m1 2.5h22v3h-22v-3z" fill="#C2C2C2"/>
+   <path fill-opacity=".2" d="m21.5 2.5h-19c-0.8 0-1.5 0.7-1.5 1.5v0.1c0-0.8 0.7-1.5 1.5-1.5h19c0.8 0 1.5 0.7 1.5 1.5v-0.1c0-0.8-0.7-1.5-1.5-1.5z" fill="#fff"/>
+   <path fill-opacity=".1" d="m2.5 21.4c-0.8 0-1.5-0.7-1.5-1.5v0.1c0 0.8 0.7 1.5 1.5 1.5h9.5v-0.1h-9.5z" fill="#212121"/>
+   <path fill-opacity=".2" d="m21.5 21.4h-9.5v0.1h9.5c0.8 0 1.5-0.7 1.5-1.5v-0.1c0 0.8-0.7 1.5-1.5 1.5z" fill="#1A237E"/>
+   <circle cy="4" cx="3" fill="#eee"/>
+   <circle cy="4" cx="5" fill="#eee"/>
+  </g>
+  <defs>
+   <path id="nav_classic_sites_24_SVGID_3_" d="m21.5 21.5h-19c-0.8 0-1.5-0.7-1.5-1.5v-16c0-0.8 0.7-1.5 1.5-1.5h19c0.8 0 1.5 0.7 1.5 1.5v16c0 0.8-0.7 1.5-1.5 1.5z"/>
+  </defs>
+  <clipPath id="nav_classic_sites_24_SVGID_4_">
+   <use overflow="visible" xlink:href="#nav_classic_sites_24_SVGID_3_"/>
+  </clipPath>
+  <linearGradient id="nav_classic_sites_24_SVGID_5_" y2="18.016" gradientUnits="userSpaceOnUse" x2="14.484" gradientTransform="matrix(1 0 0 -1 0 26)" y1="26.025" x1="6.4749">
+   <stop stop-color="#1A237E" stop-opacity=".2" offset="0"/>
+   <stop stop-color="#1A237E" stop-opacity=".02" offset="1"/>
+  </linearGradient>
+  <path fill="url(#nav_classic_sites_24_SVGID_5_)" d="m23 13.5h-14l-8-8h22v8z" clip-path="url(#nav_classic_sites_24_SVGID_4_)"/>
+  <defs>
+   <path id="nav_classic_sites_24_SVGID_6_" d="m21.5 21.5h-19c-0.8 0-1.5-0.7-1.5-1.5v-16c0-0.8 0.7-1.5 1.5-1.5h19c0.8 0 1.5 0.7 1.5 1.5v16c0 0.8-0.7 1.5-1.5 1.5z"/>
+  </defs>
+  <clipPath id="nav_classic_sites_24_SVGID_7_">
+   <use overflow="visible" xlink:href="#nav_classic_sites_24_SVGID_6_"/>
+  </clipPath>
+  <path fill="#BDBDBD" d="m2.5 18h8v-1h-8v1zm0 2h5v-1h-5v1zm0-5v1h8v-1h-8z" clip-path="url(#nav_classic_sites_24_SVGID_7_)"/>
+  <defs>
+   <path id="nav_classic_sites_24_SVGID_8_" d="m21.5 21.5h-19c-0.8 0-1.5-0.7-1.5-1.5v-16c0-0.8 0.7-1.5 1.5-1.5h19c0.8 0 1.5 0.7 1.5 1.5v16c0 0.8-0.7 1.5-1.5 1.5z"/>
+  </defs>
+  <clipPath id="nav_classic_sites_24_SVGID_9_">
+   <use overflow="visible" xlink:href="#nav_classic_sites_24_SVGID_8_"/>
+  </clipPath>
+  <path fill-opacity=".1" fill="#1A237E" d="m1 5.5h22v0.1h-22v-0.1z" clip-path="url(#nav_classic_sites_24_SVGID_9_)"/>
+  <radialGradient id="nav_classic_sites_24_SVGID_10_" gradientUnits="userSpaceOnUse" cy="23.155" cx="1.4635" gradientTransform="matrix(1 0 0 -1 0 26)" r="27.877">
+   <stop stop-color="#fff" stop-opacity=".1" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <path d="m21.5 21.5h-19c-0.8 0-1.5-0.7-1.5-1.5v-16c0-0.8 0.7-1.5 1.5-1.5h19c0.8 0 1.5 0.7 1.5 1.5v16c0 0.8-0.7 1.5-1.5 1.5z" fill="url(#nav_classic_sites_24_SVGID_10_)"/>
+  <path d="m0 0h24v24h-24v-24z" fill="none"/>
+ </g>
+ <g transform="translate(220,64)">
+  <radialGradient id="nav_classic_sites_32_SITESID_10_" cx="1926.7" gradientUnits="userSpaceOnUse" cy="-3103.8" r="223.01" gradientTransform="matrix(.1667 0 0 -.1667 -319.17 -513.5)">
+   <stop stop-color="#fff" stop-opacity=".1" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <g>
+   <title>Layer 1</title>
+   <g id="nav_classic_sites_32_svg_1">
+    <defs>
+     <path id="nav_classic_sites_32_SITESID_1_" d="m28.7 28.7h-25.4c-1.1 0-2-0.9-2-2v-21.4c0-1.1 0.9-2 2-2h25.3c1.1 0 2 0.9 2 2v21.3c0.1 1.2-0.8 2.1-1.9 2.1z"/>
+    </defs>
+    <clipPath id="nav_classic_sites_32_SITESID_2_">
+     <use id="nav_classic_sites_32_svg_2" xlink:href="#nav_classic_sites_32_SITESID_1_"/>
+    </clipPath>
+    <g id="nav_classic_sites_32_svg_3" clip-path="url(#nav_classic_sites_32_SITESID_2_)">
+     <path id="nav_classic_sites_32_svg_4" fill="#4285F4" d="m1.3 7.3h29.3v10.7h-29.3v-10.7z"/>
+     <path id="nav_classic_sites_32_svg_5" fill="#E1E1E1" d="m1.3 18h14.7v10.7h-14.7v-10.7z"/>
+     <path id="nav_classic_sites_32_svg_6" fill="#3367D6" d="m16 18h14.7v10.7h-14.7v-10.7z"/>
+     <path id="nav_classic_sites_32_svg_7" fill="#C2C2C2" d="m1.3 3.3h29.3v4h-29.3v-4z"/>
+     <path id="nav_classic_sites_32_svg_8" fill-opacity=".2" fill="#fff" d="m28.7 3.3h-25.4c-1.1 0-2 0.9-2 2v0.2c0-1.1 0.9-2 2-2h25.3c1.1 0 2 0.9 2 2v-0.2c0.1-1.1-0.8-2-1.9-2z"/>
+     <path id="nav_classic_sites_32_svg_9" fill-opacity=".1" fill="#212121" d="m3.3 28.5c-1.1 0-2-0.9-2-2v0.2c0 1.1 0.9 2 2 2h12.7v-0.2h-12.7z"/>
+     <path id="nav_classic_sites_32_nav_classic_sites_32_svg_10" fill-opacity=".2" fill="#1A237E" d="m28.7 28.5h-12.7v0.2h12.7c1.1 0 2-0.9 2-2v-0.2c0 1.1-0.9 2-2 2z"/>
+     <circle id="nav_classic_sites_32_nav_classic_sites_32_svg_11" cx="4" cy="5.3" r=".7" fill="#eee"/>
+     <circle id="nav_classic_sites_32_nav_classic_sites_32_svg_12" cx="6.7" cy="5.3" r=".7" fill="#eee"/>
+    </g>
+   </g>
+   <g id="nav_classic_sites_32_nav_classic_sites_32_svg_13">
+    <defs>
+     <path id="nav_classic_sites_32_SITESID_3_" d="m28.7 28.7h-25.4c-1.1 0-2-0.9-2-2v-21.4c0-1.1 0.9-2 2-2h25.3c1.1 0 2 0.9 2 2v21.3c0.1 1.2-0.8 2.1-1.9 2.1z"/>
+    </defs>
+    <clipPath id="nav_classic_sites_32_SITESID_4_">
+     <use id="nav_classic_sites_32_nav_classic_sites_32_svg_14" xlink:href="#nav_classic_sites_32_SITESID_3_"/>
+    </clipPath>
+    <linearGradient id="nav_classic_sites_32_SITESID_5_" x2=".61494" y1="-.67579" x1=".25166" y2=".32241">
+     <stop stop-color="#1A237E" stop-opacity=".2" offset="0"/>
+     <stop stop-color="#1A237E" stop-opacity=".02" offset="1"/>
+    </linearGradient>
+    <path id="nav_classic_sites_32_nav_classic_sites_32_svg_15" clip-path="url(#nav_classic_sites_32_SITESID_4_)" fill="url(#nav_classic_sites_32_SITESID_5_)" d="m30.7 18h-18.7l-10.7-10.7h29.3v10.7h0.1z"/>
+   </g>
+   <g id="nav_classic_sites_32_nav_classic_sites_32_svg_16">
+    <defs>
+     <path id="nav_classic_sites_32_SITESID_6_" d="m28.7 28.7h-25.4c-1.1 0-2-0.9-2-2v-21.4c0-1.1 0.9-2 2-2h25.3c1.1 0 2 0.9 2 2v21.3c0.1 1.2-0.8 2.1-1.9 2.1z"/>
+    </defs>
+    <clipPath id="nav_classic_sites_32_SITESID_7_">
+     <use id="nav_classic_sites_32_nav_classic_sites_32_svg_17" xlink:href="#nav_classic_sites_32_SITESID_6_"/>
+    </clipPath>
+    <path id="nav_classic_sites_32_nav_classic_sites_32_svg_18" clip-path="url(#nav_classic_sites_32_SITESID_7_)" fill="#BDBDBD" d="m3.3 24h10.7v-1.3h-10.7v1.3zm0 2.7h6.7v-1.3h-6.7v1.3zm0-6.7v1.3h10.7v-1.3h-10.7z"/>
+   </g>
+   <g id="nav_classic_sites_32_nav_classic_sites_32_svg_19">
+    <defs>
+     <path id="nav_classic_sites_32_SITESID_8_" d="m28.7 28.7h-25.4c-1.1 0-2-0.9-2-2v-21.4c0-1.1 0.9-2 2-2h25.3c1.1 0 2 0.9 2 2v21.3c0.1 1.2-0.8 2.1-1.9 2.1z"/>
+    </defs>
+    <clipPath id="nav_classic_sites_32_SITESID_9_">
+     <use id="nav_classic_sites_32_nav_classic_sites_32_svg_20" xlink:href="#nav_classic_sites_32_SITESID_8_"/>
+    </clipPath>
+    <path id="nav_classic_sites_32_nav_classic_sites_32_svg_21" clip-path="url(#nav_classic_sites_32_SITESID_9_)" fill-opacity=".1" fill="#1A237E" d="m1.3 7.3h29.3v0.2h-29.3v-0.2z"/>
+   </g>
+   <path id="nav_classic_sites_32_nav_classic_sites_32_svg_22" fill="url(#nav_classic_sites_32_SITESID_10_)" d="m28.7 28.7h-25.4c-1.1 0-2-0.9-2-2v-21.4c0-1.1 0.9-2 2-2h25.3c1.1 0 2 0.9 2 2v21.3c0.1 1.2-0.8 2.1-1.9 2.1z"/>
+   <path id="nav_classic_sites_32_nav_classic_sites_32_svg_23" fill="none" d="m0 0h32v32h-32v-32z"/>
+  </g>
+ </g>
+ <g transform="translate(576,74)">
+  <defs>
+   <path id="SVGID_1_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_2_">
+   <use overflow="visible" xlink:href="#SVGID_1_"/>
+  </clipPath>
+  <path fill="#4285F4" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-3.5-2.5-2.5-3.5z" clip-path="url(#SVGID_2_)"/>
+  <defs>
+   <path id="SVGID_3_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_4_">
+   <use overflow="visible" xlink:href="#SVGID_3_"/>
+  </clipPath>
+  <path fill="#F1F1F1" d="m8 17h8v-1h-8v1zm0 2h6v-1h-6v1zm0-7v1h8v-1h-8zm0 3h8v-1h-8v1z" clip-path="url(#SVGID_4_)"/>
+  <defs>
+   <path id="SVGID_5_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_6_">
+   <use overflow="visible" xlink:href="#SVGID_5_"/>
+  </clipPath>
+  <g clip-path="url(#SVGID_6_)">
+   <path d="m14 1v4.5c0 0.8 0.7 1.5 1.5 1.5h4.5l-6-6z" fill="#A1C2FA"/>
+  </g>
+  <defs>
+   <path id="SVGID_7_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_8_">
+   <use overflow="visible" xlink:href="#SVGID_7_"/>
+  </clipPath>
+  <defs>
+   <path id="SVGID_9_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_10_">
+   <use overflow="visible" xlink:href="#SVGID_9_"/>
+  </clipPath>
+  <defs>
+   <path id="SVGID_11_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_12_">
+   <use overflow="visible" xlink:href="#SVGID_11_"/>
+  </clipPath>
+ </g>
+ <g transform="translate(300,88)">
+  <rect y="2" x="2" height="19" width="20" fill="none"/>
+  <rect width="24" height="24" fill="none"/>
+  <polygon points="5.174 20 2 14.031 8.624 3 12 8.621" fill="#0F9D58"/>
+  <polygon points="5.174 20 8.736 14.031 22 14.031 18.826 20" fill="#4285F4"/>
+  <polygon points="22 14.031 15.25 14.031 8.624 3 15.375 3" fill="#F4B400"/>
+ </g>
+ <g transform="translate(522)"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title>Slice 1</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+   <linearGradient id="linearGradient-1" y1="7.9757%" x2="50.346%" x1="50.346%" y2="100.4%">
+    <stop stop-color="#311B92" stop-opacity=".2" offset="0"/>
+    <stop stop-color="#311B92" stop-opacity=".02" offset="1"/>
+   </linearGradient>
+   <radialGradient id="radialGradient-2" cy="2.7174%" cx="3.168%" r="1289.9%">
+    <stop stop-color="#fff" stop-opacity=".1" offset="0"/>
+    <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+   </radialGradient>
+  </defs>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="nav_forms_24" transform="translate(4 1)" sketch:type="MSLayerGroup">
+    <g id="Page-1" sketch:type="MSShapeGroup">
+     <g id="nav_forms_24">
+      <g id="Page-1">
+       <g id="nav_forms_24">
+        <g id="Group">
+         <g id="Shape">
+          <path d="m10 0h-8.5c-0.8 0-1.5 0.7-1.5 1.5v18c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-13.5l-3.5-2.5-2.5-3.5z" fill="#673AB7"/>
+          <path d="m6 15.5h6v-1h-6v1zm0-6.5v1h6v-1h-6zm-0.9 0.5c0 0.4-0.3 0.8-0.8 0.8s-0.8-0.3-0.8-0.8 0.3-0.8 0.8-0.8 0.8 0.4 0.8 0.8zm0 2.8c0 0.4-0.3 0.8-0.8 0.8s-0.8-0.3-0.8-0.8 0.3-0.8 0.8-0.8 0.8 0.4 0.8 0.8zm0 2.7c0 0.4-0.3 0.8-0.8 0.8s-0.8-0.3-0.8-0.8 0.3-0.8 0.8-0.8 0.8 0.4 0.8 0.8zm0.9-2h6v-1h-6v1z" fill="#F1F1F1"/>
+          <path d="m10.4 5.6l5.6 5.5v-5.1l-5.6-0.4z" fill="url(#linearGradient-1)"/>
+          <path d="m10 0v4.5c0 0.8 0.7 1.5 1.5 1.5h4.5l-6-6z" fill="#B39DDB"/>
+          <path fill="#fff" d="m1.5 0c-0.8 0-1.5 0.7-1.5 1.5v0.1c0-0.8 0.7-1.5 1.5-1.5h8.5v-0.1h-8.5z" fill-opacity=".2"/>
+          <path fill="#311B92" d="m14.5 20.9h-13c-0.8 0-1.5-0.7-1.5-1.5v0.1c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-0.1c0 0.8-0.7 1.5-1.5 1.5z" fill-opacity=".2"/>
+          <path fill="#311B92" d="m11.5 6c-0.8 0-1.5-0.7-1.5-1.5v0.1c0 0.8 0.7 1.5 1.5 1.5h4.5v-0.1h-4.5z" fill-opacity=".1"/>
+         </g>
+         <path id="Shape" fill="url(#radialGradient-2)" d="m10 0h-8.5c-0.8 0-1.5 0.7-1.5 1.5v18c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-13.5l-6-6z"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(522,48)">
+  <path d="m0 0h24v24h-24z" fill="none"/>
+  <path d="m12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm1 17h-2v-2h2v2zm2.07-7.75l-0.9 0.92c-0.72 0.73-1.17 1.33-1.17 2.83h-2v-0.5c0-1.1 0.45-2.1 1.17-2.83l1.24-1.26c0.37-0.36 0.59-0.86 0.59-1.41 0-1.1-0.9-2-2-2s-2 0.9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 0.88-0.36 1.68-0.93 2.25z"/>
+ </g>
+ <g transform="translate(64,101)">
+  <polygon points="7 6 19 6 19 18 7 18 7 14 5 14 5 20 21 20 21 4 5 4 5 10 7 10" fill="#231F20"/>
+  <line y1="10" x2="8" x1="8" y2="6" fill="#fff"/>
+  <g fill="#231F20">
+   <polygon points="12.5 7 11.188 8.281 15.167 11.979 11.281 15.656 12.5 16.899 16.035 13.363 17.449 11.949"/>
+   <rect y="11" x="3" height="2" width="12"/>
+  </g>
+ </g>
+ <g transform="translate(220,24)">
+  <symbol id="ic_x5F_settings_x0D_" viewBox="0 -24 24 24">
+   <path d="m19.43-12.976c0.041 0.32 0.07 0.644 0.07 0.976s-0.029 0.655-0.07 0.976l2.112 1.654c0.188 0.151 0.243 0.422 0.118 0.638l-2 3.465c-0.125 0.216-0.387 0.303-0.611 0.217l-2.49-1.004c-0.516 0.396-1.08 0.731-1.689 0.984l-0.375 2.648c-0.039 0.239-0.245 0.422-0.495 0.422h-4c-0.25 0-0.456-0.183-0.494-0.422l-0.375-2.648c-0.61-0.253-1.174-0.588-1.691-0.984l-2.489 1.003c-0.224 0.086-0.486-0.001-0.611-0.217l-2-3.465c-0.125-0.215-0.07-0.486 0.118-0.637l2.112-1.653c-0.042-0.321-0.07-0.645-0.07-0.977s0.028-0.656 0.07-0.977l-2.112-1.652c-0.188-0.152-0.243-0.423-0.118-0.639l2-3.465c0.125-0.216 0.387-0.303 0.611-0.217l2.49 1.004c0.516-0.396 1.08-0.731 1.689-0.984l0.375-2.648c0.039-0.239 0.245-0.422 0.495-0.422h4c0.25 0 0.456 0.183 0.494 0.422l0.375 2.648c0.608 0.254 1.174 0.588 1.689 0.984l2.49-1.004c0.225-0.086 0.486 0.001 0.611 0.217l2 3.465c0.125 0.216 0.07 0.486-0.118 0.639l-2.111 1.653zm-7.43-3.524c-2.486 0-4.5 2.016-4.5 4.5 0 2.486 2.014 4.5 4.5 4.5 2.484 0 4.5-2.014 4.5-4.5 0-2.484-2.016-4.5-4.5-4.5z"/>
+   <polygon points="24 -24 0 -24 0 0 24 0" fill="none"/>
+  </symbol>
+  <use id="XMLID_67_" xlink:href="#ic_x5F_settings_x0D_" transform="scale(1 -1)" height="24" width="24" y="-24" overflow="visible"/>
+ </g>
+ <g transform="translate(64)">
+  <defs>
+   <path id="SVGID_1_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_2_">
+   <use overflow="visible" xlink:href="#SVGID_1_"/>
+  </clipPath>
+  <path fill="#0F9D58" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-3.5-2.5-2.5-3.5z" clip-path="url(#SVGID_2_)"/>
+  <defs>
+   <path id="SVGID_3_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_4_">
+   <use overflow="visible" xlink:href="#SVGID_3_"/>
+  </clipPath>
+  <path fill="#F1F1F1" d="m8 11.8v7.2h8v-7.2h-8zm3.5 6.2h-2.5v-1.2h2.5v1.2zm0-2h-2.5v-1.2h2.5v1.2zm0-2h-2.5v-1.2h2.5v1.2zm3.5 4h-2.5v-1.2h2.5v1.2zm0-2h-2.5v-1.2h2.5v1.2zm0-2h-2.5v-1.2h2.5v1.2z" clip-path="url(#SVGID_4_)"/>
+  <defs>
+   <path id="SVGID_5_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_6_">
+   <use overflow="visible" xlink:href="#SVGID_5_"/>
+  </clipPath>
+  <g clip-path="url(#SVGID_6_)">
+   <path d="m14 1v4.5c0 0.8 0.7 1.5 1.5 1.5h4.5l-6-6z" fill="#87CEAC"/>
+  </g>
+ </g>
+ <g transform="translate(546,61)">
+  <rect width="24" height="24" fill="none"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_1_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_2_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_1_"/>
+  </clipPath>
+  <path fill="#3F51B5" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-3.5-2.5-2.5-3.5z" clip-path="url(#nav_sites_24_SVGID_2_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_3_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_4_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_3_"/>
+  </clipPath>
+  <linearGradient id="nav_sites_24_SVGID_5_" y2="-6910" gradientUnits="userSpaceOnUse" x2="4526.8" gradientTransform="matrix(.125 0 0 -.125 -548.62 -851.62)" y1="-6869.3" x1="4526.8">
+   <stop stop-color="#1A237E" stop-opacity=".2" offset="0"/>
+   <stop stop-color="#1A237E" stop-opacity=".02" offset="1"/>
+  </linearGradient>
+  <polygon fill="url(#nav_sites_24_SVGID_5_)" points="14.4 6.6 20 12.1 20 7" clip-path="url(#nav_sites_24_SVGID_4_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_6_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_7_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_6_"/>
+  </clipPath>
+  <g clip-path="url(#nav_sites_24_SVGID_7_)">
+   <path d="m14 1v4.5c0 0.8 0.7 1.5 1.5 1.5h4.5l-6-6z" fill="#9FA8DA"/>
+  </g>
+  <defs>
+   <path id="nav_sites_24_SVGID_8_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_9_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_8_"/>
+  </clipPath>
+  <path fill-opacity=".2" fill="#fff" d="m5.5 1c-0.8 0-1.5 0.7-1.5 1.5v0.1c0-0.8 0.7-1.5 1.5-1.5h8.5v-0.1h-8.5z" clip-path="url(#nav_sites_24_SVGID_9_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_10_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_11_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_10_"/>
+  </clipPath>
+  <path fill-opacity=".2" fill="#1A237E" d="m18.5 22.9h-13c-0.8 0-1.5-0.7-1.5-1.5v0.1c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-0.1c0 0.8-0.7 1.5-1.5 1.5z" clip-path="url(#nav_sites_24_SVGID_11_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_12_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_13_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_12_"/>
+  </clipPath>
+  <path fill-opacity=".1" fill="#1A237E" d="m15.5 7c-0.8 0-1.5-0.7-1.5-1.5v0.1c0 0.8 0.7 1.5 1.5 1.5h4.5v-0.1h-4.5z" clip-path="url(#nav_sites_24_SVGID_13_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_14_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_15_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_14_"/>
+  </clipPath>
+  <polyline fill="#F1F1F1" points="12.5 15.5 8 15.5 8 19 12.5 19 12.5 15.5" clip-path="url(#nav_sites_24_SVGID_15_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_16_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_17_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_16_"/>
+  </clipPath>
+  <polyline fill="#F1F1F1" points="16 15.5 13.5 15.5 13.5 19 16 19 16 15.5" clip-path="url(#nav_sites_24_SVGID_17_)"/>
+  <defs>
+   <path id="nav_sites_24_SVGID_18_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="nav_sites_24_SVGID_19_">
+   <use overflow="visible" xlink:href="#nav_sites_24_SVGID_18_"/>
+  </clipPath>
+  <polyline fill="#F1F1F1" points="16 12 8 12 8 14.5 16 14.5 16 12" clip-path="url(#nav_sites_24_SVGID_19_)"/>
+  <radialGradient id="nav_sites_24_SVGID_20_" gradientUnits="userSpaceOnUse" cy="-6825.8" cx="4425.1" gradientTransform="matrix(.125 0 0 -.125 -548.62 -851.62)" r="206.4">
+   <stop stop-color="#fff" stop-opacity=".1" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <path d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z" fill="url(#nav_sites_24_SVGID_20_)"/>
+ </g>
+ <g transform="translate(88)">
+  <defs>
+   <path id="SVGID_1_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_2_">
+   <use overflow="visible" xlink:href="#SVGID_1_"/>
+  </clipPath>
+  <path fill="#F4B400" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-3.5-2.5-2.5-3.5z" clip-path="url(#SVGID_2_)"/>
+  <defs>
+   <path id="SVGID_3_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_4_">
+   <use overflow="visible" xlink:href="#SVGID_3_"/>
+  </clipPath>
+  <g clip-path="url(#SVGID_4_)">
+   <path d="m15.2 11h-6.4c-0.5 0-0.8 0.3-0.8 0.8v6.5c0 0.4 0.3 0.7 0.8 0.7h6.5c0.4 0 0.8-0.3 0.8-0.8v-6.5c-0.1-0.4-0.4-0.7-0.9-0.7zm-0.2 5.8h-6v-3.5h6v3.5z" fill="#F1F1F1"/>
+  </g>
+  <defs>
+   <path id="SVGID_5_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_6_">
+   <use overflow="visible" xlink:href="#SVGID_5_"/>
+  </clipPath>
+  <g clip-path="url(#SVGID_6_)">
+   <path d="m14 1v4.5c0 0.8 0.7 1.5 1.5 1.5h4.5l-6-6z" fill="#FADA80"/>
+  </g>
+  <defs>
+   <path id="SVGID_7_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_8_">
+   <use overflow="visible" xlink:href="#SVGID_7_"/>
+  </clipPath>
+  <defs>
+   <path id="SVGID_9_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_10_">
+   <use overflow="visible" xlink:href="#SVGID_9_"/>
+  </clipPath>
+  <defs>
+   <path id="SVGID_11_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_12_">
+   <use overflow="visible" xlink:href="#SVGID_11_"/>
+  </clipPath>
+  <defs>
+   <path id="SVGID_13_" d="m14 1h-8.5c-0.8 0-1.5 0.7-1.5 1.5v19c0 0.8 0.7 1.5 1.5 1.5h13c0.8 0 1.5-0.7 1.5-1.5v-14.5l-6-6z"/>
+  </defs>
+  <clipPath id="SVGID_14_">
+   <use overflow="visible" xlink:href="#SVGID_13_"/>
+  </clipPath>
+ </g>
+ <g transform="translate(546,109)">
+  <defs>
+   <path id="a" d="m0 0h24v24h-24v-24z"/>
+  </defs>
+  <clipPath id="b">
+   <use overflow="visible" xlink:href="#a"/>
+  </clipPath>
+  <path d="m12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm5 16h-10v-2h10v2zm-6.7-4l-3.3-3.3 1.4-1.4 1.9 1.9 5.3-5.3 1.4 1.4-6.7 6.7z" clip-path="url(#b)"/>
+ </g>
+ <g transform="translate(118,61)">
+  <defs>
+   <path id="a" d="m0 0h24v24h-24v-24z"/>
+  </defs>
+  <clipPath id="b">
+   <use overflow="visible" xlink:href="#a"/>
+  </clipPath>
+  <path fill="#4285F4" d="m12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm5 16h-10v-2h10v2zm-6.7-4l-3.3-3.3 1.4-1.4 1.9 1.9 5.3-5.3 1.4 1.4-6.7 6.7z" clip-path="url(#b)"/>
+ </g>
+ <g transform="translate(380)">
+  <path d="m12 4v-3l-4 4 4 4v-3c3.31 0 6 2.69 6 6 0 1.01-0.25 1.97-0.7 2.8l1.46 1.46c0.78-1.23 1.24-2.69 1.24-4.26 0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01 0.25-1.97 0.7-2.8l-1.46-1.46c-0.78 1.23-1.24 2.69-1.24 4.26 0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+  <path d="m0 0h24v24h-24z" fill="none"/>
+ </g>
+ <g transform="translate(356,72)">
+  <path d="m0 0h24v24h-24z" fill="none"/>
+  <path d="m3 12c0 2.21 0.91 4.2 2.36 5.64l-2.36 2.36h6v-6l-2.24 2.24c-1.08-1.09-1.76-2.58-1.76-4.24 0-2.61 1.67-4.83 4-5.65v-2.09c-3.45 0.89-6 4.01-6 7.74zm8 5h2v-2h-2v2zm10-13h-6v6l2.24-2.24c1.08 1.09 1.76 2.58 1.76 4.24 0 2.61-1.67 4.83-4 5.65v2.09c3.45-0.89 6-4.01 6-7.74 0-2.21-0.91-4.2-2.36-5.64l2.36-2.36zm-10 9h2v-6h-2v6z"/>
+ </g>
+ <g transform="translate(156)">
+  <g opacity=".3">
+   <path d="m64 60c0 2.211-1.789 4-4 4h-56c-2.211 0-4-1.789-4-4v-56c0-2.211 1.789-4 4-4h56c2.211 0 4 1.789 4 4v56z" fill="#B1B1B1"/>
+   <rect y="24" x="12" height="4" width="40" fill="#fff"/>
+   <rect y="16" x="12" height="4" width="40" fill="#fff"/>
+   <rect y="32" x="12" height="4" width="40" fill="#fff"/>
+   <rect y="40" x="12" height="4" width="24" fill="#fff"/>
+   <rect width="64" height="64" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(0,61)"><!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title>placeholder_forms_64</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="placeholder_forms_64" opacity=".3" fill="#B1B1B1" sketch:type="MSLayerGroup">
+    <g id="Page-1" sketch:type="MSShapeGroup">
+     <g id="placeholder_forms_64">
+      <g id="Page-1">
+       <g id="placeholder_forms_64">
+        <path id="Shape" d="m64 60c0 2.211-1.789 4-4 4h-56c-2.211 0-4-1.789-4-4v-56c0-2.211 1.789-4 4-4h56c2.211 0 4 1.789 4 4v56zm-43-11h-7v-7h7v7zm0-14h-7v-7h7v7zm0-14h-7v-7h7v7zm29 28h-25v-7h25v7zm0-14h-25v-7h25v7zm0-14h-25v-7h25v7z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(458)">
+  <g opacity=".3">
+   <path d="m64 60c0 2.211-1.789 4-4 4h-56c-2.211 0-4-1.789-4-4v-56c0-2.211 1.789-4 4-4h56c2.211 0 4 1.789 4 4v56z" fill="#B1B1B1"/>
+   <path d="m48 12h-36v40h40v-40h-4zm-32 4h8v8h-8v-8zm0 12h8v8h-8v-8zm0 20v-8h8v8h-8zm32 0h-20v-8h20v8zm0-12h-20v-8h20v8zm0-12h-20v-8h20v8z" fill="#fff"/>
+   <rect width="64" height="64" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(156,64)">
+  <g opacity=".3">
+   <path d="m64 52c0 6.629-5.375 12-12 12h-40c-6.625 0-12-5.371-12-12v-40c0-6.629 5.375-12 12-12h40c6.625 0 12 5.371 12 12v40z" fill="#B1B1B1"/>
+   <rect y="16" x="12" height="28" width="40" fill="#fff"/>
+   <rect width="64" height="64" fill="none"/>
+  </g>
+ </g>
+ <g transform="translate(244,24)">
+  <path d="m7.125 0h-6.125v2.188h2v10.797h1.984v-4.604c0.537 0.234 1.517 0.369 2.141 0.369 2.416 0 4.375-1.958 4.375-4.375s-1.959-4.375-4.375-4.375zm0 6.562h-2.125v-4.374h2.125c1.208 0 2.188 0.979 2.188 2.188s-0.98 2.186-2.188 2.186z" fill="#FF7537"/>
+  <rect width="14" height="14" fill="none"/>
+ </g>
+ <g transform="translate(220,96)">
+  <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z" fill="#fff"/>
+  <polygon points="20 10 29 10 29 17" fill="#E4E4E4"/>
+  <polygon points="29 10 20 10 20 1" fill="#F7F7F7"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m15.125 15h-6.125v2.188h2v10.797h1.984v-4.604c0.537 0.234 1.517 0.369 2.141 0.369 2.416 0 4.375-1.958 4.375-4.375s-1.959-4.375-4.375-4.375zm0 6.562h-2.125v-4.375h2.125c1.208 0 2.188 0.979 2.188 2.188s-0.98 2.187-2.188 2.187z" fill="#FF7537"/>
+  <rect y="15" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(0,24)">
+  <g opacity=".03">
+   <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z"/>
+  </g>
+  <polygon points="20 10 29 10 29 17" fill="#ddd"/>
+  <polygon points="29 10 20 10 20 1" fill="#eee"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m15.125 15h-6.125v2.188h2v10.797h1.984v-4.604c0.537 0.234 1.517 0.369 2.141 0.369 2.416 0 4.375-1.958 4.375-4.375s-1.959-4.375-4.375-4.375zm0 6.562h-2.125v-4.375h2.125c1.208 0 2.188 0.979 2.188 2.188s-0.98 2.187-2.188 2.187z" fill="#FF7537"/>
+  <rect y="15" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(244)">
+  <path d="m5 4v2h14v-2h-14zm0 10h4v6h6v-6h4l-7-7-7 7z" fill="#fff"/>
+ </g>
+ <g transform="translate(292)">
+  <symbol id="ic_x5F_delete_x0D_" viewBox="0 -24 24 24">
+   <path d="m6-19c0-1.104 0.896-2 2-2h8c1.104 0 2 0.896 2 2v12h-12v-12zm12 15h-2.5l-1 1h-5l-1-1h-2.5c-0.553 0-1-0.447-1-1v-1h14v1c0 0.553-0.448 1-1 1z"/>
+   <polygon points="24 -24 0 -24 0 0 24 0" fill="none"/>
+  </symbol>
+  <use id="XMLID_153_" xlink:href="#ic_x5F_delete_x0D_" transform="scale(1 -1)" height="24" width="24" y="-24" overflow="visible"/>
+ </g>
+ <g transform="translate(324,101)">
+  <rect width="24" height="24" fill="none"/>
+  <path d="m9.896 14.35h-4.824l-1.03 2.89h-2.042l4.607-12.089h1.802l4.566 12.088h-2.051l-1.028-2.889zm-4.243-1.619h3.669l-1.826-5.164-1.843 5.164z"/>
+  <path d="m19.543 17.239c-0.056-0.104-0.102-0.229-0.138-0.374-0.036-0.143-0.067-0.299-0.095-0.465-0.133 0.139-0.281 0.27-0.444 0.391-0.163 0.122-0.344 0.229-0.54 0.32s-0.41 0.162-0.639 0.215-0.475 0.079-0.735 0.079c-0.448 0-0.86-0.067-1.237-0.203-0.376-0.136-0.698-0.323-0.967-0.564s-0.479-0.524-0.631-0.851c-0.152-0.327-0.229-0.682-0.229-1.063 0-0.481 0.092-0.907 0.274-1.278s0.448-0.681 0.797-0.93 0.776-0.438 1.282-0.569c0.507-0.13 1.084-0.195 1.731-0.195h1.271v-0.589c0-0.47-0.132-0.838-0.395-1.104s-0.66-0.398-1.191-0.398c-0.481 0-0.862 0.111-1.142 0.332s-0.419 0.506-0.419 0.855h-2.016c0-0.354 0.087-0.696 0.261-1.025 0.175-0.329 0.423-0.623 0.743-0.88 0.321-0.257 0.71-0.463 1.167-0.619 0.456-0.155 0.967-0.232 1.531-0.232 0.504 0 0.969 0.065 1.396 0.195 0.426 0.13 0.793 0.324 1.104 0.581s0.551 0.579 0.723 0.963c0.171 0.385 0.257 0.834 0.257 1.349v3.985c0 0.809 0.113 1.453 0.341 1.934v0.142h-2.06zm-2.217-1.452c0.232 0 0.449-0.031 0.651-0.092s0.385-0.141 0.548-0.24 0.307-0.215 0.428-0.346c0.121-0.129 0.219-0.262 0.291-0.395v-1.693h-1.088c-0.747 0-1.309 0.131-1.686 0.391s-0.564 0.629-0.564 1.104c0 0.184 0.03 0.353 0.092 0.507 0.061 0.155 0.152 0.29 0.273 0.403s0.27 0.202 0.444 0.266c0.175 0.063 0.379 0.095 0.611 0.095z"/>
+ </g>
+ <g transform="translate(276,78)">
+  <path d="m9.634 13.165c-2.725 0-8.634 1.362-8.634 4.086v3.749h17v-3.749c0-2.724-5.643-4.086-8.366-4.086zm-0.462-1.994c2.254 0 4.084-1.827 4.084-4.085 0-2.256-1.83-4.086-4.084-4.086-2.257 0-4.086 1.83-4.086 4.085 0 2.259 1.829 4.086 4.086 4.086zm11.828-3.171v-3h-2v3h-3v2h3v3h2v-3h3v-2h-3z"/>
+  <rect width="24" height="24" fill="none"/>
+ </g>
+ <g transform="translate(0)">
+  <path d="m9.048 13.248c-1.643 0-5.048 0.822-5.048 2.465v2.287h10v-2.287c0-1.643-3.31-2.465-4.952-2.465z"/>
+  <circle cy="9.464" cx="8.866" r="2.464"/>
+  <path d="m20 14.86c0-1.449-2.868-2.075-4.317-2.104-0.778-0.016-1.917 0.25-2.6 0.494 1.417 0.041 1.75 1.381 1.75 1.922v1.812h5.167v-2.124z"/>
+  <circle cy="9.27" cx="15.493" r="2.075"/>
+  <rect y="4" x="3" height="16" width="18" fill="none"/>
+ </g>
+ <g transform="translate(276,64)">
+  <path d="m14 13.125c0 0.483-0.392 0.875-0.875 0.875h-12.25c-0.483 0-0.875-0.392-0.875-0.875v-12.25c0-0.483 0.392-0.875 0.875-0.875h12.25c0.483 0 0.875 0.392 0.875 0.875v12.25z" fill="#0F9D58"/>
+  <path d="m7 3h-4v7h8v-7h-4zm-3 1h2v2h-2v-2zm0 3h2v2h-2v-2zm6 2h-3v-2h3v2zm0-3h-3v-2h3v2z" fill="#fff"/>
+  <rect width="16" height="16" fill="none"/>
+ </g>
+ <g transform="translate(380,24)">
+  <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z" fill="#fff"/>
+  <polygon points="20 10 29 10 29 17" fill="#E4E4E4"/>
+  <polygon points="29 10 20 10 20 1" fill="#F7F7F7"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m22 28.125c0 0.483-0.392 0.875-0.875 0.875h-12.25c-0.483 0-0.875-0.392-0.875-0.875v-12.25c0-0.483 0.392-0.875 0.875-0.875h12.25c0.483 0 0.875 0.392 0.875 0.875v12.25z" fill="#0F9D58"/>
+  <path d="m15 18h-4v7h8v-7h-4zm-3 1h2v2h-2v-2zm0 3h2v2h-2v-2zm6 2h-3v-2h3v2zm0-3h-3v-2h3v2z" fill="#fff"/>
+  <rect y="15" x="8" height="16" width="16" fill="none"/>
+ </g>
+ <g transform="translate(546)">
+  <g opacity=".03">
+   <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z"/>
+  </g>
+  <polygon points="20 10 29 10 29 17" fill="#ddd"/>
+  <polygon points="29 10 20 10 20 1" fill="#eee"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m22 28.125c0 0.483-0.392 0.875-0.875 0.875h-12.25c-0.483 0-0.875-0.392-0.875-0.875v-12.25c0-0.483 0.392-0.875 0.875-0.875h12.25c0.483 0 0.875 0.392 0.875 0.875v12.25z" fill="#0F9D58"/>
+  <path d="m15 18h-4v7h8v-7h-4zm-3 1h2v2h-2v-2zm0 3h2v2h-2v-2zm6 2h-3v-2h3v2zm0-3h-3v-2h3v2z" fill="#fff"/>
+  <rect y="15" x="8" height="16" width="16" fill="none"/>
+ </g>
+ <g transform="translate(142)">
+  <path d="m14 13c0 0.6-0.4 1-1 1h-12c-0.6 0-1-0.4-1-1v-12c0-0.6 0.4-1 1-1h12c0.6 0 1 0.4 1 1v12z" fill="#3F51B5"/>
+  <g fill="#fff">
+   <polyline points="7 6 3 6 3 10 7 10 7 6"/>
+   <polyline points="11 6 8 6 8 10 11 10 11 6"/>
+   <polyline points="11 3 3 3 3 5 11 5 11 3"/>
+  </g>
+ </g>
+ <g transform="translate(404)">
+  <style>.st0{fill:none;}</style>
+  <path class="st0" d="m0 0h24v24h-24z"/>
+  <path d="m19 3h-14c-1.1 0-2 0.9-2 2v14c0 1.1 0.9 2 2 2h14c1.1 0 2-0.9 2-2v-14c0-1.1-0.9-2-2-2zm-7 14h-6v-5h6v5zm6 0h-4v-5h4v5zm0-7h-12v-3h12v3z" fill="#3E50B4"/>
+ </g>
+ <g transform="translate(104,24)">
+  <path d="m14 11.375c0 1.45-1.176 2.625-2.625 2.625h-8.75c-1.449 0-2.625-1.175-2.625-2.625v-8.75c0-1.45 1.176-2.625 2.625-2.625h8.75c1.449 0 2.625 1.175 2.625 2.625v8.75z" fill="#F4B400"/>
+  <rect y="4" x="3" height="6" width="8" fill="#fff"/>
+  <rect width="14" height="14" fill="none"/>
+ </g>
+ <g transform="translate(488,64)">
+  <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z" fill="#fff"/>
+  <polygon points="20 10 29 10 29 17" fill="#E4E4E4"/>
+  <polygon points="29 10 20 10 20 1" fill="#F7F7F7"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m22 26.375c0 1.45-1.176 2.625-2.625 2.625h-8.75c-1.449 0-2.625-1.175-2.625-2.625v-8.75c0-1.45 1.176-2.625 2.625-2.625h8.75c1.449 0 2.625 1.175 2.625 2.625v8.75z" fill="#F4B400"/>
+  <rect y="19" x="11" height="6" width="8" fill="#fff"/>
+  <rect y="15" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(458,88)">
+  <g opacity=".03">
+   <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z"/>
+  </g>
+  <polygon points="20 10 29 10 29 17" fill="#ddd"/>
+  <polygon points="29 10 20 10 20 1" fill="#eee"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <path d="m22 26.375c0 1.45-1.176 2.625-2.625 2.625h-8.75c-1.449 0-2.625-1.175-2.625-2.625v-8.75c0-1.45 1.176-2.625 2.625-2.625h8.75c1.449 0 2.625 1.175 2.625 2.625v8.75z" fill="#F4B400"/>
+  <rect y="19" x="11" height="6" width="8" fill="#fff"/>
+  <rect y="15" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(356,24)">
+  <polygon points="9 5 12 1.5 15 5"/>
+  <polygon points="15 19 12 22.5 9 19"/>
+  <rect width="24" height="24" fill="none"/>
+  <rect y="2" x="2" height="20" width="20" fill="none"/>
+  <path d="m10.216 14.844h-3.51l-0.68 2.156h-2.026l3.441-10h2.053l3.428 10h-2.026l-0.68-2.156zm-3.015-1.573h2.52l-1.237-3.929h-0.041l-1.242 3.929z"/>
+  <path d="m15.875 15.455h4.891v1.545h-7.314v-1.049l4.752-7.406h-4.746v-1.545h7.191v1.003l-4.774 7.452z"/>
+ </g>
+ <g transform="translate(458,64)">
+  <polygon points="9 5 12 1.5 15 5" fill="#fff"/>
+  <polygon points="15 19 12 22.5 9 19" fill="#fff"/>
+  <rect width="24" height="24" fill="none"/>
+  <rect y="2" x="2" height="20" width="20" fill="none"/>
+  <g fill="#fff">
+   <path d="m10.216 14.844h-3.51l-0.68 2.156h-2.026l3.441-10h2.053l3.428 10h-2.026l-0.68-2.156zm-3.015-1.573h2.52l-1.237-3.929h-0.041l-1.242 3.929z"/>
+   <path d="m15.875 15.455h4.891v1.545h-7.314v-1.049l4.752-7.406h-4.746v-1.545h7.191v1.003l-4.774 7.452z"/>
+  </g>
+ </g>
+ <g transform="translate(576,98)"><!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+  <title>Suggestions_dark_24dp</title>
+  <desc>Created with Sketch.</desc>
+  <g id="Icons" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="Suggestions_dark_24dp" sketch:type="MSArtboardGroup">
+    <g id="ic_rate_review_black_24dp" sketch:type="MSLayerGroup">
+     <path id="Shape" sketch:type="MSShapeGroup" d="m0 0h24v24h-24v-24zm15.35 6.41l-1.77-1.77c-0.2-0.2-0.51-0.2-0.71 0l-6.87 6.89v2.47h2.47l6.88-6.88c0.2-0.19 0.2-0.51 0-0.71z"/>
+     <path id="Shape" sketch:type="MSShapeGroup" fill="#000" d="m20 2h-16c-1.1 0-1.99 0.9-1.99 2l-0.01 18 4-4h14c1.1 0 2-0.9 2-2v-12c0-1.1-0.9-2-2-2zm-14 12v-2.47l6.88-6.88c0.2-0.2 0.51-0.2 0.71 0l1.77 1.77c0.2 0.2 0.2 0.51 0 0.71l-6.89 6.87h-2.47zm12 0h-7.5l2-2h5.5v2z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(428,14)">
+  <path d="m12 4v-3l-4 4 4 4v-3c3.31 0 6 2.69 6 6 0 1.01-0.25 1.97-0.7 2.8l1.46 1.46c0.78-1.23 1.24-2.69 1.24-4.26 0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01 0.25-1.97 0.7-2.8l-1.46-1.46c-0.78 1.23-1.24 2.69-1.24 4.26 0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+  <path d="m0 0h24v24h-24z" fill="none"/>
+ </g>
+ <g transform="translate(252,64)">
+  <symbol id="ic_x5F_repeat_x0D_" viewBox="0 -24 24 24">
+   <path d="m12-4v2.5l-4-4 4-4v3.5c3.3 0 6-2.7 6-6 0-1-0.3-2-0.7-2.8l1.5-1.5c0.7 1.3 1.2 2.7 1.2 4.3 0 4.4-3.6 8-8 8zm0-14c-3.3 0-6 2.7-6 6 0 1 0.3 2 0.7 2.8l-1.5 1.5c-0.7-1.3-1.2-2.7-1.2-4.3 0-4.4 3.6-8 8-8v-2.5l4 4-4 4v-3.5z" fill="#fff"/>
+   <polygon points="24 -24 0 -24 0 0 24 0" fill="none"/>
+  </symbol>
+  <use id="XMLID_1_" xlink:href="#ic_x5F_repeat_x0D_" transform="scale(1 -1)" height="24" width="24" y="-24" overflow="visible"/>
+ </g>
+ <g transform="translate(118,85)">
+  <path d="m19 2h-14c-1.1 0-2 0.9-2 1.99v13.01h18v-13.01c0-1.1-0.89-1.99-2-1.99zm-4.38 4c0.97 0 1.75 0.79 1.75 1.75s-0.77 1.75-1.75 1.75c-0.96 0-1.75-0.79-1.75-1.75s0.78-1.75 1.75-1.75zm-5.24 0c0.97 0 1.75 0.79 1.75 1.75s-0.78 1.75-1.75 1.75c-0.96 0-1.75-0.79-1.75-1.75s0.78-1.75 1.75-1.75zm4.37 7h-8.75v-0.26c0-1.46 2.91-2.19 4.38-2.19s4.38 0.73 4.38 2.19v0.26zm5.25 0h-3.94v-0.26c0-0.91-0.48-1.61-1.17-2.14 0.26-0.03 0.52-0.05 0.73-0.05 1.46 0 4.38 0.73 4.38 2.19v0.26zm-16 7.01c0 1.1 0.89 1.99 2 1.99h14c1.1 0 2-0.9 2-1.99v-2.01h-18v2.01zm15-1.01c0.55 0 1 0.45 1 1s-0.45 1-1 1-1-0.45-1-1 0.45-1 1-1z"/>
+  <path d="m0 0h24v24h-24z" fill="none"/>
+ </g>
+ <g transform="translate(380,72)"><!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+  <title>Todos_Dark_24dp</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+   <path id="path-1" d="m0 0h24v24h-24v-24z"/>
+  </defs>
+  <g id="Page-1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+   <g id="Todos_Dark_24dp" sketch:type="MSArtboardGroup">
+    <g id="ic_playlist_add_check_black_24dp-copy" sketch:type="MSLayerGroup">
+     <g id="Clipped">
+      <mask id="mask-2" sketch:name="a" fill="white">
+       <use xlink:href="#path-1"/>
+      </mask>
+      <path id="Shape" sketch:type="MSShapeGroup" fill="#000" mask="url(#mask-2)" d="m14 10h-12v2h12v-2zm0-4h-12v2h12v-2zm-12 10h8v-2h-8v2zm19.5-4.5l1.5 1.5-6.99 7-4.51-4.5 1.5-1.5 3.01 3 5.49-5.5z"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(546,37)">
+  <path d="m0 0h24v24h-24v-24z" fill="none"/>
+  <path d="m12 5.8l3.2 3.2 1.4-1.4-4.6-4.6-4.6 4.6 1.4 1.4 3.2-3.2zm0 12.4l-3.2-3.2-1.4 1.4 4.6 4.6 4.6-4.6-1.4-1.4-3.2 3.2z" fill="#fff"/>
+ </g>
+ <g transform="translate(104,38)">
+  <polygon points="10 0 10 2 11.814 2 10.151 9.188 8.312 0 6.562 0 4.812 9.188 3.062 0 1 0 3.938 13 5.688 13 7.438 4.375 9.188 13 10.938 13 14 0" fill="#56A4F9"/>
+  <rect width="14" height="14" fill="none"/>
+ </g>
+ <g transform="translate(324,64)">
+  <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z" fill="#fff"/>
+  <polygon points="20 10 29 10 29 17" fill="#E4E4E4"/>
+  <polygon points="29 10 20 10 20 1" fill="#F7F7F7"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <polygon points="18 15.04 18 17.04 19.814 17.04 18.151 24.228 16.312 15.04 14.562 15.04 12.812 24.228 11.062 15.04 9 15.04 11.938 28.04 13.688 28.04 15.438 19.415 17.188 28.04 18.938 28.04 22 15.04" fill="#56A4F9"/>
+  <rect y="15.04" x="8" height="14" width="14" fill="none"/>
+ </g>
+ <g transform="translate(30)">
+  <g opacity=".03">
+   <path d="m29 10h-9v-9h-18.016c-0.672 0-0.984 1-0.984 1v33c0 0.484 0.484 1 1 1h25.938c0.578 0 1.062-0.547 1.062-1.016v-24.984z"/>
+  </g>
+  <polygon points="20 10 29 10 29 17" fill="#ddd"/>
+  <polygon points="29 10 20 10 20 1" fill="#eee"/>
+  <g opacity=".07">
+   <path d="m20 1l9 9v24.984c0 0.469-0.484 1.016-1.062 1.016h-25.938c-0.516 0-1-0.516-1-1v-33s0.312-1 0.984-1h18.016m0.414-1h-18.43c-1.038 0-1.693 0.917-1.938 1.702l-0.046 0.146v33.152c0 1.047 0.953 2 2 2h25.938c1.079 0 2.062-0.961 2.062-2.016v-25.398l-0.293-0.293-9-9-0.293-0.293z"/>
+  </g>
+  <polygon points="18 15.04 18 17.04 19.814 17.04 18.151 24.228 16.312 15.04 14.562 15.04 12.812 24.228 11.062 15.04 9 15.04 11.938 28.04 13.688 28.04 15.438 19.415 17.188 28.04 18.938 28.04 22 15.04" fill="#56A4F9"/>
+  <rect y="15.04" x="8" height="14" width="14" fill="none"/>
+ </g>
+</svg>
