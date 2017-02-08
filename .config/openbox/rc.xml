@@ -389,16 +389,6 @@
 
     <!-- Controls -->
 
-    <keybind key="W-F12">
-      <action name="Execute">
-        <command>amixer set Master 10%+</command>
-      </action>
-    </keybind>
-    <keybind key="W-F11">
-      <action name="Execute">
-        <command>amixer set Master 10%-</command>
-      </action>
-    </keybind>
     <keybind key="W-F5">
       <action name="Execute">
         <command>xbacklight +10</command>
@@ -407,11 +397,6 @@
     <keybind key="W-F4">
       <action name="Execute">
         <command>xbacklight -10</command>
-      </action>
-    </keybind>
-    <keybind key="W-Delete">
-      <action name="Execute">
-        <command>amixer -D pulse set Master 1+ toggle</command>
       </action>
     </keybind>
     <keybind key="W-s">
@@ -439,62 +424,49 @@
 
     <keybind key="W-w">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/current_email.sh"</command>
+          <command>sh -c "$FOCUS write"</command>
       </action>
     </keybind>
     <keybind key="W-q">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/postman.sh"</command>
+          <command>sh -c "$FOCUS postman"</command>
       </action>
     </keybind>
     <keybind key="W-m">
         <action name="Execute">
-            <command>sh -c "$LAUNCHERS/clion.sh"</command>
+            <command>sh -c "$ACTIVATE clion"</command>
         </action>
     </keybind>
-    <keybind key="A-p">
-      <action name="Execute">
-        <command>python ~/.gmrunner.py</command>
-      </action>
-    </keybind>
-    <keybind key="A-r">
-      <action name="Execute">
-        <command>gmrun</command>
-      </action>
-    </keybind>
+
    <keybind key="W-p">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/pycharm.sh"</command>
+          <command>sh -c "$ACTIVATE pycharm"</command>
       </action>
     </keybind>
    <keybind key="F1">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/chrome.sh"</command>
+          <command>sh -c "$ACTIVATE chrome"</command>
       </action>
     </keybind>
    <keybind key="F2">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/shell_1.sh"</command>
+          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
       </action>
     </keybind>
-    <keybind key="A-F4">
-      <action name="Execute">
-          <command>sh -c "$LAUNCHERS/tabs.sh"</command>
-      </action>
-    </keybind>
+
     <keybind key="F10">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/calc.sh"</command>
+          <command>sh -c "$ACTIVATE calc"</command>
       </action>
     </keybind>
     <keybind key="F6">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/thunderbird.sh"</command>
+          <command>thunderbird</command>
       </action>
     </keybind>
     <keybind key="F4">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/firefox.sh"</command>
+          <command>sh -c "$ACTIVATE firefox"</command>
       </action>
     </keybind>
     <keybind key="F3">
@@ -509,7 +481,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/dolphin.sh"</command>
+          <command>sh -c "$ACTIVATE dolphin"</command>
       </action>
     </keybind>
     <keybind key="A-e">
@@ -519,17 +491,17 @@
     </keybind>
     <keybind key="W-g">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/smartgit.sh"</command>
+          <command>sh -c "$ACTIVATE smartgit"</command>
       </action>
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/libre.sh"</command>
+          <command>sh -c "$ACTIVATE libreoffice"</command>
       </action>
     </keybind>
     <keybind key="W-c">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/devtools.sh"</command>
+          <command>sh -c "$FOCUS 'Developer Tools'"</command>
       </action>
     </keybind>
     <keybind key="W-z">

@@ -1,3 +1,4 @@
 USER="$USER"; export USER
-SHELL_SCRIPTS="$HOME/.riddle-shell-scripts"; export SHELL_SCRIPTS
-LAUNCHERS="$SHELL_SCRIPTS/app_launchers"; export LAUNCHERS
+SHELL_SCRIPTS="$HOME/.riddle-dotfiles/.shell-scripts"; export SHELL_SCRIPTS
+ACTIVATE="$SHELL_SCRIPTS/activate.sh"; export ACTIVATE
+FOCUS="$SHELL_SCRIPTS/focus.sh"; export FOCUS
