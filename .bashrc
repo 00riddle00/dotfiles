@@ -1,35 +1,24 @@
-if [ -n "$DISPLAY" ]; then
-  xset b off
-fi
-
-#if [ $(tty) == "/dev/tty1" ]; then
-#startx
-#fi
-
 
 # Turn off Touchpad 
-#synclient TouchpadOff=1
+# synclient TouchpadOff=1
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
-export TERM=terminator
-export PS1="\[\e[1;32m\][\u@\W]\[\e[1;36m\]$\[\033[0m\] "
+export TERM=xterm
+export PS1="\[\e[1;31m\][\u@\W]\[\e[1;36m\][lxc]$\[\033[0m\] "
 export PAGER=less
 
-#eval $(thefuck --alias) 
-
-setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
-#setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il
-setxkbmap -option caps:escape
+if [ command -v setxkbmap >/dev/null 2>&1 ]; then 
+    setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
+    setxkbmap -option caps:escape
+    #setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il
+fi
 
 #archey && fortune | cowsay
 #screenfetch
 #archey
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
-
-
 
 eval $(dircolors ~/.dircolors)
 
@@ -56,9 +45,6 @@ alias mvr='s mv -r'
 alias grepi='grep -i'
 alias pag='ps aux | grepi'
 alias c='clear'
-#alias c='cd'
-#alias l='ls'
-#alias d='clear'
 alias kil='sudo kill -9'
 alias more='less'
 alias clock='s date +%T -s'
@@ -315,7 +301,6 @@ alias pic='scrot -s /home/riddle/Screenshots/screenshot-%F-%H%M%S.png'
 alias mig='pmp makemigrations && pmp migrate'
 
 alias home='xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1'
-alias il='feh ~/main/il.png'
 
 alias tm='conky -c .conky/archconky &'
 
@@ -355,11 +340,6 @@ alias mk='./make_zip.sh paysera_test'
 alias tb='tail -n 10 ~/.bashrc'
 alias orphans='pacman -Qdt'
 alias orphans2='pacman -Qdtd'
-
-
-
-
-
 
 alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
