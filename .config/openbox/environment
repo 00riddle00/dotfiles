@@ -1,0 +1,3 @@
+USER="$USER"; export USER
+SHELL_SCRIPTS="$HOME/.riddle-shell-scripts"; export SHELL_SCRIPTS
+LAUNCHERS="$SHELL_SCRIPTS/app_launchers"; export LAUNCHERS
