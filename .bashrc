@@ -6,8 +6,14 @@
 [[ $- != *i* ]] && return
 
 export TERM=xterm
-export PS1="\[\e[1;31m\][\u@\W]\[\e[1;36m\][lxc]$\[\033[0m\] "
-export PAGER=less
+
+if [ $USER == "root" ]; then 
+    color="31m"
+else
+    color="32m"
+fi
+
+export PS1="\[\e[1;$color\][\u@\W]\[\e[1;36m\][$HOSTNAME]$\[\033[0m\] "
 
 if [ command -v setxkbmap >/dev/null 2>&1 ]; then 
     setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
@@ -20,7 +26,9 @@ fi
 #archey
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
-eval $(dircolors ~/.dircolors)
+if [ -f $HOME/.dircolors ]; then
+    eval $(dircolors ~/.dircolors)
+fi
 
 # Vi everything
 set -o vi
@@ -178,7 +186,7 @@ alias wr='sudo netctl start modem'
 alias wifi='sudo wifi-menu -o'
 alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
-alias pp='ping -c 3 www.google.com'
+alias pp='sudo ping -c 3 www.google.com'
 
 # touchpad
 alias ton='synclient TouchpadOff=0'
@@ -204,8 +212,6 @@ alias vll='vlt --leak-check=full --show-leak-kinds=all ./test'
 alias vllv='vlt --leak-check=full --show-leak-kinds=all -v ./test'
 
 # python
-alias python='python3.4'
-alias p='python3.4'
 alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 
 # django
