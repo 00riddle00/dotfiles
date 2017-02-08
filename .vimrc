@@ -62,7 +62,6 @@ set showmatch
 nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
 "
-noremap <Esc> <NOP>
 
 noremap <leader>o :BufExplorer<CR>
 
