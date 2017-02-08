@@ -15,11 +15,11 @@ fi
 
 export PS1="\[\e[1;$color\][\u@\W]\[\e[1;36m\][$HOSTNAME]$\[\033[0m\] "
 
-if [ command -v setxkbmap >/dev/null 2>&1 ]; then 
-    setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
-    setxkbmap -option caps:escape
+#if [ command -v setxkbmap >/dev/null 2>&1 ]; then 
+setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
+setxkbmap -option caps:escape
     #setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il
-fi
+#fi
 
 #archey && fortune | cowsay
 #screenfetch
@@ -127,7 +127,6 @@ alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias x='startx'
 alias vbox='virtualbox'
 alias read='acroread'
-alias chrome='google-chrome-stable'
 alias fox='firefox'
 alias v='vim'
 alias vv='sudo vim'
@@ -186,7 +185,7 @@ alias wr='sudo netctl start modem'
 alias wifi='sudo wifi-menu -o'
 alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
-alias pp='sudo ping -c 3 www.google.com'
+alias pp='ping -c 3 www.google.com'
 
 # touchpad
 alias ton='synclient TouchpadOff=0'
@@ -350,3 +349,15 @@ alias orphans2='pacman -Qdtd'
 alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
 alias bt='tail -n 20 ~/.bashrc'
+
+alias sh='cd ~.riddle-dotfiles/.shell-scripts/'
+
+alias lsd='lxc-ls -f'
+
+alias op='cd ~/.config/openbox'
+alias pro='cd ~/programs'
+
+alias ap='ansible-playbook'
+alias app='ansible-playbook centos.yml'
+alias ssid='eval $(ssh-agent -s)'
+
