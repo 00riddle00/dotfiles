@@ -254,7 +254,25 @@
     </keybind>
 
     <!-- Window management -->
+                                                                                                                                                                                                                                                                                 
+    <keybind key="W-Left">                                                                                                                                                                                                                                                       
+      <action name="UnmaximizeFull"/>                                                                                                                                                                                                                                            
+      <action name="MaximizeVert"/>                                                                                                                                                                                                                                              
+      <action name="MoveResizeTo">                                                                                                                                                                                                                                               
+        <width>960</width>                                                                                                                                                                                                                                                       
+      </action>                                                                                                                                                                                                                                                                  
+      <action name="MoveToEdgeWest"/>                                                                                                                                                                                                                                            
+    </keybind>                                                                                                                                                                                                                                                                   
 
+    <keybind key="W-Right">                                                                                                                                                                                                                                                      
+      <action name="UnmaximizeFull"/>                                                                                                                                                                                                                                            
+      <action name="MaximizeVert"/>                                                                                                                                                                                                                                              
+      <action name="MoveResizeTo">                                                                                                                                                                                                                                               
+        <width>960</width>                                                                                                                                                                                                                                                       
+      </action>                                                                                                                                                                                                                                                                  
+      <action name="MoveToEdgeEast"/>                                                                                                                                                                                                                                            
+    </keybind>                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                 
     <keybind key="A-Escape">
       <action name="Close"/>
     </keybind>
@@ -491,7 +509,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/app_launchers/dolphin.sh"</command>
+          <command>sh -c "$LAUNCHERS/dolphin.sh"</command>
       </action>
     </keybind>
     <keybind key="A-e">
@@ -501,7 +519,7 @@
     </keybind>
     <keybind key="W-g">
       <action name="Execute">
-          <command>sh -c "$LAUNCHERS/app_launchers/smartgit.sh"</command>
+          <command>sh -c "$LAUNCHERS/smartgit.sh"</command>
       </action>
     </keybind>
     <keybind key="W-l">
@@ -543,19 +561,12 @@
       </mousebind>
 
 
-      <mousebind button="W-Left" action="Drag">
+      <mousebind button="A-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
-      <mousebind button="W-Right" action="Drag">
+      <mousebind button="A-Right" action="Drag">
         <action name="Resize"/>
       </mousebind>
-
-      <mousebind button="A-Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-        <action name="Unshade"/>
-      </mousebind>
-
 
       <mousebind button="A-Middle" action="Press">
         <action name="Lower"/>
