@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export TERM=xterm
+export TERM=terminator
 
 if [ $USER == "root" ]; then 
     color="31m"
@@ -58,8 +58,8 @@ alias more='less'
 alias clock='s date +%T -s'
 alias tar='tar -xvf'
 alias q='exit'
-alias re='reboot'
-alias off='poweroff'
+alias re='sudo reboot'
+alias off='sudo poweroff'
 
 # make cmd aliases
 # TODO check if not already exists 
@@ -330,7 +330,7 @@ alias vis='cd ~/VirtualBox\ VMs/ && vs'
 
 alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
 
-alias auk='/home/riddle/.riddle-sh-scripts/autokey.sh'
+alias auk='/home/riddle/.riddle-shell-scripts/autokey.sh'
 
 
 alias sh='cd ~/.riddle-sh-scripts/'
@@ -338,7 +338,6 @@ alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='vv ~/.config/terminator/config'
 alias tmp4='cd ~/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
@@ -360,4 +359,7 @@ alias pro='cd ~/programs'
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'
 alias ssid='eval $(ssh-agent -s)'
+
+alias con='vv /home/riddle/main/coding/config'
+alias cod='cd /home/riddle/main/coding/'
 
