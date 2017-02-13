@@ -115,8 +115,8 @@ alias more='less'
 alias clock='s date +%T -s'
 alias tar='tar -xvf'
 alias q='exit'
-alias re='reboot'
-alias off='poweroff'
+alias re='sudo reboot'
+alias off='sudo poweroff'
 
 # make cmd aliases
 # TODO check if not already exists 
