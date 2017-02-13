@@ -22,7 +22,7 @@ setxkbmap -option caps:escape
 #fi
 
 #archey && fortune | cowsay
-#screenfetch
+screenfetch
 #archey
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
