@@ -1,5 +1,0 @@
-; gedit GtkAccelMap rc-file         -*- scheme -*-
-; this file is an automated accelerator map dump
-;
-(gtk_accel_path "<Actions>/GeditWindowActions/DocumentsNextDocument" "<Primary>Page_Down")
-(gtk_accel_path "<Actions>/GeditWindowActions/DocumentsPreviousDocument" "<Primary>Page_Up")
