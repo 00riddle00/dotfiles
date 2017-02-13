@@ -387,10 +387,9 @@ alias vis='cd ~/VirtualBox\ VMs/ && vs'
 
 alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
 
-alias auk='/home/riddle/.riddle-sh-scripts/autokey.sh'
+alias auk='/home/riddle/.riddle-shell-scripts/autokey.sh'
 
 
-alias sh='cd ~/.riddle-sh-scripts/'
 alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
@@ -407,7 +406,6 @@ alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
 alias bt='tail -n 20 ~/.bashrc'
 
-alias sh='cd ~.riddle-dotfiles/.shell-scripts/'
 
 alias lsd='lxc-ls -f'
 
@@ -424,3 +422,6 @@ alias ree='ifdown eth0 && ifup eth0'
 alias renet=' service networking restart && /etc/init.d/networking restart'
 alias zr='vv ~/.zshrc'
 alias z='zsh'
+alias dot='cd ~/.riddle-dotfiles'
+alias she='cd ~/.riddle-shell-scripts'
+alias aut='cd ~/.riddle-automation'
