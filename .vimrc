@@ -47,6 +47,18 @@ endif
 set nobackup
 
 
+nmap    <leader>j       :sp<cr>
+nmap    <leader>v       :vs<cr>
+
+
+"
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+"cmap w!! w !sudo tee > /dev/null %
+"":w !sudo tee %
+"let :w!! "gain sudo privileges without closing and reopening vim
+"http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
+
+
 
 " Don't clear the screen after exit
 "?set t_ti=
@@ -84,7 +96,6 @@ map <leader>h           :set hlsearch!<CR>
 nmap    <SPACE>     ^
 
 
-"TODO mark W and Q as :w and :q
 
 " Easy movement between windows
 "TODO change ctrl to alt
@@ -96,24 +107,28 @@ noremap <c-l> <C-W>l
 
 "TODO enable c-q
 " Easy tab control
-nmap    <c-t>       :tabnew<cr>
-nmap    <c-e>       :tabclose<cr>
-nmap    <c-w>       :tabnext<cr>
-nmap    <c-q>       :tabprev<cr>
-nmap    tt       :tabprev<cr>
-"?nmap            :tabedit %<CR>
-"nmap            :tabnew \| tjump <C-R><C-W><CR>
+"nmap    <c-t>       :tabnew<cr>
+"nmap    <c-e>       :tabclose<cr>
+"nmap    <c-w>       :tabnext<cr>
+"nmap    <c-q>       :tabprev<cr>
+"nmap    tt       :tabprev<cr>
+nmap    <leader>t       :tabnew<cr>
+"nmap    <leader>e       :tabclose<cr>
+nmap    <leader>w       :tabnext<cr>
+nmap    <leader>q       :tabprev<cr>
+nmap    <leader>r        :tabedit %<CR>
+"nmap   <leader>t           :tabnew \| tjump <C-R><C-W><CR>
 " map <leader>to :tabonly<CR>
 " map <leader>tm :tabmove xx<CR>
-"nmap    <c-1>       1gt
-"nmap    <c-2>       2gt
-"nmap    <c-3>       3gt
-"nmap    <c-4>       4gt
+nmap    <leader>1       1gt
+nmap    <leader>2       2gt
+nmap    <leader>3       3gt
+nmap    <leader>4       4gt
 "nmap    <c-5>       5gt
 "nmap    <c-6>       6gt
 "nmap    <c-7>       7gt
 "nmap    <c-8>       8gt
-"nmap    <c-9>       :tablast<cr>
+nmap    <leader>0       :tablast<cr>
 
 
 "noremap   <c-n>      :set number!<cr>
@@ -169,7 +184,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-" Auto inent after a {
+" Auto indent after a {
 set autoindent
 set smartindent
 
@@ -187,8 +202,8 @@ set laststatus=2
 
 
 " Autocomplete
-ino <c-k> <c-p>
-ino <c-j> <c-n>
+"ino <c-k> <c-p>
+"ino <c-j> <c-n>
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
 
@@ -297,7 +312,7 @@ let g:NERDTreeWinSize = 30
 let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']  
 
 
-Plugin 'Tagbar'
+"Plugin 'Tagbar'
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
 
@@ -321,6 +336,8 @@ let g:syntastic_filetype_map = {'python.django': 'python'}
 let g:syntastic_python_pep8_args = '--ignore=E501'  
 
 Plugin 'surround.vim' 
+
+Plugin 'ctrlp.vim' 
 
 Plugin 'delimitMate.vim'  
 
