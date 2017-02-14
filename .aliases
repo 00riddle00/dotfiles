@@ -3,8 +3,9 @@ export HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=/home/$MAIN_USER/.riddle-automation
 export DOTFILES_DIR=/home/$MAIN_USER/.riddle-dotfiles
 export SHELL_SCRIPTS_DIR=/home/$MAIN_USER/.riddle-shell-scripts
-export ACTIVATE="$SHELL_SCRIPTS/activate.sh"; export ACTIVATE
-export FOCUS="$SHELL_SCRIPTS/focus.sh"; export FOCUS
+export CANDY="$HOME_DIR/.riddle-candy"
+export ACTIVATE="$SHELL_SCRIPTS_DIR/activate.sh"
+export FOCUS="$SHELL_SCRIPTS_DIR/focus.sh"
 
 alias b='bash'
 alias s='sudo'

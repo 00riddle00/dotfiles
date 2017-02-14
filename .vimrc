@@ -278,15 +278,15 @@ endfunction
                                                                                                                                                                                                                                                
 " How to install Vundle:                                                                                                                                                                                                                       
 "                                                                                                                                                                                                                                              
-"     git clone https://github.com/gmarik/Vundle.vim.git $HOME_DIR/.vim/bundle/Vundle.vim                                                                                                                                                              
+"     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim                                                                                                                                                              
 "                                                                                                                                                                                                                                              
 " https://github.com/gmarik/Vundle.vim                                                                                                                                                                                                         
 " set the runtime path to include Vundle and initialize                                                                                                                                                                                        
 "  
 
 filetype off                                                                                                                                                                                                                                   
-set rtp+=$HOME_DIR/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
-call vundle#begin("$HOME_DIR/.vim/vundle")   
+set rtp+=~/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
+call vundle#begin("~/.vim/vundle")   
 
 Plugin 'gmarik/Vundle.vim'  
 
