@@ -1,3 +1,4 @@
+. /home/riddle/.aliases
 
 # Turn off Touchpad 
 # synclient TouchpadOff=1
@@ -26,11 +27,10 @@ screenfetch
 #archey
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
-if [ -f $HOME/.dircolors ]; then
-    eval $(dircolors ~/.dircolors)
+if [ -f $DOTFILES_DIR/.dircolors ]; then
+    eval $(dircolors $DOTFILES_DIR/.dircolors)
 fi
 
 # Vi everything
 set -o vi
 
-. ~/.aliases

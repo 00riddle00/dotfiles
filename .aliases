@@ -1,11 +1,12 @@
 export MAIN_USER=riddle
-export HOME_DIR=/home/$MAIN_USER
-export AUTOMATION_DIR=/home/$MAIN_USER/.riddle-automation
-export DOTFILES_DIR=/home/$MAIN_USER/.riddle-dotfiles
-export SHELL_SCRIPTS_DIR=/home/$MAIN_USER/.riddle-shell-scripts
-export CANDY="$HOME_DIR/.riddle-candy"
-export ACTIVATE="$SHELL_SCRIPTS_DIR/activate.sh"
-export FOCUS="$SHELL_SCRIPTS_DIR/focus.sh"
+export HOME_DIR=/home/$MAIN_USER/.riddle
+export USER_HOME_DIR=/home/$MAIN_USER
+export AUTOMATION_DIR=$HOME_DIR/.automation
+export DOTFILES_DIR=$HOME_DIR/.dotfiles
+export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
+export CANDY=$HOME_DIR/.candy
+export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
+export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
 alias b='bash'
 alias s='sudo'
@@ -34,7 +35,7 @@ alias re='sudo reboot'
 alias off='sudo poweroff'
 
 # make cmd aliases
-function ma() { echo alias $1="'$2'" >> $HOME_DIR/.bashrc; bash; }
+function ma() { echo alias $1="'$2'" >> $DOTFILES_DIR/.bashrc; bash; }
 
 function de() { sudo udisks --unmount /dev/$1; }
 
@@ -55,13 +56,13 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias root='cd /'
 
-alias di='cd $HOME_DIR/VirtualBox\ VMs/dienynas/app'
-alias sca='cd $HOME_DIR/VirtualBox\ VMs/scard-api/'
-alias gri='cd $HOME_DIR/VirtualBox\ VMs/grigiskes-api/app'
-alias u2='cd $HOME_DIR/CS/2_semester/programavimas_c/code/U2'
-alias dw='cd $HOME_DIR/Downloads/'
+alias di='cd $USER_HOME_DIR/VirtualBox\ VMs/dienynas/app'
+alias sca='cd $USER_HOME_DIR/VirtualBox\ VMs/scard-api/'
+alias gri='cd $USER_HOME_DIR/VirtualBox\ VMs/grigiskes-api/app'
+alias u2='cd $USER_HOME_DIR/CS/2_semester/programavimas_c/code/U2'
+alias dw='cd $USER_HOME_DIR/Downloads/'
 alias srv='cd /srv/http/'
-alias del='cd $HOME_DIR/deluge'
+alias del='cd $USER_HOME_DIR/deluge'
 alias h='history'
 
 # pacman
@@ -81,14 +82,14 @@ alias pl='sudo pacman -Qe'
 alias openbox='exec openbox-session'
 alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
-alias start='vim $HOME_DIR/.config/openbox/autostart.sh'
-alias rc='sudo vim $HOME_DIR/.config/openbox/rc.xml'
-alias menu='sudo vim $HOME_DIR/.config/openbox/menu.xml'
+alias start='vim $DOTFILES_DIR/.config/openbox/autostart.sh'
+alias rc='sudo vim $DOTFILES_DIR/.config/openbox/rc.xml'
+alias menu='sudo vim $DOTFILES_DIR/.config/openbox/menu.xml'
 alias out='sudo openbox --exit'
 
 # config
-alias vr='vim $HOME_DIR/.vimrc'
-alias br='vv $HOME_DIR/.bashrc'
+alias vr='vim $DOTFILES_DIR/.vimrc'
+alias br='vv $DOTFILES_DIR/.bashrc'
 alias termc='vv .config/terminator/config'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -195,23 +196,23 @@ alias runs='python manage.py runserver'
 ############################################################################
 
 alias pu='s pip uninstall'
-alias mim='vv $HOME_DIR/.config/mimeapps.list'
+alias mim='vv $DOTFILES_DIR/.config/mimeapps.list'
 alias glg='git lg'
-alias ads='cd $HOME_DIR/CS/2_semester/ads'
+alias ads='cd $USER_HOME_DIR/CS/2_semester/ads'
 alias gpo='git push origin tomo_pakeitimai'
 
-alias tmp='cd $HOME_DIR/tmp1'
+alias tmp='cd $USER_HOME_DIR/tmp1'
 alias tmp1='tmp'
-alias tmp2='cd $HOME_DIR/tmp2'
-alias tmp3='cd $HOME_DIR/tmp3'
+alias tmp2='cd $USER_HOME_DIR/tmp2'
+alias tmp3='cd $USER_HOME_DIR/tmp3'
 alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
-alias dok='cd $HOME_DIR/docker'
+alias dok='cd $USER_HOME_DIR/docker'
 
 
 alias reb='make rebuild'
 alias exe='./main.exe'
-alias cl='cd $HOME_DIR/c_lang/LCTHW'
+alias cl='cd $USER_HOME_DIR/c_lang/LCTHW'
 alias ya='yaourt --noconfirm'
 
 
@@ -223,7 +224,7 @@ alias reality='$SHELL_SCRIPTS_DIR/matrix/matrixof.sh'
 alias r='ranger'
 alias vf='vifm'
 
-alias xconf='cd $HOME_DIR/.config/xfce4/xfconf/xfce-perchannel-xml'
+alias xconf='cd $DOTFILES_DIR/.config/xfce4/xfconf/xfce-perchannel-xml'
 
 alias genkeys='cpr tmp1/keys2.xml .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml && cpr tmp1/keys2.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml'
 
@@ -245,15 +246,15 @@ alias serv="cd /var/www"
 alias ureapache="sudo systemctl restart apache2"
 
 # new
-alias vrc='vim $HOME_DIR/.vimrc'
-alias ww='python $HOME_DIR/welcome.py'
-alias hi='mpg123 $HOME_DIR/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
+alias vrc='vim $DOTFILES_DIR/.vimrc'
+alias ww='python $USER_HOME_DIR/welcome.py'
+alias hi='mpg123 $USER_HOME_DIR/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 
 # openbox
-alias tint='vv $HOME_DIR/.config/tint2/tint2rc'
+alias tint='vv $DOTFILES_DIR/.config/tint2/tint2rc'
 alias stopit='killall mpg123'
 alias kil='sudo kill -9'
-alias term='vim $HOME_DIR/.config/terminator/config'
+alias term='vim $DOTFILES_DIR/.config/terminator/config'
 
 # general
 alias xfce='exec xfce4-session'
@@ -267,11 +268,11 @@ alias dp='sudo dpkg -i'
 #alias up='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
 
-alias mchef='$HOME_DIR/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
+alias mchef='$USER_HOME_DIR/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
 alias lock='gnome-screensaver-command -l'
 
 alias au='ps aux | grep -i'
-alias pic='scrot -s $HOME_DIR/Screenshots/screenshot-%F-%H%M%S.png'
+alias pic='scrot -s $USER_HOME_DIR/Screenshots/screenshot-%F-%H%M%S.png'
 
 alias mig='pmp makemigrations && pmp migrate'
 
@@ -281,22 +282,22 @@ alias tm='conky -c .conky/archconky &'
 
 alias sub='/usr/bin/subl'
 
-alias sca='cd $HOME_DIR/VirtualBox\ VMs/scard-api'
+alias sca='cd $USER_HOME_DIR/VirtualBox\ VMs/scard-api'
 alias libre='libreoffice'
-alias tmp3='cd $HOME_DIR/tmp3/'
+alias tmp3='cd $USER_HOME_DIR/tmp3/'
 alias show='mirage'
 alias yaup='yaourt -Syu --aur --noconfirm'
 
-alias scard='cd $HOME_DIR/osos/scard/'
+alias scard='cd $USER_HOME_DIR/osos/scard/'
 
 alias um='sudo umount /dev/sdb1'
 alias fl='sudo fdisk -l'
 
-alias main='cd $HOME_DIR/main'
+alias main='cd $USER_HOME_DIR/main'
 
-alias vi='cd $HOME_DIR/VirtualBox\ VMs/'
-alias viu='cd $HOME_DIR/VirtualBox\ VMs/ && vu'
-alias vis='cd $HOME_DIR/VirtualBox\ VMs/ && vs'
+alias vi='cd $USER_HOME_DIR/VirtualBox\ VMs/'
+alias viu='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vu'
+alias vis='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vs'
 
 alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
 
@@ -307,23 +308,23 @@ alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='vv $HOME_DIR/.config/terminator/config'
-alias tmp4='cd $HOME_DIR/tmp4'
+alias con='vv $DOTFILES_DIR/.config/terminator/config'
+alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
-alias tb='tail -n 10 $HOME_DIR/.bashrc'
+alias tb='tail -n 10 $DOTFILES_DIR/.bashrc'
 alias orphans='pacman -Qdt'
 alias orphans2='pacman -Qdtd'
 
 alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
-alias bt='tail -n 20 $HOME_DIR/.bashrc'
+alias bt='tail -n 20 $DOTFILES_DIR/.bashrc'
 
 
 alias lsd='lxc-ls -f'
 
-alias op='cd $HOME_DIR/.config/openbox'
-alias pro='cd $HOME_DIR/programs'
+alias op='cd $DOTFILES_DIR/.config/openbox'
+alias pro='cd $USER_HOME_DIR/programs'
 
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'
@@ -333,15 +334,17 @@ alias wpa='wpa_supplicant -Dnl80211 -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant
 alias rew='ifdown wlan0 && ifup wlan0'
 alias ree='ifdown eth0 && ifup eth0'
 alias renet=' service networking restart && /etc/init.d/networking restart'
-alias zr='vv $HOME_DIR/.zshrc'
+alias zr='vv $DOTFILES_DIR/.zshrc'
 alias z='zsh'
 alias dot='cd $DOTFILES_DIR'
 alias she='cd $SHELL_SCRIPTS_DIR'
 alias aut='cd $AUTOMATION_DIR'
 alias w='whoami'
-alias xi='vv $HOME_DIR/.xinitrc'
+alias xi='vv $USER_HOME_DIR/.xinitrc'
 alias dl='dpkg -l'
-alias al='vv $HOME_DIR/.aliases'
+alias al='vv $DOTFILES_DIR/.aliases'
 alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
 alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
+alias xplus='xbacklight +10'
+alias xminus='xbacklight -10'
 
