@@ -285,8 +285,8 @@ endfunction
 "  
 
 filetype off                                                                                                                                                                                                                                   
-set rtp+=~/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
-call vundle#begin("~/.vim/vundle")   
+set rtp+=$DOTFILES_DIR/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
+call vundle#begin("$DOTFILES_DIR/.vim/vundle")   
 
 Plugin 'gmarik/Vundle.vim'  
 

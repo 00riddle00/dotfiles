@@ -4,7 +4,7 @@ export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
-export CANDY=$HOME_DIR/.candy
+export CANDY=$HOME_DIR/.riddle-candy
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
@@ -347,4 +347,32 @@ alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
 alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
 alias xplus='xbacklight +10'
 alias xminus='xbacklight -10'
+
+# Turn off Touchpad 
+# synclient TouchpadOff=1
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export TERM=terminator
+#export TERM=terminator
+
+
+#if [ command -v setxkbmap >/dev/null 2>&1 ]; then 
+setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
+setxkbmap -option caps:escape
+    #setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il
+#fi
+
+#archey && fortune | cowsay
+screenfetch
+#archey
+#quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
+
+if [ -f $HOME/.dircolors ]; then
+    eval $(dircolors $HOME/.dircolors)
+fi
+
+# Vi everything
+set -o vi
 
