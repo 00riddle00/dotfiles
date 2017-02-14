@@ -1,3 +1,11 @@
+export MAIN_USER=riddle
+export HOME_DIR=/home/$MAIN_USER
+export AUTOMATION_DIR=/home/$MAIN_USER/.riddle-automation
+export DOTFILES_DIR=/home/$MAIN_USER/.riddle-dotfiles
+export SHELL_SCRIPTS_DIR=/home/$MAIN_USER/.riddle-shell-scripts
+export ACTIVATE="$SHELL_SCRIPTS/activate.sh"; export ACTIVATE
+export FOCUS="$SHELL_SCRIPTS/focus.sh"; export FOCUS
+
 alias b='bash'
 alias s='sudo'
 alias let='s chmod 777'
@@ -25,7 +33,7 @@ alias re='sudo reboot'
 alias off='sudo poweroff'
 
 # make cmd aliases
-function ma() { echo alias $1="'$2'" >> ~/.bashrc; bash; }
+function ma() { echo alias $1="'$2'" >> $HOME_DIR/.bashrc; bash; }
 
 function de() { sudo udisks --unmount /dev/$1; }
 
@@ -46,13 +54,13 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias root='cd /'
 
-alias di='cd /home/riddle/VirtualBox\ VMs/dienynas/app'
-alias sca='cd /home/riddle/VirtualBox\ VMs/scard-api/'
-alias gri='cd /home/riddle/VirtualBox\ VMs/grigiskes-api/app'
-alias u2='cd /home/riddle/CS/2_semester/programavimas_c/code/U2'
-alias dw='cd /home/riddle/Downloads/'
+alias di='cd $HOME_DIR/VirtualBox\ VMs/dienynas/app'
+alias sca='cd $HOME_DIR/VirtualBox\ VMs/scard-api/'
+alias gri='cd $HOME_DIR/VirtualBox\ VMs/grigiskes-api/app'
+alias u2='cd $HOME_DIR/CS/2_semester/programavimas_c/code/U2'
+alias dw='cd $HOME_DIR/Downloads/'
 alias srv='cd /srv/http/'
-alias del='cd ~/deluge'
+alias del='cd $HOME_DIR/deluge'
 alias h='history'
 
 # pacman
@@ -72,14 +80,14 @@ alias pl='sudo pacman -Qe'
 alias openbox='exec openbox-session'
 alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
-alias start='vim ~/.config/openbox/autostart.sh'
-alias rc='sudo vim ~/.config/openbox/rc.xml'
-alias menu='sudo vim ~/.config/openbox/menu.xml'
+alias start='vim $HOME_DIR/.config/openbox/autostart.sh'
+alias rc='sudo vim $HOME_DIR/.config/openbox/rc.xml'
+alias menu='sudo vim $HOME_DIR/.config/openbox/menu.xml'
 alias out='sudo openbox --exit'
 
 # config
-alias vr='vim ~/.vimrc'
-alias br='vv ~/.bashrc'
+alias vr='vim $HOME_DIR/.vimrc'
+alias br='vv $HOME_DIR/.bashrc'
 alias termc='vv .config/terminator/config'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -134,7 +142,7 @@ alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
 alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
-alias mysqlri='mysql -u riddle -p'
+alias mysqlri='mysql -u user -p'
 alias apache='sudo systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 
@@ -186,35 +194,35 @@ alias runs='python manage.py runserver'
 ############################################################################
 
 alias pu='s pip uninstall'
-alias mim='vv /home/riddle/.config/mimeapps.list'
+alias mim='vv $HOME_DIR/.config/mimeapps.list'
 alias glg='git lg'
-alias ads='cd /home/riddle/CS/2_semester/ads'
+alias ads='cd $HOME_DIR/CS/2_semester/ads'
 alias gpo='git push origin tomo_pakeitimai'
 
-alias tmp='cd ~/tmp1'
+alias tmp='cd $HOME_DIR/tmp1'
 alias tmp1='tmp'
-alias tmp2='cd ~/tmp2'
-alias tmp3='cd ~/tmp3'
+alias tmp2='cd $HOME_DIR/tmp2'
+alias tmp3='cd $HOME_DIR/tmp3'
 alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
-alias dok='cd ~/docker'
+alias dok='cd $HOME_DIR/docker'
 
 
 alias reb='make rebuild'
 alias exe='./main.exe'
-alias cl='cd /home/riddle/c_lang/LCTHW'
+alias cl='cd $HOME_DIR/c_lang/LCTHW'
 alias ya='yaourt --noconfirm'
 
 
 alias no='killall mpg123'
 
-alias matrix='~/.riddle-sh-scripts/matrixon.sh'
-alias reality='~/.riddle-sh-scripts/matrixof.sh'
+alias matrix='$SHELL_SCRIPTS_DIR/matrix/matrixon.sh'
+alias reality='$SHELL_SCRIPTS_DIR/matrix/matrixof.sh'
 
 alias r='ranger'
 alias vf='vifm'
 
-alias xconf='cd /home/riddle/.config/xfce4/xfconf/xfce-perchannel-xml'
+alias xconf='cd $HOME_DIR/.config/xfce4/xfconf/xfce-perchannel-xml'
 
 alias genkeys='cpr tmp1/keys2.xml .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml && cpr tmp1/keys2.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml'
 
@@ -236,15 +244,15 @@ alias serv="cd /var/www"
 alias ureapache="sudo systemctl restart apache2"
 
 # new
-alias vrc='vim ~/.vimrc'
-alias ww='python ~/welcome.py'
-alias hi='mpg123 ~/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
+alias vrc='vim $HOME_DIR/.vimrc'
+alias ww='python $HOME_DIR/welcome.py'
+alias hi='mpg123 $HOME_DIR/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 
 # openbox
-alias tint='vv ~/.config/tint2/tint2rc'
+alias tint='vv $HOME_DIR/.config/tint2/tint2rc'
 alias stopit='killall mpg123'
 alias kil='sudo kill -9'
-alias term='vim ~/.config/terminator/config'
+alias term='vim $HOME_DIR/.config/terminator/config'
 
 # general
 alias xfce='exec xfce4-session'
@@ -258,11 +266,11 @@ alias dp='sudo dpkg -i'
 #alias up='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
 
-alias mchef='/home/riddle/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
+alias mchef='$HOME_DIR/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
 alias lock='gnome-screensaver-command -l'
 
 alias au='ps aux | grep -i'
-alias pic='scrot -s /home/riddle/Screenshots/screenshot-%F-%H%M%S.png'
+alias pic='scrot -s $HOME_DIR/Screenshots/screenshot-%F-%H%M%S.png'
 
 alias mig='pmp makemigrations && pmp migrate'
 
@@ -272,49 +280,49 @@ alias tm='conky -c .conky/archconky &'
 
 alias sub='/usr/bin/subl'
 
-alias sca='cd ~/VirtualBox\ VMs/scard-api'
+alias sca='cd $HOME_DIR/VirtualBox\ VMs/scard-api'
 alias libre='libreoffice'
-alias tmp3='cd ~/tmp3/'
+alias tmp3='cd $HOME_DIR/tmp3/'
 alias show='mirage'
 alias yaup='yaourt -Syu --aur --noconfirm'
 
-alias scard='cd ~/osos/scard/'
+alias scard='cd $HOME_DIR/osos/scard/'
 
 alias um='sudo umount /dev/sdb1'
 alias fl='sudo fdisk -l'
 
-alias main='cd ~/main'
+alias main='cd $HOME_DIR/main'
 
-alias vi='cd ~/VirtualBox\ VMs/'
-alias viu='cd ~/VirtualBox\ VMs/ && vu'
-alias vis='cd ~/VirtualBox\ VMs/ && vs'
+alias vi='cd $HOME_DIR/VirtualBox\ VMs/'
+alias viu='cd $HOME_DIR/VirtualBox\ VMs/ && vu'
+alias vis='cd $HOME_DIR/VirtualBox\ VMs/ && vs'
 
 alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
 
-alias auk='/home/riddle/.riddle-shell-scripts/autokey.sh'
+alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 
 
 alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='vv ~/.config/terminator/config'
-alias tmp4='cd ~/tmp4'
+alias con='vv $HOME_DIR/.config/terminator/config'
+alias tmp4='cd $HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
-alias tb='tail -n 10 ~/.bashrc'
+alias tb='tail -n 10 $HOME_DIR/.bashrc'
 alias orphans='pacman -Qdt'
 alias orphans2='pacman -Qdtd'
 
 alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
-alias bt='tail -n 20 ~/.bashrc'
+alias bt='tail -n 20 $HOME_DIR/.bashrc'
 
 
 alias lsd='lxc-ls -f'
 
-alias op='cd ~/.config/openbox'
-alias pro='cd ~/programs'
+alias op='cd $HOME_DIR/.config/openbox'
+alias pro='cd $HOME_DIR/programs'
 
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'
@@ -324,15 +332,15 @@ alias wpa='wpa_supplicant -Dnl80211 -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant
 alias rew='ifdown wlan0 && ifup wlan0'
 alias ree='ifdown eth0 && ifup eth0'
 alias renet=' service networking restart && /etc/init.d/networking restart'
-alias zr='vv ~/.zshrc'
+alias zr='vv $HOME_DIR/.zshrc'
 alias z='zsh'
-alias dot='cd ~/.riddle-dotfiles'
-alias she='cd ~/.riddle-shell-scripts'
-alias aut='cd ~/.riddle-automation'
+alias dot='cd $DOTFILES_DIR'
+alias she='cd $SHELL_SCRIPTS_DIR'
+alias aut='cd $AUTOMATION_DIR'
 alias w='whoami'
-alias xi='vv ~/.xinitrc'
+alias xi='vv $HOME_DIR/.xinitrc'
 alias dl='dpkg -l'
-alias al='vv ~/.aliases'
-alias col='/home/riddle/.riddle-automation/shell_scripts/post_install/collect_dotfiles.sh'
-alias dis='/home/riddle/.riddle-automation/shell_scripts/post_install/disperse_dotfiles.sh'
+alias al='vv $HOME_DIR/.aliases'
+alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
+alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
 
