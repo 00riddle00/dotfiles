@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/riddle'
 let g:netrw_dirhist_2='/home/riddle/VirtualBox VMs/dienynas/app/app/environment/teacher/backend/classroom'
+let g:netrw_dirhist_3='/home/riddle/.i3'

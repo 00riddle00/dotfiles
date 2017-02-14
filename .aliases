@@ -376,3 +376,4 @@ fi
 # Vi everything
 set -o vi
 
+alias t='dolphin .'
