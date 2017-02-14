@@ -332,4 +332,7 @@ alias aut='cd ~/.riddle-automation'
 alias w='whoami'
 alias xi='vv ~/.xinitrc'
 alias dl='dpkg -l'
+alias al='vv ~/.aliases'
+alias col='/home/riddle/.riddle-automation/shell_scripts/post_install/collect_dotfiles.sh'
+alias dis='/home/riddle/.riddle-automation/shell_scripts/post_install/disperse_dotfiles.sh'
 
