@@ -104,7 +104,6 @@ alias vv='sudo vim'
 alias tt='dolphin4 ./'
 alias rtt='sudo dolphin4 ./'
 alias play='vlc'
-alias t='thunar'
 alias ag='autokey-gtk'
 
 # git
@@ -172,7 +171,6 @@ alias xon='xrandr --output eDP1 --auto'
 
 
 # c lang
-alias t='./test'
 alias ms='make rebuild'
 #alias ms='make test'
 alias vt='vlt ./test'
@@ -308,7 +306,7 @@ alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='vv $DOTFILES_DIR/.config/terminator/config'
+alias con='vv $HOME/main/coding/config'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
@@ -376,4 +374,6 @@ fi
 # Vi everything
 set -o vi
 
-alias t='dolphin .'
+alias t='$HOME_DIR/.todo/todo.sh'
+alias to='cd $HOME_DIR/.todo/'
+alias rl='readlink -f'
