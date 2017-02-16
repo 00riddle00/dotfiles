@@ -236,7 +236,6 @@ alias cki='conky -c .conky/stats && conky -c .conky/conkyrc_HUD && conky -c .con
 alias ckil='killall conky'
 
 #ubuntu
-alias smartgit="/usr/share/smartgit/bin/smartgit.sh"
 alias update="sudo apt-get update"
 alias whatip="curl http://icanhazip.com"
 alias xampp="sudo python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"

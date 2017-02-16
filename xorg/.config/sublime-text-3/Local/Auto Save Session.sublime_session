@@ -4,12 +4,12 @@
 		"/home/riddle",
 		"/home/riddle/osos/edienynas"
 	],
-	"last_version": 3114,
-	"last_window_id": 3,
+	"last_version": 3126,
+	"last_window_id": 6,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 1018.0,
+		"new_window_height": 0.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -24,28 +24,32 @@
 			"build_varint": "",
 			"command_palette":
 			{
-				"height": 212.0,
-				"last_filter": ":w",
+				"height": 392.0,
+				"last_filter": ":r",
 				"selected_items":
 				[
 					[
-						":w",
-						":w - Save"
-					],
-					[
 						":r",
 						"Set Syntax: R"
+					],
+					[
+						":w",
+						":w - Save"
 					],
 					[
 						":",
 						":w - Save"
 					],
 					[
+						":q",
+						"Snippet: Sequence (from,to,by)"
+					],
+					[
 						":e",
 						":e - Revert"
 					]
 				],
-				"width": 392.0
+				"width": 432.0
 			},
 			"console":
 			{
@@ -65,23 +69,104 @@
 			},
 			"file_history":
 			[
-				"/home/riddle/osos/grigeo/grigeo_plan",
-				"/home/riddle/.config/openbox/rc.xml",
-				"/home/riddle/tmp1/gnome_alt_key",
 				"/home/riddle/main/coding/config",
-				"/home/riddle/c1/tmp",
-				"/home/riddle/osos/scard/scard_plan",
+				"/home/riddle/.Xsession",
+				"/home/riddle/.xscreensaver",
+				"/home/riddle/.Xresources",
+				"/home/riddle/.xinitrc",
+				"/home/riddle/.Xauthority",
+				"/home/riddle/.vimrc",
+				"/home/riddle/.viminfo",
+				"/home/riddle/.tmux.conf",
+				"/home/riddle/.asoundrc",
+				"/home/riddle/.AwOkenrc-001124158",
+				"/home/riddle/.bash_history",
+				"/home/riddle/.bash_logout",
+				"/home/riddle/.bash_profile",
+				"/home/riddle/.inputrc",
+				"/home/riddle/.profile",
+				"/home/riddle/.gtkrc-2.0",
+				"/home/riddle/.gmrunrc",
+				"/home/riddle/.ICEauthority",
+				"/home/riddle/.gmrunner.py",
+				"/home/riddle/.gitconfig",
+				"/home/riddle/.fehbg",
+				"/home/riddle/.directory",
+				"/home/riddle/.dircolors",
+				"/home/riddle/.bashrc",
+				"/media/riddle/87A2-0BB0/.kde4/share/config/dolphinrc",
+				"/media/riddle/87A2-0BB0/.kde4/share/apps/dolphin/dolphinui.rc",
+				"/home/riddle/.vagrant.d/boxes/ubuntu-VAGRANTSLASH-trusty64/20160318.0.0/virtualbox/Vagrantfile",
+				"/home/riddle/.vagrant/machines/default/lxc/.directory",
 				"/home/riddle/dotfiles/jetbrains.txt",
+				"/media/riddle/87A2-0BB0/.PyCharm2016.2/config/pycharm1620.key",
+				"/media/riddle/87A2-0BB0/.PyCharm2016.2/config/colors/Eclectide Monokai.icls",
+				"/media/riddle/87A2-0BB0/.local/share/kxmlgui5/dolphin/dolphinui.rc",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-app-list.desktop",
+				"/home/riddle/.ssh/known_hosts.old",
+				"/home/riddle/.gnupg/gpg.conf",
+				"/home/riddle/.local/share/gnome-shell/application_state",
+				"/home/riddle/.local/share/mime/globs2",
+				"/home/riddle/.local/share/mime/application/x-extension-eml.xml",
+				"/home/riddle/.mozilla2/firefox/sjpi18ki.default/storage/permanent/chrome/idb/2918063365piupsah.sqlite",
+				"/home/riddle/.mozilla/firefox/dnhit5la.default/prefs.js",
+				"/media/riddle/87A2-0BB0/.local/share/applications/mimeapps.list",
+				"/media/riddle/87A2-0BB0/.local/share/applications/mimeinfo.cache",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-ejjicmeblgpmajnghnpcppodonldlgfn-Default.desktop",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-fhbjgbiflinjbdggehcddcbncdddomop-Default.desktop",
+				"/media/riddle/87A2-0BB0/.local/share/mime/globs2",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-xhtml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-shtml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/packages/user-extension-eml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/magic",
+				"/media/riddle/87A2-0BB0/.local/share/mime/treemagic",
+				"/media/riddle/87A2-0BB0/.local/share/mime/version",
+				"/media/riddle/87A2-0BB0/.local/share/mime/globs",
+				"/media/riddle/87A2-0BB0/.local/share/mime/types",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-html.xml",
+				"/home/riddle/.icons/default/index.theme",
+				"/home/riddle/.icons/OpenZone_Black/index.theme",
+				"/home/riddle/.qalculate/qalculate-gtk.cfg",
+				"/home/riddle/.ssh/id_rsa",
+				"/home/riddle/.ssh/known_hosts",
+				"/home/riddle/.gimp-2.8/gimprc",
+				"/home/riddle/.gimp-2.8/toolrc",
+				"/home/riddle/.gimp-2.8/imagemaprc",
+				"/home/riddle/.gimp-2.8/controllerrc",
+				"/home/riddle/.gimp-2.8/colorrc",
+				"/home/riddle/.gimp-2.8/dockrc",
+				"/home/riddle/.gimp-2.8/gtkrc",
+				"/home/riddle/.gimp-2.8/menurc",
+				"/home/riddle/.gimp-2.8/profilerc",
+				"/home/riddle/.gimp-2.8/themerc",
+				"/home/riddle/.gimp-2.8/templaterc",
+				"/home/riddle/.gimp-2.8/sessionrc",
+				"/home/riddle/.gimp-2.8/unitrc",
+				"/home/riddle/.docker/config.json",
+				"/home/riddle/.aptitude/cache",
+				"/home/riddle/.aptitude/config",
 				"/home/riddle/logins/dokeriai",
+				"/home/riddle/osos/scard/scard_plan",
+				"/home/riddle/wiki/wiki",
+				"/home/riddle/c1/tmp",
+				"/home/riddle/.config/xfce4-dict/xfce4-dict.rc",
+				"/home/riddle/.cinnamon/configs/keyboard@cinnamon.org/keyboard@cinnamon.org.json",
+				"/home/riddle/.cinnamon/configs/user@cinnamon.org/user@cinnamon.org.json",
+				"/home/riddle/.i3/config",
+				"/home/riddle/osos/grigeo/grigeo_plan",
 				"/home/riddle/osos/edienynas/tests",
 				"/home/riddle/osos/edienynas/test_template",
+				"/home/riddle/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml",
+				"/home/riddle/Downloads/simplify/authorized_keys",
+				"/home/riddle/Downloads/simplify/Dockerfile",
+				"/home/riddle/.config/openbox/rc.xml",
+				"/home/riddle/tmp1/gnome_alt_key",
 				"/media/riddle/EE3C-E544/NEW/scard_plan",
 				"/home/riddle/tmp1/test_output.txt",
 				"/home/riddle/backups/id_rsa",
 				"/home/riddle/docker/scard-docker/id_rsa.pub",
 				"/home/riddle/logins/grigeo-live",
 				"/home/riddle/Downloads/scard_plan",
-				"/home/riddle/.ssh/known_hosts",
 				"/home/riddle/tmp1/eimantas",
 				"/home/riddle/c1/bashrc_vagrant.txt",
 				"/home/riddle/main/YOUTRACK",
@@ -93,7 +178,7 @@
 			],
 			"find":
 			{
-				"height": 23.0
+				"height": 34.0
 			},
 			"find_in_files":
 			{
@@ -107,6 +192,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"docker run",
+					"docker build",
 					"Alt-z",
 					"kraken",
 					"docker bui",
@@ -134,7 +221,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 23.0
+				"height": 34.0
 			},
 			"input":
 			{
@@ -148,7 +235,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 42.0
+				"height": 38.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -188,7 +275,7 @@
 			{
 			}
 		},
-		"new_window_width": 960.0
+		"new_window_width": 0.0
 	},
 	"windows":
 	[
@@ -202,10 +289,24 @@
 			"buffers":
 			[
 				{
-					"file": "/home/riddle/main/coding/config",
+					"contents": "// Place your settings in the file \"Packages/User/Preferences.sublime-settings\",\n// which overrides the settings in here.\n//\n// Settings may also be placed in syntax-specific setting files, for\n// example, in Packages/User/Python.sublime-settings for python files.\n{\n    // Sets the colors used within the text area\n    \"color_scheme\": \"Packages/Color Scheme - Default/Monokai.tmTheme\",\n\n    // Note that the font_face and font_size are overridden in the platform\n    // specific settings file, for example, \"Preferences (Linux).sublime-settings\".\n    // Because of this, setting them here will have no effect: you must set them\n    // in your User File Preferences.\n    \"font_face\": \"\",\n    \"font_size\": 10,\n\n    // Valid options are \"no_bold\", \"no_italic\", \"no_antialias\", \"gray_antialias\",\n    // \"subpixel_antialias\", \"no_round\" (OS X only), \"gdi\" (Windows only) and\n    // \"directwrite\" (Windows only)\n    \"font_options\": [],\n\n    // Characters that are considered to separate words\n    \"word_separators\": \"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?\",\n\n    // Set to false to prevent line numbers being drawn in the gutter\n    \"line_numbers\": true,\n\n    // Set to false to hide the gutter altogether\n    \"gutter\": true,\n\n    // Spacing between the gutter and the text\n    \"margin\": 4,\n\n    // Fold buttons are the triangles shown in the gutter to fold regions of text\n    \"fold_buttons\": true,\n\n    // Hides the fold buttons unless the mouse is over the gutter\n    \"fade_fold_buttons\": true,\n\n    // Columns in which to display vertical rulers\n    \"rulers\": [],\n\n    // Set to true to turn spell checking on by default\n    \"spell_check\": false,\n\n    // The number of spaces a tab is considered equal to\n    \"tab_size\": 4,\n\n    // Set to true to insert spaces when tab is pressed\n    \"translate_tabs_to_spaces\": false,\n\n    // If translate_tabs_to_spaces is true, use_tab_stops will make tab and\n    // backspace insert/delete up to the next tabstop\n    \"use_tab_stops\": true,\n\n    // Set to false to disable detection of tabs vs. spaces on load\n    \"detect_indentation\": true,\n\n    // Calculates indentation automatically when pressing enter\n    \"auto_indent\": true,\n\n    // Makes auto indent a little smarter, e.g., by indenting the next line\n    // after an if statement in C. Requires auto_indent to be enabled.\n    \"smart_indent\": true,\n\n    // Adds whitespace up to the first open bracket when indenting. Requires\n    // auto_indent to be enabled.\n    \"indent_to_bracket\": false,\n\n    // Trims white space added by auto_indent when moving the caret off the\n    // line.\n    \"trim_automatic_white_space\": true,\n\n    // Disables horizontal scrolling if enabled.\n    // May be set to true, false, or \"auto\", where it will be disabled for\n    // source code, and otherwise enabled.\n    \"word_wrap\": \"auto\",\n\n    // Set to a value other than 0 to force wrapping at that column rather than the\n    // window width\n    \"wrap_width\": 0,\n\n    // Set to false to prevent word wrapped lines from being indented to the same\n    // level\n    \"indent_subsequent_lines\": true,\n\n    // Draws text centered in the window rather than left aligned\n    \"draw_centered\": false,\n\n    // Controls auto pairing of quotes, brackets etc\n    \"auto_match_enabled\": true,\n\n    // Word list to use for spell checking\n    \"dictionary\": \"Packages/Language - English/en_US.dic\",\n\n    // Sets which scopes are checked for spelling errors\n    \"spelling_selector\": \"markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)\",\n\n    // Set to true to draw a border around the visible rectangle on the minimap.\n    // The color of the border will be determined by the \"minimapBorder\" key in\n    // the color scheme\n    \"draw_minimap_border\": false,\n\n    // Always visualise the viewport on the minimap, as opposed to only\n    // showing it on mouse over\n    \"always_show_minimap_viewport\": false,\n\n    // If enabled, will highlight any line with a caret\n    \"highlight_line\": false,\n\n    // Valid values are \"smooth\", \"phase\", \"blink\" and \"solid\".\n    \"caret_style\": \"smooth\",\n\n    // These settings control the size of the caret\n    \"caret_extra_top\": 0,\n    \"caret_extra_bottom\": 0,\n    \"caret_extra_width\": 0,\n\n    // Set to false to disable underlining the brackets surrounding the caret\n    \"match_brackets\": true,\n\n    // Set to false if you'd rather only highlight the brackets when the caret is\n    // next to one\n    \"match_brackets_content\": true,\n\n    // Set to false to not highlight square brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_square\": true,\n\n    // Set to false to not highlight curly brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_braces\": true,\n\n    // Set to false to not highlight angle brackets. This only takes effect if\n    // match_brackets is true\n    \"match_brackets_angle\": false,\n\n    // Enable visualization of the matching tag in HTML and XML\n    \"match_tags\": true,\n\n    // Highlights other occurrences of the currently selected text\n    \"match_selection\": true,\n\n    // Additional spacing at the top of each line, in pixels\n    \"line_padding_top\": 0,\n\n    // Additional spacing at the bottom of each line, in pixels\n    \"line_padding_bottom\": 0,\n\n    // Set to false to disable scrolling past the end of the buffer.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"scroll_past_end\": true,\n\n    // This controls what happens when pressing up or down when on the first\n    // or last line.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"move_to_limit_on_up_down\": false,\n\n    // Set to \"none\" to turn off drawing white space, \"selection\" to draw only the\n    // white space within the selection, and \"all\" to draw all white space\n    \"draw_white_space\": \"selection\",\n\n    // Set to false to turn off the indentation guides.\n    // The color and width of the indent guides may be customized by editing\n    // the corresponding .tmTheme file, and specifying the colors \"guide\",\n    // \"activeGuide\" and \"stackGuide\"\n    \"draw_indent_guides\": true,\n\n    // Controls how the indent guides are drawn, valid options are\n    // \"draw_normal\" and \"draw_active\". draw_active will draw the indent\n    // guides containing the caret in a different color.\n    \"indent_guide_options\": [\"draw_normal\"],\n\n    // Set to true to removing trailing white space on save\n    \"trim_trailing_white_space_on_save\": false,\n\n    // Set to true to ensure the last line of the file ends in a newline\n    // character when saving\n    \"ensure_newline_at_eof_on_save\": false,\n\n    // Set to true to automatically save files when switching to a different file\n    // or application\n    \"save_on_focus_lost\": false,\n\n    // Save via writing to an alternate file, and then renaming it over the\n    // original file.\n    \"atomic_save\": false,\n\n    // The encoding to use when the encoding can't be determined automatically.\n    // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.\n    \"fallback_encoding\": \"Western (Windows 1252)\",\n\n    // Encoding used when saving new files, and files opened with an undefined\n    // encoding (e.g., plain ascii files). If a file is opened with a specific\n    // encoding (either detected or given explicitly), this setting will be\n    // ignored, and the file will be saved with the encoding it was opened\n    // with.\n    \"default_encoding\": \"UTF-8\",\n\n    // Files containing null bytes are opened as hexadecimal by default\n    \"enable_hexadecimal_encoding\": true,\n\n    // Determines what character(s) are used to terminate each line in new files.\n    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and\n    // 'unix' (LF only).\n    \"default_line_ending\": \"system\",\n\n    // When enabled, hovering over a word will show a popup listing all\n    // possible locations for the definition symbol. Requires index_files.\n    \"show_definitions\": true,\n\n    // When enabled, pressing tab will insert the best matching completion.\n    // When disabled, tab will only trigger snippets or insert a tab.\n    // Shift+tab can be used to insert an explicit tab when tab_completion is\n    // enabled.\n    \"tab_completion\": true,\n\n    // Enable auto complete to be triggered automatically when typing.\n    \"auto_complete\": true,\n\n    // The maximum file size where auto complete will be automatically triggered.\n    \"auto_complete_size_limit\": 4194304,\n\n    // The delay, in ms, before the auto complete window is shown after typing\n    \"auto_complete_delay\": 50,\n\n    // Controls what scopes auto complete will be triggered in\n    \"auto_complete_selector\": \"meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc\",\n\n    // Additional situations to trigger auto complete\n    \"auto_complete_triggers\": [ {\"selector\": \"text.html\", \"characters\": \"<\"} ],\n\n    // By default, auto complete will commit the current completion on enter.\n    // This setting can be used to make it complete on tab instead.\n    // Completing on tab is generally a superior option, as it removes\n    // ambiguity between committing the completion and inserting a newline.\n    \"auto_complete_commit_on_tab\": false,\n\n    // Controls if auto complete is shown when snippet fields are active.\n    // Only relevant if auto_complete_commit_on_tab is true.\n    \"auto_complete_with_fields\": false,\n\n    // Controls what happens when pressing the up key while the first item in\n    // the auto complete window is selected: if false, the window is hidden,\n    // otherwise the last item in the window is selected. Likewise for the\n    // down key when the last item is selected.\n    \"auto_complete_cycle\": false,\n\n    // Automatically close HTML and XML tags when </ is entered.\n    \"auto_close_tags\": true,\n\n    // By default, shift+tab will only unindent if the selection spans\n    // multiple lines. When pressing shift+tab at other times, it'll insert a\n    // tab character - this allows tabs to be inserted when tab_completion is\n    // enabled. Set this to true to make shift+tab always unindent, instead of\n    // inserting tabs.\n    \"shift_tab_unindent\": false,\n\n    // If true, the copy and cut commands will operate on the current line\n    // when the selection is empty, rather than doing nothing.\n    \"copy_with_empty_selection\": true,\n\n    // If true, the selected text will be copied into the find panel when it's\n    // shown.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"find_selected_text\": true,\n\n    // When auto_find_in_selection is enabled, the \"Find in Selection\" flag\n    // will be enabled automatically when multiple lines of text are selected\n    \"auto_find_in_selection\": false,\n\n    // When drag_text is enabled, clicking on selected text will begin a\n    // drag-drop operation. This is not currently implemented under Linux.\n    \"drag_text\": true,\n\n    //\n    // User Interface Settings\n    //\n\n    // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)\n    \"theme\": \"Default.sublime-theme\",\n\n    // Set to 0 to disable smooth scrolling. Set to a value between 0 and 1 to\n    // scroll slower, or set to larger than 1 to scroll faster\n    \"scroll_speed\": 1.0,\n\n    // Controls side bar animation when expanding or collapsing folders\n    \"tree_animation_enabled\": true,\n\n    // Controls animation throughout the application\n    \"animation_enabled\": true,\n\n    // Makes tabs with modified files more visible\n    \"highlight_modified_tabs\": false,\n\n    \"show_tab_close_buttons\": true,\n\n    // Show folders in the side bar in bold\n    \"bold_folder_labels\": false,\n\n    // OS X only: Set to true to disable Lion style full screen support.\n    // Sublime Text must be restarted for this to take effect.\n    \"use_simple_full_screen\": false,\n\n    // OS X only. Valid values are true, false, and \"auto\". Auto will enable\n    // the setting when running on a screen 2560 pixels or wider (i.e., a\n    // Retina display). When this setting is enabled, OpenGL is used to\n    // accelerate drawing. Sublime Text must be restarted for changes to take\n    // effect.\n    \"gpu_window_buffer\": \"auto\",\n\n    // Valid values are \"system\", \"enabled\" and \"disabled\"\n    \"overlay_scroll_bars\": \"system\",\n\n    // Allows tabs to scroll left and right, instead of simply shrinking\n    \"enable_tab_scrolling\": true,\n\n    // Display file encoding in the status bar\n    \"show_encoding\": false,\n\n    // Display line endings in the status bar\n    \"show_line_endings\": false,\n\n    //\n    // Application Behavior Settings\n    //\n\n    // Exiting the application with hot_exit enabled will cause it to close\n    // immediately without prompting. Unsaved modifications and open files will\n    // be preserved and restored when next starting.\n    //\n    // Closing a window with an associated project will also close the window\n    // without prompting, preserving unsaved changes in the workspace file\n    // alongside the project.\n    \"hot_exit\": true,\n\n    // remember_full_screen will allow Sublime Text to start in full screen\n    // mode if it was exited in full screen mode. When set to false, Sublime\n    // Text will never start in full screen mode.\n    \"remember_full_screen\": false,\n\n    // Always prompt before reloading a file, even if the file hasn't been\n    // modified. The default behavior is to automatically reload a file if it\n    // hasn't been edited. If a file has unsaved changes, a prompt will always\n    // be shown.\n    \"always_prompt_for_file_reload\": false,\n\n    // OS X only: When files are opened from finder, or by dragging onto the\n    // dock icon, this controls if a new window is created or not.\n    \"open_files_in_new_window\": true,\n\n    // OS X only: This controls if an empty window is created at startup or not.\n    \"create_window_at_startup\": true,\n\n    // Set to true to close windows as soon as the last file is closed, unless\n    // there's a folder open within the window.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"close_windows_when_empty\": false,\n\n    // Show the full path to files in the title bar.\n    // On OS X, this value is overridden in the platform specific settings, so\n    // you'll need to place this line in your user settings to override it.\n    \"show_full_path\": true,\n\n    // Shows the Build Results panel when building. If set to false, the Build\n    // Results can be shown via the Tools/Build Results menu.\n    \"show_panel_on_build\": true,\n\n    // Shows build errors just under the line on which they occur.\n    \"show_errors_inline\": true,\n\n    // Preview file contents when clicking on a file in the side bar. Double\n    // clicking or editing the preview will open the file and assign it a tab.\n    \"preview_on_click\": true,\n\n    // folder_exclude_patterns and file_exclude_patterns control which files\n    // are listed in folders on the side bar. These can also be set on a per-\n    // project basis.\n    \"folder_exclude_patterns\": [\".svn\", \".git\", \".hg\", \"CVS\"],\n    \"file_exclude_patterns\": [\"*.pyc\", \"*.pyo\", \"*.exe\", \"*.dll\", \"*.obj\",\"*.o\", \"*.a\", \"*.lib\", \"*.so\", \"*.dylib\", \"*.ncb\", \"*.sdf\", \"*.suo\", \"*.pdb\", \"*.idb\", \".DS_Store\", \"*.class\", \"*.psd\", \"*.db\", \"*.sublime-workspace\"],\n    // These files will still show up in the side bar, but won't be included in\n    // Goto Anything or Find in Files\n    \"binary_file_patterns\": [\"*.jpg\", \"*.jpeg\", \"*.png\", \"*.gif\", \"*.ttf\", \"*.tga\", \"*.dds\", \"*.ico\", \"*.eot\", \"*.pdf\", \"*.swf\", \"*.jar\", \"*.zip\"],\n\n    // File indexing parses all files in the side bar, and builds an index of\n    // their symbols. This is required for Goto Definition to work.\n    \"index_files\": true,\n\n    // Set the number threads to use for indexing. A value of 0 will make\n    // Sublime Text guess based on the number of cores. Use the index_files\n    // setting to disable all workers.\n    \"index_workers\": 0,\n\n    // index_exclude_patterns indicate which files won't be indexed.\n    \"index_exclude_patterns\": [\"*.log\"],\n\n    // List any packages to ignore here. When removing entries from this list,\n    // a restart may be required if the package contains plugins.\n    \"ignored_packages\": [\"Vintage\"]\n}\n",
+					"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+					"file_size": -1,
+					"file_write_time": -1,
 					"settings":
 					{
-						"buffer_size": 5949,
+						"buffer_size": 16708,
+						"line_ending": "Unix",
+						"read_only": true,
+						"scratch": true
+					}
+				},
+				{
+					"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 183,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				}
@@ -242,7 +343,755 @@
 						":e - Revert"
 					]
 				],
-				"width": 485.0
+				"width": 432.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/riddle/main/coding/config",
+				"/home/riddle/.Xsession",
+				"/home/riddle/.xscreensaver",
+				"/home/riddle/.Xresources",
+				"/home/riddle/.xinitrc",
+				"/home/riddle/.Xauthority",
+				"/home/riddle/.vimrc",
+				"/home/riddle/.viminfo",
+				"/home/riddle/.tmux.conf",
+				"/home/riddle/.asoundrc",
+				"/home/riddle/.AwOkenrc-001124158",
+				"/home/riddle/.bash_history",
+				"/home/riddle/.bash_logout",
+				"/home/riddle/.bash_profile",
+				"/home/riddle/.inputrc",
+				"/home/riddle/.profile",
+				"/home/riddle/.gtkrc-2.0",
+				"/home/riddle/.gmrunrc",
+				"/home/riddle/.ICEauthority",
+				"/home/riddle/.gmrunner.py",
+				"/home/riddle/.gitconfig",
+				"/home/riddle/.fehbg",
+				"/home/riddle/.directory",
+				"/home/riddle/.dircolors",
+				"/home/riddle/.bashrc",
+				"/media/riddle/87A2-0BB0/.kde4/share/config/dolphinrc",
+				"/media/riddle/87A2-0BB0/.kde4/share/apps/dolphin/dolphinui.rc",
+				"/home/riddle/.vagrant.d/boxes/ubuntu-VAGRANTSLASH-trusty64/20160318.0.0/virtualbox/Vagrantfile",
+				"/home/riddle/.vagrant/machines/default/lxc/.directory",
+				"/home/riddle/dotfiles/jetbrains.txt",
+				"/media/riddle/87A2-0BB0/.PyCharm2016.2/config/pycharm1620.key",
+				"/media/riddle/87A2-0BB0/.PyCharm2016.2/config/colors/Eclectide Monokai.icls",
+				"/media/riddle/87A2-0BB0/.local/share/kxmlgui5/dolphin/dolphinui.rc",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-app-list.desktop",
+				"/home/riddle/.ssh/known_hosts.old",
+				"/home/riddle/.gnupg/gpg.conf",
+				"/home/riddle/.local/share/gnome-shell/application_state",
+				"/home/riddle/.local/share/mime/globs2",
+				"/home/riddle/.local/share/mime/application/x-extension-eml.xml",
+				"/home/riddle/.mozilla2/firefox/sjpi18ki.default/storage/permanent/chrome/idb/2918063365piupsah.sqlite",
+				"/home/riddle/.mozilla/firefox/dnhit5la.default/prefs.js",
+				"/media/riddle/87A2-0BB0/.local/share/applications/mimeapps.list",
+				"/media/riddle/87A2-0BB0/.local/share/applications/mimeinfo.cache",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-ejjicmeblgpmajnghnpcppodonldlgfn-Default.desktop",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-fhbjgbiflinjbdggehcddcbncdddomop-Default.desktop",
+				"/media/riddle/87A2-0BB0/.local/share/mime/globs2",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-xhtml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-shtml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/packages/user-extension-eml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/magic",
+				"/media/riddle/87A2-0BB0/.local/share/mime/treemagic",
+				"/media/riddle/87A2-0BB0/.local/share/mime/version",
+				"/media/riddle/87A2-0BB0/.local/share/mime/globs",
+				"/media/riddle/87A2-0BB0/.local/share/mime/types",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-html.xml",
+				"/home/riddle/.icons/default/index.theme",
+				"/home/riddle/.icons/OpenZone_Black/index.theme",
+				"/home/riddle/.qalculate/qalculate-gtk.cfg",
+				"/home/riddle/.ssh/id_rsa",
+				"/home/riddle/.ssh/known_hosts",
+				"/home/riddle/.gimp-2.8/gimprc",
+				"/home/riddle/.gimp-2.8/toolrc",
+				"/home/riddle/.gimp-2.8/imagemaprc",
+				"/home/riddle/.gimp-2.8/controllerrc",
+				"/home/riddle/.gimp-2.8/colorrc",
+				"/home/riddle/.gimp-2.8/dockrc",
+				"/home/riddle/.gimp-2.8/gtkrc",
+				"/home/riddle/.gimp-2.8/menurc",
+				"/home/riddle/.gimp-2.8/profilerc",
+				"/home/riddle/.gimp-2.8/themerc",
+				"/home/riddle/.gimp-2.8/templaterc",
+				"/home/riddle/.gimp-2.8/sessionrc",
+				"/home/riddle/.gimp-2.8/unitrc",
+				"/home/riddle/.docker/config.json",
+				"/home/riddle/.aptitude/cache",
+				"/home/riddle/.aptitude/config",
+				"/home/riddle/logins/dokeriai",
+				"/home/riddle/osos/scard/scard_plan",
+				"/home/riddle/wiki/wiki",
+				"/home/riddle/c1/tmp",
+				"/home/riddle/.config/xfce4-dict/xfce4-dict.rc",
+				"/home/riddle/.cinnamon/configs/keyboard@cinnamon.org/keyboard@cinnamon.org.json",
+				"/home/riddle/.cinnamon/configs/user@cinnamon.org/user@cinnamon.org.json",
+				"/home/riddle/.i3/config",
+				"/home/riddle/osos/grigeo/grigeo_plan",
+				"/home/riddle/osos/edienynas/tests",
+				"/home/riddle/osos/edienynas/test_template",
+				"/home/riddle/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml",
+				"/home/riddle/Downloads/simplify/authorized_keys",
+				"/home/riddle/Downloads/simplify/Dockerfile",
+				"/home/riddle/.config/openbox/rc.xml",
+				"/home/riddle/tmp1/gnome_alt_key",
+				"/media/riddle/EE3C-E544/NEW/scard_plan",
+				"/home/riddle/tmp1/test_output.txt",
+				"/home/riddle/backups/id_rsa",
+				"/home/riddle/docker/scard-docker/id_rsa.pub",
+				"/home/riddle/logins/grigeo-live",
+				"/home/riddle/Downloads/scard_plan",
+				"/home/riddle/tmp1/eimantas",
+				"/home/riddle/c1/bashrc_vagrant.txt",
+				"/home/riddle/main/YOUTRACK",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/riddle/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/riddle/main/set usr",
+				"/home/riddle/main/key usr"
+			],
+			"find":
+			{
+				"height": 24.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"docker run",
+					"docker build",
+					"Alt-z",
+					"kraken",
+					"docker bui",
+					"adbal",
+					"vps",
+					"ovh",
+					"vps",
+					"ovh",
+					"92",
+					"lxml",
+					"ignore"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 16708,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										16708,
+										16708
+									]
+								],
+								"settings":
+								{
+									"edit_settings_other_view_id": 71,
+									"edit_settings_view": "base",
+									"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 1,
+							"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 183,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										180,
+										180
+									]
+								],
+								"settings":
+								{
+									"edit_settings_other_view_id": 70,
+									"edit_settings_view": "user",
+									"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 24.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,404,62,1054,542,3840,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 1,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 6,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/riddle/main/coding/config",
+					"settings":
+					{
+						"buffer_size": 7064,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"last_filter": ":r",
+				"selected_items":
+				[
+					[
+						":r",
+						"Set Syntax: R"
+					],
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						":q",
+						"Snippet: Sequence (from,to,by)"
+					],
+					[
+						":e",
+						":e - Revert"
+					]
+				],
+				"width": 432.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/riddle/main/coding/config",
+				"/home/riddle/.Xsession",
+				"/home/riddle/.xscreensaver",
+				"/home/riddle/.Xresources",
+				"/home/riddle/.xinitrc",
+				"/home/riddle/.Xauthority",
+				"/home/riddle/.vimrc",
+				"/home/riddle/.viminfo",
+				"/home/riddle/.tmux.conf",
+				"/home/riddle/.asoundrc",
+				"/home/riddle/.AwOkenrc-001124158",
+				"/home/riddle/.bash_history",
+				"/home/riddle/.bash_logout",
+				"/home/riddle/.bash_profile",
+				"/home/riddle/.inputrc",
+				"/home/riddle/.profile",
+				"/home/riddle/.gtkrc-2.0",
+				"/home/riddle/.gmrunrc",
+				"/home/riddle/.ICEauthority",
+				"/home/riddle/.gmrunner.py",
+				"/home/riddle/.gitconfig",
+				"/home/riddle/.fehbg",
+				"/home/riddle/.directory",
+				"/home/riddle/.dircolors",
+				"/home/riddle/.bashrc",
+				"/media/riddle/87A2-0BB0/.kde4/share/config/dolphinrc",
+				"/media/riddle/87A2-0BB0/.kde4/share/apps/dolphin/dolphinui.rc",
+				"/home/riddle/.vagrant.d/boxes/ubuntu-VAGRANTSLASH-trusty64/20160318.0.0/virtualbox/Vagrantfile",
+				"/home/riddle/.vagrant/machines/default/lxc/.directory",
+				"/home/riddle/dotfiles/jetbrains.txt",
+				"/media/riddle/87A2-0BB0/.PyCharm2016.2/config/pycharm1620.key",
+				"/media/riddle/87A2-0BB0/.PyCharm2016.2/config/colors/Eclectide Monokai.icls",
+				"/media/riddle/87A2-0BB0/.local/share/kxmlgui5/dolphin/dolphinui.rc",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-app-list.desktop",
+				"/home/riddle/.ssh/known_hosts.old",
+				"/home/riddle/.gnupg/gpg.conf",
+				"/home/riddle/.local/share/gnome-shell/application_state",
+				"/home/riddle/.local/share/mime/globs2",
+				"/home/riddle/.local/share/mime/application/x-extension-eml.xml",
+				"/home/riddle/.mozilla2/firefox/sjpi18ki.default/storage/permanent/chrome/idb/2918063365piupsah.sqlite",
+				"/home/riddle/.mozilla/firefox/dnhit5la.default/prefs.js",
+				"/media/riddle/87A2-0BB0/.local/share/applications/mimeapps.list",
+				"/media/riddle/87A2-0BB0/.local/share/applications/mimeinfo.cache",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-ejjicmeblgpmajnghnpcppodonldlgfn-Default.desktop",
+				"/media/riddle/87A2-0BB0/.local/share/applications/chrome-fhbjgbiflinjbdggehcddcbncdddomop-Default.desktop",
+				"/media/riddle/87A2-0BB0/.local/share/mime/globs2",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-xhtml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-shtml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/packages/user-extension-eml.xml",
+				"/media/riddle/87A2-0BB0/.local/share/mime/magic",
+				"/media/riddle/87A2-0BB0/.local/share/mime/treemagic",
+				"/media/riddle/87A2-0BB0/.local/share/mime/version",
+				"/media/riddle/87A2-0BB0/.local/share/mime/globs",
+				"/media/riddle/87A2-0BB0/.local/share/mime/types",
+				"/media/riddle/87A2-0BB0/.local/share/mime/application/x-extension-html.xml",
+				"/home/riddle/.icons/default/index.theme",
+				"/home/riddle/.icons/OpenZone_Black/index.theme",
+				"/home/riddle/.qalculate/qalculate-gtk.cfg",
+				"/home/riddle/.ssh/id_rsa",
+				"/home/riddle/.ssh/known_hosts",
+				"/home/riddle/.gimp-2.8/gimprc",
+				"/home/riddle/.gimp-2.8/toolrc",
+				"/home/riddle/.gimp-2.8/imagemaprc",
+				"/home/riddle/.gimp-2.8/controllerrc",
+				"/home/riddle/.gimp-2.8/colorrc",
+				"/home/riddle/.gimp-2.8/dockrc",
+				"/home/riddle/.gimp-2.8/gtkrc",
+				"/home/riddle/.gimp-2.8/menurc",
+				"/home/riddle/.gimp-2.8/profilerc",
+				"/home/riddle/.gimp-2.8/themerc",
+				"/home/riddle/.gimp-2.8/templaterc",
+				"/home/riddle/.gimp-2.8/sessionrc",
+				"/home/riddle/.gimp-2.8/unitrc",
+				"/home/riddle/.docker/config.json",
+				"/home/riddle/.aptitude/cache",
+				"/home/riddle/.aptitude/config",
+				"/home/riddle/logins/dokeriai",
+				"/home/riddle/osos/scard/scard_plan",
+				"/home/riddle/wiki/wiki",
+				"/home/riddle/c1/tmp",
+				"/home/riddle/.config/xfce4-dict/xfce4-dict.rc",
+				"/home/riddle/.cinnamon/configs/keyboard@cinnamon.org/keyboard@cinnamon.org.json",
+				"/home/riddle/.cinnamon/configs/user@cinnamon.org/user@cinnamon.org.json",
+				"/home/riddle/.i3/config",
+				"/home/riddle/osos/grigeo/grigeo_plan",
+				"/home/riddle/osos/edienynas/tests",
+				"/home/riddle/osos/edienynas/test_template",
+				"/home/riddle/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml",
+				"/home/riddle/Downloads/simplify/authorized_keys",
+				"/home/riddle/Downloads/simplify/Dockerfile",
+				"/home/riddle/.config/openbox/rc.xml",
+				"/home/riddle/tmp1/gnome_alt_key",
+				"/media/riddle/EE3C-E544/NEW/scard_plan",
+				"/home/riddle/tmp1/test_output.txt",
+				"/home/riddle/backups/id_rsa",
+				"/home/riddle/docker/scard-docker/id_rsa.pub",
+				"/home/riddle/logins/grigeo-live",
+				"/home/riddle/Downloads/scard_plan",
+				"/home/riddle/tmp1/eimantas",
+				"/home/riddle/c1/bashrc_vagrant.txt",
+				"/home/riddle/main/YOUTRACK",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/riddle/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/riddle/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/riddle/main/set usr",
+				"/home/riddle/main/key usr"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"docker run",
+					"docker build",
+					"Alt-z",
+					"kraken",
+					"docker bui",
+					"adbal",
+					"vps",
+					"ovh",
+					"vps",
+					"ovh",
+					"92",
+					"lxml",
+					"ignore"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/riddle/main/coding/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7064,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										843,
+										843
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/R/R.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 640.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,0,0,0,3840,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 38.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "[\n\t{ \"keys\": [\"ctrl+q\"], \"command\": \"exit\" },\n\n\t{ \"keys\": [\"ctrl+shift+n\"], \"command\": \"new_window\" },\n\t{ \"keys\": [\"ctrl+shift+w\"], \"command\": \"close_window\" },\n\t{ \"keys\": [\"ctrl+o\"], \"command\": \"prompt_open_file\" },\n\t{ \"keys\": [\"ctrl+shift+t\"], \"command\": \"reopen_last_file\" },\n\t{ \"keys\": [\"alt+o\"], \"command\": \"switch_file\", \"args\": {\"extensions\": [\"cpp\", \"cxx\", \"cc\", \"c\", \"hpp\", \"hxx\", \"hh\", \"h\", \"ipp\", \"inl\", \"m\", \"mm\"]} },\n\t{ \"keys\": [\"ctrl+n\"], \"command\": \"new_file\" },\n\t{ \"keys\": [\"ctrl+s\"], \"command\": \"save\" },\n\t{ \"keys\": [\"ctrl+shift+s\"], \"command\": \"prompt_save_as\" },\n\t{ \"keys\": [\"ctrl+f4\"], \"command\": \"close_file\" },\n\t{ \"keys\": [\"ctrl+w\"], \"command\": \"close\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+b\"], \"command\": \"toggle_side_bar\" },\n\t{ \"keys\": [\"f11\"], \"command\": \"toggle_full_screen\" },\n\t{ \"keys\": [\"shift+f11\"], \"command\": \"toggle_distraction_free\" },\n\n\t{ \"keys\": [\"backspace\"], \"command\": \"left_delete\" },\n\t{ \"keys\": [\"shift+backspace\"], \"command\": \"left_delete\" },\n\t{ \"keys\": [\"ctrl+shift+backspace\"], \"command\": \"left_delete\" },\n\t{ \"keys\": [\"delete\"], \"command\": \"right_delete\" },\n\t{ \"keys\": [\"enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\t{ \"keys\": [\"keypad_enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\t{ \"keys\": [\"shift+keypad_enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\n\t{ \"keys\": [\"ctrl+z\"], \"command\": \"undo\" },\n\t{ \"keys\": [\"ctrl+shift+z\"], \"command\": \"redo\" },\n\t{ \"keys\": [\"ctrl+y\"], \"command\": \"redo_or_repeat\" },\n\t{ \"keys\": [\"ctrl+u\"], \"command\": \"soft_undo\" },\n\t{ \"keys\": [\"ctrl+shift+u\"], \"command\": \"soft_redo\" },\n\n\t{ \"keys\": [\"shift+delete\"], \"command\": \"cut\" },\n\t{ \"keys\": [\"ctrl+insert\"], \"command\": \"copy\" },\n\t{ \"keys\": [\"shift+insert\"], \"command\": \"paste\" },\n\n\t// These two key bindings should replace the above three if you'd prefer\n\t// the traditional X11 behavior of shift+insert pasting from the primary\n\t// selection. The above CUA keys are the default, to match most GTK\n\t// applications.\n\t//{ \"keys\": [\"shift+insert\"], \"command\": \"paste\", \"args\": {\"clipboard\": \"selection\"} },\n\t//{ \"keys\": [\"shift+delete\"], \"command\": \"right_delete\" },\n\n\t{ \"keys\": [\"ctrl+x\"], \"command\": \"cut\" },\n\t{ \"keys\": [\"ctrl+c\"], \"command\": \"copy\" },\n\t{ \"keys\": [\"ctrl+v\"], \"command\": \"paste\" },\n\t{ \"keys\": [\"ctrl+shift+v\"], \"command\": \"paste_and_indent\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+v\"], \"command\": \"paste_from_history\" },\n\n\t{ \"keys\": [\"left\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": false} },\n\t{ \"keys\": [\"right\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true} },\n\t{ \"keys\": [\"up\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": false} },\n\t{ \"keys\": [\"down\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": true} },\n\t{ \"keys\": [\"shift+left\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"shift+right\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true, \"extend\": true} },\n\t{ \"keys\": [\"shift+up\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"shift+down\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"ctrl+left\"], \"command\": \"move\", \"args\": {\"by\": \"words\", \"forward\": false} },\n\t{ \"keys\": [\"ctrl+right\"], \"command\": \"move\", \"args\": {\"by\": \"word_ends\", \"forward\": true} },\n\t{ \"keys\": [\"ctrl+shift+left\"], \"command\": \"move\", \"args\": {\"by\": \"words\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"ctrl+shift+right\"], \"command\": \"move\", \"args\": {\"by\": \"word_ends\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"alt+left\"], \"command\": \"move\", \"args\": {\"by\": \"subwords\", \"forward\": false} },\n\t{ \"keys\": [\"alt+right\"], \"command\": \"move\", \"args\": {\"by\": \"subword_ends\", \"forward\": true} },\n\t{ \"keys\": [\"alt+shift+left\"], \"command\": \"move\", \"args\": {\"by\": \"subwords\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"alt+shift+right\"], \"command\": \"move\", \"args\": {\"by\": \"subword_ends\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"alt+shift+up\"], \"command\": \"select_lines\", \"args\": {\"forward\": false} },\n\t{ \"keys\": [\"alt+shift+down\"], \"command\": \"select_lines\", \"args\": {\"forward\": true} },\n\n\t{ \"keys\": [\"pageup\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": false} },\n\t{ \"keys\": [\"pagedown\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": true} },\n\t{ \"keys\": [\"shift+pageup\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"shift+pagedown\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bol\", \"extend\": false} },\n\t{ \"keys\": [\"end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eol\", \"extend\": false} },\n\t{ \"keys\": [\"shift+home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bol\", \"extend\": true} },\n\t{ \"keys\": [\"shift+end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eol\", \"extend\": true} },\n\t{ \"keys\": [\"ctrl+home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bof\", \"extend\": false} },\n\t{ \"keys\": [\"ctrl+end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eof\", \"extend\": false} },\n\t{ \"keys\": [\"ctrl+shift+home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bof\", \"extend\": true} },\n\t{ \"keys\": [\"ctrl+shift+end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eof\", \"extend\": true} },\n\n\t{ \"keys\": [\"ctrl+up\"], \"command\": \"scroll_lines\", \"args\": {\"amount\": 1.0 } },\n\t{ \"keys\": [\"ctrl+down\"], \"command\": \"scroll_lines\", \"args\": {\"amount\": -1.0 } },\n\n\t{ \"keys\": [\"ctrl+pagedown\"], \"command\": \"next_view\" },\n\t{ \"keys\": [\"ctrl+pageup\"], \"command\": \"prev_view\" },\n\n\t{ \"keys\": [\"ctrl+tab\"], \"command\": \"next_view_in_stack\" },\n\t{ \"keys\": [\"ctrl+shift+tab\"], \"command\": \"prev_view_in_stack\" },\n\n\t{ \"keys\": [\"ctrl+a\"], \"command\": \"select_all\" },\n\t{ \"keys\": [\"ctrl+shift+l\"], \"command\": \"split_selection_into_lines\" },\n\t{ \"keys\": [\"escape\"], \"command\": \"single_selection\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"num_selections\", \"operator\": \"not_equal\", \"operand\": 1 }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"clear_fields\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_next_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"clear_fields\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_prev_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_panel\", \"args\": {\"cancel\": true},\n\t\t\"context\":\n\t\t[\n\t\t\t{ \"key\": \"panel_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_overlay\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"overlay_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_popup\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"popup_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_auto_complete\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"auto_complete_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"tab\"], \"command\": \"insert_best_completion\", \"args\": {\"default\": \"\\t\", \"exact\": true} },\n\t{ \"keys\": [\"tab\"], \"command\": \"insert_best_completion\", \"args\": {\"default\": \"\\t\", \"exact\": false},\n\t\t\"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.tab_completion\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"not_regex_match\", \"operand\": \".*\\\\b[0-9]+$\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"replace_completion_with_next_completion\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"last_command\", \"operator\": \"equal\", \"operand\": \"insert_best_completion\" },\n\t\t\t{ \"key\": \"setting.tab_completion\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"reindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_match\", \"operand\": \"^$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_match\", \"operand\": \"^$\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"indent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"text\", \"operator\": \"regex_contains\", \"operand\": \"\\n\" }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"next_field\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_next_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"commit_completion\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"auto_complete_visible\" },\n\t\t\t{ \"key\": \"setting.auto_complete_commit_on_tab\" }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\t\"} },\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"unindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.shift_tab_unindent\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"unindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_match\", \"operand\": \"^[\\t ]*\" }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"unindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"text\", \"operator\": \"regex_contains\", \"operand\": \"\\n\" }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"prev_field\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_prev_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"ctrl+]\"], \"command\": \"indent\" },\n\t{ \"keys\": [\"ctrl+[\"], \"command\": \"unindent\" },\n\n\t{ \"keys\": [\"insert\"], \"command\": \"toggle_overwrite\" },\n\n\t{ \"keys\": [\"ctrl+l\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"line\"} },\n\t{ \"keys\": [\"ctrl+d\"], \"command\": \"find_under_expand\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+d\"], \"command\": \"find_under_expand_skip\" },\n\t{ \"keys\": [\"ctrl+shift+space\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"scope\"} },\n\t{ \"keys\": [\"ctrl+shift+m\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"brackets\"} },\n\t{ \"keys\": [\"ctrl+m\"], \"command\": \"move_to\", \"args\": {\"to\": \"brackets\"} },\n\t{ \"keys\": [\"ctrl+shift+j\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"indentation\"} },\n\t{ \"keys\": [\"ctrl+shift+a\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"tag\"} },\n\n\t{ \"keys\": [\"alt+.\"], \"command\": \"close_tag\" },\n\n\t{ \"keys\": [\"ctrl+alt+q\"], \"command\": \"toggle_record_macro\" },\n\t{ \"keys\": [\"ctrl+alt+shift+q\"], \"command\": \"run_macro\" },\n\n\t{ \"keys\": [\"ctrl+enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line.sublime-macro\"} },\n\t{ \"keys\": [\"ctrl+shift+enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line Before.sublime-macro\"} },\n\t{ \"keys\": [\"enter\"], \"command\": \"commit_completion\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"auto_complete_visible\" },\n\t\t\t{ \"key\": \"setting.auto_complete_commit_on_tab\", \"operand\": false }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"ctrl+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"show_files\": true} },\n\t{ \"keys\": [\"ctrl+shift+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"command_palette\"} },\n\t{ \"keys\": [\"ctrl+alt+p\"], \"command\": \"prompt_select_workspace\" },\n\t{ \"keys\": [\"ctrl+r\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"text\": \"@\"} },\n\t{ \"keys\": [\"ctrl+g\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"text\": \":\"} },\n\t{ \"keys\": [\"ctrl+;\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"text\": \"#\"} },\n\t{ \"keys\": [\"f12\"], \"command\": \"goto_definition\" },\n\t{ \"keys\": [\"ctrl+shift+r\"], \"command\": \"goto_symbol_in_project\" },\n\t{ \"keys\": [\"alt+-\"], \"command\": \"jump_back\" },\n\t{ \"keys\": [\"alt+shift+-\"], \"command\": \"jump_forward\" },\n\t{ \"keys\": [\"alt+keypad_minus\"], \"command\": \"jump_back\" },\n\t{ \"keys\": [\"alt+shift+keypad_minus\"], \"command\": \"jump_forward\" },\n\n\t{ \"keys\": [\"ctrl+i\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false} },\n\t{ \"keys\": [\"ctrl+shift+i\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": true} },\n\t{ \"keys\": [\"ctrl+f\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"find\", \"reverse\": false} },\n\t{ \"keys\": [\"ctrl+h\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"replace\", \"reverse\": false} },\n\t{ \"keys\": [\"ctrl+shift+h\"], \"command\": \"replace_next\" },\n\t{ \"keys\": [\"f3\"], \"command\": \"find_next\" },\n\t{ \"keys\": [\"shift+f3\"], \"command\": \"find_prev\" },\n\t{ \"keys\": [\"ctrl+f3\"], \"command\": \"find_under\" },\n\t{ \"keys\": [\"ctrl+shift+f3\"], \"command\": \"find_under_prev\" },\n\t{ \"keys\": [\"alt+f3\"], \"command\": \"find_all_under\" },\n\t{ \"keys\": [\"ctrl+e\"], \"command\": \"slurp_find_string\" },\n\t{ \"keys\": [\"ctrl+shift+e\"], \"command\": \"slurp_replace_string\" },\n\t{ \"keys\": [\"ctrl+shift+f\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"find_in_files\"} },\n\t{ \"keys\": [\"f4\"], \"command\": \"next_result\" },\n\t{ \"keys\": [\"shift+f4\"], \"command\": \"prev_result\" },\n\n\t{ \"keys\": [\"f6\"], \"command\": \"toggle_setting\", \"args\": {\"setting\": \"spell_check\"} },\n\t{ \"keys\": [\"ctrl+f6\"], \"command\": \"next_misspelling\" },\n\t{ \"keys\": [\"ctrl+shift+f6\"], \"command\": \"prev_misspelling\" },\n\n\t{ \"keys\": [\"ctrl+shift+up\"], \"command\": \"swap_line_up\" },\n\t{ \"keys\": [\"ctrl+shift+down\"], \"command\": \"swap_line_down\" },\n\n\t{ \"keys\": [\"ctrl+backspace\"], \"command\": \"delete_word\", \"args\": { \"forward\": false } },\n\t{ \"keys\": [\"ctrl+shift+backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard BOL.sublime-macro\"} },\n\n\t{ \"keys\": [\"ctrl+delete\"], \"command\": \"delete_word\", \"args\": { \"forward\": true } },\n\t{ \"keys\": [\"ctrl+shift+delete\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard EOL.sublime-macro\"} },\n\n\t{ \"keys\": [\"ctrl+/\"], \"command\": \"toggle_comment\", \"args\": { \"block\": false } },\n\t{ \"keys\": [\"ctrl+shift+/\"], \"command\": \"toggle_comment\", \"args\": { \"block\": true } },\n\n\t{ \"keys\": [\"ctrl+j\"], \"command\": \"join_lines\" },\n\t{ \"keys\": [\"ctrl+shift+d\"], \"command\": \"duplicate_line\" },\n\n\t{ \"keys\": [\"ctrl+`\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"console\", \"toggle\": true} },\n\n\t{ \"keys\": [\"alt+/\"], \"command\": \"auto_complete\" },\n\t{ \"keys\": [\"alt+/\"], \"command\": \"replace_completion_with_auto_complete\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"last_command\", \"operator\": \"equal\", \"operand\": \"insert_best_completion\" },\n\t\t\t{ \"key\": \"auto_complete_visible\", \"operator\": \"equal\", \"operand\": false },\n\t\t\t{ \"key\": \"setting.tab_completion\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"ctrl+alt+shift+p\"], \"command\": \"show_scope_name\" },\n\n\t{ \"keys\": [\"f7\"], \"command\": \"build\" },\n\t{ \"keys\": [\"ctrl+b\"], \"command\": \"build\" },\n\t{ \"keys\": [\"ctrl+shift+b\"], \"command\": \"build\", \"args\": {\"select\": true} },\n\t{ \"keys\": [\"ctrl+break\"], \"command\": \"cancel_build\" },\n\n\t{ \"keys\": [\"ctrl+t\"], \"command\": \"transpose\" },\n\n\t{ \"keys\": [\"f9\"], \"command\": \"sort_lines\", \"args\": {\"case_sensitive\": false} },\n\t{ \"keys\": [\"ctrl+f9\"], \"command\": \"sort_lines\", \"args\": {\"case_sensitive\": true} },\n\n\t// Auto-pair quotes\n\t{ \"keys\": [\"\\\"\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"\\\"$0\\\"\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|\\\\}|>|$)\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"not_regex_contains\", \"operand\": \"[\\\"a-zA-Z0-9_]$\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.double - punctuation.definition.string.end\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"\\\"\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"\\\"${0:$SELECTION}\\\"\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"\\\"\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\"\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.double - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\"$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\"\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.double - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\n\t// Auto-pair single quotes\n\t{ \"keys\": [\"'\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"'$0'\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|\\\\}|>|$)\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"not_regex_contains\", \"operand\": \"['a-zA-Z0-9_]$\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.single - punctuation.definition.string.end\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"'\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"'${0:$SELECTION}'\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"'\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^'\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.single - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"'$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^'\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.single - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\n\t// Auto-pair brackets\n\t{ \"keys\": [\"(\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"($0)\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|;|\\\\}|$)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"(\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"(${0:$SELECTION})\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\")\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\($\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\)\", \"match_all\": true }\n\t\t]\n\t},\n\n\t// Auto-pair square brackets\n\t{ \"keys\": [\"[\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"[$0]\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|;|\\\\}|$)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"[\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"[${0:$SELECTION}]\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"]\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\]\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\[$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\]\", \"match_all\": true }\n\t\t]\n\t},\n\n\t// Auto-pair curly brackets\n\t{ \"keys\": [\"{\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"{$0}\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|\\\\}|$)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"{\"], \"command\": \"wrap_block\", \"args\": {\"begin\": \"{\", \"end\": \"}\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"indented_block\", \"match_all\": true },\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_match\", \"operand\": \"^$\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"{\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"{${0:$SELECTION}}\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"}\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\{$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line in Braces.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\{$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line in Braces.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\{$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"enter\"], \"command\": \"auto_indent_tag\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"equal\", \"operand\": \"punctuation.definition.tag.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \">$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^</\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"auto_indent_tag\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"equal\", \"operand\": \"punctuation.definition.tag.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \">$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^</\", \"match_all\": true },\n\t\t]\n\t},\n\n\t{\n\t\t\"keys\": [\"alt+shift+1\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+2\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.5, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [1, 0, 2, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+3\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.33, 0.66, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+4\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.25, 0.5, 0.75, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+8\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 1.0],\n\t\t\t\"rows\": [0.0, 0.5, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [0, 1, 1, 2]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+9\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 1.0],\n\t\t\t\"rows\": [0.0, 0.33, 0.66, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+5\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.5, 1.0],\n\t\t\t\"rows\": [0.0, 0.5, 1.0],\n\t\t\t\"cells\":\n\t\t\t[\n\t\t\t\t[0, 0, 1, 1], [1, 0, 2, 1],\n\t\t\t\t[0, 1, 1, 2], [1, 1, 2, 2]\n\t\t\t]\n\t\t}\n\t},\n\t{ \"keys\": [\"ctrl+1\"], \"command\": \"focus_group\", \"args\": { \"group\": 0 } },\n\t{ \"keys\": [\"ctrl+2\"], \"command\": \"focus_group\", \"args\": { \"group\": 1 } },\n\t{ \"keys\": [\"ctrl+3\"], \"command\": \"focus_group\", \"args\": { \"group\": 2 } },\n\t{ \"keys\": [\"ctrl+4\"], \"command\": \"focus_group\", \"args\": { \"group\": 3 } },\n\t{ \"keys\": [\"ctrl+5\"], \"command\": \"focus_group\", \"args\": { \"group\": 4 } },\n\t{ \"keys\": [\"ctrl+6\"], \"command\": \"focus_group\", \"args\": { \"group\": 5 } },\n\t{ \"keys\": [\"ctrl+7\"], \"command\": \"focus_group\", \"args\": { \"group\": 6 } },\n\t{ \"keys\": [\"ctrl+8\"], \"command\": \"focus_group\", \"args\": { \"group\": 7 } },\n\t{ \"keys\": [\"ctrl+9\"], \"command\": \"focus_group\", \"args\": { \"group\": 8 } },\n\t{ \"keys\": [\"ctrl+shift+1\"], \"command\": \"move_to_group\", \"args\": { \"group\": 0 } },\n\t{ \"keys\": [\"ctrl+shift+2\"], \"command\": \"move_to_group\", \"args\": { \"group\": 1 } },\n\t{ \"keys\": [\"ctrl+shift+3\"], \"command\": \"move_to_group\", \"args\": { \"group\": 2 } },\n\t{ \"keys\": [\"ctrl+shift+4\"], \"command\": \"move_to_group\", \"args\": { \"group\": 3 } },\n\t{ \"keys\": [\"ctrl+shift+5\"], \"command\": \"move_to_group\", \"args\": { \"group\": 4 } },\n\t{ \"keys\": [\"ctrl+shift+6\"], \"command\": \"move_to_group\", \"args\": { \"group\": 5 } },\n\t{ \"keys\": [\"ctrl+shift+7\"], \"command\": \"move_to_group\", \"args\": { \"group\": 6 } },\n\t{ \"keys\": [\"ctrl+shift+8\"], \"command\": \"move_to_group\", \"args\": { \"group\": 7 } },\n\t{ \"keys\": [\"ctrl+shift+9\"], \"command\": \"move_to_group\", \"args\": { \"group\": 8 } },\n\t{ \"keys\": [\"ctrl+0\"], \"command\": \"focus_side_bar\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+up\"], \"command\": \"new_pane\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+shift+up\"], \"command\": \"new_pane\", \"args\": {\"move\": false} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+down\"], \"command\": \"close_pane\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+left\"], \"command\": \"focus_neighboring_group\", \"args\": {\"forward\": false} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+right\"], \"command\": \"focus_neighboring_group\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+shift+left\"], \"command\": \"move_to_neighboring_group\", \"args\": {\"forward\": false} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+shift+right\"], \"command\": \"move_to_neighboring_group\" },\n\n\t{ \"keys\": [\"alt+1\"], \"command\": \"select_by_index\", \"args\": { \"index\": 0 } },\n\t{ \"keys\": [\"alt+2\"], \"command\": \"select_by_index\", \"args\": { \"index\": 1 } },\n\t{ \"keys\": [\"alt+3\"], \"command\": \"select_by_index\", \"args\": { \"index\": 2 } },\n\t{ \"keys\": [\"alt+4\"], \"command\": \"select_by_index\", \"args\": { \"index\": 3 } },\n\t{ \"keys\": [\"alt+5\"], \"command\": \"select_by_index\", \"args\": { \"index\": 4 } },\n\t{ \"keys\": [\"alt+6\"], \"command\": \"select_by_index\", \"args\": { \"index\": 5 } },\n\t{ \"keys\": [\"alt+7\"], \"command\": \"select_by_index\", \"args\": { \"index\": 6 } },\n\t{ \"keys\": [\"alt+8\"], \"command\": \"select_by_index\", \"args\": { \"index\": 7 } },\n\t{ \"keys\": [\"alt+9\"], \"command\": \"select_by_index\", \"args\": { \"index\": 8 } },\n\t{ \"keys\": [\"alt+0\"], \"command\": \"select_by_index\", \"args\": { \"index\": 9 } },\n\n\t{ \"keys\": [\"f2\"], \"command\": \"next_bookmark\" },\n\t{ \"keys\": [\"shift+f2\"], \"command\": \"prev_bookmark\" },\n\t{ \"keys\": [\"ctrl+f2\"], \"command\": \"toggle_bookmark\" },\n\t{ \"keys\": [\"ctrl+shift+f2\"], \"command\": \"clear_bookmarks\" },\n\t{ \"keys\": [\"alt+f2\"], \"command\": \"select_all_bookmarks\" },\n\n\t{ \"keys\": [\"ctrl+shift+k\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Line.sublime-macro\"} },\n\n\t{ \"keys\": [\"alt+q\"], \"command\": \"wrap_lines\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+u\"], \"command\": \"upper_case\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+l\"], \"command\": \"lower_case\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+space\"], \"command\": \"set_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+a\"], \"command\": \"select_to_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+w\"], \"command\": \"delete_to_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+x\"], \"command\": \"swap_with_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+y\"], \"command\": \"yank\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+k\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard EOL.sublime-macro\"} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard BOL.sublime-macro\"} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+g\"], \"command\": \"clear_bookmarks\", \"args\": {\"name\": \"mark\"} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+c\"], \"command\": \"show_at_center\" },\n\n\t{ \"keys\": [\"ctrl++\"], \"command\": \"increase_font_size\" },\n\t{ \"keys\": [\"ctrl+=\"], \"command\": \"increase_font_size\" },\n\t{ \"keys\": [\"ctrl+-\"], \"command\": \"decrease_font_size\" },\n\n\t{ \"keys\": [\"alt+shift+w\"], \"command\": \"insert_snippet\", \"args\": { \"name\": \"Packages/XML/Snippets/long-tag.sublime-snippet\" } },\n\n\t{ \"keys\": [\"ctrl+shift+[\"], \"command\": \"fold\" },\n\t{ \"keys\": [\"ctrl+shift+]\"], \"command\": \"unfold\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+1\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 1} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+2\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 2} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+3\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 3} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+4\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 4} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+5\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 5} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+6\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 6} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+7\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 7} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+8\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 8} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+9\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 9} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+0\"], \"command\": \"unfold_all\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+j\"], \"command\": \"unfold_all\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+t\"], \"command\": \"fold_tag_attributes\" },\n\n\t{ \"keys\": [\"context_menu\"], \"command\": \"context_menu\" },\n\n\t{ \"keys\": [\"alt+c\"], \"command\": \"toggle_case_sensitive\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"alt+r\"], \"command\": \"toggle_regex\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"alt+w\"], \"command\": \"toggle_whole_word\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"alt+a\"], \"command\": \"toggle_preserve_case\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t// Find panel key bindings\n\t{ \"keys\": [\"enter\"], \"command\": \"find_next\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"find_prev\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\", \"args\": {\"close_panel\": true},\n\t\t \"context\": [{\"key\": \"panel\", \"operand\": \"find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// Replace panel key bindings\n\t{ \"keys\": [\"enter\"], \"command\": \"find_next\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"find_prev\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\", \"args\": {\"close_panel\": true},\n\t\t\"context\": [{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"ctrl+alt+enter\"], \"command\": \"replace_all\", \"args\": {\"close_panel\": true},\n\t\t \"context\": [{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// Incremental find panel key bindings\n\t{ \"keys\": [\"enter\"], \"command\": \"hide_panel\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"incremental_find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"find_prev\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"incremental_find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\", \"args\": {\"close_panel\": true},\n\t\t\"context\": [{\"key\": \"panel\", \"operand\": \"incremental_find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// HTML, XML close tag\n\t{ \"keys\": [\"/\"], \"command\": \"close_tag\", \"args\": { \"insert_slash\": true }, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"selector\", \"operator\": \"equal\", \"operand\": \"(text.html, text.xml) - string - comment\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_match\", \"operand\": \".*<$\", \"match_all\": true },\n\t\t\t{ \"key\": \"setting.auto_close_tags\" }\n\t\t]\n\t}\n]\n",
+					"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 36243,
+						"line_ending": "Unix",
+						"read_only": true,
+						"scratch": true
+					}
+				},
+				{
+					"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 712,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 201.0,
+				"last_filter": ":w",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						":r",
+						"Set Syntax: R"
+					],
+					[
+						":",
+						":w - Save"
+					],
+					[
+						":q",
+						"Snippet: Sequence (from,to,by)"
+					],
+					[
+						":e",
+						":e - Revert"
+					]
+				],
+				"width": 392.0
 			},
 			"console":
 			{
@@ -420,25 +1269,62 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/riddle/main/coding/config",
+							"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 5949,
+								"buffer_size": 36243,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										531,
-										531
+										13378,
+										13378
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"edit_settings_other_view_id": 34,
+									"edit_settings_view": "base",
+									"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 3775.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				},
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 1,
+							"file": "/home/riddle/.riddle/.dotfiles/xorg/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 712,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										523,
+										523
+									]
+								],
+								"settings":
+								{
+									"edit_settings_other_view_id": 33,
+									"edit_settings_view": "user",
+									"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -452,7 +1338,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 34.0
+				"height": 24.0
 			},
 			"input":
 			{
@@ -467,11 +1353,18 @@
 						0,
 						1,
 						1
+					],
+					[
+						1,
+						0,
+						2,
+						1
 					]
 				],
 				"cols":
 				[
 					0.0,
+					0.5,
 					1.0
 				],
 				"rows":
@@ -486,11 +1379,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,1920,27,2876,1008,3840,1080",
+			"position": "0,1,0,0,0,337,264,987,744,3840,1080",
 			"project": "",
 			"replace":
 			{
-				"height": 38.0
+				"height": 44.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -520,20 +1413,20 @@
 				],
 				"width": 0.0
 			},
-			"selected_group": 0,
+			"selected_group": 1,
 			"settings":
 			{
 			},
 			"show_minimap": true,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": true,
+			"side_bar_visible": false,
 			"side_bar_width": 150.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 1,
+			"window_id": 4,
 			"workspace_name": ""
 		}
 	],

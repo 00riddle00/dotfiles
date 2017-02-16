@@ -1,7 +1,6 @@
 [
 
 { "keys": ["ctrl+t"], "command": "new_file" },
-
 { "keys": ["ctrl+w"], "command": "next_view" },
 { "keys": ["ctrl+q"], "command": "prev_view" },
 
@@ -9,19 +8,14 @@
 { "keys": ["ctrl+r"], "command": "redo" },
 { "keys": ["ctrl+u"], "command": "none" },
 
-
 {"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 20.0}, "context": [{ "key": "setting.command_mode" }]},
 {"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -20.0}, "context": [{"key": "setting.command_mode"}]},
 
-
 { "keys": ["ctrl+e"], "command": "close_file" },
 
-	{
-  "font_face": "Ubuntu Mono",
-  "font_size":30 
-},
+{"keys": ["ctrl+alt+m"], "command": "toggle_menu"},
 
-{"keys": ["ctrl+alt+m"], "command": "toggle_menu"}
+{ "keys": ["alt+f1"], "command": "toggle_comment", "args": { "block": false } },
 
 ]
 
