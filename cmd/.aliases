@@ -8,6 +8,8 @@ export CANDY=$HOME_DIR/.riddle-candy
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
+nohup $DOTFILES_DIR/xorg/.config/openbox/autostart.sh & disown
+
 alias b='bash'
 alias s='sudo'
 alias let='s chmod 777'
@@ -166,8 +168,8 @@ alias xport='xrandr --output HDMI1 --auto --rotate left --output eDP-1 --auto --
 alias xland='xrandr --output HDMI1 --auto --rotate normal --output eDP1 --auto --right-of HDMI1'
 alias xexof='xrandr --output HDMI1 --off'
 alias xexon='xrandr --output HDMI1 --auto'
-alias xof='xrandr --output eDP1 --off'
-alias xon='xrandr --output eDP1 --auto'
+alias xof='xrandr --output eDP-1 --off'
+alias xon='xrandr --output eDP-1 --auto'
 
 
 # c lang
