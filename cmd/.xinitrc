@@ -1,3 +1,3 @@
 #exec xmonad
-exec i3
-#exec openbox
+#exec i3
+exec openbox
