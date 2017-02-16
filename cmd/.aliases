@@ -139,7 +139,7 @@ alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cf='fortune | cowsay' 
 
 # databases
-alias post='sudo systemctl start postgresql'
+#alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
 alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
@@ -363,8 +363,8 @@ setxkbmap -option caps:escape
 #fi
 
 #archey && fortune | cowsay
-screenfetch
-#archey
+#screenfetch
+archey
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
 if [ -f $HOME/.dircolors ]; then
@@ -377,3 +377,5 @@ set -o vi
 alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias rl='readlink -f'
+alias post='cd $AUTOMATION_DIR/shell_scripts/post_install/'
+alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
