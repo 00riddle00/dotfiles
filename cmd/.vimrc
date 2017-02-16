@@ -300,8 +300,8 @@ endfunction
 "  
 
 filetype off                                                                                                                                                                                                                                   
-set rtp+=$DOTFILES_DIR/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
-call vundle#begin("$DOTFILES_DIR/.vim/vundle")   
+set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
+call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
 
 Plugin 'gmarik/Vundle.vim'  
 
