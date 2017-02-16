@@ -401,7 +401,7 @@
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>xscreensaver-command -l</command>
+        <command>gnome-screensaver-command -l</command>
       </action>
     </keybind>
     <keybind key="F12">

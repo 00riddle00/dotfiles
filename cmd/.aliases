@@ -8,7 +8,7 @@ export CANDY=$HOME_DIR/.riddle-candy
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
-nohup $DOTFILES_DIR/xorg/.config/openbox/autostart.sh & disown
+$DOTFILES_DIR/xorg/.config/openbox/autostart.sh 
 
 alias b='bash'
 alias s='sudo'
