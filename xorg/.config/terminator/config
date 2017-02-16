@@ -8,19 +8,63 @@
   title_font = Source Code Pro Light 9
   title_transmit_bg_color = "#d30102"
   title_use_system_font = False
-  toggle_scrollbar = False
 [keybindings]
-  edit_window_title = <Super>r
+  broadcast_all =
+  broadcast_group =
+  broadcast_off =
+  close_term = 
+  close_window =
+  copy = <Shift><Primary>c
+  cycle_next =
+  cycle_prev =
+  edit_tab_title = <Super>r
+  edit_window_title = <Super><Shift>r
+  full_screen = 
   go_down = <Alt>j
   go_left = <Alt>h
+  go_next =
+  go_prev =
   go_right = <Alt>l
   go_up = <Alt>k
+  group_all =
+  group_all_toggle =
+  group_tab =
+  group_tab_toggle =
+  help =
+  hide_window =
+  insert_number =
+  insert_padded =
+  layout_launcher =
+  line_down =
+  line_up =
+  move_tab_left =
+  move_tab_right =
   new_tab = <Primary>t
+  new_terminator = <Super>i
+  new_window = 
+  next_profile = 
   next_tab = <Primary>w
+  page_down = 
+  page_down_half = 
+  page_up = 
+  page_up_half = 
+  paste = <Shift><Primary>v
   prev_tab = <Primary>q
+  previous_profile = 
+  reset = 
+  reset_clear = 
+  resize_down = 
+  resize_left = 
+  resize_right = 
+  resize_up = 
+  rotate_ccw = 
+  rotate_cw = 
+  scaled_zoom = 
+  search = <Primary>f
   split_horiz = <Alt>minus
   split_vert = <Alt>apostrophe
   switch_to_tab_1 = <Alt>1
+  switch_to_tab_10 =
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
   switch_to_tab_4 = <Alt>4
@@ -29,6 +73,12 @@
   switch_to_tab_7 = <Alt>7
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
+  toggle_scrollbar = 
+  toggle_zoom = 
+  ungroup_all = 
+  zoom_in = <Primary>+
+  zoom_normal = <Primary>0
+  zoom_out = <Primary>-
 [layouts]
   [[default]]
     [[[child1]]]
@@ -44,7 +94,6 @@
   [[default]]
     cursor_color = "#aaaaaa"
   [[matrix]]
-    toggle_scrollbar = False
     cursor_color = "#83f52c"
     foreground_color = "#1ecc4a"
     palette = "#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c"
