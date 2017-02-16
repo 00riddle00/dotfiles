@@ -10,5 +10,6 @@ ln -sf $DOTFILES_DIR/cmd/.oh-my-zsh $HOME/.oh-my-zsh
 ln -sf $DOTFILES_DIR/cmd/.tmux.conf $HOME/.tmux.conf 
 ln -sf $DOTFILES_DIR/cmd/.vim $HOME/.vim
 ln -sf $DOTFILES_DIR/cmd/.vimrc $HOME/.vimrc
+ln -sf $DOTFILES_DIR/cmd/.xinitrc $HOME/.xinitrc 
 ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc 
 

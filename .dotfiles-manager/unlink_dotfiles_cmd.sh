@@ -9,4 +9,5 @@ rm -rf $HOME/.oh-my-zsh
 rm -rf $HOME/.tmux.conf
 rm -rf $HOME/.vim 
 rm -rf $HOME/.vimrc
+rm -rf $HOME/.xinitrc 
 rm -rf $HOME/.zshrc 
