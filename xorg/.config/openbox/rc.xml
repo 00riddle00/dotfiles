@@ -375,6 +375,26 @@
       </action>
     </keybind>
     <!-- Controls -->
+
+    <keybind key="W-F11">
+      <action name="Execute">
+        <command>amixer set Master 10%-</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-F12">
+      <action name="Execute">
+        <command>amixer set Master 10%+</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-Delete">
+      <action name="Execute">
+        <command>amixer -q sset Master toggle</command>
+      </action>
+    </keybind>
+
+
     <keybind key="W-F5">
       <action name="Execute">
         <command>xbacklight +10</command>
@@ -438,7 +458,7 @@
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE calc"</command>
+        <command>sh -c "$ACTIVATE qalculate-gtk"</command>
       </action>
     </keybind>
     <keybind key="F6">
