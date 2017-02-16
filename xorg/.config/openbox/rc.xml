@@ -416,7 +416,7 @@
         <command>sh -c "$FOCUS postman"</command>
       </action>
     </keybind>
-    <keybind key="W-m">
+    <keybind key="W-c">
       <action name="Execute">
         <command>sh -c "$ACTIVATE clion"</command>
       </action>
