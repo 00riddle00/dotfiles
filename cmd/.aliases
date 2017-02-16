@@ -386,3 +386,4 @@ alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf' 
 alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf' 
+alias getkey='gpg --keyserver keyserver.ubuntu.com --recv '

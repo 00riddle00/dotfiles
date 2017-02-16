@@ -1,0 +1,72 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>def te</find>
+      <find>ėį</find>
+      <find>def tests</find>
+      <find>test_mark_params_validation_on_create_and_update</find>
+      <find>def tes</find>
+      <find>pos</find>
+      <find>moni</find>
+      <find>user</find>
+      <find>moi</find>
+      <find>last</find>
+      <find>exce</find>
+      <find>traceb</find>
+      <find>now</find>
+      <find>datetime.now</find>
+      <find>datetime</find>
+      <find>text</find>
+      <find>remove from</find>
+      <find>clear</find>
+      <find>url</find>
+      <find>get</find>
+      <find>kveri</find>
+      <find>request.get</find>
+      <find>last_</find>
+      <find>page</find>
+      <find>login</find>
+      <find>response</find>
+      <find>object-tools</find>
+      <find>export</find>
+      <find>delete_lec</find>
+      <find>expo</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ref_docs_delete</replace>
+      <replace>ref_docs_update</replace>
+      <replace>ref_documents_delete</replace>
+      <replace>ref_documents_update</replace>
+      <replace>lesson</replace>
+      <replace>response</replace>
+      <replace>response2</replace>
+      <replace>response1</replace>
+      <replace>period</replace>
+      <replace>=</replace>
+      <replace>period.id</replace>
+      <replace>image</replace>
+      <replace>pupil</replace>
+      <replace>self.pupil</replace>
+      <replace>teacher</replace>
+      <replace>:</replace>
+      <replace>5</replace>
+      <replace>start_date</replace>
+      <replace>self.end_date</replace>
+      <replace>self.da(self.random_date())</replace>
+      <replace>self.year</replace>
+      <replace>self.month</replace>
+      <replace>self.day</replace>
+      <replace>self.random_date('dt')</replace>
+      <replace>self.random_date()</replace>
+      <replace>self.year_start</replace>
+      <replace>self.to_date(self.today)</replace>
+      <replace>g</replace>
+      <replace>datetime.datetime.now</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$USER_HOME$/simplify/simplify-api/app/backend</dir>
+      <dir>$USER_HOME$/VirtualBox VMs/app/app</dir>
+      <dir>$USER_HOME$/VirtualBox VMs/grigiskes-api</dir>
+    </dirStrings>
+  </component>
+</application>

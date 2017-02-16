@@ -1,1 +1,0 @@
-# chrome-devtools-nightlion-theme
