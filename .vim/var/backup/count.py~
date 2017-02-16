@@ -1,5 +1,0 @@
-phone = '86 897878 3'
-print(phone)
-phone = phone.replace(' ', '')
-print(phone)
-print(len(phone))
