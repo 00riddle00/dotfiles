@@ -471,9 +471,15 @@
         <command>dolphin</command>
       </action>
     </keybind>
+
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>
+      </action>
+    </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE gimp"</command>
       </action>
     </keybind>
     <keybind key="W-l">

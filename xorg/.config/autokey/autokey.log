@@ -14957,3 +14957,37 @@ DBusException: org.freedesktop.DBus.Error.ServiceUnknown: The name org.autokey.S
 2016-07-27 21:10:29,199 INFO - service - Matched hotkey phrase/script with prompt=False
 2016-07-27 21:10:29,358 INFO - service - Matched hotkey phrase/script with prompt=False
 2016-07-27 21:10:29,510 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:37,338 INFO - root - Initialising application
+2017-02-17 00:17:37,350 INFO - root - Initialise global hotkeys
+2017-02-17 00:17:37,351 INFO - config-manager - Loading config from existing file: /home/riddle/.config/autokey/autokey.json
+2017-02-17 00:17:37,358 INFO - config-manager - Checking if upgrade is needed from version 0.90.4
+2017-02-17 00:17:37,359 INFO - config-manager - Resetting interface type, new type: XRecord
+2017-02-17 00:17:37,359 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 00:17:37,359 INFO - config-manager - Persisting configuration
+2017-02-17 00:17:37,359 INFO - config-manager - Backing up existing config file
+2017-02-17 00:17:37,360 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 00:17:37,360 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 00:17:37,360 INFO - config-manager - Successfully loaded configuration
+2017-02-17 00:17:37,360 INFO - service - Starting service
+2017-02-17 00:17:37,391 INFO - interface - XRecord interface thread starting
+2017-02-17 00:17:37,392 INFO - service - Service now marked as running
+2017-02-17 00:17:37,421 INFO - root - Entering main()
+2017-02-17 00:17:40,540 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:40,905 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,076 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,222 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,391 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,518 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,713 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,853 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:41,964 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:42,123 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:42,304 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:42,449 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:42,616 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:42,745 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:44,856 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:45,021 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:45,152 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:45,442 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 00:17:45,769 INFO - service - Matched hotkey phrase/script with prompt=False
