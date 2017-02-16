@@ -1,2 +1,7 @@
 #! /bin/bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
+
+export DOTFILES_DIR=$HOME/.riddle/.dotfiles
+
+rm -rf $HOME/.oh-my-zsh && 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &&
+ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc

@@ -151,6 +151,7 @@ alias reapache='systemctl restart httpd'
 
 # inet
 alias net='sudo systemctl start dhcpcd@enp9s0.service'
+alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias wn='sudo netctl start home'
 #alias wr='sudo netctl start Riddle00'
 alias wr='sudo netctl start modem'
@@ -380,4 +381,9 @@ alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias rl='readlink -f'
 alias post='cd $AUTOMATION_DIR/shell_scripts/post_install/'
+alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arch'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
+alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
+
+alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf' 
+alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf' 
