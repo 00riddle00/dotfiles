@@ -11,6 +11,8 @@
  '(custom-unlispify-menu-entries nil)
  '(tool-bar-mode nil)
  '(scroll-bar-mode -1)
+ ;;'(load-theme 'solarized-dark')
+ '(load-theme 'wombat')
  '(inhibit-startup-screen t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

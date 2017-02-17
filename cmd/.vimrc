@@ -368,3 +368,4 @@ noremap j <NOP>
 noremap k <NOP>
 noremap l <NOP>
 
+:let g:NERDTreeMapHelp = '<F1>'
