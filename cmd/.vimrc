@@ -302,6 +302,8 @@ endfunction
 filetype off                                                                                                                                                                                                                                   
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
+''
+Plugin 'hardmode'
 
 Plugin 'gmarik/Vundle.vim'  
 
@@ -360,4 +362,9 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 
+
+noremap h <NOP>
+noremap j <NOP>
+noremap k <NOP>
+noremap l <NOP>
 

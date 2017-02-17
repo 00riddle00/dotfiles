@@ -448,12 +448,12 @@
     </keybind>
     <keybind key="F1">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE chrome"</command>
+        <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
       </action>
     </keybind>
     <keybind key="F2">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
+        <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
       </action>
     </keybind>
     <keybind key="F10">

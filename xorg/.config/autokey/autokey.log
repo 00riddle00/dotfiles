@@ -15007,3 +15007,123 @@ DBusException: org.freedesktop.DBus.Error.ServiceUnknown: The name org.autokey.S
 2017-02-17 12:07:48,186 INFO - config-manager - Persisting configuration
 2017-02-17 12:07:48,187 INFO - config-manager - Backing up existing config file
 2017-02-17 12:07:48,188 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 12:50:36,863 INFO - root - Initialising application
+2017-02-17 12:50:36,867 INFO - root - Initialise global hotkeys
+2017-02-17 12:50:36,867 INFO - config-manager - Loading config from existing file: /home/riddle/.config/autokey/autokey.json
+2017-02-17 12:50:36,875 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 12:50:36,875 INFO - config-manager - Successfully loaded configuration
+2017-02-17 12:50:36,876 INFO - service - Starting service
+2017-02-17 12:50:36,906 INFO - interface - XRecord interface thread starting
+2017-02-17 12:50:36,907 INFO - service - Service now marked as running
+2017-02-17 12:50:36,936 INFO - root - Entering main()
+2017-02-17 12:59:28,480 INFO - root - Displaying configuration window
+2017-02-17 12:59:29,978 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 12:59:29,979 INFO - config-manager - Persisting configuration
+2017-02-17 12:59:29,979 INFO - config-manager - Backing up existing config file
+2017-02-17 12:59:29,981 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 12:59:31,516 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 13:04:43,082 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 13:04:43,450 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 13:04:43,722 INFO - service - Matched hotkey phrase/script with prompt=False
+2017-02-17 13:05:53,125 INFO - root - Displaying configuration window
+2017-02-17 13:05:54,829 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:05:54,830 INFO - config-manager - Persisting configuration
+2017-02-17 13:05:54,830 INFO - config-manager - Backing up existing config file
+2017-02-17 13:05:54,830 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 13:10:11,597 INFO - root - Displaying configuration window
+2017-02-17 13:10:13,555 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:10:13,576 INFO - config-manager - Persisting configuration
+2017-02-17 13:10:13,587 INFO - config-manager - Backing up existing config file
+2017-02-17 13:10:13,704 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 13:10:53,850 INFO - root - Initialising application
+2017-02-17 13:10:53,855 INFO - root - Initialise global hotkeys
+2017-02-17 13:10:53,855 INFO - config-manager - Loading config from existing file: /home/riddle/.config/autokey/autokey.json
+2017-02-17 13:10:53,864 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:10:53,864 INFO - config-manager - Successfully loaded configuration
+2017-02-17 13:10:53,865 INFO - service - Starting service
+2017-02-17 13:10:53,871 ERROR - root - Error starting interface: Bad display name ""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/autokey/gtkapp.py", line 131, in initialise
+    self.service.start()
+  File "/usr/lib/python3.6/site-packages/autokey/service.py", line 80, in start
+    self.mediator = IoMediator(self)
+  File "/usr/lib/python3.6/site-packages/autokey/iomediator00.py", line 45, in __init__
+    self.interface = XRecordInterface(self, service.app)
+  File "/usr/lib/python3.6/site-packages/autokey/interface.py", line 118, in __init__
+    self.__initMappings()
+  File "/usr/lib/python3.6/site-packages/autokey/interface.py", line 170, in __initMappings
+    self.localDisplay = display.Display()
+  File "/usr/lib/python3.6/site-packages/Xlib/display.py", line 89, in __init__
+    self.display = _BaseDisplay(display)
+  File "/usr/lib/python3.6/site-packages/Xlib/display.py", line 71, in __init__
+    protocol_display.Display.__init__(self, *args, **keys)
+  File "/usr/lib/python3.6/site-packages/Xlib/protocol/display.py", line 84, in __init__
+    name, host, displayno, screenno = connect.get_display(display)
+  File "/usr/lib/python3.6/site-packages/Xlib/support/connect.py", line 72, in get_display
+    return mod.get_display(display)
+  File "/usr/lib/python3.6/site-packages/Xlib/support/unix_connect.py", line 61, in get_display
+    raise error.DisplayNameError(display)
+Xlib.error.DisplayNameError: Bad display name ""
+2017-02-17 13:11:23,049 INFO - root - Initialising application
+2017-02-17 13:11:23,057 INFO - root - Initialise global hotkeys
+2017-02-17 13:11:23,058 INFO - config-manager - Loading config from existing file: /home/riddle/.config/autokey/autokey.json
+2017-02-17 13:11:23,067 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:11:23,067 INFO - config-manager - Successfully loaded configuration
+2017-02-17 13:11:23,067 INFO - service - Starting service
+2017-02-17 13:11:23,074 ERROR - root - Error starting interface: Bad display name ""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/autokey/gtkapp.py", line 131, in initialise
+    self.service.start()
+  File "/usr/lib/python3.6/site-packages/autokey/service.py", line 80, in start
+    self.mediator = IoMediator(self)
+  File "/usr/lib/python3.6/site-packages/autokey/iomediator00.py", line 45, in __init__
+    self.interface = XRecordInterface(self, service.app)
+  File "/usr/lib/python3.6/site-packages/autokey/interface.py", line 118, in __init__
+    self.__initMappings()
+  File "/usr/lib/python3.6/site-packages/autokey/interface.py", line 170, in __initMappings
+    self.localDisplay = display.Display()
+  File "/usr/lib/python3.6/site-packages/Xlib/display.py", line 89, in __init__
+    self.display = _BaseDisplay(display)
+  File "/usr/lib/python3.6/site-packages/Xlib/display.py", line 71, in __init__
+    protocol_display.Display.__init__(self, *args, **keys)
+  File "/usr/lib/python3.6/site-packages/Xlib/protocol/display.py", line 84, in __init__
+    name, host, displayno, screenno = connect.get_display(display)
+  File "/usr/lib/python3.6/site-packages/Xlib/support/connect.py", line 72, in get_display
+    return mod.get_display(display)
+  File "/usr/lib/python3.6/site-packages/Xlib/support/unix_connect.py", line 61, in get_display
+    raise error.DisplayNameError(display)
+Xlib.error.DisplayNameError: Bad display name ""
+2017-02-17 13:11:27,770 INFO - root - Initialising application
+2017-02-17 13:11:27,774 INFO - root - Initialise global hotkeys
+2017-02-17 13:11:27,774 INFO - config-manager - Loading config from existing file: /home/riddle/.config/autokey/autokey.json
+2017-02-17 13:11:27,777 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:11:27,777 INFO - config-manager - Successfully loaded configuration
+2017-02-17 13:11:27,778 INFO - service - Starting service
+2017-02-17 13:11:27,813 INFO - interface - XRecord interface thread starting
+2017-02-17 13:11:27,813 INFO - service - Service now marked as running
+2017-02-17 13:11:27,845 INFO - root - Entering main()
+2017-02-17 13:11:37,899 INFO - root - Displaying configuration window
+2017-02-17 13:11:40,196 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:11:40,196 INFO - config-manager - Persisting configuration
+2017-02-17 13:11:40,197 INFO - config-manager - Backing up existing config file
+2017-02-17 13:11:40,198 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 13:14:18,821 INFO - root - Displaying configuration window
+2017-02-17 13:14:19,896 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:14:19,896 INFO - config-manager - Persisting configuration
+2017-02-17 13:14:19,897 INFO - config-manager - Backing up existing config file
+2017-02-17 13:14:19,897 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 13:16:51,137 INFO - root - Displaying configuration window
+2017-02-17 13:16:52,911 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:16:52,911 INFO - config-manager - Persisting configuration
+2017-02-17 13:16:52,912 INFO - config-manager - Backing up existing config file
+2017-02-17 13:16:52,912 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 13:17:31,624 INFO - root - Displaying configuration window
+2017-02-17 13:17:32,655 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:17:32,656 INFO - config-manager - Persisting configuration
+2017-02-17 13:17:32,656 INFO - config-manager - Backing up existing config file
+2017-02-17 13:17:32,657 INFO - config-manager - Finished persisting configuration - no errors
+2017-02-17 13:18:16,604 INFO - root - Displaying configuration window
+2017-02-17 13:18:17,559 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2017-02-17 13:18:17,560 INFO - config-manager - Persisting configuration
+2017-02-17 13:18:17,560 INFO - config-manager - Backing up existing config file
+2017-02-17 13:18:17,561 INFO - config-manager - Finished persisting configuration - no errors

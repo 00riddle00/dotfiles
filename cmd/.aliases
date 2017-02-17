@@ -68,7 +68,8 @@ alias del='cd $USER_HOME_DIR/deluge'
 alias h='history'
 
 # pacman
-alias pacs='sudo pacman -S' 
+#alias pacs='sudo pacman -S' 
+alias pacs='sudo pacman -S --noconfirm' 
 alias pacu='sudo pacman -U'
 alias pacr='sudo pacman -R'
 alias pacrs='sudo pacman -Rs'
@@ -308,7 +309,7 @@ alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='vv $HOME/main/coding/config'
+alias con='v $HOME/main/coding/config'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
@@ -378,6 +379,7 @@ set -o vi
 
 alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
+alias ta='t add'
 alias rl='readlink -f'
 alias post='cd $AUTOMATION_DIR/shell_scripts/post_install/'
 alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arch'
@@ -387,3 +389,14 @@ alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf' 
 alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf' 
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv '
+
+alias p='python'
+
+#####
+#dag
+#####
+alias dag.sc='python scanner.py'
+alias dag.venv='source ../../../env/bin/activate'
+alias emac='emacs --no-window-system'
+
+
