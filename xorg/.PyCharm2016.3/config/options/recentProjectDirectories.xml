@@ -2,6 +2,7 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/test" />
         <option value="$USER_HOME$/VirtualBox VMs/scard-api" />
         <option value="$USER_HOME$/VirtualBox VMs/dienynas" />
         <option value="$USER_HOME$/VirtualBox VMs/grigiskes-api" />
@@ -25,6 +26,12 @@
         <option value="$USER_HOME$/simplify" />
       </list>
     </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/test" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/test" />
     <option name="additionalInfo">
       <map>
         <entry key="$USER_HOME$/VirtualBox VMs/app">
@@ -258,8 +265,19 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-163.10154.50" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487323186260" />
+              <option name="buildTimestamp" value="1482942049767" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastProjectLocation" value="$USER_HOME$/VirtualBox VMs/grigiskes-api" />
+    <option name="lastProjectLocation" value="$USER_HOME$" />
   </component>
 </application>

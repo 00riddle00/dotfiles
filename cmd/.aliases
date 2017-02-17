@@ -150,7 +150,7 @@ alias apache='sudo systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 
 # inet
-alias net='sudo systemctl start dhcpcd@enp9s0.service'
+alias net='sudo systemctl start dhcpcd@enp2s0.service'
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias wn='sudo netctl start home'
 #alias wr='sudo netctl start Riddle00'
@@ -366,7 +366,7 @@ setxkbmap -option caps:escape
 
 #archey && fortune | cowsay
 #screenfetch
-archey
+archey3
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
 if [ -f $HOME/.dircolors ]; then
