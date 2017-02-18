@@ -1,0 +1,10 @@
+# Copy these mappings to 'vimiumx' settings in chrome
+
+map <C-s> togglePinTab
+map <C-u> scrollPageUp
+map <C-d> scrollPageDown
+map d duplicateTab
+map <A-0> lastTab
+map f LinkHints.activateModeToOpenInNewTab
+map F LinkHints.activateMode
+map t Vomnibar.activateTabSelection 

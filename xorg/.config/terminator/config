@@ -76,7 +76,7 @@
   switch_to_tab_7 = <Alt>7
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
-  toggle_scrollbar = 
+  toggle_scrollbar = <Shift><Primary>s
   toggle_zoom = 
   ungroup_all = 
   ungroup_tab = 
@@ -105,7 +105,7 @@
   [[solarized-dark]]
     background_color = "#002b36"
     cursor_color = "#eee8d5"
-    font = Source Code Pro Medium 10
+    font = Source Code Pro Medium 9
     foreground_color = "#eee8d5"
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     show_titlebar = False
