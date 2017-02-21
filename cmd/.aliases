@@ -103,7 +103,7 @@ alias read='acroread'
 alias fox='firefox'
 alias v='vim'
 alias vv='sudo vim'
-alias tt='thunar ./'
+alias tt='sudo thunar ./'
 alias rtt='sudo dolphin4 ./'
 alias play='vlc'
 alias ag='autokey-gtk'
@@ -149,26 +149,30 @@ alias mysqlri='mysql -u user -p'
 alias apache='sudo systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 
-# inet
+# lan
+alias pp='ping -c 3 www.google.com'
 alias net='sudo systemctl start dhcpcd@enp9s0.service'
+
+# wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
-alias wn='sudo netctl start home'
-#alias wr='sudo netctl start Riddle00'
-alias wr='sudo netctl start modem'
-alias wifi='sudo wifi-menu -o'
 alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
-alias pp='ping -c 3 www.google.com'
+alias wh='sudo netctl start home'
+alias wm='sudo netctl start modem'
+alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf' 
+alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf' 
+alias wifih='wifion && wnet && wh && wpah'
+alias wifim='wifion && wnet && wm && wpam'
 
 # touchpad
 alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
 # screen setup
-alias xport='xrandr --output HDMI1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
-alias xland='xrandr --output HDMI1 --auto --rotate normal --output eDP1 --auto --right-of HDMI1'
-alias xexof='xrandr --output HDMI1 --off'
-alias xexon='xrandr --output HDMI1 --auto'
+alias xport='xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
+alias xland='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
+alias xexof='xrandr --output HDMI-1 --off'
+alias xexon='xrandr --output HDMI-1 --auto'
 alias xof='xrandr --output eDP-1 --off'
 alias xon='xrandr --output eDP-1 --auto'
 
@@ -384,11 +388,16 @@ alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arc
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
-alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf' 
-alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf' 
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv '
 alias p='python'
 
 alias sc="python -c \"import scanner; scanner.scan_src('../../tests/test_data/mock_linear_dir/', 'testdag')\""
 
 alias can='cd $CANDY'
+alias ch='s chown -R riddle:riddle'
+alias makex='s chmod +x'
+alias sa='ssh-add'
+alias sl='ssh-add -l'
+
+
+

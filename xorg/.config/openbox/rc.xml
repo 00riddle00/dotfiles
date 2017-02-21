@@ -417,12 +417,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot -s /home/tomasg/Screenshots/screenshot-%F-%H%M%S.png </command>
+        <command>scrot -s /home/riddle/Screenshots/screenshot-%F-%H%M%S.png </command>
       </action>
     </keybind>
     <keybind key="S-Print">
       <action name="Execute">
-        <command>scrot /home/tomasg/Screenshots/screenshot-%F-%H%M%S.png </command>
+        <command>scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png </command>
       </action>
     </keybind>
     <!-- Custom program launchers -->
@@ -483,7 +483,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE thunar"</command>
+        <command>sh -c "$ACTIVATE 'File Manager' 'thunar'"</command>
       </action>
     </keybind>
     <keybind key="A-e">

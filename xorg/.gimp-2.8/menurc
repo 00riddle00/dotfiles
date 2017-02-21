@@ -1,4 +1,4 @@
-; gimp-2.8 GtkAccelMap rc-file         -*- scheme -*-
+; gimp GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 (gtk_accel_path "<Actions>/view/view-shrink-wrap" "")
@@ -1137,7 +1137,7 @@
 (gtk_accel_path "<Actions>/windows/windows-display-0005" "<Alt>5")
 ; (gtk_accel_path "<Actions>/context/context-foreground-blue-decrease-skip" "")
 (gtk_accel_path "<Actions>/windows/windows-display-0004" "<Alt>4")
-(gtk_accel_path "<Actions>/windows/windows-display-0003" "<Alt>2")
+(gtk_accel_path "<Actions>/windows/windows-display-0003" "<Alt>3")
 (gtk_accel_path "<Actions>/windows/windows-display-0002" "<Alt>2")
 (gtk_accel_path "<Actions>/windows/windows-display-0001" "<Alt>1")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-vectors" "")
