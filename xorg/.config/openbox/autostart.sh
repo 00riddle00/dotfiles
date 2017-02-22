@@ -32,3 +32,4 @@ xrandr --output HDMI-1 --auto
 #autokey-gtk &
 feh --bg-scale $CANDY/wallpapers/black_arch.jpg &
 conky -c $DOTFILES_DIR/xorg/.conky/archconky > /dev/null 2>&1 &
+gnome-screensaver > /dev/null 2>&1 &
