@@ -302,8 +302,11 @@ endfunction
 filetype off                                                                                                                                                                                                                                   
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
-
+''
 Plugin 'gmarik/Vundle.vim'  
+
+Plugin 'ervandew/supertab'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'The-NERD-tree'                                                                                                                                                                                                                         
 let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   
@@ -313,33 +316,33 @@ let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']
 
 
 "Plugin 'Tagbar'
-let g:tagbar_width = 30
-let g:tagbar_sort = 0
+"let g:tagbar_width = 30
+"let g:tagbar_sort = 0
 
 
-Plugin 'Python-mode-klen'                                                                                                                                                                                            
-let g:pymode_lint_checkers = ['pyflakes']                                                                                                                                                                            
-let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
-let g:pymode_lint_on_write = 0                                                                                                                                                                                       
-let g:pymode_rope_complete_on_dot = 0                                                                                                                                                                                
-let g:pyflakes_use_quickfix = 0                                                                                                                                                                                      
-let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
-nmap <C-c>i :PymodeRopeAutoImport<CR>                                                                                                                                                                                
+""Plugin 'Python-mode-klen'                                                                                                                                                                                            
+"let g:pymode_lint_checkers = ['pyflakes']                                                                                                                                                                            
+"let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
+"let g:pymode_lint_on_write = 0                                                                                                                                                                                       
+"let g:pymode_rope_complete_on_dot = 0                                                                                                                                                                                
+"let g:pyflakes_use_quickfix = 0                                                                                                                                                                                      
+"let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
+"nmap <C-c>i :PymodeRopeAutoImport<CR>                                                                                                                                                                                
 set nofoldenable
                                                                                                                                                                                                                      
-"Plugin 'Syntastic'                                                                                                                                                                                                   
-let g:syntastic_enable_signs = 1                                                                                                                                                                                     
-let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
-let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
-let g:syntastic_python_checkers = ['python', 'flake8']                                                                                                                                                               
-let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
-let g:syntastic_python_pep8_args = '--ignore=E501'  
+"Plugin '"Syntastic'                                                                                                                                                                                                   
+"let g:syntastic_enable_signs = 1                                                                                                                                                                                     
+"let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
+"let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
+"let g:syntastic_python_checkers = ['python', 'flake8']                                                                                                                                                               
+"let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
+"let g:syntastic_python_pep8_args = '--ignore=E501'  
 
-Plugin 'surround.vim' 
+"Plugin 'surround.vim' 
 
 Plugin 'ctrlp.vim' 
 
-Plugin 'delimitMate.vim'  
+"Plugin 'delimitMate.vim'  
 
 Plugin 'christoomey/vim-tmux-navigator'
 
@@ -348,6 +351,11 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_section_b = '%{strftime("%c")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+
+
 
 Plugin 'bufexplorer.zip'
 "   Do not show buffers from other tabs.
@@ -361,3 +369,9 @@ filetype plugin indent on    " required
 
 
 
+noremap h <NOP>
+noremap j <NOP>
+noremap k <NOP>
+noremap l <NOP>
+
+:let g:NERDTreeMapHelp = '<F1>'

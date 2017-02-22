@@ -214,5 +214,26 @@
       </roots>
       <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/VirtualBox VMs/scard-api" />
     </jdk>
+    <jdk version="2">
+      <name value="Python 3.6.0 (/usr/bin/python3.6)" />
+      <type value="Python SDK" />
+      <version value="Python 3.6.0" />
+      <homePath value="/usr/bin/python3.6" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file:///usr/lib/python3.6" />
+            <root type="simple" url="file:///usr/lib/python3.6/lib-dynload" />
+            <root type="simple" url="file:///usr/lib/python3.6/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/-1247971763" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
   </component>
 </application>

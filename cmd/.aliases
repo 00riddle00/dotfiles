@@ -10,6 +10,9 @@ export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
 $DOTFILES_DIR/xorg/.config/openbox/autostart.sh 
 
+
+
+
 alias b='bash'
 alias s='sudo'
 alias let='s chmod 777'
@@ -68,7 +71,8 @@ alias del='cd $USER_HOME_DIR/deluge'
 alias h='history'
 
 # pacman
-alias pacs='sudo pacman -S' 
+#alias pacs='sudo pacman -S' 
+alias pacs='sudo pacman -S --noconfirm' 
 alias pacu='sudo pacman -U'
 alias pacr='sudo pacman -R'
 alias pacrs='sudo pacman -Rs'
@@ -152,6 +156,7 @@ alias reapache='systemctl restart httpd'
 # lan
 alias pp='ping -c 3 www.google.com'
 alias net='sudo systemctl start dhcpcd@enp9s0.service'
+alias netw='sudo systemctl start dhcpcd@enp2s0.service'
 
 # wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
@@ -312,7 +317,7 @@ alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='vv $HOME/main/coding/config'
+alias con='v $HOME/main/coding/config'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
@@ -370,7 +375,7 @@ setxkbmap -option caps:escape
 
 #archey && fortune | cowsay
 #screenfetch
-archey
+archey3
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
 if [ -f $HOME/.dircolors ]; then
@@ -382,6 +387,7 @@ set -o vi
 
 alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
+alias ta='t add'
 alias rl='readlink -f'
 alias post='cd $AUTOMATION_DIR/shell_scripts/post_install/'
 alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arch'
@@ -391,13 +397,21 @@ alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv '
 alias p='python'
 
-alias sc="python -c \"import scanner; scanner.scan_src('../../tests/test_data/mock_linear_dir/', 'testdag')\""
 
+#####
+#dag
+#####
+alias dag.sc='python scanner.py'
+alias dag.venv='source ../../../env/bin/activate'
+
+
+
+alias emac='emacs --no-window-system'
 alias can='cd $CANDY'
 alias ch='s chown -R riddle:riddle'
 alias makex='s chmod +x'
 alias sa='ssh-add'
 alias sl='ssh-add -l'
 
-
-
+#if [ ! -n "$TMUX" ]; then tmux ; fi
+tmux >  /dev/null 2>&1
