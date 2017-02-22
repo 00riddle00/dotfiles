@@ -483,7 +483,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'File Manager' 'thunar'"</command>
+        <command>sh -c "$FOCUS 'FILE MANAGER'"</command>
       </action>
     </keybind>
     <keybind key="A-e">

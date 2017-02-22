@@ -43,3 +43,10 @@ xorg/.config/libreoffice/
 xorg/.config/KeePass/
 xorg/.config/RescueTime.com/
 
+xorg/.config/deluge/*
+xorg/.config/pulse/
+
+
+
+!xorg/.config/deluge/core.conf
+
