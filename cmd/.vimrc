@@ -1,4 +1,4 @@
-" If you add new plugins, install them with::
+"riddle If you add new plugins, install them with::
 "
 "     make vimpire
 "
