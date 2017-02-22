@@ -303,8 +303,6 @@ filetype off
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
 ''
-Plugin 'hardmode'
-
 Plugin 'gmarik/Vundle.vim'  
 
 Plugin 'The-NERD-tree'                                                                                                                                                                                                                         

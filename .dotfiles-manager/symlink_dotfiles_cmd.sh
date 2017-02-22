@@ -1,5 +1,5 @@
 #! /bin/bash
-export DOTFILES_DIR=$HOME/.riddle/.dotfiles
+export DOTFILES_DIR=/home/riddle/.riddle/.dotfiles
 
 ln -sf $DOTFILES_DIR/cmd/.aliases $HOME/.aliases
 ln -sf $DOTFILES_DIR/cmd/.bashrc $HOME/.bashrc
