@@ -74,10 +74,12 @@
 [layouts]
   [[default]]
     [[[child1]]]
+      scrollbar_position = disabled
       parent = window0
       profile = solarized-dark
       type = Terminal
     [[[window0]]]
+      scrollbar_position = disabled
       parent = ""
       profile = solarized-dark
       type = Window
@@ -91,6 +93,7 @@
     palette = "#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c"
     show_titlebar = False
   [[solarized-dark]]
+    scrollbar_position = disabled
     background_color = "#002b36"
     cursor_color = "#eee8d5"
     font = Source Code Pro Medium 9
