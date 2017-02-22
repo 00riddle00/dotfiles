@@ -10,6 +10,11 @@ export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
 $DOTFILES_DIR/xorg/.config/openbox/autostart.sh 
 
+#if [ ! -n "$TMUX" ]; then tmux ; fi
+tmux
+
+
+
 alias b='bash'
 alias s='sudo'
 alias let='s chmod 777'
@@ -398,5 +403,5 @@ alias p='python'
 alias dag.sc='python scanner.py'
 alias dag.venv='source ../../../env/bin/activate'
 alias emac='emacs --no-window-system'
-
+alias python='python3.4'
 
