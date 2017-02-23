@@ -1,11 +1,9 @@
 [global_config]
   always_split_with_profile = True
-  borderless = True
   enabled_plugins = ,
   focus = system
   inactive_color_offset = 1.0
   scroll_tabbar = True
-  scrollbar_position = disabled
   suppress_multiple_term_dialog = True
   title_font = Source Code Pro Light 9
   title_transmit_bg_color = "#d30102"
@@ -74,14 +72,14 @@
 [layouts]
   [[default]]
     [[[child1]]]
-      scrollbar_position = disabled
       parent = window0
       profile = solarized-dark
+      scrollbar_position = disabled
       type = Terminal
     [[[window0]]]
-      scrollbar_position = disabled
       parent = ""
       profile = solarized-dark
+      scrollbar_position = disabled
       type = Window
 [plugins]
 [profiles]
@@ -93,11 +91,11 @@
     palette = "#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c:#83f52c"
     show_titlebar = False
   [[solarized-dark]]
-    scrollbar_position = disabled
     background_color = "#002b36"
     cursor_color = "#eee8d5"
     font = Source Code Pro Medium 9
     foreground_color = "#eee8d5"
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollbar_position = disabled
     show_titlebar = False
     use_system_font = False

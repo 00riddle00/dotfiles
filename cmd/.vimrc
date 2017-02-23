@@ -307,6 +307,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'ervandew/supertab'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'crooloose/nerdcommenter'
 
 Plugin 'The-NERD-tree'                                                                                                                                                                                                                         
 let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   

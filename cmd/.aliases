@@ -395,6 +395,7 @@ alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv '
+#alias python='python3.4'
 alias p='python'
 
 
@@ -412,6 +413,11 @@ alias ch='s chown -R riddle:riddle'
 alias makex='s chmod +x'
 alias sa='ssh-add'
 alias sl='ssh-add -l'
+alias cal='gcalcli'
 
 #if [ ! -n "$TMUX" ]; then tmux ; fi
 tmux >  /dev/null 2>&1
+
+alias mi='mirage'
+alias ic='v ~/.config/i3/config'
+alias starwars='telnet towel.blinkenlights.nl'
