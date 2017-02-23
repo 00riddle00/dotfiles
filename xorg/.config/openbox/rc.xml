@@ -375,26 +375,21 @@
       </action>
     </keybind>
     <!-- Controls -->
-
     <keybind key="W-F11">
       <action name="Execute">
         <command>amixer set Master 10%-</command>
       </action>
     </keybind>
-
     <keybind key="W-F12">
       <action name="Execute">
         <command>amixer set Master 10%+</command>
       </action>
     </keybind>
-
     <keybind key="W-Delete">
       <action name="Execute">
         <command>amixer -q sset Master toggle</command>
       </action>
     </keybind>
-
-
     <keybind key="W-F5">
       <action name="Execute">
         <command>xbacklight +10</command>
@@ -451,13 +446,11 @@
         <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
       </action>
     </keybind>
-
     <keybind key="F5">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 'chrome'"</command>
       </action>
     </keybind>
-
     <keybind key="F2">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
@@ -498,7 +491,6 @@
         <command>thunar</command>
       </action>
     </keybind>
-
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>
@@ -975,7 +967,7 @@
   # end of the example
 -->
     <application class="*">
-      <decor>no</decor>
+      <decor>yes</decor>
     </application>
   </applications>
 </openbox_config>

@@ -228,8 +228,8 @@ alias ya='yaourt --noconfirm'
 
 alias no='killall mpg123'
 
-alias matrix='$SHELL_SCRIPTS_DIR/matrix/matrixon.sh'
-alias reality='$SHELL_SCRIPTS_DIR/matrix/matrixof.sh'
+alias matrix='$SHELL_SCRIPTS_DIR/matrix/matrix_on.sh'
+alias reality='$SHELL_SCRIPTS_DIR/matrix/matrix_of.sh'
 
 alias r='ranger'
 alias vf='vifm'

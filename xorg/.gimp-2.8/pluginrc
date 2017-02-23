@@ -248,6 +248,45 @@
         (proc-arg 4 "raw-filename" "The name of the file to save the image in")
         (proc-arg 0 "compression" "Compression type: { NONE (0), LZW (1), PACKBITS (2), DEFLATE (3), JPEG (4), CCITT G3 Fax (5), CCITT G4 Fax (6) }")
         (proc-arg 0 "save-transp-pixels" "Keep the color data masked by an alpha channel intact")))
+(plug-in-def "/usr/lib/gimp/2.0/plug-ins/file-pdf-load" 1486934449
+    (proc-def "file-pdf-load" 1
+         "Load file in PDF format"
+         "Loads files in Adobe's Portable Document Format. PDF is designed to be easily processed by a variety of different platforms, and is a distant cousin of PostScript."
+         "Nathan Summers"
+         "Nathan Summers"
+         "2005"
+         "Portable Document Format"
+         0
+        (icon stock-id -1 "")
+        (load-proc
+            (extension "pdf")
+            (magic "0, string,%PDF-")
+            (mime-type "application/pdf")
+            (thumb-loader "file-pdf-load-thumb"))
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-pdf-load-thumb" 1
+         "Loads a preview from a PDF file."
+         "Loads a small preview of the first page of the PDF format file. Uses the embedded thumbnail if present."
+         "Nathan Summers"
+         "Nathan Summers"
+         "2005"
+         ""
+         0
+        (icon stock-id -1 "")
+         ""
+         2 5
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 0 "thumb-size" "Preferred thumbnail size")
+        (proc-arg 13 "image" "Thumbnail image")
+        (proc-arg 0 "image-width" "Width of full-sized image")
+        (proc-arg 0 "image-height" "Height of full-sized image")
+        (proc-arg 0 "image-type" "Image type")
+        (proc-arg 0 "num-layers" "Number of pages")))
 (plug-in-def "/usr/lib/gimp/2.0/plug-ins/fractal-trace" 1486934449
     (proc-def "plug-in-fractal-trace" 1
          "Transform image with the Mandelbrot Fractal"
