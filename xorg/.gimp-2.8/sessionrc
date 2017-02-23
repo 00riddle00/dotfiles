@@ -11,11 +11,11 @@
     (size 1080 1861))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 32 0)
-    (size 1888 1080)
+    (position 4 0)
+    (size 1916 1080)
     (open-on-exit)
     (aux-info
-        (left-docks-width "451")
+        (left-docks-width "452")
         (right-docks-width "10")
         (maximized "yes"))
     (gimp-toolbox
@@ -49,7 +49,7 @@
                     (current-data "Pressure Opacity")))))
     (gimp-dock
         (side left)
-        (position 242)
+        (position 246)
         (book
             (current-page 0)
             (dockable "gimp-layer-list"

@@ -8,6 +8,8 @@ export CANDY=$HOME_DIR/.riddle-candy
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
+export EDITOR=vim
+
 $DOTFILES_DIR/xorg/.config/openbox/autostart.sh 
 
 
