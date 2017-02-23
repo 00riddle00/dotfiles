@@ -1,4 +1,4 @@
-"riddle If you add new plugins, install them with::
+"If you add new plugins, install them with::
 "
 "     make vimpire
 "
@@ -302,12 +302,36 @@ endfunction
 filetype off                                                                                                                                                                                                                                   
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
-''
+
+Plugin 'vim-scripts/SearchComplete'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'valloric/youcompleteme'
+Plugin 'pangloss/vim-javascript'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'godlygeek/tabular'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-repeat'
+Plugin 'mattn/emmet-vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'sirver/ultisnips'
+Plugin 'tpope/vim-commentary'
+Plugin 'shougo/unite.vim'
+Plugin 'raimondi/delimitmate'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'powerline/powerline'
+Plugin 'klen/python-mode'
+Plugin 'wincent/command-t'
+
+
+
 Plugin 'gmarik/Vundle.vim'  
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'ervandew/supertab'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'crooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
 
 Plugin 'The-NERD-tree'                                                                                                                                                                                                                         
 let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   
@@ -332,6 +356,7 @@ let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']
 set nofoldenable
                                                                                                                                                                                                                      
 "Plugin '"Syntastic'                                                                                                                                                                                                   
+Plugin 'scrooloose/syntastic'
 "let g:syntastic_enable_signs = 1                                                                                                                                                                                     
 "let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
 "let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
@@ -376,3 +401,21 @@ noremap k <NOP>
 noremap l <NOP>
 
 :let g:NERDTreeMapHelp = '<F1>'
+
+" fugitive git bindings
+nnoremap <space>ga :Git add %:p<CR><CR>
+nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gc :Gcommit -v -q<CR>
+noremap <space>gt :Gcommit -v -q %:p<CR>
+nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>ge :Gedit<CR>
+nnoremap <space>gr :Gread<CR>
+nnoremap <space>gw :Gwrite<CR><CR>
+nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>
+nnoremap <space>gp :Ggrep<Space>
+nnoremap <space>gm :Gmove<Space>
+nnoremap <space>gb :Git branch<Space>
+nnoremap <space>go :Git checkout<Space>
+nnoremap <space>gps :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+

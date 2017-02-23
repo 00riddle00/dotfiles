@@ -421,3 +421,7 @@ tmux >  /dev/null 2>&1
 alias mi='mirage'
 alias ic='v ~/.config/i3/config'
 alias starwars='telnet towel.blinkenlights.nl'
+alias outi='i3-msg exit'
+alias aplus='amixer set Master 10%+'
+alias aminus='amixer set Master 10%-'
+alias mute='amixer -q sset Master toggle'
