@@ -260,7 +260,8 @@ alias ww='python $USER_HOME_DIR/welcome.py'
 alias hi='mpg123 $USER_HOME_DIR/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 
 # openbox
-alias tint='vv $HOME/.config/tint2/tint2rc'
+alias tintrc='vv $HOME/.config/tint2/tint2rc'
+alias tint='tint2 & disown'
 alias stopit='killall mpg123'
 alias kil='sudo kill -9'
 alias term='vim $HOME/.config/terminator/config'
