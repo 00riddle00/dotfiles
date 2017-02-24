@@ -14,7 +14,7 @@
 
 
 # HDMI left eDP  (HOME)
-xrandr --output HDMI-1 --auto #--output eDP-1 --auto --right-of HDMI-1
+#xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1
 # HDMI one screen (WORK)
 xrandr --output HDMI-1 --auto 
 
@@ -31,5 +31,5 @@ xrandr --output HDMI-1 --auto
 
 #autokey-gtk &
 feh --bg-scale $CANDY/wallpapers/black_arch.jpg &
-#conky -c $DOTFILES_DIR/xorg/.conky/archconky > /dev/null 2>&1 &
+conky -c $DOTFILES_DIR/xorg/.conky/clock_blue &
 gnome-screensaver > /dev/null 2>&1 &
