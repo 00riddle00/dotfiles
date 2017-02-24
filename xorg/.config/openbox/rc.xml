@@ -478,7 +478,7 @@
     </keybind>
     <keybind key="Insert">
       <action name="Execute">
-        <command>obconf</command>
+        <command>lxappearance</command>
       </action>
     </keybind>
     <keybind key="W-e">
