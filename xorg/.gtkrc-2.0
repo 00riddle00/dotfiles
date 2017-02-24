@@ -1,10 +1,11 @@
 # DO NOT EDIT! This file will be overwritten by LXAppearance.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-gtk-theme-name="turquoise-nights-gtk"
-gtk-icon-theme-name="numix-archblue"
+include "/home/riddle/.gtkrc-2.0.mine"
+gtk-theme-name="numix-archblue"
+gtk-icon-theme-name="capitaine-icon-theme"
 gtk-font-name="Source Code Pro Medium 11"
-gtk-cursor-theme-name="OpenZone_Black"
+gtk-cursor-theme-name="numix-cursor-light"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
