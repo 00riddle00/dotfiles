@@ -406,6 +406,7 @@ alias p='python'
 #dag
 #####
 alias dag.sc='python scanner.py'
+alias dag.dir='cd ~/lxc/dag-builder/ && venv'
 alias dag.venv='source ../../../env/bin/activate'
 
 

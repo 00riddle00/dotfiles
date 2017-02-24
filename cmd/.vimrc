@@ -319,7 +319,7 @@ Plugin 'shougo/unite.vim'
 Plugin 'raimondi/delimitmate'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'powerline/powerline'
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 Plugin 'wincent/command-t'
 
 
