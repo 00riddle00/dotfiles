@@ -2,6 +2,7 @@
   always_split_with_profile = True
   enabled_plugins = ,
   focus = system
+  geometry_hinting = True
   inactive_color_offset = 1.0
   scroll_tabbar = True
   suppress_multiple_term_dialog = True
@@ -72,11 +73,13 @@
 [layouts]
   [[default]]
     [[[child1]]]
+      borderless = False
       parent = window0
       profile = solarized-dark
       scrollbar_position = disabled
       type = Terminal
     [[[window0]]]
+      borderless = False
       parent = ""
       profile = solarized-dark
       scrollbar_position = disabled
@@ -92,10 +95,12 @@
     show_titlebar = False
   [[solarized-dark]]
     background_color = "#002b36"
-    cursor_color = "#eee8d5"
+    background_darkness = 0.49
+    background_type = transparent
+    cursor_color = "#729fcf"
     font = Source Code Pro Medium 9
     foreground_color = "#eee8d5"
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    scrollbar_position = disabled
+    scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False

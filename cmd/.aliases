@@ -429,3 +429,9 @@ alias aplus='amixer set Master 10%+'
 alias aminus='amixer set Master 10%-'
 alias mute='amixer -q sset Master toggle'
 alias bak='cd ~/backups'
+alias ar='vv /usr/bin/archey3'
+
+alias start.tint2='tint2 -c $DOTFILES_DIR/xorg/.config/tint2/text_only_1.tint2rc'
+alias start.conky1='conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1'
+alias start.conky2='conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 '
+
