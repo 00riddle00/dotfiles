@@ -456,7 +456,7 @@
         <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
       </action>
     </keybind>
-    <keybind key="F10">
+    <keybind key="F11">
       <action name="Execute">
         <command>sh -c "$ACTIVATE qalculate-gtk"</command>
       </action>
@@ -471,11 +471,19 @@
         <command>sh -c "$ACTIVATE firefox"</command>
       </action>
     </keybind>
+
+<!--    <keybind key="F3">-->
+      <!--<action name="Execute">-->
+        <!--<command>subl</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
     <keybind key="F3">
       <action name="Execute">
-        <command>subl</command>
+        <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e vim'"</command>
       </action>
     </keybind>
+
     <keybind key="Insert">
       <action name="Execute">
         <command>lxappearance</command>
@@ -483,12 +491,12 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$FOCUS 'FILE MANAGER'"</command>
+        <command>sh -c "$ACTIVATE 'mc' 'terminator --geometry=700x500 -T mc -e mc'"</command>
       </action>
     </keybind>
     <keybind key="A-e">
       <action name="Execute">
-        <command>thunar</command>
+        <command>sh -c "$ACTIVATE 'vifm' 'terminator --geometry=700x500 -T vifm -e vifm'"</command>
       </action>
     </keybind>
     <keybind key="W-g">

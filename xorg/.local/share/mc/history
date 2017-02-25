@@ -1,0 +1,62 @@
+[input-def]
+0=*
+
+[input2]
+0=/home/riddle/tmp1/test
+
+[mc.esc.timeout]
+0=1000000
+
+[cmdline]
+0=lh
+1=jjjjBjj
+2=[21~
+3=mkdir test
+4=ls
+5=export TERM=xterm-256color
+6=q
+7=vim test
+8=
+
+[Dir Hist New Right Panel]
+0=/home/riddle/ms
+1=/home/riddle/tmp2
+2=/home/riddle/main
+3=/home/riddle/media
+4=/home/riddle
+5=/
+6=/home
+7=/lib
+8=/lib64
+9=/media
+10=/mnt
+11=/opt
+12=/home/riddle/tmp1
+
+[Dir Hist New Left Panel]
+0=/home/riddle/Downloads/gtk_candy.zip/uzip://fonts
+1=/home/riddle/Downloads/gtk_candy.zip/uzip://themes/matrix_2
+2=/home/riddle/Downloads/gtk_candy.zip/uzip://themes
+3=/home/riddle/Downloads/gtk_candy.zip/uzip://
+4=/home/riddle/.riddle
+5=/home/riddle/.riddle/.shell-scripts
+6=/home/riddle/.config
+7=/home/riddle/.dropbox
+8=/home/riddle/Downloads/de.robv.android.xposed.installer-3.0_alpha1-34-minAPI15.apk/uzip://
+9=/home/riddle/Downloads/xposed-v87-sdk23-arm64.zip/uzip://
+10=/home/riddle/Downloads
+11=/bin
+12=/home/riddle/Arduino
+13=/home/riddle/media
+14=/home/riddle/ms
+15=/home/riddle/proj
+16=/home/riddle/rtorrent
+17=/home/riddle/tmp3
+18=/home/riddle/tmp4
+19=/home/riddle/unsorted
+20=/home/riddle/woodline
+21=/home/riddle/tmp2
+22=/home/riddle
+23=/home
+24=/
+25=/home/riddle/tmp1

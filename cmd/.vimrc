@@ -303,32 +303,31 @@ filetype off
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
 
-Plugin 'vim-scripts/SearchComplete'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'valloric/youcompleteme'
-Plugin 'pangloss/vim-javascript'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-repeat'
-Plugin 'mattn/emmet-vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'sirver/ultisnips'
-Plugin 'tpope/vim-commentary'
-Plugin 'shougo/unite.vim'
+"Plugin 'vim-scripts/SearchComplete'
+"Plugin 'airblade/vim-gitgutter'
+"Plugin 'valloric/youcompleteme'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'easymotion/vim-easymotion'
+"Plugin 'godlygeek/tabular'
+"Plugin 'honza/vim-snippets'
+"Plugin 'tpope/vim-repeat'
+"Plugin 'mattn/emmet-vim'
+"Plugin 'mileszs/ack.vim'
+"Plugin 'sirver/ultisnips'
+"Plugin 'tpope/vim-commentary'
+"Plugin 'shougo/unite.vim'
 Plugin 'raimondi/delimitmate'
-Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'powerline/powerline'
 "Plugin 'klen/python-mode'
-Plugin 'wincent/command-t'
+"Plugin 'wincent/command-t'
 
 
-
+Plugin 'kien/ctrlp.vim'
 Plugin 'gmarik/Vundle.vim'  
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'ervandew/supertab'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'crooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
@@ -364,9 +363,6 @@ Plugin 'scrooloose/syntastic'
 "let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
 "let g:syntastic_python_pep8_args = '--ignore=E501'  
 
-"Plugin 'surround.vim' 
-
-Plugin 'ctrlp.vim' 
 
 "Plugin 'delimitMate.vim'  
 
