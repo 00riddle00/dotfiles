@@ -230,8 +230,11 @@ alias ya='yaourt --noconfirm'
 
 alias no='killall mpg123'
 
-alias matrix='$SHELL_SCRIPTS_DIR/matrix/matrix_on.sh'
-alias reality='$SHELL_SCRIPTS_DIR/matrix/matrix_of.sh'
+alias matrix='$SHELL_SCRIPTS_DIR/themes/matrix_on.sh'
+alias archblue='$SHELL_SCRIPTS_DIR/themes/arch-blue_on.sh'
+alias numix='$SHELL_SCRIPTS_DIR/themes/numix_on.sh'
+alias simple='$SHELL_SCRIPTS_DIR/themes/simple_on.sh'
+alias reality='$SHELL_SCRIPTS_DIR/themes/normal_theme.sh'
 
 alias r='ranger'
 alias vf='vifm'
