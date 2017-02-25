@@ -1,16 +1,3 @@
-"If you add new plugins, install them with::
-"
-"     make vimpire
-"
-" using https://bitbucket.org/sirex/home Makefile
-
-" TODO: add pathogen
-" Pathogen is responsible for vim's runtimepath management.
-"" call pathogen#infect()
-""execute pathogen#infect()
-
-set nocompatible
-
 " Figure out what sort of color scheme we should be using. The default is
 " 'dusk', my bright-on-dark scheme. If the VIMCOLOR environment variable is
 " set, then use that, giving preference to "solarized" for the generic
@@ -45,24 +32,12 @@ endif
 
 " Don't save backups
 set nobackup
+set noswapfile
 
+set nocompatible
 
 nmap    <leader>j       :sp<cr>
 nmap    <leader>v       :vs<cr>
-
-
-"
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-"cmap w!! w !sudo tee > /dev/null %
-"":w !sudo tee %
-"let :w!! "gain sudo privileges without closing and reopening vim
-"http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
-
-
-
-" Don't clear the screen after exit
-"?set t_ti=
-"?set t_te=
 
 
 " Show matching brackets when cursor is over them
@@ -73,28 +48,14 @@ set showmatch
 
 nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
-"
 
 noremap <leader>o :BufExplorer<CR>
 
-"?set mouse=a
-
-" Mappings
-"?nmap    <F1>        :Gstatus<CR>
-"?nmap    <F2>        :update<CR>
-"?imap    <F2>        <ESC>:update<CR>a
-"?nmap    <F3>        :BufExplorer<CR>
 noremap    <c-n>        :call ToggleNERDTreeAndTagbar()<CR>
-"?nmap    <F5>        :cnext<CR>
-"?nmap    <S-F5>      :cprevious<CR>
-"?nmap    <C-F5>      :cc<CR>
-"?nmap    <F7>        :call ToggleList("Quickfix List", 'c')<CR>
-"?nmap    <F4>        :silent Neomake!<CR>
 map <leader>h           :set hlsearch!<CR>
-"?nmap    <F12>       :setlocal spell!<CR>
+
 "TODO switch <SPACE> with 0
 nmap    <SPACE>     ^
-
 
 
 " Easy movement between windows
@@ -103,43 +64,24 @@ noremap <c-j> <C-W>j
 noremap <c-k> <C-W>k
 noremap <c-h> <C-W>h
 noremap <c-l> <C-W>l
-"noremap <M-l> :echo "it werks!"<cr>
 
 "TODO enable c-q
 " Easy tab control
-"nmap    <c-t>       :tabnew<cr>
-"nmap    <c-e>       :tabclose<cr>
-"nmap    <c-w>       :tabnext<cr>
-"nmap    <c-q>       :tabprev<cr>
-"nmap    tt       :tabprev<cr>
 nmap    <leader>t       :tabnew<cr>
-"nmap    <leader>e       :tabclose<cr>
 nmap    <leader>w       :tabnext<cr>
 nmap    <leader>q       :tabprev<cr>
-nmap    <leader>r        :tabedit %<CR>
-"nmap   <leader>t           :tabnew \| tjump <C-R><C-W><CR>
-" map <leader>to :tabonly<CR>
-" map <leader>tm :tabmove xx<CR>
+nmap    <leader>r       :tabedit %<CR>
 nmap    <leader>1       1gt
 nmap    <leader>2       2gt
 nmap    <leader>3       3gt
 nmap    <leader>4       4gt
-"nmap    <c-5>       5gt
-"nmap    <c-6>       6gt
-"nmap    <c-7>       7gt
-"nmap    <c-8>       8gt
 nmap    <leader>0       :tablast<cr>
-
 
 "noremap   <c-n>      :set number!<cr>
 noremap <leader>n :set number!<CR>
 
 " Toggle paste mode
 map <leader>p :setlocal paste!<CR>
-
-" TODO customize
-" Alt-Backspace deletes word backwards                                                                                                                                                                                                         
-cnoremap        <M-BS>          <C-W>    
 
 
 " Look and feel.
@@ -303,6 +245,28 @@ filetype off
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
 
+
+
+Plugin 'xolox/vim-notes'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'powerline/powerline'
+Plugin 'raimondi/delimitmate'
+Plugin 'kien/ctrlp.vim'
+Plugin 'gmarik/Vundle.vim'  
+Plugin 'tpope/vim-fugitive'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'klen/python-mode'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+
+
 "Plugin 'vim-scripts/SearchComplete'
 "Plugin 'airblade/vim-gitgutter'
 "Plugin 'valloric/youcompleteme'
@@ -316,87 +280,56 @@ call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")
 "Plugin 'sirver/ultisnips'
 "Plugin 'tpope/vim-commentary'
 "Plugin 'shougo/unite.vim'
-Plugin 'raimondi/delimitmate'
 "Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'powerline/powerline'
-"Plugin 'klen/python-mode'
 "Plugin 'wincent/command-t'
 
 
-Plugin 'kien/ctrlp.vim'
-Plugin 'gmarik/Vundle.vim'  
-Plugin 'tpope/vim-fugitive'
 
-Plugin 'ervandew/supertab'
-Plugin 'crooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-Plugin 'majutsushi/tagbar'
-
-Plugin 'The-NERD-tree'                                                                                                                                                                                                                         
 let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   
 let g:NERDTreeWinPos = "left"                                                                                                                                                                                                                 
 let g:NERDTreeWinSize = 30                                                                                                                                                                                                                     
 let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']  
+let g:NERDTreeMapHelp = '<F1>'
 
 
-"Plugin 'Tagbar'
-"let g:tagbar_width = 30
-"let g:tagbar_sort = 0
+let g:tagbar_width = 30
+let g:tagbar_sort = 0
 
 
-""Plugin 'Python-mode-klen'                                                                                                                                                                                            
-"let g:pymode_lint_checkers = ['pyflakes']                                                                                                                                                                            
-"let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
-"let g:pymode_lint_on_write = 0                                                                                                                                                                                       
-"let g:pymode_rope_complete_on_dot = 0                                                                                                                                                                                
-"let g:pyflakes_use_quickfix = 0                                                                                                                                                                                      
-"let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
-"nmap <C-c>i :PymodeRopeAutoImport<CR>                                                                                                                                                                                
-set nofoldenable
+let g:pymode_lint_checkers = ['pyflakes']                                                                                                                                                                            
+let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
+let g:pymode_lint_on_write = 0                                                                                                                                                                                       
+let g:pymode_rope_complete_on_dot = 0                                                                                                                                                                                
+let g:pyflakes_use_quickfix = 0                                                                                                                                                                                      
+let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
+nmap <C-c>i :PymodeRopeAutoImport<CR>
                                                                                                                                                                                                                      
-"Plugin '"Syntastic'                                                                                                                                                                                                   
-Plugin 'scrooloose/syntastic'
-"let g:syntastic_enable_signs = 1                                                                                                                                                                                     
-"let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
-"let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
-"let g:syntastic_python_checkers = ['python', 'flake8']                                                                                                                                                               
-"let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
-"let g:syntastic_python_pep8_args = '--ignore=E501'  
+let g:syntastic_enable_signs = 1                                                                                                                                                                                     
+let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
+let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
+let g:syntastic_python_checkers = ['python', 'flake8']                                                                                                                                                               
+let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
+let g:syntastic_python_pep8_args = '--ignore=E501'  
 
-
-"Plugin 'delimitMate.vim'  
-
-Plugin 'christoomey/vim-tmux-navigator'
-
-"Plugin 'Valloric/YouCompleteMe'
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_b = '%{strftime("%c")}'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 
-
-
-Plugin 'bufexplorer.zip'
-"   Do not show buffers from other tabs.
-"   let g:bufExplorerFindActive=0
-"   let g:bufExplorerShowTabBuffer=0
-"   let g:bufExplorerShowRelativePath=1
+" Do not show buffers from other tabs.
+let g:bufExplorerFindActive=0
+let g:bufExplorerShowTabBuffer=0
+let g:bufExplorerShowRelativePath=1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-
 noremap h <NOP>
 noremap j <NOP>
 noremap k <NOP>
 noremap l <NOP>
-
-:let g:NERDTreeMapHelp = '<F1>'
 
 " fugitive git bindings
 nnoremap <space>ga :Git add %:p<CR><CR>
@@ -414,4 +347,3 @@ nnoremap <space>gb :Git branch<Space>
 nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
-
