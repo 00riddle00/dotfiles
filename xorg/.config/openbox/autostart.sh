@@ -30,6 +30,6 @@ xrandr --output HDMI-1 --auto
  #xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1
 
 #autokey-gtk &
-#feh --bg-scale $CANDY/wallpapers/black_arch.jpg &
-#conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
+feh --bg-scale $CANDY/wallpapers/black_arch.jpg &
+conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
 gnome-screensaver > /dev/null 2>&1 &
