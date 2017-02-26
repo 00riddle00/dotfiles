@@ -247,7 +247,10 @@ call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")
 
 
 
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
 Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'powerline/powerline'
 Plugin 'raimondi/delimitmate'
@@ -282,6 +285,9 @@ Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'shougo/unite.vim'
 "Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'wincent/command-t'
+
+let g:notes_directories = ['~/.riddle/.notes']
+
 
 
 

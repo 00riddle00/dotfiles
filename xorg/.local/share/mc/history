@@ -16,22 +16,24 @@
 5=export TERM=xterm-256color
 6=q
 7=vim test
-8=
+8=mkdir notes
+9=echo $TERM
+10=
 
 [Dir Hist New Right Panel]
 0=/home/riddle/ms
 1=/home/riddle/tmp2
 2=/home/riddle/main
 3=/home/riddle/media
-4=/home/riddle
-5=/
-6=/home
-7=/lib
-8=/lib64
-9=/media
-10=/mnt
-11=/opt
-12=/home/riddle/tmp1
+4=/
+5=/home
+6=/lib
+7=/lib64
+8=/media
+9=/mnt
+10=/opt
+11=/home/riddle/tmp1
+12=/home/riddle
 
 [Dir Hist New Left Panel]
 0=/home/riddle/Downloads/gtk_candy.zip/uzip://fonts
@@ -56,7 +58,10 @@
 19=/home/riddle/unsorted
 20=/home/riddle/woodline
 21=/home/riddle/tmp2
-22=/home/riddle
-23=/home
-24=/
-25=/home/riddle/tmp1
+22=/home
+23=/
+24=/home/riddle/tmp1
+25=/home/riddle/main/notes
+26=/home/riddle
+27=/home/riddle/main
+28=/home/riddle/main/coding
