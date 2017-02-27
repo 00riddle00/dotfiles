@@ -8,11 +8,11 @@ export CANDY=$HOME_DIR/.riddle-candy
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
+export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
+
 export EDITOR=vim
 
-$DOTFILES_DIR/xorg/.config/openbox/autostart.sh 
-
-
+$DOTFILES_DIR/xorg/.config/openbox/autostart.sh  # autostart
 
 
 alias b='bash'
@@ -230,8 +230,10 @@ alias ya='yaourt --noconfirm'
 
 alias no='killall mpg123'
 
+alias change='$SHELL_SCRIPTS_DIR/themes/change_theme.sh'
 alias matrix='$SHELL_SCRIPTS_DIR/themes/matrix_on.sh'
-alias archblue='$SHELL_SCRIPTS_DIR/themes/arch-blue_on.sh'
+alias archblue1='$SHELL_SCRIPTS_DIR/themes/arch-blue_1_on.sh'
+alias archblue2='$SHELL_SCRIPTS_DIR/themes/arch-blue_2_on.sh'
 alias numix='$SHELL_SCRIPTS_DIR/themes/numix_on.sh'
 alias simple='$SHELL_SCRIPTS_DIR/themes/simple_on.sh'
 alias reality='$SHELL_SCRIPTS_DIR/themes/normal_theme.sh'
@@ -439,3 +441,11 @@ alias notes='cd ~/main/notes/'
 alias vimnotes='vim -c "colorscheme molokai | Note config"'
 alias plugins='vim +PluginInstall +qall'
 alias vimshell='vim -c VimShell'
+
+alias xclip2='xclip -selection clipboard'
+
+
+function cop() { echo "$@" | xclip;}
+function copy() { echo "$@" | xclip -selection clipboard;}
+
+alias fonts.update='fc-cache -fv'

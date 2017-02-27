@@ -34,6 +34,7 @@ endif
 set nobackup
 set noswapfile
 
+set nofoldenable
 set nocompatible
 
 nmap    <leader>j       :sp<cr>

@@ -259,6 +259,14 @@
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
+    <keybind key="W-Insert">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
+        <width>700</width>
+      </action>
+      <action name="MoveToEdgeWest"/>
+    </keybind>
     <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
@@ -446,24 +454,29 @@
         <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
       </action>
     </keybind>
-
     <keybind key="F5">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 'chrome'"</command>
       </action>
     </keybind>
-
     <keybind key="F2">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
       </action>
     </keybind>
-    <keybind key="F11">
+
+<!--    <keybind key="F11">-->
+      <!--<action name="Execute">-->
+        <!--<command>sh -c "$ACTIVATE qalculate-gtk"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+    <keybind key="F6">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE qalculate-gtk"</command>
+        <command>sh -c "$ACTIVATE 'mail' 'terminator --geometry=700x500 -T mail -e mutt'"</command>
       </action>
     </keybind>
-    <keybind key="F6">
+    <keybind key="F9">
       <action name="Execute">
         <command>thunderbird</command>
       </action>
@@ -473,22 +486,24 @@
         <command>sh -c "$ACTIVATE firefox"</command>
       </action>
     </keybind>
-
-<!--    <keybind key="F3">-->
-      <!--<action name="Execute">-->
-        <!--<command>subl</command>-->
-      <!--</action>-->
+    <!--    <keybind key="F3">-->
+    <!--<action name="Execute">-->
+    <!--<command>subl</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <keybind key="F3">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e vim '"</command>
+        <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
       </action>
     </keybind>
-
     <keybind key="Insert">
       <action name="Execute">
         <command>lxappearance</command>
+      </action>
+    </keybind>
+    <keybind key="W-f">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE 'thunar'"</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -498,7 +513,7 @@
     </keybind>
     <keybind key="A-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'vifm' 'terminator --geometry=700x500 -T vifm -e vifm'"</command>
+        <command>sh -c "$ACTIVATE 'mc2' 'terminator --geometry=700x500 -T mc2 -e mc'"</command>
       </action>
     </keybind>
     <keybind key="W-g">
