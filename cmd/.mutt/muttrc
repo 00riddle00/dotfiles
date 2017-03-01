@@ -19,23 +19,3 @@ set smtp_pass = "voh7Faes"
 set move = no
 set imap_keepalive = 900
 
-### .mutt/metasite
-#set ssl_starttls=yes
-#set ssl_force_tls=yes
-#set hostname="metasite.lt"
-#set imap_user = "tomas.giedraitis@metasite.net"
-#set imap_pass = "asdfjkl8gbroot"
-#set from="tomas.giedraitis@metasite.net"
-#set realname="Tomas Giedraitis"
-#set folder = "imaps://mail.metasite.lt/:143"
-#set spoolfile = "imaps://mail.metasite.lt/INBOX"
-#set postponed="imaps://mail.metasite.lt/Drafts"
-#set header_cache = "~/.mutt/cache/headers"
-#set message_cachedir = "~/.mutt/cache/bodies"
-#set certificate_file = "~/.mutt/certificates"
-#set signature="$CANDY/email/metasite-signature.html"
-#set content_type="text/html"
-#set smtp_url = "smtp://tomas.giedraitis@metasite.net@mail.metasite.lt:587/"
-#set smtp_pass = "asdfjkl8gbroot"
-#set move = no
-#set imap_keepalive = 900
