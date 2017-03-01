@@ -6,9 +6,9 @@
 Go back in history: <backspace>
 
 Scroll left: h
-Scroll right: h
-Scroll down: h
-Scroll up: h
+Scroll right: l
+Scroll down: j
+Scroll up: k
 
 Scroll half a page down: <c-d>
 Scroll half a page up: <c-u>
@@ -16,8 +16,6 @@ Scroll to top: gg
 Scroll to bottom: G
 
 Duplicate tab: d
-Move tab left: gJ
-Move tab right: gK
 Go to the first tab: <a-1>
 Go to the first non-pinned tab: <a-`>
 Go to the last tab: <a-0>
@@ -27,14 +25,13 @@ Follow link, focus text input or click button: F
 Follow link in a new background tab: f
 
 Place caret at element: v
-Select element text: zv
-Select element text: yv
 
-Find: /
+Endter Find mode: /
 Enter Find mode hightlighting all matches: <c-/>
 Find next: n
 Find previous: N
 
+Caret mode:
 Left: h
 Right: l
 Down: j
