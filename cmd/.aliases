@@ -444,3 +444,4 @@ function copy() { echo "$@" | xclip -selection clipboard;}
 
 alias fonts.update='fc-cache -fv'
 alias riddle='cd ~/.riddle'
+alias ho='hostname'
