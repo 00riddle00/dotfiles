@@ -4,7 +4,7 @@ export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
-export CANDY=$HOME_DIR/.riddle-candy
+export CANDY=$HOME_DIR/.candy
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
@@ -12,7 +12,7 @@ export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
 
 export EDITOR=vim
 
-$DOTFILES_DIR/xorg/.config/openbox/autostart.sh  # autostart
+$SHELL_SCRIPTS_DIR/themes/riddle/autostart.sh # autostart 
 
 
 alias b='bash'
@@ -228,15 +228,10 @@ alias cl='cd $USER_HOME_DIR/c_lang/LCTHW'
 alias ya='yaourt --noconfirm'
 
 
-alias no='killall mpg123'
+alias stop='killall mpg123'
 
-alias change='$SHELL_SCRIPTS_DIR/themes/change_theme.sh'
-alias matrix='$SHELL_SCRIPTS_DIR/themes/matrix_on.sh'
-alias archblue1='$SHELL_SCRIPTS_DIR/themes/arch-blue_1_on.sh'
-alias archblue2='$SHELL_SCRIPTS_DIR/themes/arch-blue_2_on.sh'
-alias numix='$SHELL_SCRIPTS_DIR/themes/numix_on.sh'
-alias simple='$SHELL_SCRIPTS_DIR/themes/simple_on.sh'
-alias reality='$SHELL_SCRIPTS_DIR/themes/normal_theme.sh'
+alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
+alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
 
 alias r='ranger'
 alias vf='vifm'
@@ -325,7 +320,6 @@ alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias gg='google-chrome-stable'
-alias con='v $HOME/main/coding/config'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
@@ -437,7 +431,7 @@ alias mute='amixer -q sset Master toggle'
 alias bak='cd ~/backups'
 alias gtk='v ~/.gtkrc-2.0'
 alias dum='du -h --max-depth=1'
-alias notes='cd ~/main/notes/'
+alias notes='cd ~/.riddle/.gtd/'
 alias vimnotes='vim -c "colorscheme molokai | Note config"'
 alias plugins='vim +PluginInstall +qall'
 alias vimshell='vim -c VimShell'
@@ -449,3 +443,4 @@ function cop() { echo "$@" | xclip;}
 function copy() { echo "$@" | xclip -selection clipboard;}
 
 alias fonts.update='fc-cache -fv'
+alias riddle='cd ~/.riddle'

@@ -11,3 +11,8 @@ rm -rf $HOME/.vim
 rm -rf $HOME/.vimrc
 rm -rf $HOME/.xinitrc 
 rm -rf $HOME/.zshrc 
+rm -rf $HOME/.gntrc 
+rm -rf $HOME/.irssi 
+rm -rf $HOME/.mutt 
+rm -rf $HOME/.ncmpcpp 
+rm -rf $HOME/.newsbeuter 

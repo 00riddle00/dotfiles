@@ -1,0 +1,78 @@
+Delivered-To: tomasgiedraitis@gmail.com
+Received: by 10.79.69.130 with SMTP id s124csp150358iva;
+        Sun, 26 Feb 2017 13:55:39 -0800 (PST)
+X-Received: by 10.98.86.68 with SMTP id k65mr16851704pfb.13.1488146139442;
+        Sun, 26 Feb 2017 13:55:39 -0800 (PST)
+Return-Path: <tomas.giedraitis@metasite.net>
+Received: from ho-mail1.metasite.lt (ho-mail1.metasite.lt. [185.67.240.7])
+        by mx.google.com with ESMTPS id l1si13459290pln.71.2017.02.26.13.55.37
+        for <tomasgiedraitis@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 26 Feb 2017 13:55:38 -0800 (PST)
+Received-SPF: pass (google.com: domain of tomas.giedraitis@metasite.net designates 185.67.240.7 as permitted sender) client-ip=185.67.240.7;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of tomas.giedraitis@metasite.net designates 185.67.240.7 as permitted sender) smtp.mailfrom=tomas.giedraitis@metasite.net
+Received: from metasite.lt (unknown [78.56.133.192])
+	by ho-mail1.metasite.lt (Postfix) with ESMTPSA id 7A49A4004A
+	for <tomasgiedraitis@gmail.com>; Sun, 26 Feb 2017 23:55:36 +0200 (EET)
+Date: Sun, 26 Feb 2017 23:55:35 +0200
+From: Tomas Giedraitis <tomas.giedraitis@metasite.net>
+To: Tomas Giedraitis <tomasgiedraitis@gmail.com>
+Subject: Re: testing1
+Message-ID: <20170226215535.GD16171@metasite.lt>
+References: <fefa0cc1-8a2c-01cc-4792-69278320f3b3@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <fefa0cc1-8a2c-01cc-4792-69278320f3b3@gmail.com>
+User-Agent: Mutt/1.8.0 (2017-02-23)
+
+Taip, dekui, gavau :)
+
+On Sun, Feb 26, 2017 at 10:26:13PM +0200, Tomas Giedraitis wrote:
+> testing
+> 
+
+-- 
+<style>
+p {
+  font-size: 11pt;
+  font-family: Helvetica;
+  color: #000000;
+}
+
+p#footer {
+  font-size: 9pt;
+  font-family: Helvetica;
+  color: #AAAAAA;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#line {
+  color: #E6E6E6;
+}
+
+</style>
+
+<p>
+Best Regards,<br>
+Tomas Giedraitis<br>
+Python Developer<br>
+<span id="line">_______________________________________</span>
+
+<p>
+<strong>Metasite Business Solutions</strong><br> 
+5 Gedimino Avenue<br>
+LT-01103 Vilnius<br>
++370 5 212 1165<br>
+<a href="www.metasite.net">www.metasite.net</a><br><br>
+<img src="http://www.tomasgiedraitis.com:8010/static/metasite-logo-130x24.png"></img><br>
+<span id="line">_______________________________________</span>
+</p>
+<p id="footer">
+This information is intended only for the person or entity to which it is addressed or other persons authorised to receive this email. This email may contain confidential or privileged material. If you are not the intended recipient, any disclosure, copying, distribution or use of the content of this email is strictly prohibited and may be considered a breach of the law. If you have received this email in error, please notify the sender immediately and delete this email with all its attachments. Metasite Business Solutions assumes no responsibility for the information, opinions or conclusions provided in this email and not related to the formal activities or position of Metasite Business Solutions.
+</p>
+
