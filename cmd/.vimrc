@@ -287,7 +287,7 @@ Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'wincent/command-t'
 
-let g:notes_directories = ['~/.riddle/.notes']
+let g:notes_directories = ['~/.riddle/.gtd']
 
 
 

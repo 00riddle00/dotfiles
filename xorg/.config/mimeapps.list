@@ -30,11 +30,11 @@ image/x-xpixmap=ristretto.desktop;mirage.desktop;
 inode/directory=dolphin4.desktop;exo-file-manager.desktop;
 text/html=userapp-subl-HJMYVY.desktop;luakit.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;
 text/markdown=libreoffice-writer.desktop;sublime-text.desktop;
-text/plain=userapp-subl-HJMYVY.desktop;libreoffice-writer.desktop;sublime-text.desktop;
+text/plain=libreoffice-writer.desktop;userapp-subl-HJMYVY.desktop;sublime-text.desktop;
 text/x-chdr=emacs.desktop;
 text/x-install=sublime-text.desktop;
 text/x-java=emacs.desktop;
-text/x-python=sublime-text.desktop;
+text/x-python=libreoffice-writer.desktop;sublime-text.desktop;
 video/mp4=vlc.desktop;
 video/x-matroska=vlc.desktop;
 x-scheme-handler/chrome=userapp-Firefox-JWFM7X.desktop;
@@ -69,6 +69,8 @@ application/vnd.corel-draw=libreoffice-draw.desktop;
 application/vnd.ms-excel=libreoffice-calc.desktop;
 application/x-ms-shortcut=wine.desktop;
 video/x-msvideo=vlc.desktop;mplayer.desktop;
+text/x-emacs-lisp=libreoffice-writer.desktop;
+application/rtf=libreoffice-writer.desktop;
 
 [Default Applications]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
