@@ -10,6 +10,5 @@ rm -rf $HOME/.local
 rm -rf $HOME/.gimp-2.8   
 rm -rf $HOME/.kde
 rm -rf $HOME/.kde4
-rm -rf $HOME/.mozilla
 rm -rf $HOME/.mplayer
 rm -rf $HOME/.xmonad
