@@ -377,7 +377,7 @@ setxkbmap -option caps:escape
 
 #archey && fortune | cowsay
 #screenfetch
-archey3
+#archey3
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
 if [ -f $HOME/.dircolors ]; then
