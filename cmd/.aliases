@@ -8,6 +8,7 @@ export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
 export CANDY=$HOME_DIR/.sync/candy
+export NOTES=$HOME_DIR/.gtd
 export SYNC=$HOME_DIR/.sync
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
