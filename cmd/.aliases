@@ -1,10 +1,14 @@
+$HOME/.config/openbox/autostart.sh
+
+export THEME=riddle
 export MAIN_USER=riddle
 export HOME_DIR=/home/$MAIN_USER/.riddle
 export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
-export CANDY=$HOME_DIR/.candy
+export CANDY=$HOME_DIR/.sync/candy
+export SYNC=$HOME_DIR/.sync
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 
@@ -12,7 +16,6 @@ export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
 
 export EDITOR=vim
 
-$SHELL_SCRIPTS_DIR/themes/riddle/autostart.sh # autostart 
 
 
 alias b='bash'
@@ -377,7 +380,7 @@ setxkbmap -option caps:escape
 
 #archey && fortune | cowsay
 #screenfetch
-#archey3
+archey3
 #quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
 
 if [ -f $HOME/.dircolors ]; then
@@ -412,6 +415,7 @@ alias dag.venv='source ../../../env/bin/activate'
 
 alias emac='emacs --no-window-system'
 alias can='cd $CANDY'
+alias sync='cd $SYNC'
 alias ch='s chown -R riddle:riddle'
 alias makex='s chmod +x'
 alias sa='ssh-add'
