@@ -281,6 +281,22 @@
     <keybind key="A-q">
       <action name="Iconify"/>
     </keybind>
+    <keybind key="A-F4">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="C-S-q">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="C-F4">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="C-S-w">
+      <action name="Iconify"/>
+    </keybind>
+
     <keybind key="W-x">
       <action name="ToggleMaximize"/>
     </keybind>
@@ -456,7 +472,7 @@
     </keybind>
     <keybind key="F5">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'chrome'"</command>
+        <command>subl</command>
       </action>
     </keybind>
     <keybind key="F2">
@@ -473,12 +489,12 @@
 
     <keybind key="F6">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mail' 'terminator --geometry=700x500 -T mail -e mutt'"</command>
+        <command>thunderbird</command>
       </action>
     </keybind>
     <keybind key="F9">
       <action name="Execute">
-        <command>thunderbird</command>
+        <command>sh -c "$ACTIVATE chrome"</command>
       </action>
     </keybind>
     <keybind key="F4">
@@ -503,17 +519,17 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'thunar'"</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc' 'terminator --geometry=700x500 -T mc -e mc'"</command>
+        <command>sh -c "$ACTIVATE 'mc1' 'terminator --geometry=700x500 -T mc1 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
       </action>
     </keybind>
     <keybind key="A-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc2' 'terminator --geometry=700x500 -T mc2 -e mc'"</command>
+        <command>sh -c "$ACTIVATE 'mc2' 'terminator --geometry=700x500 -T mc2 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
       </action>
     </keybind>
     <keybind key="W-g">
