@@ -3,6 +3,7 @@ $HOME/.config/openbox/autostart.sh
 export THEME=riddle
 export MAIN_USER=riddle
 export HOME_DIR=/home/$MAIN_USER/.riddle
+export RIDDLE=/home/$MAIN_USER/.riddle
 export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
