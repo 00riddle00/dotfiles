@@ -340,7 +340,7 @@ alias bt='tail -n 20 $HOME/.bashrc'
 alias lsd='lxc-ls -f'
 
 alias op='cd $HOME/.config/openbox'
-alias pro='cd $USER_HOME_DIR/programs'
+alias pro='cd $USER_HOME_DIR/proj'
 
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'
@@ -445,10 +445,12 @@ alias vimshell='vim -c VimShell'
 alias xclip2='xclip -selection clipboard'
 
 
-function cop() { echo "$@" | xclip;}
 function copy() { echo "$@" | xclip -selection clipboard;}
+function kk() { cp -r "$1" $HOME/backups/"$1".bak;} 
 
 alias fonts.update='fc-cache -fv'
 alias riddle='cd ~/.riddle'
 alias ho='hostname'
 alias sec='cd $HOME_DIR/.sec'
+alias push="gc -m '.' && gp"
+alias nn='notes && tree'
