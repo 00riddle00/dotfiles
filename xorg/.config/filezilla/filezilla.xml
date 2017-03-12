@@ -55,7 +55,7 @@
 		<Setting name="Auto Ascii no extension">1</Setting>
 		<Setting name="Auto Ascii dotfiles">1</Setting>
 		<Setting name="Language Code" />
-		<Setting name="Last Server Path" />
+		<Setting name="Last Server Path">1 0</Setting>
 		<Setting name="Concurrent download limit">0</Setting>
 		<Setting name="Concurrent upload limit">0</Setting>
 		<Setting name="Update Check">1</Setting>
@@ -75,14 +75,14 @@
 		<Setting name="Show Tree Remote">1</Setting>
 		<Setting name="File Pane Layout">0</Setting>
 		<Setting name="File Pane Swap">0</Setting>
-		<Setting name="Last local directory">/home/riddle/</Setting>
+		<Setting name="Last local directory">/home/riddle/tmp2/</Setting>
 		<Setting name="Filelist directory sort">0</Setting>
 		<Setting name="Filelist name sort">1</Setting>
 		<Setting name="Queue successful autoclear">0</Setting>
 		<Setting name="Queue column widths">180 60 180 80 60 150</Setting>
 		<Setting name="Local filelist colwidths">120 80 100 120</Setting>
-		<Setting name="Remote filelist colwidths">80 75 80 100 80 80</Setting>
-		<Setting name="Window position and size">0 362 65 1200 868 </Setting>
+		<Setting name="Remote filelist colwidths">255 75 80 100 80 80</Setting>
+		<Setting name="Window position and size">0 985 0 935 998 </Setting>
 		<Setting name="Splitter positions (v2)">97 -134 500000000 237 237 500000000</Setting>
 		<Setting name="Local filelist sortorder">0 0</Setting>
 		<Setting name="Remote filelist sortorder">0 0</Setting>
@@ -96,11 +96,11 @@
 		<Setting name="Custom file associations" />
 		<Setting name="Comparison mode">1</Setting>
 		<Setting name="Comparison threshold">1</Setting>
-		<Setting name="Site Manager position">0 121 269 764 578 </Setting>
+		<Setting name="Site Manager position">0 0 0 960 1080 </Setting>
 		<Setting name="Icon theme">default</Setting>
 		<Setting name="Icon scale">125</Setting>
 		<Setting name="Timestamp in message log">0</Setting>
-		<Setting name="Sitemanager last selected">0/GN/New site</Setting>
+		<Setting name="Sitemanager last selected">0/GN/gn</Setting>
 		<Setting name="Local filelist shown columns">1111</Setting>
 		<Setting name="Remote filelist shown columns">111111</Setting>
 		<Setting name="Local filelist column order">0,1,2,3</Setting>
@@ -109,7 +109,7 @@
 		<Setting name="Filter toggle state">0</Setting>
 		<Setting name="Show quickconnect bar">1</Setting>
 		<Setting name="Messagelog position">0</Setting>
-		<Setting name="Last connected site" />
+		<Setting name="Last connected site">0/GN/sveiki.lt</Setting>
 		<Setting name="File doubleclock action">0</Setting>
 		<Setting name="Dir doubleclock action">0</Setting>
 		<Setting name="Minimize to tray">0</Setting>
@@ -141,16 +141,19 @@
 		<Setting name="Disable update check">0</Setting>
 		<Setting name="Cache directory" />
 		<LastServer>
-			<Host />
+			<Host>37.60.242.68</Host>
 			<Port>21</Port>
-			<Protocol>-1</Protocol>
+			<Protocol>0</Protocol>
 			<Type>0</Type>
-			<Logontype>0</Logontype>
+			<User>admin@sveiki.lt</User>
+			<Pass encoding="base64">cDFBXWdaMURJdE4kCg==</Pass>
+			<Logontype>1</Logontype>
 			<TimezoneOffset>0</TimezoneOffset>
 			<PasvMode>MODE_DEFAULT</PasvMode>
 			<MaximumMultipleConnections>0</MaximumMultipleConnections>
 			<EncodingType>Auto</EncodingType>
 			<BypassProxy>0</BypassProxy>
+			<Name>sveiki.lt</Name>
 		</LastServer>
 	</Settings>
 </FileZilla3>
