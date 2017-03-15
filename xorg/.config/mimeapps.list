@@ -1,7 +1,7 @@
 [Added Associations]
 application/json=sublime-text.desktop;
 application/msword=libreoffice-writer.desktop;
-application/pdf=gimp.desktop;google-chrome.desktop;acroread.desktop;
+application/pdf=firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;userapp-chrome-G6ZUWY.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
@@ -114,3 +114,4 @@ image/x-xbitmap=mirage.desktop
 image/x-xpixmap=mirage.desktop
 image/svg+xml=mirage.desktop
 text/plain=userapp-subl-FSTLWY.desktop
+application/pdf=userapp-chrome-G6ZUWY.desktop

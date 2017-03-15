@@ -454,3 +454,5 @@ alias ho='hostname'
 alias sec='cd $HOME_DIR/.sec'
 alias push="gc -m '.' && gp"
 alias nn='notes && tree'
+alias keep='cd $SYNC/keepass'
+alias cs='cd ~/CS'
