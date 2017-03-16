@@ -333,10 +333,10 @@ let g:bufExplorerShowRelativePath=1
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-noremap h <NOP>
-noremap j <NOP>
-noremap k <NOP>
-noremap l <NOP>
+"noremap h <NOP>
+"noremap j <NOP>
+"noremap k <NOP>
+"noremap l <NOP>
 
 " fugitive git bindings
 nnoremap <space>ga :Git add %:p<CR><CR>

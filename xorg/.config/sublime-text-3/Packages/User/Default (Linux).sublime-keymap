@@ -17,39 +17,39 @@
 
 { "keys": ["alt+f1"], "command": "toggle_comment", "args": { "block": false } },
 
-{ "keys": ["h"], "command": "test",
-    "context":
-    [
-        { "key": "setting.command_mode", "operand": true },
-        { "key": "setting.is_widget", "operand": false }
-    ]
-},
+// { "keys": ["h"], "command": "test",
+//     "context":
+//     [
+//         { "key": "setting.command_mode", "operand": true },
+//         { "key": "setting.is_widget", "operand": false }
+//     ]
+// },
 
-{ "keys": ["j"], "command": "test",
-    "context":
-    [
-        { "key": "setting.command_mode", "operand": true },
-        { "key": "setting.is_widget", "operand": false }
-    ]
-},
-
-
-{ "keys": ["k"], "command": "test",
-    "context":
-    [
-        { "key": "setting.command_mode", "operand": true },
-        { "key": "setting.is_widget", "operand": false }
-    ]
-},
+// { "keys": ["j"], "command": "test",
+//     "context":
+//     [
+//         { "key": "setting.command_mode", "operand": true },
+//         { "key": "setting.is_widget", "operand": false }
+//     ]
+// },
 
 
-{ "keys": ["l"], "command": "test",
-    "context":
-    [
-        { "key": "setting.command_mode", "operand": true },
-        { "key": "setting.is_widget", "operand": false }
-    ]
-}
+// { "keys": ["k"], "command": "test",
+//     "context":
+//     [
+//         { "key": "setting.command_mode", "operand": true },
+//         { "key": "setting.is_widget", "operand": false }
+//     ]
+// },
+
+
+// { "keys": ["l"], "command": "test",
+//     "context":
+//     [
+//         { "key": "setting.command_mode", "operand": true },
+//         { "key": "setting.is_widget", "operand": false }
+//     ]
+// }
 
 
 ]

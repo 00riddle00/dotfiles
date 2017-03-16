@@ -517,31 +517,52 @@
           <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
       </action>
     </keybind>
+
     <keybind key="W-f">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE filezilla"</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>wmctrl -a "file manager"</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-e">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
+
+    <!--
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc1' 'terminator --geometry=700x500 -T mc1 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
+        <command>sh -c "$ACTIVATE 'mc1' 'terminator \-\-geometry=700x500 -T mc1 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
       </action>
     </keybind>
+
     <keybind key="A-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc2' 'terminator --geometry=700x500 -T mc2 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
+        <command>sh -c "$ACTIVATE 'mc2' 'terminator \-\-geometry=700x500 -T mc2 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
       </action>
     </keybind>
+    -->
+
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>
       </action>
     </keybind>
+
     <keybind key="W-b">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE gimp"</command>
+        <command>sh -c "$ACTIVATE 'gnu image' 'gimp'"</command>
       </action>
     </keybind>
+
+
     <keybind key="W-l">
       <action name="Execute">
         <command>sh -c "$ACTIVATE libreoffice"</command>
