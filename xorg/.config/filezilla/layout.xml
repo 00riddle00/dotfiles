@@ -14,6 +14,8 @@
 		<Language id="en_US" date="">
 			<Font font="Source Code Pro 11" width="1125" height="20" />
 			<Dialog name="Site Manager" width="801" />
+			<Dialog name="Settings" width="730" />
+			<Dialog name="Netconf" width="675" />
 		</Language>
 	</Layout>
 </FileZilla3>
