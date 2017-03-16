@@ -481,11 +481,11 @@
       </action>
     </keybind>
 
-<!--    <keybind key="F11">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE qalculate-gtk"</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
+    <keybind key="F10">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE qalculate-gtk"</command>
+      </action>
+    </keybind>
 
     <keybind key="F6">
       <action name="Execute">
@@ -502,16 +502,19 @@
         <command>sh -c "$ACTIVATE firefox"</command>
       </action>
     </keybind>
-    <!--    <keybind key="F3">-->
-    <!--<action name="Execute">-->
-    <!--<command>subl</command>-->
-    <!--</action>-->
-    <!--</keybind>-->
+
     <keybind key="F3">
+        <action name="Execute">
+            <command>subl</command>
+        </action>
+    </keybind>
+
+    <keybind key="W-n">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
       </action>
     </keybind>
+
     <keybind key="Insert">
       <action name="Execute">
           <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
