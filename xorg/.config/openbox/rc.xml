@@ -411,7 +411,8 @@
     </keybind>
     <keybind key="W-Delete">
       <action name="Execute">
-        <command>amixer -q sset Master toggle</command>
+        <command>pavucontrol</command>
+        <!--<command>amixer -q sset Master toggle</command>-->
       </action>
     </keybind>
     <keybind key="W-F5">
