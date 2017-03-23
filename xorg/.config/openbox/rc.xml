@@ -463,7 +463,7 @@
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE pycharm"</command>
+        <command>sh -c "$ACTIVATE phpstorm"</command>
       </action>
     </keybind>
     <keybind key="F1">

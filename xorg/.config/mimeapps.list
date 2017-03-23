@@ -1,7 +1,7 @@
 [Added Associations]
 application/json=sublime-text.desktop;
 application/msword=libreoffice-writer.desktop;
-application/pdf=firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;userapp-chrome-G6ZUWY.desktop;
+application/pdf=userapp-chrome-G6ZUWY.desktop;firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
@@ -30,7 +30,7 @@ image/x-xpixmap=ristretto.desktop;mirage.desktop;
 inode/directory=dolphin4.desktop;exo-file-manager.desktop;
 text/html=luakit.desktop;userapp-subl-HJMYVY.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;
 text/markdown=libreoffice-writer.desktop;sublime-text.desktop;
-text/plain=libreoffice-writer.desktop;userapp-subl-FSTLWY.desktop;userapp-subl-HJMYVY.desktop;sublime-text.desktop;
+text/plain=userapp-subl-FSTLWY.desktop;libreoffice-writer.desktop;userapp-subl-HJMYVY.desktop;sublime-text.desktop;
 text/x-chdr=emacs.desktop;
 text/x-install=sublime-text.desktop;
 text/x-java=emacs.desktop;
@@ -73,6 +73,7 @@ text/x-emacs-lisp=libreoffice-writer.desktop;
 application/rtf=libreoffice-writer.desktop;
 text/x-nfo=userapp-subl-FSTLWY.desktop;
 text/csv=libreoffice-calc.desktop;
+application/epub+zip=calibre-gui.desktop;
 
 [Default Applications]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop

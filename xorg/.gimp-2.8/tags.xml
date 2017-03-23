@@ -10,7 +10,7 @@
     <tag>round</tag>
   </resource>
 
-  <resource identifier="gimp-brush-clipboard" checksum="157dcef48665ab465439cfaf10d6feeb">
+  <resource identifier="gimp-brush-clipboard" checksum="692f8d8bffb97b495855ac4f6650eaca">
   </resource>
 
   <resource identifier="${gimp_dir}/brushes/2.-Hardness-050-copy.vbr" checksum="cf219d55f9c8fbdfeeb30cc2f0fad65c">
@@ -199,13 +199,13 @@
   <resource identifier="${gimp_data_dir}/dynamics/Basic/Negative-Size-Pressure.gdyn" checksum="(null)">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/dynamics/Basic/Pen-Generic.gdyn" checksum="(null)">
-  </resource>
-
   <resource identifier="${gimp_data_dir}/dynamics/Basic/Pencil-Generic.gdyn" checksum="(null)">
   </resource>
 
   <resource identifier="${gimp_data_dir}/dynamics/Basic/Pencil-Shader.gdyn" checksum="(null)">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/dynamics/Basic/Pen-Generic.gdyn" checksum="(null)">
   </resource>
 
   <resource identifier="${gimp_data_dir}/dynamics/FX/Perspective.gdyn" checksum="(null)">
@@ -229,7 +229,7 @@
   <resource identifier="${gimp_data_dir}/dynamics/Velocity-Tapering.gdyn" checksum="(null)">
   </resource>
 
-  <resource identifier="gimp-pattern-clipboard" checksum="eff9598f9f61c1dc78d842f1798c2ab8">
+  <resource identifier="gimp-pattern-clipboard" checksum="0a3aeec86494c8f055d49b7e8eef2d02">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/3dgreen.pat" checksum="00052731f14a5bc614daece969b368bc">
@@ -352,6 +352,9 @@
   <resource identifier="${gimp_data_dir}/patterns/rain.pat" checksum="8babfb520276b39f918aa059ca1594be">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/recessed.pat" checksum="2743a836d39c547e0d83de27bffb45c1">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/redcube.pat" checksum="f64dee0efbc2fa301d7b4f3903a68308">
   </resource>
 
@@ -403,16 +406,13 @@
   <resource identifier="${gimp_data_dir}/patterns/wood1.pat" checksum="0c055f250ddbccc1b32d05f8c0ad7012">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/patterns/recessed.pat" checksum="2743a836d39c547e0d83de27bffb45c1">
+  <resource identifier="gimp-gradient-fg-bg-rgb-hardedge" checksum="12ad9439c57e897e50fb0399439e5b2b">
   </resource>
 
   <resource identifier="gimp-gradient-fg-bg-hsv-cw" checksum="86589f70c8a7777c6e2d1d14b99e3759">
   </resource>
 
   <resource identifier="gimp-gradient-fg-bg-hsv-ccw" checksum="65aacbbd72d99ff20ca1bd310f0a21a5">
-  </resource>
-
-  <resource identifier="gimp-gradient-fg-bg-rgb-hardedge" checksum="12ad9439c57e897e50fb0399439e5b2b">
   </resource>
 
   <resource identifier="gimp-gradient-fg-bg-rgb" checksum="4a878c6cfae0b0e03c0834723daadf92">
@@ -451,13 +451,13 @@
   <resource identifier="${gimp_data_dir}/gradients/Burning_Transparency.ggr" checksum="ab6a58127b01c77ea378b97585d2d3cb">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/gradients/Caribbean_Blues.ggr" checksum="899e32a0cf94010dff9e1f93579f4292">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/gradients/CD.ggr" checksum="aa4627507fb28c79bb1d864f2ae3eeaa">
   </resource>
 
   <resource identifier="${gimp_data_dir}/gradients/CD_Half.ggr" checksum="6f70875e41cc69d68b7a0e7d9d5652bf">
-  </resource>
-
-  <resource identifier="${gimp_data_dir}/gradients/Caribbean_Blues.ggr" checksum="899e32a0cf94010dff9e1f93579f4292">
   </resource>
 
   <resource identifier="${gimp_data_dir}/gradients/Coffee.ggr" checksum="a3407a154e1b875fe1858b57279db00f">
@@ -679,13 +679,13 @@
   <resource identifier="${gimp_data_dir}/palettes/Gold.gpl" checksum="69156b66cb39a691e8ee92824facfc74">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/palettes/GrayViolet.gpl" checksum="3a200b1b9ca7f3b7bcebc70fe4a4832e">
-  </resource>
-
   <resource identifier="${gimp_data_dir}/palettes/Grayblue.gpl" checksum="50e95752c59ed66f2871533b48ad80f7">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Grays.gpl" checksum="fcf5e6f9da0fbc46bac07d34741fd648">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/palettes/GrayViolet.gpl" checksum="3a200b1b9ca7f3b7bcebc70fe4a4832e">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Greens.gpl" checksum="c74e6275e9e921dcc64870a670697fa0">
@@ -698,6 +698,9 @@
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Lights.gpl" checksum="3483aee51ec01db06b41463903da53f9">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/palettes/Linux.gpl" checksum="0e7549f6e63ef2b1de3f537cc7da022b">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Muted.gpl" checksum="24bc023216795f2eb722546696d3082d">
@@ -751,9 +754,6 @@
   <resource identifier="${gimp_data_dir}/palettes/Web.gpl" checksum="f02e8dfa23d01d6acfbab7f895c2dd16">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/palettes/Linux.gpl" checksum="0e7549f6e63ef2b1de3f537cc7da022b">
-  </resource>
-
   <resource identifier="${gimp_data_dir}/tool-presets/Paint/Airbrush.gtp" checksum="(null)">
   </resource>
 
@@ -790,16 +790,16 @@
   <resource identifier="${gimp_data_dir}/tool-presets/Sketch/Eraser-Soft.gtp" checksum="(null)">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/tool-presets/FX/FX-Confetti.gtp" checksum="(null)">
-  </resource>
-
-  <resource identifier="${gimp_data_dir}/tool-presets/FX/FX-Radial-Softlight.gtp" checksum="(null)">
-  </resource>
-
   <resource identifier="${gimp_data_dir}/tool-presets/Selection/Feathered-Selection.gtp" checksum="(null)">
   </resource>
 
   <resource identifier="${gimp_data_dir}/tool-presets/FX/Fill-Paper.gtp" checksum="(null)">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/tool-presets/FX/FX-Confetti.gtp" checksum="(null)">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/tool-presets/FX/FX-Radial-Softlight.gtp" checksum="(null)">
   </resource>
 
   <resource identifier="${gimp_data_dir}/tool-presets/FX/Glow-Lights.gtp" checksum="(null)">
