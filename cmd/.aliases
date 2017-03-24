@@ -462,3 +462,6 @@ alias push="gc -m '.' && gp"
 alias nn='notes && tree'
 alias keep='cd $SYNC/keepass'
 alias cs='cd ~/CS'
+alias dc='docker-compose'
+
+alias key='eval $(ssh-agent -s) && ssh-add /home/riddle/.ssh/id_rsa'
