@@ -1,3 +1,6 @@
+
+export LC_ALL="en_US.UTF-8"
+
 $HOME/.config/openbox/autostart.sh
 
 export THEME=riddle
@@ -324,6 +327,9 @@ alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
+#alias ru='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,ru phonetic'
+alias ru='setxkbmap ru phonetic'
+alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias gg='google-chrome-stable'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
@@ -340,7 +346,7 @@ alias bt='tail -n 20 $HOME/.bashrc'
 alias lsd='lxc-ls -f'
 
 alias op='cd $HOME/.config/openbox'
-alias pro='cd $USER_HOME_DIR/proj'
+alias pro='cd $USER_HOME_DIR/pro'
 
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'

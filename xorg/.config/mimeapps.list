@@ -1,7 +1,7 @@
 [Added Associations]
 application/json=sublime-text.desktop;
 application/msword=libreoffice-writer.desktop;
-application/pdf=firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;userapp-chrome-G6ZUWY.desktop;
+application/pdf=userapp-chrome-G6ZUWY.desktop;firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
@@ -19,7 +19,7 @@ application/xml=google-chrome.desktop;
 audio/mp4=vlc.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;audacious.desktop;
 audio/x-wav=vlc.desktop;
-image/gif=feh.desktop;ristretto.desktop;mirage.desktop;
+image/gif=mirage.desktop;feh.desktop;ristretto.desktop;
 image/jpeg=mirage.desktop;gimp.desktop;gthumb.desktop;feh.desktop;ristretto.desktop;
 image/png=mirage.desktop;feh.desktop;gthumb.desktop;gimp.desktop;ristretto.desktop;
 image/vnd.adobe.photoshop=gimp.desktop;
@@ -28,7 +28,7 @@ image/vnd.microsoft.icon=gimp.desktop;gthumb.desktop;
 image/x-xcf=gimp.desktop;ristretto.desktop;
 image/x-xpixmap=ristretto.desktop;mirage.desktop;
 inode/directory=dolphin4.desktop;exo-file-manager.desktop;
-text/html=userapp-subl-HJMYVY.desktop;luakit.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;
+text/html=luakit.desktop;userapp-subl-HJMYVY.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;
 text/markdown=libreoffice-writer.desktop;sublime-text.desktop;
 text/plain=userapp-subl-FSTLWY.desktop;libreoffice-writer.desktop;userapp-subl-HJMYVY.desktop;sublime-text.desktop;
 text/x-chdr=emacs.desktop;
@@ -72,6 +72,8 @@ video/x-msvideo=vlc.desktop;mplayer.desktop;
 text/x-emacs-lisp=libreoffice-writer.desktop;
 application/rtf=libreoffice-writer.desktop;
 text/x-nfo=userapp-subl-FSTLWY.desktop;
+text/csv=libreoffice-calc.desktop;
+application/epub+zip=calibre-gui.desktop;
 
 [Default Applications]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop

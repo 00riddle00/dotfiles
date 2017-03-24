@@ -248,6 +248,7 @@ call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")
 
 
 
+Plugin 'fatih/vim-go'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'xolox/vim-notes'
