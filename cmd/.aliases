@@ -446,7 +446,7 @@ alias xclip2='xclip -selection clipboard'
 
 
 function copy() { echo "$@" | xclip -selection clipboard;}
-function kk() { cp -r "$1" $HOME/backups/"$1".bak;} 
+function kk() { s cp -r "$1" $HOME/backups/"$1".bak;} 
 
 alias fonts.update='fc-cache -fv'
 alias riddle='cd ~/.riddle'
