@@ -3,14 +3,16 @@
 <channel name="thunar" version="1.0">
   <property name="last-view" type="string" value="ThunarCompactView"/>
   <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_LARGER"/>
-  <property name="last-separator-position" type="int" value="173"/>
+  <property name="last-separator-position" type="int" value="184"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLER"/>
   <property name="last-details-view-column-widths" type="string" value="50,144,50,50,151,50,50,85,220"/>
-  <property name="last-window-width" type="int" value="646"/>
-  <property name="last-window-height" type="int" value="636"/>
+  <property name="last-window-width" type="int" value="642"/>
+  <property name="last-window-height" type="int" value="643"/>
   <property name="last-window-maximized" type="bool" value="false"/>
   <property name="last-show-hidden" type="bool" value="false"/>
-  <property name="last-side-pane" type="string" value="ThunarTreePane"/>
+  <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
   <property name="last-compact-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLER"/>
   <property name="misc-single-click" type="bool" value="true"/>
+  <property name="last-location-bar" type="string" value="ThunarLocationEntry"/>
+  <property name="last-menubar-visible" type="bool" value="true"/>
 </channel>
