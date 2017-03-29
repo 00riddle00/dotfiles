@@ -50,7 +50,7 @@ alias re='sudo reboot'
 alias off='sudo poweroff'
 
 # make cmd aliases
-function ma() { echo alias $1="'$2'" >> $HOME/.bashrc; bash; }
+function ma() { echo alias $1="'$2'" >> $HOME/.aliases; zsh; }
 
 function de() { sudo udisks --unmount /dev/$1; }
 
@@ -465,3 +465,4 @@ alias cs='cd ~/CS'
 alias dc='docker-compose'
 
 alias key='eval $(ssh-agent -s) && ssh-add /home/riddle/.ssh/id_rsa'
+alias stat='cd /home/riddle/pro/statybininkai'
