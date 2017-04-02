@@ -113,7 +113,6 @@ alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 # programs
 alias x='startx'
 alias vbox='virtualbox'
-alias read='acroread'
 alias fox='firefox'
 alias v='vim'
 alias vv='sudo vim'

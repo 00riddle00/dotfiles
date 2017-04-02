@@ -28,7 +28,7 @@ image/vnd.microsoft.icon=gimp.desktop;gthumb.desktop;
 image/x-xcf=gimp.desktop;ristretto.desktop;
 image/x-xpixmap=ristretto.desktop;mirage.desktop;
 inode/directory=dolphin4.desktop;exo-file-manager.desktop;
-text/html=luakit.desktop;userapp-subl-HJMYVY.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;firefox.desktop;
+text/html=firefox.desktop;luakit.desktop;userapp-subl-HJMYVY.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;
 text/markdown=libreoffice-writer.desktop;sublime-text.desktop;
 text/plain=userapp-subl-FSTLWY.desktop;libreoffice-writer.desktop;userapp-subl-HJMYVY.desktop;sublime-text.desktop;
 text/x-chdr=emacs.desktop;
@@ -74,6 +74,7 @@ application/rtf=libreoffice-writer.desktop;
 text/x-nfo=userapp-subl-FSTLWY.desktop;
 text/csv=libreoffice-calc.desktop;
 application/epub+zip=calibre-gui.desktop;
+application/x-bittorrent=deluge.desktop;
 
 [Default Applications]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
