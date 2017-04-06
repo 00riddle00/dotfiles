@@ -1,7 +1,7 @@
 [Added Associations]
 application/json=sublime-text.desktop;
 application/msword=libreoffice-writer.desktop;
-application/pdf=firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;userapp-chrome-G6ZUWY.desktop;
+application/pdf=userapp-chrome-G6ZUWY.desktop;firefox.desktop;gimp.desktop;google-chrome.desktop;acroread.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
@@ -72,6 +72,8 @@ video/x-msvideo=vlc.desktop;mplayer.desktop;
 text/x-emacs-lisp=libreoffice-writer.desktop;
 application/rtf=libreoffice-writer.desktop;
 text/x-nfo=userapp-subl-FSTLWY.desktop;
+application/epub+zip=calibre-ebook-edit.desktop;
+application/x-mobipocket-ebook=calibre-ebook-viewer.desktop;
 
 [Default Applications]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
