@@ -3,6 +3,8 @@ export LC_ALL="en_US.UTF-8"
 
 $HOME/.config/openbox/autostart.sh
 
+export LC_ALL='en_US.UTF8'
+
 export THEME=riddle
 export MAIN_USER=riddle
 export HOME_DIR=/home/$MAIN_USER/.riddle
@@ -22,6 +24,7 @@ export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
 export EDITOR=vim
 
 
+stty -ixon
 
 alias b='bash'
 alias s='sudo'
@@ -86,7 +89,7 @@ alias pacs='sudo pacman -S --noconfirm'
 alias pacu='sudo pacman -U'
 alias pacr='sudo pacman -R'
 alias pacrs='sudo pacman -Rs'
-alias up='sudo pacman -Syu'
+alias up='sudo pacman -Syyu'
 alias mps='makepkg -s'
 alias mp='makepkg'
 alias y='yaourt'
@@ -466,3 +469,5 @@ alias dc='docker-compose'
 alias key='eval $(ssh-agent -s) && ssh-add /home/riddle/.ssh/id_rsa'
 alias stat='cd /home/riddle/pro/statybininkai'
 alias kan='cat /home/riddle/main/social/kan.js | xclip'
+alias pacfile='sudo pacman -S - <'
+alias conda='/opt/anaconda/bin/conda'

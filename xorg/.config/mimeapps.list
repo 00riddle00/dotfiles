@@ -28,7 +28,11 @@ image/vnd.microsoft.icon=gimp.desktop;gthumb.desktop;
 image/x-xcf=gimp.desktop;ristretto.desktop;
 image/x-xpixmap=ristretto.desktop;mirage.desktop;
 inode/directory=dolphin4.desktop;exo-file-manager.desktop;
+<<<<<<< HEAD
 text/html=firefox.desktop;luakit.desktop;userapp-subl-HJMYVY.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;
+=======
+text/html=userapp-subl-HJMYVY.desktop;luakit.desktop;google-chrome.desktop;userapp-Firefox-JWFM7X.desktop;firefox.desktop;
+>>>>>>> master
 text/markdown=libreoffice-writer.desktop;sublime-text.desktop;
 text/plain=userapp-subl-FSTLWY.desktop;libreoffice-writer.desktop;userapp-subl-HJMYVY.desktop;sublime-text.desktop;
 text/x-chdr=emacs.desktop;
@@ -42,8 +46,8 @@ x-scheme-handler/ftp=userapp-Firefox-JWFM7X.desktop;google-chrome.desktop;firefo
 x-scheme-handler/http=exo-web-browser.desktop;firefox.desktop;
 x-scheme-handler/https=exo-web-browser.desktop;firefox.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop
-x-scheme-handler/mailto=userapp-Thunderbird-168SKY.desktop;userapp-Thunderbird-ZVESVY.desktop;userapp-Thunderbird-JGORVY.desktop;userapp-Thunderbird-XVJXVY.desktop;userapp-Thunderbird-GATGWY.desktop;
-message/rfc822=userapp-Thunderbird-168SKY.desktop;userapp-Thunderbird-ZVESVY.desktop;userapp-Thunderbird-JGORVY.desktop;userapp-Thunderbird-XVJXVY.desktop;userapp-Thunderbird-GATGWY.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-168SKY.desktop;userapp-Thunderbird-ZVESVY.desktop;userapp-Thunderbird-JGORVY.desktop;userapp-Thunderbird-XVJXVY.desktop;userapp-Thunderbird-GATGWY.desktop;thunderbird.desktop;
+message/rfc822=userapp-Thunderbird-168SKY.desktop;userapp-Thunderbird-ZVESVY.desktop;userapp-Thunderbird-JGORVY.desktop;userapp-Thunderbird-XVJXVY.desktop;userapp-Thunderbird-GATGWY.desktop;thunderbird.desktop;
 text/xml=google-chrome.desktop;
 application/xhtml_xml=google-chrome.desktop;
 image/webp=google-chrome.desktop;
@@ -72,10 +76,15 @@ video/x-msvideo=vlc.desktop;mplayer.desktop;
 text/x-emacs-lisp=libreoffice-writer.desktop;
 application/rtf=libreoffice-writer.desktop;
 text/x-nfo=userapp-subl-FSTLWY.desktop;
+<<<<<<< HEAD
 text/csv=libreoffice-calc.desktop;
 application/epub+zip=calibre-gui.desktop;
 application/x-bittorrent=deluge.desktop;
 application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop;
+=======
+application/epub+zip=calibre-ebook-edit.desktop;
+application/x-mobipocket-ebook=calibre-ebook-viewer.desktop;
+>>>>>>> master
 
 [Default Applications]
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
@@ -88,13 +97,21 @@ application/x-extension-xhtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 image/x-xcf=ristretto.desktop
 inode/directory=dolphin4.desktop;
+<<<<<<< HEAD
 message/rfc822=userapp-Thunderbird-GATGWY.desktop
+=======
+message/rfc822=thunderbird.desktop
+>>>>>>> master
 text/html=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop
 x-scheme-handler/ftp=firefox.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
+<<<<<<< HEAD
 x-scheme-handler/mailto=userapp-Thunderbird-GATGWY.desktop
+=======
+x-scheme-handler/mailto=thunderbird.desktop
+>>>>>>> master
 text/xml=google-chrome.desktop
 application/xhtml_xml=google-chrome.desktop
 image/webp=google-chrome.desktop
