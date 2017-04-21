@@ -1,13 +1,13 @@
-; gimp GtkAccelMap rc-file         -*- scheme -*-
+; gimp-2.8 GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 (gtk_accel_path "<Actions>/view/view-shrink-wrap" "")
-; (gtk_accel_path "<Actions>/context/context-gradient-select-previous" "")
+; (gtk_accel_path "<Actions>/plug-in/plug-in-icc-profile-set-rgb" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-menu" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-spacing-set" "")
 ; (gtk_accel_path "<Actions>/context/context-palette-background-previous" "")
 ; (gtk_accel_path "<Actions>/tools/tools-color-average-radius-decrease" "")
-; (gtk_accel_path "<Actions>/plug-in/plug-in-icc-profile-set-rgb" "")
+; (gtk_accel_path "<Actions>/context/context-gradient-select-previous" "")
 ; (gtk_accel_path "<Actions>/tools/tools-foreground-select-brush-size-increase-skip" "")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-tile-blur" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-raise" "")
@@ -1115,6 +1115,7 @@
 (gtk_accel_path "<Actions>/windows/windows-display-0010" "<Alt>9")
 ; (gtk_accel_path "<Actions>/tools/tools-flip" "<Shift>f")
 ; (gtk_accel_path "<Actions>/view/view-padding-color-light-check" "")
+; (gtk_accel_path "<Actions>/brush-editor/brush-editor-edit-active" "")
 ; (gtk_accel_path "<Actions>/image/colors-map-menu" "")
 ; (gtk_accel_path "<Actions>/image/image-crop" "")
 ; (gtk_accel_path "<Actions>/tools/tools-transform-preview-opacity-increase-skip" "")
@@ -1128,7 +1129,6 @@
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-starscape-logo" "")
 (gtk_accel_path "<Actions>/windows/windows-display-0008" "<Alt>7")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-sinus" "")
-(gtk_accel_path "<Actions>/windows/windows-display-0002" "<Alt>2")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-chalk-logo-alpha" "")
 (gtk_accel_path "<Actions>/windows/windows-display-0009" "<Alt>8")
 (gtk_accel_path "<Actions>/windows/windows-display-0006" "<Alt>6")
@@ -1138,7 +1138,7 @@
 ; (gtk_accel_path "<Actions>/context/context-foreground-blue-decrease-skip" "")
 (gtk_accel_path "<Actions>/windows/windows-display-0004" "<Alt>4")
 (gtk_accel_path "<Actions>/windows/windows-display-0003" "<Alt>3")
-; (gtk_accel_path "<Actions>/brush-editor/brush-editor-edit-active" "")
+(gtk_accel_path "<Actions>/windows/windows-display-0002" "<Alt>2")
 (gtk_accel_path "<Actions>/windows/windows-display-0001" "<Alt>1")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-vectors" "")
 ; (gtk_accel_path "<Actions>/quick-mask/quick-mask-toggle" "<Shift>q")
