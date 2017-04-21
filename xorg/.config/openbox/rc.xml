@@ -420,6 +420,19 @@
         <command>xbacklight +10</command>
       </action>
     </keybind>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>tint2</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-S-t">
+      <action name="Execute">
+        <command>killall tint2</command>
+      </action>
+    </keybind>
+
+
     <keybind key="W-F4">
       <action name="Execute">
         <command>xbacklight -10</command>
@@ -473,11 +486,6 @@
         <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
       </action>
     </keybind>
-    <keybind key="F5">
-      <action name="Execute">
-        <command>subl</command>
-      </action>
-    </keybind>
     <keybind key="F2">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
@@ -520,6 +528,11 @@
     </keybind>
 
 
+    <keybind key="F5">
+        <action name="ShowMenu">
+          <menu>client-list-combined-menu</menu>
+        </action>
+    </keybind>
 
     <keybind key="W-n">
       <action name="Execute">
