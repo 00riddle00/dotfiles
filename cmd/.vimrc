@@ -248,6 +248,8 @@ call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")
 
 
 
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'

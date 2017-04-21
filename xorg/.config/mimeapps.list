@@ -23,6 +23,7 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+<<<<<<< HEAD
 video/x-matroska=vlc.desktop;mplayer.desktop;
 video/x-msvideo=vlc.desktop;mplayer.desktop;
 image/png=feh.desktop;
@@ -33,3 +34,8 @@ video/mp4=vlc.desktop;mplayer.desktop;
 application/pdf=google-chrome.desktop;gimp.desktop;
 application/vnd.ms-powerpoint=libreoffice-impress.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
+=======
+image/png=gimp.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
+text/markdown=libreoffice-writer.desktop;
+>>>>>>> 131f06cfb3efeccf810befd16192f2fb9b7bdcd6

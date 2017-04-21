@@ -20,6 +20,7 @@ Go to the first tab: <a-1>
 Go to the first non-pinned tab: <a-`>
 Go to the last tab: <a-0>
 Pin/Unpin tab <c-s>
+Close tabs to the right <a-r>
 
 Follow link, focus text input or click button: F
 Follow link in a new background tab: f
@@ -41,4 +42,6 @@ Start of line: 0
 End of line: $
 Toggle selection: v
 Copy selection and return to Normal mode: y
+Return to Normal mode: <escape>
+
 Return to Normal mode: <escape>
