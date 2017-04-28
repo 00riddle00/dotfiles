@@ -192,12 +192,12 @@ alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
 # screen setup
-alias xport='xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
-alias xland='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
-alias xexof='xrandr --output HDMI-1 --off'
-alias xexon='xrandr --output HDMI-1 --auto'
-alias xof='xrandr --output eDP-1 --off'
-alias xon='xrandr --output eDP-1 --auto'
+alias xport='xrandr --output HDMI-1-1 --auto --rotate left --output eDP-1-1 --auto --right-of HDMI-1-1'
+alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --auto --right-of HDMI-1-1'
+alias xexof='xrandr --output HDMI-1-1 --off'
+alias xexon='xrandr --output HDMI-1-1 --auto'
+alias xof='xrandr --output eDP-1-1 --off'
+alias xon='xrandr --output eDP-1-1 --auto'
 
 
 # c lang
@@ -304,7 +304,7 @@ alias pic='scrot -s $USER_HOME_DIR/Screenshots/screenshot-%F-%H%M%S.png'
 
 alias mig='pmp makemigrations && pmp migrate'
 
-alias home='xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1'
+alias home='xrandr --output HDMI-1-1 --auto --output eDP-1-1 --auto --right-of HDMI-1-1'
 
 alias tm='conky -c .conky/archconky &'
 
@@ -327,7 +327,7 @@ alias vi='cd $USER_HOME_DIR/VirtualBox\ VMs/'
 alias viu='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vu'
 alias vis='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vs'
 
-alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
+alias ek='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
 
 alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 

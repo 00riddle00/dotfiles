@@ -2,9 +2,17 @@
 
 <channel name="thunar" version="1.0">
   <property name="last-view" type="string" value="ThunarCompactView"/>
+<<<<<<< HEAD
+  <property name="last-window-width" type="int" value="915"/>
+  <property name="last-window-height" type="int" value="701"/>
+  <property name="last-window-maximized" type="bool" value="false"/>
+  <property name="last-separator-position" type="int" value="170"/>
+  <property name="misc-single-click" type="bool" value="true"/>
+=======
   <property name="misc-single-click" type="bool" value="true"/>
   <property name="last-window-width" type="int" value="645"/>
   <property name="last-window-height" type="int" value="525"/>
   <property name="last-window-maximized" type="bool" value="false"/>
   <property name="last-separator-position" type="int" value="170"/>
+>>>>>>> 131f06cfb3efeccf810befd16192f2fb9b7bdcd6
 </channel>
