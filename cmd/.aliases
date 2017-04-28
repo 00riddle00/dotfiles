@@ -12,7 +12,7 @@ export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
-export NOTES=$HOME_DIR/.gtd
+export NOTES=$SYNC/gtd/content/pages
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export CANDY=$SYNC/candy
@@ -448,7 +448,7 @@ alias mute='amixer -q sset Master toggle'
 alias bak='cd ~/backups'
 alias gtk='v ~/.gtkrc-2.0'
 alias dum='du -h --max-depth=1'
-alias notes='cd ~/.riddle/.gtd/'
+alias notes='cd $NOTES'
 alias vimnotes='vim -c "colorscheme molokai | Note config"'
 alias plugins='vim +PluginInstall +qall'
 alias vimshell='vim -c VimShell'
@@ -487,3 +487,4 @@ alias li='libreoffice'
 
 alias aa='airflow resetdb && airflow scheduler'
 alias air='source ~/pro/env/bin/activate && cd ~/airflow'
+alias pel='python -m pelican.server'
