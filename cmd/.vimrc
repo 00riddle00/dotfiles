@@ -88,6 +88,7 @@ map <leader>p :setlocal paste!<CR>
 " Look and feel.
 syntax enable
 filetype indent plugin on
+filetype plugin on
 "TODO add more fonts (with if clauses), and make it
 "override terminal fonts
 set guifont=Terminus\ 12
