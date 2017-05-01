@@ -10,6 +10,10 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+text/markdown=userapp-subl-FSTLWY.desktop
+text/plain=userapp-subl-BEXRZY.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+application/pdf=google-chrome.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
@@ -23,19 +27,16 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
-<<<<<<< HEAD
-video/x-matroska=vlc.desktop;mplayer.desktop;
-video/x-msvideo=vlc.desktop;mplayer.desktop;
-image/png=feh.desktop;
-text/plain=mousepad.desktop;
-image/jpeg=feh.desktop;
-text/x-matlab=mousepad.desktop;
-video/mp4=vlc.desktop;mplayer.desktop;
+video/x-matroska=vlc.desktop;
+text/x-nfo=mousepad.desktop;
+image/png=mirage.desktop;feh.desktop;
+image/jpeg=mirage.desktop;feh.desktop;
+text/csv=libreoffice-calc.desktop;
+application/msword=libreoffice-writer.desktop;
+audio/x-wav=vlc.desktop;mplayer.desktop;
+text/plain=userapp-subl-BEXRZY.desktop;libreoffice-writer.desktop;mousepad.desktop;userapp-sub-PRCLZY.desktop;
+video/mp4=mplayer.desktop;
+text/markdown=libreoffice-writer.desktop;mousepad.desktop;userapp-subl-FSTLWY.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;calibre-gui.desktop;
 application/pdf=google-chrome.desktop;gimp.desktop;
-application/vnd.ms-powerpoint=libreoffice-impress.desktop;
-application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
-=======
-image/png=gimp.desktop;
-application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
-text/markdown=libreoffice-writer.desktop;
->>>>>>> 131f06cfb3efeccf810befd16192f2fb9b7bdcd6

@@ -253,7 +253,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
-Plugin 'xolox/vim-notes'
+"Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'powerline/powerline'
@@ -290,8 +290,8 @@ Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'wincent/command-t'
 
-let g:notes_directories = ['~/.riddle/.gtd']
-
+"let g:notes_directories = ['/home/riddle/Dropbox/sync/gtd']
+let g:instant_markdown_autostart = 0
 
 
 
@@ -335,6 +335,7 @@ let g:bufExplorerShowRelativePath=1
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+filetype plugin on    " required
 
 "noremap h <NOP>
 "noremap j <NOP>
@@ -357,3 +358,4 @@ nnoremap <space>gb :Git branch<Space>
 nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
+
