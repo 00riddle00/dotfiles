@@ -1,11 +1,7 @@
 ; gimp GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
-<<<<<<< HEAD
-(gtk_accel_path "<Actions>/view/view-shrink-wrap" "")
-=======
 ; (gtk_accel_path "<Actions>/view/view-shrink-wrap" "<Primary>j")
->>>>>>> db015d833d5725402b1b1797170e69257a6f9178
 ; (gtk_accel_path "<Actions>/context/context-gradient-select-previous" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-menu" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-spacing-set" "")
@@ -245,10 +241,10 @@
 ; (gtk_accel_path "<Actions>/image/image-convert-rgb" "")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-blended-logo" "")
 ; (gtk_accel_path "<Actions>/file/file-open-recent-03" "<Primary>3")
-; (gtk_accel_path "<Actions>/file/file-open-recent-05" "<Primary>5")
+; (gtk_accel_path "<Actions>/file/file-open-recent-08" "<Primary>8")
 ; (gtk_accel_path "<Actions>/edit/edit-paste-as-new" "<Primary><Shift>v")
 ; (gtk_accel_path "<Actions>/file/file-open-recent-09" "<Primary>9")
-; (gtk_accel_path "<Actions>/file/file-open-recent-08" "<Primary>8")
+; (gtk_accel_path "<Actions>/file/file-open-recent-05" "<Primary>5")
 ; (gtk_accel_path "<Actions>/file/file-open-recent-07" "<Primary>7")
 ; (gtk_accel_path "<Actions>/file/file-open-recent-06" "<Primary>6")
 ; (gtk_accel_path "<Actions>/file/file-open-recent-04" "<Primary>4")
@@ -745,11 +741,7 @@
 ; (gtk_accel_path "<Actions>/view/view-scroll-left" "")
 ; (gtk_accel_path "<Actions>/context/context-opacity-opaque" "")
 ; (gtk_accel_path "<Actions>/view/view-display-filters" "")
-<<<<<<< HEAD
-(gtk_accel_path "<Actions>/tools/tools-clone" "")
-=======
 ; (gtk_accel_path "<Actions>/tools/tools-clone" "c")
->>>>>>> db015d833d5725402b1b1797170e69257a6f9178
 ; (gtk_accel_path "<Actions>/context/context-foreground-saturation-increase" "")
 ; (gtk_accel_path "<Actions>/context/context-foreground-blue-maximum" "")
 ; (gtk_accel_path "<Actions>/layers/layers-text-tool" "")
@@ -1033,6 +1025,7 @@
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-map-object" "")
 ; (gtk_accel_path "<Actions>/quick-mask/quick-mask-invert-off" "")
 ; (gtk_accel_path "<Actions>/tools/tools-smudge" "s")
+; (gtk_accel_path "<Actions>/plug-in/plug-in-normalize" "")
 ; (gtk_accel_path "<Actions>/context/context-gradient-select-first" "")
 ; (gtk_accel_path "<Actions>/context/context-colormap-foreground-previous-skip" "")
 ; (gtk_accel_path "<Actions>/context/context-paint-mode-next" "")
@@ -1042,11 +1035,10 @@
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-dbbrowser" "")
 ; (gtk_accel_path "<Actions>/plug-in/python-fu-palette-to-gradient" "")
 ; (gtk_accel_path "<Actions>/image/image-guides-menu" "")
-; (gtk_accel_path "<Actions>/plug-in/plug-in-sobel" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-new-last-values" "")
-; (gtk_accel_path "<Actions>/plug-in/plug-in-normalize" "")
-; (gtk_accel_path "<Actions>/plug-in/script-fu-spinning-globe" "")
 ; (gtk_accel_path "<Actions>/tools/tools-ink-blob-aspect-decrease" "")
+; (gtk_accel_path "<Actions>/plug-in/script-fu-spinning-globe" "")
+; (gtk_accel_path "<Actions>/plug-in/plug-in-sobel" "")
 ; (gtk_accel_path "<Actions>/edit/edit-fill-pattern" "<Primary>semicolon")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-t-o-p-logo-alpha" "")
 ; (gtk_accel_path "<Actions>/tools/tools-ink-blob-angle-increase-skip" "")
@@ -1122,11 +1114,6 @@
 ; (gtk_accel_path "<Actions>/view/view-padding-color-light-check" "")
 ; (gtk_accel_path "<Actions>/image/colors-map-menu" "")
 ; (gtk_accel_path "<Actions>/image/image-crop" "")
-<<<<<<< HEAD
-=======
-; (gtk_accel_path "<Actions>/tools/tools-transform-preview-opacity-increase-skip" "")
-; (gtk_accel_path "<Actions>/layers/layers-opacity-menu" "")
->>>>>>> db015d833d5725402b1b1797170e69257a6f9178
 ; (gtk_accel_path "<Actions>/view/view-show-rulers" "<Primary><Shift>r")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-nova" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-spacing-minimum" "")
@@ -1134,29 +1121,13 @@
 ; (gtk_accel_path "<Actions>/gradients/gradients-save-as-pov" "")
 ; (gtk_accel_path "<Actions>/view/view-zoom-2-1-accel" "KP_2")
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-starscape-logo" "")
-<<<<<<< HEAD
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-chalk-logo-alpha" "")
-=======
-(gtk_accel_path "<Actions>/windows/windows-display-0008" "<Alt>4")
-(gtk_accel_path "<Actions>/windows/windows-display-0009" "<Alt>5")
-; (gtk_accel_path "<Actions>/plug-in/script-fu-chalk-logo-alpha" "")
-(gtk_accel_path "<Actions>/windows/windows-display-0004" "<Alt>4")
-(gtk_accel_path "<Actions>/windows/windows-display-0006" "<Alt>2")
-(gtk_accel_path "<Actions>/windows/windows-display-0007" "<Alt>3")
->>>>>>> db015d833d5725402b1b1797170e69257a6f9178
 ; (gtk_accel_path "<Actions>/vectors/vectors-selection-from-vectors" "<Shift>v")
 ; (gtk_accel_path "<Actions>/tools/tools-transform-preview-opacity-increase-skip" "")
 ; (gtk_accel_path "<Actions>/context/context-foreground-blue-decrease-skip" "")
-<<<<<<< HEAD
 ; (gtk_accel_path "<Actions>/layers/layers-opacity-menu" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-sinus" "")
 ; (gtk_accel_path "<Actions>/brush-editor/brush-editor-edit-active" "")
-=======
-(gtk_accel_path "<Actions>/windows/windows-display-0003" "<Alt>3")
-; (gtk_accel_path "<Actions>/plug-in/plug-in-sinus" "")
-(gtk_accel_path "<Actions>/windows/windows-display-0002" "<Alt>2")
-(gtk_accel_path "<Actions>/windows/windows-display-0001" "<Alt>1")
->>>>>>> db015d833d5725402b1b1797170e69257a6f9178
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-vectors" "")
 ; (gtk_accel_path "<Actions>/quick-mask/quick-mask-toggle" "<Shift>q")
 ; (gtk_accel_path "<Actions>/tools/tools-value-2-decrease-skip" "<Shift>bracketleft")

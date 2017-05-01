@@ -484,9 +484,7 @@ alias conda='/opt/anaconda/bin/conda'
 alias i='h | grep '
 alias tmuxr='v ~/.tmux.conf '
 alias li='libreoffice'
-<<<<<<< HEAD
 alias and='cp /home/riddle/Dropbox/sync/android/\(a\)notes/notes.txt /home/riddle/Dropbox/sync/gtd/other/android.md'
-=======
 
 alias aa='airflow resetdb && airflow scheduler'
 alias air='source ~/pro/env/bin/activate && cd ~/airflow'
