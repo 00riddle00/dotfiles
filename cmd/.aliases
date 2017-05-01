@@ -489,3 +489,4 @@ alias and='cp /home/riddle/Dropbox/sync/android/\(a\)notes/notes.txt /home/riddl
 alias aa='airflow resetdb && airflow scheduler'
 alias air='source ~/pro/env/bin/activate && cd ~/airflow'
 alias pel='python -m pelican.server'
+alias trackmem='watch -n 5 du -h --max-depth=1'
