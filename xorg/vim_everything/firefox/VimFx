@@ -4,6 +4,7 @@
 # Defined commands in this file should be set, and other key mapping should be set to blank
 
 Go back in history: <backspace>
+Go forward in history: <c-backspace>
 
 Scroll left: h
 Scroll right: l

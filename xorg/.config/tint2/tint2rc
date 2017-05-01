@@ -16,7 +16,10 @@ border_color = #000000 100
 
 # Panel
 panel_monitor = all
+<<<<<<< HEAD
 #panel_position =  bottom center horizontal
+=======
+>>>>>>> db015d833d5725402b1b1797170e69257a6f9178
 panel_position =  top center horizontal
 panel_size = 104% 31
 panel_margin = -2 -1

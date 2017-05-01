@@ -88,6 +88,7 @@ map <leader>p :setlocal paste!<CR>
 " Look and feel.
 syntax enable
 filetype indent plugin on
+filetype plugin on
 "TODO add more fonts (with if clauses), and make it
 "override terminal fonts
 set guifont=Terminus\ 12
@@ -292,8 +293,6 @@ Plugin 'vim-airline/vim-airline-themes'
 
 "let g:notes_directories = ['/home/riddle/Dropbox/sync/gtd']
 let g:instant_markdown_autostart = 0
-
-
 
 let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   
 let g:NERDTreeWinPos = "left"                                                                                                                                                                                                                 

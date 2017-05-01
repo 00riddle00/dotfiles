@@ -12,7 +12,7 @@ export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
-export NOTES=$SYNC/gtd
+export NOTES=$SYNC/gtd/content/pages
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export CANDY=$SYNC/candy
@@ -163,7 +163,7 @@ alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cf='fortune | cowsay' 
 
 # databases
-#alias post='sudo systemctl start postgresql'
+alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
 alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
@@ -410,7 +410,6 @@ alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
 alias rl='readlink -f'
-alias post='cd $AUTOMATION_DIR/shell_scripts/post_install/'
 alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arch'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
@@ -485,4 +484,10 @@ alias conda='/opt/anaconda/bin/conda'
 alias i='h | grep '
 alias tmuxr='v ~/.tmux.conf '
 alias li='libreoffice'
+<<<<<<< HEAD
 alias and='cp /home/riddle/Dropbox/sync/android/\(a\)notes/notes.txt /home/riddle/Dropbox/sync/gtd/other/android.md'
+=======
+
+alias aa='airflow resetdb && airflow scheduler'
+alias air='source ~/pro/env/bin/activate && cd ~/airflow'
+alias pel='python -m pelican.server'

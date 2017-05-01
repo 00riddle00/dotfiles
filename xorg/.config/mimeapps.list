@@ -27,6 +27,7 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+<<<<<<< HEAD
 video/x-matroska=vlc.desktop;
 text/x-nfo=mousepad.desktop;
 image/png=mirage.desktop;feh.desktop;
@@ -40,3 +41,7 @@ text/markdown=libreoffice-writer.desktop;mousepad.desktop;userapp-subl-FSTLWY.de
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;calibre-gui.desktop;
 application/pdf=google-chrome.desktop;gimp.desktop;
+=======
+image/png=gimp.desktop;
+image/gif=gimp.desktop;
+>>>>>>> db015d833d5725402b1b1797170e69257a6f9178

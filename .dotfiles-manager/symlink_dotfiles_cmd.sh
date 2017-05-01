@@ -17,3 +17,4 @@ ln -sf $DOTFILES_DIR/cmd/.irssi $HOME/.irssi
 ln -sf $DOTFILES_DIR/cmd/.mutt $HOME/.mutt
 ln -sf $DOTFILES_DIR/cmd/.ncmpcpp $HOME/.ncmpcpp
 ln -sf $DOTFILES_DIR/cmd/.newsbeuter $HOME/.newsbeuter
+ln -sf $DOTFILES_DIR/cmd/.tmux $HOME/.tmux
