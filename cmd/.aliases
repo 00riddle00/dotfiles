@@ -3,6 +3,7 @@ export LC_ALL="en_US.UTF-8"
 
 export DROPBOX=/home/riddle/Dropbox
 export SYNC=$DROPBOX/sync
+export PRO=/home/riddle/pro
 
 export THEME=riddle
 export MAIN_USER=riddle
@@ -86,7 +87,6 @@ alias gri='cd $USER_HOME_DIR/VirtualBox\ VMs/grigiskes-api/app'
 alias u2='cd $USER_HOME_DIR/CS/2_semester/programavimas_c/code/U2'
 alias dw='cd $USER_HOME_DIR/Downloads/'
 alias srv='cd /srv/http/'
-alias del='cd $USER_HOME_DIR/deluge'
 alias h='history'
 
 # pacman
@@ -342,13 +342,14 @@ alias gg='google-chrome-stable'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
-alias tb='tail -n 10 $HOME/.bashrc'
 alias orphans='pacman -Qdt'
 alias orphans2='pacman -Qdtd'
 
 alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
-alias bt='tail -n 20 $HOME/.bashrc'
+
+alias tb='tail -n 20 ~/.aliases'
+alias del="sed -i '$ d' ~/.aliases"
 
 
 alias lsd='lxc-ls -f'
@@ -478,7 +479,7 @@ alias dc='docker-compose'
 
 alias key='eval $(ssh-agent -s) && ssh-add /home/riddle/.ssh/id_rsa'
 alias stat='cd /home/riddle/pro/statybininkai'
-alias kan='cat /home/riddle/main/social/kan.js | xclip'
+alias kan='cat /home/riddle/pro/fl/social/kan.js | xclip'
 alias pacfile='sudo pacman -S - <'
 alias conda='/opt/anaconda/bin/conda'
 alias i='h | grep '
@@ -490,3 +491,11 @@ alias aa='airflow resetdb && airflow scheduler'
 alias air='source ~/pro/env/bin/activate && cd ~/airflow'
 alias pel='python -m pelican.server'
 alias trackmem='watch -n 5 du -h --max-depth=1'
+alias dusort='du -hs * | sort -h'
+alias fire='firefox'
+alias pan='pandoc'
+alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
+alias wiki='cd /home/riddle/Dropbox/sync/gtd/content/pages/terahyde/wiki'
+test
+test 2
+test test

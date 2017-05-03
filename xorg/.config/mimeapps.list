@@ -14,6 +14,11 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+image/png=feh.desktop;
+application/pdf=gimp.desktop;
+text/markdown=userapp-subl-YQUMZY.desktop;libreoffice-writer.desktop;
+video/x-matroska=vlc.desktop;
+application/rtf=libreoffice-writer.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
@@ -27,3 +32,4 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+text/markdown=userapp-subl-YQUMZY.desktop
