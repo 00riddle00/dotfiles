@@ -1,8 +1,22 @@
 "*":
   core:
     autoHideMenuBar: true
+<<<<<<< HEAD
+=======
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "monocolor-blue-syntax"
+    ]
+>>>>>>> ae5161483c3b82b4f7a0a284929333af21831c45
   editor:
-    fontSize: 11
+    fontFamily: "Source Code Pro"
+    fontSize: 10
   "exception-reporting":
     userId: "bbbb99d4-ab83-4ffa-a804-6ec33a25b962"
+<<<<<<< HEAD
   "markdown-image-assistant": {}
+=======
+  welcome:
+    showOnStartup: false
+>>>>>>> ae5161483c3b82b4f7a0a284929333af21831c45

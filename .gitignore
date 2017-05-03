@@ -13,6 +13,12 @@ cmd/.vim/vundle/*
 cmd/.vim/var/backup/*
 cmd/.vim/var/swap/*
 
+xorg/.atom/compile-cache/
+xorg/.atom/.apm/
+xorg/.atom/blob-store/
+xorg/.config/Atom/*
+
+
 xorg/.mozilla/*
 xorg/.config/Thunar/
 xorg/.config/gtk-2.0/

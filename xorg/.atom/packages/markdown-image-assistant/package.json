@@ -2,6 +2,7 @@
   "_args": [
     [
       {
+<<<<<<< HEAD
         "raw": "/tmp/d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
         "scope": null,
         "escapedName": null,
@@ -14,27 +15,58 @@
     ]
   ],
   "_from": "../d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
+=======
+        "raw": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+        "spec": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11743-9313-ei1vk7.481zv3g14i"
+    ]
+  ],
+  "_from": "../d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+>>>>>>> ae5161483c3b82b4f7a0a284929333af21831c45
   "_id": "markdown-image-assistant@0.1.8",
   "_inCache": true,
   "_location": "/markdown-image-assistant",
   "_phantomChildren": {},
   "_requested": {
+<<<<<<< HEAD
     "raw": "/tmp/d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
     "rawSpec": "/tmp/d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
     "spec": "/tmp/d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
+=======
+    "raw": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+    "spec": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+>>>>>>> ae5161483c3b82b4f7a0a284929333af21831c45
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
+<<<<<<< HEAD
   "_resolved": "file:../d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
   "_shasum": "6505fa3145cc61a582b8466e1e493e18fc2e171f",
   "_shrinkwrap": null,
   "_spec": "/tmp/d-11741-28262-fx9q23.ml6u9grpb9/package.tgz",
   "_where": "/tmp/apm-install-dir-11741-28262-4rmvpu.qe1dhx5hfr",
+=======
+  "_resolved": "file:../d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+  "_shasum": "6505fa3145cc61a582b8466e1e493e18fc2e171f",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11743-9313-rjkd2b.z17cc5l8fr/package.tgz",
+  "_where": "/tmp/apm-install-dir-11743-9313-ei1vk7.481zv3g14i",
+>>>>>>> ae5161483c3b82b4f7a0a284929333af21831c45
   "bugs": {
     "url": "https://github.com/tlnagy/atom-markdown-image-assistant/issues"
   },

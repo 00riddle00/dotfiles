@@ -14,11 +14,15 @@ application/x-extension-shtml=firefox.desktop;
 application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+<<<<<<< HEAD
 image/png=feh.desktop;
 application/pdf=gimp.desktop;
 text/markdown=userapp-subl-YQUMZY.desktop;libreoffice-writer.desktop;
 video/x-matroska=vlc.desktop;
 application/rtf=libreoffice-writer.desktop;
+=======
+text/x-python=userapp-subl-U4LPZY.desktop;atom.desktop;
+>>>>>>> ae5161483c3b82b4f7a0a284929333af21831c45
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

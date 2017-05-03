@@ -1,0 +1,92 @@
+@import "ui-variables";
+@import "syntax-variables";
+
+@base-color: @syntax-background-color;
+
+// Functions
+.color (@scope, @color) {
+  @{scope}: contrast(@base-color, darken(@color, 10%), lighten(@color, 20%));
+}
+
+.round-box () {
+  box-sizing: border-box;
+  border-radius: @component-border-radius;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.box(@name, @color) {
+  .quick-highlight.@{name} .region {
+    .round-box;
+    .color(border-color, @color);
+  }
+}
+
+// Selection highlight
+@sbase: @syntax-result-marker-color;
+.box(@name) {
+  .quick-highlight.@{name} .region {
+    .round-box;
+    border-width: 0px;
+    background-color: hsla(hue(@sbase), saturation(@sbase), lightness(@sbase), 0.3);
+  }
+}
+
+.highlight(@name, @color) {
+  .quick-highlight.@{name} .region {
+    background-color: fade(@color, 50%);
+  }
+}
+
+.underline(@name, @color) {
+  .quick-highlight.@{name} .region {
+    .color(border-color, @color);
+    box-sizing: border-box;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-style: solid;
+  }
+}
+
+@color-base: hsl(0, 100%, 50%);
+
+@color01: spin(@color-base, 0);
+@color02: spin(@color-base, 180);
+@color03: spin(@color-base, 315);
+@color04: spin(@color-base, 135);
+@color05: spin(@color-base, 270);
+@color06: spin(@color-base, 225);
+@color07: spin(@color-base, 45);
+
+.status-bar-quick-highlight {
+  background-color: red;
+  color: green;
+}
+
+atom-text-editor {
+  .underline(underline-01, @color01);
+  .underline(underline-02, @color02);
+  .underline(underline-03, @color03);
+  .underline(underline-04, @color04);
+  .underline(underline-05, @color05);
+  .underline(underline-06, @color06);
+  .underline(underline-07, @color07);
+
+  .box(box-01, @color01);
+  .box(box-02, @color02);
+  .box(box-03, @color03);
+  .box(box-04, @color04);
+  .box(box-05, @color05);
+  .box(box-06, @color06);
+  .box(box-07, @color07);
+
+  .highlight(highlight-01, @color01);
+  .highlight(highlight-02, @color02);
+  .highlight(highlight-03, @color03);
+  .highlight(highlight-04, @color04);
+  .highlight(highlight-05, @color05);
+  .highlight(highlight-06, @color06);
+  .highlight(highlight-07, @color07);
+
+  .box(box-selection);
+}
