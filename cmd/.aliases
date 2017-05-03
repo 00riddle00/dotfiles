@@ -1,6 +1,8 @@
-$HOME/.config/openbox/autostart.sh
 
-export LC_ALL='en_US.UTF8'
+export LC_ALL="en_US.UTF-8"
+
+export DROPBOX=/home/riddle/Dropbox
+export SYNC=$DROPBOX/sync
 
 export THEME=riddle
 export MAIN_USER=riddle
@@ -10,15 +12,22 @@ export USER_HOME_DIR=/home/$MAIN_USER
 export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
-export CANDY=$HOME_DIR/.sync/candy
-export NOTES=$HOME_DIR/.gtd
-export SYNC=$HOME_DIR/.sync
+export NOTES=$SYNC/gtd/content/pages
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
-
+export CANDY=$SYNC/candy
+export KEEP=$SYNC/keepass
 export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
-
 export EDITOR=vim
+
+$HOME/.config/openbox/autostart.sh
+
+ps cax | grep autokey > /dev/null 2>&1 
+if [ $? -eq 0 ]; then
+    :
+else
+	$SHELL_SCRIPTS_DIR/autokey.sh
+fi
 
 
 stty -ixon
@@ -50,7 +59,7 @@ alias re='sudo reboot'
 alias off='sudo poweroff'
 
 # make cmd aliases
-function ma() { echo alias $1="'$2'" >> $HOME/.bashrc; bash; }
+function ma() { echo alias $1="'$2'" >> $HOME/.aliases; zsh; }
 
 function de() { sudo udisks --unmount /dev/$1; }
 
@@ -113,7 +122,6 @@ alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 # programs
 alias x='startx'
 alias vbox='virtualbox'
-alias read='acroread'
 alias fox='firefox'
 alias v='vim'
 alias vv='sudo vim'
@@ -155,7 +163,7 @@ alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cf='fortune | cowsay' 
 
 # databases
-#alias post='sudo systemctl start postgresql'
+alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
 alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
@@ -184,12 +192,12 @@ alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
 # screen setup
-alias xport='xrandr --output HDMI-1 --auto --rotate left --output eDP-1 --auto --right-of HDMI-1'
-alias xland='xrandr --output HDMI-1 --auto --rotate normal --output eDP-1 --auto --right-of HDMI-1'
-alias xexof='xrandr --output HDMI-1 --off'
-alias xexon='xrandr --output HDMI-1 --auto'
-alias xof='xrandr --output eDP-1 --off'
-alias xon='xrandr --output eDP-1 --auto'
+alias xport='xrandr --output HDMI-1-1 --auto --rotate left --output eDP-1-1 --auto --right-of HDMI-1-1'
+alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --auto --right-of HDMI-1-1'
+alias xexof='xrandr --output HDMI-1-1 --off'
+alias xexon='xrandr --output HDMI-1-1 --auto'
+alias xof='xrandr --output eDP-1-1 --off'
+alias xon='xrandr --output eDP-1-1 --auto'
 
 
 # c lang
@@ -296,7 +304,7 @@ alias pic='scrot -s $USER_HOME_DIR/Screenshots/screenshot-%F-%H%M%S.png'
 
 alias mig='pmp makemigrations && pmp migrate'
 
-alias home='xrandr --output HDMI-1 --auto --output eDP-1 --auto --right-of HDMI-1'
+alias home='xrandr --output HDMI-1-1 --auto --output eDP-1-1 --auto --right-of HDMI-1-1'
 
 alias tm='conky -c .conky/archconky &'
 
@@ -319,7 +327,7 @@ alias vi='cd $USER_HOME_DIR/VirtualBox\ VMs/'
 alias viu='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vu'
 alias vis='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vs'
 
-alias ek='xrandr --output VGA-1 --auto --output eDP-1  --auto left-of VGA-0 --output HDMI-1 --auto --left '
+alias ek='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
 
 alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 
@@ -327,6 +335,9 @@ alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
+#alias ru='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,ru phonetic'
+alias ru='setxkbmap ru phonetic'
+alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias gg='google-chrome-stable'
 alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
@@ -343,7 +354,7 @@ alias bt='tail -n 20 $HOME/.bashrc'
 alias lsd='lxc-ls -f'
 
 alias op='cd $HOME/.config/openbox'
-alias pro='cd $USER_HOME_DIR/proj'
+alias pro='cd $USER_HOME_DIR/pro'
 
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'
@@ -399,7 +410,6 @@ alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
 alias rl='readlink -f'
-alias post='cd $AUTOMATION_DIR/shell_scripts/post_install/'
 alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arch'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
@@ -419,8 +429,6 @@ alias dag.venv='source ../../../env/bin/activate'
 
 
 alias emac='emacs --no-window-system'
-alias can='cd $CANDY'
-alias sync='cd $SYNC'
 alias ch='s chown -R riddle:riddle'
 alias makex='s chmod +x'
 alias sa='ssh-add'
@@ -440,16 +448,20 @@ alias mute='amixer -q sset Master toggle'
 alias bak='cd ~/backups'
 alias gtk='v ~/.gtkrc-2.0'
 alias dum='du -h --max-depth=1'
-alias notes='cd ~/.riddle/.gtd/'
+alias notes='cd $NOTES'
 alias vimnotes='vim -c "colorscheme molokai | Note config"'
 alias plugins='vim +PluginInstall +qall'
 alias vimshell='vim -c VimShell'
 
-alias xclip2='xclip -selection clipboard'
+# copy/paste
+alias xclip='xclip -selection clipboard'
+# middle clip paste
+alias xclip1='xclip -selection primary'
+alias xclip2='xclip -selection secondary'
 
 
 function copy() { echo "$@" | xclip -selection clipboard;}
-function kk() { cp -r "$1" $HOME/backups/"$1".bak;} 
+function kk() { s cp -r "$1" $HOME/backups/"$1".bak;} 
 
 alias fonts.update='fc-cache -fv'
 alias riddle='cd ~/.riddle'
@@ -457,7 +469,24 @@ alias ho='hostname'
 alias sec='cd $HOME_DIR/.sec'
 alias push="gc -m '.' && gp"
 alias nn='notes && tree'
-alias keep='cd $SYNC/keepass'
+alias drop='cd $DROPBOX'
+alias keep='cd $KEEP'
+alias can='cd $CANDY'
+alias sync='cd $SYNC'
 alias cs='cd ~/CS'
+alias dc='docker-compose'
+
+alias key='eval $(ssh-agent -s) && ssh-add /home/riddle/.ssh/id_rsa'
+alias stat='cd /home/riddle/pro/statybininkai'
+alias kan='cat /home/riddle/main/social/kan.js | xclip'
 alias pacfile='sudo pacman -S - <'
 alias conda='/opt/anaconda/bin/conda'
+alias i='h | grep '
+alias tmuxr='v ~/.tmux.conf '
+alias li='libreoffice'
+alias and='cp /home/riddle/Dropbox/sync/android/\(a\)notes/notes.txt /home/riddle/Dropbox/sync/gtd/other/android.md'
+
+alias aa='airflow resetdb && airflow scheduler'
+alias air='source ~/pro/env/bin/activate && cd ~/airflow'
+alias pel='python -m pelican.server'
+alias trackmem='watch -n 5 du -h --max-depth=1'

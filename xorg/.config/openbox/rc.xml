@@ -411,7 +411,8 @@
     </keybind>
     <keybind key="W-Delete">
       <action name="Execute">
-        <command>amixer -q sset Master toggle</command>
+        <command>pavucontrol</command>
+        <!--<command>amixer -q sset Master toggle</command>-->
       </action>
     </keybind>
     <keybind key="W-F5">
@@ -419,6 +420,19 @@
         <command>xbacklight +10</command>
       </action>
     </keybind>
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>tint2</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-S-t">
+      <action name="Execute">
+        <command>killall tint2</command>
+      </action>
+    </keybind>
+
+
     <keybind key="W-F4">
       <action name="Execute">
         <command>xbacklight -10</command>
@@ -460,19 +474,16 @@
         <command>sh -c "$ACTIVATE clion"</command>
       </action>
     </keybind>
+
     <keybind key="W-p">
       <action name="Execute">
         <command>sh -c "$ACTIVATE pycharm"</command>
       </action>
     </keybind>
+
     <keybind key="F1">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
-      </action>
-    </keybind>
-    <keybind key="F5">
-      <action name="Execute">
-        <command>subl</command>
       </action>
     </keybind>
     <keybind key="F2">
@@ -487,7 +498,7 @@
       </action>
     </keybind>
 
-    <keybind key="F6">
+    <keybind key="F7">
       <action name="Execute">
         <command>thunderbird</command>
       </action>
@@ -503,13 +514,32 @@
       </action>
     </keybind>
 
-    <keybind key="F3">
+    <keybind key="F5">
         <action name="Execute">
             <command>subl</command>
         </action>
     </keybind>
 
+
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE copyq"</command>
+      </action>
+    </keybind>
+
+    <!--<keybind key="F5">-->
+        <!--<action name="ShowMenu">-->
+          <!--<menu>client-list-combined-menu</menu>-->
+        <!--</action>-->
+    <!--</keybind>-->
+
     <keybind key="W-n">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE atom"</command>
+      </action>
+    </keybind>
+
+    <keybind key="F3">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
       </action>
@@ -518,6 +548,7 @@
     <keybind key="Insert">
       <action name="Execute">
           <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
+          <!--<command>xdotool key Right</command>-->
       </action>
     </keybind>
 

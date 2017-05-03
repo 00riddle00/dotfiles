@@ -20,7 +20,7 @@ network_timeout = 5
  
 # library path
 # Path to directory in which your library of books is stored
-library_path = u'/home/riddle/Calibre Library'
+library_path = '/home/riddle/Calibre Library'
  
 # language
 # The language in which to display the user interface
@@ -28,7 +28,7 @@ language = 'en'
  
 # output format
 # The default output format for ebook conversions.
-output_format = 'epub'
+output_format = 'EPUB'
  
 # input format order
 # Ordered list of formats to prefer for input.
@@ -56,7 +56,7 @@ check_for_dupes_on_ctl = False
  
 # installation uuid
 # Installation UUID
-installation_uuid = '01841a3f-990e-4527-8a00-a08c134f0b42'
+installation_uuid = '35414858-03c6-4b45-9a4a-a37728ce3c09'
  
 # new book tags
 # Tags to apply to books added to the library

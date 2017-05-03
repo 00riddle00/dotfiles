@@ -1,5 +1,6 @@
 #! /bin/bash
 
+rm -rf $HOME/.atom
 rm -rf $HOME/.config
 rm -rf $HOME/.conky  
 rm -rf $HOME/.gmrunrc  

@@ -13,6 +13,7 @@ ln -sf $DOTFILES_DIR/xorg/.kde   $HOME/.kde
 ln -sf $DOTFILES_DIR/xorg/.kde4   $HOME/.kde4
 ln -sf $DOTFILES_DIR/xorg/.mplayer   $HOME/.mplayer
 ln -sf $DOTFILES_DIR/xorg/.xmonad   $HOME/.xmonad
+ln -sf $DOTFILES_DIR/xorg/.atom   $HOME/.atom
 
 
 
