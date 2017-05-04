@@ -8,6 +8,9 @@
 nohup.out
 
 cmd/.oh-my-zsh/*
+!cmd/.oh-my-zsh/.gitkeep
+
+
 cmd/.vim/bundle/
 cmd/.vim/vundle/
 cmd/.vim/var/backup/
