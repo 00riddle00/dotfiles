@@ -16,6 +16,12 @@ cmd/.mutt/certificates
 cmd/.mutt/certificates  
 cmd/.newsbeuter/cache*
 
+markdown-image-assistant
+markdown-writer
+monocolor-blue-syntax
+quick-highlight
+vim-mode
+
 xorg/.atom/*
 !xorg/.atom/config.cson
 !xorg/.atom/keymap.cson
