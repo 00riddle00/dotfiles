@@ -1,0 +1,31 @@
+{
+    "sendMode": "kb",
+    "filter": {
+        "regex": ".*Google.*Chrome",
+        "isRecursive": false
+    },
+    "usageCount": 14,
+    "hotkey": {
+        "modifiers": [
+            "<ctrl>"
+        ],
+        "hotKey": "w"
+    },
+    "matchCase": false,
+    "modes": [
+        3
+    ],
+    "type": "phrase",
+    "abbreviation": {
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": true,
+        "abbreviations": [],
+        "immediate": false,
+        "ignoreCase": false
+    },
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "description": "Next tab",
+    "prompt": false
+}
