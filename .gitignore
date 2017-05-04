@@ -7,16 +7,21 @@
 *~
 nohup.out
 
+cmd/.irssi/
+!cmd/.irssi/config
+
+cmd/.mutt/*
+!cmd/.mutt/muttrc
+
 cmd/.oh-my-zsh/*
 !cmd/.oh-my-zsh/.gitkeep
 
+cmd/.tmux/*
+!cmd/.tmux/plugins/
 
-cmd/.vim/bundle/
-cmd/.vim/vundle/
-cmd/.vim/var/backup/
-cmd/.vim/var/swap/
-cmd/.mutt/certificates  
-cmd/.newsbeuter/cache*
+cmd/.vim/*
+!cmd/.vim/after/
+!cmd/.vim/colors/
 
 xorg/.atom/*
 xorg/.atom/.*
@@ -33,7 +38,7 @@ xorg/.config/cmus/*
 !xorg/.config/cmus/lib.pl
 !xorg/.config/cmus/playlist.pl
 
-xorg/.config/filezilla
+xorg/.config/filezilla/*
 !xorg/.config/filezilla/filezilla.xml
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
