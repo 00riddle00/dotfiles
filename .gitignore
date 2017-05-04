@@ -1,3 +1,6 @@
+
+############################  USUAL GITIGNORE #######################
+
 .directory
 *.swp
 *.swl
@@ -15,59 +18,7 @@ xorg/.config/pulse/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+############################  PARTIAL DIRS GITIGNORE #######################
 
 cmd/.irssi/
 !cmd/.irssi/config
@@ -112,19 +63,6 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
-
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
-
-
-
-
-
-
-
-
-
-
-
-
 
