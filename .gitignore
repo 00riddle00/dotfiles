@@ -16,10 +16,12 @@ cmd/.mutt/certificates
 cmd/.mutt/certificates  
 cmd/.newsbeuter/cache*
 
+xorg/.atom/*
+!xorg/.atom/config.cson
+!xorg/.atom/keymap.cson
+!xorg/.atom/style.less
 
-xorg/.atom/compile-cache/
-xorg/.atom/.apm/
-xorg/.atom/blob-store/
+
 xorg/.config/Atom/*
 
 
