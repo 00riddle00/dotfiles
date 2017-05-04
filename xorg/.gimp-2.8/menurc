@@ -1,4 +1,4 @@
-; gimp GtkAccelMap rc-file         -*- scheme -*-
+; gimp-2.8 GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/view/view-shrink-wrap" "<Primary>j")
@@ -37,7 +37,6 @@
 ; (gtk_accel_path "<Actions>/plug-in/script-fu-newsprint-text" "")
 ; (gtk_accel_path "<Actions>/dockable/dialogs-dynamics-editor" "")
 ; (gtk_accel_path "<Actions>/dockable/dialogs-toolbox" "<Primary>b")
-; (gtk_accel_path "<Actions>/layers/layers-mask-show" "")
 ; (gtk_accel_path "<Actions>/context/context-background-green-decrease" "")
 ; (gtk_accel_path "<Actions>/drawable/drawable-rotate-180" "")
 ; (gtk_accel_path "<Actions>/tools/tools-paint-brush-angle-increase-skip" "")
@@ -45,6 +44,7 @@
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-distorts-menu" "")
 ; (gtk_accel_path "<Actions>/tools/tools-paint-brush-aspect-ratio-increase-skip" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-antialias" "")
+; (gtk_accel_path "<Actions>/layers/layers-mask-show" "")
 ; (gtk_accel_path "<Actions>/tools/tools-foreground-select-brush-size-set" "")
 ; (gtk_accel_path "<Actions>/tools/tools-object-2-previous" "")
 ; (gtk_accel_path "<Actions>/image/image-scale" "")
@@ -1056,8 +1056,8 @@
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-mblur-inward" "")
 ; (gtk_accel_path "<Actions>/layers/layers-mode-menu" "")
 ; (gtk_accel_path "<Actions>/gradients/gradients-new" "")
-; (gtk_accel_path "<Actions>/plug-in/plug-in-borderaverage" "")
 ; (gtk_accel_path "<Actions>/tools/tools-ink-blob-aspect-set" "")
+; (gtk_accel_path "<Actions>/plug-in/plug-in-borderaverage" "")
 ; (gtk_accel_path "<Actions>/color-button/color-button-use-white" "")
 ; (gtk_accel_path "<Actions>/context/context-tool-select-previous" "")
 ; (gtk_accel_path "<Actions>/tools/tools-paint-brush-aspect-ratio-increase" "")
@@ -1128,6 +1128,7 @@
 ; (gtk_accel_path "<Actions>/layers/layers-opacity-menu" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-sinus" "")
 ; (gtk_accel_path "<Actions>/brush-editor/brush-editor-edit-active" "")
+(gtk_accel_path "<Actions>/windows/windows-display-0001" "<Alt>1")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-vectors" "")
 ; (gtk_accel_path "<Actions>/quick-mask/quick-mask-toggle" "<Shift>q")
 ; (gtk_accel_path "<Actions>/tools/tools-value-2-decrease-skip" "<Shift>bracketleft")
