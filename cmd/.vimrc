@@ -1,52 +1,46 @@
-" Figure out what sort of color scheme we should be using. The default is
-" 'dusk', my bright-on-dark scheme. If the VIMCOLOR environment variable is
-" set, then use that, giving preference to "solarized" for the generic
-" settings of "light" or "dark".
-"
-if $VIMCOLOR == 'light'
-	set background=light
-	let g:solarized_termcolors=256
-	color solarized
-elseif $VIMCOLOR == 'dark'
-	set background=dark
-	let g:solarized_termcolors=256
-	color solarized
-elseif $VIMCOLOR == 'molokai'
-	let g:molokai_original=1
-	let g:rehash256=1
-	color molokai
-elseif $VIMCOLOR != ''
-	color $VIMCOLOR
-else
-	set t_Co=256
-	set background=dark
-	"TODO make this work
-	"let g:solarized_termcolors=256
-	"TODO install via pathogen
-	color solarized
-endif
 
-" Make sure we're getting 256 colors when it's available
-if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
-	set t_Co=256
-endif
+"############################### MAIN CONFIG #####################################
+
+"TODO add comments everywhere
 
 " Don't save backups
 set nobackup
-set noswapfile
 
+" Show matching brackets when cursor is over them
+set showmatch
+
+" Easy movement between windows
+noremap <c-j> <C-W>j
+noremap <c-k> <C-W>k
+noremap <c-h> <C-W>h
+noremap <c-l> <C-W>l
+
+" Tab navigation
+"TODO enable c-q, c-w, c-e for tab navigation
+nmap    <leader>t       :tabnew<cr>
+nmap    <leader>w       :tabnext<cr>
+nmap    <leader>q       :tabprev<cr>
+"nmap    <leader>r       :tabedit %<CR>
+nmap    <leader>1       1gt
+nmap    <leader>2       2gt
+nmap    <leader>3       3gt
+nmap    <leader>4       4gt
+nmap    <leader>0       :tablast<cr>
+
+" Toggle line numbers
+nmap <leader>n :set number!<CR>
+
+" Toggle paste mode
+map <leader>p :setlocal paste!<CR>
+
+set guitablabel=%t
+
+set noswapfile
 set nofoldenable
 set nocompatible
 
 nmap    <leader>j       :sp<cr>
 nmap    <leader>v       :vs<cr>
-
-
-" Show matching brackets when cursor is over them
-set showmatch
-
-
-"--------------NOTES-------------
 
 nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
@@ -65,48 +59,8 @@ map <c-s>           :w!<CR>
 "TODO switch <SPACE> with 0
 nmap    <SPACE>     ^
 
-
-" Easy movement between windows
-"TODO change ctrl to alt
-noremap <c-j> <C-W>j
-noremap <c-k> <C-W>k
-noremap <c-h> <C-W>h
-noremap <c-l> <C-W>l
-
-"TODO enable c-q
-" Easy tab control
-nmap    <leader>t       :tabnew<cr>
-nmap    <leader>w       :tabnext<cr>
-nmap    <leader>q       :tabprev<cr>
-"nmap    <leader>r       :tabedit %<CR>
-nmap    <leader>1       1gt
-nmap    <leader>2       2gt
-nmap    <leader>3       3gt
-nmap    <leader>4       4gt
-nmap    <leader>0       :tablast<cr>
-
-"noremap   <c-n>      :set number!<cr>
-noremap <leader>n :set number!<CR>
-
-" Toggle paste mode
-map <leader>p :setlocal paste!<CR>
-
-
-" Look and feel.
-syntax enable
-filetype indent plugin on
-filetype plugin on
-"TODO add more fonts (with if clauses), and make it
-"override terminal fonts
-set guifont=Terminus\ 12
-"?set guioptions=irL
-set number
-"?set wildmenu
 set encoding=utf-8
 "?set fileencodings=ucs-bom,utf-8,windows-1257
-"?set foldmethod=marker
-"?set foldlevel=20
-set showcmd     " Show count of selected lines or characters
 set shell=/bin/sh
 
 " Text wrapping
@@ -142,22 +96,15 @@ set smartindent
 " Do not wrap lines automatically
 set nowrap
 
-
-
 " Treat long lines as break lines
 map j gj
 map k gk
-
-" Statusline
-set laststatus=2
-
 
 " Autocomplete
 "ino <c-k> <c-p>
 "ino <c-j> <c-n>
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
-
 
 " I often hit :W when I actually mean :w
 command! W write
@@ -169,6 +116,122 @@ command! Q quit
 
 " I don't even know how to use Ex mode.
 nnoremap Q <nop>
+
+" set it to disable hjkl keys
+"noremap h <NOP>
+"noremap j <NOP>
+"noremap k <NOP>
+"noremap l <NOP>
+
+"############################### PLUGINS #####################################
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
+call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'fatih/vim-go'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'powerline/powerline'
+Plugin 'raimondi/delimitmate'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'klen/python-mode'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" " To ignore plugin indent changes, instead use:
+" "filetype plugin on
+
+" " Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+
+" " see :h vundle for more details or wiki for FAQ
+" " Put your non-Plugin stuff after this line
+
+"############################### PLUGIN CONFIG #####################################
+
+let g:instant_markdown_autostart = 0
+
+let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   
+let g:NERDTreeWinPos = "left"                                                                                                                                                                                                                 
+let g:NERDTreeWinSize = 30                                                                                                                                                                                                                     
+let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']  
+let g:NERDTreeMapHelp = '<F1>'
+
+let g:tagbar_width = 30
+let g:tagbar_sort = 0
+
+let g:pymode_lint_checkers = ['pyflakes']                                                                                                                                                                            
+let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
+let g:pymode_lint_on_write = 0                                                                                                                                                                                       
+let g:pymode_rope_complete_on_dot = 0                                                                                                                                                                                
+let g:pyflakes_use_quickfix = 0                                                                                                                                                                                      
+let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
+                                                                                                                                                                                                                     
+let g:syntastic_enable_signs = 1                                                                                                                                                                                     
+let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
+let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
+let g:syntastic_python_checkers = ['python', 'flake8']                                                                                                                                                               
+let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
+let g:syntastic_python_pep8_args = '--ignore=E501'  
+
+let g:ycm_python_binary_path = '/usr/bin/python3'
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_section_b = '%{strftime("%c")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+
+" Do not show buffers from other tabs.
+let g:bufExplorerFindActive=0
+let g:bufExplorerShowTabBuffer=0
+let g:bufExplorerShowRelativePath=1
+
+
+" fugitive git bindings
+nnoremap <space>ga :Git add %:p<CR><CR>
+nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gc :Gcommit -v -q<CR>
+noremap <space>gt :Gcommit -v -q %:p<CR>
+nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>ge :Gedit<CR>
+nnoremap <space>gr :Gread<CR>
+nnoremap <space>gw :Gwrite<CR><CR>
+nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>
+nnoremap <space>gp :Ggrep<Space>
+nnoremap <space>gm :Gmove<Space>
+nnoremap <space>gb :Git branch<Space>
+nnoremap <space>go :Git checkout<Space>
+nnoremap <space>gps :Dispatch! git push<CR>
+nnoremap <space>gpl :Dispatch! git pull<CR>
+
+
+"############################### FUNCTIONS ########################################
 
 function! ToggleNERDTreeAndTagbar()                                                                                                                                                                                  
     " Detect which plugins are open                                                                                                                                                                                  
@@ -204,11 +267,6 @@ function! ToggleNERDTreeAndTagbar()
     endif                                                                                                                                                                                                            
 endfunction   
 
-" Get ride of annoying parenthesis matching, I prefer to use %.                                                                                                                                                      
-let loaded_matchparen = 1                                                                                                                                                                                            
-                                                                                                                                                                                                                     
-" Disable A tag underlining                                                                                                                                                                                          
-let html_no_rendering = 1   
 
 function! GetBufferList()
   redir =>buflist
@@ -216,6 +274,7 @@ function! GetBufferList()
   redir END
   return buflist
 endfunction
+
 
 function! ToggleList(bufname, pfx)
   let buflist = GetBufferList()
@@ -238,114 +297,47 @@ function! ToggleList(bufname, pfx)
 endfunction
 
 
+"############################### LOOK AND FEEL #####################################
 
-" Plugins                                                                                                                                                                                                                                      
-" =======                                                                                                                                                                                                                                      
-                                                                                                                                                                                                                                               
-" How to install Vundle:                                                                                                                                                                                                                       
-"                                                                                                                                                                                                                                              
-"     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim                                                                                                                                                              
-"                                                                                                                                                                                                                                              
-" https://github.com/gmarik/Vundle.vim                                                                                                                                                                                                         
-" set the runtime path to include Vundle and initialize                                                                                                                                                                                        
-"  
+" Figure out what sort of color scheme we should be using. 
+" If the VIMCOLOR environment variable is
+" set, then use that, giving preference to "solarized" for the generic
+" settings of "light" or "dark".
 
-filetype off                                                                                                                                                                                                                                   
-set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
-call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
+if $VIMCOLOR == 'light'
+	set background=light
+	let g:solarized_termcolors=256
+	color solarized
+elseif $VIMCOLOR == 'dark'
+	set background=dark
+	let g:solarized_termcolors=256
+	color solarized
+elseif $VIMCOLOR == 'molokai'
+	let g:molokai_original=1
+	let g:rehash256=1
+	color molokai
+elseif $VIMCOLOR != ''
+	color $VIMCOLOR
+else
+	set t_Co=256
+	set background=dark
+	color solarized
+endif
 
+" Make sure we're getting 256 colors when it's available
+if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
+	set t_Co=256
+endif
 
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'fatih/vim-go'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
-Plugin 'xolox/vim-misc'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'powerline/powerline'
-Plugin 'raimondi/delimitmate'
-Plugin 'kien/ctrlp.vim'
-Plugin 'gmarik/Vundle.vim'  
-Plugin 'tpope/vim-fugitive'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'klen/python-mode'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+syntax enable
+"TODO add more fonts (with if clauses), and make it override terminal fonts
+set guifont=Terminus\ 12
+"?set guioptions=irL
+"?set foldmethod=marker
+"?set foldlevel=20
+set showcmd     " Show count of selected lines or characters
+set number
+"?set wildmenu
+" Statusline
+set laststatus=2
 
-"let g:notes_directories = ['/home/riddle/Dropbox/sync/gtd']
-let g:instant_markdown_autostart = 0
-
-let g:NERDTreeQuitOnOpen = 0                                                                                                                                                                                                                   
-let g:NERDTreeWinPos = "left"                                                                                                                                                                                                                 
-let g:NERDTreeWinSize = 30                                                                                                                                                                                                                     
-let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']  
-let g:NERDTreeMapHelp = '<F1>'
-
-
-let g:tagbar_width = 30
-let g:tagbar_sort = 0
-
-
-let g:pymode_lint_checkers = ['pyflakes']                                                                                                                                                                            
-let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
-let g:pymode_lint_on_write = 0                                                                                                                                                                                       
-let g:pymode_rope_complete_on_dot = 0                                                                                                                                                                                
-let g:pyflakes_use_quickfix = 0                                                                                                                                                                                      
-let g:pymode_lint_cwindow = 0                                                                                                                                                                                        
-nmap <C-c>i :PymodeRopeAutoImport<CR>
-                                                                                                                                                                                                                     
-let g:syntastic_enable_signs = 1                                                                                                                                                                                     
-let g:syntastic_disabled_filetypes = ['html']                                                                                                                                                                        
-let g:syntastic_python_python_exec = '/usr/bin/python3'                                                                                                                                                              
-let g:syntastic_python_checkers = ['python', 'flake8']                                                                                                                                                               
-let g:syntastic_filetype_map = {'python.django': 'python'}                                                                                                                                                           
-let g:syntastic_python_pep8_args = '--ignore=E501'  
-
-let g:ycm_python_binary_path = '/usr/bin/python3'
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_section_b = '%{strftime("%c")}'
-let g:airline_section_y = 'BN: %{bufnr("%")}'
-
-" Do not show buffers from other tabs.
-let g:bufExplorerFindActive=0
-let g:bufExplorerShowTabBuffer=0
-let g:bufExplorerShowRelativePath=1
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-filetype plugin on    " required
-
-"noremap h <NOP>
-"noremap j <NOP>
-"noremap k <NOP>
-"noremap l <NOP>
-
-" fugitive git bindings
-nnoremap <space>ga :Git add %:p<CR><CR>
-nnoremap <space>gs :Gstatus<CR>
-nnoremap <space>gc :Gcommit -v -q<CR>
-noremap <space>gt :Gcommit -v -q %:p<CR>
-nnoremap <space>gd :Gdiff<CR>
-nnoremap <space>ge :Gedit<CR>
-nnoremap <space>gr :Gread<CR>
-nnoremap <space>gw :Gwrite<CR><CR>
-nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>
-nnoremap <space>gp :Ggrep<Space>
-nnoremap <space>gm :Gmove<Space>
-nnoremap <space>gb :Git branch<Space>
-nnoremap <space>go :Git checkout<Space>
-nnoremap <space>gps :Dispatch! git push<CR>
-nnoremap <space>gpl :Dispatch! git pull<CR>
-
-
-" unsorted
-set guitablabel=%t
