@@ -30,6 +30,13 @@ xorg/.atom/.*
 !xorg/.atom/style.less
 !xorg/.atom/package_list
 
+xorg/.config/autokey/*
+!xorg/.config/autokey/autokey.json
+!xorg/.config/autokey/data
+
+xorg/.config/autokey/data/*
+!xorg/.config/autokey/data/Chrome/
+
 xorg/.config/copyq/*
 !xorg/.config/copyq/copyq.conf
 
@@ -56,13 +63,6 @@ xorg/.config/filezilla/*
 
 
 xorg/.CLion2016.3/system/
-
-xorg/.config/autokey/*
-!xorg/.config/autokey/autokey.json
-!xorg/.config/autokey/data
-
-xorg/.config/autokey/data/*
-!xorg/.config/autokey/data/Chrome/
 
 xorg/.config/Atom/*
 xorg/.config/Thunar/
