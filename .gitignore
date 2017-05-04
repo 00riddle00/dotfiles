@@ -22,7 +22,6 @@ xorg/.atom/.*
 !xorg/.atom/style.less
 !xorg/.atom/package_list
 
-
 xorg/.config/copyq/*
 !xorg/.config/copyq/copyq.conf
 
@@ -31,6 +30,10 @@ xorg/.config/cmus/*
 !xorg/.config/cmus/lib.pl
 !xorg/.config/cmus/playlist.pl
 
+xorg/.config/filezilla
+!xorg/.config/filezilla/filezilla.xml
+!xorg/.config/filezilla/layout.xml
+!xorg/.config/filezilla/sitemanager.xml
 
 
 
