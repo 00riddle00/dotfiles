@@ -7,18 +7,11 @@
 *~
 nohup.out
 
-xorg/.config/autokey/*
-!xorg/.config/autokey/autokey.json
-!xorg/.config/autokey/data
-
-xorg/.config/autokey/data/*
-!xorg/.config/autokey/data/Chrome/
-
 cmd/.oh-my-zsh/*
-cmd/.vim/bundle/*
-cmd/.vim/vundle/*
-cmd/.vim/var/backup/*
-cmd/.vim/var/swap/*
+cmd/.vim/bundle/
+cmd/.vim/vundle/
+cmd/.vim/var/backup/
+cmd/.vim/var/swap/
 cmd/.mutt/certificates  
 cmd/.newsbeuter/cache*
 
@@ -29,7 +22,36 @@ xorg/.atom/.*
 !xorg/.atom/style.less
 !xorg/.atom/package_list
 
+
+xorg/.config/copyq/*
+!xorg/.config/copyq/copyq.conf
+
+xorg/.config/cmus/*
+!xorg/.config/cmus/autosave
+!xorg/.config/cmus/lib.pl
+!xorg/.config/cmus/playlist.pl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 xorg/.CLion2016.3/system/
+
+xorg/.config/autokey/*
+!xorg/.config/autokey/autokey.json
+!xorg/.config/autokey/data
+
+xorg/.config/autokey/data/*
+!xorg/.config/autokey/data/Chrome/
 
 xorg/.config/Atom/*
 xorg/.config/Thunar/
