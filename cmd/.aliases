@@ -469,7 +469,8 @@ alias fonts.update='fc-cache -fv'
 alias riddle='cd ~/.riddle'
 alias ho='hostname'
 alias sec='cd $HOME_DIR/.sec'
-alias push="gc -m '.' && gp"
+alias com="ga . && gc -m '.'"
+alias push="com && gp" 
 alias nn='notes && tree'
 alias drop='cd $DROPBOX'
 alias keep='cd $KEEP'
@@ -497,6 +498,3 @@ alias fire='firefox'
 alias pan='pandoc'
 alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
 alias wiki='cd /home/riddle/Dropbox/sync/gtd/content/pages/terahyde/wiki'
-test
-test 2
-test test
