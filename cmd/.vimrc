@@ -2,6 +2,7 @@
 " 'dusk', my bright-on-dark scheme. If the VIMCOLOR environment variable is
 " set, then use that, giving preference to "solarized" for the generic
 " settings of "light" or "dark".
+"
 if $VIMCOLOR == 'light'
 	set background=light
 	let g:solarized_termcolors=256
@@ -52,8 +53,14 @@ nnoremap <leader>[ :bp<CR>
 
 noremap <leader>o :BufExplorer<CR>
 
-noremap    <c-n>        :call ToggleNERDTreeAndTagbar()<CR>
+"noremap    <c-n>        :call ToggleNERDTreeAndTagbar()<CR>
+noremap    <c-n>        :NERDTreeTabsToggle<CR>
+noremap    <c-m>        :NERDTreeFocus<CR>
+
+noremap <leader>r       :so $VIMRC<CR>
+
 map <leader>h           :set hlsearch!<CR>
+map <c-s>           :w!<CR>
 
 "TODO switch <SPACE> with 0
 nmap    <SPACE>     ^
@@ -71,7 +78,7 @@ noremap <c-l> <C-W>l
 nmap    <leader>t       :tabnew<cr>
 nmap    <leader>w       :tabnext<cr>
 nmap    <leader>q       :tabprev<cr>
-nmap    <leader>r       :tabedit %<CR>
+"nmap    <leader>r       :tabedit %<CR>
 nmap    <leader>1       1gt
 nmap    <leader>2       2gt
 nmap    <leader>3       3gt
@@ -248,13 +255,12 @@ set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
 
 
-
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
-"Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'powerline/powerline'
@@ -272,24 +278,6 @@ Plugin 'klen/python-mode'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
-
-
-"Plugin 'vim-scripts/SearchComplete'
-"Plugin 'airblade/vim-gitgutter'
-"Plugin 'valloric/youcompleteme'
-"Plugin 'pangloss/vim-javascript'
-"Plugin 'easymotion/vim-easymotion'
-"Plugin 'godlygeek/tabular'
-"Plugin 'honza/vim-snippets'
-"Plugin 'tpope/vim-repeat'
-"Plugin 'mattn/emmet-vim'
-"Plugin 'mileszs/ack.vim'
-"Plugin 'sirver/ultisnips'
-"Plugin 'tpope/vim-commentary'
-"Plugin 'shougo/unite.vim'
-"Plugin 'nathanaelkane/vim-indent-guides'
-"Plugin 'wincent/command-t'
 
 "let g:notes_directories = ['/home/riddle/Dropbox/sync/gtd']
 let g:instant_markdown_autostart = 0
@@ -358,3 +346,6 @@ nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
+
+" unsorted
+set guitablabel=%t
