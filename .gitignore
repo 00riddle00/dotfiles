@@ -23,6 +23,7 @@ cmd/.mutt/certificates
 cmd/.newsbeuter/cache*
 
 xorg/.atom/*
+xorg/.atom/.*
 !xorg/.atom/config.cson
 !xorg/.atom/keymap.cson
 !xorg/.atom/style.less
