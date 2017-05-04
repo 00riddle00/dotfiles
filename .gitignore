@@ -9,7 +9,7 @@ nohup.out
 
 xorg/.config/autokey/*
 !xorg/.config/autokey/autokey.json
-!xorg/.config/autokey/data/
+!xorg/.config/autokey/data/Chrome/
 
 cmd/.oh-my-zsh/*
 cmd/.vim/bundle/*
