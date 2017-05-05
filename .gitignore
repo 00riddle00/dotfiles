@@ -20,7 +20,7 @@ xorg/.config/pulse/
 
 ############################  PARTIAL DIRS GITIGNORE #######################
 
-cmd/.irssi/
+cmd/.irssi/*
 !cmd/.irssi/config
 
 cmd/.mutt/*
