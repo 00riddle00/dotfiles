@@ -11,6 +11,7 @@
 nohup.out
 
 
+xorg/.config/Atom/
 xorg/.config/google-chrome/
 xorg/.config/menus/
 xorg/.config/pulse/
@@ -62,6 +63,10 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/filezilla.xml
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
+
+xorg/.config/sublime-text-3/*
+!xorg/.config/sublime-text-3/Packages/User/
+
 
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py

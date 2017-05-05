@@ -1,16 +1,5 @@
 "*":
-  core:
-    autoHideMenuBar: true
-    telemetryConsent: "no"
-    themes: [
-      "atom-dark-ui"
-      "monocolor-blue-syntax"
-    ]
   editor:
-    fontFamily: "Source Code Pro"
     fontSize: 10
   "exception-reporting":
-    userId: "bbbb99d4-ab83-4ffa-a804-6ec33a25b962"
-  "markdown-image-assistant": {}
-  welcome:
-    showOnStartup: false
+    userId: "855f29bd-2d47-45f0-b557-2649ae332dfb"
