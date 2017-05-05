@@ -93,6 +93,19 @@ xorg/.kde/share/config/*
 !xorg/.kde/share/config/plasmarc
 
 
+xorg/.kde4/tmp*
+
+xorg/.kde4/share/apps/*
+!xorg/.kde4/share/apps/dolphin  
+
+xorg/.kde4/share/config/*
+!xorg/.kde4/share/config/dolphinrc
+!xorg/.kde4/share/config/kdeglobals
+!xorg/.kde4/share/config/kglobalshortcutsrc
+!xorg/.kde4/share/config/konsolerc
+
+
+
 xorg/.gimp-2.8/menurc
 xorg/.gimp-2.8/tags.xml
 xorg/.gimp-2.8/gimpswap*
