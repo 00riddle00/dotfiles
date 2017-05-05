@@ -1,0 +1,144 @@
+---
+
+#----------------------------------------------------------------------------------------------------------
+# This playbook is used to set up Centos 7 server and deploy Python Pyramid application with nginx and wsgi
+#
+# NOTE: commented parts do not work yet
+#
+#----------------------------------------------------------------------------------------------------------
+
+
+- hosts: hosts # {{ insert host or host group here }} 
+  remote_user: user
+  become: true
+  gather_facts: yes
+
+  vars:
+    user: user
+    project_name: "project_name"
+    server_name: "server_name"
+    server_address: "0.0.0.0:6543"
+    path_to_dist: "~/path/to/dist"
+    ansible_become_pass: password
+
+    epel_repo_url: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
+    epel_repo_gpg_key_url: "/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
+    epel_repofile_path: "/etc/yum.repos.d/epel.repo"
+
+  tasks:
+
+  - name: check if epel repo is already configured.
+    stat: path={{ epel_repofile_path }}
+    register: epel_repofile_result
+
+  - name: Install EPEL repo.
+    yum:
+      name: "{{ epel_repo_url }}"
+      state: present
+    register: result
+    until: '"failed" not in result'
+    retries: 5
+    delay: 10
+    when: not epel_repofile_result.stat.exists
+
+  - name: Import EPEL GPG key.
+    rpm_key:
+      key: "{{ epel_repo_gpg_key_url }}"
+      state: present
+    when: not epel_repofile_result.stat.exists
+    ignore_errors: "{{ ansible_check_mode }}"
+
+  - name: upgrade all packages
+    yum: name=* state=latest
+
+
+  - name: install cowsay and ensure it is at the latest version 
+    yum: name=cowsay state=latest
+
+  - name: install the required environment package groups
+    yum: name=@^{{item}} state=present
+    with_items:
+      - "Minimal Install"
+      - "Basic Web Server"
+
+  - name: install the required package groups
+    yum: name=@{{item}} state=present
+    with_items:
+      - base
+      - core
+      - debugging
+      - "system administration tools"
+      - "security tools"
+      - "virtualization"
+      - "system management"
+      - "development tools"
+
+  - name: install additional packages
+    yum: name={{item}} state=latest
+    with_items:
+      - nginx
+      - firewalld
+      - vim
+      - git
+      - telnet
+      - mlocate
+      - python2-pip
+      - python-devel
+      - openldap-devel
+  - command: updatedb
+
+  - name: launch firewalld and add basic rules
+    command: systemctl start firewalld 
+    command: systemctl enable firewalld
+    command: firewall-cmd --permanent --zone=public --add-service=http 
+    command: firewall-cmd --permanent --zone=public --add-service=https
+    command: firewall-cmd --reload
+
+  - name: add personal dotfiles
+    shell: "{{ item }}"
+    with_items:
+      - git clone https://github.com/00riddle00/dotfiles.git $DOTFILES && cd $DOTFILES
+      - cp -r .bashrc .vimrc .vim .dircolors .gitconfig /home/{{ user }}
+      - cp -r .bashrc .vimrc .vim .dircolors .gitconfig /root/
+    environment: 
+      DOTFILES: /home/{{ user }}/.dotfiles
+
+  - name: set up nginx
+    file: path=/etc/nginx/conf.d state=directory
+  - template: src=/etc/ansible/templates/nginx.conf dest=/etc/nginx/conf.d/{{ project_name }}.conf
+  - command: systemctl start nginx
+  - command: systemctl enable nginx
+
+  - name: set up mongodb
+    template: src=/etc/ansible/templates/centos_7/mongodb.repo dest=/etc/yum.repos.d/
+  - yum: name=* state=latest
+    yum: name={{item}} state=latest
+    with_items:
+      - mongodb-org 
+      - mongodb-org-server
+  - command: systemctl start mongod
+
+  - name: copy
+    copy: src=/root/.ssh/github_rsa{{ item.0 }} dest=/home/{{ user }}/.ssh/ owner={{ user }} group={{ user }} mode={{ item.1 }}
+    with_together:
+      - [ '', '.pub']
+      - [ '0600', '0644']
+
+  - git: repo=git@github.com:test/test-api.git dest=/home/{{ user }}/test key_file=/home/{{ user }}/.ssh/github_rsa accept_hostkey=yes force=yes
+
+  - name: setup project
+    command: pip install virtualenv
+  - shell: "{{ item }}"
+    args:
+      chdir: /home/{{ user }}/test/test-api
+    with_items:
+      - virtualenv $VENV
+      - $VENV/bin/pip install --upgrade pip setuptools
+      - $VENV/bin/python /home/{{ user }}/test/tesi-api/setup.py install
+      - $VENV/bin/pip install -e .
+      - $VENV/bin/pip install mongoengine==0.10.7
+      - $VENV/bin/init_db /home/{{ user }}/test/test-api/development.ini
+      - $VENV/bin/pserve /home/{{ user }}/test/test-api/development.ini --reload
+    environment: 
+      VENV: /home/{{ user }}/test/env 
+

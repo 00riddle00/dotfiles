@@ -1,0 +1,47 @@
+
+
+#-----------------------------------------------------------------------------
+# This playbook is used to: 
+# [1] download and start lxc container(s)  (1 or more)
+# [2] configure ssh access to them
+# Container are defined in host variables, ex. /etc/ansible/host_vars/hostname
+#-----------------------------------------------------------------------------
+
+- hosts: lxc_hosts
+  connection: local
+  become: true
+  tasks:
+
+  - name: Create the containers
+    lxc_container:
+      template: centos
+      name: "{{ item.name }}"
+      state: started
+    with_items: "{{ containers }}"
+    register: containers_info
+
+  - name: Wait for the network to be setup in the containers
+    when: containers_info|changed
+    pause: seconds=10
+
+  - name: Get containers info now that IPs are available
+    lxc_container:
+      name: "{{ item.name }}"
+    with_items: "{{ containers }}"
+    register: containers_info
+
+  - name: Register the hosts in the inventory
+    add_host:
+      name: "{{ item.lxc_container.ips.0 }}"
+      group: "{{ item.item.service }}"
+    with_items: "{{ containers_info.results }}"
+
+  - name: add container info to /root/.ssh/config
+    # code here
+
+  - name: Run a command in a container and then restart it
+    lxc_container:
+      name: test-container-started
+      state: restarted
+      container_command: |
+         /bin/bash /tmp/ssh_init.sh /tmp/$var_file 

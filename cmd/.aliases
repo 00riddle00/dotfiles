@@ -1,6 +1,8 @@
 
 export LC_ALL="en_US.UTF-8"
 
+export TMP=/home/riddle/tmp1
+export TMP2=/home/riddle/tmp2
 export VIMRC=/home/riddle/.vimrc
 export DROPBOX=/home/riddle/Dropbox
 export SYNC=$DROPBOX/sync
@@ -11,9 +13,9 @@ export MAIN_USER=riddle
 export HOME_DIR=/home/$MAIN_USER/.riddle
 export RIDDLE=/home/$MAIN_USER/.riddle
 export USER_HOME_DIR=/home/$MAIN_USER
-export AUTOMATION_DIR=$HOME_DIR/.automation
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
-export SHELL_SCRIPTS_DIR=$HOME_DIR/.shell-scripts
+export AUTOMATION_DIR=$DOTFILES_DIR/automation
+export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export NOTES=$SYNC/gtd/content/pages
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
@@ -499,6 +501,8 @@ alias fire='firefox'
 alias pan='pandoc'
 alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
 alias wiki='cd /home/riddle/Dropbox/sync/gtd/content/pages/terahyde/wiki'
+alias gi='v .gitignore'
 
-export TT='/home/riddle/tmp1/NOT_YET_ADDED'
-export TEMP='/home/riddle/tmp1/TEMP'
+## TEMPORARY
+alias ig='v $DOTFILES_DIR/.gitignore'
+

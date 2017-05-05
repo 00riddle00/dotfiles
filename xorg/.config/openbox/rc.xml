@@ -422,6 +422,8 @@
         <command>xbacklight +10</command>
       </action>
     </keybind>
+
+
     <keybind key="W-t">
       <action name="Execute">
         <command>tint2</command>
@@ -433,6 +435,22 @@
         <command>killall tint2</command>
       </action>
     </keybind>
+
+
+    <keybind key="A-c">
+      <action name="Execute">
+        <command>cairo-dock</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-v">
+      <action name="Execute">
+        <command>killall cairo-dock</command>
+      </action>
+    </keybind>
+
+
+
 
 
     <keybind key="W-F4">

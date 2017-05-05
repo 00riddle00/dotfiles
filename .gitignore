@@ -1,27 +1,34 @@
 
 ############################  USUAL GITIGNORE #######################
 
-.directory
+*~
+*.bak
 *.swp
 *.swl
 *.swm
 *.swn
 *.swo
-*~
-nohup.out
+*.out
+.directory
 
+automation/ssh/*.*
 
 xorg/.config/Atom/
 xorg/.config/chromium
+xorg/.config/dconf
 xorg/.config/google-chrome/
 xorg/.config/KeePass/
 xorg/.config/menus/
+xorg/.config/.mono/
 xorg/.config/pulse/
-
-
-
+xorg/.config/Thunar/
 
 ############################  PARTIAL DIRS GITIGNORE #######################
+
+xorg/.config/libreoffice/4/*
+!xorg/.config/libreoffice/4/user/
+xorg/.config/libreoffice/4/user/*
+!xorg/.config/libreoffice/4/user/registrymodifications.xcu 
 
 cmd/.irssi/*
 !cmd/.irssi/config

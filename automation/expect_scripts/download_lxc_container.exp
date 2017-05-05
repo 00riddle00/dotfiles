@@ -1,0 +1,17 @@
+#!/usr/bin/expect
+
+# This script is a test script used to download LXC container
+set name [lindex $argv 0]
+
+spawn lxc-create -n $name -t download
+
+expect "Distribution:";
+send "centos\r"
+
+expect "Release:";
+send "7\r"
+
+expect "Architecture:";
+send "amd64\r"
+
+expect eof
