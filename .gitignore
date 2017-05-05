@@ -1,15 +1,17 @@
 
 ############################  USUAL GITIGNORE #######################
 
-.directory
+*~
+*.bak
 *.swp
 *.swl
 *.swm
 *.swn
 *.swo
-*~
-nohup.out
+*.out
+.directory
 
+automation/ssh/*.*
 
 xorg/.config/Atom/
 xorg/.config/chromium
@@ -17,9 +19,6 @@ xorg/.config/google-chrome/
 xorg/.config/KeePass/
 xorg/.config/menus/
 xorg/.config/pulse/
-
-
-
 
 ############################  PARTIAL DIRS GITIGNORE #######################
 
