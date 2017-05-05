@@ -1,4 +1,9 @@
 "*":
+  core:
+    themes: [
+      "atom-dark-ui"
+      "monocolor-blue-syntax"
+    ]
   editor:
     fontSize: 10
   "exception-reporting":
