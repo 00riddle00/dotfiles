@@ -1,3 +1,0 @@
-[General]
-exclude filters=ui_*.h,cmake_install.cmake,CMakeCache.txt,.moc,confstat,*.tmp,*.nvram,*.la,po,*.rej,*.part,.git,*.pc,__pycache__,moc_*.cpp,*.o,libtool,*.omf,config.status,CMakeFiles,*.loT,*.csproj,*.rcore,lzo,*.class,_darcs,*.po,Makefile.am,*.aux,*.swap,conftest,.bzr,CMakeTmpQmake,*.pyc,*.orig,CVS,*.vm*,CMakeTmp,*.lo,.xsession-errors*,.svn,.pch,lost+found,*.moc,CTestTestfile.cmake,confdefs.h,*.gmo,*~,core-dumps,autom4te,*.elc,*.m4,.histfile.*,.hg,litmain.sh,.obj,qrc_*.cpp,.uic
-exclude filters version=2

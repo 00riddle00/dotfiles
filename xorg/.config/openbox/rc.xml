@@ -368,6 +368,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="W-k">
       <action name="PreviousWindow">
         <bar>no</bar>
@@ -378,6 +379,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -521,6 +523,14 @@
     </keybind>
 
 
+    <keybind key="W-o">
+      <action name="Execute">
+          <command>keepass /home/riddle/Dropbox/sync/keepass/8gb.kdbx</command>
+      </action>
+    </keybind>
+
+
+
     <keybind key="W-c">
       <action name="Execute">
         <command>sh -c "$ACTIVATE copyq"</command>
@@ -533,13 +543,13 @@
         <!--</action>-->
     <!--</keybind>-->
 
-    <keybind key="W-n">
+    <keybind key="F3">
       <action name="Execute">
         <command>sh -c "$ACTIVATE atom"</command>
       </action>
     </keybind>
 
-    <keybind key="F3">
+    <keybind key="W-n">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
       </action>
