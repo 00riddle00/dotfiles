@@ -78,9 +78,19 @@ xorg/.kde/share/apps/*
 !xorg/.kde/share/apps/QtCurve
 
 
-
-
-
+xorg/.kde/share/config/*
+!xorg/.kde/share/config/dolphinrc
+!xorg/.kde/share/config/gtkrc
+!xorg/.kde/share/config/gtkrc-2.0
+!xorg/.kde/share/config/kdeglobals
+!xorg/.kde/share/config/kglobalshortcutsrc
+!xorg/.kde/share/config/khotkeysrc
+!xorg/.kde/share/config/konqsidebartngrc
+!xorg/.kde/share/config/konquerorrc
+!xorg/.kde/share/config/konsolerc
+!xorg/.kde/share/config/plasma-desktop-appletsrc
+!xorg/.kde/share/config/plasma-desktoprc
+!xorg/.kde/share/config/plasmarc
 
 
 xorg/.gimp-2.8/menurc
