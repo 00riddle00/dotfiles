@@ -1,6 +1,8 @@
 
 export LC_ALL="en_US.UTF-8"
 
+export TMP=/home/riddle/tmp1
+export TMP2=/home/riddle/tmp2
 export VIMRC=/home/riddle/.vimrc
 export DROPBOX=/home/riddle/Dropbox
 export SYNC=$DROPBOX/sync
