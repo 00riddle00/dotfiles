@@ -25,9 +25,10 @@ xorg/.config/Thunar/
 
 ############################  PARTIAL DIRS GITIGNORE #######################
 
-/xorg/.config/libreoffice/4/user/.lock
-/xorg/.config/libreoffice/4/user/*
-!/xorg/.config/libreoffice/4/user/registrymodifications.xcu 
+xorg/.config/libreoffice/4/*
+!xorg/.config/libreoffice/4/user/
+xorg/.config/libreoffice/4/user/*
+!xorg/.config/libreoffice/4/user/registrymodifications.xcu 
 
 cmd/.irssi/*
 !cmd/.irssi/config
