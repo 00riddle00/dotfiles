@@ -69,13 +69,13 @@ xorg/.config/filezilla/*
 
 
 
-xorg/.config/.kde/share/apps/*
-!xorg/.config/.kde/share/apps/aurorae
-!xorg/.config/.kde/share/apps/color-schemes
-!xorg/.config/.kde/share/apps/desktoptheme
-!xorg/.config/.kde/share/apps/dolphin
-!xorg/.config/.kde/share/apps/konqueror
-!xorg/.config/.kde/share/apps/QtCurve
+xorg/.kde/share/apps/*
+!xorg/.kde/share/apps/aurorae
+!xorg/.kde/share/apps/color-schemes
+!xorg/.kde/share/apps/desktoptheme
+!xorg/.kde/share/apps/dolphin
+!xorg/.kde/share/apps/konqueror
+!xorg/.kde/share/apps/QtCurve
 
 
 
