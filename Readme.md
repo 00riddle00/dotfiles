@@ -72,13 +72,3 @@ Copy these mappings to 'vimium' settings in chrome
 * map F LinkHints.activateMode
 * map t Vomnibar.activateTabSelection
 
-
-### IdeaVim (JetBrains)
-
-Set shortcuts manually in IdeaVim settings:
-
-Keys: Ctrl+D, Ctrl+M, Ctrl+U, Ctrl+Y  
-Handler: Vim   
-
-All other Keys    						
-Handler: IDE
