@@ -55,6 +55,8 @@ noremap <leader>r       :so $VIMRC<CR>
 
 map <leader>h           :set hlsearch!<CR>
 map <c-s>           :w!<CR>
+map ss           :wq<CR>
+map qq           :q<CR>
 
 "TODO switch <SPACE> with 0
 nmap    <SPACE>     ^
@@ -108,7 +110,10 @@ set complete=.,w,b,u
 
 " I often hit :W when I actually mean :w
 command! W write
-command! Q quit
+"command! W! :w!
+"command! Q quit
+"command! Q! :q!
+"command! WQ! :wq!
 
 " Don't remove indentation when adding '#' comments
 " TODO fix it

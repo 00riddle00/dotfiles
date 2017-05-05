@@ -501,4 +501,8 @@ alias fire='firefox'
 alias pan='pandoc'
 alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
 alias wiki='cd /home/riddle/Dropbox/sync/gtd/content/pages/terahyde/wiki'
-alias ig='v .gitignore'
+alias gi='v .gitignore'
+
+## TEMPORARY
+alias ig='v $DOTFILES_DIR/.gitignore'
+

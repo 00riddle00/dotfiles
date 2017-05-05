@@ -19,10 +19,15 @@ xorg/.config/dconf
 xorg/.config/google-chrome/
 xorg/.config/KeePass/
 xorg/.config/menus/
+xorg/.config/.mono/
 xorg/.config/pulse/
 xorg/.config/Thunar/
 
 ############################  PARTIAL DIRS GITIGNORE #######################
+
+/xorg/.config/libreoffice/4/user/.*
+/xorg/.config/libreoffice/4/user/*
+!/xorg/.config/libreoffice/4/user/registrymodifications.xcu 
 
 cmd/.irssi/*
 !cmd/.irssi/config
