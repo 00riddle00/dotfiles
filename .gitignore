@@ -12,7 +12,9 @@ nohup.out
 
 
 xorg/.config/Atom/
+xorg/.config/chromium
 xorg/.config/google-chrome/
+xorg/.config/KeePass/
 xorg/.config/menus/
 xorg/.config/pulse/
 
@@ -65,6 +67,12 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/sitemanager.xml
 
 
+xorg/.jetbrains.custom_folder/pycharm/config/*
+!xorg/.jetbrains.custom_folder/pycharm/config/codestyles
+!xorg/.jetbrains.custom_folder/pycharm/config/colors
+!xorg/.jetbrains.custom_folder/pycharm/config/inspection
+!xorg/.jetbrains.custom_folder/pycharm/config/keymaps
+
 
 
 
@@ -105,19 +113,17 @@ xorg/.kde4/share/config/*
 !xorg/.kde4/share/config/konsolerc
 
 
-
 xorg/.gimp-2.8/menurc
 xorg/.gimp-2.8/tags.xml
 xorg/.gimp-2.8/gimpswap*
 
+
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/
-
 
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
 
 xorg/.config/xfce4/*
 !xorg/.config/xfce4/xfconf/
-
 

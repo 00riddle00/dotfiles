@@ -368,6 +368,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="W-k">
       <action name="PreviousWindow">
         <bar>no</bar>
@@ -378,6 +379,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -519,6 +521,14 @@
             <command>subl</command>
         </action>
     </keybind>
+
+
+    <keybind key="W-o">
+      <action name="Execute">
+          <command>keepass /home/riddle/Dropbox/sync/keepass/8gb.kdbx</command>
+      </action>
+    </keybind>
+
 
 
     <keybind key="W-c">
