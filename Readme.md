@@ -1,8 +1,6 @@
- * TODO
-  * Add manual for vim plugins  
-  * TODO Add manual for zsh plugins
+* TODO: add documentation
 
-## VIM keybindings in various apps
+## VIM keybindings for browser extensions
 
 ### VimFx (Firefox)
 Set shortcuts manually in VimFx settings  
