@@ -64,10 +64,28 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
+
+
+
+
+
+xorg/.config/.kde/share/apps/*
+!xorg/.config/.kde/share/apps/aurorae
+!xorg/.config/.kde/share/apps/color-schemes
+!xorg/.config/.kde/share/apps/desktoptheme
+!xorg/.config/.kde/share/apps/dolphin
+!xorg/.config/.kde/share/apps/konqueror
+!xorg/.config/.kde/share/apps/QtCurve
+
+
+
+
+
+
+
 xorg/.gimp-2.8/menurc
 xorg/.gimp-2.8/tags.xml
 xorg/.gimp-2.8/gimpswap*
-
 
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/
