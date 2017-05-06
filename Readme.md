@@ -18,6 +18,8 @@ Commands below should be set, and other key mappings should be set to blank
 * Scroll half a page up: <c-u>
 * Scroll to top: gg
 * Scroll to bottom: G
+* Scroll to the far left <c-Left>
+* Scroll to the far right <c-Right>
 
 * Duplicate tab: d
 * Go to the first tab: <a-1>
