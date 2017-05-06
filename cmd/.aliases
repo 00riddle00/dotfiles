@@ -409,7 +409,7 @@ if [ -f $HOME/.dircolors ]; then
 fi
 
 # Vi everything
-set -o vi
+#set -o vi
 
 alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
@@ -505,4 +505,4 @@ alias gi='v .gitignore'
 
 ## TEMPORARY
 alias ig='v $DOTFILES_DIR/.gitignore'
-
+alias sym="find . -maxdepth 1 -type l -print"   

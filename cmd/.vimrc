@@ -20,12 +20,24 @@ noremap <c-l> <C-W>l
 nmap    <leader>t       :tabnew<cr>
 nmap    <leader>w       :tabnext<cr>
 nmap    <leader>q       :tabprev<cr>
-"nmap    <leader>r       :tabedit %<CR>
+"nmap    ??       :tabclose<cr>
 nmap    <leader>1       1gt
 nmap    <leader>2       2gt
 nmap    <leader>3       3gt
 nmap    <leader>4       4gt
 nmap    <leader>0       :tablast<cr>
+"nmap    <leader>r       :tabedit %<CR>
+
+nmap    <c-t>       :tabnew<cr>
+nmap    <c-w>       :tabnext<cr>
+nmap    <c-q>       :tabprev<cr>
+nmap    <c-e>       :tabclose<cr>
+nmap    <a-1>       1gt
+nmap    <a-2>       2gt
+nmap    <a-3>       3gt
+nmap    <a-4>       4gt
+nmap    <a-0>0       :tablast<cr>
+"nmap    <W-r>       :tabedit %<CR>
 
 " Toggle line numbers
 nmap <leader>n :set number!<CR>
@@ -55,6 +67,7 @@ noremap <leader>r       :so $VIMRC<CR>
 
 map <leader>h           :set hlsearch!<CR>
 map <c-s>           :w!<CR>
+map <leader>e           :e<CR>
 map ss           :wq<CR>
 map qq           :q<CR>
 

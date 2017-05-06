@@ -7,6 +7,7 @@ application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 text/plain=atom.desktop;
 application/pdf=libreoffice-draw.desktop;
+video/mp4=vlc.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

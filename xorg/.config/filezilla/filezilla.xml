@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FileZilla3 version="3.25.0" platform="*nix">
+<FileZilla3 version="3.25.2" platform="*nix">
 	<Settings>
 		<Setting name="Use Pasv mode">1</Setting>
 		<Setting name="Limit local ports">0</Setting>
@@ -68,14 +68,14 @@
 		<Setting name="File exists action download">0</Setting>
 		<Setting name="File exists action upload">0</Setting>
 		<Setting name="Allow ascii resume">0</Setting>
-		<Setting name="Greeting version">3.25.0</Setting>
+		<Setting name="Greeting version">3.25.2</Setting>
 		<Setting name="Greeting resources" />
 		<Setting name="Onetime Dialogs" />
 		<Setting name="Show Tree Local">1</Setting>
 		<Setting name="Show Tree Remote">1</Setting>
 		<Setting name="File Pane Layout">2</Setting>
 		<Setting name="File Pane Swap">0</Setting>
-		<Setting name="Last local directory">/home/riddle/pro/statybininkai/joomla_dev/</Setting>
+		<Setting name="Last local directory">/home/riddle/</Setting>
 		<Setting name="Filelist directory sort">0</Setting>
 		<Setting name="Filelist name sort">1</Setting>
 		<Setting name="Queue successful autoclear">0</Setting>
