@@ -8,6 +8,8 @@ application/x-extension-xht=firefox.desktop;
 text/plain=atom.desktop;
 application/pdf=libreoffice-draw.desktop;
 video/mp4=vlc.desktop;
+video/x-matroska=vlc.desktop;mplayer.desktop;
+image/vnd.microsoft.icon=gimp.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

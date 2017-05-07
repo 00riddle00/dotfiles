@@ -13,6 +13,10 @@
 
 automation/ssh/*.*
 
+xorg/.config/deluge/
+xorg/.config/pavucontrol.ini
+
+
 xorg/.config/Atom/
 xorg/.config/chromium
 xorg/.config/dconf
