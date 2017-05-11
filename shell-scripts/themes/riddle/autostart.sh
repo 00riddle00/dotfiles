@@ -1,4 +1,5 @@
 #! /bin/sh
+/usr/bin/dropbox &
 
 xrandr --output HDMI-1-1 --auto 
 
