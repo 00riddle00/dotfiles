@@ -380,8 +380,8 @@ alias dl='dpkg -l'
 alias al='v $HOME/.aliases'
 alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
 alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
-alias xplus='xbacklight +10'
-alias xminus='xbacklight -10'
+alias xplus='light -A 10'
+alias xminus='light -U 10'
 
 # Turn off Touchpad 
 # synclient TouchpadOff=1
@@ -415,7 +415,7 @@ alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
 alias rl='readlink -f'
-alias arp='vv $AUTOMATION_DIR/shell_scripts/post_install/arch_linux/packages_arch'
+alias arp='vv $NOTES/coding/os/packages_arch.md'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
@@ -507,3 +507,7 @@ alias gi='v .gitignore'
 alias ig='v $DOTFILES_DIR/.gitignore'
 alias sym="find . -maxdepth 1 -type l -print"   
 alias video='lspci | grep -e VGA -e 3D'
+alias hlsaves='cd /home/riddle/.local/share/Steam/steamapps/common/Half-Life\ 2/hl2/save'
+
+
+
