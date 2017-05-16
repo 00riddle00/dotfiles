@@ -11,6 +11,7 @@ image/jpeg=feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
+video/x-msvideo=vlc.desktop;mplayer.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

@@ -145,21 +145,101 @@ xorg-xwud
 ##########
 
 ##################
-#intel+nvidia 960M
+#GPU
+##################
+
+# Xorg iesko specific drivers installed for the hardware,
+# jei neranda, pirma iesko fbdev, jei ne, iesko vesa.
+# Jei neranda, fallbackina i KMS. 
+# Kad rastu specific drivers, zr. lentele. (AWiki->Xorg).
+#
+# Open source draiveriu paeiska:
+# pacman -Ss xf86-video
+#
+# Viskas based on:
+   xorg-server
+
+
+
+xf86vidmodeproto #  X11 Video Mode extension wire protocol
+ libxxf86vm # X11 XFree86 video mode extension library
+
+libglvnd # The GL Vendor-Neutral Dispatch library
+|
+mesa # an open-source implementation of the OpenGL specification
+
+nvidia-utils
+    #split: 
+    opencl-nvidia
+
+nvidia
+
+nvidia-settings
+    #split:
+    libxnvctrl
+
+nvidia # nvida drivers for linux
+
+
+# 32 bit graphics
+lib32-gcc-libs
+lib-32-libglvnd
+lib32-zlib
+
+lib32-nvidia-utils
+    # split:
+    lib32-opencl-nvidia
+
+libxxf86dga #[OPTIONAL?] X11 Direct Graphics Access extension library
+lib32-libxxf86dga #[OPTIONAL?] X11 Direct Graphics Access extension library (32 bit)
+
+
+
+### INTEL
+# required by lib32-mesa:
+libxxf86vm
+lib32-libxxf86vm
+
+xf86-video-intel
+mesa # an open-source implementation of the OpenGL specification
+lib32-mesa # an open-source implementation of the OpenGL specification (32-bit)
+
+mesa-demos #[OPTIONAL?] Mesa demos and tools
+lib32-mesa-demos #[OPTIONAL?] Mesa demos and tools (32-bit)
+
+
+videoproto #[OPTIONAL?] X11 Video extension wire protocol 
+
+libglade #[OPTIONAL?] Allows you to load glade interface files in a program at runtime
+
+xf86-video-nouveau #[OPTIONAL?] Open Source 2D acceleration driver for nVidia cards
+
+xf86-video-vesa #[OPTIONAL?] X.org vesa video driver
+
+
+xf86dgaproto #[OPTIONAL?]X11 Direct Graphics Access extension wire protocol
+
+xf86driproto # [OPTIONAL?] X11 DRI extension wire protocol
+xf86vidmodeproto # [OPTIONAL?] X11 DRI extension wire protocol
+
+
+cuda 
+cudnn
+
+
+
+##################
+# Touchpad
 ##################
 xf86-input-synaptics 
-xf86-video-vesa
-
-xf86-video-nouveau 
-lib32-mesa 
-mesa-libgl
-lib32-mesa-libgl
-mesa
-mesa-demo
-
-nvidia nvidia-utils cuda cudnn
+#config file:
+    /etc/X11/xorg.conf.d/70-synaptics.conf
 
 
+
+#################
+# WMs
+#################
 
 #####
 # i3
@@ -170,6 +250,20 @@ i3lock
 i3status
 dmenu
 
+#####
+# Xmonad
+#####
+
+xmonad
+
+
+#################
+# DEs
+#################
+
+
+
+
 ############
 # main repos
 ############
@@ -177,6 +271,7 @@ dmenu
 dnsutils
 archlinux-keyring
 xdotool
+lshw
 dia
 gvfs
 atom

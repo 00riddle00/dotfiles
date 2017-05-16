@@ -506,3 +506,4 @@ alias gi='v .gitignore'
 ## TEMPORARY
 alias ig='v $DOTFILES_DIR/.gitignore'
 alias sym="find . -maxdepth 1 -type l -print"   
+alias video='lspci | grep -e VGA -e 3D'
