@@ -1,1 +1,2 @@
-/home/riddle/.riddle/.dotfiles/shell-scripts/themes/riddle/autostart.sh
+#! /bin/sh
+terminator -T t2

@@ -1,13 +1,13 @@
+#### VARIABLES 
 
-export LC_ALL="en_US.UTF-8"
-
+export TERM=terminator 
+export LC_ALL="en_US.UTF-8" 
 export TMP=/home/riddle/tmp1
 export TMP2=/home/riddle/tmp2
 export VIMRC=/home/riddle/.vimrc
 export DROPBOX=/home/riddle/Dropbox
 export SYNC=$DROPBOX/sync
 export PRO=/home/riddle/pro
-
 export THEME=riddle
 export MAIN_USER=riddle
 export HOME_DIR=/home/$MAIN_USER/.riddle
@@ -24,17 +24,8 @@ export KEEP=$SYNC/keepass
 export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
 export EDITOR=vim
 
-$HOME/.config/openbox/autostart.sh
 
-ps cax | grep autokey > /dev/null 2>&1 
-if [ $? -eq 0 ]; then
-    :
-else
-	$SHELL_SCRIPTS_DIR/autokey.sh
-fi
-
-
-stty -ixon
+#### ALIASES
 
 alias b='bash'
 alias s='sudo'
@@ -63,21 +54,6 @@ alias q='exit'
 alias re='sudo reboot'
 alias off='sudo poweroff'
 
-# make cmd aliases
-function ma() { echo alias $1="'$2'" >> $HOME/.aliases; zsh; }
-
-function de() { sudo udisks --unmount /dev/$1; }
-
-function op() { nohup $1 & disown;}
-
-# combine cd & ls
-function cdd() { cd $1; ls;}
-
-# find command in history
-function his() { history | grep $1; }
-
-
-
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -94,7 +70,6 @@ alias srv='cd /srv/http/'
 alias h='history'
 
 # pacman
-#alias pacs='sudo pacman -S' 
 alias pacs='sudo pacman -S --noconfirm' 
 alias pacu='sudo pacman -U'
 alias pacr='sudo pacman -R'
@@ -112,6 +87,7 @@ alias openbox='exec openbox-session'
 alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
 alias start='vim $HOME/.config/openbox/autostart.sh'
+alias autostart='$HOME/.config/openbox/autostart.sh'
 alias rc='vim $HOME/.config/openbox/rc.xml'
 alias menu='sudo vim $HOME/.config/openbox/menu.xml'
 alias out='sudo openbox --exit'
@@ -203,7 +179,6 @@ alias xexon='xrandr --output HDMI-1-1 --auto'
 alias xof='xrandr --output eDP-1-1 --off'
 alias xon='xrandr --output eDP-1-1 --auto'
 
-
 # c lang
 alias ms='make rebuild'
 #alias ms='make test'
@@ -223,10 +198,6 @@ alias senv='source env/bin/activate'
 alias qenv='deactivate'
 alias runs='python manage.py runserver'
 
-
-############################################################################
-############################################################################
-
 alias pu='s pip uninstall'
 alias mim='vv $HOME/.config/mimeapps.list'
 alias glg='git lg'
@@ -240,7 +211,6 @@ alias tmp3='cd $USER_HOME_DIR/tmp3'
 alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
 alias dok='cd $USER_HOME_DIR/docker'
-
 
 alias reb='make rebuild'
 alias exe='./main.exe'
@@ -294,7 +264,6 @@ alias xfce='exec xfce4-session'
 alias xl='xrandr --output VGA-0 --rotate left'
 alias xn='xrandr --output VGA-0 --rotate normal' 
 
-
 alias aptr='sudo apt-get remove'
 alias dp='sudo dpkg -i'
 #alias up='sudo apt-get update'
@@ -335,7 +304,6 @@ alias ek='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --
 
 alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 
-
 alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
@@ -354,7 +322,6 @@ alias vof='s ipsec down MBS && s ipsec down JIRA'
 
 alias tb='tail -n 20 ~/.aliases'
 alias del="sed -i '$ d' ~/.aliases"
-
 
 alias lsd='lxc-ls -f'
 
@@ -383,34 +350,6 @@ alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
 alias xplus='light -A 10'
 alias xminus='light -U 10'
 
-# Turn off Touchpad 
-# synclient TouchpadOff=1
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-export TERM=terminator
-#export TERM=terminator
-
-
-#if [ command -v setxkbmap >/dev/null 2>&1 ]; then 
-setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
-setxkbmap -option caps:escape
-    #setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il
-#fi
-
-#archey && fortune | cowsay
-#screenfetch
-archey3
-#quote=$(fortune) && cowsay $quote && espeak "$quote" &> /dev/null 
-
-if [ -f $HOME/.dircolors ]; then
-    eval $(dircolors $HOME/.dircolors)
-fi
-
-# Vi everything
-#set -o vi
-
 alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
@@ -431,18 +370,12 @@ alias dag.sc='python scanner.py'
 alias dag.dir='cd ~/lxc/dag-builder/ && venv'
 alias dag.venv='source ../../../env/bin/activate'
 
-
-
 alias emac='emacs --no-window-system'
 alias ch='s chown -R riddle:riddle'
 alias makex='s chmod +x'
 alias sa='ssh-add'
 alias sl='ssh-add -l'
 alias cal='gcalcli'
-
-#if [ ! -n "$TMUX" ]; then tmux ; fi
-tmux >  /dev/null 2>&1
-
 alias mi='mirage'
 alias ic='v ~/.config/i3/config'
 alias starwars='telnet towel.blinkenlights.nl'
@@ -463,10 +396,6 @@ alias xclip='xclip -selection clipboard'
 # middle clip paste
 alias xclip1='xclip -selection primary'
 alias xclip2='xclip -selection secondary'
-
-
-function copy() { echo "$@" | xclip -selection clipboard;}
-function kk() { s cp -r "$1" $HOME/backups/"$1".bak;} 
 
 alias fonts.update='fc-cache -fv'
 alias riddle='cd ~/.riddle'
@@ -503,11 +432,104 @@ alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
 alias wiki='cd /home/riddle/Dropbox/sync/gtd/content/pages/terahyde/wiki'
 alias gi='v .gitignore'
 
-## TEMPORARY
+#### TEMPORARY ALIASES
 alias ig='v $DOTFILES_DIR/.gitignore'
 alias sym="find . -maxdepth 1 -type l -print"   
 alias video='lspci | grep -e VGA -e 3D'
 alias hlsaves='cd /home/riddle/.local/share/Steam/steamapps/common/Half-Life\ 2/hl2/save'
+alias is='pld | grepi '
+
+
+#### FUNCTIONS
+
+# make cmd aliases
+function ma() { echo alias $1="'$2'" >> $HOME/.aliases; zsh; }
+
+function de() { sudo udisks --unmount /dev/$1; }
+
+function op() { nohup $1 & disown;}
+
+# combine cd & ls
+function cdd() { cd $1; ls;}
+
+# find command in history
+function his() { history | grep $1; }
+
+function copy() { echo "$@" | xclip -selection clipboard;}
+function kk() { s cp -r "$1" $HOME/backups/"$1".bak;} 
 
 
 
+
+#### RUN COMMANDS
+
+FREETYPE_PROPERTIES="truetype:interpreter-version=35"
+
+xrandr --output HDMI-1-1 --auto 
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+
+if [ -f $HOME/.dircolors ]; then
+    eval $(dircolors $HOME/.dircolors)
+fi
+
+
+#if [ ! -n "$TMUX" ]; then tmux ; fi
+
+if xset q &>/dev/null; then
+
+	tmux > /dev/null 2>&1
+
+
+    ps cax | grep autokey > /dev/null 2>&1 
+    if [ $? -eq 0 ]; then
+        :
+    else
+        $SHELL_SCRIPTS_DIR/autokey.sh
+    fi;
+
+
+    setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
+    setxkbmap -option caps:escape
+
+
+    #eval `cat $HOME/.fehbg` &     
+    feh  --bg-scale '/home/riddle/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
+
+    gnome-screensaver > /dev/null 2>&1 &
+
+
+    ps cax | grep conky > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        :
+    else
+        conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
+        conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
+    fi
+
+else
+    if [ $TTY = "/dev/tty1"  ]; then startx; fi
+fi
+
+
+ps cax | grep dropbox > /dev/null
+if [ $? -eq 0 ]; then
+  :
+else
+    /usr/bin/dropbox & 
+fi
+
+
+stty -ixon
+
+# Vi everything
+set -o vi
+
+archey3
+#screenfetch
+#
+
+
+alias install='sudo pacman -S --noconfirm - < '
