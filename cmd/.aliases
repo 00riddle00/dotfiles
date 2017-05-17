@@ -1,5 +1,8 @@
 #### VARIABLES 
 
+alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
+alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
+
 export TERM=terminator 
 export LC_ALL="en_US.UTF-8" 
 export TMP=/home/riddle/tmp1
@@ -470,7 +473,6 @@ xrandr --output HDMI-1-1 --auto
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
 if [ -f $HOME/.dircolors ]; then
     eval $(dircolors $HOME/.dircolors)
 fi
@@ -479,6 +481,7 @@ fi
 #if [ ! -n "$TMUX" ]; then tmux ; fi
 
 if xset q &>/dev/null; then
+
 
 	tmux > /dev/null 2>&1
 
@@ -491,8 +494,10 @@ if xset q &>/dev/null; then
     fi;
 
 
-    setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt
-    setxkbmap -option caps:escape
+    if type setxkbmap >/dev/null 2>&1; then
+        setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt  2>/dev/null 
+        setxkbmap -option caps:escape 2>/dev/null
+    fi
 
 
     #eval `cat $HOME/.fehbg` &     
@@ -510,7 +515,11 @@ if xset q &>/dev/null; then
     fi
 
 else
-    if [ $TTY = "/dev/tty1"  ]; then startx; fi
+    if [ $TTY = "/dev/tty1"  ]; then 
+        startx
+    else
+        sudo echo "keycode 58 = Escape" | sudo loadkeys
+    fi
 fi
 
 
@@ -533,3 +542,4 @@ archey3
 
 
 alias install='sudo pacman -S --noconfirm - < '
+alias playb='mplayer -vo fbdev2 '
