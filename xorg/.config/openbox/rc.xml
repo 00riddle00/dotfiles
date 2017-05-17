@@ -460,7 +460,8 @@
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>gnome-screensaver-command -l</command>
+        <!--<command>gnome-screensaver-command -l</command>-->
+        <command>xscreensaver-command --lock</command>
       </action>
     </keybind>
     <keybind key="F12">
@@ -635,11 +636,19 @@
         <command>sh -c "$FOCUS 'Developer Tools'"</command>
       </action>
     </keybind>
+
     <keybind key="W-z">
       <action name="Execute">
-        <command>xterm -rv</command>
+        <command>xterm</command>
       </action>
     </keybind>
+
+    <keybind key="W-u">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE urxvt"</command>
+      </action>
+    </keybind>
+
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>

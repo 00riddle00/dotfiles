@@ -1,9 +1,19 @@
 #### VARIABLES 
+#
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
+
+
+alias xresources='xrdb -merge ~/.Xresources'
+alias xdefaults='xrdb -merge ~/.Xdefaults'
 
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
 alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
 
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
 export TERM=terminator 
+#export TERM=xterm-256color 
 export LC_ALL="en_US.UTF-8" 
 export TMP=/home/riddle/tmp1
 export TMP2=/home/riddle/tmp2
@@ -46,6 +56,7 @@ alias lc='ls | cat'
 alias cpr='s cp -r'
 alias rmr='s rm -r'
 alias mvr='s mv -r'
+alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias grepi='grep -i'
 alias pag='ps aux | grepi'
 alias c='clear'
@@ -503,7 +514,8 @@ if xset q &>/dev/null; then
     #eval `cat $HOME/.fehbg` &     
     feh  --bg-scale '/home/riddle/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
 
-    gnome-screensaver > /dev/null 2>&1 &
+    #gnome-screensaver > /dev/null 2>&1 &
+    xscreensaver > /dev/null 2>&1 &
 
 
     ps cax | grep conky > /dev/null 2>&1
@@ -543,3 +555,4 @@ archey3
 
 alias install='sudo pacman -S --noconfirm - < '
 alias playb='mplayer -vo fbdev2 '
+alias ovh='ssh root@tomasgiedraitis.com'
