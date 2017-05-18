@@ -12,7 +12,7 @@ alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
 
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-export TERM=terminator 
+#export TERM=terminator 
 #export TERM=xterm-256color 
 export LC_ALL="en_US.UTF-8" 
 export TMP=/home/riddle/tmp1

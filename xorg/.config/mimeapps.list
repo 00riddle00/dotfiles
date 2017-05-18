@@ -12,6 +12,7 @@ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-ca
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
 video/x-msvideo=vlc.desktop;mplayer.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
