@@ -100,7 +100,7 @@
 		<Setting name="Icon theme">classic</Setting>
 		<Setting name="Icon scale">75</Setting>
 		<Setting name="Timestamp in message log">0</Setting>
-		<Setting name="Sitemanager last selected">0/GN/sveiki.lt</Setting>
+		<Setting name="Sitemanager last selected">0/GN/bprof</Setting>
 		<Setting name="Local filelist shown columns">1111</Setting>
 		<Setting name="Remote filelist shown columns">111111</Setting>
 		<Setting name="Local filelist column order">0,1,2,3</Setting>
@@ -109,7 +109,7 @@
 		<Setting name="Filter toggle state">0</Setting>
 		<Setting name="Show quickconnect bar">0</Setting>
 		<Setting name="Messagelog position">1</Setting>
-		<Setting name="Last connected site">0/GN/sveiki.lt</Setting>
+		<Setting name="Last connected site">0/GN/bprof</Setting>
 		<Setting name="File doubleclock action">2</Setting>
 		<Setting name="Dir doubleclock action">0</Setting>
 		<Setting name="Minimize to tray">0</Setting>
@@ -145,15 +145,15 @@
 			<Port>21</Port>
 			<Protocol>0</Protocol>
 			<Type>0</Type>
-			<User>admin@sveiki.lt</User>
-			<Pass encoding="base64">cDFBXWdaMURJdE4kCg==</Pass>
+			<User>admin@beautyprof.lt</User>
+			<Pass encoding="base64">dDlDJXkpaztebWIp</Pass>
 			<Logontype>1</Logontype>
 			<TimezoneOffset>0</TimezoneOffset>
 			<PasvMode>MODE_DEFAULT</PasvMode>
 			<MaximumMultipleConnections>0</MaximumMultipleConnections>
 			<EncodingType>Auto</EncodingType>
 			<BypassProxy>0</BypassProxy>
-			<Name>sveiki.lt</Name>
+			<Name>bprof</Name>
 		</LastServer>
 	</Settings>
 </FileZilla3>

@@ -12,7 +12,8 @@
 			<xrc file="update.xrc" date="1493582387" />
 		</Resources>
 		<Language id="en_US" date="">
-			<Font font="Source Code Pro 11" width="1125" height="21" />
+			<Font font="Source Code Pro 11" width="1125" height="20" />
+			<Dialog name="Site Manager" width="801" />
 		</Language>
 	</Layout>
 </FileZilla3>
