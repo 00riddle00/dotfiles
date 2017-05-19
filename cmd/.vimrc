@@ -1,4 +1,26 @@
 
+"############################### UNSORTED #####################################
+"
+"
+"
+" open a NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+" Focus the window and not the NERDTree (which is also opened) when vim starts up
+autocmd VimEnter * wincmd p
+
+" open a NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" custom NERDTree arrows
+" let g:NERDTreeDirArrowExpandable = '+'
+" let g:NERDTreeDirArrowCollapsible = '-'
+"
+nmap    <leader>d       :pwd<cr>
+
+
+
+
 "############################### MAIN CONFIG #####################################
 
 "TODO add comments everywhere

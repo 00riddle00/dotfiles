@@ -556,3 +556,4 @@ archey3
 alias install='sudo pacman -S --noconfirm - < '
 alias playb='mplayer -vo fbdev2 '
 alias ovh='ssh root@tomasgiedraitis.com'
+
