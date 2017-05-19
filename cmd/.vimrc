@@ -38,6 +38,7 @@ nmap    <a-3>       3gt
 nmap    <a-4>       4gt
 nmap    <a-0>0       :tablast<cr>
 "nmap    <W-r>       :tabedit %<CR>
+nmap <w-r>   <plug>NERDCommenterComment
 
 " Toggle line numbers
 nmap <leader>n :set number!<CR>
