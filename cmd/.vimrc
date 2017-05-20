@@ -3,6 +3,18 @@
 "
 "
 "
+"
+"Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"
+"do not load certain plugin
+"set rtp+=$DOTFILES_DIR/cmd/.vim/vundle/ctrlp.vim                                                                                                                                                                                                              
+"let g:loaded_ctrlp=1
+"
+"exclude/include plugins on runtime
+"vim --cmd "let g:loaded_<pluginname>=1"
+"
+"
 " open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
 " Focus the window and not the NERDTree (which is also opened) when vim starts up
@@ -17,6 +29,26 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " let g:NERDTreeDirArrowCollapsible = '-'
 "
 nmap    <leader>d       :pwd<cr>
+
+
+" other NERDTree options
+"
+" NERDTreeHijackNetrw
+" NERDTreeCaseSensitiveSort
+" NERDTreeSortHiddenFirst
+" NERDTreeIgnore
+" NERDTreeRespectWildIgnore
+" NERDTreeBookmarksFile
+" NERDTreeBookmarksSort
+" NERDTreeShowLineNumbers
+" NERDTreeSortOrder
+" NERDTreeStatusline
+" NERDTreeCascadeSingleChildDir
+" NERDTreeCascadeOpenSingleChildDir
+" NERDTreeAutoDeleteBuffer
+" NERDTreeRender
+
+
 
 
 
@@ -83,7 +115,7 @@ nnoremap <leader>[ :bp<CR>
 noremap <leader>o :BufExplorer<CR>
 
 "noremap    <c-n>        :call ToggleNERDTreeAndTagbar()<CR>
-noremap    <c-n>        :NERDTreeTabsToggle<CR>
+noremap    <c-n>        :NERDTreeToggle<CR>
 noremap    <c-m>        :NERDTreeFocus<CR>
 
 noremap <leader>r       :so $VIMRC<CR>
@@ -170,12 +202,13 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim                                                                                                                                                                                                              
+
+
 call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")   
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'

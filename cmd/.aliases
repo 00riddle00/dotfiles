@@ -42,8 +42,8 @@ export EDITOR=vim
 
 alias b='bash'
 alias s='sudo'
-alias let='s chmod 777'
-alias letr='s chmod -R 777'
+alias let='s chmod 755'
+alias letr='s chmod -R 755'
 alias ls='ls --color=auto'
 alias lsr='ls -R'
 alias lf='lsblk -f'
@@ -557,3 +557,4 @@ alias install='sudo pacman -S --noconfirm - < '
 alias playb='mplayer -vo fbdev2 '
 alias ovh='ssh root@tomasgiedraitis.com'
 
+alias npmls='npm list -g --depth=0'

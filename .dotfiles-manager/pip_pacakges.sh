@@ -2,5 +2,4 @@
 
 while read p; do
     apm install $p
-done < $DOTFILES_DIR/packages/atom_packages
-
+done < $DOTFILES_DIR/packages/pip_packages
