@@ -1,5 +1,3 @@
 #! /bin/bash
 
-while read p; do
-    apm install $p
-done < $DOTFILES_DIR/packages/pip_packages
+sudo pip install -r $DOTFILES_DIR/packages/pip_packages
