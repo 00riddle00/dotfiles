@@ -20,6 +20,8 @@ export TMP2=/home/riddle/tmp2
 export VIMRC=/home/riddle/.vimrc
 export DROPBOX=/home/riddle/Dropbox
 export SYNC=$DROPBOX/sync
+export DOWNLOADS=/home/riddle/Downloads
+export DW=/home/riddle/Downloads
 export PRO=/home/riddle/pro
 export THEME=riddle
 export MAIN_USER=riddle
@@ -457,6 +459,8 @@ alias is='pld | grepi '
 #### FUNCTIONS
 
 # make cmd aliases
+function toserv() { scp $1 root@tomasgiedraitis.com:/home/riddle; }
+
 function ma() { echo alias $1="'$2'" >> $HOME/.aliases; zsh; }
 
 function de() { sudo udisks --unmount /dev/$1; }

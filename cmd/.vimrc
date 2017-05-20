@@ -1,8 +1,29 @@
 
 "############################### UNSORTED #####################################
 "
+nmap <w-r>   <plug>NERDCommenterComment
 "
-"
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+
+
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 "
 "Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -70,29 +91,24 @@ noremap <c-h> <C-W>h
 noremap <c-l> <C-W>l
 
 " Tab navigation
-"TODO enable c-q, c-w, c-e for tab navigation
+nmap    <c-t>           :tabnew<cr>
 nmap    <leader>t       :tabnew<cr>
-nmap    <leader>w       :tabnext<cr>
+
+nmap    <leader>1       :tabfirst<cr>
+
 nmap    <leader>q       :tabprev<cr>
-"nmap    ??       :tabclose<cr>
-nmap    <leader>1       1gt
-nmap    <leader>2       2gt
+
+nmap    <leader>2       :tabnext<cr>
+
 nmap    <leader>3       3gt
 nmap    <leader>4       4gt
-nmap    <leader>0       :tablast<cr>
-"nmap    <leader>r       :tabedit %<CR>
+nmap    <leader>5       5gt
+nmap    <leader>6       6gt
 
-nmap    <c-t>       :tabnew<cr>
-nmap    <c-w>       :tabnext<cr>
-nmap    <c-q>       :tabprev<cr>
-nmap    <c-e>       :tabclose<cr>
-nmap    <a-1>       1gt
-nmap    <a-2>       2gt
-nmap    <a-3>       3gt
-nmap    <a-4>       4gt
-nmap    <a-0>0       :tablast<cr>
-"nmap    <W-r>       :tabedit %<CR>
-nmap <w-r>   <plug>NERDCommenterComment
+nmap    <leader>0       :tablast<cr>
+nmap    <leader>9       :tablast<cr>
+nmap    <leader>f       :tabclose<cr>
+
 
 " Toggle line numbers
 nmap <leader>n :set number!<CR>
@@ -256,7 +272,7 @@ let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"                                                                                                                                                                                                                 
 let g:NERDTreeWinSize = 30                                                                                                                                                                                                                     
 let g:NERDTreeIgnore = ['^__pycache__$', '\.egg-info$', '\~$']  
-let g:NERDTreeMapHelp = '<F1>'
+let g:NERDTreeMapHelp = 'Y'
 
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
