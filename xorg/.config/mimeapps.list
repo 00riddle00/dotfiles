@@ -1,6 +1,6 @@
 [Added Associations]
 image/png=mirage.desktop;feh.desktop;gimp.desktop;
-text/plain=atom.desktop;
+text/plain=libreoffice-writer.desktop;atom.desktop;
 application/pdf=libreoffice-draw.desktop;userapp-firefox-UZ9C0Y.desktop;
 video/mp4=vlc.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;
@@ -15,6 +15,7 @@ video/x-msvideo=vlc.desktop;mplayer.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 text/html=firefox.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
