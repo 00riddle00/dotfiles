@@ -7,7 +7,7 @@ video/x-matroska=vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=atom.desktop;
 application/x-yaml=atom.desktop;
-image/jpeg=feh.desktop;gimp.desktop;
+image/jpeg=mirage.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
@@ -16,6 +16,7 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoff
 text/html=firefox.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
