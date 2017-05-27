@@ -563,3 +563,4 @@ alias ovh='ssh root@tomasgiedraitis.com'
 
 alias npmls='npm list -g --depth=0'
 alias amos='cd /home/riddle/langs/hebrew/amos_oz'
+alias files='find . -type d -name "files" -print'
