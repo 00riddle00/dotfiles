@@ -227,11 +227,13 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
+
     <keybind key="W-F2">
       <action name="GoToDesktop">
         <to>2</to>
