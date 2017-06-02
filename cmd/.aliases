@@ -566,4 +566,5 @@ alias amos='cd /home/riddle/langs/hebrew/amos_oz'
 alias files='find . -type d -name "files" -print'
 
 alias update360='cpr $NOTES/tmp1/360_swagger.yml swagger_api.yml'
+alias upd='update360'
 
