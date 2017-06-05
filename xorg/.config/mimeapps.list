@@ -21,6 +21,7 @@ image/gif=mirage.desktop;wine-extension-gif.desktop;
 application/vnd.ms-excel=libreoffice-calc.desktop;
 application/x-ms-shortcut=wine.desktop;
 application/msword=libreoffice-writer.desktop;
+application/x-shellscript=emacs.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
