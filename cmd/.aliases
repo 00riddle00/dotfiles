@@ -566,6 +566,7 @@ alias npmls='npm list -g --depth=0'
 alias amos='cd /home/riddle/langs/hebrew/amos_oz'
 alias files='find . -type d -name "files" -print'
 
-alias update360='cpr $NOTES/tmp1/360_swagger.yml swagger_api.yml'
-alias upd='update360'
+alias upd='cp $NOTES/tmp1/360_swagger.yml api.yml'
 
+alias ahl='cd /home/riddle/pro/ahl.360/ahl360-api'
+alias anv='source /home/riddle/venvs/ahl.360/bin/activate'
