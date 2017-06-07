@@ -21,7 +21,7 @@
     (gimp-toolbox
         (side left)
         (book
-            (current-page 0)
+            (current-page 2)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
@@ -109,7 +109,7 @@
     (position 152 195))
 (session-info "toplevel"
     (factory-entry "gimp-color-balance-tool-dialog")
-    (position 412 95))
+    (position 297 256))
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
     (position 2076 0)
@@ -120,7 +120,7 @@
     (size 374 536))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")
-    (position 33 124))
+    (position 258 316))
 (session-info "toplevel"
     (factory-entry "gimp-keyboard-shortcuts-dialog")
     (position 0 0)

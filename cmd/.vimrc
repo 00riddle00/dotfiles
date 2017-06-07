@@ -1,8 +1,13 @@
-
 "############################### UNSORTED #####################################
-"
-nmap <w-r>   <plug>NERDCommenterComment
-"
+ 
+
+
+
+
+
+
+
+
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
@@ -49,7 +54,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " let g:NERDTreeDirArrowExpandable = '+'
 " let g:NERDTreeDirArrowCollapsible = '-'
 "
-nmap    <leader>d       :pwd<cr>
+map    <leader>d       :pwd<cr>
 
 
 " other NERDTree options
@@ -85,15 +90,18 @@ set nobackup
 set showmatch
 
 " Easy movement between windows
-noremap <c-j> <C-W>j
-noremap <c-k> <C-W>k
-noremap <c-h> <C-W>h
-noremap <c-l> <C-W>l
+nmap <c-j> <C-W>j
+nmap <c-k> <C-W>k
+nmap <c-h> <C-W>h
+nmap <c-l> <C-W>l
+"noremap <c-j> <C-W>j
+"noremap <c-k> <C-W>k
+"noremap <c-h> <C-W>h
+"noremap <c-l> <C-W>l
 
 " Tab navigation
 nmap    <c-t>           :tabnew<cr>
 nmap    <leader>t       :tabnew<cr>
-
 nmap    <leader>1       :tabfirst<cr>
 
 nmap    <leader>q       :tabprev<cr>
