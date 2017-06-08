@@ -1,5 +1,7 @@
 #### VARIABLES 
 #
+export VENV=~/venvs/sql_app
+#
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 
@@ -570,3 +572,4 @@ alias upd='cp $NOTES/tmp1/360_swagger.yml api.yml'
 
 alias ahl='cd /home/riddle/pro/ahl.360/ahl360-api'
 alias anv='source /home/riddle/venvs/ahl.360/bin/activate'
+
