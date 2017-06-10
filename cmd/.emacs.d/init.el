@@ -12,7 +12,8 @@
  '(tool-bar-mode nil)
  '(scroll-bar-mode -1)
  ;;'(load-theme 'solarized-dark')
- '(load-theme 'wombat')
+ ;;'(load-theme 'wombat')
+ (disable-theme 'wombat)
  '(inhibit-startup-screen t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
