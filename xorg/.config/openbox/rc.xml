@@ -482,9 +482,15 @@
       </action>
     </keybind>
     <!-- Custom program launchers -->
+
+    <!--<keybind key="W-w">-->
+      <!--<action name="Execute">-->
+        <!--<command>sh -c "$FOCUS write"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
     <keybind key="W-w">
       <action name="Execute">
-        <command>sh -c "$FOCUS write"</command>
+        <command>sh -c "$FOCUS emacs"</command>
       </action>
     </keybind>
     <keybind key="W-q">
