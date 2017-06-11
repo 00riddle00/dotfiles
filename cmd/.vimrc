@@ -5,6 +5,8 @@
 
 
 
+noremap <F6> :Autoformat<CR>
+let g:formatter_yapf_style = 'pep8'
 
 
 
@@ -232,7 +234,7 @@ call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'fatih/vim-go'
