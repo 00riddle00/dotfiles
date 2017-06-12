@@ -1,11 +1,11 @@
 [Added Associations]
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
 text/plain=userapp-subl-34QW0Y.desktop;mirage.desktop;mousepad.desktop;libreoffice-writer.desktop;atom.desktop;
-application/pdf=libreoffice-draw.desktop;userapp-firefox-UZ9C0Y.desktop;google-chrome.desktop;
+application/pdf=google-chrome.desktop;libreoffice-draw.desktop;userapp-firefox-UZ9C0Y.desktop;
 video/mp4=vlc.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
-text/markdown=mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
+text/markdown=atom.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;
 application/x-yaml=atom.desktop;
 image/jpeg=mirage.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
@@ -22,6 +22,8 @@ application/vnd.ms-excel=libreoffice-calc.desktop;
 application/x-ms-shortcut=wine.desktop;
 application/msword=libreoffice-writer.desktop;
 application/x-shellscript=emacs.desktop;
+audio/mp4=vlc.desktop;
+application/epub+zip=calibre-gui.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
