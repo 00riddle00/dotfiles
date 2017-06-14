@@ -1,8 +1,11 @@
 "############################### UNSORTED #####################################
  
 
+"Get rid of annoying parenthesis matching, I prefer to use %. (not my words, but the words of a great programmer and expert vim user)
+let loaded_matchparen = 1
 
-
+set hidden
+    
 
 
 noremap <F6> :Autoformat<CR>
@@ -237,7 +240,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'fatih/vim-go'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'xolox/vim-misc'
