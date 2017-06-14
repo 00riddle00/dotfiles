@@ -1,6 +1,7 @@
 #### VARIABLES 
 #
 export VENV=~/venvs/sql_app
+export SENV=~/venvs/subscription_demo
 #
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
