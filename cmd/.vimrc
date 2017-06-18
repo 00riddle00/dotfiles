@@ -6,11 +6,16 @@ let loaded_matchparen = 1
 
 set hidden
     
+map { 15k
+map } 15j
 
+noremap ] }
+noremap [ {
 
 noremap <F6> :Autoformat<CR>
 let g:formatter_yapf_style = 'pep8'
 
+set tags=./tags,tags;$HOME
 
 
 " NERDTress File highlighting
@@ -407,28 +412,28 @@ endfunction
 " settings of "light" or "dark".
 
 if $VIMCOLOR == 'light'
-	set background=light
-	let g:solarized_termcolors=256
-	color solarized
+    set background=light
+    let g:solarized_termcolors=256
+    color solarized
 elseif $VIMCOLOR == 'dark'
-	set background=dark
-	let g:solarized_termcolors=256
-	color solarized
+    set background=dark
+    let g:solarized_termcolors=256
+    color solarized
 elseif $VIMCOLOR == 'molokai'
-	let g:molokai_original=1
-	let g:rehash256=1
-	color molokai
+    let g:molokai_original=1
+    let g:rehash256=1
+    color molokai
 elseif $VIMCOLOR != ''
-	color $VIMCOLOR
+    color $VIMCOLOR
 else
-	set t_Co=256
-	set background=dark
-	color solarized
+    set t_Co=256
+    set background=dark
+    color solarized
 endif
 
 " Make sure we're getting 256 colors when it's available
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
-	set t_Co=256
+    set t_Co=256
 endif
 
 syntax enable
