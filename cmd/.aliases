@@ -374,7 +374,7 @@ alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
 alias rl='readlink -f'
-alias arp='vv $NOTES/coding/os/packages_arch.md'
+alias arp='v $NOTES/coding/os/packages_arch.md'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
@@ -574,3 +574,4 @@ alias upd='cp $NOTES/tmp1/360_swagger.yml api.yml'
 alias ahl='cd /home/riddle/pro/ahl.360/ahl360-api'
 alias anv='source /home/riddle/venvs/ahl.360/bin/activate'
 
+alias cleanify="sed -i 's@<br/>@ @g'" 
