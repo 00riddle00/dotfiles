@@ -1,7 +1,7 @@
 [Added Associations]
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
 text/plain=userapp-subl-34QW0Y.desktop;mirage.desktop;mousepad.desktop;libreoffice-writer.desktop;atom.desktop;
-application/pdf=userapp-firefox-UZ9C0Y.desktop;google-chrome.desktop;libreoffice-draw.desktop;
+application/pdf=google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=vlc.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
@@ -27,6 +27,7 @@ application/epub+zip=calibre-gui.desktop;
 video/x-flv=vlc.desktop;
 image/vnd.djvu+multipage=calibre-gui.desktop;
 application/vnd.ms-visio.drawing.main+xml=libreoffice-startcenter.desktop;
+application/x-mswinurl=firefox.desktop;wine-extension-url.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
