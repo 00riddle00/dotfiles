@@ -25,6 +25,7 @@ application/x-shellscript=emacs.desktop;
 audio/mp4=vlc.desktop;
 application/epub+zip=calibre-gui.desktop;
 video/x-flv=vlc.desktop;
+image/vnd.djvu+multipage=calibre-gui.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
