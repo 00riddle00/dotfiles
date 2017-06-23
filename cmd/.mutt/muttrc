@@ -3,7 +3,7 @@ set ssl_starttls=yes
 set ssl_force_tls=yes
 set hostname="gmail.com"
 set imap_user = "tomasgiedraitis@gmail.com"
-set imap_pass = "voh7Faes"
+set imap_pass = ""
 set from="tomasgiedraitis@gmail.com"
 set realname="Tomas Giedraitis"
 set folder = "imaps://imap.gmail.com/:993"
@@ -15,7 +15,7 @@ set certificate_file = "~/.mutt/certificates"
 set signature="$CANDY/email/tomasgiedraitis-signature"
 set sig_on_top=yes
 set smtp_url = "smtps://tomasgiedraitis@smtp.gmail.com:465/"
-set smtp_pass = "voh7Faes"
+set smtp_pass = ""
 set move = no
 set imap_keepalive = 900
 

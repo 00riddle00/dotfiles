@@ -1,0 +1,6 @@
+[mongodb]
+name=MongoDB Repository
+baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/{{ arch }}/
+gpgcheck=0
+enabled=1
+

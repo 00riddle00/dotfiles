@@ -227,11 +227,13 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
+
     <keybind key="W-F2">
       <action name="GoToDesktop">
         <to>2</to>
@@ -281,6 +283,22 @@
     <keybind key="A-q">
       <action name="Iconify"/>
     </keybind>
+    <keybind key="A-F4">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="C-S-q">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="C-F4">
+      <action name="Iconify"/>
+    </keybind>
+
+    <keybind key="C-S-w">
+      <action name="Iconify"/>
+    </keybind>
+
     <keybind key="W-x">
       <action name="ToggleMaximize"/>
     </keybind>
@@ -352,6 +370,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="W-k">
       <action name="PreviousWindow">
         <bar>no</bar>
@@ -362,6 +381,7 @@
         </finalactions>
       </action>
     </keybind>
+
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -395,7 +415,8 @@
     </keybind>
     <keybind key="W-Delete">
       <action name="Execute">
-        <command>amixer -q sset Master toggle</command>
+        <command>pavucontrol</command>
+        <!--<command>amixer -q sset Master toggle</command>-->
       </action>
     </keybind>
     <keybind key="W-F5">
@@ -403,6 +424,37 @@
         <command>xbacklight +10</command>
       </action>
     </keybind>
+
+
+    <keybind key="W-t">
+      <action name="Execute">
+        <command>tint2</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-S-t">
+      <action name="Execute">
+        <command>killall tint2</command>
+      </action>
+    </keybind>
+
+
+    <keybind key="A-c">
+      <action name="Execute">
+        <command>cairo-dock</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-v">
+      <action name="Execute">
+        <command>killall cairo-dock</command>
+      </action>
+    </keybind>
+
+
+
+
+
     <keybind key="W-F4">
       <action name="Execute">
         <command>xbacklight -10</command>
@@ -410,7 +462,8 @@
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
-        <command>gnome-screensaver-command -l</command>
+        <!--<command>gnome-screensaver-command -l</command>-->
+        <command>xscreensaver-command --lock</command>
       </action>
     </keybind>
     <keybind key="F12">
@@ -429,9 +482,15 @@
       </action>
     </keybind>
     <!-- Custom program launchers -->
+
+    <!--<keybind key="W-w">-->
+      <!--<action name="Execute">-->
+        <!--<command>sh -c "$FOCUS write"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
     <keybind key="W-w">
       <action name="Execute">
-        <command>sh -c "$FOCUS write"</command>
+        <command>sh -c "$FOCUS emacs"</command>
       </action>
     </keybind>
     <keybind key="W-q">
@@ -444,19 +503,17 @@
         <command>sh -c "$ACTIVATE clion"</command>
       </action>
     </keybind>
+
     <keybind key="W-p">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE pycharm"</command>
+        <command>sh -c "$ACTIVATE webstorm"</command>
+        <!--<command>sh -c "$ACTIVATE pycharm"</command>-->
       </action>
     </keybind>
+
     <keybind key="F1">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
-      </action>
-    </keybind>
-    <keybind key="F5">
-      <action name="Execute">
-        <command>sh -c "$ACTIVATE 'chrome'"</command>
       </action>
     </keybind>
     <keybind key="F2">
@@ -465,20 +522,20 @@
       </action>
     </keybind>
 
-<!--    <keybind key="F11">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE qalculate-gtk"</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
-
-    <keybind key="F6">
+    <keybind key="F10">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mail' 'terminator --geometry=700x500 -T mail -e mutt'"</command>
+        <command>sh -c "$ACTIVATE qalculate-gtk"</command>
+      </action>
+    </keybind>
+
+    <keybind key="F7">
+      <action name="Execute">
+        <command>thunderbird</command>
       </action>
     </keybind>
     <keybind key="F9">
       <action name="Execute">
-        <command>thunderbird</command>
+        <command>sh -c "$ACTIVATE chrome"</command>
       </action>
     </keybind>
     <keybind key="F4">
@@ -486,46 +543,98 @@
         <command>sh -c "$ACTIVATE firefox"</command>
       </action>
     </keybind>
-    <!--    <keybind key="F3">-->
-    <!--<action name="Execute">-->
-    <!--<command>subl</command>-->
-    <!--</action>-->
+
+    <keybind key="F5">
+        <action name="Execute">
+            <command>subl</command>
+        </action>
+    </keybind>
+
+
+    <keybind key="W-o">
+      <action name="Execute">
+          <command>keepass /home/riddle/Dropbox/sync/keepass/8gb.kdbx</command>
+      </action>
+    </keybind>
+
+
+
+    <!--<keybind key="W-c">-->
+      <!--<action name="Execute">-->
+        <!--<command>sh -c "$ACTIVATE copyq"</command>-->
+      <!--</action>-->
     <!--</keybind>-->
+
+    <!--<keybind key="F5">-->
+        <!--<action name="ShowMenu">-->
+          <!--<menu>client-list-combined-menu</menu>-->
+        <!--</action>-->
+    <!--</keybind>-->
+
     <keybind key="F3">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE atom"</command>
+      </action>
+    </keybind>
+
+    <keybind key="W-n">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
       </action>
     </keybind>
+
     <keybind key="Insert">
       <action name="Execute">
           <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
+          <!--<command>xdotool key Right</command>-->
       </action>
     </keybind>
+
     <keybind key="W-f">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'thunar'"</command>
+        <command>sh -c "$ACTIVATE filezilla"</command>
       </action>
     </keybind>
+
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc' 'terminator --geometry=700x500 -T mc -e mc'"</command>
+        <command>wmctrl -a "file manager"</command>
       </action>
     </keybind>
+
     <keybind key="A-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc2' 'terminator --geometry=700x500 -T mc2 -e mc'"</command>
+        <command>thunar</command>
       </action>
     </keybind>
+
+    <!--
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE 'mc1' 'terminator \-\-geometry=700x500 -T mc1 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-e">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE 'mc2' 'terminator \-\-geometry=700x500 -T mc2 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
+      </action>
+    </keybind>
+    -->
+
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>
       </action>
     </keybind>
+
     <keybind key="W-b">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE gimp"</command>
+        <command>sh -c "$ACTIVATE 'gnu image' 'gimp'"</command>
       </action>
     </keybind>
+
+
     <keybind key="W-l">
       <action name="Execute">
         <command>sh -c "$ACTIVATE libreoffice"</command>
@@ -536,11 +645,19 @@
         <command>sh -c "$FOCUS 'Developer Tools'"</command>
       </action>
     </keybind>
+
     <keybind key="W-z">
       <action name="Execute">
-        <command>xterm -rv</command>
+        <command>xterm</command>
       </action>
     </keybind>
+
+    <keybind key="W-u">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE urxvt"</command>
+      </action>
+    </keybind>
+
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
