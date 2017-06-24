@@ -487,7 +487,7 @@ function kk() { s cp -r "$1" $HOME/backups/"$1".bak;}
 
 FREETYPE_PROPERTIES="truetype:interpreter-version=35"
 
-xrandr --output HDMI-1-1 --auto 
+#xrandr --output HDMI-1-1 --auto 
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -505,12 +505,12 @@ if xset q &>/dev/null; then
 	tmux > /dev/null 2>&1
 
 
-    ps cax | grep autokey > /dev/null 2>&1 
-    if [ $? -eq 0 ]; then
-        :
-    else
-        $SHELL_SCRIPTS_DIR/autokey.sh
-    fi;
+#    ps cax | grep autokey > /dev/null 2>&1 
+    #if [ $? -eq 0 ]; then
+        #:
+    #else
+        #$SHELL_SCRIPTS_DIR/autokey.sh
+    #fi;
 
 
     if type setxkbmap >/dev/null 2>&1; then
@@ -520,19 +520,19 @@ if xset q &>/dev/null; then
 
 
     #eval `cat $HOME/.fehbg` &     
-    feh  --bg-scale '/home/riddle/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
+    #feh  --bg-scale '/home/riddle/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
 
     #gnome-screensaver > /dev/null 2>&1 &
-    xscreensaver > /dev/null 2>&1 &
+    #xscreensaver > /dev/null 2>&1 &
 
 
-    ps cax | grep conky > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        :
-    else
-        conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
-        conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
-    fi
+    #ps cax | grep conky > /dev/null 2>&1
+    #if [ $? -eq 0 ]; then
+        #:
+    #else
+        #conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
+        #conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
+    #fi
 
 else
     if [ $TTY = "/dev/tty1"  ]; then 
@@ -543,12 +543,12 @@ else
 fi
 
 
-ps cax | grep dropbox > /dev/null
-if [ $? -eq 0 ]; then
-  :
-else
-    /usr/bin/dropbox & 
-fi
+#ps cax | grep dropbox > /dev/null
+#if [ $? -eq 0 ]; then
+  #:
+#else
+    #/usr/bin/dropbox & 
+#fi
 
 
 stty -ixon
@@ -556,8 +556,8 @@ stty -ixon
 # Vi everything
 set -o vi
 
-archey3
-#screenfetch
+#archey3
+screenfetch
 #
 
 
