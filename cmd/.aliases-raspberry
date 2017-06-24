@@ -35,7 +35,7 @@ export USER_HOME_DIR=/home/$MAIN_USER
 export DOTFILES_DIR=$HOME_DIR/.dotfiles
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
-export NOTES=$SYNC/gtd/content/pages
+export NOTES=/home/pi/notes/pelican/content/pages
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export CANDY=$SYNC/candy
@@ -124,6 +124,7 @@ alias x='startx'
 alias vbox='virtualbox'
 alias fox='firefox'
 alias v='vim'
+alias n='vim -u /home/riddle/.riddle/.dotfiles/cmd/.vimrc-no-nerdtree'
 alias vv='sudo vim'
 alias tt='sudo thunar ./'
 alias rtt='sudo dolphin4 ./'
@@ -364,7 +365,7 @@ alias aut='cd $AUTOMATION_DIR'
 alias w='whoami'
 alias xi='vv $USER_HOME_DIR/.xinitrc'
 alias dl='dpkg -l'
-alias al='v $HOME/.aliases'
+alias al='v $HOME/.aliases-raspberry'
 alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
 alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
 alias xplus='light -A 10'
@@ -545,9 +546,9 @@ fi
 
 #ps cax | grep dropbox > /dev/null
 #if [ $? -eq 0 ]; then
-  #:
+#  :
 #else
-    #/usr/bin/dropbox & 
+#    /usr/bin/dropbox & 
 #fi
 
 
