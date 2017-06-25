@@ -340,6 +340,7 @@ steam
 openssh
 tig
 pulseaudio
+pavucontrol
 # python packages
 python3
 python-pip
@@ -361,35 +362,33 @@ xmonad
 package-query
 yaourt
 copyq
+razercfg
+autokey
 downgrade
 keepass
+webstorm
+pycharm-professional
 keepass-plugin-keeagent
-downgrade
 googlecl
 kpcli
-autokey
-archey
+archey3
 dropbox
 dropbox-cli
 fortune
 qalc
 luakit
-pavucontrol
 gcalcli
 tightvnc
 arduino
 teamviewer
-xmonad
 google-chrome
 conky
 grub2-theme-archlinux
 strongswan
-sublime-text
-webstorm
-pycharm-professional
-razercfg
-autokey
 
 
 
-
+#############
+# from source
+#############
+sublime-text-3
