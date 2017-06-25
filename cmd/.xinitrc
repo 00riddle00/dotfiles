@@ -1,4 +1,4 @@
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources &&
+#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources &&
 exec openbox-session
 
 #exec xmonad
