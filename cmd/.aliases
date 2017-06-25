@@ -374,7 +374,7 @@ alias t='$HOME_DIR/.todo/todo.sh'
 alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
 alias rl='readlink -f'
-alias arp='v $NOTES/coding/os/packages_arch.md'
+alias arp='v $DOTFILES_DIR/packages/archlinux/packages_archlinux'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
