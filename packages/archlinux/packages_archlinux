@@ -244,6 +244,24 @@ xf86-input-synaptics
 dnsutils
 archlinux-keyring
 xdotool
+geth
+tk
+samba 
+wine
+winetricks
+playonlinux
+rxvt-unicode 
+ranger
+meld
+nitrogen
+valgrind
+nmap
+os-prober
+calibre
+docker
+espeak
+puppet
+electrum
 lshw
 dia
 gvfs
@@ -289,7 +307,6 @@ ttf-liberation
 firefox
 gimp
 git
-gnome-screensaver
 gzip
 htop
 libreoffice
@@ -375,7 +392,6 @@ archey3
 dropbox
 dropbox-cli
 fortune
-qalc
 luakit
 gcalcli
 tightvnc
@@ -385,6 +401,9 @@ google-chrome
 conky
 grub2-theme-archlinux
 strongswan
+smartgit
+grub-customizer
+mist
 
 
 
