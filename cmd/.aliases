@@ -1,51 +1,150 @@
-#### VARIABLES 
-#
-export VENV=~/venvs/sql_app
-export SENV=~/venvs/subscription_demo
-#
-export LESS='-R'
-export LESSOPEN='|~/.lessfilter %s'
+########### 
+# VARIABLES 
+########### 
 
+# DOTFILES USER SETTINGS
+export DOTFILES_USER=dotfiles
+export DOTFILES_DIR=/home/$DOTFILES_USER
 
-alias xresources='xrdb -merge ~/.Xresources'
-alias xdefaults='xrdb -merge ~/.Xdefaults'
-
-alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
-alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
-
-export LSCOLORS=ExFxCxDxBxegedabagacad
-
-export TERM=terminator 
-#export TERM=xterm 
-#export TERM=xterm-256color 
-export LC_ALL="en_US.UTF-8" 
-export TMP=/home/riddle/tmp1
-export TMP2=/home/riddle/tmp2
-export VIMRC=/home/riddle/.vimrc
-export DROPBOX=/home/riddle/Dropbox
-export SYNC=$DROPBOX/sync
-export DOWNLOADS=/home/riddle/Downloads
-export DW=/home/riddle/Downloads
-export PRO=/home/riddle/pro
-export THEME=riddle
-export MAIN_USER=riddle
-export HOME_DIR=/home/$MAIN_USER/.riddle
-export RIDDLE=/home/$MAIN_USER/.riddle
-export USER_HOME_DIR=/home/$MAIN_USER
-export DOTFILES_DIR=$HOME_DIR/.dotfiles
+# DOTFILES USER DIRECTORIES
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
-export NOTES=$SYNC/gtd/content/pages
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
-export CANDY=$SYNC/candy
-export KEEP=$SYNC/keepass
+
+# DOTFILES USER VARS
 export VIMNOTES="$SHELL_SCRIPTS_DIR/vimnotes.sh"
+export LESSOPEN='|$DOTFILES_DIR/cmd/.lessfilter %s'
+
+# MAIN USER SETTINGS
+export MAIN_USER=riddle
+export MAIN_HOME=/home/$MAIN_USER
+
+# MAIN USER DIRECTORIES
+export DOWNLOADS=$MAIN_HOME/Downloads
+export DW=$MAIN_HOME/Downloads
+export DROPBOX=$MAIN_HOME/Dropbox
+export TMP=$MAIN_HOME/tmp1
+export TMP1=$MAIN_HOME/tmp1
+export TMP2=$MAIN_HOME/tmp2
+export PRO=$MAIN_HOME/pro
+export SYNC=$DROPBOX/sync
+export CANDY=$SYNC/candy
+export NOTES=$SYNC/gtd/content/pages
+export KEEP=$SYNC/keepass
+export VENV=$MAIN_HOME/venvs/sql_app
+export SENV=$MAIN_HOME/venvs/subscription_demo
+
+# CURRENT USER DIRECTORIES
+## there has been no need so far 
+
+# SYSTEMWIDE VARS
+export TERM=terminator 
+export LSCOLORS=ExFxCxDxBxegedabagacad
+export LESS='-R'
 export EDITOR=vim
+export LC_ALL="en_US.UTF-8" 
+export THEME=riddle
+
+######### 
+# ALIASES 
+######### 
+
+# DOTFILES COMMANDS 
+alias dot='cd $DOTFILES_DIR'
+alias arp='v $DOTFILES_DIR/packages/archlinux/packages_archlinux'
+alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
+alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $MAIN_HOME/.zshrc'
+alias ig='v $DOTFILES_DIR/.gitignore'
+alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
+alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
+alias she='cd $SHELL_SCRIPTS_DIR'
+alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
+alias aut='cd $AUTOMATION_DIR'
+alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
+alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
+
+# MAIN USER COMMANDS 
+alias ch='s chown -R $MAIN_USER:$MAIN_USER'
+alias tmp4='cd $MAIN_HOME/tmp4'
+alias main='cd $MAIN_HOME/main'
+alias scard='cd $MAIN_HOME/osos/scard/'
+alias sca='cd $MAIN_HOME/VirtualBox\ VMs/scard-api'
+alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
+alias mchef='$MAIN_HOME/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
+alias term='vim $MAIN_HOME/.config/terminator/config'
+alias tintrc='vv $MAIN_HOME/.config/tint2/tint2rc'
+alias xconf='cd $MAIN_HOME/.config/xfce4/xfconf/xfce-perchannel-xml'
+alias vrc='vim $MAIN_HOME/.vimrc'
+alias ww='python $MAIN_HOME/welcome.py'
+alias hi='mpg123 $MAIN_HOME/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
+alias tmp3='cd $MAIN_HOME/tmp3/'
+alias vi='cd $MAIN_HOME/VirtualBox\ VMs/'
+alias viu='cd $MAIN_HOME/VirtualBox\ VMs/ && vu'
+alias vis='cd $MAIN_HOME/VirtualBox\ VMs/ && vs'
+alias tb='tail -n 20 $MAIN_HOME/.aliases'
+alias del="sed -i '$ d' $MAIN_HOME/.aliases"
+alias op='cd $MAIN_HOME/.config/openbox'
+alias pro='cd $MAIN_HOME/pro'
+alias sec='cd $MAIN_HOME/.sec'
+alias notes='cd $NOTES'
+alias to='cd $MAIN_HOME/.todo/'
+alias ic='v $MAIN_HOME/.config/i3/config'
+alias dag.dir='cd $MAIN_HOME/lxc/dag-builder/ && venv'
+alias xi='vv $MAIN_HOME/.xinitrc'
+alias zr='vv $MAIN_HOME/.zshrc'
+alias w='whoami'
+alias al='v $MAIN_HOME/.aliases'
+alias t='$MAIN_HOME/.todo/todo.sh'
+alias bak='cd $MAIN_HOME/backups'
+alias gtk='v $MAIN_HOME/.gtkrc-2.0'
+alias ahl='cd $MAIN_HOME/pro/ahl.360/ahl360-api'
+alias upd='cp $NOTES/tmp1/360_swagger.yml api.yml'
+alias amos='cd $MAIN_HOME/langs/hebrew/amos_oz'
+alias hlsaves='cd $MAIN_HOME/.local/share/Steam/steamapps/common/Half-Life\ 2/hl2/save'
+alias wiki='cd $MAIN_HOME/Dropbox/sync/gtd/content/pages/terahyde/wiki'
+alias air='source $MAIN_HOME/pro/env/bin/activate && cd $MAIN_HOME/airflow'
+alias and='cp $MAIN_HOME/Dropbox/sync/android/\(a\)notes/notes.txt $MAIN_HOME/Dropbox/sync/gtd/content/pages/tmp/android.md'
+alias tmuxr='v $MAIN_HOME/.tmux.conf '
+alias drop='cd $DROPBOX'
+alias keep='cd $KEEP && keepass 8gb.kdbx'
+alias can='cd $CANDY'
+alias sync='cd $SYNC'
+alias cs='cd $MAIN_HOME/CS'
+alias stat='cd $MAIN_HOME/pro/statybininkai'
+alias kan='cat $MAIN_HOME/pro/fl/social/kan.js | xclip'
+alias xresources='xrdb -merge $MAIN_HOME/.Xresources'
+alias xdefaults='xrdb -merge $MAIN_HOME/.Xdefaults'
+alias anv='source $MAIN_HOME/venvs/ahl.360/bin/activate'
+alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/id_rsa'
+alias ads='cd $MAIN_HOME/CS/2_semester/ads'
+alias tmp='cd $MAIN_HOME/tmp1'
+alias tmp2='cd $MAIN_HOME/tmp2'
+alias tmp3='cd $MAIN_HOME/tmp3'
+alias dok='cd $MAIN_HOME/docker'
+alias cl='cd $MAIN_HOME/c_lang/LCTHW'
+alias di='cd $MAIN_HOME/VirtualBox\ VMs/dienynas/app'
+alias sca='cd $MAIN_HOME/VirtualBox\ VMs/scard-api/'
+alias gri='cd $MAIN_HOME/VirtualBox\ VMs/grigiskes-api/app'
+alias u2='cd $MAIN_HOME/CS/2_semester/programavimas_c/code/U2'
+alias dw='cd $MAIN_HOME/Downloads/'
+alias mim='vv $MAIN_HOME/.config/mimeapps.list'
+alias vr='vim $MAIN_HOME/.vimrc'
+alias br='vv $MAIN_HOME/.bashrc'
+alias termc='vv $MAIN_HOME/.config/terminator/config'
+alias start='vim $MAIN_HOME/.config/openbox/autostart.sh'
+alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
+alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
+alias menu='sudo vim $MAIN_HOME/.config/openbox/menu.xml'
 
 
-#### ALIASES
+# CURRENT USER COMMANDS 
+## there has been no need so far
 
+
+# SYSTEMWIDE COMMANDS
+
+## basic functional commands
 alias b='bash'
 alias s='sudo'
 alias let='s chmod 755'
@@ -73,23 +172,16 @@ alias tar='tar -xvf'
 alias q='exit'
 alias re='sudo reboot'
 alias off='sudo poweroff'
+alias h='history'
 
-# navigation
+## basic navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias root='cd /'
 
-alias di='cd $USER_HOME_DIR/VirtualBox\ VMs/dienynas/app'
-alias sca='cd $USER_HOME_DIR/VirtualBox\ VMs/scard-api/'
-alias gri='cd $USER_HOME_DIR/VirtualBox\ VMs/grigiskes-api/app'
-alias u2='cd $USER_HOME_DIR/CS/2_semester/programavimas_c/code/U2'
-alias dw='cd $USER_HOME_DIR/Downloads/'
-alias srv='cd /srv/http/'
-alias h='history'
-
-# pacman
+## pacman
 alias pacs='sudo pacman -S --noconfirm' 
 alias pacu='sudo pacman -U'
 alias pacr='sudo pacman -R'
@@ -102,24 +194,17 @@ alias what='sudo pacman -Qs'
 alias pld='sudo pacman -Q'
 alias pl='sudo pacman -Qe'
 
-# openbox
+## openbox
 alias openbox='exec openbox-session'
 alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
-alias start='vim $HOME/.config/openbox/autostart.sh'
-alias autostart='$HOME/.config/openbox/autostart.sh'
-alias rc='vim $HOME/.config/openbox/rc.xml'
-alias menu='sudo vim $HOME/.config/openbox/menu.xml'
 alias out='sudo openbox --exit'
 
-# config
-alias vr='vim $HOME/.vimrc'
-alias br='vv $HOME/.bashrc'
-alias termc='vv .config/terminator/config'
+## config
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-# programs
+## programs
 alias x='startx'
 alias vbox='virtualbox'
 alias fox='firefox'
@@ -130,39 +215,38 @@ alias rtt='sudo dolphin4 ./'
 alias play='vlc'
 alias ag='autokey-gtk'
 
-# git
+## git
 alias gd='git diff'
 alias gl='git log'
 alias gs='git status'
 alias gc='git commit'
 alias gp='git push'
 alias ga='git add'
-#alias gr='git rm'
 alias gb='git branch'
 alias gch='git checkout'
 
-# vagrant 
+## vagrant 
 alias vu='vagrant up'
 alias vs='vagrant ssh'
 
-# vagrant grigeo
+## vagrant grigeo
 alias runs='python manage.py runserver 0.0.0.0:8000'
 alias gri='cd /vagrant/grigiskes-api/app/'
 alias venv='source ../env/bin/activate'
 alias senv='source ../scard-env/bin/activate'
 
-# vagrant dienynas
+## vagrant dienynas
 alias di='cd /vagrant/dienynas/app/'
 alias sca='cd /vagrant/scard-api/'
 alias runsg='python manage.py global runserver 0.0.0.0:8000'
 alias runsa='python manage.py admin runserver 0.0.0.0:8000'
 alias runst='python manage.py teacher runserver 0.0.0.0:8000'
 
-# programs & actions
+## programs & actions
 alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cf='fortune | cowsay' 
 
-# databases
+## databases
 alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
 alias mysqlon='sudo systemctl start mysqld'
@@ -171,12 +255,12 @@ alias mysqlri='mysql -u user -p'
 alias apache='sudo systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 
-# lan
+## lan
 alias pp='ping -c 3 www.google.com'
 alias net='sudo systemctl start dhcpcd@enp9s0.service'
 alias netw='sudo systemctl start dhcpcd@enp2s0.service'
 
-# wifi
+## wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
@@ -187,11 +271,11 @@ alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
 alias wifih='wifion && wnet && wh && wpah'
 alias wifim='wifion && wnet && wm && wpam'
 
-# touchpad
+## touchpad
 alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
-# screen setup
+## screen setup
 alias xport='xrandr --output HDMI-1-1 --auto --rotate left --output eDP-1-1 --auto --right-of HDMI-1-1'
 alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --auto --right-of HDMI-1-1'
 alias xexof='xrandr --output HDMI-1-1 --off'
@@ -199,19 +283,18 @@ alias xexon='xrandr --output HDMI-1-1 --auto'
 alias xof='xrandr --output eDP-1-1 --off'
 alias xon='xrandr --output eDP-1-1 --auto'
 
-# c lang
+## c lang
 alias ms='make rebuild'
-#alias ms='make test'
 alias vt='vlt ./test'
 alias vl='valgrind'
 alias vlt='valgrind --track-origins=yes --leak-check=full'
 alias vll='vlt --leak-check=full --show-leak-kinds=all ./test'
 alias vllv='vlt --leak-check=full --show-leak-kinds=all -v ./test'
 
-# python
+## python
 alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 
-# django
+## django
 alias cs='python manage.py collectstatic --noinput'
 alias venv='source ../env/bin/activate'
 alias senv='source env/bin/activate'
@@ -219,34 +302,21 @@ alias qenv='deactivate'
 alias runs='python manage.py runserver'
 
 alias pu='s pip uninstall'
-alias mim='vv $HOME/.config/mimeapps.list'
 alias glg='git lg'
-alias ads='cd $USER_HOME_DIR/CS/2_semester/ads'
 alias gpo='git push origin tomo_pakeitimai'
 
-alias tmp='cd $USER_HOME_DIR/tmp1'
 alias tmp1='tmp'
-alias tmp2='cd $USER_HOME_DIR/tmp2'
-alias tmp3='cd $USER_HOME_DIR/tmp3'
 alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
-alias dok='cd $USER_HOME_DIR/docker'
 
 alias reb='make rebuild'
 alias exe='./main.exe'
-alias cl='cd $USER_HOME_DIR/c_lang/LCTHW'
 alias ya='yaourt --noconfirm'
-
 
 alias stop='killall mpg123'
 
-alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
-alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
-
 alias r='ranger'
 alias vf='vifm'
-
-alias xconf='cd $HOME/.config/xfce4/xfconf/xfce-perchannel-xml'
 
 alias genkeys='cpr tmp1/keys2.xml .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml && cpr tmp1/keys2.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml'
 
@@ -256,7 +326,7 @@ alias pmp='python manage.py'
 alias cki='conky -c .conky/stats && conky -c .conky/conkyrc_HUD && conky -c .conky/archconky'
 alias ckil='killall conky'
 
-#ubuntu
+##ubuntu
 alias update="sudo apt-get update"
 alias whatip="curl http://icanhazip.com"
 alias xampp="sudo python /opt/lampp/share/xampp-control-panel/xampp-control-panel.py"
@@ -266,19 +336,12 @@ alias uwifi="wicd-gtk"
 alias serv="cd /var/www"
 alias ureapache="sudo systemctl restart apache2"
 
-# new
-alias vrc='vim $HOME/.vimrc'
-alias ww='python $USER_HOME_DIR/welcome.py'
-alias hi='mpg123 $USER_HOME_DIR/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
-
-# openbox
-alias tintrc='vv $HOME/.config/tint2/tint2rc'
+## openbox
 alias tint='tint2 & disown'
 alias stopit='killall mpg123'
 alias kil='sudo kill -9'
-alias term='vim $HOME/.config/terminator/config'
 
-# general
+## general
 alias xfce='exec xfce4-session'
 
 alias xl='xrandr --output VGA-0 --rotate left'
@@ -286,14 +349,12 @@ alias xn='xrandr --output VGA-0 --rotate normal'
 
 alias aptr='sudo apt-get remove'
 alias dp='sudo dpkg -i'
-#alias up='sudo apt-get update'
+alias upp='sudo apt-get update'
 alias upg='sudo apt-get upgrade'
 
-alias mchef='$USER_HOME_DIR/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
 alias lock='gnome-screensaver-command -l'
 
 alias au='ps aux | grep -i'
-alias pic='scrot -s $USER_HOME_DIR/Screenshots/screenshot-%F-%H%M%S.png'
 
 alias mig='pmp makemigrations && pmp migrate'
 
@@ -303,35 +364,25 @@ alias tm='conky -c .conky/archconky &'
 
 alias sub='/usr/bin/subl'
 
-alias sca='cd $USER_HOME_DIR/VirtualBox\ VMs/scard-api'
 alias libre='libreoffice'
-alias tmp3='cd $USER_HOME_DIR/tmp3/'
 alias show='mirage'
 alias yaup='yaourt -Syu --aur --noconfirm'
 
-alias scard='cd $USER_HOME_DIR/osos/scard/'
 
 alias um='sudo umount /dev/sdb1'
 alias fl='sudo fdisk -l'
 
-alias main='cd $USER_HOME_DIR/main'
 
-alias vi='cd $USER_HOME_DIR/VirtualBox\ VMs/'
-alias viu='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vu'
-alias vis='cd $USER_HOME_DIR/VirtualBox\ VMs/ && vs'
 
 alias ek='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
 
-alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
 
 alias ne='netctl'
 
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
-#alias ru='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,ru phonetic'
 alias ru='setxkbmap ru phonetic'
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias gg='google-chrome-stable'
-alias tmp4='cd $USER_HOME_DIR/tmp4'
 alias ur='urxvt'
 alias mk='./make_zip.sh paysera_test'
 alias orphans='pacman -Qdt'
@@ -340,13 +391,9 @@ alias orphans2='pacman -Qdtd'
 alias von='s ipsec start && s ipsec up JIRA && s ipsec up MBS'
 alias vof='s ipsec down MBS && s ipsec down JIRA'
 
-alias tb='tail -n 20 ~/.aliases'
-alias del="sed -i '$ d' ~/.aliases"
 
 alias lsd='lxc-ls -f'
 
-alias op='cd $HOME/.config/openbox'
-alias pro='cd $USER_HOME_DIR/pro'
 
 alias ap='ansible-playbook'
 alias app='ansible-playbook centos.yml'
@@ -356,148 +403,140 @@ alias wpa='wpa_supplicant -Dnl80211 -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant
 alias rew='ifdown wlan0 && ifup wlan0'
 alias ree='ifdown eth0 && ifup eth0'
 alias renet=' service networking restart && /etc/init.d/networking restart'
-alias zr='vv $HOME/.zshrc'
 alias z='zsh'
-alias dot='cd $DOTFILES_DIR'
-alias she='cd $SHELL_SCRIPTS_DIR'
-alias aut='cd $AUTOMATION_DIR'
-alias w='whoami'
-alias xi='vv $USER_HOME_DIR/.xinitrc'
 alias dl='dpkg -l'
-alias al='v $HOME/.aliases'
-alias col='$AUTOMATION_DIR/shell_scripts/post_install/collect_dotfiles.sh'
-alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
 alias xplus='light -A 10'
 alias xminus='light -U 10'
 
-alias t='$HOME_DIR/.todo/todo.sh'
-alias to='cd $HOME_DIR/.todo/'
 alias ta='t add'
 alias rl='readlink -f'
-alias arp='v $DOTFILES_DIR/packages/archlinux/packages_archlinux'
-alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
-alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $HOME/.zshrc'
 
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv '
-#alias python='python3.4'
 alias p='python'
 
 
-#####
-#dag
-#####
+##dag
 alias dag.sc='python scanner.py'
-alias dag.dir='cd ~/lxc/dag-builder/ && venv'
 alias dag.venv='source ../../../env/bin/activate'
 
 alias emac='emacs --no-window-system'
-alias ch='s chown -R riddle:riddle'
 alias makex='s chmod +x'
 alias sa='ssh-add'
 alias sl='ssh-add -l'
 alias cal='gcalcli'
 alias mi='mirage'
-alias ic='v ~/.config/i3/config'
 alias starwars='telnet towel.blinkenlights.nl'
 alias outi='i3-msg exit'
 alias aplus='amixer set Master 10%+'
 alias aminus='amixer set Master 10%-'
 alias mute='amixer -q sset Master toggle'
-alias bak='cd ~/backups'
-alias gtk='v ~/.gtkrc-2.0'
 alias dum='du -h --max-depth=1'
-alias notes='cd $NOTES'
 alias vimnotes='vim -c "colorscheme molokai | Note config"'
 alias plugins='vim +PluginInstall +qall'
 alias vimshell='vim -c VimShell'
 
-# copy/paste
+## copy/paste
 alias xclip='xclip -selection clipboard'
-# middle clip paste
+## middle clip paste
 alias xclip1='xclip -selection primary'
 alias xclip2='xclip -selection secondary'
 
 alias fonts.update='fc-cache -fv'
-alias riddle='cd ~/.riddle'
 alias ho='hostname'
-alias sec='cd $HOME_DIR/.sec'
 alias com="ga . && gc -m '.'"
 alias push="com && gp" 
 alias nn='notes && tree'
-alias drop='cd $DROPBOX'
-alias keep='cd $KEEP && keepass 8gb.kdbx'
-alias can='cd $CANDY'
-alias sync='cd $SYNC'
-alias cs='cd ~/CS'
 alias dc='docker-compose'
 
-alias key='eval $(ssh-agent -s) && ssh-add /home/riddle/.ssh/id_rsa'
-alias stat='cd /home/riddle/pro/statybininkai'
-alias kan='cat /home/riddle/pro/fl/social/kan.js | xclip'
 alias pacfile='sudo pacman -S - <'
 alias conda='/opt/anaconda/bin/conda'
 alias i='h | grep '
-alias tmuxr='v ~/.tmux.conf '
 alias li='libreoffice'
-alias and='cp /home/riddle/Dropbox/sync/android/\(a\)notes/notes.txt /home/riddle/Dropbox/sync/gtd/content/pages/tmp/android.md'
 
 alias aa='airflow resetdb && airflow scheduler'
-alias air='source ~/pro/env/bin/activate && cd ~/airflow'
 alias pel='python -m pelican.server'
 alias trackmem='watch -n 5 du -h --max-depth=1'
 alias dusort='du -hs * | sort -h'
 alias fire='firefox'
 alias pan='pandoc'
 alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
-alias wiki='cd /home/riddle/Dropbox/sync/gtd/content/pages/terahyde/wiki'
 alias gi='v .gitignore'
 
-#### TEMPORARY ALIASES
-alias ig='v $DOTFILES_DIR/.gitignore'
+###################
+# TEMPORARY ALIASES
+###################
 alias sym="find . -maxdepth 1 -type l -print"   
 alias video='lspci | grep -e VGA -e 3D'
-alias hlsaves='cd /home/riddle/.local/share/Steam/steamapps/common/Half-Life\ 2/hl2/save'
 alias is='pld | grepi '
 
 
-#### FUNCTIONS
+alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
+alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
 
-# make cmd aliases
+alias install='sudo pacman -S --noconfirm - < '
+alias playb='mplayer -vo fbdev2 '
+alias ovh='ssh root@tomasgiedraitis.com'
+
+alias npmls='npm list -g --depth=0'
+alias files='find . -type d -name "files" -print'
+
+
+alias srv='cd /srv/http/'
+alias cleanify="sed -i 's@<br/>@ @g'" 
+
+
+###########
+# FUNCTIONS
+###########
+
+# MAIN USER FUNCTIONS
+
+## copy argument to clipboard
+function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1".bak;} 
+
+## make cmd aliases
+function ma() { echo alias $1="'$2'" >> $MAIN_HOME/.aliases; zsh; }
+
+
+# SYSTEMWIDE FUNCTIONS
+
+## scp argument to server
 function toserv() { scp $1 root@tomasgiedraitis.com:/home/riddle; }
 
-function ma() { echo alias $1="'$2'" >> $HOME/.aliases; zsh; }
-
+## unmount argument volume
 function de() { sudo udisks --unmount /dev/$1; }
 
+## unbind cmd from current shell 
 function op() { nohup $1 & disown;}
 
-# combine cd & ls
+## combine cd & ls
 function cdd() { cd $1; ls;}
 
-# find command in history
+## find command in history
 function his() { history | grep $1; }
 
+## copy argument to clipboard
 function copy() { echo "$@" | xclip -selection clipboard;}
-function kk() { s cp -r "$1" $HOME/backups/"$1".bak;} 
 
 
-
-
-#### RUN COMMANDS
+##################
+# STARTUP COMMANDS
+##################
 
 FREETYPE_PROPERTIES="truetype:interpreter-version=35"
 
+## Configure display
 xrandr --output HDMI-1-1 --auto 
 
-# If not running interactively, don't do anything
+## If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-if [ -f $HOME/.dircolors ]; then
-    eval $(dircolors $HOME/.dircolors)
+if [ -f $MAIN_HOME/.dircolors ]; then
+    eval $(dircolors $MAIN_HOME/.dircolors)
 fi
 
 
-#if [ ! -n "$TMUX" ]; then tmux ; fi
+##if [ ! -n "$TMUX" ]; then tmux ; fi
 
 if xset q &>/dev/null; then
 
@@ -519,8 +558,8 @@ if xset q &>/dev/null; then
     fi
 
 
-    #eval `cat $HOME/.fehbg` &     
-    feh  --bg-scale '/home/riddle/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
+    #eval `cat $MAIN_HOME/.fehbg` &     
+    feh  --bg-scale '$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
 
     #gnome-screensaver > /dev/null 2>&1 &
     xscreensaver > /dev/null 2>&1 &
@@ -553,25 +592,9 @@ fi
 
 stty -ixon
 
-# Vi everything
+## Vi everything
 set -o vi
 
 archey3
 #screenfetch
-#
 
-
-alias install='sudo pacman -S --noconfirm - < '
-alias playb='mplayer -vo fbdev2 '
-alias ovh='ssh root@tomasgiedraitis.com'
-
-alias npmls='npm list -g --depth=0'
-alias amos='cd /home/riddle/langs/hebrew/amos_oz'
-alias files='find . -type d -name "files" -print'
-
-alias upd='cp $NOTES/tmp1/360_swagger.yml api.yml'
-
-alias ahl='cd /home/riddle/pro/ahl.360/ahl360-api'
-alias anv='source /home/riddle/venvs/ahl.360/bin/activate'
-
-alias cleanify="sed -i 's@<br/>@ @g'" 
