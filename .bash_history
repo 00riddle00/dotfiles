@@ -11,3 +11,12 @@ ls -la
 cd
 su riddle
 exit
+cd
+ls
+pwd
+cd ..
+sudo chmod -R g+w dotfiles/
+ls -la
+su riddle
+cd
+zsh
