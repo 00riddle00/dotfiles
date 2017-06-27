@@ -10,6 +10,7 @@
 *.swo
 *.out
 .directory
+.bash_history
 
 automation/ssh/*.*
 
