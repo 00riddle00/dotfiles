@@ -1,0 +1,64 @@
+
+stjerm.key f1
+stjerm.opacity: 60
+stjerm.foreground: #ffffff
+stjerm.width: 100%
+stjerm.scrollbar: right
+stjerm.font: DejaVu Sans Mono Book 6
+#stjerm.color0: #181c20 ! black - regular
+#stjerm.color1: #a44245 ! red
+#stjerm.color2: #00bf00 ! green
+#stjerm.color3: #bbad5b ! yellow
+#stjerm.color4: #2b76c7 ! blue
+#stjerm.color5: #8b56a3 ! purple
+#stjerm.color6: #5bcee4 ! cyan
+#stjerm.color7: #d4d7d0 ! white
+#stjerm.color8: #525952 ! black - bold
+#stjerm.color9: #a44245 ! red
+#stjerm.color10: #37a42b ! green
+#stjerm.color11: #c4c29b ! yellow
+#stjerm.color12: #2b76c7 ! blue
+#stjerm.color13: #8b56a3 ! purple
+#stjerm.color14: #71aab3 ! cyan
+#stjerm.color15: #eaeaea ! white
+#stjerm.color16: #2e3436 ! needed because of bug
+
+!###### Color list ###################
+!## B2FBA4 C3ECE9 Green            ###
+!## FBA4A8 a3c5e7 5d7caf Blue      ###
+!## ff6ffa 5F8BFF 490a47 1f0042    ###
+!#####################################
+
+! Black
+*color0:  #353535
+*color8:  #555555
+
+! Red
+*color1:  #D11793
+*color9:  #E480C2
+
+! Green
+*color2:   #93D117
+*color10:  #CCE698
+
+! Yellow
+*color3:   #ECDC21
+*color11:  #FFF78A
+
+! Blue
+*color4:   #3B92FF
+*color12:  #91D5F7
+
+! Magneta
+*color5:   #9B17D1
+*color13:  #D8BBE7
+
+! Cyan
+*color6:   #1EC7AA
+*color14:  #A0FEEE
+
+! White
+*color7:   #CACACA
+*color15: #FFFFFF
+
+

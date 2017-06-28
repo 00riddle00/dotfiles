@@ -8,7 +8,7 @@ export DOTFILES_DIR=/home/$DOTFILES_USER
 
 
 # DOTFILES VARS
-export VIMCOLOR=molokai
+export VIMCOLOR=darkblue
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
@@ -561,7 +561,10 @@ alias aa='airflow resetdb && airflow scheduler'
 
 alias xterm='xterm -r'
 alias res='v ~/.Xresources'
+alias resd='cd ~/.Xresources.d/'
 
+#xrdb -MAIN_USER="<$MAIN_USER>" -merge ~/.Xresources
 xrdb ~/.Xresources
+
 alias urxvt='xrdb ~/.Xresources && urxvt'
 alias n='nano ~/.vimrc'
