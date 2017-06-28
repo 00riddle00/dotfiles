@@ -13,14 +13,14 @@ URxvt.transparent: 0
 URxvt*.shading: 0
 
 URxvt.letterSpace: -1
-URxvt*urgentOnBell: true
+!URxvt*urgentOnBell: true
 URxvt.lineSpace: 2
 
 ! -- Fonts -- !
 !URxvt.font: xft:Anonymous Pro:bold:size=10,xft:Symbola:style=regular:size=12
 !URxvt.boldFont: xft:Anonymous Pro:bold:size=10,xft:Symbola:style=regular:size=12
-URxvt.font:             xft:Bitstream Vera Sans Mono:pixelsize=10
-URxvt.boldFont:         xft:Bitstream Vera Sans Mono:bold:pixelsize=10
+URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
 !URxvt.font: xft:adobe-source-code-pro:pixelsize=10
 !URxvt.boldFont: xft:adobe-source-code-pro:pixelsize=10
 !URxvt*font:xft:Inconsolatazi4:medium:size=10,xft:Symbola:style=Regular
@@ -43,17 +43,17 @@ URxvt.boldFont:         xft:Bitstream Vera Sans Mono:bold:pixelsize=10
 #include "/home/riddle/.Xresources.d/dark"
 !
 ! --  Extensions -- !
-URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard
-URxvt.keysym.M-Escape:     perl:keyboard-select:activate
-URxvt.keysym.M-u:          perl:url-select:select_next
-URxvt.keysym.M-s:          perl:keyboard-select:search
-URxvt.clipboard.autocopy:  true
-URxvt.keysym.M-c:          perl:clipboard:copy
-URxvt.keysym.M-v:          perl:clipboard:paste
-URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
-URxvt.url-select.launcher: /home/jason/Scripts/run_browser
-URxvt.matcher.rend.0:      -Uline fg16
-URxvt.matcher.button:      1
+!URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard
+!URxvt.keysym.M-Escape:     perl:keyboard-select:activate
+!URxvt.keysym.M-u:          perl:url-select:select_next
+!URxvt.keysym.M-s:          perl:keyboard-select:search
+!URxvt.clipboard.autocopy:  true
+!URxvt.keysym.M-c:          perl:clipboard:copy
+!URxvt.keysym.M-v:          perl:clipboard:paste
+!URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
+!URxvt.url-select.launcher: /home/jason/Scripts/run_browser
+!URxvt.matcher.rend.0:      -Uline fg16
+!URxvt.matcher.button:      1
 
 
 ! -- Xterm settings -- !

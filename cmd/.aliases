@@ -8,7 +8,8 @@ export DOTFILES_DIR=/home/$DOTFILES_USER
 
 
 # DOTFILES VARS
-export VIMCOLOR=miromiro
+#export VIMCOLOR=miromiro
+export VIMCOLOR=dark
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
@@ -21,6 +22,7 @@ export MAIN_USER=riddle
 export MAIN_HOME=/home/$MAIN_USER
 
 # MAIN USER VARS
+export VIMRC=$MAIN_HOME/.vimrc
 export DOWNLOADS=$MAIN_HOME/Downloads
 export DW=$MAIN_HOME/Downloads
 export DROPBOX=$MAIN_HOME/Dropbox

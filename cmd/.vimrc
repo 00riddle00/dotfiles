@@ -1,5 +1,4 @@
 "############################### UNSORTED #####################################
- 
 
 "Get rid of annoying parenthesis matching, I prefer to use %. (not my words, but the words of a great programmer and expert vim user)
 let loaded_matchparen = 1
@@ -249,7 +248,6 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'jlanzarotta/bufexplorer'
-Plugin 'powerline/powerline'
 Plugin 'raimondi/delimitmate'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
@@ -263,6 +261,8 @@ Plugin 'klen/python-mode'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'powerline/fonts'
+"Plugin 'powerline/powerline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -311,8 +311,14 @@ let g:syntastic_python_pep8_args = '--ignore=E501'
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_section_b = '%{strftime("%c")}'
-let g:airline_section_y = 'BN: %{bufnr("%")}'
+"let g:airline_section_b = '%{strftime("%c")}'
+"let g:airline_section_y = 'BN: %{bufnr("%")}'
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+
 
 " Do not show buffers from other tabs.
 let g:bufExplorerFindActive=0
@@ -426,8 +432,8 @@ elseif $VIMCOLOR == 'molokai'
 elseif $VIMCOLOR != ''
     color $VIMCOLOR
 else
-    set t_Co=256
     set background=dark
+    let g:solarized_termcolors=256
     color solarized
 endif
 
@@ -447,4 +453,19 @@ set number
 "?set wildmenu
 " Statusline
 set laststatus=2
+
+"############################### TEMPORARY #####################################
+
+ 
+let g:airline_powerline_fonts = 1
+"let g:Powerline_symbols = 'fancy'
+
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '||||'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '|||||'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '◀'
+
+
 
