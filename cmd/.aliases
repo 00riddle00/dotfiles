@@ -276,6 +276,7 @@ alias what='sudo pacman -Qs'
 alias pld='sudo pacman -Q'
 alias pl='sudo pacman -Qe'
 alias is='pld | grepi '
+alias ih='ls -la | grepi '
 
 ## openbox
 alias openbox='exec openbox-session'
@@ -487,18 +488,14 @@ if xset q &>/dev/null; then
     fi
 
     ## change wallpaper (if exists)
-    feh  --bg-scale '$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg'
+    feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg"
 
     ## launch xscreensaver (if installed && not running)
-    xscreensaver > /dev/null 2>&1 &
-
-    ## launch conky scripts (if installed && exist)
-    ps cax | grep conky > /dev/null 2>&1
+    ps cax | grep xscreensaver > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         :
     else
-        conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
-        conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
+        xscreensaver > /dev/null 2>&1 &
     fi
 
 else
@@ -570,3 +567,6 @@ xrdb ~/.Xresources
 
 alias urxvt='xrdb ~/.Xresources && urxvt'
 alias n='nano ~/.vimrc'
+
+alias c1="conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1"
+alias c2="conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1"
