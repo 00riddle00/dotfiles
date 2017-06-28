@@ -1,2 +1,2 @@
 #! /bin/sh
-terminator -T t2
+xrdb ~/.Xresources && urxvt

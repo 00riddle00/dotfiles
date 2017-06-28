@@ -8,6 +8,7 @@ export DOTFILES_DIR=/home/$DOTFILES_USER
 
 
 # DOTFILES VARS
+export VIMCOLOR=molokai
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
@@ -414,31 +415,6 @@ alias xclip1='xclip -selection primary'
 alias xclip2='xclip -selection secondary'
 
 
-###################
-# TEMPORARY ALIASES
-###################
-
-## dag
-alias dag.sc='python scanner.py'
-alias dag.venv='source ../../../env/bin/activate'
-
-## vagrant grigeo
-alias runs='python manage.py runserver 0.0.0.0:8000'
-alias gri='cd /vagrant/grigiskes-api/app/'
-alias venv='source ../env/bin/activate'
-alias senv='source ../scard-env/bin/activate'
-
-## vagrant dienynas
-alias di='cd /vagrant/dienynas/app/'
-alias sca='cd /vagrant/scard-api/'
-alias runsg='python manage.py global runserver 0.0.0.0:8000'
-alias runsa='python manage.py admin runserver 0.0.0.0:8000'
-alias runst='python manage.py teacher runserver 0.0.0.0:8000'
-
-alias cleanify="sed -i 's@<br/>@ @g'" 
-alias aa='airflow resetdb && airflow scheduler'
-
-
 ###########
 # FUNCTIONS
 ###########
@@ -558,3 +534,34 @@ else
     archey3
 fi
 
+
+############
+# TEMPORARY 
+############
+
+## dag
+alias dag.sc='python scanner.py'
+alias dag.venv='source ../../../env/bin/activate'
+
+## vagrant grigeo
+alias runs='python manage.py runserver 0.0.0.0:8000'
+alias gri='cd /vagrant/grigiskes-api/app/'
+alias venv='source ../env/bin/activate'
+alias senv='source ../scard-env/bin/activate'
+
+## vagrant dienynas
+alias di='cd /vagrant/dienynas/app/'
+alias sca='cd /vagrant/scard-api/'
+alias runsg='python manage.py global runserver 0.0.0.0:8000'
+alias runsa='python manage.py admin runserver 0.0.0.0:8000'
+alias runst='python manage.py teacher runserver 0.0.0.0:8000'
+
+alias cleanify="sed -i 's@<br/>@ @g'" 
+alias aa='airflow resetdb && airflow scheduler'
+
+alias xterm='xterm -r'
+alias res='v ~/.Xresources'
+
+xrdb ~/.Xresources
+alias urxvt='xrdb ~/.Xresources && urxvt'
+alias n='nano ~/.vimrc'

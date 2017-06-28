@@ -1,88 +1,63 @@
 [global_config]
-  enabled_plugins = ,
   always_split_with_profile = True
+  enabled_plugins = ,
   focus = system
+  inactive_color_offset = 1.0
   scroll_tabbar = True
   suppress_multiple_term_dialog = True
   title_transmit_bg_color = "#d30102"
-  inactive_color_offset = 1.0
 [keybindings]
-  cycle_prev = ""
-  next_tab = <Primary>w
+  close_term = ""
   close_window = ""
-  group_tab = ""
-  move_tab_right = ""
-  resize_left = ""
-  rotate_ccw = ""
-  reset_clear = ""
-  go_right = <Alt>l
-  new_tab = <Primary><Shift>t
-  resize_right = ""
-  resize_down = ""
-  toggle_zoom = ""
-  scaled_zoom = ""
-  zoom_in = <Primary>plus
-  group_all = ""
+  copy = <Shift><Primary>c
+  cycle_next = ""
+  cycle_prev = ""
+  edit_window_title = <Super><Shift>r
   full_screen = ""
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_next = ""
+  go_prev = ""
+  go_right = <Alt>l
+  go_up = <Alt>k
+  group_all = ""
+  group_tab = ""
+  hide_window = ""
+  move_tab_left = ""
+  move_tab_right = ""
+  new_tab = <Primary><Shift>t
+  new_window = ""
+  next_tab = <Primary>w
+  paste = <Shift><Primary>v
   prev_tab = <Primary>q
-  switch_to_tab_6 = <Alt>6
-  switch_to_tab_7 = <Alt>7
+  reset = ""
+  reset_clear = ""
+  resize_down = ""
+  resize_left = ""
+  resize_right = ""
+  resize_up = ""
+  rotate_ccw = ""
+  rotate_cw = ""
+  scaled_zoom = ""
+  search = <Primary>f
+  split_horiz = <Alt>minus
+  split_vert = <Alt>apostrophe
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
   switch_to_tab_4 = <Alt>4
   switch_to_tab_5 = <Alt>5
-  switch_to_tab_2 = <Alt>2
-  ungroup_all = ""
-  split_vert = <Alt>apostrophe
-  ungroup_tab = ""
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
   switch_to_tab_8 = <Alt>8
-  switch_to_tab_3 = <Alt>3
-  paste = <Shift><Primary>v
-  cycle_next = ""
-  zoom_out = <Primary>minus
-  switch_to_tab_1 = <Alt>1
-  go_prev = ""
-  close_term = ""
-  go_next = ""
-  go_left = <Alt>h
-  copy = <Shift><Primary>c
-  hide_window = ""
-  reset = ""
-  search = <Primary>f
-  go_up = <Alt>k
-  resize_up = ""
-  rotate_cw = ""
-  split_horiz = <Alt>minus
-  zoom_normal = <Primary>0
-  go_down = <Alt>j
-  new_window = ""
-  edit_window_title = <Super><Shift>r
-  move_tab_left = ""
   switch_to_tab_9 = <Alt>9
   toggle_scrollbar = <Shift><Primary>s
-[profiles]
-  [[default]]
-    background_image = None
-  [[simple]]
-    palette = "#000000:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#000000:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff"
-    background_image = None
-  [[solarized-dark]]
-    scrollbar_position = hidden
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    background_image = None
-    background_darkness = 0.49
-    use_system_font = False
-    cursor_color = "#eee8d5"
-    foreground_color = "#ebdbb2"
-    show_titlebar = False
-    font = Source Code Pro Medium 9
-    background_color = "#282828"
-  [[matrix]]
-    palette = "#000000:#83f52c:#59bf3f:#8ae234:#59bf3f:#8ae234:#83f52c:#8ae234:#000000:#4e9a06:#73d216:#4e9a06:#73d216:#83f52c:#8ae234:#8ae234"
-    background_darkness = 0.61
-    background_type = transparent
-    background_image = None
-    cursor_color = "#83f52c"
-    foreground_color = "#1ecc4a"
-    show_titlebar = False
+  toggle_zoom = ""
+  ungroup_all = ""
+  ungroup_tab = ""
+  zoom_in = <Primary>plus
+  zoom_normal = <Primary>0
+  zoom_out = <Primary>minus
 [layouts]
   [[default]]
     [[[child1]]]
@@ -98,3 +73,25 @@
       scrollbar_position = disabled
       type = Window
 [plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+  [[matrix]]
+    background_darkness = 0.61
+    background_type = transparent
+    cursor_color = "#83f52c"
+    foreground_color = "#1ecc4a"
+    palette = "#000000:#83f52c:#59bf3f:#8ae234:#59bf3f:#8ae234:#83f52c:#8ae234:#000000:#4e9a06:#73d216:#4e9a06:#73d216:#83f52c:#8ae234:#8ae234"
+    show_titlebar = False
+  [[simple]]
+    palette = "#000000:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#000000:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff:#ffffff"
+  [[solarized-dark]]
+    background_color = "#282828"
+    background_darkness = 0.49
+    cursor_color = "#eee8d5"
+    font = Source Code Pro Medium 9
+    foreground_color = "#ebdbb2"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
