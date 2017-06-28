@@ -8,8 +8,8 @@ export DOTFILES_DIR=/home/$DOTFILES_USER
 
 
 # DOTFILES VARS
-#export VIMCOLOR=miromiro
-export VIMCOLOR=dark
+export VIMCOLOR=miromiro
+export DIRCOLORS=.dircolors_dark
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
@@ -463,8 +463,8 @@ xrandr --output HDMI-1-1 --auto
 ## If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-if [ -f $MAIN_HOME/.dircolors2 ]; then
-    eval $(dircolors $MAIN_HOME/.dircolors2)
+if [ -f $MAIN_HOME/$DIRCOLORS ]; then
+    eval $(dircolors $MAIN_HOME/$DIRCOLORS )
 fi
 
 ## check if X is running
