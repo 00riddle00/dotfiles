@@ -487,15 +487,13 @@ if xset q &>/dev/null; then
         setxkbmap -option caps:escape 2>/dev/null
     fi
 
-    ## change wallpaper (if exists)
-    feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg"
 
     ## launch xscreensaver (if installed && not running)
     ps cax | grep xscreensaver > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         :
     else
-        xscreensaver > /dev/null 2>&1 &
+        xscreensaver -no-splash > /dev/null 2>&1 &
     fi
 
 else
@@ -527,7 +525,7 @@ if ! type "archey3" > /dev/null; then
     if ! type "screenfetch" > /dev/null; then
 	:
     else
-	screenfetch
+        screenfetch
     fi
 else
     archey3

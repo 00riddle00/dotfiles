@@ -11,26 +11,31 @@ URxvt.borderLess: false
 URxvt.borderColor: #37454e
 URxvt.transparent: 0
 URxvt*.shading: 0
+URxvt*iconFile: /usr/share/icons/la-capitaine-icon-theme/apps/scalable/terminal.svg
+
 
 URxvt.letterSpace: -1
 !URxvt*urgentOnBell: true
 URxvt.lineSpace: 2
 
 ! -- Fonts -- !
-!URxvt.font: xft:Anonymous Pro:bold:size=10,xft:Symbola:style=regular:size=12
-!URxvt.boldFont: xft:Anonymous Pro:bold:size=10,xft:Symbola:style=regular:size=12
-URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
-!URxvt.font: xft:adobe-source-code-pro:pixelsize=10
-!URxvt.boldFont: xft:adobe-source-code-pro:pixelsize=10
-!URxvt*font:xft:Inconsolatazi4:medium:size=10,xft:Symbola:style=Regular
-!URxvt*boldFont:xft:Inconsolatazi4:medium:size=10,xft:Symbola:style=Regular
+URxvt*font: xft:Source Code Pro Medium:size=9,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt*boldFont: xft:Source Code Pro Medium:size=9,xft:Inconsolata\ for\ Powerline:pixelsize=12
+!URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
+!URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
 !URxvt*font:xft:dejavu sans mono:medium:size=12
 !URxvt*boldFont:xft:dejavu sans mono:medium:size=12
-!URxvt*font:xft:droid sans mono slashed:medium:pixelsize=16
-!URxvt*boldFont:xft:droid sans mono slashed:medium:pixelsize=16
-!URxvt*font:xft:luxi mono:regular:pixelsize=16
-!URxvt*boldFont:xft:luxi mono:regular:pixelsize=16
+!URxvt.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
+!URxvt.boldFont: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
+!URxvt*font:xft:luxi mono:regular:pixelsize=10
+!URxvt*boldFont:xft:luxi mono:regular:pixelsize=10
+
+! Xft Font Configuration 
+Xft.dpi: 82 
+Xft.antialias: true 
+Xft.rgba: rgb
+Xft.hinting: false 
+Xft.hintstyle: hintnone 
 
 
 ! -- Colours -- !
