@@ -22,6 +22,8 @@ Commands below should be set, and other key mappings should be set to blank
 * Scroll to the far right <c-Right>
 
 * Duplicate tab: d
+* Previous tab: <c-q>
+* Next tab: <c-w>
 * Go to the first tab: <a-1>
 * Go to the first non-pinned tab: "<a-`>"
 * Go to the last tab: <a-0>
@@ -55,8 +57,6 @@ Commands below should be set, and other key mappings should be set to blank
 ### Keybinder (Firefox)
 Set shortcuts manually in Keybinder settings
 
-* Show Next Tab: Control + W
-* Show Previous Tab: Control + Q
 * Close Tab: Control + E
 * New Private Window: Control + Shift + N
 
