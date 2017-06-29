@@ -8,11 +8,12 @@ export DOTFILES_DIR=/home/$DOTFILES_USER
 
 
 # DOTFILES VARS
-export VIMCOLOR=miromiro
-export DIRCOLORS=.dircolors_dark
+export VIMCOLOR=molokai
+xport DIRCOLORS=.dircolors_dark
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
+export ACTIVATE_BY_CLASS=$SHELL_SCRIPTS_DIR/activate_by_class.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LESSOPEN='|$DOTFILES_DIR/cmd/.lessfilter %s'

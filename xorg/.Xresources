@@ -19,23 +19,24 @@ URxvt.letterSpace: -1
 URxvt.lineSpace: 2
 
 ! -- Fonts -- !
+!URxvt.iconFile: /usr/share/icons/hicolor/scalable/apps/terminator.svg
 !URxvt*font: xft:Source Code Pro Medium:size=7,xft:Inconsolata\ for\ Powerline:pixelsize=12
 !URxvt*boldFont: xft:Source Code Pro Medium:size=7,xft:Inconsolata\ for\ Powerline:pixelsize=12
 URxvt.font:     xft:bitstream vera sans mono:size=8:antialias=true
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=8:antialias=true
-!URxvt*font:xft:dejavu sans mono:medium:size=12
-!URxvt*boldFont:xft:dejavu sans mono:medium:size=12
+!URxvt*font:xft:dejavu sans mono:medium:size=10
+!URxvt*boldFont:xft:dejavu sans mono:medium:size=10
 !URxvt.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
 !URxvt.boldFont: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
 !URxvt*font:xft:luxi mono:regular:pixelsize=10
 !URxvt*boldFont:xft:luxi mono:regular:pixelsize=10
 
 ! Xft Font Configuration 
-Xft.dpi: 82 
+Xft.dpi: 96
 Xft.antialias: true 
 Xft.rgba: rgb
-Xft.hinting: false 
-Xft.hintstyle: hintnone 
+Xft.hinting: true 
+Xft.hintstyle: hinstlight 
 
 
 ! -- Colours -- !
@@ -44,8 +45,8 @@ Xft.hintstyle: hintnone
 !URxvt.foreground: #ffffff
 ! Custom
 ! TODO: decouple main user
-!#include "/home/riddle/.Xresources.d/solarized"
 #include "/home/riddle/.Xresources.d/dark"
+!#include "/home/riddle/.Xresources.d/solarized"
 !
 ! --  Extensions -- !
 !URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard

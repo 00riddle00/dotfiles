@@ -261,6 +261,10 @@ Plugin 'klen/python-mode'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'jason0x43/vim-js-indent'
+
 "Plugin 'powerline/fonts'
 "Plugin 'powerline/powerline'
 
@@ -417,25 +421,27 @@ endfunction
 " set, then use that, giving preference to "solarized" for the generic
 " settings of "light" or "dark".
 
-if $VIMCOLOR == 'light'
-    set background=light
-    let g:solarized_termcolors=256
-    color solarized
-elseif $VIMCOLOR == 'dark'
-    set background=dark
-    let g:solarized_termcolors=256
-    color solarized
-elseif $VIMCOLOR == 'molokai'
-    let g:molokai_original=1
-    let g:rehash256=1
-    color molokai
-elseif $VIMCOLOR != ''
-    color $VIMCOLOR
-else
-    set background=dark
-    let g:solarized_termcolors=256
-    color solarized
-endif
+color molokai
+
+"if $VIMCOLOR == 'solarized-light'
+    "set background=light
+    "let g:solarized_termcolors=256
+    "color solarized
+"elseif $VIMCOLOR == 'solarized-dark'
+    "set background=dark
+    "let g:solarized_termcolors=256
+    "color solarized
+"elseif $VIMCOLOR == 'molokai'
+    "let g:molokai_original=1
+    "let g:rehash256=1
+    "color molokai
+"elseif $VIMCOLOR != ''
+    "color $VIMCOLOR
+"else
+    "set background=dark
+    "let g:solarized_termcolors=256
+    "color solarized
+"endif
 
 " Make sure we're getting 256 colors when it's available
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
@@ -469,6 +475,8 @@ let g:Powerline_symbols = 'fancy'
 "let g:airline_theme='bubblegum'
 let g:airline_theme='kolor'
 "let g:airline_theme='monochrome'
+"
+let delimitMate_expand_cr=1
 
 
 
