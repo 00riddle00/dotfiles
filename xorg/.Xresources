@@ -19,10 +19,10 @@ URxvt.letterSpace: -1
 URxvt.lineSpace: 2
 
 ! -- Fonts -- !
-URxvt*font: xft:Source Code Pro Medium:size=9,xft:Inconsolata\ for\ Powerline:pixelsize=12
-URxvt*boldFont: xft:Source Code Pro Medium:size=9,xft:Inconsolata\ for\ Powerline:pixelsize=12
-!URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
-!URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
+!URxvt*font: xft:Source Code Pro Medium:size=7,xft:Inconsolata\ for\ Powerline:pixelsize=12
+!URxvt*boldFont: xft:Source Code Pro Medium:size=7,xft:Inconsolata\ for\ Powerline:pixelsize=12
+URxvt.font:     xft:bitstream vera sans mono:size=8:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=8:antialias=true
 !URxvt*font:xft:dejavu sans mono:medium:size=12
 !URxvt*boldFont:xft:dejavu sans mono:medium:size=12
 !URxvt.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
