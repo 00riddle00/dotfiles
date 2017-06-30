@@ -488,6 +488,12 @@
         <!--<command>sh -c "$FOCUS write"</command>-->
       <!--</action>-->
     <!--</keybind>-->
+    <keybind key="A-w">
+      <action name="Execute">
+        <command>emacs ~/pro</command>
+      </action>
+    </keybind>
+
     <keybind key="W-w">
       <action name="Execute">
         <command>sh -c "$FOCUS emacs"</command>

@@ -42,7 +42,7 @@ export SENV=$MAIN_HOME/venvs/subscription_demo
 ## there has been no need so far
 
 # SYSTEMWIDE VARS
-export TERM=terminator
+export TERM=xterm-256color
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim
@@ -570,3 +570,4 @@ alias n='nano ~/.vimrc'
 alias c1="conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1"
 alias c2="conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1"
 alias cc=' | xclip'
+alias ee='v ~/.emacs.d/init.el'
