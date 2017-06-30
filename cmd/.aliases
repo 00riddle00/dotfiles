@@ -42,7 +42,7 @@ export SENV=$MAIN_HOME/venvs/subscription_demo
 ## there has been no need so far
 
 # SYSTEMWIDE VARS
-export TERM=terminator
+export TERM=xterm-256color
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim
@@ -459,8 +459,6 @@ function copy() { echo "$@" | xclip -selection clipboard;}
 
 FREETYPE_PROPERTIES='truetype:interpreter-version=35'
 
-## Configure display
-xrandr --output HDMI-1-1 --auto
 
 ## If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -471,6 +469,10 @@ fi
 
 ## check if X is running
 if xset q &>/dev/null; then
+
+    ## Configure display
+    xrandr --output HDMI-1-1 --auto
+
     ## launch tmux
     tmux > /dev/null 2>&1
 
@@ -497,6 +499,9 @@ if xset q &>/dev/null; then
         xscreensaver -no-splash > /dev/null 2>&1 &
     fi
 
+    ## update X settings
+    #xrdb -MAIN_USER="<$MAIN_USER>" -merge ~/.Xresources
+    xrdb ~/.Xresources
 else
     if [ $TTY = "/dev/tty1"  ]; then
         ## if tty1, startx
@@ -508,11 +513,15 @@ else
 fi
 
 ## launch dropbox (if installed && not running)
-ps cax | grep dropbox > /dev/null
-if [ $? -eq 0 ]; then
-  :
+if ! type "dropbox" > /dev/null 2>&1; then
+    :
 else
-    /usr/bin/dropbox &
+    ps cax | grep dropbox > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+      :
+    else
+        /usr/bin/dropbox &
+    fi
 fi
 
 ## avoid Ctrl-s freezing the terminal
@@ -522,8 +531,8 @@ stty -ixon
 set -o vi
 
 ## Launch 'Archey' (if installed). Otherwise launch 'Screenfetch' (if installed)
-if ! type "archey3" > /dev/null; then
-    if ! type "screenfetch" > /dev/null; then
+if ! type "archey3" > /dev/null 2>&1; then
+    if ! type "screenfetch" > /dev/null 2>&1; then
 	:
     else
         screenfetch
@@ -561,8 +570,6 @@ alias xterm='xterm -r'
 alias res='v ~/.Xresources'
 alias resd='cd ~/.Xresources.d/'
 
-#xrdb -MAIN_USER="<$MAIN_USER>" -merge ~/.Xresources
-xrdb ~/.Xresources
 
 alias urxvt='xrdb ~/.Xresources && urxvt'
 alias n='nano ~/.vimrc'
