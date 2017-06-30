@@ -578,3 +578,4 @@ alias c1="conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1"
 alias c2="conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1"
 alias cc=' | xclip'
 alias ee='v ~/.emacs.d/init.el'
+alias show_hidden='setopt -s glob_dots'
