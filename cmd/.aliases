@@ -1,6 +1,6 @@
-########### 
-# VARIABLES 
-########### 
+###########
+# VARIABLES
+###########
 
 # DOTFILES USER SETTINGS
 export DOTFILES_USER=dotfiles
@@ -9,7 +9,7 @@ export DOTFILES_DIR=/home/$DOTFILES_USER
 
 # DOTFILES VARS
 export VIMCOLOR=molokai
-xport DIRCOLORS=.dircolors_dark
+export DIRCOLORS=.dircolors_dark
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
@@ -39,21 +39,21 @@ export VENV=$MAIN_HOME/venvs/sql_app
 export SENV=$MAIN_HOME/venvs/subscription_demo
 
 # CURRENT USER VARS
-## there has been no need so far 
+## there has been no need so far
 
 # SYSTEMWIDE VARS
-export TERM=terminator 
+export TERM=terminator
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim
-export LC_ALL='en_US.UTF-8' 
+export LC_ALL='en_US.UTF-8'
 export THEME=riddle
 
-######### 
-# ALIASES 
-######### 
+#########
+# ALIASES
+#########
 
-# DOTFILES COMMANDS 
+# DOTFILES COMMANDS
 alias dot='cd $DOTFILES_DIR'
 alias arp='v $DOTFILES_DIR/packages/archlinux/packages_main_repo'
 alias aur='v $DOTFILES_DIR/packages/archlinux/packages_aur'
@@ -68,7 +68,7 @@ alias dis='$AUTOMATION_DIR/shell_scripts/post_install/disperse_dotfiles.sh'
 alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
 alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
 
-# MAIN USER COMMANDS 
+# MAIN USER COMMANDS
 
 ## navigation
 alias main='cd $MAIN_HOME/main'
@@ -148,7 +148,7 @@ alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/id_rsa'
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 
 
-# CURRENT USER COMMANDS 
+# CURRENT USER COMMANDS
 ## there has been no need so far
 
 
@@ -200,7 +200,7 @@ alias trackmem='watch -n 5 du -h --max-depth=1'
 alias dusort='du -hs * | sort -h'
 alias panh='pandoc -f html -t markdown-raw_html-native_divs-native_spans'
 alias gi='v .gitignore'
-alias sym='find . -maxdepth 1 -type l -print'   
+alias sym='find . -maxdepth 1 -type l -print'
 alias video='lspci | grep -e VGA -e 3D'
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
 alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
@@ -209,7 +209,7 @@ alias ovh='ssh root@tomasgiedraitis.com'
 alias npmls='npm list -g --depth=0'
 alias files='find . -type d -name "files" -print'
 alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
-alias cf='fortune | cowsay' 
+alias cf='fortune | cowsay'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
@@ -265,7 +265,7 @@ alias srv='cd /srv/http/'
 alias orphans='pacman -Qdt'
 alias orphans2='pacman -Qdtd'
 alias pacfile='sudo pacman -S --noconfirm - --needed <'
-alias pacs='sudo pacman -S --noconfirm --needed' 
+alias pacs='sudo pacman -S --noconfirm --needed'
 alias pacu='sudo pacman -U'
 alias pacr='sudo pacman -R'
 alias pacrs='sudo pacman -Rs'
@@ -321,7 +321,7 @@ alias vimshell='vim -c VimShell'
 
 ## git
 alias com="ga . && gc -m '.'"
-alias push='com && gp' 
+alias push='com && gp'
 alias gd='git diff'
 alias gl='git log'
 alias gs='git status'
@@ -332,7 +332,7 @@ alias gb='git branch'
 alias gch='git checkout'
 alias glg='git lg'
 
-## vagrant 
+## vagrant
 alias vu='vagrant up'
 alias vs='vagrant ssh'
 
@@ -360,8 +360,8 @@ alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias wh='sudo netctl start home'
 alias wm='sudo netctl start modem'
-alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf' 
-alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf' 
+alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
+alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
 alias wifih='wifion && wnet && wh && wpah'
 alias wifim='wifion && wnet && wm && wpam'
 
@@ -373,7 +373,7 @@ alias tof='synclient TouchpadOff=1'
 alias ek='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
 alias home='xrandr --output HDMI-1-1 --auto --output eDP-1-1 --auto --right-of HDMI-1-1'
 alias xl='xrandr --output VGA-0 --rotate left'
-alias xn='xrandr --output VGA-0 --rotate normal' 
+alias xn='xrandr --output VGA-0 --rotate normal'
 alias xport='xrandr --output HDMI-1-1 --auto --rotate left --output eDP-1-1 --auto --right-of HDMI-1-1'
 alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --auto --right-of HDMI-1-1'
 alias xexof='xrandr --output HDMI-1-1 --off'
@@ -426,7 +426,7 @@ alias xclip2='xclip -selection secondary'
 # MAIN USER FUNCTIONS
 
 ## copy argument to clipboard
-function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1".bak;} 
+function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1".bak;}
 
 ## make cmd aliases
 function ma() { echo alias $1="'$2'" >> $MAIN_HOME/.aliases; zsh; }
@@ -440,7 +440,7 @@ function toserv() { scp $1 root@tomasgiedraitis.com:/home/riddle; }
 ## unmount argument volume
 function de() { sudo udisks --unmount /dev/$1; }
 
-## unbind cmd from current shell 
+## unbind cmd from current shell
 function op() { nohup $1 & disown;}
 
 ## combine cd & ls
@@ -460,7 +460,7 @@ function copy() { echo "$@" | xclip -selection clipboard;}
 FREETYPE_PROPERTIES='truetype:interpreter-version=35'
 
 ## Configure display
-xrandr --output HDMI-1-1 --auto 
+xrandr --output HDMI-1-1 --auto
 
 ## If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -475,7 +475,7 @@ if xset q &>/dev/null; then
     tmux > /dev/null 2>&1
 
     ## launch autokey (if not running)
-    ps cax | grep autokey > /dev/null 2>&1 
+    ps cax | grep autokey > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         :
     else
@@ -484,7 +484,7 @@ if xset q &>/dev/null; then
 
     ## remap keys with setxkbmap (if installed)
     if type setxkbmap >/dev/null 2>&1; then
-        setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt  2>/dev/null 
+        setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt  2>/dev/null
         setxkbmap -option caps:escape 2>/dev/null
     fi
 
@@ -498,7 +498,7 @@ if xset q &>/dev/null; then
     fi
 
 else
-    if [ $TTY = "/dev/tty1"  ]; then 
+    if [ $TTY = "/dev/tty1"  ]; then
         ## if tty1, startx
         startx
     else
@@ -512,7 +512,7 @@ ps cax | grep dropbox > /dev/null
 if [ $? -eq 0 ]; then
   :
 else
-    /usr/bin/dropbox & 
+    /usr/bin/dropbox &
 fi
 
 ## avoid Ctrl-s freezing the terminal
@@ -534,7 +534,7 @@ fi
 
 
 ############
-# TEMPORARY 
+# TEMPORARY
 ############
 
 ## dag
@@ -554,7 +554,7 @@ alias runsg='python manage.py global runserver 0.0.0.0:8000'
 alias runsa='python manage.py admin runserver 0.0.0.0:8000'
 alias runst='python manage.py teacher runserver 0.0.0.0:8000'
 
-alias cleanify="sed -i 's@<br/>@ @g'" 
+alias cleanify="sed -i 's@<br/>@ @g'"
 alias aa='airflow resetdb && airflow scheduler'
 
 alias xterm='xterm -r'
@@ -569,3 +569,4 @@ alias n='nano ~/.vimrc'
 
 alias c1="conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1"
 alias c2="conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1"
+alias cc=' | xclip'
