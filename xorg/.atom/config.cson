@@ -1,5 +1,6 @@
 "*":
   core:
+    autoHideMenuBar: true
     telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
