@@ -1,6 +1,6 @@
 [Added Associations]
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
-text/plain=mirage.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;mousepad.desktop;libreoffice-writer.desktop;atom.desktop;
+text/plain=mousepad.desktop;mirage.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=vlc.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;
@@ -11,7 +11,7 @@ image/jpeg=mirage.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
-video/x-msvideo=vlc.desktop;mplayer.desktop;
+video/x-msvideo=mplayer.desktop;vlc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
@@ -30,6 +30,9 @@ application/x-mswinurl=firefox.desktop;wine-extension-url.desktop;
 text/vnd.trolltech.linguist=linguist.desktop;
 image/svg+xml=mirage.desktop;
 text/x-python=mirage.desktop;
+video/quicktime=mplayer.desktop;
+application/vnd.corel-draw=libreoffice-draw.desktop;
+image/tiff=mirage.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
