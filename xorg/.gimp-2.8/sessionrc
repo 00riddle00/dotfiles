@@ -12,12 +12,12 @@
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
     (position 4 0)
-    (size 1916 1080)
+    (size 1873 1080)
     (open-on-exit)
     (aux-info
         (left-docks-width "452")
         (right-docks-width "10")
-        (maximized "yes"))
+        (maximized "no"))
     (gimp-toolbox
         (side left)
         (book
