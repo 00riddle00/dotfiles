@@ -33,6 +33,8 @@ text/x-python=mirage.desktop;
 video/quicktime=mplayer.desktop;
 application/vnd.corel-draw=libreoffice-draw.desktop;
 image/tiff=mirage.desktop;
+image/x-xcf=gimp.desktop;
+message/rfc822=thunderbird.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

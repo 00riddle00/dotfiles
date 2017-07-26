@@ -2,6 +2,15 @@
 # 
 # This file will be entirely rewritten each time you exit.
 
+(GimpTemplate "test"
+    (width 1366)
+    (height 768)
+    (unit pixels)
+    (xresolution 72.000000)
+    (yresolution 72.000000)
+    (resolution-unit inches)
+    (image-type rgb)
+    (fill-type background-fill))
 (GimpTemplate "640x480"
     (width 640)
     (height 480)
