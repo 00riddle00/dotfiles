@@ -1,7 +1,7 @@
 [Added Associations]
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
-text/plain=mousepad.desktop;mirage.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
-application/pdf=userapp-firefox-UZ9C0Y.desktop;google-chrome.desktop;libreoffice-draw.desktop;
+text/plain=mirage.desktop;mousepad.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
+application/pdf=google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=vlc.desktop;
 video/x-matroska=vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
@@ -11,7 +11,7 @@ image/jpeg=mirage.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
-video/x-msvideo=mplayer.desktop;vlc.desktop;
+video/x-msvideo=vlc.desktop;mplayer.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
@@ -30,11 +30,22 @@ application/x-mswinurl=firefox.desktop;wine-extension-url.desktop;
 text/vnd.trolltech.linguist=linguist.desktop;
 image/svg+xml=mirage.desktop;
 text/x-python=mirage.desktop;
-video/quicktime=mplayer.desktop;
+video/quicktime=vlc.desktop;userapp-Mail Recipient-QGEU4Y.desktop;mplayer.desktop;
 application/vnd.corel-draw=libreoffice-draw.desktop;
 image/tiff=mirage.desktop;
 image/x-xcf=gimp.desktop;
 message/rfc822=thunderbird.desktop;
+image/vnd.adobe.photoshop=gimp.desktop;
+video/x-ms-wmv=vlc.desktop;
+video/3gpp=vlc.desktop;
+application/javascript=mirage.desktop;
+audio/x-wav=mplayer.desktop;
+video/mp2t=vlc.desktop;
+video/mpeg=vlc.desktop;
+application/vnd.ms-powerpoint=libreoffice-impress.desktop;
+image/x-canon-cr2=mirage.desktop;
+image/x-eps=gimp.desktop;
+audio/aac=mplayer.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

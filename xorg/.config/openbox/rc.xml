@@ -542,11 +542,6 @@
       </action>
     </keybind>
 
-    <keybind key="A-F2">
-      <action name="Execute">
-          <command>urxvt -name t2</command>
-      </action>
-    </keybind>
 
     <keybind key="F2">
       <action name="Execute">
