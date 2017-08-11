@@ -27,7 +27,6 @@ export VIMRC=$MAIN_HOME/.vimrc
 export DOWNLOADS=$MAIN_HOME/Downloads
 export DW=$MAIN_HOME/Downloads
 export DROPBOX=$MAIN_HOME/Dropbox
-export TMP=$MAIN_HOME/tmp1
 export TMP1=$MAIN_HOME/tmp1
 export TMP2=$MAIN_HOME/tmp2
 export PRO=$MAIN_HOME/pro
@@ -582,3 +581,7 @@ alias cc=' | xclip'
 alias ee='v ~/.emacs.d/init.el'
 alias show_hidden='setopt -s glob_dots'
 alias wallpaper='feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg"'
+
+alias xwork='xrandr --output VGA-1 --auto'
+alias xwork2='xrandr --output HDMI-1 --auto --output VGA-1 --right-of HDMI-1'
+alias xwork3='xrandr --output HDMI-1 --rotate left --auto --output VGA-1 --right-of HDMI-1'
