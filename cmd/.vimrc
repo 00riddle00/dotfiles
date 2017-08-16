@@ -1,7 +1,7 @@
 "############################### UNSORTED #####################################
 
 "Get rid of annoying parenthesis matching, I prefer to use %. (not my words, but the words of a great programmer and expert vim user)
-let loaded_matchparen = 1
+"let loaded_matchparen = 1
 
 set hidden
     

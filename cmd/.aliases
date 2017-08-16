@@ -585,3 +585,10 @@ alias wallpaper='feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/black
 alias xwork='xrandr --output VGA-1 --auto'
 alias xwork2='xrandr --output HDMI-1 --auto --output VGA-1 --right-of HDMI-1'
 alias xwork3='xrandr --output HDMI-1 --rotate left --auto --output VGA-1 --right-of HDMI-1'
+
+alias py.server='python3 -m http.server 8000'
+alias light.server='light-server -s . -p 8000 -c config.json'
+alias node.server='httpserver'
+
+alias jj='/home/riddle/js_run/js'
+
