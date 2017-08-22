@@ -15,7 +15,7 @@
     (size 1916 1080)
     (open-on-exit)
     (aux-info
-        (left-docks-width "467")
+        (left-docks-width "645")
         (right-docks-width "10")
         (maximized "yes"))
     (gimp-toolbox
@@ -51,7 +51,7 @@
                 (tab-style automatic))))
     (gimp-dock
         (side left)
-        (position 254)
+        (position 356)
         (book
             (current-page 0)
             (dockable "gimp-layer-list"
@@ -114,7 +114,7 @@
     (position 89 335))
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
-    (position 125 215)
+    (position 30 186)
     (size 406 550))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
@@ -144,7 +144,7 @@
     (position 179 87))
 (session-info "toplevel"
     (factory-entry "gimp-colorize-tool-dialog")
-    (position 143 0))
+    (position 255 330))
 (session-info "toplevel"
     (factory-entry "gimp-hue-saturation-tool-dialog")
     (position 72 213))
