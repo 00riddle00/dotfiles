@@ -384,11 +384,11 @@ alias xon='xrandr --output eDP-1-1 --auto'
 
 ## c lang
 alias ms='make rebuild'
-alias vt='vlt ./test'
 alias vl='valgrind'
+alias vt='valgrind --track-origins=yes'
 alias vlt='valgrind --track-origins=yes --leak-check=full'
-alias vll='vlt --leak-check=full --show-leak-kinds=all ./test'
-alias vllv='vlt --leak-check=full --show-leak-kinds=all -v ./test'
+alias vll='vlt --leak-check=full --show-leak-kinds=all'
+alias vllv='vlt --leak-check=full --show-leak-kinds=all -v'
 
 ## python
 alias p='python'
@@ -591,5 +591,6 @@ alias light.server='light-server -s . -p 8000 -c config.json'
 alias node.server='httpserver'
 
 alias jj='/home/riddle/js_run/js'
+alias mm='make operators && ./operators'
 
 
