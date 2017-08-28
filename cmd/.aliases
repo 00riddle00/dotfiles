@@ -591,6 +591,13 @@ alias light.server='light-server -s . -p 8000 -c config.json'
 alias node.server='httpserver'
 
 alias jj='/home/riddle/js_run/js'
-alias mm='make operators && ./operators'
+
+alias cmake='CFLAGS="-Wall -g" make'
+alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
+
+alias mm='make ex19'
+alias play='./ex19'
+
+
 
 

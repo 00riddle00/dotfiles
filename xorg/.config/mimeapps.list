@@ -48,6 +48,7 @@ image/x-eps=gimp.desktop;
 audio/aac=mplayer.desktop;
 video/webm=vlc.desktop;
 text/x-matlab=mirage.desktop;
+text/x-cmake=mousepad.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
