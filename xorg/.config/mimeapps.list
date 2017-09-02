@@ -29,7 +29,7 @@ application/vnd.ms-visio.drawing.main+xml=libreoffice-startcenter.desktop;
 application/x-mswinurl=firefox.desktop;wine-extension-url.desktop;
 text/vnd.trolltech.linguist=linguist.desktop;
 image/svg+xml=mirage.desktop;
-text/x-python=mirage.desktop;
+text/x-python=sublime_text.desktop;mirage.desktop;
 video/quicktime=vlc.desktop;userapp-Mail Recipient-QGEU4Y.desktop;mplayer.desktop;
 application/vnd.corel-draw=libreoffice-draw.desktop;
 image/tiff=mirage.desktop;
@@ -49,6 +49,7 @@ audio/aac=mplayer.desktop;
 video/webm=vlc.desktop;
 text/x-matlab=mirage.desktop;
 text/x-cmake=mousepad.desktop;
+application/x-mobipocket-ebook=calibre-ebook-viewer.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
