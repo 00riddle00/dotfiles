@@ -427,7 +427,9 @@ alias xclip2='xclip -selection secondary'
 # MAIN USER FUNCTIONS
 
 ## copy argument to clipboard
-function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1".bak;}
+function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1"-"$(date +%F_%R)".bak;}
+#function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1"_"$(date)".bak;}
+#alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
 
 ## make cmd aliases
 function ma() { echo alias $1="'$2'" >> $MAIN_HOME/.aliases; zsh; }
@@ -590,18 +592,25 @@ alias py.server='python3 -m http.server 8000'
 alias light.server='light-server -s . -p 8000 -c config.json'
 alias node.server='httpserver'
 
+# java
+alias j='java'
+alias jc='javac'
+alias jcl='rm *.class'
+
+function jr() { javac $1 && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
+
 alias jj='/home/riddle/js_run/js'
 alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
+
 
 export CC=gcc
 #export CFLAGS="-Wall -xc -g"
 export CFLAGS="-Wall -xc -g -lm -std=gnu99"
 
-alias mm='make pratybos_1'
-#alias run='./pratybos_1'
-alias clean='rm pratybos_1'
+alias mm='make stack_11'
+alias run='./stack_11'
+alias clean='rm stack_11'
 
-alias run='./ex20 1 82 39 44 1 2 3 4 9 8 01 10 11'
 
 
 
