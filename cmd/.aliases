@@ -607,9 +607,9 @@ export CC=gcc
 #export CFLAGS="-Wall -xc -g"
 export CFLAGS="-Wall -xc -g -lm -std=gnu99"
 
-alias mm='make stack_11'
-alias run='./stack_11'
-alias clean='rm stack_11'
+alias mm='make queue_3'
+alias run='./queue_3'
+alias clean='rm queue_3'
 
 
 
