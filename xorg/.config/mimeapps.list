@@ -2,8 +2,8 @@
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
 text/plain=mousepad.desktop;mirage.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
-video/mp4=vlc.desktop;
-video/x-matroska=vlc.desktop;mplayer.desktop;
+video/mp4=mpv.desktop;vlc.desktop;
+video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
 application/x-yaml=atom.desktop;
@@ -11,7 +11,7 @@ image/jpeg=mirage.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
-video/x-msvideo=vlc.desktop;mplayer.desktop;
+video/x-msvideo=mpv.desktop;mplayer.desktop;vlc.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
@@ -46,10 +46,13 @@ application/vnd.ms-powerpoint=libreoffice-impress.desktop;
 image/x-canon-cr2=mirage.desktop;
 image/x-eps=gimp.desktop;
 audio/aac=mplayer.desktop;
-video/webm=vlc.desktop;
+video/webm=mpv.desktop;vlc.desktop;
 text/x-matlab=mirage.desktop;
 text/x-cmake=mousepad.desktop;
 application/x-mobipocket-ebook=calibre-ebook-viewer.desktop;
+text/x-emacs-lisp=mirage.desktop;
+audio/ac3=audacity.desktop;
+application/vnd.oasis.opendocument.presentation=libreoffice-impress.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

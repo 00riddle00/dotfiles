@@ -361,10 +361,13 @@ alias wifion='sudo ip link set wlp8s0 up'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias wh='sudo netctl start home'
 alias wm='sudo netctl start modem'
+alias sm='sudo netctl start sodas'
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
 alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
+alias wpas='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf'
 alias wifih='wifion && wnet && wh && wpah'
 alias wifim='wifion && wnet && wm && wpam'
+alias wifis='wifion && wnet && sm && wpas'
 
 ## touchpad
 alias ton='synclient TouchpadOff=0'
@@ -474,6 +477,7 @@ fi
 if xset q &>/dev/null; then
 
     ## Configure display
+    # xrandr --output eDP-1-1 --auto
     xrandr --output HDMI-1-1 --auto
 
     ## launch tmux
@@ -523,7 +527,8 @@ else
     if [ $? -eq 0 ]; then
       :
     else
-        /usr/bin/dropbox &
+        #/usr/bin/dropbox &
+        /usr/bin/dropbox > /dev/null 2>&1;
     fi
 fi
 
@@ -607,9 +612,11 @@ export CC=gcc
 #export CFLAGS="-Wall -xc -g"
 export CFLAGS="-Wall -xc -g -lm -std=gnu99"
 
-alias mm='make queue_3'
-alias run='./queue_3'
-alias clean='rm queue_3'
+alias mm='make tree_6'
+alias run='./tree_6'
+alias clean='rm tree_6'
+
+alias phone='jmtpfs ~/.phone'
 
 
 
