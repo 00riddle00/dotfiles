@@ -110,7 +110,8 @@ alias gri='cd $MAIN_HOME/VirtualBox\ VMs/grigiskes-api/app'
 alias u2='cd $MAIN_HOME/CS/2_semester/programavimas_c/code/U2'
 alias dw='cd $MAIN_HOME/Downloads/'
 
-## editing commands
+## file editing commands
+alias res='v $MAIN_HOME/.Xresources'
 alias tmuxr='v $MAIN_HOME/.tmux.conf '
 alias term='v $MAIN_HOME/.config/terminator/config'
 alias tintrc='v $MAIN_HOME/.config/tint2/tint2rc'
@@ -170,6 +171,7 @@ alias stopit='killall mpg123'
 alias kil='sudo kill -9'
 alias xfce='exec xfce4-session'
 alias au='ps aux | grep -i'
+alias phone='jmtpfs ~/.phone'
 alias tm='conky -c .conky/archconky &'
 alias um='sudo umount /dev/sdb1'
 alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
@@ -213,6 +215,7 @@ alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cf='fortune | cowsay'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias show_hidden='setopt -s glob_dots'
 
 ## basic commands
 alias b='bash'
@@ -291,9 +294,8 @@ alias conda='/opt/anaconda/bin/conda'
 alias dc='docker-compose'
 alias gg='google-chrome-stable'
 alias sub='/usr/bin/subl'
-alias emac='emacs --no-window-system'
 alias ne='netctl'
-alias ur='urxvt'
+alias urxvt='xrdb ~/.Xresources && urxvt'
 alias libre='libreoffice'
 alias show='mirage'
 alias z='zsh'
@@ -312,6 +314,7 @@ alias tt='sudo thunar ./'
 alias rtt='sudo dolphin4 ./'
 alias play='vlc'
 alias ag='autokey-gtk'
+alias xterm='xterm -r'
 
 ## vim
 alias v='vim'
@@ -319,6 +322,10 @@ alias vv='sudo vim'
 alias vimnotes='vim -c "colorscheme molokai | Note config"'
 alias plugins='vim +PluginInstall +qall'
 alias vimshell='vim -c VimShell'
+
+## emacs
+alias emac='emacs --no-window-system'
+alias ee='v ~/.emacs.d/init.el'
 
 ## git
 alias com="ga . && gc -m '.'"
@@ -374,14 +381,11 @@ alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
 ## screen setup
-alias ek='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
-alias home='xrandr --output HDMI-1-1 --auto --output eDP-1-1 --auto --right-of HDMI-1-1'
+alias xthree='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
 alias xl='xrandr --output VGA-0 --rotate left'
 alias xn='xrandr --output VGA-0 --rotate normal'
 alias xport='xrandr --output HDMI-1-1 --auto --rotate left --output eDP-1-1 --auto --right-of HDMI-1-1'
 alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --auto --right-of HDMI-1-1'
-alias xexof='xrandr --output HDMI-1-1 --off'
-alias xexon='xrandr --output HDMI-1-1 --auto'
 alias xof='xrandr --output eDP-1-1 --off'
 alias xon='xrandr --output eDP-1-1 --auto'
 
@@ -392,6 +396,10 @@ alias vt='valgrind --track-origins=yes'
 alias vlt='valgrind --track-origins=yes --leak-check=full'
 alias vll='vlt --leak-check=full --show-leak-kinds=all'
 alias vllv='vlt --leak-check=full --show-leak-kinds=all -v'
+alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
+alias mm='make tree_6'
+alias run='./tree_6'
+alias clean='rm tree_6'
 
 ## python
 alias p='python'
@@ -402,11 +410,22 @@ alias senv='source env/bin/activate'
 alias qenv='deactivate'
 alias pu='s pip uninstall'
 
+# java
+alias j='java'
+alias jc='javac'
+alias jcl='rm *.class'
+function jr() { javac $1 && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
+
 ## django
 alias mig='pmp makemigrations && pmp migrate'
 alias pmp='python manage.py'
 alias cs='python manage.py collectstatic --noinput'
 alias runs='python manage.py runserver'
+
+# servers
+alias py.server='python3 -m http.server 8000'
+alias light.server='light-server -s . -p 8000 -c config.json'
+alias node.server='httpserver'
 
 ## debian
 alias dp='sudo dpkg -i'
@@ -477,8 +496,14 @@ fi
 if xset q &>/dev/null; then
 
     ## Configure display
-    # xrandr --output eDP-1-1 --auto
-    xrandr --output HDMI-1-1 --auto
+    ## if HDMI display connected, use it. Else use eDP.
+    xrandr | awk '/\ connected/{print $1}' | grep HDMI-1-1 > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        xrandr --output HDMI-1-1 --auto
+        :
+    else
+        xrandr --output eDP-1-1 --auto
+    fi;
 
     ## launch tmux
     tmux > /dev/null 2>&1
@@ -550,74 +575,8 @@ else
 fi
 
 
+
 ############
 # TEMPORARY
 ############
-
-## dag
-alias dag.sc='python scanner.py'
-alias dag.venv='source ../../../env/bin/activate'
-
-## vagrant grigeo
-alias runs='python manage.py runserver 0.0.0.0:8000'
-alias gri='cd /vagrant/grigiskes-api/app/'
-alias venv='source ../env/bin/activate'
-alias senv='source ../scard-env/bin/activate'
-
-## vagrant dienynas
-alias di='cd /vagrant/dienynas/app/'
-alias sca='cd /vagrant/scard-api/'
-alias runsg='python manage.py global runserver 0.0.0.0:8000'
-alias runsa='python manage.py admin runserver 0.0.0.0:8000'
-alias runst='python manage.py teacher runserver 0.0.0.0:8000'
-
-alias cleanify="sed -i 's@<br/>@ @g'"
-alias aa='airflow resetdb && airflow scheduler'
-
-alias xterm='xterm -r'
-alias res='v ~/.Xresources'
-alias resd='cd ~/.Xresources.d/'
-
-
-alias urxvt='xrdb ~/.Xresources && urxvt'
-alias n='nano ~/.vimrc'
-
-alias c1="conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1"
-alias c2="conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1"
-alias cc=' | xclip'
-alias ee='v ~/.emacs.d/init.el'
-alias show_hidden='setopt -s glob_dots'
-alias wallpaper='feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg"'
-
-alias xwork='xrandr --output VGA-1 --auto'
-alias xwork2='xrandr --output HDMI-1 --auto --output VGA-1 --right-of HDMI-1'
-alias xwork3='xrandr --output HDMI-1 --rotate left --auto --output VGA-1 --right-of HDMI-1'
-
-alias py.server='python3 -m http.server 8000'
-alias light.server='light-server -s . -p 8000 -c config.json'
-alias node.server='httpserver'
-
-# java
-alias j='java'
-alias jc='javac'
-alias jcl='rm *.class'
-
-function jr() { javac $1 && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
-
-alias jj='/home/riddle/js_run/js'
-alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
-
-
-export CC=gcc
-#export CFLAGS="-Wall -xc -g"
-export CFLAGS="-Wall -xc -g -lm -std=gnu99"
-
-alias mm='make tree_6'
-alias run='./tree_6'
-alias clean='rm tree_6'
-
-alias phone='jmtpfs ~/.phone'
-
-
-
 
