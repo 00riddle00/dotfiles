@@ -389,18 +389,6 @@ alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --
 alias xof='xrandr --output eDP-1-1 --off'
 alias xon='xrandr --output eDP-1-1 --auto'
 
-## c lang
-alias ms='make rebuild'
-alias vl='valgrind'
-alias vt='valgrind --track-origins=yes'
-alias vlt='valgrind --track-origins=yes --leak-check=full'
-alias vll='vlt --leak-check=full --show-leak-kinds=all'
-alias vllv='vlt --leak-check=full --show-leak-kinds=all -v'
-alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
-alias mm='make tree_6'
-alias run='./tree_6'
-alias clean='rm tree_6'
-
 ## python
 alias p='python'
 alias pel='python -m pelican.server'
@@ -579,4 +567,18 @@ fi
 ############
 # TEMPORARY
 ############
+
+
+## c lang
+alias ms='make rebuild'
+alias vl='valgrind'
+alias vt='valgrind --track-origins=yes'
+alias vlt='valgrind --track-origins=yes --leak-check=full'
+alias vll='vlt --leak-check=full --show-leak-kinds=all'
+alias vllv='vlt --leak-check=full --show-leak-kinds=all -v'
+alias gdb_super='gdb --batch --ex run --ex bt --ex q --args'
+alias mm='gcc -g logfind.c -o logfind'
+alias run='./logfind hello test1.txt'
+alias clean='rm logfind'
+
 

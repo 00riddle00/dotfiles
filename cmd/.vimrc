@@ -8,6 +8,8 @@
 " I use it to allow vim mouse scroll instead of tmux history buffer scroll
 set mouse=a
 
+" Allow to skip between buffers without writing or 
+" abandoning changes
 set hidden
     
 map { 15k
@@ -103,6 +105,9 @@ set nobackup
 " Show matching brackets when cursor is over them
 set showmatch
 
+nmap <c-Left> :cp<CR> 
+nmap <c-Right> :cn<CR>
+
 " Easy movement between windows
 nmap <c-j> <C-W>j
 nmap <c-k> <C-W>k
@@ -114,22 +119,20 @@ nmap <c-l> <C-W>l
 "noremap <c-l> <C-W>l
 
 " Tab navigation
-nmap    <c-t>           :tabnew<cr>
 nmap    <leader>t       :tabnew<cr>
 nmap    <leader>1       :tabfirst<cr>
 
 nmap    <leader>q       :tabprev<cr>
-
-nmap    <leader>2       :tabnext<cr>
+nmap    <leader>w       :tabnext<cr>
+nmap    <leader>f       :tabclose<cr>
 
 nmap    <leader>3       3gt
 nmap    <leader>4       4gt
 nmap    <leader>5       5gt
 nmap    <leader>6       6gt
 
-nmap    <leader>0       :tablast<cr>
+nmap    <leader>0       :tabfirst<cr>
 nmap    <leader>9       :tablast<cr>
-nmap    <leader>f       :tabclose<cr>
 
 
 " Toggle line numbers
