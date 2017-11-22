@@ -594,11 +594,23 @@
       </action>
     </keybind>
 
-    <keybind key="F1">
+    <keybind key="A-F1">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 'vim' 'terminator --geometry=700x500 -T vim'"</command>
+          <command>urxvt -name t1</command>
       </action>
     </keybind>
+
+    <keybind key="F1">
+      <action name="Execute">
+          <command>wmctrl -x -a t1.URxvt</command>
+      </action>
+    </keybind>
+
+    <!--<keybind key="F1">-->
+      <!--<action name="Execute">-->
+          <!--<command>sh -c "$ACTIVATE 'vim' 'terminator -/-geometry=700x500 -T vim'"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
 
     <!--<keybind key="F1">-->
       <!--<action name="Execute">-->

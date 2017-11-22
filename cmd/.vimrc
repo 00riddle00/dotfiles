@@ -12,8 +12,8 @@ set mouse=a
 " abandoning changes
 set hidden
     
-map { 15k
-map } 15j
+"map { 15k
+"map } 15j
 
 noremap ] }
 noremap [ {
@@ -105,8 +105,14 @@ set nobackup
 " Show matching brackets when cursor is over them
 set showmatch
 
-nmap <c-Left> :cp<CR> 
-nmap <c-Right> :cn<CR>
+noremap <c-Left> :vertical resize -5<CR>
+noremap <c-Right> :vertical resize +5<CR>
+
+noremap <c-Up> :resize +5<CR>
+noremap <c-Down> :resize -5<CR>
+
+nmap { :cp<CR> 
+nmap } :cn<CR>
 
 " Easy movement between windows
 nmap <c-j> <C-W>j
