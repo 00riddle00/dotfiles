@@ -1,11 +1,12 @@
 ###########
 # VARIABLES
 ###########
+echo test
 
-# DOTFILES USER SETTINGS
-export DOTFILES_USER=dotfiles
-export DOTFILES_DIR=/home/$DOTFILES_USER
-
+# MAIN USER SETTINGS
+export MAIN_USER=riddle
+export MAIN_HOME=/home/$MAIN_USER
+export DOTFILES_DIR=$MAIN_HOME/.dotfiles
 
 # DOTFILES VARS
 export VIMCOLOR=molokai
@@ -17,10 +18,6 @@ export ACTIVATE_BY_CLASS=$SHELL_SCRIPTS_DIR/activate_by_class.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LESSOPEN='|$DOTFILES_DIR/cmd/.lessfilter %s'
-
-# MAIN USER SETTINGS
-export MAIN_USER=riddle
-export MAIN_HOME=/home/$MAIN_USER
 
 # MAIN USER VARS
 export VIMRC=$MAIN_HOME/.vimrc
