@@ -10,52 +10,39 @@ endif
 
 " enable syntax hightlighting
 syntax enable
-
+" Set font
 set guifont=Terminus\ 12
-set showcmd     " Show count of selected lines or characters
+" Show count of selected lines or characters
+set showcmd     
+" Show line numbers
 set number
-
 " Statusline
 set laststatus=2
-
-" Set mouse work in all modes
-" Also, allow vim mouse scroll instead of tmux history buffer scroll
+" Set mouse to work in all modes
 set mouse=a
-
 " Allow to skip between buffers without writing or abandoning changes
 set hidden
-
+" Set relative numbering
 set relativenumber
-
 " set tags location
 set tags=./tags,tags;$HOME
-
 " Don't save backups
 set nobackup
-
 " Show matching brackets when cursor is over them
 set showmatch
-
-set guitablabel=%t
-
+" Do not use swap file
 set noswapfile
+" Do not fold text/code
 set nofoldenable
-set nocompatible
-
+" Set character encoding used inside Vim
 set encoding=utf-8
-set fillchars+=vert:\|
-
+" show the line number on the bar
 set ruler
-
 set shell=/bin/zsh
-
 " Text wrapping
 set textwidth=79
-"?set linebreak
-
 " Spelling
 set spelllang=lt,en
-
 " Cursor movement behaviour
 set nostartofline
 " Jump 5 lines when running out of the screen
@@ -64,20 +51,27 @@ set scrolljump=5
 set scrolloff=3
 
 " Search
+" search ignoring case
 set ignorecase
+" incremental search
 set incsearch
+" do not highlight the search
 set nohlsearch
+" Override the 'ignorecase' option if the search pattern contains upper case characters. 
 set smartcase
 
 " Tabs
+"Use the appropriate number of spaces to insert a <Tab>
 set expandtab
+" Number of spaces that a <Tab> in the file counts for.
 set tabstop=4
+" Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>. 
 set softtabstop=4
+" How much spaces to autoindent
 set shiftwidth=4
 
-" Auto indent after a {
-set autoindent
-set smartindent
+" Auto/smart indent
+set autoindent smartindent
 
 " Do not wrap lines automatically
 set nowrap
@@ -89,8 +83,8 @@ let mapleader = '\'
 
 nmap    <leader>n       :set number!<CR>
 nmap    <leader>p       :setlocal paste!<CR>
-nmap    <leader>j       :sp<cr>
 nmap    <leader>v       :vs<cr>
+nmap    <leader>s       :sp<cr>
 nmap    <leader>d       :pwd<cr>
 nmap    <c-Left>        :vertical resize -5<CR>
 nmap    <c-Right>       :vertical resize +5<CR>
@@ -102,7 +96,6 @@ nmap    <c-s>           :w!<CR>
 nmap     ss             :wq<CR>
 nmap     qq             :q<CR>
 nmap     <leader>e      :e<CR>
-nmap     <leader>c      :SyntasticCheck<CR>
 nmap     <F5>           :cnext<CR>
 nmap     <S-F5>         :cprevious<CR>
 nmap     <C-F5>         :cc<CR>
@@ -164,13 +157,11 @@ noremap    <c-m>        :NERDTreeFocus<CR>
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 30
-let NERDTreeIgnore = ['\~$','\.pyc$', '\.o$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
+let NERDTreeIgnore = ['\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
 let g:NERDTreeMapHelp = 'Y'
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
     exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-
-
     exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
@@ -200,11 +191,10 @@ noremap <leader>o :BufExplorer<CR>
 
 Plugin 'kien/ctrlp.vim'
 
-
 Plugin 'easymotion/vim-easymotion'
-let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
-nmap f <Plugin>(easymotion-s)
+nmap <leader><leader> <Plug>(easymotion-overwin-f)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 
 Plugin 'scrooloose/nerdcommenter'
@@ -228,6 +218,8 @@ let delimitMate_expand_cr=1
 
 
 Plugin 'scrooloose/syntastic'
+nmap     <leader>c      :SyntasticCheck<CR>
+
 let g:syntastic_enable_signs = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -256,7 +248,7 @@ Plugin 'tpope/vim-fugitive'
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gc :Gcommit -v -q<CR>
-noremap <space>gt :Gcommit -v -q %:p<CR>
+noremap  <space>gt :Gcommit -v -q %:p<CR>
 nnoremap <space>gd :Gdiff<CR>
 nnoremap <space>ge :Gedit<CR>
 nnoremap <space>gr :Gread<CR>
@@ -337,5 +329,6 @@ let g:python_highlight_all = 1
 
 " All plugins must be added before the following line
 call vundle#end()            " required
+" Enable filetype-specific plugins
 filetype plugin indent on    " required
 

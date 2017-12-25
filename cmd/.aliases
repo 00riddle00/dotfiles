@@ -578,10 +578,11 @@ alias ppp='cd /home/riddle/CS/1_Semestras/Programavimas_C/'
 alias ads='cd /home/riddle/CS/2_Semestras/Algoritmai_ir_Duomenu_Strukturos/'
 
 #alias mm='gcc -g logfind.c -o logfind'
-alias mm='make test'
+alias mm='make pratybos12'
 #alias run='./logfind hello ./'
-alias run='./test'
+alias run='./pratybos12'
 #alias clean='rm logfind'
-alias clean='rm test'
+alias clean='rm pratybos12'
+alias kol='vll ./pratybos12'
 
-
+alias ccc='cd /home/riddle/CS/1_Semestras/Programavimas_C/laborai_git/mano_laborai_2017'
