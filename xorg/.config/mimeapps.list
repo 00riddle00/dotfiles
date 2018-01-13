@@ -1,7 +1,7 @@
 [Added Associations]
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
 text/plain=mousepad.desktop;mirage.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
-application/pdf=google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
+application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=mpv.desktop;vlc.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
@@ -70,6 +70,6 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
-application/pdf=userapp-firefox-UZ9C0Y.desktop
+application/pdf=firefox.desktop
 text/plain=mirage.desktop
 text/markdown=sublime_text.desktop

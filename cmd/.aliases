@@ -17,6 +17,7 @@ export ACTIVATE_BY_CLASS=$SHELL_SCRIPTS_DIR/activate_by_class.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LESSOPEN='|$DOTFILES_DIR/cmd/.lessfilter %s'
+export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
 
 # MAIN USER VARS
 export VIMRC=$MAIN_HOME/.vimrc
@@ -300,7 +301,7 @@ alias cal='gcalcli'
 alias mi='mirage'
 alias fire='firefox'
 alias pan='pandoc'
-alias r='ranger'
+#alias r='ranger'
 alias vf='vifm'
 alias tint='tint2 & disown'
 alias x='startx'
@@ -579,8 +580,10 @@ alias ads='cd /home/riddle/CS/2_Semestras/Algoritmai_ir_Duomenu_Strukturos/'
 
 #alias mm='gcc -g logfind.c -o logfind'
 alias mm='make pratybos12'
+alias m='make pratybos12'
 #alias run='./logfind hello ./'
 alias run='./pratybos12'
+alias r='./pratybos12'
 #alias clean='rm logfind'
 alias clean='rm pratybos12'
 alias kol='vll ./pratybos12'
