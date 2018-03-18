@@ -7,7 +7,7 @@ video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=sublime_text.desktop;mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
 application/x-yaml=atom.desktop;
-image/jpeg=mirage.desktop;feh.desktop;gimp.desktop;
+image/jpeg=mirage.desktop;firefox.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
@@ -54,9 +54,10 @@ text/x-emacs-lisp=mirage.desktop;
 audio/ac3=audacity.desktop;
 application/vnd.oasis.opendocument.presentation=libreoffice-impress.desktop;
 text/x-csrc=sublime_text.desktop;emacs.desktop;
-text/x-makefile=emacs.desktop;
+text/x-makefile=sublime_text.desktop;emacs.desktop;
 text/x-chdr=sublime_text.desktop;emacs.desktop;nvim.desktop;
 application/x-bittorrent=deluge.desktop;
+text/x-c++src=nvim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
