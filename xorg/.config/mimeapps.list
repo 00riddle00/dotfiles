@@ -1,6 +1,6 @@
 [Added Associations]
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
-text/plain=mousepad.desktop;mirage.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
+text/plain=mirage.desktop;mousepad.desktop;sublime_text.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=mpv.desktop;vlc.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
@@ -59,6 +59,7 @@ text/x-chdr=sublime_text.desktop;emacs.desktop;nvim.desktop;
 application/x-bittorrent=deluge.desktop;
 text/x-c++src=nvim.desktop;
 text/html=firefox.desktop;
+application/x-extension-html=firefox.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

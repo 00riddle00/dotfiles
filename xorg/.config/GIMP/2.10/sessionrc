@@ -38,15 +38,13 @@
             (dockable "gimp-brush-editor"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "false")
                     (edit-active "true")
                     (current-data "2. Hardness 050")))
             (dockable "gimp-dynamics-editor"
                 (tab-style automatic)
                 (aux-info
-                    (show-button-bar "false")
                     (edit-active "true")
-                    (current-data "Pressure Opacity")))
+                    (current-data "Dynamics Off")))
             (dockable "gimp-histogram-editor"
                 (tab-style automatic))))
     (gimp-dock
@@ -158,9 +156,13 @@
     (factory-entry "gimp-module-dialog")
     (position 4 162)
     (size 345 305))
+(session-info "toplevel"
+    (factory-entry "gimp-operation-tool-dialog")
+    (position 190 0))
 
 (hide-docks no)
 (single-window-mode yes)
+(tabs-position 0)
 (last-tip-shown 0)
 
 # end of sessionrc
