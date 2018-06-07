@@ -1,0 +1,62 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Python 2.7.13 (/usr/bin/python2.7)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.13" />
+      <homePath value="/usr/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file:///usr/lib/python2.7" />
+            <root type="simple" url="file:///usr/lib/python2.7/plat-linux2" />
+            <root type="simple" url="file:///usr/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///usr/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file:///usr/lib/python2.7/site-packages" />
+            <root type="simple" url="file:///usr/lib/python2.7/site-packages/gtk-2.0" />
+            <root type="simple" url="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-1247972723" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.6.0 virtualenv at ~/pro/env" />
+      <type value="Python SDK" />
+      <version value="Python 3.6.0" />
+      <homePath value="$USER_HOME$/pro/env/bin/python3.6" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/pro/env/lib/python3.6" />
+            <root type="simple" url="file://$USER_HOME$/pro/env/lib/python3.6/lib-dynload" />
+            <root type="simple" url="file:///usr/lib64/python3.6" />
+            <root type="simple" url="file:///usr/lib/python3.6" />
+            <root type="simple" url="file://$USER_HOME$/pro/env/lib/python3.6/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/pro/env/lib/python3.6/site-packages/exacaster.dag_builder-0.0.0-py3.6.egg" />
+            <root type="simple" url="file://$USER_HOME$/pro/env/lib/python3.6/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/178053141" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3.6" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>
