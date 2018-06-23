@@ -526,7 +526,7 @@
       </action>
     </keybind>
 
-    <keybind key="W-S-v">
+    <keybind key="W-v">
       <action name="Execute">
         <command>sh -c "$ACTIVATE mpv"</command>
       </action>
