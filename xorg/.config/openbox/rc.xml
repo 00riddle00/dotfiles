@@ -550,7 +550,7 @@
 
     <keybind key="A-t">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 't1' 'terminator -\-geometry=700x500 -T t1'"</command>
+          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x800 -T t3'"</command>
       </action>
     </keybind>
 
@@ -580,19 +580,19 @@
 
     <keybind key="F1">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
+          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x800 -T t1'"</command>
       </action>
     </keybind>
 
     <keybind key="A-F2">
       <action name="Execute">
-          <command>terminator --geometry=700x500 -T t2</command>
+          <command>terminator --geometry=700x800 -T t2</command>
       </action>
     </keybind>
 
     <keybind key="F2">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
+          <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x800 -T t2'"</command>
       </action>
     </keybind>
 
@@ -682,13 +682,13 @@
     <!--
     <keybind key="W-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc1' 'terminator \-\-geometry=700x500 -T mc1 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
+        <command>sh -c "$ACTIVATE 'mc1' 'terminator \-\-geometry=700x800 -T mc1 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
       </action>
     </keybind>
 
     <keybind key="A-e">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'mc2' 'terminator \-\-geometry=700x500 -T mc2 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
+        <command>sh -c "$ACTIVATE 'mc2' 'terminator \-\-geometry=700x800 -T mc2 -e $SHELL_SCRIPTS_DIR/mc.sh'"</command>
       </action>
     </keybind>
     -->
