@@ -31,8 +31,35 @@ r2
 
 # Left window history (oldest to newest):
 d/home/riddle
+	Dropbox
+5
+d/home/riddle/Dropbox
 	..
 0
+d/home/riddle
+	tmp1
+13
+d/home/riddle/tmp1
+	..
+0
+d/home/riddle
+	..
+0
+d/home
+	..
+0
+d/
+	etc
+3
+d/etc
+	httpd
+29
+d/etc/httpd
+	conf
+1
+d/etc/httpd/conf
+	httpd.conf.pacsave
+2
 d
 
 # Right window history (oldest to newest):
@@ -45,6 +72,9 @@ D
 :q
 
 # Search history (oldest to newest):
+/tmp
+/etc
+/http
 
 # Prompt history (oldest to newest):
 
