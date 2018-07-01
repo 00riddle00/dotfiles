@@ -10,8 +10,6 @@ endif
 
 " enable syntax hightlighting
 syntax enable
-" Set font
-set guifont=Terminus\ 12
 " Show count of selected lines or characters
 set showcmd     
 " Show line numbers
@@ -124,8 +122,11 @@ nmap    k               gk
 nmap    Q               <nop>
 
 " Scroll half screen to left and right vertically
-no      <s-h>           zH
-no      <s-l>           zL
+no      zh           zH
+no      zl           zL
+
+" Scroll half screen to left and right vertically
+no      zz           z-
 
 " Autocomplete
 ino     <c-k>           <c-p>

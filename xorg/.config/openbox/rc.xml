@@ -531,27 +531,11 @@
         <command>sh -c "$ACTIVATE mpv"</command>
       </action>
     </keybind>
-
-
     <keybind key="W-m">
       <action name="Execute">
         <command>sh -c "$ACTIVATE mirage"</command>
       </action>
     </keybind>
-
-    <!--<keybind key="A-F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>urxvt -name t1</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
-
-<!--    <keybind key="F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>wmctrl -x -a t1.URxvt</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
-
-
     <keybind key="W-S-d">
       <action name="Execute">
         <command>sh -c "$ACTIVATE deluge"</command>
@@ -582,47 +566,35 @@
       <!--</action>-->
     <!--</keybind>-->
 
-    <keybind key="A-F2">
-      <action name="Execute">
-          <command>urxvt -name t2</command>
-      </action>
-    </keybind>
-
-    <keybind key="F2">
-      <action name="Execute">
-          <command>wmctrl -x -a t2.URxvt</command>
-      </action>
-    </keybind>
-
-<!--    <keybind key="A-F1">-->
+<!--    <keybind key="A-F2">-->
       <!--<action name="Execute">-->
-          <!--<command>urxvt -name t1</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
-
-    <keybind key="F1">
-      <action name="Execute">
-          <command>wmctrl -x -a t1.URxvt</command>
-      </action>
-    </keybind>
-
-    <!--<keybind key="F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>sh -c "$ACTIVATE 'vim' 'terminator -/-geometry=700x500 -T vim'"</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
-
-    <!--<keybind key="F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>sh -c "$ACTIVATE 't1' 'terminator -\-geometry=700x500 -T t1'"</command>-->
+          <!--<command>urxvt -name t2</command>-->
       <!--</action>-->
     <!--</keybind>-->
 
     <!--<keybind key="F2">-->
       <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE 't2' 'terminator -\-geometry=700x500 -T t2'"</command>-->
+          <!--<command>wmctrl -x -a t2.URxvt</command>-->
       <!--</action>-->
     <!--</keybind>-->
+
+    <keybind key="F1">
+      <action name="Execute">
+          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x500 -T t1'"</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-F2">
+      <action name="Execute">
+          <command>terminator --geometry=700x500 -T t2</command>
+      </action>
+    </keybind>
+
+    <keybind key="F2">
+      <action name="Execute">
+          <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x500 -T t2'"</command>
+      </action>
+    </keybind>
 
     <keybind key="F10">
       <action name="Execute">
@@ -652,14 +624,11 @@
         </action>
     </keybind>
 
-
     <keybind key="W-o">
       <action name="Execute">
           <command>keepass /home/riddle/Dropbox/sync/keepass/8gb.kdbx</command>
       </action>
     </keybind>
-
-
 
     <!--<keybind key="W-c">-->
       <!--<action name="Execute">-->
