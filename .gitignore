@@ -14,6 +14,8 @@
 
 automation/ssh/*.*
 
+xorg/.config/cef_user_data/
+
 xorg/.config/deluge/
 xorg/.config/pavucontrol.ini
 
@@ -41,7 +43,6 @@ xorg/.config/Thunar/
 xorg/.config/Trolltech.conf
 xorg/.config/vlc/
 xorg/.config/teamviewer/
-<<<<<<< HEAD
 xorg/.config/google-chrome/
 xorg/.config/chromium/
 xorg/.config/enchant/
@@ -53,9 +54,7 @@ xorg/.config/lxsession/
 xorg/.config/pcmanfm/
 xorg/.config/user-dirs.dirs
 xorg/.config/user-dirs.locale
-=======
 xorg/.config/VirtualBox/
->>>>>>> 3095da2a57d49f7d4809b32c05bb781bf063d1ea
 
 
 ############################  PARTIAL DIRS GITIGNORE #######################
@@ -108,7 +107,6 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
-
 xorg/.jetbrains.custom_folder/pycharm/config/*
 !xorg/.jetbrains.custom_folder/pycharm/config/codestyles
 !xorg/.jetbrains.custom_folder/pycharm/config/colors
@@ -116,59 +114,11 @@ xorg/.jetbrains.custom_folder/pycharm/config/*
 !xorg/.jetbrains.custom_folder/pycharm/config/keymaps
 !xorg/.jetbrains.custom_folder/pycharm/config/options
 
-
-
-
-
-xorg/.kde/share/apps/*
-!xorg/.kde/share/apps/aurorae
-!xorg/.kde/share/apps/color-schemes
-!xorg/.kde/share/apps/desktoptheme
-!xorg/.kde/share/apps/dolphin
-!xorg/.kde/share/apps/konqueror
-!xorg/.kde/share/apps/QtCurve
-
-
-xorg/.kde/share/config/*
-!xorg/.kde/share/config/dolphinrc
-!xorg/.kde/share/config/gtkrc
-!xorg/.kde/share/config/gtkrc-2.0
-!xorg/.kde/share/config/kdeglobals
-!xorg/.kde/share/config/kglobalshortcutsrc
-!xorg/.kde/share/config/khotkeysrc
-!xorg/.kde/share/config/konqsidebartngrc
-!xorg/.kde/share/config/konquerorrc
-!xorg/.kde/share/config/konsolerc
-!xorg/.kde/share/config/plasma-desktop-appletsrc
-!xorg/.kde/share/config/plasma-desktoprc
-!xorg/.kde/share/config/plasmarc
-
-
-xorg/.kde4/tmp*
-
-xorg/.kde4/share/apps/*
-!xorg/.kde4/share/apps/dolphin  
-
-xorg/.kde4/share/config/*
-!xorg/.kde4/share/config/dolphinrc
-!xorg/.kde4/share/config/kdeglobals
-!xorg/.kde4/share/config/kglobalshortcutsrc
-!xorg/.kde4/share/config/konsolerc
-
-
-xorg/.gimp-2.8/tags.xml
-xorg/.gimp-2.8/gimpswap*
-
+xorg/.config/GIMP/2.10/tags.xml
+xorg/.config/GIMP/2.10/gimpswaprc
 
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/
 
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
-
-<<<<<<< HEAD
-=======
-xorg/.config/xfce4/*
-!xorg/.config/xfce4/xfconf/
-
->>>>>>> 3095da2a57d49f7d4809b32c05bb781bf063d1ea
