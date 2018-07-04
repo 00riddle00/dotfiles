@@ -299,9 +299,9 @@
       <action name="Iconify"/>
     </keybind>
 
-    <keybind key="C-S-w">
-      <action name="Iconify"/>
-    </keybind>
+<!--    <keybind key="C-S-w">-->
+      <!--<action name="Iconify"/>-->
+    <!--</keybind>-->
 
     <keybind key="W-x">
       <action name="ToggleMaximize"/>
@@ -528,7 +528,7 @@
 
     <keybind key="W-v">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE mpv"</command>
+        <command>sh -c "$ACTIVATE vlc"</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -644,7 +644,8 @@
 
     <keybind key="F3">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE atom"</command>
+        <!--<command>sh -c "$ACTIVATE sublime"</command>-->
+        <command>subl</command>
       </action>
     </keybind>
 
@@ -658,6 +659,12 @@
       <action name="Execute">
           <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
           <!--<command>xdotool key Right</command>-->
+      </action>
+    </keybind>
+
+    <keybind key="W-w">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE emacs"</command>
       </action>
     </keybind>
 
