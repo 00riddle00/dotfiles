@@ -449,16 +449,6 @@
       </action>
     </keybind>
 
-    <keybind key="A-v">
-      <action name="Execute">
-        <command>killall cairo-dock</command>
-      </action>
-    </keybind>
-
-
-
-
-
     <keybind key="W-F4">
       <action name="Execute">
         <command>xbacklight -10</command>
@@ -551,6 +541,18 @@
     <keybind key="A-t">
       <action name="Execute">
           <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x800 -T t3'"</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-o">
+      <action name="Execute">
+          <command>setxkbmap -option ctrl:nocaps</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-n">
+      <action name="Execute">
+        <command>sh -c "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"</command>
       </action>
     </keybind>
 

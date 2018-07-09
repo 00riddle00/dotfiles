@@ -11,13 +11,16 @@
  '(custom-unlispify-menu-entries nil)
  '(inhibit-startup-screen t)
  '(nil nil t)
- '(package-selected-packages (quote (evil)))
+ '(package-selected-packages (quote (linum-relative evil)))
  '(scroll-bar-mode -1)
  '(tool-bar-mode nil))
+  (setq evil-want-C-u-scroll t )
+  ;(setq linum-relative-current-symbol "")
   (require 'package)
   (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
   (package-initialize)
   (require 'evil)
+  ;(require 'linum-relative)
   (evil-mode 1)
   (setq package-archives
   '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -25,9 +28,10 @@
   ("melpa" . "http://melpa.milkbox.net/packages/")))
   (setq apropos-sort-by-scores t)
   (set-face-attribute 'default nil :height 80)
-  (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-  )
+  
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
