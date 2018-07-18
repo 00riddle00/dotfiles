@@ -283,10 +283,11 @@
     <keybind key="A-q">
       <action name="Iconify"/>
     </keybind>
-    <!-- prevent custom C-q behaviour -->
+     <!--prevent custom C-q behaviour -->
     <keybind key="C-q">
       <action name="Iconify"/>
     </keybind>
+
     <keybind key="A-F4">
       <action name="Iconify"/>
     </keybind>
@@ -544,6 +545,7 @@
       </action>
     </keybind>
 
+    <!--Activate "emacs" mode-->
     <keybind key="A-o">
       <action name="Execute">
           <command>setxkbmap -option ctrl:nocaps</command>

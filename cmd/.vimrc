@@ -327,6 +327,12 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'hdima/python-syntax'
 let g:python_highlight_all = 1
 
+Plugin 'octol/vim-cpp-enhanced-highlight'
+"Vim tend to a have issues with flagging braces as errors,
+"see for example https://github.com/vim-jp/vim-cpp/issues/16.
+"A workaround is to set:
+let c_no_curly_error=1
+
 
 " All plugins must be added before the following line
 call vundle#end()            " required

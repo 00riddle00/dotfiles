@@ -58,6 +58,8 @@ text/x-makefile=sublime_text.desktop;emacs.desktop;
 text/x-chdr=sublime_text.desktop;emacs.desktop;nvim.desktop;
 application/x-bittorrent=deluge.desktop;
 text/x-c++src=nvim.desktop;
+application/x-keepass2=keepass.desktop;
+text/html=sublime_text.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
