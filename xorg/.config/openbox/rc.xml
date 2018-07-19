@@ -283,6 +283,7 @@
     <keybind key="A-q">
       <action name="Iconify"/>
     </keybind>
+
      <!--prevent custom C-q behaviour -->
     <keybind key="C-q">
       <action name="Iconify"/>
@@ -652,6 +653,12 @@
         <!--<command>subl</command>-->
       <!--</action>-->
     <!--</keybind>-->
+
+    <keybind key="A-m">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE 'music' 'terminator --geometry=700x500 -T music -e ncmpcpp'"</command>
+      </action>
+    </keybind>
 
     <keybind key="F3">
       <action name="Execute">

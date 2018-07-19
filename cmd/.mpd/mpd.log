@@ -1,0 +1,56 @@
+Jul 19 07:48 : exception: Failed to access /home/riddle/Music: No such file or directory
+Jul 19 07:48 : exception: Failed to open /home/riddle/.mpd/mpdstate: No such file or directory
+Jul 19 07:48 : config: option 'device' on line 13 was not recognized
+Jul 19 07:49 : config: option 'device' on line 13 was not recognized
+Jul 19 07:49 : config: option 'device' on line 13 was not recognized
+Jul 19 07:51 : client: [0] opened from 127.0.0.1:57506
+Jul 19 07:51 : update: added /Epicuros-Interstellar.mp3
+Jul 19 07:51 : client: [0] closed
+Jul 19 07:51 : client: [1] opened from 127.0.0.1:57516
+Jul 19 07:52 : client: [1] closed
+Jul 19 07:52 : client: [2] opened from 127.0.0.1:57534
+Jul 19 07:53 : config: option 'device' on line 13 was not recognized
+Jul 19 07:53 : client: [0] opened from 127.0.0.1:57566
+Jul 19 07:54 : client: [0] closed
+Jul 19 07:54 : client: [1] opened from 127.0.0.1:57570
+Jul 19 07:58 : client: [2] opened from 127.0.0.1:60770
+Jul 19 07:59 : client: [2] closed
+Jul 19 08:01 : client: [3] opened from 127.0.0.1:60976
+Jul 19 08:02 : client: [3] closed
+Jul 19 09:51 : client: [0] opened from 127.0.0.1:59046
+Jul 19 09:51 : exception: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Jul 19 09:53 : client: [0] opened from 127.0.0.1:59054
+Jul 19 09:54 : client: [0] opened from 127.0.0.1:59452
+Jul 19 10:08 : client: [1] opened from 127.0.0.1:59486
+Jul 19 10:08 : update: added /Spacemind-Memory_hole.mp3
+Jul 19 10:08 : update: added /Coding_music_1.mp3
+Jul 19 10:09 : client: [1] closed
+Jul 19 10:14 : client: [0] opened from 127.0.0.1:60248
+Jul 19 10:16 : client: [1] opened from 127.0.0.1:60252
+Jul 19 10:16 : client: [1] closed
+Jul 19 10:16 : client: [2] opened from 127.0.0.1:60256
+Jul 19 10:21 : client: [3] opened from 127.0.0.1:60328
+Jul 19 10:21 : client: [3] closed
+Jul 19 10:21 : client: [4] opened from 127.0.0.1:60338
+Jul 19 10:27 : client: [0] closed
+Jul 19 10:27 : client: [2] closed
+Jul 19 10:27 : client: [4] closed
+Jul 19 10:27 : player: played "Spacemind-Memory_hole.mp3"
+Jul 19 10:27 : client: [0] opened from 127.0.0.1:60388
+Jul 19 10:27 : client: [0] closed
+Jul 19 10:28 : client: [1] opened from 127.0.0.1:60392
+Jul 19 10:28 : client: [1] closed
+Jul 19 10:28 : player: played "Spacemind-Memory_hole.mp3"
+Jul 19 10:29 : client: [0] opened from 127.0.0.1:60416
+Jul 19 10:31 : client: [0] closed
+Jul 19 10:31 : client: [1] opened from 127.0.0.1:60430
+Jul 19 10:31 : client: [1] closed
+Jul 19 10:34 : client: [2] opened from 127.0.0.1:60460
+Jul 19 10:34 : client: [2] closed
+Jul 19 10:38 : client: [3] opened from 127.0.0.1:60674
+Jul 19 10:39 : client: [3] closed
+Jul 19 10:40 : client: [4] opened from 127.0.0.1:60684
+Jul 19 10:42 : client: [4] closed
+Jul 19 10:43 : client: [5] opened from 127.0.0.1:60784
+Jul 19 10:44 : player: played "Spacemind-Memory_hole.mp3"
+Jul 19 10:45 : client: [0] opened from 127.0.0.1:60858

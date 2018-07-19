@@ -58,8 +58,32 @@ d/etc/httpd
 	conf
 1
 d/etc/httpd/conf
-	httpd.conf.pacsave
-2
+	..
+0
+d/etc/httpd
+	..
+0
+d/etc
+	..
+0
+d/
+	home
+4
+d/home
+	riddle
+3
+d/home/riddle
+	Screenshots
+6
+d/home/riddle/Screenshots
+	..
+0
+d/home/riddle
+	Screenshots
+6
+d/home/riddle/Screenshots
+	screenshot-2018-07-18-193752.png
+1
 d
 
 # Right window history (oldest to newest):
@@ -70,11 +94,20 @@ D
 
 # Command line history (oldest to newest):
 :q
+:gimp 
+:tmux
+:screen
+:e 
+:e gimp
 
 # Search history (oldest to newest):
 /tmp
 /etc
 /http
+/..
+/home
+/riddle
+/scr
 
 # Prompt history (oldest to newest):
 
@@ -95,4 +128,4 @@ F
 I1
 ].1
 ]F
-s0
+s1
