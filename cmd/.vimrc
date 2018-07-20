@@ -1,6 +1,7 @@
 "############################### SETTINGS #####################################
 
-color molokai
+"color molokai
+color gruvbox
 set background=dark
 
 " Make sure we're getting 256 colors when it's available
@@ -76,6 +77,8 @@ set nowrap
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
 
+"######################### FILE SPECIFIC SETTINGS #############################
+autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 "############################### MAPPINGS #####################################
 let mapleader = '\'
 
@@ -138,6 +141,9 @@ command! W              write
 " Quick search for python class and def statments.
 nmap    c/          /\<class
 nmap    m/          /\<def
+
+" Build DSA project 
+map <F8> :w \| !make rebuild && ./demo <CR>
 
 "############################### PLUGINS #####################################
 
@@ -279,7 +285,9 @@ endif
 
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
-let g:airline_theme='kolor'
+"let g:airline_theme='kolor'
+"let g:airline_theme='gruvbox'
+let g:airline_theme='bubblegum'
 
 
 Plugin 'vim-airline/vim-airline-themes'
@@ -289,15 +297,13 @@ Plugin 'majutsushi/tagbar'
 nmap <leader>b :TagbarToggle<cr>
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
-"Markdown
 
-
+"[Markdown]
+"The tabular plugin must come before vim-markdown
 Plugin 'godlygeek/tabular'
-
-
 Plugin 'plasticboy/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
 let g:instant_markdown_autostart = 0
-
 
 "Python
 Plugin 'python-mode/python-mode'
@@ -333,6 +339,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 "A workaround is to set:
 let c_no_curly_error=1
 
+"*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
+"It provides :QuickRun command for it.
+Plugin 'thinca/vim-quickrun'
 
 " All plugins must be added before the following line
 call vundle#end()            " required

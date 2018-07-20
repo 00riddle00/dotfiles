@@ -656,7 +656,7 @@
 
     <keybind key="A-m">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE 'music' 'terminator --geometry=700x500 -T music -e ncmpcpp'"</command>
+          <command>sh -c "$ACTIVATE 'aux' 'terminator --geometry=700x500 -T aux'"</command>
       </action>
     </keybind>
 

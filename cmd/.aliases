@@ -29,7 +29,7 @@ export TMP2=$MAIN_HOME/tmp2
 export PRO=$MAIN_HOME/pro
 export SYNC=$DROPBOX/sync
 export CANDY=$SYNC/candy
-export NOTES=$SYNC/gtd/content/pages
+export NOTES=$SYNC/gtd/
 export KEEP=$SYNC/keepass
 export VENV=$MAIN_HOME/venvs/sql_app
 export SENV=$MAIN_HOME/venvs/subscription_demo
@@ -156,8 +156,8 @@ alias te='v tests.py'
 alias doker='sudo systemctl start docker.service'
 alias reb='make rebuild'
 alias exe='./main.exe'
-alias ya='yaourt --noconfirm'
-alias yaup='yaourt -Syu --aur --noconfirm'
+alias ya='trizen'
+alias yaup='trizen -Syua --noconfirm'
 alias stop='killall mpg123'
 alias genkeys='cpr tmp1/keys2.xml .config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml && cpr tmp1/keys2.xml /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml'
 alias xout='xfce4-session-logout'
@@ -493,14 +493,6 @@ if xset q &>/dev/null; then
     ## launch tmux
     tmux > /dev/null 2>&1
 
-    ## launch autokey (if not running)
-    ps cax | grep autokey > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        :
-    else
-        $SHELL_SCRIPTS_DIR/autokey.sh
-    fi;
-
     ## remap keys with setxkbmap (if installed)
     if type setxkbmap >/dev/null 2>&1; then
         setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt  2>/dev/null
@@ -567,7 +559,7 @@ fi
 
 
 ## c lang
-alias ms='make rebuild'
+#alias ms='make rebuild'
 alias vl='valgrind'
 alias vt='valgrind --track-origins=yes'
 alias vlt='valgrind --track-origins=yes --leak-check=full'
@@ -597,3 +589,5 @@ alias nnn='cd /home/riddle/CS/1_Semestras/Programavimas_C/laborai_git/mano_labor
 alias tag='ctags -R .'
 alias aaa='cd /home/riddle/CS/2_Semestras/Algoritmai_ir_Duomenu_Strukturos/laborai_git/mano_laborai_2018/namu_darbas_1'
 alias copy='cp ~/tmp3/pratybos2.c  ./'
+alias nc='ncmpcpp'
+alias ms='make rebuild && ./demo'
