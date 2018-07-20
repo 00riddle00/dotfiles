@@ -143,7 +143,10 @@ nmap    c/          /\<class
 nmap    m/          /\<def
 
 " Build DSA project 
-map <F8> :w \| !make rebuild && ./demo <CR>
+"nmap <F8> :w \| !make rebuild && ./demo <CR>
+"nmap <F8> :w \| :make rebuild <CR> \| :copen 30 <CR>
+nmap <F8> :w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
+"nmap <F8> :w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>
 
 "############################### PLUGINS #####################################
 
@@ -342,6 +345,10 @@ let c_no_curly_error=1
 "*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
 "It provides :QuickRun command for it.
 Plugin 'thinca/vim-quickrun'
+
+"vimshell depends on |vimproc|
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Shougo/vimshell.vim'
 
 " All plugins must be added before the following line
 call vundle#end()            " required
