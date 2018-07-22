@@ -143,9 +143,9 @@ nmap    c/          /\<class
 nmap    m/          /\<def
 
 " Build DSA project 
-"nmap <F8> :w \| !make rebuild && ./demo <CR>
+nmap <F8> :w \| !make rebuild && ./demo <CR>
 "nmap <F8> :w \| :make rebuild <CR> \| :copen 30 <CR>
-nmap <F8> :w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
+"nmap <F8> :w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
 "nmap <F8> :w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>
 
 "############################### PLUGINS #####################################
