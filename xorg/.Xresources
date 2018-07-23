@@ -1,5 +1,5 @@
 
-! Urxvt
+! -- Urxvt settings -- !
 URxvt.url-select.underline: true
 URxvt.urlLauncher: firefox
 URxvt.cursorUnderline: false
@@ -13,23 +13,12 @@ URxvt.transparent: 0
 URxvt*.shading: 0
 URxvt*iconFile: /usr/share/icons/la-capitaine-icon-theme/apps/scalable/terminal.svg
 
-
 URxvt.letterSpace: -1
-!URxvt*urgentOnBell: true
 URxvt.lineSpace: 2
 
 ! -- Fonts -- !
-!URxvt.iconFile: /usr/share/icons/hicolor/scalable/apps/terminator.svg
-!URxvt*font: xft:Source Code Pro Medium:size=7,xft:Inconsolata\ for\ Powerline:pixelsize=12
-!URxvt*boldFont: xft:Source Code Pro Medium:size=7,xft:Inconsolata\ for\ Powerline:pixelsize=12
 URxvt.font:     xft:bitstream vera sans mono:size=8:antialias=true
 URxvt.boldFont: xft:bitstream vera sans mono:bold:size=8:antialias=true
-!URxvt*font:xft:dejavu sans mono:medium:size=10
-!URxvt*boldFont:xft:dejavu sans mono:medium:size=10
-!URxvt.font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
-!URxvt.boldFont: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
-!URxvt*font:xft:luxi mono:regular:pixelsize=10
-!URxvt*boldFont:xft:luxi mono:regular:pixelsize=10
 
 ! Xft Font Configuration 
 Xft.dpi: 96
@@ -48,33 +37,31 @@ URxvt.background: #080808
 URxvt.foreground: #999999
 
 !black
-*color0:#333333
-!*color0:#242424
-*color8:#474747
+Urxvt.color0:#333333
+!Urxvt.color0:#242424
+Urxvt.color8:#474747
 !red
-*color1:#8A2F58
-*color9:#CF4F88
+Urxvt.color1:#8A2F58
+Urxvt.color9:#CF4F88
 !green
-*color2:#287373
-*color10:#53A6A6
+Urxvt.color2:#287373
+Urxvt.color10:#53A6A6
 !yellow
-*color3:#914E89
-*color11:#BF85CC
+Urxvt.color3:#914E89
+Urxvt.color11:#BF85CC
 !blue
-*color4:#395573
-*color12:#4779B3
+Urxvt.color4:#395573
+Urxvt.color12:#4779B3
 !magenta
-*color5:#5E468C
-*color13:#7F62B3
+Urxvt.color5:#5E468C
+Urxvt.color13:#7F62B3
 !cyan
-*color6:#2B7694
-*color14:#58AEB1
+Urxvt.color6:#2B7694
+Urxvt.color14:#58AEB1
 !white
-*color7:#899CA1
-*color15:#C0C0C0
+Urxvt.color7:#899CA1
+Urxvt.color15:#C0C0C0
 
-!#include "/home/riddle/.Xresources.d/solarized"
-!
 ! --  Extensions -- !
 !URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard
 !URxvt.keysym.M-Escape:     perl:keyboard-select:activate
@@ -88,28 +75,77 @@ URxvt.foreground: #999999
 !URxvt.matcher.rend.0:      -Uline fg16
 !URxvt.matcher.button:      1
 
-
 ! -- Xterm settings -- !
 xterm*termName: xterm-256color
 xterm*locale: true
-xterm*cursorColor: #395573
+xterm*cursorColor: #1792d0
 xterm*toolBar: false
 xterm*scrollBar: false
 xterm*rightScrollBar: false
-xterm*background: #1A1A1A
-xterm*foreground: #999999
-xterm*faceName: anonymous pro:bold:size=10
-!xterm*faceName: dejavu sans mono:medium:size=8.5
-xterm*allowBoldFonts: false
-xterm*geometry: 120x28
+xterm*faceName: anonymous pro:bold:size=8
+xterm*allowBoldFonts: true
+xterm*dynamiccolors: true
+xterm*utf8:               2
+xterm*geometry:           100x50
+xterm*visualBell:         off
+xterm*highlightSelection: true
+xterm*scrollTtyOutput: true
+
+xterm*color0: #000000
+xterm*color1: #CC0000
+xterm*color2: #4E9A06
+xterm*color3: #C4A000
+xterm*color4: #3465A4
+xterm*color5: #75507B
+xterm*color6: #06989A
+xterm*color7: #D3D7CF
+xterm*color8: #555753
+xterm*color9: #EF2929
+xterm*color10: #8AE234
+xterm*color11: #FCE94F
+xterm*color12: #729FCF
+xterm*color13: #AD7FA8
+xterm*color14: #34E2E2
+xterm*color15: #EEEEEC
 
 
 ! -- Xscreensaver settings -- !
-xscreensaver.mode: blank
+xscreensaver.splash: false
+
+!font settings
+xscreensaver.Dialog.headingFont:        -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #1792d0
+xscreensaver.Dialog.background:         #202020
+xscreensaver.Dialog.topShadowColor:     #000000
+xscreensaver.Dialog.bottomShadowColor:  #000000
+xscreensaver.Dialog.Button.foreground:  #1792d0
+xscreensaver.Dialog.Button.background:  #000000
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #7262b3
+xscreensaver.Dialog.text.background:    #002626
+xscreensaver.Dialog.internalBorderWidth: 45
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    4
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:   #1792d0 
+xscreensaver.passwd.thermometer.background:  #7262b3
+xscreensaver.passwd.thermometer.width:       6
+
+!!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%p - %a %b %d, %Y
 
 
-!xcalc-----------------------------------------------------------------------
-
+!-- xcalc settings -- !
 xcalc*geometry:                        200x275
 xcalc.ti.bevel.background:             #111111
 xcalc.ti.bevel.screen.background:      #000000
@@ -134,8 +170,8 @@ xcalc.ti.button5.background:  Orange3
 xcalc.ti.button19.background: #611161
 xcalc.ti.button18.background: #611161
 xcalc.ti.button20.background: #611111
-!uncomment to change label on division button
-!xcalc.ti.button20.label:      /
+
+xcalc.ti.button20.label:      /
 xcalc.ti.button25.background: #722222
 xcalc.ti.button30.background: #833333
 xcalc.ti.button35.background: #944444
