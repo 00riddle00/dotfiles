@@ -70,3 +70,10 @@ Jul 21 17:43 : player: played "Epicuros-Interstellar.mp3"
 Jul 21 17:43 : client: [0] closed
 Jul 21 17:43 : client: [1] opened from 127.0.0.1:55090
 Jul 21 19:22 : player: played "Spacemind-Memory_hole.mp3"
+Jul 22 12:31 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jul 22 12:31 : player: played "Epicuros-Interstellar.mp3"
+Jul 22 21:45 : client: [0] opened from 127.0.0.1:49482
+Jul 23 12:37 : avahi: Client Disconnected, will reconnect shortly
+Jul 23 12:37 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Jul 23 12:37 : player: played "Epicuros-Interstellar.mp3"
+Jul 23 15:31 : client: [0] opened from 127.0.0.1:60638

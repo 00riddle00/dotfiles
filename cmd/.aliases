@@ -295,7 +295,7 @@ alias dc='docker-compose'
 alias gg='google-chrome-stable'
 alias sub='/usr/bin/subl'
 alias ne='netctl'
-alias urxvt='xrdb ~/.Xresources && urxvt'
+#alias urxvt='xrdb ~/.Xresources && urxvt'
 alias libre='libreoffice'
 alias show='mirage'
 alias z='zsh'
@@ -513,7 +513,7 @@ if xset q &>/dev/null; then
 
     ## update X settings
     #xrdb -MAIN_USER="<$MAIN_USER>" -merge ~/.Xresources
-    xrdb ~/.Xresources
+    #xrdb ~/.Xresources
 else
     if [ $TTY = "/dev/tty1"  ]; then
         ## if tty1, startx
