@@ -96,3 +96,7 @@ Jul 23 20:58 : client: [6] opened from 127.0.0.1:38194
 Jul 23 20:58 : client: [2] closed
 Jul 23 20:58 : client: [7] opened from 127.0.0.1:38204
 Jul 23 20:58 : client: [8] opened from 127.0.0.1:38208
+Jul 24 07:58 : player: played "Epicuros-Interstellar.mp3"
+Jul 24 11:21 : client: [9] opened from 127.0.0.1:42020
+Jul 24 11:50 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jul 24 11:51 : exception: Failed to open audio output

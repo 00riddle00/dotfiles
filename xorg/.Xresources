@@ -1,9 +1,11 @@
 
 ! -- Urxvt settings -- !
-URxvt.url-select.underline: true
-URxvt.urlLauncher: firefox
+URxvt.buffered: true
+URxvt.cursorColor: #395573
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
+URxvt.url-select.underline: true
+URxvt.urlLauncher: firefox
 URxvt.geometry: 110x50
 URxvt.scrollBar: false
 URxvt*scrollBar_right: false
@@ -11,21 +13,23 @@ URxvt.borderLess: false
 URxvt.borderColor: #37454e
 URxvt.transparent: 0
 URxvt*.shading: 0
+URxvt.letterSpace: 0
+URxvt.lineSpace: 1
 URxvt*iconFile: /usr/share/icons/la-capitaine-icon-theme/apps/scalable/terminal.svg
 
-URxvt.letterSpace: -1
-URxvt.lineSpace: 2
-
 ! -- Fonts -- !
-URxvt.font:     xft:bitstream vera sans mono:size=8:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=8:antialias=true
-
 ! Xft Font Configuration 
 Xft.dpi: 96
 Xft.antialias: true 
 Xft.rgba: rgb
 Xft.hinting: true 
 Xft.hintstyle: hinstlight 
+
+! Current Xft Font 
+URxvt*font: xft:Source Code Pro:size=8:antialias=true:hinting=true
+URxvt*boldFont: xft:Source Code Pro:size=8:antialias=true:hinting=true
+URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=8:antialias=true:hinting=true
+URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=8:antialias=true:hinting=true
 
 
 ! -- Colours -- !
@@ -37,43 +41,44 @@ URxvt.background: #080808
 URxvt.foreground: #999999
 
 !black
-Urxvt.color0:#333333
-!Urxvt.color0:#242424
-Urxvt.color8:#474747
+*color0:#333333
+!*color0:#242424
+*color8:#474747
 !red
-Urxvt.color1:#8A2F58
-Urxvt.color9:#CF4F88
+*color1:#8A2F58
+*color9:#CF4F88
 !green
-Urxvt.color2:#287373
-Urxvt.color10:#53A6A6
+*color2:#287373
+*color10:#53A6A6
 !yellow
-Urxvt.color3:#914E89
-Urxvt.color11:#BF85CC
+*color3:#914E89
+*color11:#BF85CC
 !blue
-Urxvt.color4:#395573
-Urxvt.color12:#4779B3
+*color4:#395573
+*color12:#4779B3
 !magenta
-Urxvt.color5:#5E468C
-Urxvt.color13:#7F62B3
+*color5:#5E468C
+*color13:#7F62B3
 !cyan
-Urxvt.color6:#2B7694
-Urxvt.color14:#58AEB1
+*color6:#2B7694
+*color14:#58AEB1
 !white
-Urxvt.color7:#899CA1
-Urxvt.color15:#C0C0C0
+*color7:#899CA1
+*color15:#C0C0C0
 
 ! --  Extensions -- !
-!URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard
-!URxvt.keysym.M-Escape:     perl:keyboard-select:activate
-!URxvt.keysym.M-u:          perl:url-select:select_next
-!URxvt.keysym.M-s:          perl:keyboard-select:search
-!URxvt.clipboard.autocopy:  true
-!URxvt.keysym.M-c:          perl:clipboard:copy
-!URxvt.keysym.M-v:          perl:clipboard:paste
-!URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
-!URxvt.url-select.launcher: /home/jason/Scripts/run_browser
-!URxvt.matcher.rend.0:      -Uline fg16
-!URxvt.matcher.button:      1
+URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard
+URxvt.keysym.M-Escape:     perl:keyboard-select:activate
+URxvt.keysym.M-u:          perl:url-select:select_next
+URxvt.keysym.M-s:          perl:keyboard-select:search
+URxvt.clipboard.autocopy:  true
+URxvt.keysym.M-c:          perl:clipboard:copy
+URxvt.keysym.M-v:          perl:clipboard:paste
+URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
+!URxvt.url-select.launcher: 
+URxvt.matcher.rend.0:      -Uline fg16
+URxvt.matcher.button:      1
+
 
 ! -- Xterm settings -- !
 xterm*termName: xterm-256color
@@ -107,7 +112,6 @@ xterm*color12: #729FCF
 xterm*color13: #AD7FA8
 xterm*color14: #34E2E2
 xterm*color15: #EEEEEC
-
 
 ! -- Xscreensaver settings -- !
 xscreensaver.splash: false
@@ -190,6 +194,4 @@ xcalc.ti.button38.background: #555595
 xcalc.ti.button39.background: #555595
 XCalc*Cursor:                 hand2
 XCalc*ShapeStyle:             rectangle
-
-
 

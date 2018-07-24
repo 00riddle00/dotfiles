@@ -38,7 +38,7 @@ export SENV=$MAIN_HOME/venvs/subscription_demo
 ## there has been no need so far
 
 # SYSTEMWIDE VARS
-export TERM=xterm-256color
+export TERM=rxvt-unicode-256color
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim
@@ -138,7 +138,8 @@ alias t='$MAIN_HOME/.todo/todo.sh'
 alias air='source $MAIN_HOME/pro/env/bin/activate && cd $MAIN_HOME/airflow'
 alias and='cp $MAIN_HOME/Dropbox/sync/android/\(a\)notes/notes.txt $MAIN_HOME/Dropbox/sync/gtd/content/pages/tmp/android.md'
 alias kan='cat $MAIN_HOME/pro/fl/social/kan.js | xclip'
-alias xresources='xrdb -merge $MAIN_HOME/.Xresources'
+alias xres.merge='xrdb -merge $MAIN_HOME/.Xresources'
+alias xres.restart='xrdb $MAIN_HOME/.Xresources'
 alias xdefaults='xrdb -merge $MAIN_HOME/.Xdefaults'
 alias anv='source $MAIN_HOME/venvs/ahl.360/bin/activate'
 alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/id_rsa'
