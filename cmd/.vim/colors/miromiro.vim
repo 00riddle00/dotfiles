@@ -9,10 +9,10 @@ if exists("syntax_on")
 endif
 
 let g:colors_name="miromiro"
-" Normal colors  ---
+" Normal colors  --- 
 hi Normal          ctermfg=15
 hi Ignore          ctermfg=8
-"hi Comment         ctermfg=7  cterm=italic
+hi Comment         ctermfg=7  cterm=italic
 hi LineNr          ctermfg=8
 hi Float           ctermfg=3
 hi Include         ctermfg=5
@@ -45,9 +45,9 @@ hi Underlined      ctermfg=4
 hi Title           ctermfg=3
 hi Tag             ctermfg=11
 hi Delimiter       ctermfg=12
-"hi SpecialComment  ctermfg=9
+hi SpecialComment  ctermfg=9
 hi Boolean         ctermfg=3
-"hi Todo            ctermfg=9
+hi Todo            ctermfg=9
 hi MoreMsg         ctermfg=13
 hi ModeMsg         ctermfg=13
 hi Debug           ctermfg=1
@@ -89,7 +89,7 @@ hi htmlTag        ctermfg=6
 hi htmlEndTag     ctermfg=6
 hi htmlTagName    ctermfg=11
 
-" Specific for Perl  ---
+" Specific for Perl  --- 
 hi perlSharpBang  ctermfg=10  term=standout
 hi perlStatement  ctermfg=13
 hi perlStatementStorage ctermfg=1

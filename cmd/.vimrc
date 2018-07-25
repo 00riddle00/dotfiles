@@ -1,10 +1,10 @@
 "############################### SETTINGS #####################################
 
-color desert
+color $VIMCOLOR
 set background=dark
 
 " Make sure we're getting 256 colors when it's available
-if $TERM == "xterm-256color" || $TERM == "rxvt-unicode-256color" || $COLORTERM == "gnome-terminal"
+if $TERM == "xterm-256color" || $TERM == "rxvt-unicode-256color" || $TERM == "screen-256color" 
     set t_Co=256
 endif
 

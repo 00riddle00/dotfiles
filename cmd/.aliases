@@ -8,7 +8,7 @@ export MAIN_HOME=/home/$MAIN_USER
 export DOTFILES_DIR=$MAIN_HOME/.dotfiles
 
 # DOTFILES VARS
-export VIMCOLOR=molokai
+export VIMCOLOR=miro8
 export DIRCOLORS=.dircolors
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
