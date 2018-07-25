@@ -2,7 +2,7 @@
 
 (tool "gimp-paintbrush-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 0.090196 0.572549 0.815686))
+(foreground (color-rgb 0.090196 0.486957 0.815686))
 (background (color-rgb 0.596078 0.596078 0.596078))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
