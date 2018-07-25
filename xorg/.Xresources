@@ -32,8 +32,7 @@ URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=8:antialias=true:hintin
 URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=8:antialias=true:hinting=true
 
 ! -- Colours -- !
-!#include ".Xresources.d/dark"
-#include ".Xresources.d/solarized"
+#include ".config/colors/dark"
 
 ! --  Extensions -- !
 URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard

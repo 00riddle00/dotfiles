@@ -9,7 +9,7 @@ export DOTFILES_DIR=$MAIN_HOME/.dotfiles
 
 # DOTFILES VARS
 export VIMCOLOR=molokai
-export DIRCOLORS=.dircolors_dark
+export DIRCOLORS=.dircolors
 export AUTOMATION_DIR=$DOTFILES_DIR/automation
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/shell-scripts
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
