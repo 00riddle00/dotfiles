@@ -100,3 +100,20 @@ Jul 24 07:58 : player: played "Epicuros-Interstellar.mp3"
 Jul 24 11:21 : client: [9] opened from 127.0.0.1:42020
 Jul 24 11:50 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
 Jul 24 11:51 : exception: Failed to open audio output
+Jul 24 13:44 : client: [10] opened from 127.0.0.1:44392
+Jul 24 16:25 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jul 24 16:25 : exception: Failed to open audio output
+Jul 24 16:38 : client: [11] opened from 127.0.0.1:47702
+Jul 24 20:23 : client: [11] closed
+Jul 24 20:23 : client: [12] opened from 127.0.0.1:50036
+Jul 24 21:12 : player: played "Coding_music_1.mp3"
+Jul 24 22:48 : player: played "Epicuros-Interstellar.mp3"
+Jul 25 00:49 : player: played "Coding_music_1.mp3"
+Jul 25 02:25 : player: played "Epicuros-Interstellar.mp3"
+Jul 25 04:27 : player: played "Coding_music_1.mp3"
+Jul 25 06:03 : player: played "Epicuros-Interstellar.mp3"
+Jul 25 08:05 : player: played "Coding_music_1.mp3"
+Jul 25 09:41 : player: played "Epicuros-Interstellar.mp3"
+Jul 25 11:12 : client: [13] opened from 127.0.0.1:56002
+Jul 25 15:34 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jul 25 15:34 : exception: Failed to open audio output

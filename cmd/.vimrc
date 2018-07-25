@@ -1,11 +1,10 @@
 "############################### SETTINGS #####################################
 
-"color molokai
-color gruvbox
+color desert
 set background=dark
 
 " Make sure we're getting 256 colors when it's available
-if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
+if $TERM == "xterm-256color" || $TERM == "rxvt-unicode-256color" || $COLORTERM == "gnome-terminal"
     set t_Co=256
 endif
 
@@ -276,7 +275,7 @@ Plugin 'airblade/vim-gitgutter'
 autocmd vimenter * :GitGutterDisable
 
 
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux--unicodenavigator'
 
 
 Plugin 'vim-airline/vim-airline'
@@ -288,9 +287,7 @@ endif
 
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
-"let g:airline_theme='kolor'
-"let g:airline_theme='gruvbox'
-let g:airline_theme='bubblegum'
+let g:airline_theme='kolor'
 
 
 Plugin 'vim-airline/vim-airline-themes'

@@ -540,12 +540,6 @@
       </action>
     </keybind>
 
-    <keybind key="A-t">
-      <action name="Execute">
-          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x800 -T t3'"</command>
-      </action>
-    </keybind>
-
     <!--Activate "emacs" mode-->
     <keybind key="A-o">
       <action name="Execute">
@@ -559,47 +553,89 @@
       </action>
     </keybind>
 
-    <!--<keybind key="A-F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>urxvt -name t1</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
 
-    <!--<keybind key="F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>wmctrl -x -a t1.URxvt</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
 
-<!--    <keybind key="A-F2">-->
-      <!--<action name="Execute">-->
-          <!--<command>urxvt -name t2</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
 
-    <!--<keybind key="F2">-->
-      <!--<action name="Execute">-->
-          <!--<command>wmctrl -x -a t2.URxvt</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
+
+
+<!--Terminal: urxvt-->
+    <keybind key="A-F1">
+      <action name="Execute">
+          <command>urxvt -name t1</command>
+      </action>
+    </keybind>
 
     <keybind key="F1">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 't1' 'terminator --geometry=700x800 -T t1'"</command>
+          <command>wmctrl -x -a t1.URxvt</command>
       </action>
     </keybind>
 
     <keybind key="A-F2">
       <action name="Execute">
-          <command>terminator --geometry=700x800 -T t2</command>
+          <command>urxvt -name t2</command>
       </action>
     </keybind>
 
     <keybind key="F2">
       <action name="Execute">
-          <command>sh -c "$ACTIVATE 't2' 'terminator --geometry=700x800 -T t2'"</command>
+          <command>wmctrl -x -a t2.URxvt</command>
       </action>
     </keybind>
+
+    <keybind key="A-m">
+      <action name="Execute">
+          <command>sh -c "$ACTIVATE 'aux' 'urxvt -geometry 120x35 -name aux'"</command>
+      </action>
+    </keybind>
+
+    <keybind key="F3">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
+      </action>
+    </keybind>
+
+<!--Terminal: terminator-->
+    <!--<keybind key="F1">-->
+      <!--<action name="Execute">-->
+          <!--TODO: remove slash between -/- when uncommenting-->
+          <!--<command>sh -c "$ACTIVATE 't1' 'terminator -/-geometry=700x800 -T t1'"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+    <!--<keybind key="A-F2">-->
+      <!--<action name="Execute">-->
+          <!--TODO: remove slash between -/- when uncommenting-->
+          <!--<command>terminator -/-geometry=700x800 -T t2</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+    <!--<keybind key="F2">-->
+      <!--<action name="Execute">-->
+          <!--TODO: remove slash between -/- when uncommenting-->
+          <!--<command>sh -c "$ACTIVATE 't2' 'terminator -/-geometry=700x800 -T t2'"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+<!--    <keybind key="A-m">-->
+      <!--<action name="Execute">-->
+          <!--TODO: remove slash between -/- when uncommenting-->
+          <!--<command>sh -c "$ACTIVATE 'aux' 'terminator -/-geometry=700x500 -T aux'"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+    <!--<keybind key="F3">-->
+      <!--<action name="Execute">-->
+          <!--TODO: remove slash between -/- when uncommenting-->
+        <!--<command>sh -c "$ACTIVATE 't3' 'terminator -/-geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
+
+
+
+
+
+
 
     <keybind key="F10">
       <action name="Execute">
@@ -653,18 +689,6 @@
         <!--<command>subl</command>-->
       <!--</action>-->
     <!--</keybind>-->
-
-    <keybind key="A-m">
-      <action name="Execute">
-          <command>sh -c "$ACTIVATE 'aux' 'terminator --geometry=700x500 -T aux'"</command>
-      </action>
-    </keybind>
-
-    <keybind key="F3">
-      <action name="Execute">
-        <command>sh -c "$ACTIVATE 't3' 'terminator --geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>
-      </action>
-    </keybind>
 
     <keybind key="Insert">
       <action name="Execute">
