@@ -14,13 +14,13 @@ hi Normal          ctermfg=white	cterm=bold
 hi Ignore          ctermfg=black	cterm=bold
 hi Comment         ctermfg=grey
 hi LineNr          ctermfg=black	cterm=bold
-hi NonText         ctermfg=black	cterm=bold
 hi Float           ctermfg=yellow
 hi Include         ctermfg=magenta
 hi Define          ctermfg=green
 hi Macro           ctermfg=magenta	cterm=bold
 hi PreProc         ctermfg=green	cterm=bold
 hi PreCondit       ctermfg=magenta	cterm=bold
+hi NonText         ctermfg=cyan
 hi Directory       ctermfg=cyan
 hi SpecialKey      ctermfg=yellow	cterm=bold
 hi Type            ctermfg=cyan
@@ -99,6 +99,10 @@ hi perlVarPlain2  ctermfg=yellow	cterm=bold
 
 " Specific for Ruby  --- 
 hi rubySharpBang  ctermfg=green		cterm=bold term=standout
+
+" Reset by distract free
+hi NonText      ctermfg=232  ctermbg=232
+hi VertSplit    ctermfg=232  ctermbg=24
 
 " Spell checking  --- 
 if version >= 700
