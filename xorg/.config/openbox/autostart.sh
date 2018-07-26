@@ -10,4 +10,4 @@ urxvt -e cmatrix &
 mpg123 $CANDY/startup_sounds/star_wars.mp3 > /dev/null 2>&1 &&
 feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/black_arch_2.jpg" && 
 killall urxvt &&
-terminator --geometry=700x800 -T t2 
+urxvt -name t2
