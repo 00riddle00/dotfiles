@@ -132,3 +132,16 @@ Jul 26 00:12 : avahi: Client Disconnected, will reconnect shortly
 Jul 26 00:12 : avahi: Could not reconnect: An unexpected D-Bus error occurred
 Jul 26 00:12 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
 Jul 26 00:12 : player: played "Coding_music_1.mp3"
+Jul 26 23:49 : client: [0] opened from 127.0.0.1:48078
+Jul 26 23:51 : client: [0] closed
+Jul 26 23:51 : client: [1] opened from 127.0.0.1:48092
+Jul 27 00:57 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jul 27 00:57 : player: played "Coding_music_1.mp3"
+Jul 27 18:23 : client: [0] opened from 127.0.0.1:60230
+Jul 27 18:32 : player: played "Coding_music_1.mp3"
+Jul 27 19:23 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Jul 27 19:23 : exception: Failed to open audio output
+Jul 28 00:46 : player: played "Epicuros-Interstellar.mp3"
+Jul 29 19:13 : client: [0] opened from 127.0.0.1:58598
+Jul 29 19:58 : player: played "Epicuros-Interstellar.mp3"
+Jul 29 21:24 : player: played "Coding_music_1.mp3"

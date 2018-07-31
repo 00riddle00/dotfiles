@@ -1,7 +1,8 @@
 
 ! -- Urxvt settings -- !
 URxvt.buffered: true
-URxvt.cursorColor: #395573
+!URxvt.cursorColor: #395573 
+URxvt.cursorColor: #5E468C 
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
 URxvt.url-select.underline: true

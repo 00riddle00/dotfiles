@@ -14,7 +14,7 @@ syntax enable
 set showcmd     
 " Show line numbers
 set number
-" Statusline
+" Always show statusline
 set laststatus=2
 " Set mouse to work in all modes
 set mouse=a
@@ -47,6 +47,8 @@ set nostartofline
 set scrolljump=5
 " Indicate jump out of the screen when 3 lines before end of the screen
 set scrolloff=3
+" Yank and copy to X clipboard
+set clipboard+=unnamed                  
 
 " Search
 " search ignoring case
@@ -75,6 +77,27 @@ set autoindent smartindent
 set nowrap
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
+
+" Custom statusline 
+
+" Tim Pope's statusline
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
+
+" jamessan's statusline
+"set statusline=   " clear the statusline for when vimrc is reloaded
+"set statusline+=%-3.3n\                      " buffer number
+"set statusline+=%f\                          " file name
+"set statusline+=%h%m%r%w                     " flags
+"set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
+"set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
+"set statusline+=%{&fileformat}]              " file format
+"set statusline+=%=                           " right align
+"set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
+"set statusline+=%b,0x%-8B\                   " current char
+"set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
+
+" jasonwryan's statusline
+set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
 
 "######################### FILE SPECIFIC SETTINGS #############################
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -275,22 +298,22 @@ Plugin 'airblade/vim-gitgutter'
 autocmd vimenter * :GitGutterDisable
 
 
-Plugin 'christoomey/vim-tmux--unicodenavigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 
-Plugin 'vim-airline/vim-airline'
-let g:airline#extensions#tabline#enabled = 1
+"Plugin 'vim-airline/vim-airline'
+"let g:airline#extensions#tabline#enabled = 1
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+"if !exists('g:airline_symbols')
+    "let g:airline_symbols = {}
+"endif
 
-let g:airline_powerline_fonts = 1
-let g:Powerline_symbols = 'fancy'
-let g:airline_theme='kolor'
+"let g:airline_powerline_fonts = 1
+"let g:Powerline_symbols = 'fancy'
+"let g:airline_theme='kolor'
 
 
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline-themes'
 
 
 Plugin 'majutsushi/tagbar'
