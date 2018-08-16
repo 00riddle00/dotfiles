@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 52
 audio_device_state:1:Also for audio sound card
 audio_device_state:1:my_fifo
 state: pause
 current: 0
-time: 2181.514000
+time: 3774.078000
 random: 0
 repeat: 1
 single: 0
@@ -14,4 +14,5 @@ mixrampdelay: -1.000000
 playlist_begin
 0:Coding_music_1.mp3
 1:Epicuros-Interstellar.mp3
+2:Spacemind-Memory_hole.mp3
 playlist_end
