@@ -171,3 +171,40 @@ Aug 09 17:03 : player: played "Coding_music_1.mp3"
 Aug 13 18:06 : client: [0] opened from 127.0.0.1:53826
 Aug 13 20:33 : client: [0] closed
 Aug 13 20:34 : player: played "Coding_music_1.mp3"
+Aug 21 13:44 : client: [0] opened from 127.0.0.1:36520
+Aug 21 13:57 : client: [0] closed
+Aug 21 13:57 : client: [1] opened from 127.0.0.1:36530
+Aug 21 16:22 : player: played "Coding_music_1.mp3"
+Aug 21 23:24 : player: played "Epicuros-Interstellar.mp3"
+Aug 21 23:36 : avahi: Client Disconnected, will reconnect shortly
+Aug 21 23:36 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Aug 21 23:36 : player: played "Spacemind-Memory_hole.mp3"
+Aug 22 10:21 : client: [0] opened from 127.0.0.1:53956
+Aug 22 11:54 : player: played "Spacemind-Memory_hole.mp3"
+Aug 22 13:30 : client: [0] opened from 127.0.0.1:38066
+Aug 23 00:27 : avahi: Client Disconnected, will reconnect shortly
+Aug 23 00:27 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Aug 23 00:27 : player: played "Coding_music_1.mp3"
+Aug 23 12:27 : client: [0] opened from 127.0.0.1:50224
+Aug 23 12:45 : player: played "Coding_music_1.mp3"
+Aug 23 12:45 : player: played "Epicuros-Interstellar.mp3"
+Aug 23 12:45 : player: played "Spacemind-Memory_hole.mp3"
+Aug 23 12:45 : client: [0] closed
+Aug 23 12:45 : client: [1] opened from 127.0.0.1:50244
+Aug 23 12:45 : player: played "Spacemind-Memory_hole.mp3"
+Aug 23 12:45 : player: played "Spacemind-Memory_hole.mp3"
+Aug 23 12:45 : client: [1] closed
+Aug 23 12:45 : client: [2] opened from 127.0.0.1:50248
+Aug 23 13:59 : player: played "Spacemind-Memory_hole.mp3"
+Aug 23 15:18 : avahi: Client Disconnected, will reconnect shortly
+Aug 23 15:18 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Aug 23 15:18 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 23 15:18 : player: played "Coding_music_1.mp3"
+Aug 23 22:40 : client: [0] opened from 127.0.0.1:48838
+Aug 23 23:01 : exception: "Also for audio sound card" [alsa] failed to play: snd_pcm_writei() failed: Broken pipe
+Aug 23 23:01 : player: played "Coding_music_1.mp3"
+Aug 24 12:49 : client: [0] opened from 127.0.0.1:33558
+Aug 24 13:10 : player: played "Coding_music_1.mp3"
+Aug 24 15:47 : player: played "Epicuros-Interstellar.mp3"
+Aug 24 18:59 : player: played "Spacemind-Memory_hole.mp3"
+Aug 24 23:05 : player: played "Coding_music_1.mp3"
