@@ -27,10 +27,10 @@ Xft.hinting: true
 Xft.hintstyle: hinstlight 
 
 ! Current Xft Font 
-URxvt*font: xft:Source Code Pro:size=9:antialias=true:hinting=true
-URxvt*boldFont: xft:Source Code Pro:size=9:antialias=true:hinting=true
-URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=9:antialias=true:hinting=true
-URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9:antialias=true:hinting=true
+URxvt*font: xft:Source Code Pro:size=8:antialias=true:hinting=true
+URxvt*boldFont: xft:Source Code Pro:size=8:antialias=true:hinting=true
+URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=8:antialias=true:hinting=true
+URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=8:antialias=true:hinting=true
 
 ! -- Colours -- !
 #include ".config/colors/dark"
