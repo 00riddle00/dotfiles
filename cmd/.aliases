@@ -33,6 +33,8 @@ export NOTES=$SYNC/gtd/
 export KEEP=$SYNC/keepass
 export VENV=$MAIN_HOME/venvs/sql_app
 export SENV=$MAIN_HOME/venvs/subscription_demo
+export HDMI_SCREEN=HDMI-1 
+export LAPTOP_SCREEN=eDP-1
 
 # CURRENT USER VARS
 ## there has been no need so far
@@ -206,7 +208,7 @@ alias video='lspci | grep -e VGA -e 3D'
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
 alias testas='(dumpkeys | grep keymaps; echo "keycode 58 = Control") | loadkeys'
 alias playb='mplayer -vo fbdev2 '
-alias ovh='ssh root@tomasgiedraitis.com'
+alias ovh='ssh riddle@tomasgiedraitis.com'
 alias npmls='npm list -g --depth=0'
 alias files='find . -type d -name "files" -print'
 alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
@@ -382,13 +384,13 @@ alias ton='synclient TouchpadOff=0'
 alias tof='synclient TouchpadOff=1'
 
 ## screen setup
-alias xthree='xrandr --output VGA-1 --auto --output eDP-1-1  --auto left-of VGA-0 --output HDMI-1-1 --auto --left '
+alias xthree='xrandr --output VGA-1 --auto --output $LAPTOP_SCREEN  --auto left-of VGA-0 --output $HDMI_SCREEN --auto --left '
 alias xl='xrandr --output VGA-0 --rotate left'
 alias xn='xrandr --output VGA-0 --rotate normal'
-alias xport='xrandr --output HDMI-1-1 --auto --rotate left --output eDP-1-1 --auto --right-of HDMI-1-1'
-alias xland='xrandr --output HDMI-1-1 --auto --rotate normal --output eDP-1-1 --auto --right-of HDMI-1-1'
-alias xof='xrandr --output eDP-1-1 --off'
-alias xon='xrandr --output eDP-1-1 --auto'
+alias xport='xrandr --output $HDMI_SCREEN --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias xland='xrandr --output $HDMI_SCREEN --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias xof='xrandr --output $LAPTOP_SCREEN --off'
+alias xon='xrandr --output $LAPTOP_SCREEN --auto'
 
 ## python
 alias p='python'
@@ -486,12 +488,12 @@ if xset q &>/dev/null; then
 
     ## Configure display
     ## if HDMI display connected, use it. Else use eDP.
-    xrandr | awk '/\ connected/{print $1}' | grep HDMI-1-1 > /dev/null 2>&1
+    xrandr | awk '/\ connected/{print $1}' | grep $HDMI_SCREEN > /dev/null 2>&1
     if [ $? -eq 0 ]; then
-        xrandr --output HDMI-1-1 --auto
+        xrandr --output $HDMI_SCREEN --auto
         :
     else
-        xrandr --output eDP-1-1 --auto
+        xrandr --output $LAPTOP_SCREEN --auto
     fi;
 
     ## launch tmux
@@ -602,3 +604,5 @@ alias ra='ranger'
 alias w='vim -u ~/.vimrc-essential'
 alias le='killall xscreensaver && xresources && xscreensaver -no-splash &'
 alias watchh='watch "du -hs * | sort -h"'
+alias hak='ssh root@85.206.145.19'
+alias ua='uname -a'
