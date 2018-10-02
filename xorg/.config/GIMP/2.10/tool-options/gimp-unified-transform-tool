@@ -1,6 +1,8 @@
 # GIMP gimp-unified-transform-tool options
 
-(background (color-rgb 0.596078 0.596078 0.596078))
-(frompivot-scale yes)
+(background (color-rgb 0.913726 0.913726 0.913726))
+(interpolation linear)
+(frompivot-shear yes)
+(frompivot-perspective yes)
 
 # end of gimp-unified-transform-tool options

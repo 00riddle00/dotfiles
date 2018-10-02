@@ -15,7 +15,7 @@
     (size 1916 1080)
     (open-on-exit)
     (aux-info
-        (left-docks-width "639")
+        (left-docks-width "604")
         (right-docks-width "4")
         (maximized "yes"))
     (gimp-toolbox
@@ -39,7 +39,7 @@
                 (tab-style automatic)
                 (aux-info
                     (edit-active "true")
-                    (current-data "2. Hardness 050")))
+                    (current-data "Grass")))
             (dockable "gimp-dynamics-editor"
                 (tab-style automatic)
                 (aux-info
@@ -49,7 +49,7 @@
                 (tab-style automatic))))
     (gimp-dock
         (side left)
-        (position 353)
+        (position 335)
         (book
             (current-page 0)
             (dockable "gimp-layer-list"
