@@ -2,9 +2,9 @@
 
 (tool "gimp-move-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 0.913726 0.913726 0.913726))
+(foreground (color-rgb 0.090196 0.572549 0.815686))
 (background (color-rgb 0.913726 0.913726 0.913726))
-(brush "Grass")
+(brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")
