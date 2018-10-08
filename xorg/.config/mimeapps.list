@@ -62,6 +62,7 @@ application/x-keepass2=keepass.desktop;
 text/html=firefox.desktop;sublime_text.desktop;
 application/json=sublime_text.desktop;
 application/x-mozilla-bookmarks=firefox.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.slideshow=libreoffice-impress.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
