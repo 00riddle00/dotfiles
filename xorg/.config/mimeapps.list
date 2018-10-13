@@ -63,6 +63,8 @@ text/html=firefox.desktop;sublime_text.desktop;
 application/json=sublime_text.desktop;
 application/x-mozilla-bookmarks=firefox.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.slideshow=libreoffice-impress.desktop;
+application/x-extension-html=firefox.desktop;
+text/x-java=sublime_text.desktop;vim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
