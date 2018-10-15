@@ -1,0 +1,210 @@
+[10/14/18, 12:32:36:391] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/14/18, 12:32:36:392] info: ║      Slack 3.3.3, linux 4.18.12-arch1-1-ARCH on x64 at 10/14/18, 12:32:36:389      ║
+[10/14/18, 12:32:36:392] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/14/18, 12:32:36:540] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/14/18, 12:32:36:706] info: NetworkStatus: Waiting for network online…
+[10/14/18, 12:32:36:884] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/14/18, 12:32:36:889] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/14/18, 12:32:40:095] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/14/18, 12:32:40:498] info: Store: SET_NETWORK_STATUS online
+[10/14/18, 12:32:40:500] info: Store: MAIN_WINDOW_SHOWN
+[10/14/18, 12:32:40:514] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}
+[10/14/18, 12:33:03:588] info: Store: SIGN_IN_COMPLETE
+[10/14/18, 12:33:04:343] info: Store: SIGN_IN_CANCELED
+[10/14/18, 12:33:04:344] info: Store: REMOVE_WINDOW 3
+[10/14/18, 12:33:04:352] info: Store: ADD_NEW_TEAM
+{
+  "id": "U2LHJBASC",
+  "name": "[REDACTED]",
+  "team_id": "T2LHV2VSB",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[10/14/18, 12:33:04:360] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "unloaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:04:404] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:33:04:404] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:33:08:939] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:09:219] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:09:611] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:33:09:617] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:09:767] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/14/18, 12:33:09:905] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/14/18, 12:33:10:048] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:053] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:056] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/14/18, 12:33:10:206] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:208] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/14/18, 12:33:17:546] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:20:931] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:23:842] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:44:609] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:35:47:809] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:35:50:059] info: Store: UPDATE_SETTINGS
+{
+  "hasRunFromTray": true
+}
+[10/14/18, 12:35:50:060] info: Store: SHOW_TRAY_BALLOON
+{
+  "content": "Slack’s set to stay running in the notification area. To change this, visit Preferences > Linux App.",
+  "title": "Why didn’t Slack quit?"
+}
+[10/14/18, 12:35:50:097] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:810] info: Store: FOREGROUND_APP
+[10/14/18, 12:37:35:842] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:843] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:38:369] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:37:42:995] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/14/18, 12:37:43:735] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/14/18, 12:37:44:178] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:45:425] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:37:46:167] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/14/18, 12:37:48:261] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/14/18, 12:37:48:641] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/14/18, 12:37:49:646] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:55:315] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:37:55:912] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:38:00:859] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/14/18, 12:38:01:424] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/14/18, 12:38:01:838] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/14/18, 12:38:02:188] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/14/18, 12:38:02:526] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:38:04:185] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/14/18, 12:38:08:364] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}

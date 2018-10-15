@@ -1,0 +1,441 @@
+[10/14/18, 12:32:34:305] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/14/18, 12:32:34:306] info: ║      Slack 3.3.3, linux 4.18.12-arch1-1-ARCH on x64 at 10/14/18, 12:32:34:303      ║
+[10/14/18, 12:32:34:306] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/14/18, 12:32:34:633] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/14/18, 12:32:34:712] error: Locale: Tried to access systemLocale before application was ready
+[10/14/18, 12:32:34:968] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[10/14/18, 12:32:34:974] info: Configuring uncaughtExceptionHandler
+[10/14/18, 12:32:34:974] info: Configuring unhandledRejectionHandler
+[10/14/18, 12:32:34:974] info: Registered with apiKey acaff8df67924f677747922423057034
+[10/14/18, 12:32:35:033] error: TransformPasswords: Cannot access keychain
+{
+  "error": {
+    "message": "The name org.freedesktop.secrets was not provided by any .service files",
+    "stack": "Error: The name org.freedesktop.secrets was not provided by any .service files"
+  }
+}
+[10/14/18, 12:32:35:033] warn: BrowserStore: Couldn't access keychain, make note of it
+[10/14/18, 12:32:35:193] info: Store: persist/REHYDRATE
+[10/14/18, 12:32:35:217] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[10/14/18, 12:32:35:219] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[10/14/18, 12:32:35:221] info: Created uuid '249d8efa-ea3e-524f-b0b9-60bd01bcba50'
+[10/14/18, 12:32:35:721] info: Tray Handler: Showing a tray balloon with title: Welcome to Slack!
+[10/14/18, 12:32:35:726] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 12
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[10/14/18, 12:32:35:727] info: AutoLoginEpic: Checking for autologin.
+[10/14/18, 12:32:35:730] info: Store: UPDATE_SETTINGS
+{
+  "hasRunApp": true
+}
+[10/14/18, 12:32:35:733] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:32:35:735] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[10/14/18, 12:32:35:736] info: BrowserViewManager: Starting initialization
+[10/14/18, 12:32:35:737] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": null
+}
+[10/14/18, 12:32:35:738] info: PersistSettingsWindowBehavior: Resetting to default window position
+{
+  "settings": {
+    "position": [
+      384,
+      108
+    ],
+    "size": [
+      1152,
+      864
+    ]
+  }
+}
+[10/14/18, 12:32:35:738] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:32:35:755] info: Store: UPDATE_SETTINGS
+{
+  "PrefSSBFileDownloadPath": "/home/riddle/Downloads"
+}
+[10/14/18, 12:32:35:757] info: DownloadListener: Downloads directory set to
+{
+  "downloadsDirectory": "/home/riddle/Downloads"
+}
+[10/14/18, 12:32:35:757] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[10/14/18, 12:32:35:758] info: App: Welcome to Slack 3.3.3 x64
+[10/14/18, 12:32:35:758] info: App load time: 1,648021886
+[10/14/18, 12:32:36:883] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/14/18, 12:32:36:886] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/14/18, 12:32:40:497] info: Store: SET_NETWORK_STATUS online
+[10/14/18, 12:32:40:499] info: Store: MAIN_WINDOW_SHOWN
+[10/14/18, 12:32:40:509] info: createSignInWindowEpic: No teams signed in, showing sign-in window
+[10/14/18, 12:32:40:512] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:32:40:514] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}
+[10/14/18, 12:32:40:516] info: SignInEpic: Loading URL in new window https://slack.com/signin
+[10/14/18, 12:32:49:553] info: SignInEpic: Page redirect
+{
+  "newURL": "https://grozionamai.slack.com/"
+}
+[10/14/18, 12:32:49:554] info: SignInEpic: Page redirect
+{
+  "newURL": "https://grozionamai.slack.com/"
+}
+[10/14/18, 12:32:49:554] info: SignInEpic: Page redirect
+{
+  "newURL": "https://grozionamai.slack.com/"
+}
+[10/14/18, 12:33:03:275] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fgrozionamai.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/14/18, 12:33:03:275] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fgrozionamai.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/14/18, 12:33:03:275] info: SignInEpic: Page redirect
+{
+  "newURL": "https://slack.com/checkcookie?redir=https%3A%2F%2Fgrozionamai.slack.com%2Fsignin%3Fssb_success%3D1%26ssb_relogin%3D"
+}
+[10/14/18, 12:33:03:586] info: SignInEpic: Page redirect
+{
+  "newURL": "https://grozionamai.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/14/18, 12:33:03:587] info: Store: SIGN_IN_COMPLETE
+[10/14/18, 12:33:03:589] info: SignInEpic: Page redirect
+{
+  "newURL": "https://grozionamai.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/14/18, 12:33:03:590] info: SignInEpic: Page redirect
+{
+  "newURL": "https://grozionamai.slack.com/signin?ssb_success=1&ssb_relogin="
+}
+[10/14/18, 12:33:04:342] info: SignInEpic: Received team(s) from the webapp
+[10/14/18, 12:33:04:343] info: SignInEpic: Got signal!
+[10/14/18, 12:33:04:343] info: Store: SIGN_IN_CANCELED
+[10/14/18, 12:33:04:344] info: SignInEpic: Sign-in window closed
+[10/14/18, 12:33:04:344] info: Store: REMOVE_WINDOW 3
+[10/14/18, 12:33:04:350] info: maybeQuitAppAction
+{
+  "canceledSignIn": false,
+  "hasNoTeams": true
+}
+[10/14/18, 12:33:04:350] info: SignInEpic: End of the road
+{
+  "action": "ADD_NEW_TEAM"
+}
+[10/14/18, 12:33:04:350] info: Store: ADD_NEW_TEAM
+{
+  "id": "U2LHJBASC",
+  "name": "[REDACTED]",
+  "team_id": "T2LHV2VSB",
+  "team_name": "[REDACTED]",
+  "team_url": "[REDACTED]"
+}
+[10/14/18, 12:33:04:356] info: BrowserViewManager: Creating views for new teams
+{
+  "newTeamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/14/18, 12:33:04:357] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:04:357] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:04:359] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:33:04:360] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[10/14/18, 12:33:04:363] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[10/14/18, 12:33:04:375] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:04:377] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[10/14/18, 12:33:04:387] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:33:04:388] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:33:05:319] info: Team boot count
+{
+  "count": 1
+}
+[10/14/18, 12:33:08:938] info: WebContents LifeCycle: webContents:4 from 'unloaded' to 'loaded' took 4569 ms
+[10/14/18, 12:33:08:938] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:08:939] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/14/18, 12:33:09:218] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:09:609] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:33:09:616] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:09:767] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/14/18, 12:33:09:900] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/14/18, 12:33:10:048] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:051] info: WebContents LifeCycle: webContents:4 from 'loaded' to 'webapp-loaded' took 1113 ms
+[10/14/18, 12:33:10:052] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:054] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[10/14/18, 12:33:10:056] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/14/18, 12:33:10:205] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[10/14/18, 12:33:10:207] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:688] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:33:11:183] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:33:12:065] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:33:17:544] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ],
+  "isMaximized": true
+}
+[10/14/18, 12:33:17:546] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:20:930] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1152,
+    864
+  ],
+  "position": [
+    41,
+    69
+  ],
+  "isMaximized": false
+}
+[10/14/18, 12:33:22:838] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:23:841] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1152,
+    864
+  ],
+  "position": [
+    41,
+    69
+  ],
+  "isMaximized": false
+}
+[10/14/18, 12:33:43:604] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:44:608] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1152,
+    864
+  ],
+  "position": [
+    41,
+    69
+  ],
+  "isMaximized": false
+}
+[10/14/18, 12:35:46:805] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:35:47:808] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1152,
+    864
+  ],
+  "position": [
+    41,
+    69
+  ],
+  "isMaximized": false
+}
+[10/14/18, 12:35:50:047] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/14/18, 12:35:50:055] info: Store: UPDATE_SETTINGS
+{
+  "hasRunFromTray": true
+}
+[10/14/18, 12:35:50:056] info: Store: SHOW_TRAY_BALLOON
+{
+  "title": "Why didn’t Slack quit?",
+  "content": "Slack’s set to stay running in the notification area. To change this, visit Preferences > Linux App."
+}
+[10/14/18, 12:35:50:058] info: Tray Handler: Showing a tray balloon with title: Why didn’t Slack quit?
+[10/14/18, 12:35:50:096] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:809] info: App: Otherwise signaled, foregrounding.
+[10/14/18, 12:37:35:809] info: Store: FOREGROUND_APP
+[10/14/18, 12:37:35:839] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:843] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:38:368] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ],
+  "isMaximized": true
+}
+[10/14/18, 12:37:38:370] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:37:42:995] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/14/18, 12:37:43:734] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/14/18, 12:37:44:177] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:44:239] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:37:45:424] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:37:46:166] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/14/18, 12:37:48:259] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/14/18, 12:37:48:640] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/14/18, 12:37:49:645] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:55:314] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:37:55:912] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:55:975] info: WebContentsMediator: Attaching to new webContents
+[10/14/18, 12:38:00:858] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/14/18, 12:38:01:423] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/14/18, 12:38:01:836] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/14/18, 12:38:02:187] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/14/18, 12:38:02:523] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:38:04:183] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/14/18, 12:38:07:280] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/14/18, 12:38:08:363] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1152,
+    864
+  ],
+  "position": [
+    41,
+    69
+  ],
+  "isMaximized": false
+}

@@ -1,0 +1,349 @@
+[10/14/18, 12:33:05:462] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/14/18, 12:33:05:463] info: ║      Slack 3.3.3, linux 4.18.12-arch1-1-ARCH on x64 at 10/14/18, 12:33:05:459      ║
+[10/14/18, 12:33:05:463] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/14/18, 12:33:05:577] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/14/18, 12:33:05:929] info: cld3::loadModule: loading cld3 module
+[10/14/18, 12:33:05:951] info: cld3Loader::loadModule: running environment is NODE
+[10/14/18, 12:33:05:951] info: cld3Loader::loadModule: constructed module object for runtime
+[10/14/18, 12:33:06:132] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/14/18, 12:33:06:132] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/14/18, 12:33:06:138] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/14/18, 12:33:06:150] info: Main window preload script finished
+{
+  "readyTime": 903.951635
+}
+[10/14/18, 12:33:09:313] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:09:417] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:087] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:33:10:087] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:091] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/14/18, 12:33:10:094] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/14/18, 12:33:10:181] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:181] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 4,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:184] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/14/18, 12:33:10:365] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/14/18, 12:33:10:371] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/14/18, 12:33:10:517] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[10/14/18, 12:33:11:176] info: Raw Locale list: ["C","en_US.utf8","he_IL.utf8","lt_LT.utf8","POSIX",""]
+[10/14/18, 12:33:11:177] info: Filtered Locale list: ["en_US","he_IL","lt_LT"]
+[10/14/18, 12:33:11:177] info: Counts: {"en":["en_US"],"he":["he_IL"],"lt":["lt_LT"]}
+[10/14/18, 12:33:11:177] info: Setting en
+[10/14/18, 12:33:11:178] info: Setting he
+[10/14/18, 12:33:11:178] info: Setting lt
+[10/14/18, 12:33:11:180] info: Requesting to load lt-LT, alternatives are ["lt-LT","lt-LT","lt-LT"]
+[10/14/18, 12:33:11:181] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:11:182] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/lt-lt-3-0.bdic
+[10/14/18, 12:33:12:064] info: Requesting to load lt-LT, alternatives are ["lt-LT","lt-LT","lt-LT"]
+[10/14/18, 12:33:12:064] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:12:064] info: Actually downloading https://redirector.gvt1.com/edgedl/chrome/dict/lt-lt-3-0.bdic
+[10/14/18, 12:33:14:003] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:14:003] info: Creating node-spellchecker instance
+[10/14/18, 12:33:14:021] info: Actually installing spell check provider to Electron
+[10/14/18, 12:33:14:039] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:17:546] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:17:559] info: Unloading spellchecker
+[10/14/18, 12:33:17:561] info: Restoring spellchecker
+[10/14/18, 12:33:17:561] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:17:561] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:17:586] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:17:586] info: Creating node-spellchecker instance
+[10/14/18, 12:33:20:016] info: Unloading spellchecker
+[10/14/18, 12:33:20:018] info: Restoring spellchecker
+[10/14/18, 12:33:20:019] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:20:019] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:20:022] info: Unloading spellchecker
+[10/14/18, 12:33:20:024] info: Restoring spellchecker
+[10/14/18, 12:33:20:024] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:20:024] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:20:027] info: Unloading spellchecker
+[10/14/18, 12:33:20:029] info: Unloading spellchecker
+[10/14/18, 12:33:20:030] info: Unloading spellchecker
+[10/14/18, 12:33:20:030] info: Unloading spellchecker
+[10/14/18, 12:33:20:032] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:20:032] info: Creating node-spellchecker instance
+[10/14/18, 12:33:20:037] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:20:931] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:22:846] info: Restoring spellchecker
+[10/14/18, 12:33:22:847] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:22:847] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:22:860] info: Unloading spellchecker
+[10/14/18, 12:33:22:865] info: Restoring spellchecker
+[10/14/18, 12:33:22:865] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:22:865] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:22:879] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:22:879] info: Creating node-spellchecker instance
+[10/14/18, 12:33:22:884] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:23:842] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:27:733] info: Unloading spellchecker
+[10/14/18, 12:33:27:735] info: Restoring spellchecker
+[10/14/18, 12:33:27:735] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:27:736] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:27:738] info: Unloading spellchecker
+[10/14/18, 12:33:27:740] info: Restoring spellchecker
+[10/14/18, 12:33:27:741] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:27:741] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:27:744] info: Unloading spellchecker
+[10/14/18, 12:33:27:746] info: Unloading spellchecker
+[10/14/18, 12:33:27:746] info: Unloading spellchecker
+[10/14/18, 12:33:27:747] info: Unloading spellchecker
+[10/14/18, 12:33:27:748] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:27:748] info: Creating node-spellchecker instance
+[10/14/18, 12:33:27:753] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:43:618] info: Restoring spellchecker
+[10/14/18, 12:33:43:619] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:43:619] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:43:630] info: Unloading spellchecker
+[10/14/18, 12:33:43:645] info: Restoring spellchecker
+[10/14/18, 12:33:43:645] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:43:645] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:43:672] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:43:672] info: Creating node-spellchecker instance
+[10/14/18, 12:33:43:680] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:44:609] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:33:44:940] info: Unloading spellchecker
+[10/14/18, 12:33:44:947] info: Restoring spellchecker
+[10/14/18, 12:33:44:948] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:44:948] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:44:951] info: Unloading spellchecker
+[10/14/18, 12:33:44:953] info: Restoring spellchecker
+[10/14/18, 12:33:44:953] info: Loading dictionary for language lt-LT
+[10/14/18, 12:33:44:954] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:33:44:956] info: Unloading spellchecker
+[10/14/18, 12:33:44:958] info: Unloading spellchecker
+[10/14/18, 12:33:44:958] info: Unloading spellchecker
+[10/14/18, 12:33:44:959] info: Unloading spellchecker
+[10/14/18, 12:33:44:960] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:33:44:960] info: Creating node-spellchecker instance
+[10/14/18, 12:33:44:966] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:35:46:815] info: Restoring spellchecker
+[10/14/18, 12:35:46:815] info: Loading dictionary for language lt-LT
+[10/14/18, 12:35:46:815] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:35:46:821] info: Unloading spellchecker
+[10/14/18, 12:35:46:832] info: Restoring spellchecker
+[10/14/18, 12:35:46:832] info: Loading dictionary for language lt-LT
+[10/14/18, 12:35:46:832] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:35:46:850] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:35:46:850] info: Creating node-spellchecker instance
+[10/14/18, 12:35:46:856] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:35:47:809] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:35:50:065] info: Unloading spellchecker
+[10/14/18, 12:35:50:066] info: Store: UPDATE_SETTINGS
+{
+  "hasRunFromTray": true
+}
+[10/14/18, 12:35:50:066] info: Store: SHOW_TRAY_BALLOON
+{
+  "content": "Slack’s set to stay running in the notification area. To change this, visit Preferences > Linux App.",
+  "title": "Why didn’t Slack quit?"
+}
+[10/14/18, 12:35:50:097] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:810] info: Store: FOREGROUND_APP
+[10/14/18, 12:37:35:840] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:880] info: Store: SET_FULL_SCREEN
+[10/14/18, 12:37:35:884] info: Restoring spellchecker
+[10/14/18, 12:37:35:884] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:35:885] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:35:900] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:35:900] info: Creating node-spellchecker instance
+[10/14/18, 12:37:38:369] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/14/18, 12:37:38:384] info: Unloading spellchecker
+[10/14/18, 12:37:38:386] info: Restoring spellchecker
+[10/14/18, 12:37:38:387] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:38:387] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:38:409] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:38:410] info: Creating node-spellchecker instance
+[10/14/18, 12:37:43:048] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/14/18, 12:37:43:785] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/14/18, 12:37:44:232] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:44:598] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:44:598] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:44:600] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:45:011] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:45:012] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:45:015] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:45:471] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:37:46:207] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/14/18, 12:37:47:440] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:47:440] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:47:441] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:47:754] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:47:754] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:47:755] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:48:302] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:48:303] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:48:304] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/14/18, 12:37:48:325] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:48:665] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/14/18, 12:37:49:731] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:49:752] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:49:752] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:49:756] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:50:279] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:50:280] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:50:282] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:50:662] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:50:662] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:50:663] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:55:366] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:37:55:969] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/14/18, 12:37:56:346] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:56:346] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:56:348] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:37:57:331] info: Loading dictionary for language lt-LT
+[10/14/18, 12:37:57:332] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:37:57:332] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:00:909] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/14/18, 12:38:00:942] info: Loading dictionary for language lt-LT
+[10/14/18, 12:38:00:943] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:38:00:946] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:01:470] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/14/18, 12:38:01:916] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/14/18, 12:38:01:943] info: Loading dictionary for language lt-LT
+[10/14/18, 12:38:01:944] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:38:01:947] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:02:305] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/14/18, 12:38:02:330] info: Loading dictionary for language lt-LT
+[10/14/18, 12:38:02:330] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:38:02:333] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:02:568] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/14/18, 12:38:04:202] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/14/18, 12:38:04:343] info: Loading dictionary for language lt-LT
+[10/14/18, 12:38:04:343] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:38:04:345] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:04:543] info: Loading dictionary for language lt-LT
+[10/14/18, 12:38:04:543] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:38:04:544] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:05:439] info: Loading dictionary for language lt-LT
+[10/14/18, 12:38:05:439] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/14/18, 12:38:05:440] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/14/18, 12:38:07:306] info: Unloading spellchecker
+[10/14/18, 12:38:08:364] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
