@@ -208,3 +208,167 @@
     864
   ]
 }
+[10/21/18, 15:53:04:980] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 15:53:04:981] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 15:53:04:972      ║
+[10/21/18, 15:53:04:981] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 15:53:05:229] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 15:53:05:463] info: NetworkStatus: Waiting for network online…
+[10/21/18, 15:53:06:004] info: Don't start background client because T2LHV2VSB is selected team
+[10/21/18, 15:53:06:005] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/21/18, 15:53:06:010] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/21/18, 15:53:06:212] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/21/18, 15:53:06:616] info: Store: SET_NETWORK_STATUS online
+[10/21/18, 15:53:09:052] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:09:058] info: Store: MAIN_WINDOW_SHOWN
+[10/21/18, 15:53:09:073] info: Store: SET_FULL_SCREEN
+[10/21/18, 15:53:09:075] info: Store: SET_FULL_SCREEN
+[10/21/18, 15:53:09:364] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:20:251] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:20:593] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:21:536] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/21/18, 15:53:21:537] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:21:834] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:25:630] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:25:923] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:26:158] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/21/18, 15:53:26:161] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:26:201] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/21/18, 15:53:26:239] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/21/18, 15:53:27:484] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:27:554] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:27:557] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/21/18, 15:53:27:595] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 15:53:27:597] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/21/18, 15:55:13:753] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/21/18, 15:55:27:039] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 16:18:36:940] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 16:18:37:954] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 16:18:39:595] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}

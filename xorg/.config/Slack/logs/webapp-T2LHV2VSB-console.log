@@ -360,3 +360,192 @@ info: Oct-14 14:02:17.659 [API-Q] (T2LHV2VSB) 097bbbab-1539514937.658 rtm.should
 info: Oct-14 14:02:17.660 [API-Q] (T2LHV2VSB) 097bbbab-1539514937.658 rtm.shouldReload is ACTIVE
 info: Oct-14 14:02:18.593 [API-Q] (T2LHV2VSB) 097bbbab-1539514937.658 rtm.shouldReload is RESOLVED
 info: Oct-14 14:02:18.595 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 15:52:59:736      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Oct-21 15:53:08.742 error getActiveModelOb found no ob
+warn: Oct-21 15:53:08.743 TS.boot_data.channel_id: undefined
+warn: Oct-21 15:53:08.743 TS.boot_data.im_id: undefined
+warn: Oct-21 15:53:08.743 TS.boot_data.group_id: undefined
+warn: Oct-21 15:53:08.743 error getActiveModelOb found no ob
+warn: Oct-21 15:53:08.743 TS.boot_data.channel_id: undefined
+warn: Oct-21 15:53:08.744 TS.boot_data.im_id: undefined
+warn: Oct-21 15:53:08.744 TS.boot_data.group_id: undefined
+info: Oct-21 15:53:08.935 [BOOT] booted! pri:0 version:1539999904 start_ms:1540126387038 (1897ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-21 15:53:09.062 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Oct-21 15:53:10.216 [FOCUS-EVENT] Window focused
+info: Oct-21 15:53:10.243 [INFO] running without a user
+info: Oct-21 15:53:19.143 [WINDOW-UNLOADING] (T00) workspace handling window unloading event
+info: Oct-21 15:53:20.258 [WINDOW-UNLOADING] (T00) workspace handling window unloading event
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-21 15:53:25.169 [BOOT] booted! pri:0 version:1539999904 start_ms:1540126403611 (1558ms ago)
+info: Oct-21 15:53:25.170 [BOOT] Starting incremental boot (early)
+warn: Oct-21 15:53:25.277 error getActiveModelOb found no ob
+warn: Oct-21 15:53:25.277 TS.boot_data.channel_id: undefined
+warn: Oct-21 15:53:25.277 TS.boot_data.im_id: undefined
+warn: Oct-21 15:53:25.277 TS.boot_data.group_id: undefined
+warn: Oct-21 15:53:25.278 error getActiveModelOb found no ob
+warn: Oct-21 15:53:25.278 TS.boot_data.channel_id: undefined
+warn: Oct-21 15:53:25.278 TS.boot_data.im_id: undefined
+warn: Oct-21 15:53:25.278 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-21 15:53:25.640 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-21 15:53:25.640 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-21 15:53:25.641 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-21 15:53:25.641 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-21 15:53:25.735 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-21 15:53:25.888 [API-Q] (T2LHV2VSB) c0d58076-1540126405.886 apps.actions.list called with reason: no_reason_provided
+info: Oct-21 15:53:25.888 [API-Q] (T2LHV2VSB) c0d58076-1540126405.886 apps.actions.list is ENQUEUED
+info: Oct-21 15:53:25.889 [API-Q] (T2LHV2VSB) c0d58076-1540126405.886 apps.actions.list is ACTIVE
+warn: Oct-21 15:53:26.042 updateTeamIcon was called, but missing an image to set
+info: Oct-21 15:53:26.159 [BOOT] Finalizing incremental boot
+info: Oct-21 15:53:26.161 [METRICS] Starting timers for metrics collection
+info: Oct-21 15:53:26.162 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-21 15:53:26.409 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to D2PQZCP9U at end
+info: Oct-21 15:53:26.433 [API-Q] (T2LHV2VSB) c0d58076-1540126406.433 promo.banner called with reason: no_reason_provided
+info: Oct-21 15:53:26.433 [API-Q] (T2LHV2VSB) c0d58076-1540126406.433 promo.banner is ENQUEUED
+info: Oct-21 15:53:26.434 [API-Q] (T2LHV2VSB) c0d58076-1540126406.433 promo.banner is ACTIVE
+info: Oct-21 15:53:26.441 [PERF] (T2LHV2VSB) First meaningful paint: 4246ms
+info: Oct-21 15:53:26.592 [API-Q] (T2LHV2VSB) c0d58076-1540126405.886 apps.actions.list is RESOLVED
+info: Oct-21 15:53:26.597 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC (1)
+info: Oct-21 15:53:26.599 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC (1)
+info: Oct-21 15:53:26.599 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting D2PQZCP9U (1)
+info: Oct-21 15:53:26.601 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received D2PQZCP9U (1)
+info: Oct-21 15:53:26.838 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-21 15:53:27.004 [API-Q] (T2LHV2VSB) c0d58076-1540126406.433 promo.banner is RESOLVED
+info: Oct-21 15:53:27.192 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-21 15:53:27.193 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PQZCP9U because not fully booted
+info: Oct-21 15:53:27.385 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-21 15:53:27.385 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-21 15:53:27.390 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-21 15:53:27.391 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-21 15:53:27.401 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-21 15:53:27.402 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-21 15:53:27.415 [BOOT] Completed incremental boot
+info: Oct-21 15:53:27.418 [API-Q] (T2LHV2VSB) c0d58076-1540126407.418 i18n.translations.get called with reason: no_reason_provided
+info: Oct-21 15:53:27.418 [API-Q] (T2LHV2VSB) c0d58076-1540126407.418 i18n.translations.get is ENQUEUED
+info: Oct-21 15:53:27.418 [API-Q] (T2LHV2VSB) c0d58076-1540126407.418 i18n.translations.get is ACTIVE
+warn: Oct-21 15:53:27.419 updateTeamIcon was called, but missing an image to set
+info: Oct-21 15:53:27.484 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-21 15:53:27.484 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-21 15:53:27.484 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-21 15:53:27.485 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-21 15:53:27.485 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-21 15:53:27.485 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-21 15:53:27.485 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-21 15:53:27.485 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-21 15:53:27.487 [BOOT] Finished first boot 1853 ms after DOM ready
+info: Oct-21 15:53:27.491 [API-Q] (T2LHV2VSB) c0d58076-1540126407.491 help.issues.list called with reason: no_reason_provided
+info: Oct-21 15:53:27.491 [API-Q] (T2LHV2VSB) c0d58076-1540126407.491 help.issues.list is ENQUEUED
+info: Oct-21 15:53:27.491 [API-Q] (T2LHV2VSB) c0d58076-1540126407.491 help.issues.list is ACTIVE
+info: Oct-21 15:53:27.493 [API-Q] (T2LHV2VSB) c0d58076-1540126407.493 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-21 15:53:27.493 [API-Q] (T2LHV2VSB) c0d58076-1540126407.493 dnd.teamInfo is ENQUEUED
+info: Oct-21 15:53:27.493 [API-Q] (T2LHV2VSB) c0d58076-1540126407.493 dnd.teamInfo is ACTIVE
+info: Oct-21 15:53:27.495 [INFO] MSConnected: 
+info: Oct-21 15:53:27.516 [API-Q] (T2LHV2VSB) c0d58076-1540126407.516 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-21 15:53:27.516 [API-Q] (T2LHV2VSB) c0d58076-1540126407.516 users.counts is ENQUEUED
+info: Oct-21 15:53:27.516 [API-Q] (T2LHV2VSB) c0d58076-1540126407.516 users.counts is ACTIVE
+info: Oct-21 15:53:27.522 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: D2PQZCP9U oldest: 1480947369.000009 latest: null
+info: Oct-21 15:53:27.523 [API-Q] (T2LHV2VSB) c0d58076-1540126407.522 conversations.history called with reason: message-pane/requestHistory
+info: Oct-21 15:53:27.523 [API-Q] (T2LHV2VSB) c0d58076-1540126407.522 conversations.history is ENQUEUED
+info: Oct-21 15:53:27.523 [API-Q] (T2LHV2VSB) c0d58076-1540126407.522 conversations.history is ACTIVE
+info: Oct-21 15:53:27.531 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: true -> false
+info: Oct-21 15:53:27.583 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting USLACKBOT,U2LHX8AAV,U2PBY7M1N (1)
+info: Oct-21 15:53:27.592 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-21 15:53:27.593 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PQZCP9U, clearing ghost last_read
+info: Oct-21 15:53:27.599 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 49
+info: Oct-21 15:53:27.930 [API-Q] (T2LHV2VSB) c0d58076-1540126407.418 i18n.translations.get is RESOLVED
+info: Oct-21 15:53:27.931 [API-Q] (T2LHV2VSB) c0d58076-1540126407.491 help.issues.list is RESOLVED
+info: Oct-21 15:53:27.932 [API-Q] (T2LHV2VSB) c0d58076-1540126407.522 conversations.history is RESOLVED
+info: Oct-21 15:53:27.935 [UNREAD-COUNTS] (T2LHV2VSB) Counting unreads in D2PQZCP9U because (1) timestamps added
+info: Oct-21 15:53:27.941 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 49
+info: Oct-21 15:53:27.942 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-21 15:53:27.955 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received USLACKBOT,U2LHX8AAV,U2PBY7M1N (1)
+info: Oct-21 15:53:28.029 [API-Q] (T2LHV2VSB) c0d58076-1540126407.493 dnd.teamInfo is RESOLVED
+info: Oct-21 15:53:28.057 [API-Q] (T2LHV2VSB) c0d58076-1540126407.516 users.counts is RESOLVED
+info: Oct-21 15:53:28.069 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-21 15:53:28.301 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-21 15:53:28.302 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PQZCP9U because last_read >= latest && channel is read
+info: Oct-21 15:53:28.482 [API-Q] (T2LHV2VSB) c0d58076-1540126408.481 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-21 15:53:28.482 [API-Q] (T2LHV2VSB) c0d58076-1540126408.481 dnd.teamInfo is ENQUEUED
+info: Oct-21 15:53:28.483 [API-Q] (T2LHV2VSB) c0d58076-1540126408.481 dnd.teamInfo is ACTIVE
+info: Oct-21 15:53:28.691 [API-Q] (T2LHV2VSB) c0d58076-1540126408.481 dnd.teamInfo is RESOLVED
+info: Oct-21 15:54:32.404 [API-Q] (T2LHV2VSB) c0d58076-1540126472.403 channels.suggestions called with reason: no_reason_provided
+info: Oct-21 15:54:32.405 [API-Q] (T2LHV2VSB) c0d58076-1540126472.403 channels.suggestions is ENQUEUED
+info: Oct-21 15:54:32.405 [API-Q] (T2LHV2VSB) c0d58076-1540126472.403 channels.suggestions is ACTIVE
+info: Oct-21 15:54:33.059 [API-Q] (T2LHV2VSB) c0d58076-1540126472.403 channels.suggestions is RESOLVED
+info: Oct-21 15:55:13.741 [ACTION:CHANNEL-SIDEBAR] Selected C2LJ9A5T4
+info: Oct-21 15:55:13.746 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to C2LJ9A5T4 at end
+info: Oct-21 15:55:13.789 [MESSAGE-LIST] (T2LHV2VSB) Switching channels: C2LJ9A5T4 timestamps: 0
+info: Oct-21 15:55:13.789 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 0 reachedStart: false reachedEnd: false
+info: Oct-21 15:55:13.789 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: C2LJ9A5T4 oldest: null latest: null
+info: Oct-21 15:55:13.791 [API-Q] (T2LHV2VSB) c0d58076-1540126513.790 conversations.history called with reason: message-pane/requestHistory
+info: Oct-21 15:55:13.791 [API-Q] (T2LHV2VSB) c0d58076-1540126513.790 conversations.history is ENQUEUED
+info: Oct-21 15:55:13.791 [API-Q] (T2LHV2VSB) c0d58076-1540126513.790 conversations.history is ACTIVE
+info: Oct-21 15:55:13.794 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 0 reachedStart: false reachedEnd: false
+info: Oct-21 15:55:13.794 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 0 reachedStart: false reachedEnd: false
+info: Oct-21 15:55:13.810 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 0 reachedStart: false reachedEnd: false
+info: Oct-21 15:55:13.813 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 0
+info: Oct-21 15:55:14.341 [API-Q] (T2LHV2VSB) c0d58076-1540126513.790 conversations.history is RESOLVED
+info: Oct-21 15:55:14.347 [UNREAD-COUNTS] (T2LHV2VSB) Counting unreads in C2LJ9A5T4 because (4) timestamps added
+info: Oct-21 15:55:14.357 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 3
+info: Oct-21 15:55:14.424 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-21 15:55:14.786 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-21 15:55:14.787 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 15:55:16.082 [FOCUS-EVENT] Window blurred
+info: Oct-21 15:55:16.094 [FOCUS-EVENT] Window focused
+info: Oct-21 15:55:16.098 [FOCUS-EVENT] Window blurred
+info: Oct-21 15:55:16.099 [FOCUS-EVENT] Window focused
+info: Oct-21 15:55:16.104 [FOCUS-EVENT] Window blurred
+info: Oct-21 15:55:26.042 [FOCUS-EVENT] Window focused
+info: Oct-21 15:55:26.057 [FOCUS-EVENT] Window blurred
+info: Oct-21 15:55:26.060 [FOCUS-EVENT] Window focused
+info: Oct-21 15:55:26.074 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 15:55:26.074 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 15:55:26.075 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 15:55:26.075 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 15:55:26.075 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 15:55:26.075 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 15:55:26.075 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 15:55:26.076 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 15:55:26.449 [FOCUS-EVENT] Window blurred
+info: Oct-21 15:55:26.451 [FOCUS-EVENT] Window focused
+info: Oct-21 15:55:26.455 [FOCUS-EVENT] Window blurred
+info: Oct-21 15:55:26.456 [FOCUS-EVENT] Window focused
+info: Oct-21 15:55:26.461 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:18:35.943 [FOCUS-EVENT] Window focused
+info: Oct-21 16:18:35.955 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:18:35.957 [FOCUS-EVENT] Window focused
+info: Oct-21 16:18:35.970 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:35.970 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:35.970 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:35.970 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:35.971 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:35.971 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:35.971 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:35.971 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:36.652 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:18:36.955 [FOCUS-EVENT] Window focused
+info: Oct-21 16:18:36.960 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:18:36.966 [FOCUS-EVENT] Window focused
+info: Oct-21 16:18:36.982 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:36.983 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:36.983 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:36.983 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:37.501 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:18:38.592 [FOCUS-EVENT] Window focused
+info: Oct-21 16:18:38.600 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:18:38.604 [FOCUS-EVENT] Window focused
+info: Oct-21 16:18:38.618 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:38.618 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:38.618 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:18:38.618 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:18:38.918 [FOCUS-EVENT] Window blurred
