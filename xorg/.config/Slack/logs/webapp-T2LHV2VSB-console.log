@@ -688,3 +688,271 @@ info: Oct-21 16:21:57.988 [API-Q] (T2LHV2VSB) c0d58076-1540128117.987 channels.s
 info: Oct-21 16:21:57.988 [API-Q] (T2LHV2VSB) c0d58076-1540128117.987 channels.suggestions is ENQUEUED
 info: Oct-21 16:21:57.989 [API-Q] (T2LHV2VSB) c0d58076-1540128117.987 channels.suggestions is ACTIVE
 info: Oct-21 16:21:58.600 [API-Q] (T2LHV2VSB) c0d58076-1540128117.987 channels.suggestions is RESOLVED
+error: Oct-21 16:31:51.568 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-21 16:31:51.570 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connected to error
+info: Oct-21 16:31:51.571 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/21 16:31:51.574  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.49a4ecae5050ceeb4a4d.min.js:1:111331)
+at https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:22716
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:852646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:855004)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:245102)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:855378)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:847431)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.87214bf096e0a41cdf60.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:3870985)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:3869491)
+info: Oct-21 16:31:51.577 [INFO] MSDisconnected: 
+info: Oct-21 16:31:51.580 [INFO] Hiding the reconnection banner because we are disconnected
+info: Oct-21 16:31:51.984 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-21 16:31:51.985 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-21 16:31:51.991 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 781 ms
+info: Oct-21 16:31:52.984 [SOCKET-MANAGER] (T2LHV2VSB) Changing from wait_for_rate_limit to connect
+info: Oct-21 16:31:52.985 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-21 16:31:52.986 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-21 16:31:52.986 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-21 16:31:52.987 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-21 16:31:52.988 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+info: Oct-21 16:31:53.616 [SOCKET-MANAGER] (T2LHV2VSB) received an error of type 401: invalid_auth
+error: Oct-21 16:31:53.616 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4106: received an "error" message from socket
+info: Oct-21 16:31:53.618 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-21 16:31:53.619 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/21 16:31:53.620  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.49a4ecae5050ceeb4a4d.min.js:1:111331)
+at https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:22716
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:852646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:855004)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:848416)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.87214bf096e0a41cdf60.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:3871789)
+at WebSocket._socket.onmessage (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:3869554)
+info: Oct-21 16:31:53.623 [RELOAD] "Reloading due to error invalid_auth"
+info: Oct-21 16:31:53.630 [INFO] client window unloaded!
+info: Oct-21 16:31:53.631 [WINDOW-UNLOADING] (T2LHV2VSB) workspace handling window unloading event
+info: Oct-21 16:31:53.984 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-21 16:31:53.985 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-21 16:31:53.986 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 2172 ms
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Oct-21 16:31:56.591 error getActiveModelOb found no ob
+warn: Oct-21 16:31:56.591 TS.boot_data.channel_id: undefined
+warn: Oct-21 16:31:56.591 TS.boot_data.im_id: undefined
+warn: Oct-21 16:31:56.591 TS.boot_data.group_id: undefined
+warn: Oct-21 16:31:56.592 error getActiveModelOb found no ob
+warn: Oct-21 16:31:56.592 TS.boot_data.channel_id: undefined
+warn: Oct-21 16:31:56.592 TS.boot_data.im_id: undefined
+warn: Oct-21 16:31:56.592 TS.boot_data.group_id: undefined
+info: Oct-21 16:31:56.652 [BOOT] booted! pri:0 version:1539999904 start_ms:1540128715234 (1418ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-21 16:31:56.990 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Oct-21 16:31:57.082 [INFO] running without a user
+error: Oct-21 16:32:56.001 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-21 16:33:55.996 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-21 16:34:55.986 TICKLE-MS (T00) Skipping tickle because no user exists
+info: Oct-21 16:35:23.233 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:23.240 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:23.241 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:32.542 [WINDOW-UNLOADING] (T00) workspace handling window unloading event
+info: Oct-21 16:35:33.792 [WINDOW-UNLOADING] (T00) workspace handling window unloading event
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-21 16:35:39.148 [BOOT] booted! pri:0 version:1539999904 start_ms:1540128937858 (1290ms ago)
+info: Oct-21 16:35:39.149 [BOOT] Starting incremental boot (early)
+warn: Oct-21 16:35:39.262 error getActiveModelOb found no ob
+warn: Oct-21 16:35:39.262 TS.boot_data.channel_id: undefined
+warn: Oct-21 16:35:39.262 TS.boot_data.im_id: undefined
+warn: Oct-21 16:35:39.262 TS.boot_data.group_id: undefined
+warn: Oct-21 16:35:39.263 error getActiveModelOb found no ob
+warn: Oct-21 16:35:39.263 TS.boot_data.channel_id: undefined
+warn: Oct-21 16:35:39.263 TS.boot_data.im_id: undefined
+warn: Oct-21 16:35:39.263 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-21 16:35:39.458 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-21 16:35:39.458 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-21 16:35:39.459 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-21 16:35:39.459 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-21 16:35:39.701 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-21 16:35:39.790 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:39.903 [API-Q] (T2LHV2VSB) c0d58076-1540128939.900 apps.actions.list called with reason: no_reason_provided
+info: Oct-21 16:35:39.903 [API-Q] (T2LHV2VSB) c0d58076-1540128939.900 apps.actions.list is ENQUEUED
+info: Oct-21 16:35:39.904 [API-Q] (T2LHV2VSB) c0d58076-1540128939.900 apps.actions.list is ACTIVE
+warn: Oct-21 16:35:40.033 updateTeamIcon was called, but missing an image to set
+info: Oct-21 16:35:40.128 [BOOT] Finalizing incremental boot
+info: Oct-21 16:35:40.129 [METRICS] Starting timers for metrics collection
+info: Oct-21 16:35:40.130 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-21 16:35:40.272 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to C2LJ9A5T4 at end
+info: Oct-21 16:35:40.282 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-21 16:35:40.282 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-21 16:35:40.283 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-21 16:35:40.285 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-21 16:35:40.301 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-21 16:35:40.303 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-21 16:35:40.321 [BOOT] Completed incremental boot
+info: Oct-21 16:35:40.325 [API-Q] (T2LHV2VSB) c0d58076-1540128940.324 i18n.translations.get called with reason: no_reason_provided
+info: Oct-21 16:35:40.325 [API-Q] (T2LHV2VSB) c0d58076-1540128940.324 i18n.translations.get is ENQUEUED
+info: Oct-21 16:35:40.325 [API-Q] (T2LHV2VSB) c0d58076-1540128940.324 i18n.translations.get is ACTIVE
+warn: Oct-21 16:35:40.326 updateTeamIcon was called, but missing an image to set
+info: Oct-21 16:35:40.401 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-21 16:35:40.402 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-21 16:35:40.402 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-21 16:35:40.402 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-21 16:35:40.402 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-21 16:35:40.402 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-21 16:35:40.402 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-21 16:35:40.403 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-21 16:35:40.405 [BOOT] Finished first boot 953 ms after DOM ready
+info: Oct-21 16:35:40.409 [API-Q] (T2LHV2VSB) c0d58076-1540128940.409 help.issues.list called with reason: no_reason_provided
+info: Oct-21 16:35:40.410 [API-Q] (T2LHV2VSB) c0d58076-1540128940.409 help.issues.list is ENQUEUED
+info: Oct-21 16:35:40.410 [API-Q] (T2LHV2VSB) c0d58076-1540128940.409 help.issues.list is ACTIVE
+info: Oct-21 16:35:40.412 [API-Q] (T2LHV2VSB) c0d58076-1540128940.412 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-21 16:35:40.412 [API-Q] (T2LHV2VSB) c0d58076-1540128940.412 dnd.teamInfo is ENQUEUED
+info: Oct-21 16:35:40.412 [API-Q] (T2LHV2VSB) c0d58076-1540128940.412 dnd.teamInfo is ACTIVE
+info: Oct-21 16:35:40.414 [INFO] MSConnected: 
+info: Oct-21 16:35:40.505 [API-Q] (T2LHV2VSB) c0d58076-1540128940.505 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-21 16:35:40.505 [API-Q] (T2LHV2VSB) c0d58076-1540128940.505 users.counts is ENQUEUED
+info: Oct-21 16:35:40.506 [API-Q] (T2LHV2VSB) c0d58076-1540128940.505 users.counts is ACTIVE
+info: Oct-21 16:35:40.523 [API-Q] (T2LHV2VSB) c0d58076-1540128939.900 apps.actions.list is RESOLVED
+info: Oct-21 16:35:40.525 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC,USLACKBOT,U2LHX8AAV (1)
+info: Oct-21 16:35:40.527 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting C2LJ9A5T4 (1)
+info: Oct-21 16:35:40.529 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received C2LJ9A5T4 (1)
+info: Oct-21 16:35:40.541 [API-Q] (T2LHV2VSB) c0d58076-1540128940.324 i18n.translations.get is RESOLVED
+info: Oct-21 16:35:40.625 [API-Q] (T2LHV2VSB) c0d58076-1540128940.412 dnd.teamInfo is RESOLVED
+info: Oct-21 16:35:40.698 [API-Q] (T2LHV2VSB) c0d58076-1540128940.505 users.counts is RESOLVED
+info: Oct-21 16:35:40.714 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-21 16:35:40.789 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-21 16:35:40.790 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because attention not on chat (window_not_focused)
+info: Oct-21 16:35:40.793 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC,USLACKBOT,U2LHX8AAV (1)
+info: Oct-21 16:35:40.820 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:40.827 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:40.828 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:40.840 [API-Q] (T2LHV2VSB) c0d58076-1540128940.840 promo.banner called with reason: no_reason_provided
+info: Oct-21 16:35:40.840 [API-Q] (T2LHV2VSB) c0d58076-1540128940.840 promo.banner is ENQUEUED
+info: Oct-21 16:35:40.840 [API-Q] (T2LHV2VSB) c0d58076-1540128940.840 promo.banner is ACTIVE
+info: Oct-21 16:35:40.848 [PERF] (T2LHV2VSB) First meaningful paint: 4714ms
+info: Oct-21 16:35:40.905 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 3 reachedStart: false reachedEnd: null
+info: Oct-21 16:35:40.906 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: C2LJ9A5T4 oldest: 1476546976.000002 latest: 1475829533.000002
+info: Oct-21 16:35:40.907 [API-Q] (T2LHV2VSB) c0d58076-1540128940.907 conversations.history called with reason: message-pane/requestHistory
+info: Oct-21 16:35:40.907 [API-Q] (T2LHV2VSB) c0d58076-1540128940.907 conversations.history is ENQUEUED
+info: Oct-21 16:35:40.908 [API-Q] (T2LHV2VSB) c0d58076-1540128940.907 conversations.history is ACTIVE
+info: Oct-21 16:35:40.909 [API-Q] (T2LHV2VSB) c0d58076-1540128940.908 conversations.history called with reason: message-pane/requestHistory
+info: Oct-21 16:35:40.909 [API-Q] (T2LHV2VSB) c0d58076-1540128940.908 conversations.history is ENQUEUED
+info: Oct-21 16:35:40.909 [API-Q] (T2LHV2VSB) c0d58076-1540128940.908 conversations.history is ACTIVE
+info: Oct-21 16:35:40.920 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 3
+info: Oct-21 16:35:40.920 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 3 reachedStart: false reachedEnd: null
+info: Oct-21 16:35:40.922 [MESSAGE-LIST] (T2LHV2VSB) requestAround channelId: C2LJ9A5T4 isLoading: false timestamps: 3 reachedStart: false reachedEnd: null
+info: Oct-21 16:35:40.970 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:35:40.971 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:40.971 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:35:40.971 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:40.977 [API-Q] (T2LHV2VSB) c0d58076-1540128940.409 help.issues.list is RESOLVED
+info: Oct-21 16:35:40.983 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: false timestamps: 3
+info: Oct-21 16:35:41.064 [API-Q] (T2LHV2VSB) c0d58076-1540128940.840 promo.banner is RESOLVED
+info: Oct-21 16:35:41.217 [API-Q] (T2LHV2VSB) c0d58076-1540128941.216 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-21 16:35:41.217 [API-Q] (T2LHV2VSB) c0d58076-1540128941.216 dnd.teamInfo is ENQUEUED
+info: Oct-21 16:35:41.217 [API-Q] (T2LHV2VSB) c0d58076-1540128941.216 dnd.teamInfo is ACTIVE
+info: Oct-21 16:35:41.411 [API-Q] (T2LHV2VSB) c0d58076-1540128940.907 conversations.history is RESOLVED
+info: Oct-21 16:35:41.413 [API-Q] (T2LHV2VSB) c0d58076-1540128940.908 conversations.history is RESOLVED
+info: Oct-21 16:35:41.416 [UNREAD-COUNTS] (T2LHV2VSB) Counting unreads in C2LJ9A5T4 because (2) timestamps added
+info: Oct-21 16:35:41.426 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 3
+info: Oct-21 16:35:41.473 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-21 16:35:41.488 [API-Q] (T2LHV2VSB) c0d58076-1540128941.216 dnd.teamInfo is RESOLVED
+info: Oct-21 16:35:41.830 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-21 16:35:41.831 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:41.965 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:41.967 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:41.970 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:41.971 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:41.973 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:42.316 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:42.323 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:42.326 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:42.335 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 16:35:42.336 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 16:35:42.709 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:42.711 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:42.714 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:35:42.715 [FOCUS-EVENT] Window focused
+info: Oct-21 16:35:42.716 [FOCUS-EVENT] Window blurred
+info: Oct-21 16:36:44.987 [API-Q] (T2LHV2VSB) c0d58076-1540129004.985 channels.suggestions called with reason: no_reason_provided
+info: Oct-21 16:36:44.987 [API-Q] (T2LHV2VSB) c0d58076-1540129004.985 channels.suggestions is ENQUEUED
+info: Oct-21 16:36:44.988 [API-Q] (T2LHV2VSB) c0d58076-1540129004.985 channels.suggestions is ACTIVE
+info: Oct-21 16:36:45.575 [API-Q] (T2LHV2VSB) c0d58076-1540129004.985 channels.suggestions is RESOLVED
+info: Oct-21 17:18:53.454 [FOCUS-EVENT] Window focused
+info: Oct-21 17:18:53.467 [FOCUS-EVENT] Window blurred
+info: Oct-21 17:18:53.469 [FOCUS-EVENT] Window focused
+info: Oct-21 17:18:53.483 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 17:18:53.483 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 17:18:53.483 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 17:18:53.483 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 17:18:53.483 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 17:18:53.484 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 17:18:53.484 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-21 17:18:53.484 [CHECK-UNREADS] (T2LHV2VSB) Not marking C2LJ9A5T4 because last_read >= latest && channel is read
+info: Oct-21 17:18:55.256 [FOCUS-EVENT] Window blurred
+info: Oct-21 17:18:55.257 [FOCUS-EVENT] Window focused
+info: Oct-21 17:18:55.260 [FOCUS-EVENT] Window blurred
+info: Oct-21 17:18:55.261 [FOCUS-EVENT] Window focused
+info: Oct-21 17:18:55.262 [FOCUS-EVENT] Window blurred
+info: Oct-21 17:56:49.987 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-21 17:56:49.994 [API-Q] (T2LHV2VSB) c0d58076-1540133809.994 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-21 17:56:49.994 [API-Q] (T2LHV2VSB) c0d58076-1540133809.994 rtm.shouldReload is ENQUEUED
+info: Oct-21 17:56:49.995 [API-Q] (T2LHV2VSB) c0d58076-1540133809.994 rtm.shouldReload is ACTIVE
+info: Oct-21 17:56:50.742 [API-Q] (T2LHV2VSB) c0d58076-1540133809.994 rtm.shouldReload is RESOLVED
+info: Oct-21 17:56:50.743 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: Oct-21 18:14:07.245 [SOCKET-MANAGER] (T2LHV2VSB) Sleeping
+info: Oct-21 18:14:07.246 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connected to sleep
+info: Oct-21 18:14:07.339 [SOCKET-MANAGER] (T2LHV2VSB) will stay in sleep state for up to 10000 ms
+info: Oct-21 18:14:07.339 [SOCKET-MANAGER] (T2LHV2VSB) Changing from sleep to sleeping
+info: Oct-21 18:14:07.340 [SOCKET-MANAGER] (T2LHV2VSB) will stay in sleeping state for up to 10000 ms
+error: Oct-21 18:14:07.346 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4102: client is going to sleep
+info: Oct-21 18:14:07.347 [SOCKET-MANAGER] (T2LHV2VSB) Changing from sleeping to asleep
+info: Oct-21 18:14:07.347 [SOCKET-MANAGER] (T2LHV2VSB) will stay in asleep state for up to Infinity ms
+info: Oct-21 18:14:07.348 [INFO] sleep event!
+info: Oct-21 18:14:07.350 [INFO] MSDisconnected: 
+info: Oct-21 18:14:07.472 [INFO] Hiding the reconnection banner because we are disconnected
+info: Oct-21 18:14:17.151 [SOCKET-MANAGER] (T2LHV2VSB) Waking
+info: Oct-21 18:14:17.152 [SOCKET-MANAGER] (T2LHV2VSB) Changing from asleep to connect
+info: 2018/10/21 18:14:17.153  Wake was triggered by:
+Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.49a4ecae5050ceeb4a4d.min.js:1:111331)
+at https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:22716
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:854790)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:245102)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:855378)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:843639)
+at https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:842026
+at <anonymous>:1:8
+at EventEmitter.electron.ipcRenderer.on (/usr/lib/slack/resources/electron.asar/renderer/web-frame-init.js:36:30)
+at emitMany (events.js:147:13)
+at EventEmitter.emit (events.js:224:7)
+info: Oct-21 18:14:17.153 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-21 18:14:17.154 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-21 18:14:17.154 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-21 18:14:17.154 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-21 18:14:17.154 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+info: Oct-21 18:14:17.238 [INFO] wake event! version:1539999904 start_ms:1540128937858
+error: WebSocket connection to 'wss://mpmulti-hvp7.lb.slack-msgs.com/?flannel=3&token=xoxs-⋯&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1sZndiLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC8xUzVkTGNqdDNUMDRSNWV5ckxTOERpV0RxMnhVTVY0M3FpNjhZQVg5aEVVbTFtTXM0U1lEYXF6QTlHV2xGV1c1RzVoaU1hYUpFR2pWOXoxZklaUWRwT0pGZzNVellzN0Q4Q3plQjZsZzFyb1lVbmJob3llQVFCeEYxdnBKQWVSM3c2TFFJUlBWdUo4TkF4SEFUNzJzb2VKSGhfcFc2bFVHWlZncjJZMVgxTkpTTXd0RGRLSm9OZk9hZ0FUWTBPblNuQ3hKQmhHZlFUdHBOdlV3QXNXRDZqX1BibGplOG1TamcxUmZvRU1LXzNkQ1p4cDYzdTdGZndONjZ2LWNCVEZ4UXB3YVctaTZBWTRLdjlnb0NtbmFXMVVOZmpPdjhtQ3Z2VE9lMGNHYnl4az0BCVQyTEhWMlZTQgIJVTJMSEpCQVNDAQ8BAAAADtNejrgTUzie_lwAASCzlLydbfqhOyD8YvgzvfoTKBXg8_OjqoU_pd-4pueN2wA&encoding=&dp=1&lazy_channels=1' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED
+error: Oct-21 18:14:17.545 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-21 18:14:17.546 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-21 18:14:17.546 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/21 18:14:17.547  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.49a4ecae5050ceeb4a4d.min.js:1:111331)
+at https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:22716
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:852646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:855004)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:245102)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:855378)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:847431)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.87214bf096e0a41cdf60.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:3870985)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.64767903fea8d28a3c59.min.js:1:3869491)
