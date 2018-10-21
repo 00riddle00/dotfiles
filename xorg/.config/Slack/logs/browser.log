@@ -873,3 +873,179 @@
   ],
   "isMaximized": false
 }
+[10/21/18, 16:19:42:531] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/21/18, 16:19:42:533] info: EpicHelpers: Flushing cookie store
+[10/21/18, 16:19:42:534] info: WebContents LifeCycle: webContents:3 from 'webapp-loaded' to 'page-will-navigate' took 1574981 ms
+[10/21/18, 16:19:42:535] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:19:42:536] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T2LHV2VSB | navigate |            |
++-----------+----------+------------+
+[10/21/18, 16:19:43:205] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:19:43:583] info: Team boot count
+{
+  "count": 4
+}
+[10/21/18, 16:19:46:115] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'loaded' took 3581 ms
+[10/21/18, 16:19:46:116] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:19:46:117] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/21/18, 16:19:47:217] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:32:608] info: Store: FOREGROUND_APP
+[10/21/18, 16:20:32:622] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:32:630] info: Store: SET_FULL_SCREEN
+[10/21/18, 16:20:33:624] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    1152,
+    864
+  ],
+  "position": [
+    41,
+    69
+  ],
+  "isMaximized": false
+}
+[10/21/18, 16:20:41:368] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'page-will-navigate' took 55252 ms
+[10/21/18, 16:20:41:368] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:41:372] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T2LHV2VSB | navigate |            |
++-----------+----------+------------+
+[10/21/18, 16:20:41:703] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:42:246] info: Team boot count
+{
+  "count": 5
+}
+[10/21/18, 16:20:42:906] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/21/18, 16:20:42:906] info: EpicHelpers: Flushing cookie store
+[10/21/18, 16:20:42:907] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'loaded' took 1540 ms
+[10/21/18, 16:20:42:908] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:42:909] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/21/18, 16:20:43:225] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:44:715] info: Team boot count
+{
+  "count": 6
+}
+[10/21/18, 16:20:47:194] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'loaded' took 4287 ms
+[10/21/18, 16:20:47:195] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:47:865] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/21/18, 16:20:47:867] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:47:942] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/21/18, 16:20:48:182] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:48:217] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:48:219] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 1025 ms
+[10/21/18, 16:20:48:219] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 16:20:48:220] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[10/21/18, 16:20:48:221] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/21/18, 16:20:48:352] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[10/21/18, 16:20:49:004] info: WebContentsMediator: Attaching to new webContents
