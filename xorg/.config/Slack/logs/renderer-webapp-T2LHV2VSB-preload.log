@@ -1141,3 +1141,891 @@
 [10/21/18, 18:14:07:347] error: Oct-21 18:14:07.346 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4102: client is going to sleep
 [10/21/18, 18:14:17:150] info: Store: SET_SUSPEND_STATUS true
 [10/21/18, 18:14:17:545] error: Oct-21 18:14:17.545 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/21/18, 19:29:41:718] info: Store: SET_SUSPEND_STATUS
+[10/21/18, 19:29:42:009] error: Oct-21 19:29:42.009 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4102: client is going to sleep
+[10/21/18, 19:33:29:663] info: Store: SET_SUSPEND_STATUS true
+[10/21/18, 19:33:29:739] error: Oct-21 19:33:29.739 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4105: client went offline
+[10/21/18, 19:33:30:033] info: Store: SET_NETWORK_STATUS offline
+[10/21/18, 19:33:43:026] info: Store: SET_NETWORK_STATUS online
+[10/21/18, 19:33:59:606] info: Store: SET_SUSPEND_STATUS
+[10/21/18, 19:34:32:505] info: Store: SET_SUSPEND_STATUS true
+[10/21/18, 19:34:32:512] error: Oct-21 19:34:32.511 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/21/18, 19:34:33:641] info: Store: SET_NETWORK_STATUS offline
+[10/21/18, 19:34:49:645] info: Store: SET_NETWORK_STATUS online
+[10/21/18, 19:35:02:713] info: Store: SET_FULL_SCREEN
+[10/21/18, 19:35:02:714] info: Restoring spellchecker
+[10/21/18, 19:35:02:714] info: Loading dictionary for language lt-LT
+[10/21/18, 19:35:02:737] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:35:02:786] info: Unloading spellchecker
+[10/21/18, 19:35:02:833] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:35:02:833] info: Creating node-spellchecker instance
+[10/21/18, 19:35:03:380] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    41,
+    69
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 19:39:22:108] error: Oct-21 19:39:22.108 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4106: received an "error" message from socket
+[10/21/18, 19:39:22:115] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/21/18, 19:39:22:118] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:39:22:390] info: Window is unloading, window.desktop is no longer accessible
+[10/21/18, 19:39:22:964] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:39:24:823] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 19:39:24:824] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 19:39:24:819      ║
+[10/21/18, 19:39:24:824] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 19:39:24:925] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 19:39:25:876] info: cld3::loadModule: loading cld3 module
+[10/21/18, 19:39:25:912] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 19:39:25:912] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 19:39:26:070] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 19:39:26:070] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 19:39:26:076] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/21/18, 19:39:26:086] info: Main window preload script finished
+{
+  "readyTime": 1931.950658
+}
+[10/21/18, 19:39:28:226] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:39:29:034] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:40:26:695] error: Oct-21 19:40:26.694 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/21/18, 19:41:26:638] error: Oct-21 19:41:26.638 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/21/18, 19:42:26:639] error: Oct-21 19:42:26.639 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/21/18, 19:43:26:638] error: Oct-21 19:43:26.638 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/21/18, 19:44:26:640] error: Oct-21 19:44:26.639 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/21/18, 19:45:26:637] error: Oct-21 19:45:26.637 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/21/18, 19:48:51:613] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 19:48:51:613] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 19:48:51:610      ║
+[10/21/18, 19:48:51:613] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 19:48:51:702] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 19:48:52:004] info: cld3::loadModule: loading cld3 module
+[10/21/18, 19:48:52:021] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 19:48:52:022] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 19:48:52:163] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 19:48:52:163] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 19:48:52:172] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/21/18, 19:48:52:185] info: Main window preload script finished
+{
+  "readyTime": 805.354111
+}
+[10/21/18, 19:48:53:817] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:48:53:832] info: Store: MAIN_WINDOW_SHOWN
+[10/21/18, 19:48:53:837] info: Store: SET_FULL_SCREEN
+[10/21/18, 19:48:53:837] info: Store: SET_FULL_SCREEN
+[10/21/18, 19:48:54:195] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:04:844] info: Window is unloading, window.desktop is no longer accessible
+[10/21/18, 19:49:05:941] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:05:947] info: Window is unloading, window.desktop is no longer accessible
+[10/21/18, 19:49:06:299] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:06:880] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 19:49:06:880] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 19:49:06:878      ║
+[10/21/18, 19:49:06:881] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 19:49:06:964] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 19:49:07:242] info: cld3::loadModule: loading cld3 module
+[10/21/18, 19:49:07:259] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 19:49:07:260] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 19:49:07:402] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 19:49:07:402] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 19:49:07:408] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/21/18, 19:49:07:418] info: Main window preload script finished
+{
+  "readyTime": 722.207104
+}
+[10/21/18, 19:49:07:431] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/21/18, 19:49:07:432] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:07:725] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:08:822] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 19:49:08:822] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 19:49:08:819      ║
+[10/21/18, 19:49:08:822] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 19:49:08:906] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 19:49:09:192] info: cld3::loadModule: loading cld3 module
+[10/21/18, 19:49:09:209] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 19:49:09:209] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 19:49:09:352] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 19:49:09:352] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 19:49:09:358] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/21/18, 19:49:09:368] info: Main window preload script finished
+{
+  "readyTime": 733.54964
+}
+[10/21/18, 19:49:10:943] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 19:49:11:279] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:12:397] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:12:523] info: postLoadTaskSetup: Desktop client fully loaded
+{
+  "loadedTime": 24421.78447
+}
+[10/21/18, 19:49:12:665] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/21/18, 19:49:12:666] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:12:667] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/21/18, 19:49:12:668] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/21/18, 19:49:12:699] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:12:706] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:12:709] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/21/18, 19:49:12:718] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 19:49:12:719] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/21/18, 19:49:12:723] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V1"
+}
+[10/21/18, 19:49:13:363] info: Raw Locale list: ["C","en_US.utf8","he_IL.utf8","lt_LT.utf8","POSIX",""]
+[10/21/18, 19:49:13:363] info: Filtered Locale list: ["en_US","he_IL","lt_LT"]
+[10/21/18, 19:49:13:363] info: Counts: {"en":["en_US"],"he":["he_IL"],"lt":["lt_LT"]}
+[10/21/18, 19:49:13:363] info: Setting en
+[10/21/18, 19:49:13:364] info: Setting he
+[10/21/18, 19:49:13:364] info: Setting lt
+[10/21/18, 19:49:13:365] info: Requesting to load lt-LT, alternatives are ["lt-LT","lt-LT","lt-LT"]
+[10/21/18, 19:49:13:366] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:13:366] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:13:368] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:13:368] info: Creating node-spellchecker instance
+[10/21/18, 19:49:13:392] info: Actually installing spell check provider to Electron
+[10/21/18, 19:49:13:651] info: Unloading spellchecker
+[10/21/18, 19:49:13:654] info: Restoring spellchecker
+[10/21/18, 19:49:13:654] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:13:654] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:13:657] info: Unloading spellchecker
+[10/21/18, 19:49:13:659] info: Restoring spellchecker
+[10/21/18, 19:49:13:659] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:13:659] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:13:662] info: Unloading spellchecker
+[10/21/18, 19:49:13:677] info: Unloading spellchecker
+[10/21/18, 19:49:13:678] info: Unloading spellchecker
+[10/21/18, 19:49:13:678] info: Unloading spellchecker
+[10/21/18, 19:49:13:680] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:13:680] info: Creating node-spellchecker instance
+[10/21/18, 19:49:13:685] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:15:649] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:15:649] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:15:650] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:19:156] info: Restoring spellchecker
+[10/21/18, 19:49:19:157] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:19:157] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:19:160] info: Unloading spellchecker
+[10/21/18, 19:49:19:165] info: Restoring spellchecker
+[10/21/18, 19:49:19:165] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:19:166] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:19:190] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:19:190] info: Creating node-spellchecker instance
+[10/21/18, 19:49:19:195] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:20:090] info: Unloading spellchecker
+[10/21/18, 19:49:20:092] info: Restoring spellchecker
+[10/21/18, 19:49:20:093] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:20:093] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:20:095] info: Unloading spellchecker
+[10/21/18, 19:49:20:097] info: Restoring spellchecker
+[10/21/18, 19:49:20:097] info: Loading dictionary for language lt-LT
+[10/21/18, 19:49:20:098] info: Returning local copy: /home/riddle/.dotfiles/xorg/.config/Slack/dictionaries/lt-LT.bdic
+[10/21/18, 19:49:20:100] info: Unloading spellchecker
+[10/21/18, 19:49:20:108] info: Unloading spellchecker
+[10/21/18, 19:49:20:109] info: Unloading spellchecker
+[10/21/18, 19:49:20:110] info: Unloading spellchecker
+[10/21/18, 19:49:20:110] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:20:110] info: Creating node-spellchecker instance
+[10/21/18, 19:49:20:116] info: Setting current spellchecker to lt-LT, requested language was lt-LT
+[10/21/18, 19:49:20:153] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 20:01:24:665] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 20:01:24:666] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 20:01:24:663      ║
+[10/21/18, 20:01:24:666] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 20:01:24:748] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 20:01:25:193] info: cld3::loadModule: loading cld3 module
+[10/21/18, 20:01:25:222] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 20:01:25:222] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 20:01:25:380] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 20:01:25:380] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 20:01:25:386] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, spellchecker is not available
+[10/21/18, 20:01:25:396] info: Main window preload script finished
+{
+  "readyTime": 929.510871
+}
+[10/21/18, 20:01:26:397] info: Store: QUIT_APP
+[10/21/18, 20:01:31:778] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 20:01:31:778] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 20:01:31:775      ║
+[10/21/18, 20:01:31:778] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 20:01:31:872] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 20:01:32:180] info: cld3::loadModule: loading cld3 module
+[10/21/18, 20:01:32:198] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 20:01:32:198] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 20:01:32:349] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 20:01:32:349] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 20:01:32:354] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/21/18, 20:01:32:363] info: Main window preload script finished
+{
+  "readyTime": 816.539233
+}
+[10/21/18, 20:01:34:808] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/21/18, 20:01:35:118] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 20:01:35:119] info: Store: MAIN_WINDOW_SHOWN
+[10/21/18, 20:01:35:129] info: Store: SET_FULL_SCREEN
+[10/21/18, 20:01:35:130] info: Store: SET_FULL_SCREEN
+[10/21/18, 20:01:35:493] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 20:01:35:494] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/21/18, 20:01:35:494] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 20:01:35:495] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/21/18, 20:01:35:495] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/21/18, 20:01:35:608] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 20:01:35:612] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 20:01:35:613] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/21/18, 20:01:35:635] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 20:01:35:636] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/21/18, 20:01:35:691] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/21/18, 20:01:35:715] info: loadAsmModule: loading hunspell-asm module
+[10/21/18, 20:01:35:973] info: loadAsmModule: asm module loaded successfully
+[10/21/18, 20:01:35:973] info: SpellChecker: Starting spellchecker with language detector
+[10/21/18, 20:01:35:973] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/21/18, 20:01:35:973] info: SpellChecker::startWithDictionary: Starting language detector with English by default
+[10/21/18, 20:01:36:173] info: SpellChecker::spellgetLanguageRegionCode: found region supported language
+{
+  "code": "en"
+}
+[10/21/18, 20:01:36:173] warn: SpellChecker::getLanguageRegionCode: navigator does not contain available region, return default value
+{
+  "code": "en-us"
+}
+[10/21/18, 20:01:36:174] info: download: downloading dictionary for 'en-us'
+[10/21/18, 20:01:36:174] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.aff",
+  "cachePolicy": "default"
+}
+[10/21/18, 20:01:36:837] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.dic",
+  "cachePolicy": "default"
+}
+[10/21/18, 20:01:37:924] info: dictionaryDownloader: verifying hash
+[10/21/18, 20:01:37:955] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "en"
+}
+[10/21/18, 20:01:37:989] info: assignSpellchecker: spellCheckerTable added new checker for 'en'
+[10/21/18, 20:01:38:005] info: SpellChecker::prepareDictionary: Dictionary buffer for 'en' is loaded into spellchecker
+[10/21/18, 20:01:38:005] info: switchDictionary: switching dictionary to check spell from 'null' to 'en'
+[10/21/18, 20:01:38:019] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "en"
+}
+[10/21/18, 20:22:21:558] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 20:22:57:690] info: Store: SET_SUSPEND_STATUS
+[10/21/18, 20:22:57:696] error: Oct-21 20:22:57.695 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4102: client is going to sleep
+[10/21/18, 21:13:47:551] info: Store: SET_SUSPEND_STATUS true
+[10/21/18, 21:13:47:558] error: Oct-21 21:13:47.558 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/21/18, 21:13:48:842] error: Oct-21 21:13:48.842 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/21/18, 21:13:51:869] error: Oct-21 21:13:51.869 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/21/18, 21:13:54:838] error: Oct-21 21:13:54.838 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/21/18, 21:13:59:779] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 21:55:07:930] info: Store: SET_FULL_SCREEN
+[10/21/18, 21:55:08:148] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/21/18, 23:30:41:425] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/21/18, 23:30:41:426] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/21/18, 23:30:41:422      ║
+[10/21/18, 23:30:41:426] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/21/18, 23:30:41:529] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/21/18, 23:30:42:245] info: cld3::loadModule: loading cld3 module
+[10/21/18, 23:30:42:300] info: cld3Loader::loadModule: running environment is NODE
+[10/21/18, 23:30:42:300] info: cld3Loader::loadModule: constructed module object for runtime
+[10/21/18, 23:30:42:470] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/21/18, 23:30:42:471] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/21/18, 23:30:42:476] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/21/18, 23:30:42:486] info: Main window preload script finished
+{
+  "readyTime": 1269.741034
+}
+[10/21/18, 23:30:44:909] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 23:30:45:645] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/21/18, 23:30:45:929] info: Store: MAIN_WINDOW_SHOWN
+[10/21/18, 23:30:45:940] info: Store: SET_FULL_SCREEN
+[10/21/18, 23:30:45:940] info: Store: SET_FULL_SCREEN
+[10/21/18, 23:30:46:081] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 23:30:46:097] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/21/18, 23:30:46:097] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 23:30:46:097] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/21/18, 23:30:46:098] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/21/18, 23:30:46:996] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 23:30:46:999] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 23:30:47:001] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/21/18, 23:30:47:081] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/21/18, 23:30:47:082] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/21/18, 23:30:47:089] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/21/18, 23:30:47:123] info: loadAsmModule: loading hunspell-asm module
+[10/21/18, 23:30:47:406] info: loadAsmModule: asm module loaded successfully
+[10/21/18, 23:30:47:406] info: SpellChecker: Starting spellchecker with language detector
+[10/21/18, 23:30:47:406] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/21/18, 23:30:47:406] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language en
+[10/21/18, 23:30:47:500] info: SpellChecker::spellgetLanguageRegionCode: found region supported language
+{
+  "code": "en"
+}
+[10/21/18, 23:30:47:500] warn: SpellChecker::getLanguageRegionCode: navigator does not contain available region, return default value
+{
+  "code": "en-us"
+}
+[10/21/18, 23:30:47:501] info: download: downloading dictionary for 'en-us'
+[10/21/18, 23:30:47:501] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.aff",
+  "cachePolicy": "default"
+}
+[10/21/18, 23:30:47:598] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.dic",
+  "cachePolicy": "default"
+}
+[10/21/18, 23:30:47:651] info: dictionaryDownloader: verifying hash
+[10/21/18, 23:30:47:803] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "en"
+}
+[10/21/18, 23:30:47:843] info: assignSpellchecker: spellCheckerTable added new checker for 'en'
+[10/21/18, 23:30:47:845] info: SpellChecker::prepareDictionary: Dictionary buffer for 'en' is loaded into spellchecker
+[10/21/18, 23:30:47:845] info: switchDictionary: switching dictionary to check spell from 'null' to 'en'
+[10/21/18, 23:30:47:851] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "en"
+}
+[10/22/18, 00:13:52:827] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/22/18, 00:13:52:828] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/22/18, 00:13:52:823      ║
+[10/22/18, 00:13:52:828] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/22/18, 00:13:52:945] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/22/18, 00:13:53:789] info: cld3::loadModule: loading cld3 module
+[10/22/18, 00:13:53:828] info: cld3Loader::loadModule: running environment is NODE
+[10/22/18, 00:13:53:829] info: cld3Loader::loadModule: constructed module object for runtime
+[10/22/18, 00:13:53:997] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/22/18, 00:13:53:997] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/22/18, 00:13:54:003] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/22/18, 00:13:54:018] info: Main window preload script finished
+{
+  "readyTime": 1516.197756
+}
+[10/22/18, 00:13:54:553] info: Store: SET_NETWORK_STATUS online
+[10/22/18, 00:13:56:284] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 00:13:56:314] info: Store: MAIN_WINDOW_SHOWN
+[10/22/18, 00:13:56:316] info: Store: SET_FULL_SCREEN
+[10/22/18, 00:13:56:317] info: Store: SET_FULL_SCREEN
+[10/22/18, 00:13:57:074] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/22/18, 00:13:57:493] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 00:13:57:688] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/22/18, 00:13:57:689] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 00:13:57:689] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/22/18, 00:13:57:690] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/22/18, 00:13:57:832] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 00:13:57:856] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 00:13:57:858] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/22/18, 00:13:57:874] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 00:13:57:875] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/22/18, 00:13:57:908] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/22/18, 00:13:57:966] info: loadAsmModule: loading hunspell-asm module
+[10/22/18, 00:13:58:243] info: loadAsmModule: asm module loaded successfully
+[10/22/18, 00:13:58:243] info: SpellChecker: Starting spellchecker with language detector
+[10/22/18, 00:13:58:243] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/22/18, 00:13:58:243] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language en
+[10/22/18, 00:13:58:313] info: SpellChecker::spellgetLanguageRegionCode: found region supported language
+{
+  "code": "en"
+}
+[10/22/18, 00:13:58:313] warn: SpellChecker::getLanguageRegionCode: navigator does not contain available region, return default value
+{
+  "code": "en-us"
+}
+[10/22/18, 00:13:58:314] info: download: downloading dictionary for 'en-us'
+[10/22/18, 00:13:58:314] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.aff",
+  "cachePolicy": "default"
+}
+[10/22/18, 00:13:58:419] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.dic",
+  "cachePolicy": "default"
+}
+[10/22/18, 00:13:58:433] info: dictionaryDownloader: verifying hash
+[10/22/18, 00:13:58:463] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "en"
+}
+[10/22/18, 00:13:58:498] info: assignSpellchecker: spellCheckerTable added new checker for 'en'
+[10/22/18, 00:13:58:504] info: SpellChecker::prepareDictionary: Dictionary buffer for 'en' is loaded into spellchecker
+[10/22/18, 00:13:58:505] info: switchDictionary: switching dictionary to check spell from 'null' to 'en'
+[10/22/18, 00:13:58:516] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "en"
+}
+[10/22/18, 00:26:13:064] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 01:09:19:171] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 06:59:17:336] info: Store: SET_FULL_SCREEN
+[10/22/18, 06:59:17:850] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 13:37:23:736] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/22/18, 13:37:23:737] info: ║      Slack 3.3.3, linux 4.18.14-arch1-1-ARCH on x64 at 10/22/18, 13:37:23:732      ║
+[10/22/18, 13:37:23:737] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/22/18, 13:37:23:863] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/22/18, 13:37:25:082] info: cld3::loadModule: loading cld3 module
+[10/22/18, 13:37:25:132] info: cld3Loader::loadModule: running environment is NODE
+[10/22/18, 13:37:25:132] info: cld3Loader::loadModule: constructed module object for runtime
+[10/22/18, 13:37:25:334] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/22/18, 13:37:25:334] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/22/18, 13:37:25:343] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/22/18, 13:37:25:355] info: Main window preload script finished
+{
+  "readyTime": 1922.101187
+}
+[10/22/18, 13:37:25:857] info: Store: SET_NETWORK_STATUS online
+[10/22/18, 13:37:31:286] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/22/18, 13:37:31:739] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 13:37:31:740] info: Store: MAIN_WINDOW_SHOWN
+[10/22/18, 13:37:31:749] info: Store: SET_FULL_SCREEN
+[10/22/18, 13:37:31:750] info: Store: SET_FULL_SCREEN
+[10/22/18, 13:37:32:075] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 13:37:32:089] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/22/18, 13:37:32:089] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 13:37:32:089] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/22/18, 13:37:32:090] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/22/18, 13:37:32:393] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 13:37:32:401] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 13:37:32:404] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/22/18, 13:37:32:441] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 13:37:32:442] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/22/18, 13:37:32:456] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/22/18, 13:37:32:571] info: loadAsmModule: loading hunspell-asm module
+[10/22/18, 13:37:32:868] info: loadAsmModule: asm module loaded successfully
+[10/22/18, 13:37:32:868] info: SpellChecker: Starting spellchecker with language detector
+[10/22/18, 13:37:32:868] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/22/18, 13:37:32:868] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language en
+[10/22/18, 13:37:33:135] info: SpellChecker::spellgetLanguageRegionCode: found region supported language
+{
+  "code": "en"
+}
+[10/22/18, 13:37:33:135] warn: SpellChecker::getLanguageRegionCode: navigator does not contain available region, return default value
+{
+  "code": "en-us"
+}
+[10/22/18, 13:37:33:136] info: download: downloading dictionary for 'en-us'
+[10/22/18, 13:37:33:136] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.aff",
+  "cachePolicy": "default"
+}
+[10/22/18, 13:37:33:202] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/en-us/1/en-us.dic",
+  "cachePolicy": "default"
+}
+[10/22/18, 13:37:33:247] info: dictionaryDownloader: verifying hash
+[10/22/18, 13:37:33:273] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "en"
+}
+[10/22/18, 13:37:33:308] info: assignSpellchecker: spellCheckerTable added new checker for 'en'
+[10/22/18, 13:37:33:323] info: SpellChecker::prepareDictionary: Dictionary buffer for 'en' is loaded into spellchecker
+[10/22/18, 13:37:33:323] info: switchDictionary: switching dictionary to check spell from 'null' to 'en'
+[10/22/18, 13:37:33:377] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "en"
+}

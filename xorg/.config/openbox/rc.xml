@@ -485,13 +485,13 @@
 
     <keybind key="W-w">
       <action name="Execute">
-        <command>sh -c "$FOCUS spotify"</command>
+        <command>sh -c "$ACTIVATE spotify"</command>
       </action>
     </keybind>
 
     <keybind key="W-p">
       <action name="Execute">
-        <command>sh -c "$FOCUS slack"</command>
+        <command>sh -c "$ACTIVATE slack"</command>
       </action>
     </keybind>
 
