@@ -500,11 +500,12 @@
         <command>sh -c "$FOCUS postman"</command>
       </action>
     </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        <command>sh -c "$ACTIVATE clion"</command>
-      </action>
-    </keybind>
+
+    <!--<keybind key="W-c">-->
+      <!--<action name="Execute">-->
+        <!--<command>sh -c "$ACTIVATE clion"</command>-->
+      <!--</action>-->
+    <!--<-->/keybind>
 
 <!--    <keybind key="W-p">-->
       <!--<action name="Execute">-->

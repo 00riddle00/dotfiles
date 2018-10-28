@@ -1261,3 +1261,3017 @@
   "teamId": "T2LHV2VSB",
   "token": "xoxs-⋯"
 }
+[10/22/18, 19:14:05:677] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/22/18, 19:14:05:680] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:14:06:527] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:14:09:430] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:14:10:522] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:33:559] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 19:38:40:009] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:45:599] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:46:636] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/22/18, 19:38:46:637] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:46:883] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:50:541] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:50:782] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:50:967] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/22/18, 19:38:50:970] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:51:051] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/22/18, 19:38:51:438] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:51:506] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 19:38:51:508] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/22/18, 19:38:51:594] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/22/18, 20:58:33:450] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 20:58:55:273] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/22/18, 21:11:27:247] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    54,
+    105
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 21:11:28:602] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 21:11:29:190] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:11:41:615] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:11:48:258] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:11:55:054] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:12:15:382] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:12:42:569] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:12:58:162] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:13:23:456] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:13:27:458] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:13:35:777] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:13:38:839] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:13:48:764] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:13:56:694] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:14:04:137] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:14:12:435] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:14:36:660] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:14:38:408] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:14:49:750] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/22/18, 21:14:50:231] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:15:25:667] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:15:28:252] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:15:36:212] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/22/18, 21:15:36:628] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/22/18, 21:16:01:340] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:16:06:278] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/22/18, 21:16:25:639] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/22/18, 21:16:54:698] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/22/18, 21:17:11:264] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/22/18, 21:17:12:816] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/22/18, 21:17:39:763] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/22/18, 21:17:55:957] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/22/18, 21:20:23:249] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/22/18, 21:20:31:365] info: Store: SELECT_CHANNEL C2PS902ET
+[10/22/18, 21:20:41:598] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:20:43:689] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:20:44:701] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/22/18, 21:20:47:087] info: Store: SELECT_CHANNEL C2PS902ET
+[10/22/18, 21:20:50:196] info: Store: SELECT_CHANNEL C2LJ9BDFC
+[10/22/18, 21:21:02:795] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:22:13:507] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/22/18, 21:22:14:503] info: Store: SELECT_CHANNEL C2PS902ET
+[10/22/18, 21:22:15:554] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/22/18, 21:22:16:123] info: Store: SELECT_CHANNEL C2PS902ET
+[10/22/18, 21:22:16:991] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/22/18, 21:22:17:651] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/22/18, 21:22:18:419] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/22/18, 21:22:19:197] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/22/18, 21:22:20:278] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/22/18, 21:22:24:009] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/22/18, 21:22:25:863] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/22/18, 21:22:27:015] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:22:28:680] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:22:31:957] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:26:03:117] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:03:222] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:03:222] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:04:225] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/22/18, 21:26:05:502] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:05:503] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:05:663] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:05:663] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:06:665] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    960,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/22/18, 21:26:06:716] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:06:716] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:06:842] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:06:842] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:07:036] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:07:037] info: Store: SET_FULL_SCREEN
+[10/22/18, 21:26:08:041] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/22/18, 21:27:06:195] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/22/18, 21:27:15:502] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:29:47:851] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:30:55:686] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:33:32:164] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/22/18, 21:33:34:582] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/22/18, 21:33:35:625] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:33:36:415] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/22/18, 21:33:38:154] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/22/18, 21:33:40:744] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    105
+  ],
+  "size": [
+    960,
+    864
+  ]
+}
+[10/22/18, 21:33:43:726] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    43,
+    98
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/22/18, 21:36:08:801] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    43,
+    98
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/22/18, 21:37:19:130] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    43,
+    98
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/22/18, 21:38:17:085] info: Store: SELECT_CHANNEL DDK41MM4Z
+[10/22/18, 21:39:33:848] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/22/18, 21:40:03:048] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/22/18, 21:49:35:403] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    -118,
+    -81
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/22/18, 21:50:06:484] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    -118,
+    -81
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/22/18, 21:50:08:133] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/22/18, 22:38:43:875] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/23/18, 12:25:24:167] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/23/18, 12:25:24:168] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/23/18, 12:25:24:165      ║
+[10/23/18, 12:25:24:168] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/23/18, 12:25:24:460] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/23/18, 12:25:24:845] info: NetworkStatus: Waiting for network online…
+[10/23/18, 12:25:25:648] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/23/18, 12:25:25:651] info: Don't start background client because T2LHV2VSB is selected team
+[10/23/18, 12:25:25:720] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/23/18, 12:25:26:076] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/23/18, 12:25:26:479] info: Store: SET_NETWORK_STATUS online
+[10/23/18, 12:25:30:537] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 12:25:30:540] info: Store: MAIN_WINDOW_SHOWN
+[10/23/18, 12:25:30:562] info: Store: SET_FULL_SCREEN
+[10/23/18, 12:25:30:563] info: Store: SET_FULL_SCREEN
+[10/23/18, 12:25:30:864] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 12:25:53:939] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/23/18, 12:25:53:941] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 12:25:55:217] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/23/18, 12:25:55:921] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/23/18, 12:25:56:952] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 12:25:57:189] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 12:25:57:192] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/23/18, 12:25:57:772] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 12:25:57:775] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/23/18, 13:18:21:612] info: Store: SET_FULL_SCREEN
+[10/23/18, 13:18:22:459] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/23/18, 15:42:14:377] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/23/18, 15:42:14:378] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/23/18, 15:42:14:374      ║
+[10/23/18, 15:42:14:378] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/23/18, 15:42:14:659] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/23/18, 15:42:15:004] info: NetworkStatus: Waiting for network online…
+[10/23/18, 15:42:16:464] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/23/18, 15:42:16:881] info: Don't start background client because T2LHV2VSB is selected team
+[10/23/18, 15:42:16:934] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/23/18, 15:42:16:936] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/23/18, 15:42:17:336] info: Store: SET_NETWORK_STATUS online
+[10/23/18, 15:42:21:150] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 15:42:21:154] info: Store: MAIN_WINDOW_SHOWN
+[10/23/18, 15:42:21:172] info: Store: SET_FULL_SCREEN
+[10/23/18, 15:42:21:173] info: Store: SET_FULL_SCREEN
+[10/23/18, 15:42:21:424] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 15:42:25:845] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/23/18, 15:42:25:847] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 15:42:25:890] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/23/18, 15:42:25:951] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/23/18, 15:42:26:590] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 15:42:26:660] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 15:42:26:662] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/23/18, 15:42:26:964] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 15:42:26:966] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/23/18, 15:45:28:325] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/23/18, 16:04:51:783] info: Store: SET_FULL_SCREEN
+[10/23/18, 16:04:52:621] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/23/18, 17:08:43:496] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/23/18, 17:08:43:497] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/23/18, 17:08:43:492      ║
+[10/23/18, 17:08:43:497] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/23/18, 17:08:46:769] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/23/18, 17:08:47:123] info: NetworkStatus: Waiting for network online…
+[10/23/18, 17:08:49:225] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/23/18, 17:08:49:227] info: Don't start background client because T2LHV2VSB is selected team
+[10/23/18, 17:08:49:229] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/23/18, 17:08:52:454] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/23/18, 17:08:52:856] info: Store: SET_NETWORK_STATUS online
+[10/23/18, 17:08:58:015] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 17:08:58:020] info: Store: MAIN_WINDOW_SHOWN
+[10/23/18, 17:08:58:059] info: Store: SET_FULL_SCREEN
+[10/23/18, 17:08:58:059] info: Store: SET_FULL_SCREEN
+[10/23/18, 17:08:58:421] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 17:09:02:681] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/23/18, 17:09:02:683] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 17:09:02:778] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/23/18, 17:09:02:985] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/23/18, 17:09:03:835] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 17:09:04:449] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 17:09:04:451] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/23/18, 17:09:04:782] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 17:09:04:783] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/23/18, 20:29:21:037] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/23/18, 20:29:21:038] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/23/18, 20:29:21:035      ║
+[10/23/18, 20:29:21:038] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/23/18, 20:29:21:273] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/23/18, 20:29:21:727] info: NetworkStatus: Waiting for network online…
+[10/23/18, 20:29:22:699] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/23/18, 20:29:22:701] info: Don't start background client because T2LHV2VSB is selected team
+[10/23/18, 20:29:23:011] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/23/18, 20:29:23:335] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/23/18, 20:29:23:738] info: Store: SET_NETWORK_STATUS online
+[10/23/18, 20:29:32:570] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 20:29:32:574] info: Store: MAIN_WINDOW_SHOWN
+[10/23/18, 20:29:32:600] info: Store: SET_FULL_SCREEN
+[10/23/18, 20:29:32:601] info: Store: SET_FULL_SCREEN
+[10/23/18, 20:29:32:878] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 20:29:33:922] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/23/18, 20:29:33:924] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 20:29:34:007] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/23/18, 20:29:34:155] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/23/18, 20:29:35:846] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 20:29:35:967] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 20:29:35:973] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/23/18, 20:29:36:437] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/23/18, 20:29:36:443] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/23/18, 23:10:25:130] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/24/18, 10:16:37:231] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/24/18, 10:16:39:654] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/24/18, 10:16:42:137] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/24/18, 10:16:42:534] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 10:50:51:740] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    56,
+    89
+  ],
+  "size": [
+    1262,
+    895
+  ]
+}
+[10/24/18, 10:50:51:932] info: Store: SET_FULL_SCREEN
+[10/24/18, 10:50:52:139] info: Store: SET_FULL_SCREEN
+[10/24/18, 10:50:52:140] info: Store: SET_FULL_SCREEN
+[10/24/18, 10:50:53:140] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    960,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/24/18, 10:51:54:769] info: Store: SET_FULL_SCREEN
+[10/24/18, 10:51:55:902] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    960,
+    0
+  ],
+  "size": [
+    944,
+    797
+  ]
+}
+[10/24/18, 10:51:58:261] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    72,
+    143
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/24/18, 11:59:39:147] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    72,
+    143
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/24/18, 12:33:33:492] info: Store: SET_FULL_SCREEN
+[10/24/18, 12:33:33:785] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    72,
+    143
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/24/18, 13:39:45:526] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/24/18, 13:39:45:527] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/24/18, 13:39:45:523      ║
+[10/24/18, 13:39:45:527] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/24/18, 13:39:45:798] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/24/18, 13:39:46:568] info: NetworkStatus: Waiting for network online…
+[10/24/18, 13:39:47:591] info: Don't start background client because T2LHV2VSB is selected team
+[10/24/18, 13:39:47:593] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/24/18, 13:39:47:598] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/24/18, 13:39:48:043] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/24/18, 13:39:48:445] info: Store: SET_NETWORK_STATUS online
+[10/24/18, 13:39:51:694] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 13:39:51:700] info: Store: MAIN_WINDOW_SHOWN
+[10/24/18, 13:39:51:719] info: Store: SET_FULL_SCREEN
+[10/24/18, 13:39:51:721] info: Store: SET_FULL_SCREEN
+[10/24/18, 13:39:52:185] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 13:39:53:809] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 13:39:53:812] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 13:39:53:958] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/24/18, 13:39:53:962] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/24/18, 13:39:55:124] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 13:39:55:233] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 13:39:55:236] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/24/18, 13:39:55:727] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 13:39:55:729] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/24/18, 13:46:31:938] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    65,
+    98
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/24/18, 13:46:33:401] info: Store: SET_FULL_SCREEN
+[10/24/18, 13:46:33:622] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    65,
+    98
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/24/18, 14:51:51:505] info: Store: FOREGROUND_APP
+[10/24/18, 14:51:51:520] info: Store: SET_FULL_SCREEN
+[10/24/18, 14:51:51:521] info: Store: SET_FULL_SCREEN
+[10/24/18, 14:51:52:502] info: Store: SET_FULL_SCREEN
+[10/24/18, 15:21:23:259] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/24/18, 15:21:23:260] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/24/18, 15:21:23:256      ║
+[10/24/18, 15:21:23:260] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/24/18, 15:21:23:793] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/24/18, 15:21:24:547] info: NetworkStatus: Waiting for network online…
+[10/24/18, 15:21:26:372] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/24/18, 15:21:26:374] info: Don't start background client because T2LHV2VSB is selected team
+[10/24/18, 15:21:26:376] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/24/18, 15:21:27:228] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/24/18, 15:21:27:630] info: Store: SET_NETWORK_STATUS online
+[10/24/18, 15:21:31:482] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 15:21:31:486] info: Store: MAIN_WINDOW_SHOWN
+[10/24/18, 15:21:31:509] info: Store: SET_FULL_SCREEN
+[10/24/18, 15:21:31:510] info: Store: SET_FULL_SCREEN
+[10/24/18, 15:21:31:802] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 15:21:32:086] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 15:21:32:087] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 15:21:32:227] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/24/18, 15:21:32:230] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/24/18, 15:21:33:257] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 15:21:33:288] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 15:21:33:292] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/24/18, 15:21:33:780] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 15:21:33:781] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/24/18, 15:24:01:210] info: Store: SET_FULL_SCREEN
+[10/24/18, 17:27:02:614] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/24/18, 17:27:02:615] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/24/18, 17:27:02:612      ║
+[10/24/18, 17:27:02:615] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/24/18, 17:27:02:783] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/24/18, 17:27:03:066] info: NetworkStatus: Waiting for network online…
+[10/24/18, 17:27:03:831] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/24/18, 17:27:03:833] info: Don't start background client because T2LHV2VSB is selected team
+[10/24/18, 17:27:03:874] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/24/18, 17:27:04:825] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/24/18, 17:27:05:227] info: Store: SET_NETWORK_STATUS online
+[10/24/18, 17:27:10:933] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 17:27:10:937] info: Store: MAIN_WINDOW_SHOWN
+[10/24/18, 17:27:10:951] info: Store: SET_FULL_SCREEN
+[10/24/18, 17:27:10:953] info: Store: SET_FULL_SCREEN
+[10/24/18, 17:27:11:502] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 17:27:12:083] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 17:27:12:086] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 17:27:12:176] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/24/18, 17:27:12:369] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/24/18, 17:27:15:556] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 17:27:15:708] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 17:27:15:711] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/24/18, 17:27:16:315] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 17:27:16:317] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/24/18, 17:27:20:470] info: Store: SET_FULL_SCREEN
+[10/24/18, 18:03:22:697] info: Store: SET_SUSPEND_STATUS
+[10/24/18, 18:13:34:554] info: Store: SET_SUSPEND_STATUS true
+[10/24/18, 18:13:46:800] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:32:622] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/24/18, 20:11:32:622] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/24/18, 20:11:32:618      ║
+[10/24/18, 20:11:32:622] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/24/18, 20:11:33:125] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/24/18, 20:11:33:515] info: NetworkStatus: Waiting for network online…
+[10/24/18, 20:11:34:341] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/24/18, 20:11:34:342] info: Don't start background client because T2LHV2VSB is selected team
+[10/24/18, 20:11:34:574] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/24/18, 20:11:34:860] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/24/18, 20:11:35:263] info: Store: SET_NETWORK_STATUS online
+[10/24/18, 20:11:38:751] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:38:755] info: Store: MAIN_WINDOW_SHOWN
+[10/24/18, 20:11:38:776] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:11:38:777] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:11:39:168] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:42:596] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 20:11:42:597] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:42:996] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/24/18, 20:11:42:999] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/24/18, 20:11:43:316] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:11:43:935] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:44:068] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:44:072] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/24/18, 20:11:44:468] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:11:44:470] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/24/18, 20:11:44:569] info: Store: FOREGROUND_APP
+[10/24/18, 20:11:44:581] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:11:44:582] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:11:47:163] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:59:40:312] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/24/18, 20:59:40:313] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/24/18, 20:59:40:308      ║
+[10/24/18, 20:59:40:313] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/24/18, 20:59:40:645] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/24/18, 20:59:41:104] info: NetworkStatus: Waiting for network online…
+[10/24/18, 20:59:42:141] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/24/18, 20:59:42:148] info: Don't start background client because T2LHV2VSB is selected team
+[10/24/18, 20:59:42:152] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/24/18, 20:59:42:409] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/24/18, 20:59:42:812] info: Store: SET_NETWORK_STATUS online
+[10/24/18, 20:59:46:811] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:59:46:818] info: Store: MAIN_WINDOW_SHOWN
+[10/24/18, 20:59:46:839] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:59:46:840] info: Store: SET_FULL_SCREEN
+[10/24/18, 20:59:47:149] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:59:49:530] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 20:59:49:532] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:59:49:665] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/24/18, 20:59:49:770] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/24/18, 20:59:50:745] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:59:50:899] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:59:50:903] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/24/18, 20:59:51:427] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 20:59:51:429] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/24/18, 21:03:06:372] info: Store: SET_FULL_SCREEN
+[10/24/18, 21:46:26:884] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/24/18, 21:46:26:885] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/24/18, 21:46:26:882      ║
+[10/24/18, 21:46:26:885] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/24/18, 21:46:27:765] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/24/18, 21:46:28:444] info: NetworkStatus: Waiting for network online…
+[10/24/18, 21:46:29:725] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/24/18, 21:46:29:727] info: Don't start background client because T2LHV2VSB is selected team
+[10/24/18, 21:46:29:734] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/24/18, 21:46:30:050] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/24/18, 21:46:30:452] info: Store: SET_NETWORK_STATUS online
+[10/24/18, 21:46:34:547] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 21:46:34:551] info: Store: MAIN_WINDOW_SHOWN
+[10/24/18, 21:46:34:567] info: Store: SET_FULL_SCREEN
+[10/24/18, 21:46:34:568] info: Store: SET_FULL_SCREEN
+[10/24/18, 21:46:35:014] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 21:46:35:437] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/24/18, 21:46:35:439] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 21:46:35:554] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/24/18, 21:46:35:622] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/24/18, 21:46:36:522] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 21:46:36:720] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 21:46:36:724] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/24/18, 21:46:37:258] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/24/18, 21:46:37:259] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/25/18, 08:53:26:707] info: Store: SET_FULL_SCREEN
+[10/25/18, 13:41:43:739] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/25/18, 13:41:43:740] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/25/18, 13:41:43:736      ║
+[10/25/18, 13:41:43:740] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/25/18, 13:41:43:947] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/25/18, 13:41:44:322] info: NetworkStatus: Waiting for network online…
+[10/25/18, 13:41:44:870] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:44:872] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:44:873] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:44:967] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/25/18, 13:41:44:969] info: Don't start background client because T2LHV2VSB is selected team
+[10/25/18, 13:41:45:046] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/25/18, 13:41:45:260] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/25/18, 13:41:45:265] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:45:665] info: Store: SET_NETWORK_STATUS online
+[10/25/18, 13:41:45:666] info: Store: MAIN_WINDOW_SHOWN
+[10/25/18, 13:41:45:698] info: Store: SET_FULL_SCREEN
+[10/25/18, 13:41:45:699] info: Store: SET_FULL_SCREEN
+[10/25/18, 13:41:49:838] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:50:151] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:50:614] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/25/18, 13:41:50:618] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:50:646] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/25/18, 13:41:50:676] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/25/18, 13:41:51:369] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:51:443] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:51:448] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/25/18, 13:41:51:879] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 13:41:51:880] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/25/18, 13:42:04:854] info: Store: SET_FULL_SCREEN
+[10/25/18, 14:10:19:051] info: Store: SET_SUSPEND_STATUS
+[10/25/18, 14:11:34:616] info: Store: SET_SUSPEND_STATUS true
+[10/25/18, 14:11:35:368] info: Store: SET_NETWORK_STATUS offline
+[10/25/18, 14:11:38:927] info: NetworkStatus: Waiting for network online…
+[10/25/18, 14:11:39:370] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 14:11:39:371] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 14:11:45:704] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/25/18, 14:11:46:366] info: Store: SET_NETWORK_STATUS online
+[10/25/18, 14:11:46:368] warn: Base Component: Attempting to update LoadingScreen when unmounted.
+[10/25/18, 15:29:39:405] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/25/18, 15:29:39:406] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/25/18, 15:29:39:402      ║
+[10/25/18, 15:29:39:406] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/25/18, 15:29:39:656] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/25/18, 15:29:40:035] info: NetworkStatus: Waiting for network online…
+[10/25/18, 15:29:40:513] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:40:516] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:40:516] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:40:517] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:40:517] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:40:518] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:40:588] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/25/18, 15:29:40:589] info: Don't start background client because T2LHV2VSB is selected team
+[10/25/18, 15:29:40:593] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/25/18, 15:29:40:748] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:29:40:749] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:29:40:774] warn: Tried to determine signed in status, but errored.
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:29:40:775] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:48:234] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:29:48:234] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:29:48:235] info: Store: SET_NETWORK_STATUS offline
+[10/25/18, 15:29:48:353] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:48:354] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:48:457] warn: Tried to determine signed in status, but errored.
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:29:48:458] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:29:50:590] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:29:50:590] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:29:55:590] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:29:55:590] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:00:594] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:00:595] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:05:595] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:05:596] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:10:596] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:10:596] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:15:597] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:15:597] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:20:597] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:20:598] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:25:597] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:25:597] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:30:598] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:30:598] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:35:598] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:35:598] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:40:598] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:40:598] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:45:601] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:45:602] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:50:602] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[10/25/18, 15:30:50:602] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[10/25/18, 15:30:56:057] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/25/18, 15:30:56:460] info: Store: SET_NETWORK_STATUS online
+[10/25/18, 15:30:56:464] warn: Base Component: Attempting to update LoadingScreen when unmounted.
+[10/25/18, 15:30:56:465] info: Store: MAIN_WINDOW_SHOWN
+[10/25/18, 15:30:56:492] info: Store: SET_FULL_SCREEN
+[10/25/18, 15:30:56:493] info: Store: SET_FULL_SCREEN
+[10/25/18, 15:30:56:495] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:30:56:794] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:01:843] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:02:103] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:02:469] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/25/18, 15:31:02:471] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:02:540] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/25/18, 15:31:02:599] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/25/18, 15:31:03:240] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:03:314] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:03:316] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/25/18, 15:31:03:664] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:31:03:666] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/25/18, 15:31:18:169] info: Store: SET_FULL_SCREEN
+[10/25/18, 15:54:33:300] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/25/18, 15:54:33:301] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/25/18, 15:54:33:297      ║
+[10/25/18, 15:54:33:301] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/25/18, 15:54:33:788] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/25/18, 15:54:34:146] info: NetworkStatus: Waiting for network online…
+[10/25/18, 15:54:35:587] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/25/18, 15:54:35:590] info: Don't start background client because T2LHV2VSB is selected team
+[10/25/18, 15:54:35:592] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/25/18, 15:54:36:355] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/25/18, 15:54:36:757] info: Store: SET_NETWORK_STATUS online
+[10/25/18, 15:54:40:224] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:54:40:229] info: Store: MAIN_WINDOW_SHOWN
+[10/25/18, 15:54:40:252] info: Store: SET_FULL_SCREEN
+[10/25/18, 15:54:40:254] info: Store: SET_FULL_SCREEN
+[10/25/18, 15:54:40:534] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:54:43:465] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/25/18, 15:54:43:468] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:54:43:975] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/25/18, 15:54:44:298] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/25/18, 15:54:45:216] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:54:45:691] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:54:45:693] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/25/18, 15:54:46:142] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 15:54:46:143] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/25/18, 15:54:49:943] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    65,
+    98
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/25/18, 15:54:49:992] info: Store: SET_FULL_SCREEN
+[10/25/18, 20:39:46:296] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/25/18, 20:39:46:297] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/25/18, 20:39:46:292      ║
+[10/25/18, 20:39:46:297] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/25/18, 20:39:46:838] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/25/18, 20:39:47:148] info: NetworkStatus: Waiting for network online…
+[10/25/18, 20:39:48:422] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/25/18, 20:39:48:426] info: Don't start background client because T2LHV2VSB is selected team
+[10/25/18, 20:39:48:669] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/25/18, 20:39:48:673] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/25/18, 20:39:49:071] info: Store: SET_NETWORK_STATUS online
+[10/25/18, 20:39:51:941] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 20:39:51:946] info: Store: MAIN_WINDOW_SHOWN
+[10/25/18, 20:39:51:966] info: Store: SET_FULL_SCREEN
+[10/25/18, 20:39:51:968] info: Store: SET_FULL_SCREEN
+[10/25/18, 20:39:52:216] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 20:39:52:722] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/25/18, 20:39:52:727] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 20:39:52:792] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/25/18, 20:39:52:909] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/25/18, 20:39:54:924] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 20:39:55:091] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 20:39:55:093] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/25/18, 20:39:55:625] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/25/18, 20:39:55:627] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/25/18, 20:45:29:960] info: Store: SET_FULL_SCREEN
+[10/26/18, 11:40:01:718] info: Store: FOREGROUND_APP
+[10/26/18, 11:40:01:734] info: Store: SET_FULL_SCREEN
+[10/26/18, 11:40:01:736] info: Store: SET_FULL_SCREEN
+[10/26/18, 11:40:06:093] info: Store: SET_FULL_SCREEN
+[10/26/18, 12:41:36:910] info: Store: FOREGROUND_APP
+[10/26/18, 12:41:36:926] info: Store: SET_FULL_SCREEN
+[10/26/18, 12:41:36:927] info: Store: SET_FULL_SCREEN
+[10/26/18, 12:41:42:118] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/26/18, 12:41:47:825] info: Store: SELECT_CHANNEL DDL9D49NU
+[10/26/18, 12:41:58:813] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/26/18, 12:42:07:059] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    65,
+    98
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/26/18, 12:42:07:711] info: Store: SET_FULL_SCREEN
+[10/26/18, 17:58:10:628] info: Store: FOREGROUND_APP
+[10/26/18, 17:58:10:640] info: Store: SET_FULL_SCREEN
+[10/26/18, 17:58:10:641] info: Store: SET_FULL_SCREEN
+[10/26/18, 17:58:12:981] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    60,
+    45
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/26/18, 18:00:58:153] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    60,
+    45
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/26/18, 18:00:58:378] info: Store: SET_FULL_SCREEN
+[10/26/18, 18:08:14:153] info: Store: FOREGROUND_APP
+[10/26/18, 18:08:14:163] info: Store: SET_FULL_SCREEN
+[10/26/18, 18:08:14:164] info: Store: SET_FULL_SCREEN
+[10/26/18, 18:08:22:354] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:23:401] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:39:599] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:40:348] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:42:770] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:43:591] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:44:354] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:49:238] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:51:641] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:08:53:261] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:09:01:071] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:09:07:326] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:09:08:752] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:09:11:919] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:09:17:296] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:09:24:995] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:10:47:551] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:10:48:608] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:10:53:518] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/26/18, 18:10:54:091] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/26/18, 18:10:55:594] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:13:04:436] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/26/18, 18:13:05:353] info: Store: SELECT_CHANNEL DDK41MM4Z
+[10/26/18, 18:13:06:963] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/26/18, 18:13:15:390] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/26/18, 18:13:23:478] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:13:26:096] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/26/18, 18:13:26:604] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/26/18, 18:13:27:969] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/26/18, 18:13:29:251] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/26/18, 18:13:30:998] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/26/18, 18:13:32:586] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/26/18, 18:13:36:699] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/26/18, 18:13:39:468] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/26/18, 18:13:48:652] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/26/18, 18:13:50:079] info: Store: SELECT_CHANNEL C2PS902ET
+[10/26/18, 18:13:51:614] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/26/18, 18:13:54:888] info: Store: SELECT_CHANNEL C2LJ9BDFC
+[10/26/18, 18:14:06:912] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/26/18, 18:14:07:750] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:14:09:116] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/26/18, 18:14:09:743] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/26/18, 18:14:10:793] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:14:12:125] info: Store: SELECT_CHANNEL DDK41MM4Z
+[10/26/18, 18:14:12:658] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/26/18, 18:14:13:037] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/26/18, 18:14:14:518] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:14:15:930] info: Store: SELECT_CHANNEL C2LJ9BDFC
+[10/26/18, 18:14:17:429] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/26/18, 18:14:18:457] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/26/18, 18:14:19:733] info: Store: SELECT_CHANNEL DDK41MM4Z
+[10/26/18, 18:14:22:207] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/26/18, 18:14:23:003] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:14:23:748] info: Store: SELECT_CHANNEL C2LJ1FM6E
+[10/26/18, 18:14:24:843] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:14:40:976] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:14:42:134] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:14:53:126] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:14:59:144] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:15:12:409] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/26/18, 18:19:13:301] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/26/18, 18:19:38:673] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/26/18, 18:22:27:902] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/26/18, 18:23:20:272] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/26/18, 18:23:24:915] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/26/18, 18:27:46:644] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/26/18, 18:27:55:232] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/26/18, 18:27:55:683] info: Store: SELECT_CHANNEL C2PRV30E4
+[10/26/18, 18:29:04:586] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/26/18, 18:29:11:053] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/26/18, 18:29:12:049] info: Store: SELECT_CHANNEL C2PS902ET
+[10/26/18, 18:29:18:633] info: Store: SELECT_CHANNEL CDKLSSUFL
+[10/26/18, 18:29:35:279] info: Store: SELECT_CHANNEL C2LJ9BDFC
+[10/26/18, 18:30:28:830] info: Store: SELECT_CHANNEL DDK41MM4Z
+[10/26/18, 18:30:32:651] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/26/18, 18:30:33:908] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/26/18, 18:31:31:047] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/26/18, 18:31:31:655] info: Store: SELECT_CHANNEL DDK41MM4Z
+[10/26/18, 18:31:33:008] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/26/18, 18:32:11:138] info: Store: SHOW_WEBAPP_DIALOG
+{
+  "dialogType": "prefs"
+}
+[10/26/18, 18:37:16:919] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    60,
+    45
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/27/18, 09:14:16:722] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/27/18, 09:14:16:722] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/27/18, 09:14:16:719      ║
+[10/27/18, 09:14:16:722] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/27/18, 09:14:18:194] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/27/18, 09:14:18:552] info: NetworkStatus: Waiting for network online…
+[10/27/18, 09:14:19:595] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/27/18, 09:14:19:601] info: Don't start background client because T2LHV2VSB is selected team
+[10/27/18, 09:14:19:612] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/27/18, 09:14:20:567] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/27/18, 09:14:20:969] info: Store: SET_NETWORK_STATUS online
+[10/27/18, 09:14:27:551] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 09:14:27:555] info: Store: MAIN_WINDOW_SHOWN
+[10/27/18, 09:14:27:576] info: Store: SET_FULL_SCREEN
+[10/27/18, 09:14:27:577] info: Store: SET_FULL_SCREEN
+[10/27/18, 09:14:27:839] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 09:14:28:516] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/27/18, 09:14:28:519] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 09:14:28:634] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/27/18, 09:14:28:922] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/27/18, 09:14:30:434] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 09:14:30:674] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 09:14:30:679] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/27/18, 09:14:31:717] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 09:14:31:718] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/27/18, 09:23:14:910] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    60,
+    45
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/27/18, 09:23:24:606] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/27/18, 09:23:25:283] info: Store: SELECT_CHANNEL C3VEA0G07
+[10/27/18, 09:23:26:985] info: Store: SELECT_CHANNEL C2LTY4ME1
+[10/27/18, 09:23:27:497] info: Store: SELECT_CHANNEL C2PUDAKPW
+[10/27/18, 09:23:27:979] info: Store: SELECT_CHANNEL C2LJ9A5T4
+[10/27/18, 09:30:06:553] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    60,
+    45
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/27/18, 09:30:59:070] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    60,
+    45
+  ],
+  "size": [
+    1323,
+    858
+  ]
+}
+[10/27/18, 09:31:01:276] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/27/18, 09:31:01:892] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/27/18, 09:32:03:582] info: Store: SHOW_WEBAPP_DIALOG
+{
+  "dialogType": "prefs"
+}
+[10/27/18, 09:32:25:232] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:24:29:465] info: Store: FOREGROUND_APP
+[10/27/18, 11:24:29:490] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:24:29:491] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:24:29:571] info: Store: FOREGROUND_APP
+[10/27/18, 11:24:30:691] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:24:31:701] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/27/18, 11:25:01:410] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/27/18, 11:25:07:915] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    45
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:25:09:131] info: Store: FOREGROUND_APP
+[10/27/18, 11:25:09:148] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:09:149] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:10:674] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:17:949] info: Store: FOREGROUND_APP
+[10/27/18, 11:25:17:962] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:17:963] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:22:822] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:22:942] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:22:943] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:23:947] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/27/18, 11:25:37:709] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:25:38:708] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    45
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:26:05:081] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/27/18, 11:26:05:082] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/27/18, 11:26:05:078      ║
+[10/27/18, 11:26:05:082] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/27/18, 11:26:05:228] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/27/18, 11:26:05:398] info: NetworkStatus: Waiting for network online…
+[10/27/18, 11:26:05:609] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/27/18, 11:26:05:612] info: Don't start background client because T2LHV2VSB is selected team
+[10/27/18, 11:26:05:619] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/27/18, 11:26:05:832] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/27/18, 11:26:06:238] info: Store: SET_NETWORK_STATUS online
+[10/27/18, 11:26:10:116] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 11:26:10:119] info: Store: MAIN_WINDOW_SHOWN
+[10/27/18, 11:26:10:142] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:26:10:144] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:26:10:387] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 11:26:10:532] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/27/18, 11:26:10:535] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 11:26:10:587] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/27/18, 11:26:10:621] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/27/18, 11:26:11:109] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 11:26:11:188] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 11:26:11:191] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/27/18, 11:26:11:415] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 11:26:11:416] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/27/18, 11:26:18:010] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    45
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:26:19:190] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:26:20:194] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    0
+  ],
+  "size": [
+    960,
+    1050
+  ]
+}
+[10/27/18, 11:26:45:146] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:26:46:140] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    4,
+    45
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:28:56:109] info: Store: FOREGROUND_APP
+[10/27/18, 11:28:56:124] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:28:56:125] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:29:02:057] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:29:03:646] info: Store: SELECT_CHANNEL C2PV6G0GM
+[10/27/18, 11:33:44:480] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:33:46:631] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/27/18, 11:34:41:032] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:55:47:385] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:55:49:964] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:55:49:965] info: Store: SET_FULL_SCREEN
+[10/27/18, 11:56:56:258] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 11:56:58:728] info: Store: OPEN_CONTEXT_MENU
+{
+  "id": 3,
+  "params": "[REDACTED]"
+}
+[10/27/18, 11:57:43:826] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/27/18, 12:03:05:755] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": true,
+  "position": [
+    384,
+    108
+  ],
+  "size": [
+    1152,
+    864
+  ]
+}
+[10/27/18, 12:03:07:070] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 12:16:34:311] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 12:21:01:423] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 13:57:22:903] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 14:06:16:017] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 14:06:19:680] info: Store: SET_FULL_SCREEN
+[10/27/18, 19:40:40:886] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/27/18, 19:40:40:887] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/27/18, 19:40:40:884      ║
+[10/27/18, 19:40:40:887] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/27/18, 19:40:41:126] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/27/18, 19:40:41:523] info: NetworkStatus: Waiting for network online…
+[10/27/18, 19:40:42:963] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/27/18, 19:40:42:967] info: Don't start background client because T2LHV2VSB is selected team
+[10/27/18, 19:40:42:975] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/27/18, 19:40:43:265] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/27/18, 19:40:43:667] info: Store: SET_NETWORK_STATUS online
+[10/27/18, 19:40:46:596] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 19:40:46:600] info: Store: MAIN_WINDOW_SHOWN
+[10/27/18, 19:40:46:619] info: Store: SET_FULL_SCREEN
+[10/27/18, 19:40:46:620] info: Store: SET_FULL_SCREEN
+[10/27/18, 19:40:46:873] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 19:40:47:264] info: Store: SELECT_CHANNEL D2PQZCP9U
+[10/27/18, 19:40:47:264] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 19:40:47:416] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/27/18, 19:40:47:419] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/27/18, 19:40:48:440] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 19:40:48:484] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 19:40:48:487] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/27/18, 19:40:48:735] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/27/18, 19:40:48:736] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/27/18, 19:41:42:071] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 19:41:43:562] info: Store: SET_FULL_SCREEN
+[10/27/18, 19:49:14:021] info: Store: FOREGROUND_APP
+[10/27/18, 19:49:14:043] info: Store: SET_FULL_SCREEN
+[10/27/18, 19:49:14:044] info: Store: SET_FULL_SCREEN
+[10/27/18, 19:50:04:746] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 19:50:09:797] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 19:50:56:857] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 19:51:58:240] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 19:52:08:426] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/27/18, 20:24:13:294] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/27/18, 20:24:14:297] info: Store: SET_FULL_SCREEN
+[10/27/18, 23:15:32:674] info: Store: SET_SUSPEND_STATUS
+[10/27/18, 23:17:23:964] info: Store: SET_SUSPEND_STATUS true
+[10/28/18, 07:41:48:232] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 07:41:48:233] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 07:41:48:230      ║
+[10/28/18, 07:41:48:233] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 07:41:48:629] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 07:41:48:953] info: NetworkStatus: Waiting for network online…
+[10/28/18, 07:41:49:940] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/28/18, 07:41:49:942] info: Don't start background client because T2LHV2VSB is selected team
+[10/28/18, 07:41:49:945] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/28/18, 07:41:50:153] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/28/18, 07:41:50:561] info: Store: SET_NETWORK_STATUS online
+[10/28/18, 07:41:54:698] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 07:41:54:709] info: Store: MAIN_WINDOW_SHOWN
+[10/28/18, 07:41:54:729] info: Store: SET_FULL_SCREEN
+[10/28/18, 07:41:54:731] info: Store: SET_FULL_SCREEN
+[10/28/18, 07:41:54:968] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 07:41:55:476] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/28/18, 07:41:55:480] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 07:41:55:538] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/28/18, 07:41:55:674] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/28/18, 07:41:56:474] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 07:41:56:608] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 07:41:56:612] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/28/18, 07:41:57:074] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 07:41:57:075] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/28/18, 07:42:36:641] info: Store: SET_FULL_SCREEN
+[10/28/18, 09:41:59:396] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 09:41:59:397] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 09:41:59:394      ║
+[10/28/18, 09:41:59:397] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 09:41:59:650] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 09:41:59:885] info: NetworkStatus: Waiting for network online…
+[10/28/18, 09:42:00:547] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/28/18, 09:42:00:549] info: Don't start background client because T2LHV2VSB is selected team
+[10/28/18, 09:42:00:718] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/28/18, 09:42:00:787] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[10/28/18, 09:42:01:190] info: Store: SET_NETWORK_STATUS online
+[10/28/18, 09:42:07:287] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 09:42:07:291] info: Store: MAIN_WINDOW_SHOWN
+[10/28/18, 09:42:07:306] info: Store: SET_FULL_SCREEN
+[10/28/18, 09:42:07:307] info: Store: SET_FULL_SCREEN
+[10/28/18, 09:42:07:561] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 09:42:08:512] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/28/18, 09:42:08:515] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 09:42:08:586] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/28/18, 09:42:08:638] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/28/18, 09:42:10:421] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 09:42:10:492] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 09:42:10:496] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/28/18, 09:42:10:791] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 09:42:10:795] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/28/18, 09:42:14:624] info: Store: SET_FULL_SCREEN

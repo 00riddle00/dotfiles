@@ -1,4 +1,4 @@
-; gimp GtkAccelMap rc-file         -*- scheme -*-
+; gimp-2.10 GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/tools/tools-force-increase" "")
@@ -1260,7 +1260,6 @@
 ; (gtk_accel_path "<Actions>/context/context-brush-spacing-minimum" "")
 ; (gtk_accel_path "<Actions>/context/context-swatch-foreground-next-skip" "")
 ; (gtk_accel_path "<Actions>/gradients/gradients-save-as-pov" "")
-; (gtk_accel_path "<Actions>/windows/windows-display-0002" "")
 ; (gtk_accel_path "<Actions>/view/view-zoom-2-1-accel" "KP_2")
 ; (gtk_accel_path "<Actions>/filters/filters-color-rotate" "")
 ; (gtk_accel_path "<Actions>/filters/filters-color-balance" "")
