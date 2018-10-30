@@ -6289,3 +6289,1121 @@
   "language": "lt"
 }
 [10/28/18, 09:42:14:628] info: Store: SET_FULL_SCREEN
+[10/28/18, 10:33:37:187] error: Oct-28 10:33:37.186 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/28/18, 10:33:40:352] error: Oct-28 10:33:40.352 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4106: received an "error" message from socket
+[10/28/18, 10:33:40:358] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/28/18, 10:33:40:360] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 10:33:40:363] info: Window is unloading, window.desktop is no longer accessible
+[10/28/18, 10:33:41:016] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 10:33:41:400] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 10:33:41:400] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 10:33:41:397      ║
+[10/28/18, 10:33:41:400] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 10:33:41:485] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 10:33:41:764] info: cld3::loadModule: loading cld3 module
+[10/28/18, 10:33:41:782] info: cld3Loader::loadModule: running environment is NODE
+[10/28/18, 10:33:41:782] info: cld3Loader::loadModule: constructed module object for runtime
+[10/28/18, 10:33:41:943] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/28/18, 10:33:41:943] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/28/18, 10:33:41:949] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/28/18, 10:33:41:958] info: Main window preload script finished
+{
+  "readyTime": 744.649709
+}
+[10/28/18, 10:33:43:765] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 10:33:45:067] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 10:34:43:089] error: Oct-28 10:34:43.088 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:35:42:833] error: Oct-28 10:35:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:36:42:831] error: Oct-28 10:36:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:37:42:834] error: Oct-28 10:37:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:38:42:833] error: Oct-28 10:38:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:39:42:833] error: Oct-28 10:39:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:40:42:835] error: Oct-28 10:40:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:41:42:833] error: Oct-28 10:41:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:42:42:834] error: Oct-28 10:42:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:43:42:841] error: Oct-28 10:43:42.840 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:44:42:838] error: Oct-28 10:44:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:45:42:835] error: Oct-28 10:45:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:46:42:837] error: Oct-28 10:46:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:47:42:835] error: Oct-28 10:47:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:48:42:834] error: Oct-28 10:48:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:49:42:835] error: Oct-28 10:49:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:50:42:835] error: Oct-28 10:50:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:51:42:834] error: Oct-28 10:51:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:52:42:835] error: Oct-28 10:52:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:53:42:835] error: Oct-28 10:53:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 10:54:42:834] error: Oct-28 10:54:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:01:42:835] error: Oct-28 11:01:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:02:42:835] error: Oct-28 11:02:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:03:42:835] error: Oct-28 11:03:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:04:42:835] error: Oct-28 11:04:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:05:42:833] error: Oct-28 11:05:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:06:42:835] error: Oct-28 11:06:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:07:42:833] error: Oct-28 11:07:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:08:42:836] error: Oct-28 11:08:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:09:42:835] error: Oct-28 11:09:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 11:10:42:835] error: Oct-28 11:10:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:17:42:835] error: Oct-28 14:17:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:18:42:836] error: Oct-28 14:18:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:19:42:836] error: Oct-28 14:19:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:20:42:833] error: Oct-28 14:20:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:21:42:834] error: Oct-28 14:21:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:22:42:836] error: Oct-28 14:22:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:23:42:835] error: Oct-28 14:23:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:24:42:835] error: Oct-28 14:24:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:25:42:836] error: Oct-28 14:25:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:26:42:835] error: Oct-28 14:26:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:27:42:836] error: Oct-28 14:27:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:45:42:835] error: Oct-28 14:45:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:46:42:836] error: Oct-28 14:46:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:47:42:836] error: Oct-28 14:47:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:48:42:836] error: Oct-28 14:48:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:49:42:835] error: Oct-28 14:49:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:50:42:834] error: Oct-28 14:50:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:51:42:835] error: Oct-28 14:51:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:52:42:835] error: Oct-28 14:52:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:53:42:840] error: Oct-28 14:53:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:54:42:832] error: Oct-28 14:54:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:55:42:833] error: Oct-28 14:55:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:56:42:834] error: Oct-28 14:56:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:57:42:834] error: Oct-28 14:57:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:58:42:835] error: Oct-28 14:58:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 14:59:42:837] error: Oct-28 14:59:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:00:42:834] error: Oct-28 15:00:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:01:42:836] error: Oct-28 15:01:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:02:42:833] error: Oct-28 15:02:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:03:42:834] error: Oct-28 15:03:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:04:42:833] error: Oct-28 15:04:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:05:42:835] error: Oct-28 15:05:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:06:42:833] error: Oct-28 15:06:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:07:42:835] error: Oct-28 15:07:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:08:42:835] error: Oct-28 15:08:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:09:42:832] error: Oct-28 15:09:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:10:42:837] error: Oct-28 15:10:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:11:42:835] error: Oct-28 15:11:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:12:42:833] error: Oct-28 15:12:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:13:42:842] error: Oct-28 15:13:42.841 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:14:42:833] error: Oct-28 15:14:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:15:42:837] error: Oct-28 15:15:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:16:43:524] error: Oct-28 15:16:43.523 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:17:42:845] error: Oct-28 15:17:42.845 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:18:42:836] error: Oct-28 15:18:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:19:42:832] error: Oct-28 15:19:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:20:42:833] error: Oct-28 15:20:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:21:42:832] error: Oct-28 15:21:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:22:42:834] error: Oct-28 15:22:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:23:42:861] error: Oct-28 15:23:42.861 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:24:42:840] error: Oct-28 15:24:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:25:42:837] error: Oct-28 15:25:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:26:42:833] error: Oct-28 15:26:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:27:42:836] error: Oct-28 15:27:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:28:42:835] error: Oct-28 15:28:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:29:42:833] error: Oct-28 15:29:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:30:42:840] error: Oct-28 15:30:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:31:42:835] error: Oct-28 15:31:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:32:42:839] error: Oct-28 15:32:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:33:42:840] error: Oct-28 15:33:42.840 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:34:42:833] error: Oct-28 15:34:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:35:42:838] error: Oct-28 15:35:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:36:42:838] error: Oct-28 15:36:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:37:42:837] error: Oct-28 15:37:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:38:42:834] error: Oct-28 15:38:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:39:42:837] error: Oct-28 15:39:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:40:42:839] error: Oct-28 15:40:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:41:42:838] error: Oct-28 15:41:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:42:42:838] error: Oct-28 15:42:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:43:42:836] error: Oct-28 15:43:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:44:42:836] error: Oct-28 15:44:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:45:42:840] error: Oct-28 15:45:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:46:42:839] error: Oct-28 15:46:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:47:42:832] error: Oct-28 15:47:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:48:42:833] error: Oct-28 15:48:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:49:42:835] error: Oct-28 15:49:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:50:42:833] error: Oct-28 15:50:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:51:42:835] error: Oct-28 15:51:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:52:42:834] error: Oct-28 15:52:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:53:42:833] error: Oct-28 15:53:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:54:42:832] error: Oct-28 15:54:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:55:42:834] error: Oct-28 15:55:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:56:42:835] error: Oct-28 15:56:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:57:42:834] error: Oct-28 15:57:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:58:42:831] error: Oct-28 15:58:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 15:59:42:836] error: Oct-28 15:59:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:00:42:834] error: Oct-28 16:00:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:01:42:834] error: Oct-28 16:01:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:02:42:832] error: Oct-28 16:02:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:03:42:833] error: Oct-28 16:03:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:04:42:834] error: Oct-28 16:04:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:05:42:833] error: Oct-28 16:05:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:06:42:834] error: Oct-28 16:06:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:07:42:835] error: Oct-28 16:07:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:08:42:833] error: Oct-28 16:08:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:09:42:834] error: Oct-28 16:09:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:10:42:833] error: Oct-28 16:10:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:11:42:832] error: Oct-28 16:11:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:12:42:833] error: Oct-28 16:12:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:13:42:833] error: Oct-28 16:13:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:39:42:835] error: Oct-28 16:39:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:40:42:834] error: Oct-28 16:40:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:41:42:834] error: Oct-28 16:41:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:42:42:833] error: Oct-28 16:42:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:43:42:834] error: Oct-28 16:43:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:44:42:833] error: Oct-28 16:44:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:45:42:835] error: Oct-28 16:45:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:46:42:834] error: Oct-28 16:46:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:47:42:834] error: Oct-28 16:47:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:48:42:834] error: Oct-28 16:48:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:49:42:833] error: Oct-28 16:49:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:50:42:834] error: Oct-28 16:50:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:51:42:833] error: Oct-28 16:51:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:52:42:833] error: Oct-28 16:52:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:53:42:834] error: Oct-28 16:53:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:54:42:833] error: Oct-28 16:54:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:55:42:832] error: Oct-28 16:55:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:56:42:833] error: Oct-28 16:56:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:57:42:832] error: Oct-28 16:57:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:58:42:834] error: Oct-28 16:58:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 16:59:42:835] error: Oct-28 16:59:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:00:42:833] error: Oct-28 17:00:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:01:42:835] error: Oct-28 17:01:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:02:42:833] error: Oct-28 17:02:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:03:42:834] error: Oct-28 17:03:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:04:42:833] error: Oct-28 17:04:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:05:42:833] error: Oct-28 17:05:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:06:42:833] error: Oct-28 17:06:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:07:42:833] error: Oct-28 17:07:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:08:42:834] error: Oct-28 17:08:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:09:42:835] error: Oct-28 17:09:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:10:42:833] error: Oct-28 17:10:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:11:42:833] error: Oct-28 17:11:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:12:42:833] error: Oct-28 17:12:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:13:42:832] error: Oct-28 17:13:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:14:42:834] error: Oct-28 17:14:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:15:42:834] error: Oct-28 17:15:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:16:42:833] error: Oct-28 17:16:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:17:42:834] error: Oct-28 17:17:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:18:42:835] error: Oct-28 17:18:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:19:42:833] error: Oct-28 17:19:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:20:42:834] error: Oct-28 17:20:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:21:42:842] error: Oct-28 17:21:42.842 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:22:42:840] error: Oct-28 17:22:42.840 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:23:42:844] error: Oct-28 17:23:42.844 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:24:42:838] error: Oct-28 17:24:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:25:42:839] error: Oct-28 17:25:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:26:42:833] error: Oct-28 17:26:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:27:42:834] error: Oct-28 17:27:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:28:42:833] error: Oct-28 17:28:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:29:42:836] error: Oct-28 17:29:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:30:42:834] error: Oct-28 17:30:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:31:42:835] error: Oct-28 17:31:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:32:42:838] error: Oct-28 17:32:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:33:42:835] error: Oct-28 17:33:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:34:42:833] error: Oct-28 17:34:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:35:42:834] error: Oct-28 17:35:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:36:42:831] error: Oct-28 17:36:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:37:42:833] error: Oct-28 17:37:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:38:42:833] error: Oct-28 17:38:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:39:42:832] error: Oct-28 17:39:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:40:42:836] error: Oct-28 17:40:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:41:42:839] error: Oct-28 17:41:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:42:42:835] error: Oct-28 17:42:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:43:42:838] error: Oct-28 17:43:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:44:42:839] error: Oct-28 17:44:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:45:42:838] error: Oct-28 17:45:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:46:42:834] error: Oct-28 17:46:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:47:42:839] error: Oct-28 17:47:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:48:42:833] error: Oct-28 17:48:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 17:49:42:837] error: Oct-28 17:49:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:34:15:034] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 18:34:15:035] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 18:34:15:032      ║
+[10/28/18, 18:34:15:035] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 18:34:15:120] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 18:34:17:198] info: cld3::loadModule: loading cld3 module
+[10/28/18, 18:34:17:433] info: cld3Loader::loadModule: running environment is NODE
+[10/28/18, 18:34:17:433] info: cld3Loader::loadModule: constructed module object for runtime
+[10/28/18, 18:34:17:703] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/28/18, 18:34:17:703] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/28/18, 18:34:17:712] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/28/18, 18:34:17:724] info: Main window preload script finished
+{
+  "readyTime": 2951.193021
+}
+[10/28/18, 18:34:17:903] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/28/18, 18:34:18:326] info: Store: SET_NETWORK_STATUS online
+[10/28/18, 18:34:24:486] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 18:34:24:516] info: Store: MAIN_WINDOW_SHOWN
+[10/28/18, 18:34:24:517] info: Store: SET_FULL_SCREEN
+[10/28/18, 18:34:24:518] info: Store: SET_FULL_SCREEN
+[10/28/18, 18:34:24:811] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 18:35:17:880] error: Oct-28 18:35:17.879 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:36:17:727] error: Oct-28 18:36:17.727 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:37:17:727] error: Oct-28 18:37:17.727 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:38:17:727] error: Oct-28 18:38:17.727 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:38:39:449] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/28/18, 18:38:39:703] info: Store: SET_FULL_SCREEN
+[10/28/18, 18:39:18:332] error: Oct-28 18:39:18.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:40:18:334] error: Oct-28 18:40:18.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:41:18:332] error: Oct-28 18:41:18.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:42:18:336] error: Oct-28 18:42:18.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:43:18:331] error: Oct-28 18:43:18.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:44:18:334] error: Oct-28 18:44:18.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:45:18:331] error: Oct-28 18:45:18.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:46:18:333] error: Oct-28 18:46:18.333 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:47:18:332] error: Oct-28 18:47:18.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:48:18:339] error: Oct-28 18:48:18.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:49:18:336] error: Oct-28 18:49:18.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:50:18:334] error: Oct-28 18:50:18.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:55:47:036] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 18:55:47:037] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 18:55:47:033      ║
+[10/28/18, 18:55:47:037] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 18:55:47:124] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 18:55:49:603] info: cld3::loadModule: loading cld3 module
+[10/28/18, 18:55:49:662] info: cld3Loader::loadModule: running environment is NODE
+[10/28/18, 18:55:49:662] info: cld3Loader::loadModule: constructed module object for runtime
+[10/28/18, 18:55:50:126] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/28/18, 18:55:50:126] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/28/18, 18:55:50:135] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/28/18, 18:55:50:146] info: Main window preload script finished
+{
+  "readyTime": 4958.544881
+}
+[10/28/18, 18:55:52:070] info: Store: SET_NETWORK_STATUS online
+[10/28/18, 18:55:56:768] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 18:55:56:984] info: Store: MAIN_WINDOW_SHOWN
+[10/28/18, 18:55:56:987] info: Store: SET_FULL_SCREEN
+[10/28/18, 18:55:56:988] info: Store: SET_FULL_SCREEN
+[10/28/18, 18:55:57:168] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 18:56:27:424] info: Store: SET_FULL_SCREEN
+[10/28/18, 18:56:50:551] error: Oct-28 18:56:50.550 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:57:50:330] error: Oct-28 18:57:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:58:50:329] error: Oct-28 18:58:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 18:59:50:329] error: Oct-28 18:59:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:00:50:330] error: Oct-28 19:00:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:01:50:328] error: Oct-28 19:01:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:02:50:327] error: Oct-28 19:02:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:03:50:331] error: Oct-28 19:03:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:04:50:329] error: Oct-28 19:04:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:05:50:335] error: Oct-28 19:05:50.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:06:50:334] error: Oct-28 19:06:50.333 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:07:50:330] error: Oct-28 19:07:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:08:50:327] error: Oct-28 19:08:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:09:50:327] error: Oct-28 19:09:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:10:50:328] error: Oct-28 19:10:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:11:50:330] error: Oct-28 19:11:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:12:50:330] error: Oct-28 19:12:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:13:50:330] error: Oct-28 19:13:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:14:50:335] error: Oct-28 19:14:50.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:15:50:328] error: Oct-28 19:15:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:16:50:330] error: Oct-28 19:16:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:17:50:326] error: Oct-28 19:17:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:18:50:324] error: Oct-28 19:18:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:19:50:326] error: Oct-28 19:19:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:20:50:326] error: Oct-28 19:20:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:21:50:324] error: Oct-28 19:21:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:22:50:331] error: Oct-28 19:22:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:23:50:326] error: Oct-28 19:23:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:24:50:332] error: Oct-28 19:24:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:25:50:327] error: Oct-28 19:25:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:26:50:327] error: Oct-28 19:26:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:27:50:327] error: Oct-28 19:27:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:28:50:337] error: Oct-28 19:28:50.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:29:50:324] error: Oct-28 19:29:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:30:50:328] error: Oct-28 19:30:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:31:50:332] error: Oct-28 19:31:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:32:50:331] error: Oct-28 19:32:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:33:50:330] error: Oct-28 19:33:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:34:50:329] error: Oct-28 19:34:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:35:50:331] error: Oct-28 19:35:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:36:50:329] error: Oct-28 19:36:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:37:50:334] error: Oct-28 19:37:50.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:38:50:334] error: Oct-28 19:38:50.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:39:50:326] error: Oct-28 19:39:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:40:50:332] error: Oct-28 19:40:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:41:50:333] error: Oct-28 19:41:50.333 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:42:50:328] error: Oct-28 19:42:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:43:50:330] error: Oct-28 19:43:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:44:50:326] error: Oct-28 19:44:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:45:50:327] error: Oct-28 19:45:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:46:50:330] error: Oct-28 19:46:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:47:50:332] error: Oct-28 19:47:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:48:50:332] error: Oct-28 19:48:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:49:50:330] error: Oct-28 19:49:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:50:50:333] error: Oct-28 19:50:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:51:50:328] error: Oct-28 19:51:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:52:50:329] error: Oct-28 19:52:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:53:50:331] error: Oct-28 19:53:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:54:50:330] error: Oct-28 19:54:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:55:50:332] error: Oct-28 19:55:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:56:50:333] error: Oct-28 19:56:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:57:50:326] error: Oct-28 19:57:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:58:50:325] error: Oct-28 19:58:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 19:59:50:330] error: Oct-28 19:59:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:00:50:328] error: Oct-28 20:00:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:01:50:330] error: Oct-28 20:01:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:02:50:329] error: Oct-28 20:02:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:03:50:326] error: Oct-28 20:03:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:04:50:325] error: Oct-28 20:04:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:05:50:333] error: Oct-28 20:05:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:06:50:330] error: Oct-28 20:06:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:07:50:325] error: Oct-28 20:07:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:08:50:326] error: Oct-28 20:08:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:09:50:329] error: Oct-28 20:09:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:10:50:323] error: Oct-28 20:10:50.323 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:11:50:331] error: Oct-28 20:11:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:12:50:331] error: Oct-28 20:12:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:13:50:329] error: Oct-28 20:13:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:14:50:325] error: Oct-28 20:14:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:15:50:329] error: Oct-28 20:15:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:16:50:332] error: Oct-28 20:16:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:17:50:332] error: Oct-28 20:17:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:18:50:326] error: Oct-28 20:18:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:19:50:329] error: Oct-28 20:19:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:20:50:327] error: Oct-28 20:20:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:21:50:325] error: Oct-28 20:21:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:22:50:328] error: Oct-28 20:22:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:23:50:329] error: Oct-28 20:23:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:24:50:326] error: Oct-28 20:24:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:25:50:325] error: Oct-28 20:25:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:26:50:331] error: Oct-28 20:26:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+[10/28/18, 20:41:32:696] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 20:41:32:697] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 20:41:32:694      ║
+[10/28/18, 20:41:32:697] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 20:41:32:784] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 20:41:35:258] info: cld3::loadModule: loading cld3 module
+[10/28/18, 20:41:35:336] info: cld3Loader::loadModule: running environment is NODE
+[10/28/18, 20:41:35:336] info: cld3Loader::loadModule: constructed module object for runtime
+[10/28/18, 20:41:35:596] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/28/18, 20:41:35:597] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/28/18, 20:41:35:601] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/28/18, 20:41:35:611] info: Main window preload script finished
+{
+  "readyTime": 3164.143541
+}
+[10/28/18, 20:41:40:269] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:41:40:292] info: Store: MAIN_WINDOW_SHOWN
+[10/28/18, 20:41:40:311] info: Store: SET_FULL_SCREEN
+[10/28/18, 20:41:40:312] info: Store: SET_FULL_SCREEN
+[10/28/18, 20:41:42:279] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:41:43:244] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/28/18, 20:41:53:824] info: Window is unloading, window.desktop is no longer accessible
+[10/28/18, 20:41:54:598] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:41:54:601] info: Window is unloading, window.desktop is no longer accessible
+[10/28/18, 20:41:54:869] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:41:55:628] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 20:41:55:629] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 20:41:55:626      ║
+[10/28/18, 20:41:55:629] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 20:41:55:714] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 20:41:55:990] info: cld3::loadModule: loading cld3 module
+[10/28/18, 20:41:56:008] info: cld3Loader::loadModule: running environment is NODE
+[10/28/18, 20:41:56:008] info: cld3Loader::loadModule: constructed module object for runtime
+[10/28/18, 20:41:56:153] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/28/18, 20:41:56:154] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/28/18, 20:41:56:159] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/28/18, 20:41:56:168] info: Main window preload script finished
+{
+  "readyTime": 727.707864
+}
+[10/28/18, 20:41:56:179] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/28/18, 20:41:56:182] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:41:56:461] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:41:57:755] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/28/18, 20:41:57:756] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 20:41:57:753      ║
+[10/28/18, 20:41:57:756] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/28/18, 20:41:57:841] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/28/18, 20:41:58:137] info: cld3::loadModule: loading cld3 module
+[10/28/18, 20:41:58:155] info: cld3Loader::loadModule: running environment is NODE
+[10/28/18, 20:41:58:155] info: cld3Loader::loadModule: constructed module object for runtime
+[10/28/18, 20:41:58:314] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/28/18, 20:41:58:314] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/28/18, 20:41:58:320] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/28/18, 20:41:58:329] info: Main window preload script finished
+{
+  "readyTime": 766.523963
+}
+[10/28/18, 20:42:00:858] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/28/18, 20:42:01:980] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:42:02:163] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:42:02:273] info: postLoadTaskSetup: Desktop client fully loaded
+{
+  "loadedTime": 108516.724129
+}
+[10/28/18, 20:42:02:330] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/28/18, 20:42:02:330] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:42:02:330] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/28/18, 20:42:02:331] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/28/18, 20:42:02:614] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:42:02:622] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:42:02:624] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/28/18, 20:42:02:658] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/28/18, 20:42:02:661] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/28/18, 20:42:02:691] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/28/18, 20:42:02:816] info: loadAsmModule: loading hunspell-asm module
+[10/28/18, 20:42:03:099] info: loadAsmModule: asm module loaded successfully
+[10/28/18, 20:42:03:100] info: SpellChecker: Starting spellchecker with language detector
+[10/28/18, 20:42:03:100] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/28/18, 20:42:03:101] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language lt
+[10/28/18, 20:42:03:320] info: download: downloading dictionary for 'lt-lt'
+[10/28/18, 20:42:03:320] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.aff",
+  "cachePolicy": "default"
+}
+[10/28/18, 20:42:03:433] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.dic",
+  "cachePolicy": "default"
+}
+[10/28/18, 20:42:03:586] info: dictionaryDownloader: verifying hash
+[10/28/18, 20:42:03:737] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "lt"
+}
+[10/28/18, 20:42:03:818] info: assignSpellchecker: spellCheckerTable added new checker for 'lt'
+[10/28/18, 20:42:03:820] info: SpellChecker::prepareDictionary: Dictionary buffer for 'lt' is loaded into spellchecker
+[10/28/18, 20:42:03:821] info: switchDictionary: switching dictionary to check spell from 'null' to 'lt'
+[10/28/18, 20:42:03:855] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "lt"
+}
+[10/28/18, 20:42:04:306] info: Store: SET_FULL_SCREEN
+[10/28/18, 22:05:12:099] info: Store: SET_SUSPEND_STATUS
+[10/28/18, 22:05:12:106] error: Oct-28 22:05:12.105 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4102: client is going to sleep
+[10/28/18, 22:06:03:661] info: Store: SET_SUSPEND_STATUS true
+[10/28/18, 22:06:04:002] error: Oct-28 22:06:04.002 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/28/18, 22:06:04:966] error: Oct-28 22:06:04.965 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/28/18, 22:06:06:971] error: Oct-28 22:06:06.971 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/28/18, 22:06:11:963] error: Oct-28 22:06:11.963 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[10/29/18, 09:27:15:084] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/29/18, 09:27:15:085] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/29/18, 09:27:15:080      ║
+[10/29/18, 09:27:15:085] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/29/18, 09:27:15:181] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/29/18, 09:27:17:114] info: cld3::loadModule: loading cld3 module
+[10/29/18, 09:27:17:215] info: cld3Loader::loadModule: running environment is NODE
+[10/29/18, 09:27:17:215] info: cld3Loader::loadModule: constructed module object for runtime
+[10/29/18, 09:27:17:414] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/29/18, 09:27:17:414] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/29/18, 09:27:17:419] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/29/18, 09:27:17:433] info: Main window preload script finished
+{
+  "readyTime": 4115.987411
+}
+[10/29/18, 09:27:18:499] info: Store: SET_NETWORK_STATUS online
+[10/29/18, 09:27:22:883] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/29/18, 09:27:24:404] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 09:27:24:405] info: Store: MAIN_WINDOW_SHOWN
+[10/29/18, 09:27:24:417] info: Store: SET_FULL_SCREEN
+[10/29/18, 09:27:24:417] info: Store: SET_FULL_SCREEN
+[10/29/18, 09:27:24:601] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/29/18, 09:27:24:601] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 09:27:24:762] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/29/18, 09:27:24:764] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/29/18, 09:27:24:767] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 09:27:26:034] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 09:27:26:034] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 09:27:26:036] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/29/18, 09:27:26:147] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 09:27:26:147] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/29/18, 09:27:26:209] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/29/18, 09:27:26:416] info: loadAsmModule: loading hunspell-asm module
+[10/29/18, 09:27:26:791] info: loadAsmModule: asm module loaded successfully
+[10/29/18, 09:27:26:791] info: SpellChecker: Starting spellchecker with language detector
+[10/29/18, 09:27:26:791] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/29/18, 09:27:26:791] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language lt
+[10/29/18, 09:27:27:559] info: download: downloading dictionary for 'lt-lt'
+[10/29/18, 09:27:27:559] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.aff",
+  "cachePolicy": "default"
+}
+[10/29/18, 09:27:27:887] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.dic",
+  "cachePolicy": "default"
+}
+[10/29/18, 09:27:28:319] info: dictionaryDownloader: verifying hash
+[10/29/18, 09:27:28:372] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "lt"
+}
+[10/29/18, 09:27:28:446] info: assignSpellchecker: spellCheckerTable added new checker for 'lt'
+[10/29/18, 09:27:28:449] info: SpellChecker::prepareDictionary: Dictionary buffer for 'lt' is loaded into spellchecker
+[10/29/18, 09:27:28:450] info: switchDictionary: switching dictionary to check spell from 'null' to 'lt'
+[10/29/18, 09:27:28:530] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "lt"
+}
+[10/29/18, 09:27:55:885] info: Store: SET_FULL_SCREEN
+[10/29/18, 10:52:07:573] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/29/18, 10:52:07:573] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/29/18, 10:52:07:570      ║
+[10/29/18, 10:52:07:574] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/29/18, 10:52:07:669] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/29/18, 10:52:08:677] info: cld3::loadModule: loading cld3 module
+[10/29/18, 10:52:08:748] info: cld3Loader::loadModule: running environment is NODE
+[10/29/18, 10:52:08:748] info: cld3Loader::loadModule: constructed module object for runtime
+[10/29/18, 10:52:08:994] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/29/18, 10:52:08:994] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/29/18, 10:52:09:000] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/29/18, 10:52:09:010] info: Main window preload script finished
+{
+  "readyTime": 1717.129461
+}
+[10/29/18, 10:52:12:827] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 10:52:13:432] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/29/18, 10:52:14:643] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 10:52:14:645] info: Store: SET_NETWORK_STATUS online
+[10/29/18, 10:52:14:645] info: Store: MAIN_WINDOW_SHOWN
+[10/29/18, 10:52:14:646] info: Store: SET_FULL_SCREEN
+[10/29/18, 10:52:14:647] info: Store: SET_FULL_SCREEN
+[10/29/18, 10:52:14:648] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/29/18, 10:52:14:649] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 10:52:14:649] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/29/18, 10:52:14:651] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/29/18, 10:52:14:897] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 10:52:14:942] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 10:52:14:945] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/29/18, 10:52:14:983] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 10:52:14:984] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/29/18, 10:52:15:112] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/29/18, 10:52:15:191] info: loadAsmModule: loading hunspell-asm module
+[10/29/18, 10:52:15:484] info: loadAsmModule: asm module loaded successfully
+[10/29/18, 10:52:15:484] info: SpellChecker: Starting spellchecker with language detector
+[10/29/18, 10:52:15:484] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/29/18, 10:52:15:484] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language lt
+[10/29/18, 10:52:15:576] info: download: downloading dictionary for 'lt-lt'
+[10/29/18, 10:52:15:577] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.aff",
+  "cachePolicy": "default"
+}
+[10/29/18, 10:52:15:840] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.dic",
+  "cachePolicy": "default"
+}
+[10/29/18, 10:52:16:050] info: dictionaryDownloader: verifying hash
+[10/29/18, 10:52:16:094] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "lt"
+}
+[10/29/18, 10:52:16:167] info: assignSpellchecker: spellCheckerTable added new checker for 'lt'
+[10/29/18, 10:52:16:168] info: SpellChecker::prepareDictionary: Dictionary buffer for 'lt' is loaded into spellchecker
+[10/29/18, 10:52:16:169] info: switchDictionary: switching dictionary to check spell from 'null' to 'lt'
+[10/29/18, 10:52:16:196] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "lt"
+}
+[10/29/18, 11:06:03:285] info: Store: SET_FULL_SCREEN
+[10/29/18, 11:06:03:473] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/29/18, 16:57:25:053] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/29/18, 16:57:25:054] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/29/18, 16:57:25:051      ║
+[10/29/18, 16:57:25:054] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/29/18, 16:57:25:154] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/29/18, 16:57:28:069] info: cld3::loadModule: loading cld3 module
+[10/29/18, 16:57:28:160] info: cld3Loader::loadModule: running environment is NODE
+[10/29/18, 16:57:28:160] info: cld3Loader::loadModule: constructed module object for runtime
+[10/29/18, 16:57:28:391] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/29/18, 16:57:28:391] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/29/18, 16:57:28:398] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/29/18, 16:57:28:416] info: Main window preload script finished
+{
+  "readyTime": 3612.907792
+}
+[10/29/18, 16:57:34:441] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/29/18, 16:57:36:253] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 16:57:36:255] info: Store: MAIN_WINDOW_SHOWN
+[10/29/18, 16:57:36:257] info: Store: SET_FULL_SCREEN
+[10/29/18, 16:57:36:257] info: Store: SET_FULL_SCREEN
+[10/29/18, 16:57:36:672] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 16:57:36:722] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/29/18, 16:57:36:722] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 16:57:36:723] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/29/18, 16:57:36:724] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/29/18, 16:57:36:730] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 16:57:36:833] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/29/18, 16:57:37:048] info: loadAsmModule: loading hunspell-asm module
+[10/29/18, 16:57:37:562] info: loadAsmModule: asm module loaded successfully
+[10/29/18, 16:57:37:564] info: SpellChecker: Starting spellchecker with language detector
+[10/29/18, 16:57:37:564] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/29/18, 16:57:37:564] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language lt
+[10/29/18, 16:57:37:598] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 16:57:37:599] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/29/18, 16:57:37:622] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/29/18, 16:57:37:622] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/29/18, 16:57:37:626] info: download: downloading dictionary for 'lt-lt'
+[10/29/18, 16:57:37:626] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.aff",
+  "cachePolicy": "default"
+}
+[10/29/18, 16:57:37:712] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.dic",
+  "cachePolicy": "default"
+}
+[10/29/18, 16:57:37:911] info: dictionaryDownloader: verifying hash
+[10/29/18, 16:57:37:954] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "lt"
+}
+[10/29/18, 16:57:38:035] info: assignSpellchecker: spellCheckerTable added new checker for 'lt'
+[10/29/18, 16:57:38:037] info: SpellChecker::prepareDictionary: Dictionary buffer for 'lt' is loaded into spellchecker
+[10/29/18, 16:57:38:037] info: switchDictionary: switching dictionary to check spell from 'null' to 'lt'
+[10/29/18, 16:57:38:111] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "lt"
+}
+[10/29/18, 17:00:17:236] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    49,
+    102
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[10/29/18, 17:00:17:253] info: Store: SET_FULL_SCREEN
+[10/30/18, 14:19:42:212] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/30/18, 14:19:42:213] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/30/18, 14:19:42:208      ║
+[10/30/18, 14:19:42:213] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/30/18, 14:19:42:309] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/30/18, 14:19:44:955] info: cld3::loadModule: loading cld3 module
+[10/30/18, 14:19:45:028] info: cld3Loader::loadModule: running environment is NODE
+[10/30/18, 14:19:45:028] info: cld3Loader::loadModule: constructed module object for runtime
+[10/30/18, 14:19:45:418] info: cld3Loader::initializeRuntime: successfully initialized module
+[10/30/18, 14:19:45:419] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[10/30/18, 14:19:45:439] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[10/30/18, 14:19:45:455] info: Main window preload script finished
+{
+  "readyTime": 7511.642547
+}
+[10/30/18, 14:19:46:459] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/30/18, 14:19:46:460] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/30/18, 14:19:48:296] info: Store: SET_NETWORK_STATUS online
+[10/30/18, 14:20:24:843] info: Skipping request to provide hint content for channel for spellchecker
+{
+  "version": "V2"
+}
+[10/30/18, 14:20:30:823] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 14:20:30:824] info: Store: MAIN_WINDOW_SHOWN
+[10/30/18, 14:20:30:844] info: Store: SET_FULL_SCREEN
+[10/30/18, 14:20:30:844] info: Store: SET_FULL_SCREEN
+[10/30/18, 14:20:31:088] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 14:20:31:255] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/30/18, 14:20:31:256] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 14:20:31:256] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/30/18, 14:20:31:257] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/30/18, 14:20:31:786] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 14:20:31:793] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 14:20:31:796] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/30/18, 14:20:31:925] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "enterpriseId": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 14:20:31:926] info: Store: STORE_API_TOKEN
+{
+  "teamId": "T2LHV2VSB",
+  "token": "xoxs-⋯"
+}
+[10/30/18, 14:20:32:136] info: postLoadTaskSetup: Setup spellchecker
+{
+  "version": "V2"
+}
+[10/30/18, 14:20:32:221] info: loadAsmModule: loading hunspell-asm module
+[10/30/18, 14:20:32:604] info: loadAsmModule: asm module loaded successfully
+[10/30/18, 14:20:32:604] info: SpellChecker: Starting spellchecker with language detector
+[10/30/18, 14:20:32:604] info: SpellChecker::enableSpellCheckerLanguageDetector: enable spellchecker language detector
+[10/30/18, 14:20:32:604] info: SpellChecker::startWithDictionary: Starting language detector with preloaded dict from last used language lt
+[10/30/18, 14:20:32:882] info: download: downloading dictionary for 'lt-lt'
+[10/30/18, 14:20:32:883] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.aff",
+  "cachePolicy": "default"
+}
+[10/30/18, 14:20:33:029] info: fetchResourceAsBuffer: downloading
+{
+  "filePath": "https://spellcheck.slack-edge.com/dictionaries/lt-lt/1/lt-lt.dic",
+  "cachePolicy": "default"
+}
+[10/30/18, 14:20:33:507] info: dictionaryDownloader: verifying hash
+[10/30/18, 14:20:33:547] info: SpellChecker::downloadDictionary: Dictionary is ready for 
+{
+  "language": "lt"
+}
+[10/30/18, 14:20:33:621] info: assignSpellchecker: spellCheckerTable added new checker for 'lt'
+[10/30/18, 14:20:33:622] info: SpellChecker::prepareDictionary: Dictionary buffer for 'lt' is loaded into spellchecker
+[10/30/18, 14:20:33:622] info: switchDictionary: switching dictionary to check spell from 'null' to 'lt'
+[10/30/18, 14:20:33:649] info: SpellChecker::switchDictionary: SpellChecker enabled for language
+{
+  "language": "lt"
+}
+[10/30/18, 14:37:18:158] info: Store: SET_FULL_SCREEN

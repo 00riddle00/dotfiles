@@ -10865,3 +10865,1277 @@ info: Oct-28 09:44:06.834 [API-Q] (T2LHV2VSB) c7c4d9af-1540712646.833 channels.s
 info: Oct-28 09:44:06.834 [API-Q] (T2LHV2VSB) c7c4d9af-1540712646.833 channels.suggestions is ENQUEUED
 info: Oct-28 09:44:06.835 [API-Q] (T2LHV2VSB) c7c4d9af-1540712646.833 channels.suggestions is ACTIVE
 info: Oct-28 09:44:07.247 [API-Q] (T2LHV2VSB) c7c4d9af-1540712646.833 channels.suggestions is RESOLVED
+error: Oct-28 10:33:37.186 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-28 10:33:37.189 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connected to error
+info: Oct-28 10:33:37.190 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/28 10:33:37.195  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:859804)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861520)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:245308)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:862228)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:854771)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.2179c952120918e21baa.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3839961)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3838467)
+info: Oct-28 10:33:37.195 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-28 10:33:37.195 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-28 10:33:37.196 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 831 ms
+info: Oct-28 10:33:37.197 [INFO] MSDisconnected: 
+info: Oct-28 10:33:37.199 [INFO] Hiding the reconnection banner because we are disconnected
+info: Oct-28 10:33:38.831 [SOCKET-MANAGER] (T2LHV2VSB) Changing from wait_for_rate_limit to connect
+info: Oct-28 10:33:38.832 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-28 10:33:38.833 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-28 10:33:38.834 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-28 10:33:38.835 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-28 10:33:38.835 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+info: Oct-28 10:33:40.351 [SOCKET-MANAGER] (T2LHV2VSB) received an error of type 401: invalid_auth
+error: Oct-28 10:33:40.352 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4106: received an "error" message from socket
+info: Oct-28 10:33:40.353 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-28 10:33:40.353 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/28 10:33:40.354  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:859804)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861520)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:855756)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.2179c952120918e21baa.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3840765)
+at WebSocket._socket.onmessage (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3838530)
+info: Oct-28 10:33:40.355 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-28 10:33:40.355 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-28 10:33:40.355 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 1661 ms
+info: Oct-28 10:33:40.357 [RELOAD] "Reloading due to error invalid_auth"
+info: Oct-28 10:33:40.365 [INFO] client window unloaded!
+info: Oct-28 10:33:40.367 [WINDOW-UNLOADING] (T2LHV2VSB) workspace handling window unloading event
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Oct-28 10:33:43.562 error getActiveModelOb found no ob
+warn: Oct-28 10:33:43.563 TS.boot_data.channel_id: undefined
+warn: Oct-28 10:33:43.563 TS.boot_data.im_id: undefined
+warn: Oct-28 10:33:43.563 TS.boot_data.group_id: undefined
+warn: Oct-28 10:33:43.563 error getActiveModelOb found no ob
+warn: Oct-28 10:33:43.563 TS.boot_data.channel_id: undefined
+warn: Oct-28 10:33:43.563 TS.boot_data.im_id: undefined
+warn: Oct-28 10:33:43.564 TS.boot_data.group_id: undefined
+info: Oct-28 10:33:43.637 [BOOT] booted! pri:0 version:1540588753 start_ms:1540715622198 (1439ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-28 10:33:43.839 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Oct-28 10:33:44.528 [INFO] running without a user
+error: Oct-28 10:34:43.088 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:35:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:36:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:37:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:38:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:39:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:40:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:41:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:42:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:43:42.840 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:44:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:45:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:46:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:47:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:48:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:49:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:50:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:51:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:52:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:53:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 10:54:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:01:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:02:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:03:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:04:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:05:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:06:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:07:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:08:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:09:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 11:10:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:17:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:18:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:19:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:20:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:21:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:22:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:23:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:24:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:25:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:26:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:27:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:45:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:46:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:47:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:48:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:49:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:50:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:51:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:52:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:53:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:54:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:55:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:56:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:57:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:58:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 14:59:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:00:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:01:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:02:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:03:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:04:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:05:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:06:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:07:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:08:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:09:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:10:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:11:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:12:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:13:42.841 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:14:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:15:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:16:43.523 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:17:42.845 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:18:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:19:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:20:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:21:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:22:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:23:42.861 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:24:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:25:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:26:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:27:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:28:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:29:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:30:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:31:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:32:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:33:42.840 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:34:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:35:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:36:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:37:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:38:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:39:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:40:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:41:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:42:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:43:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:44:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:45:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:46:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:47:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:48:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:49:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:50:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:51:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:52:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:53:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:54:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:55:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:56:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:57:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:58:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 15:59:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:00:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:01:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:02:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:03:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:04:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:05:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:06:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:07:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:08:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:09:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:10:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:11:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:12:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:13:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:39:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:40:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:41:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:42:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:43:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:44:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:45:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:46:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:47:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:48:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:49:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:50:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:51:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:52:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:53:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:54:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:55:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:56:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:57:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:58:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 16:59:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:00:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:01:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:02:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:03:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:04:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:05:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:06:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:07:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:08:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:09:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:10:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:11:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:12:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:13:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:14:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:15:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:16:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:17:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:18:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:19:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:20:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:21:42.842 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:22:42.840 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:23:42.844 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:24:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:25:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:26:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:27:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:28:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:29:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:30:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:31:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:32:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:33:42.835 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:34:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:35:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:36:42.831 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:37:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:38:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:39:42.832 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:40:42.836 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:41:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:42:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:43:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:44:42.839 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:45:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:46:42.834 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:47:42.838 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:48:42.833 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 17:49:42.837 TICKLE-MS (T00) Skipping tickle because no user exists
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 18:34:01:327      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Oct-28 18:34:22.541 error getActiveModelOb found no ob
+warn: Oct-28 18:34:22.541 TS.boot_data.channel_id: undefined
+warn: Oct-28 18:34:22.542 TS.boot_data.im_id: undefined
+warn: Oct-28 18:34:22.542 TS.boot_data.group_id: undefined
+warn: Oct-28 18:34:22.542 error getActiveModelOb found no ob
+warn: Oct-28 18:34:22.542 TS.boot_data.channel_id: undefined
+warn: Oct-28 18:34:22.542 TS.boot_data.im_id: undefined
+warn: Oct-28 18:34:22.542 TS.boot_data.group_id: undefined
+info: Oct-28 18:34:24.350 [BOOT] booted! pri:0 version:1540588753 start_ms:1540744458970 (5380ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-28 18:34:24.489 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Oct-28 18:34:32.070 [FOCUS-EVENT] Window focused
+info: Oct-28 18:34:32.102 [INFO] running without a user
+error: Oct-28 18:35:17.879 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:36:17.727 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:37:17.727 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:38:17.727 TICKLE-MS (T00) Skipping tickle because no user exists
+info: Oct-28 18:38:30.585 [FOCUS-EVENT] Window blurred
+info: Oct-28 18:38:30.587 [FOCUS-EVENT] Window focused
+info: Oct-28 18:38:30.591 [FOCUS-EVENT] Window blurred
+info: Oct-28 18:38:30.593 [FOCUS-EVENT] Window focused
+info: Oct-28 18:38:30.596 [FOCUS-EVENT] Window blurred
+info: Oct-28 18:38:38.446 [FOCUS-EVENT] Window focused
+info: Oct-28 18:38:38.451 [FOCUS-EVENT] Window blurred
+info: Oct-28 18:38:38.453 [FOCUS-EVENT] Window focused
+info: Oct-28 18:38:39.694 [FOCUS-EVENT] Window blurred
+error: Oct-28 18:39:18.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:40:18.334 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:41:18.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:42:18.335 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:43:18.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:44:18.334 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:45:18.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:46:18.333 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:47:18.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:48:18.339 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:49:18.335 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:50:18.334 TICKLE-MS (T00) Skipping tickle because no user exists
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 18:55:34:825      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Oct-28 18:55:55.571 error getActiveModelOb found no ob
+warn: Oct-28 18:55:55.571 TS.boot_data.channel_id: undefined
+warn: Oct-28 18:55:55.572 TS.boot_data.im_id: undefined
+warn: Oct-28 18:55:55.572 TS.boot_data.group_id: undefined
+warn: Oct-28 18:55:55.572 error getActiveModelOb found no ob
+warn: Oct-28 18:55:55.572 TS.boot_data.channel_id: undefined
+warn: Oct-28 18:55:55.573 TS.boot_data.im_id: undefined
+warn: Oct-28 18:55:55.573 TS.boot_data.group_id: undefined
+info: Oct-28 18:55:56.614 [BOOT] booted! pri:0 version:1540588753 start_ms:1540745752771 (3843ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-28 18:55:56.754 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Oct-28 18:56:01.229 [FOCUS-EVENT] Window focused
+info: Oct-28 18:56:01.266 [INFO] running without a user
+info: Oct-28 18:56:27.412 [FOCUS-EVENT] Window blurred
+error: Oct-28 18:56:50.550 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:57:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:58:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 18:59:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:00:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:01:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:02:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:03:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:04:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:05:50.334 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:06:50.333 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:07:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:08:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:09:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:10:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:11:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:12:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:13:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:14:50.335 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:15:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:16:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:17:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:18:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:19:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:20:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:21:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:22:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:23:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:24:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:25:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:26:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:27:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:28:50.337 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:29:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:30:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:31:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:32:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:33:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:34:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:35:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:36:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:37:50.334 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:38:50.334 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:39:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:40:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:41:50.333 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:42:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:43:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:44:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:45:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:46:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:47:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:48:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:49:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:50:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:51:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:52:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:53:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:54:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:55:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:56:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:57:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:58:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 19:59:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:00:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:01:50.330 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:02:50.327 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:03:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:04:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:05:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:06:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:07:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:08:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:09:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:10:50.323 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:11:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:12:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:13:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:14:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:15:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:16:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:17:50.332 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:18:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:19:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:20:50.326 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:21:50.324 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:22:50.328 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:23:50.329 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:24:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:25:50.325 TICKLE-MS (T00) Skipping tickle because no user exists
+error: Oct-28 20:26:50.331 TICKLE-MS (T00) Skipping tickle because no user exists
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/28/18, 20:41:08:341      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Oct-28 20:41:40.056 error getActiveModelOb found no ob
+warn: Oct-28 20:41:40.056 TS.boot_data.channel_id: undefined
+warn: Oct-28 20:41:40.056 TS.boot_data.im_id: undefined
+warn: Oct-28 20:41:40.056 TS.boot_data.group_id: undefined
+warn: Oct-28 20:41:40.057 error getActiveModelOb found no ob
+warn: Oct-28 20:41:40.057 TS.boot_data.channel_id: undefined
+warn: Oct-28 20:41:40.057 TS.boot_data.im_id: undefined
+warn: Oct-28 20:41:40.057 TS.boot_data.group_id: undefined
+info: Oct-28 20:41:40.132 [BOOT] booted! pri:0 version:1540588753 start_ms:1540752096850 (3282ms ago)
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-28 20:41:40.273 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Oct-28 20:41:42.278 [INFO] running without a user
+info: Oct-28 20:41:42.284 [FOCUS-EVENT] Window focused
+info: Oct-28 20:41:42.291 [FOCUS-EVENT] Window blurred
+info: Oct-28 20:41:42.293 [FOCUS-EVENT] Window focused
+info: Oct-28 20:41:42.297 [FOCUS-EVENT] Window blurred
+info: Oct-28 20:41:42.759 [FOCUS-EVENT] Window focused
+info: Oct-28 20:41:53.826 [WINDOW-UNLOADING] (T00) workspace handling window unloading event
+info: Oct-28 20:41:54.602 [WINDOW-UNLOADING] (T00) workspace handling window unloading event
+info: Oct-28 20:41:54.655 [FOCUS-EVENT] Window blurred
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-28 20:42:00.097 [BOOT] booted! pri:0 version:1540588753 start_ms:1540752118763 (1334ms ago)
+info: Oct-28 20:42:00.097 [BOOT] Starting incremental boot (early)
+warn: Oct-28 20:42:00.173 error getActiveModelOb found no ob
+warn: Oct-28 20:42:00.173 TS.boot_data.channel_id: undefined
+warn: Oct-28 20:42:00.173 TS.boot_data.im_id: undefined
+warn: Oct-28 20:42:00.173 TS.boot_data.group_id: undefined
+warn: Oct-28 20:42:00.174 error getActiveModelOb found no ob
+warn: Oct-28 20:42:00.174 TS.boot_data.channel_id: undefined
+warn: Oct-28 20:42:00.174 TS.boot_data.im_id: undefined
+warn: Oct-28 20:42:00.174 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-28 20:42:00.385 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-28 20:42:00.385 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-28 20:42:00.386 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-28 20:42:00.386 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-28 20:42:00.484 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-28 20:42:00.620 [API-Q] (T2LHV2VSB) c7c4d9af-1540752120.619 apps.actions.list called with reason: no_reason_provided
+info: Oct-28 20:42:00.621 [API-Q] (T2LHV2VSB) c7c4d9af-1540752120.619 apps.actions.list is ENQUEUED
+info: Oct-28 20:42:00.622 [API-Q] (T2LHV2VSB) c7c4d9af-1540752120.619 apps.actions.list is ACTIVE
+warn: Oct-28 20:42:00.763 updateTeamIcon was called, but missing an image to set
+info: Oct-28 20:42:00.861 [BOOT] Finalizing incremental boot
+info: Oct-28 20:42:00.863 [METRICS] Starting timers for metrics collection
+info: Oct-28 20:42:00.864 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-28 20:42:01.967 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to D2PBY7P4G at end
+info: Oct-28 20:42:01.997 [API-Q] (T2LHV2VSB) c7c4d9af-1540752121.997 promo.banner called with reason: no_reason_provided
+info: Oct-28 20:42:01.997 [API-Q] (T2LHV2VSB) c7c4d9af-1540752121.997 promo.banner is ENQUEUED
+info: Oct-28 20:42:01.998 [API-Q] (T2LHV2VSB) c7c4d9af-1540752121.997 promo.banner is ACTIVE
+info: Oct-28 20:42:02.006 [PERF] (T2LHV2VSB) First meaningful paint: 5142ms
+info: Oct-28 20:42:02.165 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-28 20:42:02.165 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-28 20:42:02.166 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-28 20:42:02.167 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-28 20:42:02.174 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-28 20:42:02.176 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-28 20:42:02.188 [BOOT] Completed incremental boot
+info: Oct-28 20:42:02.197 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.197 i18n.translations.get called with reason: no_reason_provided
+info: Oct-28 20:42:02.197 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.197 i18n.translations.get is ENQUEUED
+info: Oct-28 20:42:02.198 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.197 i18n.translations.get is ACTIVE
+warn: Oct-28 20:42:02.198 updateTeamIcon was called, but missing an image to set
+info: Oct-28 20:42:02.270 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-28 20:42:02.270 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-28 20:42:02.270 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-28 20:42:02.271 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-28 20:42:02.271 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-28 20:42:02.271 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-28 20:42:02.271 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-28 20:42:02.271 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-28 20:42:02.273 [BOOT] Finished first boot 1894 ms after DOM ready
+info: Oct-28 20:42:02.278 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.277 help.issues.list called with reason: no_reason_provided
+info: Oct-28 20:42:02.278 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.277 help.issues.list is ENQUEUED
+info: Oct-28 20:42:02.278 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.277 help.issues.list is ACTIVE
+info: Oct-28 20:42:02.280 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.279 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-28 20:42:02.280 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.279 dnd.teamInfo is ENQUEUED
+info: Oct-28 20:42:02.280 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.279 dnd.teamInfo is ACTIVE
+info: Oct-28 20:42:02.281 [INFO] MSConnected: 
+info: Oct-28 20:42:02.314 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.313 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-28 20:42:02.314 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.313 users.counts is ENQUEUED
+info: Oct-28 20:42:02.314 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.313 users.counts is ACTIVE
+info: Oct-28 20:42:02.323 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.323 subteams.membership called with reason: no_reason_provided
+info: Oct-28 20:42:02.323 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.323 subteams.membership is ENQUEUED
+info: Oct-28 20:42:02.324 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.323 subteams.membership is ACTIVE
+info: Oct-28 20:42:02.332 [API-Q] (T2LHV2VSB) c7c4d9af-1540752120.619 apps.actions.list is RESOLVED
+info: Oct-28 20:42:02.333 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting T2LHV2VSB (1)
+info: Oct-28 20:42:02.334 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.334 team.info called with reason: UnknownFetchManager
+info: Oct-28 20:42:02.334 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.334 team.info is ENQUEUED
+info: Oct-28 20:42:02.335 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.334 team.info is ACTIVE
+info: Oct-28 20:42:02.335 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-28 20:42:02.337 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting D2PBY7P4G (1)
+info: Oct-28 20:42:02.338 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received D2PBY7P4G (1)
+info: Oct-28 20:42:02.520 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: D2PBY7P4G oldest: 1477398429.000004 latest: null
+info: Oct-28 20:42:02.521 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.521 conversations.history called with reason: message-pane/requestHistory
+info: Oct-28 20:42:02.521 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.521 conversations.history is ENQUEUED
+info: Oct-28 20:42:02.522 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.521 conversations.history is ACTIVE
+info: Oct-28 20:42:02.613 [API-Q] (T2LHV2VSB) c7c4d9af-1540752121.997 promo.banner is RESOLVED
+info: Oct-28 20:42:02.614 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-28 20:42:02.616 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G, clearing ghost last_read
+info: Oct-28 20:42:02.621 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.197 i18n.translations.get is RESOLVED
+info: Oct-28 20:42:02.625 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.279 dnd.teamInfo is RESOLVED
+info: Oct-28 20:42:02.628 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.334 team.info is RESOLVED
+info: Oct-28 20:42:02.628 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received T2LHV2VSB (1)
+info: Oct-28 20:42:02.640 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 10
+info: Oct-28 20:42:02.654 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-28 20:42:03.112 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.277 help.issues.list is RESOLVED
+info: Oct-28 20:42:03.114 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.323 subteams.membership is RESOLVED
+info: Oct-28 20:42:03.115 [USER_GROUP_MEMBERSHIP] (T2LHV2VSB) Completed subteams.membership processing
+info: Oct-28 20:42:03.116 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.313 users.counts is RESOLVED
+info: Oct-28 20:42:03.127 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-28 20:42:03.211 [API-Q] (T2LHV2VSB) c7c4d9af-1540752122.521 conversations.history is RESOLVED
+info: Oct-28 20:42:03.233 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 10
+info: Oct-28 20:42:03.236 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-28 20:42:03.272 [API-Q] (T2LHV2VSB) c7c4d9af-1540752123.271 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-28 20:42:03.272 [API-Q] (T2LHV2VSB) c7c4d9af-1540752123.271 dnd.teamInfo is ENQUEUED
+info: Oct-28 20:42:03.272 [API-Q] (T2LHV2VSB) c7c4d9af-1540752123.271 dnd.teamInfo is ACTIVE
+info: Oct-28 20:42:03.632 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-28 20:42:03.633 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-28 20:42:03.718 [FOCUS-EVENT] Window blurred
+info: Oct-28 20:42:03.819 [API-Q] (T2LHV2VSB) c7c4d9af-1540752123.271 dnd.teamInfo is RESOLVED
+info: Oct-28 20:42:03.871 [FOCUS-EVENT] Window focused
+info: Oct-28 20:42:03.894 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-28 20:42:03.894 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-28 20:42:04.304 [FOCUS-EVENT] Window blurred
+info: Oct-28 20:43:15.484 [API-Q] (T2LHV2VSB) c7c4d9af-1540752195.483 channels.suggestions called with reason: no_reason_provided
+info: Oct-28 20:43:15.484 [API-Q] (T2LHV2VSB) c7c4d9af-1540752195.483 channels.suggestions is ENQUEUED
+info: Oct-28 20:43:15.485 [API-Q] (T2LHV2VSB) c7c4d9af-1540752195.483 channels.suggestions is ACTIVE
+info: Oct-28 20:43:15.999 [API-Q] (T2LHV2VSB) c7c4d9af-1540752195.483 channels.suggestions is RESOLVED
+info: Oct-28 22:05:12.103 [SOCKET-MANAGER] (T2LHV2VSB) Sleeping
+info: Oct-28 22:05:12.104 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connected to sleep
+info: Oct-28 22:05:12.104 [SOCKET-MANAGER] (T2LHV2VSB) will stay in sleep state for up to 10000 ms
+info: Oct-28 22:05:12.105 [SOCKET-MANAGER] (T2LHV2VSB) Changing from sleep to sleeping
+info: Oct-28 22:05:12.105 [SOCKET-MANAGER] (T2LHV2VSB) will stay in sleeping state for up to 10000 ms
+error: Oct-28 22:05:12.105 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4102: client is going to sleep
+info: Oct-28 22:05:12.106 [SOCKET-MANAGER] (T2LHV2VSB) Changing from sleeping to asleep
+info: Oct-28 22:05:12.106 [SOCKET-MANAGER] (T2LHV2VSB) will stay in asleep state for up to Infinity ms
+info: Oct-28 22:05:12.106 [INFO] sleep event!
+info: Oct-28 22:05:12.107 [INFO] MSDisconnected: 
+info: Oct-28 22:05:12.109 [INFO] Hiding the reconnection banner because we are disconnected
+info: Oct-28 22:06:03.662 [SOCKET-MANAGER] (T2LHV2VSB) Waking
+info: Oct-28 22:06:03.663 [SOCKET-MANAGER] (T2LHV2VSB) Changing from asleep to connect
+info: 2018/10/28 22:06:03.665  Wake was triggered by:
+Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861306)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:245308)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:862228)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:850979)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:849366
+at <anonymous>:1:8
+at EventEmitter.electron.ipcRenderer.on (/usr/lib/slack/resources/electron.asar/renderer/web-frame-init.js:36:30)
+at emitMany (events.js:147:13)
+at EventEmitter.emit (events.js:224:7)
+info: Oct-28 22:06:03.665 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-28 22:06:03.666 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-28 22:06:03.666 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-28 22:06:03.666 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-28 22:06:03.666 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+info: Oct-28 22:06:03.668 [INFO] wake event! version:1540588753 start_ms:1540752118763
+error: WebSocket connection to 'wss://mpmulti-kgqb.lb.slack-msgs.com/?flannel=3&token=xoxs-⋯&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1jdWdvLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9wNkR2djJUdERZeVdFTk1oNjgxVTZrQUxNU3o1Rzd6eVlxd0h4RTZZNXpxc1FYYngzbUFCUF9IVG1odjZkdEtGa3hRcDByQ056dHBoa1Z3WHlrWV9YMklCTnAyWVhDTFBJc1dOWExzdWRFcGNoV1JXSGFwUktta2xiN3liLWpoeUNFUEY1QUtrWUhpOHhGejRmbXZZVGl4Y3ozUEF2QlplclZ1LU9Jdll3OXNjdlBYdk9DaWJ6NF9ZUF9FX2lMS21PbTNLYjkwbHRnWkR6a0pFUDR4VHIzTWp4ZnV5T1haamxzOFY2SzB1T2x3SGNkc3RsWHlLYUxTbzZyb0FZUWMyVmY2dnY5MUw1ektnNFUtSFc1cWRFNm9Ib25OcFZpVldWa2ptbGwtTzFxcz0BCVQyTEhWMlZTQgIJVTJMSEpCQVNDAQ8BAAAADtNoDTEX-4S7_lwAASCblPGpDsn59RDcgqHgaIlW5bbi0tTPaTuO4fk3wK3mZQA&encoding=&dp=1&lazy_channels=1' failed: Error in connection establishment: net::ERR_NETWORK_CHANGED
+error: Oct-28 22:06:04.002 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-28 22:06:04.003 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-28 22:06:04.003 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/28 22:06:04.400  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:859804)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861520)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:245308)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:862228)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:854771)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.2179c952120918e21baa.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3839961)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3838467)
+info: Oct-28 22:06:04.004 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-28 22:06:04.004 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-28 22:06:04.005 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 774 ms
+info: Oct-28 22:06:04.954 [SOCKET-MANAGER] (T2LHV2VSB) Changing from wait_for_rate_limit to connect
+info: Oct-28 22:06:04.956 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-28 22:06:04.957 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-28 22:06:04.958 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-28 22:06:04.959 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-28 22:06:04.959 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+error: WebSocket connection to 'wss://mpmulti-kgqb.lb.slack-msgs.com/?flannel=3&token=xoxs-⋯&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1jdWdvLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9wNkR2djJUdERZeVdFTk1oNjgxVTZrQUxNU3o1Rzd6eVlxd0h4RTZZNXpxc1FYYngzbUFCUF9IVG1odjZkdEtGa3hRcDByQ056dHBoa1Z3WHlrWV9YMklCTnAyWVhDTFBJc1dOWExzdWRFcGNoV1JXSGFwUktta2xiN3liLWpoeUNFUEY1QUtrWUhpOHhGejRmbXZZVGl4Y3ozUEF2QlplclZ1LU9Jdll3OXNjdlBYdk9DaWJ6NF9ZUF9FX2lMS21PbTNLYjkwbHRnWkR6a0pFUDR4VHIzTWp4ZnV5T1haamxzOFY2SzB1T2x3SGNkc3RsWHlLYUxTbzZyb0FZUWMyVmY2dnY5MUw1ektnNFUtSFc1cWRFNm9Ib25OcFZpVldWa2ptbGwtTzFxcz0BCVQyTEhWMlZTQgIJVTJMSEpCQVNDAQ8BAAAADtNoDTEX-4S7_lwAASCblPGpDsn59RDcgqHgaIlW5bbi0tTPaTuO4fk3wK3mZQA&encoding=&dp=1&lazy_channels=1' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED
+error: Oct-28 22:06:04.965 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-28 22:06:04.966 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-28 22:06:04.966 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/28 22:06:04.967  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:859804)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861520)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:245308)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:862228)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:854771)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.2179c952120918e21baa.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3839961)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3838467)
+info: Oct-28 22:06:04.967 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-28 22:06:04.967 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-28 22:06:04.967 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 1774 ms
+info: Oct-28 22:06:06.962 [SOCKET-MANAGER] (T2LHV2VSB) Changing from wait_for_rate_limit to connect
+info: Oct-28 22:06:06.963 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-28 22:06:06.964 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-28 22:06:06.964 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-28 22:06:06.964 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-28 22:06:06.964 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+error: WebSocket connection to 'wss://mpmulti-kgqb.lb.slack-msgs.com/?flannel=3&token=xoxs-⋯&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1jdWdvLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9wNkR2djJUdERZeVdFTk1oNjgxVTZrQUxNU3o1Rzd6eVlxd0h4RTZZNXpxc1FYYngzbUFCUF9IVG1odjZkdEtGa3hRcDByQ056dHBoa1Z3WHlrWV9YMklCTnAyWVhDTFBJc1dOWExzdWRFcGNoV1JXSGFwUktta2xiN3liLWpoeUNFUEY1QUtrWUhpOHhGejRmbXZZVGl4Y3ozUEF2QlplclZ1LU9Jdll3OXNjdlBYdk9DaWJ6NF9ZUF9FX2lMS21PbTNLYjkwbHRnWkR6a0pFUDR4VHIzTWp4ZnV5T1haamxzOFY2SzB1T2x3SGNkc3RsWHlLYUxTbzZyb0FZUWMyVmY2dnY5MUw1ektnNFUtSFc1cWRFNm9Ib25OcFZpVldWa2ptbGwtTzFxcz0BCVQyTEhWMlZTQgIJVTJMSEpCQVNDAQ8BAAAADtNoDTEX-4S7_lwAASCblPGpDsn59RDcgqHgaIlW5bbi0tTPaTuO4fk3wK3mZQA&encoding=&dp=1&lazy_channels=1' failed: Error in connection establishment: net::ERR_INTERNET_DISCONNECTED
+error: Oct-28 22:06:06.971 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-28 22:06:06.972 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-28 22:06:06.972 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/28 22:06:06.973  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:859804)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861520)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:245308)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:862228)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:854771)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.2179c952120918e21baa.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3839961)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3838467)
+info: Oct-28 22:06:06.973 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-28 22:06:06.973 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-28 22:06:06.973 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 4512 ms
+info: Oct-28 22:06:11.955 [SOCKET-MANAGER] (T2LHV2VSB) Changing from wait_for_rate_limit to connect
+info: Oct-28 22:06:11.955 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-28 22:06:11.956 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-28 22:06:11.956 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-28 22:06:11.957 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-28 22:06:11.957 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+error: WebSocket connection to 'wss://mpmulti-kgqb.lb.slack-msgs.com/?flannel=3&token=xoxs-⋯&frt=Hf-FAwEBA2ZydAH_hgABAgEBUAEKAAEBUwEKAAAA_gH9_4YB_gHUNf-BAwEBA2ZycAH_ggABBQECUnUBDAABAlRpAQwAAQJFaQEMAAECVWkBDAABAk10Af-EAAAAEP-DBQEBBFRpbWUB_4QAAAD-AYr_ggH-AVx3c3M6Ly9jZXJiZXJ1cy1jdWdvLmxiLnNsYWNrLW1zZ3MuY29tL3dlYnNvY2tldC9wNkR2djJUdERZeVdFTk1oNjgxVTZrQUxNU3o1Rzd6eVlxd0h4RTZZNXpxc1FYYngzbUFCUF9IVG1odjZkdEtGa3hRcDByQ056dHBoa1Z3WHlrWV9YMklCTnAyWVhDTFBJc1dOWExzdWRFcGNoV1JXSGFwUktta2xiN3liLWpoeUNFUEY1QUtrWUhpOHhGejRmbXZZVGl4Y3ozUEF2QlplclZ1LU9Jdll3OXNjdlBYdk9DaWJ6NF9ZUF9FX2lMS21PbTNLYjkwbHRnWkR6a0pFUDR4VHIzTWp4ZnV5T1haamxzOFY2SzB1T2x3SGNkc3RsWHlLYUxTbzZyb0FZUWMyVmY2dnY5MUw1ektnNFUtSFc1cWRFNm9Ib25OcFZpVldWa2ptbGwtTzFxcz0BCVQyTEhWMlZTQgIJVTJMSEpCQVNDAQ8BAAAADtNoDTEX-4S7_lwAASCblPGpDsn59RDcgqHgaIlW5bbi0tTPaTuO4fk3wK3mZQA&encoding=&dp=1&lazy_channels=1' failed: Error in connection establishment: net::ERR_NAME_RESOLUTION_FAILED
+error: Oct-28 22:06:11.963 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+info: Oct-28 22:06:11.964 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to error
+info: Oct-28 22:06:11.964 [SOCKET-MANAGER] (T2LHV2VSB) will stay in error state for up to 10000 ms
+info: 2018/10/28 22:06:11.964  Stacktrace: ↴
+ at e (https://a.slack-edge.com/bv1-5/rollup-core_required_ts.4abf9d072ff05939b496.min.js:1:111596)
+at https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:22730
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:859804)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:861520)
+at o (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:245308)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:862228)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:854771)
+at e.<anonymous> (https://a.slack-edge.com/bv1-5/rollup-core_required_libs.2179c952120918e21baa.min.js:1:1002646)
+at e (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3839961)
+at WebSocket._socket.onclose (https://a.slack-edge.com/bv1-5/modern.vendor.d7ea5eaf71f8327f393b.min.js:1:3838467)
+info: Oct-28 22:06:11.964 [SOCKET-MANAGER] (T2LHV2VSB) Changing from error to wait_for_rate_limit
+info: Oct-28 22:06:11.964 [SOCKET-MANAGER] (T2LHV2VSB) will stay in wait_for_rate_limit state for up to 120000 ms
+info: Oct-28 22:06:11.965 [SOCKET-MANAGER] (T2LHV2VSB) backing off: will wait for 7556 ms
+info: Oct-28 22:06:19.955 [SOCKET-MANAGER] (T2LHV2VSB) Changing from wait_for_rate_limit to connect
+info: Oct-28 22:06:19.956 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connect state for up to 10000 ms
+info: Oct-28 22:06:19.957 [SOCKET-MANAGER] (T2LHV2VSB) Changing from connect to checking_fast_reconnect
+info: Oct-28 22:06:19.957 [SOCKET-MANAGER] (T2LHV2VSB) will stay in checking_fast_reconnect state for up to 60000 ms
+info: Oct-28 22:06:19.958 [SOCKET-MANAGER] (T2LHV2VSB) Changing from checking_fast_reconnect to fast_reconnecting
+info: Oct-28 22:06:19.958 [SOCKET-MANAGER] (T2LHV2VSB) will stay in fast_reconnecting state for up to 20000 ms
+info: Oct-28 22:06:20.951 [SOCKET-MANAGER] (T2LHV2VSB) Changing from fast_reconnecting to connected
+info: Oct-28 22:06:20.952 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-28 22:06:20.957 [INFO] MSConnected: 
+info: Oct-28 22:06:20.966 [ACTIVITY] maybeUpdateMentions called with user_requested: undefined
+info: Oct-28 22:06:20.966 [ACTIVITY] maybeUpdateMentions: waiting until next fetch
+info: Oct-28 22:08:08.956 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-28 22:08:08.961 [API-Q] (T2LHV2VSB) c7c4d9af-1540757288.960 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-28 22:08:08.961 [API-Q] (T2LHV2VSB) c7c4d9af-1540757288.960 rtm.shouldReload is ENQUEUED
+info: Oct-28 22:08:08.962 [API-Q] (T2LHV2VSB) c7c4d9af-1540757288.960 rtm.shouldReload is ACTIVE
+info: Oct-28 22:08:09.581 [API-Q] (T2LHV2VSB) c7c4d9af-1540757288.960 rtm.shouldReload is RESOLVED
+info: Oct-28 22:08:09.582 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: Oct-28 23:33:31.955 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-28 23:33:31.959 [API-Q] (T2LHV2VSB) c7c4d9af-1540762411.957 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-28 23:33:31.960 [API-Q] (T2LHV2VSB) c7c4d9af-1540762411.957 rtm.shouldReload is ENQUEUED
+info: Oct-28 23:33:31.961 [API-Q] (T2LHV2VSB) c7c4d9af-1540762411.957 rtm.shouldReload is ACTIVE
+info: Oct-28 23:33:37.768 [API-Q] (T2LHV2VSB) c7c4d9af-1540762411.957 rtm.shouldReload is RESOLVED
+info: Oct-28 23:33:37.769 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/29/18, 09:26:51:730      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-29 09:27:21.277 [BOOT] booted! pri:0 version:1540588753 start_ms:1540798038200 (3077ms ago)
+info: Oct-29 09:27:21.278 [BOOT] Starting incremental boot (early)
+warn: Oct-29 09:27:21.368 error getActiveModelOb found no ob
+warn: Oct-29 09:27:21.368 TS.boot_data.channel_id: undefined
+warn: Oct-29 09:27:21.368 TS.boot_data.im_id: undefined
+warn: Oct-29 09:27:21.368 TS.boot_data.group_id: undefined
+warn: Oct-29 09:27:21.368 error getActiveModelOb found no ob
+warn: Oct-29 09:27:21.368 TS.boot_data.channel_id: undefined
+warn: Oct-29 09:27:21.368 TS.boot_data.im_id: undefined
+warn: Oct-29 09:27:21.368 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-29 09:27:22.495 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-29 09:27:22.496 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-29 09:27:22.497 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-29 09:27:22.497 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-29 09:27:22.516 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-29 09:27:22.534 [FOCUS-EVENT] Window focused
+info: Oct-29 09:27:22.653 [API-Q] (T2LHV2VSB) c7c4d9af-1540798042.652 apps.actions.list called with reason: no_reason_provided
+info: Oct-29 09:27:22.653 [API-Q] (T2LHV2VSB) c7c4d9af-1540798042.652 apps.actions.list is ENQUEUED
+info: Oct-29 09:27:22.654 [API-Q] (T2LHV2VSB) c7c4d9af-1540798042.652 apps.actions.list is ACTIVE
+warn: Oct-29 09:27:22.790 updateTeamIcon was called, but missing an image to set
+info: Oct-29 09:27:22.887 [BOOT] Finalizing incremental boot
+info: Oct-29 09:27:22.889 [METRICS] Starting timers for metrics collection
+info: Oct-29 09:27:22.890 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-29 09:27:24.391 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to D2PBY7P4G at end
+info: Oct-29 09:27:24.411 [FOCUS-EVENT] Window blurred
+info: Oct-29 09:27:24.415 [FOCUS-EVENT] Window focused
+info: Oct-29 09:27:24.430 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.430 promo.banner called with reason: no_reason_provided
+info: Oct-29 09:27:24.430 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.430 promo.banner is ENQUEUED
+info: Oct-29 09:27:24.431 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.430 promo.banner is ACTIVE
+info: Oct-29 09:27:24.439 [PERF] (T2LHV2VSB) First meaningful paint: 11872ms
+info: Oct-29 09:27:24.581 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 09:27:24.582 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 09:27:24.603 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-29 09:27:24.604 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-29 09:27:24.605 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-29 09:27:24.606 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-29 09:27:24.617 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-29 09:27:24.618 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-29 09:27:24.630 [BOOT] Completed incremental boot
+info: Oct-29 09:27:24.640 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.640 i18n.translations.get called with reason: no_reason_provided
+info: Oct-29 09:27:24.640 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.640 i18n.translations.get is ENQUEUED
+info: Oct-29 09:27:24.640 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.640 i18n.translations.get is ACTIVE
+warn: Oct-29 09:27:24.641 updateTeamIcon was called, but missing an image to set
+info: Oct-29 09:27:24.712 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-29 09:27:24.712 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-29 09:27:24.712 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-29 09:27:24.712 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-29 09:27:24.712 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-29 09:27:24.713 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-29 09:27:24.713 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-29 09:27:24.713 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-29 09:27:24.714 [BOOT] Finished first boot 2226 ms after DOM ready
+info: Oct-29 09:27:24.719 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.718 help.issues.list called with reason: no_reason_provided
+info: Oct-29 09:27:24.719 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.718 help.issues.list is ENQUEUED
+info: Oct-29 09:27:24.719 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.718 help.issues.list is ACTIVE
+info: Oct-29 09:27:24.721 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.721 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-29 09:27:24.721 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.721 dnd.teamInfo is ENQUEUED
+info: Oct-29 09:27:24.721 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.721 dnd.teamInfo is ACTIVE
+info: Oct-29 09:27:24.723 [INFO] MSConnected: 
+info: Oct-29 09:27:24.755 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.754 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-29 09:27:24.755 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.754 users.counts is ENQUEUED
+info: Oct-29 09:27:24.755 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.754 users.counts is ACTIVE
+info: Oct-29 09:27:24.756 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.756 subteams.membership called with reason: no_reason_provided
+info: Oct-29 09:27:24.756 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.756 subteams.membership is ENQUEUED
+info: Oct-29 09:27:24.756 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.756 subteams.membership is ACTIVE
+info: Oct-29 09:27:24.763 [API-Q] (T2LHV2VSB) c7c4d9af-1540798042.652 apps.actions.list is RESOLVED
+info: Oct-29 09:27:24.768 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting T2LHV2VSB (1)
+info: Oct-29 09:27:24.770 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.769 team.info called with reason: UnknownFetchManager
+info: Oct-29 09:27:24.770 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.769 team.info is ENQUEUED
+info: Oct-29 09:27:24.770 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.769 team.info is ACTIVE
+info: Oct-29 09:27:24.770 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-29 09:27:24.773 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting D2PBY7P4G (1)
+info: Oct-29 09:27:24.774 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received D2PBY7P4G (1)
+info: Oct-29 09:27:26.021 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.430 promo.banner is RESOLVED
+info: Oct-29 09:27:26.021 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-29 09:27:26.021 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G, clearing ghost last_read
+info: Oct-29 09:27:26.029 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.640 i18n.translations.get is RESOLVED
+info: Oct-29 09:27:26.030 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.721 dnd.teamInfo is RESOLVED
+info: Oct-29 09:27:26.032 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.756 subteams.membership is RESOLVED
+info: Oct-29 09:27:26.032 [USER_GROUP_MEMBERSHIP] (T2LHV2VSB) Completed subteams.membership processing
+info: Oct-29 09:27:26.053 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: D2PBY7P4G oldest: 1477398429.000004 latest: null
+info: Oct-29 09:27:26.054 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.054 conversations.history called with reason: message-pane/requestHistory
+info: Oct-29 09:27:26.054 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.054 conversations.history is ENQUEUED
+info: Oct-29 09:27:26.054 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.054 conversations.history is ACTIVE
+info: Oct-29 09:27:26.120 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.718 help.issues.list is RESOLVED
+info: Oct-29 09:27:26.123 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.769 team.info is RESOLVED
+info: Oct-29 09:27:26.123 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received T2LHV2VSB (1)
+info: Oct-29 09:27:26.128 [API-Q] (T2LHV2VSB) c7c4d9af-1540798044.754 users.counts is RESOLVED
+info: Oct-29 09:27:26.139 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-29 09:27:26.144 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-29 09:27:26.149 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 10
+info: Oct-29 09:27:26.169 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.169 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-29 09:27:26.169 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.169 dnd.teamInfo is ENQUEUED
+info: Oct-29 09:27:26.169 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.169 dnd.teamInfo is ACTIVE
+info: Oct-29 09:27:27.408 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.054 conversations.history is RESOLVED
+info: Oct-29 09:27:27.417 [API-Q] (T2LHV2VSB) c7c4d9af-1540798046.169 dnd.teamInfo is RESOLVED
+info: Oct-29 09:27:27.438 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 10
+info: Oct-29 09:27:27.440 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-29 09:27:27.797 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-29 09:27:27.799 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 09:27:41.435 [FOCUS-EVENT] Window blurred
+info: Oct-29 09:27:54.000 [FOCUS-EVENT] Window focused
+info: Oct-29 09:27:54.025 [FOCUS-EVENT] Window blurred
+info: Oct-29 09:27:54.027 [FOCUS-EVENT] Window focused
+info: Oct-29 09:27:54.040 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 09:27:54.040 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 09:27:54.040 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 09:27:54.040 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 09:27:54.042 [FOCUS-EVENT] Window blurred
+info: Oct-29 09:29:13.985 [API-Q] (T2LHV2VSB) c7c4d9af-1540798153.983 channels.suggestions called with reason: no_reason_provided
+info: Oct-29 09:29:13.985 [API-Q] (T2LHV2VSB) c7c4d9af-1540798153.983 channels.suggestions is ENQUEUED
+info: Oct-29 09:29:13.986 [API-Q] (T2LHV2VSB) c7c4d9af-1540798153.983 channels.suggestions is ACTIVE
+info: Oct-29 09:29:14.848 [API-Q] (T2LHV2VSB) c7c4d9af-1540798153.983 channels.suggestions is RESOLVED
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/29/18, 10:51:38:765      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-29 10:52:12.272 [BOOT] booted! pri:0 version:1540588753 start_ms:1540803129479 (2793ms ago)
+info: Oct-29 10:52:12.272 [BOOT] Starting incremental boot (early)
+warn: Oct-29 10:52:12.360 error getActiveModelOb found no ob
+warn: Oct-29 10:52:12.360 TS.boot_data.channel_id: undefined
+warn: Oct-29 10:52:12.360 TS.boot_data.im_id: undefined
+warn: Oct-29 10:52:12.360 TS.boot_data.group_id: undefined
+warn: Oct-29 10:52:12.361 error getActiveModelOb found no ob
+warn: Oct-29 10:52:12.361 TS.boot_data.channel_id: undefined
+warn: Oct-29 10:52:12.361 TS.boot_data.im_id: undefined
+warn: Oct-29 10:52:12.361 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-29 10:52:12.768 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-29 10:52:12.768 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-29 10:52:12.769 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-29 10:52:12.770 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-29 10:52:12.862 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-29 10:52:13.155 [API-Q] (T2LHV2VSB) c7c4d9af-1540803133.153 apps.actions.list called with reason: no_reason_provided
+info: Oct-29 10:52:13.155 [API-Q] (T2LHV2VSB) c7c4d9af-1540803133.153 apps.actions.list is ENQUEUED
+info: Oct-29 10:52:13.156 [API-Q] (T2LHV2VSB) c7c4d9af-1540803133.153 apps.actions.list is ACTIVE
+warn: Oct-29 10:52:13.310 updateTeamIcon was called, but missing an image to set
+info: Oct-29 10:52:13.436 [BOOT] Finalizing incremental boot
+info: Oct-29 10:52:13.439 [METRICS] Starting timers for metrics collection
+info: Oct-29 10:52:13.441 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-29 10:52:14.043 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to D2PBY7P4G at end
+info: Oct-29 10:52:14.249 [FOCUS-EVENT] Window focused
+info: Oct-29 10:52:14.276 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.276 promo.banner called with reason: no_reason_provided
+info: Oct-29 10:52:14.276 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.276 promo.banner is ENQUEUED
+info: Oct-29 10:52:14.277 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.276 promo.banner is ACTIVE
+info: Oct-29 10:52:14.285 [PERF] (T2LHV2VSB) First meaningful paint: 7746ms
+info: Oct-29 10:52:14.439 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 10:52:14.439 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 10:52:14.461 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-29 10:52:14.461 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-29 10:52:14.462 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-29 10:52:14.464 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-29 10:52:14.473 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-29 10:52:14.475 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-29 10:52:14.486 [BOOT] Completed incremental boot
+info: Oct-29 10:52:14.496 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.496 i18n.translations.get called with reason: no_reason_provided
+info: Oct-29 10:52:14.496 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.496 i18n.translations.get is ENQUEUED
+info: Oct-29 10:52:14.497 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.496 i18n.translations.get is ACTIVE
+warn: Oct-29 10:52:14.497 updateTeamIcon was called, but missing an image to set
+info: Oct-29 10:52:14.575 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-29 10:52:14.575 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-29 10:52:14.575 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-29 10:52:14.576 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-29 10:52:14.576 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-29 10:52:14.577 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-29 10:52:14.577 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-29 10:52:14.578 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-29 10:52:14.579 [BOOT] Finished first boot 1825 ms after DOM ready
+info: Oct-29 10:52:14.584 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.583 help.issues.list called with reason: no_reason_provided
+info: Oct-29 10:52:14.584 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.583 help.issues.list is ENQUEUED
+info: Oct-29 10:52:14.584 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.583 help.issues.list is ACTIVE
+info: Oct-29 10:52:14.585 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.585 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-29 10:52:14.585 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.585 dnd.teamInfo is ENQUEUED
+info: Oct-29 10:52:14.586 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.585 dnd.teamInfo is ACTIVE
+info: Oct-29 10:52:14.587 [INFO] MSConnected: 
+info: Oct-29 10:52:14.636 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.636 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-29 10:52:14.636 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.636 users.counts is ENQUEUED
+info: Oct-29 10:52:14.636 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.636 users.counts is ACTIVE
+info: Oct-29 10:52:14.638 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.637 subteams.membership called with reason: no_reason_provided
+info: Oct-29 10:52:14.638 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.637 subteams.membership is ENQUEUED
+info: Oct-29 10:52:14.638 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.637 subteams.membership is ACTIVE
+info: Oct-29 10:52:14.650 [API-Q] (T2LHV2VSB) c7c4d9af-1540803133.153 apps.actions.list is RESOLVED
+info: Oct-29 10:52:14.652 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting T2LHV2VSB (1)
+info: Oct-29 10:52:14.653 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.652 team.info called with reason: UnknownFetchManager
+info: Oct-29 10:52:14.653 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.652 team.info is ENQUEUED
+info: Oct-29 10:52:14.653 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.652 team.info is ACTIVE
+info: Oct-29 10:52:14.653 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-29 10:52:14.656 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting D2PBY7P4G (1)
+info: Oct-29 10:52:14.657 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received D2PBY7P4G (1)
+info: Oct-29 10:52:14.799 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: D2PBY7P4G oldest: 1477398429.000004 latest: null
+info: Oct-29 10:52:14.803 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.802 conversations.history called with reason: message-pane/requestHistory
+info: Oct-29 10:52:14.803 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.802 conversations.history is ENQUEUED
+info: Oct-29 10:52:14.804 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.802 conversations.history is ACTIVE
+info: Oct-29 10:52:14.896 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.276 promo.banner is RESOLVED
+info: Oct-29 10:52:14.898 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-29 10:52:14.898 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G, clearing ghost last_read
+info: Oct-29 10:52:14.941 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.496 i18n.translations.get is RESOLVED
+info: Oct-29 10:52:14.948 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.583 help.issues.list is RESOLVED
+info: Oct-29 10:52:14.951 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.652 team.info is RESOLVED
+info: Oct-29 10:52:14.952 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received T2LHV2VSB (1)
+info: Oct-29 10:52:14.960 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 10
+info: Oct-29 10:52:14.986 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-29 10:52:15.059 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.802 conversations.history is RESOLVED
+info: Oct-29 10:52:15.078 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 10
+info: Oct-29 10:52:15.080 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-29 10:52:15.486 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.585 dnd.teamInfo is RESOLVED
+info: Oct-29 10:52:15.487 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.637 subteams.membership is RESOLVED
+info: Oct-29 10:52:15.488 [USER_GROUP_MEMBERSHIP] (T2LHV2VSB) Completed subteams.membership processing
+info: Oct-29 10:52:15.488 [API-Q] (T2LHV2VSB) c7c4d9af-1540803134.636 users.counts is RESOLVED
+info: Oct-29 10:52:15.494 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-29 10:52:15.512 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-29 10:52:15.513 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 10:52:15.573 [API-Q] (T2LHV2VSB) c7c4d9af-1540803135.573 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-29 10:52:15.574 [API-Q] (T2LHV2VSB) c7c4d9af-1540803135.573 dnd.teamInfo is ENQUEUED
+info: Oct-29 10:52:15.574 [API-Q] (T2LHV2VSB) c7c4d9af-1540803135.573 dnd.teamInfo is ACTIVE
+info: Oct-29 10:52:15.844 [API-Q] (T2LHV2VSB) c7c4d9af-1540803135.573 dnd.teamInfo is RESOLVED
+info: Oct-29 10:53:54.549 [API-Q] (T2LHV2VSB) c7c4d9af-1540803234.548 channels.suggestions called with reason: no_reason_provided
+info: Oct-29 10:53:54.550 [API-Q] (T2LHV2VSB) c7c4d9af-1540803234.548 channels.suggestions is ENQUEUED
+info: Oct-29 10:53:54.550 [API-Q] (T2LHV2VSB) c7c4d9af-1540803234.548 channels.suggestions is ACTIVE
+info: Oct-29 10:53:55.194 [API-Q] (T2LHV2VSB) c7c4d9af-1540803234.548 channels.suggestions is RESOLVED
+info: Oct-29 10:59:00.082 [FOCUS-EVENT] Window blurred
+info: Oct-29 10:59:02.742 [FOCUS-EVENT] Window focused
+info: Oct-29 10:59:02.762 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 10:59:02.762 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 10:59:03.941 [FOCUS-EVENT] Window blurred
+info: Oct-29 10:59:03.943 [FOCUS-EVENT] Window focused
+info: Oct-29 10:59:03.948 [FOCUS-EVENT] Window blurred
+info: Oct-29 10:59:03.950 [FOCUS-EVENT] Window focused
+info: Oct-29 10:59:03.954 [FOCUS-EVENT] Window blurred
+info: Oct-29 11:06:02.477 [FOCUS-EVENT] Window focused
+info: Oct-29 11:06:02.486 [FOCUS-EVENT] Window blurred
+info: Oct-29 11:06:02.490 [FOCUS-EVENT] Window focused
+info: Oct-29 11:06:02.506 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 11:06:02.507 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 11:06:03.283 [FOCUS-EVENT] Window blurred
+info: Oct-29 12:23:09.338 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-29 12:23:09.342 [API-Q] (T2LHV2VSB) c7c4d9af-1540808589.341 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-29 12:23:09.342 [API-Q] (T2LHV2VSB) c7c4d9af-1540808589.341 rtm.shouldReload is ENQUEUED
+info: Oct-29 12:23:09.343 [API-Q] (T2LHV2VSB) c7c4d9af-1540808589.341 rtm.shouldReload is ACTIVE
+info: Oct-29 12:23:10.330 [API-Q] (T2LHV2VSB) c7c4d9af-1540808589.341 rtm.shouldReload is RESOLVED
+info: Oct-29 12:23:10.331 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/29/18, 16:56:56:854      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-29 16:57:32.632 [BOOT] booted! pri:0 version:1540588753 start_ms:1540825049380 (3251ms ago)
+info: Oct-29 16:57:32.632 [BOOT] Starting incremental boot (early)
+warn: Oct-29 16:57:32.844 error getActiveModelOb found no ob
+warn: Oct-29 16:57:32.845 TS.boot_data.channel_id: undefined
+warn: Oct-29 16:57:32.845 TS.boot_data.im_id: undefined
+warn: Oct-29 16:57:32.845 TS.boot_data.group_id: undefined
+warn: Oct-29 16:57:32.845 error getActiveModelOb found no ob
+warn: Oct-29 16:57:32.845 TS.boot_data.channel_id: undefined
+warn: Oct-29 16:57:32.845 TS.boot_data.im_id: undefined
+warn: Oct-29 16:57:32.845 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-29 16:57:33.413 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-29 16:57:33.414 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-29 16:57:33.415 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-29 16:57:33.416 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-29 16:57:33.571 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-29 16:57:33.591 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:34.025 [API-Q] (T2LHV2VSB) c7c4d9af-1540825054.024 apps.actions.list called with reason: no_reason_provided
+info: Oct-29 16:57:34.025 [API-Q] (T2LHV2VSB) c7c4d9af-1540825054.024 apps.actions.list is ENQUEUED
+info: Oct-29 16:57:34.026 [API-Q] (T2LHV2VSB) c7c4d9af-1540825054.024 apps.actions.list is ACTIVE
+warn: Oct-29 16:57:34.318 updateTeamIcon was called, but missing an image to set
+info: Oct-29 16:57:34.445 [BOOT] Finalizing incremental boot
+info: Oct-29 16:57:34.447 [METRICS] Starting timers for metrics collection
+info: Oct-29 16:57:34.449 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-29 16:57:36.240 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to D2PBY7P4G at end
+info: Oct-29 16:57:36.261 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.266 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:36.278 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.281 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:36.286 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.288 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:36.292 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.295 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:36.304 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.306 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:36.310 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.311 [FOCUS-EVENT] Window focused
+info: Oct-29 16:57:36.315 [FOCUS-EVENT] Window blurred
+info: Oct-29 16:57:36.330 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.330 promo.banner called with reason: no_reason_provided
+info: Oct-29 16:57:36.331 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.330 promo.banner is ENQUEUED
+info: Oct-29 16:57:36.331 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.330 promo.banner is ACTIVE
+info: Oct-29 16:57:36.340 [PERF] (T2LHV2VSB) First meaningful paint: 12976ms
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 16:57:36.490 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 16:57:36.491 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 16:57:36.491 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 16:57:36.491 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-29 16:57:36.500 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-29 16:57:36.500 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-29 16:57:36.502 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-29 16:57:36.504 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-29 16:57:36.519 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-29 16:57:36.520 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-29 16:57:36.533 [BOOT] Completed incremental boot
+info: Oct-29 16:57:36.537 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.537 i18n.translations.get called with reason: no_reason_provided
+info: Oct-29 16:57:36.537 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.537 i18n.translations.get is ENQUEUED
+info: Oct-29 16:57:36.537 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.537 i18n.translations.get is ACTIVE
+warn: Oct-29 16:57:36.538 updateTeamIcon was called, but missing an image to set
+info: Oct-29 16:57:36.631 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-29 16:57:36.631 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-29 16:57:36.631 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-29 16:57:36.631 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-29 16:57:36.631 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-29 16:57:36.636 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-29 16:57:36.636 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-29 16:57:36.636 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-29 16:57:36.638 [BOOT] Finished first boot 3235 ms after DOM ready
+info: Oct-29 16:57:36.641 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.641 help.issues.list called with reason: no_reason_provided
+info: Oct-29 16:57:36.641 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.641 help.issues.list is ENQUEUED
+info: Oct-29 16:57:36.641 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.641 help.issues.list is ACTIVE
+info: Oct-29 16:57:36.643 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.643 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-29 16:57:36.643 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.643 dnd.teamInfo is ENQUEUED
+info: Oct-29 16:57:36.643 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.643 dnd.teamInfo is ACTIVE
+info: Oct-29 16:57:36.645 [INFO] MSConnected: 
+info: Oct-29 16:57:36.668 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.668 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-29 16:57:36.668 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.668 users.counts is ENQUEUED
+info: Oct-29 16:57:36.668 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.668 users.counts is ACTIVE
+info: Oct-29 16:57:36.670 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.670 subteams.membership called with reason: no_reason_provided
+info: Oct-29 16:57:36.670 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.670 subteams.membership is ENQUEUED
+info: Oct-29 16:57:36.670 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.670 subteams.membership is ACTIVE
+info: Oct-29 16:57:36.694 [API-Q] (T2LHV2VSB) c7c4d9af-1540825054.024 apps.actions.list is RESOLVED
+info: Oct-29 16:57:37.567 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting T2LHV2VSB (1)
+info: Oct-29 16:57:37.570 [API-Q] (T2LHV2VSB) c7c4d9af-1540825057.569 team.info called with reason: UnknownFetchManager
+info: Oct-29 16:57:37.570 [API-Q] (T2LHV2VSB) c7c4d9af-1540825057.569 team.info is ENQUEUED
+info: Oct-29 16:57:37.570 [API-Q] (T2LHV2VSB) c7c4d9af-1540825057.569 team.info is ACTIVE
+info: Oct-29 16:57:37.570 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-29 16:57:37.574 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting D2PBY7P4G (1)
+info: Oct-29 16:57:37.575 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received D2PBY7P4G (1)
+info: Oct-29 16:57:37.595 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-29 16:57:37.595 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because attention not on chat (window_not_focused)
+info: Oct-29 16:57:37.602 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.537 i18n.translations.get is RESOLVED
+info: Oct-29 16:57:37.603 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.641 help.issues.list is RESOLVED
+info: Oct-29 16:57:37.605 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.670 subteams.membership is RESOLVED
+info: Oct-29 16:57:37.606 [USER_GROUP_MEMBERSHIP] (T2LHV2VSB) Completed subteams.membership processing
+info: Oct-29 16:57:37.607 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.643 dnd.teamInfo is RESOLVED
+info: Oct-29 16:57:37.610 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.330 promo.banner is RESOLVED
+info: Oct-29 16:57:37.610 [API-Q] (T2LHV2VSB) c7c4d9af-1540825056.668 users.counts is RESOLVED
+info: Oct-29 16:57:37.616 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-29 16:57:37.760 [API-Q] (T2LHV2VSB) c7c4d9af-1540825057.569 team.info is RESOLVED
+info: Oct-29 16:57:37.761 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received T2LHV2VSB (1)
+info: Oct-29 16:57:38.359 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-29 16:58:52.355 [API-Q] (T2LHV2VSB) c7c4d9af-1540825132.355 channels.suggestions called with reason: no_reason_provided
+info: Oct-29 16:58:52.356 [API-Q] (T2LHV2VSB) c7c4d9af-1540825132.355 channels.suggestions is ENQUEUED
+info: Oct-29 16:58:52.356 [API-Q] (T2LHV2VSB) c7c4d9af-1540825132.355 channels.suggestions is ACTIVE
+info: Oct-29 16:58:52.962 [API-Q] (T2LHV2VSB) c7c4d9af-1540825132.355 channels.suggestions is RESOLVED
+info: Oct-29 17:00:16.243 [FOCUS-EVENT] Window focused
+info: Oct-29 17:00:16.251 [FOCUS-EVENT] Window blurred
+info: Oct-29 17:00:16.258 [FOCUS-EVENT] Window focused
+info: Oct-29 17:00:16.272 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: D2PBY7P4G oldest: 1477398429.000004 latest: null
+info: Oct-29 17:00:16.274 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.273 conversations.history called with reason: message-pane/requestHistory
+info: Oct-29 17:00:16.274 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.273 conversations.history is ENQUEUED
+info: Oct-29 17:00:16.274 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.273 conversations.history is ACTIVE
+info: Oct-29 17:00:16.340 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.340 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-29 17:00:16.340 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.340 dnd.teamInfo is ENQUEUED
+info: Oct-29 17:00:16.340 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.340 dnd.teamInfo is ACTIVE
+info: Oct-29 17:00:16.342 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 17:00:16.342 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 17:00:16.342 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 17:00:16.343 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 17:00:16.362 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 10
+info: Oct-29 17:00:16.441 [FOCUS-EVENT] Window blurred
+info: Oct-29 17:00:16.536 [FOCUS-EVENT] Window focused
+info: Oct-29 17:00:16.591 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-29 17:00:16.591 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 17:00:16.828 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.273 conversations.history is RESOLVED
+info: Oct-29 17:00:16.841 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 10
+info: Oct-29 17:00:16.843 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-29 17:00:16.861 [API-Q] (T2LHV2VSB) c7c4d9af-1540825216.340 dnd.teamInfo is RESOLVED
+info: Oct-29 17:00:17.204 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-29 17:00:17.205 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-29 17:00:17.252 [FOCUS-EVENT] Window blurred
+info: Oct-29 18:22:21.356 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-29 18:22:21.360 [API-Q] (T2LHV2VSB) c7c4d9af-1540830141.359 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-29 18:22:21.360 [API-Q] (T2LHV2VSB) c7c4d9af-1540830141.359 rtm.shouldReload is ENQUEUED
+info: Oct-29 18:22:21.361 [API-Q] (T2LHV2VSB) c7c4d9af-1540830141.359 rtm.shouldReload is ACTIVE
+info: Oct-29 18:22:28.622 [API-Q] (T2LHV2VSB) c7c4d9af-1540830141.359 rtm.shouldReload is RESOLVED
+info: Oct-29 18:22:28.623 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: Oct-29 19:47:07.354 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-29 19:47:07.356 [API-Q] (T2LHV2VSB) c7c4d9af-1540835227.355 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-29 19:47:07.356 [API-Q] (T2LHV2VSB) c7c4d9af-1540835227.355 rtm.shouldReload is ENQUEUED
+info: Oct-29 19:47:07.356 [API-Q] (T2LHV2VSB) c7c4d9af-1540835227.355 rtm.shouldReload is ACTIVE
+info: Oct-29 19:47:08.585 [API-Q] (T2LHV2VSB) c7c4d9af-1540835227.355 rtm.shouldReload is RESOLVED
+info: Oct-29 19:47:08.586 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: Oct-29 21:11:54.354 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-29 21:11:54.357 [API-Q] (T2LHV2VSB) c7c4d9af-1540840314.356 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-29 21:11:54.357 [API-Q] (T2LHV2VSB) c7c4d9af-1540840314.356 rtm.shouldReload is ENQUEUED
+info: Oct-29 21:11:54.358 [API-Q] (T2LHV2VSB) c7c4d9af-1540840314.356 rtm.shouldReload is ACTIVE
+info: Oct-29 21:11:55.205 [API-Q] (T2LHV2VSB) c7c4d9af-1540840314.356 rtm.shouldReload is RESOLVED
+info: Oct-29 21:11:55.205 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: Oct-29 22:36:41.354 [MIN-VERSION] (T2LHV2VSB) checking to see if we should reload
+info: Oct-29 22:36:41.357 [API-Q] (T2LHV2VSB) c7c4d9af-1540845401.356 rtm.shouldReload called with reason: no_reason_provided
+info: Oct-29 22:36:41.357 [API-Q] (T2LHV2VSB) c7c4d9af-1540845401.356 rtm.shouldReload is ENQUEUED
+info: Oct-29 22:36:41.357 [API-Q] (T2LHV2VSB) c7c4d9af-1540845401.356 rtm.shouldReload is ACTIVE
+info: Oct-29 22:36:47.040 [API-Q] (T2LHV2VSB) c7c4d9af-1540845401.356 rtm.shouldReload is RESOLVED
+info: Oct-29 22:36:47.041 [MIN-VERSION] (T2LHV2VSB) no need to reload
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/30/18, 14:18:23:261      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+info: Oct-30 14:19:50.432 [BOOT] booted! pri:0 version:1540872331 start_ms:1540901986226 (4206ms ago)
+info: Oct-30 14:19:50.432 [BOOT] Starting incremental boot (early)
+warn: Oct-30 14:19:50.573 error getActiveModelOb found no ob
+warn: Oct-30 14:19:50.573 TS.boot_data.channel_id: undefined
+warn: Oct-30 14:19:50.573 TS.boot_data.im_id: undefined
+warn: Oct-30 14:19:50.573 TS.boot_data.group_id: undefined
+warn: Oct-30 14:19:50.574 error getActiveModelOb found no ob
+warn: Oct-30 14:19:50.574 TS.boot_data.channel_id: undefined
+warn: Oct-30 14:19:50.574 TS.boot_data.im_id: undefined
+warn: Oct-30 14:19:50.574 TS.boot_data.group_id: undefined
+info: SoundManager 2: No Flash detected. Trying HTML5-only mode.
+info: SoundManager V2.97a.20170601 (HTML5-only mode)
+info: SoundManager 2 HTML5 support: mp3 = true, mp4 = true, ogg = true, opus = true, wav = true, flac = true
+info: SoundManager 2: Ready. ✓
+info: Oct-30 14:19:51.391 [SOCKET-MANAGER] (T2LHV2VSB) Changing from never_connected to prov_connect
+info: Oct-30 14:19:51.392 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connect state for up to 10000 ms
+info: Oct-30 14:19:51.394 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connect to prov_connecting
+info: Oct-30 14:19:51.394 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connecting state for up to 35000 ms
+warn: Oct-30 14:19:51.697 Desktop: 'desktop.accessibility.isAccessibilitySupportEnabled' is missing or not a function
+info: Oct-30 14:19:51.710 [FOCUS-EVENT] Window focused
+info: Oct-30 14:19:52.046 [API-Q] (T2LHV2VSB) 2024231e-1540901992.043 apps.actions.list called with reason: no_reason_provided
+info: Oct-30 14:19:52.046 [API-Q] (T2LHV2VSB) 2024231e-1540901992.043 apps.actions.list is ENQUEUED
+info: Oct-30 14:19:52.047 [API-Q] (T2LHV2VSB) 2024231e-1540901992.043 apps.actions.list is ACTIVE
+warn: Oct-30 14:20:24.739 updateTeamIcon was called, but missing an image to set
+info: Oct-30 14:20:24.846 [BOOT] Finalizing incremental boot
+info: Oct-30 14:20:24.854 [METRICS] Starting timers for metrics collection
+info: Oct-30 14:20:24.855 [FLANNEL] (T2LHV2VSB) received a user_counts_request call while we are not connected; deferring
+info: Oct-30 14:20:30.807 [SWITCH-TO-CHANNEL] (T2LHV2VSB) Switching to D2PBY7P4G at end
+info: Oct-30 14:20:30.834 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:20:30.837 [FOCUS-EVENT] Window focused
+info: Oct-30 14:20:30.867 [API-Q] (T2LHV2VSB) 2024231e-1540902030.866 promo.banner called with reason: no_reason_provided
+info: Oct-30 14:20:30.867 [API-Q] (T2LHV2VSB) 2024231e-1540902030.866 promo.banner is ENQUEUED
+info: Oct-30 14:20:30.867 [API-Q] (T2LHV2VSB) 2024231e-1540902030.866 promo.banner is ACTIVE
+info: Oct-30 14:20:30.876 [PERF] (T2LHV2VSB) First meaningful paint: 53899ms
+info: Oct-30 14:20:31.077 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:20:31.077 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because not fully booted
+info: Oct-30 14:20:31.094 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connecting to prov_connected
+info: Oct-30 14:20:31.094 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_connected state for up to 60000 ms
+info: Oct-30 14:20:31.095 [FLANNEL] (T2LHV2VSB) connected! Continuing deferred user_counts_request call
+info: Oct-30 14:20:31.104 [INFO] Got start data from Socket Manager; hydrating it
+warn: Oct-30 14:20:31.106 activity is not scalar! it needs to be handled by upsertTeam specifically to test if it has changed! object
+warn: Oct-30 14:20:31.107 prefs is not scalar! it needs to be handled by upsertMember specifically to test if it has changed! object
+info: Oct-30 14:20:31.124 [BOOT] Completed incremental boot
+info: Oct-30 14:20:31.131 [API-Q] (T2LHV2VSB) 2024231e-1540902031.131 i18n.translations.get called with reason: no_reason_provided
+info: Oct-30 14:20:31.131 [API-Q] (T2LHV2VSB) 2024231e-1540902031.131 i18n.translations.get is ENQUEUED
+info: Oct-30 14:20:31.132 [API-Q] (T2LHV2VSB) 2024231e-1540902031.131 i18n.translations.get is ACTIVE
+warn: Oct-30 14:20:31.132 updateTeamIcon was called, but missing an image to set
+info: Oct-30 14:20:31.212 [BOOT] _maybeFinalizeOrOpenConnectionToMS will finalize SocketManager
+info: Oct-30 14:20:31.212 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_connected to prov_finalize
+info: Oct-30 14:20:31.213 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalize state for up to 10000 ms
+info: Oct-30 14:20:31.213 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalize to prov_finalizing
+info: Oct-30 14:20:31.213 [SOCKET-MANAGER] (T2LHV2VSB) will stay in prov_finalizing state for up to 10000 ms
+info: Oct-30 14:20:31.213 [SOCKET-MANAGER] (T2LHV2VSB) Changing from prov_finalizing to connected
+info: Oct-30 14:20:31.214 [SOCKET-MANAGER] (T2LHV2VSB) will stay in connected state for up to Infinity ms
+info: Oct-30 14:20:31.214 [BOOT] _maybeFinalizeOrOpenConnectionToMS did finalize SocketManager
+info: Oct-30 14:20:31.216 [BOOT] Finished first boot 39838 ms after DOM ready
+info: Oct-30 14:20:31.221 [API-Q] (T2LHV2VSB) 2024231e-1540902031.220 help.issues.list called with reason: no_reason_provided
+info: Oct-30 14:20:31.221 [API-Q] (T2LHV2VSB) 2024231e-1540902031.220 help.issues.list is ENQUEUED
+info: Oct-30 14:20:31.221 [API-Q] (T2LHV2VSB) 2024231e-1540902031.220 help.issues.list is ACTIVE
+info: Oct-30 14:20:31.223 [API-Q] (T2LHV2VSB) 2024231e-1540902031.222 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-30 14:20:31.223 [API-Q] (T2LHV2VSB) 2024231e-1540902031.222 dnd.teamInfo is ENQUEUED
+info: Oct-30 14:20:31.223 [API-Q] (T2LHV2VSB) 2024231e-1540902031.222 dnd.teamInfo is ACTIVE
+info: Oct-30 14:20:31.224 [INFO] MSConnected: 
+info: Oct-30 14:20:31.249 [API-Q] (T2LHV2VSB) 2024231e-1540902031.248 users.counts called with reason: users-counts-api/fetchUsersCounts
+info: Oct-30 14:20:31.249 [API-Q] (T2LHV2VSB) 2024231e-1540902031.248 users.counts is ENQUEUED
+info: Oct-30 14:20:31.249 [API-Q] (T2LHV2VSB) 2024231e-1540902031.248 users.counts is ACTIVE
+info: Oct-30 14:20:31.254 [API-Q] (T2LHV2VSB) 2024231e-1540901992.043 apps.actions.list is RESOLVED
+info: Oct-30 14:20:31.278 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting T2LHV2VSB (1)
+info: Oct-30 14:20:31.279 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received T2LHV2VSB (1)
+info: Oct-30 14:20:31.285 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting U2LHJBASC,U2PBY7M1N,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-30 14:20:31.286 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) requesting D2PBY7P4G (1)
+info: Oct-30 14:20:31.288 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received D2PBY7P4G (1)
+info: Oct-30 14:20:31.716 [HISTORY-FETCH] (T2LHV2VSB) Fetching history for message pane: D2PBY7P4G oldest: 1477398429.000004 latest: null
+info: Oct-30 14:20:31.717 [API-Q] (T2LHV2VSB) 2024231e-1540902031.717 conversations.history called with reason: message-pane/requestHistory
+info: Oct-30 14:20:31.717 [API-Q] (T2LHV2VSB) 2024231e-1540902031.717 conversations.history is ENQUEUED
+info: Oct-30 14:20:31.717 [API-Q] (T2LHV2VSB) 2024231e-1540902031.717 conversations.history is ACTIVE
+info: Oct-30 14:20:31.786 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after fully booted
+info: Oct-30 14:20:31.787 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G, clearing ghost last_read
+info: Oct-30 14:20:31.792 [API-Q] (T2LHV2VSB) 2024231e-1540902030.866 promo.banner is RESOLVED
+info: Oct-30 14:20:31.800 [API-Q] (T2LHV2VSB) 2024231e-1540902031.131 i18n.translations.get is RESOLVED
+info: Oct-30 14:20:31.804 [API-Q] (T2LHV2VSB) 2024231e-1540902031.222 dnd.teamInfo is RESOLVED
+info: Oct-30 14:20:31.807 [API-Q] (T2LHV2VSB) 2024231e-1540902031.220 help.issues.list is RESOLVED
+info: Oct-30 14:20:31.808 [API-Q] (T2LHV2VSB) 2024231e-1540902031.248 users.counts is RESOLVED
+info: Oct-30 14:20:31.826 [COUNTS] (T2LHV2VSB) Completed counts processing
+info: Oct-30 14:20:31.836 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: true isLoadingOlder: null timestamps: 10
+info: Oct-30 14:20:31.851 [UNKNOWN-FETCH-MANAGER] (T2LHV2VSB) received U2LHJBASC,U2PBY7M1N,USLACKBOT,U2LHX8AAV,U2PRFMC9G,UDLD7RU0Z,UDLPE2SSK (1)
+info: Oct-30 14:20:31.857 [IMPROVED_SEARCH] (T2LHV2VSB) Close Search
+info: Oct-30 14:20:31.857 [IMPROVED_SEARCH] (T2LHV2VSB) Search is closing without query: Clear search session immediately
+info: Oct-30 14:20:31.966 [API-Q] (T2LHV2VSB) 2024231e-1540902031.717 conversations.history is RESOLVED
+info: Oct-30 14:20:31.975 [MESSAGE-LIST] (T2LHV2VSB) componentWillReceiveProps isLoading: false isLoadingOlder: false timestamps: 10
+info: Oct-30 14:20:31.977 [CHECK-UNREADS] (T2LHV2VSB) unreadLineVisible updated: false -> true
+info: Oct-30 14:20:32.610 [API-Q] (T2LHV2VSB) 2024231e-1540902032.609 dnd.teamInfo called with reason: no_reason_provided
+info: Oct-30 14:20:32.610 [API-Q] (T2LHV2VSB) 2024231e-1540902032.609 dnd.teamInfo is ENQUEUED
+info: Oct-30 14:20:32.610 [API-Q] (T2LHV2VSB) 2024231e-1540902032.609 dnd.teamInfo is ACTIVE
+info: Oct-30 14:20:32.622 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after unread line became visible
+info: Oct-30 14:20:32.622 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:20:32.826 [API-Q] (T2LHV2VSB) 2024231e-1540902032.609 dnd.teamInfo is RESOLVED
+info: Oct-30 14:21:37.265 [API-Q] (T2LHV2VSB) 2024231e-1540902097.265 channels.suggestions called with reason: no_reason_provided
+info: Oct-30 14:21:37.266 [API-Q] (T2LHV2VSB) 2024231e-1540902097.265 channels.suggestions is ENQUEUED
+info: Oct-30 14:21:37.267 [API-Q] (T2LHV2VSB) 2024231e-1540902097.265 channels.suggestions is ACTIVE
+info: Oct-30 14:21:37.797 [API-Q] (T2LHV2VSB) 2024231e-1540902097.265 channels.suggestions is RESOLVED
+info: Oct-30 14:29:56.008 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:29:56.013 [FOCUS-EVENT] Window focused
+info: Oct-30 14:29:56.031 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:29:56.031 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:31:08.037 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:31:08.041 [FOCUS-EVENT] Window focused
+info: Oct-30 14:31:08.060 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:31:08.060 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:32:20.055 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:32:20.061 [FOCUS-EVENT] Window focused
+info: Oct-30 14:32:20.075 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:32:20.075 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:33:32.083 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:33:32.086 [FOCUS-EVENT] Window focused
+info: Oct-30 14:33:32.099 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:33:32.099 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:34:44.092 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:34:44.095 [FOCUS-EVENT] Window focused
+info: Oct-30 14:34:44.109 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:34:44.109 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:35:56.123 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:35:56.128 [FOCUS-EVENT] Window focused
+info: Oct-30 14:35:56.148 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:35:56.148 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:37:01.112 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:37:08.068 [FOCUS-EVENT] Window focused
+info: Oct-30 14:37:08.084 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:37:08.084 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:37:08.273 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:37:16.078 [FOCUS-EVENT] Window focused
+info: Oct-30 14:37:16.104 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:37:16.105 [FOCUS-EVENT] Window focused
+info: Oct-30 14:37:16.118 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:37:16.118 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:37:16.118 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:37:16.118 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:37:16.121 [FOCUS-EVENT] Window blurred
+info: Oct-30 14:37:17.958 [FOCUS-EVENT] Mousedown while !is_window_focused
+info: Oct-30 14:37:17.958 [FOCUS-EVENT] Window focused
+info: Oct-30 14:37:17.975 [CHECK-UNREADS] (T2LHV2VSB) Checking unreads after window became focused
+info: Oct-30 14:37:17.975 [CHECK-UNREADS] (T2LHV2VSB) Not marking D2PBY7P4G because last_read >= latest && channel is read
+info: Oct-30 14:37:18.156 [FOCUS-EVENT] Window blurred
