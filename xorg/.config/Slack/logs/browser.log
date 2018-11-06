@@ -13206,3 +13206,2626 @@
 }
 [10/30/18, 14:37:18:139] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
 [10/30/18, 14:37:18:157] info: Store: SET_FULL_SCREEN
+[10/30/18, 15:33:45:890] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/30/18, 15:33:45:891] info: EpicHelpers: Flushing cookie store
+[10/30/18, 15:33:45:892] info: WebContents LifeCycle: webContents:3 from 'webapp-loaded' to 'page-will-navigate' took 4394463 ms
+[10/30/18, 15:33:45:892] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 15:33:45:893] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T2LHV2VSB | navigate |            |
++-----------+----------+------------+
+[10/30/18, 15:33:47:561] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'page-will-navigate' took 1669 ms
+[10/30/18, 15:33:47:561] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 15:33:49:056] info: Team boot count
+{
+  "count": 2
+}
+[10/30/18, 15:33:51:207] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 15:33:51:354] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 15:33:52:563] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'loaded' took 5002 ms
+[10/30/18, 15:33:52:563] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 15:33:52:564] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/30/18, 15:33:53:461] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:34:53:951] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/30/18, 16:34:53:952] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/30/18, 16:34:53:948      ║
+[10/30/18, 16:34:53:952] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/30/18, 16:35:06:026] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/30/18, 16:35:15:436] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[10/30/18, 16:35:15:443] info: Configuring uncaughtExceptionHandler
+[10/30/18, 16:35:15:443] info: Configuring unhandledRejectionHandler
+[10/30/18, 16:35:15:443] info: Registered with apiKey acaff8df67924f677747922423057034
+[10/30/18, 16:35:19:095] info: BrowserStore: Keychain access previously denied, don't ask again
+[10/30/18, 16:35:19:228] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        49,
+        102
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[10/30/18, 16:35:21:486] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[10/30/18, 16:35:21:486] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[10/30/18, 16:35:21:488] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[10/30/18, 16:35:22:813] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[10/30/18, 16:35:22:816] info: AutoLoginEpic: Checking for autologin.
+[10/30/18, 16:35:22:823] info: WebContentsMediator: Attaching to new webContents
+[10/30/18, 16:35:22:826] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[10/30/18, 16:35:22:827] info: BrowserViewManager: Starting initialization
+[10/30/18, 16:35:22:828] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:35:22:828] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:35:22:830] info: WebContentsMediator: Attaching to new webContents
+[10/30/18, 16:35:22:831] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[10/30/18, 16:35:22:836] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[10/30/18, 16:35:23:049] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      49,
+      102
+    ],
+    "isMaximized": false
+  }
+}
+[10/30/18, 16:35:23:838] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[10/30/18, 16:35:23:841] info: App: Welcome to Slack 3.3.3 x64
+[10/30/18, 16:35:23:841] info: App load time: 41,52301556
+[10/30/18, 16:35:46:096] info: Team boot count
+{
+  "count": 1
+}
+[10/30/18, 16:35:48:117] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/30/18, 16:35:48:126] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/30/18, 16:35:48:127] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:35:49:003] info: Store: SET_NETWORK_STATUS online
+[10/30/18, 16:35:53:817] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 30979 ms
+[10/30/18, 16:35:53:817] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:35:53:818] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/30/18, 16:35:53:820] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[10/30/18, 16:35:53:821] info: Store: MAIN_WINDOW_SHOWN
+[10/30/18, 16:35:53:837] info: Store: SET_FULL_SCREEN
+[10/30/18, 16:35:53:839] info: Store: SET_FULL_SCREEN
+[10/30/18, 16:35:54:259] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:45:410] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'page-will-navigate' took 111593 ms
+[10/30/18, 16:37:45:410] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:45:413] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T2LHV2VSB | navigate |            |
++-----------+----------+------------+
+[10/30/18, 16:37:46:528] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:47:577] info: Team boot count
+{
+  "count": 2
+}
+[10/30/18, 16:37:48:173] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[10/30/18, 16:37:48:174] info: EpicHelpers: Flushing cookie store
+[10/30/18, 16:37:48:175] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'loaded' took 2765 ms
+[10/30/18, 16:37:48:176] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:48:177] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/30/18, 16:37:48:558] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:49:391] info: Team boot count
+{
+  "count": 3
+}
+[10/30/18, 16:37:54:110] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'loaded' took 5934 ms
+[10/30/18, 16:37:54:110] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:55:007] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:55:284] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/30/18, 16:37:55:288] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:37:59:071] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/30/18, 16:38:01:498] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/30/18, 16:38:01:943] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:38:02:183] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 8074 ms
+[10/30/18, 16:38:02:183] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:38:02:184] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[10/30/18, 16:38:02:187] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/30/18, 16:38:02:374] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[10/30/18, 16:38:02:376] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:38:27:783] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 16:38:28:786] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    960,
+    858
+  ],
+  "position": [
+    49,
+    102
+  ],
+  "isMaximized": false
+}
+[10/30/18, 16:38:38:046] info: Store: SET_FULL_SCREEN
+[10/30/18, 16:38:38:047] info: Store: SET_FULL_SCREEN
+[10/30/18, 16:38:41:384] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/30/18, 16:38:41:408] info: Store: SET_FULL_SCREEN
+[10/30/18, 20:22:43:435] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/30/18, 20:22:43:437] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/30/18, 20:22:43:429      ║
+[10/30/18, 20:22:43:437] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/30/18, 20:22:56:918] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/30/18, 20:23:09:859] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[10/30/18, 20:23:09:885] info: Configuring uncaughtExceptionHandler
+[10/30/18, 20:23:09:885] info: Configuring unhandledRejectionHandler
+[10/30/18, 20:23:09:885] info: Registered with apiKey acaff8df67924f677747922423057034
+[10/30/18, 20:23:15:400] info: BrowserStore: Keychain access previously denied, don't ask again
+[10/30/18, 20:23:15:745] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        49,
+        102
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[10/30/18, 20:23:19:655] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[10/30/18, 20:23:19:656] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[10/30/18, 20:23:19:659] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[10/30/18, 20:23:21:584] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[10/30/18, 20:23:21:586] info: AutoLoginEpic: Checking for autologin.
+[10/30/18, 20:23:21:591] info: WebContentsMediator: Attaching to new webContents
+[10/30/18, 20:23:21:593] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[10/30/18, 20:23:21:594] info: BrowserViewManager: Starting initialization
+[10/30/18, 20:23:21:594] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:23:21:594] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:23:21:596] info: WebContentsMediator: Attaching to new webContents
+[10/30/18, 20:23:21:596] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[10/30/18, 20:23:21:600] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[10/30/18, 20:23:21:647] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      49,
+      102
+    ],
+    "isMaximized": false
+  }
+}
+[10/30/18, 20:23:21:864] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[10/30/18, 20:23:21:865] info: App: Welcome to Slack 3.3.3 x64
+[10/30/18, 20:23:21:865] info: App load time: 54,435457128
+[10/30/18, 20:24:32:265] info: Team boot count
+{
+  "count": 1
+}
+[10/30/18, 20:24:36:177] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/30/18, 20:24:36:187] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/30/18, 20:24:36:188] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:24:38:024] info: Store: SET_NETWORK_STATUS online
+[10/30/18, 20:24:40:838] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 79236 ms
+[10/30/18, 20:24:40:838] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:24:40:841] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/30/18, 20:24:40:842] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[10/30/18, 20:24:40:843] info: Store: MAIN_WINDOW_SHOWN
+[10/30/18, 20:24:40:868] info: Store: SET_FULL_SCREEN
+[10/30/18, 20:24:40:871] info: Store: SET_FULL_SCREEN
+[10/30/18, 20:24:41:277] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:24:42:428] info: Store: SELECT_CHANNEL D2PBY7P4G
+[10/30/18, 20:24:42:430] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:24:49:669] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[10/30/18, 20:24:49:671] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[10/30/18, 20:24:54:012] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:24:54:265] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 13428 ms
+[10/30/18, 20:24:54:265] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:24:54:268] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[10/30/18, 20:24:54:273] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[10/30/18, 20:24:54:664] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[10/30/18, 20:24:54:668] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:36:01:714] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:36:02:717] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    960,
+    858
+  ],
+  "position": [
+    49,
+    102
+  ],
+  "isMaximized": false
+}
+[10/30/18, 20:36:02:797] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/30/18, 20:36:03:800] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    960,
+    858
+  ],
+  "position": [
+    49,
+    102
+  ],
+  "isMaximized": false
+}
+[10/30/18, 20:36:04:046] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/30/18, 20:36:04:055] info: Store: SET_FULL_SCREEN
+[10/30/18, 20:36:05:544] info: Store: FOREGROUND_APP
+[10/30/18, 20:36:05:551] info: Store: SET_FULL_SCREEN
+[10/30/18, 20:36:05:553] info: Store: SET_FULL_SCREEN
+[10/30/18, 20:36:10:218] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/30/18, 20:36:10:233] info: Store: SET_FULL_SCREEN
+[10/30/18, 22:02:10:453] info: Store: FOREGROUND_APP
+[10/30/18, 22:02:10:468] info: Store: SET_FULL_SCREEN
+[10/30/18, 22:02:10:475] info: Store: SET_FULL_SCREEN
+[10/30/18, 22:02:12:055] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[10/30/18, 22:02:12:062] info: Store: SET_FULL_SCREEN
+[10/31/18, 21:33:26:373] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[10/31/18, 21:33:26:374] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 10/31/18, 21:33:26:371      ║
+[10/31/18, 21:33:26:374] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[10/31/18, 21:33:36:655] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[10/31/18, 21:33:43:241] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[10/31/18, 21:33:43:289] info: Configuring uncaughtExceptionHandler
+[10/31/18, 21:33:43:289] info: Configuring unhandledRejectionHandler
+[10/31/18, 21:33:43:289] info: Registered with apiKey acaff8df67924f677747922423057034
+[10/31/18, 21:33:47:729] info: BrowserStore: Keychain access previously denied, don't ask again
+[10/31/18, 21:33:47:976] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        49,
+        102
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[10/31/18, 21:33:49:900] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[10/31/18, 21:33:49:900] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[10/31/18, 21:33:49:901] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[10/31/18, 21:33:52:713] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[10/31/18, 21:33:52:715] info: AutoLoginEpic: Checking for autologin.
+[10/31/18, 21:33:52:719] info: WebContentsMediator: Attaching to new webContents
+[10/31/18, 21:33:52:721] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[10/31/18, 21:33:52:722] info: BrowserViewManager: Starting initialization
+[10/31/18, 21:33:52:723] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/31/18, 21:33:52:723] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/31/18, 21:33:52:724] info: WebContentsMediator: Attaching to new webContents
+[10/31/18, 21:33:52:725] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[10/31/18, 21:33:52:728] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[10/31/18, 21:33:52:783] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      49,
+      102
+    ],
+    "isMaximized": false
+  }
+}
+[10/31/18, 21:33:53:417] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[10/31/18, 21:33:53:420] info: App: Welcome to Slack 3.3.3 x64
+[10/31/18, 21:33:53:420] info: App load time: 35,318897725
+[10/31/18, 21:34:27:380] info: Team boot count
+{
+  "count": 1
+}
+[10/31/18, 21:34:30:537] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[10/31/18, 21:34:30:856] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[10/31/18, 21:34:30:859] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[10/31/18, 21:34:39:831] error: Telemetry: Failed to send telemetry request
+{
+  "error": {
+    "message": "telemetry request aborted due to timeout",
+    "stack": "Error: telemetry request aborted due to timeout\n    at Timeout.setTimeout [as _onTimeout] (/usr/lib/slack/resources/app.asar/src/telemetry.ts:148:36)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
+  }
+}
+[10/31/18, 21:34:51:553] info: Store: SET_NETWORK_STATUS offline
+[10/31/18, 21:34:51:987] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 59257 ms
+[10/31/18, 21:34:51:987] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[10/31/18, 21:34:51:989] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[10/31/18, 21:35:11:170] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[10/31/18, 21:35:39:857] error: Telemetry: Failed to send telemetry request
+{
+  "error": {
+    "message": "telemetry request aborted due to timeout",
+    "stack": "Error: telemetry request aborted due to timeout\n    at Timeout.setTimeout [as _onTimeout] (/usr/lib/slack/resources/app.asar/src/telemetry.ts:148:36)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
+  }
+}
+[10/31/18, 21:35:56:880] info: Store: SET_NETWORK_STATUS online
+[10/31/18, 21:35:56:883] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[10/31/18, 21:35:56:884] info: Store: MAIN_WINDOW_SHOWN
+[10/31/18, 21:35:56:922] info: Store: SET_FULL_SCREEN
+[10/31/18, 21:35:56:923] info: Store: SET_FULL_SCREEN
+[11/01/18, 09:47:47:550] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[11/01/18, 09:47:47:598] info: Store: SET_FULL_SCREEN
+[11/03/18, 23:04:16:025] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/03/18, 23:04:16:027] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/03/18, 23:04:16:017      ║
+[11/03/18, 23:04:16:027] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/03/18, 23:04:29:674] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/03/18, 23:04:34:902] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[11/03/18, 23:04:35:015] info: Configuring uncaughtExceptionHandler
+[11/03/18, 23:04:35:015] info: Configuring unhandledRejectionHandler
+[11/03/18, 23:04:35:015] info: Registered with apiKey acaff8df67924f677747922423057034
+[11/03/18, 23:04:38:225] info: BrowserStore: Keychain access previously denied, don't ask again
+[11/03/18, 23:04:38:654] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        49,
+        102
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[11/03/18, 23:04:42:565] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[11/03/18, 23:04:42:566] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[11/03/18, 23:04:42:568] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[11/03/18, 23:04:44:436] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[11/03/18, 23:04:44:437] info: AutoLoginEpic: Checking for autologin.
+[11/03/18, 23:04:44:442] info: WebContentsMediator: Attaching to new webContents
+[11/03/18, 23:04:44:444] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[11/03/18, 23:04:44:445] info: BrowserViewManager: Starting initialization
+[11/03/18, 23:04:44:445] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:04:44:445] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:04:44:446] info: WebContentsMediator: Attaching to new webContents
+[11/03/18, 23:04:44:447] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[11/03/18, 23:04:44:450] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[11/03/18, 23:04:44:473] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      49,
+      102
+    ],
+    "isMaximized": false
+  }
+}
+[11/03/18, 23:04:44:765] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[11/03/18, 23:04:44:766] info: App: Welcome to Slack 3.3.3 x64
+[11/03/18, 23:04:44:766] info: App load time: 38,825847674
+[11/03/18, 23:05:19:338] info: Team boot count
+{
+  "count": 1
+}
+[11/03/18, 23:05:22:128] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/03/18, 23:05:22:567] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/03/18, 23:05:22:569] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:05:23:324] info: Store: SET_NETWORK_STATUS online
+[11/03/18, 23:05:26:592] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 42140 ms
+[11/03/18, 23:05:26:592] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:05:26:594] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[11/03/18, 23:05:26:595] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[11/03/18, 23:05:26:596] info: Store: MAIN_WINDOW_SHOWN
+[11/03/18, 23:05:26:635] info: Store: SET_FULL_SCREEN
+[11/03/18, 23:05:26:636] info: Store: SET_FULL_SCREEN
+[11/03/18, 23:05:27:031] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:05:28:050] info: Store: SELECT_CHANNEL D2PBY7P4G
+[11/03/18, 23:05:28:054] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:05:28:401] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[11/03/18, 23:05:28:590] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[11/03/18, 23:05:29:868] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:05:29:947] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 3356 ms
+[11/03/18, 23:05:29:947] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:05:29:948] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[11/03/18, 23:05:29:950] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[11/03/18, 23:05:30:377] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[11/03/18, 23:05:30:380] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[11/03/18, 23:08:07:124] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[11/03/18, 23:08:07:177] info: Store: SET_FULL_SCREEN
+[11/03/18, 23:24:16:071] info: Store: SET_SUSPEND_STATUS
+[11/03/18, 23:48:58:494] info: Store: SET_SUSPEND_STATUS true
+[11/04/18, 11:37:50:773] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/04/18, 11:37:50:774] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/04/18, 11:37:50:770      ║
+[11/04/18, 11:37:50:774] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/04/18, 11:38:02:021] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/04/18, 11:38:11:761] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[11/04/18, 11:38:11:815] info: Configuring uncaughtExceptionHandler
+[11/04/18, 11:38:11:815] info: Configuring unhandledRejectionHandler
+[11/04/18, 11:38:11:815] info: Registered with apiKey acaff8df67924f677747922423057034
+[11/04/18, 11:38:15:727] info: BrowserStore: Keychain access previously denied, don't ask again
+[11/04/18, 11:38:19:030] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        49,
+        102
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[11/04/18, 11:38:20:985] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:20:986] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[11/04/18, 11:38:20:987] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[11/04/18, 11:38:22:658] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[11/04/18, 11:38:22:659] info: AutoLoginEpic: Checking for autologin.
+[11/04/18, 11:38:22:664] info: WebContentsMediator: Attaching to new webContents
+[11/04/18, 11:38:22:665] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[11/04/18, 11:38:22:666] info: BrowserViewManager: Starting initialization
+[11/04/18, 11:38:22:667] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:22:667] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:22:668] info: WebContentsMediator: Attaching to new webContents
+[11/04/18, 11:38:22:669] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[11/04/18, 11:38:22:672] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[11/04/18, 11:38:22:749] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      49,
+      102
+    ],
+    "isMaximized": false
+  }
+}
+[11/04/18, 11:38:22:958] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[11/04/18, 11:38:22:959] info: App: Welcome to Slack 3.3.3 x64
+[11/04/18, 11:38:22:959] info: App load time: 43,723920059
+[11/04/18, 11:38:31:140] info: Team boot count
+{
+  "count": 1
+}
+[11/04/18, 11:38:31:588] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 8915 ms
+[11/04/18, 11:38:31:588] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:31:590] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[11/04/18, 11:38:31:619] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'empty-page' took 31 ms
+[11/04/18, 11:38:31:619] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:31:620] info: Background Clients Update: 
++-----------+------------+------------+
+|           | Full       | Background |
+|-----------+------------+------------+
+| T2LHV2VSB | empty-page |            |
++-----------+------------+------------+
+[11/04/18, 11:38:31:623] info: WebContents LifeCycle: webContents:3 from 'empty-page' to 'page-will-navigate' took 4 ms
+[11/04/18, 11:38:31:623] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:31:624] info: Background Clients Update: 
++-----------+----------+------------+
+|           | Full     | Background |
+|-----------+----------+------------+
+| T2LHV2VSB | navigate |            |
++-----------+----------+------------+
+[11/04/18, 11:38:31:887] info: Team boot count
+{
+  "count": 2
+}
+[11/04/18, 11:38:31:968] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/04/18, 11:38:31:969] info: Store: SET_NETWORK_STATUS offline
+[11/04/18, 11:38:32:058] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/04/18, 11:38:32:059] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:32:326] info: WebContents LifeCycle: webContents:3 from 'page-will-navigate' to 'loaded' took 703 ms
+[11/04/18, 11:38:32:326] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:32:328] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[11/04/18, 11:38:32:332] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'empty-page' took 5 ms
+[11/04/18, 11:38:32:332] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:32:333] info: Background Clients Update: 
++-----------+------------+------------+
+|           | Full       | Background |
+|-----------+------------+------------+
+| T2LHV2VSB | empty-page |            |
++-----------+------------+------------+
+[11/04/18, 11:38:32:395] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:38:32:687] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[11/04/18, 11:39:02:241] error: Telemetry: Failed to send telemetry request
+{
+  "error": {
+    "message": "net::ERR_INTERNET_DISCONNECTED",
+    "stack": "Error: net::ERR_INTERNET_DISCONNECTED"
+  }
+}
+[11/04/18, 11:57:38:652] info: Store: QUIT_APP
+[11/04/18, 11:57:38:656] info: quitApplicationEpic: found update metadata, send telemetry
+[11/04/18, 11:57:38:656] info: EpicHelpers: Flushing cookie store
+[11/04/18, 11:57:38:708] info: EpicHelpers: Flushing local-settings.json
+[11/04/18, 11:57:38:708] info: quitApplicationEpic: Closing main window
+{
+  "id": 2
+}
+[11/04/18, 11:57:38:709] info: Allowing window close because user chose to quit
+[11/04/18, 11:57:38:709] info: Notification Window Manager: Trying to close notifications window
+[11/04/18, 11:57:38:709] warn: Notification Window Manager: Could not find notifications window in state
+[11/04/18, 11:57:38:710] info: App: Disposing application
+[11/04/18, 11:57:38:710] info: Store: REMOVE_WINDOW 2
+[11/04/18, 11:57:38:711] info: quitApplicationEpic: Disposing item
+{
+  "type": "ReduxPersistStorage"
+}
+[11/04/18, 11:57:38:713] info: Store: QUIT_APP
+[11/04/18, 11:57:38:714] info: Allowing window close because user chose to quit
+[11/04/18, 11:57:38:743] info: Store: QUIT_APP
+[11/05/18, 19:02:41:704] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/05/18, 19:02:41:707] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/05/18, 19:02:41:696      ║
+[11/05/18, 19:02:41:707] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/05/18, 19:03:03:169] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/05/18, 19:03:11:336] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[11/05/18, 19:03:11:406] info: Configuring uncaughtExceptionHandler
+[11/05/18, 19:03:11:406] info: Configuring unhandledRejectionHandler
+[11/05/18, 19:03:11:407] info: Registered with apiKey acaff8df67924f677747922423057034
+[11/05/18, 19:03:15:306] info: BrowserStore: Keychain access previously denied, don't ask again
+[11/05/18, 19:03:15:820] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        49,
+        102
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[11/05/18, 19:03:18:988] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[11/05/18, 19:03:18:989] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[11/05/18, 19:03:18:995] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[11/05/18, 19:03:21:916] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[11/05/18, 19:03:21:921] info: AutoLoginEpic: Checking for autologin.
+[11/05/18, 19:03:21:939] info: WebContentsMediator: Attaching to new webContents
+[11/05/18, 19:03:21:945] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[11/05/18, 19:03:21:950] info: BrowserViewManager: Starting initialization
+[11/05/18, 19:03:21:950] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:03:21:951] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:03:21:956] info: WebContentsMediator: Attaching to new webContents
+[11/05/18, 19:03:21:958] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[11/05/18, 19:03:21:971] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[11/05/18, 19:03:22:099] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      49,
+      102
+    ],
+    "isMaximized": false
+  }
+}
+[11/05/18, 19:03:22:998] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[11/05/18, 19:03:22:999] info: App: Welcome to Slack 3.3.3 x64
+[11/05/18, 19:03:22:999] info: App load time: 52,518958108
+[11/05/18, 19:04:03:351] info: Team boot count
+{
+  "count": 1
+}
+[11/05/18, 19:04:08:243] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/05/18, 19:04:08:250] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/05/18, 19:04:08:252] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:04:10:185] info: Store: SET_NETWORK_STATUS online
+[11/05/18, 19:04:19:598] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 57625 ms
+[11/05/18, 19:04:19:599] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:04:19:610] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[11/05/18, 19:04:19:614] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[11/05/18, 19:04:19:617] info: Store: MAIN_WINDOW_SHOWN
+[11/05/18, 19:04:19:675] info: Store: SET_FULL_SCREEN
+[11/05/18, 19:04:19:679] info: Store: SET_FULL_SCREEN
+[11/05/18, 19:04:19:934] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:04:21:467] info: Store: SELECT_CHANNEL D2PBY7P4G
+[11/05/18, 19:04:21:474] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:04:22:114] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[11/05/18, 19:04:22:424] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[11/05/18, 19:04:23:922] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:04:24:012] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 4415 ms
+[11/05/18, 19:04:24:013] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:04:24:015] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[11/05/18, 19:04:24:026] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[11/05/18, 19:04:24:640] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[11/05/18, 19:04:24:646] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[11/05/18, 19:06:00:098] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[11/05/18, 19:06:00:113] info: Store: SET_FULL_SCREEN
+[11/05/18, 19:06:00:977] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "size": [
+    960,
+    858
+  ],
+  "position": [
+    70,
+    105
+  ],
+  "isMaximized": false
+}
+[11/05/18, 20:31:28:052] info: Store: FOREGROUND_APP
+[11/05/18, 20:31:28:066] info: Store: SET_FULL_SCREEN
+[11/05/18, 20:31:28:067] info: Store: SET_FULL_SCREEN
+[11/05/18, 20:31:29:091] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[11/05/18, 20:31:29:097] info: Store: SET_FULL_SCREEN
+[11/05/18, 20:36:12:211] info: Store: SET_SUSPEND_STATUS
+[11/05/18, 20:36:18:783] info: Store: SET_SUSPEND_STATUS true
+[11/06/18, 16:55:58:238] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/06/18, 16:55:58:239] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/06/18, 16:55:58:149      ║
+[11/06/18, 16:55:58:239] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/06/18, 16:56:12:992] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/06/18, 16:56:23:487] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[11/06/18, 16:56:23:514] info: Configuring uncaughtExceptionHandler
+[11/06/18, 16:56:23:514] info: Configuring unhandledRejectionHandler
+[11/06/18, 16:56:23:514] info: Registered with apiKey acaff8df67924f677747922423057034
+[11/06/18, 16:56:29:536] info: BrowserStore: Keychain access previously denied, don't ask again
+[11/06/18, 16:56:29:727] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        70,
+        105
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[11/06/18, 16:56:31:862] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:31:862] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[11/06/18, 16:56:31:863] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[11/06/18, 16:56:33:294] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[11/06/18, 16:56:33:296] info: AutoLoginEpic: Checking for autologin.
+[11/06/18, 16:56:33:300] info: WebContentsMediator: Attaching to new webContents
+[11/06/18, 16:56:33:445] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[11/06/18, 16:56:33:447] info: BrowserViewManager: Starting initialization
+[11/06/18, 16:56:33:448] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:33:448] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:33:451] info: WebContentsMediator: Attaching to new webContents
+[11/06/18, 16:56:33:452] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[11/06/18, 16:56:33:461] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[11/06/18, 16:56:33:482] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      70,
+      105
+    ],
+    "isMaximized": false
+  }
+}
+[11/06/18, 16:56:33:647] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[11/06/18, 16:56:33:648] info: App: Welcome to Slack 3.3.3 x64
+[11/06/18, 16:56:33:648] info: App load time: 50,78533977
+[11/06/18, 16:56:51:182] info: Team boot count
+{
+  "count": 1
+}
+[11/06/18, 16:56:53:248] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/06/18, 16:56:53:921] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/06/18, 16:56:53:923] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:54:324] info: Store: SET_NETWORK_STATUS online
+[11/06/18, 16:56:58:054] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 24592 ms
+[11/06/18, 16:56:58:055] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:58:056] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[11/06/18, 16:56:58:059] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[11/06/18, 16:56:58:061] info: Store: MAIN_WINDOW_SHOWN
+[11/06/18, 16:56:58:091] info: Store: SET_FULL_SCREEN
+[11/06/18, 16:56:58:093] info: Store: SET_FULL_SCREEN
+[11/06/18, 16:56:58:660] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:59:000] info: Store: SELECT_CHANNEL D2PBY7P4G
+[11/06/18, 16:56:59:003] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:56:59:322] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[11/06/18, 16:56:59:847] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[11/06/18, 16:57:01:342] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:57:01:509] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 3454 ms
+[11/06/18, 16:57:01:509] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:57:01:510] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[11/06/18, 16:57:01:512] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[11/06/18, 16:57:01:820] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[11/06/18, 16:57:01:821] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 16:57:15:365] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[11/06/18, 16:57:15:375] info: Store: SET_FULL_SCREEN
+[11/06/18, 20:41:01:234] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/06/18, 20:41:01:235] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/06/18, 20:41:01:230      ║
+[11/06/18, 20:41:01:235] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/06/18, 20:41:14:491] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/06/18, 20:41:20:104] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[11/06/18, 20:41:20:543] info: Configuring uncaughtExceptionHandler
+[11/06/18, 20:41:20:543] info: Configuring unhandledRejectionHandler
+[11/06/18, 20:41:20:543] info: Registered with apiKey acaff8df67924f677747922423057034
+[11/06/18, 20:41:24:384] info: BrowserStore: Keychain access previously denied, don't ask again
+[11/06/18, 20:41:24:560] info: Store: persist/REHYDRATE
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.3.3",
+    "versionName": "Dirty Computer",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 4,
+      "minor": 18,
+      "build": 16
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": null,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    },
+    "sandboxSigninWindow": true
+  },
+  "teams": "[REDACTED]",
+  "windowFrame": {
+    "windowSettings": {
+      "size": [
+        960,
+        858
+      ],
+      "position": [
+        70,
+        105
+      ],
+      "isMaximized": false
+    },
+    "isFullScreen": false
+  }
+}
+[11/06/18, 20:41:29:023] info: initializeMainWindowEpic: Waiting for selected team to load
+{
+  "selectedTeamId": "T2LHV2VSB"
+}
+[11/06/18, 20:41:29:024] info: Store: UPDATE_SETTINGS
+{
+  "isSignedIntoSlackOrg": false
+}
+[11/06/18, 20:41:29:026] info: UpdaterEpics: Updates disabled because
+{
+  "reasons": [
+    "using Linux"
+  ]
+}
+[11/06/18, 20:41:31:040] info: Store: INITIALIZE_SETTINGS
+{
+  "releaseChannel": "prod",
+  "platformVersion": {
+    "major": 4,
+    "minor": 18,
+    "build": 16
+  },
+  "isTitleBarHidden": false,
+  "isDevMode": false,
+  "appVersion": "3.3.3",
+  "versionName": "Dirty Computer",
+  "devEnv": null,
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "webappSrcPath": null,
+  "webappParams": null,
+  "launchOnStartup": false,
+  "openDevToolsOnStart": false,
+  "logFile": null,
+  "pretendNotReallyWindows10": false,
+  "isAeroGlassEnabled": false,
+  "isGpuCompositionAvailable": true,
+  "linux": {
+    "os": "Raspbian",
+    "release": ""
+  }
+}
+[11/06/18, 20:41:31:042] info: AutoLoginEpic: Checking for autologin.
+[11/06/18, 20:41:31:047] info: WebContentsMediator: Attaching to new webContents
+[11/06/18, 20:41:31:113] info: Store: ADD_WINDOW
+{
+  "id": 2,
+  "type": "main"
+}
+[11/06/18, 20:41:31:114] info: BrowserViewManager: Starting initialization
+[11/06/18, 20:41:31:115] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:41:31:115] info: BrowserViewManager: Creating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:41:31:117] info: WebContentsMediator: Attaching to new webContents
+[11/06/18, 20:41:31:118] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB",
+  "state": "unloaded"
+}
+[11/06/18, 20:41:31:124] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | start |            |
++-----------+-------+------------+
+[11/06/18, 20:41:31:173] info: PersistSettingsWindowBehavior: Loading windowMetrics
+{
+  "settings": {
+    "size": [
+      960,
+      858
+    ],
+    "position": [
+      70,
+      105
+    ],
+    "isMaximized": false
+  }
+}
+[11/06/18, 20:41:31:530] info: Application: Setting main window ID
+{
+  "id": 2
+}
+[11/06/18, 20:41:31:531] info: App: Welcome to Slack 3.3.3 x64
+[11/06/18, 20:41:31:532] info: App load time: 43,530502779
+[11/06/18, 20:42:06:447] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/06/18, 20:42:06:485] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/06/18, 20:42:06:487] info: BrowserViewManager: Activating BrowserView
+{
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:42:07:190] info: Store: SET_NETWORK_STATUS online
+[11/06/18, 20:42:08:033] info: Team boot count
+{
+  "count": 1
+}
+[11/06/18, 20:42:14:276] info: WebContents LifeCycle: webContents:3 from 'unloaded' to 'loaded' took 43151 ms
+[11/06/18, 20:42:14:277] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:42:14:280] info: Background Clients Update: 
++-----------+---------+------------+
+|           | Full    | Background |
+|-----------+---------+------------+
+| T2LHV2VSB | loading |            |
++-----------+---------+------------+
+[11/06/18, 20:42:14:281] info: initializeMainWindowEpic: Showing main window
+{
+  "shouldMinimize": false,
+  "shouldMaximize": false,
+  "shouldHide": false
+}
+[11/06/18, 20:42:14:282] info: Store: MAIN_WINDOW_SHOWN
+[11/06/18, 20:42:14:316] info: Store: SET_FULL_SCREEN
+[11/06/18, 20:42:14:318] info: Store: SET_FULL_SCREEN
+[11/06/18, 20:42:14:717] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": true,
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:42:14:859] info: Store: SELECT_CHANNEL D2PBY7P4G
+[11/06/18, 20:42:14:862] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:42:15:013] info: Store: UPDATE_SETTINGS
+{
+  "locale": "en-US"
+}
+[11/06/18, 20:42:15:142] info: Store: UPDATE_TEAM_THEME
+{
+  "teamId": "T2LHV2VSB",
+  "theme": {
+    "active_item": "#4C9689",
+    "active_item_text": "#FFFFFF",
+    "active_presence": "#38978D",
+    "badge": "#EB4D5C",
+    "column_bg": "#4D394B",
+    "hover_item": "#3E313C",
+    "menu_bg": "#3E313C",
+    "text_color": "#FFFFFF"
+  }
+}
+[11/06/18, 20:42:16:825] info: Store: UPDATE_TEAM_LOCALE
+{
+  "locale": "en-US",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:42:16:958] info: WebContents LifeCycle: webContents:3 from 'loaded' to 'webapp-loaded' took 2682 ms
+[11/06/18, 20:42:16:958] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "webapp-loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 20:42:16:960] info: Background Clients Update: 
++-----------+-------+------------+
+|           | Full  | Background |
+|-----------+-------+------------+
+| T2LHV2VSB | ready |            |
++-----------+-------+------------+
+[11/06/18, 20:42:16:963] info: Store: UPDATE_SETTINGS
+{
+  "sandboxSigninWindow": true
+}
+[11/06/18, 20:42:17:251] info: Store: STORE_ENTERPRISE_ID_PAIR
+{
+  "teamId": "T2LHV2VSB",
+  "enterpriseId": null
+}
+[11/06/18, 20:42:17:253] info: Store: STORE_API_TOKEN
+{
+  "token": "xoxs-⋯",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 21:06:55:910] info: WindowCloseBehavior: Attempted to close the window, hiding due to run from tray
+[11/06/18, 21:06:55:923] info: Store: SET_FULL_SCREEN
