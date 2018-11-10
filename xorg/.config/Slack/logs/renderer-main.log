@@ -5685,3 +5685,196 @@
   "token": "xoxs-⋯"
 }
 [11/06/18, 21:06:55:924] info: Store: SET_FULL_SCREEN
+[11/06/18, 22:12:35:078] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[11/06/18, 22:12:35:079] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:12:36:238] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:12:40:099] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:12:41:231] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:46:845] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:35:46:846] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:35:46:840      ║
+[11/08/18, 15:35:46:846] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:35:47:057] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:35:47:927] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:931] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:932] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:932] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:933] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:934] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:937] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/08/18, 15:35:47:938] info: Don't start background client because T2LHV2VSB is selected team
+[11/08/18, 15:35:47:938] info: Store: SET_NETWORK_STATUS offline
+[11/08/18, 15:35:48:530] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/08/18, 15:35:48:534] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:48:536] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:49:498] warn: Tried to determine signed in status, but errored.
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/08/18, 15:35:49:500] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:49:501] warn: Tried to determine signed in status, but errored.
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/08/18, 15:35:49:768] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:36:51:428] info: NetworkStatus: Waiting for network online…
+[11/08/18, 15:36:51:446] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/08/18, 15:36:51:447] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[11/08/18, 15:36:56:435] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/08/18, 15:36:56:436] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[11/08/18, 15:37:01:963] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/08/18, 15:37:02:365] info: Store: SET_NETWORK_STATUS online
+[11/08/18, 15:37:02:367] warn: Base Component: Attempting to update LoadingScreen when unmounted.
+[11/08/18, 15:37:02:370] info: Store: MAIN_WINDOW_SHOWN
+[11/08/18, 15:37:02:405] info: Store: SET_FULL_SCREEN
+[11/08/18, 15:37:02:406] info: Store: SET_FULL_SCREEN
+[11/08/18, 15:37:02:410] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:02:930] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:06:823] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:07:096] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:38:41:767] info: Store: SET_FULL_SCREEN
+[11/08/18, 21:00:48:460] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 21:00:48:460] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 21:00:48:457      ║
+[11/08/18, 21:00:48:460] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 21:00:48:887] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 21:00:49:275] info: NetworkStatus: Waiting for network online…
+[11/08/18, 21:00:49:864] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/08/18, 21:00:49:867] info: Don't start background client because T2LHV2VSB is selected team
+[11/08/18, 21:00:49:948] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/08/18, 21:00:50:204] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/08/18, 21:00:50:606] info: Store: SET_NETWORK_STATUS online
+[11/08/18, 21:00:55:641] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 21:00:55:647] info: Store: MAIN_WINDOW_SHOWN
+[11/08/18, 21:00:55:671] info: Store: SET_FULL_SCREEN
+[11/08/18, 21:00:55:673] info: Store: SET_FULL_SCREEN
+[11/08/18, 21:00:56:176] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 21:31:05:349] info: Store: SET_FULL_SCREEN
+[11/08/18, 23:33:27:217] info: Store: SET_SUSPEND_STATUS
+[11/08/18, 23:33:34:680] info: Store: SET_SUSPEND_STATUS true

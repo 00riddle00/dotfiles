@@ -8405,3 +8405,680 @@
   "language": "lt"
 }
 [11/06/18, 21:06:55:933] info: Store: SET_FULL_SCREEN
+[11/06/18, 22:12:33:124] error: Nov-6 22:12:33.123 SOCKET-MANAGER (T2LHV2VSB) Socket was closed because #1006: generic error
+[11/06/18, 22:12:35:069] error: Nov-6 22:12:35.069 SOCKET-MANAGER (T2LHV2VSB) Closing socket because #4106: received an "error" message from socket
+[11/06/18, 22:12:35:078] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[11/06/18, 22:12:35:079] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:12:35:082] info: Window is unloading, window.desktop is no longer accessible
+[11/06/18, 22:12:36:239] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:12:36:621] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/06/18, 22:12:36:622] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/06/18, 22:12:36:619      ║
+[11/06/18, 22:12:36:622] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/06/18, 22:12:36:710] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/06/18, 22:12:37:001] info: cld3::loadModule: loading cld3 module
+[11/06/18, 22:12:37:019] info: cld3Loader::loadModule: running environment is NODE
+[11/06/18, 22:12:37:019] info: cld3Loader::loadModule: constructed module object for runtime
+[11/06/18, 22:12:37:171] info: cld3Loader::initializeRuntime: successfully initialized module
+[11/06/18, 22:12:37:171] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[11/06/18, 22:12:37:177] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[11/06/18, 22:12:37:187] info: Main window preload script finished
+{
+  "readyTime": 756.734725
+}
+[11/06/18, 22:12:40:100] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:12:41:231] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/06/18, 22:13:38:015] error: Nov-6 22:13:38.015 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:14:38:007] error: Nov-6 22:14:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:15:38:006] error: Nov-6 22:15:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:16:38:014] error: Nov-6 22:16:38.014 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:17:38:025] error: Nov-6 22:17:38.025 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:18:38:107] error: Nov-6 22:18:38.106 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:19:38:025] error: Nov-6 22:19:38.025 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:20:38:102] error: Nov-6 22:20:38.101 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:21:38:014] error: Nov-6 22:21:38.013 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:22:38:012] error: Nov-6 22:22:38.012 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:23:38:019] error: Nov-6 22:23:38.019 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:24:38:016] error: Nov-6 22:24:38.016 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:25:38:015] error: Nov-6 22:25:38.015 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:26:38:015] error: Nov-6 22:26:38.014 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:30:38:005] error: Nov-6 22:30:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:31:38:018] error: Nov-6 22:31:38.018 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:32:38:020] error: Nov-6 22:32:38.020 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:33:38:027] error: Nov-6 22:33:38.027 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:34:38:018] error: Nov-6 22:34:38.018 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:35:38:011] error: Nov-6 22:35:38.011 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:36:38:015] error: Nov-6 22:36:38.015 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:37:38:015] error: Nov-6 22:37:38.015 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:38:38:015] error: Nov-6 22:38:38.015 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:39:38:018] error: Nov-6 22:39:38.018 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:40:38:020] error: Nov-6 22:40:38.020 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:41:38:016] error: Nov-6 22:41:38.016 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:42:38:020] error: Nov-6 22:42:38.020 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:43:38:020] error: Nov-6 22:43:38.020 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:44:38:013] error: Nov-6 22:44:38.013 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:45:38:017] error: Nov-6 22:45:38.017 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:46:38:026] error: Nov-6 22:46:38.025 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:47:38:020] error: Nov-6 22:47:38.020 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:48:38:051] error: Nov-6 22:48:38.051 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:49:38:026] error: Nov-6 22:49:38.026 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:50:38:023] error: Nov-6 22:50:38.023 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:51:38:055] error: Nov-6 22:51:38.054 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:52:38:030] error: Nov-6 22:52:38.030 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:53:38:027] error: Nov-6 22:53:38.027 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:54:38:013] error: Nov-6 22:54:38.013 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:55:38:010] error: Nov-6 22:55:38.009 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:56:38:020] error: Nov-6 22:56:38.020 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:57:38:006] error: Nov-6 22:57:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:58:38:015] error: Nov-6 22:58:38.014 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 22:59:38:009] error: Nov-6 22:59:38.009 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:00:38:021] error: Nov-6 23:00:38.021 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:01:38:014] error: Nov-6 23:01:38.014 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:02:38:027] error: Nov-6 23:02:38.026 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:03:38:034] error: Nov-6 23:03:38.034 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:04:38:008] error: Nov-6 23:04:38.008 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:05:38:011] error: Nov-6 23:05:38.010 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:06:38:012] error: Nov-6 23:06:38.012 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:07:38:010] error: Nov-6 23:07:38.010 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:08:38:014] error: Nov-6 23:08:38.014 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:09:38:006] error: Nov-6 23:09:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:10:38:009] error: Nov-6 23:10:38.009 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:11:38:009] error: Nov-6 23:11:38.009 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:12:38:010] error: Nov-6 23:12:38.010 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:13:38:006] error: Nov-6 23:13:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:14:38:007] error: Nov-6 23:14:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:15:38:007] error: Nov-6 23:15:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:16:38:007] error: Nov-6 23:16:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:17:38:007] error: Nov-6 23:17:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:18:38:006] error: Nov-6 23:18:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:19:38:007] error: Nov-6 23:19:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:20:38:006] error: Nov-6 23:20:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:21:38:007] error: Nov-6 23:21:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:22:38:008] error: Nov-6 23:22:38.008 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:23:38:006] error: Nov-6 23:23:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:24:38:006] error: Nov-6 23:24:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:25:38:007] error: Nov-6 23:25:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:26:38:008] error: Nov-6 23:26:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:27:38:006] error: Nov-6 23:27:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:28:38:007] error: Nov-6 23:28:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:29:38:007] error: Nov-6 23:29:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:30:38:006] error: Nov-6 23:30:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:31:38:006] error: Nov-6 23:31:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:32:38:006] error: Nov-6 23:32:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/06/18, 23:33:38:005] error: Nov-6 23:33:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:07:38:097] error: Nov-7 01:07:38.097 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:08:38:061] error: Nov-7 01:08:38.061 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:09:38:060] error: Nov-7 01:09:38.060 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:10:38:005] error: Nov-7 01:10:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:11:38:004] error: Nov-7 01:11:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:12:38:018] error: Nov-7 01:12:38.018 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:13:38:105] error: Nov-7 01:13:38.104 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:14:38:102] error: Nov-7 01:14:38.102 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:15:38:007] error: Nov-7 01:15:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:16:38:006] error: Nov-7 01:16:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:17:38:094] error: Nov-7 01:17:38.094 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:23:38:101] error: Nov-7 01:23:38.101 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:24:38:100] error: Nov-7 01:24:38.099 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:25:38:020] error: Nov-7 01:25:38.019 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:26:38:106] error: Nov-7 01:26:38.106 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:27:38:058] error: Nov-7 01:27:38.057 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:28:38:044] error: Nov-7 01:28:38.044 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:29:38:019] error: Nov-7 01:29:38.019 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:30:38:094] error: Nov-7 01:30:38.094 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:31:38:104] error: Nov-7 01:31:38.103 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 01:32:38:046] error: Nov-7 01:32:38.046 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:50:38:006] error: Nov-7 07:50:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:51:38:007] error: Nov-7 07:51:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:52:38:006] error: Nov-7 07:52:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:53:38:005] error: Nov-7 07:53:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:54:38:004] error: Nov-7 07:54:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:55:38:007] error: Nov-7 07:55:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:56:38:006] error: Nov-7 07:56:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:57:38:007] error: Nov-7 07:57:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:58:38:006] error: Nov-7 07:58:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 07:59:38:006] error: Nov-7 07:59:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:38:38:006] error: Nov-7 09:38:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:39:38:098] error: Nov-7 09:39:38.098 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:40:38:097] error: Nov-7 09:40:38.097 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:41:38:006] error: Nov-7 09:41:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:42:38:006] error: Nov-7 09:42:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:43:38:006] error: Nov-7 09:43:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:44:38:006] error: Nov-7 09:44:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:45:38:006] error: Nov-7 09:45:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:46:38:006] error: Nov-7 09:46:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:47:38:007] error: Nov-7 09:47:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:48:38:006] error: Nov-7 09:48:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:49:38:006] error: Nov-7 09:49:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:50:38:006] error: Nov-7 09:50:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:51:38:007] error: Nov-7 09:51:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:53:38:007] error: Nov-7 09:53:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:54:38:007] error: Nov-7 09:54:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:55:38:004] error: Nov-7 09:55:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:56:38:005] error: Nov-7 09:56:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:57:38:004] error: Nov-7 09:57:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:58:38:007] error: Nov-7 09:58:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 09:59:38:006] error: Nov-7 09:59:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:00:38:004] error: Nov-7 10:00:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:01:38:004] error: Nov-7 10:01:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:02:38:004] error: Nov-7 10:02:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:03:38:007] error: Nov-7 10:03:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:04:38:005] error: Nov-7 10:04:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:05:38:005] error: Nov-7 10:05:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:06:38:004] error: Nov-7 10:06:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:07:38:005] error: Nov-7 10:07:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:08:38:005] error: Nov-7 10:08:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:09:38:005] error: Nov-7 10:09:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:10:38:004] error: Nov-7 10:10:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:11:38:005] error: Nov-7 10:11:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:12:38:005] error: Nov-7 10:12:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:13:38:004] error: Nov-7 10:13:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:14:38:005] error: Nov-7 10:14:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:15:38:006] error: Nov-7 10:15:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:16:38:007] error: Nov-7 10:16:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:17:38:007] error: Nov-7 10:17:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:18:38:005] error: Nov-7 10:18:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:19:38:005] error: Nov-7 10:19:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:20:38:006] error: Nov-7 10:20:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:21:38:005] error: Nov-7 10:21:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:22:38:006] error: Nov-7 10:22:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:23:38:007] error: Nov-7 10:23:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:24:38:006] error: Nov-7 10:24:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:25:38:006] error: Nov-7 10:25:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:26:38:006] error: Nov-7 10:26:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:27:38:006] error: Nov-7 10:27:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:28:38:029] error: Nov-7 10:28:38.029 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:29:38:004] error: Nov-7 10:29:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:30:38:007] error: Nov-7 10:30:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:31:38:006] error: Nov-7 10:31:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:32:38:006] error: Nov-7 10:32:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:33:38:007] error: Nov-7 10:33:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:34:38:005] error: Nov-7 10:34:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:35:38:004] error: Nov-7 10:35:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:36:38:008] error: Nov-7 10:36:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:37:38:006] error: Nov-7 10:37:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:38:38:006] error: Nov-7 10:38:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:39:38:006] error: Nov-7 10:39:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:40:38:006] error: Nov-7 10:40:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:41:38:006] error: Nov-7 10:41:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:42:38:005] error: Nov-7 10:42:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:43:38:006] error: Nov-7 10:43:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:44:38:006] error: Nov-7 10:44:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:45:38:006] error: Nov-7 10:45:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:46:38:005] error: Nov-7 10:46:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:47:38:006] error: Nov-7 10:47:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:48:38:007] error: Nov-7 10:48:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:49:38:007] error: Nov-7 10:49:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:50:38:007] error: Nov-7 10:50:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:51:38:007] error: Nov-7 10:51:38.007 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:52:38:010] error: Nov-7 10:52:38.010 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:53:38:008] error: Nov-7 10:53:38.008 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:54:38:006] error: Nov-7 10:54:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:55:38:006] error: Nov-7 10:55:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:56:38:025] error: Nov-7 10:56:38.025 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:57:38:010] error: Nov-7 10:57:38.010 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:58:38:008] error: Nov-7 10:58:38.008 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 10:59:38:006] error: Nov-7 10:59:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:00:38:006] error: Nov-7 11:00:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:01:38:007] error: Nov-7 11:01:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:02:38:006] error: Nov-7 11:02:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:03:38:005] error: Nov-7 11:03:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:04:38:005] error: Nov-7 11:04:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:05:38:004] error: Nov-7 11:05:38.004 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:06:38:005] error: Nov-7 11:06:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:07:38:005] error: Nov-7 11:07:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:08:38:005] error: Nov-7 11:08:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:09:38:006] error: Nov-7 11:09:38.006 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:10:38:005] error: Nov-7 11:10:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/07/18, 11:11:38:006] error: Nov-7 11:11:38.005 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:35:44:339] info: ╔══════════════════════�[11/08/18, 15:35:45:567] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:35:45:568] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:35:45:565      ║
+[11/08/18, 15:35:45:568] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:35:45:652] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:35:45:822] info: Main window preload script finished
+{
+  "readyTime": 443.57081
+}
+[11/08/18, 15:35:45:829] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:45:831] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:45:834] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:46:148] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:35:46:149] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:35:46:146      ║
+[11/08/18, 15:35:46:149] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:35:46:235] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:35:46:395] info: Main window preload script finished
+{
+  "readyTime": 431.888105
+}
+[11/08/18, 15:35:46:401] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:46:403] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:46:405] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:46:742] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:35:46:743] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:35:46:740      ║
+[11/08/18, 15:35:46:743] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:35:46:869] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:35:47:099] info: Main window preload script finished
+{
+  "readyTime": 567.542644
+}
+[11/08/18, 15:35:47:105] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:109] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:111] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:484] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:35:47:485] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:35:47:482      ║
+[11/08/18, 15:35:47:485] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:35:47:570] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:35:47:745] info: Main window preload script finished
+{
+  "readyTime": 474.958169
+}
+[11/08/18, 15:35:47:752] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:757] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:47:765] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:48:140] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:35:48:140] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:35:48:137      ║
+[11/08/18, 15:35:48:140] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:35:48:225] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:35:48:428] info: Main window preload script finished
+{
+  "readyTime": 509.92354
+}
+[11/08/18, 15:35:48:434] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/08/18, 15:35:48:434] info: Store: SET_NETWORK_STATUS offline
+[11/08/18, 15:35:48:435] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/08/18, 15:35:48:435] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:48:438] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "empty-page",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:49:502] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:35:49:768] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": null,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:02:366] info: Store: SET_NETWORK_STATUS online
+[11/08/18, 15:37:02:372] info: Store: MAIN_WINDOW_SHOWN
+[11/08/18, 15:37:02:405] info: Store: SET_FULL_SCREEN
+[11/08/18, 15:37:02:406] info: Store: SET_FULL_SCREEN
+[11/08/18, 15:37:02:408] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:02:411] info: Window is unloading, window.desktop is no longer accessible
+[11/08/18, 15:37:02:930] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:03:513] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 15:37:03:514] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 15:37:03:510      ║
+[11/08/18, 15:37:03:514] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 15:37:03:601] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 15:37:04:024] info: cld3::loadModule: loading cld3 module
+[11/08/18, 15:37:04:069] info: cld3Loader::loadModule: running environment is NODE
+[11/08/18, 15:37:04:069] info: cld3Loader::loadModule: constructed module object for runtime
+[11/08/18, 15:37:04:226] info: cld3Loader::initializeRuntime: successfully initialized module
+[11/08/18, 15:37:04:226] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[11/08/18, 15:37:04:232] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[11/08/18, 15:37:04:242] info: Main window preload script finished
+{
+  "readyTime": 925.793693
+}
+[11/08/18, 15:37:06:831] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:37:07:096] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 15:38:04:378] error: Nov-8 15:38:04.377 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:38:41:767] info: Store: SET_FULL_SCREEN
+[11/08/18, 15:39:04:334] error: Nov-8 15:39:04.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:40:04:335] error: Nov-8 15:40:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:41:04:334] error: Nov-8 15:41:04.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:42:04:338] error: Nov-8 15:42:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:43:04:338] error: Nov-8 15:43:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:44:04:338] error: Nov-8 15:44:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:45:04:340] error: Nov-8 15:45:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:46:04:339] error: Nov-8 15:46:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:47:04:339] error: Nov-8 15:47:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:48:04:338] error: Nov-8 15:48:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:49:04:340] error: Nov-8 15:49:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:50:04:336] error: Nov-8 15:50:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:51:04:338] error: Nov-8 15:51:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:52:04:339] error: Nov-8 15:52:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:53:04:339] error: Nov-8 15:53:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:54:04:337] error: Nov-8 15:54:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:55:04:338] error: Nov-8 15:55:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:56:04:338] error: Nov-8 15:56:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:57:04:340] error: Nov-8 15:57:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:58:04:338] error: Nov-8 15:58:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 15:59:04:338] error: Nov-8 15:59:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:00:04:335] error: Nov-8 16:00:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:01:04:337] error: Nov-8 16:01:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:02:04:339] error: Nov-8 16:02:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:03:04:334] error: Nov-8 16:03:04.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:04:04:335] error: Nov-8 16:04:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:05:04:334] error: Nov-8 16:05:04.334 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:06:04:335] error: Nov-8 16:06:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:07:04:337] error: Nov-8 16:07:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:08:04:339] error: Nov-8 16:08:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:09:04:341] error: Nov-8 16:09:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:16:04:341] error: Nov-8 16:16:04.341 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:17:04:338] error: Nov-8 16:17:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:18:04:340] error: Nov-8 16:18:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:19:04:339] error: Nov-8 16:19:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:20:04:339] error: Nov-8 16:20:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:21:04:342] error: Nov-8 16:21:04.342 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:22:04:338] error: Nov-8 16:22:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:23:04:340] error: Nov-8 16:23:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:24:04:339] error: Nov-8 16:24:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:25:04:338] error: Nov-8 16:25:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:26:04:341] error: Nov-8 16:26:04.341 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:27:04:340] error: Nov-8 16:27:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:28:04:337] error: Nov-8 16:28:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:29:04:339] error: Nov-8 16:29:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:30:04:335] error: Nov-8 16:30:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:31:04:340] error: Nov-8 16:31:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:32:04:338] error: Nov-8 16:32:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:35:04:338] error: Nov-8 16:35:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:36:04:336] error: Nov-8 16:36:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:37:04:339] error: Nov-8 16:37:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:38:04:340] error: Nov-8 16:38:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:39:04:340] error: Nov-8 16:39:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:40:04:338] error: Nov-8 16:40:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:41:04:336] error: Nov-8 16:41:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:42:04:339] error: Nov-8 16:42:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:43:04:336] error: Nov-8 16:43:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 16:44:04:336] error: Nov-8 16:44:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 17:58:04:336] error: Nov-8 17:58:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 17:59:04:337] error: Nov-8 17:59:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:00:04:338] error: Nov-8 18:00:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:01:04:337] error: Nov-8 18:01:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:02:04:339] error: Nov-8 18:02:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:03:04:338] error: Nov-8 18:03:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:04:04:335] error: Nov-8 18:04:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:05:04:340] error: Nov-8 18:05:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:06:04:336] error: Nov-8 18:06:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:07:04:340] error: Nov-8 18:07:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:54:04:337] error: Nov-8 18:54:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:55:04:339] error: Nov-8 18:55:04.339 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:56:04:338] error: Nov-8 18:56:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:57:04:340] error: Nov-8 18:57:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:58:04:340] error: Nov-8 18:58:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 18:59:04:337] error: Nov-8 18:59:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:00:04:340] error: Nov-8 19:00:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:01:04:335] error: Nov-8 19:01:04.335 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:02:04:340] error: Nov-8 19:02:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:03:04:338] error: Nov-8 19:03:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:24:04:336] error: Nov-8 19:24:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:25:04:337] error: Nov-8 19:25:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:26:04:342] error: Nov-8 19:26:04.342 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:27:04:340] error: Nov-8 19:27:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:28:04:338] error: Nov-8 19:28:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:29:04:342] error: Nov-8 19:29:04.342 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:30:04:338] error: Nov-8 19:30:04.338 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:31:04:336] error: Nov-8 19:31:04.336 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:32:04:340] error: Nov-8 19:32:04.340 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:33:04:341] error: Nov-8 19:33:04.341 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 19:34:04:337] error: Nov-8 19:34:04.337 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:00:48:451] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[11/08/18, 21:00:48:452] info: ║      Slack 3.3.3, linux 4.18.16-arch1-1-ARCH on x64 at 11/08/18, 21:00:48:448      ║
+[11/08/18, 21:00:48:452] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[11/08/18, 21:00:48:542] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/08/18, 21:00:50:010] info: cld3::loadModule: loading cld3 module
+[11/08/18, 21:00:50:100] info: cld3Loader::loadModule: running environment is NODE
+[11/08/18, 21:00:50:100] info: cld3Loader::loadModule: constructed module object for runtime
+[11/08/18, 21:00:50:291] info: cld3Loader::initializeRuntime: successfully initialized module
+[11/08/18, 21:00:50:291] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[11/08/18, 21:00:50:300] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[11/08/18, 21:00:50:311] info: Main window preload script finished
+{
+  "readyTime": 3444.016622
+}
+[11/08/18, 21:00:50:607] info: Store: SET_NETWORK_STATUS online
+[11/08/18, 21:00:55:668] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 21:00:55:686] info: Store: MAIN_WINDOW_SHOWN
+[11/08/18, 21:00:55:690] info: Store: SET_FULL_SCREEN
+[11/08/18, 21:00:55:691] info: Store: SET_FULL_SCREEN
+[11/08/18, 21:00:56:177] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/08/18, 21:01:50:557] error: Nov-8 21:01:50.556 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:02:50:312] error: Nov-8 21:02:50.312 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:03:50:314] error: Nov-8 21:03:50.314 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:04:50:314] error: Nov-8 21:04:50.314 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:05:50:314] error: Nov-8 21:05:50.314 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:06:50:314] error: Nov-8 21:06:50.314 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:07:50:314] error: Nov-8 21:07:50.313 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:31:05:348] info: Store: SET_FULL_SCREEN
+[11/08/18, 21:31:50:529] error: Nov-8 21:31:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:32:50:529] error: Nov-8 21:32:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:33:50:529] error: Nov-8 21:33:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:34:50:530] error: Nov-8 21:34:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:35:50:529] error: Nov-8 21:35:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:36:50:529] error: Nov-8 21:36:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:37:50:530] error: Nov-8 21:37:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:38:50:530] error: Nov-8 21:38:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:39:50:530] error: Nov-8 21:39:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:40:50:530] error: Nov-8 21:40:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:41:50:530] error: Nov-8 21:41:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:42:50:530] error: Nov-8 21:42:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:43:50:529] error: Nov-8 21:43:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:44:50:529] error: Nov-8 21:44:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:45:50:529] error: Nov-8 21:45:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:46:50:529] error: Nov-8 21:46:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:47:50:528] error: Nov-8 21:47:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:48:50:529] error: Nov-8 21:48:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:49:50:530] error: Nov-8 21:49:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:50:50:535] error: Nov-8 21:50:50.534 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:51:50:531] error: Nov-8 21:51:50.531 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:52:50:531] error: Nov-8 21:52:50.531 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:53:50:536] error: Nov-8 21:53:50.536 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:54:50:530] error: Nov-8 21:54:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:55:50:528] error: Nov-8 21:55:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:56:50:528] error: Nov-8 21:56:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:57:50:529] error: Nov-8 21:57:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:58:50:529] error: Nov-8 21:58:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 21:59:50:529] error: Nov-8 21:59:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:00:50:529] error: Nov-8 22:00:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:01:50:531] error: Nov-8 22:01:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:02:50:530] error: Nov-8 22:02:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:03:50:528] error: Nov-8 22:03:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:04:50:530] error: Nov-8 22:04:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:05:50:530] error: Nov-8 22:05:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:06:50:528] error: Nov-8 22:06:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:07:50:529] error: Nov-8 22:07:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:08:50:529] error: Nov-8 22:08:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:09:50:529] error: Nov-8 22:09:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:10:50:529] error: Nov-8 22:10:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:11:50:529] error: Nov-8 22:11:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:12:50:531] error: Nov-8 22:12:50.531 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:13:50:530] error: Nov-8 22:13:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:14:50:531] error: Nov-8 22:14:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:15:50:530] error: Nov-8 22:15:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:16:50:529] error: Nov-8 22:16:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:17:50:533] error: Nov-8 22:17:50.532 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:18:50:530] error: Nov-8 22:18:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:19:50:528] error: Nov-8 22:19:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:20:50:536] error: Nov-8 22:20:50.536 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:21:50:534] error: Nov-8 22:21:50.534 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:22:50:529] error: Nov-8 22:22:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:23:50:530] error: Nov-8 22:23:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:24:50:529] error: Nov-8 22:24:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:25:50:529] error: Nov-8 22:25:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:26:50:529] error: Nov-8 22:26:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:27:50:528] error: Nov-8 22:27:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:28:50:529] error: Nov-8 22:28:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:29:50:529] error: Nov-8 22:29:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:30:50:529] error: Nov-8 22:30:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:31:50:529] error: Nov-8 22:31:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:32:50:530] error: Nov-8 22:32:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:33:50:529] error: Nov-8 22:33:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:34:50:528] error: Nov-8 22:34:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:35:50:529] error: Nov-8 22:35:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:36:50:529] error: Nov-8 22:36:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:37:50:530] error: Nov-8 22:37:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:38:50:529] error: Nov-8 22:38:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:39:50:529] error: Nov-8 22:39:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:40:50:529] error: Nov-8 22:40:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:41:50:529] error: Nov-8 22:41:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:42:50:530] error: Nov-8 22:42:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:43:50:529] error: Nov-8 22:43:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:44:50:530] error: Nov-8 22:44:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:45:50:529] error: Nov-8 22:45:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:46:50:529] error: Nov-8 22:46:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:47:50:529] error: Nov-8 22:47:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:48:50:529] error: Nov-8 22:48:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:49:50:531] error: Nov-8 22:49:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:50:50:529] error: Nov-8 22:50:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:51:50:529] error: Nov-8 22:51:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:52:50:530] error: Nov-8 22:52:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:53:50:529] error: Nov-8 22:53:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:54:50:529] error: Nov-8 22:54:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:55:50:528] error: Nov-8 22:55:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:56:50:528] error: Nov-8 22:56:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:57:50:529] error: Nov-8 22:57:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:58:50:529] error: Nov-8 22:58:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 22:59:50:528] error: Nov-8 22:59:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:00:50:529] error: Nov-8 23:00:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:01:50:542] error: Nov-8 23:01:50.542 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:02:50:528] error: Nov-8 23:02:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:03:50:529] error: Nov-8 23:03:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:04:50:543] error: Nov-8 23:04:50.543 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:05:50:531] error: Nov-8 23:05:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:06:50:528] error: Nov-8 23:06:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:07:50:528] error: Nov-8 23:07:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:08:50:543] error: Nov-8 23:08:50.542 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:09:50:528] error: Nov-8 23:09:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:10:50:528] error: Nov-8 23:10:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:11:50:529] error: Nov-8 23:11:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:12:50:529] error: Nov-8 23:12:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:13:50:529] error: Nov-8 23:13:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:14:50:529] error: Nov-8 23:14:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:15:50:529] error: Nov-8 23:15:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:16:50:530] error: Nov-8 23:16:50.530 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:17:50:528] error: Nov-8 23:17:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:18:50:528] error: Nov-8 23:18:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:19:50:544] error: Nov-8 23:19:50.544 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:20:50:542] error: Nov-8 23:20:50.541 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:21:50:529] error: Nov-8 23:21:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:22:50:528] error: Nov-8 23:22:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:23:50:530] error: Nov-8 23:23:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:24:50:528] error: Nov-8 23:24:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:25:50:528] error: Nov-8 23:25:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:26:50:549] error: Nov-8 23:26:50.548 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:27:50:528] error: Nov-8 23:27:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:28:50:544] error: Nov-8 23:28:50.543 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:29:50:530] error: Nov-8 23:29:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:30:50:528] error: Nov-8 23:30:50.528 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:31:50:530] error: Nov-8 23:31:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:32:50:530] error: Nov-8 23:32:50.529 TICKLE-MS (T00) Skipping tickle because no user exists
+[11/08/18, 23:33:27:217] info: Store: SET_SUSPEND_STATUS
+[11/08/18, 23:33:34:679] info: Store: SET_SUSPEND_STATUS true

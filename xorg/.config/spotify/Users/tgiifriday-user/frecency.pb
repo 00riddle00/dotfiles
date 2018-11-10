@@ -1,35 +1,42 @@
 
 <
-%spotify:artist:711MCceyCBcFnzjGY4Q7Un	´ÿSˆlâv@ ¨æ›Þ
+%spotify:artist:711MCceyCBcFnzjGY4Q7Un	|òÆ5åv@ ¨æ›Þ
 <
-%spotify:artist:08GQAI4eElDnROBrJRGE0X	Ì½ÄÔoâv@ ý€œÞ
+%spotify:artist:08GQAI4eElDnROBrJRGE0X	”°7‚	åv@ ý€œÞ
 <
-%spotify:artist:1hJuGCUpefX24GFmss9bjH	õkíqâv@ ö‘œÞ
+%spotify:artist:1hJuGCUpefX24GFmss9bjH	½rÞšåv@ ö‘œÞ
 ;
-$spotify:album:4syGSCBIzJWYQB15Msvn1y	ÔÍ$‘âv@ žŽžÞ
+$spotify:album:4syGSCBIzJWYQB15Msvn1y	œÀÑ*åv@ žŽžÞ
 <
-%spotify:artist:3w4VAlllkAWI6m0AV0Gn6a	‡Û>’âv@ •—žÞ
+%spotify:artist:3w4VAlllkAWI6m0AV0Gn6a	ÉyNì+åv@ •—žÞ
 <
-%spotify:artist:5oOhM2DFWab8XhSdQiITry		+‚íãv@  Ž´Þ
-K
-4spotify:user:spotify:playlist:37i9dQZF1DX1kw8OX1mNoI	˜õ,{ãv@ àÂ¥Þ
-K
-4spotify:user:spotify:playlist:37i9dQZF1DZ06evO0Co11u	*â•uäv@ ›Ú¼Þ
-K
-4spotify:user:spotify:playlist:37i9dQZF1DWZAkrucRF6Gq	kRq„äv@ ªÒ½Þ
-K
-4spotify:user:spotify:playlist:37i9dQZF1DX3v3zR7XuspL	Ø?C|ªåv@ š›ÐÞ
+%spotify:artist:3iOvXCl6edW5Um0fXEBRXy	˜?»¨|æv@ ”¹³Þ
+;
+$spotify:album:21dbYScNUKn2Y1Vae8lACJ	
+Í>®æv@ þÉ¶Þ
 ]
-Fspotify:user:55rzdrrfkn9kbcj9h8mawk064:playlist:6m2b8m40dRi3aEkOcS1gPP	ê)¯åv@ ÿÀÐÞ
+Fspotify:user:55rzdrrfkn9kbcj9h8mawk064:playlist:6m2b8m40dRi3aEkOcS1gPP	²ûyÖHèv@ ÿÀÐÞ
 <
-%spotify:artist:3iOvXCl6edW5Um0fXEBRXy	ÐLHûâãv@ ”¹³Þ
+%spotify:artist:6ra4GIOgCZQZMOaUECftGN	D>È$Ùv@ À¤ëÞ
+<
+%spotify:artist:2Kx7MNY7cI1ENniW7vT30N	Þ	¡`Ùv@ ó¾éÞ
+<
+%spotify:artist:3OsRAKCvk37zwYcnzRf5XF	aOï¤Õv@ ‡èÿÞ
 ;
-$spotify:album:21dbYScNUKn2Y1Vae8lACJ	TZ‘äv@ þÉ¶Þ
+$spotify:album:1m3mf7xkXIwssVriaaTjOS	‡â± ×Üv@ ¾±Šß
+N
+7spotify:user:tgiifriday:playlist:2m1unU10pY8wLgYoNGLpMP	F%Çv@ È°Œß
 <
-%spotify:artist:3OsRAKCvk37zwYcnzRf5XF	ñÞv„^Æv@ ‡èÿÞ
-<
-%spotify:artist:2Kx7MNY7cI1ENniW7vT30N	¾Ññ0Ðv@ ó¾éÞ
-<
-%spotify:artist:6ra4GIOgCZQZMOaUECftGN	$V˜0Ðv@ À¤ëÞ
+%spotify:artist:5oOhM2DFWab8XhSdQiITry	Øû/‡æv@  Ž´Þ
 ;
-$spotify:album:1m3mf7xkXIwssVriaaTjOS	œª3J,Õv@ ‘Ü„ß
+$spotify:album:7pbgY0ZnaQJ6PvX5hXSFEd	—L°<Çv@ ’ëß
+K
+4spotify:user:spotify:playlist:37i9dQZF1DX1kw8OX1mNoI	`èŸ( åv@ àÂ¥Þ
+K
+4spotify:user:spotify:playlist:37i9dQZF1DZ06evO0Co11u	òÔòBçv@ ›Ú¼Þ
+K
+4spotify:user:spotify:playlist:37i9dQZF1DWZAkrucRF6Gq	3Eçv@ ªÒ½Þ
+K
+4spotify:user:spotify:playlist:37i9dQZF1DX3v3zR7XuspL	 2¶)Dèv@ š›ÐÞ
+`
+4spotify:user:spotify:playlist:37i9dQZF1DWXe9gFZP0gtP	À…ökQ¼v@ ÅÎß	]ä äv@ à™—ß
