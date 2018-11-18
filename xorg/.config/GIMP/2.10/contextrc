@@ -1,9 +1,8 @@
 # GIMP user context
 
-(tool "gimp-brightness-contrast-tool")
+(tool "gimp-paintbrush-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 1.000000 1.000000 1.000000))
-(background (color-rgb 0.000000 0.000000 0.000000))
+(foreground (color-rgb 1.000000 0.080718 0.000000))
 (brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
