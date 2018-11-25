@@ -2,7 +2,7 @@
 image/png=mirage.desktop;gimp.desktop;feh.desktop;
 text/plain=sublime_text.desktop;mirage.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
-video/mp4=vlc.desktop;mpv.desktop;
+video/mp4=mpv.desktop;mplayer.desktop;vlc.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=sublime_text.desktop;firefox.desktop;mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
@@ -66,7 +66,7 @@ application/vnd.openxmlformats-officedocument.presentationml.slideshow=libreoffi
 application/x-extension-html=firefox.desktop;
 text/x-java=sublime_text.desktop;vim.desktop;
 application/xml=sublime_text.desktop;
-application/x-php=sublime_text.desktop;mirage.desktop;
+application/x-php=google-chrome.desktop;sublime_text.desktop;mirage.desktop;
 text/csv=libreoffice-calc.desktop;
 
 [Default Applications]
@@ -85,3 +85,4 @@ application/pdf=firefox.desktop
 text/plain=sublime_text.desktop
 text/markdown=sublime_text.desktop
 image/png=mirage.desktop
+application/x-php=sublime_text.desktop

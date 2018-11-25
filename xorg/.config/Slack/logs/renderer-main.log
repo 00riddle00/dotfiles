@@ -7440,3 +7440,230 @@
   "token": "xoxs-⋯"
 }
 [11/18/18, 13:49:03:796] info: Store: SET_FULL_SCREEN
+[11/18/18, 17:36:40:905] info: Store: REFRESH_TEAMS
+{
+  "teamIds": [
+    "T2LHV2VSB"
+  ]
+}
+[11/18/18, 17:36:40:907] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[11/18/18, 17:36:41:684] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/18/18, 17:36:44:477] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/18/18, 17:36:45:686] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 12:41:50:486] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/20/18, 12:41:50:486] info: ║      Slack 3.3.3, linux 4.19.2-arch1-1-ARCH on x64 at 11/20/18, 12:41:50:483      ║
+[11/20/18, 12:41:50:486] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/20/18, 12:41:50:902] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/20/18, 12:41:51:142] info: NetworkStatus: Waiting for network online…
+[11/20/18, 12:41:51:817] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/20/18, 12:41:51:822] info: Don't start background client because T2LHV2VSB is selected team
+[11/20/18, 12:41:51:829] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/20/18, 12:41:52:306] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/20/18, 12:41:52:708] info: Store: SET_NETWORK_STATUS online
+[11/20/18, 12:41:57:266] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 12:41:57:271] info: Store: MAIN_WINDOW_SHOWN
+[11/20/18, 12:41:57:295] info: Store: SET_FULL_SCREEN
+[11/20/18, 12:41:57:297] info: Store: SET_FULL_SCREEN
+[11/20/18, 12:41:57:660] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 12:55:27:905] info: Store: SET_FULL_SCREEN
+[11/20/18, 16:05:17:864] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/20/18, 16:05:17:865] info: ║      Slack 3.3.3, linux 4.19.2-arch1-1-ARCH on x64 at 11/20/18, 16:05:17:862      ║
+[11/20/18, 16:05:17:865] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/20/18, 16:05:18:048] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/20/18, 16:05:18:698] info: NetworkStatus: Waiting for network online…
+[11/20/18, 16:05:19:500] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/20/18, 16:05:19:503] info: Don't start background client because T2LHV2VSB is selected team
+[11/20/18, 16:05:19:508] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/20/18, 16:05:20:000] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/20/18, 16:05:20:402] info: Store: SET_NETWORK_STATUS online
+[11/20/18, 16:05:23:737] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 16:05:23:742] info: Store: MAIN_WINDOW_SHOWN
+[11/20/18, 16:05:23:764] info: Store: SET_FULL_SCREEN
+[11/20/18, 16:05:23:767] info: Store: SET_FULL_SCREEN
+[11/20/18, 16:05:24:040] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 16:05:24:847] info: Store: SET_FULL_SCREEN
+[11/20/18, 20:11:22:839] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/20/18, 20:11:22:839] info: ║      Slack 3.3.3, linux 4.19.2-arch1-1-ARCH on x64 at 11/20/18, 20:11:22:837      ║
+[11/20/18, 20:11:22:839] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/20/18, 20:11:23:834] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/20/18, 20:11:24:206] info: NetworkStatus: Waiting for network online…
+[11/20/18, 20:11:25:019] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/20/18, 20:11:25:023] info: Don't start background client because T2LHV2VSB is selected team
+[11/20/18, 20:11:25:028] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/20/18, 20:11:25:492] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/20/18, 20:11:25:896] info: Store: SET_NETWORK_STATUS online
+[11/20/18, 20:11:32:946] info: Store: QUIT_APP
+[11/20/18, 20:11:33:381] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 20:11:33:386] info: Store: MAIN_WINDOW_SHOWN
+[11/20/18, 20:11:33:398] info: Store: SET_FULL_SCREEN
+[11/20/18, 20:11:33:401] info: Store: SET_FULL_SCREEN
+[11/20/18, 20:11:33:852] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/20/18, 20:11:34:097] info: Store: REMOVE_WINDOW 2
+[11/20/18, 20:11:34:235] info: Store: QUIT_APP
+[11/22/18, 11:32:53:081] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/22/18, 11:32:53:082] info: ║      Slack 3.3.3, linux 4.19.2-arch1-1-ARCH on x64 at 11/22/18, 11:32:53:079      ║
+[11/22/18, 11:32:53:082] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/22/18, 11:32:53:259] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/22/18, 11:32:53:577] info: NetworkStatus: Waiting for network online…
+[11/22/18, 11:32:54:119] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/22/18, 11:32:54:123] info: Don't start background client because T2LHV2VSB is selected team
+[11/22/18, 11:32:54:125] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/22/18, 11:32:54:560] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/22/18, 11:32:54:962] info: Store: SET_NETWORK_STATUS online
+[11/22/18, 11:32:58:036] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/22/18, 11:32:58:040] info: Store: MAIN_WINDOW_SHOWN
+[11/22/18, 11:32:58:060] info: Store: SET_FULL_SCREEN
+[11/22/18, 11:32:58:061] info: Store: SET_FULL_SCREEN
+[11/22/18, 11:32:58:371] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/22/18, 11:42:26:433] info: Store: SET_FULL_SCREEN
+[11/22/18, 14:01:15:509] info: Store: SET_SUSPEND_STATUS
+[11/22/18, 14:01:20:513] info: Store: SET_SUSPEND_STATUS true
+[11/22/18, 14:01:47:149] info: Store: SET_SUSPEND_STATUS
+[11/22/18, 14:01:54:619] info: Store: SET_SUSPEND_STATUS true
+[11/22/18, 14:01:55:876] info: Store: SET_NETWORK_STATUS offline
+[11/22/18, 14:02:18:360] info: Store: SET_SUSPEND_STATUS
+[11/22/18, 14:34:56:505] info: Store: SET_SUSPEND_STATUS true
+[11/22/18, 14:36:50:344] info: NetworkStatus: Waiting for network online…
+[11/22/18, 14:36:50:709] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/22/18, 14:36:50:710] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[11/22/18, 14:36:56:702] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/22/18, 14:36:56:703] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[11/22/18, 14:37:02:102] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/22/18, 14:37:02:701] info: Store: SET_NETWORK_STATUS online
+[11/22/18, 14:37:02:702] warn: Base Component: Attempting to update LoadingScreen when unmounted.
+[11/22/18, 16:44:03:058] info: Store: SET_SUSPEND_STATUS
+[11/22/18, 16:44:09:516] info: Store: SET_SUSPEND_STATUS true
+[11/22/18, 16:44:10:444] info: Store: SET_NETWORK_STATUS offline
+[11/22/18, 16:44:14:052] info: NetworkStatus: Waiting for network online…
+[11/22/18, 16:44:14:447] info: NetworkStatus: Network check failed
+{
+  "error": {
+    "message": "Failed to fetch",
+    "stack": "TypeError: Failed to fetch"
+  }
+}
+[11/22/18, 16:44:14:447] info: NetworkStatus: Response from api.test
+{
+  "status": "offline"
+}
+[11/22/18, 16:44:22:254] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/22/18, 16:44:23:439] info: Store: SET_NETWORK_STATUS online
+[11/22/18, 16:44:23:441] warn: Base Component: Attempting to update LoadingScreen when unmounted.
+[11/22/18, 20:13:17:999] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/22/18, 20:13:18:000] info: ║      Slack 3.3.3, linux 4.19.2-arch1-1-ARCH on x64 at 11/22/18, 20:13:17:997      ║
+[11/22/18, 20:13:18:000] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/22/18, 20:13:19:313] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/22/18, 20:13:20:131] info: NetworkStatus: Waiting for network online…
+[11/22/18, 20:13:22:329] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/22/18, 20:13:22:334] info: Don't start background client because T2LHV2VSB is selected team
+[11/22/18, 20:13:22:338] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/22/18, 20:13:23:277] info: NetworkStatus: Response from api.test
+{
+  "status": "online"
+}
+[11/22/18, 20:13:23:684] info: Store: SET_NETWORK_STATUS online
+[11/22/18, 20:13:26:123] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/22/18, 20:13:26:128] info: Store: MAIN_WINDOW_SHOWN
+[11/22/18, 20:13:26:150] info: Store: SET_FULL_SCREEN
+[11/22/18, 20:13:26:151] info: Store: SET_FULL_SCREEN
+[11/22/18, 20:13:26:457] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[11/22/18, 20:20:49:368] info: Store: SET_FULL_SCREEN
