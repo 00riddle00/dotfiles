@@ -67,7 +67,9 @@ application/x-extension-html=firefox.desktop;
 text/x-java=sublime_text.desktop;vim.desktop;
 application/xml=sublime_text.desktop;
 application/x-php=google-chrome.desktop;sublime_text.desktop;mirage.desktop;
-text/csv=libreoffice-calc.desktop;
+text/csv=sublime_text.desktop;libreoffice-calc.desktop;
+application/rtf=sublime_text.desktop;
+application/octet-stream=ranger.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

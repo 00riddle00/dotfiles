@@ -1269,3 +1269,19 @@
 [11/22/18, 20:13:26:127] info: Store: MAIN_WINDOW_SHOWN
 [11/22/18, 20:13:26:150] info: Store: SET_FULL_SCREEN
 [11/22/18, 20:13:26:151] info: Store: SET_FULL_SCREEN
+[11/26/18, 12:27:03:057] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/26/18, 12:27:03:058] info: ║      Slack 3.3.3, linux 4.19.4-arch1-1-ARCH on x64 at 11/26/18, 12:27:03:055      ║
+[11/26/18, 12:27:03:058] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/26/18, 12:27:03:155] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[11/26/18, 12:27:04:388] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/26/18, 12:27:04:389] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/26/18, 12:27:05:081] info: Store: SET_NETWORK_STATUS online
+[11/26/18, 12:27:08:332] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[11/26/18, 12:27:08:337] info: Store: MAIN_WINDOW_SHOWN
+[11/26/18, 12:27:08:363] info: Store: SET_FULL_SCREEN
+[11/26/18, 12:27:08:365] info: Store: SET_FULL_SCREEN
