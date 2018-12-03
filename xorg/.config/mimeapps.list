@@ -57,9 +57,9 @@ text/x-csrc=sublime_text.desktop;emacs.desktop;
 text/x-makefile=sublime_text.desktop;emacs.desktop;
 text/x-chdr=sublime_text.desktop;emacs.desktop;nvim.desktop;
 application/x-bittorrent=deluge.desktop;
-text/x-c++src=nvim.desktop;
+text/x-c++src=sublime_text.desktop;vim.desktop;nvim.desktop;
 application/x-keepass2=keepass.desktop;
-text/html=firefox.desktop;sublime_text.desktop;
+text/html=firefox.desktop;google-chrome.desktop;sublime_text.desktop;
 application/json=sublime_text.desktop;
 application/x-mozilla-bookmarks=firefox.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.slideshow=libreoffice-impress.desktop;
@@ -69,7 +69,8 @@ application/xml=sublime_text.desktop;
 application/x-php=google-chrome.desktop;sublime_text.desktop;mirage.desktop;
 text/csv=sublime_text.desktop;libreoffice-calc.desktop;
 application/rtf=sublime_text.desktop;
-application/octet-stream=ranger.desktop;
+application/octet-stream=sublime_text.desktop;ranger.desktop;
+application/mbox=sublime_text.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
