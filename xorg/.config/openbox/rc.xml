@@ -646,11 +646,11 @@
 
 
 
-    <keybind key="F10">
-      <action name="Execute">
-        <command>sh -c "$ACTIVATE qalculate-gtk"</command>
-      </action>
-    </keybind>
+    <!--<keybind key="F10">-->
+      <!--<action name="Execute">-->
+        <!--<command>sh -c "$ACTIVATE qalculate-gtk"</command>-->
+      <!--</action>-->
+    <!--</keybind>-->
 
     <keybind key="F7">
       <action name="Execute">
@@ -699,12 +699,12 @@
       <!--</action>-->
     <!--</keybind>-->
 
-    <keybind key="Insert">
-      <action name="Execute">
-          <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
-          <!--<command>xdotool key Right</command>-->
-      </action>
-    </keybind>
+    <!--<keybind key="Insert">-->
+      <!--<action name="Execute">-->
+          <!--<command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>-->
+          <!--[><command>xdotool key Right</command><]-->
+      <!--</action>-->
+    <!--</keybind>-->
 
 <!--    <keybind key="W-w">-->
       <!--<action name="Execute">-->
@@ -1036,16 +1036,18 @@
       </mousebind>
     </context>
     <context name="Desktop">
-      <mousebind button="Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
+
+      <!--<mousebind button="Up" action="Click">-->
+        <!--<action name="GoToDesktop">-->
+          <!--<to>previous</to>-->
+        <!--</action>-->
+      <!--</mousebind>-->
+      <!--<mousebind button="Down" action="Click">-->
+        <!--<action name="GoToDesktop">-->
+          <!--<to>next</to>-->
+        <!--</action>-->
+      <!--</mousebind>-->
+
       <mousebind button="A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
