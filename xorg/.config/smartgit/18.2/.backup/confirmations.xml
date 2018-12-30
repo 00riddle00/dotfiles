@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="UiConfig" type="@Confirmations">
+	<collection key="primitives.stringKeys" type="String">
+		<prop type="String" value="close.unpushedCommits"/>
+		<prop type="String" value="remove.repositoryOrGroup"/>
+	</collection>
+	<prop key="primitives.strings.close.unpushedCommits" type="String" value="true"/>
+	<prop key="primitives.strings.remove.repositoryOrGroup" type="String" value="true"/>
+</obj>

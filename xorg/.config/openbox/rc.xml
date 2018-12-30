@@ -501,11 +501,11 @@
       </action>
     </keybind>
 
-    <!--<keybind key="W-c">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE clion"</command>-->
-      <!--</action>-->
-    <!--<-->/keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE intellij-idea-ultimate-edition"</command>
+      </action>
+    </keybind>
 
 <!--    <keybind key="W-p">-->
       <!--<action name="Execute">-->
@@ -646,11 +646,11 @@
 
 
 
-    <!--<keybind key="F10">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE qalculate-gtk"</command>-->
-      <!--</action>-->
-    <!--</keybind>-->
+    <keybind key="F10">
+      <action name="Execute">
+        <command>sh -c "$ACTIVATE qalculate-gtk"</command>
+      </action>
+    </keybind>
 
     <keybind key="F7">
       <action name="Execute">
@@ -699,12 +699,12 @@
       <!--</action>-->
     <!--</keybind>-->
 
-    <!--<keybind key="Insert">-->
-      <!--<action name="Execute">-->
-          <!--<command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>-->
-          <!--[><command>xdotool key Right</command><]-->
-      <!--</action>-->
-    <!--</keybind>-->
+    <keybind key="Insert">
+      <action name="Execute">
+          <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
+          [><command>xdotool key Right</command>
+      </action>
+    </keybind>
 
 <!--    <keybind key="W-w">-->
       <!--<action name="Execute">-->

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Projects" type="@Projects">
+	<obj key="gitRootSettingsSet" type="@RootSettingsSet">
+		<collection key="roots" type="String">
+			<prop type="String" value="~/pro/wepower-mvp"/>
+			<prop type="String" value="~/tmp1"/>
+			<prop type="String" value="~/tmp1/django-project/app"/>
+			<prop type="String" value="~/tmp7"/>
+		</collection>
+		<obj key="root-/home/riddle/pro/wepower-mvp" type="@RootSettings">
+			<obj key="databaseCleanup" type="@DatabaseCleanupSettings">
+				<prop key="lastKnownTimeWhereRepositoryWasOK" type="long" value="1500572626569"/>
+			</obj>
+			<obj key="log" type="_NULL_"/>
+			<obj key="merge" type="_NULL_"/>
+			<obj key="pull" type="_NULL_"/>
+			<obj key="push" type="_NULL_"/>
+			<obj key="commitNotes" type="@CommitNotes">
+				<prop key="commitNotes" type="_NULL_" value=""/>
+				<collection key="commitNotesHistory" type="String"/>
+			</obj>
+			<obj key="journal" type="@JournalSettings">
+				<collection key="lastAuxiliaryRefs" type="String"/>
+				<collection key="refs" type="String"/>
+			</obj>
+		</obj>
+		<obj key="root-/home/riddle/tmp1" type="@RootSettings">
+			<obj key="databaseCleanup" type="_NULL_"/>
+			<obj key="log" type="@LogSettings">
+				<obj key="rootSettings" type="@LogRootSettings">
+					<prop key="baseRoots" type="String" value="!local-branches://\t!remote://origin\tref://HEAD"/>
+					<prop key="extendedRoots" type="String" value=""/>
+				</obj>
+				<obj key="filterConfiguration" type="@FilterState">
+					<prop key="enteredPattern" type="_NULL_" value=""/>
+					<collection key="patterns" type="String"/>
+					<prop key="regularExpressions" type="boolean" value="false"/>
+					<collection key="keys" type="String"/>
+				</obj>
+				<obj key="showBranchFilterConfiguration" type="_NULL_"/>
+			</obj>
+			<obj key="merge" type="_NULL_"/>
+			<obj key="pull" type="_NULL_"/>
+			<obj key="push" type="@PushSettings">
+				<prop key="pushCurrentBranch" type="boolean" value="true"/>
+				<prop key="lastNonDefaultRemoteBranch" type="_NULL_" value=""/>
+			</obj>
+			<obj key="commitNotes" type="@CommitNotes">
+				<prop key="commitNotes" type="_NULL_" value=""/>
+				<collection key="commitNotesHistory" type="String"/>
+			</obj>
+			<obj key="journal" type="@JournalSettings">
+				<collection key="lastAuxiliaryRefs" type="String"/>
+				<collection key="refs" type="String"/>
+			</obj>
+		</obj>
+		<obj key="root-/home/riddle/tmp1/django-project/app" type="@RootSettings">
+			<obj key="databaseCleanup" type="_NULL_"/>
+			<obj key="log" type="_NULL_"/>
+			<obj key="merge" type="_NULL_"/>
+			<obj key="pull" type="_NULL_"/>
+			<obj key="push" type="_NULL_"/>
+			<obj key="commitNotes" type="@CommitNotes">
+				<prop key="commitNotes" type="_NULL_" value=""/>
+				<collection key="commitNotesHistory" type="String"/>
+			</obj>
+			<obj key="journal" type="@JournalSettings">
+				<collection key="lastAuxiliaryRefs" type="String"/>
+				<collection key="refs" type="String"/>
+			</obj>
+		</obj>
+		<obj key="root-/home/riddle/tmp7" type="@RootSettings">
+			<obj key="databaseCleanup" type="_NULL_"/>
+			<obj key="log" type="@LogSettings">
+				<obj key="rootSettings" type="@LogRootSettings">
+					<prop key="baseRoots" type="String" value="!local-branches://\t!remote://origin\tref://HEAD"/>
+					<prop key="extendedRoots" type="String" value=""/>
+				</obj>
+				<obj key="filterConfiguration" type="@FilterState">
+					<prop key="enteredPattern" type="_NULL_" value=""/>
+					<collection key="patterns" type="String"/>
+					<prop key="regularExpressions" type="boolean" value="false"/>
+					<collection key="keys" type="String">
+						<prop type="String" value="author"/>
+						<prop type="String" value="committer"/>
+						<prop type="String" value="id"/>
+						<prop type="String" value="message"/>
+						<prop type="String" value="ref"/>
+					</collection>
+					<prop key="key-author" type="boolean" value="true"/>
+					<prop key="key-committer" type="boolean" value="true"/>
+					<prop key="key-id" type="boolean" value="true"/>
+					<prop key="key-message" type="boolean" value="true"/>
+					<prop key="key-ref" type="boolean" value="true"/>
+				</obj>
+				<obj key="showBranchFilterConfiguration" type="_NULL_"/>
+			</obj>
+			<obj key="merge" type="_NULL_"/>
+			<obj key="pull" type="_NULL_"/>
+			<obj key="push" type="@PushSettings">
+				<prop key="pushCurrentBranch" type="boolean" value="true"/>
+				<prop key="lastNonDefaultRemoteBranch" type="_NULL_" value=""/>
+			</obj>
+			<obj key="commitNotes" type="@CommitNotes">
+				<prop key="commitNotes" type="_NULL_" value=""/>
+				<collection key="commitNotesHistory" type="String"/>
+			</obj>
+			<obj key="journal" type="@JournalSettings">
+				<collection key="lastAuxiliaryRefs" type="String"/>
+				<collection key="refs" type="String"/>
+			</obj>
+		</obj>
+	</obj>
+	<obj key="hgRootSettingsSet" type="_NULL_"/>
+	<obj key="pushMultiRoot" type="_NULL_"/>
+</obj>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Accelerators" type="@AllAccelerators">
+	<obj key="compareAccelerators" type="_NULL_"/>
+	<obj key="conflictSolverAccelerators" type="_NULL_"/>
+	<obj key="gitAnnotate" type="_NULL_"/>
+	<obj key="indexEditorAccelerators" type="_NULL_"/>
+	<obj key="fileEditor" type="_NULL_"/>
+	<obj key="logAccelerators" type="@KeyStrokes">
+		<collection key="id-keystroke-mapping" type="Object"/>
+	</obj>
+	<obj key="deepGitAccelerators" type="_NULL_"/>
+	<obj key="project" type="@KeyStrokes">
+		<collection key="id-keystroke-mapping" type="Object"/>
+	</obj>
+	<obj key="hgAnnotate" type="_NULL_"/>
+	<obj key="hgLog" type="_NULL_"/>
+	<prop key="completionKeyStroke" type="String" value="CTRL+SPACE"/>
+</obj>

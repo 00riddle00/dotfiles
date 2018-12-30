@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Cache" type="@RepositoryDetailsCache">
+	<collection key="roots" type="String">
+		<prop type="String" value="/home/riddle/Dropbox/sync/gtd"/>
+		<prop type="String" value="/home/riddle/docker/scard/scard-api"/>
+		<prop type="String" value="/home/riddle/pro/gtd"/>
+		<prop type="String" value="/home/riddle/pro/wepower-mvp"/>
+		<prop type="String" value="/home/riddle/tmp1"/>
+		<prop type="String" value="/home/riddle/tmp1/django-project/app"/>
+		<prop type="String" value="/home/riddle/tmp2/Building-Blockchain-Projects-Book/Building-Blockchain-Projects"/>
+		<prop type="String" value="/home/riddle/tmp7"/>
+	</collection>
+	<obj key="root-/home/riddle/Dropbox/sync/gtd" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="_NULL_" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="_NULL_" value=""/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/docker/scard/scard-api" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="_NULL_" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="_NULL_" value=""/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/pro/gtd" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="_NULL_" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="_NULL_" value=""/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/pro/wepower-mvp" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="forms-validation"/>
+		<prop key="localModifications" type="boolean" value="true"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/tmp1" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="master"/>
+		<prop key="localModifications" type="boolean" value="true"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/tmp1/django-project/app" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="dev"/>
+		<prop key="localModifications" type="boolean" value="true"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/tmp2/Building-Blockchain-Projects-Book/Building-Blockchain-Projects" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="_NULL_" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="_NULL_" value=""/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/tmp7" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value="master"/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="master"/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+</obj>

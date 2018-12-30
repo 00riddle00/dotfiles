@@ -75,6 +75,8 @@ image/webp=google-chrome.desktop;
 text/x-wxmathml=wxMaxima.desktop;
 application/vnd.oasis.opendocument.text-template=libreoffice-writer.desktop;
 image/heif=gimp.desktop;
+audio/x-vorbis+ogg=mpv.desktop;
+text/x-log=sublime_text.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
