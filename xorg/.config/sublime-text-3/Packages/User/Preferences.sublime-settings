@@ -1,12 +1,10 @@
 {
 	"auto_complete": false,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"color_scheme": "Packages/Theme - Darkmatter/Darkmatter.tmTheme",
 	"font_face": "Source Code Pro",
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"A File Icon",
-		"Boxy Theme"
 	],
-	"theme": "Default.sublime-theme"
+	"theme": "Darkmatter.sublime-theme"
 }
