@@ -6,21 +6,6 @@
 (protocol-version 24)
 (file-version 5)
 
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/python-console/python-console.py" 1541707262
-    (proc-def "python-fu-console" 1
-         "Interactive GIMP Python interpreter"
-         "Type in commands and see results"
-         "James Henstridge"
-         "James Henstridge"
-         "1997-1999"
-         "_Console"
-         1
-        (menu-path "<Image>/Filters/Languages/Python-Fu")
-        (icon icon-name -1 "")
-         ""
-         1 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }"))
-    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/web-browser/web-browser" 1541707262
     (proc-def "plug-in-web-browser" 1
          "Open an URL in the user specified web browser"
@@ -444,6 +429,21 @@
          2 0
         (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
         (proc-arg 4 "code" "The code to evaluate")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/python-console/python-console.py" 1541707262
+    (proc-def "python-fu-console" 1
+         "Interactive GIMP Python interpreter"
+         "Type in commands and see results"
+         "James Henstridge"
+         "James Henstridge"
+         "1997-1999"
+         "_Console"
+         1
+        (menu-path "<Image>/Filters/Languages/Python-Fu")
+        (icon icon-name -1 "")
+         ""
+         1 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }"))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/py-slice/py-slice.py" 1541707262
     (proc-def "python-fu-slice" 1
          "Cuts an image along its guides, creates images and a HTML table snippet"
@@ -2831,6 +2831,63 @@
         (proc-arg 0 "apply-masks" "Apply layer masks before saving. TRUE or FALSE (Keeping them will not change the output)")
         (proc-arg 4 "filename" "The name of the file to save the image in")
         (proc-arg 4 "raw-filename" "The name of the file to save the image in")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-pdf-load/file-pdf-load" 1541707262
+    (proc-def "file-pdf-load" 1
+         "Load file in PDF format"
+         "Loads files in Adobe's Portable Document Format. PDF is designed to be easily processed by a variety of different platforms, and is a distant cousin of PostScript.\nIf the PDF document has multiple pages, only the first page will be loaded. Call file_pdf_load2() to load several pages as layers."
+         "Nathan Summers"
+         "Nathan Summers"
+         "2005"
+         "Portable Document Format"
+         0
+        (icon icon-name -1 "")
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-pdf-load2" 1
+         "Load file in PDF format"
+         "Loads files in Adobe's Portable Document Format. PDF is designed to be easily processed by a variety of different platforms, and is a distant cousin of PostScript.\nThis procedure adds extra parameters to file-pdf-load to open encrypted PDF and to allow multiple page loading."
+         "Nathan Summers, Lionel N."
+         "Nathan Summers, Lionel N."
+         "2005, 2017"
+         "Portable Document Format"
+         0
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "pdf")
+            (magics "0, string,%PDF-")
+            (mime-types "application/pdf")
+            (thumb-loader "file-pdf-load-thumb"))
+         ""
+         6 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 4 "pdf-password" "The password to decrypt the encrypted PDF file")
+        (proc-arg 0 "n-pages" "Number of pages to load (0 for all)")
+        (proc-arg 5 "pages" "The pages to load in the expected order")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-pdf-load-thumb" 1
+         "Loads a preview from a PDF file."
+         "Loads a small preview of the first page of the PDF format file. Uses the embedded thumbnail if present."
+         "Nathan Summers"
+         "Nathan Summers"
+         "2005"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         2 5
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 0 "thumb-size" "Preferred thumbnail size")
+        (proc-arg 13 "image" "Thumbnail image")
+        (proc-arg 0 "image-width" "Width of full-sized image")
+        (proc-arg 0 "image-height" "Height of full-sized image")
+        (proc-arg 0 "image-type" "Image type")
+        (proc-arg 0 "num-layers" "Number of pages")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-pcx/file-pcx" 1541707262
     (proc-def "file-pcx-load" 1
          "Loads files in Zsoft PCX file format"
