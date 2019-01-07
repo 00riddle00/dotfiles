@@ -1,4 +1,3 @@
-tt
 ### VimVixen (Firefox 57.0 and later)
 
 ```
