@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>numix-archblue</name>
+    <name>Numix-Archblue</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -227,13 +227,11 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-
     <keybind key="W-F2">
       <action name="GoToDesktop">
         <to>2</to>
@@ -283,28 +281,22 @@
     <keybind key="A-q">
       <action name="Iconify"/>
     </keybind>
-
-     <!--prevent custom C-q behaviour -->
+    <!--prevent custom C-q behaviour -->
     <keybind key="C-q">
       <action name="Iconify"/>
     </keybind>
-
     <keybind key="A-F4">
       <action name="Iconify"/>
     </keybind>
-
     <keybind key="C-S-q">
       <action name="Iconify"/>
     </keybind>
-
     <keybind key="C-F4">
       <action name="Iconify"/>
     </keybind>
-
-<!--    <keybind key="C-S-w">-->
-      <!--<action name="Iconify"/>-->
+    <!--    <keybind key="C-S-w">-->
+    <!--<action name="Iconify"/>-->
     <!--</keybind>-->
-
     <keybind key="W-x">
       <action name="ToggleMaximize"/>
     </keybind>
@@ -376,7 +368,6 @@
         </finalactions>
       </action>
     </keybind>
-
     <keybind key="W-k">
       <action name="PreviousWindow">
         <bar>no</bar>
@@ -387,7 +378,6 @@
         </finalactions>
       </action>
     </keybind>
-
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -430,20 +420,16 @@
         <command>xbacklight +10</command>
       </action>
     </keybind>
-
-
     <keybind key="W-t">
       <action name="Execute">
         <command>tint2</command>
       </action>
     </keybind>
-
     <keybind key="W-S-t">
       <action name="Execute">
         <command>killall tint2</command>
       </action>
     </keybind>
-
     <keybind key="W-F4">
       <action name="Execute">
         <command>xbacklight -10</command>
@@ -471,54 +457,46 @@
       </action>
     </keybind>
     <!-- Custom program launchers -->
-
     <!--<keybind key="W-w">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$FOCUS write"</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>sh -c "$FOCUS write"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
     <keybind key="A-w">
       <action name="Execute">
         <command>emacs ~/pro</command>
       </action>
     </keybind>
-
     <keybind key="W-w">
       <action name="Execute">
         <command>sh -c "$ACTIVATE spotify"</command>
       </action>
     </keybind>
-
     <keybind key="W-p">
       <action name="Execute">
         <command>sh -c "$ACTIVATE slack"</command>
       </action>
     </keybind>
-
     <keybind key="W-q">
       <action name="Execute">
         <command>sh -c "$FOCUS postman"</command>
       </action>
     </keybind>
-
     <keybind key="W-c">
       <action name="Execute">
         <command>sh -c "$ACTIVATE intellij-idea-ultimate-edition"</command>
       </action>
     </keybind>
-
-<!--    <keybind key="W-p">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE pycharm"</command>-->
-      <!--</action>-->
+    <!--    <keybind key="W-p">-->
+    <!--<action name="Execute">-->
+    <!--<command>sh -c "$ACTIVATE pycharm"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <keybind key="W-S-d">
       <action name="Execute">
         <command>sh -c "$ACTIVATE deluge"</command>
       </action>
     </keybind>
-
     <keybind key="W-v">
       <action name="Execute">
         <command>sh -c "$ACTIVATE vlc"</command>
@@ -534,124 +512,94 @@
         <command>sh -c "$ACTIVATE deluge"</command>
       </action>
     </keybind>
-
     <keybind key="W-m">
       <action name="Execute">
         <command>sh -c "$ACTIVATE mirage"</command>
       </action>
     </keybind>
-
     <!--Activate "emacs" mode-->
     <keybind key="A-o">
       <action name="Execute">
-          <command>setxkbmap -option ctrl:nocaps</command>
+        <command>setxkbmap -option ctrl:nocaps</command>
       </action>
     </keybind>
-
     <keybind key="A-n">
       <action name="Execute">
         <command>sh -c "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"</command>
       </action>
     </keybind>
-
-
-
-
-
-
-<!--Terminal: urxvt-->
-
-<!--    <keybind key="A-F1">-->
-      <!--<action name="Execute">-->
-          <!--<command>urxvt -name t1</command>-->
-      <!--</action>-->
+    <!--Terminal: urxvt-->
+    <!--    <keybind key="A-F1">-->
+    <!--<action name="Execute">-->
+    <!--<command>urxvt -name t1</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <keybind key="F1">
       <action name="Execute">
-          <command>wmctrl -x -a t1.URxvt</command>
+        <command>wmctrl -x -a t1.URxvt</command>
       </action>
     </keybind>
-
     <keybind key="A-F2">
       <action name="Execute">
-          <command>urxvt -name t2</command>
+        <command>urxvt -name t2</command>
       </action>
     </keybind>
-
     <keybind key="F2">
       <action name="Execute">
-          <command>wmctrl -x -a t2.URxvt</command>
+        <command>wmctrl -x -a t2.URxvt</command>
       </action>
     </keybind>
-
     <keybind key="A-m">
       <action name="Execute">
-          <command>urxvt -geometry 120x35 -name aux</command>
+        <command>urxvt -geometry 120x35 -name aux</command>
       </action>
     </keybind>
-
     <keybind key="A-F3">
       <action name="Execute">
-          <command>urxvt -geometry 136x70 -name notes --hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh</command>
+        <command>urxvt -geometry 136x70 -name notes --hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh</command>
       </action>
     </keybind>
-
     <keybind key="F3">
       <action name="Execute">
-          <command>wmctrl -x -a notes.URxvt</command>
+        <command>wmctrl -x -a notes.URxvt</command>
       </action>
     </keybind>
-
-
-<!--Terminal: terminator-->
+    <!--Terminal: terminator-->
     <!--<keybind key="F1">-->
-      <!--<action name="Execute">-->
-          <!--TODO: remove slash between -/- when uncommenting-->
-          <!--<command>sh -c "$ACTIVATE 't1' 'terminator -/-geometry=700x800 -T t1'"</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--TODO: remove slash between -/- when uncommenting-->
+    <!--<command>sh -c "$ACTIVATE 't1' 'terminator -/-geometry=700x800 -T t1'"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <!--<keybind key="A-F2">-->
-      <!--<action name="Execute">-->
-          <!--TODO: remove slash between -/- when uncommenting-->
-          <!--<command>terminator -/-geometry=700x800 -T t2</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--TODO: remove slash between -/- when uncommenting-->
+    <!--<command>terminator -/-geometry=700x800 -T t2</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <!--<keybind key="F2">-->
-      <!--<action name="Execute">-->
-          <!--TODO: remove slash between -/- when uncommenting-->
-          <!--<command>sh -c "$ACTIVATE 't2' 'terminator -/-geometry=700x800 -T t2'"</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--TODO: remove slash between -/- when uncommenting-->
+    <!--<command>sh -c "$ACTIVATE 't2' 'terminator -/-geometry=700x800 -T t2'"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
-<!--    <keybind key="A-m">-->
-      <!--<action name="Execute">-->
-          <!--TODO: remove slash between -/- when uncommenting-->
-          <!--<command>sh -c "$ACTIVATE 'aux' 'terminator -/-geometry=700x500 -T aux'"</command>-->
-      <!--</action>-->
+    <!--    <keybind key="A-m">-->
+    <!--<action name="Execute">-->
+    <!--TODO: remove slash between -/- when uncommenting-->
+    <!--<command>sh -c "$ACTIVATE 'aux' 'terminator -/-geometry=700x500 -T aux'"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <!--<keybind key="F3">-->
-      <!--<action name="Execute">-->
-          <!--TODO: remove slash between -/- when uncommenting-->
-        <!--<command>sh -c "$ACTIVATE 't3' 'terminator -/-geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--TODO: remove slash between -/- when uncommenting-->
+    <!--<command>sh -c "$ACTIVATE 't3' 'terminator -/-geometry=700x1080 -T t3 -e $SHELL_SCRIPTS_DIR/vimnotes.sh'"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
-
-
-
-
-
-
     <keybind key="F10">
       <action name="Execute">
         <command>sh -c "$ACTIVATE qalculate-gtk"</command>
       </action>
     </keybind>
-
     <keybind key="F7">
       <action name="Execute">
         <command>thunderbird</command>
@@ -667,69 +615,57 @@
         <command>sh -c "$ACTIVATE firefox"</command>
       </action>
     </keybind>
-
     <keybind key="F5">
-        <action name="Execute">
-            <command>subl</command>
-        </action>
+      <action name="Execute">
+        <command>subl</command>
+      </action>
     </keybind>
-
     <keybind key="W-o">
       <action name="Execute">
-          <command>keepass /home/riddle/Dropbox/sync/keepass/8gb.kdbx</command>
+        <command>keepass /home/riddle/Dropbox/sync/keepass/8gb.kdbx</command>
       </action>
     </keybind>
-
     <!--<keybind key="W-c">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE copyq"</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>sh -c "$ACTIVATE copyq"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <!--<keybind key="F5">-->
-        <!--<action name="ShowMenu">-->
-          <!--<menu>client-list-combined-menu</menu>-->
-        <!--</action>-->
+    <!--<action name="ShowMenu">-->
+    <!--<menu>client-list-combined-menu</menu>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <!--<keybind key="F3">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE sublime"</command>-->
-        <!--<command>subl</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>sh -c "$ACTIVATE sublime"</command>-->
+    <!--<command>subl</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <keybind key="Insert">
-      <action name="Execute">
-          <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
-          [><command>xdotool key Right</command>
+      <action name="Execute"><command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
+          [&gt;<command>xdotool key Right</command>
       </action>
     </keybind>
-
-<!--    <keybind key="W-w">-->
-      <!--<action name="Execute">-->
-        <!--<command>sh -c "$ACTIVATE emacs"</command>-->
-      <!--</action>-->
+    <!--    <keybind key="W-w">-->
+    <!--<action name="Execute">-->
+    <!--<command>sh -c "$ACTIVATE emacs"</command>-->
+    <!--</action>-->
     <!--</keybind>-->
-
     <keybind key="W-f">
       <action name="Execute">
         <command>sh -c "$ACTIVATE filezilla"</command>
       </action>
     </keybind>
-
     <keybind key="W-e">
       <action name="Execute">
         <command>wmctrl -a "file manager"</command>
       </action>
     </keybind>
-
     <keybind key="A-e">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
-
     <!--
     <keybind key="W-e">
       <action name="Execute">
@@ -743,44 +679,36 @@
       </action>
     </keybind>
     -->
-
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>
       </action>
     </keybind>
-
     <keybind key="W-b">
       <action name="Execute">
         <command>sh -c "$ACTIVATE 'gnu image' 'gimp'"</command>
       </action>
     </keybind>
-
-
     <keybind key="W-l">
       <action name="Execute">
         <command>sh -c "$ACTIVATE libreoffice"</command>
       </action>
     </keybind>
-
     <keybind key="W-c">
       <action name="Execute">
         <command>sh -c "$FOCUS phpstorm"</command>
       </action>
     </keybind>
-
     <keybind key="W-z">
       <action name="Execute">
         <command>xterm</command>
       </action>
     </keybind>
-
     <keybind key="W-u">
       <action name="Execute">
         <command>sh -c "$ACTIVATE urxvt"</command>
       </action>
     </keybind>
-
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -1036,18 +964,16 @@
       </mousebind>
     </context>
     <context name="Desktop">
-
       <!--<mousebind button="Up" action="Click">-->
-        <!--<action name="GoToDesktop">-->
-          <!--<to>previous</to>-->
-        <!--</action>-->
+      <!--<action name="GoToDesktop">-->
+      <!--<to>previous</to>-->
+      <!--</action>-->
       <!--</mousebind>-->
       <!--<mousebind button="Down" action="Click">-->
-        <!--<action name="GoToDesktop">-->
-          <!--<to>next</to>-->
-        <!--</action>-->
+      <!--<action name="GoToDesktop">-->
+      <!--<to>next</to>-->
+      <!--</action>-->
       <!--</mousebind>-->
-
       <mousebind button="A-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
