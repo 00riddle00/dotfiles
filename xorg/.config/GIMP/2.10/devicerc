@@ -3,8 +3,9 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpFilterOptions"
-        (tool "gimp-brightness-contrast-tool"))
+    (tool-options "GimpMoveOptions"
+        (tool "gimp-move-tool")
+        (move-current yes))
     (use-fg-bg no)
     (use-brush no)
     (use-dynamics no)
