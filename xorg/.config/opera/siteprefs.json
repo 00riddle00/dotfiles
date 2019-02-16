@@ -1,0 +1,162 @@
+// Xudbodss/mIftXfSOFfPdOMsR4KA7iWlMYk4LBARv+0gcacCrlGZ34PRIN9HtJTbGFVjicDnRdaD+mpxRR5VaYKVj36f4LKRxWI+HbzRobbh2QkVb49hqnJNtZVjcxkkD2ibT5YS2Q2A9vcyd+1y+tFQoLIh21wyQXKJKW9nj79M6MQkpcc4wi8uxn5v4F/NQrSVDWs11W2/TqpZDPm10SpIALeRleHdf5ufO5ghhnKjOO4Znl9BFJ7KOE8PoUJUe4LovKuhNob1ajYkgKTgs3CaMMkZ7jlEZzk3AN13Gzt7V/3vm553R/6CPf+E056FRra5NhlbSnLabxgRDRWGnw==
+{
+  "@encoding": "UTF-8",
+  "@version": "1.0",
+  "preferences": {
+    "config": {
+      "useragent": [
+        {
+          "@value": "Mozilla/5.0 ($PLATFORM) AppleWebKit/537.36 (KHTML, like Gecko) $CHR Safari/537.36",
+          "@id": "35"
+        },
+        {
+          "@value": "Mozilla/5.0 ($PLATFORM) AppleWebKit/537.36 (KHTML, like Gecko) $CHR Safari/537.36 $OPR",
+          "@id": "36"
+        }
+      ]
+    },
+    "@clean_all": "1",
+    "host": [
+      {
+        "@name": "hangouts.google.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "yahoo.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "alfabank.ru",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "36",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "meet.google.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "giantbomb.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "slack.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "paypal.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "bank.barclays.co.uk",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "ing.com.au",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "read.amazon.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "sites.google.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "online.eurobank.pl",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "sellercentral.amazon.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },     
+      {
+        "@name": "isbank.com.tr",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      }
+    ]
+  }
+}

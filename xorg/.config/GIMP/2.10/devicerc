@@ -3,9 +3,12 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpMoveOptions"
-        (tool "gimp-move-tool")
-        (move-current yes))
+    (tool-options "GimpCropOptions"
+        (aspect-denominator 1046.000000)
+        (aspect-numerator 495.000000)
+        (desired-fixed-size-height 0.000000)
+        (desired-fixed-size-width 0.000000)
+        (tool "gimp-crop-tool"))
     (use-fg-bg no)
     (use-brush no)
     (use-dynamics no)
