@@ -1,5 +1,5 @@
 [Added Associations]
-image/png=mirage.desktop;gimp.desktop;feh.desktop;
+image/png=nomacs.desktop;mirage.desktop;feh.desktop;gimp.desktop;ristretto.desktop;
 text/plain=sublime_text.desktop;mirage.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=mpv.desktop;mplayer.desktop;vlc.desktop;
@@ -7,12 +7,12 @@ video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=sublime_text.desktop;firefox.desktop;mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
 application/x-yaml=atom.desktop;
-image/jpeg=mirage.desktop;firefox.desktop;feh.desktop;gimp.desktop;
+image/jpeg=nomacs.desktop;firefox.desktop;mirage.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
 video/x-msvideo=mpv.desktop;mplayer.desktop;vlc.desktop;
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=calibre-gui.desktop;libreoffice-writer.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;calibre-gui.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop;
@@ -80,6 +80,7 @@ x-scheme-handler/mailto=userapp-Thunderbird-8IX3UZ.desktop;userapp-Thunderbird-Z
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 application/sql=sublime_text.desktop;
+text/x-tex=vim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=google-chrome.desktop
