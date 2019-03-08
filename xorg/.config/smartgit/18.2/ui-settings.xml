@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <obj key="UiConfig" type="@UiSettings">
 	<collection key="bounds.keys" type="String">
+		<prop type="String" value="git.discard"/>
 		<prop type="String" value="log"/>
 		<prop type="String" value="project"/>
 		<prop type="String" value="welcome"/>
 	</collection>
+	<obj key="bounds.value.git.discard" type="@Bounds">
+		<prop key="x" type="int" value="-2147483648"/>
+		<prop key="y" type="int" value="-2147483648"/>
+		<prop key="width" type="int" value="500"/>
+		<prop key="height" type="int" value="309"/>
+		<prop key="maximized" type="int" value="0"/>
+		<prop key="scaling" type="int" value="1"/>
+	</obj>
 	<obj key="bounds.value.log" type="@Bounds">
 		<prop key="x" type="int" value="243"/>
 		<prop key="y" type="int" value="60"/>
@@ -33,7 +42,7 @@
 	<obj key="indexEditorFrame" type="_NULL_"/>
 	<prop key="gitAnnotateLayout" type="_NULL_" value=""/>
 	<prop key="hgAnnotateLayout" type="_NULL_" value=""/>
-	<prop key="gitProjectLayout.main" type="String" value="(([+318x586:directories ][+318x389:branches ])(([+1595x207:files ][-2x1:message ])[+1595x571:changes ]([+796x194:outgoing ][+796x194:output ])))"/>
+	<prop key="gitProjectLayout.main" type="String" value="(([+318x568:directories ][+318x377:branches ])(([+1595x201:files ][-2x1:message ])[+1595x553:changes ]([+796x188:outgoing ][+796x188:output ])))"/>
 	<prop key="gitProjectLayout.review" type="String" value="([+318x242:directories ][+1114x242:files ][+478x242:message ])[+1916x727:changes ]([-1x1:branches ][-3x1:outgoing ][-3x1:output ])"/>
 	<prop key="gitProjectLayout.mainIsDefault" type="boolean" value="true"/>
 	<prop key="gitLogRootLayout.main" type="_NULL_" value=""/>
@@ -53,7 +62,7 @@
 		<prop type="String" value="lastRepositoryPath"/>
 	</collection>
 	<prop key="primitives.strings.lastClonedUrls.count" type="String" value="0"/>
-	<prop key="primitives.strings.lastRepositoryPath" type="String" value="/home/riddle/eclipse-workspace/lets-build-a-game"/>
+	<prop key="primitives.strings.lastRepositoryPath" type="String" value="/home/riddle/tmp5"/>
 	<collection key="columns.keys" type="String">
 		<prop type="String" value="git.log.files"/>
 		<prop type="String" value="journal.git"/>

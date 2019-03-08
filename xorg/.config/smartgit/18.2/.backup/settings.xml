@@ -39,7 +39,6 @@
 			<prop key="showExternalResolveDialog" type="boolean" value="true"/>
 			<prop key="swapOursTheirsOnRebase" type="boolean" value="false"/>
 		</obj>
-		<prop key="resetType" type="_NULL_" value=""/>
 		<obj key="stash" type="@StashSettings">
 			<prop key="stashAutomatically" type="boolean" value="false"/>
 			<prop key="includeUntrackedFiles" type="boolean" value="false"/>
@@ -66,6 +65,7 @@
 		<prop key="allowCommandsOnSpecialCommits" type="boolean" value="false"/>
 		<prop key="enableHostingProvider" type="boolean" value="true"/>
 		<prop key="allowMultipleWindowsForSameLocation" type="boolean" value="false"/>
+		<obj key="filterConfiguration" type="_NULL_"/>
 	</obj>
 	<obj key="comparePreviewSettings" type="@ComparePreviewSettings">
 		<prop key="compareType" type="String" value="working-tree-vs-index"/>
@@ -358,16 +358,17 @@
 		</obj>
 	</obj>
 	<obj key="listx" type="@L">
-		<prop key="eUT" type="long" value="1546084971427"/>
-		<prop key="nRT" type="long" value="1544745771427"/>
+		<prop key="eUT" type="long" value="1548503054499"/>
+		<prop key="nRT" type="long" value="1547163854499"/>
 		<prop key="lLCT" type="long" value="0"/>
 		<prop key="ePP" type="long" value="0"/>
-		<prop key="eV" type="String" value="18.1"/>
+		<prop key="eV" type="String" value="18.2"/>
 		<prop key="uid" type="String" value="721q2dl2orf4"/>
 	</obj>
 	<obj key="project" type="@GlobalProjectSettings">
 		<prop key="reopenLastUsedRepositories" type="boolean" value="true"/>
 		<prop key="showWelcomeDialog" type="boolean" value="true"/>
+		<prop key="preferLogWindow" type="boolean" value="false"/>
 	</obj>
 	<obj key="uiSettings" type="@UiSettings">
 		<prop key="useBackgroundColorInFileTable" type="boolean" value="true"/>
@@ -376,7 +377,7 @@
 		<prop key="themeChanged" type="boolean" value="false"/>
 	</obj>
 	<obj key="vcsRecords" type="@VcsRecords">
-		<prop key="lastGitUsage" type="long" value="0"/>
+		<prop key="lastGitUsage" type="long" value="1545847579175"/>
 		<prop key="lastSvnUsage" type="long" value="0"/>
 		<prop key="lastHgUsage" type="long" value="0"/>
 		<prop key="lastReviewUsage" type="long" value="0"/>
@@ -384,8 +385,8 @@
 	</obj>
 	<obj key="updateCheck" type="@UpdateAutoCheckSettings">
 		<prop key="mode" type="String" value="download"/>
-		<prop key="prevCheckTime" type="long" value="1543406571744"/>
-		<prop key="checkedBuild" type="int" value="12168"/>
+		<prop key="prevCheckTime" type="long" value="1545824654895"/>
+		<prop key="checkedBuild" type="int" value="13220"/>
 		<prop key="upgradeInstallation" type="boolean" value="false"/>
 		<prop key="previewAlwaysCheckForLatestBuild" type="boolean" value="false"/>
 	</obj>
@@ -395,8 +396,10 @@
 		<prop key="proxyHost" type="_NULL_" value=""/>
 		<prop key="proxyPort" type="int" value="3128"/>
 		<prop key="proxyUser" type="_NULL_" value=""/>
+		<prop key="useProxy" type="boolean" value="false"/>
+		<prop key="authenticate" type="boolean" value="false"/>
 	</obj>
-	<prop key="proxyPassword" type="int" value="25"/>
+	<prop key="proxyPassword" type="int" value="26"/>
 	<obj key="spellCheck" type="@SpellCheckSettings">
 		<collection key="dictionaries" type="Object">
 			<obj type="@SpellCheckDictionarySet" id="79">
@@ -407,7 +410,7 @@
 		</collection>
 		<ref key="activeDictionary" type="@SpellCheckDictionarySet" id="79"/>
 		<prop key="personalFile" type="String" value="${smartgit.settings}/my-words.dic"/>
-		<prop key="personalFile.absolute" type="String" value="/home/riddle/.smartgit/18.1/my-words.dic"/>
+		<prop key="personalFile.absolute" type="String" value="/home/riddle/.config/smartgit/18.2/my-words.dic"/>
 		<prop key="useOnlyBestOfficial" type="boolean" value="false"/>
 		<prop key="deleted" type="boolean" value="false"/>
 	</obj>
@@ -416,8 +419,8 @@
 	<prop key="sendStacktraces2" type="boolean" value="false"/>
 	<prop key="sendStacktracesBeta" type="boolean" value="false"/>
 	<prop key="machineId" type="_NULL_" value=""/>
-	<prop key="lastUsedVersion" type="String" value="18.1"/>
+	<prop key="lastUsedVersion" type="String" value="18.2"/>
 	<collection key="tempDirs" type="String">
-		<prop type="String" value="/tmp/smartgit-1239511535206025354tmp"/>
+		<prop type="String" value="/tmp/smartgit-5799451463225291823tmp"/>
 	</collection>
 </obj>

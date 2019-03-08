@@ -2,11 +2,12 @@
 <obj key="Repositories" type="@Repositories">
 	<collection key="repositories" type="Object">
 		<obj type="@Repository" id="2">
-			<prop key="name" type="String" value="tmp7"/>
+			<prop key="name" type="String" value="lets-build-a-game"/>
 			<prop key="favorite" type="boolean" value="false"/>
 			<prop key="git" type="boolean" value="true"/>
-			<prop key="path" type="String" value="~/tmp7"/>
-			<prop key="path.absolute" type="String" value="/home/riddle/tmp7"/>
+			<prop key="path" type="String" value="~/eclipse-workspace/lets-build-a-game"/>
+			<prop key="path.absolute" type="String" value="/home/riddle/eclipse-workspace/lets-build-a-game"/>
+			<prop key="expanded" type="boolean" value="true"/>
 		</obj>
 	</collection>
 	<collection key="groups" type="Object"/>

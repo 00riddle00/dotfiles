@@ -339,6 +339,7 @@ alias ee='v ~/.emacs.d/init.el'
 alias com="ga . && gc -m '.'"
 alias push='com && gp'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gl='git log'
 alias gs='git status'
 alias gc='git commit'

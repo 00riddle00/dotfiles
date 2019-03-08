@@ -29,7 +29,7 @@ application/vnd.ms-visio.drawing.main+xml=libreoffice-startcenter.desktop;
 application/x-mswinurl=firefox.desktop;wine-extension-url.desktop;
 text/vnd.trolltech.linguist=linguist.desktop;
 image/svg+xml=mirage.desktop;
-text/x-python=userapp-python-B29QGZ.desktop;sublime_text.desktop;mirage.desktop;
+text/x-python=sublime_text.desktop;userapp-python-B29QGZ.desktop;mirage.desktop;
 video/quicktime=vlc.desktop;userapp-Mail Recipient-QGEU4Y.desktop;mplayer.desktop;
 application/vnd.corel-draw=libreoffice-draw.desktop;
 image/tiff=mirage.desktop;
@@ -81,6 +81,9 @@ x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 application/sql=sublime_text.desktop;
 text/x-tex=vim.desktop;
+application/x-pka=Cisco-PacketTracer.desktop;
+application/x-pkt=Cisco-PacketTracer.desktop;
+application/x-java-jnlp-file=firefox.desktop;google-chrome.desktop;sublime_text.desktop;
 
 [Default Applications]
 x-scheme-handler/http=google-chrome.desktop

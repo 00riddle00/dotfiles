@@ -6584,3 +6584,30 @@ error: Nov-27 13:34:05.446 TICKLE-MS (T00) Skipping tickle because no user exist
 error: Nov-27 13:35:05.446 TICKLE-MS (T00) Skipping tickle because no user exists
 error: Nov-27 13:36:05.446 TICKLE-MS (T00) Skipping tickle because no user exists
 error: Nov-27 13:37:05.446 TICKLE-MS (T00) Skipping tickle because no user exists
+info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+info: ║      Slack 3.3.7, linux 4.20.12-arch1-1-ARCH on x64 at 02/27/19, 21:33:25:510      ║
+info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0
+warn: Feb-27 21:33:32.530 error getActiveModelOb found no ob
+warn: Feb-27 21:33:32.531 TS.boot_data.channel_id: undefined
+warn: Feb-27 21:33:32.531 TS.boot_data.im_id: undefined
+warn: Feb-27 21:33:32.531 TS.boot_data.group_id: undefined
+warn: Feb-27 21:33:32.531 error getActiveModelOb found no ob
+warn: Feb-27 21:33:32.531 TS.boot_data.channel_id: undefined
+warn: Feb-27 21:33:32.531 TS.boot_data.im_id: undefined
+warn: Feb-27 21:33:32.531 TS.boot_data.group_id: undefined
+info: Feb-27 21:33:32.606 [BOOT] booted! pri:0 version:1551291414 start_ms:1551296010310 (2296ms ago)
+info: Feb-27 21:33:33.042 [INFO] no TS.client on page:https://grozionamai.slack.com/
+info: Feb-27 21:33:34.077 [INFO] running without a user
+info: Feb-27 21:33:47.838 [FOCUS-EVENT] Window focused
+info: Feb-27 21:33:47.843 [FOCUS-EVENT] Window blurred
+info: Feb-27 21:33:47.844 [FOCUS-EVENT] Window focused
+info: Feb-27 21:33:47.849 [UNKNOWN-FETCH-MANAGER] (T00000000) requesting T00000000 (1)
+warn: Feb-27 21:33:47.855 TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want.
+info: Feb-27 21:33:47.856 [API-Q] (T00000000) 437fd99f-1551296027.852 team.info called with reason: UnknownFetchManager
+info: Feb-27 21:33:47.856 [API-Q] (T00000000) 437fd99f-1551296027.852 team.info is ENQUEUED
+info: Feb-27 21:33:47.857 [API-Q] (T00000000) 437fd99f-1551296027.852 team.info is ACTIVE
+info: Feb-27 21:33:48.016 [API-Q] (T00000000) 437fd99f-1551296027.852 team.info is REJECTED: API not ok not_authed
+info: Feb-27 21:33:48.018 [UNKNOWN-FETCH-MANAGER] (T00000000) received T00000000 (1)
+warn: Feb-27 21:33:48.018 (T00000000) UnknownFetchManager requested 1 objects but received 0. Missing objects: T00000000
+info: Feb-27 21:33:48.601 [FOCUS-EVENT] Window blurred

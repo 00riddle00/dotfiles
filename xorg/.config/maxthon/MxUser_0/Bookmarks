@@ -1,0 +1,61 @@
+{
+   "checksum": "3cdcd0fc9d4604847d3e73bf50ccdbbd",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13028608865946725",
+            "id": "2",
+            "most_fav": false,
+            "name": "Maxthon.com – Your Maxthon",
+            "type": "url",
+            "url": "http://i.maxthon.com/"
+         }, {
+            "date_added": "13196031392389235",
+            "id": "7",
+            "most_fav": true,
+            "name": "PT-Assessment-Client.jnlp",
+            "type": "url",
+            "url": "file:///home/riddle/Downloads/PT-Assessment-Client.jnlp"
+         }, {
+            "date_added": "13031647309649883",
+            "id": "3",
+            "most_fav": false,
+            "name": "Report a bug",
+            "type": "url",
+            "url": "http://forum.maxthon.com/forum.php?mod=forumdisplay&fid=38&filter=typeid&typeid=39"
+         }, {
+            "date_added": "13031647353962354",
+            "id": "4",
+            "most_fav": false,
+            "name": "Make a suggestion",
+            "type": "url",
+            "url": "http://forum.maxthon.com/forum.php?mod=forumdisplay&fid=39&filter=typeid&typeid=40"
+         } ],
+         "date_added": "13028608711836545",
+         "date_modified": "13196031392389235",
+         "id": "1",
+         "most_fav": false,
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13028176318723757",
+         "date_modified": "0",
+         "id": "5",
+         "most_fav": false,
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13028176318723758",
+         "date_modified": "0",
+         "id": "6",
+         "most_fav": false,
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

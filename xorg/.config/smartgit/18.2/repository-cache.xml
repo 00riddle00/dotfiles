@@ -9,6 +9,7 @@
 		<prop type="String" value="/home/riddle/tmp1"/>
 		<prop type="String" value="/home/riddle/tmp1/django-project/app"/>
 		<prop type="String" value="/home/riddle/tmp2/Building-Blockchain-Projects-Book/Building-Blockchain-Projects"/>
+		<prop type="String" value="/home/riddle/tmp5"/>
 		<prop type="String" value="/home/riddle/tmp7"/>
 	</collection>
 	<obj key="root-/home/riddle/Dropbox/sync/gtd" type="@Details">
@@ -32,7 +33,7 @@
 	<obj key="root-/home/riddle/eclipse-workspace/lets-build-a-game" type="@Details">
 		<prop key="ahead" type="int" value="0"/>
 		<prop key="behind" type="int" value="0"/>
-		<prop key="branch" type="String" value="master"/>
+		<prop key="branch" type="String" value=""/>
 		<prop key="bare" type="boolean" value="false"/>
 		<prop key="aheadBehindBranch" type="String" value="master"/>
 		<prop key="localModifications" type="boolean" value="true"/>
@@ -80,6 +81,15 @@
 		<prop key="branch" type="_NULL_" value=""/>
 		<prop key="bare" type="boolean" value="false"/>
 		<prop key="aheadBehindBranch" type="_NULL_" value=""/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/tmp5" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value="master"/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="master"/>
 		<prop key="localModifications" type="boolean" value="false"/>
 		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
 	</obj>

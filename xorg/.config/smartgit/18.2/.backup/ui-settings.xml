@@ -33,12 +33,15 @@
 	<obj key="indexEditorFrame" type="_NULL_"/>
 	<prop key="gitAnnotateLayout" type="_NULL_" value=""/>
 	<prop key="hgAnnotateLayout" type="_NULL_" value=""/>
-	<prop key="gitProjectLayout.main" type="String" value="(([+318x564:directories ][+318x375:branches ])(([+7x200:files ][-2x1:message ])[+1595x549:changes ]([+796x187:outgoing ][+796x187:output ])))"/>
+	<prop key="gitProjectLayout.main" type="String" value="(([+318x586:directories ][+318x389:branches ])(([+1595x207:files ][-2x1:message ])[+1595x571:changes ]([+796x194:outgoing ][+796x194:output ])))"/>
 	<prop key="gitProjectLayout.review" type="String" value="([+318x242:directories ][+1114x242:files ][+478x242:message ])[+1916x727:changes ]([-1x1:branches ][-3x1:outgoing ][-3x1:output ])"/>
 	<prop key="gitProjectLayout.mainIsDefault" type="boolean" value="true"/>
-	<prop key="gitLogLayout.main" type="String" value="(([+318x311:branches ][+318x155:output ])[+1274x469:graph ]([+318x162:details ][+318x304:files +318x304:comments files ]))[+1916x470:changes ]"/>
-	<prop key="gitLogLayout.review" type="String" value="(([+1x2:branches ][+1x1:output ])[+3x2:graph ]([+2x2:files +1x2:details files ][+2x2:comments ]))[+4x4:changes ]"/>
-	<prop key="gitLogLayout.mainIsDefault" type="boolean" value="true"/>
+	<prop key="gitLogRootLayout.main" type="_NULL_" value=""/>
+	<prop key="gitLogRootLayout.review" type="_NULL_" value=""/>
+	<prop key="gitLogRootLayout.mainIsDefault" type="boolean" value="true"/>
+	<prop key="gitLogSubtreeLayout.main" type="_NULL_" value=""/>
+	<prop key="gitLogSubtreeLayout.review" type="_NULL_" value=""/>
+	<prop key="gitLogSubtreeLayout.mainIsDefault" type="boolean" value="true"/>
 	<prop key="hgProjectLayout.main" type="_NULL_" value=""/>
 	<prop key="hgProjectLayout.review" type="_NULL_" value=""/>
 	<prop key="hgProjectLayout.mainIsDefault" type="boolean" value="true"/>
@@ -50,7 +53,7 @@
 		<prop type="String" value="lastRepositoryPath"/>
 	</collection>
 	<prop key="primitives.strings.lastClonedUrls.count" type="String" value="0"/>
-	<prop key="primitives.strings.lastRepositoryPath" type="String" value="/home/riddle/tmp7"/>
+	<prop key="primitives.strings.lastRepositoryPath" type="String" value="/home/riddle/eclipse-workspace/lets-build-a-game"/>
 	<collection key="columns.keys" type="String">
 		<prop type="String" value="git.log.files"/>
 		<prop type="String" value="journal.git"/>

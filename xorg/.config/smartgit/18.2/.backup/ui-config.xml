@@ -85,63 +85,7 @@
 			<prop key="textBelowIcon" type="boolean" value="true"/>
 			<prop key="visible" type="boolean" value="true"/>
 		</obj>
-		<obj key="logToolBar-5" type="@ToolBarStructure">
-			<collection key="items" type="Object">
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="pull"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="pushBranches"/>
-				</obj>
-				<obj type="@ToolBarSeparator">
-					<prop key="stretching" type="boolean" value="false"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="checkout"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="branchAddTag"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="branchAdd"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="branchDelete"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="branchClose"/>
-				</obj>
-				<obj type="@ToolBarSeparator">
-					<prop key="stretching" type="boolean" value="false"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="merge"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="cherryPick"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="revert"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="rebaseHeadTo"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="reset"/>
-				</obj>
-				<obj type="@ToolBarSeparator">
-					<prop key="stretching" type="boolean" value="true"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="windowLayoutSetMain"/>
-				</obj>
-				<obj type="@ToolBarButton">
-					<prop key="id" type="String" value="windowLayoutSetReview"/>
-				</obj>
-			</collection>
-			<prop key="textBelowIcon" type="boolean" value="true"/>
-			<prop key="visible" type="boolean" value="true"/>
-		</obj>
+		<obj key="logToolBar-18.2" type="_NULL_"/>
 	</obj>
 	<obj key="hg" type="_NULL_"/>
 	<obj key="filterConfiguration" type="@FindObjectConfiguration">

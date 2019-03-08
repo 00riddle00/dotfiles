@@ -13240,3 +13240,53 @@
 [11/27/18, 13:35:05:447] error: Nov-27 13:35:05.446 TICKLE-MS (T00) Skipping tickle because no user exists
 [11/27/18, 13:36:05:447] error: Nov-27 13:36:05.446 TICKLE-MS (T00) Skipping tickle because no user exists
 [11/27/18, 13:37:05:446] error: Nov-27 13:37:05.446 TICKLE-MS (T00) Skipping tickle because no user exists
+[02/27/19, 21:33:28:573] info: ╔════════════════════════════════════════════════════════════════════════════════════╗
+[02/27/19, 21:33:28:573] info: ║      Slack 3.3.7, linux 4.20.12-arch1-1-ARCH on x64 at 02/27/19, 21:33:28:571      ║
+[02/27/19, 21:33:28:573] info: ╚════════════════════════════════════════════════════════════════════════════════════╝
+[02/27/19, 21:33:28:656] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json
+[02/27/19, 21:33:28:965] info: Read UUID from file successful
+{
+  "uuid": "249d8efa-ea3e-524f-b0b9-60bd01bcba50"
+}
+[02/27/19, 21:33:29:407] info: cld3::loadModule: loading cld3 module
+[02/27/19, 21:33:29:467] info: cld3Loader::loadModule: running environment is NODE
+[02/27/19, 21:33:29:467] info: cld3Loader::loadModule: constructed module object for runtime
+[02/27/19, 21:33:29:566] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available
+[02/27/19, 21:33:29:582] info: Main window preload script finished
+{
+  "readyTime": 2051.594098
+}
+[02/27/19, 21:33:29:802] info: cld3Loader::initializeRuntime: successfully initialized module
+[02/27/19, 21:33:29:802] info: cld3Loader::loadModule: initialized wasm binary Runtime
+[02/27/19, 21:33:29:848] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[02/27/19, 21:33:30:306] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[02/27/19, 21:33:30:410] info: Store: SET_NETWORK_STATUS online
+[02/27/19, 21:33:33:054] info: Store: UPSERT_WEB_CONTENTS
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[02/27/19, 21:33:33:059] info: Store: MAIN_WINDOW_SHOWN
+[02/27/19, 21:33:33:068] info: Store: SET_FULL_SCREEN
+[02/27/19, 21:33:33:069] info: Store: SET_FULL_SCREEN
+[02/27/19, 21:33:33:425] info: Store: UPDATE_SESSION_STATUS
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[02/27/19, 21:33:48:607] info: Store: SET_FULL_SCREEN
+[02/27/19, 21:33:48:835] info: Store: SAVE_WINDOW_SETTINGS
+{
+  "isMaximized": false,
+  "position": [
+    70,
+    105
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[02/27/19, 21:34:02:881] info: Store: QUIT_APP
+[02/27/19, 21:34:02:885] info: Store: REMOVE_WINDOW 2
