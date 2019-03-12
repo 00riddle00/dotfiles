@@ -7564,3 +7564,738 @@ smartgit.kt: credential helper '/opt/smartgit/lib/credentials.sh' told us to qui
 22h58m59s384 (2019-03-08 19:34:18) [main] INFO                q.swt - runnable ignored - timer
 22h58m59s384 (2019-03-08 19:34:18) [main] INFO                q.swt - runnable ignored - timer
 22h58m59s384 (2019-03-08 19:34:18) [main] INFO                q.swt - runnable ignored - timer
+ 96 (2019-03-08 21:33:42) [main] INFO      smartgit.system - SmartGit version 18.2.6-13241-bf544bf66d8cce3e401928f7663793aaaf43db99-jgit-e53bcad8099994f725096d6ec571b2153ee8816f-trilead-a83211b699279bd9aab1b10904a3f526ee47c797
+121 (2019-03-08 21:33:42) [main] INFO      smartgit.system - SmartGit running build 13241
+122 (2019-03-08 21:33:42) [main] INFO      smartgit.system - SmartGit installed build 13241
+158 (2019-03-08 21:33:42) [main] INFO      smartgit.system - SVNKit version SVN/1.8.1 SVNKit/1.10.0 (http://svnkit.com/) rSNAPSHOT
+159 (2019-03-08 21:33:42) [main] INFO sc.command.line.parameters - 0 command line parameters:
+159 (2019-03-08 21:33:42) [main] INFO      smartgit.system - application root: /opt/smartgit
+159 (2019-03-08 21:33:42) [main] INFO      smartgit.system - defaults root   : /opt/smartgit/default
+159 (2019-03-08 21:33:42) [main] INFO      smartgit.system - settings root   : /home/riddle/.config/smartgit/18.2
+159 (2019-03-08 21:33:42) [main] INFO      smartgit.system - .app directory  : null
+254 (2019-03-08 21:33:42) [main] INFO      smartgit.system - created temp directory /tmp/smartgit-9372318354695205447tmp
+1s465 (2019-03-08 21:33:43) [main] INFO              gui.swt - Used GTK version: 3.24.5
+1s466 (2019-03-08 21:33:43) [main] INFO              gui.swt - Used GTK theme  : Numix-Archblue
+1s467 (2019-03-08 21:33:43) [main] INFO              gui.swt - Using SWT 4.922
+1s467 (2019-03-08 21:33:43) [main] INFO              gui.swt - Monitors:
+1s470 (2019-03-08 21:33:43) [main] INFO              gui.swt -   1920x1080(0,0 - 1919,1079)
+1s526 (2019-03-08 21:33:43) [main] INFO   q.ubuntuThemeUtils - Executing /usr/bin/lsb_release -is
+1s526 (2019-03-08 21:33:43) [main] WARNING   q.ubuntuThemeUtils - Command /usr/bin/lsb_release -is not found
+1s687 (2019-03-08 21:33:44) [main] INFO         splashscreen - splashscreen disabled
+2s335 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/18.2/_lock_
+2s428 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - awt.toolkit                               : "sun.awt.X11.XToolkit"
+2s429 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - file.encoding                             : "UTF-8"
+2s429 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - file.encoding.pkg                         : "sun.io"
+2s429 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - file.separator                            : "/"
+2s429 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.awt.graphicsenv                      : "sun.awt.X11GraphicsEnvironment"
+2s429 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.awt.headless                         : "true"
+2s429 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.awt.printerjob                       : "sun.print.PSPrinterJob"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.class.path                           : "/opt/smartgit/lib/bootloader.jar"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.class.version                        : "54.0"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.home                                 : "/opt/smartgit/jre"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.io.tmpdir                            : "/tmp"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.library.path                         : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.net.preferIPv4Stack                  : "true"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.runtime.name                         : "Java(TM) SE Runtime Environment"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.runtime.version                      : "10.0.1+10"
+2s430 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.specification.name                   : "Java Platform API Specification"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.specification.vendor                 : "Oracle Corporation"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.specification.version                : "10"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vendor                               : "Oracle Corporation"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vendor.url                           : "http://java.oracle.com/"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vendor.url.bug                       : "http://bugreport.java.com/bugreport/"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vendor.version                       : "18.3"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.version                              : "10.0.1"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.version.date                         : "2018-04-17"
+2s431 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.compressedOopsMode                : "32-bit"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.info                              : "mixed mode"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.name                              : "Java HotSpot(TM) 64-Bit Server VM"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.specification.name                : "Java Virtual Machine Specification"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.specification.vendor              : "Oracle Corporation"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.specification.version             : "10"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.vendor                            : "\"Oracle Corporation\""
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - java.vm.version                           : "10.0.1+10"
+2s432 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - jdk.debug                                 : "release"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - jna.boot.library.path                     : "/home/riddle/.config/smartgit/18.2/jna-tmp/com/sun/jna/linux-x86-64:"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - jna.nounpack                              : "true"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - line.separator                            : "\n"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - org.eclipse.swt.accessibility.UseIA2      : "false"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - org.eclipse.swt.internal.deviceZoom       : "100"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.cairoGraphics: "false"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.theme        : "Numix-Archblue"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.version      : "3.24.5"
+2s433 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - os.arch                                   : "amd64"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - os.name                                   : "Linux"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - os.version                                : "5.0.0-arch1-1-ARCH"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - path.separator                            : ":"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - smartboot.classSource                     : "/opt/smartgit/lib/bootloader.jar"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - smartgit.settings                         : "/home/riddle/.config/smartgit/18.2"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.arch.data.model                       : "64"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.boot.library.path                     : "/opt/smartgit/jre/lib"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.cpu.endian                            : "little"
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.cpu.isalist                           : ""
+2s434 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.io.unicode.encoding                   : "UnicodeLittle"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.io.useCanonCaches                     : "false"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.java.command                          : "/opt/smartgit/lib/bootloader.jar"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.java.launcher                         : "SUN_STANDARD"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.jnu.encoding                          : "UTF-8"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.management.compiler                   : "HotSpot 64-Bit Tiered Compilers"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - sun.os.patch.level                        : "unknown"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - swt.library.path                          : "/home/riddle/.config/smartgit/18.2/swt.tmp"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - user.country                              : "US"
+2s435 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - user.dir                                  : "/home/riddle"
+2s436 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - user.home                                 : "/home/riddle"
+2s436 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - user.language                             : "en"
+2s436 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - user.name                                 : "riddle"
+2s436 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - user.timezone                             : "Europe/Vilnius"
+2s436 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - Environment variables:
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - _                       : "/opt/smartgit/jre/bin/java"
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - CANDY                   : "/home/riddle/Dropbox/sync/candy"
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/1000/bus"
+2s438 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DIRCOLORS               : ".dircolors"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DISPLAY                 : ":0"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DOTFILES_DIR            : "/home/riddle/.dotfiles"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DOWNLOADS               : "/home/riddle/Downloads"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DROPBOX                 : "/home/riddle/Dropbox"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - DW                      : "/home/riddle/Downloads"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - EDITOR                  : "vim"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - GTK_IM_MODULE           : "ibus"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - HDMI_SCREEN             : "HDMI-1-1"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - HOME                    : "/home/riddle"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - INVOCATION_ID           : "4beacbb5d9644790b5fec48ebd09dea2"
+2s439 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - JOURNAL_STREAM          : "9:21647"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LANG                    : "C"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LAPTOP_SCREEN           : "eDP-1-1"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LC_ALL                  : "en_US.UTF-8"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LESS                    : "-R"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LOGNAME                 : "riddle"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - LSCOLORS                : "ExFxCxDxBxegedabagacad"
+2s440 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - MAIL                    : "/var/spool/mail/riddle"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - MAIN_HOME               : "/home/riddle"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - MAIN_USER               : "riddle"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - OLDPWD                  : "/opt/smartgit/bin"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - PATH                    : "/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - PRO                     : "/home/riddle/pro"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - PT_HOME                 : "/usr/share/packettracer"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - PWD                     : "/home/riddle"
+2s441 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - SENV                    : "/home/riddle/venvs/subscription_demo"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - SHELL                   : "/usr/bin/zsh"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - SHLVL                   : "3"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - SYNC                    : "/home/riddle/Dropbox/sync"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - TERM                    : "rxvt-unicode-256color"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - THEME                   : "riddle"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - TMP1                    : "/home/riddle/tmp1"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - TMP2                    : "/home/riddle/tmp2"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - USER                    : "riddle"
+2s442 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - VENV                    : "/home/riddle/venvs/sql_app"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - VIMCOLOR                : "miro8"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - VIMRC                   : "/home/riddle/.vimrc"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - WINDOWPATH              : "1"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XAUTHORITY              : "/home/riddle/.Xauthority"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XDG_RUNTIME_DIR         : "/run/user/1000"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XDG_SEAT                : "seat0"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XDG_SESSION_CLASS       : "user"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XDG_SESSION_ID          : "1"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XDG_SESSION_TYPE        : "tty"
+2s443 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - XDG_VTNR                : "1"
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - class loader: java.net.URLClassLoader
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/antlr-runtime.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/lz4-1.3.0.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/sequence-library.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/sqljet.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jna-4.5.2.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jna-platform-4.5.2.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/trilead.jar
+2s444 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/bcpkix-jdk15on-1.58.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/bcprov-jdk15on-1.58.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/eddsa-0.2.0.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/javaewah.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/json_simple-1.1.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jopt-simple-3.2.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jmyspell-core.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/autolink-0.6.0.jar
+2s445 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-autolink.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-util.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/bootloader-config.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/java-prettify.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jgit.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/jsch.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/sshj.jar
+2s446 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/svnkit.jar
+2s447 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/smartgit.jar
+2s447 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+2s447 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - parent class loader: java.net.URLClassLoader
+2s447 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+2s447 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - Max memory: 1024m
+2s447 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - Max processors: 4
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system - VM options:
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -XX:+UseG1GC
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -XX:MaxGCPauseMillis=100
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -XX:InitiatingHeapOccupancyPercent=25
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -Xmx1024m
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -Xss2m
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -Xverify:none
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -XX:MaxJavaStackTraceDepth=1000000
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -Dsun.io.useCanonCaches=false
+2s448 (2019-03-08 21:33:44) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.system -   -XX:ErrorFile=/home/riddle/.config/smartgit/18.2/hs_err_pid%p.log
+2s629 (2019-03-08 21:33:45) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO     smartgit.startup - removing /home/riddle/.config/smartgit/18.2/hgext recursively
+2s630 (2019-03-08 21:33:45) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO     smartgit.startup - create /home/riddle/.config/smartgit/18.2/hgext
+2s652 (2019-03-08 21:33:45) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO     smartgit.hg.core - Mercurial extension directory is /opt/smartgit/lib/hgext
+2s786 (2019-03-08 21:33:45) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO          sc.password - Read 1 phrases from plain-text part.
+3s289 (2019-03-08 21:33:45) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] WARNING    q.description.xml - The following child elements were not fetched by 'hg(@HgSettings)':  hgExe.absolute(_NULL_)
+3s814 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] WARNING    q.description.xml - The following child elements were not fetched by 'github-github.com(@GitHubSettings)':  sslClientCertificate.absolute(_NULL_)
+4s 91 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      sc.notification - Published: INFO [linux.theme-null] Unsupported GTK theme detected.:
+Following GTK3 theme was detected: Numix-Archblue (GTK version: 3.24.5).
+
+If you experience some strange GUI problems, please try to add following line to ~/.config/smartgit/18.2/smartgit.properties:
+
+org.eclipse.swt.internal.gtk.noThemingFixes=true
+
+If this does not help, please try to switch to Adwaita or Ambiance theme, e.g. by setting GTK_THEME in the smartgit.sh launcher script.
+
+Don't show again
+4s160 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      sc.file.monitor - Using Java-7 filemonitor
+4s168 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/18.2/port.prelock
+4s169 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/18.2/port.postlock
+4s169 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO      smartgit.server - Server is connected to 4332.
+4s169 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/18.2/port.lock
+4s209 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO           sc.license - License type is 'foundation'.
+4s209 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO     smartgit.license - Distributed Reviews are enabled.
+4s215 (2019-03-08 21:33:46) [ThreadPool-1 (com.syntevo.smartgit.I)] INFO          sc.password - Writing 1 phrases.
+4s229 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO           sc.license - License type is 'foundation'.
+4s229 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO     smartgit.license - Distributed Reviews are enabled.
+4s270 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO         sc.restarter - application root: /opt/smartgit
+4s270 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO         sc.restarter - launcher: /opt/smartgit/bin/smartgit.sh
+4s514 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO q.application.update - Newer version 18.2.6 found.
+4s515 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO q.application.update - Info smartgit-training-commercial-demo found.
+4s527 (2019-03-08 21:33:46) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO          sc.password - Writing 1 phrases.
+4s567 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO     smartgit.startup - License type is 'commercial-demo', Review=true
+4s806 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO         sc.restarter - application root: /opt/smartgit
+4s806 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO         sc.restarter - launcher: /opt/smartgit/bin/smartgit.sh
+4s841 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.ssh.client - Using SSH implementation jsch
+5s404 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO               q.exec - Executing #0 [/usr/bin] /usr/bin/git --version
+5s408 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO               q.exec - Executing #1 [/usr/bin] /usr/bin/git --version
+5s410 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable - Git version is 'git version 2.21.0' (2.21.0).
+5s410 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -   Super config: null (does not exist)
+5s411 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -   System config: /etc/gitconfig (does not exist)
+5s411 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -   User config: /home/riddle/.gitconfig (exists)
+5s421 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     user.email=tomasgiedraitis@gmail.com
+5s421 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     user.name=Tomas Giedraitis
+5s421 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     core.editor=vim
+5s421 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     credential.helper=cache --timeout=3600
+5s421 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     merge.tool=vimdiff
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     diff.tool=vimdiff
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     difftool.prompt=false
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     alias.graphviz=!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     alias.d=difftool
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     filter.lfs.clean=git-lfs clean -- %f
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     filter.lfs.smudge=git-lfs smudge -- %f
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     filter.lfs.process=git-lfs filter-process
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     filter.lfs.required=true
+5s422 (2019-03-08 21:33:47) [ThreadPool-1 (com.syntevo.smartgit.s)] INFO  smartgit.executable -     gui.recentrepo=/home/riddle/tmp7
+5s439 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO q.application.update - Cleaning up old builds (fetch=false;schedule=false;fetchUpgrade=false;upgrade=false)
+5s442 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO q.application.update - Checking for new version
+5s442 (2019-03-08 21:33:47) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO q.application.update -   ... last check too early.
+5s443 (2019-03-08 21:33:47) [ThreadPool-1 (smartgit.OV$$Lambda$245/1582675074)] INFO q.application.update - No version configured for fetching.
+7s420 (2019-03-08 21:33:49) [main] INFO        q.dockmanager - layout: (([+318x568:directories ][+318x377:branches ])(([+1595x201:files ][-2x1:message ])[+1595x553:changes ]([+796x188:outgoing ][+796x188:output ])))
+7s567 (2019-03-08 21:33:50) [main] INFO              q.frame - opening smartgit.brq@557A1E2D:SmartGit 18.2.6 (evaluation until Apr 7) (smartgit.brq@7D20D0B) (index=0)
+7s597 (2019-03-08 21:33:50) [ThreadPool-1 (smartgit.apt)] INFO   smartgit.mainframe - Searching crash logs in /home/riddle/.config/smartgit/18.2
+7s597 (2019-03-08 21:33:50) [main] INFO smartgit.repositoryTreeTable - open: [tmp5 /home/riddle/tmp5 git=true]; already open: []
+7s598 (2019-03-08 21:33:50) [ThreadPool-1 (smartgit.apt)] INFO   smartgit.mainframe - Found no crash logs
+7s605 (2019-03-08 21:33:50) [ThreadPool-4 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor - Adding watch for '/home/riddle/tmp5', canonical: '/home/riddle/tmp5'
+7s640 (2019-03-08 21:33:50) [main] INFO  smartgit.project.ui - Starting to scan /home/riddle/tmp5
+7s655 (2019-03-08 21:33:50) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp5 - [~/tmp5] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+7s738 (2019-03-08 21:33:50) [ThreadPool-4 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor - Skipping subtree /home/riddle/tmp5/.idea from file monitoring.
+7s823 (2019-03-08 21:33:50) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+7s829 (2019-03-08 21:33:50) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp5]
+8s511 (2019-03-08 21:33:50) [ThreadPool-4 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor - Skipping subtree /home/riddle/tmp5/administrator/components/com_akeeba/backup from file monitoring.
+8s673 (2019-03-08 21:33:51) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp5 [/<empty>, /<infinity>]
+8s733 (2019-03-08 21:33:51) [ThreadPool-4 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor - Skipping subtree /home/riddle/tmp5/test from file monitoring.
+8s774 (2019-03-08 21:33:51) [ThreadPool-4 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor -   ... took 1169ms [/home/riddle/tmp5]
+8s908 (2019-03-08 21:33:51) [ThreadPool-1 (Refresh-0)] INFO      sc.notification - Published: INFO [hosting-provider-could-be-configured-gitlab-null] (to: git-project) GitLab-integration is not yet configured.:
+SmartGit provides special support for GitLab. The integration can be configured in the Preferences.
+
+Configure Now | Remind me later | Don't show again
+10s261 (2019-03-08 21:33:52) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp5' synchronized with UI (1746 directories processed, timestamp=1)
+10s299 (2019-03-08 21:33:52) [main] INFO         commit.notes - root changed null -> /home/riddle/tmp5
+10s878 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO               q.exec - Executing #2 [/usr/bin] /usr/bin/git --version
+10s912 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable - Git version is 'git version 2.21.0' (2.21.0).
+10s912 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -   Super config: null (does not exist)
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -   System config: /etc/gitconfig (does not exist)
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -   User config: /home/riddle/.gitconfig (exists)
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     user.email=tomasgiedraitis@gmail.com
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     user.name=Tomas Giedraitis
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     core.editor=vim
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     credential.helper=cache --timeout=3600
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     merge.tool=vimdiff
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     diff.tool=vimdiff
+10s913 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     difftool.prompt=false
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     alias.graphviz=!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     alias.d=difftool
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     filter.lfs.clean=git-lfs clean -- %f
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     filter.lfs.smudge=git-lfs smudge -- %f
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     filter.lfs.process=git-lfs filter-process
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     filter.lfs.required=true
+10s914 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO  smartgit.executable -     gui.recentrepo=/home/riddle/tmp7
+10s916 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+10s952 (2019-03-08 21:33:53) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp5' synchronized with UI (3938 directories processed, timestamp=2)
+10s964 (2019-03-08 21:33:53) [ThreadPool-0 (com.syntevo.smartgit.q$$Lambda$78/1714078840)] INFO               q.exec - Executing #3 [/home/riddle/tmp5] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+11s207 (2019-03-08 21:33:53) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp5 (29770 entries) in 2164ms, additional 365ms post-processing
+11s207 (2019-03-08 21:33:53) [ThreadPool-1 (Refresh-0)] INFO  smartgit.project.ui - Root '/home/riddle/tmp5' scanned.
+11s208 (2019-03-08 21:33:53) [ThreadPool-1 (Refresh-0)] INFO  smartgit.project.ui -   /: [[origin(url=https://gitlab.com/00riddle00/gsalonai)]], []
+12s595 (2019-03-08 21:33:55) [ThreadPool-1 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+12s596 (2019-03-08 21:33:55) [ThreadPool-1 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=9128917588342975030;protocol=https;host=gitlab.com;path=null;username=<set>
+12s614 (2019-03-08 21:33:55) [ThreadPool-3 (stderr-#3 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/gsalonai.git/
+12s614 (2019-03-08 21:33:55) [ThreadPool-3 (stderr-#3 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/gsalonai.git/
+12s616 (2019-03-08 21:33:55) [ThreadPool-2 (stdout-#3 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 4e42d3cae97b1cfbed4eafcea1c6c3ea2f270667	refs/heads/master
+12s934 (2019-03-08 21:33:55) [main] INFO             q.action - Performing 'repositoryAdd, Add or Create...' menu item in &Repository from menu in window org.eclipse.swt.widgets.Shell@7D20D0B:Shell {tmp5 - [~/tmp5] - SmartGit 18.2.6 (evaluation until Apr 7)}
+13s 56 (2019-03-08 21:33:55) [main] INFO             q.dialog - Showing dialog 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B)
+13s153 (2019-03-08 21:33:55) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp5 - [~/tmp5] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to Shell {Add or Create Repository}@4098DD77
+13s179 (2019-03-08 21:33:55) [main] INFO q.swt.shellActivation - Activation remains at Shell {Add or Create Repository}@4098DD77
+15s570 (2019-03-08 21:33:58) [main] INFO             q.action - Performing 'OK' button in window @4098DD77 owner @7D20D0B
+15s572 (2019-03-08 21:33:58) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B)
+15s575 (2019-03-08 21:33:58) [main] INFO             q.dialog - Disposing dialog 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B)
+15s575 (2019-03-08 21:33:58) [main] INFO             q.dialog - Cleaned up dialog 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B)
+15s582 (2019-03-08 21:33:58) [main] INFO             q.dialog - Close-handler for dialog 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B)
+15s582 (2019-03-08 21:33:58) [main] INFO             q.dialog - Enabling parent for dialog 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B)
+15s583 (2019-03-08 21:33:58) [main] INFO             q.dialog - Showed dialog 0 (@4098DD77) '@43AEB5E0 - Add or Create Repository' (owner: @7D20D0B) (OK - 2)
+15s595 (2019-03-08 21:33:58) [main] INFO         commit.notes - root changed /home/riddle/tmp5 -> null
+15s601 (2019-03-08 21:33:58) [main] INFO smartgit.repositoryTreeTable - open: [tmp6 /home/riddle/tmp6 git=true]; already open: [tmp5 /home/riddle/tmp5 git=true]
+15s601 (2019-03-08 21:33:58) [main] INFO smartgit.repositoryTreeTable - close [tmp5 /home/riddle/tmp5 git=true]; already open: [tmp5 /home/riddle/tmp5 git=true]
+15s602 (2019-03-08 21:33:58) [ThreadPool-0 (smartgit.aHB$$Lambda$503/2115236799)] INFO      sc.file.monitor - Removing watch for '/home/riddle/tmp5', canonical: '/home/riddle/tmp5'
+15s611 (2019-03-08 21:33:58) [main] INFO  smartgit.project.ui - Starting to scan /home/riddle/tmp6
+15s630 (2019-03-08 21:33:58) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@4098DD77 to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+15s630 (2019-03-08 21:33:58) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+15s764 (2019-03-08 21:33:58) [ThreadPool-4 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>, /<infinity>]
+16s 97 (2019-03-08 21:33:58) [ThreadPool-0 (smartgit.aHB$$Lambda$503/2115236799)] INFO      sc.file.monitor -   ... took 495ms [/home/riddle/tmp5]
+16s 97 (2019-03-08 21:33:58) [ThreadPool-8 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor - Adding watch for '/home/riddle/tmp6', canonical: '/home/riddle/tmp6'
+16s247 (2019-03-08 21:33:58) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (1 directories processed, timestamp=1)
+16s248 (2019-03-08 21:33:58) [main] INFO         commit.notes - root changed null -> /home/riddle/tmp6
+16s680 (2019-03-08 21:33:59) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [repository-closed] took 70ms.
+16s795 (2019-03-08 21:33:59) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (4098 directories processed, timestamp=2)
+17s374 (2019-03-08 21:33:59) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8180 directories processed, timestamp=3)
+17s470 (2019-03-08 21:33:59) [ThreadPool-8 (smartgit.aHB$$Lambda$423/1172654444)] INFO      sc.file.monitor -   ... took 1373ms [/home/riddle/tmp6]
+17s529 (2019-03-08 21:33:59) [ThreadPool-1 (smartgit.aik)] INFO        git.nodecache - Node cache for /home/riddle/tmp6/.git: Actually updating node cache at /home/riddle/tmp6/.git for 4 roots
+17s537 (2019-03-08 21:33:59) [ThreadPool-1 (smartgit.aik)] INFO        git.nodecache - Node cache for /home/riddle/tmp6/.git: Node cache updated with 6 commits for 5 roots at /home/riddle/tmp6/.git (took 9ms)
+17s620 (2019-03-08 21:34:00) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=4)
+17s753 (2019-03-08 21:34:00) [ThreadPool-4 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 1780ms, additional 208ms post-processing
+17s753 (2019-03-08 21:34:00) [ThreadPool-4 (Refresh-0)] INFO  smartgit.project.ui - Root '/home/riddle/tmp6' scanned.
+17s753 (2019-03-08 21:34:00) [ThreadPool-4 (Refresh-0)] INFO  smartgit.project.ui -   /: [[origin(url=https://gitlab.com/00riddle00/grozionamai)]], []
+17s829 (2019-03-08 21:34:00) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp6]
+17s859 (2019-03-08 21:34:00) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+17s861 (2019-03-08 21:34:00) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO               q.exec - Executing #4 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+18s732 (2019-03-08 21:34:01) [main] INFO      sc.notification - Close button clicked INFO [linux.theme-null] Unsupported GTK theme detected.
+19s290 (2019-03-08 21:34:01) [ThreadPool-2 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+19s291 (2019-03-08 21:34:01) [ThreadPool-2 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=3059762556373142303;protocol=https;host=gitlab.com;path=null;username=<set>
+19s314 (2019-03-08 21:34:01) [ThreadPool-8 (stderr-#4 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+19s315 (2019-03-08 21:34:01) [ThreadPool-8 (stderr-#4 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+19s317 (2019-03-08 21:34:01) [ThreadPool-1 (stdout-#4 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 92268d455212d0c1a8f9b2d6f18b09c646a46683	refs/heads/master
+20s311 (2019-03-08 21:34:02) [main] INFO      sc.notification - Link never-again clicked for INFO [hosting-provider-could-be-configured-gitlab-null] (to: git-project) GitLab-integration is not yet configured.
+26s844 (2019-03-08 21:34:09) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@7C4A03A
+26s949 (2019-03-08 21:34:09) [main] INFO    sc.changesPreview - setting file content /kuponai (scrolling: to-first-change)
+28s 52 (2019-03-08 21:34:10) [main] INFO q.swt.shellActivation - Activation remains at Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+28s 79 (2019-03-08 21:34:10) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+28s 80 (2019-03-08 21:34:10) [main] INFO q.swt.shellActivation - Activation remains at null
+29s158 (2019-03-08 21:34:11) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 78ms.
+31s 80 (2019-03-08 21:34:13) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+31s 80 (2019-03-08 21:34:13) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+33s257 (2019-03-08 21:34:15) [main] INFO q.swt.shellActivation - Activation remains at Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+33s292 (2019-03-08 21:34:15) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+33s292 (2019-03-08 21:34:15) [main] INFO q.swt.shellActivation - Activation remains at null
+34s372 (2019-03-08 21:34:16) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 79ms.
+44s886 (2019-03-08 21:34:27) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+44s886 (2019-03-08 21:34:27) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+46s749 (2019-03-08 21:34:29) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/mod_djevents_calendar.php;/modules/mod_djevents_calendar/mod_djevents_calendar.php;/@59282DC6)@3691D4DA
+46s835 (2019-03-08 21:34:29) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/mod_djevents_calendar.php (scrolling: to-first-change)
+47s476 (2019-03-08 21:34:29) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/tmpl/month.php;/modules/mod_djevents_calendar/tmpl/month.php;/@59282DC6)@197CC325
+47s603 (2019-03-08 21:34:30) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/tmpl/month.php (scrolling: to-first-change)
+47s906 (2019-03-08 21:34:30) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/assets/style.css;/modules/mod_djevents_calendar/assets/style.css;/@59282DC6)@6EF61CD0
+47s994 (2019-03-08 21:34:30) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/assets/style.css (scrolling: to-first-change)
+54s733 (2019-03-08 21:34:37) [main] INFO q.swt.shellActivation - Activation remains at Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+54s735 (2019-03-08 21:34:37) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+54s735 (2019-03-08 21:34:37) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+54s743 (2019-03-08 21:34:37) [main] INFO q.swt.shellActivation - Activation remains at null
+55s805 (2019-03-08 21:34:38) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 69ms.
+1m10s122 (2019-03-08 21:34:52) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+1m10s122 (2019-03-08 21:34:52) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m16s136 (2019-03-08 21:34:58) [main] INFO             q.action - Performing 'discard, Discard..., Discard local changes.' menu item from context menu in window org.eclipse.swt.widgets.Shell@7D20D0B:Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}
+1m17s993 (2019-03-08 21:35:00) [main] INFO             q.dialog - Showing dialog 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B)
+1m18s 40 (2019-03-08 21:35:00) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to Shell {Discard}@94AEBA1
+1m18s 64 (2019-03-08 21:35:00) [main] INFO q.swt.shellActivation - Activation remains at Shell {Discard}@94AEBA1
+1m19s519 (2019-03-08 21:35:01) [main] INFO             q.action - Performing 'Discard' button in window @94AEBA1 owner @7D20D0B
+1m19s520 (2019-03-08 21:35:01) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B)
+1m19s523 (2019-03-08 21:35:01) [main] INFO             q.dialog - Disposing dialog 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B)
+1m19s523 (2019-03-08 21:35:01) [main] INFO             q.dialog - Cleaned up dialog 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B)
+1m19s531 (2019-03-08 21:35:01) [main] INFO             q.dialog - Close-handler for dialog 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B)
+1m19s531 (2019-03-08 21:35:01) [main] INFO             q.dialog - Enabling parent for dialog 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B)
+1m19s531 (2019-03-08 21:35:01) [main] INFO             q.dialog - Showed dialog 1 (@94AEBA1) '@F6CDE7E - Discard' (owner: @7D20D0B) (OK - 2)
+1m19s640 (2019-03-08 21:35:02) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@94AEBA1 to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+1m19s640 (2019-03-08 21:35:02) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m19s683 (2019-03-08 21:35:02) [WorkerThread-1] INFO     smartgit.command - Discard [/modules/mod_djevents_calendar/assets/style.css] (revertToHead=true)
+1m19s757 (2019-03-08 21:35:02) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1m19s769 (2019-03-08 21:35:02) [WorkerThread-1] INFO               q.exec - Executing #5 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh checkout -- modules/mod_djevents_calendar/assets/style.css
+1m19s852 (2019-03-08 21:35:02) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /modules/mod_djevents_calendar/assets/style.css<infinity>, /.git/index.lock<infinity>, /.git/index<empty>] for /home/riddle/tmp6
+1m19s855 (2019-03-08 21:35:02) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>, /modules/mod_djevents_calendar/assets/style.css<infinity>]
+1m20s 67 (2019-03-08 21:35:02) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=5)
+1m20s 81 (2019-03-08 21:35:02) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+1m20s173 (2019-03-08 21:35:02) [WorkerThread-1] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 181ms, additional 137ms post-processing
+1m21s109 (2019-03-08 21:35:03) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/tmpl/month.php;/modules/mod_djevents_calendar/tmpl/month.php;/@59282DC6)@197CC325
+1m21s229 (2019-03-08 21:35:03) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/tmpl/month.php (scrolling: to-first-change)
+1m47s642 (2019-03-08 21:35:30) [main] INFO sc.compare.connector - clicked [<<] button
+1m48s363 (2019-03-08 21:35:30) [WorkerThread-1] INFO               q.exec - Executing #6 [/home/riddle/tmp6] /usr/bin/git hash-object --stdin --path modules/mod_djevents_calendar/tmpl/month.php -w
+1m48s381 (2019-03-08 21:35:30) [WorkerThread-1] INFO               q.exec - Executing #7 [/home/riddle/tmp6] /usr/bin/git update-index --cacheinfo 100644 97ee2edde72989ff2333c92e9184574ca4102157 modules/mod_djevents_calendar/tmpl/month.php
+1m48s419 (2019-03-08 21:35:30) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/tmpl/month.php<empty>]
+1m48s664 (2019-03-08 21:35:31) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=7)
+1m48s676 (2019-03-08 21:35:31) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+1m48s697 (2019-03-08 21:35:31) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/tmpl/month.php;/modules/mod_djevents_calendar/tmpl/month.php;/@59282DC6)@296BFDDB
+1m48s717 (2019-03-08 21:35:31) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 212ms, additional 86ms post-processing
+1m48s856 (2019-03-08 21:35:31) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/tmpl/month.php (scrolling: preserve)
+1m50s511 (2019-03-08 21:35:32) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+1m50s638 (2019-03-08 21:35:33) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=9)
+1m50s648 (2019-03-08 21:35:33) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+1m50s696 (2019-03-08 21:35:33) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 92ms, additional 93ms post-processing
+1m53s 96 (2019-03-08 21:35:35) [main] INFO sc.compare.connector - clicked [>>] button
+1m53s102 (2019-03-08 21:35:35) [main] INFO             q.dialog - Showing dialog 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B)
+1m53s164 (2019-03-08 21:35:35) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to Shell {Revert Working Tree File}@432448
+1m53s191 (2019-03-08 21:35:35) [main] INFO q.swt.shellActivation - Activation remains at Shell {Revert Working Tree File}@432448
+1m54s179 (2019-03-08 21:35:36) [main] INFO             q.action - Performing 'Revert' button in window @432448 owner @7D20D0B
+1m54s180 (2019-03-08 21:35:36) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B)
+1m54s183 (2019-03-08 21:35:36) [main] INFO             q.dialog - Disposing dialog 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B)
+1m54s183 (2019-03-08 21:35:36) [main] INFO             q.dialog - Cleaned up dialog 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B)
+1m54s189 (2019-03-08 21:35:36) [main] INFO             q.dialog - Close-handler for dialog 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B)
+1m54s189 (2019-03-08 21:35:36) [main] INFO             q.dialog - Enabling parent for dialog 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B)
+1m54s189 (2019-03-08 21:35:36) [main] INFO             q.dialog - Showed dialog 2 (@432448) '@4452E13C - Revert Working Tree File' (owner: @7D20D0B) (OK - 2)
+1m54s197 (2019-03-08 21:35:36) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@432448 to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+1m54s197 (2019-03-08 21:35:36) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m54s701 (2019-03-08 21:35:37) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/tmpl/month.php<empty>]
+1m54s831 (2019-03-08 21:35:37) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=11)
+1m54s841 (2019-03-08 21:35:37) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+1m54s862 (2019-03-08 21:35:37) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/tmpl/month.php;/modules/mod_djevents_calendar/tmpl/month.php;/@59282DC6)@1CCA2E9D
+1m54s888 (2019-03-08 21:35:37) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 104ms, additional 83ms post-processing
+1m55s  3 (2019-03-08 21:35:37) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/tmpl/month.php (scrolling: preserve)
+1m56s726 (2019-03-08 21:35:39) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/tmpl/month.php<empty>]
+1m56s853 (2019-03-08 21:35:39) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=13)
+1m56s865 (2019-03-08 21:35:39) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+1m56s908 (2019-03-08 21:35:39) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/tmpl/month.php;/modules/mod_djevents_calendar/tmpl/month.php;/@59282DC6)@3340FF7C
+1m56s930 (2019-03-08 21:35:39) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 90ms, additional 114ms post-processing
+1m57s  8 (2019-03-08 21:35:39) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/tmpl/month.php (scrolling: preserve)
+2m15s711 (2019-03-08 21:35:58) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/mod_djevents_calendar.php;/modules/mod_djevents_calendar/mod_djevents_calendar.php;/@59282DC6)@3AE87E38
+2m15s788 (2019-03-08 21:35:58) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/mod_djevents_calendar.php (scrolling: to-first-change)
+2m19s435 (2019-03-08 21:36:01) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/mod_djevents_calendar.xml;/modules/mod_djevents_calendar/mod_djevents_calendar.xml;/@59282DC6)@44E4CF8A
+2m19s487 (2019-03-08 21:36:01) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/mod_djevents_calendar.xml (scrolling: to-first-change)
+2m22s737 (2019-03-08 21:36:05) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/tmpl/day_events.php;/modules/mod_djevents_calendar/tmpl/day_events.php;/@59282DC6)@50930BFF
+2m22s791 (2019-03-08 21:36:05) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/tmpl/day_events.php (scrolling: to-first-change)
+2m30s685 (2019-03-08 21:36:13) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/helper.php;/modules/mod_djevents_calendar/helper.php;/@59282DC6)@42FA5CB
+2m30s773 (2019-03-08 21:36:13) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/helper.php (scrolling: to-first-change)
+2m43s608 (2019-03-08 21:36:26) [main] INFO q.swt.shellActivation - Activation remains at Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+2m43s609 (2019-03-08 21:36:26) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+2m43s609 (2019-03-08 21:36:26) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+2m43s637 (2019-03-08 21:36:26) [main] INFO q.swt.shellActivation - Activation remains at null
+2m44s685 (2019-03-08 21:36:27) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 75ms.
+2m48s305 (2019-03-08 21:36:30) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>, /modules/mod_djevents_calendar/helper.php<infinity>, /modules/mod_djevents_calendar/tmpl/day_events.php<infinity>, /modules/mod_djevents_calendar/tmpl/month.php<infinity>, /modules/mod_djevents_calendar/mod_djevents_calendar.xml<infinity>, /modules/mod_djevents_calendar/mod_djevents_calendar.php<infinity>]
+2m48s408 (2019-03-08 21:36:30) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=15)
+2m48s416 (2019-03-08 21:36:30) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+2m48s487 (2019-03-08 21:36:30) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 73ms, additional 109ms post-processing
+2m55s118 (2019-03-08 21:36:37) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+2m55s208 (2019-03-08 21:36:37) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=17)
+2m55s218 (2019-03-08 21:36:37) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+2m55s271 (2019-03-08 21:36:37) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 62ms, additional 90ms post-processing
+3m21s661 (2019-03-08 21:37:04) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>, /modules/mod_djevents_calendar/tmpl/month.php<infinity>]
+3m21s757 (2019-03-08 21:37:04) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=18)
+3m21s764 (2019-03-08 21:37:04) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+3m21s805 (2019-03-08 21:37:04) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 75ms, additional 69ms post-processing
+3m28s574 (2019-03-08 21:37:11) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/language<infinity>, /modules/mod_djevents_calendar/assets/index.html<infinity>, /modules/mod_djevents_calendar/language/index.html<infinity>, /modules/mod_djevents_calendar/language/en-GB/en-GB.mod_djevents_calendar.sys.ini<infinity>, /modules/mod_djevents_calendar/helper.php<infinity>, /modules/mod_djevents_calendar/tmpl/month.php<infinity>, /modules/mod_djevents_calendar/assets<infinity>, /modules/mod_djevents_calendar/assets/month.js<infinity>, /modules/mod_djevents_calendar/assets/scroll_uncompressed.js<infinity>, /modules/mod_djevents_calendar/tmpl/scroll.php<infinity>, /modules/mod_djevents_calendar/tmpl<infinity>, /modules/mod_djevents_calendar/tmpl/index.html<infinity>, /modules/mod_djevents_calendar/assets/style.css<infinity>, /modules/mod_djevents_calendar/assets/scroll.js<infinity>, /modules/mod_djevents_calendar/tmpl/day_events.php<infinity>, /modules/mod_djevents_calendar/language/en-GB/index.html<infinity>, /modules/mod_djevents_calendar/mod_djevents_calendar.xml<infinity>, /modules/mod_djevents_calendar/language/en-GB/en-GB.mod_djevents_calendar.ini<infinity>, /modules/mod_djevents_calendar/assets/month_uncompressed.js<infinity>, /modules/mod_djevents_calendar/mod_djevents_calendar.php<infinity>, /modules/mod_djevents_calendar/language/en-GB<infinity>, /modules/mod_djevents_calendar/index.html<infinity>]
+3m30s747 (2019-03-08 21:37:13) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=19)
+3m30s762 (2019-03-08 21:37:13) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+3m30s816 (2019-03-08 21:37:13) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 2131ms, additional 110ms post-processing
+3m33s 87 (2019-03-08 21:37:15) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/language<infinity>, /modules/mod_djevents_calendar/tmpl<infinity>, /<empty>, /modules/mod_djevents_calendar/helper.php<empty>, /modules/mod_djevents_calendar/mod_djevents_calendar.xml<empty>, /modules/mod_djevents_calendar/mod_djevents_calendar.php<empty>, /modules/mod_djevents_calendar/assets<infinity>, /modules/mod_djevents_calendar/index.html<empty>]
+3m33s204 (2019-03-08 21:37:15) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=20)
+3m33s212 (2019-03-08 21:37:15) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+3m33s250 (2019-03-08 21:37:15) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 94ms, additional 69ms post-processing
+3m36s399 (2019-03-08 21:37:18) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+3m36s515 (2019-03-08 21:37:18) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=21)
+3m36s526 (2019-03-08 21:37:18) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+3m36s569 (2019-03-08 21:37:19) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 82ms, additional 88ms post-processing
+3m52s536 (2019-03-08 21:37:34) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+3m52s639 (2019-03-08 21:37:35) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=22)
+3m52s646 (2019-03-08 21:37:35) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+3m52s657 (2019-03-08 21:37:35) [ThreadPool-0 (Project State (smartgit.btV))] INFO        git.nodecache - Node cache for /home/riddle/tmp6/.git: Actually updating node cache at /home/riddle/tmp6/.git for 4 roots
+3m52s659 (2019-03-08 21:37:35) [ThreadPool-0 (Project State (smartgit.btV))] INFO        git.nodecache - Node cache for /home/riddle/tmp6/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/tmp6/.git (took 2ms)
+3m52s691 (2019-03-08 21:37:35) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 68ms, additional 87ms post-processing
+3m54s743 (2019-03-08 21:37:37) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+3m54s820 (2019-03-08 21:37:37) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=23)
+3m54s827 (2019-03-08 21:37:37) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+3m54s869 (2019-03-08 21:37:37) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 55ms, additional 71ms post-processing
+4m55s950 (2019-03-08 21:38:38) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+4m55s950 (2019-03-08 21:38:38) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+4m58s111 (2019-03-08 21:38:40) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@59C00010
+4m58s162 (2019-03-08 21:38:40) [main] INFO    sc.changesPreview - setting file content /kuponai (scrolling: to-first-change)
+4m59s906 (2019-03-08 21:38:42) [main] INFO             q.action - Performing 'remove, Remove..., Remove selected files or directories from repository.' menu item from context menu in window org.eclipse.swt.widgets.Shell@7D20D0B:Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}
+4m59s914 (2019-03-08 21:38:42) [main] INFO             q.dialog - Showing dialog 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B)
+4m59s979 (2019-03-08 21:38:42) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to Shell {Remove}@39A2E77D
+5m 0s  7 (2019-03-08 21:38:42) [main] INFO q.swt.shellActivation - Activation remains at Shell {Remove}@39A2E77D
+5m 2s588 (2019-03-08 21:38:45) [main] INFO q.swt.shellActivation - Activation remains at Shell {Remove}@39A2E77D
+5m 2s594 (2019-03-08 21:38:45) [main] INFO q.swt.shellActivation - Activation change from Shell {Remove}@39A2E77D to null
+5m 2s597 (2019-03-08 21:38:45) [main] INFO q.swt.shellActivation - Activation remains at null
+5m 3s686 (2019-03-08 21:38:46) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 91ms.
+5m12s473 (2019-03-08 21:38:54) [main] INFO q.swt.shellActivation - Activation change from null to Shell {Remove}@39A2E77D
+5m13s242 (2019-03-08 21:38:55) [main] INFO             q.action - Performing 'Remove' button in window @39A2E77D owner @7D20D0B
+5m13s242 (2019-03-08 21:38:55) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B)
+5m13s244 (2019-03-08 21:38:55) [main] INFO             q.dialog - Disposing dialog 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B)
+5m13s244 (2019-03-08 21:38:55) [main] INFO             q.dialog - Cleaned up dialog 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B)
+5m13s251 (2019-03-08 21:38:55) [main] INFO             q.dialog - Close-handler for dialog 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B)
+5m13s251 (2019-03-08 21:38:55) [main] INFO             q.dialog - Enabling parent for dialog 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B)
+5m13s252 (2019-03-08 21:38:55) [main] INFO             q.dialog - Showed dialog 3 (@39A2E77D) '@1AEE6983 - Remove' (owner: @7D20D0B) (OK - 2)
+5m13s256 (2019-03-08 21:38:55) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@39A2E77D to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+5m13s256 (2019-03-08 21:38:55) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+5m13s290 (2019-03-08 21:38:55) [WorkerThread-1] INFO     smartgit.command - Remove [/kuponai] (keepLocalFiles=true)
+5m13s325 (2019-03-08 21:38:55) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+5m13s326 (2019-03-08 21:38:55) [WorkerThread-1] INFO               q.exec - Executing #8 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh rm --cached -- kuponai
+5m13s371 (2019-03-08 21:38:55) [ThreadPool-1 (stdout-#8 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh rm --cached -- kuponai)] INFO smartgit.command.logging - stdout: rm 'kuponai'
+5m13s372 (2019-03-08 21:38:55) [WorkerThread-1] INFO      sc.file.monitor - Waiting for active collectNow to complete, pending trigger file count is 1
+5m13s404 (2019-03-08 21:38:55) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+5m13s502 (2019-03-08 21:38:55) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>] for /home/riddle/tmp6
+5m13s503 (2019-03-08 21:38:55) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+5m13s513 (2019-03-08 21:38:55) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=24)
+5m13s523 (2019-03-08 21:38:55) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+5m13s541 (2019-03-08 21:38:55) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@1C06F19C
+5m13s561 (2019-03-08 21:38:56) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 75ms, additional 82ms post-processing
+5m13s693 (2019-03-08 21:38:56) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=26)
+5m13s702 (2019-03-08 21:38:56) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+5m13s735 (2019-03-08 21:38:56) [WorkerThread-1] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 110ms, additional 64ms post-processing
+5m13s736 (2019-03-08 21:38:56) [main] INFO q.swt.shellActivation - Activation remains at Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+5m13s738 (2019-03-08 21:38:56) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+5m13s776 (2019-03-08 21:38:56) [main] INFO q.swt.shellActivation - Activation remains at null
+5m14s811 (2019-03-08 21:38:57) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 72ms.
+5m23s330 (2019-03-08 21:39:05) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+5m23s424 (2019-03-08 21:39:05) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=28)
+5m23s429 (2019-03-08 21:39:05) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+5m23s441 (2019-03-08 21:39:05) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@16745ABD
+5m23s455 (2019-03-08 21:39:05) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 74ms, additional 51ms post-processing
+5m23s503 (2019-03-08 21:39:05) [main] INFO    sc.changesPreview - setting file content /kuponai (scrolling: preserve)
+5m27s834 (2019-03-08 21:39:10) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp6]
+5m27s853 (2019-03-08 21:39:10) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+5m27s854 (2019-03-08 21:39:10) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO               q.exec - Executing #9 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5m29s487 (2019-03-08 21:39:11) [ThreadPool-4 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+5m29s488 (2019-03-08 21:39:11) [ThreadPool-4 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=7328321455259433079;protocol=https;host=gitlab.com;path=null;username=<set>
+5m29s511 (2019-03-08 21:39:11) [ThreadPool-8 (stderr-#9 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+5m29s511 (2019-03-08 21:39:11) [ThreadPool-8 (stderr-#9 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+5m29s514 (2019-03-08 21:39:11) [ThreadPool-1 (stdout-#9 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 8ba716b6f295796a37c099b23c8edb3e4d5b71e9	refs/heads/master
+5m33s946 (2019-03-08 21:39:16) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/kuponai<infinity>]
+5m34s 45 (2019-03-08 21:39:16) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=30)
+5m34s 50 (2019-03-08 21:39:16) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+5m34s 62 (2019-03-08 21:39:16) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@59ABA3C3
+5m34s 80 (2019-03-08 21:39:16) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 80ms, additional 54ms post-processing
+5m34s580 (2019-03-08 21:39:16) [main] INFO    sc.changesPreview - setting file content /kuponai (scrolling: preserve)
+5m36s952 (2019-03-08 21:39:19) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/kuponai<infinity>, /<empty>]
+5m37s 77 (2019-03-08 21:39:19) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=32)
+5m37s 84 (2019-03-08 21:39:19) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+5m37s 95 (2019-03-08 21:39:19) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@542BEECB
+5m37s109 (2019-03-08 21:39:19) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 94ms, additional 62ms post-processing
+5m37s154 (2019-03-08 21:39:19) [main] INFO    sc.changesPreview - setting file content /kuponai (scrolling: preserve)
+5m44s692 (2019-03-08 21:39:27) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+5m44s693 (2019-03-08 21:39:27) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+5m47s707 (2019-03-08 21:39:30) [main] INFO q.swt.shellActivation - Activation remains at Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+5m47s709 (2019-03-08 21:39:30) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+5m47s709 (2019-03-08 21:39:30) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+5m47s742 (2019-03-08 21:39:30) [main] INFO q.swt.shellActivation - Activation remains at null
+5m48s788 (2019-03-08 21:39:31) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 78ms.
+5m59s992 (2019-03-08 21:39:42) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+5m59s992 (2019-03-08 21:39:42) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+6m 0s494 (2019-03-08 21:39:42) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+6m 0s494 (2019-03-08 21:39:42) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+6m 1s563 (2019-03-08 21:39:44) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 68ms.
+10m37s840 (2019-03-08 21:44:20) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp6]
+10m37s862 (2019-03-08 21:44:20) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+10m37s863 (2019-03-08 21:44:20) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO               q.exec - Executing #10 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+10m39s200 (2019-03-08 21:44:21) [ThreadPool-4 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+10m39s200 (2019-03-08 21:44:21) [ThreadPool-4 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=2505457645316258494;protocol=https;host=gitlab.com;path=null;username=<set>
+10m39s213 (2019-03-08 21:44:21) [ThreadPool-8 (stderr-#10 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+10m39s213 (2019-03-08 21:44:21) [ThreadPool-8 (stderr-#10 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+10m39s215 (2019-03-08 21:44:21) [ThreadPool-0 (stdout-#10 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 8ba716b6f295796a37c099b23c8edb3e4d5b71e9	refs/heads/master
+11m 0s510 (2019-03-08 21:44:42) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+11m 0s511 (2019-03-08 21:44:42) [WorkerThread-1] INFO               q.exec - Executing #11 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+11m 2s 30 (2019-03-08 21:44:44) [ThreadPool-8 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+11m 2s 31 (2019-03-08 21:44:44) [ThreadPool-8 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=4348710514036374551;protocol=https;host=gitlab.com;path=null;username=<set>
+11m 2s 54 (2019-03-08 21:44:44) [ThreadPool-0 (stderr-#11 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submod)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+11m 2s 77 (2019-03-08 21:44:44) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/tmp6
+11m 2s 78 (2019-03-08 21:44:44) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+11m 2s173 (2019-03-08 21:44:44) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8827 directories processed, timestamp=34)
+11m 2s178 (2019-03-08 21:44:44) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+11m 2s192 (2019-03-08 21:44:44) [WorkerThread-1] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36383 entries) in 62ms, additional 52ms post-processing
+11m12s 91 (2019-03-08 21:44:54) [File monitor listener notifier] INFO      sc.file.monitor - Skipping subtree /home/riddle/tmp6/.idea from file monitoring.
+11m15s103 (2019-03-08 21:44:57) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/.idea<infinity>]
+11m15s312 (2019-03-08 21:44:57) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=36)
+11m15s324 (2019-03-08 21:44:57) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+11m15s341 (2019-03-08 21:44:57) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 170ms, additional 68ms post-processing
+13m 0s201 (2019-03-08 21:46:42) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+13m 0s201 (2019-03-08 21:46:42) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+13m 0s343 (2019-03-08 21:46:42) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/helper.php___jb_tmp___<infinity>, /modules/mod_djevents_calendar/helper.php<infinity>, /modules/mod_djevents_calendar/helper.php___jb_old___<infinity>]
+13m 0s627 (2019-03-08 21:46:43) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=38)
+13m 0s654 (2019-03-08 21:46:43) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+13m 0s778 (2019-03-08 21:46:43) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 222ms, additional 209ms post-processing
+13m 1s403 (2019-03-08 21:46:43) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/helper.php;/modules/mod_djevents_calendar/helper.php;/@59282DC6)@528A16FB
+13m 1s481 (2019-03-08 21:46:43) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/helper.php (scrolling: to-first-change)
+13m 4s574 (2019-03-08 21:46:47) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+13m 5s754 (2019-03-08 21:46:48) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 179ms.
+15m47s842 (2019-03-08 21:49:30) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp6]
+15m47s850 (2019-03-08 21:49:30) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+15m47s851 (2019-03-08 21:49:30) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO               q.exec - Executing #12 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+15m49s613 (2019-03-08 21:49:32) [ThreadPool-4 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+15m49s614 (2019-03-08 21:49:32) [ThreadPool-4 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=8058743087011585495;protocol=https;host=gitlab.com;path=null;username=<set>
+15m49s635 (2019-03-08 21:49:32) [ThreadPool-8 (stderr-#12 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+15m49s635 (2019-03-08 21:49:32) [ThreadPool-8 (stderr-#12 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+15m49s638 (2019-03-08 21:49:32) [ThreadPool-0 (stdout-#12 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 8ba716b6f295796a37c099b23c8edb3e4d5b71e9	refs/heads/master
+18m 4s166 (2019-03-08 21:51:46) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 206223ms.
+20m57s846 (2019-03-08 21:54:40) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp6]
+20m57s862 (2019-03-08 21:54:40) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+20m57s863 (2019-03-08 21:54:40) [ThreadPool-0 (smartgit.bBv$$Lambda$512/632361217)] INFO               q.exec - Executing #13 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+20m59s375 (2019-03-08 21:54:41) [ThreadPool-4 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+20m59s375 (2019-03-08 21:54:41) [ThreadPool-4 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=416497465931689581;protocol=https;host=gitlab.com;path=null;username=<set>
+20m59s388 (2019-03-08 21:54:41) [ThreadPool-8 (stderr-#13 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+20m59s388 (2019-03-08 21:54:41) [ThreadPool-8 (stderr-#13 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+20m59s390 (2019-03-08 21:54:41) [ThreadPool-1 (stdout-#13 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 8ba716b6f295796a37c099b23c8edb3e4d5b71e9	refs/heads/master
+21m 5s461 (2019-03-08 21:54:47) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/helper.php___jb_tmp___<infinity>, /modules/mod_djevents_calendar/helper.php<infinity>, /modules/mod_djevents_calendar/helper.php___jb_old___<infinity>]
+21m 5s550 (2019-03-08 21:54:48) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=40)
+21m 5s554 (2019-03-08 21:54:48) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+21m 5s566 (2019-03-08 21:54:48) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/helper.php;/modules/mod_djevents_calendar/helper.php;/@59282DC6)@5470753A
+21m 5s568 (2019-03-08 21:54:48) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 65ms, additional 41ms post-processing
+21m 5s620 (2019-03-08 21:54:48) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/helper.php (scrolling: preserve)
+21m57s730 (2019-03-08 21:55:40) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/modules/mod_djevents_calendar/helper.php___jb_tmp___<infinity>, /modules/mod_djevents_calendar/helper.php<infinity>, /modules/mod_djevents_calendar/helper.php___jb_old___<infinity>]
+21m57s810 (2019-03-08 21:55:40) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=42)
+21m57s815 (2019-03-08 21:55:40) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+21m57s827 (2019-03-08 21:55:40) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/helper.php;/modules/mod_djevents_calendar/helper.php;/@59282DC6)@458B4487
+21m57s828 (2019-03-08 21:55:40) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 60ms, additional 38ms post-processing
+21m57s876 (2019-03-08 21:55:40) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/helper.php (scrolling: preserve)
+22m 4s 76 (2019-03-08 21:55:46) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+22m 4s 76 (2019-03-08 21:55:46) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+22m10s726 (2019-03-08 21:55:53) [main] INFO q.swt.shellActivation - Activation change from Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B to null
+22m11s803 (2019-03-08 21:55:54) [Timer-0] INFO          smartgit.gc - Invocation of garbage collector due to [deactivation] took 76ms.
+22m16s310 (2019-03-08 21:55:58) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+22m16s401 (2019-03-08 21:55:58) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=44)
+22m16s405 (2019-03-08 21:55:58) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+22m16s418 (2019-03-08 21:55:58) [main] INFO    sc.comparePreview - file: (/modules/mod_djevents_calendar/helper.php;/modules/mod_djevents_calendar/helper.php;/@59282DC6)@6C2E7591
+22m16s421 (2019-03-08 21:55:58) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 67ms, additional 44ms post-processing
+22m16s577 (2019-03-08 21:55:59) [main] INFO    sc.changesPreview - setting file content /modules/mod_djevents_calendar/helper.php (scrolling: preserve)
+22m50s881 (2019-03-08 21:56:33) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+22m50s978 (2019-03-08 21:56:33) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=46)
+22m50s983 (2019-03-08 21:56:33) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+22m50s986 (2019-03-08 21:56:33) [ThreadPool-0 (Project State (smartgit.btV))] INFO        git.nodecache - Node cache for /home/riddle/tmp6/.git: Actually updating node cache at /home/riddle/tmp6/.git for 4 roots
+22m50s987 (2019-03-08 21:56:33) [ThreadPool-0 (Project State (smartgit.btV))] INFO        git.nodecache - Node cache for /home/riddle/tmp6/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/tmp6/.git (took 1ms)
+22m50s995 (2019-03-08 21:56:33) [main] INFO    sc.comparePreview - file: (/kuponai;/kuponai;/@59282DC6)@7167D81B
+22m50s998 (2019-03-08 21:56:33) [ThreadPool-1 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 77ms, additional 40ms post-processing
+22m51s 36 (2019-03-08 21:56:33) [main] INFO    sc.changesPreview - setting file content /kuponai (scrolling: to-first-change)
+22m53s 80 (2019-03-08 21:56:35) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<empty>]
+22m53s168 (2019-03-08 21:56:35) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=48)
+22m53s172 (2019-03-08 21:56:35) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> /home/riddle/tmp6
+22m53s185 (2019-03-08 21:56:35) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 66ms, additional 39ms post-processing
+26m 7s852 (2019-03-08 21:59:50) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp6]
+26m 7s870 (2019-03-08 21:59:50) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+26m 7s871 (2019-03-08 21:59:50) [ThreadPool-1 (smartgit.bBv$$Lambda$512/632361217)] INFO               q.exec - Executing #14 [/home/riddle/tmp6] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+26m 9s259 (2019-03-08 21:59:51) [ThreadPool-4 (smartgit.asM)] INFO            sc.server - Received command 'get-credentials-helper'
+26m 9s259 (2019-03-08 21:59:51) [ThreadPool-4 (smartgit.asM)] INFO            sc.server -  credentials: command=store; id=4521997708474051900;protocol=https;host=gitlab.com;path=null;username=<set>
+26m 9s283 (2019-03-08 21:59:51) [ThreadPool-8 (stderr-#14 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+26m 9s283 (2019-03-08 21:59:51) [ThreadPool-8 (stderr-#14 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/grozionamai.git/
+26m 9s285 (2019-03-08 21:59:51) [ThreadPool-0 (stdout-#14 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: e44232018a9bf07776c6deb77d26d870a48cb134	refs/heads/master
+27m 4s168 (2019-03-08 22:00:46) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 252388ms.
+29m29s524 (2019-03-08 22:03:11) [File monitor listener notifier] INFO      sc.file.monitor - Rewatching /home/riddle/tmp6
+29m31s435 (2019-03-08 22:03:13) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<infinity>]
+29m31s467 (2019-03-08 22:03:13) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=50)
+29m31s471 (2019-03-08 22:03:13) [main] INFO         commit.notes - root changed /home/riddle/tmp6 -> null
+29m31s484 (2019-03-08 22:03:13) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 12ms, additional 37ms post-processing
+29m32s963 (2019-03-08 22:03:15) [File monitor listener notifier] INFO      sc.file.monitor - Rewatching /home/riddle/tmp6
+29m37s314 (2019-03-08 22:03:19) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<infinity>]
+29m37s343 (2019-03-08 22:03:19) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=52)
+29m37s356 (2019-03-08 22:03:19) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 10ms, additional 32ms post-processing
+29m56s539 (2019-03-08 22:03:38) [File monitor listener notifier] WARNING      sc.file.monitor - FileMonitor overflow; everything is considered as dirty.
+30m12s271 (2019-03-08 22:03:54) [File monitor listener notifier] WARNING      sc.file.monitor - FileMonitor overflow; everything is considered as dirty.
+30m12s472 (2019-03-08 22:03:54) [File monitor listener notifier] WARNING      sc.file.monitor - FileMonitor overflow; everything is considered as dirty.
+30m12s572 (2019-03-08 22:03:55) [File monitor listener notifier] WARNING      sc.file.monitor - FileMonitor overflow; everything is considered as dirty.
+30m12s673 (2019-03-08 22:03:55) [File monitor listener notifier] WARNING      sc.file.monitor - FileMonitor overflow; everything is considered as dirty.
+30m13s181 (2019-03-08 22:03:55) [File monitor listener notifier] WARNING      sc.file.monitor - FileMonitor overflow; everything is considered as dirty.
+30m14s816 (2019-03-08 22:03:57) [main] INFO q.swt.shellActivation - Activation change from null to Shell {tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7)}@7D20D0B
+30m14s816 (2019-03-08 22:03:57) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+30m15s228 (2019-03-08 22:03:57) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<infinity>]
+30m15s262 (2019-03-08 22:03:57) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=54)
+30m15s298 (2019-03-08 22:03:57) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 13ms, additional 57ms post-processing
+30m15s302 (2019-03-08 22:03:57) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<infinity>]
+30m15s334 (2019-03-08 22:03:57) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=56)
+30m15s360 (2019-03-08 22:03:57) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 10ms, additional 48ms post-processing
+30m15s362 (2019-03-08 22:03:57) [ThreadPool-0 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp6 [/<infinity>]
+30m15s400 (2019-03-08 22:03:57) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp6' synchronized with UI (8828 directories processed, timestamp=58)
+30m15s402 (2019-03-08 22:03:57) [main] INFO              q.frame - closed smartgit.brq@557A1E2D:tmp6 - [~/tmp6] - SmartGit 18.2.6 (evaluation until Apr 7) (smartgit.brq@7D20D0B) (index=0)
+30m15s403 (2019-03-08 22:03:57) [main] INFO smartgit.repositoryTreeTable - close [tmp6 /home/riddle/tmp6 git=true]; already open: [tmp6 /home/riddle/tmp6 git=true]
+30m15s403 (2019-03-08 22:03:57) [ThreadPool-4 (smartgit.aHB$$Lambda$503/2115236799)] INFO      sc.file.monitor - Removing watch for '/home/riddle/tmp6', canonical: '/home/riddle/tmp6'
+30m15s420 (2019-03-08 22:03:57) [main] INFO smartgit.refresh.thread - Disposing task: /home/riddle/tmp6 (58)
+30m15s434 (2019-03-08 22:03:57) [main] INFO          sc.password - Writing 1 phrases.
+30m15s474 (2019-03-08 22:03:57) [main] INFO          sc.password - Writing 1 phrases.
+30m15s475 (2019-03-08 22:03:57) [main] INFO             shutdown - Starting 9 shutdown hook threads
+30m15s475 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook SmartGit app dispose
+30m15s475 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Background fetch
+30m15s475 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Bug file /home/riddle/.config/smartgit/18.2/~current-log.1552073624869.tmp
+30m15s478 (2019-03-08 22:03:57) [SmartGit app dispose] INFO             shutdown - Running hook SmartGit app dispose
+30m15s483 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/18.2/port.prelock
+30m15s483 (2019-03-08 22:03:57) [Bug file /home/riddle/.config/smartgit/18.2/~current-log.1552073624869.tmp] INFO             shutdown - Running hook Bug file /home/riddle/.config/smartgit/18.2/~current-log.1552073624869.tmp
+30m15s483 (2019-03-08 22:03:57) [Background fetch] INFO             shutdown - Running hook Background fetch
+30m15s483 (2019-03-08 22:03:57) [Background fetch] INFO             shutdown - Ran hook Background fetch
+30m15s483 (2019-03-08 22:03:57) [Bug file /home/riddle/.config/smartgit/18.2/~current-log.1552073624869.tmp] INFO             shutdown - Ran hook Bug file /home/riddle/.config/smartgit/18.2/~current-log.1552073624869.tmp
+30m15s490 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Background scan
+30m15s490 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.prelock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/18.2/port.prelock
+30m15s490 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.prelock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/18.2/port.prelock
+30m15s490 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/18.2/port.lock
+30m15s490 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.prelock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/18.2/port.prelock
+30m15s490 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.prelock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/18.2/port.prelock
+30m15s490 (2019-03-08 22:03:57) [Background scan] INFO             shutdown - Running hook Background scan
+30m15s490 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Temp dir /tmp/smartgit-9372318354695205447tmp
+30m15s490 (2019-03-08 22:03:57) [Background scan] INFO             shutdown - Ran hook Background scan
+30m15s491 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.lock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/18.2/port.lock
+30m15s496 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.lock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/18.2/port.lock
+30m15s497 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/18.2/_lock_
+30m15s497 (2019-03-08 22:03:57) [Temp dir /tmp/smartgit-9372318354695205447tmp] INFO             shutdown - Running hook Temp dir /tmp/smartgit-9372318354695205447tmp
+30m15s497 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.lock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/18.2/port.lock
+30m15s497 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.lock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/18.2/port.lock
+30m15s497 (2019-03-08 22:03:57) [Temp dir /tmp/smartgit-9372318354695205447tmp] INFO             shutdown - Ran hook Temp dir /tmp/smartgit-9372318354695205447tmp
+30m15s497 (2019-03-08 22:03:57) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/18.2/port.postlock
+30m15s497 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/_lock_] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/18.2/_lock_
+30m15s497 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/_lock_] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/18.2/_lock_
+30m15s497 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/_lock_] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/18.2/_lock_
+30m15s497 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/_lock_] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/18.2/_lock_
+30m15s500 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.postlock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/18.2/port.postlock
+30m15s500 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.postlock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/18.2/port.postlock
+30m15s500 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.postlock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/18.2/port.postlock
+30m15s500 (2019-03-08 22:03:57) [Lock file /home/riddle/.config/smartgit/18.2/port.postlock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/18.2/port.postlock
+30m15s723 (2019-03-08 22:03:58) [ThreadPool-4 (smartgit.aHB$$Lambda$503/2115236799)] INFO      sc.file.monitor -   ... took 320ms [/home/riddle/tmp6]
+30m15s723 (2019-03-08 22:03:58) [SmartGit app dispose] INFO             shutdown - Ran hook SmartGit app dispose
+30m15s723 (2019-03-08 22:03:58) [main] INFO             shutdown - done.
+30m15s725 (2019-03-08 22:03:58) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@7D20D0B to null
+30m15s725 (2019-03-08 22:03:58) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+30m15s725 (2019-03-08 22:03:58) [main] INFO                q.swt - runnable ignored - timer
+30m15s726 (2019-03-08 22:03:58) [ThreadPool-0 (Refresh-0)] INFO smartgit.local.statistics - Refresh finished for /home/riddle/tmp6 (36384 entries) in 10ms, additional 354ms post-processing
+30m15s726 (2019-03-08 22:03:58) [ThreadPool-1 (Project State (smartgit.btV))] WARNING                q.swt - runnable ignored - thread
+30m15s726 (2019-03-08 22:03:58) [main] INFO                q.swt - runnable ignored - timer
+30m15s726 (2019-03-08 22:03:58) [ThreadPool-1 (Project State (smartgit.btV))] WARNING                q.swt - runnable ignored - later
+30m15s726 (2019-03-08 22:03:58) [main] INFO                q.swt - runnable ignored - timer
+30m15s726 (2019-03-08 22:03:58) [ThreadPool-1 (Project State (smartgit.btV))] WARNING                q.swt - runnable ignored - thread

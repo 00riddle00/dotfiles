@@ -69,6 +69,7 @@ cmd/.oh-my-zsh/*
 
 cmd/.tmux/*
 !cmd/.tmux/plugins/
+!cmd/.tmux/resurrect/
 
 cmd/.vim/*
 !cmd/.vim/after/

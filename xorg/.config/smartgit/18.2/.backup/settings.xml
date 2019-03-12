@@ -61,7 +61,7 @@
 	<obj key="logSettings" type="@GitLogSettings">
 		<prop key="includeTrackedBranches" type="boolean" value="true"/>
 		<prop key="groupCommitsByBranch" type="boolean" value="true"/>
-		<prop key="loadGravatars" type="boolean" value="false"/>
+		<prop key="loadGravatars" type="boolean" value="true"/>
 		<prop key="allowCommandsOnSpecialCommits" type="boolean" value="false"/>
 		<prop key="enableHostingProvider" type="boolean" value="true"/>
 		<prop key="allowMultipleWindowsForSameLocation" type="boolean" value="false"/>
@@ -97,7 +97,8 @@
 	<obj key="git" type="@GitSettings">
 		<prop key="gitExe" type="String" value="/usr/bin/git"/>
 		<prop key="gitExe.maxCount" type="int" value="3"/>
-		<prop key="gitExe.count" type="int" value="0"/>
+		<prop key="gitExe.count" type="int" value="1"/>
+		<prop key="gitExe.0" type="String" value="/usr/bin/git"/>
 		<prop key="useSystemGitFlow" type="boolean" value="false"/>
 	</obj>
 	<obj key="hg" type="@HgSettings">
@@ -335,7 +336,7 @@
 					<prop key="language" type="String" value="Wiki"/>
 				</obj>
 				<obj type="@SyntaxHighlightingSettingsEntry">
-					<prop key="pattern" type="String" value="*.mxml, *.xml"/>
+					<prop key="pattern" type="String" value="*.mxml, *.storyboard, *.xib, *.xml"/>
 					<prop key="language" type="String" value="XML"/>
 				</obj>
 				<obj type="@SyntaxHighlightingSettingsEntry">
@@ -358,8 +359,8 @@
 		</obj>
 	</obj>
 	<obj key="listx" type="@L">
-		<prop key="eUT" type="long" value="1548503054499"/>
-		<prop key="nRT" type="long" value="1547163854499"/>
+		<prop key="eUT" type="long" value="1554662144399"/>
+		<prop key="nRT" type="long" value="1553322944399"/>
 		<prop key="lLCT" type="long" value="0"/>
 		<prop key="ePP" type="long" value="0"/>
 		<prop key="eV" type="String" value="18.2"/>
@@ -377,7 +378,7 @@
 		<prop key="themeChanged" type="boolean" value="false"/>
 	</obj>
 	<obj key="vcsRecords" type="@VcsRecords">
-		<prop key="lastGitUsage" type="long" value="1545847579175"/>
+		<prop key="lastGitUsage" type="long" value="1552065234490"/>
 		<prop key="lastSvnUsage" type="long" value="0"/>
 		<prop key="lastHgUsage" type="long" value="0"/>
 		<prop key="lastReviewUsage" type="long" value="0"/>
@@ -385,8 +386,8 @@
 	</obj>
 	<obj key="updateCheck" type="@UpdateAutoCheckSettings">
 		<prop key="mode" type="String" value="download"/>
-		<prop key="prevCheckTime" type="long" value="1545824654895"/>
-		<prop key="checkedBuild" type="int" value="13220"/>
+		<prop key="prevCheckTime" type="long" value="1551983744705"/>
+		<prop key="checkedBuild" type="int" value="13241"/>
 		<prop key="upgradeInstallation" type="boolean" value="false"/>
 		<prop key="previewAlwaysCheckForLatestBuild" type="boolean" value="false"/>
 	</obj>
@@ -399,7 +400,7 @@
 		<prop key="useProxy" type="boolean" value="false"/>
 		<prop key="authenticate" type="boolean" value="false"/>
 	</obj>
-	<prop key="proxyPassword" type="int" value="26"/>
+	<prop key="proxyPassword" type="int" value="28"/>
 	<obj key="spellCheck" type="@SpellCheckSettings">
 		<collection key="dictionaries" type="Object">
 			<obj type="@SpellCheckDictionarySet" id="79">
@@ -421,6 +422,6 @@
 	<prop key="machineId" type="_NULL_" value=""/>
 	<prop key="lastUsedVersion" type="String" value="18.2"/>
 	<collection key="tempDirs" type="String">
-		<prop type="String" value="/tmp/smartgit-5799451463225291823tmp"/>
+		<prop type="String" value="/tmp/smartgit-17131974612542616003tmp"/>
 	</collection>
 </obj>

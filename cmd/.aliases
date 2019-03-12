@@ -356,6 +356,8 @@ alias vs='vagrant ssh'
 ## databases
 alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
+alias pgm='psql -d biblio -U togi3017'
+alias mif='psql -d biblio -U togi3017 -f input.sql -o output.res && cat output.res'
 alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
 alias mysqlri='mysql -u user -p'
