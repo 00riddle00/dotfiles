@@ -1,3 +1,1 @@
-[3268:3268:0303/000547.981844:356589660:ERROR:database.cc(1841)] autoupdate_checker.sqlite sqlite error 5, errno 0: database is locked, sql: INSERT OR REPLACE INTO store VALUES (?,?);
-[3268:3268:0303/000547.981891:356589706:ERROR:update_check_handler_impl.cc(231)] [AU] An important error "GLOBAL STORAGE WR FAILED [STEP 1]" occured on update checking. Retrying 1 time.
-[3268:3268:0303/000550.159718:358767541:INFO:protocolimpl.cc(855)] Main update resource available: false
+[2558:2558:0329/124921.073849:99056695352:INFO:protocolimpl.cc(855)] Main update resource available: false

@@ -1,5 +1,5 @@
 [Added Associations]
-image/png=nomacs.desktop;mirage.desktop;feh.desktop;gimp.desktop;ristretto.desktop;
+image/png=mirage.desktop;nomacs.desktop;feh.desktop;gimp.desktop;ristretto.desktop;
 text/plain=sublime_text.desktop;mirage.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=mpv.desktop;mplayer.desktop;vlc.desktop;
@@ -7,7 +7,7 @@ video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=sublime_text.desktop;firefox.desktop;mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
 application/x-yaml=atom.desktop;
-image/jpeg=nomacs.desktop;firefox.desktop;mirage.desktop;feh.desktop;gimp.desktop;
+image/jpeg=mirage.desktop;firefox.desktop;nomacs.desktop;feh.desktop;gimp.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
@@ -73,7 +73,7 @@ application/mbox=sublime_text.desktop;
 image/webp=google-chrome.desktop;
 text/x-wxmathml=wxMaxima.desktop;
 application/vnd.oasis.opendocument.text-template=libreoffice-writer.desktop;
-image/heif=gimp.desktop;
+image/heif=gimp.desktop;userapp-"mirage"-VC10YZ.desktop;
 audio/x-vorbis+ogg=mpv.desktop;
 text/x-log=sublime_text.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-8IX3UZ.desktop;userapp-Thunderbird-ZK3VWZ.desktop;
@@ -84,6 +84,7 @@ text/x-tex=vim.desktop;
 application/x-pka=Cisco-PacketTracer.desktop;
 application/x-pkt=Cisco-PacketTracer.desktop;
 application/x-java-jnlp-file=firefox.desktop;google-chrome.desktop;sublime_text.desktop;
+text/x-python3=sublime_text.desktop;
 
 [Default Applications]
 x-scheme-handler/http=google-chrome.desktop

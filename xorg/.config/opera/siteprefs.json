@@ -1,4 +1,4 @@
-// xtap5QuMg/MQ2Fn+2emJihiZCMsxuv+yfSrIji/JLAM5MCxmlg1M6VX7gDRQ3fVvFpZejWhdmCiSaCRNN6q54xGX8ojhS1v+nCYRa+q3+8Kf88wGBdNmis9LPA6VFng0wQnKdhSLNoIkn1uhI4fO1wietz+rQn1Gj+4S+9fKmkeJnf5ulGvmw4SE1RhM7DVnl8/6OLGbjZikIKoBoU0fk52bcXLLjNiCO0kNdMp4ybYvh+KkWw+XSM+xK7LTl+gRHTVNK/09kcWK2U/gZPILz6S+/B/wb9yKd3qL9g/oCIyolMjXDDnXh2wxEyuvT3j0T+5P7KUC3PINBz2eBed6jw==
+// doAQ5OPfIDPaCzn1lqaq2F3xnkqhXax8IO+CZtkHhgFyCevOGb3XEcu3555GOXEvutUQX7wGytKhSOO2Xtv5HqtaNaTZS3sBjWjo3KdS2ZLJRnpZnSxUSZz2Dh2chEI3gIS6LoW4YQODfJGavfdyBnlP0dODNztHfDn0b00nXWCNeRq8HfMApN6sbgHPCZqDqQSQveLwsY9oqXNFJxtuWQIzHHDXWZdXanb/4KKfESt8duAJqheovEHTc4OBxdVKWytSs7vfLOFRFvc2YIz1Pzhc9gwvmGvp4wdme1xERzHHgABxFSSu/s541drBTcLvhRW2Lje53qko0bQVMHhrtw==
 {
   "@encoding": "UTF-8",
   "@version": "1.0",
@@ -17,6 +17,16 @@
     },
     "@clean_all": "1",
     "host": [
+      {
+        "@name": "skype.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
       {
         "@name": "monday.com",
         "section": {

@@ -1,14 +1,15 @@
 [Desktop Entry]
-Type=Application
-Name=JetBrains Toolbox
+Categories=Development;IDE;
 Exec=/opt/jetbrains-toolbox/jetbrains-toolbox --minimize
 Icon=/home/riddle/.local/share/JetBrains/Toolbox/toolbox.svg
-StartupNotify=false
-Categories=Development;IDE;
-Terminal=false
-X-GNOME-Autostart-Delay=10
-X-MATE-Autostart-Delay=10
-X-KDE-autostart-after=panel
-X-GNOME-Autostart-enabled=true
-StartupWMClass=jetbrains-toolbox
 MimeType=x-scheme-handler/jetbrains;
+Name=JetBrains Toolbox
+StartupNotify=false
+StartupWMClass=jetbrains-toolbox
+Terminal=false
+Type=Application
+Version=1.0
+X-GNOME-Autostart-Delay=10
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel
+X-MATE-Autostart-Delay=10

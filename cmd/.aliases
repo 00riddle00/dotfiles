@@ -335,6 +335,9 @@ alias vimshell='vim -c VimShell'
 alias emac='emacs --no-window-system'
 alias ee='v ~/.emacs.d/init.el'
 
+## tmux
+alias ses='cd $MAIN_HOME/.tmux/resurrect'
+
 ## git
 alias com="ga . && gc -m '.'"
 alias push='com && gp'
@@ -605,7 +608,8 @@ alias tag='ctags -R .'
 alias aaa='cd /home/riddle/CS/2_Semestras/Algoritmai_ir_Duomenu_Strukturos/laborai_git/mano_laborai_2018/namu_darbas_1'
 alias copy='cp ~/tmp3/pratybos2.c  ./'
 alias nc='ncmpcpp'
-alias ms='make rebuild && ./demo'
+#alias ms='make rebuild && ./demo'
+alias ms='make *'
 alias ra='ranger'
 alias w='vim -u ~/.vimrc-essential'
 alias le='killall xscreensaver && xresources && xscreensaver -no-splash &'

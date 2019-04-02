@@ -9,7 +9,9 @@
 		<prop type="String" value="/home/riddle/tmp1"/>
 		<prop type="String" value="/home/riddle/tmp1/django-project/app"/>
 		<prop type="String" value="/home/riddle/tmp2/Building-Blockchain-Projects-Book/Building-Blockchain-Projects"/>
+		<prop type="String" value="/home/riddle/tmp4"/>
 		<prop type="String" value="/home/riddle/tmp5"/>
+		<prop type="String" value="/home/riddle/tmp6"/>
 		<prop type="String" value="/home/riddle/tmp7"/>
 	</collection>
 	<obj key="root-/home/riddle/Dropbox/sync/gtd" type="@Details">
@@ -84,6 +86,15 @@
 		<prop key="localModifications" type="boolean" value="false"/>
 		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
 	</obj>
+	<obj key="root-/home/riddle/tmp4" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value="master"/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="master"/>
+		<prop key="localModifications" type="boolean" value="false"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
 	<obj key="root-/home/riddle/tmp5" type="@Details">
 		<prop key="ahead" type="int" value="0"/>
 		<prop key="behind" type="int" value="0"/>
@@ -92,6 +103,15 @@
 		<prop key="aheadBehindBranch" type="String" value="master"/>
 		<prop key="localModifications" type="boolean" value="false"/>
 		<prop key="incomingRemoteCommits" type="boolean" value="false"/>
+	</obj>
+	<obj key="root-/home/riddle/tmp6" type="@Details">
+		<prop key="ahead" type="int" value="0"/>
+		<prop key="behind" type="int" value="0"/>
+		<prop key="branch" type="String" value=""/>
+		<prop key="bare" type="boolean" value="false"/>
+		<prop key="aheadBehindBranch" type="String" value="master"/>
+		<prop key="localModifications" type="boolean" value="true"/>
+		<prop key="incomingRemoteCommits" type="boolean" value="true"/>
 	</obj>
 	<obj key="root-/home/riddle/tmp7" type="@Details">
 		<prop key="ahead" type="int" value="0"/>
