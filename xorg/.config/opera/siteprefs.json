@@ -1,4 +1,4 @@
-// doAQ5OPfIDPaCzn1lqaq2F3xnkqhXax8IO+CZtkHhgFyCevOGb3XEcu3555GOXEvutUQX7wGytKhSOO2Xtv5HqtaNaTZS3sBjWjo3KdS2ZLJRnpZnSxUSZz2Dh2chEI3gIS6LoW4YQODfJGavfdyBnlP0dODNztHfDn0b00nXWCNeRq8HfMApN6sbgHPCZqDqQSQveLwsY9oqXNFJxtuWQIzHHDXWZdXanb/4KKfESt8duAJqheovEHTc4OBxdVKWytSs7vfLOFRFvc2YIz1Pzhc9gwvmGvp4wdme1xERzHHgABxFSSu/s541drBTcLvhRW2Lje53qko0bQVMHhrtw==
+// iTWudoFeM4R5YXzpnMcSo1mYfyeLfL0GuXuhMWZeVtOeIYuO8yHdtKgx5ZhL4RvR2znXLpMx+IO7E5pgbXnr4v9alYF8NWWZJargLG4Qq+JctSklDBUBfu9aK8QgbjwIoeFOsQr6OtFK3DvTd3vs5s/HRp4H1Mn7ZMPtJK9R9dk+adC81f9jPy/i+yabu5poLKUWFPg0u594JM2keWSOxNzrMnpp7O9e0vRj/Zyu6JFmPHrnb5OOJIPVRqtFgJOChOwkg8hkU4/a6XZ+DHWduzcpLcI3ThGhwry4d9Xql8GHjpVefxg2wwOyR70WDe7c4s/0zeU9ffdxei1IzR73oA==
 {
   "@encoding": "UTF-8",
   "@version": "1.0",
@@ -29,6 +29,16 @@
       },
       {
         "@name": "monday.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+            {
+        "@name": "tv.youtube.com",
         "section": {
           "@name": "User Agent",
           "pref": {

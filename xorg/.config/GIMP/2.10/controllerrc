@@ -9,15 +9,15 @@
     (controller "GimpControllerWheel")
     (mapping
         (map "scroll-down-shift-primary" "context-brush-select-previous")
-        (map "scroll-down-primary-alt" "context-gradient-select-previous")
         (map "scroll-up-shift-alt" "context-pattern-select-next")
+        (map "scroll-up-alt" "tools-value-1-increase-skip")
         (map "scroll-down-shift-alt" "context-pattern-select-previous")
-        (map "scroll-down-shift-primary-alt" "context-font-select-previous")
+        (map "scroll-down-primary-alt" "context-gradient-select-previous")
         (map "scroll-up-shift-primary-alt" "context-font-select-next")
         (map "scroll-down-alt" "tools-value-1-decrease-skip")
         (map "scroll-up-primary-alt" "context-gradient-select-next")
         (map "scroll-up-shift-primary" "context-brush-select-next")
-        (map "scroll-up-alt" "tools-value-1-increase-skip")))
+        (map "scroll-down-shift-primary-alt" "context-font-select-previous")))
 (GimpControllerInfo "Main Keyboard"
     (icon-name "gimp-controller-keyboard")
     (enabled yes)

@@ -1,78 +1,8 @@
 {
-   "checksum": "2814a9454a774f2dc2a7a4a7e7246352",
+   "checksum": "73eb0348ee2f9915e4818cfddd60625b",
    "roots": {
       "bookmark_bar": {
-         "children": [ {
-            "date_added": "13194117059316736",
-            "id": "30",
-            "meta_info": {
-               "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/a07ea74aa0b3aae5b7dc37789a2e834b1e883060.png",
-               "pb_nav_url": "https://www.booking.com/?aid=1546879",
-               "pb_partner_id": "booking_com_bb",
-               "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_bb",
-               "pb_revision": "20180329",
-               "pb_server_position": "1"
-            },
-            "name": "Booking.com",
-            "type": "url",
-            "url": "http://www.booking.com/"
-         }, {
-            "date_added": "13194117059316829",
-            "id": "31",
-            "meta_info": {
-               "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/19ea7f40b1ae613c104a34d808d66a2d5d42d752.png",
-               "pb_nav_url": "http://www.amazon.com/?tag=desktop_us_gen_bb-20",
-               "pb_partner_id": "amazon_bb",
-               "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/amazon_bb",
-               "pb_revision": "20181109",
-               "pb_server_position": "2"
-            },
-            "name": "Amazon.com",
-            "type": "url",
-            "url": "http://www.amazon.com/"
-         }, {
-            "date_added": "13194117059316926",
-            "id": "32",
-            "meta_info": {
-               "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/7cf961789fe79e374395db2135e3511cc5fe0cd6.png",
-               "pb_nav_url": "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=1&pub=5574672411&toolid=10001&campid=5338326890&customid=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg",
-               "pb_partner_id": "ebay_bb",
-               "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/ebay_bb",
-               "pb_revision": "20171003",
-               "pb_server_position": "3"
-            },
-            "name": "eBay",
-            "type": "url",
-            "url": "http://www.ebay.com/"
-         }, {
-            "date_added": "13194117059317035",
-            "id": "33",
-            "meta_info": {
-               "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/b189f6ad04d571890f02d63d295ae3815bc60d64.png",
-               "pb_nav_url": "http://www.facebook.com/",
-               "pb_partner_id": "facebook_bb",
-               "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/facebook_bb",
-               "pb_revision": "20171003",
-               "pb_server_position": "4"
-            },
-            "name": "Facebook",
-            "type": "url",
-            "url": "http://www.facebook.com/"
-         }, {
-            "date_added": "13194117059317206",
-            "id": "34",
-            "meta_info": {
-               "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/f630beaa98d8d529ade9af1153a86190d4f120e5.png",
-               "pb_nav_url": "http://www.youtube.com/",
-               "pb_partner_id": "youtube_bb",
-               "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/youtube_bb",
-               "pb_revision": "20171003",
-               "pb_server_position": "5"
-            },
-            "name": "YouTube",
-            "type": "url",
-            "url": "http://www.youtube.com/"
-         } ],
+         "children": [  ],
          "date_added": "13194113654378927",
          "date_modified": "13194117059317206",
          "id": "1",
@@ -207,9 +137,89 @@
             "type": "folder"
          },
          "trash": {
-            "children": [  ],
+            "children": [ {
+               "date_added": "13194117059317206",
+               "id": "34",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/f630beaa98d8d529ade9af1153a86190d4f120e5.png",
+                  "pb_nav_url": "http://www.youtube.com/",
+                  "pb_partner_id": "youtube_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/youtube_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "5",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "YouTube",
+               "type": "url",
+               "url": "http://www.youtube.com/"
+            }, {
+               "date_added": "13194117059317035",
+               "id": "33",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/b189f6ad04d571890f02d63d295ae3815bc60d64.png",
+                  "pb_nav_url": "http://www.facebook.com/",
+                  "pb_partner_id": "facebook_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/facebook_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "4",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "Facebook",
+               "type": "url",
+               "url": "http://www.facebook.com/"
+            }, {
+               "date_added": "13194117059316926",
+               "id": "32",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/7cf961789fe79e374395db2135e3511cc5fe0cd6.png",
+                  "pb_nav_url": "http://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_ff3=1&pub=5574672411&toolid=10001&campid=5338326890&customid=&ipn=psmain&icep_vectorid=229466&kwid=902099&mtid=824&kw=lg",
+                  "pb_partner_id": "ebay_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/ebay_bb",
+                  "pb_revision": "20171003",
+                  "pb_server_position": "3",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "eBay",
+               "type": "url",
+               "url": "http://www.ebay.com/"
+            }, {
+               "date_added": "13194117059316829",
+               "id": "31",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/19ea7f40b1ae613c104a34d808d66a2d5d42d752.png",
+                  "pb_nav_url": "http://www.amazon.com/?tag=desktop_us_gen_bb-20",
+                  "pb_partner_id": "amazon_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/amazon_bb",
+                  "pb_revision": "20181109",
+                  "pb_server_position": "2",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "Amazon.com",
+               "type": "url",
+               "url": "http://www.amazon.com/"
+            }, {
+               "date_added": "13194117059316736",
+               "id": "30",
+               "meta_info": {
+                  "pb_favicon_url": "https://sd-images.operacdn.com/api/v1/images/a07ea74aa0b3aae5b7dc37789a2e834b1e883060.png",
+                  "pb_nav_url": "https://www.booking.com/?aid=1546879",
+                  "pb_partner_id": "booking_com_bb",
+                  "pb_ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com_bb",
+                  "pb_revision": "20180329",
+                  "pb_server_position": "1",
+                  "undoTrashParentId": "1",
+                  "undoTrashParentIndex": "0"
+               },
+               "name": "Booking.com",
+               "type": "url",
+               "url": "http://www.booking.com/"
+            } ],
             "date_added": "13194113654459349",
-            "date_modified": "0",
+            "date_modified": "13200352037917081",
             "id": "7",
             "name": "Trash",
             "type": "folder"
