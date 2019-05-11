@@ -61,7 +61,7 @@ text/x-c++src=sublime_text.desktop;vim.desktop;nvim.desktop;
 application/x-keepass2=keepass.desktop;
 text/html=google-chrome.desktop;firefox.desktop;sublime_text.desktop;
 application/json=sublime_text.desktop;
-application/x-mozilla-bookmarks=firefox.desktop;
+application/x-mozilla-bookmarks=sublime_text.desktop;firefox.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.slideshow=libreoffice-impress.desktop;
 text/x-java=sublime_text.desktop;vim.desktop;
 application/xml=sublime_text.desktop;
@@ -85,6 +85,8 @@ application/x-pka=Cisco-PacketTracer.desktop;
 application/x-pkt=Cisco-PacketTracer.desktop;
 application/x-java-jnlp-file=firefox.desktop;google-chrome.desktop;sublime_text.desktop;
 text/x-python3=sublime_text.desktop;
+application/x-dia-diagram=dia.desktop;
+application/gzip=dia.desktop;
 
 [Default Applications]
 x-scheme-handler/http=google-chrome.desktop
