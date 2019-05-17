@@ -6,132 +6,6 @@
 (protocol-version 25)
 (file-version 5)
 
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/spyro_plus/spyro_plus.py" 1554661011
-    (proc-def "plug_in_spyrogimp" 1
-         "Draw spyrographs using current tool settings and selection."
-         "Uses current tool settings to draw Spyrograph patterns. The size and location of the pattern is based on the current selection."
-         "Elad Shahar"
-         "Elad Shahar"
-         "2018"
-         "Spyrogimp..."
-         1
-        (menu-path "<Image>/Filters/Render/")
-        (icon icon-name -1 "")
-         "*"
-         16 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 0 "curve-type" "The curve type { Spyrograph (0), Epitrochoid (1), Sine (2), Lissajous(3) }")
-        (proc-arg 0 "shape" "Shape of fixed gear")
-        (proc-arg 0 "sides" "Number of sides of fixed gear (3 or greater). Only used by some shapes.")
-        (proc-arg 3 "morph" "Morph shape of fixed gear, between 0 and 1. Only used by some shapes.")
-        (proc-arg 0 "fixed-teeth" "Number of teeth for fixed gear")
-        (proc-arg 0 "moving-teeth" "Number of teeth for moving gear")
-        (proc-arg 3 "hole-percent" "Location of hole in moving gear in percent, where 100 means that the hole is at the edge of the gear, and 0 means the hole is at the center")
-        (proc-arg 0 "margin" "Margin from selection, in pixels")
-        (proc-arg 0 "equal-w-h" "Make height and width equal (TRUE or FALSE)")
-        (proc-arg 3 "pattern-rotation" "Pattern rotation, in degrees")
-        (proc-arg 3 "shape-rotation" "Shape rotation of fixed gear, in degrees")
-        (proc-arg 0 "tool" "Tool to use for drawing the pattern.")
-        (proc-arg 0 "long-gradient" "Whether to apply a long gradient to match the length of the pattern (TRUE or FALSE). Only applicable to some of the tools."))
-    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-dds/file-dds" 1554661011
-    (proc-def "file-dds-load" 1
-         "Loads files in DDS image format"
-         "Loads files in DDS image format"
-         "Shawn Kirst"
-         "Shawn Kirst"
-         "2008"
-         "DDS image"
-         0
-        (icon icon-name -1 "")
-        (load-proc
-            (extensions "dds")
-            (magics "0,string,DDS")
-            (mime-types "image/dds"))
-         ""
-         5 1
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 4 "filename" "The name of the file to load")
-        (proc-arg 4 "raw-filename" "The name entered")
-        (proc-arg 0 "load-mipmaps" "Load mipmaps if present")
-        (proc-arg 0 "decode-images" "Decode YCoCg/AExp images when detected")
-        (proc-arg 13 "image" "Output image"))
-    (proc-def "file-dds-save" 1
-         "Saves files in DDS image format"
-         "Saves files in DDS image format"
-         "Shawn Kirst"
-         "Shawn Kirst"
-         "2008"
-         "DDS image"
-         0
-        (icon icon-name -1 "")
-        (save-proc
-            (extensions "dds")
-            (mime-types "image/dds"))
-         "INDEXED, GRAY, RGB"
-         18 0
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save")
-        (proc-arg 4 "filename" "The name of the file to save the image as")
-        (proc-arg 4 "raw-filename" "The name entered")
-        (proc-arg 0 "compression-format" "Compression format (0 = None, 1 = BC1/DXT1, 2 = BC2/DXT3, 3 = BC3/DXT5, 4 = BC3n/DXT5nm, 5 = BC4/ATI1N, 6 = BC5/ATI2N, 7 = RXGB (DXT5), 8 = Alpha Exponent (DXT5), 9 = YCoCg (DXT5), 10 = YCoCg scaled (DXT5))")
-        (proc-arg 0 "mipmaps" "How to handle mipmaps (0 = No mipmaps, 1 = Generate mipmaps, 2 = Use existing mipmaps (layers)")
-        (proc-arg 0 "savetype" "How to save the image (0 = selected layer, 1 = cube map, 2 = volume map, 3 = texture array")
-        (proc-arg 0 "format" "Custom pixel format (0 = default, 1 = R5G6B5, 2 = RGBA4, 3 = RGB5A1, 4 = RGB10A2)")
-        (proc-arg 0 "transparent-index" "Index of transparent color or -1 to disable (for indexed images only).")
-        (proc-arg 0 "mipmap-filter" "Filtering to use when generating mipmaps (0 = default, 1 = nearest, 2 = box, 3 = triangle, 4 = quadratic, 5 = bspline, 6 = mitchell, 7 = lanczos, 8 = kaiser)")
-        (proc-arg 0 "mipmap-wrap" "Wrap mode to use when generating mipmaps (0 = default, 1 = mirror, 2 = repeat, 3 = clamp)")
-        (proc-arg 0 "gamma-correct" "Use gamma correct mipmap filtering")
-        (proc-arg 0 "srgb" "Use sRGB colorspace for gamma correction")
-        (proc-arg 3 "gamma" "Gamma value to use for gamma correction (i.e. 2.2)")
-        (proc-arg 0 "perceptual-metric" "Use a perceptual error metric during compression")
-        (proc-arg 0 "preserve-alpha-coverage" "Preserve alpha test converage for alpha channel maps")
-        (proc-arg 3 "alpha-test-threshold" "Alpha test threshold value for which alpha test converage should be preserved"))
-    (proc-def "color-decode-ycocg" 1
-         "Converts YCoCg encoded pixels to RGB"
-         "Converts YCoCg encoded pixels to RGB"
-         "Shawn Kirst"
-         "Shawn Kirst"
-         "2008"
-         "Decode YCoCg"
-         0
-        (icon icon-name -1 "")
-         "RGBA"
-         3 0
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save"))
-    (proc-def "color-decode-ycocg-scaled" 1
-         "Converts YCoCg (scaled) encoded pixels to RGB"
-         "Converts YCoCg (scaled) encoded pixels to RGB"
-         "Shawn Kirst"
-         "Shawn Kirst"
-         "2008"
-         "Decode YCoCg (scaled)"
-         0
-        (icon icon-name -1 "")
-         "RGBA"
-         3 0
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save"))
-    (proc-def "color-decode-alpha-exp" 1
-         "Converts alpha exponent encoded pixels to RGB"
-         "Converts alpha exponent encoded pixels to RGB"
-         "Shawn Kirst"
-         "Shawn Kirst"
-         "2008"
-         "Decode Alpha exponent"
-         0
-        (icon icon-name -1 "")
-         "RGBA"
-         3 0
-        (proc-arg 0 "run-mode" "Interactive, non-interactive")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/web-browser/web-browser" 1554661011
     (proc-def "plug-in-web-browser" 1
          "Open an URL in the user specified web browser"
@@ -260,6 +134,36 @@
         (proc-arg 0 "new-image" "Create a new image?")
         (proc-arg 13 "new-image" "Output image (-1 if new-image == FALSE)")
         (proc-arg 14 "new-layer" "Output layer (-1 if new-image == FALSE)")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/spyro_plus/spyro_plus.py" 1554661011
+    (proc-def "plug_in_spyrogimp" 1
+         "Draw spyrographs using current tool settings and selection."
+         "Uses current tool settings to draw Spyrograph patterns. The size and location of the pattern is based on the current selection."
+         "Elad Shahar"
+         "Elad Shahar"
+         "2018"
+         "Spyrogimp..."
+         1
+        (menu-path "<Image>/Filters/Render/")
+        (icon icon-name -1 "")
+         "*"
+         16 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "curve-type" "The curve type { Spyrograph (0), Epitrochoid (1), Sine (2), Lissajous(3) }")
+        (proc-arg 0 "shape" "Shape of fixed gear")
+        (proc-arg 0 "sides" "Number of sides of fixed gear (3 or greater). Only used by some shapes.")
+        (proc-arg 3 "morph" "Morph shape of fixed gear, between 0 and 1. Only used by some shapes.")
+        (proc-arg 0 "fixed-teeth" "Number of teeth for fixed gear")
+        (proc-arg 0 "moving-teeth" "Number of teeth for moving gear")
+        (proc-arg 3 "hole-percent" "Location of hole in moving gear in percent, where 100 means that the hole is at the edge of the gear, and 0 means the hole is at the center")
+        (proc-arg 0 "margin" "Margin from selection, in pixels")
+        (proc-arg 0 "equal-w-h" "Make height and width equal (TRUE or FALSE)")
+        (proc-arg 3 "pattern-rotation" "Pattern rotation, in degrees")
+        (proc-arg 3 "shape-rotation" "Shape rotation of fixed gear, in degrees")
+        (proc-arg 0 "tool" "Tool to use for drawing the pattern.")
+        (proc-arg 0 "long-gradient" "Whether to apply a long gradient to match the length of the pattern (TRUE or FALSE). Only applicable to some of the tools."))
+    (locale-def "gimp20-python" "${gimp_installation_dir}/share/locale"))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/sphere-designer/sphere-designer" 1554661011
     (proc-def "plug-in-spheredesigner" 1
          "Create an image of a textured sphere"
@@ -3814,6 +3718,102 @@
         (proc-arg 4 "filename" "The name of the file to load")
         (proc-arg 4 "raw-filename" "The name entered")
         (proc-arg 13 "image" "Output image")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-dds/file-dds" 1554661011
+    (proc-def "file-dds-load" 1
+         "Loads files in DDS image format"
+         "Loads files in DDS image format"
+         "Shawn Kirst"
+         "Shawn Kirst"
+         "2008"
+         "DDS image"
+         0
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "dds")
+            (magics "0,string,DDS")
+            (mime-types "image/dds"))
+         ""
+         5 1
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 0 "load-mipmaps" "Load mipmaps if present")
+        (proc-arg 0 "decode-images" "Decode YCoCg/AExp images when detected")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-dds-save" 1
+         "Saves files in DDS image format"
+         "Saves files in DDS image format"
+         "Shawn Kirst"
+         "Shawn Kirst"
+         "2008"
+         "DDS image"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "dds")
+            (mime-types "image/dds"))
+         "INDEXED, GRAY, RGB"
+         18 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save")
+        (proc-arg 4 "filename" "The name of the file to save the image as")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 0 "compression-format" "Compression format (0 = None, 1 = BC1/DXT1, 2 = BC2/DXT3, 3 = BC3/DXT5, 4 = BC3n/DXT5nm, 5 = BC4/ATI1N, 6 = BC5/ATI2N, 7 = RXGB (DXT5), 8 = Alpha Exponent (DXT5), 9 = YCoCg (DXT5), 10 = YCoCg scaled (DXT5))")
+        (proc-arg 0 "mipmaps" "How to handle mipmaps (0 = No mipmaps, 1 = Generate mipmaps, 2 = Use existing mipmaps (layers)")
+        (proc-arg 0 "savetype" "How to save the image (0 = selected layer, 1 = cube map, 2 = volume map, 3 = texture array")
+        (proc-arg 0 "format" "Custom pixel format (0 = default, 1 = R5G6B5, 2 = RGBA4, 3 = RGB5A1, 4 = RGB10A2)")
+        (proc-arg 0 "transparent-index" "Index of transparent color or -1 to disable (for indexed images only).")
+        (proc-arg 0 "mipmap-filter" "Filtering to use when generating mipmaps (0 = default, 1 = nearest, 2 = box, 3 = triangle, 4 = quadratic, 5 = bspline, 6 = mitchell, 7 = lanczos, 8 = kaiser)")
+        (proc-arg 0 "mipmap-wrap" "Wrap mode to use when generating mipmaps (0 = default, 1 = mirror, 2 = repeat, 3 = clamp)")
+        (proc-arg 0 "gamma-correct" "Use gamma correct mipmap filtering")
+        (proc-arg 0 "srgb" "Use sRGB colorspace for gamma correction")
+        (proc-arg 3 "gamma" "Gamma value to use for gamma correction (i.e. 2.2)")
+        (proc-arg 0 "perceptual-metric" "Use a perceptual error metric during compression")
+        (proc-arg 0 "preserve-alpha-coverage" "Preserve alpha test converage for alpha channel maps")
+        (proc-arg 3 "alpha-test-threshold" "Alpha test threshold value for which alpha test converage should be preserved"))
+    (proc-def "color-decode-ycocg" 1
+         "Converts YCoCg encoded pixels to RGB"
+         "Converts YCoCg encoded pixels to RGB"
+         "Shawn Kirst"
+         "Shawn Kirst"
+         "2008"
+         "Decode YCoCg"
+         0
+        (icon icon-name -1 "")
+         "RGBA"
+         3 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save"))
+    (proc-def "color-decode-ycocg-scaled" 1
+         "Converts YCoCg (scaled) encoded pixels to RGB"
+         "Converts YCoCg (scaled) encoded pixels to RGB"
+         "Shawn Kirst"
+         "Shawn Kirst"
+         "2008"
+         "Decode YCoCg (scaled)"
+         0
+        (icon icon-name -1 "")
+         "RGBA"
+         3 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save"))
+    (proc-def "color-decode-alpha-exp" 1
+         "Converts alpha exponent encoded pixels to RGB"
+         "Converts alpha exponent encoded pixels to RGB"
+         "Shawn Kirst"
+         "Shawn Kirst"
+         "2008"
+         "Decode Alpha exponent"
+         0
+        (icon icon-name -1 "")
+         "RGBA"
+         3 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-csource/file-csource" 1554661011
     (proc-def "file-csource-save" 1
          "Dump image data in RGB(A) format for C source"
