@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tags>
 
-  <resource identifier="gimp-brush-clipboard-image" checksum="c76ad1620d5254effd30f13d23d72542">
+  <resource identifier="gimp-brush-clipboard-image" checksum="157dcef48665ab465439cfaf10d6feeb">
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-mask" checksum="cf68e8fcf31505c3ec28153b35355f89">
+  <resource identifier="gimp-brush-clipboard-mask" checksum="157dcef48665ab465439cfaf10d6feeb">
   </resource>
 
   <resource identifier="${gimp_dir}/brushes/2.-Hardness-050-copy.vbr" checksum="6deb84811d3b410d40ac47d773db51bc">
@@ -31,7 +31,7 @@
   <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-075.vbr" checksum="c196ef1b139d8f2744e6519c7a220cf1">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-100.vbr" checksum="22b8f688f7cd7d6139c56dfc33b14bfd">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-100.vbr" checksum="3d4dfbce4b7d495eb45e143f2a66a35c">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Basic/Star.vbr" checksum="fdd1163d5fdf7371df2dd7896e79231a">
@@ -766,7 +766,7 @@
   <resource identifier="${mypaint_brushes_dir}/ramon/wet_round.myb" checksum="038abfe33947692f773e0244d2ac7fc1">
   </resource>
 
-  <resource identifier="gimp-pattern-clipboard-image" checksum="d438907bf47c0fc249ab8ccce894d606">
+  <resource identifier="gimp-pattern-clipboard-image" checksum="eff9598f9f61c1dc78d842f1798c2ab8">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/3dgreen.pat" checksum="00052731f14a5bc614daece969b368bc">
@@ -1171,7 +1171,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="e77318a6d6bcbfd31508b3a365fd12a7">
+  <resource identifier="gimp-palette-color-history" checksum="4a81f7d20d13d965c590db7098257969">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">

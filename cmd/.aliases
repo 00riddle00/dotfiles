@@ -135,7 +135,7 @@ alias menu='sudo v $MAIN_HOME/.config/openbox/menu.xml'
 alias ch='s chown -R $MAIN_USER:$MAIN_USER'
 alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
 alias mchef='$MAIN_HOME/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
-alias ww='python $MAIN_HOME/welcome.py'
+#alias ww='python $MAIN_HOME/welcome.py'
 alias hi='mpg123 $MAIN_HOME/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias tb='tail -n 20 $MAIN_HOME/.aliases'
 alias del="sed -i '$ d' $MAIN_HOME/.aliases"
@@ -387,6 +387,9 @@ alias wifid='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.se
 alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
 alias wpad='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/donatas.conf'
 alias wifim='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start modem'
+alias ww='sudo netctl start wlp8s0-Telia-63E82B-Greitas'
+alias we='sudo netctl start eduroam'
+alias essid='iwconfig'
 
 ## touchpad
 alias ton='synclient TouchpadOff=0'

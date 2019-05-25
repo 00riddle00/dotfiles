@@ -21,7 +21,7 @@
     (gimp-toolbox
         (side left)
         (book
-            (current-page 0)
+            (current-page 2)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
@@ -88,7 +88,7 @@
                     (show-button-bar "true"))))))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
-    (position 54 25)
+    (position 228 114)
     (size 1118 757))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
