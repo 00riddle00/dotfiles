@@ -24724,3 +24724,31 @@
   "hasValidSession": false,
   "teamId": "T2LHV2VSB"
 }
+[05/28/19, 20:21:46:096] info: Store: QUIT_APP 
+[05/28/19, 20:21:46:103] info: App: Disposing application 
+[05/28/19, 20:21:46:103] info: Store: APP_CLEANED_UP 
+[05/28/19, 20:21:46:104] info: quitApplicationEpic: found update metadata, send telemetry 
+[05/28/19, 20:21:46:105] info: EpicHelpers: Flushing cookie store 
+[05/28/19, 20:21:46:107] info: EpicHelpers: Flushing local-settings.json 
+[05/28/19, 20:21:46:108] info: quitApplicationEpic: Closing main window 
+{
+  "id": 2
+}
+[05/28/19, 20:21:46:108] info: Allowing window close because user chose to quit 
+[05/28/19, 20:21:46:108] info: Store: QUIT_APP 
+[05/28/19, 20:21:46:109] info: quitApplicationEpic: Disposing item 
+{
+  "type": "ReduxPersistStorage"
+}
+[05/28/19, 20:21:46:111] info: Store: REMOVE_WEB_CONTENTS 
+{
+  "id": 3,
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:21:46:112] info: Background Clients Update: 
++-----------+------+------------+
+|           | Full | Background |
+|-----------+------+------------+
+| T2LHV2VSB |      |            |
++-----------+------+------------+ 
+[05/28/19, 20:21:51:110] info: Store: QUIT_APP 
