@@ -95,12 +95,21 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
-xorg/.jetbrains.custom_folder/pycharm/config/*
-!xorg/.jetbrains.custom_folder/pycharm/config/codestyles
-!xorg/.jetbrains.custom_folder/pycharm/config/colors
-!xorg/.jetbrains.custom_folder/pycharm/config/inspection
+
+
+xorg/.jetbrains.custom_folder/pycharm/*
+
 !xorg/.jetbrains.custom_folder/pycharm/config/keymaps
-!xorg/.jetbrains.custom_folder/pycharm/config/options
+!xorg/.jetbrains.custom_folder/pycharm/colors
+
+!xorg/.jetbrains.custom_folder/pycharm/config/options/colors.scheme.xml
+!xorg/.jetbrains.custom_folder/pycharm/config/options/ide.general.xml
+!xorg/.jetbrains.custom_folder/pycharm/config/options/keymap.xml
+!xorg/.jetbrains.custom_folder/pycharm/config/options/other.xml
+!xorg/.jetbrains.custom_folder/pycharm/config/options/security.xml
+!xorg/.jetbrains.custom_folder/pycharm/config/options/vim_settings.xml
+
+
 
 xorg/.config/GIMP/2.10/tags.xml
 xorg/.config/GIMP/2.10/gimpswaprc
