@@ -96,12 +96,21 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/sitemanager.xml
 
 
+#pippo/*
+#!pippo/pluto
+#pippo/pluto/*
+#!pippo/pluto/paperino.xml
+
 
 xorg/.jetbrains.custom_folder/pycharm/*
 
+!xorg/.jetbrains.custom_folder/pycharm/config
+xorg/.jetbrains.custom_folder/pycharm/config/*
 !xorg/.jetbrains.custom_folder/pycharm/config/keymaps
-!xorg/.jetbrains.custom_folder/pycharm/colors
+!xorg/.jetbrains.custom_folder/pycharm/config/colors
 
+!xorg/.jetbrains.custom_folder/pycharm/config/options
+xorg/.jetbrains.custom_folder/pycharm/config/options/*
 !xorg/.jetbrains.custom_folder/pycharm/config/options/colors.scheme.xml
 !xorg/.jetbrains.custom_folder/pycharm/config/options/ide.general.xml
 !xorg/.jetbrains.custom_folder/pycharm/config/options/keymap.xml
