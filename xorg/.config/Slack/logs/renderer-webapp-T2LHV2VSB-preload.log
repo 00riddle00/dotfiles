@@ -13290,3 +13290,109 @@
 }
 [02/27/19, 21:34:02:881] info: Store: QUIT_APP
 [02/27/19, 21:34:02:885] info: Store: REMOVE_WINDOW 2
+[05/28/19, 20:19:20:805] info: Configured logger via 
+{
+  "logLevel": "info",
+  "devMode": false
+}
+[05/28/19, 20:19:20:894] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json 
+[05/28/19, 20:19:21:043] info: Read UUID from file successful 
+{
+  "uuid": "249d8efa-ea3e-524f-b0b9-60bd01bcba50"
+}
+[05/28/19, 20:19:21:243] info: cld3::loadModule: loading cld3 module 
+[05/28/19, 20:19:21:256] info: cld3Loader::loadModule: running environment is NODE 
+[05/28/19, 20:19:21:257] info: cld3Loader::loadModule: constructed module object for runtime 
+[05/28/19, 20:19:21:282] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available 
+[05/28/19, 20:19:21:298] info: Main window preload script finished 
+{
+  "readyTime": 812.56407
+}
+[05/28/19, 20:19:21:312] info: remoteProcessMethod: dispatching request 
+{
+  "isRendererMethod": true,
+  "windowId": 2,
+  "target": "localStorage",
+  "method": "getItem"
+}
+[05/28/19, 20:19:21:522] info: cld3Loader::initializeRuntime: successfully initialized module 
+[05/28/19, 20:19:21:523] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[05/28/19, 20:19:21:899] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:21:901] info: Store: MAIN_WINDOW_SHOWN 
+[05/28/19, 20:19:21:941] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:21:941] info: Window is unloading, window.desktop is no longer accessible 
+[05/28/19, 20:19:21:962] info: Store: SET_FULL_SCREEN 
+[05/28/19, 20:19:21:962] info: Store: SET_FULL_SCREEN 
+[05/28/19, 20:19:22:149] info: Store: UPDATE_SESSION_STATUS 
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:22:651] info: Configured logger via 
+{
+  "logLevel": "info",
+  "devMode": false
+}
+[05/28/19, 20:19:22:720] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json 
+[05/28/19, 20:19:22:851] info: Read UUID from file successful 
+{
+  "uuid": "249d8efa-ea3e-524f-b0b9-60bd01bcba50"
+}
+[05/28/19, 20:19:22:995] info: cld3::loadModule: loading cld3 module 
+[05/28/19, 20:19:23:008] info: cld3Loader::loadModule: running environment is NODE 
+[05/28/19, 20:19:23:008] info: cld3Loader::loadModule: constructed module object for runtime 
+[05/28/19, 20:19:23:044] info: SpellChecker:: updateSpellcheckerLanguage: Skip to set new language null, v2 spellchecker is not available 
+[05/28/19, 20:19:23:056] info: Main window preload script finished 
+{
+  "readyTime": 648.161944
+}
+[05/28/19, 20:19:23:075] info: remoteProcessMethod: dispatching request 
+{
+  "isRendererMethod": true,
+  "windowId": 2,
+  "target": "localStorage",
+  "method": "getItem"
+}
+[05/28/19, 20:19:23:365] info: cld3Loader::initializeRuntime: successfully initialized module 
+[05/28/19, 20:19:23:366] info: cld3Loader::loadModule: initialized wasm binary Runtime 
+[05/28/19, 20:19:24:641] info: Store: SET_FULL_SCREEN 
+[05/28/19, 20:19:24:643] info: Store: SAVE_WINDOW_SETTINGS 
+{
+  "isMaximized": false,
+  "position": [
+    392,
+    222
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[05/28/19, 20:19:24:883] info: remoteProcessMethod: dispatching request 
+{
+  "isRendererMethod": true,
+  "windowId": 2,
+  "target": "localStorage",
+  "method": "setItem"
+}
+[05/28/19, 20:19:24:920] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:25:511] info: Store: UPDATE_SESSION_STATUS 
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}

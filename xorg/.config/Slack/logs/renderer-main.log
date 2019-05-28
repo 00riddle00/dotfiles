@@ -7747,3 +7747,99 @@
   "teamId": "T2LHV2VSB"
 }
 [02/27/19, 21:34:02:944] info: Store: QUIT_APP
+[05/28/19, 20:19:20:133] info: Configured logger via 
+{
+  "logLevel": "info",
+  "devMode": false
+}
+[05/28/19, 20:19:20:262] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json 
+[05/28/19, 20:19:20:410] info: NetworkStatus: Waiting for network online… 
+[05/28/19, 20:19:20:553] info: Read UUID from file successful 
+{
+  "uuid": "249d8efa-ea3e-524f-b0b9-60bd01bcba50"
+}
+[05/28/19, 20:19:20:680] info: Don't start background client because T2LHV2VSB is selected team 
+[05/28/19, 20:19:20:721] info: Store: BACKGROUND_CLIENTS_INITIALIZED 
+[05/28/19, 20:19:20:728] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[05/28/19, 20:19:20:862] info: NetworkStatus: Response from api.test 
+{
+  "status": "online"
+}
+[05/28/19, 20:19:21:265] info: Store: SET_NETWORK_STATUS online
+[05/28/19, 20:19:21:313] info: RemoteProcessMethod: Executing remote method 
+{
+  "target": "localStorage",
+  "method": "getItem",
+  "senderContentsId": 3
+}
+[05/28/19, 20:19:21:314] info: sendRemoteResponse: send response to main process to route to renderer 
+{
+  "channel": "SLACK_REMOTE_PROCESS_RESPONSE",
+  "id": 3
+}
+[05/28/19, 20:19:21:888] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:21:895] info: Store: MAIN_WINDOW_SHOWN 
+[05/28/19, 20:19:21:908] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:21:936] info: Store: SET_FULL_SCREEN 
+[05/28/19, 20:19:21:938] info: Store: SET_FULL_SCREEN 
+[05/28/19, 20:19:22:149] info: Store: UPDATE_SESSION_STATUS 
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:23:077] info: RemoteProcessMethod: Executing remote method 
+{
+  "target": "localStorage",
+  "method": "getItem",
+  "senderContentsId": 3
+}
+[05/28/19, 20:19:23:077] info: sendRemoteResponse: send response to main process to route to renderer 
+{
+  "channel": "SLACK_REMOTE_PROCESS_RESPONSE",
+  "id": 3
+}
+[05/28/19, 20:19:23:750] info: Store: SET_FULL_SCREEN 
+[05/28/19, 20:19:24:172] info: Store: SAVE_WINDOW_SETTINGS 
+{
+  "isMaximized": false,
+  "position": [
+    392,
+    222
+  ],
+  "size": [
+    960,
+    858
+  ]
+}
+[05/28/19, 20:19:24:884] info: RemoteProcessMethod: Executing remote method 
+{
+  "target": "localStorage",
+  "method": "setItem",
+  "senderContentsId": 3
+}
+[05/28/19, 20:19:24:884] info: sendRemoteResponse: send response to main process to route to renderer 
+{
+  "channel": "SLACK_REMOTE_PROCESS_RESPONSE",
+  "id": 3
+}
+[05/28/19, 20:19:24:921] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:25:510] info: Store: UPDATE_SESSION_STATUS 
+{
+  "hasValidSession": false,
+  "teamId": "T2LHV2VSB"
+}

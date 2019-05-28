@@ -1299,3 +1299,28 @@
   "teamId": "T2LHV2VSB"
 }
 [02/27/19, 21:33:33:040] info: Store: MAIN_WINDOW_SHOWN
+[05/28/19, 20:19:20:094] info: Configured logger via 
+{
+  "logLevel": "info"
+}
+[05/28/19, 20:19:20:166] info: Initializing local storage instance at path: /home/riddle/.dotfiles/xorg/.config/Slack/local-settings.json 
+[05/28/19, 20:19:20:327] info: Read UUID from file successful 
+{
+  "uuid": "249d8efa-ea3e-524f-b0b9-60bd01bcba50"
+}
+[05/28/19, 20:19:20:710] info: Store: BACKGROUND_CLIENTS_INITIALIZED 
+[05/28/19, 20:19:20:711] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[05/28/19, 20:19:21:264] info: Store: SET_NETWORK_STATUS online
+[05/28/19, 20:19:21:889] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "loaded",
+  "teamId": "T2LHV2VSB"
+}
+[05/28/19, 20:19:21:896] info: Store: MAIN_WINDOW_SHOWN 
+[05/28/19, 20:19:21:907] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 3,
+  "state": "page-will-navigate",
+  "teamId": "T2LHV2VSB"
+}

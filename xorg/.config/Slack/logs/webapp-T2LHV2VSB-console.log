@@ -6611,3 +6611,23 @@ info: Feb-27 21:33:48.016 [API-Q] (T00000000) 437fd99f-1551296027.852 team.info 
 info: Feb-27 21:33:48.018 [UNKNOWN-FETCH-MANAGER] (T00000000) received T00000000 (1)
 warn: Feb-27 21:33:48.018 (T00000000) UnknownFetchManager requested 1 objects but received 0. Missing objects: T00000000
 info: Feb-27 21:33:48.601 [FOCUS-EVENT] Window blurred
+[05/28/19, 20:19:19:683] info: Configured logger via 
+{
+  "logLevel": "info",
+  "devMode": false
+}
+[05/28/19, 20:19:23:524] info: JQMIGRATE: Migrate is installed with logging active, version 3.0.0 
+[05/28/19, 20:19:24:762] warn: May-28 20:19:24.760 error getActiveModelOb found no ob 
+[05/28/19, 20:19:24:762] warn: May-28 20:19:24.761 TS.boot_data.channel_id: undefined 
+[05/28/19, 20:19:24:763] warn: May-28 20:19:24.761 TS.boot_data.im_id: undefined 
+[05/28/19, 20:19:24:763] warn: May-28 20:19:24.761 TS.boot_data.group_id: undefined 
+[05/28/19, 20:19:24:764] warn: May-28 20:19:24.762 error getActiveModelOb found no ob 
+[05/28/19, 20:19:24:764] warn: May-28 20:19:24.762 TS.boot_data.channel_id: undefined 
+[05/28/19, 20:19:24:764] warn: May-28 20:19:24.762 TS.boot_data.im_id: undefined 
+[05/28/19, 20:19:24:765] warn: May-28 20:19:24.763 TS.boot_data.group_id: undefined 
+[05/28/19, 20:19:24:882] info: May-28 20:19:24.880 [BOOT] booted! pri:0 version:1559060201 start_ms:1559063963191 (1688ms ago) 
+[05/28/19, 20:19:25:372] warn: May-28 20:19:25.372 TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[05/28/19, 20:19:25:373] info: May-28 20:19:25.373 [INFO] no TS.client on page:https://grozionamai.slack.com/ssb/expiration 
+[05/28/19, 20:19:25:925] info: May-28 20:19:25.925 [INFO] running without a user 
+[05/28/19, 20:19:41:903] info: May-28 20:19:41.902 [TICKLE-MS] (T00000000) Skipping tickle because no user exists 
+[05/28/19, 20:20:01:917] info: May-28 20:20:01.916 [TICKLE-MS] (T00000000) Skipping tickle because no user exists 
