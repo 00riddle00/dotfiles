@@ -5,7 +5,13 @@ name: XML (Visual Studio)
 hidden: true
 file_extensions:
   - csproj
+  - fsproj
+  - shproj
+  - sqlproj
+  - vbproj
+  - vcxproj
   - vsproj
+  - props
   - ruleset
   - settings
   - targets
