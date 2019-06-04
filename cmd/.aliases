@@ -627,3 +627,7 @@ alias yf='yasm -fbin'
 alias hhh='yasm -fbin hh.asm -o hh.com'
 alias power='upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep percentage'
 alias unrar='unrar x'
+
+#sed
+alias allow_only_alpha_and_spaces="sed '/^[[:alpha:] ]*$/!d' GL.md > GL2.md"
+
