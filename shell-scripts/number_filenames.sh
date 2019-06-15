@@ -1,8 +1,11 @@
 #!/bin/sh
 
+# file extension
 ext="png";
 
+# starting number
 a=1
+
 for i in *.$ext; do
   new=$(printf "%04d.$ext" "$a") #04 pad to length of 4
   mv -i -- "$i" "$new"
