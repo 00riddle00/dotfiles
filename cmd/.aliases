@@ -452,7 +452,7 @@ alias xclip2='xclip -selection secondary'
 # MAIN USER FUNCTIONS
 
 ## copy argument to clipboard
-function kk() { echo "${MAIN_HOME}/backups/${1}-$(date +%F_%R).bak ${MAIN_HOME}/Dropbox/sync/backup/media-$(date +%F_%R).bak"| xargs -n 1 cp -rv ${1}; }
+function kk() { echo "${MAIN_HOME}/backups/${1}-$(date +%F_%R).bak ${MAIN_HOME}/Dropbox/sync/backup/${1}-$(date +%F_%R).bak"| xargs -n 1 cp -rv ${1}; }
 #function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1"-"$(date +%F_%R)".bak;}
 #function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1"_"$(date)".bak;}
 #alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
