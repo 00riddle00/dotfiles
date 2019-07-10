@@ -388,7 +388,9 @@ alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
 alias wpad='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/donatas.conf'
 alias wifim='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start modem'
 alias ww='sudo netctl start wlp8s0-Telia-63E82B-Greitas'
+alias ws='sudo netctl start sodas'
 alias we='sudo netctl start eduroam'
+alias wk='sudo netctl start wlp8s0-andkarGreitasis'
 alias essid='iwconfig'
 
 ## touchpad
