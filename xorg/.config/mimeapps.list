@@ -88,6 +88,7 @@ text/x-python3=sublime_text.desktop;
 application/x-dia-diagram=dia.desktop;
 application/gzip=dia.desktop;
 application/x-subrip=sublime_text.desktop;
+application/x-trash=sublime_text.desktop;
 
 [Default Applications]
 x-scheme-handler/http=google-chrome.desktop
