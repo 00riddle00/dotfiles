@@ -15,7 +15,7 @@
     (size 1916 1050)
     (open-on-exit)
     (aux-info
-        (left-docks-width "604")
+        (left-docks-width "499")
         (right-docks-width "4")
         (maximized "no"))
     (gimp-toolbox
@@ -49,7 +49,7 @@
                 (tab-style automatic))))
     (gimp-dock
         (side left)
-        (position 335)
+        (position 247)
         (book
             (current-page 0)
             (dockable "gimp-layer-list"

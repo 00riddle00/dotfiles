@@ -1,7 +1,7 @@
 # GIMP user context
 
-(tool "gimp-heal-tool")
-(paint-info "gimp-heal")
+(tool "gimp-free-select-tool")
+(paint-info "gimp-paintbrush")
 (brush "2. Hardness 100")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
