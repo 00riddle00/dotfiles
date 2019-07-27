@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <oor:items xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <item oor:path="/org.openoffice.Office.Accelerators/PrimaryKeys/Global"><node oor:name="F8" oor:op="replace"><prop oor:name="Command" oor:op="fuse"><value xml:lang="en-US">.uno:About</value></prop></node></item>
-<item oor:path="/org.openoffice.Office.Accelerators/PrimaryKeys/Global"><node oor:name="R_MOD2" oor:op="replace"><prop oor:name="Command" oor:op="fuse"><value xml:lang="en-US">.uno:Zoom100Percent</value></prop></node></item>
+<item oor:path="/org.openoffice.Office.Accelerators/PrimaryKeys/Global"><node oor:name="R_MOD2" oor:op="replace"><prop oor:name="Command" oor:op="fuse"><value xml:lang="en-US">.uno:StyleApply?Style:string=color_red&amp;FamilyName:string=CharacterStyles</value></prop></node></item>
 <item oor:path="/org.openoffice.Office.Accelerators/PrimaryKeys/Modules/org.openoffice.Office.Accelerators:Module['com.sun.star.sheet.SpreadsheetDocument']"><node oor:name="F2" oor:op="remove"/></item>
 <item oor:path="/org.openoffice.Office.Accelerators/PrimaryKeys/Modules/org.openoffice.Office.Accelerators:Module['com.sun.star.sheet.SpreadsheetDocument']/org.openoffice.Office.Accelerators:Key['F8']/Command"><value xml:lang="en-US">.uno:SetInputMode</value></item>
 <item oor:path="/org.openoffice.Office.Accelerators/PrimaryKeys/Modules/org.openoffice.Office.Accelerators:Module['com.sun.star.sheet.SpreadsheetDocument']/org.openoffice.Office.Accelerators:Key['M_MOD1']/Command"><value xml:lang="en-US">.uno:MergeCells</value></item>
