@@ -3,10 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Adobe Premiere Pro)
 hidden: true
-file_extensions:
-  - prel
-  - prproj
-  - psq
+file_extensions: ['prel', 'prproj', 'psq']
 scope: text.plain.premiere
 contexts:
   main:

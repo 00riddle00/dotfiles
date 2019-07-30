@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: YAML (Procfile)
 hidden: true
-file_extensions:
-  - Procfile
+file_extensions: ['Procfile']
 scope: source.yaml.procfile
 contexts:
   main:

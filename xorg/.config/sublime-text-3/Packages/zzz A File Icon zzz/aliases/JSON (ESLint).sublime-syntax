@@ -3,9 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: JSON (ESLint)
 hidden: true
-file_extensions:
-  - .eslintrc
-  - .eslintrc.json
+file_extensions: ['.eslintrc', '.eslintrc.json']
 scope: source.json.eslint
 contexts:
   main:

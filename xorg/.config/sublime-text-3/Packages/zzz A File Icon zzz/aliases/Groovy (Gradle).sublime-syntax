@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Groovy (Gradle)
 hidden: true
-file_extensions:
-  - gradle
+file_extensions: ['gradle']
 scope: source.groovy.gradle
 contexts:
   main:

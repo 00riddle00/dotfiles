@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (CSV)
 hidden: true
-file_extensions:
-  - csv
+file_extensions: ['csv']
 scope: text.csv
 contexts:
   main:

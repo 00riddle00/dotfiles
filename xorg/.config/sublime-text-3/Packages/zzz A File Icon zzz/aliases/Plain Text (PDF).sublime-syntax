@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (PDF)
 hidden: true
-file_extensions:
-  - pdf
+file_extensions: ['pdf']
 scope: text.plain.pdf
 contexts:
   main:

@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Shell Script (Stylelint)
 hidden: true
-file_extensions:
-  - .stylelintignore
+file_extensions: ['.stylelintignore']
 scope: source.shell.stylelint
 contexts:
   main:

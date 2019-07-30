@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: YAML (Sublime)
 hidden: true
-file_extensions:
-  - sublime-syntax
+file_extensions: ['sublime-syntax']
 scope: source.yaml.sublime
 contexts:
   main:

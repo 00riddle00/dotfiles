@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: XML (SVG)
 hidden: true
-file_extensions:
-  - svg
+file_extensions: ['svg']
 scope: text.xml.svg
 contexts:
   main:

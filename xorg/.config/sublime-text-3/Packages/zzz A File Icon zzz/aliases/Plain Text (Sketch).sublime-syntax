@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Sketch)
 hidden: true
-file_extensions:
-  - sketch
+file_extensions: ['sketch']
 scope: text.plain.sketch
 contexts:
   main:

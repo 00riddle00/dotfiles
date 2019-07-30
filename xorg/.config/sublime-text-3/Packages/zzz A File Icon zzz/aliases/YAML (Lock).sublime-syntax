@@ -3,9 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: YAML (Lock)
 hidden: true
-file_extensions:
-  - Gemfile.lock
-  - Berksfile.lock
+file_extensions: ['Gemfile.lock', 'Berksfile.lock']
 scope: source.yaml.lock
 contexts:
   main:

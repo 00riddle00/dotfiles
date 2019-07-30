@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Buildpacks)
 hidden: true
-file_extensions:
-  - .buildpacks
+file_extensions: ['.buildpacks']
 scope: text.plain.buildpacks
 contexts:
   main:

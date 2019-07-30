@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Git Keep
 hidden: true
-file_extensions:
-  - .gitkeep
+file_extensions: ['.gitkeep']
 scope: text.git.keep
 contexts:
   main:

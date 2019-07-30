@@ -3,12 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Microsoft Excel)
 hidden: true
-file_extensions:
-  - xls
-  - xlsx
-  - xlsm
-  - xlsb
-  - xlt
+file_extensions: ['xls', 'xlsx', 'xlsm', 'xlsb', 'xlt']
 scope: text.plain.excel
 contexts:
   main:

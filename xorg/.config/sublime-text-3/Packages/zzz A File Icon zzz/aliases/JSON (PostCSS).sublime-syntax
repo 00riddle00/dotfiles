@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: JSON (PostCSS)
 hidden: true
-file_extensions:
-  - .postcssrc
+file_extensions: ['.postcssrc']
 scope: source.json.postcss
 contexts:
   main:

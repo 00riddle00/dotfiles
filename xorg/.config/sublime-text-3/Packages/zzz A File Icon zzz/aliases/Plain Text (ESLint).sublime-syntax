@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (ESLint)
 hidden: true
-file_extensions:
-  - .eslintcache
+file_extensions: ['.eslintcache']
 scope: text.plain.eslint
 contexts:
   main:

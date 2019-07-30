@@ -3,11 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Vimrc (VimL)
 hidden: true
-file_extensions:
-  - .vimrc
-  - .gvimrc
-  - _vimrc
-  - _gvimrc
+file_extensions: ['.vimrc', '.gvimrc', '_vimrc', '_gvimrc']
 scope: source.viml.vimrc
 contexts:
   main:

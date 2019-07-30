@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: CoffeeScript (Gulpfile)
 hidden: true
-file_extensions:
-  - gulpfile.coffee
+file_extensions: ['gulpfile.coffee']
 scope: source.coffee.gulpfile
 contexts:
   main:

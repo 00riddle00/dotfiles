@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Shell Script (Ruby)
 hidden: true
-file_extensions:
-  - .rvmrc
+file_extensions: ['.rvmrc']
 scope: source.shell.ruby
 contexts:
   main:

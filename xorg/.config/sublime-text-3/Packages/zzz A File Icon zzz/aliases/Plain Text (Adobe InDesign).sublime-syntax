@@ -3,13 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Adobe InDesign)
 hidden: true
-file_extensions:
-  - indd
-  - indl
-  - indt
-  - indb
-  - inx
-  - idml
+file_extensions: ['indd', 'indl', 'indt', 'indb', 'inx', 'idml']
 scope: text.plain.indesign
 contexts:
   main:

@@ -49,7 +49,7 @@
                 (tab-style automatic))))
     (gimp-dock
         (side left)
-        (position 247)
+        (position 251)
         (book
             (current-page 0)
             (dockable "gimp-layer-list"

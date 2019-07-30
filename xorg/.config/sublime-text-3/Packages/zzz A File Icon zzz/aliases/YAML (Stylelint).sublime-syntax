@@ -3,9 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: YAML (Stylelint)
 hidden: true
-file_extensions:
-  - .stylelintrc.yaml
-  - .stylelintrc.yml
+file_extensions: ['.stylelintrc.yaml', '.stylelintrc.yml']
 scope: source.yaml.stylelint
 contexts:
   main:

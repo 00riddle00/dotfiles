@@ -3,8 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: XML (Config)
 hidden: true
-file_extensions:
-  - config
+file_extensions: ['config']
 scope: text.xml.config
 contexts:
   main:

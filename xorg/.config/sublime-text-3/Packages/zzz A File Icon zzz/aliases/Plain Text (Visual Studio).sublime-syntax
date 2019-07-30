@@ -3,9 +3,7 @@
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Visual Studio)
 hidden: true
-file_extensions:
-  - idl
-  - sln
+file_extensions: ['idl', 'sln']
 scope: text.plain.visualstudio
 contexts:
   main:
