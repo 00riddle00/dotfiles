@@ -392,6 +392,7 @@ alias ww='sudo netctl start wlp8s0-Telia-63E82B-Greitas'
 alias ws='sudo netctl start sodas'
 alias we='sudo netctl start eduroam'
 alias wk='sudo netctl start wlp8s0-andkarGreitasis'
+alias wz='sudo netctl start wlp8s0-ZundaGuest'
 alias essid='iwconfig'
 
 ## touchpad
