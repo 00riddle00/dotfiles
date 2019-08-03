@@ -1,4 +1,4 @@
-// iTWudoFeM4R5YXzpnMcSo1mYfyeLfL0GuXuhMWZeVtOeIYuO8yHdtKgx5ZhL4RvR2znXLpMx+IO7E5pgbXnr4v9alYF8NWWZJargLG4Qq+JctSklDBUBfu9aK8QgbjwIoeFOsQr6OtFK3DvTd3vs5s/HRp4H1Mn7ZMPtJK9R9dk+adC81f9jPy/i+yabu5poLKUWFPg0u594JM2keWSOxNzrMnpp7O9e0vRj/Zyu6JFmPHrnb5OOJIPVRqtFgJOChOwkg8hkU4/a6XZ+DHWduzcpLcI3ThGhwry4d9Xql8GHjpVefxg2wwOyR70WDe7c4s/0zeU9ffdxei1IzR73oA==
+// FcbxyIJ6zECuEJKRQ0td713XI4BaOUuV++XQqETBeGHZGQTFDNZ2/BfdQh8Mln/0lErdrWS0lwwEAj9ZJCGMdj4tZB0Awm0lgPCgFw9DfZ9iuvG3wTMz2uLzVtAkLm/kO6hWI02j3HIEae8PUTIdqnAaRP2NLaebN04zc2nXzKvKBGQZUgO4/Sh/yS6O9B/8sN795GMLaJcQrHgBi9hM0pHwt1rOCCArXjES0bnVonz1PRKTq8VTmHvp7pWlYu1GwhmyFIFVTz+EJbtUwq9XWWhsI8NxvsKeCQ0ChZ3Hl7dQ5xfae0ord4VIfoExrsV7RA9KVQJC6Xc0AwdBKBth+w==
 {
   "@encoding": "UTF-8",
   "@version": "1.0",
@@ -39,6 +39,66 @@
       },
             {
         "@name": "tv.youtube.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "twitch.tv",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "play.google.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "itv.com",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "ariane.group",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "ncplusgo.pl",
+        "section": {
+          "@name": "User Agent",
+          "pref": {
+            "@value": "35",
+            "@name": "Spoof UserAgent ID"
+          }
+        }
+      },
+      {
+        "@name": "icloud.com",
         "section": {
           "@name": "User Agent",
           "pref": {

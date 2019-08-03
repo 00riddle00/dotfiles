@@ -1,0 +1,956 @@
+// kgUx+9EF3JIhncnJnKkxQzAW3PXQgETMdCi0yA6MCZbrwr7Ex0vKnVvF2NsMk7RAXk8Nk76EQOMGeBYEjj4qHzOrMB9MijRe8/NEqSVqfMksWNCQLsl8fEo8KjKMdbPBG9X9jtzirCvh+2KHG8ljSZeti24LgiW5qoGgn77hK8IgDWtRQg60Fuw5WjuWj3qh2PhsZDvH5C0vWkFjNXECFmrmRa/YYlYjQgWk7pQCSdoi9Ai/OnIBs3BsS8aeEc7i3mqFpjSOebIWtJ174LUxGbnpVzkASA9pLRhVXxVtQGgZq7zzDFhS47+7eC+QiP4Pq6YweZ0uSwFCuXis1djW9A==
+{
+	"version": 25,
+	"hints": [
+		{
+			"id": "0001_v3_1_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance > 100 AND ab_test_group_allegiance < 1100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/search_popup_1_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v3_ref_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 1100 AND ab_test_group_allegiance < 2100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/phony_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v3_1_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 100 AND ab_test_group_allegiance < 766",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/search_popup_1_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v3_2_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 766 AND ab_test_group_allegiance < 1433",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/search_popup_2_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v3_ref_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 1433 AND ab_test_group_allegiance < 2100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/phony_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v3_12",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 100 AND ab_test_group_allegiance < 1100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/search_popup_12_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v3_ref_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 1100 AND ab_test_group_allegiance < 2100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v3/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_1",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 200 AND ab_test_group_allegiance < 206",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_1_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_2",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 206 AND ab_test_group_allegiance < 212",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_2_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_3",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 212 AND ab_test_group_allegiance < 218",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_3_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_4",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 218 AND ab_test_group_allegiance < 224",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_4_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_5",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 224 AND ab_test_group_allegiance < 230",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_5_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_6",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 230 AND ab_test_group_allegiance < 236",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_6_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_7",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 236 AND ab_test_group_allegiance < 242",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_7_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_8",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 242 AND ab_test_group_allegiance < 248",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_8_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_9",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 248 AND ab_test_group_allegiance < 254",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_9_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_10",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 254 AND ab_test_group_allegiance < 260",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_10_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_11",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 260 AND ab_test_group_allegiance < 266",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_11_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_12",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 266 AND ab_test_group_allegiance < 272",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_12_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_13",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 272 AND ab_test_group_allegiance < 278",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_13_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_14",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 278 AND ab_test_group_allegiance < 284",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_14_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_ref_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 284 AND ab_test_group_allegiance < 300",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_1_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 200 AND ab_test_group_allegiance < 233",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_1_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_2_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 233 AND ab_test_group_allegiance < 266",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_2_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_ref_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 266 AND ab_test_group_allegiance < 300",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/phony_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_1_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance > 200 AND ab_test_group_allegiance < 233",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_1_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_2_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 233 AND ab_test_group_allegiance < 266",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/search_popup_2_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v5_ref_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 266 AND ab_test_group_allegiance < 300",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24 AND time_since_registration >= 2 * 24 AND (chars IN '04ea5e6749c3db01060291e3dff420fb0bbd2a0c' OR 'c485ae2488b5b387a545bae58eb12aef317e789e')"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v5/phony_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_1",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 300 AND ab_test_group_allegiance < 313",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_1_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_2",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 313 AND ab_test_group_allegiance < 325",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_2_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_3",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 325 AND ab_test_group_allegiance < 338",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_3_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_4",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 338 AND ab_test_group_allegiance < 350",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_4_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_5",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 350 AND ab_test_group_allegiance < 363",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_5_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_6",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 363 AND ab_test_group_allegiance < 375",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_6_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_7",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 375 AND ab_test_group_allegiance < 388",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/search_popup_7_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v6_ref_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 388 AND ab_test_group_allegiance < 400",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v6/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v7_6_RU",
+			"target": "language = 'ru' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 500 AND ab_test_group_allegiance < 1500",
+			"trigger": {
+				"event": "yandex_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'yandex' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v7/search_popup_6_RU.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v7_ref_RU",
+			"target": "language = 'ru' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 1500 AND ab_test_group_allegiance < 2500",
+			"trigger": {
+				"event": "yandex_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'yandex' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v7/phony_RU.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_1_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 500 AND ab_test_group_allegiance < 514",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/search_bubble_button_1.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_2_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 514 AND ab_test_group_allegiance < 529",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/search_bubble_button_2.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_3_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 529 AND ab_test_group_allegiance < 543",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/search_bubble_x_1.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_4_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 543 AND ab_test_group_allegiance < 557",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/search_bubble_x_2.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_5_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 557 AND ab_test_group_allegiance < 571",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/search-animation_1.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_6_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 571 AND ab_test_group_allegiance < 586",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/search-animation_2.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_ref_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 586 AND ab_test_group_allegiance < 600",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_1_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 300 AND ab_test_group_allegiance < 314",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/search_bubble_button_1_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_2_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 314 AND ab_test_group_allegiance < 329",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/search_bubble_button_2_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_3_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 329 AND ab_test_group_allegiance < 343",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/search_bubble_x_1_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_4_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 343 AND ab_test_group_allegiance < 357",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/search_bubble_x_2_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_5_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 357 AND ab_test_group_allegiance < 371",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/search-animation_1_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_6_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 371 AND ab_test_group_allegiance < 386",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/search-animation_2_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_ref_PL",
+			"target": "language = 'pl' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 386 AND ab_test_group_allegiance < 400",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_PL/phony_PL.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_1_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 300 AND ab_test_group_allegiance < 314",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/search_bubble_button_1_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_2_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 314 AND ab_test_group_allegiance < 329",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/search_bubble_button_2_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_3_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 329 AND ab_test_group_allegiance < 343",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/search_bubble_x_1_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_4_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 343 AND ab_test_group_allegiance < 357",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/search_bubble_x_2_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_5_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 357 AND ab_test_group_allegiance < 371",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/search-animation_1_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_6_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 371 AND ab_test_group_allegiance < 386",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/search-animation_2_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v8_ref_DE",
+			"target": "language = 'de' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 386 AND ab_test_group_allegiance < 400",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v8_DE/phony_DE.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v9_1",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 600 AND ab_test_group_allegiance < 633",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google'"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v9/search_popup_1_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v9_2",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 633 AND ab_test_group_allegiance < 666",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google'"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v9/search_popup_2_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v9_ref_EN",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 666 AND ab_test_group_allegiance < 700",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google'"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v9/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v10_1",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 700 AND ab_test_group_allegiance < 733",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v10/search_popup_1_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v10_2",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 733 AND ab_test_group_allegiance < 766",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v10/search_popup_2_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v10_ref",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 766 AND ab_test_group_allegiance < 800",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v10/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v11_1",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 800 AND ab_test_group_allegiance < 833",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v11/search_popup_1_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v11_2",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 833 AND ab_test_group_allegiance < 866",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1"
+			},
+			"params": {
+				"default": {
+					"url": "ttps://get.geo.opera.com/.private/assistserv/0001_v11/search_popup_2_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v11_ref",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 866 AND ab_test_group_allegiance < 900",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v11/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v12_1",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 800 AND ab_test_group_allegiance < 833",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v12/search_popup_1_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v12_2",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 833 AND ab_test_group_allegiance < 866",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v12/search_popup_2_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v12_ref",
+			"target": "(language = 'en-us' OR language = 'en-gb') AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 866 AND ab_test_group_allegiance < 900",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND most_recent.time_since_last_shown >= 1"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v12/phony_EN.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v13_1_RU",
+			"target": "language = 'ru' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 100 AND ab_test_group_allegiance < 1100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v13_RU/search_popup_1_RU.html"
+				}
+			}
+		},
+		{
+			"id": "0001_v13_ref_RU",
+			"target": "language = 'ru' AND os.type = 'win' AND transparency_supported = 1 AND ab_test_group_allegiance >= 1100 AND ab_test_group_allegiance < 2100",
+			"trigger": {
+				"event": "google_organic_search",
+				"condition": "number_of_times_already_shown < 3 AND default_search_engine = 'google' AND time_since_last_shown >= 7 * 24 AND most_recent.time_since_last_shown >= 1 * 24"
+			},
+			"params": {
+				"default": {
+					"url": "https://get.geo.opera.com/.private/assistserv/0001_v13_RU/phony_RU.html"
+				}
+			}
+		}
+		
+	]
+}

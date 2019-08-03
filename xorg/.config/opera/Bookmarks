@@ -1,5 +1,5 @@
 {
-   "checksum": "73eb0348ee2f9915e4818cfddd60625b",
+   "checksum": "59cde3b9b61413fcd7d3f47516c5a68a",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -16,20 +16,20 @@
                   "date_added": "13194117059315997",
                   "id": "24",
                   "meta_info": {
-                     "imageData": "https://sd-images.operacdn.com/api/v1/images/dfb8e26cece0bc9b48746878a1da78dee32fc104.png",
+                     "imageData": "https://sd-images.operacdn.com/api/v1/images/bd1ec98a8b358bc0cf68cad5a59c192b56d12dfc.png",
                      "imageDataType": "2",
                      "imageID": "2927498828C5AE69F685B89AB2C78250E59651632542A7013555819175954B5B",
                      "imageType": "2",
                      "partner_id": "booking_com",
-                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/dfb8e26cece0bc9b48746878a1da78dee32fc104.png",
-                     "partner_url": "http://www.booking.com/index.html?aid=343336&label=operasoft-sdO15-343336&utm_source=Opera&utm_medium=web&utm_campaign=sdO15",
+                     "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/bd1ec98a8b358bc0cf68cad5a59c192b56d12dfc.png",
+                     "partner_url": "https://www.booking.com/index.html?aid=343336&label=operasoft-sdO15-343336&utm_source=Opera&utm_medium=web&utm_campaign=sdO15",
                      "ping_url": "https://speeddials.opera.com/api/v2/ping/booking_com",
-                     "revision": "20180704",
+                     "revision": "20190614",
                      "server_position": "1"
                   },
                   "name": "Booking.com",
                   "type": "url",
-                  "url": "http://www.booking.com/"
+                  "url": "https://www.booking.com/"
                }, {
                   "date_added": "13194117059316105",
                   "id": "25",
@@ -40,7 +40,7 @@
                      "imageType": "2",
                      "partner_id": "facebook",
                      "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/7f7f24d59ae6c9f584a9d494b23027933fda169a.png",
-                     "partner_url": "http://www.facebook.com/",
+                     "partner_url": "https://www.facebook.com/",
                      "ping_url": "https://speeddials.opera.com/api/v2/ping/facebook",
                      "revision": "20171003",
                      "server_position": "2"
@@ -76,7 +76,7 @@
                      "imageType": "2",
                      "partner_id": "youtube",
                      "partner_image_download_url": "https://sd-images.operacdn.com/api/v1/images/b2212365035a0d3c41052fd63eb892321b8f363a.png",
-                     "partner_url": "http://www.youtube.com/",
+                     "partner_url": "https://www.youtube.com/",
                      "ping_url": "https://speeddials.opera.com/api/v2/ping/youtube",
                      "revision": "20171003",
                      "server_position": "4"
