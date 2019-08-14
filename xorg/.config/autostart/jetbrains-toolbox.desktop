@@ -1,6 +1,6 @@
 [Desktop Entry]
 Categories=Development;IDE;
-Exec=/home/riddle/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+Exec=/opt/jetbrains-toolbox/jetbrains-toolbox --minimize
 Icon=/home/riddle/.local/share/JetBrains/Toolbox/toolbox.svg
 MimeType=x-scheme-handler/jetbrains;
 Name=JetBrains Toolbox
