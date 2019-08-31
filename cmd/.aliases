@@ -507,7 +507,7 @@ if xset q &>/dev/null; then
 
     ## Configure display
     ## if HDMI display connected, use it. Else use eDP.
-    xrandr | awk '/\ connected/{print $1}' | grep $HDMI_SCREEN > /dev/null 2>&1
+    xrandr | awk '/ connected/{print $1}' | grep $HDMI_SCREEN > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         xrandr --output $HDMI_SCREEN --auto
         :
