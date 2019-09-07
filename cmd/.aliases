@@ -627,6 +627,7 @@ alias watchh='watch "du -hs * | sort -h"'
 alias hak='ssh root@85.206.145.19'
 alias ua='uname -a'
 alias charge='$SHELL_SCRIPTS_DIR/battery.sh && acpi'
+alias cg='acpi'
 alias yd='youtube-dl'
 alias ydn='youtube-dl --no-playlist' 
 alias ydna='youtube-dl --no-playlist --extract-audio --audio-format mp3'
@@ -638,3 +639,4 @@ alias unrar='unrar x'
 #sed
 alias allow_only_alpha_and_spaces="sed '/^[[:alpha:] ]*$/!d' GL.md > GL2.md"
 
+alias ggp='gprolog'
