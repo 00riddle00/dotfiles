@@ -24752,3 +24752,2161 @@
 | T2LHV2VSB |      |            |
 +-----------+------+------------+ 
 [05/28/19, 20:21:51:110] info: Store: QUIT_APP 
+[09/13/19, 17:56:40:125] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗ 
+[09/13/19, 17:56:40:274] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗ 
+[09/13/19, 17:56:40:126] info: ║      Slack 4.0.2, linux 5.2.13-arch1-1-ARCH on x64 at 09/13/19, 17:56:40:124      ║ 
+[09/13/19, 17:56:40:126] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝ 
+[09/13/19, 17:56:40:127] info: Configured logger via 
+{
+  "logLevel": "info"
+}
+[09/13/19, 17:56:40:127] info: Predefined values for process 
+{
+  "platform": "linux",
+  "NODE_ENV": "production",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.0.2",
+  "PACKAGE_MANIFEST.versionName": "The Final Countdown",
+  "PACKAGE_MANIFEST.commit": "8900f04",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[09/13/19, 17:56:40:236] info: Read UUID from file successful 
+{
+  "uuid": "249d8efa-ea3e-524f-b0b9-60bd01bcba50"
+}
+[09/13/19, 17:56:40:264] info: TraceRecorder: setting up trace recorder, trace will be stored under /home/riddle/.dotfiles/xorg/.config/Slack/logs/recorded-trace
+[09/13/19, 17:56:40:266] info: Copying current Cookies into StaleCookies-0 
+[09/13/19, 17:56:40:277] info: BrowserStore: Skip keychain access in Sonic 
+[09/13/19, 17:56:40:287] info: Store: persist/REHYDRATE 
+{
+  "appTeams": {
+    "selectedTeamId": "T2LHV2VSB",
+    "teamsByIndex": [
+      "T2LHV2VSB"
+    ],
+    "teamsToSignOut": []
+  },
+  "dialog": "[REDACTED]",
+  "downloads": "[REDACTED]",
+  "enterprise": {
+    "T2LHV2VSB": null
+  },
+  "settings": {
+    "appVersion": "3.4.2",
+    "versionName": "Eye of the Tiger",
+    "platform": "linux",
+    "platformVersion": {
+      "major": 5,
+      "minor": 1,
+      "build": 4
+    },
+    "isWin10": false,
+    "isBeforeWin10": false,
+    "resourcePath": "/usr/lib/slack/resources/app.asar",
+    "webappSrcPath": false,
+    "webappParams": null,
+    "isDevMode": false,
+    "devEnv": null,
+    "logFile": null,
+    "rxLogging": false,
+    "openDevToolsOnStart": false,
+    "pretendNotReallyWindows10": false,
+    "releaseChannel": "prod",
+    "autoHideMenuBar": false,
+    "defaultSigninTeam": null,
+    "isTitleBarHidden": false,
+    "isUsingBrowserSignin": true,
+    "hasRunApp": true,
+    "hasRunFromTray": true,
+    "reportIssueOnStartup": false,
+    "isSignedIntoSlackOrg": false,
+    "isGpuCompositionAvailable": true,
+    "startNetLogAtLaunch": false,
+    "sandboxSigninWindow": true,
+    "runFromTray": true,
+    "launchOnStartup": false,
+    "spellcheckerLanguage": null,
+    "zoomLevel": 0,
+    "workspaceIdleTimeout": 43200000,
+    "whitelistedUrlSchemes": [
+      "http:",
+      "https:",
+      "mailto:",
+      "skype:",
+      "spotify:",
+      "live:",
+      "callto:",
+      "tel:",
+      "im:",
+      "sip:",
+      "sips:",
+      "slack:"
+    ],
+    "isTitleBarForcedByUser": false,
+    "useHwAcceleration": true,
+    "isOpenExternalShellForced": true,
+    "PrefSSBFileDownloadPath": "/home/riddle/Downloads",
+    "notificationMethod": null,
+    "notificationPlayback": null,
+    "notificationFailover": 0,
+    "notificationFailoverEnabled": true,
+    "notificationTimeout": 6000,
+    "notificationAfterHoverTimeout": 2000,
+    "notificationMaxItems": 3,
+    "notificationZoomLevel": null,
+    "notificationStyle": null,
+    "notificationPresentationCheck": null,
+    "notifyPosition": {
+      "corner": "bottom_right",
+      "display": "same_as_app"
+    },
+    "locale": "en-US",
+    "spellCheckerVersion": "V2",
+    "os": false,
+    "release": false,
+    "desktopEnvironment": false,
+    "notificationClickThrough": false,
+    "notificationClickThroughMain": true,
+    "isAeroGlassEnabled": false,
+    "linux": {
+      "os": "Raspbian",
+      "release": ""
+    }
+  },
+  "teams": "[REDACTED]"
+}
+[09/13/19, 17:56:40:289] info: UpdaterEpics: Updates disabled because 
+{
+  "issues": [
+    "using Linux"
+  ]
+}
+[09/13/19, 17:56:40:289] info: Store: INITIALIZE 
+{
+  "resourcePath": "/usr/lib/slack/resources/app.asar"
+}
+[09/13/19, 17:56:40:322] warn: Failed to install protocol handler for slack:// links 
+[09/13/19, 17:56:40:365] info: Store: CREATE_WINDOW 
+{
+  "type": "main"
+}
+[09/13/19, 17:56:40:367] info: App: Welcome to Slack 0.0.0 x64 
+[09/13/19, 17:56:40:367] info: App load time: 0,386989484 
+[09/13/19, 17:56:40:376] warn: Couldn't get Linux distro info from lsb_release, trying fallback to get Linux distro info 
+{
+  "error": {
+    "stack": "Error: lsb_release is missing OS and release info, bailing\n    at getLinuxDistro (/usr/lib/slack/resources/app.asar/dist/main.bundle.js:1:357384)",
+    "message": "lsb_release is missing OS and release info, bailing"
+  },
+  "stackFrameString": "[{\"columnNumber\":357384,\"lineNumber\":1,\"fileName\":\"/usr/lib/slack/resources/app.asar/dist/main.bundle.js\",\"functionName\":\"getLinuxDistro\",\"source\":\"    at getLinuxDistro (/usr/lib/slack/resources/app.asar/dist/main.bundle.js:1:357384)\"}]"
+}
+[09/13/19, 17:56:40:274] info: ║      Slack 4.0.2, linux 5.2.13-arch1-1-ARCH on x64 at 09/13/19, 17:56:40:274      ║ 
+[09/13/19, 17:56:40:274] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝ 
+[09/13/19, 17:56:40:274] info: Configured logger via 
+{
+  "logLevel": "info"
+}
+[09/13/19, 17:56:40:274] info: Predefined values for process 
+{
+  "platform": "linux",
+  "NODE_ENV": "production",
+  "type": "browser",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.0.2",
+  "PACKAGE_MANIFEST.versionName": "The Final Countdown",
+  "PACKAGE_MANIFEST.commit": "8900f04",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[09/13/19, 17:56:40:393] info: Store: READY 
+{
+  "resourcePath": "/usr/lib/slack/resources/app.asar",
+  "appVersion": "4.0.2",
+  "isGpuCompositionAvailable": true,
+  "isTitleBarHidden": false,
+  "isSonic": true,
+  "platformVersion": {
+    "major": 5,
+    "minor": 2,
+    "build": 13
+  },
+  "releaseChannel": "prod",
+  "sessionId": "MjQ5ZDhlZmEtZWEzZS01MjRmLWIwYjktNjBiZDAxYmNiYTUwXzE1NjgzODY2MDAyMzY=",
+  "versionName": "The Final Countdown",
+  "linux": {
+    "os": "Arch Linux",
+    "name": "Arch Linux ",
+    "release": "",
+    "codename": ""
+  }
+}
+[09/13/19, 17:56:40:397] info: Store: UPDATE_SETTINGS 
+{
+  "isSignedIntoSlackOrg": false
+}
+[09/13/19, 17:56:40:398] info: AutoLoginEpic: Checking for autologin. 
+[09/13/19, 17:56:40:399] info: Client Boot Config
+	localSettings: undefined
+	version: 4.0.2
+	productName: Slack
+	commandLine:  
+[09/13/19, 17:56:40:408] info: Store: TOKEN_FILE_PROCESSED 
+[09/13/19, 17:56:40:409] info: AutoLoginEpic: Processing token file for autologin. 
+[09/13/19, 17:56:40:409] info: Store: AUTOLOGIN_TEAMS_COMPLETE 
+[09/13/19, 17:56:40:409] info: AutoLoginEpic: Setting default sign-in team to null 
+[09/13/19, 17:56:40:409] info: Store: UPDATE_SETTINGS 
+{
+  "defaultSigninTeam": null
+}
+[09/13/19, 17:56:40:424] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 17:56:40:442] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "teamId": "app",
+  "state": "unloaded"
+}
+[09/13/19, 17:56:40:447] info: MainWindowEpics: Setting main window ID 
+{
+  "id": 1
+}
+[09/13/19, 17:56:40:449] info: Store: WINDOW_CREATED 
+{
+  "frame": {
+    "isFullScreen": false,
+    "isMinimized": false,
+    "isMaximized": false,
+    "isVisible": false,
+    "isFocused": false,
+    "bounds": {
+      "x": 560,
+      "y": 240,
+      "width": 800,
+      "height": 600
+    }
+  },
+  "type": "main",
+  "id": 1
+}
+[09/13/19, 17:56:40:487] warn: Couldn't get Linux distro info from lsb_release, trying fallback to get Linux distro info 
+{
+  "error": {
+    "stack": "Error: lsb_release is missing OS and release info, bailing\n    at Module.getLinuxDistro (/usr/lib/slack/resources/app.asar/dist/main.bundle.js:1:357384)",
+    "message": "lsb_release is missing OS and release info, bailing"
+  },
+  "stackFrameString": "[{\"columnNumber\":357384,\"lineNumber\":1,\"fileName\":\"/usr/lib/slack/resources/app.asar/dist/main.bundle.js\",\"functionName\":\"Module.getLinuxDistro\",\"source\":\"    at Module.getLinuxDistro (/usr/lib/slack/resources/app.asar/dist/main.bundle.js:1:357384)\"}]"
+}
+[09/13/19, 17:56:41:266] info: Team boot count 
+{
+  "count": 1
+}
+[09/13/19, 17:56:41:331] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:340] info: WebContents LifeCycle: webContents:1 from 'unloaded' to 'loaded' took 897 ms 
+[09/13/19, 17:56:41:341] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:56:41:342] info: initializeMainWindowEpic: Showing main window 
+{
+  "maximized": false,
+  "shouldHide": false,
+  "fullScreen": false
+}
+[09/13/19, 17:56:41:345] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isVisible": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:346] info: Store: MAIN_WINDOW_SHOWN 
+[09/13/19, 17:56:41:348] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 448,
+      "y": 156,
+      "width": 1024,
+      "height": 768
+    }
+  }
+}
+[09/13/19, 17:56:41:350] info: UpdaterEpics: Updates disabled because 
+{
+  "issues": [
+    "using Linux"
+  ]
+}
+[09/13/19, 17:56:41:353] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFullScreen": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:354] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFullScreen": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:359] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:487] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 448,
+      "y": 156,
+      "width": 1024,
+      "height": 768
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:492] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 448,
+      "y": 156,
+      "width": 1024,
+      "height": 768
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:741] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:870] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:41:989] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 649 ms 
+[09/13/19, 17:56:41:989] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:56:42:079] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:56:42:463] info: Team boot count 
+{
+  "count": 2
+}
+[09/13/19, 17:56:42:463] info: attempting to restart service worker 
+[09/13/19, 17:56:42:464] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:56:42:464] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:56:42:465] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:56:42:465] info: successfully restarted service worker 
+[09/13/19, 17:56:42:558] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 569 ms 
+[09/13/19, 17:56:42:558] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:56:42:873] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 315 ms 
+[09/13/19, 17:56:42:873] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:56:43:066] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:56:43:364] info: Team boot count 
+{
+  "count": 3
+}
+[09/13/19, 17:56:43:365] info: attempting to restart service worker 
+[09/13/19, 17:56:43:365] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:56:43:365] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:56:43:366] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:56:43:366] info: successfully restarted service worker 
+[09/13/19, 17:56:43:492] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:43:922] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 1049 ms 
+[09/13/19, 17:56:43:923] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:56:43:939] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 17 ms 
+[09/13/19, 17:56:43:939] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:56:44:059] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:56:44:457] info: Team boot count 
+{
+  "count": 4
+}
+[09/13/19, 17:56:44:458] info: attempting to restart service worker 
+[09/13/19, 17:56:44:458] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:56:44:458] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:56:44:459] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:56:44:459] info: successfully restarted service worker 
+[09/13/19, 17:56:45:764] info: Store: UPDATE_SETTINGS 
+{
+  "userTheme": "light"
+}
+[09/13/19, 17:56:45:765] info: Store: UPDATE_SETTINGS 
+{
+  "systemThemeSyncEnabled": false
+}
+[09/13/19, 17:56:46:188] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:56:46:354] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T00000000": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 17:56:46:355] info: enableSonicNextSessionEpic: Reset the boot Sonic preference 
+[09/13/19, 17:56:46:361] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T00000000": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      }
+    }
+  }
+}
+[09/13/19, 17:56:46:362] info: enableSonicNextSessionEpic: Set to boot Sonic 'once' 
+[09/13/19, 17:56:46:385] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 2446 ms 
+[09/13/19, 17:56:46:386] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:56:49:726] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:50:276] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:50:282] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:50:284] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:50:381] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:55:804] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:55:807] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:55:809] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:56:042] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:56:59:469] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:00:551] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:10:370] info: Removed log file /home/riddle/.dotfiles/xorg/.config/Slack/logs/renderer-loading-screen.log
+[09/13/19, 17:57:10:371] info: Removed log file /home/riddle/.dotfiles/xorg/.config/Slack/logs/renderer-webapp-T2LHV2VSB-preload.log
+[09/13/19, 17:57:10:371] info: Removed log file /home/riddle/.dotfiles/xorg/.config/Slack/logs/webapp-T2LHV2VSB-console.log
+[09/13/19, 17:57:37:664] info: secondInstanceEpic: Received deep link protocol activation 
+[09/13/19, 17:57:37:665] info: Store: HANDLE_DEEP_LINK 
+{
+  "url": "slack://T2LHV2VSB/magic-login/761400008151-909bb4852050be6ec7d6b56f3aa64003e3db022832494f60a6c6de9da7a119d7",
+  "causedLaunch": false
+}
+[09/13/19, 17:57:37:673] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 17:57:37:674] info: MagicLogin: Making magic login API request to https://slack.com/api/ 
+[09/13/19, 17:57:37:693] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:37:871] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 51486 ms 
+[09/13/19, 17:57:37:872] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:57:37:958] info: MagicLogin: added team T2LHV2VSB 
+[09/13/19, 17:57:37:959] info: Application: handleDeepLink for magic login complete 
+[09/13/19, 17:57:38:129] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:38:496] info: Team boot count 
+{
+  "count": 5
+}
+[09/13/19, 17:57:38:497] info: attempting to restart service worker 
+[09/13/19, 17:57:38:497] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:57:38:497] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:57:38:497] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:57:38:498] info: successfully restarted service worker 
+[09/13/19, 17:57:38:567] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 696 ms 
+[09/13/19, 17:57:38:567] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:57:38:570] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 3 ms 
+[09/13/19, 17:57:38:570] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:57:39:104] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:57:39:176] info: Team boot count 
+{
+  "count": 6
+}
+[09/13/19, 17:57:39:177] info: attempting to restart service worker 
+[09/13/19, 17:57:39:177] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:57:39:177] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:57:39:178] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:57:39:179] info: successfully restarted service worker 
+[09/13/19, 17:57:39:248] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:39:258] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 688 ms 
+[09/13/19, 17:57:39:258] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:57:40:011] info: Store: UPDATE_SETTINGS 
+{
+  "userTheme": "light"
+}
+[09/13/19, 17:57:40:013] info: Store: UPDATE_SETTINGS 
+{
+  "systemThemeSyncEnabled": false
+}
+[09/13/19, 17:57:40:097] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:40:397] info: Store: UPDATE_SETTINGS 
+{
+  "lastClogForProxyInfo": 1568386660397
+}
+[09/13/19, 17:57:40:420] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:57:40:488] info: Store: SYNC Bad or empty workspaces payload
+[09/13/19, 17:57:40:489] info: Store: SELECTION_CHANGED T2LHV2VSB
+[09/13/19, 17:57:40:556] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T2LHV2VSB": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 17:57:40:559] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T2LHV2VSB": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      }
+    }
+  }
+}
+[09/13/19, 17:57:40:572] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T2LHV2VSB": {
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 17:57:40:613] info: Store: SYNC Synced 1 workspaces with IDs [T2LHV2VSB]
+[09/13/19, 17:57:40:626] info: Store: SELECTION_CHANGED T2LHV2VSB
+[09/13/19, 17:57:40:628] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'webapp-loaded' took 1370 ms 
+[09/13/19, 17:57:40:628] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "webapp-loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:57:40:629] info: EnterpriseStorageManager: Sending initial pull message 
+{
+  "teamId": "app"
+}
+[09/13/19, 17:57:40:761] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:41:315] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:41:691] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 17:57:41:726] info: Store: STORE_ENTERPRISE_ID_PAIR 
+{
+  "teamId": "app",
+  "enterpriseId": null
+}
+[09/13/19, 17:57:42:194] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:51:635] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:52:881] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:53:523] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:54:522] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:55:261] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:56:009] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:56:887] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:57:481] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:58:678] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:57:58:740] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:16:651] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:17:216] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:17:283] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:17:518] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:19:207] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:19:899] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:20:473] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:21:490] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:24:058] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:24:655] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:26:514] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:27:305] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:33:131] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:33:596] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:33:743] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:34:755] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:34:845] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:40:929] info: secondInstanceEpic: Received deep link protocol activation 
+[09/13/19, 17:58:40:929] info: Store: HANDLE_DEEP_LINK 
+{
+  "url": "slack://T3947K01X/magic-login/759076698756-46b85d6320aadba42c99d4a461d5607f0f1daf2c6bb38be63e09f22182f9d200",
+  "causedLaunch": false
+}
+[09/13/19, 17:58:40:935] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 17:58:40:936] info: MagicLogin: Making magic login API request to https://slack.com/api/ 
+[09/13/19, 17:58:40:970] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:41:117] info: WebContents LifeCycle: webContents:1 from 'webapp-loaded' to 'page-will-navigate' took 60489 ms 
+[09/13/19, 17:58:41:117] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:58:41:429] info: MagicLogin: added team T3947K01X 
+[09/13/19, 17:58:41:429] info: Application: handleDeepLink for magic login complete 
+[09/13/19, 17:58:41:531] info: Team boot count 
+{
+  "count": 7
+}
+[09/13/19, 17:58:41:532] info: attempting to restart service worker 
+[09/13/19, 17:58:41:532] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:58:41:533] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:58:41:544] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:58:41:545] info: successfully restarted service worker 
+[09/13/19, 17:58:41:615] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:41:628] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 511 ms 
+[09/13/19, 17:58:41:629] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:58:42:219] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 591 ms 
+[09/13/19, 17:58:42:220] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 17:58:42:229] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:58:42:585] info: Team boot count 
+{
+  "count": 8
+}
+[09/13/19, 17:58:42:585] info: attempting to restart service worker 
+[09/13/19, 17:58:42:586] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 17:58:42:586] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 17:58:42:588] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 17:58:42:588] info: successfully restarted service worker 
+[09/13/19, 17:58:42:670] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 451 ms 
+[09/13/19, 17:58:42:670] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:58:43:253] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 17:58:43:538] info: Store: UPDATE_SETTINGS 
+{
+  "userTheme": "light"
+}
+[09/13/19, 17:58:43:539] info: Store: UPDATE_SETTINGS 
+{
+  "systemThemeSyncEnabled": false
+}
+[09/13/19, 17:58:44:018] info: Store: SYNC Bad or empty workspaces payload
+[09/13/19, 17:58:44:023] info: Store: SELECTION_CHANGED T3947K01X
+[09/13/19, 17:58:44:100] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T3947K01X": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 17:58:44:103] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T3947K01X": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      }
+    }
+  }
+}
+[09/13/19, 17:58:44:118] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T3947K01X": {
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 17:58:44:164] info: Store: SYNC Synced 1 workspaces with IDs [T3947K01X]
+[09/13/19, 17:58:44:178] info: Store: SELECTION_CHANGED T3947K01X
+[09/13/19, 17:58:44:337] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:44:511] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:44:924] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 17:58:45:189] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T2LHV2VSB": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 17:58:45:196] info: Store: SYNC Synced 2 workspaces with IDs [T3947K01X,T2LHV2VSB]
+[09/13/19, 17:58:45:206] info: Store: SELECTION_CHANGED T3947K01X
+[09/13/19, 17:58:45:207] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'webapp-loaded' took 2537 ms 
+[09/13/19, 17:58:45:207] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "webapp-loaded",
+  "teamId": "app"
+}
+[09/13/19, 17:58:45:208] info: EnterpriseStorageManager: Sending initial pull message 
+{
+  "teamId": "app"
+}
+[09/13/19, 17:58:45:251] info: Store: STORE_ENTERPRISE_ID_PAIR 
+{
+  "teamId": "app",
+  "enterpriseId": null
+}
+[09/13/19, 17:58:55:792] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:28:979] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:28:998] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:29:000] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:30:179] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:30:771] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:42:452] info: Store: REMOVE_TEAMS 
+[
+  "T3947K01X"
+]
+[09/13/19, 18:00:42:457] info: Store: UPDATE_SETTINGS 
+{
+  "locale": "en-US"
+}
+[09/13/19, 18:00:42:613] info: WebContents LifeCycle: webContents:1 from 'webapp-loaded' to 'page-will-navigate' took 117406 ms 
+[09/13/19, 18:00:42:613] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 18:00:43:098] info: Team boot count 
+{
+  "count": 9
+}
+[09/13/19, 18:00:43:099] info: attempting to restart service worker 
+[09/13/19, 18:00:43:100] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 18:00:43:100] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 18:00:43:108] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 18:00:43:109] info: successfully restarted service worker 
+[09/13/19, 18:00:43:111] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:43:221] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:43:232] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 619 ms 
+[09/13/19, 18:00:43:233] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 18:00:44:025] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 18:00:44:361] info: Store: UPDATE_SETTINGS 
+{
+  "userTheme": "light"
+}
+[09/13/19, 18:00:44:363] info: Store: UPDATE_SETTINGS 
+{
+  "systemThemeSyncEnabled": false
+}
+[09/13/19, 18:00:44:971] info: Store: SYNC Bad or empty workspaces payload
+[09/13/19, 18:00:44:975] info: Store: SELECTION_CHANGED T2LHV2VSB
+[09/13/19, 18:00:45:023] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T2LHV2VSB": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 18:00:45:033] info: Store: SYNC Synced 1 workspaces with IDs [T2LHV2VSB]
+[09/13/19, 18:00:45:043] info: Store: SELECTION_CHANGED T2LHV2VSB
+[09/13/19, 18:00:45:046] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'webapp-loaded' took 1814 ms 
+[09/13/19, 18:00:45:046] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "webapp-loaded",
+  "teamId": "app"
+}
+[09/13/19, 18:00:45:047] info: EnterpriseStorageManager: Sending initial pull message 
+{
+  "teamId": "app"
+}
+[09/13/19, 18:00:45:211] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:45:737] info: Store: STORE_ENTERPRISE_ID_PAIR 
+{
+  "teamId": "app",
+  "enterpriseId": null
+}
+[09/13/19, 18:00:54:087] info: secondInstanceEpic: Received deep link protocol activation 
+[09/13/19, 18:00:54:088] info: Store: HANDLE_DEEP_LINK 
+{
+  "url": "slack://T3A4Q3UKD/magic-login/746770340930-ed3832129de5d2aa570401e58d5cf8930dde3e4db4cdd2012d4ba7fe83c53416",
+  "causedLaunch": false
+}
+[09/13/19, 18:00:54:094] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 18:00:54:095] info: MagicLogin: Making magic login API request to https://slack.com/api/ 
+[09/13/19, 18:00:54:124] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:54:488] info: MagicLogin: added team T3A4Q3UKD 
+[09/13/19, 18:00:54:488] info: Application: handleDeepLink for magic login complete 
+[09/13/19, 18:00:54:889] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:55:034] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:57:590] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:00:57:982] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:03:628] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:03:633] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:31:691] info: secondInstanceEpic: Received deep link protocol activation 
+[09/13/19, 18:01:31:691] info: Store: HANDLE_DEEP_LINK 
+{
+  "url": "slack://T4FURAXGU/magic-login/753134625937-7e3af51e6d47eab57e0ba144851b5e678315093f1622c8e2931fcf8b31f0a1a2",
+  "causedLaunch": false
+}
+[09/13/19, 18:01:31:693] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isVisible": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:31:704] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 18:01:31:704] info: MagicLogin: Making magic login API request to https://slack.com/api/ 
+[09/13/19, 18:01:31:708] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:31:711] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFullScreen": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:31:713] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 448,
+      "y": 156,
+      "width": 1024,
+      "height": 768
+    }
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:31:748] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:32:082] info: WebContents LifeCycle: webContents:1 from 'webapp-loaded' to 'page-will-navigate' took 47036 ms 
+[09/13/19, 18:01:32:083] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 18:01:32:350] info: MagicLogin: added team T4FURAXGU 
+[09/13/19, 18:01:32:351] info: Application: handleDeepLink for magic login complete 
+[09/13/19, 18:01:32:508] info: Team boot count 
+{
+  "count": 10
+}
+[09/13/19, 18:01:32:509] info: attempting to restart service worker 
+[09/13/19, 18:01:32:510] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 18:01:32:510] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 18:01:32:515] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 18:01:32:516] info: successfully restarted service worker 
+[09/13/19, 18:01:32:592] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:32:609] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 526 ms 
+[09/13/19, 18:01:32:609] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 18:01:32:710] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 448,
+      "y": 156,
+      "width": 1024,
+      "height": 768
+    }
+  }
+}
+[09/13/19, 18:01:33:157] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'page-will-navigate' took 549 ms 
+[09/13/19, 18:01:33:157] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "history": "[REDACTED]",
+  "state": "page-will-navigate",
+  "teamId": "app"
+}
+[09/13/19, 18:01:33:196] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 18:01:33:486] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:33:538] info: Team boot count 
+{
+  "count": 11
+}
+[09/13/19, 18:01:33:539] info: attempting to restart service worker 
+[09/13/19, 18:01:33:539] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.enable"
+}
+[09/13/19, 18:01:33:539] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.stopAllWorkers"
+}
+[09/13/19, 18:01:33:543] info: sending debug protocol message 
+{
+  "message": "ServiceWorker.disable"
+}
+[09/13/19, 18:01:33:544] info: successfully restarted service worker 
+[09/13/19, 18:01:33:635] info: WebContents LifeCycle: webContents:1 from 'page-will-navigate' to 'loaded' took 477 ms 
+[09/13/19, 18:01:33:635] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "loaded",
+  "teamId": "app"
+}
+[09/13/19, 18:01:34:314] info: Store: SET_NETWORK_STATUS online
+[09/13/19, 18:01:34:613] info: Store: UPDATE_SETTINGS 
+{
+  "userTheme": "light"
+}
+[09/13/19, 18:01:34:614] info: Store: UPDATE_SETTINGS 
+{
+  "systemThemeSyncEnabled": false
+}
+[09/13/19, 18:01:35:088] info: Store: SYNC Bad or empty workspaces payload
+[09/13/19, 18:01:35:093] info: Store: SELECTION_CHANGED T4FURAXGU
+[09/13/19, 18:01:35:163] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T4FURAXGU": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 18:01:35:167] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T4FURAXGU": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      }
+    }
+  }
+}
+[09/13/19, 18:01:35:182] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T4FURAXGU": {
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 18:01:35:221] info: Store: SYNC Synced 1 workspaces with IDs [T4FURAXGU]
+[09/13/19, 18:01:35:232] info: Store: SELECTION_CHANGED T4FURAXGU
+[09/13/19, 18:01:35:380] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:36:065] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T2LHV2VSB": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 18:01:36:073] info: Store: SYNC Synced 2 workspaces with IDs [T4FURAXGU,T2LHV2VSB]
+[09/13/19, 18:01:36:085] info: Store: SELECTION_CHANGED T4FURAXGU
+[09/13/19, 18:01:37:558] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T3A4Q3UKD": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": false
+      },
+      "featureFlags": {},
+      "locale": "en-US",
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 18:01:37:560] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T3A4Q3UKD": {
+      "bootConfig": {
+        "isSonicDisabled": false,
+        "isSonicEnabled": true
+      },
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      }
+    }
+  }
+}
+[09/13/19, 18:01:37:565] info: Store: REDUX_UPDATE_FROM_WEBAPP 
+{
+  "teams": {
+    "T3A4Q3UKD": {
+      "theme": {
+        "titlebarBackground": "#1F0020",
+        "titlebarTextColor": "#FFFFFF"
+      },
+      "unreads": {
+        "hasUnreads": false,
+        "showBullet": true,
+        "unreadHighlights": 0,
+        "unreads": 0
+      }
+    }
+  }
+}
+[09/13/19, 18:01:37:590] info: Store: SYNC Synced 3 workspaces with IDs [T4FURAXGU,T2LHV2VSB,T3A4Q3UKD]
+[09/13/19, 18:01:37:600] info: Store: SELECTION_CHANGED T4FURAXGU
+[09/13/19, 18:01:37:601] info: WebContents LifeCycle: webContents:1 from 'loaded' to 'webapp-loaded' took 3967 ms 
+[09/13/19, 18:01:37:601] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "webapp-loaded",
+  "teamId": "app"
+}
+[09/13/19, 18:01:37:602] info: EnterpriseStorageManager: Sending initial pull message 
+{
+  "teamId": "app"
+}
+[09/13/19, 18:01:37:619] info: Store: STORE_ENTERPRISE_ID_PAIR 
+{
+  "teamId": "app",
+  "enterpriseId": null
+}
+[09/13/19, 18:01:49:469] info: secondInstanceEpic: Received deep link protocol activation 
+[09/13/19, 18:01:49:469] info: Store: HANDLE_DEEP_LINK 
+{
+  "url": "slack://T0WU1QAMA/magic-login/761406960583-5963b48dcb773203b63000bcec79d264c99a04855f8ace1442f6ef4bdd7fffe4",
+  "causedLaunch": false
+}
+[09/13/19, 18:01:49:474] info: WebContentsMediator: Attaching to new webContents 
+[09/13/19, 18:01:49:474] info: MagicLogin: Making magic login API request to https://slack.com/api/ 
+[09/13/19, 18:01:49:507] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:49:945] info: MagicLogin: added team T0WU1QAMA 
+[09/13/19, 18:01:49:945] info: Application: handleDeepLink for magic login complete 
+[09/13/19, 18:01:50:598] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:50:854] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:51:302] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:51:316] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:51:451] info: Store: SELECTION_CHANGED T2LHV2VSB
+[09/13/19, 18:01:52:593] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:52:607] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:52:809] info: Store: SELECTION_CHANGED T3A4Q3UKD
+[09/13/19, 18:01:58:690] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:58:949] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:59:242] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:59:262] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "title": "[REDACTED]"
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:01:59:315] info: Store: SELECTION_CHANGED T4FURAXGU
+[09/13/19, 18:02:02:931] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:32:559] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:37:227] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:38:375] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:38:622] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:38:701] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:40:593] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 162,
+      "y": 148,
+      "width": 1024,
+      "height": 768
+    },
+    "isMaximized": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:40:661] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 162,
+      "y": 148,
+      "width": 1024,
+      "height": 768
+    }
+  }
+}
+[09/13/19, 18:02:42:907] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:42:912] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:42:913] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:42:914] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:42:915] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:42:916] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:43:590] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isMinimized": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:43:592] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "bounds": {
+      "x": 162,
+      "y": 148,
+      "width": 1024,
+      "height": 768
+    }
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:43:594] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFocused": true
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:44:592] info: Store: UPDATE_SETTINGS 
+{
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 162,
+      "y": 148,
+      "width": 1024,
+      "height": 768
+    }
+  }
+}
+[09/13/19, 18:02:44:943] info: Attempted to close the window, hiding due to run from tray 
+[09/13/19, 18:02:44:945] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isVisible": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:44:957] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isFullScreen": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:46:969] info: Store: QUIT_APP 
+[09/13/19, 18:02:46:975] info: Store: SET_WINDOW_FRAME 
+{
+  "id": 1,
+  "frame": {
+    "isVisible": false
+  },
+  "fromEvent": true
+}
+[09/13/19, 18:02:46:976] info: App: Disposing application 
+[09/13/19, 18:02:46:977] info: Store: APP_CLEANED_UP 
+[09/13/19, 18:02:46:977] info: Store: DOWNLOADS_CLEANED_UP 
+[09/13/19, 18:02:46:978] info: quitApplicationEpic: Found update metadata, send telemetry 
+[09/13/19, 18:02:46:978] info: EpicHelpers: Flushing cookie store 
+[09/13/19, 18:02:46:981] info: EpicHelpers: Flushing local-settings.json 
+[09/13/19, 18:02:46:981] info: LocalSettings: Setting rxLogging to undefined 
+[09/13/19, 18:02:46:988] info: quitApplicationEpic: Disposing item 
+{
+  "type": "redux_persist_storage_ReduxPersistStorage"
+}
+[09/13/19, 18:02:47:362] info: Closing main window 
+{
+  "id": 1
+}
+[09/13/19, 18:02:47:386] info: WebContents LifeCycle: webContents:1 from 'webapp-loaded' to 'page-closed' took 69785 ms 
+[09/13/19, 18:02:47:386] info: Store: UPSERT_WEB_CONTENTS 
+{
+  "id": 1,
+  "state": "page-closed",
+  "teamId": "app"
+}
+[09/13/19, 18:02:47:399] info: Store: REMOVE_WINDOW 1
+[09/13/19, 18:02:47:402] info: quitApplicationEpic: Finished, calling app.quit 
+[09/13/19, 18:02:47:404] info: 
++-------------------+--------------+
+| FLUSH_COOKIES     | 3.066911ms   |
+|-------------------+--------------+
+| TEARDOWN_STORE    | 0.059042ms   |
+|-------------------+--------------+
+| FLUSH_TELEMETRY   | 372.610474ms |
+|-------------------+--------------+
+| CLOSE_MAIN_WINDOW | 39.979138ms  |
+|-------------------+--------------+
+| TOTAL             | 427.053175ms |
++-------------------+--------------+ 
+[09/13/19, 18:02:47:407] info: Store: REMOVE_WEB_CONTENTS 
+{
+  "id": 1,
+  "teamId": "app"
+}
