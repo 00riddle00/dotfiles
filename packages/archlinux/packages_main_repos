@@ -46,6 +46,7 @@ flex
 freerdp
 gawk
 gcc
+gcc-fortran
 gcc-libs
 gdb
 gettext
@@ -145,6 +146,8 @@ reiserfsprogs
 remmina
 rtorrent
 s-nail
+sagemath
+sagemath-jupyter
 samba
 scrot
 sed

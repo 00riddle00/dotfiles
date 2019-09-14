@@ -649,3 +649,6 @@ alias allow_only_alpha_and_spaces="sed '/^[[:alpha:] ]*$/!d' GL.md > GL2.md"
 
 alias ggp='gprolog'
 alias octave='octave --gui && bg'
+alias pak='cd /home/riddle/.dotfiles/packages/'
+alias pip.freeze="pip freeze | sed  's/=.*//' > pip_packages"
+
