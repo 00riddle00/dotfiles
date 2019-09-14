@@ -224,6 +224,8 @@ alias cf='fortune | cowsay'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias show_hidden='setopt -s glob_dots'
+# create ssh tunnel to mif and run it in the background
+alias mif='ssh -f -N togi3017@uosis.mif.vu.lt -L 5555:linux:3389'
 
 ## basic commands
 alias b='bash'
@@ -289,8 +291,9 @@ alias pld='sudo pacman -Qq'
 alias pl='sudo pacman -Qqe'
 alias plm='sudo pacman -Qqm'
 alias list.pkgs.with.aur='pacman -Qe | cut -f 1 -d " "'
+alias list.pkgs.no.aur='pacman -Qe | cut -f 1 -d " "'
 alias list.aur='pacman -Qm | cut -f 1 -d " "'
-alias list.aur.no='pacman -Qm'
+alias list.aur.num='pacman -Qm'
 alias is='pld | grepi '
 alias ih='ls -la | grepi '
 
@@ -363,7 +366,7 @@ alias vs='vagrant ssh'
 alias post='sudo systemctl start postgresql'
 alias pg='sudo -u postgres psql postgres'
 alias pgm='psql -d biblio -U togi3017'
-alias mif='psql -d biblio -U togi3017 -f input.sql -o output.res && cat output.res'
+# alias mif='psql -d biblio -U togi3017 -f input.sql -o output.res && cat output.res'
 alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
 alias mysqlri='mysql -u user -p'
@@ -646,3 +649,4 @@ alias unrar='unrar x'
 alias allow_only_alpha_and_spaces="sed '/^[[:alpha:] ]*$/!d' GL.md > GL2.md"
 
 alias ggp='gprolog'
+alias octave='octave --gui && bg'
