@@ -287,13 +287,12 @@ alias up='sudo pacman -Syyu'
 alias mps='makepkg -s'
 alias mp='makepkg'
 alias what='sudo pacman -Qs'
+# list all packages with deps
 alias pld='sudo pacman -Qq'
+# list all packages
 alias pl='sudo pacman -Qqe'
+# list aur packages
 alias plm='sudo pacman -Qqm'
-alias list.pkgs.with.aur='pacman -Qe | cut -f 1 -d " "'
-alias list.pkgs.no.aur='pacman -Qe | cut -f 1 -d " "'
-alias list.aur='pacman -Qm | cut -f 1 -d " "'
-alias list.aur.num='pacman -Qm'
 alias is='pld | grepi '
 alias ih='ls -la | grepi '
 
