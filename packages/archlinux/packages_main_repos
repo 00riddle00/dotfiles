@@ -1,10 +1,7 @@
-ack
 acpi
 adobe-source-code-pro-fonts
-alsa-utils
 android-tools
 apache
-arch-install-scripts
 autoconf
 automake
 bash
@@ -12,7 +9,6 @@ bind-tools
 binutils
 bison
 bzip2
-calibre
 cmake
 cmatrix
 conky
@@ -50,7 +46,6 @@ gcc-fortran
 gcc-libs
 gdb
 gettext
-gimp
 git
 glibc
 gmrun
@@ -101,7 +96,6 @@ mdadm
 memconf
 mlocate
 moreutils
-mpd
 mpv
 mutt
 namcap
@@ -136,7 +130,7 @@ pulseaudio
 pulseaudio-alsa
 putty
 pygmentize
-python-gobject
+python-pip
 python-psycopg2
 qalculate-gtk
 qbittorrent
@@ -146,8 +140,6 @@ reiserfsprogs
 remmina
 rtorrent
 s-nail
-sagemath
-sagemath-jupyter
 samba
 scrot
 sed
@@ -174,8 +166,6 @@ urxvt-perls
 usbutils
 util-linux
 vi
-vim
-vlc
 which
 wpa_supplicant
 xf86-input-synaptics

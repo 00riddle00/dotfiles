@@ -208,3 +208,5 @@ Aug 24 13:10 : player: played "Coding_music_1.mp3"
 Aug 24 15:47 : player: played "Epicuros-Interstellar.mp3"
 Aug 24 18:59 : player: played "Spacemind-Memory_hole.mp3"
 Aug 24 23:05 : player: played "Coding_music_1.mp3"
+Sep 14 16:23 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Sep 14 16:23 : exception: Failed to access /home/riddle/media/music: No such file or directory
