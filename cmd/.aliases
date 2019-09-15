@@ -304,7 +304,6 @@ alias wall='feh --bg-scale'
 alias out='sudo openbox --exit'
 
 ## programs
-alias conda='/opt/anaconda/bin/conda'
 alias dc='docker-compose'
 alias gg='google-chrome-stable'
 alias sub='/usr/bin/subl'

@@ -369,7 +369,6 @@
 <item oor:path="/org.openoffice.Office.Math/View"><prop oor:name="ToolboxVisible" oor:op="fuse"><value>true</value></prop></item>
 <item oor:path="/org.openoffice.Office.Recovery/RecoveryInfo"><prop oor:name="Crashed" oor:op="fuse"><value>false</value></prop></item>
 <item oor:path="/org.openoffice.Office.Recovery/RecoveryInfo"><prop oor:name="SessionData" oor:op="fuse"><value>false</value></prop></item>
-<item oor:path="/org.openoffice.Office.Recovery/RecoveryList"><node oor:name="recovery_item_1" oor:op="remove"/></item>
 <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/drawobjectbar']"><prop oor:name="ContextActive" oor:op="fuse"><value>true</value></prop></item>
 <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/drawobjectbar']"><prop oor:name="ContextSensitive" oor:op="fuse"><value>true</value></prop></item>
 <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/drawobjectbar']"><prop oor:name="DockPos" oor:op="fuse"><value>0,1</value></prop></item>
