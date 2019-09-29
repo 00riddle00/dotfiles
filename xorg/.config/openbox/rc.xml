@@ -578,8 +578,8 @@
 	  -->
       <keybind key="W-q">
          <action name="Execute">
-            <!--<command>sh -c "$ACTIVATE slack"</command>-->
-            <command>sh -c "$ACTIVATE octave"</command>
+            <command>sh -c "$ACTIVATE slack"</command>
+            <!--<command>sh -c "$ACTIVATE octave"</command>-->
             <!--<command>sh -c "$FOCUS postman"</command>-->
          </action>
       </keybind>
