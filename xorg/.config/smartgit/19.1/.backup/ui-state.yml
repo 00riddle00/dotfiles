@@ -1,0 +1,72 @@
+gitProjectLayout.main: (([+317x568:directories ][+317x377:branches ])(([+1590x255:files
+  ][-2x1:message ])[+1590x499:changes ]([+793x188:outgoing ][+794x188:output ])))
+gitProjectLayout.review: ([+318x242:directories ][+1114x242:files ][+478x242:message
+  ])[+1916x727:changes ]([-1x1:branches ][-3x1:outgoing ][-3x1:output ])
+gitProjectLayout.mainIsDefault: true
+gitLogRootLayout.mainIsDefault: true
+gitLogSubtreeLayout.mainIsDefault: true
+hgProjectLayout.mainIsDefault: true
+hgLogLayout.mainIsDefault: true
+primitives.stringKeys: [git.remove.deleteLocalFile, lastRepositoryPath]
+primitives.strings.git.remove.deleteLocalFile: 'false'
+primitives.strings.lastRepositoryPath: /home/riddle/tmp4
+gitViewFileFilter: {viewRecursive: true, viewFromSubmodules: true, viewIgnoredFiles: false,
+  viewRenameSources: false, viewSkipped: false, viewUnversionedFiles: true, viewUnchangedFiles: false,
+  viewUnchangedAssumed: false, style: 0}
+bounds:
+- {key: git.discard, width: 500, height: 309}
+- {key: git.remove, width: 500, height: 309}
+- {key: log, x: 243, y: 60, width: 1437, height: 900}
+- {key: project, x: 4, y: 0, width: 1916, height: 1079}
+- {key: welcome, width: -2147483648, height: -2147483648}
+conflictSolverFrame: {}
+indexEditorFrame: {}
+columns:
+  git.log.files:
+    columnNames: "Name\tModification\tRelative Directory\tRenamed Path\tExt."
+    visibleColumnNames: "Modification\tName\tRelative Directory\tRenamed Path"
+    sortOrders:
+    - {id: Name, reverse: false}
+    columnWidths:
+    - {id: Name, width: 150, width2x: 0}
+    - {id: Modification, width: 60, width2x: 0}
+    - {id: Relative Directory, width: 200, width2x: 0}
+    - {id: Renamed Path, width: 150, width2x: 0}
+  journal.git:
+    columnNames: "Message\tAuthor\tDate\tAuthor (Email)\tID"
+    visibleColumnNames: "Author\tDate\tMessage"
+    sortOrders: []
+    columnWidths:
+    - {id: Message, width: 500, width2x: 0}
+    - {id: Author, width: 150, width2x: 0}
+    - {id: Date, width: 145, width2x: 0}
+    - {id: Author (Email), width: 200, width2x: 0}
+    - {id: ID, width: 100, width2x: 0}
+  log.comments:
+    columnNames: "Author\tText\tPath\tDate\tAssignee\tCommit"
+    visibleColumnNames: "Assignee\tAuthor\tDate\tPath\tText"
+    sortOrders:
+    - {id: Assignee, reverse: false}
+    - {id: Date, reverse: false}
+    columnWidths:
+    - {id: Author, width: 64, width2x: 0}
+    - {id: Text, width: 46, width2x: 0}
+    - {id: Path, width: 46, width2x: 0}
+    - {id: Date, width: 46, width2x: 0}
+    - {id: Assignee, width: 99, width2x: 0}
+  project.files.git:
+    columnNames: "Name\tState\tRelative Directory\tExt.\tIndex State\tLast Changed\
+      \ On\tRelative Path\tRenamed From\tSize\tWorking Tree State"
+    visibleColumnNames: "Name\tRelative Directory\tState"
+    sortOrders:
+    - {id: Name, reverse: false}
+    - {id: Relative Directory, reverse: false}
+    columnWidths:
+    - {id: Name, width: 382, width2x: 0}
+    - {id: State, width: 165, width2x: 0}
+    - {id: Relative Directory, width: 1139, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
+hgViewFileFilter: {}
+deepGitUiConfiguration: {}
+confirmations: {close.unpushedCommits: true, remove.repositoryOrGroup: true}
+gitProjectLayout.mainIsdefault: true

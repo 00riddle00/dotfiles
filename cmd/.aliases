@@ -95,7 +95,7 @@ alias keep='cd $KEEP && keepass 8gb.kdbx'
 alias can='cd $CANDY'
 alias sync='cd $SYNC'
 alias cs='cd $MAIN_HOME/CS'
-alias stat='cd $MAIN_HOME/pro/statybininkai'
+#alias stat='cd $MAIN_HOME/pro/statybininkai'
 alias ads='cd $MAIN_HOME/CS/2_semester/ads'
 alias tmp='cd $MAIN_HOME/tmp1'
 alias tmp1='cd $MAIN_HOME/tmp1'
@@ -416,8 +416,8 @@ alias xon='xrandr --output $LAPTOP_SCREEN --auto'
 alias p='python'
 alias pel='python -m pelican.server'
 alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
-alias venv='source ../env/bin/activate'
-alias senv='source env/bin/activate'
+alias venv='source ../venv/bin/activate'
+alias senv='source venv/bin/activate'
 alias qenv='deactivate'
 alias pu='s pip uninstall'
 
@@ -650,4 +650,10 @@ alias allow_only_alpha_and_spaces="sed '/^[[:alpha:] ]*$/!d' GL.md > GL2.md"
 alias ggp='gprolog'
 alias octave='octave --gui && bg'
 alias pak='cd /home/riddle/.dotfiles/packages/'
+
+alias lex='cd /home/riddle/pro/uni-compilers/lab2'
+
+alias stat="systemctl status httpd"
+
+function num() { nl -s ' ' ${1} > tmp && mv tmp ${1} && sed "s/^[ \t]*//" -i ${1} && cat ${1} | xclip }
 

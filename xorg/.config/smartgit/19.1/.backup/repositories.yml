@@ -1,0 +1,18 @@
+gitRootSettingsSet:
+  roots: [~/tmp4]
+  root-/home/riddle/tmp4:
+    commitNotes:
+      commitNotesHistory: []
+    journal:
+      lastAuxiliaryRefs: []
+      refs: []
+    databaseCleanup: {}
+    log:
+      rootSettings: {}
+      fileFilterConfiguration: {}
+    merge:
+      logRootSettings: {}
+    push: {}
+hgRootSettingsSet:
+  roots: []
+pushMultiRoot: {}

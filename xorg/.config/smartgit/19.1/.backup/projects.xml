@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Projects" type="@Projects">
+	<obj key="gitRootSettingsSet" type="@RootSettingsSet">
+		<collection key="roots" type="String">
+			<prop type="String" value="~/tmp4"/>
+		</collection>
+		<obj key="root-/home/riddle/tmp4" type="@RootSettings">
+			<obj key="databaseCleanup" type="_NULL_"/>
+			<obj key="log" type="_NULL_"/>
+			<obj key="merge" type="_NULL_"/>
+			<obj key="pull" type="_NULL_"/>
+			<obj key="push" type="_NULL_"/>
+			<obj key="commitNotes" type="@CommitNotes">
+				<prop key="commitNotes" type="_NULL_" value=""/>
+				<collection key="commitNotesHistory" type="String"/>
+			</obj>
+			<obj key="journal" type="@JournalSettings">
+				<collection key="lastAuxiliaryRefs" type="String"/>
+				<collection key="refs" type="String"/>
+			</obj>
+		</obj>
+	</obj>
+	<obj key="hgRootSettingsSet" type="@HgRootSettingsSet">
+		<collection key="roots" type="String"/>
+	</obj>
+	<obj key="pushMultiRoot" type="_NULL_"/>
+</obj>

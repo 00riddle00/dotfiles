@@ -1,6 +1,6 @@
 [Added Associations]
 image/png=mirage.desktop;nomacs.desktop;feh.desktop;gimp.desktop;ristretto.desktop;
-text/plain=sublime_text.desktop;mirage.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
+text/plain=sublime_text_3.desktop;sublime_text.desktop;mirage.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
 video/mp4=mpv.desktop;mplayer.desktop;vlc.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
@@ -47,7 +47,7 @@ image/x-canon-cr2=mirage.desktop;
 image/x-eps=gimp.desktop;
 audio/aac=mplayer.desktop;
 video/webm=mpv.desktop;vlc.desktop;
-text/x-matlab=mirage.desktop;
+text/x-matlab=sublime_text_3.desktop;sublime_text.desktop;mirage.desktop;
 text/x-cmake=mousepad.desktop;
 application/x-mobipocket-ebook=calibre-ebook-viewer.desktop;
 text/x-emacs-lisp=mirage.desktop;
@@ -68,7 +68,7 @@ application/xml=sublime_text.desktop;
 application/x-php=google-chrome.desktop;sublime_text.desktop;mirage.desktop;
 text/csv=sublime_text.desktop;libreoffice-calc.desktop;
 application/rtf=sublime_text.desktop;
-application/octet-stream=sublime_text.desktop;ranger.desktop;
+application/octet-stream=firefox.desktop;sublime_text.desktop;ranger.desktop;
 application/mbox=sublime_text.desktop;
 image/webp=google-chrome.desktop;
 text/x-wxmathml=wxMaxima.desktop;

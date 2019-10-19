@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Repositories" type="@Repositories">
+	<collection key="repositories" type="Object">
+		<obj type="@Repository" id="2">
+			<prop key="name" type="String" value="tmp4"/>
+			<prop key="favorite" type="boolean" value="false"/>
+			<prop key="git" type="boolean" value="true"/>
+			<prop key="path" type="String" value="~/tmp4"/>
+			<prop key="path.absolute" type="String" value="/home/riddle/tmp4"/>
+			<prop key="expanded" type="boolean" value="true"/>
+		</obj>
+	</collection>
+	<collection key="groups" type="Object"/>
+	<collection key="mapping" type="Object"/>
+	<collection key="reopenAtStartup" type="Reference">
+		<ref type="@Repository" id="2"/>
+	</collection>
+	<collection key="recentlyUsed" type="Reference">
+		<ref type="@Repository" id="2"/>
+	</collection>
+</obj>
