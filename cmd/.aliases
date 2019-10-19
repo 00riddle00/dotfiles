@@ -657,3 +657,4 @@ alias stat="systemctl status httpd"
 
 function num() { nl -s ' ' ${1} > tmp && mv tmp ${1} && sed "s/^[ \t]*//" -i ${1} && cat ${1} | xclip }
 
+alias kiek="wc -l"
