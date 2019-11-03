@@ -1,6 +1,6 @@
 # GIMP user context
 
-(tool "gimp-paintbrush-tool")
+(tool "gimp-crop-tool")
 (paint-info "gimp-paintbrush")
 (foreground (color-rgb 0.000000 0.474510 1.000000))
 (brush "2. Hardness 100")

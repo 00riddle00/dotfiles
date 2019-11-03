@@ -310,11 +310,11 @@ alias sub='/usr/bin/subl'
 alias ne='netctl'
 #alias urxvt='xrdb ~/.Xresources && urxvt'
 alias libre='libreoffice'
-alias show='mirage'
+alias show='nomacs'
 alias z='zsh'
 alias li='libreoffice'
 alias cal='gcalcli'
-alias mi='mirage'
+alias mi='nomacs'
 alias fire='firefox'
 alias pan='pandoc'
 #alias r='ranger'
@@ -326,7 +326,7 @@ alias fox='firefox'
 alias tt='sudo thunar ./'
 alias rtt='sudo dolphin4 ./'
 alias play='vlc'
-alias ag='autokey-gtk'
+#alias ag='autokey-gtk'
 alias xterm='xterm -r'
 
 ## vim
@@ -658,3 +658,9 @@ alias stat="systemctl status httpd"
 function num() { nl -s ' ' ${1} > tmp && mv tmp ${1} && sed "s/^[ \t]*//" -i ${1} && cat ${1} | xclip }
 
 alias kiek="wc -l"
+
+function makedot() { 
+    img_name="temp";
+    if [ ! -z $2 ]; then img_name=$2; fi;
+    \dot $1 -Tpng -o $img_name.png -v 2>&1;
+}
