@@ -1,5 +1,5 @@
 #[openbox]
-exec openbox-session
+exec dbus-launch openbox-session
 [[ -f ~/.Xresources ]] && xrdb -merge -I $HOME ~/.Xresources
 
 #[dwm]
