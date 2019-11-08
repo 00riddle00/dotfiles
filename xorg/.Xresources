@@ -36,7 +36,7 @@ URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=8:antialias=tr
 #include ".config/colors/dark"
 
 ! --  Extensions -- !
-URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard
+URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard,font-size
 URxvt.keysym.M-Escape:     perl:keyboard-select:activate
 URxvt.keysym.M-u:          perl:url-select:select_next
 URxvt.keysym.M-s:          perl:keyboard-select:search
