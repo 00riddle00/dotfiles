@@ -2,10 +2,11 @@ readNotifications: ['demo-reminder-Mon Jul 02 18:17:01 EEST 2018-null', 'demo-re
     Apr 07 21:35:44 EEST 2019-null', gc.autoDetach-null, update-check-info-smartgit-17.1-preview]
 dontPublishNotifications: [fileMonitor.directoriesExcluded-null, gc.autoDetach-null,
   hosting-provider-could-be-configured-github-null, hosting-provider-could-be-configured-gitlab-null,
-  linux.theme-null, repositories-no-favorites-null]
+  linux.theme-null, repositories-no-favorites-null, log-may-be-used-as-main-window-null]
 dontPublishUntil-fileMonitor.directoriesExcluded-null: 0
 dontPublishUntil-gc.autoDetach-null: 0
 dontPublishUntil-hosting-provider-could-be-configured-github-null: 0
 dontPublishUntil-hosting-provider-could-be-configured-gitlab-null: 0
 dontPublishUntil-linux.theme-null: 0
 dontPublishUntil-repositories-no-favorites-null: 0
+dontPublishUntil-log-may-be-used-as-main-window-null: 0

@@ -1,0 +1,213 @@
+file:///home/riddle/pro/LaTex/pvz.tex {"mtime":1573051788252,"size":8670,"etag":"345gf5lb490l","orphaned":true}
+\documentclass[12pt]{article}
+%Paketai----------------------------------------------
+ \usepackage[L7x]{fontenc}
+ \usepackage[lithuanian]{babel}
+ \usepackage{graphicx}
+ \usepackage{latexsym}
+ \usepackage{amssymb}
+ \usepackage{amsmath}
+ \usepackage{picture}
+
+
+
+\newtheorem{thm}{Teorema}
+ \newtheorem{cor}[thm]{I�vada}
+ \newtheorem{lem}[thm]{Lema}
+ \newtheorem{prop}{Teiginys}
+ \newtheorem{defn}[thm]{Apibr��imas}
+ \newtheorem{rem}{Pastaba}
+\newtheorem{expl}{Pavyzdys}
+
+
+\textwidth 18cm
+\textheight 24cm
+\topmargin -2cm
+
+\oddsidemargin -1cm
+\evensidemargin -1cm
+
+ \def\boldhline{\noalign{\global\arrayrulewidth.8pt}\hline\noalign{\global\arrayrulewidth.4pt}}
+% papildomi Paketai----------------------------------------------
+ \usepackage{color}
+\usepackage[numbers]{natbib}
+\usepackage{bm}
+
+%literat�ros s�ra�as======================================================
+\begin{filecontents*}{x.bib}
+@PHDTHESIS{GFUNKS,
+  AUTHOR =       {S. Roman},
+  TITLE =        {Green's functions for boundary-value problems with nonlocal boundary conditions},
+  SCHOOL =       {Vilnius University},
+  YEAR =         {2011},
+  type =         {Doctoral dissertation},
+  %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+ }
+ @ARTICLE{GPAS,
+  author =       {G. Pauk{\v{s}}tait{\.{e}} and A. {\v{S}}tikonas},
+  title =        {The minimizer for the second order differential problem with one nonlocal condition},
+  journal =      {Liet. matem. rink. Proc. LMS, Ser A},
+  volume =       {58},
+  year =         {2017},
+  pages =        {28--33},
+}
+
+@BOOK{GITA,
+ author={A. Ben-Israel and T.N.E. Greville},
+ title={ Generalized {I}nverses. {T}heory and {A}pplications},
+ publisher={Springer Verlag},
+ address={New York},
+ year={2003},
+}
+\end{filecontents*}
+%===================================
+
+%%% --------------------------------------------------------
+\begin{document}
+\footskip 0.8cm
+\title{Pavadinimas}
+\author{Vardas Pavard�}
+\date{}
+
+
+\maketitle
+\vspace{ -1cm}
+
+\nocite{GITA} % �is literat�ros �altinis bus nurodomas literat�ros s�ra�e, nors tekste necituojamas
+
+\section{Diferencialin�s lygtys}
+
+\textbf{{\color{blue}Tiesine $\mathbf{n}$-osios eil�s diferencialine lygtimi}}  vadiname DL
+\begin{equation}\label{eq:1}
+a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+\ldots+a_1(x)y'+a_0(x)y=f(x),
+\end{equation}
+kur koeficientai $a_0,a_1,\ldots, a_n$ ir $f$ yra duotos tolyd�ios funkcijos. Jei $f=0$, tai DL vadinama \emph{{\color{blue}homogenine}} $n$-osios eil�s DL. Prie�ingu atveju DL vadinama \emph{{\color{blue}nehomogenine}}.
+
+\subsection{Homogenin�s diferencialin�s lygtys}
+Spr�sim homogenin� $n$-osios eil�s DL
+$$
+a_ny^{(n)}+a_{n-1}y^{(n-1)}+\ldots+a_1y'+a_0y=0,
+$$
+kurios koeficientai  $a_0,a_1,\ldots, a_n$ yra real�s skai�iai ir $a_n\neq 0$. �i DL visada turi $n$ tiesi�kai nepriklausom� sprendini� $y_1,\ y_2,\ldots, y_n$, kurie vadinami DL \textbf{{\color{blue}fundamentali�ja sistema}}.
+Bendrasis sprendinys u�ra�omas kaip �i� sprendini� tiesinis darinys
+\begin{equation}\label{eq:2}
+y=C_1 y_1+C_2y_2+\ldots+C_n y_n
+\end{equation}
+su $n$ laisv�j� konstant� $C_1,C_2,\ldots,C_n\in \mathbb{R}$. Parink� konkre�ias laisv�j� konstant� reik�mes, gausim atskirus (konkre�ius) sprendinius.
+
+\textbf{{\color{red}Kaip rasti DL fundamentali�j� sistem�?}} Sprendini� ie�koma pavidalu $y=e^{\lambda x}$. �ra�om � DL ir turim
+$$
+a_n\lambda^n e^{\lambda x} +a_{n-1}\lambda^{n-1}e^{\lambda x}+\ldots+a_1\lambda e^{\lambda x}+a_0 e^{\lambda x}=0.
+$$
+Suprastin� i� $e^{\lambda x}$, gauname DL \textbf{charakteristin� daugianar�}
+$$
+a_n\lambda^n  +a_{n-1}\lambda^{n-1}+\ldots+a_1\lambda +a_0 =0.
+$$
+Jis visada turi $n$ kompleksini� �akn� $\lambda_1,\ldots,\lambda_n\in\mathbb{ C}$. I� �ia gauname $n$ DL sprendini�. Jei $\lambda_k$ yra $m$ kartotinumo �aknis, tai j� atitiks $m$ tiesi�kai nepriklausom� sprendini�
+$y_1=e^{\lambda_k x},\ y_2=xe^{\lambda_k x},\ldots, y_m=x^{m-1}e^{\lambda_k x}$.
+
+\textbf{{\color{red}Kaip patikrinti, kad gauta $n$ sprendini� sistema yra fundamentalioji?}} Taip bus tada ir tik tada, jei  �i� funkcij� \textbf{ Vronskio determinantas} nelygus nuliui, t.y
+$$
+W[y_1,y_2,\ldots,y_n]:=\left|\begin{array}{llll}
+y_1 & y_2 &\ldots & y_n\\
+y_1' & y_2'&\ldots&y_n'\\
+& &\ldots&\\
+y_1^{(n-1)}& y_2^{(n-1)}&\ldots& y_n^{(n-1)}
+\end{array}\right|\neq0.
+$$
+
+\subsection{Nehomogenin�s DL sprendimas konstant� variavimo metodu}
+Spr�sime \eqref{eq:1} $n$-osios eil�s nehomogenin� DL
+konstant� variavimo metodu. Pirma sprend�iame homogenin� DL: randame jos fundamentali�j� sistem� ir u�ra�ome bendr�j� sprendin� \eqref{eq:2}.
+Antra, ie�kome nehomogenin�s DL bendrojo sprendinio laisv�sias konstantas pakeit� funkcijomis
+\begin{equation}\label{eq:3}
+y=C_1(x) y_1+C_2(x)y_2+\ldots+C_n(x) y_n.
+\end{equation}
+Funkcijas $C'_1,\ldots,C'_n$ randame spr�sdami sistem�
+\begin{align*}
+& C'_1(x)y_1+C'_2(x)y_2+\ldots+C'_n(x)y_n=0,\\
+&C'_1(x)y'_1+C'_2(x)y'_2+\ldots+C'_n(x)y'_n=0,\\
+&\ldots\\
+&C'_1(x)y_1^{(n-2)}+C'_2(x)y_2^{(n-2)}+\ldots+C'_n(x)y_n^{(n-2)}=0,\\
+&C'_1(x)y_1^{(n-1)}+C'_2(x)y_2^{(n-1)}+\ldots+C'_n(x)y_n^{(n-1)}=\frac{f(x)}{a_n(x)}.
+\end{align*}
+ Funkcijas $C_1,\ldots,C_n$ randame integruodami rastas i�vestines.
+
+\subsection*{U�daviniai}
+\begin{enumerate}
+\item Suintegruoti $ y''-3y'+2y=0$.
+\item Rasti Ko�i u�davinio $y''=y,\ y(0)=1,\ y'(0)=0$ sprendin�.
+\item Suintegruoti $y''-2y'+y=-2e^x$.
+\end{enumerate}
+
+\section{Integralai}
+
+Funkcijos $f(x)$ {\color{blue}\textbf{pirmyk�te funkcija}} vadinama funkcija $F(x)$, su kuria $F'(x)=f(x)$.
+Vis� funkcijos $f(x)$ pirmyk��i� funkcij� aib� vadinama funkcijos $f(x)$ \textbf{{\color{blue}neapibr��tiniu integralu}} ir �ymima
+$$
+\int f(x)dx=F(x)+C.
+$$
+\begin{align*}
+\,&\text{�}\quad \int 0 dx=C;\hskip 15cm\\
+&\text{�}\quad \int 1 dx= x+C;\\
+&\text{�}\quad \int x^n\, dx =\frac{x^{n+1}}{n+1}+C,\quad (n\neq-1);\\
+&\text{�}\quad \int x^{-1}\, dx=\frac{dx}{x}=\ln|x|+C;\\
+&\text{�}\quad \int e^x\, dx=e^x +C;\\
+&\text{�}\quad \int a^x \,dx=\frac{a^x}{\ln a}+C;
+\end{align*}
+\vskip -7.3cm
+\begin{align*}
+\hskip 12cm&\text{�}\quad \int\sin x\,dx=-\cos x+C;\hskip 10cm\\
+&\text{�}\quad \int\cos x\,dx=\sin x +C;\\
+&\text{�}\quad \int \frac{dx}{\sin^2 x}=-\text{ctg}\, x+C;\\
+&\text{�}\quad \int \frac{dx}{\cos^2 x}=\text{tg}\, x+C;\\
+&\text{�}\quad \int\frac{dx}{\sqrt{1-x^2}}=\arcsin x+C;\\
+&\text{�}\quad \int\frac{dx}{{1+x^2}}=\text{arctg}\, x+C
+\end{align*}
+
+\begin{expl}
+Pateiksime integravimo pavyzd�:
+\begin{align*}
+&\int\frac{3x-5+\sqrt[4]{x^3}}{\sqrt{x}}dx
+=\int\frac{3x-5+x^{\frac{3}{4}}}{x^{\frac{1}{2}}}dx
+=\int\left(\frac{3x}{x^{\frac{1}{2}}}-\frac{5}{x^{\frac{1}{2}}}+\frac{x^{\frac{3}{4}}}{x^{\frac{1}{2}}}\right)dx
+=\int(3x^{\frac{1}{2}}-5x^{-\frac{1}{2}}+x^{\frac{1}{4}})dx\\
+&=3\frac{x^{\frac{1}{2}+1}}{\frac{1}{2}+1}-5\frac{x^{-\frac{1}{2}+1}}{-\frac{1}{2}+1}+\frac{x^{\frac{1}{4}+1}}{\frac{1}{4}+1}+C
+=3\frac{x^{\frac{3}{2}}}{\frac{3}{2}}-5\frac{x^{\frac{1}{2}}}{\frac{1}{2}}+\frac{x^{\frac{5}{4}}}{\frac{5}{4}}+C
+=2\sqrt{x^{3}}-10\sqrt{x}+{\frac{4}{5}}\sqrt[4]{x^{5}}+C.
+\end{align*}
+\end{expl}
+
+\section{Kompleksin�s sekos}
+
+Kompleksini� skai�i� seka $\{c_n\}$ \textbf{{\color{blue}konverguoja}} � kompleksin� skai�i� $c\in \mathbb{C}$, jeigu kiekvienam $\varepsilon>0$ egzistuoja toks $N\in \mathbb{N}$, jog teisinga nelygyb�
+$$
+|c_n-c|<\varepsilon,\qquad\text{su visiais}\ n\geq N.
+$$
+�ym�sime $c_n\to c$ arba $\lim\limits_{n\to\infty}c_n=c.$
+\begin{prop}\label{prop:1}
+ Tegu $c_n=a_n+ib_n$, kai $a_n,\ b_n\in \mathbb{R}$, ir $c=a+ib$. Tada
+$$c_n\to c\qquad \Leftrightarrow\qquad a_n\to a\quad\text{ir}\quad b_n\to b.$$
+\end{prop}
+
+\begin{rem}\label{rem:1}
+ Dydis $|c_n-c|$ apra�o reali� skai�i� sek�.
+ \end{rem}
+
+\begin{prop}\label{prop:2}
+ Kitas teiginys formuluojamas �ia.
+\end{prop}
+
+\begin{thm}\label{thm:1}\phi 
+ Teorema formuluojama �ia.
+\end{thm}
+Norint cituoti teorem�, teigin�, pavyzd� ar pastab�, galime daryti taip: Teiginys \ref{prop:1} ir Teorema \ref{thm:1}, ir pan (neb�tina ra�yti i� did�i�j�, svarbu LaTeX teoremos, teiginio ir t.t. numerio citavimo sintaks�).
+
+Ta�iau formul�s yra cituojamos kitaip. Pavyzd�iui, formul�je \eqref{eq:1} yra pateikta homogenin� diferencialin� lygtis.
+
+Norint cituoti lierat�ros �altinius, reikia ra�yti taip \cite{GPAS,GFUNKS}. Galima kiekvin� �altin� cituoti ir atskirai \cite[labas]{GPAS}, \cite{GFUNKS}.
+
+
+\bibliographystyle{plain}
+\bibliography{x}
+\end{document}

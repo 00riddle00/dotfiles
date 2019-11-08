@@ -48,7 +48,9 @@ set scrolljump=5
 " Indicate jump out of the screen when 3 lines before end of the screen
 set scrolloff=3
 " Yank and copy to X clipboard
+" +xterm_clipboard must be enabled (see vim --version)
 set clipboard+=unnamed                  
+
 
 " Search
 " search ignoring case
@@ -137,6 +139,19 @@ nmap     tj             gT
 nmap     tk             gt
 nmap     th             :tabfirst<CR>
 nmap     tl             :tablast<CR>
+
+" Copy/Paste
+vmap <C-c> "+y
+"vmap <C-c> "+yi
+vmap <C-x> "+c
+"vmap <C-v> c<ESC>"+p
+"map <C-v> <ESC>"+pa
+
+"" Long text paste
+""" From primary clipboard
+" nmap     tp             :r !xsel<CR>
+""" From secondary clipboard
+nmap     tp             :r !xsel -b<CR>
 
 
 " Treat long lines as break lines

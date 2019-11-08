@@ -4475,3 +4475,902 @@ Open Browser | Remind me later | Don't show again
 17h18m34s959 (2019-10-20 08:23:37) [ThreadPool-0 (stderr-#244 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stderr: warning: redirecting to https://gitlab.com/00riddle00/sp.git/
 17h18m34s959 (2019-10-20 08:23:37) [ThreadPool-0 (stderr-#244 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] SEVERE     smartgit.command - warning: redirecting to https://gitlab.com/00riddle00/sp.git/
 17h18m34s961 (2019-10-20 08:23:37) [ThreadPool-1 (stdout-#244 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 6648d9d79ef298a9cd832c784d69ea94e6a0a1fe	refs/heads/master
+ 36 (2019-11-03 19:24:55) [main] INFO      smartgit.system - SmartGit version 19.1.4-14196-4577cb06f60cb76adf60d96ddb10ab9bff199fc2-jgit-df1a32e3fce9b79d5188e38280d63fbb2accfd8b-trilead-?
+ 37 (2019-11-03 19:24:55) [main] INFO      smartgit.system - SmartGit running build 14196
+ 38 (2019-11-03 19:24:55) [main] INFO      smartgit.system - SmartGit installed build 14196
+ 39 (2019-11-03 19:24:55) [main] INFO      smartgit.system - SVNKit version SVN/1.8.1 SVNKit/1.10.0 (http://svnkit.com/) rSNAPSHOT
+ 39 (2019-11-03 19:24:55) [main] INFO sc.command.line.parameters - 0 command line parameters:
+ 39 (2019-11-03 19:24:55) [main] INFO      smartgit.system - application root: /opt/smartgit
+ 39 (2019-11-03 19:24:55) [main] INFO      smartgit.system - defaults root   : /opt/smartgit/default
+ 39 (2019-11-03 19:24:55) [main] INFO      smartgit.system - settings root   : /home/riddle/.config/smartgit/19.1
+ 39 (2019-11-03 19:24:55) [main] INFO      smartgit.system - .app directory  : null
+ 53 (2019-11-03 19:24:55) [main] INFO      smartgit.system - created temp directory /tmp/smartgit-1565185758098686010tmp
+334 (2019-11-03 19:24:55) [main] INFO              gui.swt - Used GTK version: 3.24.12
+334 (2019-11-03 19:24:55) [main] INFO              gui.swt - Used GTK theme  : Numix-Archblue
+334 (2019-11-03 19:24:55) [main] INFO              gui.swt - Using SWT 4926
+335 (2019-11-03 19:24:55) [main] INFO              gui.swt - Monitors:
+337 (2019-11-03 19:24:55) [main] INFO              gui.swt -   1920x1080(0,0 - 1919,1079)
+444 (2019-11-03 19:24:55) [main] INFO         splashscreen - splashscreen disabled
+578 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/_lock_
+615 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - awt.toolkit                         : "sun.awt.X11.XToolkit"
+615 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - file.encoding                       : "UTF-8"
+615 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - file.separator                      : "/"
+615 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+615 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.awt.printerjob                 : "sun.print.PSPrinterJob"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.class.version                  : "55.0"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.home                           : "/opt/smartgit/jre"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.io.tmpdir                      : "/tmp"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.net.preferIPv4Stack            : "true"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.runtime.name                   : "OpenJDK Runtime Environment"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.runtime.version                : "11.0.3+7-LTS"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.name             : "Java Platform API Specification"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.vendor           : "Oracle Corporation"
+616 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.version          : "11"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor                         : "Amazon.com Inc."
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.url                     : "https://aws.amazon.com/corretto/"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.version                 : "Corretto-11.0.3.7.1"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.version                        : "11.0.3"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.version.date                   : "2019-04-16"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.compressedOopsMode          : "32-bit"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.info                        : "mixed mode"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.name                        : "OpenJDK 64-Bit Server VM"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.name          : "Java Virtual Machine Specification"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.vendor        : "Oracle Corporation"
+617 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.version       : "11"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.vendor                      : "Amazon.com Inc."
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.version                     : "11.0.3+7-LTS"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jdk.debug                           : "release"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jna.nounpack                        : "true"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - line.separator                      : "\n"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.accessibility.UseIA2: "false"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.deviceZoom : "100"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.version: "3.24.12"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.arch                             : "amd64"
+618 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.name                             : "Linux"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.version                          : "5.3.8-arch1-1"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - path.separator                      : ":"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.arch.data.model                 : "64"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.boot.library.path               : "/opt/smartgit/jre/lib"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.cpu.endian                      : "little"
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.cpu.isalist                     : ""
+619 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.io.unicode.encoding             : "UnicodeLittle"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.io.useCanonCaches               : "false"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.java.launcher                   : "SUN_STANDARD"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.jnu.encoding                    : "UTF-8"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.os.patch.level                  : "unknown"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.country                        : "US"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.dir                            : "/home/riddle"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.home                           : "/home/riddle"
+620 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.language                       : "en"
+621 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.name                           : "riddle"
+621 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.timezone                       : "Europe/Vilnius"
+621 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Environment variables:
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - _                       : "/opt/smartgit/jre/bin/java"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - CANDY                   : "/home/riddle/Dropbox/sync/candy"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/1000/bus"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DIRCOLORS               : ".dircolors"
+623 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DISPLAY                 : ":0"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DOTFILES_DIR            : "/home/riddle/.dotfiles"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DOWNLOADS               : "/home/riddle/Downloads"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DROPBOX                 : "/home/riddle/Dropbox"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DW                      : "/home/riddle/Downloads"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - EDITOR                  : "vim"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - HDMI_SCREEN             : "HDMI-1-1"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - HOME                    : "/home/riddle"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - INVOCATION_ID           : "7152e692a90a45318fd0e97804746267"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - JOURNAL_STREAM          : "9:21923"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+624 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LANG                    : "C"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LAPTOP_SCREEN           : "eDP-1-1"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LC_ALL                  : "en_US.UTF-8"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LESS                    : "-R"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LOGNAME                 : "riddle"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LSCOLORS                : "ExFxCxDxBxegedabagacad"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIL                    : "/var/spool/mail/riddle"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIN_HOME               : "/home/riddle"
+625 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIN_USER               : "riddle"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - OLDPWD                  : "/opt/smartgit/bin"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PATH                    : "/home/riddle/.cargo/bin:/opt/anaconda/bin:/home/riddle/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PRO                     : "/home/riddle/pro"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PWD                     : "/home/riddle"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SENV                    : "/home/riddle/venvs/subscription_demo"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHELL                   : "/bin/zsh"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHLVL                   : "3"
+626 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SYNC                    : "/home/riddle/Dropbox/sync"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TERM                    : "rxvt-unicode-256color"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - THEME                   : "riddle"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TMP1                    : "/home/riddle/tmp1"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TMP2                    : "/home/riddle/tmp2"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - USER                    : "riddle"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VENV                    : "/home/riddle/venvs/sql_app"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMCOLOR                : "miro8"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMRC                   : "/home/riddle/.vimrc"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - WINDOWPATH              : "1"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XAUTHORITY              : "/home/riddle/.Xauthority"
+627 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_RUNTIME_DIR         : "/run/user/1000"
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SEAT                : "seat0"
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_CLASS       : "user"
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_ID          : "1"
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_TYPE        : "tty"
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_VTNR                : "1"
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - class loader: java.net.URLClassLoader
+628 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/antlr-runtime.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/lz4-1.3.0.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sequence-library.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sqljet.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jna-4.5.2.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jna-platform-4.5.2.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/trilead.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jsch.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bcpkix-jdk15on-160.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bcprov-jdk15on-160.jar
+629 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/eddsa-0.3.0.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sshj.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/javaewah.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/json_simple-1.1.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/snakeyaml.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jopt-simple-3.2.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jmyspell-core.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/autolink-0.6.0.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-autolink.jar
+630 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-util.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bootloader-config.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/java-prettify.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jgit.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/svnkit.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/smartgit.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - parent class loader: java.net.URLClassLoader
+631 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Max memory: 1024m
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Max processors: 4
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VM options:
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:+UseG1GC
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:MaxGCPauseMillis=100
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:InitiatingHeapOccupancyPercent=25
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xmx1024m
+632 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xss2m
+633 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xverify:none
+633 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:MaxJavaStackTraceDepth=1000000
+633 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Dsun.io.useCanonCaches=false
+633 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:ErrorFile=/home/riddle/.config/smartgit/19.1/hs_err_pid%p.log
+666 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - removing /home/riddle/.config/smartgit/19.1/hgext recursively
+667 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - create /home/riddle/.config/smartgit/19.1/hgext
+668 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.hg.core - Mercurial extension directory is /opt/smartgit/lib/hgext
+690 (2019-11-03 19:24:55) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO          sc.password - Read 1 phrases from plain-text part.
+1s 58 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO    smartgit.settings - First used on 2019-10-05
+1s 58 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO    smartgit.settings - Settings were upgraded from: 18.2
+1s 85 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO org.eclipse.jgit.util.FS - Starting timestamp resolution detection for /home/riddle
+1s 89 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO org.eclipse.jgit.util.FS - Finished timestamp resolution detection for /home/riddle in 3ms
+1s103 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      sc.file.monitor - Using Java-7 filemonitor
+1s111 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.prelock
+1s112 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.postlock
+1s112 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.server - Server is connected to 4332.
+1s112 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.lock
+1s144 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO           sc.license - License type is 'foundation'.
+1s144 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s160 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO           sc.license - License type is 'foundation'.
+1s160 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s166 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - application root: /opt/smartgit
+1s166 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - launcher: /opt/smartgit/bin/smartgit.sh
+1s480 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update - Info smartgit-training-commercial-demo found.
+1s499 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO          sc.password - Writing 1 phrases.
+1s501 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - License type is 'commercial-demo', Review=true
+1s543 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - application root: /opt/smartgit
+1s544 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - launcher: /opt/smartgit/bin/smartgit.sh
+1s620 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO               q.exec - Executing #0 [/usr/bin] /usr/bin/git --version
+1s632 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update - Cleaning up old builds (fetch=false;schedule=false;fetchUpgrade=false;upgrade=false)
+1s635 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO               q.exec - Executing #1 [/usr/bin] /usr/bin/git --version
+1s635 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update - Checking for new version
+1s635 (2019-11-03 19:24:56) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update -   ... last check too early.
+1s637 (2019-11-03 19:24:56) [ThreadPool-4 (smartgit.MW$$Lambda$193/0x0000000100265440)] INFO q.application.update - No version configured for fetching.
+1s638 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable - Git version is 'git version 2.23.0' (2.23.0).
+1s638 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -   Super config: null (does not exist)
+1s638 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -   System config: /etc/gitconfig (does not exist)
+1s638 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -   User config: /home/riddle/.gitconfig (exists)
+1s640 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     user.email=tomasgiedraitis@gmail.com
+1s640 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     user.name=Tomas Giedraitis
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     core.editor=vim
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     credential.helper=cache --timeout=3600
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     merge.tool=vimdiff
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     diff.tool=vimdiff
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     difftool.prompt=false
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.graphviz=!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+1s641 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.d=difftool
+1s642 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.clean=git-lfs clean -- %f
+1s642 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.smudge=git-lfs smudge -- %f
+1s642 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.process=git-lfs filter-process
+1s642 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.required=true
+1s642 (2019-11-03 19:24:56) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     gui.recentrepo=/home/riddle/tmp7
+2s142 (2019-11-03 19:24:57) [main] INFO        q.dockmanager - layout: (([+317x568:directories ][+317x377:branches ])(([+1590x255:files ][-2x1:message ])[+1590x499:changes ]([+793x188:outgoing ][+794x188:output ])))
+2s276 (2019-11-03 19:24:57) [main] INFO              q.frame - opening smartgit.boi@773CBF4F:SmartGit 19.1.4 (evaluation until Nov 5) (smartgit.boi@279FEDBD) (index=0)
+2s334 (2019-11-03 19:24:57) [main] INFO      sc.notification - Published: INFO [demo-reminder-Tue Nov 05 14:02:46 EET 2019-null] You can freely evaluate SmartGit until Nov 5, 2019.:
+If you like SmartGit, please consider purchasing your license. After the evaluation period SmartGit will stop working.
+
+Purchase
+2s336 (2019-11-03 19:24:57) [ThreadPool-1 (com.syntevo.sc.application.w)] INFO   smartgit.mainframe - Searching crash logs in /home/riddle/.config/smartgit/19.1
+2s336 (2019-11-03 19:24:57) [ThreadPool-1 (com.syntevo.sc.application.w)] INFO   smartgit.mainframe - Found no crash logs
+2s337 (2019-11-03 19:24:57) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+2s398 (2019-11-03 19:24:57) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+2s506 (2019-11-03 19:24:57) [main] INFO             q.dialog - Showing dialog 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD)
+2s522 (2019-11-03 19:24:57) [main] INFO        q.radioButton - radio button 'Reopen previously used repository:' selected in org.eclipse.swt.widgets.Shell@7A7471CE:Shell {Welcome to SmartGit}
+2s546 (2019-11-03 19:24:57) [main] INFO q.swt.shellActivation - Activation change from Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {Welcome to SmartGit}@7A7471CE
+2s546 (2019-11-03 19:24:57) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+2s574 (2019-11-03 19:24:57) [main] INFO q.swt.shellActivation - Activation remains at Shell {Welcome to SmartGit}@7A7471CE
+6s839 (2019-11-03 19:25:02) [main] INFO        q.radioButton - radio button 'Clone existing repository' selected in org.eclipse.swt.widgets.Shell@7A7471CE:Shell {Welcome to SmartGit}
+8s231 (2019-11-03 19:25:03) [main] INFO        q.radioButton - radio button 'Add an existing local or create a new repository' selected in org.eclipse.swt.widgets.Shell@7A7471CE:Shell {Welcome to SmartGit}
+8s918 (2019-11-03 19:25:04) [main] INFO             q.action - Performing 'Close' button in window @7A7471CE owner @279FEDBD
+8s919 (2019-11-03 19:25:04) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD)
+8s923 (2019-11-03 19:25:04) [main] INFO             q.dialog - Disposing dialog 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD)
+8s923 (2019-11-03 19:25:04) [main] INFO             q.dialog - Cleaned up dialog 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD)
+8s927 (2019-11-03 19:25:04) [main] INFO             q.dialog - Close-handler for dialog 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD)
+8s927 (2019-11-03 19:25:04) [main] INFO             q.dialog - Enabling parent for dialog 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD)
+8s927 (2019-11-03 19:25:04) [main] INFO             q.dialog - Showed dialog 0 (@7A7471CE) '@28276E50 - Welcome to SmartGit' (owner: @279FEDBD) (Cancel - -1)
+8s943 (2019-11-03 19:25:04) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@7A7471CE to Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+8s943 (2019-11-03 19:25:04) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+9s511 (2019-11-03 19:25:04) [main] INFO q.swt.shellActivation - Activation change from Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to null
+9s512 (2019-11-03 19:25:04) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+9s676 (2019-11-03 19:25:04) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+9s676 (2019-11-03 19:25:04) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+10s512 (2019-11-03 19:25:05) [main] INFO      sc.notification - Close button clicked INFO [demo-reminder-Tue Nov 05 14:02:46 EET 2019-null] You can freely evaluate SmartGit until Nov 5, 2019.
+10s536 (2019-11-03 19:25:05) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 21ms.
+11s968 (2019-11-03 19:25:07) [main] INFO             q.action - Performing 'repositoryOpen, Open Repository' menu item from context menu in window org.eclipse.swt.widgets.Shell@279FEDBD:Shell {SmartGit 19.1.4 (evaluation until Nov 5)}
+11s969 (2019-11-03 19:25:07) [main] INFO smartgit.repositoryTreeTable - open: [tmp4 /home/riddle/tmp4 git=true]; already open: []
+11s972 (2019-11-03 19:25:07) [main] WARNING     smartgit.refresh - Using working tree root itself as trigger-directory (adminDirectory=null;workingTreeRoot=/home/riddle/tmp4)
+11s977 (2019-11-03 19:25:07) [ThreadPool-4 (smartgit.aFg$$Lambda$452/0x00000001003bd040)] INFO      sc.file.monitor - Adding watch for '/home/riddle/tmp4', canonical: '/home/riddle/tmp4'
+11s978 (2019-11-03 19:25:07) [ThreadPool-4 (smartgit.aFg$$Lambda$452/0x00000001003bd040)] INFO      sc.file.monitor -   ... took 1ms [/home/riddle/tmp4]
+11s979 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] WARNING  smartgit.repository - Admin area for repository at '/home/riddle/tmp4' does not exist.
+11s982 (2019-11-03 19:25:07) [main] INFO  smartgit.project.ui - Starting to scan /home/riddle/tmp4
+11s992 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] WARNING  smartgit.repository - No admin directory at /home/riddle/tmp4: Admin area for repository at '/home/riddle/tmp4' does not exist.
+11s996 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/tmp4 [/<infinity>]
+11s999 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] WARNING  smartgit.repository - No admin directory at /home/riddle/tmp4: Admin area for repository at '/home/riddle/tmp4' does not exist.
+12s  2 (2019-11-03 19:25:07) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/tmp4' synchronized with UI (1 directories processed, timestamp=1)
+12s 10 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/tmp4 (1 entries) in 3ms, additional 9ms post-processing
+12s 10 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] INFO  smartgit.project.ui - Root '/home/riddle/tmp4' scanned.
+12s 10 (2019-11-03 19:25:07) [ThreadPool-1 (Refresh-0)] INFO  smartgit.project.ui -   /: [], []
+12s405 (2019-11-03 19:25:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/tmp4]
+12s408 (2019-11-03 19:25:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] WARNING  smartgit.repository - No admin directory at /home/riddle/tmp4: Admin area for repository at '/home/riddle/tmp4' does not exist.
+12s409 (2019-11-03 19:25:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] SEVERE smartgit.repository.backgroundFetch - Repository '/home/riddle/tmp4' is not valid.
+smartgit.xB: Repository '/home/riddle/tmp4' is not valid.
+	at smartgit.xv.c(SourceFile:702)
+	at smartgit.uP.a(SourceFile:179)
+	at smartgit.bBr.a(SourceFile:39)
+	at smartgit.bqF.a(SourceFile:48)
+	at smartgit.bxm.a(SourceFile:209)
+	at smartgit.bxm.a(SourceFile:162)
+	at smartgit.bxm.a(SourceFile:31)
+	at smartgit.bxo.f(SourceFile:81)
+	at smartgit.alg.run(SourceFile:66)
+
+14s433 (2019-11-03 19:25:09) [main] INFO             q.action - Performing 'repositoryClose, Close' menu item from context menu in window org.eclipse.swt.widgets.Shell@279FEDBD:Shell {tmp4 - [~/tmp4] - SmartGit 19.1.4 (evaluation until Nov 5)}
+14s438 (2019-11-03 19:25:09) [main] INFO smartgit.repositoryTreeTable - close [tmp4 /home/riddle/tmp4 git=true]; already open: [tmp4 /home/riddle/tmp4 git=true]
+14s440 (2019-11-03 19:25:09) [ThreadPool-4 (smartgit.aFg$$Lambda$483/0x00000001003e1840)] INFO      sc.file.monitor - Removing watch for '/home/riddle/tmp4', canonical: '/home/riddle/tmp4'
+14s441 (2019-11-03 19:25:09) [ThreadPool-4 (smartgit.aFg$$Lambda$483/0x00000001003e1840)] INFO      sc.file.monitor -   ... took 1ms [/home/riddle/tmp4]
+15s472 (2019-11-03 19:25:10) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [repository-closed] took 20ms.
+17s377 (2019-11-03 19:25:12) [main] INFO             q.action - Performing 'repositoryRemove, Remove...' menu item from context menu in window org.eclipse.swt.widgets.Shell@279FEDBD:Shell {SmartGit 19.1.4 (evaluation until Nov 5)}
+17s390 (2019-11-03 19:25:12) [main] INFO             q.dialog - Showing dialog 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD)
+17s425 (2019-11-03 19:25:12) [main] INFO q.swt.shellActivation - Activation change from Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {Remove}@2F7A7219
+17s449 (2019-11-03 19:25:12) [main] INFO q.swt.shellActivation - Activation remains at Shell {Remove}@2F7A7219
+19s977 (2019-11-03 19:25:15) [main] INFO             q.action - Performing 'Remove' button in window @2F7A7219 owner @279FEDBD
+19s977 (2019-11-03 19:25:15) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD)
+19s980 (2019-11-03 19:25:15) [main] INFO             q.dialog - Disposing dialog 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD)
+19s981 (2019-11-03 19:25:15) [main] INFO             q.dialog - Cleaned up dialog 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD)
+19s984 (2019-11-03 19:25:15) [main] INFO             q.dialog - Close-handler for dialog 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD)
+19s985 (2019-11-03 19:25:15) [main] INFO             q.dialog - Enabling parent for dialog 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD)
+19s985 (2019-11-03 19:25:15) [main] INFO             q.dialog - Showed dialog 1 (@2F7A7219) '@669513D8 - Remove' (owner: @279FEDBD) (OK - 2)
+19s986 (2019-11-03 19:25:15) [main] INFO smartgit.repositories - Removing
+ repository: tmp4 /home/riddle/tmp4 git=true
+19s993 (2019-11-03 19:25:15) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@2F7A7219 to Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+19s993 (2019-11-03 19:25:15) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+22s842 (2019-11-03 19:25:18) [main] INFO             q.action - Performing 'repositoryAdd, Add or Create...' menu item in &Repository from menu in window org.eclipse.swt.widgets.Shell@279FEDBD:Shell {SmartGit 19.1.4 (evaluation until Nov 5)}
+22s853 (2019-11-03 19:25:18) [main] INFO             q.dialog - Showing dialog 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD)
+22s922 (2019-11-03 19:25:18) [main] INFO q.swt.shellActivation - Activation change from Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {Add or Create Repository}@F9B7332
+22s959 (2019-11-03 19:25:18) [main] INFO q.swt.shellActivation - Activation remains at Shell {Add or Create Repository}@F9B7332
+24s248 (2019-11-03 19:25:19) [main] INFO             q.action - Performing 'Choose...' button in window @F9B7332 owner @279FEDBD
+24s358 (2019-11-03 19:25:19) [main] INFO q.swt.shellActivation - Activation change from Shell {Add or Create Repository}@F9B7332 to null
+25s385 (2019-11-03 19:25:20) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 25ms.
+31s379 (2019-11-03 19:25:26) [main] INFO q.swt.shellActivation - Activation change from null to Shell {Add or Create Repository}@F9B7332
+32s663 (2019-11-03 19:25:27) [main] INFO             q.action - Performing 'OK' button in window @F9B7332 owner @279FEDBD
+32s687 (2019-11-03 19:25:27) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD)
+32s688 (2019-11-03 19:25:27) [main] INFO             q.dialog - Disposing dialog 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD)
+32s688 (2019-11-03 19:25:27) [main] INFO             q.dialog - Cleaned up dialog 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD)
+32s692 (2019-11-03 19:25:27) [main] INFO             q.dialog - Close-handler for dialog 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD)
+32s692 (2019-11-03 19:25:27) [main] INFO             q.dialog - Enabling parent for dialog 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD)
+32s692 (2019-11-03 19:25:27) [main] INFO             q.dialog - Showed dialog 2 (@F9B7332) '@74CEC793 - Add or Create Repository' (owner: @279FEDBD) (OK - 2)
+32s700 (2019-11-03 19:25:27) [main] INFO smartgit.repositoryTreeTable - open: [uni-block /home/riddle/pro/uni-block git=true]; already open: []
+32s701 (2019-11-03 19:25:27) [ThreadPool-0 (smartgit.aFg$$Lambda$452/0x00000001003bd040)] INFO      sc.file.monitor - Adding watch for '/home/riddle/pro/uni-block', canonical: '/home/riddle/pro/uni-block'
+32s702 (2019-11-03 19:25:27) [main] INFO  smartgit.project.ui - Starting to scan /home/riddle/pro/uni-block
+32s704 (2019-11-03 19:25:27) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@F9B7332 to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+32s704 (2019-11-03 19:25:27) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+32s717 (2019-11-03 19:25:27) [ThreadPool-0 (smartgit.aFg$$Lambda$452/0x00000001003bd040)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-block/.idea from file monitoring.
+32s717 (2019-11-03 19:25:27) [ThreadPool-0 (smartgit.aFg$$Lambda$452/0x00000001003bd040)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-block/target from file monitoring.
+32s752 (2019-11-03 19:25:28) [ThreadPool-0 (smartgit.aFg$$Lambda$452/0x00000001003bd040)] INFO      sc.file.monitor -   ... took 51ms [/home/riddle/pro/uni-block]
+32s888 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-block/.git: Actually updating node cache at /home/riddle/pro/uni-block/.git for 4 roots
+32s903 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-block/.git: Node cache updated with 22 commits for 8 roots at /home/riddle/pro/uni-block/.git (took 17ms)
+32s913 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 26ms (22 nodes, 11 refs, 19ms walk of 22 nodes, 1ms refs, 0ms reachability, 6ms divergence for 4 branches, 0ms reflog, 0ms assertions)
+32s962 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>, /<infinity>]
+33s 65 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 1ms (22 nodes, 11 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+33s 69 (2019-11-03 19:25:28) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=1)
+33s 89 (2019-11-03 19:25:28) [main] INFO         commit.notes - root changed null -> /home/riddle/pro/uni-block
+33s179 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 106ms, additional 111ms post-processing
+33s179 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO  smartgit.project.ui - Root '/home/riddle/pro/uni-block' scanned.
+33s179 (2019-11-03 19:25:28) [ThreadPool-4 (Refresh-0)] INFO  smartgit.project.ui -   /: [[origin(url=https://github.com/faustuzas/framework)]], []
+33s183 (2019-11-03 19:25:28) [ThreadPool-1 (smartgit.afr)] INFO smartgit.github.project.refresh - Refreshing repository 'faustuzas/framework'.
+33s897 (2019-11-03 19:25:29) [ThreadPool-1 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>]
+33s932 (2019-11-03 19:25:29) [ThreadPool-1 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 1ms (22 nodes, 11 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+33s934 (2019-11-03 19:25:29) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=2)
+33s937 (2019-11-03 19:25:29) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+33s973 (2019-11-03 19:25:29) [ThreadPool-1 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 36ms, additional 40ms post-processing
+37s520 (2019-11-03 19:25:32) [main] INFO             q.action - Performing 'flowContext, Git-Flow..., Configure Git-Flow'
+37s520 (2019-11-03 19:25:32) [main] INFO             q.action - Performing 'flowConfigure, Configure...'
+37s561 (2019-11-03 19:25:32) [main] INFO             q.dialog - Showing dialog 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD)
+37s611 (2019-11-03 19:25:32) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {Configure Git-Flow}@7674A051
+37s648 (2019-11-03 19:25:32) [main] INFO q.swt.shellActivation - Activation remains at Shell {Configure Git-Flow}@7674A051
+40s833 (2019-11-03 19:25:36) [main] INFO             q.action - Performing 'Cancel' button in window @7674A051 owner @279FEDBD
+40s834 (2019-11-03 19:25:36) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD)
+40s836 (2019-11-03 19:25:36) [main] INFO             q.dialog - Disposing dialog 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD)
+40s837 (2019-11-03 19:25:36) [main] INFO             q.dialog - Cleaned up dialog 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD)
+40s853 (2019-11-03 19:25:36) [main] INFO             q.dialog - Close-handler for dialog 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD)
+40s853 (2019-11-03 19:25:36) [main] INFO             q.dialog - Enabling parent for dialog 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD)
+40s853 (2019-11-03 19:25:36) [main] INFO             q.dialog - Showed dialog 3 (@7674A051) '@3A7704C - Configure Git-Flow' (owner: @279FEDBD) (Cancel - -1)
+40s877 (2019-11-03 19:25:36) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@7674A051 to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+40s877 (2019-11-03 19:25:36) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+42s407 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+42s451 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #2 [/usr/bin] /usr/bin/git --version
+42s455 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable - Git version is 'git version 2.23.0' (2.23.0).
+42s455 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -   Super config: null (does not exist)
+42s455 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -   System config: /etc/gitconfig (does not exist)
+42s455 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -   User config: /home/riddle/.gitconfig (exists)
+42s455 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     user.email=tomasgiedraitis@gmail.com
+42s455 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     user.name=Tomas Giedraitis
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     core.editor=vim
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     credential.helper=cache --timeout=3600
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     merge.tool=vimdiff
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     diff.tool=vimdiff
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     difftool.prompt=false
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     alias.graphviz=!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     alias.d=difftool
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     filter.lfs.clean=git-lfs clean -- %f
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     filter.lfs.smudge=git-lfs smudge -- %f
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     filter.lfs.process=git-lfs filter-process
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     filter.lfs.required=true
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO  smartgit.executable -     gui.recentrepo=/home/riddle/tmp7
+42s456 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+42s465 (2019-11-03 19:25:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #3 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+42s952 (2019-11-03 19:25:38) [ThreadPool-4 (stdout-#3 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+54s767 (2019-11-03 19:25:50) [main] INFO             q.action - Performing 'checkout, Check Out..., Check out an existing commit.'
+54s775 (2019-11-03 19:25:50) [main] INFO             q.dialog - Showing dialog 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD)
+54s796 (2019-11-03 19:25:50) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {Check Out}@2E6EE0BC
+54s818 (2019-11-03 19:25:50) [main] INFO q.swt.shellActivation - Activation remains at Shell {Check Out}@2E6EE0BC
+57s135 (2019-11-03 19:25:52) [main] INFO             q.action - Performing 'Cancel' button in window @2E6EE0BC owner @279FEDBD
+57s135 (2019-11-03 19:25:52) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD)
+57s137 (2019-11-03 19:25:52) [main] INFO             q.dialog - Disposing dialog 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD)
+57s138 (2019-11-03 19:25:52) [main] INFO             q.dialog - Cleaned up dialog 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD)
+57s142 (2019-11-03 19:25:52) [main] INFO             q.dialog - Close-handler for dialog 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD)
+57s142 (2019-11-03 19:25:52) [main] INFO             q.dialog - Enabling parent for dialog 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD)
+57s142 (2019-11-03 19:25:52) [main] INFO             q.dialog - Showed dialog 4 (@2E6EE0BC) '@4201A617 - Check Out' (owner: @279FEDBD) (Cancel - -1)
+57s152 (2019-11-03 19:25:52) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@2E6EE0BC to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+57s152 (2019-11-03 19:25:52) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m 8s860 (2019-11-03 19:26:04) [main] INFO             q.action - Performing 'log, Log, Show the history for selected file or directory.'
+1m 8s871 (2019-11-03 19:26:04) [WorkerThread-1] INFO     smartgit.command - Log [/home/riddle/pro/uni-block] /
+1m 9s 73 (2019-11-03 19:26:04) [main] INFO        q.dockmanager - layout: (([+1x1:repositories ][+1x1:branches ])(([+4x4:graph ]([+2x1:details -1x1:output -1x1:debug-log details ][+2x2:files +2x1:comments files ]))[+4x2:changes ]))
+1m 9s139 (2019-11-03 19:26:04) [main] INFO smartgit.repositoryTreeTable - open: [uni-block /home/riddle/pro/uni-block git=true]; already open: []
+1m 9s146 (2019-11-03 19:26:04) [main] INFO              q.frame - opening smartgit.bjj@7A6EBE1E:SmartGit 19.1.4 (evaluation until Nov 5) (smartgit.bjj@5AA360EA)
+1m 9s174 (2019-11-03 19:26:04) [main] INFO              q.frame - Forcing shell 'SmartGit 19.1.4 (evaluation until Nov 5)' to become active
+1m 9s175 (2019-11-03 19:26:04) [main] INFO      sc.notification - Published: INFO [log-may-be-used-as-main-window-null] Do you prefer to use the Log as main window?:
+The Log window provides all working tree functionality.
+
+You can configure to use the Log window as main window, if you prefer. This configuration can also be changed in the Preferences, section User Interface later.
+
+Set Log window as main window | Remind me later | Don't show again
+1m 9s176 (2019-11-03 19:26:04) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+1m 9s177 (2019-11-03 19:26:04) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m 9s301 (2019-11-03 19:26:04) [main] INFO q.swt.shellActivation - Activation remains at Shell {SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+1m 9s366 (2019-11-03 19:26:04) [WorkerThread-2] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 2ms (22 nodes, 11 refs, 1ms walk of 22 nodes, 0ms refs, 0ms reachability, 1ms divergence for 4 branches, 0ms reflog, 0ms assertions)
+1m 9s400 (2019-11-03 19:26:04) [WorkerThread-2] INFO smartgit.statistics.local - Log working tree model for /home/riddle/pro/uni-block built in 20ms (108 files, 40 directories, 0 submodules, 0 WT modifications, 0 Index modifications, 0 In-Submodule modifications, 1 scan ranges)
+1m 9s405 (2019-11-03 19:26:04) [WorkerThread-2] INFO smartgit.log.graph.builder - Log graph built in 41ms (1ms init, 2ms commitnet update, 2ms waiting for commitnet lock, 10ms building graph, 26ms updating WT state, 19 nodes)
+1m 9s406 (2019-11-03 19:26:04) [WorkerThread-2] INFO smartgit.statistics.log.graph - Data refresh took 58ms: 14ms state, 2ms commit net, 10ms log, 26ms WT, 1ms tracking state, 19 nodes
+1m 9s406 (2019-11-03 19:26:04) [WorkerThread-2] INFO smartgit.log.graph.cache - Refreshing log for /home/riddle/pro/uni-block@4229C96B took 59ms.
+1m 9s409 (2019-11-03 19:26:04) [WorkerThread-2] INFO         smartgit.log - Initial building of Log for / took 203ms (logOnlyHead=false)
+1m 9s409 (2019-11-03 19:26:04) [main] INFO   smartgit.log.model - Registering model /home/riddle/pro/uni-block
+1m 9s412 (2019-11-03 19:26:04) [main] INFO   smartgit.log.model - Activating repository /home/riddle/pro/uni-block
+1m 9s413 (2019-11-03 19:26:04) [main] INFO         commit.notes - root changed null -> /home/riddle/pro/uni-block
+1m 9s466 (2019-11-03 19:26:04) [main] INFO   smartgit.log.model - Resetting /home/riddle/pro/uni-block to require a refresh (graphNeedsUpdate=false;wtPathsToUpdate=0)
+1m 9s531 (2019-11-03 19:26:04) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+1m 9s533 (2019-11-03 19:26:04) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+1m 9s551 (2019-11-03 19:26:04) [ThreadPool-2 (Refresh-WT)] INFO smartgit.statistics.local - Log working tree model for /home/riddle/pro/uni-block built in 25ms (108 files, 40 directories, 0 submodules, 0 WT modifications, 0 Index modifications, 0 In-Submodule modifications, 1 scan ranges)
+1m 9s688 (2019-11-03 19:26:04) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+1m11s102 (2019-11-03 19:26:06) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+1m11s102 (2019-11-03 19:26:06) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m11s118 (2019-11-03 19:26:06) [main] INFO q.swt.shellActivation - Activation remains at Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+1m11s335 (2019-11-03 19:26:06) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+1m11s351 (2019-11-03 19:26:06) [main] INFO q.swt.shellActivation - Activation remains at Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+1m12s343 (2019-11-03 19:26:07) [main] INFO      sc.notification - Close button clicked INFO [log-may-be-used-as-main-window-null] Do you prefer to use the Log as main window?
+1m19s739 (2019-11-03 19:26:15) [main] INFO    sc.comparePreview - file: /.gitignore
+1m19s802 (2019-11-03 19:26:15) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+1m20s905 (2019-11-03 19:26:16) [main] INFO    sc.comparePreview - file: /Cargo.lock
+1m21s 32 (2019-11-03 19:26:16) [main] INFO    sc.changesPreview - setting file content /Cargo.lock (scrolling: to-first-change)
+1m22s449 (2019-11-03 19:26:17) [main] INFO    sc.comparePreview - file: /Cargo.lock
+1m22s528 (2019-11-03 19:26:17) [main] INFO    sc.changesPreview - setting file content /Cargo.lock (scrolling: to-first-change)
+1m24s148 (2019-11-03 19:26:19) [main] INFO q.swt.shellActivation - Activation remains at Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+1m24s153 (2019-11-03 19:26:19) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA to null
+1m24s153 (2019-11-03 19:26:19) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m25s189 (2019-11-03 19:26:20) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 35ms.
+1m27s496 (2019-11-03 19:26:22) [main] INFO    sc.comparePreview - file: /Cargo.lock
+1m27s609 (2019-11-03 19:26:22) [main] INFO    sc.changesPreview - setting file content /Cargo.lock (scrolling: to-first-change)
+1m35s319 (2019-11-03 19:26:30) [main] INFO    sc.comparePreview - file: /Cargo.lock
+1m35s429 (2019-11-03 19:26:30) [main] INFO    sc.changesPreview - setting file content /Cargo.lock (scrolling: to-first-change)
+1m36s116 (2019-11-03 19:26:31) [main] INFO    sc.comparePreview - file: /.gitignore
+1m36s146 (2019-11-03 19:26:31) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+1m39s114 (2019-11-03 19:26:34) [main] INFO    sc.comparePreview - file: /.gitignore
+1m39s163 (2019-11-03 19:26:34) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+1m42s385 (2019-11-03 19:26:37) [main] INFO    sc.comparePreview - file: /.gitignore
+1m42s410 (2019-11-03 19:26:37) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+1m43s230 (2019-11-03 19:26:38) [main] INFO    sc.comparePreview - file: /.gitignore
+1m43s280 (2019-11-03 19:26:38) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+1m53s904 (2019-11-03 19:26:49) [main] INFO    sc.comparePreview - file: /.gitignore
+1m53s930 (2019-11-03 19:26:49) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m 3s542 (2019-11-03 19:26:58) [main] INFO    sc.comparePreview - file: /.gitignore
+2m 3s619 (2019-11-03 19:26:58) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m 4s363 (2019-11-03 19:26:59) [main] INFO    sc.comparePreview - file: /Cargo.lock
+2m 4s427 (2019-11-03 19:26:59) [main] INFO    sc.changesPreview - setting file content /Cargo.lock (scrolling: to-first-change)
+2m 5s697 (2019-11-03 19:27:00) [main] INFO    sc.comparePreview - file: /Cargo.lock
+2m 5s759 (2019-11-03 19:27:01) [main] INFO    sc.changesPreview - setting file content /Cargo.lock (scrolling: to-first-change)
+2m 6s897 (2019-11-03 19:27:02) [main] INFO    sc.comparePreview - file: /.gitignore
+2m 6s922 (2019-11-03 19:27:02) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m10s281 (2019-11-03 19:27:05) [ThreadPool-1 (smartgit.afr)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 0ms (22 nodes, 11 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+2m10s281 (2019-11-03 19:27:05) [ThreadPool-1 (smartgit.afr)] INFO smartgit.log.graph.builder - Log graph built in 3ms (1ms init, 1ms nodecache update, 0 nodes)
+2m10s281 (2019-11-03 19:27:05) [ThreadPool-1 (smartgit.afr)] INFO smartgit.statistics.log.graph - Data refresh took 3ms: 1ms node cache, 0 nodes
+2m10s892 (2019-11-03 19:27:06) [ThreadPool-1 (smartgit.afr)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 1ms (22 nodes, 11 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+2m10s893 (2019-11-03 19:27:06) [ThreadPool-1 (smartgit.afr)] INFO smartgit.log.graph.builder - Log graph built in 2ms (1ms init, 1ms commitnet update, 19 nodes)
+2m10s893 (2019-11-03 19:27:06) [ThreadPool-1 (smartgit.afr)] INFO smartgit.statistics.log.graph - Data refresh took 3ms: 1ms commit net, 1ms tracking state, 19 nodes
+2m10s950 (2019-11-03 19:27:06) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+2m11s  5 (2019-11-03 19:27:06) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+2m11s996 (2019-11-03 19:27:07) [main] INFO    sc.comparePreview - file: /.gitignore
+2m12s 37 (2019-11-03 19:27:07) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m15s366 (2019-11-03 19:27:10) [main] INFO    sc.comparePreview - file: /.gitignore
+2m15s398 (2019-11-03 19:27:10) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m24s245 (2019-11-03 19:27:19) [main] INFO    sc.comparePreview - file: /.gitignore
+2m24s266 (2019-11-03 19:27:19) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m31s 30 (2019-11-03 19:27:26) [main] INFO    sc.comparePreview - file: /.gitignore
+2m31s 67 (2019-11-03 19:27:26) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m33s459 (2019-11-03 19:27:28) [main] INFO    sc.comparePreview - file: /.gitignore
+2m33s482 (2019-11-03 19:27:28) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m45s731 (2019-11-03 19:27:41) [main] INFO    sc.comparePreview - file: /.gitignore
+2m45s761 (2019-11-03 19:27:41) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+2m52s784 (2019-11-03 19:27:48) [main] INFO             q.action - Performing 'checkout, Check Out..., Check out an existing commit.'
+2m52s803 (2019-11-03 19:27:48) [main] INFO             q.dialog - Showing dialog 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA)
+2m52s841 (2019-11-03 19:27:48) [main] INFO q.swt.shellActivation - Activation change from null to Shell {Check Out}@2133661D
+2m52s889 (2019-11-03 19:27:48) [main] INFO q.swt.shellActivation - Activation remains at Shell {Check Out}@2133661D
+2m55s228 (2019-11-03 19:27:50) [main] INFO             q.action - Performing 'Cancel' button in window @2133661D owner @5AA360EA
+2m55s229 (2019-11-03 19:27:50) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA)
+2m55s230 (2019-11-03 19:27:50) [main] INFO             q.dialog - Disposing dialog 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA)
+2m55s230 (2019-11-03 19:27:50) [main] INFO             q.dialog - Cleaned up dialog 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA)
+2m55s240 (2019-11-03 19:27:50) [main] INFO             q.dialog - Close-handler for dialog 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA)
+2m55s240 (2019-11-03 19:27:50) [main] INFO             q.dialog - Enabling parent for dialog 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA)
+2m55s240 (2019-11-03 19:27:50) [main] INFO             q.dialog - Showed dialog 5 (@2133661D) '@6C9320C2 - Check Out' (owner: @5AA360EA) (Cancel - -1)
+2m55s250 (2019-11-03 19:27:50) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@2133661D to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+2m55s250 (2019-11-03 19:27:50) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+3m17s193 (2019-11-03 19:28:12) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m17s219 (2019-11-03 19:28:12) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m18s141 (2019-11-03 19:28:13) [main] INFO    sc.comparePreview - file: /.gitignore
+3m18s164 (2019-11-03 19:28:13) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+3m19s831 (2019-11-03 19:28:15) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m19s846 (2019-11-03 19:28:15) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m22s399 (2019-11-03 19:28:17) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m22s432 (2019-11-03 19:28:17) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m24s467 (2019-11-03 19:28:19) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m24s494 (2019-11-03 19:28:19) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m27s 87 (2019-11-03 19:28:22) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+3m27s119 (2019-11-03 19:28:22) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+3m29s861 (2019-11-03 19:28:25) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m29s882 (2019-11-03 19:28:25) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m31s823 (2019-11-03 19:28:27) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m31s849 (2019-11-03 19:28:27) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m32s599 (2019-11-03 19:28:27) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m32s626 (2019-11-03 19:28:27) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m34s798 (2019-11-03 19:28:30) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m34s812 (2019-11-03 19:28:30) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m35s319 (2019-11-03 19:28:30) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+3m35s350 (2019-11-03 19:28:30) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+3m36s721 (2019-11-03 19:28:31) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+3m36s752 (2019-11-03 19:28:32) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+3m38s541 (2019-11-03 19:28:33) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+3m38s600 (2019-11-03 19:28:33) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+3m40s122 (2019-11-03 19:28:35) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+3m40s154 (2019-11-03 19:28:35) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+3m51s547 (2019-11-03 19:28:46) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+3m51s573 (2019-11-03 19:28:46) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+3m57s741 (2019-11-03 19:28:53) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+3m57s767 (2019-11-03 19:28:53) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+3m58s832 (2019-11-03 19:28:54) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+3m58s857 (2019-11-03 19:28:54) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+3m59s985 (2019-11-03 19:28:55) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+4m 0s 36 (2019-11-03 19:28:55) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+4m 0s600 (2019-11-03 19:28:55) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+4m 0s622 (2019-11-03 19:28:55) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+4m 1s124 (2019-11-03 19:28:56) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+4m 1s138 (2019-11-03 19:28:56) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+4m 2s 33 (2019-11-03 19:28:57) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m 2s 57 (2019-11-03 19:28:57) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m 3s 31 (2019-11-03 19:28:58) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m 3s 61 (2019-11-03 19:28:58) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m 3s795 (2019-11-03 19:28:59) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+4m 3s820 (2019-11-03 19:28:59) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+4m11s  8 (2019-11-03 19:29:06) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m11s 43 (2019-11-03 19:29:06) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m15s467 (2019-11-03 19:29:10) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+4m15s495 (2019-11-03 19:29:10) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+4m18s175 (2019-11-03 19:29:13) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m18s193 (2019-11-03 19:29:13) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m21s 80 (2019-11-03 19:29:16) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m21s119 (2019-11-03 19:29:16) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m22s176 (2019-11-03 19:29:17) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+4m22s209 (2019-11-03 19:29:17) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+4m22s659 (2019-11-03 19:29:17) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m22s684 (2019-11-03 19:29:17) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m24s 61 (2019-11-03 19:29:19) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m24s 98 (2019-11-03 19:29:19) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m26s802 (2019-11-03 19:29:22) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m26s825 (2019-11-03 19:29:22) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m33s289 (2019-11-03 19:29:28) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+4m33s313 (2019-11-03 19:29:28) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+4m43s965 (2019-11-03 19:29:39) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m43s992 (2019-11-03 19:29:39) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+4m52s459 (2019-11-03 19:29:47) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+4m52s482 (2019-11-03 19:29:47) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+4m56s985 (2019-11-03 19:29:52) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+4m57s  8 (2019-11-03 19:29:52) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+5m 7s 40 (2019-11-03 19:30:02) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode/impls.rs
+5m 7s 59 (2019-11-03 19:30:02) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode/impls.rs (scrolling: to-first-change)
+5m11s107 (2019-11-03 19:30:06) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+5m11s146 (2019-11-03 19:30:06) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+5m17s590 (2019-11-03 19:30:12) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+5m17s613 (2019-11-03 19:30:12) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+5m18s659 (2019-11-03 19:30:13) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+5m18s681 (2019-11-03 19:30:13) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+5m35s155 (2019-11-03 19:30:30) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+5m35s180 (2019-11-03 19:30:30) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+5m46s503 (2019-11-03 19:30:41) [main] INFO    sc.comparePreview - file: /.gitignore
+5m46s528 (2019-11-03 19:30:41) [main] INFO    sc.changesPreview - setting file content /.gitignore (scrolling: to-first-change)
+5m52s417 (2019-11-03 19:30:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+5m52s441 (2019-11-03 19:30:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+5m52s442 (2019-11-03 19:30:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #4 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+5m52s906 (2019-11-03 19:30:48) [ThreadPool-4 (stdout-#4 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+5m59s139 (2019-11-03 19:30:54) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+5m59s168 (2019-11-03 19:30:54) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m 1s107 (2019-11-03 19:30:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 328118ms.
+6m 6s458 (2019-11-03 19:31:01) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+6m 6s482 (2019-11-03 19:31:01) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+6m 8s952 (2019-11-03 19:31:04) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+6m 8s980 (2019-11-03 19:31:04) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m24s810 (2019-11-03 19:31:20) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+6m24s844 (2019-11-03 19:31:20) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+6m32s756 (2019-11-03 19:31:28) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+6m32s802 (2019-11-03 19:31:28) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m34s103 (2019-11-03 19:31:29) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+6m34s127 (2019-11-03 19:31:29) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+6m34s987 (2019-11-03 19:31:30) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+6m35s 17 (2019-11-03 19:31:30) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m36s426 (2019-11-03 19:31:31) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+6m36s451 (2019-11-03 19:31:31) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+6m37s406 (2019-11-03 19:31:32) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+6m37s432 (2019-11-03 19:31:32) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m39s737 (2019-11-03 19:31:35) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/lib.rs
+6m39s752 (2019-11-03 19:31:35) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/lib.rs (scrolling: to-first-change)
+6m41s385 (2019-11-03 19:31:36) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+6m41s412 (2019-11-03 19:31:36) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m41s988 (2019-11-03 19:31:37) [main] INFO    sc.comparePreview - file: /utils/mif_ssz/src/encode.rs
+6m42s 14 (2019-11-03 19:31:37) [main] INFO    sc.changesPreview - setting file content /utils/mif_ssz/src/encode.rs (scrolling: to-first-change)
+6m43s775 (2019-11-03 19:31:39) [main] INFO q.swt.shellActivation - Activation remains at Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+6m43s780 (2019-11-03 19:31:39) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA to null
+6m43s780 (2019-11-03 19:31:39) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+6m43s797 (2019-11-03 19:31:39) [main] INFO q.swt.shellActivation - Activation remains at null
+6m44s818 (2019-11-03 19:31:40) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 38ms.
+9m 1s107 (2019-11-03 19:33:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 508119ms.
+11m 2s427 (2019-11-03 19:35:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+11m 2s447 (2019-11-03 19:35:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+11m 2s448 (2019-11-03 19:35:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #5 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+11m 2s928 (2019-11-03 19:35:58) [ThreadPool-4 (stdout-#5 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+11m43s812 (2019-11-03 19:36:39) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+11m43s813 (2019-11-03 19:36:39) [WorkerThread-1] INFO               q.exec - Executing #6 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+11m44s409 (2019-11-03 19:36:39) [WorkerThread-2] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+11m44s409 (2019-11-03 19:36:39) [WorkerThread-2] INFO               q.exec - Executing #7 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+11m44s497 (2019-11-03 19:36:39) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-block
+11m44s499 (2019-11-03 19:36:39) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>]
+11m44s933 (2019-11-03 19:36:40) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 0ms (22 nodes, 11 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+11m44s939 (2019-11-03 19:36:40) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=3)
+11m44s942 (2019-11-03 19:36:40) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+11m44s950 (2019-11-03 19:36:40) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 435ms, additional 15ms post-processing
+15m 1s108 (2019-11-03 19:39:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 196111ms.
+16m12s434 (2019-11-03 19:41:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+16m12s457 (2019-11-03 19:41:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+16m12s458 (2019-11-03 19:41:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #8 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+16m12s931 (2019-11-03 19:41:08) [ThreadPool-4 (stdout-#8 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+18m 1s108 (2019-11-03 19:42:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 376111ms.
+21m 1s109 (2019-11-03 19:45:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 556112ms.
+21m22s443 (2019-11-03 19:46:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+21m22s462 (2019-11-03 19:46:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+21m22s463 (2019-11-03 19:46:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #9 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+21m22s995 (2019-11-03 19:46:18) [ThreadPool-4 (stdout-#9 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+24m 1s110 (2019-11-03 19:48:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 736113ms.
+26m32s449 (2019-11-03 19:51:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+26m32s466 (2019-11-03 19:51:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+26m32s466 (2019-11-03 19:51:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #10 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+26m32s919 (2019-11-03 19:51:28) [ThreadPool-4 (stdout-#10 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+27m 1s110 (2019-11-03 19:51:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 916113ms.
+29m37s408 (2019-11-03 19:54:32) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+29m37s408 (2019-11-03 19:54:32) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+29m39s130 (2019-11-03 19:54:34) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA to null
+29m40s195 (2019-11-03 19:54:35) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 64ms.
+30m 1s110 (2019-11-03 19:54:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1096113ms.
+31m42s457 (2019-11-03 19:56:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+31m42s482 (2019-11-03 19:56:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+31m42s483 (2019-11-03 19:56:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #11 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+31m42s946 (2019-11-03 19:56:38) [ThreadPool-4 (stdout-#11 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+33m 1s110 (2019-11-03 19:57:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1276113ms.
+36m 1s111 (2019-11-03 20:00:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1456114ms.
+36m52s465 (2019-11-03 20:01:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+36m52s484 (2019-11-03 20:01:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+36m52s485 (2019-11-03 20:01:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #12 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+36m52s980 (2019-11-03 20:01:48) [ThreadPool-4 (stdout-#12 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+39m 1s112 (2019-11-03 20:03:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1636115ms.
+42m 2s473 (2019-11-03 20:06:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+42m 2s492 (2019-11-03 20:06:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+42m 2s492 (2019-11-03 20:06:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #13 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+42m 2s983 (2019-11-03 20:06:58) [ThreadPool-4 (stdout-#13 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+44m39s144 (2019-11-03 20:09:34) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+44m39s146 (2019-11-03 20:09:34) [WorkerThread-1] INFO               q.exec - Executing #14 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+44m39s675 (2019-11-03 20:09:34) [WorkerThread-2] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+44m39s676 (2019-11-03 20:09:34) [WorkerThread-2] INFO               q.exec - Executing #15 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+44m39s753 (2019-11-03 20:09:35) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-block
+44m39s756 (2019-11-03 20:09:35) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>]
+44m40s183 (2019-11-03 20:09:35) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 1ms (22 nodes, 11 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+44m40s186 (2019-11-03 20:09:35) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=4)
+44m40s189 (2019-11-03 20:09:35) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+44m40s229 (2019-11-03 20:09:35) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 430ms, additional 44ms post-processing
+47m12s480 (2019-11-03 20:12:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+47m12s500 (2019-11-03 20:12:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+47m12s501 (2019-11-03 20:12:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #16 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+47m12s967 (2019-11-03 20:12:08) [ThreadPool-4 (stdout-#16 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+48m 1s112 (2019-11-03 20:12:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 200859ms.
+52m22s489 (2019-11-03 20:17:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+52m22s509 (2019-11-03 20:17:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+52m22s510 (2019-11-03 20:17:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #17 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+52m22s982 (2019-11-03 20:17:18) [ThreadPool-4 (stdout-#17 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+54m 1s113 (2019-11-03 20:18:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 185840ms.
+57m 1s114 (2019-11-03 20:21:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 365841ms.
+57m32s499 (2019-11-03 20:22:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+57m32s516 (2019-11-03 20:22:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+57m32s517 (2019-11-03 20:22:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #18 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+57m33s 10 (2019-11-03 20:22:28) [ThreadPool-4 (stdout-#18 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h 2m42s502 (2019-11-03 20:27:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h 2m42s520 (2019-11-03 20:27:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h 2m42s521 (2019-11-03 20:27:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #19 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h 2m42s996 (2019-11-03 20:27:38) [ThreadPool-4 (stdout-#19 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h 6m 1s115 (2019-11-03 20:30:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 211932ms.
+1h 7m52s510 (2019-11-03 20:32:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h 7m52s528 (2019-11-03 20:32:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h 7m52s529 (2019-11-03 20:32:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #20 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h 7m53s  7 (2019-11-03 20:32:48) [ThreadPool-4 (stdout-#20 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h 9m 1s116 (2019-11-03 20:33:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 391933ms.
+1h12m 1s116 (2019-11-03 20:36:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 571933ms.
+1h13m 2s518 (2019-11-03 20:37:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h13m 2s540 (2019-11-03 20:37:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h13m 2s541 (2019-11-03 20:37:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #21 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h13m 3s 28 (2019-11-03 20:37:58) [ThreadPool-4 (stdout-#21 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h14m39s142 (2019-11-03 20:39:34) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h14m39s143 (2019-11-03 20:39:34) [WorkerThread-1] INFO               q.exec - Executing #22 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+1h14m39s627 (2019-11-03 20:39:34) [WorkerThread-2] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h14m39s628 (2019-11-03 20:39:34) [WorkerThread-2] INFO               q.exec - Executing #23 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+1h14m39s632 (2019-11-03 20:39:34) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-block
+1h14m39s633 (2019-11-03 20:39:34) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>]
+1h14m40s111 (2019-11-03 20:39:35) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 0ms (22 nodes, 11 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+1h14m40s113 (2019-11-03 20:39:35) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=5)
+1h14m40s116 (2019-11-03 20:39:35) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+1h14m40s126 (2019-11-03 20:39:35) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 479ms, additional 14ms post-processing
+1h18m 1s117 (2019-11-03 20:42:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 200984ms.
+1h18m12s523 (2019-11-03 20:43:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h18m12s536 (2019-11-03 20:43:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h18m12s537 (2019-11-03 20:43:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #24 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h18m13s 27 (2019-11-03 20:43:08) [ThreadPool-4 (stdout-#24 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h21m 1s117 (2019-11-03 20:45:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 380984ms.
+1h23m22s530 (2019-11-03 20:48:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h23m22s548 (2019-11-03 20:48:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h23m22s548 (2019-11-03 20:48:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #25 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h23m23s 20 (2019-11-03 20:48:18) [ThreadPool-4 (stdout-#25 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h24m 1s118 (2019-11-03 20:48:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 560985ms.
+1h27m 1s118 (2019-11-03 20:51:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 740985ms.
+1h28m32s539 (2019-11-03 20:53:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h28m32s557 (2019-11-03 20:53:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h28m32s558 (2019-11-03 20:53:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #26 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h28m33s 98 (2019-11-03 20:53:28) [ThreadPool-4 (stdout-#26 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h30m 1s119 (2019-11-03 20:54:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 920986ms.
+1h33m 1s120 (2019-11-03 20:57:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1100987ms.
+1h33m42s545 (2019-11-03 20:58:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h33m42s559 (2019-11-03 20:58:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h33m42s560 (2019-11-03 20:58:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #27 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h33m43s 79 (2019-11-03 20:58:38) [ThreadPool-4 (stdout-#27 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h36m 1s120 (2019-11-03 21:00:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1280987ms.
+1h38m52s555 (2019-11-03 21:03:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h38m52s572 (2019-11-03 21:03:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h38m52s572 (2019-11-03 21:03:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #28 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h38m53s 35 (2019-11-03 21:03:48) [ThreadPool-4 (stdout-#28 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h39m 1s120 (2019-11-03 21:03:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1460987ms.
+1h42m 1s120 (2019-11-03 21:06:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1640987ms.
+1h44m 2s563 (2019-11-03 21:08:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h44m 2s580 (2019-11-03 21:08:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h44m 2s581 (2019-11-03 21:08:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #29 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h44m 3s 43 (2019-11-03 21:08:58) [ThreadPool-4 (stdout-#29 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h45m 1s120 (2019-11-03 21:09:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1820987ms.
+1h48m 1s120 (2019-11-03 21:12:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 2000987ms.
+1h49m12s569 (2019-11-03 21:14:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h49m12s585 (2019-11-03 21:14:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h49m12s586 (2019-11-03 21:14:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #30 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h49m13s 53 (2019-11-03 21:14:08) [ThreadPool-4 (stdout-#30 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h51m 1s121 (2019-11-03 21:15:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 2180988ms.
+1h54m 1s122 (2019-11-03 21:18:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 2360989ms.
+1h54m22s576 (2019-11-03 21:19:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h54m22s593 (2019-11-03 21:19:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h54m22s593 (2019-11-03 21:19:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #31 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h54m23s 69 (2019-11-03 21:19:18) [ThreadPool-4 (stdout-#31 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+1h54m39s143 (2019-11-03 21:19:34) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h54m39s144 (2019-11-03 21:19:34) [WorkerThread-1] INFO               q.exec - Executing #32 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+1h54m39s634 (2019-11-03 21:19:34) [WorkerThread-2] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h54m39s635 (2019-11-03 21:19:34) [WorkerThread-2] INFO               q.exec - Executing #33 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+1h54m39s664 (2019-11-03 21:19:34) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-block
+1h54m39s665 (2019-11-03 21:19:34) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>]
+1h54m40s124 (2019-11-03 21:19:35) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 0ms (22 nodes, 11 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+1h54m40s126 (2019-11-03 21:19:35) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=6)
+1h54m40s129 (2019-11-03 21:19:35) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+1h54m40s148 (2019-11-03 21:19:35) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 461ms, additional 22ms post-processing
+1h59m32s583 (2019-11-03 21:24:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+1h59m32s600 (2019-11-03 21:24:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h59m32s601 (2019-11-03 21:24:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #34 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+1h59m33s 72 (2019-11-03 21:24:28) [ThreadPool-4 (stdout-#34 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h 0m 1s122 (2019-11-03 21:24:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 320957ms.
+2h 3m 1s123 (2019-11-03 21:27:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 500958ms.
+2h 4m42s589 (2019-11-03 21:29:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h 4m42s608 (2019-11-03 21:29:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h 4m42s608 (2019-11-03 21:29:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #35 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h 4m43s151 (2019-11-03 21:29:38) [ThreadPool-4 (stdout-#35 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h 6m 1s123 (2019-11-03 21:30:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 680958ms.
+2h 9m 1s124 (2019-11-03 21:33:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 860959ms.
+2h 9m52s598 (2019-11-03 21:34:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h 9m52s617 (2019-11-03 21:34:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h 9m52s617 (2019-11-03 21:34:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #36 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h 9m53s 83 (2019-11-03 21:34:48) [ThreadPool-4 (stdout-#36 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h12m 1s125 (2019-11-03 21:36:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1040960ms.
+2h15m 1s126 (2019-11-03 21:39:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1220961ms.
+2h15m 2s604 (2019-11-03 21:39:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h15m 2s621 (2019-11-03 21:39:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h15m 2s622 (2019-11-03 21:39:57) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #37 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h15m 3s 89 (2019-11-03 21:39:58) [ThreadPool-4 (stdout-#37 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h18m 1s126 (2019-11-03 21:42:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1400961ms.
+2h20m12s609 (2019-11-03 21:45:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h20m12s625 (2019-11-03 21:45:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h20m12s626 (2019-11-03 21:45:07) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #38 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h20m13s135 (2019-11-03 21:45:08) [ThreadPool-4 (stdout-#38 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h21m 1s126 (2019-11-03 21:45:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1580961ms.
+2h24m 1s126 (2019-11-03 21:48:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 1760961ms.
+2h24m39s148 (2019-11-03 21:49:34) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h24m39s149 (2019-11-03 21:49:34) [WorkerThread-1] INFO               q.exec - Executing #39 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+2h24m39s649 (2019-11-03 21:49:34) [WorkerThread-2] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h24m39s650 (2019-11-03 21:49:34) [WorkerThread-2] INFO               q.exec - Executing #40 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+2h24m39s681 (2019-11-03 21:49:34) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-block
+2h24m39s682 (2019-11-03 21:49:34) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-block [/<empty>]
+2h24m40s156 (2019-11-03 21:49:35) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-block/.git built in 0ms (22 nodes, 11 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+2h24m40s158 (2019-11-03 21:49:35) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-block' synchronized with UI (40 directories processed, timestamp=7)
+2h24m40s160 (2019-11-03 21:49:35) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> /home/riddle/pro/uni-block
+2h24m40s169 (2019-11-03 21:49:35) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-block (148 entries) in 476ms, additional 11ms post-processing
+2h25m22s616 (2019-11-03 21:50:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h25m22s632 (2019-11-03 21:50:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h25m22s633 (2019-11-03 21:50:17) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #41 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h25m23s110 (2019-11-03 21:50:18) [ThreadPool-4 (stdout-#41 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h30m 1s126 (2019-11-03 21:54:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 246529ms.
+2h30m32s627 (2019-11-03 21:55:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h30m32s645 (2019-11-03 21:55:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h30m32s646 (2019-11-03 21:55:27) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #42 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h30m33s132 (2019-11-03 21:55:28) [ThreadPool-4 (stdout-#42 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h33m 1s126 (2019-11-03 21:57:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 426529ms.
+2h35m42s635 (2019-11-03 22:00:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h35m42s649 (2019-11-03 22:00:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h35m42s650 (2019-11-03 22:00:37) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #43 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h35m43s165 (2019-11-03 22:00:38) [ThreadPool-4 (stdout-#43 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h36m 1s126 (2019-11-03 22:00:56) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 606529ms.
+2h40m52s645 (2019-11-03 22:05:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-block]
+2h40m52s660 (2019-11-03 22:05:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+2h40m52s661 (2019-11-03 22:05:47) [ThreadPool-1 (smartgit.bxo$$Lambda$479/0x00000001003c9840)] INFO               q.exec - Executing #44 [/home/riddle/pro/uni-block] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decoding_impl*
+2h40m53s165 (2019-11-03 22:05:48) [ThreadPool-4 (stdout-#44 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/decod)] INFO smartgit.command.logging - stdout: c858d19d27f2959a9bfe1effe5f1bf84c04e6145	refs/heads/decoding_impl
+2h41m44s112 (2019-11-03 22:06:39) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@5AA360EA
+2h41m44s113 (2019-11-03 22:06:39) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+2h41m44s314 (2019-11-03 22:06:39) [main] INFO              q.frame - closed smartgit.bjj@7A6EBE1E:uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5) (smartgit.bjj@5AA360EA)
+2h41m44s315 (2019-11-03 22:06:39) [main] INFO smartgit.repositoryTreeTable - close [uni-block /home/riddle/pro/uni-block git=true]; already open: [uni-block /home/riddle/pro/uni-block git=true]
+2h41m44s315 (2019-11-03 22:06:39) [main] INFO   smartgit.log.model - Unregistering model /home/riddle/pro/uni-block
+2h41m44s317 (2019-11-03 22:06:39) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> null
+2h41m44s353 (2019-11-03 22:06:39) [main] INFO   smartgit.log.model - Activating repository <null>
+2h41m44s385 (2019-11-03 22:06:39) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@5AA360EA to null
+2h41m44s385 (2019-11-03 22:06:39) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+2h41m44s704 (2019-11-03 22:06:39) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5)}@279FEDBD
+2h41m44s704 (2019-11-03 22:06:39) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+2h41m44s925 (2019-11-03 22:06:40) [main] INFO              q.frame - closed smartgit.boi@773CBF4F:uni-block - [~/pro/uni-block] - SmartGit 19.1.4 (evaluation until Nov 5) (smartgit.boi@279FEDBD) (index=0)
+2h41m44s926 (2019-11-03 22:06:40) [main] INFO smartgit.repositoryTreeTable - close [uni-block /home/riddle/pro/uni-block git=true]; already open: [uni-block /home/riddle/pro/uni-block git=true]
+2h41m44s927 (2019-11-03 22:06:40) [ThreadPool-4 (smartgit.aFg$$Lambda$483/0x00000001003e1840)] INFO      sc.file.monitor - Removing watch for '/home/riddle/pro/uni-block', canonical: '/home/riddle/pro/uni-block'
+2h41m44s929 (2019-11-03 22:06:40) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-block -> null
+2h41m44s946 (2019-11-03 22:06:40) [ThreadPool-4 (smartgit.aFg$$Lambda$483/0x00000001003e1840)] INFO      sc.file.monitor -   ... took 19ms [/home/riddle/pro/uni-block]
+2h41m44s947 (2019-11-03 22:06:40) [main] INFO smartgit.preferences - Root considered obsolete: /home/riddle/tmp4
+2h41m44s949 (2019-11-03 22:06:40) [main] INFO          sc.password - Writing 1 phrases.
+2h41m44s967 (2019-11-03 22:06:40) [main] INFO          sc.password - Writing 1 phrases.
+2h41m44s967 (2019-11-03 22:06:40) [main] INFO             shutdown - Starting 9 shutdown hook threads
+2h41m44s967 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Temp dir /tmp/smartgit-1565185758098686010tmp
+2h41m44s968 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+2h41m44s968 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1572801895877.tmp
+2h41m44s968 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+2h41m44s968 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+2h41m44s968 (2019-11-03 22:06:40) [Temp dir /tmp/smartgit-1565185758098686010tmp] INFO             shutdown - Running hook Temp dir /tmp/smartgit-1565185758098686010tmp
+2h41m44s968 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/_lock_
+2h41m44s968 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Background scan
+2h41m44s968 (2019-11-03 22:06:40) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1572801895877.tmp] INFO             shutdown - Running hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1572801895877.tmp
+2h41m44s968 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook SmartGit app dispose
+2h41m44s968 (2019-11-03 22:06:40) [Temp dir /tmp/smartgit-1565185758098686010tmp] INFO             shutdown - Ran hook Temp dir /tmp/smartgit-1565185758098686010tmp
+2h41m44s968 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/_lock_
+2h41m44s968 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+2h41m44s968 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+2h41m44s968 (2019-11-03 22:06:40) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1572801895877.tmp] INFO             shutdown - Ran hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1572801895877.tmp
+2h41m44s970 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.prelock
+2h41m44s970 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Background fetch
+2h41m44s970 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.prelock
+2h41m44s970 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+2h41m44s970 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+2h41m44s970 (2019-11-03 22:06:40) [Background scan] INFO             shutdown - Running hook Background scan
+2h41m44s970 (2019-11-03 22:06:40) [SmartGit app dispose] INFO             shutdown - Running hook SmartGit app dispose
+2h41m44s970 (2019-11-03 22:06:40) [Background scan] INFO             shutdown - Ran hook Background scan
+2h41m44s970 (2019-11-03 22:06:40) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+2h41m44s970 (2019-11-03 22:06:40) [SmartGit app dispose] INFO             shutdown - Ran hook SmartGit app dispose
+2h41m44s970 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+2h41m44s972 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.lock
+2h41m44s972 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.lock
+2h41m44s972 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+2h41m44s972 (2019-11-03 22:06:40) [Background fetch] INFO             shutdown - Running hook Background fetch
+2h41m44s973 (2019-11-03 22:06:40) [Background fetch] INFO             shutdown - Ran hook Background fetch
+2h41m44s973 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+2h41m44s973 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.postlock
+2h41m44s973 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.postlock
+2h41m44s973 (2019-11-03 22:06:40) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+2h41m44s973 (2019-11-03 22:06:40) [main] INFO             shutdown - done.
+2h41m44s973 (2019-11-03 22:06:40) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@279FEDBD to null
+2h41m44s973 (2019-11-03 22:06:40) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+2h41m44s974 (2019-11-03 22:06:40) [main] INFO                q.swt - runnable ignored - timer
+2h41m44s974 (2019-11-03 22:06:40) [main] INFO                q.swt - runnable ignored - timer
+2h41m44s974 (2019-11-03 22:06:40) [main] INFO                q.swt - runnable ignored - timer

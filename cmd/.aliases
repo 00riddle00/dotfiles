@@ -664,3 +664,6 @@ function makedot() {
     if [ ! -z $2 ]; then img_name=$2; fi;
     \dot $1 -Tpng -o $img_name.png -v 2>&1;
 }
+
+alias g1='git log --no-merges --oneline'
+alias g2='git log --first-parent'

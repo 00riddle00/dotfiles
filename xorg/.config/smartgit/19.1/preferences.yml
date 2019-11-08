@@ -130,12 +130,12 @@ globalTextComponentSettings:
     color-comment: 8421504, color-declaration: 14002858, color-keyword: 10733475,
     color-literal: 11184853, color-no-code: 0, color-plain-text: 12566463, color-punctuation: 12561045,
     color-source: 0, color-string: 14002901, color-tag: 10274701, color-type: 11513807}
-listx: {eUT: 1572955366838, nRT: 1571616166838, lLCT: 0, ePP: 0, eV: '19.1', uid: 721q2dl2orf4}
+listx: {eUT: 1572955366838, nRT: 1572878636311, lLCT: 0, ePP: 0, eV: '19.1', uid: 721q2dl2orf4}
 project: {reopenLastUsedRepositories: true, showWelcomeDialog: true, preferLogWindow: false}
 uiSettings: {useBackgroundColorInFileTable: true, fileSearchPatternType: 1, themeChanged: false}
-vcsRecords: {lastGitUsage: 1571547347124, lastSvnUsage: 0, lastHgUsage: 0, lastReviewUsage: 0,
+vcsRecords: {lastGitUsage: 1572810574953, lastSvnUsage: 0, lastHgUsage: 0, lastReviewUsage: 0,
   lastDgUsage: 0}
-updateCheck: {mode: download, prevCheckTime: 1571515504293, checkedBuild: 14196, upgradeInstallation: false,
+updateCheck: {mode: download, prevCheckTime: 1572801896752, checkedBuild: 14196, upgradeInstallation: false,
   previewAlwaysCheckForLatestBuild: false}
 proxy: {autoDetect: true, authenticate: false, port: 3128, enabled: false}
 proxyPassword: 34
@@ -151,7 +151,7 @@ askForMasterPasswordOnStartup: false
 sendStacktraces2: false
 sendStacktracesBeta: false
 lastUsedVersion: '19.1'
-tempDirs: [/tmp/smartgit-15232903437392780825tmp]
+tempDirs: [/tmp/smartgit-1565185758098686010tmp]
 updateCheckDg: {}
 upgradedFromVersion: '18.2'
 firstUsedTime: 1570276966646
