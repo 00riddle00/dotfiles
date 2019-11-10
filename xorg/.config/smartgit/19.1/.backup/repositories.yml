@@ -1,18 +1,16 @@
 gitRootSettingsSet:
-  roots: [~/tmp4]
-  root-/home/riddle/tmp4:
-    commitNotes:
-      commitNotesHistory: []
-    journal:
-      lastAuxiliaryRefs: []
-      refs: []
+  roots: [~/pro/uni-block]
+  root/home/riddle/pro/uni-block:
     databaseCleanup: {}
     log:
-      rootSettings: {}
+      rootSettings: {baseRoots: "!local-branches://\t!remote://origin\tref://HEAD",
+        extendedRoots: ''}
       fileFilterConfiguration: {}
     merge:
       logRootSettings: {}
     push: {}
+    commitNotes: {}
+    journal: {}
 hgRootSettingsSet:
   roots: []
 pushMultiRoot: {}

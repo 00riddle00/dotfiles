@@ -5374,3 +5374,733 @@ Set Log window as main window | Remind me later | Don't show again
 2h41m44s974 (2019-11-03 22:06:40) [main] INFO                q.swt - runnable ignored - timer
 2h41m44s974 (2019-11-03 22:06:40) [main] INFO                q.swt - runnable ignored - timer
 2h41m44s974 (2019-11-03 22:06:40) [main] INFO                q.swt - runnable ignored - timer
+ 32 (2019-11-09 20:30:05) [main] INFO      smartgit.system - SmartGit version 19.1.4-14196-4577cb06f60cb76adf60d96ddb10ab9bff199fc2-jgit-df1a32e3fce9b79d5188e38280d63fbb2accfd8b-trilead-?
+ 33 (2019-11-09 20:30:05) [main] INFO      smartgit.system - SmartGit running build 14196
+ 34 (2019-11-09 20:30:05) [main] INFO      smartgit.system - SmartGit installed build 14196
+ 35 (2019-11-09 20:30:05) [main] INFO      smartgit.system - SVNKit version SVN/1.8.1 SVNKit/1.10.0 (http://svnkit.com/) rSNAPSHOT
+ 35 (2019-11-09 20:30:05) [main] INFO sc.command.line.parameters - 0 command line parameters:
+ 35 (2019-11-09 20:30:05) [main] INFO      smartgit.system - application root: /opt/smartgit
+ 36 (2019-11-09 20:30:05) [main] INFO      smartgit.system - defaults root   : /opt/smartgit/default
+ 36 (2019-11-09 20:30:05) [main] INFO      smartgit.system - settings root   : /home/riddle/.config/smartgit/19.1
+ 36 (2019-11-09 20:30:05) [main] INFO      smartgit.system - .app directory  : null
+ 50 (2019-11-09 20:30:05) [main] INFO      smartgit.system - created temp directory /tmp/smartgit-1291516396243269216tmp
+307 (2019-11-09 20:30:05) [main] INFO              gui.swt - Used GTK version: 3.24.12
+307 (2019-11-09 20:30:05) [main] INFO              gui.swt - Used GTK theme  : Numix-Archblue
+307 (2019-11-09 20:30:05) [main] INFO              gui.swt - Using SWT 4926
+307 (2019-11-09 20:30:05) [main] INFO              gui.swt - Monitors:
+309 (2019-11-09 20:30:05) [main] INFO              gui.swt -   1920x1080(0,0 - 1919,1079)
+414 (2019-11-09 20:30:06) [main] INFO         splashscreen - splashscreen disabled
+550 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/_lock_
+586 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - awt.toolkit                         : "sun.awt.X11.XToolkit"
+586 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - file.encoding                       : "UTF-8"
+586 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - file.separator                      : "/"
+586 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.awt.printerjob                 : "sun.print.PSPrinterJob"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.class.version                  : "55.0"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.home                           : "/opt/smartgit/jre"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.io.tmpdir                      : "/tmp"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.net.preferIPv4Stack            : "true"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.runtime.name                   : "OpenJDK Runtime Environment"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.runtime.version                : "11.0.3+7-LTS"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.name             : "Java Platform API Specification"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.vendor           : "Oracle Corporation"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.version          : "11"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor                         : "Amazon.com Inc."
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.url                     : "https://aws.amazon.com/corretto/"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+587 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.version                 : "Corretto-11.0.3.7.1"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.version                        : "11.0.3"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.version.date                   : "2019-04-16"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.compressedOopsMode          : "32-bit"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.info                        : "mixed mode"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.name                        : "OpenJDK 64-Bit Server VM"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.name          : "Java Virtual Machine Specification"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.vendor        : "Oracle Corporation"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.version       : "11"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.vendor                      : "Amazon.com Inc."
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.version                     : "11.0.3+7-LTS"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jdk.debug                           : "release"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jna.nounpack                        : "true"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - line.separator                      : "\n"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.accessibility.UseIA2: "false"
+588 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.deviceZoom : "100"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.version: "3.24.12"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.arch                             : "amd64"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.name                             : "Linux"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.version                          : "5.3.8-arch1-1"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - path.separator                      : ":"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.arch.data.model                 : "64"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.boot.library.path               : "/opt/smartgit/jre/lib"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.cpu.endian                      : "little"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.cpu.isalist                     : ""
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.io.unicode.encoding             : "UnicodeLittle"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.io.useCanonCaches               : "false"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+589 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.java.launcher                   : "SUN_STANDARD"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.jnu.encoding                    : "UTF-8"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.os.patch.level                  : "unknown"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.country                        : "US"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.dir                            : "/home/riddle"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.home                           : "/home/riddle"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.language                       : "en"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.name                           : "riddle"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.timezone                       : "Europe/Vilnius"
+590 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Environment variables:
+592 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - _                       : "/opt/smartgit/jre/bin/java"
+593 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+593 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+593 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+593 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - CANDY                   : "/home/riddle/Dropbox/sync/candy"
+593 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DBUS_SESSION_BUS_ADDRESS: "unix:abstract=/tmp/dbus-MjJ0cpRJYH,guid=23613973348a07f6142fcb405dc6e546"
+593 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DIRCOLORS               : ".dircolors"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DISPLAY                 : ":0"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DOTFILES_DIR            : "/home/riddle/.dotfiles"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DOWNLOADS               : "/home/riddle/Downloads"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DROPBOX                 : "/home/riddle/Dropbox"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DW                      : "/home/riddle/Downloads"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - EDITOR                  : "vim"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - HDMI_SCREEN             : "HDMI-1-1"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - HOME                    : "/home/riddle"
+594 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - INVOCATION_ID           : "60cb5ea3bbed46e3a1dffd81bcae35e8"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - JOURNAL_STREAM          : "9:21585"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LANG                    : "C"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LAPTOP_SCREEN           : "eDP-1-1"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LC_ALL                  : "en_US.UTF-8"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LESS                    : "-R"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LOGNAME                 : "riddle"
+595 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LSCOLORS                : "ExFxCxDxBxegedabagacad"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIL                    : "/var/spool/mail/riddle"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIN_HOME               : "/home/riddle"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIN_USER               : "riddle"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - OLDPWD                  : "/opt/smartgit/bin"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PATH                    : "/home/riddle/.cargo/bin:/opt/anaconda/bin:/home/riddle/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PRO                     : "/home/riddle/pro"
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+596 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PWD                     : "/home/riddle"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SENV                    : "/home/riddle/venvs/subscription_demo"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHELL                   : "/bin/zsh"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHLVL                   : "3"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SYNC                    : "/home/riddle/Dropbox/sync"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TERM                    : "rxvt-unicode-256color"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - THEME                   : "riddle"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TMP1                    : "/home/riddle/tmp1"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TMP2                    : "/home/riddle/tmp2"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - USER                    : "riddle"
+597 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VENV                    : "/home/riddle/venvs/sql_app"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMCOLOR                : "miro8"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMRC                   : "/home/riddle/.vimrc"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - WINDOWPATH              : "1"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XAUTHORITY              : "/home/riddle/.Xauthority"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_RUNTIME_DIR         : "/run/user/1000"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SEAT                : "seat0"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_CLASS       : "user"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_ID          : "1"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_TYPE        : "tty"
+598 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_VTNR                : "1"
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - class loader: java.net.URLClassLoader
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/antlr-runtime.jar
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/lz4-1.3.0.jar
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sequence-library.jar
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sqljet.jar
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jna-4.5.2.jar
+599 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jna-platform-4.5.2.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/trilead.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jsch.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bcpkix-jdk15on-160.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bcprov-jdk15on-160.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/eddsa-0.3.0.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sshj.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/javaewah.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+600 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/json_simple-1.1.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/snakeyaml.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jopt-simple-3.2.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jmyspell-core.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/autolink-0.6.0.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-autolink.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-util.jar
+601 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bootloader-config.jar
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/java-prettify.jar
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jgit.jar
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/svnkit.jar
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/smartgit.jar
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - parent class loader: java.net.URLClassLoader
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Max memory: 1024m
+602 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Max processors: 4
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VM options:
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:+UseG1GC
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:MaxGCPauseMillis=100
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:InitiatingHeapOccupancyPercent=25
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xmx1024m
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xss2m
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xverify:none
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:MaxJavaStackTraceDepth=1000000
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Dsun.io.useCanonCaches=false
+603 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:ErrorFile=/home/riddle/.config/smartgit/19.1/hs_err_pid%p.log
+633 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - removing /home/riddle/.config/smartgit/19.1/hgext recursively
+633 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - create /home/riddle/.config/smartgit/19.1/hgext
+634 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.hg.core - Mercurial extension directory is /opt/smartgit/lib/hgext
+657 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO          sc.password - Read 1 phrases from plain-text part.
+1s 23 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO    smartgit.settings - First used on 2019-10-05
+1s 23 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO    smartgit.settings - Settings were upgraded from: 18.2
+1s 47 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO org.eclipse.jgit.util.FS - Starting timestamp resolution detection for /home/riddle
+1s 50 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO org.eclipse.jgit.util.FS - Finished timestamp resolution detection for /home/riddle in 4ms
+1s 62 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      sc.file.monitor - Using Java-7 filemonitor
+1s 68 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.prelock
+1s 68 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.postlock
+1s 68 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.server - Server is connected to 4332.
+1s 69 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.lock
+1s 88 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO           sc.license - License type is 'foundation'.
+1s 88 (2019-11-09 20:30:06) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s102 (2019-11-09 20:30:06) [main] INFO             q.dialog - Showing dialog 0 (@179ECE50) '@45C7E403 - SmartGit License' (owner: @0)
+1s208 (2019-11-09 20:30:06) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit License}@179ECE50
+3s458 (2019-11-09 20:30:09) [main] INFO             q.action - Performing 'Exit' button in window @179ECE50
+3s459 (2019-11-09 20:30:09) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 0 (@179ECE50) '@45C7E403 - SmartGit License' (owner: @0)
+3s459 (2019-11-09 20:30:09) [main] INFO             q.dialog - Disposing dialog 0 (@179ECE50) '@45C7E403 - SmartGit License' (owner: @0)
+3s459 (2019-11-09 20:30:09) [main] INFO             q.dialog - Cleaned up dialog 0 (@179ECE50) '@45C7E403 - SmartGit License' (owner: @0)
+3s462 (2019-11-09 20:30:09) [main] INFO             q.dialog - Close-handler for dialog 0 (@179ECE50) '@45C7E403 - SmartGit License' (owner: @0)
+3s462 (2019-11-09 20:30:09) [main] INFO             q.dialog - Showed dialog 0 (@179ECE50) '@45C7E403 - SmartGit License' (owner: @0) (Cancel - -1)
+3s464 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Starting 6 shutdown hook threads
+3s464 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+3s467 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+3s467 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+3s467 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+3s468 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+3s472 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Started hook Temp dir /tmp/smartgit-1291516396243269216tmp
+3s474 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+3s474 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.postlock
+3s476 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.lock
+3s476 (2019-11-09 20:30:09) [Temp dir /tmp/smartgit-1291516396243269216tmp] INFO             shutdown - Running hook Temp dir /tmp/smartgit-1291516396243269216tmp
+3s476 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Started hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324206229.tmp
+3s476 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.postlock
+3s476 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+3s476 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/_lock_
+3s476 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.lock
+3s477 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+3s477 (2019-11-09 20:30:09) [Temp dir /tmp/smartgit-1291516396243269216tmp] INFO             shutdown - Ran hook Temp dir /tmp/smartgit-1291516396243269216tmp
+3s477 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+3s477 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+3s478 (2019-11-09 20:30:09) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324206229.tmp] INFO             shutdown - Running hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324206229.tmp
+3s478 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/_lock_
+3s478 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.prelock
+3s478 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+3s479 (2019-11-09 20:30:09) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324206229.tmp] INFO             shutdown - Ran hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324206229.tmp
+3s479 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.prelock
+3s479 (2019-11-09 20:30:09) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+3s479 (2019-11-09 20:30:09) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO             shutdown - done.
+ 33 (2019-11-09 20:30:36) [main] INFO      smartgit.system - SmartGit version 19.1.4-14196-4577cb06f60cb76adf60d96ddb10ab9bff199fc2-jgit-df1a32e3fce9b79d5188e38280d63fbb2accfd8b-trilead-?
+ 34 (2019-11-09 20:30:36) [main] INFO      smartgit.system - SmartGit running build 14196
+ 35 (2019-11-09 20:30:36) [main] INFO      smartgit.system - SmartGit installed build 14196
+ 36 (2019-11-09 20:30:36) [main] INFO      smartgit.system - SVNKit version SVN/1.8.1 SVNKit/1.10.0 (http://svnkit.com/) rSNAPSHOT
+ 36 (2019-11-09 20:30:36) [main] INFO sc.command.line.parameters - 0 command line parameters:
+ 36 (2019-11-09 20:30:36) [main] INFO      smartgit.system - application root: /opt/smartgit
+ 36 (2019-11-09 20:30:36) [main] INFO      smartgit.system - defaults root   : /opt/smartgit/default
+ 36 (2019-11-09 20:30:36) [main] INFO      smartgit.system - settings root   : /home/riddle/.config/smartgit/19.1
+ 37 (2019-11-09 20:30:36) [main] INFO      smartgit.system - .app directory  : null
+ 49 (2019-11-09 20:30:36) [main] INFO      smartgit.system - created temp directory /tmp/smartgit-4817307452856127198tmp
+305 (2019-11-09 20:30:36) [main] INFO              gui.swt - Used GTK version: 3.24.12
+305 (2019-11-09 20:30:36) [main] INFO              gui.swt - Used GTK theme  : Numix-Archblue
+305 (2019-11-09 20:30:36) [main] INFO              gui.swt - Using SWT 4926
+306 (2019-11-09 20:30:36) [main] INFO              gui.swt - Monitors:
+307 (2019-11-09 20:30:36) [main] INFO              gui.swt -   1920x1080(0,0 - 1919,1079)
+386 (2019-11-09 20:30:36) [main] INFO         splashscreen - splashscreen disabled
+514 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/_lock_
+547 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - awt.toolkit                         : "sun.awt.X11.XToolkit"
+547 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - file.encoding                       : "UTF-8"
+547 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - file.separator                      : "/"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.awt.printerjob                 : "sun.print.PSPrinterJob"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.class.version                  : "55.0"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.home                           : "/opt/smartgit/jre"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.io.tmpdir                      : "/tmp"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+548 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.net.preferIPv4Stack            : "true"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.runtime.name                   : "OpenJDK Runtime Environment"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.runtime.version                : "11.0.3+7-LTS"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.specification.name             : "Java Platform API Specification"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.specification.vendor           : "Oracle Corporation"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.specification.version          : "11"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor                         : "Amazon.com Inc."
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor.url                     : "https://aws.amazon.com/corretto/"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor.version                 : "Corretto-11.0.3.7.1"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.version                        : "11.0.3"
+549 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.version.date                   : "2019-04-16"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.compressedOopsMode          : "32-bit"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.info                        : "mixed mode"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.name                        : "OpenJDK 64-Bit Server VM"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.specification.name          : "Java Virtual Machine Specification"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.specification.vendor        : "Oracle Corporation"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.specification.version       : "11"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.vendor                      : "Amazon.com Inc."
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.version                     : "11.0.3+7-LTS"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - jdk.debug                           : "release"
+550 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - jna.nounpack                        : "true"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - line.separator                      : "\n"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.accessibility.UseIA2: "false"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.internal.deviceZoom : "100"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.version: "3.24.12"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - os.arch                             : "amd64"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - os.name                             : "Linux"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - os.version                          : "5.3.8-arch1-1"
+551 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - path.separator                      : ":"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.arch.data.model                 : "64"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.boot.library.path               : "/opt/smartgit/jre/lib"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.cpu.endian                      : "little"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.cpu.isalist                     : ""
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.io.unicode.encoding             : "UnicodeLittle"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.io.useCanonCaches               : "false"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+552 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.java.launcher                   : "SUN_STANDARD"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.jnu.encoding                    : "UTF-8"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.os.patch.level                  : "unknown"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.country                        : "US"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.dir                            : "/home/riddle"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.home                           : "/home/riddle"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.language                       : "en"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.name                           : "riddle"
+553 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.timezone                       : "Europe/Vilnius"
+554 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - Environment variables:
+555 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - _                       : "/opt/smartgit/jre/bin/java"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - CANDY                   : "/home/riddle/Dropbox/sync/candy"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DBUS_SESSION_BUS_ADDRESS: "unix:abstract=/tmp/dbus-MjJ0cpRJYH,guid=23613973348a07f6142fcb405dc6e546"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DIRCOLORS               : ".dircolors"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DISPLAY                 : ":0"
+556 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DOTFILES_DIR            : "/home/riddle/.dotfiles"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DOWNLOADS               : "/home/riddle/Downloads"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DROPBOX                 : "/home/riddle/Dropbox"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DW                      : "/home/riddle/Downloads"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - EDITOR                  : "vim"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - HDMI_SCREEN             : "HDMI-1-1"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - HOME                    : "/home/riddle"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - INVOCATION_ID           : "60cb5ea3bbed46e3a1dffd81bcae35e8"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - JOURNAL_STREAM          : "9:21585"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+557 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LANG                    : "C"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LAPTOP_SCREEN           : "eDP-1-1"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LC_ALL                  : "en_US.UTF-8"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LESS                    : "-R"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LOGNAME                 : "riddle"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LSCOLORS                : "ExFxCxDxBxegedabagacad"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MAIL                    : "/var/spool/mail/riddle"
+558 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MAIN_HOME               : "/home/riddle"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MAIN_USER               : "riddle"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - OLDPWD                  : "/opt/smartgit/bin"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PATH                    : "/home/riddle/.cargo/bin:/opt/anaconda/bin:/home/riddle/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PRO                     : "/home/riddle/pro"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PWD                     : "/home/riddle"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SENV                    : "/home/riddle/venvs/subscription_demo"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SHELL                   : "/bin/zsh"
+559 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SHLVL                   : "3"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SYNC                    : "/home/riddle/Dropbox/sync"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TERM                    : "rxvt-unicode-256color"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - THEME                   : "riddle"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMP1                    : "/home/riddle/tmp1"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMP2                    : "/home/riddle/tmp2"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - USER                    : "riddle"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VENV                    : "/home/riddle/venvs/sql_app"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VIMCOLOR                : "miro8"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+560 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VIMRC                   : "/home/riddle/.vimrc"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - WINDOWPATH              : "1"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XAUTHORITY              : "/home/riddle/.Xauthority"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_RUNTIME_DIR         : "/run/user/1000"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SEAT                : "seat0"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SESSION_CLASS       : "user"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SESSION_ID          : "1"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SESSION_TYPE        : "tty"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_VTNR                : "1"
+561 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - class loader: java.net.URLClassLoader
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/antlr-runtime.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/lz4-1.3.0.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/sequence-library.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/sqljet.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jna-4.5.2.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jna-platform-4.5.2.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/trilead.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jsch.jar
+562 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/bcpkix-jdk15on-160.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/bcprov-jdk15on-160.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/eddsa-0.3.0.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/sshj.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/javaewah.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/json_simple-1.1.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/snakeyaml.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jopt-simple-3.2.jar
+563 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jmyspell-core.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/autolink-0.6.0.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-autolink.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-util.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/bootloader-config.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/java-prettify.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jgit.jar
+564 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/svnkit.jar
+565 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/smartgit.jar
+565 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+565 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - parent class loader: java.net.URLClassLoader
+565 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+565 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - Max memory: 1024m
+565 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - Max processors: 4
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VM options:
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:+UseG1GC
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:MaxGCPauseMillis=100
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:InitiatingHeapOccupancyPercent=25
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Xmx1024m
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Xss2m
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Xverify:none
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:MaxJavaStackTraceDepth=1000000
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Dsun.io.useCanonCaches=false
+566 (2019-11-09 20:30:36) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:ErrorFile=/home/riddle/.config/smartgit/19.1/hs_err_pid%p.log
+603 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.startup - removing /home/riddle/.config/smartgit/19.1/hgext recursively
+603 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.startup - create /home/riddle/.config/smartgit/19.1/hgext
+604 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.hg.core - Mercurial extension directory is /opt/smartgit/lib/hgext
+628 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO          sc.password - Read 1 phrases from plain-text part.
+997 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO    smartgit.settings - First used on 2019-10-05
+997 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO    smartgit.settings - Settings were upgraded from: 18.2
+1s 11 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO org.eclipse.jgit.util.FS - Starting timestamp resolution detection for /home/riddle
+1s 14 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO org.eclipse.jgit.util.FS - Finished timestamp resolution detection for /home/riddle in 3ms
+1s 27 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      sc.file.monitor - Using Java-7 filemonitor
+1s 36 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.prelock
+1s 37 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.postlock
+1s 37 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.server - Server is connected to 4332.
+1s 37 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.lock
+1s 60 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO           sc.license - License type is 'foundation'.
+1s 60 (2019-11-09 20:30:37) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s 76 (2019-11-09 20:30:37) [main] INFO             q.dialog - Showing dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+1s144 (2019-11-09 20:30:37) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit License}@6B2EA799
+2s318 (2019-11-09 20:30:38) [main] INFO q.swt.shellActivation - Activation change from Shell {SmartGit License}@6B2EA799 to null
+2s424 (2019-11-09 20:30:38) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit License}@6B2EA799
+9s131 (2019-11-09 20:30:45) [main] INFO             q.action - Performing 'Exit' button in window @6B2EA799
+9s132 (2019-11-09 20:30:45) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+9s132 (2019-11-09 20:30:45) [main] INFO             q.dialog - Disposing dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+9s133 (2019-11-09 20:30:45) [main] INFO             q.dialog - Cleaned up dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+9s137 (2019-11-09 20:30:45) [main] INFO             q.dialog - Close-handler for dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+9s137 (2019-11-09 20:30:45) [main] INFO             q.dialog - Showed dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0) (Cancel - -1)
+9s139 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Starting 6 shutdown hook threads
+9s140 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+9s140 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+9s141 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Temp dir /tmp/smartgit-4817307452856127198tmp
+9s141 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324236960.tmp
+9s142 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+9s143 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+9s144 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+9s144 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+9s144 (2019-11-09 20:30:45) [Temp dir /tmp/smartgit-4817307452856127198tmp] INFO             shutdown - Running hook Temp dir /tmp/smartgit-4817307452856127198tmp
+9s144 (2019-11-09 20:30:45) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324236960.tmp] INFO             shutdown - Running hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324236960.tmp
+9s144 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+9s144 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+9s145 (2019-11-09 20:30:45) [Temp dir /tmp/smartgit-4817307452856127198tmp] INFO             shutdown - Ran hook Temp dir /tmp/smartgit-4817307452856127198tmp
+9s145 (2019-11-09 20:30:45) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324236960.tmp] INFO             shutdown - Ran hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324236960.tmp
+9s145 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.postlock
+9s145 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.prelock
+9s146 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.prelock
+9s147 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+9s147 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.lock
+9s151 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.lock
+9s151 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.postlock
+9s151 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/_lock_
+9s151 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+9s151 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+9s152 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/_lock_
+9s152 (2019-11-09 20:30:45) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+9s153 (2019-11-09 20:30:45) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - done.
+ 33 (2019-11-09 20:31:30) [main] INFO      smartgit.system - SmartGit version 19.1.4-14196-4577cb06f60cb76adf60d96ddb10ab9bff199fc2-jgit-df1a32e3fce9b79d5188e38280d63fbb2accfd8b-trilead-?
+ 34 (2019-11-09 20:31:30) [main] INFO      smartgit.system - SmartGit running build 14196
+ 34 (2019-11-09 20:31:30) [main] INFO      smartgit.system - SmartGit installed build 14196
+ 36 (2019-11-09 20:31:30) [main] INFO      smartgit.system - SVNKit version SVN/1.8.1 SVNKit/1.10.0 (http://svnkit.com/) rSNAPSHOT
+ 36 (2019-11-09 20:31:30) [main] INFO sc.command.line.parameters - 0 command line parameters:
+ 36 (2019-11-09 20:31:30) [main] INFO      smartgit.system - application root: /opt/smartgit
+ 36 (2019-11-09 20:31:30) [main] INFO      smartgit.system - defaults root   : /opt/smartgit/default
+ 36 (2019-11-09 20:31:30) [main] INFO      smartgit.system - settings root   : /home/riddle/.config/smartgit/19.1
+ 36 (2019-11-09 20:31:30) [main] INFO      smartgit.system - .app directory  : null
+ 49 (2019-11-09 20:31:30) [main] INFO      smartgit.system - created temp directory /tmp/smartgit-8429345592625083088tmp
+300 (2019-11-09 20:31:30) [main] INFO              gui.swt - Used GTK version: 3.24.12
+300 (2019-11-09 20:31:30) [main] INFO              gui.swt - Used GTK theme  : Numix-Archblue
+300 (2019-11-09 20:31:30) [main] INFO              gui.swt - Using SWT 4926
+301 (2019-11-09 20:31:30) [main] INFO              gui.swt - Monitors:
+302 (2019-11-09 20:31:30) [main] INFO              gui.swt -   1920x1080(0,0 - 1919,1079)
+391 (2019-11-09 20:31:30) [main] INFO         splashscreen - splashscreen disabled
+514 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/_lock_
+551 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - awt.toolkit                         : "sun.awt.X11.XToolkit"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - file.encoding                       : "UTF-8"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - file.separator                      : "/"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.awt.printerjob                 : "sun.print.PSPrinterJob"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.class.version                  : "55.0"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.home                           : "/opt/smartgit/jre"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.io.tmpdir                      : "/tmp"
+552 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.net.preferIPv4Stack            : "true"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.runtime.name                   : "OpenJDK Runtime Environment"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.runtime.version                : "11.0.3+7-LTS"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.specification.name             : "Java Platform API Specification"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.specification.vendor           : "Oracle Corporation"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.specification.version          : "11"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor                         : "Amazon.com Inc."
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor.url                     : "https://aws.amazon.com/corretto/"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vendor.version                 : "Corretto-11.0.3.7.1"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.version                        : "11.0.3"
+553 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.version.date                   : "2019-04-16"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.compressedOopsMode          : "32-bit"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.info                        : "mixed mode"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.name                        : "OpenJDK 64-Bit Server VM"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.specification.name          : "Java Virtual Machine Specification"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.specification.vendor        : "Oracle Corporation"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.specification.version       : "11"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.vendor                      : "Amazon.com Inc."
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - java.vm.version                     : "11.0.3+7-LTS"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - jdk.debug                           : "release"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+554 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - jna.nounpack                        : "true"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - line.separator                      : "\n"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.accessibility.UseIA2: "false"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.internal.deviceZoom : "100"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.version: "3.24.12"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - os.arch                             : "amd64"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - os.name                             : "Linux"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - os.version                          : "5.3.8-arch1-1"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - path.separator                      : ":"
+555 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.arch.data.model                 : "64"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.boot.library.path               : "/opt/smartgit/jre/lib"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.cpu.endian                      : "little"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.cpu.isalist                     : ""
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.io.unicode.encoding             : "UnicodeLittle"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.io.useCanonCaches               : "false"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.java.launcher                   : "SUN_STANDARD"
+556 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.jnu.encoding                    : "UTF-8"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - sun.os.patch.level                  : "unknown"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.country                        : "US"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.dir                            : "/home/riddle"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.home                           : "/home/riddle"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.language                       : "en"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.name                           : "riddle"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - user.timezone                       : "Europe/Vilnius"
+557 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - Environment variables:
+559 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - _                       : "/opt/smartgit/jre/bin/java"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - CANDY                   : "/home/riddle/Dropbox/sync/candy"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - COLORFGBG               : "default;default"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - COLORTERM               : "rxvt-xpm"
+560 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DBUS_SESSION_BUS_ADDRESS: "unix:abstract=/tmp/dbus-MjJ0cpRJYH,guid=23613973348a07f6142fcb405dc6e546"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DIRCOLORS               : ".dircolors"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DISPLAY                 : ":0"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DOTFILES_DIR            : "/home/riddle/.dotfiles"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DOWNLOADS               : "/home/riddle/Downloads"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DROPBOX                 : "/home/riddle/Dropbox"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - DW                      : "/home/riddle/Downloads"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - EDITOR                  : "vim"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - HDMI_SCREEN             : "HDMI-1-1"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - HOME                    : "/home/riddle"
+561 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - INVOCATION_ID           : "60cb5ea3bbed46e3a1dffd81bcae35e8"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - is_vim                  : "echo \"#{pane_current_command}\" | grep -iqE \"(^|\\/)g?(view|n?vim?x?)(diff)?$\""
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - JOURNAL_STREAM          : "9:21585"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LANG                    : "C"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LAPTOP_SCREEN           : "eDP-1-1"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LC_ALL                  : "en_US.UTF-8"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LESS                    : "-R"
+562 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LOGNAME                 : "riddle"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - LSCOLORS                : "ExFxCxDxBxegedabagacad"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MAIL                    : "/var/spool/mail/riddle"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MAIN_HOME               : "/home/riddle"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MAIN_USER               : "riddle"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - OLDPWD                  : "/opt/smartgit/bin"
+563 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PAGER                   : "less"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PATH                    : "/home/riddle/.cargo/bin:/opt/anaconda/bin:/home/riddle/.cargo/bin:/home/riddle/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PRO                     : "/home/riddle/pro"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - PWD                     : "/home/riddle"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SENV                    : "/home/riddle/venvs/subscription_demo"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SHELL                   : "/bin/zsh"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SHLVL                   : "7"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - SYNC                    : "/home/riddle/Dropbox/sync"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TERM                    : "rxvt-unicode-256color"
+564 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - THEME                   : "riddle"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMP1                    : "/home/riddle/tmp1"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMP2                    : "/home/riddle/tmp2"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMUX                    : "/tmp//tmux-1000/default,540,4"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMUX_PANE               : "%19"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - TMUX_PLUGIN_MANAGER_PATH: "/home/riddle/.tmux/plugins/"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - USER                    : "riddle"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VENV                    : "/home/riddle/venvs/sql_app"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VIMCOLOR                : "miro8"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VIMRC                   : "/home/riddle/.vimrc"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - WINDOWID                : "16777225"
+565 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - WINDOWPATH              : "1"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XAUTHORITY              : "/home/riddle/.Xauthority"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_RUNTIME_DIR         : "/run/user/1000"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SEAT                : "seat0"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SESSION_CLASS       : "user"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SESSION_ID          : "1"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_SESSION_TYPE        : "tty"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - XDG_VTNR                : "1"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - ZSH                     : "/home/riddle/.dotfiles/cmd/.oh-my-zsh"
+566 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - class loader: java.net.URLClassLoader
+567 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/antlr-runtime.jar
+567 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/lz4-1.3.0.jar
+567 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/sequence-library.jar
+567 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/sqljet.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jna-4.5.2.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jna-platform-4.5.2.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/trilead.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jsch.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/bcpkix-jdk15on-160.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/bcprov-jdk15on-160.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/eddsa-0.3.0.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/sshj.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/javaewah.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+568 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/json_simple-1.1.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/snakeyaml.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jopt-simple-3.2.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jmyspell-core.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/autolink-0.6.0.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-autolink.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-util.jar
+569 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/bootloader-config.jar
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/java-prettify.jar
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/jgit.jar
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/svnkit.jar
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/smartgit.jar
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - parent class loader: java.net.URLClassLoader
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - Max memory: 1024m
+570 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - Max processors: 4
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system - VM options:
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:+UseG1GC
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:MaxGCPauseMillis=100
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:InitiatingHeapOccupancyPercent=25
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Xmx1024m
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Xss2m
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Xverify:none
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:MaxJavaStackTraceDepth=1000000
+571 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -Dsun.io.useCanonCaches=false
+572 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.system -   -XX:ErrorFile=/home/riddle/.config/smartgit/19.1/hs_err_pid%p.log
+605 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.startup - removing /home/riddle/.config/smartgit/19.1/hgext recursively
+606 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.startup - create /home/riddle/.config/smartgit/19.1/hgext
+607 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.hg.core - Mercurial extension directory is /opt/smartgit/lib/hgext
+624 (2019-11-09 20:31:30) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO          sc.password - Read 1 phrases from plain-text part.
+982 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO    smartgit.settings - First used on 2019-10-05
+982 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO    smartgit.settings - Settings were upgraded from: 18.2
+1s  1 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO org.eclipse.jgit.util.FS - Starting timestamp resolution detection for /home/riddle
+1s  4 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO org.eclipse.jgit.util.FS - Finished timestamp resolution detection for /home/riddle in 4ms
+1s 16 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      sc.file.monitor - Using Java-7 filemonitor
+1s 21 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.prelock
+1s 22 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.postlock
+1s 22 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO      smartgit.server - Server is connected to 4332.
+1s 22 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.lock
+1s 39 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO           sc.license - License type is 'foundation'.
+1s 40 (2019-11-09 20:31:31) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s 54 (2019-11-09 20:31:31) [main] INFO             q.dialog - Showing dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+1s126 (2019-11-09 20:31:31) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit License}@6B2EA799
+3s285 (2019-11-09 20:31:33) [main] INFO q.swt.shellActivation - Activation change from Shell {SmartGit License}@6B2EA799 to null
+3s443 (2019-11-09 20:31:33) [main] INFO q.swt.shellActivation - Activation change from null to Shell {SmartGit License}@6B2EA799
+5s557 (2019-11-09 20:31:35) [main] INFO             q.action - Performing 'Exit' button in window @6B2EA799
+5s557 (2019-11-09 20:31:35) [main] INFO             q.dialog - Closing dialog with option Cancel - -1 - 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+5s558 (2019-11-09 20:31:35) [main] INFO             q.dialog - Disposing dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+5s558 (2019-11-09 20:31:35) [main] INFO             q.dialog - Cleaned up dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+5s564 (2019-11-09 20:31:35) [main] INFO             q.dialog - Close-handler for dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0)
+5s565 (2019-11-09 20:31:35) [main] INFO             q.dialog - Showed dialog 0 (@6B2EA799) '@815B41F - SmartGit License' (owner: @0) (Cancel - -1)
+5s566 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Starting 6 shutdown hook threads
+5s566 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324290677.tmp
+5s566 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+5s567 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+5s567 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Temp dir /tmp/smartgit-8429345592625083088tmp
+5s568 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+5s568 (2019-11-09 20:31:35) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324290677.tmp] INFO             shutdown - Running hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324290677.tmp
+5s568 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+5s569 (2019-11-09 20:31:35) [Temp dir /tmp/smartgit-8429345592625083088tmp] INFO             shutdown - Running hook Temp dir /tmp/smartgit-8429345592625083088tmp
+5s569 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+5s570 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+5s573 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+5s573 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+5s573 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.prelock
+5s573 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.lock
+5s573 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/_lock_
+5s574 (2019-11-09 20:31:35) [Temp dir /tmp/smartgit-8429345592625083088tmp] INFO             shutdown - Ran hook Temp dir /tmp/smartgit-8429345592625083088tmp
+5s575 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.prelock
+5s575 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+5s579 (2019-11-09 20:31:35) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324290677.tmp] INFO             shutdown - Ran hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1573324290677.tmp
+5s579 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.lock
+5s579 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+5s579 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/_lock_
+5s580 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+5s580 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.postlock
+5s580 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.postlock
+5s580 (2019-11-09 20:31:35) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+5s580 (2019-11-09 20:31:35) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$62/0x0000000100147c40)] INFO             shutdown - done.
