@@ -1,10 +1,29 @@
 gitRootSettingsSet:
   roots: [~/pro/uni-block]
+  root/home/riddle/pro/uni-block2:
+    databaseCleanup: {}
+    log:
+      rootSettings: {}
+      fileFilterConfiguration: {}
+    merge:
+      logRootSettings: {}
+    push: {}
+    commitNotes: {}
+    journal: {}
+  root/home/riddle/pro/f-2019-11-10.repo2:
+    databaseCleanup: {}
+    log:
+      rootSettings: {}
+      fileFilterConfiguration: {}
+    merge:
+      logRootSettings: {}
+    push: {}
+    commitNotes: {}
+    journal: {}
   root/home/riddle/pro/uni-block:
     databaseCleanup: {}
     log:
-      rootSettings: {baseRoots: "!local-branches://\t!remote://origin\tref://HEAD",
-        extendedRoots: ''}
+      rootSettings: {baseRoots: 'ref://HEAD', extendedRoots: ''}
       fileFilterConfiguration: {}
     merge:
       logRootSettings: {}

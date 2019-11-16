@@ -4,7 +4,10 @@
         "workspaces3": [
             "file:///home/riddle/pro/LaTex"
         ],
-        "files2": []
+        "files2": [
+            "file:///home/riddle/Downloads/link.txt",
+            "file:///home/riddle/Downloads/magnet_link.txt"
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -49,13 +52,37 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/riddle/pro/LaTex",
                                         "external": "file:///home/riddle/pro/LaTex",
                                         "path": "/home/riddle/pro/LaTex",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/pro/LaTex"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/riddle/Downloads/magnet_link.txt",
+                                        "path": "/home/riddle/Downloads/magnet_link.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/magnet_link.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/riddle/Downloads/link.txt",
+                                        "path": "/home/riddle/Downloads/link.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/link.txt"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -169,7 +196,8 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Folder",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -358,8 +386,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -373,8 +400,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel",
-                                    "checked": true
+                                    "label": "Show &&Panel"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -544,7 +570,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -553,7 +580,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -825,7 +853,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1371,12 +1400,11 @@
     "pickerWorkingDir": "/home/riddle/pro",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/riddle/pro/LaTex",
-            "backupPath": "/home/riddle/.config/Code - OSS/Backups/3117466554c72fa8340f23552dd9ccad",
+            "backupPath": "/home/riddle/.config/Code - OSS/Backups/1573462245384",
             "uiState": {
                 "mode": 0,
-                "x": 448,
-                "y": 156,
+                "x": 263,
+                "y": 312,
                 "width": 1024,
                 "height": 768
             }

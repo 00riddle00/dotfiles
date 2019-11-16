@@ -1,157 +1,107 @@
 actions:
-  cleanup: {gcIntervalDays: 0}
-  commit: {missing: true, untracked: false, monospaceFont: true, messageLineLimits: false,
-    preferStaged: false, trimMessage: true}
+  cleanup: {}
+  commit: {}
   compare:
     fileComparators:
     - filePattern: '*'
       compareType: 0
       externalFileCompare: {}
-    compareWithWorkingTree: false
   conflictSolver:
     conflictSolvers:
     - filePattern: '*'
       useExternal: false
       externalTool: {}
-    showExternalResolveDialog: true
-    swapOursTheirsOnRebase: false
-  stash: {stashAutomatically: false, includeUntrackedFiles: false}
+  stash: {}
   initCommitMessage: initial commit
-  alwaysConfigureTracking: true
-  allowModificationOfPushedHistory: false
-  pushTags: false
-  syncPushBeforePull: true
-  refreshRenameDetection: true
-  refreshRenameDetectionUntrackedMissing: true
-  refreshRenameDetectionWarnings: true
-  refreshInspectEols: false
-  backgroundRefreshing: true
-  backgroundScan: false
-  backgroundPoll: true
-  backgroundFetchClosed: false
-  backgroundFetchOpen: true
 logSettings:
-  includeTrackedBranches: true
-  groupCommitsByBranch: true
-  loadGravatars: true
-  allowCommandsOnSpecialCommits: false
-  enableHostingProvider: true
-  allowMultipleWindowsForSameLocation: false
   filterConfiguration: {}
-comparePreviewSettings: {compareType: working-tree-vs-index, selectCompareTypeAutomatically: true}
-dateFormat: {datePattern: MM/dd/yyyy, timePattern: 'hh:mm a', timeZone: '', showTimeForLastDays: true}
+comparePreviewSettings: {}
+dateFormat: {}
 defaultViewSettings:
   compareSettings:
-    textSettings: {tabSize: 4, whitespaces: 2, showLineNumbers: true}
-    ignoreLineSeparators: true
-    whitespaceIgnoreType: none
-    ignoreCaseChanges: false
-    trimInnerLineChanges: true
-    unifiedScrollBarVisibleOption: true
-    innerLineComparisonType: alphanumeric
-    splitLeadingAndTrailingAdditionsAndRemovals: false
-    coalesceNearbyChangeBlocks: true
+    textSettings: {whitespaces: 0}
 git:
-  useSystemGitFlow: false
   maxCount: 3
-  executable: /usr/bin/git
   alternatives: [/usr/bin/git]
+  executable: /usr/bin/git
 hg:
   maxCount: 3
   alternatives: []
 ssh: {useOwnSshClient: true}
-deepGit2: {followRenames: true, extendLineToBlock: true, optimizeCreationOrigins: true,
-  ignoreWhitespaceOnlyChanges: true, showLineNumbers: true, highlightBlameChanges: false,
-  highlightOriginChanges: false, preferSimpleBlamePerspective: true, lineHistoryVisible: false}
+deepGit2: {}
 globalTextComponentSettings:
   font: {family: Monospace, size: 10}
-  colors.light: {foregroundText: 0, foregroundGutter: 9868950, foregroundWhitespace: 12632256,
-    foregroundTrailingWhitespace: 12624064, backgroundEditable: 16777215, backgroundReadOnly: 16185078,
-    backgroundGutter: 16316661, backgroundComment: 16182243, backgroundCurrentLine: 16185004,
-    backgroundCompactSeparator: 15132390, foregroundCompactSeparator: 10526880, highlightCurrentLine: false,
-    color-annotation: 8421376, color-attrib-name: 255, color-attrib-value: 32768,
-    color-comment: 8421504, color-declaration: 0, color-keyword: 128, color-literal: 255,
-    color-no-code: 0, color-plain-text: 0, color-punctuation: 0, color-source: 0,
-    color-string: 32768, color-tag: 128, color-type: 0, backgroundModified: 16763080,
-    backgroundAdded: 12513470, backgroundRemoved: 13158655, backgroundModifiedCS: 16763080,
-    backgroundAddedCS: 12513470, backgroundRemovedCS: 13158655, backgroundConflict: 16755370}
-  colors.useDark: false
-  actions: {smartHome: true, homeEndToLineNotDocument: true, cursorLeftRightLimitToLine: true,
-    smartEnterAutoIndent: true, smartEnterDeleteWhitespace: true, smartEnterIgnoreEmptyLinesForIndentation: true,
-    focusNextChangeAfterTakingChange: false}
+  actions: {}
   syntaxHighlightingSettings:
     entries:
-    - {pattern: '*.aea, *.agc, *.apollo', language: Apollo}
-    - {pattern: '*.basic, *.cbm, *.vb, *.vbs', language: Basic}
-    - {pattern: '*.cs', language: C#}
-    - {pattern: '*.c, *.cc, *.cpp, *.cxx, *.cyc, *.h, *.ino, *.m', language: C/C++}
-    - {pattern: '*.css, *.css-kw, *.css-str', language: CSS}
-    - {pattern: '*.clj', language: Clojure}
-    - {pattern: '*.coffee', language: CoffeeScript}
-    - {pattern: '*.dart', language: Dart}
-    - {pattern: '*.erl, *.erlang', language: Erlang}
-    - {pattern: '*.fs', language: F#}
-    - {pattern: '*.go', language: Go}
-    - {pattern: '*.htm, *.html, *.xhtml', language: HTML}
-    - {pattern: '*.hs', language: Haskell}
-    - {pattern: '*.json', language: JSON}
-    - {pattern: '*.java', language: Java}
-    - {pattern: '*.javascript, *.js', language: JavaScript}
-    - {pattern: '*.ll, *.llvm', language: LLVM}
-    - {pattern: '*.cl, *.el, *.lisp, *.lsp, *.rkt, *.scm, *.ss', language: Lisp}
-    - {pattern: '*.lua', language: Lua}
-    - {pattern: '*.matlab', language: Matlab}
-    - {pattern: '*.mumps', language: Mumps}
-    - {pattern: '*.n, *.nemerle', language: Nemerle}
-    - {pattern: '*.ml', language: OCaml}
-    - {pattern: '*.php, *.php3, *.php4, *.php5, *.phps, *.phtml', language: PHP}
-    - {pattern: '*.pas, *.pascal', language: Pascal}
-    - {pattern: '*.perl, *.pl, *.pm', language: Perl}
-    - {pattern: '*.proto', language: Protocol Buffer File}
-    - {pattern: '*.cv, *.py, *.python, *.pyw', language: Python}
-    - {pattern: '*.R, *.S, *.Splus, *.r, *.s', language: R}
-    - {pattern: '*.Rd, *.rd', language: Rd}
-    - {pattern: '*.regex', language: Regular Expression}
-    - {pattern: '*.rb, *.ruby', language: Ruby}
-    - {pattern: '*.rc, *.rs, *.rust', language: Rust}
-    - {pattern: '*.sql', language: SQL}
-    - {pattern: '*.scala', language: Scala}
-    - {pattern: '*.bash, *.bsh, *.csh, *.sh', language: Shell Script}
-    - {pattern: '*.tcl', language: Tcl}
-    - {pattern: '*.latex, *.tex', language: TeX/LaTeX}
-    - {pattern: '*.vhd, *.vhdl', language: VHDL '93}
-    - {pattern: '*.wiki', language: Wiki}
-    - {pattern: '*.mxml, *.storyboard, *.xib, *.xml', language: XML}
-    - {pattern: '*.xq, *.xquery', language: XQuery}
-    - {pattern: '*.xsl', language: XSL}
-    - {pattern: '*.yaml, *.yml', language: YAML}
+    - {language: Apollo, pattern: '*.aea, *.agc, *.apollo'}
+    - {language: Basic, pattern: '*.basic, *.cbm, *.vb, *.vbs'}
+    - {language: C#, pattern: '*.cs'}
+    - {language: C/C++, pattern: '*.c, *.cc, *.cpp, *.cxx, *.cyc, *.h, *.ino, *.m'}
+    - {language: CSS, pattern: '*.css, *.css-kw, *.css-str'}
+    - {language: Clojure, pattern: '*.clj'}
+    - {language: CoffeeScript, pattern: '*.coffee'}
+    - {language: Dart, pattern: '*.dart'}
+    - {language: Erlang, pattern: '*.erl, *.erlang'}
+    - {language: F#, pattern: '*.fs'}
+    - {language: Go, pattern: '*.go'}
+    - {language: HTML, pattern: '*.htm, *.html, *.xhtml'}
+    - {language: Haskell, pattern: '*.hs'}
+    - {language: JSON, pattern: '*.json'}
+    - {language: Java, pattern: '*.java'}
+    - {language: JavaScript, pattern: '*.javascript, *.js'}
+    - {language: LLVM, pattern: '*.ll, *.llvm'}
+    - {language: Lisp, pattern: '*.cl, *.el, *.lisp, *.lsp, *.rkt, *.scm, *.ss'}
+    - {language: Lua, pattern: '*.lua'}
+    - {language: Matlab, pattern: '*.matlab'}
+    - {language: Mumps, pattern: '*.mumps'}
+    - {language: Nemerle, pattern: '*.n, *.nemerle'}
+    - {language: OCaml, pattern: '*.ml'}
+    - {language: PHP, pattern: '*.php, *.php3, *.php4, *.php5, *.phps, *.phtml'}
+    - {language: Pascal, pattern: '*.pas, *.pascal'}
+    - {language: Perl, pattern: '*.perl, *.pl, *.pm'}
+    - {language: Protocol Buffer File, pattern: '*.proto'}
+    - {language: Python, pattern: '*.cv, *.py, *.python, *.pyw'}
+    - {language: R, pattern: '*.R, *.S, *.Splus, *.r, *.s'}
+    - {language: Rd, pattern: '*.Rd, *.rd'}
+    - {language: Regular Expression, pattern: '*.regex'}
+    - {language: Ruby, pattern: '*.rb, *.ruby'}
+    - {language: Rust, pattern: '*.rc, *.rs, *.rust'}
+    - {language: SQL, pattern: '*.sql'}
+    - {language: Scala, pattern: '*.scala'}
+    - {language: Shell Script, pattern: '*.bash, *.bsh, *.csh, *.sh'}
+    - {language: Tcl, pattern: '*.tcl'}
+    - {language: TeX/LaTeX, pattern: '*.latex, *.tex'}
+    - {language: VHDL '93, pattern: '*.vhd, *.vhdl'}
+    - {language: Wiki, pattern: '*.wiki'}
+    - {language: XML, pattern: '*.mxml, *.storyboard, *.xib, *.xml'}
+    - {language: XQuery, pattern: '*.xq, *.xquery'}
+    - {language: XSL, pattern: '*.xsl'}
+    - {language: YAML, pattern: '*.yaml, *.yml'}
     - {pattern: '*.default-code, *.default-markup, *.in.tag, *.uq.val'}
+  colors.light: {color-annotation: 8421376, color-attrib-name: 255, color-attrib-value: 32768,
+    color-comment: 8421504, color-declaration: 0, color-keyword: 128, color-literal: 255,
+    color-no-code: 0, color-plain-text: 0, color-punctuation: 0, color-source: 0,
+    color-string: 32768, color-tag: 128, color-type: 0}
   colors.dark: {color-annotation: 13092749, color-attrib-name: 9291719, color-attrib-value: 12558303,
     color-comment: 8421504, color-declaration: 14002858, color-keyword: 10733475,
     color-literal: 11184853, color-no-code: 0, color-plain-text: 12566463, color-punctuation: 12561045,
     color-source: 0, color-string: 14002901, color-tag: 10274701, color-type: 11513807}
-listx: {eUT: 1572955366838, nRT: 1572878636311, lLCT: 0, ePP: 0, eV: '19.1', uid: 721q2dl2orf4}
-project: {reopenLastUsedRepositories: true, showWelcomeDialog: true, preferLogWindow: false}
-uiSettings: {useBackgroundColorInFileTable: true, fileSearchPatternType: 1, themeChanged: false}
-vcsRecords: {lastGitUsage: 1572810574953, lastSvnUsage: 0, lastHgUsage: 0, lastReviewUsage: 0,
-  lastDgUsage: 0}
-updateCheck: {mode: download, prevCheckTime: 1572801896752, checkedBuild: 14196, upgradeInstallation: false,
-  previewAlwaysCheckForLatestBuild: false}
-proxy: {autoDetect: true, authenticate: false, port: 3128, enabled: false}
-proxyPassword: 34
+  colors.useDark: true
+listx: {eUT: 1576073413248, nRT: 1574734213248, eV: '19.1', uid: 721q2dl2orf4}
+project: {preferLogWindow: false, showWelcomeDialog: false}
+uiSettings: {}
+vcsRecords: {lastGitUsage: 1573626987955}
+updateCheck: {mode: download, prevCheckTime: 1573625916091, checkedBuild: 14196}
+updateCheckDg: {}
+proxy: {}
 spellCheck:
   dictionaries:
   - {name: en_US, file: '${smartgit.install}/dictionaries/en_US.dic', file.absolute: /opt/smartgit/dictionaries/en_US.dic}
-  personalFile: ${smartgit.settings}/my-words.dic
-  personalFile.absolute: /home/riddle/.config/smartgit/18.2/my-words.dic
-  useOnlyBestOfficial: false
   deleted: false
-warnForMissingMasterPassword: false
-askForMasterPasswordOnStartup: false
-sendStacktraces2: false
-sendStacktracesBeta: false
+  activeDictionary: 0
 lastUsedVersion: '19.1'
-tempDirs: [/tmp/smartgit-4817307452856127198tmp]
-updateCheckDg: {}
-upgradedFromVersion: '18.2'
-firstUsedTime: 1570276966646
+firstUsedTime: 1573394995576
+tempDirs: [/tmp/smartgit-4916841000765791549tmp]
+warnForMissingMasterPassword: false
+sendStacktraces2: false

@@ -1,3 +1,5 @@
 structure:
+- {name: uni-block2, git: true, path: ~/pro/uni-block2, path.absolute: /home/riddle/pro/uni-block2}
+- {name: f-2019-11-10.repo2, git: true, path: ~/pro/f-2019-11-10.repo2, path.absolute: /home/riddle/pro/f-2019-11-10.repo2}
 - {name: uni-block, git: true, path: ~/pro/uni-block, path.absolute: /home/riddle/pro/uni-block}
-recentlyUsed: [~/pro/uni-block]
+recentlyUsed: [~/pro/uni-block, ~/pro/f-2019-11-10.repo2, ~/pro/uni-block2]

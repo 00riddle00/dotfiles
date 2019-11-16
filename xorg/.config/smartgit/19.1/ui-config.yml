@@ -5,30 +5,25 @@ git:
     - {id: sync}
     - {id: push}
     - {stretching: false}
-    - {id: flowContext}
-    - {stretching: false}
-    - {id: merge}
     - {id: commit}
     - {stretching: true}
     - {id: stage}
     - {id: indexEditor}
     - {id: unstage}
     - {stretching: false}
-    - {id: add}
-    - {id: remove}
-    - {id: rename}
-    - {id: branchAbort}
     - {id: discard}
-    - {id: delete}
+    - {stretching: false}
+    - {id: stashSave}
+    - {id: stashApply}
     - {stretching: true}
-    - {id: log}
+    - {id: logRepository}
     - {id: annotate}
     - {id: investigate}
     - {stretching: true}
-    - {id: windowLayoutSetMain}
-    - {id: windowLayoutSetReview}
-    textBelowIcon: true
-    visible: true
+    - {id: flowContext}
+    - {stretching: false}
+    - {id: merge}
+    - {id: rebaseHeadTo}
   logToolBar-18.2:
     items:
     - {id: fetch}
@@ -53,9 +48,6 @@ git:
     - {stretching: false}
     - {id: merge}
     - {id: rebaseHeadTo}
-filterConfiguration:
-  patterns: []
-  regularExpressions: false
 hg:
   projectToolBar:
     items:
@@ -97,3 +89,4 @@ hg:
     - {stretching: true}
     - {id: windowLayoutSetMain}
     - {id: windowLayoutSetReview}
+filterConfiguration: {}
