@@ -1,0 +1,1308 @@
+SmartGit version = 19.1.4-14196-4577cb06f60cb76adf60d96ddb10ab9bff199fc2-jgit-df1a32e3fce9b79d5188e38280d63fbb2accfd8b-trilead-?
+Start time: 2019-11-19 07:36:03
+awt.toolkit                         : "sun.awt.X11.XToolkit"
+file.encoding                       : "UTF-8"
+file.separator                      : "/"
+java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+java.awt.printerjob                 : "sun.print.PSPrinterJob"
+java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+java.class.version                  : "55.0"
+java.home                           : "/opt/smartgit/jre"
+java.io.tmpdir                      : "/tmp"
+java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+java.net.preferIPv4Stack            : "true"
+java.runtime.name                   : "OpenJDK Runtime Environment"
+java.runtime.version                : "11.0.3+7-LTS"
+java.specification.name             : "Java Platform API Specification"
+java.specification.vendor           : "Oracle Corporation"
+java.specification.version          : "11"
+java.vendor                         : "Amazon.com Inc."
+java.vendor.url                     : "https://aws.amazon.com/corretto/"
+java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+java.vendor.version                 : "Corretto-11.0.3.7.1"
+java.version                        : "11.0.3"
+java.version.date                   : "2019-04-16"
+java.vm.compressedOopsMode          : "32-bit"
+java.vm.info                        : "mixed mode"
+java.vm.name                        : "OpenJDK 64-Bit Server VM"
+java.vm.specification.name          : "Java Virtual Machine Specification"
+java.vm.specification.vendor        : "Oracle Corporation"
+java.vm.specification.version       : "11"
+java.vm.vendor                      : "Amazon.com Inc."
+java.vm.version                     : "11.0.3+7-LTS"
+jdk.debug                           : "release"
+jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+jna.nounpack                        : "true"
+line.separator                      : "\n"
+org.eclipse.swt.accessibility.UseIA2: "false"
+org.eclipse.swt.internal.deviceZoom : "100"
+org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+org.eclipse.swt.internal.gtk.version: "3.24.12"
+os.arch                             : "amd64"
+os.name                             : "Linux"
+os.version                          : "5.3.11-arch1-1"
+path.separator                      : ":"
+smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+sun.arch.data.model                 : "64"
+sun.boot.library.path               : "/opt/smartgit/jre/lib"
+sun.cpu.endian                      : "little"
+sun.cpu.isalist                     : ""
+sun.io.unicode.encoding             : "UnicodeLittle"
+sun.io.useCanonCaches               : "false"
+sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+sun.java.launcher                   : "SUN_STANDARD"
+sun.jnu.encoding                    : "UTF-8"
+sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+sun.os.patch.level                  : "unknown"
+swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+user.country                        : "US"
+user.dir                            : "/home/riddle"
+user.home                           : "/home/riddle"
+user.language                       : "en"
+user.name                           : "riddle"
+user.timezone                       : "Europe/Vilnius"
+
+591 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] awt.toolkit                         : "sun.awt.X11.XToolkit"
+591 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] file.encoding                       : "UTF-8"
+591 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] file.separator                      : "/"
+591 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+591 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.awt.printerjob                 : "sun.print.PSPrinterJob"
+591 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.class.version                  : "55.0"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.home                           : "/opt/smartgit/jre"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.io.tmpdir                      : "/tmp"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.net.preferIPv4Stack            : "true"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.runtime.name                   : "OpenJDK Runtime Environment"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.runtime.version                : "11.0.3+7-LTS"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.specification.name             : "Java Platform API Specification"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.specification.vendor           : "Oracle Corporation"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.specification.version          : "11"
+592 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vendor                         : "Amazon.com Inc."
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vendor.url                     : "https://aws.amazon.com/corretto/"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vendor.version                 : "Corretto-11.0.3.7.1"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.version                        : "11.0.3"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.version.date                   : "2019-04-16"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.compressedOopsMode          : "32-bit"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.info                        : "mixed mode"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.name                        : "OpenJDK 64-Bit Server VM"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.specification.name          : "Java Virtual Machine Specification"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.specification.vendor        : "Oracle Corporation"
+593 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.specification.version       : "11"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.vendor                      : "Amazon.com Inc."
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] java.vm.version                     : "11.0.3+7-LTS"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] jdk.debug                           : "release"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] jna.nounpack                        : "true"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] line.separator                      : "\n"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] org.eclipse.swt.accessibility.UseIA2: "false"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] org.eclipse.swt.internal.deviceZoom : "100"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+594 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] org.eclipse.swt.internal.gtk.version: "3.24.12"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] os.arch                             : "amd64"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] os.name                             : "Linux"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] os.version                          : "5.3.11-arch1-1"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] path.separator                      : ":"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.arch.data.model                 : "64"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.boot.library.path               : "/opt/smartgit/jre/lib"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.cpu.endian                      : "little"
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.cpu.isalist                     : ""
+595 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.io.unicode.encoding             : "UnicodeLittle"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.io.useCanonCaches               : "false"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.java.launcher                   : "SUN_STANDARD"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.jnu.encoding                    : "UTF-8"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] sun.os.patch.level                  : "unknown"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] user.country                        : "US"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] user.dir                            : "/home/riddle"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] user.home                           : "/home/riddle"
+596 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] user.language                       : "en"
+597 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] user.name                           : "riddle"
+597 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] user.timezone                       : "Europe/Vilnius"
+597 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Environment variables:
+598 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] _                       : "/opt/smartgit/jre/bin/java"
+598 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+598 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] CANDY                   : "/home/riddle/Dropbox/sync/candy"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DBUS_SESSION_BUS_ADDRESS: "unix:abstract=/tmp/dbus-O5LLVV62rG,guid=9a1cc5184aafdf6993db40d25dd2aa90"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DIRCOLORS               : ".dircolors"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DISPLAY                 : ":0"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DOTFILES_DIR            : "/home/riddle/.dotfiles"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DOWNLOADS               : "/home/riddle/Downloads"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DROPBOX                 : "/home/riddle/Dropbox"
+599 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] DW                      : "/home/riddle/Downloads"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] EDITOR                  : "vim"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] HDMI_SCREEN             : "HDMI-1-1"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] HOME                    : "/home/riddle"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] INVOCATION_ID           : "5fc7ea74121f4c20b774d80f87f41c3f"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] JOURNAL_STREAM          : "9:22589"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LANG                    : "C"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LAPTOP_SCREEN           : "eDP-1-1"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LC_ALL                  : "en_US.UTF-8"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+600 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LESS                    : "-R"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LOGNAME                 : "riddle"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] LSCOLORS                : "ExFxCxDxBxegedabagacad"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] MAIL                    : "/var/spool/mail/riddle"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] MAIN_HOME               : "/home/riddle"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] MAIN_USER               : "riddle"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] OLDPWD                  : "/opt/smartgit/bin"
+601 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] PATH                    : "/home/riddle/.cargo/bin:/opt/anaconda/bin:/home/riddle/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] PRO                     : "/home/riddle/pro"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] PWD                     : "/home/riddle"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] SENV                    : "/home/riddle/venvs/subscription_demo"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] SHELL                   : "/bin/zsh"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] SHLVL                   : "3"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] SYNC                    : "/home/riddle/Dropbox/sync"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] TERM                    : "rxvt-unicode-256color"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] THEME                   : "riddle"
+602 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] TMP1                    : "/home/riddle/tmp1"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] TMP2                    : "/home/riddle/tmp2"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] USER                    : "riddle"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] VENV                    : "/home/riddle/venvs/sql_app"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] VIMCOLOR                : "miro8"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] VIMRC                   : "/home/riddle/.vimrc"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] WINDOWPATH              : "1"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XAUTHORITY              : "/home/riddle/.Xauthority"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XDG_RUNTIME_DIR         : "/run/user/1000"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XDG_SEAT                : "seat0"
+603 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XDG_SESSION_CLASS       : "user"
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XDG_SESSION_ID          : "1"
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XDG_SESSION_TYPE        : "tty"
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] XDG_VTNR                : "1"
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] class loader: java.net.URLClassLoader
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/antlr-runtime.jar
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/lz4-1.3.0.jar
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/sequence-library.jar
+604 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/sqljet.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jna-4.5.2.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jna-platform-4.5.2.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/trilead.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jsch.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/bcpkix-jdk15on-160.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/bcprov-jdk15on-160.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/eddsa-0.3.0.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jzlib-1.1.3.jar
+605 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/sshj.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/javaewah.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/json_simple-1.1.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/snakeyaml.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jopt-simple-3.2.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jmyspell-core.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/autolink-0.6.0.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/flexmark.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/flexmark-ext-autolink.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+606 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/flexmark-util.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/bootloader-config.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/java-prettify.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/jgit.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/svnkit.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/smartgit.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] parent class loader: java.net.URLClassLoader
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+607 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Max memory: 1024m
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Max processors: 4
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] VM options:
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -XX:+UseG1GC
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -XX:MaxGCPauseMillis=100
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -XX:InitiatingHeapOccupancyPercent=25
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -Xmx1024m
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -Xss2m
+608 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -Xverify:none
+609 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -XX:MaxJavaStackTraceDepth=1000000
+609 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -Dsun.io.useCanonCaches=false
+609 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   -XX:ErrorFile=/home/riddle/.config/smartgit/19.1/hs_err_pid%p.log
+639 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] removing /home/riddle/.config/smartgit/19.1/hgext recursively
+639 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] create /home/riddle/.config/smartgit/19.1/hgext
+640 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Mercurial extension directory is /opt/smartgit/lib/hgext
+666 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Read 0 phrases from plain-text part.
+1s  9 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] First used on 2019-11-10
+1s  9 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Settings were not upgraded before
+1s 42 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Using Java-7 filemonitor
+1s 48 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Server is connected to 4332.
+1s 69 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] License type is 'foundation'.
+1s 69 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Distributed Reviews are enabled.
+1s 83 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] License type is 'foundation'.
+1s 83 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Distributed Reviews are enabled.
+1s 88 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] application root: /opt/smartgit
+1s 89 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] launcher: /opt/smartgit/bin/smartgit.sh
+1s364 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Info smartgit-training-commercial-demo found.
+1s379 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Writing 0 phrases.
+1s447 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] application root: /opt/smartgit
+1s447 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] launcher: /opt/smartgit/bin/smartgit.sh
+1s523 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main] Executing #0 [/usr/bin] /usr/bin/git --version
+1s530 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main] Executing #1 [/usr/bin] /usr/bin/git --version
+1s535 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Cleaning up old builds (fetch=false;schedule=false;fetchUpgrade=false;upgrade=false)
+1s537 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Checking for new version
+1s538 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   ... last check too early.
+1s542 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main] Git version is 'git version 2.24.0' (2.24.0).
+1s542 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]   Super config: null (does not exist)
+1s542 Thread[ThreadPool-2 (smartgit.MW$$Lambda$189/0x0000000100265440),5,main] No version configured for fetching.
+1s542 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]   System config: /etc/gitconfig (does not exist)
+1s543 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]   User config: /home/riddle/.gitconfig (exists)
+1s551 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     user.email=tomasgiedraitis@gmail.com
+1s551 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     user.name=Tomas Giedraitis
+1s551 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     core.editor=vim
+1s551 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     credential.helper=cache --timeout=3600
+1s551 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     merge.tool=vimdiff
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     diff.tool=vimdiff
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     difftool.prompt=false
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     alias.lgfirstparent=log --first-parent
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     alias.lgnomerges=log --no-merges --oneline
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     alias.graphviz=!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     alias.d=difftool
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     filter.lfs.clean=git-lfs clean -- %f
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     filter.lfs.smudge=git-lfs smudge -- %f
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     filter.lfs.process=git-lfs filter-process
+1s552 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     filter.lfs.required=true
+1s553 Thread[ThreadPool-1 (com.syntevo.smartgit.q),5,main]     gui.recentrepo=/home/riddle/tmp7
+2s 75 Thread[main,5,main] layout: (([+319x354:directories ][+319x591:branches ])(([+1594x339:files ][-2x1:message ])[+1594x414:changes ]([+1594x189:outgoing ][-3x1:output ])))
+2s195 Thread[main,5,main] opening smartgit.boi@42A9E5D1:SmartGit 19.1.4 (evaluation until Dec 11) (smartgit.boi@279FEDBD) (index=0)
+2s250 Thread[ThreadPool-2 (com.syntevo.sc.application.w),5,main] Searching crash logs in /home/riddle/.config/smartgit/19.1
+2s251 Thread[ThreadPool-2 (com.syntevo.sc.application.w),5,main] Found no crash logs
+2s251 Thread[main,5,main] open: [uni-compilers /home/riddle/pro/uni-compilers git=true]; already open: []
+2s259 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main] Adding watch for '/home/riddle/pro/uni-compilers', canonical: '/home/riddle/pro/uni-compilers'
+2s286 Thread[main,5,main] Starting to scan /home/riddle/pro/uni-compilers
+2s322 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main] Published: INFO [fileMonitor.directoriesExcluded-null] Ignored directories are not monitored:
+Directory '.idea' (/home/riddle/pro/uni-compilers/.idea) has been excluded from file monitoring because it's listed in some .gitignore file.
+
+Usually this does not cause any problems but improves Refreshing performance and reduces required inotify handles.
+
+Sometimes ignored directories are containing tracked files in which case changes to these files might not show up automatically. If this is the case for you, you may disable this optimization by setting system property 'fileMonitor.excludeIgnoredDirectories=false'.
+
+Remind me later | Don't show again
+2s323 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main] Skipping subtree /home/riddle/pro/uni-compilers/.idea from file monitoring.
+2s324 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main] Skipping subtree /home/riddle/pro/uni-compilers/lexer/__pycache__ from file monitoring.
+2s325 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main] Skipping subtree /home/riddle/pro/uni-compilers/parser/__pycache__ from file monitoring.
+2s326 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main] Skipping subtree /home/riddle/pro/uni-compilers/venv from file monitoring.
+2s415 Thread[ThreadPool-4 (smartgit.aFg$$Lambda$412/0x000000010039d840),5,main]   ... took 155ms [/home/riddle/pro/uni-compilers]
+2s425 Thread[main,5,main] Starting background refreshing.
+2s427 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2s635 Thread[ThreadPool-2 (Refresh-0),5,main] Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 1 roots
+2s667 Thread[ThreadPool-2 (Refresh-0),5,main] Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 3 commits for 2 roots at /home/riddle/pro/uni-compilers/.git (took 41ms)
+2s682 Thread[ThreadPool-2 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 56ms (201 nodes, 4 refs, 46ms walk of 201 nodes, 1ms refs, 2ms reachability, 4ms divergence for 1 branches, 3ms reflog, 0ms assertions)
+2s811 Thread[ThreadPool-2 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<infinity>, /<empty>]
+2s843 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Executing #2 [/usr/bin] /usr/bin/git --version
+2s858 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Git version is 'git version 2.24.0' (2.24.0).
+2s858 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   Super config: null (does not exist)
+2s858 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   System config: /etc/gitconfig (does not exist)
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]   User config: /home/riddle/.gitconfig (exists)
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     user.email=tomasgiedraitis@gmail.com
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     user.name=Tomas Giedraitis
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     core.editor=vim
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     credential.helper=cache --timeout=3600
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     merge.tool=vimdiff
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     diff.tool=vimdiff
+2s859 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     difftool.prompt=false
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     alias.lgfirstparent=log --first-parent
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     alias.lgnomerges=log --no-merges --oneline
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     alias.graphviz=!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     alias.d=difftool
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     filter.lfs.clean=git-lfs clean -- %f
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     filter.lfs.smudge=git-lfs smudge -- %f
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     filter.lfs.process=git-lfs filter-process
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     filter.lfs.required=true
+2s860 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main]     gui.recentrepo=/home/riddle/tmp7
+2s861 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Using built-in SSH client
+2s881 Thread[ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440),5,main] Executing #3 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2s940 Thread[ThreadPool-2 (Refresh-0),5,main] Published: INFO [hosting-provider-could-be-configured-github-null] (to: git-project) GitHub-integration is not yet configured.:
+SmartGit provides special support for GitHub. The integration can be configured in the Preferences.
+
+Configure Now | Remind me later | Don't show again
+3s 18 Thread[ThreadPool-2 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 2ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+3s 43 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (10 directories processed, timestamp=1)
+3s 61 Thread[main,5,main] root changed null -> /home/riddle/pro/uni-compilers
+3s169 Thread[ThreadPool-2 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (32 entries) in 200ms, additional 146ms post-processing
+3s169 Thread[ThreadPool-2 (Refresh-0),5,main] Root '/home/riddle/pro/uni-compilers' scanned.
+3s170 Thread[ThreadPool-2 (Refresh-0),5,main]   /: [[origin(url=https://github.com/00riddle00/BSc3-TranslationMethods)]], []
+3s860 Thread[ThreadPool-2 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3s860 Thread[ThreadPool-2 (smartgit.aqj),5,main]  credentials: command=store; id=8213216884594963768;protocol=https;host=github.com;path=null;username=<set>
+3s879 Thread[ThreadPool-4 (stdout-#3 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3s939 Thread[main,5,main] Link remind-later clicked for INFO [fileMonitor.directoriesExcluded-null] Ignored directories are not monitored
+5s530 Thread[main,5,main] Link remind-later clicked for INFO [hosting-provider-could-be-configured-github-null] (to: git-project) GitHub-integration is not yet configured.
+13s541 Thread[main,5,main] Starting background refreshing.
+14s233 Thread[main,5,main] Stopping background refreshing.
+14s307 Thread[Timer-0,5,main] Invocation of garbage collector due to [deactivation, deactivation] took 31ms.
+5m12s438 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5m12s466 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5m12s468 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #4 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5m13s497 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5m13s498 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=2516400161787174901;protocol=https;host=github.com;path=null;username=<set>
+5m13s515 Thread[ThreadPool-2 (stdout-#4 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5m14s269 Thread[WorkerThread-1,2,main] Using built-in SSH client
+5m14s271 Thread[WorkerThread-1,2,main] Executing #5 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+5m15s267 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5m15s268 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=4375598696545721104;protocol=https;host=github.com;path=null;username=<set>
+5m15s350 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+5m15s356 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5m15s387 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5m15s390 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (10 directories processed, timestamp=2)
+5m15s393 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5m15s404 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (32 entries) in 34ms, additional 14ms post-processing
+9m 1s 46 Thread[Timer-0,5,main] No file monitor activity since 225696ms.
+10m22s446 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+10m22s473 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+10m22s475 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #6 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+10m23s475 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+10m23s475 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=145881568713057679;protocol=https;host=github.com;path=null;username=<set>
+10m23s492 Thread[ThreadPool-2 (stdout-#6 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+12m 1s 47 Thread[Timer-0,5,main] No file monitor activity since 405697ms.
+15m 1s 48 Thread[Timer-0,5,main] No file monitor activity since 585698ms.
+15m32s457 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+15m32s480 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+15m32s482 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #7 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+15m33s486 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+15m33s489 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=7498728618058648934;protocol=https;host=github.com;path=null;username=<set>
+15m33s502 Thread[ThreadPool-2 (stdout-#7 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+18m 1s 48 Thread[Timer-0,5,main] No file monitor activity since 765698ms.
+20m35s579 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+20m35s697 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+20m35s703 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (10 directories processed, timestamp=3)
+20m35s705 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+20m35s762 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (32 entries) in 124ms, additional 59ms post-processing
+20m42s465 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+20m42s486 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+20m42s487 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #8 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+20m43s472 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+20m43s472 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=2008677517913259570;protocol=https;host=github.com;path=null;username=<set>
+20m43s486 Thread[ThreadPool-2 (stdout-#8 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+21m 9s 34 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>, /errors<infinity>, /errors/__init__.py<empty>]
+21m 9s 64 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+21m 9s 68 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=4)
+21m 9s 69 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m 9s 87 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (34 entries) in 33ms, additional 20ms post-processing
+21m33s 73 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>, /errors/error.py<empty>]
+21m33s102 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+21m33s105 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=5)
+21m33s106 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m33s121 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 32ms, additional 16ms post-processing
+21m51s899 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/error.py<infinity>, /<empty>, /errors/lexer_error.py<empty>]
+21m51s949 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 10ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 9ms reflog, 0ms assertions)
+21m51s952 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=6)
+21m51s955 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m51s978 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 52ms, additional 27ms post-processing
+22m 0s713 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>, /errors/parser_error.py<empty>]
+22m 0s741 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+22m 0s744 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=7)
+22m 0s745 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+22m 0s761 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 30ms, additional 18ms post-processing
+23m46s150 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>, /errors/errors.py<empty>]
+23m46s176 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+23m46s179 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=8)
+23m46s183 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+23m46s204 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (37 entries) in 29ms, additional 25ms post-processing
+23m57s466 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/lexer_error.py<infinity>, /<empty>]
+23m57s491 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+23m57s493 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=9)
+23m57s496 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+23m57s515 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 28ms, additional 22ms post-processing
+24m 6s884 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/parser_error.py<infinity>, /<empty>]
+24m 6s915 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+24m 6s918 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=10)
+24m 6s920 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+24m 6s938 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 33ms, additional 21ms post-processing
+25m33s603 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/main.py<empty>, /errors/errors.py~<infinity>, /errors/__init__.py~<infinity>, /main.py~<infinity>, /errors/errors.py<empty>, /errors/__init__.py<empty>]
+25m33s650 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+25m33s654 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=11)
+25m33s656 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+25m33s685 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 50ms, additional 32ms post-processing
+25m52s477 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+25m52s494 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+25m52s495 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #9 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+25m53s584 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+25m53s584 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=7077504809743922627;protocol=https;host=github.com;path=null;username=<set>
+25m53s601 Thread[ThreadPool-2 (stdout-#9 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+30m 1s 48 Thread[Timer-0,5,main] No file monitor activity since 268448ms.
+31m 2s484 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+31m 2s503 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+31m 2s504 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #10 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+31m 3s521 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+31m 3s522 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=8002457199607983687;protocol=https;host=github.com;path=null;username=<set>
+31m 3s536 Thread[ThreadPool-2 (stdout-#10 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+33m 1s 49 Thread[Timer-0,5,main] No file monitor activity since 448449ms.
+36m 1s 49 Thread[Timer-0,5,main] No file monitor activity since 628449ms.
+36m12s492 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+36m12s515 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+36m12s516 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #11 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+36m13s533 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+36m13s533 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=994256651526409134;protocol=https;host=github.com;path=null;username=<set>
+36m13s550 Thread[ThreadPool-2 (stdout-#11 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+39m 1s 49 Thread[Timer-0,5,main] No file monitor activity since 808449ms.
+40m14s245 Thread[WorkerThread-1,2,main] Using built-in SSH client
+40m14s246 Thread[WorkerThread-1,2,main] Executing #12 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+40m15s315 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+40m15s315 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=4718909764766015516;protocol=https;host=github.com;path=null;username=<set>
+40m15s422 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+40m15s424 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+40m15s488 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+40m15s499 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=12)
+40m15s503 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40m15s527 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 67ms, additional 36ms post-processing
+40m23s440 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /errors/errors.py~<infinity>, /errors/errors.py<empty>]
+40m23s462 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+40m23s464 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=13)
+40m23s467 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40m23s486 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 23ms, additional 23ms post-processing
+40m30s645 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/main.py<empty>, /main.py~<infinity>]
+40m30s679 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+40m30s681 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (11 directories processed, timestamp=14)
+40m30s683 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40m30s701 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (35 entries) in 36ms, additional 20ms post-processing
+40m35s657 Thread[File monitor listener notifier,10,main] Skipping subtree /home/riddle/pro/uni-compilers/errors/__pycache__ from file monitoring.
+40m37s254 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>, /errors/__pycache__<infinity>]
+40m37s277 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+40m37s280 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=15)
+40m37s282 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40m37s294 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 25ms, additional 15ms post-processing
+40m55s991 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+40m56s 12 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+40m56s 14 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=16)
+40m56s 16 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40m56s 34 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 23ms, additional 20ms post-processing
+41m22s498 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+41m22s520 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+41m22s521 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #13 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+41m23s568 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+41m23s568 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=1378996565461567797;protocol=https;host=github.com;path=null;username=<set>
+41m23s578 Thread[ThreadPool-2 (stdout-#13 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+42m34s327 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /main.py<empty>, /errors/errors.py~<infinity>, /main.py~<infinity>, /errors/errors.py<empty>]
+42m34s357 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+42m34s359 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=17)
+42m34s361 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+42m34s376 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 32ms, additional 17ms post-processing
+43m43s937 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /main.py<empty>, /main.py~<infinity>]
+43m43s958 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+43m43s960 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=18)
+43m43s961 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+43m43s981 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 22ms, additional 22ms post-processing
+44m 2s564 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+44m 2s587 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+44m 2s589 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=19)
+44m 2s590 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+44m 2s602 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 24ms, additional 14ms post-processing
+46m32s502 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+46m32s524 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+46m32s525 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #14 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+46m33s526 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+46m33s526 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=8391151303769941499;protocol=https;host=github.com;path=null;username=<set>
+46m33s540 Thread[ThreadPool-2 (stdout-#14 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+48m 1s 51 Thread[Timer-0,5,main] No file monitor activity since 239992ms.
+51m 1s 51 Thread[Timer-0,5,main] No file monitor activity since 419992ms.
+51m42s507 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+51m42s522 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+51m42s523 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #15 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+51m43s499 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+51m43s499 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=1938994528761207865;protocol=https;host=github.com;path=null;username=<set>
+51m43s516 Thread[ThreadPool-2 (stdout-#15 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+52m 4s479 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/main.py<empty>, /errors/errors.py~<infinity>, /main.py~<infinity>, /errors/errors.py<empty>]
+52m 4s507 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+52m 4s509 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=20)
+52m 4s511 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+52m 4s527 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 29ms, additional 19ms post-processing
+52m46s332 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+52m46s352 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+52m46s354 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=21)
+52m46s355 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+52m46s371 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 17ms post-processing
+54m39s909 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /errors/errors.py~<infinity>, /errors/errors.py<empty>]
+54m39s942 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+54m39s945 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=22)
+54m39s947 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+54m39s968 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 35ms, additional 24ms post-processing
+55m 3s336 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+55m 3s363 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+55m 3s366 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=23)
+55m 3s371 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+55m 3s386 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 30ms, additional 20ms post-processing
+55m 7s341 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+55m 7s364 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+55m 7s367 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=24)
+55m 7s369 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+55m 7s386 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 26ms, additional 19ms post-processing
+55m25s166 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+55m25s190 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+55m25s192 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=25)
+55m25s193 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+55m25s205 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 25ms, additional 14ms post-processing
+56m27s553 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+56m27s576 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+56m27s579 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=26)
+56m27s581 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+56m27s598 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 26ms, additional 19ms post-processing
+56m52s511 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+56m52s528 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+56m52s529 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #16 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+56m53s549 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+56m53s549 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=4143650303834516664;protocol=https;host=github.com;path=null;username=<set>
+56m53s565 Thread[ThreadPool-2 (stdout-#16 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+57m 0s213 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+57m 0s234 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+57m 0s237 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=27)
+57m 0s238 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+57m 0s250 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 23ms, additional 14ms post-processing
+57m16s938 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+57m16s962 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+57m16s964 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=28)
+57m16s965 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+57m16s987 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 25ms, additional 24ms post-processing
+1h 0m46s558 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+1h 0m46s589 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1h 0m46s591 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=29)
+1h 0m46s592 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 0m46s605 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 33ms, additional 14ms post-processing
+1h 1m 5s392 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+1h 1m 5s416 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+1h 1m 5s418 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=30)
+1h 1m 5s422 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 1m 5s447 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 25ms, additional 30ms post-processing
+1h 2m 2s516 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h 2m 2s534 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h 2m 2s535 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #17 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h 2m 3s544 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h 2m 3s544 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=2075530890856714769;protocol=https;host=github.com;path=null;username=<set>
+1h 2m 3s561 Thread[ThreadPool-2 (stdout-#17 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h 2m30s121 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+1h 2m30s148 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1h 2m30s151 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=31)
+1h 2m30s153 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 2m30s173 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 29ms, additional 23ms post-processing
+1h 3m11s479 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+1h 3m11s514 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1h 3m11s516 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=32)
+1h 3m11s517 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 3m11s531 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 36ms, additional 16ms post-processing
+1h 7m12s527 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h 7m12s553 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h 7m12s553 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #18 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h 7m13s546 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h 7m13s546 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=8353911346206729475;protocol=https;host=github.com;path=null;username=<set>
+1h 7m13s561 Thread[ThreadPool-2 (stdout-#18 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h 9m 1s 52 Thread[Timer-0,5,main] No file monitor activity since 351075ms.
+1h12m 1s 52 Thread[Timer-0,5,main] No file monitor activity since 531075ms.
+1h12m22s539 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h12m22s565 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h12m22s565 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #19 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h12m23s559 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h12m23s560 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=4098815925558625004;protocol=https;host=github.com;path=null;username=<set>
+1h12m23s573 Thread[ThreadPool-2 (stdout-#19 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h15m 1s 53 Thread[Timer-0,5,main] No file monitor activity since 711076ms.
+1h15m14s255 Thread[WorkerThread-1,2,main] Using built-in SSH client
+1h15m14s257 Thread[WorkerThread-1,2,main] Executing #20 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+1h15m15s265 Thread[ThreadPool-4 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h15m15s265 Thread[ThreadPool-4 (smartgit.aqj),5,main]  credentials: command=store; id=3087087979809923075;protocol=https;host=github.com;path=null;username=<set>
+1h15m15s367 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+1h15m15s369 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+1h15m15s392 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1h15m15s394 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=33)
+1h15m15s396 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h15m15s407 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 25ms, additional 12ms post-processing
+1h17m32s547 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h17m32s562 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h17m32s564 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #21 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h17m33s576 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h17m33s576 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=1268538326612181339;protocol=https;host=github.com;path=null;username=<set>
+1h17m33s592 Thread[ThreadPool-2 (stdout-#21 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h21m 1s 54 Thread[Timer-0,5,main] No file monitor activity since 345686ms.
+1h22m42s554 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h22m42s572 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h22m42s573 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #22 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h22m43s592 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h22m43s593 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=8633755080586896744;protocol=https;host=github.com;path=null;username=<set>
+1h22m43s609 Thread[ThreadPool-2 (stdout-#22 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h24m 1s 54 Thread[Timer-0,5,main] No file monitor activity since 525687ms.
+1h27m 1s 55 Thread[Timer-0,5,main] No file monitor activity since 705687ms.
+1h27m52s560 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h27m52s576 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h27m52s577 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #23 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h27m53s578 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h27m53s579 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=2023810142832309393;protocol=https;host=github.com;path=null;username=<set>
+1h27m53s594 Thread[ThreadPool-2 (stdout-#23 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h30m 1s 55 Thread[Timer-0,5,main] No file monitor activity since 885688ms.
+1h33m 1s 56 Thread[Timer-0,5,main] No file monitor activity since 1065688ms.
+1h33m 2s564 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h33m 2s580 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h33m 2s580 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #24 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h33m 3s652 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h33m 3s654 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=8713572326396233505;protocol=https;host=github.com;path=null;username=<set>
+1h33m 3s667 Thread[ThreadPool-2 (stdout-#24 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h36m 1s 56 Thread[Timer-0,5,main] No file monitor activity since 1245689ms.
+1h38m12s575 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h38m12s590 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h38m12s591 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #25 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h38m13s597 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h38m13s597 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=8560077560836374991;protocol=https;host=github.com;path=null;username=<set>
+1h38m13s611 Thread[ThreadPool-2 (stdout-#25 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h39m 1s 56 Thread[Timer-0,5,main] No file monitor activity since 1425689ms.
+1h42m 1s 56 Thread[Timer-0,5,main] No file monitor activity since 1605689ms.
+1h43m22s583 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h43m22s603 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h43m22s603 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #26 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h43m23s604 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h43m23s604 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=5094822715150643632;protocol=https;host=github.com;path=null;username=<set>
+1h43m23s619 Thread[ThreadPool-2 (stdout-#26 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h45m 1s 57 Thread[Timer-0,5,main] No file monitor activity since 1785690ms.
+1h48m 1s 58 Thread[Timer-0,5,main] No file monitor activity since 1965690ms.
+1h48m32s587 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h48m32s606 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h48m32s606 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #27 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h48m33s615 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h48m33s616 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=3713813800914467112;protocol=https;host=github.com;path=null;username=<set>
+1h48m33s630 Thread[ThreadPool-2 (stdout-#27 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h50m14s252 Thread[WorkerThread-1,2,main] Using built-in SSH client
+1h50m14s253 Thread[WorkerThread-1,2,main] Executing #28 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+1h50m15s243 Thread[ThreadPool-4 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h50m15s243 Thread[ThreadPool-4 (smartgit.aqj),5,main]  credentials: command=store; id=228102760807110111;protocol=https;host=github.com;path=null;username=<set>
+1h50m15s281 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+1h50m15s283 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+1h50m15s301 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1h50m15s305 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=34)
+1h50m15s306 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h50m15s314 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 11ms post-processing
+1h53m42s594 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h53m42s608 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h53m42s609 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #29 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h53m43s630 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h53m43s631 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=3925999630662389288;protocol=https;host=github.com;path=null;username=<set>
+1h53m43s645 Thread[ThreadPool-2 (stdout-#29 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+1h54m 1s 59 Thread[Timer-0,5,main] No file monitor activity since 225777ms.
+1h57m 1s 60 Thread[Timer-0,5,main] No file monitor activity since 405778ms.
+1h58m52s598 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+1h58m52s614 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+1h58m52s615 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #30 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h58m53s628 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+1h58m53s628 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=7083819592728411902;protocol=https;host=github.com;path=null;username=<set>
+1h58m53s641 Thread[ThreadPool-2 (stdout-#30 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h 0m 1s 61 Thread[Timer-0,5,main] No file monitor activity since 585780ms.
+2h 3m 1s 62 Thread[Timer-0,5,main] No file monitor activity since 765781ms.
+2h 4m 2s601 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h 4m 2s614 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h 4m 2s614 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #31 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h 4m 3s620 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h 4m 3s620 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=3607384966247483584;protocol=https;host=github.com;path=null;username=<set>
+2h 4m 3s637 Thread[ThreadPool-2 (stdout-#31 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h 6m 1s 62 Thread[Timer-0,5,main] No file monitor activity since 945781ms.
+2h 9m 1s 64 Thread[Timer-0,5,main] No file monitor activity since 1125782ms.
+2h 9m12s605 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h 9m12s618 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h 9m12s618 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #32 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h 9m13s608 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h 9m13s608 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=127505494450752096;protocol=https;host=github.com;path=null;username=<set>
+2h 9m13s622 Thread[ThreadPool-2 (stdout-#32 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h12m 1s 65 Thread[Timer-0,5,main] No file monitor activity since 1305783ms.
+2h14m22s611 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h14m22s627 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h14m22s628 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #33 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h14m23s642 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h14m23s643 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=2437012964756363943;protocol=https;host=github.com;path=null;username=<set>
+2h14m23s657 Thread[ThreadPool-2 (stdout-#33 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h15m 1s 66 Thread[Timer-0,5,main] No file monitor activity since 1485784ms.
+2h18m 1s 66 Thread[Timer-0,5,main] No file monitor activity since 1665785ms.
+2h19m32s617 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h19m32s640 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h19m32s640 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #34 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h19m33s625 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h19m33s626 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=7148536978238899451;protocol=https;host=github.com;path=null;username=<set>
+2h19m33s642 Thread[ThreadPool-2 (stdout-#34 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h21m 1s 66 Thread[Timer-0,5,main] No file monitor activity since 1845785ms.
+2h24m 1s 66 Thread[Timer-0,5,main] No file monitor activity since 2025785ms.
+2h24m42s623 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h24m42s637 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h24m42s638 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #35 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h24m43s667 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h24m43s667 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=641454056508623004;protocol=https;host=github.com;path=null;username=<set>
+2h24m43s681 Thread[ThreadPool-2 (stdout-#35 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h27m 1s 67 Thread[Timer-0,5,main] No file monitor activity since 2205786ms.
+2h29m52s628 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h29m52s641 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h29m52s641 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #36 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h29m53s627 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h29m53s627 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=4906613596893051916;protocol=https;host=github.com;path=null;username=<set>
+2h29m53s644 Thread[ThreadPool-2 (stdout-#36 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h30m 1s 68 Thread[Timer-0,5,main] No file monitor activity since 2385786ms.
+2h30m14s250 Thread[WorkerThread-1,2,main] Using built-in SSH client
+2h30m14s252 Thread[WorkerThread-1,2,main] Executing #37 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+2h30m15s218 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h30m15s218 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=8250138468608724614;protocol=https;host=github.com;path=null;username=<set>
+2h30m15s335 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+2h30m15s337 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+2h30m15s355 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+2h30m15s357 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=35)
+2h30m15s358 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+2h30m15s368 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 11ms post-processing
+2h35m 2s635 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h35m 2s650 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h35m 2s651 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #38 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h35m 3s650 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h35m 3s650 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=4913340776040604177;protocol=https;host=github.com;path=null;username=<set>
+2h35m 3s665 Thread[ThreadPool-2 (stdout-#38 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h36m 1s 68 Thread[Timer-0,5,main] No file monitor activity since 345834ms.
+2h39m 1s 69 Thread[Timer-0,5,main] No file monitor activity since 525834ms.
+2h40m12s643 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h40m12s658 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h40m12s659 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #39 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h40m13s677 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h40m13s678 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=325120523263936540;protocol=https;host=github.com;path=null;username=<set>
+2h40m13s693 Thread[ThreadPool-2 (stdout-#39 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h42m 1s 70 Thread[Timer-0,5,main] No file monitor activity since 705835ms.
+2h45m 1s 70 Thread[Timer-0,5,main] No file monitor activity since 885836ms.
+2h45m22s649 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h45m22s664 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h45m22s665 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #40 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h45m23s668 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h45m23s668 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=5012743994431388429;protocol=https;host=github.com;path=null;username=<set>
+2h45m23s684 Thread[ThreadPool-2 (stdout-#40 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h48m 1s 71 Thread[Timer-0,5,main] No file monitor activity since 1065837ms.
+2h50m32s652 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h50m32s666 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h50m32s666 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #41 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h50m33s690 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h50m33s690 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=2851941694861586115;protocol=https;host=github.com;path=null;username=<set>
+2h50m33s706 Thread[ThreadPool-2 (stdout-#41 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h51m 1s 71 Thread[Timer-0,5,main] No file monitor activity since 1245837ms.
+2h54m 1s 71 Thread[Timer-0,5,main] No file monitor activity since 1425837ms.
+2h55m42s662 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+2h55m42s678 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+2h55m42s679 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #42 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+2h55m43s688 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+2h55m43s688 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=985315929772432455;protocol=https;host=github.com;path=null;username=<set>
+2h55m43s704 Thread[ThreadPool-2 (stdout-#42 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+2h57m 1s 72 Thread[Timer-0,5,main] No file monitor activity since 1605838ms.
+3h 0m 1s 73 Thread[Timer-0,5,main] No file monitor activity since 1785839ms.
+3h 0m52s666 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h 0m52s681 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h 0m52s681 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #43 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h 0m53s714 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h 0m53s715 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=239872473484773246;protocol=https;host=github.com;path=null;username=<set>
+3h 0m53s731 Thread[ThreadPool-2 (stdout-#43 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h 3m 1s 74 Thread[Timer-0,5,main] No file monitor activity since 1965840ms.
+3h 5m14s255 Thread[WorkerThread-1,2,main] Using built-in SSH client
+3h 5m14s258 Thread[WorkerThread-1,2,main] Executing #44 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+3h 5m15s247 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h 5m15s247 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=3523755870277889845;protocol=https;host=github.com;path=null;username=<set>
+3h 5m15s306 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+3h 5m15s309 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+3h 5m15s325 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+3h 5m15s328 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=36)
+3h 5m15s329 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+3h 5m15s336 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 8ms post-processing
+3h 6m 2s673 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h 6m 2s691 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h 6m 2s692 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #45 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h 6m 3s674 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h 6m 3s675 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=1335264388811040121;protocol=https;host=github.com;path=null;username=<set>
+3h 6m 3s692 Thread[ThreadPool-2 (stdout-#45 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h 9m 1s 75 Thread[Timer-0,5,main] No file monitor activity since 225769ms.
+3h11m12s679 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h11m12s697 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h11m12s698 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #46 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h11m13s720 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h11m13s720 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=5532756761983372775;protocol=https;host=github.com;path=null;username=<set>
+3h11m13s735 Thread[ThreadPool-2 (stdout-#46 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h12m 1s 75 Thread[Timer-0,5,main] No file monitor activity since 405769ms.
+3h15m 1s 75 Thread[Timer-0,5,main] No file monitor activity since 585769ms.
+3h16m22s688 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h16m22s702 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h16m22s702 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #47 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h16m23s716 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h16m23s716 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=45022644925555090;protocol=https;host=github.com;path=null;username=<set>
+3h16m23s731 Thread[ThreadPool-2 (stdout-#47 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h18m 1s 76 Thread[Timer-0,5,main] No file monitor activity since 765770ms.
+3h21m 1s 77 Thread[Timer-0,5,main] No file monitor activity since 945771ms.
+3h21m32s695 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h21m32s711 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h21m32s712 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #48 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h21m33s702 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h21m33s705 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=2871562306106656848;protocol=https;host=github.com;path=null;username=<set>
+3h21m33s719 Thread[ThreadPool-2 (stdout-#48 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h24m 1s 77 Thread[Timer-0,5,main] No file monitor activity since 1125771ms.
+3h26m42s703 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h26m42s726 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h26m42s727 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #49 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h26m43s732 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h26m43s732 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=5260423579013415515;protocol=https;host=github.com;path=null;username=<set>
+3h26m43s747 Thread[ThreadPool-2 (stdout-#49 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h27m 1s 77 Thread[Timer-0,5,main] No file monitor activity since 1305771ms.
+3h30m 1s 77 Thread[Timer-0,5,main] No file monitor activity since 1485771ms.
+3h31m52s713 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h31m52s727 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h31m52s728 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #50 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h31m53s715 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h31m53s715 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=6978904284519511419;protocol=https;host=github.com;path=null;username=<set>
+3h31m53s731 Thread[ThreadPool-2 (stdout-#50 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h33m 1s 78 Thread[Timer-0,5,main] No file monitor activity since 1665771ms.
+3h36m 1s 79 Thread[Timer-0,5,main] No file monitor activity since 1845772ms.
+3h37m 2s724 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h37m 2s739 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h37m 2s740 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #51 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h37m 3s731 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h37m 3s731 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=5462260616104675335;protocol=https;host=github.com;path=null;username=<set>
+3h37m 3s745 Thread[ThreadPool-2 (stdout-#51 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h39m 1s 79 Thread[Timer-0,5,main] No file monitor activity since 2025773ms.
+3h40m14s253 Thread[WorkerThread-1,2,main] Using built-in SSH client
+3h40m14s254 Thread[WorkerThread-1,2,main] Executing #52 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+3h40m15s237 Thread[ThreadPool-4 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h40m15s238 Thread[ThreadPool-4 (smartgit.aqj),5,main]  credentials: command=store; id=3036569156963227236;protocol=https;host=github.com;path=null;username=<set>
+3h40m15s283 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+3h40m15s285 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+3h40m15s303 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+3h40m15s306 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=37)
+3h40m15s307 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+3h40m15s317 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 12ms post-processing
+3h42m12s733 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h42m12s751 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h42m12s752 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #53 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h42m13s738 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h42m13s738 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=3439732603754131213;protocol=https;host=github.com;path=null;username=<set>
+3h42m13s754 Thread[ThreadPool-2 (stdout-#53 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h45m 1s 80 Thread[Timer-0,5,main] No file monitor activity since 285797ms.
+3h47m22s736 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h47m22s751 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h47m22s752 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #54 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h47m23s740 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h47m23s740 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=9156027458268530122;protocol=https;host=github.com;path=null;username=<set>
+3h47m23s754 Thread[ThreadPool-2 (stdout-#54 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h48m 1s 81 Thread[Timer-0,5,main] No file monitor activity since 465797ms.
+3h51m 1s 82 Thread[Timer-0,5,main] No file monitor activity since 645798ms.
+3h52m32s743 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h52m32s759 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h52m32s760 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #55 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h52m33s997 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h52m33s998 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=2871913737660417156;protocol=https;host=github.com;path=null;username=<set>
+3h52m34s 12 Thread[ThreadPool-2 (stdout-#55 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+3h54m 1s 83 Thread[Timer-0,5,main] No file monitor activity since 825800ms.
+3h57m 1s 84 Thread[Timer-0,5,main] No file monitor activity since 1005800ms.
+3h57m42s752 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+3h57m42s764 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+3h57m42s764 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #56 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3h57m43s779 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+3h57m43s779 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=1441962865616646191;protocol=https;host=github.com;path=null;username=<set>
+3h57m43s797 Thread[ThreadPool-2 (stdout-#56 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h 0m 1s 84 Thread[Timer-0,5,main] No file monitor activity since 1185801ms.
+4h 2m52s763 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h 2m52s778 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h 2m52s779 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #57 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h 2m53s798 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h 2m53s799 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=2347506795404512968;protocol=https;host=github.com;path=null;username=<set>
+4h 2m53s816 Thread[ThreadPool-2 (stdout-#57 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h 3m 1s 84 Thread[Timer-0,5,main] No file monitor activity since 1365801ms.
+4h 6m 1s 84 Thread[Timer-0,5,main] No file monitor activity since 1545801ms.
+4h 8m 2s775 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h 8m 2s803 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h 8m 2s803 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #58 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h 8m 3s786 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h 8m 3s789 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=1811859347758953950;protocol=https;host=github.com;path=null;username=<set>
+4h 8m 3s805 Thread[ThreadPool-2 (stdout-#58 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h 9m 1s 84 Thread[Timer-0,5,main] No file monitor activity since 1725801ms.
+4h10m14s256 Thread[WorkerThread-1,2,main] Using built-in SSH client
+4h10m14s257 Thread[WorkerThread-1,2,main] Executing #59 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+4h10m15s280 Thread[ThreadPool-4 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h10m15s280 Thread[ThreadPool-4 (smartgit.aqj),5,main]  credentials: command=store; id=3771094213080569968;protocol=https;host=github.com;path=null;username=<set>
+4h10m15s374 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+4h10m15s376 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+4h10m15s393 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+4h10m15s395 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=38)
+4h10m15s396 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h10m15s404 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 9ms post-processing
+4h13m12s781 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h13m12s794 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h13m12s795 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #60 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h13m13s825 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h13m13s826 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=6860596357288366879;protocol=https;host=github.com;path=null;username=<set>
+4h13m13s841 Thread[ThreadPool-2 (stdout-#60 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h15m 1s 85 Thread[Timer-0,5,main] No file monitor activity since 285711ms.
+4h18m 1s 85 Thread[Timer-0,5,main] No file monitor activity since 465711ms.
+4h18m22s787 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h18m22s801 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h18m22s802 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #61 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h18m23s850 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h18m23s851 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=3486764755268342930;protocol=https;host=github.com;path=null;username=<set>
+4h18m23s867 Thread[ThreadPool-2 (stdout-#61 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h21m 1s 85 Thread[Timer-0,5,main] No file monitor activity since 645711ms.
+4h21m48s218 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h21m48s249 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+4h21m48s251 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=39)
+4h21m48s252 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h21m48s271 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 33ms, additional 20ms post-processing
+4h21m54s927 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h21m54s949 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h21m54s951 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=40)
+4h21m54s952 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h21m54s967 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 24ms, additional 15ms post-processing
+4h23m32s794 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h23m32s806 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h23m32s806 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #62 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h23m33s810 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h23m33s811 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=7773497377187196671;protocol=https;host=github.com;path=null;username=<set>
+4h23m33s826 Thread[ThreadPool-2 (stdout-#62 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h24m 0s204 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h24m 0s239 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h24m 0s241 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=41)
+4h24m 0s246 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h24m 0s280 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 37ms, additional 39ms post-processing
+4h24m24s 28 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h24m24s 42 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h24m24s 43 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=42)
+4h24m24s 44 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h24m24s 57 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 15ms, additional 14ms post-processing
+4h26m 4s279 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h26m 4s296 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h26m 4s298 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=43)
+4h26m 4s300 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h26m 4s317 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 19ms post-processing
+4h27m10s964 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h27m10s992 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h27m10s994 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=44)
+4h27m10s995 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h27m11s 11 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 30ms, additional 17ms post-processing
+4h28m42s803 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h28m42s815 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h28m42s816 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #63 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h28m43s813 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h28m43s813 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=2452581755266280689;protocol=https;host=github.com;path=null;username=<set>
+4h28m43s827 Thread[ThreadPool-2 (stdout-#63 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h28m48s902 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+4h28m48s925 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h28m48s927 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=45)
+4h28m48s928 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h28m48s953 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 24ms, additional 27ms post-processing
+4h33m 1s 86 Thread[Timer-0,5,main] No file monitor activity since 253183ms.
+4h33m52s809 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h33m52s827 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h33m52s827 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #64 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h33m53s894 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h33m53s895 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=6601208174365764536;protocol=https;host=github.com;path=null;username=<set>
+4h33m53s908 Thread[ThreadPool-2 (stdout-#64 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h33m58s 30 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h33m58s 47 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h33m58s 51 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=46)
+4h33m58s 53 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h33m58s 76 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 28ms post-processing
+4h37m54s462 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /main.py<empty>, /errors/errors.py~<infinity>, /main.py~<infinity>, /errors/errors.py<empty>]
+4h37m54s477 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h37m54s479 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=47)
+4h37m54s481 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h37m54s500 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 17ms, additional 20ms post-processing
+4h38m55s936 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h38m55s962 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h38m55s965 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=48)
+4h38m55s966 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h38m55s983 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 28ms, additional 19ms post-processing
+4h39m 2s819 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h39m 2s826 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h39m 2s827 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #65 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h39m 3s847 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h39m 3s847 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=8926572183370638516;protocol=https;host=github.com;path=null;username=<set>
+4h39m 3s862 Thread[ThreadPool-2 (stdout-#65 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h39m22s 70 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+4h39m22s 86 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+4h39m22s 88 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=49)
+4h39m22s 89 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h39m22s102 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 17ms, additional 15ms post-processing
+4h39m39s695 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h39m39s719 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+4h39m39s721 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=50)
+4h39m39s723 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h39m39s737 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 26ms, additional 16ms post-processing
+4h40m14s259 Thread[WorkerThread-1,2,main] Using built-in SSH client
+4h40m14s260 Thread[WorkerThread-1,2,main] Executing #66 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+4h40m15s256 Thread[ThreadPool-4 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h40m15s256 Thread[ThreadPool-4 (smartgit.aqj),5,main]  credentials: command=store; id=8948675590709888698;protocol=https;host=github.com;path=null;username=<set>
+4h40m15s350 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+4h40m15s351 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+4h40m15s366 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h40m15s367 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=51)
+4h40m15s368 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h40m15s379 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 16ms, additional 12ms post-processing
+4h40m42s590 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h40m42s606 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h40m42s609 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=52)
+4h40m42s610 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h40m42s622 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 14ms post-processing
+4h40m51s  2 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h40m51s 20 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h40m51s 21 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=53)
+4h40m51s 22 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h40m51s 35 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 14ms post-processing
+4h41m17s834 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h41m17s852 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h41m17s853 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=54)
+4h41m17s854 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h41m17s866 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 12ms post-processing
+4h42m 8s697 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h42m 8s723 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h42m 8s725 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=55)
+4h42m 8s727 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h42m 8s739 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 28ms, additional 14ms post-processing
+4h44m12s824 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h44m12s843 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h44m12s844 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #67 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h44m13s880 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h44m13s880 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=5955673854616354065;protocol=https;host=github.com;path=null;username=<set>
+4h44m13s895 Thread[ThreadPool-2 (stdout-#67 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h48m 1s 87 Thread[Timer-0,5,main] No file monitor activity since 354391ms.
+4h49m22s828 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h49m22s842 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h49m22s843 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #68 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h49m23s846 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h49m23s846 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=6236507525823713604;protocol=https;host=github.com;path=null;username=<set>
+4h49m23s862 Thread[ThreadPool-2 (stdout-#68 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h51m 1s 87 Thread[Timer-0,5,main] No file monitor activity since 534392ms.
+4h53m38s562 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+4h53m38s582 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+4h53m38s583 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=56)
+4h53m38s584 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+4h53m38s599 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 16ms post-processing
+4h54m32s834 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h54m32s851 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h54m32s852 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #69 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h54m33s895 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h54m33s895 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=7792024552264266707;protocol=https;host=github.com;path=null;username=<set>
+4h54m33s908 Thread[ThreadPool-2 (stdout-#69 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+4h57m 1s 89 Thread[Timer-0,5,main] No file monitor activity since 203529ms.
+4h59m42s842 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+4h59m42s857 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+4h59m42s858 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #70 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+4h59m43s843 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+4h59m43s843 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=6728143720349304108;protocol=https;host=github.com;path=null;username=<set>
+4h59m43s855 Thread[ThreadPool-2 (stdout-#70 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h 0m 1s 89 Thread[Timer-0,5,main] No file monitor activity since 383529ms.
+5h 0m35s 57 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h 0m35s 77 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 0m35s 78 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=57)
+5h 0m35s 80 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 0m35s 97 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 19ms post-processing
+5h 0m44s968 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 0m44s985 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h 0m44s987 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=58)
+5h 0m44s988 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 0m45s  0 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 14ms post-processing
+5h 1m 9s303 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m 9s318 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 1m 9s319 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=59)
+5h 1m 9s320 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m 9s339 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 16ms, additional 20ms post-processing
+5h 1m16s310 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m16s324 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h 1m16s325 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=60)
+5h 1m16s327 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m16s340 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 15ms, additional 15ms post-processing
+5h 1m24s422 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m24s439 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h 1m24s440 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=61)
+5h 1m24s441 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m24s459 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 19ms post-processing
+5h 1m31s 31 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m31s 47 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 1m31s 48 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=62)
+5h 1m31s 49 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m31s 63 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 17ms, additional 15ms post-processing
+5h 1m39s 42 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m39s 59 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 1m39s 60 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=63)
+5h 1m39s 62 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m39s 74 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 14ms post-processing
+5h 1m44s749 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m44s766 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h 1m44s767 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=64)
+5h 1m44s769 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m44s783 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 16ms post-processing
+5h 1m54s866 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 1m54s884 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 1m54s885 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=65)
+5h 1m54s887 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 1m54s903 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 17ms post-processing
+5h 2m26s607 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 2m26s639 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 2m26s641 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=66)
+5h 2m26s642 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 2m26s653 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 34ms, additional 12ms post-processing
+5h 2m56s854 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /errors/errors.py~<infinity>, /errors/errors.py<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 2m56s873 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h 2m56s875 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=67)
+5h 2m56s876 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 2m56s893 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 18ms post-processing
+5h 3m18s178 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h 3m18s197 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h 3m18s198 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=68)
+5h 3m18s199 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h 3m18s210 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 20ms, additional 12ms post-processing
+5h 4m52s851 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5h 4m52s869 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5h 4m52s870 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #71 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5h 4m53s851 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h 4m53s852 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=6826175763321773296;protocol=https;host=github.com;path=null;username=<set>
+5h 4m53s866 Thread[ThreadPool-2 (stdout-#71 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h 9m 1s 90 Thread[Timer-0,5,main] No file monitor activity since 346315ms.
+5h10m 2s854 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5h10m 2s861 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5h10m 2s861 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #72 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5h10m 3s858 Thread[ThreadPool-5 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h10m 3s858 Thread[ThreadPool-5 (smartgit.aqj),5,main]  credentials: command=store; id=200474004310177709;protocol=https;host=github.com;path=null;username=<set>
+5h10m 3s875 Thread[ThreadPool-2 (stdout-#72 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h12m 1s 91 Thread[Timer-0,5,main] No file monitor activity since 526316ms.
+5h14m36s610 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h14m36s627 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h14m36s630 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=69)
+5h14m36s632 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h14m36s648 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 19ms post-processing
+5h15m12s858 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5h15m12s872 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5h15m12s873 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #73 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5h15m13s885 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h15m13s885 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=4533010451684151471;protocol=https;host=github.com;path=null;username=<set>
+5h15m13s899 Thread[ThreadPool-2 (stdout-#73 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h15m14s258 Thread[WorkerThread-1,2,main] Using built-in SSH client
+5h15m14s259 Thread[WorkerThread-1,2,main] Executing #74 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+5h15m15s286 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h15m15s286 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=3255342153734204074;protocol=https;host=github.com;path=null;username=<set>
+5h15m15s365 Thread[WorkerThread-1,2,main] Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+5h15m15s366 Thread[WorkerThread-1,2,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5h15m15s377 Thread[WorkerThread-1,2,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h15m15s378 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=70)
+5h15m15s379 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h15m15s386 Thread[WorkerThread-1,2,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 13ms, additional 8ms post-processing
+5h16m44s395 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+5h16m44s405 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h16m44s407 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=71)
+5h16m44s408 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h16m44s420 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 11ms, additional 14ms post-processing
+5h17m29s559 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/main.py<empty>, /errors/errors.py~<infinity>, /errors/__init__.py~<infinity>, /main.py~<infinity>, /errors/errors.py<empty>, /errors/__init__.py<empty>]
+5h17m29s577 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h17m29s578 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=72)
+5h17m29s579 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h17m29s594 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 16ms post-processing
+5h18m23s833 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h18m23s852 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h18m23s854 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=73)
+5h18m23s855 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h18m23s867 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 13ms post-processing
+5h18m42s561 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h18m42s580 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h18m42s582 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=74)
+5h18m42s583 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h18m42s595 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 13ms post-processing
+5h18m48s368 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h18m48s387 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h18m48s388 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=75)
+5h18m48s389 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h18m48s405 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 20ms, additional 17ms post-processing
+5h19m 5s694 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h19m 5s711 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h19m 5s713 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=76)
+5h19m 5s714 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h19m 5s725 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 12ms post-processing
+5h19m50s368 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/__init__.py~<infinity>, /errors/__init__.py<empty>]
+5h19m50s386 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h19m50s387 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=77)
+5h19m50s388 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h19m50s403 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 19ms, additional 15ms post-processing
+5h20m22s867 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5h20m22s881 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5h20m22s882 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #75 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5h20m23s871 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h20m23s871 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=7356684000136089021;protocol=https;host=github.com;path=null;username=<set>
+5h20m23s886 Thread[ThreadPool-2 (stdout-#75 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h20m59s465 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/__init__.py~<infinity>, /errors/__init__.py<empty>]
+5h20m59s482 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h20m59s483 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=78)
+5h20m59s484 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h20m59s495 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 12ms post-processing
+5h21m53s137 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h21m53s157 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h21m53s158 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=79)
+5h21m53s159 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h21m53s170 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 12ms post-processing
+5h22m15s 67 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h22m15s 86 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h22m15s 87 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=80)
+5h22m15s 89 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h22m15s101 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 20ms, additional 14ms post-processing
+5h22m32s593 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h22m32s612 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 3ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 3ms reflog, 0ms assertions)
+5h22m32s615 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=81)
+5h22m32s616 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h22m32s629 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 15ms post-processing
+5h22m55s622 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>]
+5h22m55s653 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5h22m55s657 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=82)
+5h22m55s659 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h22m55s675 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 32ms, additional 21ms post-processing
+5h25m32s877 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5h25m32s890 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5h25m32s890 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #76 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5h25m33s901 Thread[ThreadPool-0 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h25m33s901 Thread[ThreadPool-0 (smartgit.aqj),5,main]  credentials: command=store; id=3034817563073093861;protocol=https;host=github.com;path=null;username=<set>
+5h25m33s914 Thread[ThreadPool-2 (stdout-#76 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h27m 1s 91 Thread[Timer-0,5,main] No file monitor activity since 247070ms.
+5h28m31s482 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/parser/parser.py~<infinity>, /parser/parser.py<empty>, /errors/errors.py~<infinity>, /errors/errors.py<empty>]
+5h28m31s501 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h28m31s502 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=83)
+5h28m31s503 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h28m31s518 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 20ms, additional 16ms post-processing
+5h29m15s641 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>, /FXlang_samples/tmp.fx~<infinity>]
+5h29m15s658 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 4 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h29m15s660 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=84)
+5h29m15s661 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h29m15s671 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 12ms post-processing
+5h30m42s885 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Running background poll: [/home/riddle/pro/uni-compilers]
+5h30m42s897 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Using built-in SSH client
+5h30m42s897 Thread[ThreadPool-6 (smartgit.bxo$$Lambda$524/0x000000010044f040),5,main] Executing #77 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5h30m43s892 Thread[ThreadPool-3 (smartgit.aqj),5,main] Received command 'get-credentials-helper'
+5h30m43s893 Thread[ThreadPool-3 (smartgit.aqj),5,main]  credentials: command=store; id=7643357316330398346;protocol=https;host=github.com;path=null;username=<set>
+5h30m43s908 Thread[ThreadPool-2 (stdout-#77 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste),5,main] stdout: 152f5fd57783bda8b5e458aafc6802b037f127e1	refs/heads/master
+5h30m51s787 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5h30m51s804 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 5 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+5h30m51s805 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=85)
+5h30m51s807 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h30m51s816 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 10ms post-processing
+5h30m54s794 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5h30m54s813 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (201 nodes, 5 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h30m54s815 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=86)
+5h30m54s818 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h30m54s839 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 23ms post-processing
+5h31m 6s715 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5h31m 6s731 Thread[ThreadPool-6 (Refresh-0),5,main] Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 2 roots
+5h31m 6s733 Thread[ThreadPool-6 (Refresh-0),5,main] Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 2ms)
+5h31m 6s734 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 3ms (202 nodes, 5 refs, 2ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+5h31m 6s736 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=87)
+5h31m 6s737 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h31m 6s747 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 21ms, additional 11ms post-processing
+5h31m13s921 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5h31m13s938 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (202 nodes, 6 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+5h31m13s939 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=88)
+5h31m13s940 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h31m13s953 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (36 entries) in 18ms, additional 14ms post-processing
+5h31m18s831 Thread[ThreadPool-6 (Refresh-0),5,main] Local refresh started for /home/riddle/pro/uni-compilers [/errors/__init__.py<infinity>, /errors/errors.py<infinity>, /<empty>, /parser/parser.py<infinity>, /main.py<infinity>, /FXlang_samples/tmp.fx<infinity>]
+5h31m18s852 Thread[ThreadPool-6 (Refresh-0),5,main] Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (202 nodes, 6 refs, 0ms walk of 2 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5h31m18s854 Thread[main,5,main] Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=89)
+5h31m18s857 Thread[main,5,main] root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5h31m18s869 Thread[ThreadPool-6 (Refresh-0),5,main] Refresh finished for /home/riddle/pro/uni-compilers (34 entries) in 22ms, additional 16ms post-processing
+5h31m50s669 Thread[SIGHUP handler,9,system] Started hook Background fetch
+5h31m50s714 Thread[SIGHUP handler,9,system] Started hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+5h31m50s714 Thread[SIGHUP handler,9,system] Started hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1574141763577.tmp
+5h31m50s717 Thread[SIGHUP handler,9,system] Started hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+5h31m50s718 Thread[SIGHUP handler,9,system] Started hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock

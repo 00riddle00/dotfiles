@@ -1,5 +1,5 @@
 gitRootSettingsSet:
-  roots: [~/pro/uni-block]
+  roots: [~/pro/uni-compilers]
   root/home/riddle/pro/uni-block2:
     databaseCleanup: {}
     log:
@@ -24,6 +24,16 @@ gitRootSettingsSet:
     databaseCleanup: {}
     log:
       rootSettings: {baseRoots: 'ref://HEAD', extendedRoots: ''}
+      fileFilterConfiguration: {}
+    merge:
+      logRootSettings: {}
+    push: {}
+    commitNotes: {}
+    journal: {}
+  root/home/riddle/pro/uni-compilers:
+    databaseCleanup: {}
+    log:
+      rootSettings: {}
       fileFilterConfiguration: {}
     merge:
       logRootSettings: {}

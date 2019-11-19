@@ -15,9 +15,9 @@ columns:
     visibleColumnNames: "Name\tRelative Directory\tState"
     columnWidths:
     - {id: Name, width: 200, width2x: 0}
-    - {id: Relative Path, width: 500, width2x: 0}
     - {id: State, width: 75, width2x: 0}
     - {id: Relative Directory, width: 1315, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
     sortOrders:
     - {id: State, reverse: false}
     - {id: Name, reverse: false}
@@ -28,10 +28,10 @@ gitViewFileFilter: {viewRecursive: true, viewFromSubmodules: true, viewIgnoredFi
 hgViewFileFilter: {}
 deepGitUiConfiguration: {}
 confirmations: {remove.repositoryOrGroup: true, docking.closed: true}
-gitProjectLayout.main: (([+319x365:directories ][+319x610:branches ])(([+1594x350:files
-  ][-2x1:message ])[+1594x427:changes ]([+1594x195:outgoing ][-3x1:output ])))
+gitProjectLayout.main: (([+319x354:directories ][+319x591:branches ])(([+1594x339:files
+  ][-2x1:message ])[+1594x414:changes ]([+1594x189:outgoing ][-3x1:output ])))
 gitProjectLayout.mainIsdefault: true
 gitProjectLayout.review: ([+2x1:directories ][+7x1:files ][+3x1:message ])[+10x3:changes
   ]([-1x1:branches ][-3x1:outgoing ][-3x1:output ])
-lastRepositoryPath: /home/riddle/pro/uni-block
+lastRepositoryPath: /home/riddle/pro/uni-compilers
 git.remove.deleteLocalFile: false
