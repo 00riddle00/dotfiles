@@ -367,6 +367,7 @@ Plugin 'mxw/vim-jsx'
 " ==== PLUGIN SYNTAXES ====
 Plugin 'cakebaker/scss-syntax.vim'
 
+Plugin 'vim-scripts/bnf.vim'
 
 Plugin 'hdima/python-syntax'
 let g:python_highlight_all = 1

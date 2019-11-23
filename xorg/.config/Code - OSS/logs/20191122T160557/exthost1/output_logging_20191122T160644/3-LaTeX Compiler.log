@@ -1,0 +1,711 @@
+ReadyLatexmk: This is Latexmk, John Collins, 18 June 2019, version: 4.65.
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+Latexmk: ===For rule 'latex', the extensions differ between the
+   actual output file 'pvz.pdf',
+   and the expected output '/home/riddle/pro/LaTex3/pvz.dvi'.
+   Rule structure will be changed suitably.
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+Latexmk: ===For rule 'xelatex', the extensions differ between the
+   actual output file 'pvz.pdf',
+   and the expected output '/home/riddle/pro/LaTex3/pvz.xdv'.
+   Rule structure will be changed suitably.
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Rule 'bibtex pvz': The following rules & subrules became out-of-date:
+      'bibtex pvz'
+------------
+Run number 1 of rule 'bibtex pvz'
+------------
+------------
+Running 'bibtex  "pvz"'
+------------
+Latexmk: applying rule 'bibtex pvz'...
+For rule 'bibtex pvz', running '&run_bibtex(  )' ...
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+The top-level auxiliary file: pvz.aux
+The style file: plain.bst
+Database file #1: x.bib
+You're missing a field name---line 7 of file x.bib
+ :   
+ :   %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)
+Collected error summary (may duplicate other messages):
+  bibtex pvz: Bibtex errors: See file 'pvz.blg'
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs, or warnings treated as errors.
+Latexmk: Errors, so I did not complete making targets
+Latexmk: This is Latexmk, John Collins, 18 June 2019, version: 4.65.
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder -output-directory="/home/riddle/pro/LaTex3"  "/home/riddle/pro/LaTex3/pvz.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/home/riddle/pro/LaTex3/pvz.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.def (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.dfu)) (/usr/share/texmf-dist/tex/latex/lm/l7xlmr.fd)
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/n' undefined
+(Font)              using `L7x/lmr/m/n' instead on input line 105.
+
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty (/usr/share/texmf-dist/tex/generic/babel/switch.def) (/usr/share/texmf-dist/tex/latex/lithuanian/lithuanian.ldf (/usr/share/texmf-dist/tex/generic/babel/babel.def (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)))) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty (/usr/share/texmf-dist/tex/latex/graphics/trig.sty) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/usr/share/texmf-dist/tex/latex/oberdiek/picture.sty) (/usr/share/texmf-dist/tex/latex/graphics/color.sty (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg)) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty) (/usr/share/texmf-dist/tex/latex/tools/bm.sty)
+
+LaTeX Warning: File `x.bib' already exists on the system.
+               Not generating it from this source.
+
+(/home/riddle/pro/LaTex3/pvz.aux) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty)))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty)) (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/usr/share/texmf-dist/tex/latex/base/ulasy.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `GITA' undefined on input line 75.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/bx/n' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 77.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/it' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 83.
+
+
+LaTeX Warning: Reference `eq:1' on page 1 undefined on input line 119.
+
+
+LaTeX Warning: Reference `eq:2' on page 1 undefined on input line 120.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (261.91484pt too wide) detected at line 165
+[]
+[2]
+
+LaTeX Warning: Reference `prop:1' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Reference `thm:1' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 205.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+No file pvz.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[3] (/home/riddle/pro/LaTex3/pvz.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/riddle/pro/LaTex3/pvz.pdf (3 pages, 156693 bytes).
+SyncTeX written on /home/riddle/pro/LaTex3/pvz.synctex.gz.
+Transcript written on /home/riddle/pro/LaTex3/pvz.log.
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: References changed.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+  Reference `eq:1' on page 1 undefined on input line 119
+  Reference `eq:1' on page 3 undefined on input line 205
+  Reference `eq:2' on page 1 undefined on input line 120
+  Reference `prop:1' on page 3 undefined on input line 203
+  Reference `thm:1' on page 3 undefined on input line 203
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Rule 'bibtex pvz': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'pvz.aux'
+------------
+Run number 1 of rule 'bibtex pvz'
+------------
+------------
+Running 'bibtex  "pvz"'
+------------
+Latexmk: applying rule 'bibtex pvz'...
+For rule 'bibtex pvz', running '&run_bibtex(  )' ...
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+The top-level auxiliary file: pvz.aux
+The style file: plain.bst
+Database file #1: x.bib
+You're missing a field name---line 7 of file x.bib
+ :   
+ :   %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)
+Latexmk: Summary of warnings from last run of (pdf)latex:
+  Latex failed to resolve 5 reference(s)
+  Latex failed to resolve 5 citation(s)
+Collected error summary (may duplicate other messages):
+  bibtex pvz: Bibtex errors: See file 'pvz.blg'
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs, or warnings treated as errors.
+Latexmk: Errors, so I did not complete making targets
+Latexmk: This is Latexmk, John Collins, 18 June 2019, version: 4.65.
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      '/home/riddle/pro/LaTex3/pvz.aux'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder -output-directory="/home/riddle/pro/LaTex3"  "/home/riddle/pro/LaTex3/pvz.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/home/riddle/pro/LaTex3/pvz.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.def (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.dfu)) (/usr/share/texmf-dist/tex/latex/lm/l7xlmr.fd)
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/n' undefined
+(Font)              using `L7x/lmr/m/n' instead on input line 105.
+
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty (/usr/share/texmf-dist/tex/generic/babel/switch.def) (/usr/share/texmf-dist/tex/latex/lithuanian/lithuanian.ldf (/usr/share/texmf-dist/tex/generic/babel/babel.def (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)))) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty (/usr/share/texmf-dist/tex/latex/graphics/trig.sty) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/usr/share/texmf-dist/tex/latex/oberdiek/picture.sty) (/usr/share/texmf-dist/tex/latex/graphics/color.sty (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg)) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty) (/usr/share/texmf-dist/tex/latex/tools/bm.sty)
+
+LaTeX Warning: File `x.bib' already exists on the system.
+               Not generating it from this source.
+
+(/home/riddle/pro/LaTex3/pvz.aux) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty)))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty)) (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/usr/share/texmf-dist/tex/latex/base/ulasy.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `GITA' undefined on input line 75.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/bx/n' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 77.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/it' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 83.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (261.91484pt too wide) detected at line 165
+[]
+[2]
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+(/home/riddle/pro/LaTex3/pvz.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[3] (/home/riddle/pro/LaTex3/pvz.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/riddle/pro/LaTex3/pvz.pdf (3 pages, 159534 bytes).
+SyncTeX written on /home/riddle/pro/LaTex3/pvz.synctex.gz.
+Transcript written on /home/riddle/pro/LaTex3/pvz.log.
+Latexmk: Found input bbl file 'pvz.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Rule 'bibtex pvz': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'pvz.aux'
+------------
+Run number 1 of rule 'bibtex pvz'
+------------
+------------
+Running 'bibtex  "pvz"'
+------------
+Latexmk: applying rule 'bibtex pvz'...
+For rule 'bibtex pvz', running '&run_bibtex(  )' ...
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+The top-level auxiliary file: pvz.aux
+The style file: plain.bst
+Database file #1: x.bib
+You're missing a field name---line 7 of file x.bib
+ :   
+ :   %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)
+Latexmk: Summary of warnings from last run of (pdf)latex:
+  Latex failed to resolve 5 citation(s)
+Collected error summary (may duplicate other messages):
+  bibtex pvz: Bibtex errors: See file 'pvz.blg'
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs, or warnings treated as errors.
+Latexmk: Errors, so I did not complete making targets
+Latexmk: This is Latexmk, John Collins, 18 June 2019, version: 4.65.
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder -output-directory="/home/riddle/pro/LaTex3"  "/home/riddle/pro/LaTex3/pvz.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/home/riddle/pro/LaTex3/pvz.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.def (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.dfu)) (/usr/share/texmf-dist/tex/latex/lm/l7xlmr.fd)
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/n' undefined
+(Font)              using `L7x/lmr/m/n' instead on input line 105.
+
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty (/usr/share/texmf-dist/tex/generic/babel/switch.def) (/usr/share/texmf-dist/tex/latex/lithuanian/lithuanian.ldf (/usr/share/texmf-dist/tex/generic/babel/babel.def (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)))) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty (/usr/share/texmf-dist/tex/latex/graphics/trig.sty) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/usr/share/texmf-dist/tex/latex/oberdiek/picture.sty) (/usr/share/texmf-dist/tex/latex/graphics/color.sty (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg)) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty) (/usr/share/texmf-dist/tex/latex/tools/bm.sty)
+
+LaTeX Warning: File `x.bib' already exists on the system.
+               Not generating it from this source.
+
+(/home/riddle/pro/LaTex3/pvz.aux) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty)))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty)) (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/usr/share/texmf-dist/tex/latex/base/ulasy.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `GITA' undefined on input line 75.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/bx/n' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 77.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/it' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 83.
+
+
+LaTeX Warning: Reference `eq:1' on page 1 undefined on input line 119.
+
+
+LaTeX Warning: Reference `eq:2' on page 1 undefined on input line 120.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (261.91484pt too wide) detected at line 165
+[]
+[2]
+
+LaTeX Warning: Reference `prop:1' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Reference `thm:1' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 205.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+No file pvz.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[3] (/home/riddle/pro/LaTex3/pvz.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/riddle/pro/LaTex3/pvz.pdf (3 pages, 156693 bytes).
+SyncTeX written on /home/riddle/pro/LaTex3/pvz.synctex.gz.
+Transcript written on /home/riddle/pro/LaTex3/pvz.log.
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: References changed.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+  Reference `eq:1' on page 1 undefined on input line 119
+  Reference `eq:1' on page 3 undefined on input line 205
+  Reference `eq:2' on page 1 undefined on input line 120
+  Reference `prop:1' on page 3 undefined on input line 203
+  Reference `thm:1' on page 3 undefined on input line 203
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Rule 'bibtex pvz': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'pvz.aux'
+------------
+Run number 1 of rule 'bibtex pvz'
+------------
+------------
+Running 'bibtex  "pvz"'
+------------
+Latexmk: applying rule 'bibtex pvz'...
+For rule 'bibtex pvz', running '&run_bibtex(  )' ...
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+The top-level auxiliary file: pvz.aux
+The style file: plain.bst
+Database file #1: x.bib
+You're missing a field name---line 7 of file x.bib
+ :   
+ :   %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)
+Latexmk: Summary of warnings from last run of (pdf)latex:
+  Latex failed to resolve 5 reference(s)
+  Latex failed to resolve 5 citation(s)
+Collected error summary (may duplicate other messages):
+  bibtex pvz: Bibtex errors: See file 'pvz.blg'
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs, or warnings treated as errors.
+Latexmk: Errors, so I did not complete making targets
+Latexmk: This is Latexmk, John Collins, 18 June 2019, version: 4.65.
+Rule 'pdflatex': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      '/home/riddle/pro/LaTex3/pvz.aux'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder -output-directory="/home/riddle/pro/LaTex3"  "/home/riddle/pro/LaTex3/pvz.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/home/riddle/pro/LaTex3/pvz.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.def (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.dfu)) (/usr/share/texmf-dist/tex/latex/lm/l7xlmr.fd)
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/n' undefined
+(Font)              using `L7x/lmr/m/n' instead on input line 105.
+
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty (/usr/share/texmf-dist/tex/generic/babel/switch.def) (/usr/share/texmf-dist/tex/latex/lithuanian/lithuanian.ldf (/usr/share/texmf-dist/tex/generic/babel/babel.def (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)))) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty (/usr/share/texmf-dist/tex/latex/graphics/trig.sty) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/usr/share/texmf-dist/tex/latex/oberdiek/picture.sty) (/usr/share/texmf-dist/tex/latex/graphics/color.sty (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg)) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty) (/usr/share/texmf-dist/tex/latex/tools/bm.sty)
+
+LaTeX Warning: File `x.bib' already exists on the system.
+               Not generating it from this source.
+
+(/home/riddle/pro/LaTex3/pvz.aux) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty)))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty)) (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/usr/share/texmf-dist/tex/latex/base/ulasy.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `GITA' undefined on input line 75.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/bx/n' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 77.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/it' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 83.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (261.91484pt too wide) detected at line 165
+[]
+[2]
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+(/home/riddle/pro/LaTex3/pvz.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[3] (/home/riddle/pro/LaTex3/pvz.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/riddle/pro/LaTex3/pvz.pdf (3 pages, 159534 bytes).
+SyncTeX written on /home/riddle/pro/LaTex3/pvz.synctex.gz.
+Transcript written on /home/riddle/pro/LaTex3/pvz.log.
+Latexmk: Found input bbl file 'pvz.bbl'
+Latexmk: References changed.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Rule 'bibtex pvz': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'pvz.aux'
+------------
+Run number 1 of rule 'bibtex pvz'
+------------
+------------
+Running 'bibtex  "pvz"'
+------------
+Latexmk: applying rule 'bibtex pvz'...
+For rule 'bibtex pvz', running '&run_bibtex(  )' ...
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+The top-level auxiliary file: pvz.aux
+The style file: plain.bst
+Database file #1: x.bib
+You're missing a field name---line 7 of file x.bib
+ :   
+ :   %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)
+Latexmk: Summary of warnings from last run of (pdf)latex:
+  Latex failed to resolve 5 citation(s)
+Collected error summary (may duplicate other messages):
+  bibtex pvz: Bibtex errors: See file 'pvz.blg'
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs, or warnings treated as errors.
+Latexmk: Errors, so I did not complete making targets
+Latexmk: This is Latexmk, John Collins, 18 June 2019, version: 4.65.
+Rule 'pdflatex': The following rules & subrules became out-of-date:
+      'pdflatex'
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder -output-directory="/home/riddle/pro/LaTex3"  "/home/riddle/pro/LaTex3/pvz.tex"'
+------------
+Latexmk: applying rule 'pdflatex'...
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/home/riddle/pro/LaTex3/pvz.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.def (/usr/share/texmf-dist/tex/latex/lithuanian/l7xenc.dfu)) (/usr/share/texmf-dist/tex/latex/lm/l7xlmr.fd)
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/n' undefined
+(Font)              using `L7x/lmr/m/n' instead on input line 105.
+
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty (/usr/share/texmf-dist/tex/generic/babel/switch.def) (/usr/share/texmf-dist/tex/latex/lithuanian/lithuanian.ldf (/usr/share/texmf-dist/tex/generic/babel/babel.def (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)))) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty (/usr/share/texmf-dist/tex/latex/graphics/trig.sty) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def))) (/usr/share/texmf-dist/tex/latex/base/latexsym.sty) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/usr/share/texmf-dist/tex/latex/oberdiek/picture.sty) (/usr/share/texmf-dist/tex/latex/graphics/color.sty (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg)) (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty) (/usr/share/texmf-dist/tex/latex/tools/bm.sty)
+
+LaTeX Warning: File `x.bib' already exists on the system.
+               Not generating it from this source.
+
+(/home/riddle/pro/LaTex3/pvz.aux) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty) (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty)))) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty)) (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/usr/share/texmf-dist/tex/latex/base/ulasy.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd)
+
+Package natbib Warning: Citation `GITA' undefined on input line 75.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/bx/n' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 77.
+
+
+LaTeX Font Warning: Font shape `L7x/cmr/m/it' undefined
+(Font)              using `L7x/cmr/m/n' instead on input line 83.
+
+
+LaTeX Warning: Reference `eq:1' on page 1 undefined on input line 119.
+
+
+LaTeX Warning: Reference `eq:2' on page 1 undefined on input line 120.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (261.91484pt too wide) detected at line 165
+[]
+[2]
+
+LaTeX Warning: Reference `prop:1' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Reference `thm:1' on page 3 undefined on input line 203.
+
+
+LaTeX Warning: Reference `eq:1' on page 3 undefined on input line 205.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GPAS' on page 3 undefined on input line 207.
+
+
+Package natbib Warning: Citation `GFUNKS' on page 3 undefined on input line 207.
+
+No file pvz.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[3] (/home/riddle/pro/LaTex3/pvz.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information){/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-l7x.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/riddle/pro/LaTex3/pvz.pdf (3 pages, 156693 bytes).
+SyncTeX written on /home/riddle/pro/LaTex3/pvz.synctex.gz.
+Transcript written on /home/riddle/pro/LaTex3/pvz.log.
+Latexmk: Non-existent bbl file 'pvz.bbl'
+ No file pvz.bbl.
+Latexmk: References changed.
+Latexmk: Log file says output to 'pvz.pdf'
+Latexmk: List of undefined refs and citations:
+  Citation `GFUNKS' on page 3 undefined on input line 207
+  Citation `GITA' undefined on input line 75
+  Citation `GPAS' on page 3 undefined on input line 207
+  Reference `eq:1' on page 1 undefined on input line 119
+  Reference `eq:1' on page 3 undefined on input line 205
+  Reference `eq:2' on page 1 undefined on input line 120
+  Reference `prop:1' on page 3 undefined on input line 203
+  Reference `thm:1' on page 3 undefined on input line 203
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [x.bib]
+Rule 'bibtex pvz': File changes, etc:
+   Changed files, or newly in use since previous run(s):
+      'pvz.aux'
+------------
+Run number 1 of rule 'bibtex pvz'
+------------
+------------
+Running 'bibtex  "pvz"'
+------------
+Latexmk: applying rule 'bibtex pvz'...
+For rule 'bibtex pvz', running '&run_bibtex(  )' ...
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+The top-level auxiliary file: pvz.aux
+The style file: plain.bst
+Database file #1: x.bib
+You're missing a field name---line 7 of file x.bib
+ :   
+ :   %note =         {\href{http://www.mii.lt/files/s_roman_mii_santrauka.pdf}{http://www.mii.lt/files/s\_roman\_mii\_santrauka.pdf}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+(There was 1 error message)
+Latexmk: Summary of warnings from last run of (pdf)latex:
+  Latex failed to resolve 5 reference(s)
+  Latex failed to resolve 5 citation(s)
+Collected error summary (may duplicate other messages):
+  bibtex pvz: Bibtex errors: See file 'pvz.blg'
+Latexmk: Use the -f option to force complete processing,
+ unless error was exceeding maximum runs, or warnings treated as errors.
+Latexmk: Errors, so I did not complete making targets

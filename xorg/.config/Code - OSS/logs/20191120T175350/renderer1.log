@@ -1,0 +1,122 @@
+[2019-11-20 17:53:51.652] [renderer1] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/riddle/Downloads/magnet_link.txt'
+[2019-11-20 17:53:51.653] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/riddle/Downloads/magnet_link.txt'
+[2019-11-20 17:54:06.604] [renderer1] [error] ENOENT: no such file or directory, open '/home/riddle/pro/LaTex/pvz.tex': Error: ENOENT: no such file or directory, open '/home/riddle/pro/LaTex/pvz.tex'
+	at Object.openSync (fs.js:447:3)
+	at Object.func (electron/js2c/asar.js:138:31)
+	at Object.func [as openSync] (electron/js2c/asar.js:138:31)
+	at Object.readFileSync (fs.js:349:35)
+	at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+	at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+	at SectionNodeProvider.buildModel (/home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/structure.js:58:26)
+	at /home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/docsymbol.js:15:76
+	at new Promise (<anonymous>)
+	at DocSymbolProvider.provideDocumentSymbols (/home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/docsymbol.js:14:16)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:559:323
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:52:363
+	at new Promise (<anonymous>)
+	at Object.t.asPromise (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:52:335)
+	at provideDocumentSymbols (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:559:294)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:577:725
+	at H._withAdapter (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:576:901)
+	at H.$provideDocumentSymbols (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:577:703)
+	at f._doInvokeHandler (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:646:285)
+	at f._invokeHandler (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:645:999)
+	at f._receiveRequest (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:644:613)
+	at f._receiveOneMessage (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:643:477)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:641:754
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at _.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:187:274)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:798:104
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at _.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:187:274)
+	at t.PersistentProtocol._receiveMessage (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:191:629)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:188:824
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at f.acceptChunk (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:184:737)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:184:89
+	at Socket.t (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:193:68)
+	at Socket.emit (events.js:200:13)
+	at addChunk (_stream_readable.js:294:12)
+	at readableAddChunk (_stream_readable.js:275:11)
+	at Socket.Readable.push (_stream_readable.js:210:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)
+[2019-11-20 17:54:09.842] [renderer1] [error] ENOENT: no such file or directory, open '/home/riddle/pro/LaTex/pvz.tex': Error: ENOENT: no such file or directory, open '/home/riddle/pro/LaTex/pvz.tex'
+	at Object.openSync (fs.js:447:3)
+	at Object.func (electron/js2c/asar.js:138:31)
+	at Object.func [as openSync] (electron/js2c/asar.js:138:31)
+	at Object.readFileSync (fs.js:349:35)
+	at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+	at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+	at SectionNodeProvider.buildModel (/home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/structure.js:58:26)
+	at /home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/docsymbol.js:15:76
+	at new Promise (<anonymous>)
+	at DocSymbolProvider.provideDocumentSymbols (/home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/docsymbol.js:14:16)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:559:323
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:52:363
+	at new Promise (<anonymous>)
+	at Object.t.asPromise (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:52:335)
+	at provideDocumentSymbols (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:559:294)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:577:725
+	at H._withAdapter (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:576:901)
+	at H.$provideDocumentSymbols (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:577:703)
+	at f._doInvokeHandler (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:646:285)
+	at f._invokeHandler (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:645:999)
+	at f._receiveRequest (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:644:613)
+	at f._receiveOneMessage (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:643:477)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:641:754
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at _.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:187:274)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:798:104
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at _.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:187:274)
+	at t.PersistentProtocol._receiveMessage (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:191:629)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:188:824
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at f.acceptChunk (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:184:737)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:184:89
+	at Socket.t (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:193:68)
+	at Socket.emit (events.js:200:13)
+	at addChunk (_stream_readable.js:294:12)
+	at readableAddChunk (_stream_readable.js:275:11)
+	at Socket.Readable.push (_stream_readable.js:210:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)
+[2019-11-20 17:54:14.163] [renderer1] [error] ENOENT: no such file or directory, open '/home/riddle/pro/LaTex/pvz.tex': Error: ENOENT: no such file or directory, open '/home/riddle/pro/LaTex/pvz.tex'
+	at Object.openSync (fs.js:447:3)
+	at Object.func (electron/js2c/asar.js:138:31)
+	at Object.func [as openSync] (electron/js2c/asar.js:138:31)
+	at Object.readFileSync (fs.js:349:35)
+	at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+	at Object.fs.readFileSync (electron/js2c/asar.js:580:40)
+	at SectionNodeProvider.buildModel (/home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/structure.js:58:26)
+	at /home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/docsymbol.js:15:76
+	at new Promise (<anonymous>)
+	at DocSymbolProvider.provideDocumentSymbols (/home/riddle/.vscode-oss/extensions/james-yu.latex-workshop-8.4.1/out/src/providers/docsymbol.js:14:16)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:559:323
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:52:363
+	at new Promise (<anonymous>)
+	at Object.t.asPromise (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:52:335)
+	at provideDocumentSymbols (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:559:294)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:577:725
+	at H._withAdapter (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:576:901)
+	at H.$provideDocumentSymbols (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:577:703)
+	at f._doInvokeHandler (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:646:285)
+	at f._invokeHandler (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:645:999)
+	at f._receiveRequest (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:644:613)
+	at f._receiveOneMessage (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:643:477)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:641:754
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at _.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:187:274)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:798:104
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at _.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:187:274)
+	at t.PersistentProtocol._receiveMessage (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:191:629)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:188:824
+	at l.fire (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47:207)
+	at f.acceptChunk (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:184:737)
+	at /usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:184:89
+	at Socket.t (/usr/lib/code/out/vs/workbench/services/extensions/node/extensionHostProcess.js:193:68)
+	at Socket.emit (events.js:200:13)
+	at addChunk (_stream_readable.js:294:12)
+	at readableAddChunk (_stream_readable.js:275:11)
+	at Socket.Readable.push (_stream_readable.js:210:10)
+	at Pipe.onStreamRead (internal/stream_base_commons.js:166:17)

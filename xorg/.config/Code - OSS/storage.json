@@ -2,6 +2,7 @@
     "telemetry.machineId": "51fdabb57c6e73c395099225c709863de3cfd254eb27de60fadf7957186c686e",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/riddle/pro/LaTex3",
             "file:///home/riddle/pro/LaTex"
         ],
         "files2": [
@@ -52,6 +53,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "fsPath": "/home/riddle/pro/LaTex3",
+                                        "external": "file:///home/riddle/pro/LaTex3",
+                                        "path": "/home/riddle/pro/LaTex3",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/pro/LaTex3"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/riddle/pro/LaTex",
                                         "path": "/home/riddle/pro/LaTex",
                                         "scheme": "file"
@@ -66,23 +79,23 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/riddle/Downloads/magnet_link.txt",
-                                        "path": "/home/riddle/Downloads/magnet_link.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/magnet_link.txt"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/riddle/Downloads/link.txt",
                                         "path": "/home/riddle/Downloads/link.txt",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Downloads/link.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/riddle/Downloads/magnet_link.txt",
+                                        "path": "/home/riddle/Downloads/magnet_link.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/magnet_link.txt"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -196,8 +209,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -314,6 +326,10 @@
                         "label": "Move &&Line Down"
                     },
                     {
+                        "id": "editor.action.duplicateSelection",
+                        "label": "&&Duplicate Selection"
+                    },
+                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -386,7 +402,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -399,8 +416,14 @@
                                     "checked": true
                                 },
                                 {
+                                    "id": "workbench.action.toggleEditorVisibility",
+                                    "label": "Show &&Editor Area",
+                                    "checked": true
+                                },
+                                {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1014,6 +1037,7 @@
             },
             "workbench.action.openSettings": {
                 "label": "Ctrl+,",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+,"
             },
             "workbench.view.extensions": {
@@ -1045,8 +1069,8 @@
                 "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
-                "label": "Ctrl+Shift+W",
-                "userSettingsLabel": "ctrl+shift+w"
+                "label": "Ctrl+W",
+                "userSettingsLabel": "ctrl+w"
             },
             "workbench.action.quit": {
                 "label": "Ctrl+Q",
@@ -1090,6 +1114,7 @@
             },
             "editor.action.commentLine": {
                 "label": "Ctrl+/",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+/"
             },
             "editor.action.blockComment": {
@@ -1171,10 +1196,12 @@
             },
             "workbench.action.zoomIn": {
                 "label": "Ctrl+=",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+="
             },
             "workbench.action.zoomOut": {
                 "label": "Ctrl+-",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+-"
             },
             "workbench.action.zoomReset": {
@@ -1213,6 +1240,7 @@
             },
             "workbench.action.terminal.toggleTerminal": {
                 "label": "Ctrl+`",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+`"
             },
             "workbench.actions.view.problems": {
@@ -1225,10 +1253,12 @@
             },
             "workbench.action.navigateBack": {
                 "label": "Ctrl+Alt+-",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+alt+-"
             },
             "workbench.action.navigateForward": {
                 "label": "Ctrl+Shift+-",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+-"
             },
             "workbench.action.navigateToLastEditLocation": {
@@ -1314,6 +1344,7 @@
             },
             "editor.action.jumpToBracket": {
                 "label": "Ctrl+Shift+\\",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+\\"
             },
             "editor.action.marker.nextInFiles": {
@@ -1374,6 +1405,7 @@
             },
             "workbench.action.terminal.new": {
                 "label": "Ctrl+Shift+`",
+                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+`"
             },
             "workbench.action.terminal.split": {
@@ -1400,11 +1432,12 @@
     "pickerWorkingDir": "/home/riddle/pro",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/riddle/.config/Code - OSS/Backups/1573462245384",
+            "folder": "file:///home/riddle/pro/LaTex3",
+            "backupPath": "/home/riddle/.config/Code - OSS/Backups/e444f18eecd16ff46ad9ce89286f7643",
             "uiState": {
                 "mode": 0,
                 "x": 263,
-                "y": 312,
+                "y": 282,
                 "width": 1024,
                 "height": 768
             }

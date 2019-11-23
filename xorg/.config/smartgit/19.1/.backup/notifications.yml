@@ -1,6 +1,7 @@
 readNotifications: []
-dontPublishNotifications: [linux.theme-null, repositories-no-favorites-null, fileMonitor.directoriesExcluded-null]
-dontPublishUntil-fileMonitor.directoriesExcluded-null: 1574059805902
+dontPublishNotifications: [linux.theme-null, repositories-no-favorites-null, fileMonitor.directoriesExcluded-null,
+  hosting-provider-could-be-configured-github-null]
+dontPublishUntil-fileMonitor.directoriesExcluded-null: 1574228166938
 dontPublishUntil-repositories-no-favorites-null: 0
 dontPublishUntil-linux.theme-null: 0
-dontPublishUntil-hosting-provider-could-be-configured-github-null: 1573492424163
+dontPublishUntil-hosting-provider-could-be-configured-github-null: 1574228168529

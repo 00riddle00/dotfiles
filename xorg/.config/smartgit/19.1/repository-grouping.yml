@@ -1,3 +1,4 @@
 structure:
-- {name: uni-compilers, git: true, path: ~/pro/uni-compilers, path.absolute: /home/riddle/pro/uni-compilers}
+- {name: uni-compilers, git: true, path: ~/pro/uni-compilers, path.absolute: /home/riddle/pro/uni-compilers,
+  open: true}
 recentlyUsed: [~/pro/uni-compilers]
