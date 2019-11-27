@@ -21824,3 +21824,911 @@ Open Browser | Remind me later | Don't show again
 12h12m54s160 (2019-11-24 21:34:29) [main] INFO                q.swt - runnable ignored - timer
 12h12m54s161 (2019-11-24 21:34:29) [main] INFO                q.swt - runnable ignored - timer
 12h12m54s161 (2019-11-24 21:34:29) [main] INFO                q.swt - runnable ignored - timer
+ 34 (2019-11-26 16:22:41) [main] INFO      smartgit.system - SmartGit version 19.1.4-14196-4577cb06f60cb76adf60d96ddb10ab9bff199fc2-jgit-df1a32e3fce9b79d5188e38280d63fbb2accfd8b-trilead-?
+ 36 (2019-11-26 16:22:41) [main] INFO      smartgit.system - SmartGit running build 14196
+ 36 (2019-11-26 16:22:41) [main] INFO      smartgit.system - SmartGit installed build 14196
+ 38 (2019-11-26 16:22:41) [main] INFO      smartgit.system - SVNKit version SVN/1.8.1 SVNKit/1.10.0 (http://svnkit.com/) rSNAPSHOT
+ 38 (2019-11-26 16:22:41) [main] INFO sc.command.line.parameters - 0 command line parameters:
+ 38 (2019-11-26 16:22:41) [main] INFO      smartgit.system - application root: /opt/smartgit
+ 38 (2019-11-26 16:22:41) [main] INFO      smartgit.system - defaults root   : /opt/smartgit/default
+ 38 (2019-11-26 16:22:41) [main] INFO      smartgit.system - settings root   : /home/riddle/.config/smartgit/19.1
+ 38 (2019-11-26 16:22:41) [main] INFO      smartgit.system - .app directory  : null
+ 55 (2019-11-26 16:22:41) [main] INFO      smartgit.system - created temp directory /tmp/smartgit-5816854741682772909tmp
+329 (2019-11-26 16:22:41) [main] INFO              gui.swt - Used GTK version: 3.24.12
+329 (2019-11-26 16:22:41) [main] INFO              gui.swt - Used GTK theme  : Numix-Archblue
+329 (2019-11-26 16:22:41) [main] INFO              gui.swt - Using SWT 4926
+329 (2019-11-26 16:22:41) [main] INFO              gui.swt - Monitors:
+331 (2019-11-26 16:22:41) [main] INFO              gui.swt -   1920x1080(0,0 - 1919,1079)
+435 (2019-11-26 16:22:41) [main] INFO         splashscreen - splashscreen disabled
+566 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/_lock_
+601 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - awt.toolkit                         : "sun.awt.X11.XToolkit"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - file.encoding                       : "UTF-8"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - file.separator                      : "/"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.awt.graphicsenv                : "sun.awt.X11GraphicsEnvironment"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.awt.printerjob                 : "sun.print.PSPrinterJob"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.class.path                     : "/opt/smartgit/lib/bootloader.jar"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.class.version                  : "55.0"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.home                           : "/opt/smartgit/jre"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.io.tmpdir                      : "/tmp"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.library.path                   : "/home/riddle/mylibs:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"
+602 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.net.preferIPv4Stack            : "true"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.runtime.name                   : "OpenJDK Runtime Environment"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.runtime.version                : "11.0.3+7-LTS"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.name             : "Java Platform API Specification"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.vendor           : "Oracle Corporation"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.specification.version          : "11"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor                         : "Amazon.com Inc."
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.url                     : "https://aws.amazon.com/corretto/"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.url.bug                 : "https://github.com/corretto/corretto-11/issues/"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vendor.version                 : "Corretto-11.0.3.7.1"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.version                        : "11.0.3"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.version.date                   : "2019-04-16"
+603 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.compressedOopsMode          : "32-bit"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.info                        : "mixed mode"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.name                        : "OpenJDK 64-Bit Server VM"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.name          : "Java Virtual Machine Specification"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.vendor        : "Oracle Corporation"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.specification.version       : "11"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.vendor                      : "Amazon.com Inc."
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - java.vm.version                     : "11.0.3+7-LTS"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jdk.debug                           : "release"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jna.boot.library.path               : "/home/riddle/.config/smartgit/19.1/jna-tmp/com/sun/jna/linux-x86-64:"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - jna.nounpack                        : "true"
+604 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - line.separator                      : "\n"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.accessibility.UseIA2: "false"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.deviceZoom : "100"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.theme  : "Numix-Archblue"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - org.eclipse.swt.internal.gtk.version: "3.24.12"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.arch                             : "amd64"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.name                             : "Linux"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - os.version                          : "5.3.13-arch1-1"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - path.separator                      : ":"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - smartboot.classSource               : "/opt/smartgit/lib/bootloader.jar"
+605 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - smartgit.settings                   : "/home/riddle/.config/smartgit/19.1"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.arch.data.model                 : "64"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.boot.library.path               : "/opt/smartgit/jre/lib"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.cpu.endian                      : "little"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.cpu.isalist                     : ""
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.io.unicode.encoding             : "UnicodeLittle"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.io.useCanonCaches               : "false"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.java.command                    : "/opt/smartgit/lib/bootloader.jar"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.java.launcher                   : "SUN_STANDARD"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.jnu.encoding                    : "UTF-8"
+606 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.management.compiler             : "HotSpot 64-Bit Tiered Compilers"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - sun.os.patch.level                  : "unknown"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - swt.library.path                    : "/home/riddle/.config/smartgit/19.1/swt.tmp"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.country                        : "US"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.dir                            : "/home/riddle"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.home                           : "/home/riddle"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.language                       : "en"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.name                           : "riddle"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - user.timezone                       : "Europe/Vilnius"
+607 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Environment variables:
+609 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - _                       : "/opt/smartgit/jre/bin/java"
+609 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - ACTIVATE                : "/home/riddle/.dotfiles/shell-scripts/activate.sh"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - ACTIVATE_BY_CLASS       : "/home/riddle/.dotfiles/shell-scripts/activate_by_class.sh"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - AUTOMATION_DIR          : "/home/riddle/.dotfiles/automation"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - CANDY                   : "/home/riddle/Dropbox/sync/candy"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DBUS_SESSION_BUS_ADDRESS: "unix:abstract=/tmp/dbus-2jYU8b0FN2,guid=60b96461207f32bb93edb4945ddd336a"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DIRCOLORS               : ".dircolors"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DISPLAY                 : ":0"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DOTFILES_DIR            : "/home/riddle/.dotfiles"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DOWNLOADS               : "/home/riddle/Downloads"
+610 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DROPBOX                 : "/home/riddle/Dropbox"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - DW                      : "/home/riddle/Downloads"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - EDITOR                  : "vim"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - FOCUS                   : "/home/riddle/.dotfiles/shell-scripts/focus.sh"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - HDMI_SCREEN             : "HDMI-1-1"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - HOME                    : "/home/riddle"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - INVOCATION_ID           : "44c2ed5f348a490989b200ed46504eb3"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - JOURNAL_STREAM          : "9:18988"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - KEEP                    : "/home/riddle/Dropbox/sync/keepass"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LANG                    : "C"
+611 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LAPTOP_SCREEN           : "eDP-1-1"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LC_ALL                  : "en_US.UTF-8"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LD_LIBRARY_PATH         : "/home/riddle/mylibs"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LESS                    : "-R"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LESSOPEN                : "|$DOTFILES_DIR/cmd/.lessfilter %s"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LOGNAME                 : "riddle"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LS_COLORS               : "no=00:fi=00;37:di=00;34:ln=01;35:pi=00;33:so=01;35:bd=01;33;40:cd=01;35;40:or=01;30:tw=01;33:ow=01;35:st=01;34:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.tar=00;33:*.tgz=00;33:*.zip=00;33:*.gz=00;33:*.bz2=00;33:*.tar.xz=00;33:*.tar.gz=00;33:*.tgz=00;33:*.xz=00;33:*.jpg=00;36:*.gif=00;36:*.bmp=00;36:*.xbm=00;36:*.xpm=00;36:*.tif=00;36:*.tga=00;36:*.png=00;36:*.jpeg=00;36:*.tiff=00;36:*.xcf=00;36:*.xcf.gz=00;36:*.blend=00;36:*.pcx=00;36:*.ppm=00;36:*.mp3=00;32:*.fla=00;32:*.mid=00;32:*.wav=00;32:*.au=00;32:*.nes=00;32:*.smc=00;32:*.fig=00;32:*.pls=00;32:*.sfc=00;32:*.smc.gz=00;32:*.fig.gz=00;32:*.sfc.gz=00;32:*.avi=01;35:*.flc=01;35:*.fli=01;35:*.flv=01;35:*.mkv=01;35:*.m4v=01;35:*.mp4=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.ogv=01;35:*.PL=00;36:*.asm=00;36:*.apvlvrc=00;32:*.apvlvinfo=00;32:*.asoundrc=00;36:*.asunder=01;36:*.awk=00;36:*.bash=00;31:*.bashrc=00;31:*.bash_history=00;31:*.bash_logout=00;31:*.bash_profile=00;31:*.profile=00;31:*.bak=01;31:*.c=00;36:*.calc_history=01;34:*.cfg=00;36:*.cgorc=01;34:*.coffee=00;36:*.conf=00;36:*.cpp=00;36:*.cs=00;36:*.css=00;36:*.csv=00;36:*.curlrc=01;34:*.db=00;32:*.deb=00;36:*.diff=01;33:*.dir_colors=01;33:*.dmenurc=00;32:*.dmenu_cache=00;32:*.dmenu-short=00;32:*.enc=00;36:*.eps=00;36:*.etx=00;36:*.ex=00;36:*.example=00;36:*.extract_urlview=00;32:*.fehbg=00;36:*.fonts=00;36:*.gemrc=00;32:*.git=00;36:*.gitconfig=00;35:*.gitignore=00;36:*.hgrc=00;35:*.hgignore=00;35:*.go=01;34:*.gpg-agent-info=01;31:*.gtk-bookmarks=01;34:*.gtkrc-2.0=01;34:*.gtkrc-2.0.mine=01;34:*.guvcviewrc=01;34:*.h=01;34:*.hs=01;34:*.htm=01;34:*.html=01;34:*.htoprc=01;34:*.info=01;34:*.inputrc=00;31:*.ini=01;34:*.java=01;34:*.jhtm=01;34:*.js=01;34:*.jsm=01;34:*.jsm=01;34:*.json=01;34:*.jsp=01;34:*.lisp=01;34:*.lesshst=01;34:*.log=01;34:*.lua=00;33:*.map=00;33:*.markdown=00;33:*.md=00;33:*.mf=00;33:*.mfasl=00;33:*.mi=00;33:*.mkd=00;33:*.msmtprc=01;31:*.mtx=00;33:*.muttrc=00;33:*.muttprintrc=00;33:*.nfo=00;33:*.notify-osd=00;36:*.netrc=01;31:*.notmuch-config=00;33:*.nvidia-settings-rc=00;36:*.offlineimaprc=00;33:*.pacnew=00;33:*.pam_environment=00;31:*.patch=00;31:*.pc=00;31:*.pfa=00;31:*.php=00;31:*.pid=00;31:*.pl=00;31:*.pm=00;31:*.pod=00;31:*.pulse-cookie=00;36:*.py=00;31:*.rc=00;31:*.recently-used=00;35:*.rb=00;31:*.rdf=00;31:*.ru=00;31:*.ruby-version=00;32:*.sdcv_history=01;34:*.sed=00;31:*.sfv=00;31:*.sh=00;31:*.signature=00;31:*.sty=01;35:*.sug=01;35:*.t=01;35:*.tcl=01;35:*.tdy=01;35:*.tex=01;35:*.textile=01;35:*.tfm=01;35:*.tfnt=01;35:*.theme=01;35:*.viminfo=00;32:*.xml=01;35:*.yml=01;35:*.zsh=01;35:*.txt=01;35:*.ttytterkey=01;31:*.ttytterrc=01;35:*.vim=01;35:*.vimrc=00;32:*.xbindkeysrc=01;33:*.xinitrc=01;33:*.Xauthority=01;31:*.Xmodmap=00;31:*.Xresources=01;33:*.zcompdump=00;31:*.zlogin=00;31:*.zprofile=00;31:*.zsh_history=00;31:*.zshenv=00;31:*.zshrc=00;31:*.mount=01;32:*.path=01;33:*.rules=01;34:*.socket=00;35:*.service=00;33:*.target=01;36:*.timer=00;36:"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - LSCOLORS                : "ExFxCxDxBxegedabagacad"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIL                    : "/var/spool/mail/riddle"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIN_HOME               : "/home/riddle"
+612 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MAIN_USER               : "riddle"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - MOZ_PLUGIN_PATH         : "/usr/lib/mozilla/plugins"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - NOTES                   : "/home/riddle/Dropbox/sync/gtd/"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - OLDPWD                  : "/opt/smartgit/bin"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PATH                    : "/home/riddle/.cargo/bin:/opt/anaconda/bin:/home/riddle/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PRO                     : "/home/riddle/pro"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PS1                     : "\\[\\e[1;32m\\][\\u@\\W]\\[\\e[1;36m\\][riddle]$\\[\\033[0m\\] "
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - PWD                     : "/home/riddle"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SENV                    : "/home/riddle/venvs/subscription_demo"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHELL                   : "/bin/zsh"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHELL_SCRIPTS_DIR       : "/home/riddle/.dotfiles/shell-scripts"
+613 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SHLVL                   : "3"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - SYNC                    : "/home/riddle/Dropbox/sync"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TERM                    : "rxvt-unicode-256color"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - THEME                   : "riddle"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TMP1                    : "/home/riddle/tmp1"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - TMP2                    : "/home/riddle/tmp2"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - USER                    : "riddle"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VENV                    : "/home/riddle/venvs/sql_app"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMCOLOR                : "miro8"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMNOTES                : "$SHELL_SCRIPTS_DIR/vimnotes.sh"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VIMRC                   : "/home/riddle/.vimrc"
+614 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - WINDOWPATH              : "1"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XAUTHORITY              : "/home/riddle/.Xauthority"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_RUNTIME_DIR         : "/run/user/1000"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SEAT                : "seat0"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_CLASS       : "user"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_ID          : "1"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_SESSION_TYPE        : "tty"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - XDG_VTNR                : "1"
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - class loader: java.net.URLClassLoader
+615 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/antlr-runtime.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/lz4-1.3.0.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sequence-library.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sqljet.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jna-4.5.2.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jna-platform-4.5.2.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/trilead.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jsch.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-api-1.7.25.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bcpkix-jdk15on-160.jar
+616 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bcprov-jdk15on-160.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/eddsa-0.3.0.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jzlib-1.1.3.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/sshj.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/javaewah.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/slf4j-jdk14-1.7.25.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/json_simple-1.1.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/snakeyaml.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jopt-simple-3.2.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jmyspell-core.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/autolink-0.6.0.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark.jar
+617 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-autolink.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-issues.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-strikethrough.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-ext-gfm-users.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/flexmark-util.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/bootloader-config.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/java-prettify.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/jgit.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/svnkit.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/smartgit.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   /opt/smartgit/lib/org.eclipse.swt.gtk.linux.x86_64.jar
+618 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - parent class loader: java.net.URLClassLoader
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - parent class loader: jdk.internal.loader.ClassLoaders$AppClassLoader
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Max memory: 1024m
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - Max processors: 4
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system - VM options:
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:+UseG1GC
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:MaxGCPauseMillis=100
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:InitiatingHeapOccupancyPercent=25
+619 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xmx1024m
+620 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xss2m
+620 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Xverify:none
+620 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:MaxJavaStackTraceDepth=1000000
+620 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -Dsun.io.useCanonCaches=false
+620 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.system -   -XX:ErrorFile=/home/riddle/.config/smartgit/19.1/hs_err_pid%p.log
+648 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - removing /home/riddle/.config/smartgit/19.1/hgext recursively
+649 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - create /home/riddle/.config/smartgit/19.1/hgext
+650 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.hg.core - Mercurial extension directory is /opt/smartgit/lib/hgext
+673 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO          sc.password - Read 0 phrases from plain-text part.
+1s 39 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO    smartgit.settings - First used on 2019-11-10
+1s 39 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO    smartgit.settings - Settings were not upgraded before
+1s 55 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO org.eclipse.jgit.util.FS - Starting timestamp resolution detection for /home/riddle
+1s 60 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO org.eclipse.jgit.util.FS - Finished timestamp resolution detection for /home/riddle in 5ms
+1s 74 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      sc.file.monitor - Using Java-7 filemonitor
+1s 79 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.prelock
+1s 79 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.postlock
+1s 79 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO      smartgit.server - Server is connected to 4332.
+1s 80 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO        q.io.lockFile - Locked /home/riddle/.config/smartgit/19.1/port.lock
+1s100 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO           sc.license - License type is 'foundation'.
+1s100 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s116 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO           sc.license - License type is 'foundation'.
+1s117 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.license - Distributed Reviews are enabled.
+1s122 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - application root: /opt/smartgit
+1s123 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - launcher: /opt/smartgit/bin/smartgit.sh
+1s483 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update - Info smartgit-training-commercial-demo found.
+1s501 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO          sc.password - Writing 0 phrases.
+1s512 (2019-11-26 16:22:42) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO     smartgit.startup - License type is 'commercial-demo', Review=true
+1s553 (2019-11-26 16:22:43) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - application root: /opt/smartgit
+1s553 (2019-11-26 16:22:43) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO         sc.restarter - launcher: /opt/smartgit/bin/smartgit.sh
+1s644 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO               q.exec - Executing #0 [/usr/bin] /usr/bin/git --version
+1s656 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO               q.exec - Executing #1 [/usr/bin] /usr/bin/git --version
+1s658 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable - Git version is 'git version 2.24.0' (2.24.0).
+1s659 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -   Super config: null (does not exist)
+1s659 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -   System config: /etc/gitconfig (does not exist)
+1s659 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -   User config: /home/riddle/.gitconfig (exists)
+1s660 (2019-11-26 16:22:43) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update - Cleaning up old builds (fetch=false;schedule=false;fetchUpgrade=false;upgrade=false)
+1s661 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     user.email=tomasgiedraitis@gmail.com
+1s661 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     user.name=Tomas Giedraitis
+1s661 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     core.editor=vim
+1s661 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     credential.helper=cache --timeout=3600
+1s661 (2019-11-26 16:22:43) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update - Checking for new version
+1s661 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     merge.tool=vimdiff
+1s662 (2019-11-26 16:22:43) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO q.application.update -   ... last check too early.
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     diff.tool=vimdiff
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     difftool.prompt=false
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.lgfirstparent=log --first-parent
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.lgnomerges=log --no-merges --oneline
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.graphviz=!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+1s662 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     alias.d=difftool
+1s663 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.clean=git-lfs clean -- %f
+1s664 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.smudge=git-lfs smudge -- %f
+1s664 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.process=git-lfs filter-process
+1s664 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     filter.lfs.required=true
+1s664 (2019-11-26 16:22:43) [ThreadPool-1 (com.syntevo.smartgit.q)] INFO  smartgit.executable -     gui.recentrepo=/home/riddle/tmp7
+1s666 (2019-11-26 16:22:43) [ThreadPool-2 (smartgit.MW$$Lambda$189/0x000000010026d440)] INFO q.application.update - No version configured for fetching.
+2s174 (2019-11-26 16:22:43) [main] INFO        q.dockmanager - layout: (([+319x354:directories ][+319x591:branches ])(([+1594x339:files ][-2x1:message ])[+1594x414:changes ]([+1594x189:outgoing ][-3x1:output ])))
+2s287 (2019-11-26 16:22:43) [main] INFO              q.frame - opening smartgit.boi@42A9E5D1:SmartGit 19.1.4 (evaluation until Dec 11) (smartgit.boi@279FEDBD) (index=0)
+2s330 (2019-11-26 16:22:43) [main] INFO      sc.notification - Published: INFO [demo-reminder-Wed Dec 11 16:10:13 EET 2019-null] You can freely evaluate SmartGit until Dec 11, 2019.:
+If you like SmartGit, please consider purchasing your license. After the evaluation period SmartGit will stop working.
+
+Purchase
+2s332 (2019-11-26 16:22:43) [ThreadPool-2 (com.syntevo.sc.application.w)] INFO   smartgit.mainframe - Searching crash logs in /home/riddle/.config/smartgit/19.1
+2s333 (2019-11-26 16:22:43) [main] INFO smartgit.repositoryTreeTable - open: [uni-compilers /home/riddle/pro/uni-compilers git=true]; already open: []
+2s333 (2019-11-26 16:22:43) [ThreadPool-2 (com.syntevo.sc.application.w)] INFO   smartgit.mainframe - Found no crash logs
+2s340 (2019-11-26 16:22:43) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor - Adding watch for '/home/riddle/pro/uni-compilers', canonical: '/home/riddle/pro/uni-compilers'
+2s360 (2019-11-26 16:22:43) [main] INFO  smartgit.project.ui - Starting to scan /home/riddle/pro/uni-compilers
+2s365 (2019-11-26 16:22:43) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+2s401 (2019-11-26 16:22:43) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-compilers/.idea from file monitoring.
+2s403 (2019-11-26 16:22:43) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-compilers/lexer/__pycache__ from file monitoring.
+2s404 (2019-11-26 16:22:43) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-compilers/parser/__pycache__ from file monitoring.
+2s405 (2019-11-26 16:22:43) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-compilers/venv from file monitoring.
+2s454 (2019-11-26 16:22:43) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+2s457 (2019-11-26 16:22:43) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+2s580 (2019-11-26 16:22:44) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor - Skipping subtree /home/riddle/pro/uni-compilers/errors/__pycache__ from file monitoring.
+2s582 (2019-11-26 16:22:44) [ThreadPool-4 (smartgit.aFg$$Lambda$415/0x00000001003a5440)] INFO      sc.file.monitor -   ... took 242ms [/home/riddle/pro/uni-compilers]
+2s737 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 4 roots
+2s767 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 3 commits for 2 roots at /home/riddle/pro/uni-compilers/.git (took 37ms)
+2s787 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 57ms (241 nodes, 8 refs, 46ms walk of 241 nodes, 1ms refs, 3ms reachability, 5ms divergence for 3 branches, 2ms reflog, 0ms assertions)
+2s865 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<infinity>, /<empty>]
+2s989 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 4ms (241 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 3ms reflog, 0ms assertions)
+3s  1 (2019-11-26 16:22:44) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=1)
+3s 31 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO               q.exec - Executing #2 [/usr/bin] /usr/bin/git --version
+3s 40 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable - Git version is 'git version 2.24.0' (2.24.0).
+3s 41 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -   Super config: null (does not exist)
+3s 41 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -   System config: /etc/gitconfig (does not exist)
+3s 41 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -   User config: /home/riddle/.gitconfig (exists)
+3s 41 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     user.email=tomasgiedraitis@gmail.com
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     user.name=Tomas Giedraitis
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     core.editor=vim
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     credential.helper=cache --timeout=3600
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     merge.tool=vimdiff
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     diff.tool=vimdiff
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     difftool.prompt=false
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     alias.lgfirstparent=log --first-parent
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     alias.lgnomerges=log --no-merges --oneline
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     alias.graphviz=!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' "$@" | sed 's/[0-9a-f][0-9a-f]*/"&"/g' ; echo '}'; }; f
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     alias.d=difftool
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     filter.lfs.clean=git-lfs clean -- %f
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     filter.lfs.smudge=git-lfs smudge -- %f
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     filter.lfs.process=git-lfs filter-process
+3s 42 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     filter.lfs.required=true
+3s 43 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO  smartgit.executable -     gui.recentrepo=/home/riddle/tmp7
+3s 43 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+3s 47 (2019-11-26 16:22:44) [main] INFO         commit.notes - root changed null -> /home/riddle/pro/uni-compilers
+3s 55 (2019-11-26 16:22:44) [ThreadPool-0 (com.syntevo.smartgit.n$$Lambda$67/0x000000010013c440)] INFO               q.exec - Executing #3 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+3s180 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 131ms, additional 181ms post-processing
+3s180 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO  smartgit.project.ui - Root '/home/riddle/pro/uni-compilers' scanned.
+3s181 (2019-11-26 16:22:44) [ThreadPool-2 (Refresh-0)] INFO  smartgit.project.ui -   /: [[origin(url=https://github.com/00riddle00/BSc3-TranslationMethods)]], []
+3s752 (2019-11-26 16:22:45) [ThreadPool-4 (stdout-#3 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: d08d35dd8ee32fe734eb5cacd35b2ea87b920767	refs/heads/master
+6s138 (2019-11-26 16:22:47) [main] INFO      sc.notification - Close button clicked INFO [demo-reminder-Wed Dec 11 16:10:13 EET 2019-null] You can freely evaluate SmartGit until Dec 11, 2019.
+9s644 (2019-11-26 16:22:51) [main] INFO    sc.comparePreview - file: (/errors/errors.py;/errors/errors.py;/@70E29E14)@1494B84D
+9s772 (2019-11-26 16:22:51) [main] INFO    sc.changesPreview - setting file content /errors/errors.py (scrolling: to-first-change)
+32s825 (2019-11-26 16:23:14) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@34ABDEE4
+32s870 (2019-11-26 16:23:14) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: to-first-change)
+37s791 (2019-11-26 16:23:19) [main] INFO sc.compare.connector - clicked [ x] button
+37s811 (2019-11-26 16:23:19) [main] INFO             q.dialog - Showing dialog 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD)
+37s847 (2019-11-26 16:23:19) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to Shell {Revert Working Tree File}@1804F60D
+37s886 (2019-11-26 16:23:19) [main] INFO q.swt.shellActivation - Activation remains at Shell {Revert Working Tree File}@1804F60D
+39s443 (2019-11-26 16:23:20) [main] INFO             q.action - Performing 'Revert' button in window @1804F60D owner @279FEDBD
+39s443 (2019-11-26 16:23:20) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD)
+39s445 (2019-11-26 16:23:20) [main] INFO             q.dialog - Disposing dialog 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD)
+39s446 (2019-11-26 16:23:20) [main] INFO             q.dialog - Cleaned up dialog 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD)
+39s449 (2019-11-26 16:23:20) [main] INFO             q.dialog - Close-handler for dialog 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD)
+39s449 (2019-11-26 16:23:20) [main] INFO             q.dialog - Enabling parent for dialog 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD)
+39s450 (2019-11-26 16:23:20) [main] INFO             q.dialog - Showed dialog 0 (@1804F60D) '@3A80515C - Revert Working Tree File' (owner: @279FEDBD) (OK - 2)
+39s457 (2019-11-26 16:23:20) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@1804F60D to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+39s457 (2019-11-26 16:23:20) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+39s965 (2019-11-26 16:23:21) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>]
+40s 10 (2019-11-26 16:23:21) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (241 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+40s 16 (2019-11-26 16:23:21) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=2)
+40s 20 (2019-11-26 16:23:21) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40s 34 (2019-11-26 16:23:21) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@30865A90
+40s 61 (2019-11-26 16:23:21) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 51ms, additional 46ms post-processing
+40s 84 (2019-11-26 16:23:21) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: preserve)
+41s 40 (2019-11-26 16:23:22) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>]
+41s 80 (2019-11-26 16:23:22) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 2ms (241 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+41s 84 (2019-11-26 16:23:22) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=4)
+41s 86 (2019-11-26 16:23:22) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+41s100 (2019-11-26 16:23:22) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@778CA8EF
+41s133 (2019-11-26 16:23:22) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 43ms, additional 49ms post-processing
+41s163 (2019-11-26 16:23:22) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: preserve)
+41s954 (2019-11-26 16:23:23) [main] INFO sc.compare.connector - clicked [<<] button
+42s478 (2019-11-26 16:23:23) [WorkerThread-1] SEVERE     smartgit.command - Index doesn't contain file /home/riddle/pro/uni-compilers/FXlang_samples/tmp.fx at stage '[Stage fully merged: 0]'
+smartgit.jQ: Index doesn't contain file /home/riddle/pro/uni-compilers/FXlang_samples/tmp.fx at stage '[Stage fully merged: 0]'
+	at smartgit.wG.a(SourceFile:321)
+	at smartgit.wG.a(SourceFile:53)
+	at smartgit.wG.a(SourceFile:199)
+	at smartgit.aML.a(SourceFile:49)
+	at smartgit.aXR.a(SourceFile:30)
+	at smartgit.aYh.a(SourceFile:58)
+	at smartgit.hp.run(SourceFile:37)
+	at smartgit.afJ.run(SourceFile:35)
+	at smartgit.afs.run(SourceFile:51)
+
+42s482 (2019-11-26 16:23:23) [ThreadPool-2 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>]
+42s486 (2019-11-26 16:23:23) [main] INFO             q.dialog - Show (warn): Command Failed - Executing a command has failed. - Index doesn't contain file /home/riddle/pro/uni-compilers/FXlang_samples/tmp.fx at stage '[Stage fully merged: 0]'
+42s496 (2019-11-26 16:23:23) [main] INFO             q.dialog - Showing dialog 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD)
+42s557 (2019-11-26 16:23:24) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (241 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+42s584 (2019-11-26 16:23:24) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to Shell {Command Failed}@470A9030
+42s612 (2019-11-26 16:23:24) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: to-first-change)
+42s626 (2019-11-26 16:23:24) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=6)
+42s627 (2019-11-26 16:23:24) [main] INFO q.swt.shellActivation - Activation remains at Shell {Command Failed}@470A9030
+42s629 (2019-11-26 16:23:24) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+42s642 (2019-11-26 16:23:24) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@3EB631B8
+42s677 (2019-11-26 16:23:24) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 89ms, additional 106ms post-processing
+42s700 (2019-11-26 16:23:24) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: preserve)
+44s823 (2019-11-26 16:23:26) [main] INFO             q.action - Performing 'OK' button in window @470A9030 owner @279FEDBD
+44s823 (2019-11-26 16:23:26) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD)
+44s830 (2019-11-26 16:23:26) [main] INFO             q.dialog - Disposing dialog 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD)
+44s830 (2019-11-26 16:23:26) [main] INFO             q.dialog - Cleaned up dialog 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD)
+44s833 (2019-11-26 16:23:26) [main] INFO             q.dialog - Close-handler for dialog 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD)
+44s833 (2019-11-26 16:23:26) [main] INFO             q.dialog - Enabling parent for dialog 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD)
+44s833 (2019-11-26 16:23:26) [main] INFO             q.dialog - Showed dialog 1 (@470A9030) '@66D57C1B - Command Failed' (owner: @279FEDBD) (OK - 2)
+44s849 (2019-11-26 16:23:26) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@470A9030 to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+44s849 (2019-11-26 16:23:26) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+46s473 (2019-11-26 16:23:27) [main] INFO sc.compare.connector - clicked [ x] button
+46s983 (2019-11-26 16:23:28) [ThreadPool-2 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>]
+47s 30 (2019-11-26 16:23:28) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (241 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+47s 34 (2019-11-26 16:23:28) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=8)
+47s 37 (2019-11-26 16:23:28) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+47s 52 (2019-11-26 16:23:28) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@44AFEFD5
+47s101 (2019-11-26 16:23:28) [ThreadPool-2 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 50ms, additional 68ms post-processing
+47s117 (2019-11-26 16:23:28) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: preserve)
+49s 51 (2019-11-26 16:23:30) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx<empty>]
+49s 79 (2019-11-26 16:23:30) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (241 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+49s 83 (2019-11-26 16:23:30) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=10)
+49s 84 (2019-11-26 16:23:30) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+49s 95 (2019-11-26 16:23:30) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@7AAD3F7D
+49s127 (2019-11-26 16:23:30) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 31ms, additional 45ms post-processing
+49s147 (2019-11-26 16:23:30) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: preserve)
+49s504 (2019-11-26 16:23:30) [main] INFO    sc.comparePreview - file: (/errors/errors.py;/errors/errors.py;/@70E29E14)@1494B84D
+49s539 (2019-11-26 16:23:30) [main] INFO    sc.changesPreview - setting file content /errors/errors.py (scrolling: to-first-change)
+50s687 (2019-11-26 16:23:32) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@7AAD3F7D
+50s708 (2019-11-26 16:23:32) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: to-first-change)
+54s708 (2019-11-26 16:23:36) [main] INFO             q.action - Performing 'resolve, Resolve...' menu item from context menu in window org.eclipse.swt.widgets.Shell@279FEDBD:Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}
+54s747 (2019-11-26 16:23:36) [main] INFO             q.dialog - Showing dialog 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD)
+54s783 (2019-11-26 16:23:36) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to Shell {Resolve}@52A70627
+54s804 (2019-11-26 16:23:36) [main] INFO q.swt.shellActivation - Activation remains at Shell {Resolve}@52A70627
+57s 37 (2019-11-26 16:23:38) [main] INFO             q.action - Performing 'Resolve' button in window @52A70627 owner @279FEDBD
+57s 37 (2019-11-26 16:23:38) [main] INFO             q.dialog - Closing dialog with option OK - 2 - 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD)
+57s 39 (2019-11-26 16:23:38) [main] INFO             q.dialog - Disposing dialog 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD)
+57s 39 (2019-11-26 16:23:38) [main] INFO             q.dialog - Cleaned up dialog 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD)
+57s 44 (2019-11-26 16:23:38) [main] INFO             q.dialog - Close-handler for dialog 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD)
+57s 44 (2019-11-26 16:23:38) [main] INFO             q.dialog - Enabling parent for dialog 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD)
+57s 44 (2019-11-26 16:23:38) [main] INFO             q.dialog - Showed dialog 2 (@52A70627) '@6124287A - Resolve' (owner: @279FEDBD) (OK - 2)
+57s 48 (2019-11-26 16:23:38) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@52A70627 to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+57s 48 (2019-11-26 16:23:38) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+57s 73 (2019-11-26 16:23:38) [WorkerThread-1] INFO     smartgit.command - Resolve [/FXlang_samples/tmp.fx] (resolveChoice=ASIS;stage=true)
+57s 80 (2019-11-26 16:23:38) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+57s 83 (2019-11-26 16:23:38) [WorkerThread-1] INFO               q.exec - Executing #4 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh add --force -- FXlang_samples/tmp.fx
+57s162 (2019-11-26 16:23:38) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/.git/index<empty>, /.git/index.lock<infinity>, /.git/objects/c1/a80a2dd0be339d273d3a07cec67831c28602db<empty>, /<empty>] for /home/riddle/pro/uni-compilers
+57s166 (2019-11-26 16:23:38) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+57s190 (2019-11-26 16:23:38) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (241 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+57s193 (2019-11-26 16:23:38) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=12)
+57s197 (2019-11-26 16:23:38) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+57s204 (2019-11-26 16:23:38) [main] INFO    sc.comparePreview - file: (/errors/errors.py;/errors/errors.py;/@70E29E14)@1494B84D
+57s229 (2019-11-26 16:23:38) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 36ms post-processing
+57s266 (2019-11-26 16:23:38) [main] INFO    sc.changesPreview - setting file content /errors/errors.py (scrolling: to-first-change)
+1m 3s820 (2019-11-26 16:23:45) [main] INFO             q.action - Performing '@smartgit.boX'
+1m 3s929 (2019-11-26 16:23:45) [main] INFO              q.frame - opening smartgit.jj@7918C7F8:[errors/errors.py] - File Compare (smartgit.jj@655523DD)
+1m 3s956 (2019-11-26 16:23:45) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to Shell {[errors/errors.py] - File Compare}@655523DD
+1m 4s  1 (2019-11-26 16:23:45) [main] INFO q.swt.shellActivation - Activation remains at Shell {[errors/errors.py] - File Compare}@655523DD
+1m 5s375 (2019-11-26 16:23:46) [main] INFO              q.frame - closed smartgit.jj@7918C7F8:[errors/errors.py] - File Compare (smartgit.jj@655523DD)
+1m 5s409 (2019-11-26 16:23:46) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@655523DD to null
+1m 5s493 (2019-11-26 16:23:46) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+1m 5s493 (2019-11-26 16:23:46) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m 6s508 (2019-11-26 16:23:47) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [frame-removal, deactivation] took 34ms.
+1m14s 92 (2019-11-26 16:23:55) [main] INFO q.swt.shellActivation - Activation remains at Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+1m14s102 (2019-11-26 16:23:55) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to null
+1m14s102 (2019-11-26 16:23:55) [main] INFO q.swt.shellActivation - Activation remains at null
+1m15s133 (2019-11-26 16:23:56) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 30ms.
+1m17s757 (2019-11-26 16:23:59) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+1m17s757 (2019-11-26 16:23:59) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1m18s108 (2019-11-26 16:23:59) [main] INFO q.swt.shellActivation - Activation remains at Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+1m18s112 (2019-11-26 16:23:59) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to null
+1m18s118 (2019-11-26 16:23:59) [main] INFO q.swt.shellActivation - Activation remains at null
+1m19s154 (2019-11-26 16:24:00) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 41ms.
+1m24s311 (2019-11-26 16:24:05) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+1m24s333 (2019-11-26 16:24:05) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 5 roots
+1m24s337 (2019-11-26 16:24:05) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 3 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 4ms)
+1m24s339 (2019-11-26 16:24:05) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 6ms (242 nodes, 8 refs, 5ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+1m24s342 (2019-11-26 16:24:05) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=14)
+1m24s345 (2019-11-26 16:24:05) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1m24s442 (2019-11-26 16:24:05) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 31ms, additional 100ms post-processing
+1m28s412 (2019-11-26 16:24:09) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+1m28s437 (2019-11-26 16:24:09) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 3 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+1m28s439 (2019-11-26 16:24:09) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=16)
+1m28s441 (2019-11-26 16:24:09) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1m28s478 (2019-11-26 16:24:09) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 39ms post-processing
+1m39s140 (2019-11-26 16:24:20) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx~<infinity>, /FXlang_samples/tmp.fx<empty>]
+1m39s165 (2019-11-26 16:24:20) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1m39s168 (2019-11-26 16:24:20) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=17)
+1m39s170 (2019-11-26 16:24:20) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1m39s210 (2019-11-26 16:24:20) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 42ms post-processing
+1m45s646 (2019-11-26 16:24:27) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx~<infinity>, /FXlang_samples/tmp.fx<empty>]
+1m45s674 (2019-11-26 16:24:27) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1m45s677 (2019-11-26 16:24:27) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=18)
+1m45s679 (2019-11-26 16:24:27) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1m45s723 (2019-11-26 16:24:27) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 31ms, additional 46ms post-processing
+2m24s108 (2019-11-26 16:25:05) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx~<infinity>, /FXlang_samples/tmp.fx<empty>]
+2m24s128 (2019-11-26 16:25:05) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+2m24s131 (2019-11-26 16:25:05) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=19)
+2m24s133 (2019-11-26 16:25:05) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+2m24s172 (2019-11-26 16:25:05) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 42ms post-processing
+2m32s920 (2019-11-26 16:25:14) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx~<infinity>, /FXlang_samples/tmp.fx<empty>]
+2m32s939 (2019-11-26 16:25:14) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+2m32s941 (2019-11-26 16:25:14) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=20)
+2m32s943 (2019-11-26 16:25:14) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+2m32s976 (2019-11-26 16:25:14) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 35ms post-processing
+3m26s595 (2019-11-26 16:26:08) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+3m26s622 (2019-11-26 16:26:08) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+3m26s624 (2019-11-26 16:26:08) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=21)
+3m26s626 (2019-11-26 16:26:08) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+3m26s657 (2019-11-26 16:26:08) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 28ms, additional 34ms post-processing
+5m12s469 (2019-11-26 16:27:53) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+5m12s490 (2019-11-26 16:27:53) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+5m12s491 (2019-11-26 16:27:53) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #5 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+5m12s977 (2019-11-26 16:27:54) [ThreadPool-2 (stdout-#5 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 7d9046e8f4a8e8afd4a657c0aaccbbd8c000bc1c	refs/heads/master
+5m18s 89 (2019-11-26 16:27:59) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+5m18s109 (2019-11-26 16:27:59) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5m18s112 (2019-11-26 16:27:59) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=22)
+5m18s114 (2019-11-26 16:27:59) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5m18s154 (2019-11-26 16:27:59) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 23ms, additional 42ms post-processing
+5m22s390 (2019-11-26 16:28:03) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+5m22s416 (2019-11-26 16:28:03) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+5m22s418 (2019-11-26 16:28:03) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=23)
+5m22s420 (2019-11-26 16:28:03) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5m22s452 (2019-11-26 16:28:03) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 28ms, additional 35ms post-processing
+5m29s501 (2019-11-26 16:28:10) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+5m29s522 (2019-11-26 16:28:10) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+5m29s524 (2019-11-26 16:28:10) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=24)
+5m29s526 (2019-11-26 16:28:10) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+5m29s564 (2019-11-26 16:28:11) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 40ms post-processing
+6m18s135 (2019-11-26 16:28:59) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+6m18s137 (2019-11-26 16:28:59) [WorkerThread-1] INFO               q.exec - Executing #6 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+6m18s778 (2019-11-26 16:29:00) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+6m18s780 (2019-11-26 16:29:00) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+6m18s798 (2019-11-26 16:29:00) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+6m18s800 (2019-11-26 16:29:00) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=25)
+6m18s802 (2019-11-26 16:29:00) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+6m18s811 (2019-11-26 16:29:00) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 19ms, additional 11ms post-processing
+7m13s450 (2019-11-26 16:29:54) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+7m13s475 (2019-11-26 16:29:54) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+7m13s477 (2019-11-26 16:29:54) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=26)
+7m13s479 (2019-11-26 16:29:54) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+7m13s517 (2019-11-26 16:29:54) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 26ms, additional 40ms post-processing
+10m11s729 (2019-11-26 16:32:53) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+10m11s774 (2019-11-26 16:32:53) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+10m11s777 (2019-11-26 16:32:53) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=27)
+10m11s780 (2019-11-26 16:32:53) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+10m11s836 (2019-11-26 16:32:53) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 47ms, additional 59ms post-processing
+10m22s477 (2019-11-26 16:33:03) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+10m22s493 (2019-11-26 16:33:03) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+10m22s494 (2019-11-26 16:33:03) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #7 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+10m31s859 (2019-11-26 16:33:13) [ThreadPool-2 (stdout-#7 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 7d9046e8f4a8e8afd4a657c0aaccbbd8c000bc1c	refs/heads/master
+10m39s365 (2019-11-26 16:33:20) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx~<infinity>, /FXlang_samples/tmp.fx<empty>]
+10m39s387 (2019-11-26 16:33:20) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+10m39s391 (2019-11-26 16:33:20) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=28)
+10m39s392 (2019-11-26 16:33:20) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+10m39s424 (2019-11-26 16:33:20) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 26ms, additional 33ms post-processing
+13m 5s294 (2019-11-26 16:35:46) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+13m 5s315 (2019-11-26 16:35:46) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+13m 5s318 (2019-11-26 16:35:46) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=29)
+13m 5s319 (2019-11-26 16:35:46) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+13m 5s355 (2019-11-26 16:35:46) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 24ms, additional 37ms post-processing
+13m22s619 (2019-11-26 16:36:04) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+13m22s641 (2019-11-26 16:36:04) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+13m22s644 (2019-11-26 16:36:04) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=30)
+13m22s645 (2019-11-26 16:36:04) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+13m22s677 (2019-11-26 16:36:04) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 25ms, additional 33ms post-processing
+13m44s249 (2019-11-26 16:36:25) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+13m44s273 (2019-11-26 16:36:25) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+13m44s276 (2019-11-26 16:36:25) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=31)
+13m44s278 (2019-11-26 16:36:25) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+13m44s325 (2019-11-26 16:36:25) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 25ms, additional 51ms post-processing
+14m12s 88 (2019-11-26 16:36:53) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+14m12s107 (2019-11-26 16:36:53) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+14m12s109 (2019-11-26 16:36:53) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=32)
+14m12s111 (2019-11-26 16:36:53) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+14m12s144 (2019-11-26 16:36:53) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 35ms post-processing
+14m22s304 (2019-11-26 16:37:03) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+14m22s329 (2019-11-26 16:37:03) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+14m22s333 (2019-11-26 16:37:03) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=33)
+14m22s335 (2019-11-26 16:37:03) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+14m22s388 (2019-11-26 16:37:03) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 29ms, additional 55ms post-processing
+14m41s929 (2019-11-26 16:37:23) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+14m41s954 (2019-11-26 16:37:23) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+14m41s957 (2019-11-26 16:37:23) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=34)
+14m41s958 (2019-11-26 16:37:23) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+14m41s988 (2019-11-26 16:37:23) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 32ms post-processing
+14m55s140 (2019-11-26 16:37:36) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+14m55s161 (2019-11-26 16:37:36) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+14m55s162 (2019-11-26 16:37:36) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=35)
+14m55s165 (2019-11-26 16:37:36) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+14m55s198 (2019-11-26 16:37:36) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 35ms post-processing
+15m32s484 (2019-11-26 16:38:13) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+15m32s501 (2019-11-26 16:38:13) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+15m32s501 (2019-11-26 16:38:13) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #8 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+15m32s977 (2019-11-26 16:38:14) [ThreadPool-2 (stdout-#8 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 7d9046e8f4a8e8afd4a657c0aaccbbd8c000bc1c	refs/heads/master
+17m51s804 (2019-11-26 16:40:33) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+17m51s825 (2019-11-26 16:40:33) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+17m51s826 (2019-11-26 16:40:33) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=36)
+17m51s828 (2019-11-26 16:40:33) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+17m51s861 (2019-11-26 16:40:33) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 35ms post-processing
+18m13s641 (2019-11-26 16:40:55) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+18m13s662 (2019-11-26 16:40:55) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+18m13s667 (2019-11-26 16:40:55) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=37)
+18m13s669 (2019-11-26 16:40:55) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+18m13s718 (2019-11-26 16:40:55) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 26ms, additional 51ms post-processing
+18m35s571 (2019-11-26 16:41:17) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+18m35s590 (2019-11-26 16:41:17) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+18m35s593 (2019-11-26 16:41:17) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=38)
+18m35s594 (2019-11-26 16:41:17) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+18m35s626 (2019-11-26 16:41:17) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 33ms post-processing
+19m14s538 (2019-11-26 16:41:55) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+19m14s565 (2019-11-26 16:41:56) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+19m14s567 (2019-11-26 16:41:56) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=39)
+19m14s569 (2019-11-26 16:41:56) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+19m14s607 (2019-11-26 16:41:56) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 29ms, additional 40ms post-processing
+19m32s751 (2019-11-26 16:42:14) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+19m32s767 (2019-11-26 16:42:14) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+19m32s769 (2019-11-26 16:42:14) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=40)
+19m32s771 (2019-11-26 16:42:14) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+19m32s809 (2019-11-26 16:42:14) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 17ms, additional 40ms post-processing
+19m40s373 (2019-11-26 16:42:21) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+19m40s394 (2019-11-26 16:42:21) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+19m40s396 (2019-11-26 16:42:21) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=41)
+19m40s397 (2019-11-26 16:42:21) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+19m40s427 (2019-11-26 16:42:21) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 31ms post-processing
+20m42s494 (2019-11-26 16:43:23) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+20m42s515 (2019-11-26 16:43:23) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+20m42s515 (2019-11-26 16:43:23) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #9 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+20m43s211 (2019-11-26 16:43:24) [ThreadPool-2 (stdout-#9 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 7d9046e8f4a8e8afd4a657c0aaccbbd8c000bc1c	refs/heads/master
+20m50s591 (2019-11-26 16:43:32) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/main.py<empty>, /main.py~<infinity>]
+20m50s616 (2019-11-26 16:43:32) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+20m50s618 (2019-11-26 16:43:32) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=42)
+20m50s631 (2019-11-26 16:43:32) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+20m50s673 (2019-11-26 16:43:32) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 55ms post-processing
+20m57s495 (2019-11-26 16:43:38) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/main.py<empty>, /main.py~<infinity>]
+20m57s543 (2019-11-26 16:43:38) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+20m57s553 (2019-11-26 16:43:39) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=43)
+20m57s564 (2019-11-26 16:43:39) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+20m57s645 (2019-11-26 16:43:39) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 58ms, additional 92ms post-processing
+21m 3s710 (2019-11-26 16:43:45) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+21m 3s728 (2019-11-26 16:43:45) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+21m 3s730 (2019-11-26 16:43:45) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=44)
+21m 3s732 (2019-11-26 16:43:45) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m 3s767 (2019-11-26 16:43:45) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 20ms, additional 37ms post-processing
+21m23s146 (2019-11-26 16:44:04) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+21m23s166 (2019-11-26 16:44:04) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+21m23s169 (2019-11-26 16:44:04) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=45)
+21m23s171 (2019-11-26 16:44:04) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m23s203 (2019-11-26 16:44:04) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 23ms, additional 35ms post-processing
+21m37s365 (2019-11-26 16:44:18) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+21m37s386 (2019-11-26 16:44:18) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+21m37s388 (2019-11-26 16:44:18) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=46)
+21m37s390 (2019-11-26 16:44:18) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m37s429 (2019-11-26 16:44:18) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 23ms, additional 41ms post-processing
+21m57s684 (2019-11-26 16:44:39) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+21m57s711 (2019-11-26 16:44:39) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+21m57s715 (2019-11-26 16:44:39) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=47)
+21m57s716 (2019-11-26 16:44:39) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+21m57s751 (2019-11-26 16:44:39) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 29ms, additional 37ms post-processing
+22m 6s399 (2019-11-26 16:44:47) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+22m 6s417 (2019-11-26 16:44:47) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+22m 6s418 (2019-11-26 16:44:47) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=48)
+22m 6s420 (2019-11-26 16:44:47) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+22m 6s449 (2019-11-26 16:44:47) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 18ms, additional 31ms post-processing
+22m 7s560 (2019-11-26 16:44:49) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+22m 7s560 (2019-11-26 16:44:49) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+22m 9s540 (2019-11-26 16:44:50) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@7EC13984
+22m 9s577 (2019-11-26 16:44:51) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: to-first-change)
+22m10s390 (2019-11-26 16:44:51) [main] INFO    sc.comparePreview - file: (/FXlang_samples/tmp.fx;/FXlang_samples/tmp.fx;/@70E29E14)@53CE2392
+22m10s414 (2019-11-26 16:44:51) [main] INFO    sc.changesPreview - setting file content /FXlang_samples/tmp.fx (scrolling: to-first-change)
+22m12s 63 (2019-11-26 16:44:53) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@7EC13984
+22m12s 93 (2019-11-26 16:44:53) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: to-first-change)
+22m36s 79 (2019-11-26 16:45:17) [main] INFO q.swt.shellActivation - Activation change from Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD to null
+22m37s111 (2019-11-26 16:45:18) [Timer-0] INFO                sc.gc - Invocation of garbage collector due to [deactivation] took 32ms.
+22m56s868 (2019-11-26 16:45:38) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/FXlang_samples/tmp.fx~<infinity>, /FXlang_samples/tmp.fx<empty>]
+22m56s889 (2019-11-26 16:45:38) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+22m56s892 (2019-11-26 16:45:38) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=49)
+22m56s894 (2019-11-26 16:45:38) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+22m56s911 (2019-11-26 16:45:38) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 23ms, additional 20ms post-processing
+23m13s993 (2019-11-26 16:45:55) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+23m14s 13 (2019-11-26 16:45:55) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+23m14s 15 (2019-11-26 16:45:55) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=51)
+23m14s 17 (2019-11-26 16:45:55) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+23m14s 27 (2019-11-26 16:45:55) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@101C15AD
+23m14s 36 (2019-11-26 16:45:55) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 21ms post-processing
+23m14s 74 (2019-11-26 16:45:55) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: preserve)
+23m21s601 (2019-11-26 16:46:03) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+23m21s620 (2019-11-26 16:46:03) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+23m21s621 (2019-11-26 16:46:03) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=53)
+23m21s623 (2019-11-26 16:46:03) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+23m21s632 (2019-11-26 16:46:03) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@152E7703
+23m21s640 (2019-11-26 16:46:03) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 20ms, additional 19ms post-processing
+23m21s657 (2019-11-26 16:46:03) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: preserve)
+25m52s499 (2019-11-26 16:48:33) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+25m52s518 (2019-11-26 16:48:33) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+25m52s519 (2019-11-26 16:48:33) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #10 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+25m53s 11 (2019-11-26 16:48:34) [ThreadPool-2 (stdout-#10 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 7d9046e8f4a8e8afd4a657c0aaccbbd8c000bc1c	refs/heads/master
+26m43s607 (2019-11-26 16:49:25) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+26m43s632 (2019-11-26 16:49:25) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+26m43s634 (2019-11-26 16:49:25) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=55)
+26m43s635 (2019-11-26 16:49:25) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+26m43s641 (2019-11-26 16:49:25) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@636E4BF8
+26m43s647 (2019-11-26 16:49:25) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 13ms post-processing
+26m43s677 (2019-11-26 16:49:25) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: preserve)
+26m57s628 (2019-11-26 16:49:39) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+26m57s646 (2019-11-26 16:49:39) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+26m57s647 (2019-11-26 16:49:39) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=57)
+26m57s648 (2019-11-26 16:49:39) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+26m57s654 (2019-11-26 16:49:39) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@66A472B9
+26m57s662 (2019-11-26 16:49:39) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 19ms, additional 16ms post-processing
+26m57s682 (2019-11-26 16:49:39) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: preserve)
+27m24s363 (2019-11-26 16:50:05) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+27m24s381 (2019-11-26 16:50:05) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (242 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+27m24s384 (2019-11-26 16:50:05) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=59)
+27m24s385 (2019-11-26 16:50:05) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+27m24s391 (2019-11-26 16:50:05) [main] INFO    sc.comparePreview - file: (/parser/ast.py;/parser/ast.py;/@70E29E14)@2B6FCCA1
+27m24s397 (2019-11-26 16:50:05) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 13ms post-processing
+27m24s428 (2019-11-26 16:50:05) [main] INFO    sc.changesPreview - setting file content /parser/ast.py (scrolling: preserve)
+27m41s592 (2019-11-26 16:50:23) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>, /<empty>]
+27m41s612 (2019-11-26 16:50:23) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 6 roots
+27m41s614 (2019-11-26 16:50:23) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 2ms)
+27m41s615 (2019-11-26 16:50:23) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 3ms (243 nodes, 8 refs, 2ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+27m41s616 (2019-11-26 16:50:23) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=61)
+27m41s618 (2019-11-26 16:50:23) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+27m41s648 (2019-11-26 16:50:23) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 25ms, additional 31ms post-processing
+27m46s495 (2019-11-26 16:50:27) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+27m46s515 (2019-11-26 16:50:27) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (243 nodes, 8 refs, 0ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+27m46s517 (2019-11-26 16:50:27) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=63)
+27m46s519 (2019-11-26 16:50:27) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+27m46s538 (2019-11-26 16:50:27) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 22ms post-processing
+31m 2s507 (2019-11-26 16:53:43) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+31m 2s524 (2019-11-26 16:53:43) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+31m 2s525 (2019-11-26 16:53:43) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #11 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+31m 3s  4 (2019-11-26 16:53:44) [ThreadPool-2 (stdout-#11 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 93e13573915b5bc1a77c8dc4b94e15dd12be2537	refs/heads/master
+34m30s664 (2019-11-26 16:57:12) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+34m30s681 (2019-11-26 16:57:12) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (243 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+34m30s682 (2019-11-26 16:57:12) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=64)
+34m30s684 (2019-11-26 16:57:12) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+34m30s700 (2019-11-26 16:57:12) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 18ms, additional 18ms post-processing
+34m58s903 (2019-11-26 16:57:40) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+34m58s922 (2019-11-26 16:57:40) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (243 nodes, 8 refs, 1ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+34m58s923 (2019-11-26 16:57:40) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=65)
+34m58s925 (2019-11-26 16:57:40) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+34m58s935 (2019-11-26 16:57:40) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 20ms, additional 12ms post-processing
+35m23s140 (2019-11-26 16:58:04) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+35m23s160 (2019-11-26 16:58:04) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (243 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+35m23s162 (2019-11-26 16:58:04) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=66)
+35m23s163 (2019-11-26 16:58:04) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+35m23s172 (2019-11-26 16:58:04) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 10ms post-processing
+36m 9s211 (2019-11-26 16:58:50) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+36m 9s233 (2019-11-26 16:58:50) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (243 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+36m 9s235 (2019-11-26 16:58:50) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=67)
+36m 9s237 (2019-11-26 16:58:50) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+36m 9s253 (2019-11-26 16:58:50) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 24ms, additional 18ms post-processing
+36m12s515 (2019-11-26 16:58:53) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+36m12s529 (2019-11-26 16:58:53) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+36m12s530 (2019-11-26 16:58:53) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #12 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+36m13s 13 (2019-11-26 16:58:54) [ThreadPool-2 (stdout-#12 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 93e13573915b5bc1a77c8dc4b94e15dd12be2537	refs/heads/master
+37m36s 96 (2019-11-26 17:00:17) [WorkerThread-1] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+37m36s 97 (2019-11-26 17:00:17) [WorkerThread-1] INFO               q.exec - Executing #13 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh fetch --progress --recurse-submodules=no origin
+37m36s742 (2019-11-26 17:00:18) [WorkerThread-1] INFO smartgit.command.refresh - Post-command refresh for [/<empty>, /.git/FETCH_HEAD<empty>] for /home/riddle/pro/uni-compilers
+37m36s744 (2019-11-26 17:00:18) [WorkerThread-1] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+37m36s759 (2019-11-26 17:00:18) [WorkerThread-1] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (243 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+37m36s761 (2019-11-26 17:00:18) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=68)
+37m36s763 (2019-11-26 17:00:18) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+37m36s769 (2019-11-26 17:00:18) [WorkerThread-1] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 17ms, additional 9ms post-processing
+38m 0s282 (2019-11-26 17:00:41) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+38m 0s298 (2019-11-26 17:00:41) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 7 roots
+38m 0s301 (2019-11-26 17:00:41) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 3ms)
+38m 0s302 (2019-11-26 17:00:41) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 4ms (244 nodes, 8 refs, 3ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+38m 0s304 (2019-11-26 17:00:41) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=69)
+38m 0s306 (2019-11-26 17:00:41) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+38m 0s316 (2019-11-26 17:00:41) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 12ms post-processing
+38m 3s983 (2019-11-26 17:00:45) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+38m 4s  3 (2019-11-26 17:00:45) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 2ms (244 nodes, 8 refs, 0ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 1ms reflog, 0ms assertions)
+38m 4s  5 (2019-11-26 17:00:45) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=70)
+38m 4s  6 (2019-11-26 17:00:45) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+38m 4s 15 (2019-11-26 17:00:45) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 10ms post-processing
+40m20s489 (2019-11-26 17:03:01) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+40m20s506 (2019-11-26 17:03:01) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+40m20s507 (2019-11-26 17:03:01) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=71)
+40m20s508 (2019-11-26 17:03:01) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+40m20s519 (2019-11-26 17:03:01) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 17ms, additional 12ms post-processing
+41m22s523 (2019-11-26 17:04:03) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+41m22s537 (2019-11-26 17:04:03) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+41m22s538 (2019-11-26 17:04:03) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #14 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+41m23s 17 (2019-11-26 17:04:04) [ThreadPool-2 (stdout-#14 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 1b8b898b32985dc6c7fbeb543c5824cbd0e3e32a	refs/heads/master
+44m 6s808 (2019-11-26 17:06:48) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+44m 6s833 (2019-11-26 17:06:48) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+44m 6s835 (2019-11-26 17:06:48) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=72)
+44m 6s836 (2019-11-26 17:06:48) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+44m 6s848 (2019-11-26 17:06:48) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 27ms, additional 14ms post-processing
+45m 8s494 (2019-11-26 17:07:49) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+45m 8s509 (2019-11-26 17:07:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+45m 8s511 (2019-11-26 17:07:49) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=73)
+45m 8s512 (2019-11-26 17:07:49) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+45m 8s525 (2019-11-26 17:07:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 17ms, additional 14ms post-processing
+46m32s530 (2019-11-26 17:09:13) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+46m32s545 (2019-11-26 17:09:13) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+46m32s546 (2019-11-26 17:09:13) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #15 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+46m33s 26 (2019-11-26 17:09:14) [ThreadPool-2 (stdout-#15 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 1b8b898b32985dc6c7fbeb543c5824cbd0e3e32a	refs/heads/master
+48m31s993 (2019-11-26 17:11:13) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+48m32s 10 (2019-11-26 17:11:13) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 1ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+48m32s 12 (2019-11-26 17:11:13) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=74)
+48m32s 13 (2019-11-26 17:11:13) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+48m32s 21 (2019-11-26 17:11:13) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 19ms, additional 9ms post-processing
+49m38s989 (2019-11-26 17:12:20) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+49m39s 21 (2019-11-26 17:12:20) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+49m39s 34 (2019-11-26 17:12:20) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=75)
+49m39s 36 (2019-11-26 17:12:20) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+49m39s 57 (2019-11-26 17:12:20) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 45ms, additional 23ms post-processing
+49m49s200 (2019-11-26 17:12:30) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+49m49s217 (2019-11-26 17:12:30) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+49m49s219 (2019-11-26 17:12:30) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=76)
+49m49s220 (2019-11-26 17:12:30) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+49m49s230 (2019-11-26 17:12:30) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 19ms, additional 12ms post-processing
+50m 8s130 (2019-11-26 17:12:49) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+50m 8s148 (2019-11-26 17:12:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (244 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+50m 8s150 (2019-11-26 17:12:49) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=77)
+50m 8s151 (2019-11-26 17:12:49) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+50m 8s161 (2019-11-26 17:12:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 20ms, additional 11ms post-processing
+50m15s743 (2019-11-26 17:12:57) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+50m15s760 (2019-11-26 17:12:57) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 8 roots
+50m15s763 (2019-11-26 17:12:57) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 3ms)
+50m15s765 (2019-11-26 17:12:57) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 5ms (245 nodes, 8 refs, 3ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 1ms reflog, 0ms assertions)
+50m15s767 (2019-11-26 17:12:57) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=78)
+50m15s768 (2019-11-26 17:12:57) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+50m15s779 (2019-11-26 17:12:57) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 24ms, additional 12ms post-processing
+50m20s843 (2019-11-26 17:13:02) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+50m20s857 (2019-11-26 17:13:02) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (245 nodes, 8 refs, 0ms walk of 2 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+50m20s859 (2019-11-26 17:13:02) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=79)
+50m20s860 (2019-11-26 17:13:02) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+50m20s868 (2019-11-26 17:13:02) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 16ms, additional 9ms post-processing
+51m42s536 (2019-11-26 17:14:23) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+51m42s548 (2019-11-26 17:14:23) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+51m42s549 (2019-11-26 17:14:23) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #16 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+51m43s 39 (2019-11-26 17:14:24) [ThreadPool-2 (stdout-#16 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: abaa6cff972ad7369e032e1f54c04ac93e972df5	refs/heads/master
+52m18s314 (2019-11-26 17:14:59) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+52m18s330 (2019-11-26 17:14:59) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 0ms (245 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 0ms reflog, 0ms assertions)
+52m18s332 (2019-11-26 17:14:59) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=80)
+52m18s334 (2019-11-26 17:14:59) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+52m18s345 (2019-11-26 17:14:59) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 18ms, additional 13ms post-processing
+53m49s649 (2019-11-26 17:16:31) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+53m49s668 (2019-11-26 17:16:31) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 9 roots
+53m49s670 (2019-11-26 17:16:31) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 2ms)
+53m49s671 (2019-11-26 17:16:31) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 3ms (246 nodes, 8 refs, 3ms walk of 2 nodes, 0ms refs, 0ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+53m49s673 (2019-11-26 17:16:31) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=81)
+53m49s674 (2019-11-26 17:16:31) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+53m49s688 (2019-11-26 17:16:31) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 23ms, additional 16ms post-processing
+53m58s655 (2019-11-26 17:16:40) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+53m58s671 (2019-11-26 17:16:40) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (246 nodes, 8 refs, 0ms walk of 2 nodes, 0ms refs, 0ms reachability, 1ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+53m58s672 (2019-11-26 17:16:40) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=82)
+53m58s673 (2019-11-26 17:16:40) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+53m58s681 (2019-11-26 17:16:40) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 17ms, additional 10ms post-processing
+54m47s332 (2019-11-26 17:17:28) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>, /<empty>]
+54m47s346 (2019-11-26 17:17:28) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 10 roots
+54m47s348 (2019-11-26 17:17:28) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 2ms)
+54m47s349 (2019-11-26 17:17:28) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 3ms (247 nodes, 8 refs, 2ms walk of 2 nodes, 0ms refs, 0ms reachability, 0ms divergence for 1 branches, 1ms reflog, 0ms assertions)
+54m47s353 (2019-11-26 17:17:28) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=83)
+54m47s358 (2019-11-26 17:17:28) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+54m47s370 (2019-11-26 17:17:28) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 17ms post-processing
+55m41s797 (2019-11-26 17:18:23) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+55m41s817 (2019-11-26 17:18:23) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (247 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+55m41s819 (2019-11-26 17:18:23) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=84)
+55m41s821 (2019-11-26 17:18:23) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+55m41s835 (2019-11-26 17:18:23) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 16ms post-processing
+56m52s541 (2019-11-26 17:19:33) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+56m52s557 (2019-11-26 17:19:34) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+56m52s558 (2019-11-26 17:19:34) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #17 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+56m53s 41 (2019-11-26 17:19:34) [ThreadPool-2 (stdout-#17 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 08e1cc99cb6ab4a2d69a5a9094229d28c8d770b4	refs/heads/master
+1h 0m46s 43 (2019-11-26 17:23:27) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>]
+1h 0m46s 60 (2019-11-26 17:23:27) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (247 nodes, 8 refs, 0ms walk of 1 nodes, 0ms refs, 0ms reachability, 0ms divergence for 0 branches, 1ms reflog, 0ms assertions)
+1h 0m46s 63 (2019-11-26 17:23:27) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=85)
+1h 0m46s 65 (2019-11-26 17:23:27) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 0m46s 75 (2019-11-26 17:23:27) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 20ms, additional 12ms post-processing
+1h 2m 2s546 (2019-11-26 17:24:43) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+1h 2m 2s559 (2019-11-26 17:24:44) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h 2m 2s561 (2019-11-26 17:24:44) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #18 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h 2m 3s 44 (2019-11-26 17:24:44) [ThreadPool-2 (stdout-#18 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 08e1cc99cb6ab4a2d69a5a9094229d28c8d770b4	refs/heads/master
+1h 6m 1s 79 (2019-11-26 17:28:42) [Timer-0] WARNING      sc.file.monitor - No file monitor activity since 251840ms.
+1h 6m 2s925 (2019-11-26 17:28:44) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>, /<empty>]
+1h 6m 2s942 (2019-11-26 17:28:44) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 11 roots
+1h 6m 2s944 (2019-11-26 17:28:44) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 2ms)
+1h 6m 2s945 (2019-11-26 17:28:44) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 3ms (248 nodes, 8 refs, 2ms walk of 2 nodes, 0ms refs, 0ms reachability, 1ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+1h 6m 2s947 (2019-11-26 17:28:44) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=86)
+1h 6m 2s948 (2019-11-26 17:28:44) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 6m 2s960 (2019-11-26 17:28:44) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 22ms, additional 13ms post-processing
+1h 6m 8s332 (2019-11-26 17:28:49) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+1h 6m 8s350 (2019-11-26 17:28:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (248 nodes, 8 refs, 0ms walk of 3 nodes, 0ms refs, 1ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+1h 6m 8s351 (2019-11-26 17:28:49) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=87)
+1h 6m 8s352 (2019-11-26 17:28:49) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 6m 8s359 (2019-11-26 17:28:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 19ms, additional 9ms post-processing
+1h 7m12s554 (2019-11-26 17:29:54) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.repository.backgroundFetch - Running background poll: [/home/riddle/pro/uni-compilers]
+1h 7m12s571 (2019-11-26 17:29:54) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO smartgit.executable.remoteCmd - Using built-in SSH client
+1h 7m12s572 (2019-11-26 17:29:54) [ThreadPool-5 (smartgit.bxo$$Lambda$552/0x0000000100463c40)] INFO               q.exec - Executing #19 [/home/riddle/pro/uni-compilers] /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/master*
+1h 7m13s 75 (2019-11-26 17:29:54) [ThreadPool-2 (stdout-#19 /usr/bin/git -c credential.helper=/opt/smartgit/lib/credentials.sh ls-remote origin refs/heads/maste)] INFO smartgit.command.logging - stdout: 0a3eb9aace8e910625a87542a277675ae9956158	refs/heads/master
+1h 9m 3s 84 (2019-11-26 17:31:44) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/parser/ast.py~<infinity>, /parser/ast.py<empty>, /<empty>]
+1h 9m 3s102 (2019-11-26 17:31:44) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Actually updating node cache at /home/riddle/pro/uni-compilers/.git for 12 roots
+1h 9m 3s104 (2019-11-26 17:31:44) [ThreadPool-5 (Refresh-0)] INFO        git.nodecache - Node cache for /home/riddle/pro/uni-compilers/.git: Node cache updated with 2 commits for 1 roots at /home/riddle/pro/uni-compilers/.git (took 2ms)
+1h 9m 3s105 (2019-11-26 17:31:44) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 4ms (249 nodes, 8 refs, 3ms walk of 2 nodes, 0ms refs, 0ms reachability, 0ms divergence for 1 branches, 1ms reflog, 0ms assertions)
+1h 9m 3s107 (2019-11-26 17:31:44) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=88)
+1h 9m 3s108 (2019-11-26 17:31:44) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 9m 3s118 (2019-11-26 17:31:44) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 23ms, additional 11ms post-processing
+1h 9m 8s483 (2019-11-26 17:31:49) [ThreadPool-5 (Refresh-0)] INFO       smartgit.model - Local refresh started for /home/riddle/pro/uni-compilers [/<empty>]
+1h 9m 8s502 (2019-11-26 17:31:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.commitnet - Commit Net for /home/riddle/pro/uni-compilers/.git built in 1ms (249 nodes, 8 refs, 1ms walk of 2 nodes, 0ms refs, 0ms reachability, 0ms divergence for 1 branches, 0ms reflog, 0ms assertions)
+1h 9m 8s504 (2019-11-26 17:31:49) [main] INFO smartgit.model.tree-table-synchronizer - Model '/home/riddle/pro/uni-compilers' synchronized with UI (12 directories processed, timestamp=89)
+1h 9m 8s505 (2019-11-26 17:31:49) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> /home/riddle/pro/uni-compilers
+1h 9m 8s513 (2019-11-26 17:31:49) [ThreadPool-5 (Refresh-0)] INFO smartgit.statistics.local - Refresh finished for /home/riddle/pro/uni-compilers (38 entries) in 21ms, additional 10ms post-processing
+1h11m 0s863 (2019-11-26 17:33:42) [main] INFO q.swt.shellActivation - Activation change from null to Shell {uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11)}@279FEDBD
+1h11m 0s863 (2019-11-26 17:33:42) [main] INFO smartgit.repository.backgroundScan - Starting background refreshing.
+1h11m 1s 21 (2019-11-26 17:33:42) [main] INFO              q.frame - closed smartgit.boi@42A9E5D1:uni-compilers - [~/pro/uni-compilers] - SmartGit 19.1.4 (evaluation until Dec 11) (smartgit.boi@279FEDBD) (index=0)
+1h11m 1s 23 (2019-11-26 17:33:42) [main] INFO smartgit.repositoryTreeTable - close [uni-compilers /home/riddle/pro/uni-compilers git=true]; already open: [uni-compilers /home/riddle/pro/uni-compilers git=true]
+1h11m 1s 24 (2019-11-26 17:33:42) [ThreadPool-2 (smartgit.aFg$$Lambda$608/0x00000001000e0040)] INFO      sc.file.monitor - Removing watch for '/home/riddle/pro/uni-compilers', canonical: '/home/riddle/pro/uni-compilers'
+1h11m 1s 25 (2019-11-26 17:33:42) [main] INFO         commit.notes - root changed /home/riddle/pro/uni-compilers -> null
+1h11m 1s 40 (2019-11-26 17:33:42) [main] INFO          sc.password - Writing 0 phrases.
+1h11m 1s 63 (2019-11-26 17:33:42) [ThreadPool-2 (smartgit.aFg$$Lambda$608/0x00000001000e0040)] INFO      sc.file.monitor -   ... took 39ms [/home/riddle/pro/uni-compilers]
+1h11m 1s 65 (2019-11-26 17:33:42) [main] INFO          sc.password - Writing 0 phrases.
+1h11m 1s 66 (2019-11-26 17:33:42) [main] INFO             shutdown - Starting 9 shutdown hook threads
+1h11m 1s 66 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+1h11m 1s 66 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook SmartGit app dispose
+1h11m 1s 66 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1574778162038.tmp
+1h11m 1s 66 (2019-11-26 17:33:42) [SmartGit app dispose] INFO             shutdown - Running hook SmartGit app dispose
+1h11m 1s 67 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+1h11m 1s 67 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/_lock_
+1h11m 1s 67 (2019-11-26 17:33:42) [SmartGit app dispose] INFO             shutdown - Ran hook SmartGit app dispose
+1h11m 1s 67 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/_lock_
+1h11m 1s 67 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/_lock_] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/_lock_
+1h11m 1s 67 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Temp dir /tmp/smartgit-5816854741682772909tmp
+1h11m 1s 67 (2019-11-26 17:33:42) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1574778162038.tmp] INFO             shutdown - Running hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1574778162038.tmp
+1h11m 1s 67 (2019-11-26 17:33:42) [Bug file /home/riddle/.config/smartgit/19.1/~current-log.1574778162038.tmp] INFO             shutdown - Ran hook Bug file /home/riddle/.config/smartgit/19.1/~current-log.1574778162038.tmp
+1h11m 1s 72 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+1h11m 1s 72 (2019-11-26 17:33:42) [Temp dir /tmp/smartgit-5816854741682772909tmp] INFO             shutdown - Running hook Temp dir /tmp/smartgit-5816854741682772909tmp
+1h11m 1s 72 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.prelock
+1h11m 1s 72 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.postlock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.prelock
+1h11m 1s 72 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Background scan
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.postlock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.prelock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.prelock
+1h11m 1s 72 (2019-11-26 17:33:42) [Temp dir /tmp/smartgit-5816854741682772909tmp] INFO             shutdown - Ran hook Temp dir /tmp/smartgit-5816854741682772909tmp
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.postlock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.postlock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Running hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+1h11m 1s 72 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Releasing /home/riddle/.config/smartgit/19.1/port.lock
+1h11m 1s 72 (2019-11-26 17:33:42) [main] INFO             shutdown - Started hook Background fetch
+1h11m 1s 73 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO        q.io.lockFile - Deleted lock file /home/riddle/.config/smartgit/19.1/port.lock
+1h11m 1s 73 (2019-11-26 17:33:42) [Background scan] INFO             shutdown - Running hook Background scan
+1h11m 1s 73 (2019-11-26 17:33:42) [Lock file /home/riddle/.config/smartgit/19.1/port.lock] INFO             shutdown - Ran hook Lock file /home/riddle/.config/smartgit/19.1/port.lock
+1h11m 1s 73 (2019-11-26 17:33:42) [Background scan] INFO             shutdown - Ran hook Background scan
+1h11m 1s 73 (2019-11-26 17:33:42) [Background fetch] INFO             shutdown - Running hook Background fetch
+1h11m 1s 73 (2019-11-26 17:33:42) [Background fetch] INFO             shutdown - Ran hook Background fetch
+1h11m 1s 73 (2019-11-26 17:33:42) [main] INFO             shutdown - done.
+1h11m 1s 73 (2019-11-26 17:33:42) [main] INFO q.swt.shellActivation - Activation change from Shell {*Disposed*}@279FEDBD to null
+1h11m 1s 73 (2019-11-26 17:33:42) [main] INFO smartgit.repository.backgroundScan - Stopping background refreshing.
+1h11m 1s 74 (2019-11-26 17:33:42) [main] INFO                q.swt - runnable ignored - timer
+1h11m 1s 74 (2019-11-26 17:33:42) [main] INFO                q.swt - runnable ignored - timer
+1h11m 1s 74 (2019-11-26 17:33:42) [main] INFO                q.swt - runnable ignored - timer

@@ -1,8 +1,9 @@
 readNotifications: []
 dontPublishNotifications: [linux.theme-null, repositories-no-favorites-null, hosting-provider-could-be-configured-github-null,
-  fileMonitor.directoriesExcluded-null, gc.autoDetach-null]
+  fileMonitor.directoriesExcluded-null, gc.autoDetach-null, update-check-infosmartgit-training-commercial-demo-null]
 dontPublishUntil-fileMonitor.directoriesExcluded-null: 0
 dontPublishUntil-repositories-no-favorites-null: 0
 dontPublishUntil-linux.theme-null: 0
 dontPublishUntil-hosting-provider-could-be-configured-github-null: 0
 dontPublishUntil-gc.autoDetach-null: 0
+dontPublishUntil-update-check-infosmartgit-training-commercial-demo-null: 0
