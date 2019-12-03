@@ -669,3 +669,6 @@ function makedot() {
 
 alias g1='git log --no-merges --oneline'
 alias g2='git log --first-parent'
+
+alias oo='p main.py'
+alias uu='cd /home/riddle/pro/uni-compilers'

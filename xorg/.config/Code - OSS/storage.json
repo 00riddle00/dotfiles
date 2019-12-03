@@ -53,7 +53,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/riddle/pro/LaTex3",
                                         "external": "file:///home/riddle/pro/LaTex3",
                                         "path": "/home/riddle/pro/LaTex3",
                                         "scheme": "file"
@@ -74,6 +73,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/riddle/Downloads/3pl-1.1-2.2-3.1-4.8.pl",
+                                        "path": "/home/riddle/Downloads/3pl-1.1-2.2-3.1-4.8.pl",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/3pl-1.1-2.2-3.1-4.8.pl"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -209,7 +219,8 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Folder",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -402,8 +413,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -422,8 +432,7 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel",
-                                    "checked": true
+                                    "label": "Show &&Panel"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1432,8 +1441,7 @@
     "pickerWorkingDir": "/home/riddle/pro",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/riddle/pro/LaTex3",
-            "backupPath": "/home/riddle/.config/Code - OSS/Backups/e444f18eecd16ff46ad9ce89286f7643",
+            "backupPath": "/home/riddle/.config/Code - OSS/Backups/1574880765423",
             "uiState": {
                 "mode": 0,
                 "x": 263,

@@ -140,6 +140,9 @@ nmap     tk             gt
 nmap     th             :tabfirst<CR>
 nmap     tl             :tablast<CR>
 
+" Macros
+let @o="oprint(\"here\")\<Esc>"
+
 " Copy/Paste
 vmap <C-c> "+y
 "vmap <C-c> "+yi
