@@ -672,3 +672,5 @@ alias g2='git log --first-parent'
 
 alias oo='p main.py'
 alias uu='cd /home/riddle/pro/uni-compilers'
+
+alias sp.copy='s cp -r ~/pro/schoolproud/core/{,.}* ./'

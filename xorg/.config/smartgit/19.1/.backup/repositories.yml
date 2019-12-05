@@ -1,5 +1,5 @@
 gitRootSettingsSet:
-  roots: [~/pro/uni-compilers]
+  roots: [~/pro/schoolproud/core]
   root/home/riddle/pro/uni-block2:
     databaseCleanup: {}
     log:
@@ -39,6 +39,28 @@ gitRootSettingsSet:
       logRootSettings: {}
     push: {}
     commitNotes: {}
+    journal: {}
+  root/home/riddle/tmp7:
+    databaseCleanup: {}
+    log:
+      rootSettings: {}
+      fileFilterConfiguration: {}
+    merge:
+      logRootSettings: {}
+    push: {}
+    commitNotes: {}
+    journal: {}
+  root/home/riddle/pro/schoolproud/core:
+    databaseCleanup: {}
+    log:
+      rootSettings: {}
+      fileFilterConfiguration: {}
+    merge:
+      logRootSettings: {}
+    push: {}
+    commitNotes:
+      commitNotesHistory: [use PHPMailer for processing order as well, Set SMTP Security
+          to None in mail config]
     journal: {}
 hgRootSettingsSet:
   roots: []

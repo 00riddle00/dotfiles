@@ -88,11 +88,11 @@ globalTextComponentSettings:
     color-literal: 11184853, color-no-code: 0, color-plain-text: 12566463, color-punctuation: 12561045,
     color-source: 0, color-string: 14002901, color-tag: 10274701, color-type: 11513807}
   colors.useDark: false
-listx: {eUT: 1576073413248, nRT: 1575425790418, eV: '19.1', uid: 721q2dl2orf4}
+listx: {eUT: 1576073413248, nRT: 1575756853194, eV: '19.1', uid: 721q2dl2orf4}
 project: {preferLogWindow: false, showWelcomeDialog: false}
 uiSettings: {}
-vcsRecords: {lastGitUsage: 1575056643710}
-updateCheck: {mode: download, prevCheckTime: 1575056101022, checkedBuild: 14196}
+vcsRecords: {lastGitUsage: 1575443567919}
+updateCheck: {mode: download, prevCheckTime: 1575368803413, checkedBuild: 14196}
 updateCheckDg: {}
 proxy: {}
 spellCheck:
@@ -102,6 +102,6 @@ spellCheck:
   activeDictionary: 0
 lastUsedVersion: '19.1'
 firstUsedTime: 1573394995576
-tempDirs: [/tmp/smartgit-4430447436970190715tmp]
+tempDirs: [/tmp/smartgit-5088523807868335489tmp]
 warnForMissingMasterPassword: false
 sendStacktraces2: false
