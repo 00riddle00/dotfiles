@@ -21,17 +21,13 @@
     (gimp-toolbox
         (side left)
         (book
-            (current-page 2)
+            (current-page 5)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)
                 (aux-info
                     (show-button-bar "true")))
             (dockable "gimp-navigation-view"
-                (tab-style automatic)
-                (aux-info
-                    (show-button-bar "true")))
-            (dockable "gimp-tool-options"
                 (tab-style automatic)
                 (aux-info
                     (show-button-bar "true")))
@@ -46,7 +42,11 @@
                     (edit-active "true")
                     (current-data "Dynamics Off")))
             (dockable "gimp-histogram-editor"
-                (tab-style automatic))))
+                (tab-style automatic))
+            (dockable "gimp-tool-options"
+                (tab-style automatic)
+                (aux-info
+                    (show-button-bar "true")))))
     (gimp-dock
         (side left)
         (position 251)
@@ -113,11 +113,11 @@
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
     (position 30 186)
-    (size 406 550))
+    (size 470 550))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
     (position 116 242)
-    (size 406 536))
+    (size 430 542))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")
     (position 118 395))
@@ -158,7 +158,7 @@
     (size 345 305))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 190 0))
+    (position 215 185))
 
 (hide-docks no)
 (single-window-mode yes)

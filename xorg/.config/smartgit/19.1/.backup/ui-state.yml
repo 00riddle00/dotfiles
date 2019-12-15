@@ -1,12 +1,6 @@
 bounds:
-- {key: project, x: 4, y: 0, width: 1437, height: 900, state: 1}
+- {key: project, x: 4, y: 0, width: 1437, height: 875, state: 1}
 - {key: welcome}
-- {key: compare, x: 243, y: 60, width: 1437, height: 900}
-- {key: git.indexEditor}
-- {key: git.reset.adv, width: 750, height: 580}
-- {key: git.discard, width: 500, height: 309}
-- {key: git.remove, width: 500, height: 309}
-- {key: git.commit, width: 630, height: 550}
 conflictSolverFrame: {}
 indexEditorFrame: {}
 columns:
@@ -16,24 +10,20 @@ columns:
     visibleColumnNames: "Name\tRelative Directory\tState"
     columnWidths:
     - {id: Name, width: 200, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
     - {id: State, width: 75, width2x: 0}
     - {id: Relative Directory, width: 1315, width2x: 0}
-    - {id: Relative Path, width: 500, width2x: 0}
     sortOrders:
     - {id: Name, reverse: false}
-    - {id: State, reverse: false}
     - {id: Relative Directory, reverse: false}
 gitViewFileFilter: {viewRecursive: true, viewFromSubmodules: true, viewIgnoredFiles: false,
   viewRenameSources: false, viewSkipped: false, viewUnversionedFiles: true, viewUnchangedFiles: false,
   viewUnchangedAssumed: false, style: 0}
 hgViewFileFilter: {}
 deepGitUiConfiguration: {}
-confirmations: {remove.repositoryOrGroup: true, docking.closed: true, close.unpushedCommits: true}
-gitProjectLayout.main: (([+319x354:directories ][+319x591:branches ])(([+1594x339:files
-  ][-2x1:message ])[+1594x414:changes ]([+1594x189:outgoing ][-3x1:output ])))
+confirmations: {remove.repositoryOrGroup: true}
+gitProjectLayout.main: (([+319x567:directories ][+319x378:branches ])(([+1594x170:files
+  ][-2x1:message ])[+1594x584:changes ]([+1594x188:outgoing ][-3x1:output ])))
 gitProjectLayout.mainIsdefault: true
 gitProjectLayout.review: ([+2x1:directories ][+7x1:files ][+3x1:message ])[+10x3:changes
   ]([-1x1:branches ][-3x1:outgoing ][-3x1:output ])
-lastRepositoryPath: /home/riddle/pro/schoolproud/core
-git.remove.deleteLocalFile: false
-commit.expandOptions: false

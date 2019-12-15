@@ -1,6 +1,6 @@
 gitRootSettingsSet:
-  roots: [~/pro/schoolproud/core]
-  root/home/riddle/pro/uni-block2:
+  roots: [~/pro/uni-compilers/core]
+  root/home/riddle/pro/uni-compilers/core:
     databaseCleanup: {}
     log:
       rootSettings: {}
@@ -9,58 +9,6 @@ gitRootSettingsSet:
       logRootSettings: {}
     push: {}
     commitNotes: {}
-    journal: {}
-  root/home/riddle/pro/f-2019-11-10.repo2:
-    databaseCleanup: {}
-    log:
-      rootSettings: {}
-      fileFilterConfiguration: {}
-    merge:
-      logRootSettings: {}
-    push: {}
-    commitNotes: {}
-    journal: {}
-  root/home/riddle/pro/uni-block:
-    databaseCleanup: {}
-    log:
-      rootSettings: {baseRoots: 'ref://HEAD', extendedRoots: ''}
-      fileFilterConfiguration: {}
-    merge:
-      logRootSettings: {}
-    push: {}
-    commitNotes: {}
-    journal: {}
-  root/home/riddle/pro/uni-compilers:
-    databaseCleanup: {}
-    log:
-      rootSettings: {}
-      fileFilterConfiguration: {}
-    merge:
-      logRootSettings: {}
-    push: {}
-    commitNotes: {}
-    journal: {}
-  root/home/riddle/tmp7:
-    databaseCleanup: {}
-    log:
-      rootSettings: {}
-      fileFilterConfiguration: {}
-    merge:
-      logRootSettings: {}
-    push: {}
-    commitNotes: {}
-    journal: {}
-  root/home/riddle/pro/schoolproud/core:
-    databaseCleanup: {}
-    log:
-      rootSettings: {}
-      fileFilterConfiguration: {}
-    merge:
-      logRootSettings: {}
-    push: {}
-    commitNotes:
-      commitNotesHistory: [use PHPMailer for processing order as well, Set SMTP Security
-          to None in mail config]
     journal: {}
 hgRootSettingsSet:
   roots: []
