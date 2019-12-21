@@ -2,7 +2,7 @@
 image/png=mirage.desktop;nomacs.desktop;feh.desktop;gimp.desktop;ristretto.desktop;
 text/plain=sublime_text_3.desktop;sublime_text.desktop;mirage.desktop;mousepad.desktop;userapp-subl-34QW0Y.desktop;libreoffice-writer.desktop;atom.desktop;
 application/pdf=firefox.desktop;google-chrome.desktop;userapp-firefox-UZ9C0Y.desktop;libreoffice-draw.desktop;
-video/mp4=mpv.desktop;mplayer.desktop;vlc.desktop;
+video/mp4=vlc.desktop;mpv.desktop;mplayer.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mplayer.desktop;
 image/vnd.microsoft.icon=gimp.desktop;
 text/markdown=sublime_text_3.desktop;sublime_text.desktop;firefox.desktop;mousepad.desktop;atom.desktop;userapp-subl-34QW0Y.desktop;
@@ -11,7 +11,7 @@ image/jpeg=nomacs.desktop;mirage.desktop;gimp.desktop;firefox.desktop;feh.deskto
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 image/vnd.rn-realpix=google-chrome.desktop;
 audio/mpeg=vlc.desktop;mplayer.desktop;
-video/x-msvideo=mpv.desktop;mplayer.desktop;vlc.desktop;
+video/x-msvideo=vlc.desktop;mpv.desktop;mplayer.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;calibre-gui.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;

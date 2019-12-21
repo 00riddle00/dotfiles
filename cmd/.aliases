@@ -147,6 +147,7 @@ alias and='cp $MAIN_HOME/Dropbox/sync/android/\(a\)notes/notes.txt $MAIN_HOME/Dr
 alias kan='cat $MAIN_HOME/pro/fl/social/kan.js | xclip'
 alias xres.merge='xrdb -merge $MAIN_HOME/.Xresources'
 alias xres.restart='xrdb $MAIN_HOME/.Xresources'
+alias xres.show='xrdb -query -all'
 alias xdefaults='xrdb -merge $MAIN_HOME/.Xdefaults'
 alias anv='source $MAIN_HOME/venvs/ahl.360/bin/activate'
 alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/id_rsa'
@@ -534,7 +535,6 @@ if xset q &>/dev/null; then
         setxkbmap -option caps:escape 2>/dev/null
     fi
 
-
     ## launch xscreensaver (if installed && not running)
     ps cax | grep xscreensaver > /dev/null 2>&1
     if [ $? -eq 0 ]; then
@@ -543,9 +543,6 @@ if xset q &>/dev/null; then
         xscreensaver -no-splash > /dev/null 2>&1 &
     fi
 
-    ## update X settings
-    #xrdb -MAIN_USER="<$MAIN_USER>" -merge ~/.Xresources
-    #xrdb ~/.Xresources
 else
     if [ $TTY = "/dev/tty1"  ]; then
         ## if tty1, startx
@@ -564,7 +561,6 @@ else
     if [ $? -eq 0 ]; then
       :
     else
-        #/usr/bin/dropbox &
         /usr/bin/dropbox > /dev/null 2>&1;
     fi
 fi
@@ -594,7 +590,6 @@ fi
 ############
 # TEMPORARY
 ############
-
 
 ## c lang
 #alias ms='make rebuild'
@@ -674,3 +669,6 @@ alias oo='p main.py'
 alias uu='cd /home/riddle/pro/uni-compilers'
 
 alias sp.copy='s cp -r ~/pro/schoolproud/core/{,.}* ./'
+
+alias xr='vim ~/.xinitrc'
+alias xres='vim ~/.Xresources'

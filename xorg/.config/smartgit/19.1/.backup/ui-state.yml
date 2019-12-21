@@ -10,9 +10,9 @@ columns:
     visibleColumnNames: "Name\tRelative Directory\tState"
     columnWidths:
     - {id: Name, width: 200, width2x: 0}
-    - {id: Relative Path, width: 500, width2x: 0}
     - {id: State, width: 75, width2x: 0}
     - {id: Relative Directory, width: 1315, width2x: 0}
+    - {id: Relative Path, width: 500, width2x: 0}
     sortOrders:
     - {id: Name, reverse: false}
     - {id: Relative Directory, reverse: false}

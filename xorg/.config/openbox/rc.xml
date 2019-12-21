@@ -254,6 +254,22 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Window management -->
+    <keybind key="W-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>540</height>
+      </action>
+      <action name="MoveToEdge">
+          <direction>north</direction>
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>540</height>
+      </action>
+      <action name="MoveToEdgeSouth"/>
+    </keybind>
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>

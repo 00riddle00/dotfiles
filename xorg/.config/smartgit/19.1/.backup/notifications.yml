@@ -1,9 +1,9 @@
 readNotifications: []
 dontPublishNotifications: [update-check-infosmartgit-training-commercial-demo-null,
-  hosting-provider-could-be-configured-github-null, fileMonitor.directoriesExcluded-null,
-  repositories-no-favorites-null, linux.theme-null]
+  fileMonitor.directoriesExcluded-null, repositories-no-favorites-null, linux.theme-null,
+  hosting-provider-could-be-configured-github-null]
 dontPublishUntil-update-check-infosmartgit-training-commercial-demo-null: 1576407789094
-dontPublishUntil-hosting-provider-could-be-configured-github-null: 1576407789863
+dontPublishUntil-hosting-provider-could-be-configured-github-null: 0
 dontPublishUntil-fileMonitor.directoriesExcluded-null: 0
 dontPublishUntil-repositories-no-favorites-null: 0
 dontPublishUntil-linux.theme-null: 0

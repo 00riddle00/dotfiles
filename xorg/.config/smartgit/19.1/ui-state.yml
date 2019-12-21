@@ -22,8 +22,8 @@ gitViewFileFilter: {viewRecursive: true, viewFromSubmodules: true, viewIgnoredFi
 hgViewFileFilter: {}
 deepGitUiConfiguration: {}
 confirmations: {remove.repositoryOrGroup: true}
-gitProjectLayout.main: (([+319x567:directories ][+319x378:branches ])(([+1594x170:files
-  ][-2x1:message ])[+1594x584:changes ]([+1594x188:outgoing ][-3x1:output ])))
+gitProjectLayout.main: (([+319x567:directories ][+319x378:branches ])(([+1594x207:files
+  ][-2x1:message ])[+1594x547:changes ]([+1594x188:outgoing ][-3x1:output ])))
 gitProjectLayout.mainIsdefault: true
 gitProjectLayout.review: ([+2x1:directories ][+7x1:files ][+3x1:message ])[+10x3:changes
   ]([-1x1:branches ][-3x1:outgoing ][-3x1:output ])
