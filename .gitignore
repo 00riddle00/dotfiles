@@ -67,9 +67,6 @@ cmd/.emacs.d/*
 cmd/.irssi/*
 !cmd/.irssi/config
 
-cmd/.mutt/*
-!cmd/.mutt/muttrc
-
 cmd/.oh-my-zsh/*
 !cmd/.oh-my-zsh/.gitkeep
 
