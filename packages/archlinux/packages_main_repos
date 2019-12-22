@@ -3,15 +3,14 @@ adobe-source-code-pro-fonts
 alsa-utils
 android-tools
 apache
+arduino
 bash
 binutils
-blueman
-bluez
-bluez-utils
 bzip2
 cmake
 cmatrix
 code
+composer
 conky
 copyq
 coreutils
@@ -39,6 +38,7 @@ filesystem
 filezilla
 findutils
 firefox
+flameshot
 flex
 freerdp
 gawk
@@ -49,9 +49,11 @@ gdb
 gettext
 gimp
 git
+git-lfs
 glibc
 gmrun
 gnuplot
+go
 gparted
 gprolog
 graphviz
@@ -129,6 +131,8 @@ pciutils
 perl
 php
 php-apache
+php-gd
+php-imagick
 pkgconf
 postgresql
 procps-ng
@@ -145,6 +149,7 @@ redshift
 reiserfsprogs
 remmina
 rtorrent
+ruby-irb
 s-nail
 sagemath-jupyter
 samba
@@ -187,12 +192,14 @@ thunderbird
 tint2
 tmux
 tree
+tumbler
 unrar
 upower
 urxvt-perls
 usbutils
 util-linux
 vi
+vlc
 which
 wpa_supplicant
 xf86-input-synaptics
@@ -210,7 +217,6 @@ xorg-mkfontscale
 xorg-server
 xorg-server-common
 xorg-server-devel
-xorg-server-xdmx
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
@@ -221,6 +227,7 @@ xorg-smproxy
 xorg-x11perf
 xorg-xauth
 xorg-xbacklight
+xorg-xcalc
 xorg-xcmsdb
 xorg-xcursorgen
 xorg-xdpyinfo
