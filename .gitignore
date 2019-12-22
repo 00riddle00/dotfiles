@@ -61,6 +61,9 @@ xorg/.config/libreoffice/4/*
 xorg/.config/libreoffice/4/user/*
 !xorg/.config/libreoffice/4/user/registrymodifications.xcu 
 
+cmd/.emacs.d/*
+!cmd/.emacs.d/init.el
+
 cmd/.irssi/*
 !cmd/.irssi/config
 

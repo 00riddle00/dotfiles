@@ -1,6 +1,5 @@
 . $HOME/.aliases
 
-
 if [ $USER == "root" ]; then 
     color="31m"
 else
