@@ -14,10 +14,10 @@
 [alias]
     lgfirstparent = log --first-parent
     lgnomerges = log --no-merges --oneline
-  # e.g. git graphviz --first-parent master | dotty /dev/stdin
+      # e.g. git graphviz --first-parent master | dotty /dev/stdin
     graphviz = "!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
-  # Pretty log
-        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+      # Pretty log
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	d = difftool
 [filter "lfs"]
 	clean = git-lfs clean -- %f

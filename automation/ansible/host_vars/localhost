@@ -1,5 +1,0 @@
-containers:
-  - name: memcached-1
-    service: memcache
-  - name: mysql-1
-    service: mysql
