@@ -60,18 +60,18 @@
   zoom_out = <Primary>minus
 [layouts]
   [[default]]
-    [[[child1]]]
-      borderless = False
-      parent = window0
-      profile = solarized-dark
-      scrollbar_position = disabled
-      type = Terminal
     [[[window0]]]
       borderless = False
       parent = ""
       profile = solarized-dark
       scrollbar_position = disabled
       type = Window
+     [[[child1]]]
+      borderless = False
+      parent = window0
+      profile = solarized-dark
+      scrollbar_position = disabled
+      type = Terminal
 [plugins]
 [profiles]
   [[default]]
@@ -92,16 +92,6 @@
     background_color = "#002b36"
     cursor_color = "#eee8d5"
     font = Source Code Pro Medium 8
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
-  [[riddle]]
-    background_color = "#282828"
-    background_darkness = 0.49
-    cursor_color = "#eee8d5"
-    font = Source Code Pro Medium 8
-    foreground_color = "#ebdbb2"
-    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False

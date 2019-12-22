@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # file extension
-ext="png";
+ext="$1"; # example: png
 
 # starting number
 a=1
@@ -11,3 +11,4 @@ for i in *.$ext; do
   mv -i -- "$i" "$new"
   let a=a+1
 done
+
