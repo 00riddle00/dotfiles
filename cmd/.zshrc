@@ -15,6 +15,9 @@ alsi -a
 ## launch tmux
 tmux > /dev/null 2>&1
 
+PS1="┌─[%{$fg[cyan]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?.. %?)%{$reset_color%}]
+└─╼ "
+
 #########
 # ALIASES
 #########
@@ -91,7 +94,7 @@ alias vrc='v $MAIN_HOME/.vimrc'
 alias ic='v $MAIN_HOME/.config/i3/config'
 alias xi='v $MAIN_HOME/.xinitrc'
 alias zr='v $MAIN_HOME/.zshrc'
-alias al='v $MAIN_HOME/.aliases'
+alias al='v $MAIN_HOME/.zshrc'
 alias gtk='v $MAIN_HOME/.gtkrc-2.0'
 alias mim='v $MAIN_HOME/.config/mimeapps.list'
 alias vr='v $MAIN_HOME/.vimrc'
