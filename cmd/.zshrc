@@ -15,12 +15,6 @@ alsi -a
 ## launch tmux
 tmux > /dev/null 2>&1
 
-## if X is not running
-if ! xset q &>/dev/null; then
-    ## remap Caps Lock to escape (in command line environment (without X))
-    sudo echo "keycode 58 = Escape" | sudo loadkeys
-fi
-
 #########
 # ALIASES
 #########
