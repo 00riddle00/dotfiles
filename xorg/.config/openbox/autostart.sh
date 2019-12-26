@@ -17,6 +17,7 @@ if xset q &>/dev/null; then
     fi;
 fi;
 
+xscreensaver -no-splash &
 feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch5.jpg" && 
 conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
 conky -c $DOTFILES_DIR/xorg/.conky/clock_blue_full > /dev/null 2>&1 &
