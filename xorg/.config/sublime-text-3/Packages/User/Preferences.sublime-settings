@@ -1,12 +1,12 @@
 {
+	"auto_complete": true,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-	"theme": "Material-Theme.sublime-theme",
 	"font_face": "Source Code Pro",
-	"font_size": 10,
+	"font_size": 8,
 	"ignored_packages":
 	[
 	],
-	"auto_complete": true,
 	"open_files_in_new_window": false,
-	"preview_on_click": true
+	"preview_on_click": true,
+	"theme": "Material-Theme.sublime-theme"
 }

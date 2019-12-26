@@ -1,61 +1,64 @@
-#==============================================================================
-#                            conkyrc_HUD
-#
-#  author  : SLK
-#  version : v2011011601
-#  license : Distributed under the terms of GNU GPL version 2 or later
-#
-#==============================================================================
+conky.config = {
+--==============================================================================
+--                            conkyrc_HUD
 
-background yes
-update_interval 1
+--  author  : SLK
+--  version : v2011011601
+--  license : Distributed under the terms of GNU GPL version 2 or later
 
-cpu_avg_samples 2
-net_avg_samples 2
-temperature_unit celsius
+--==============================================================================
 
-double_buffer yes
-no_buffers yes
-text_buffer_size 2048
+	background = true,
+	update_interval = 1,
 
-# 2 monitors
-#gap_x 2975
-#gap_y 900
+	cpu_avg_samples = 2,
+	net_avg_samples = 2,
+	temperature_unit = 'celsius',
 
-# laptop
-gap_x 1100
-gap_y 600
+	double_buffer = true,
+	no_buffers = true,
+	text_buffer_size = 2048,
 
-minimum_size 500 260
-maximum_width 250
-own_window yes
-own_window_type override
-own_window_transparent yes
-own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
-border_inner_margin 0
-border_outer_margin 0
-alignment tr
+-- 2 monitors
+--gap_x 2975
+--gap_y 900
 
-draw_shades no
-draw_outline no
-draw_borders no
-draw_graph_borders no
+-- laptop
+	gap_x = 1100,
+	gap_y = 600,
 
-override_utf8_locale yes
-use_xft yes
-xftfont caviar dreams:size=8
-xftalpha 0.5
-uppercase no
+	minimum_width = 500, minimum_height = 260,
+	maximum_width = 250,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	own_window_hints = 'undecorate,sticky,skip_taskbar,skip_pager,below',
+	border_inner_margin = 0,
+	border_outer_margin = 0,
+	alignment = 'top_right',
 
-#default_color FFFFFF
-#color1 00FFBB
-default_color 3b97ff
-color1 3b97ff 
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
 
-lua_load ~/.conky/conky_HUD.lua
-lua_draw_hook_post main
+	override_utf8_locale = true,
+	use_xft = true,
+	font = 'caviar dreams:size=8',
+	xftalpha = 0.5,
+	uppercase = false,
 
-TEXT
+--default_color FFFFFF
+--color1 00FFBB
+	default_color = '#3b97ff',
+	color1 = '#3b97ff',
+
+	lua_load = '~/.conky/conky_HUD.lua',
+	lua_draw_hook_post = 'main',
+
+};
+
+conky.text = [[
 ${color1}${font ubuntu:size=10}${time %H:%M:%S}
 ${voffset 25}
 ${goto 100}${font Ubuntu:size=8,weight:bold}${color}DISKS
@@ -70,3 +73,4 @@ ${goto 30}${font Ubuntu:size=8,weight:bold}${color}MEM
 ${voffset -25}
 ${goto 180}${font Ubuntu:size=8,weight:bold}${color}CPU
 
+]];
