@@ -1,7 +1,7 @@
 
 # DOTFILES COMMANDS
 alias dot='cd $DOTFILES_DIR'
-alias arp='v $DOTFILES_DIR/packages/archlinux/packages_main_repo'
+alias arp='v $DOTFILES_DIR/packages/archlinux/packages_main_repos'
 alias aur='v $DOTFILES_DIR/packages/archlinux/packages_aur'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
 alias ig='v $DOTFILES_DIR/.gitignore'
@@ -188,6 +188,7 @@ alias lf='lsblk -f'
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias lsla='ls -al'
+alias la='ls -al'
 alias lsal='ls -al'
 alias las='ls -al'
 alias lc='ls | cat'
