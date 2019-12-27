@@ -193,9 +193,8 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=$DOTFILES_DIR/cmd/.vim/bundle/Vundle.vim
+set rtp+=$DOTFILES_DIR/xless/.vim/bundle/Vundle.vim
 call vundle#begin()
-"call vundle#begin("$DOTFILES_DIR/cmd/.vim/vundle")
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -250,7 +249,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 Plugin 'scrooloose/nerdcommenter'
 
 
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
 
