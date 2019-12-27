@@ -1,6 +1,8 @@
 
+# keybinds
 bindkey '^R' history-incremental-search-backward
 bindkey -v
+KEYTIMEOUT=1
 
 if [ -f $MAIN_HOME/$DIRCOLORS ]; then
         eval $(dircolors $MAIN_HOME/$DIRCOLORS)
@@ -15,8 +17,16 @@ alsi -a
 ## launch tmux
 tmux > /dev/null 2>&1
 
-PS1="%F{74}┌─%F{39}{%F{39}%m %F{73}%~%f%F{39}}
-%F{74}└─╼ "
+# Enable colors and change prompt:
+autoload -U colors && colors
+
+# prompt
+PS1="┌─[%{$fg[cyan]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
+%?)%{$reset_color%}]
+└─╼ "
+
+#PS1="%F{74}┌─%F{39}{%F{39}%m %F{73}%~%f%F{39}}
+#%F{74}└─╼ "
 
 #########
 # ALIASES

@@ -4,8 +4,6 @@ URxvt.buffered: true
 URxvt.cursorColor: #5E468C 
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
-URxvt.url-select.underline: true
-URxvt.urlLauncher: firefox
 URxvt.geometry: 110x50
 URxvt.scrollBar: false
 URxvt*scrollBar_right: false
@@ -13,7 +11,6 @@ URxvt.borderLess: false
 URxvt.borderColor: #37454e
 URxvt.transparent: 0
 URxvt*.shading: 0
-! Set letterSpace to 1 for displaying oh-my-zsh arrow glyph on urxvt-resize
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
 URxvt*iconFile: /usr/share/icons/la-capitaine-icon-theme/apps/scalable/urxvt.svg
@@ -29,30 +26,29 @@ Xft.rgba: rgb
 Xft.hinting: true 
 Xft.hintstyle: hinstlight 
 
-
-
 ! Current Xft Font 
 URxvt*font: xft:Source Code Pro:size=8:antialias=true:hinting=true
 URxvt*boldFont: xft:Source Code Pro:size=8:antialias=true:hinting=true
 URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=8:antialias=true:hinting=true
 URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=8:antialias=true:hinting=true
 
-! -- Colours -- !
+! -- Colors -- !
 #include ".config/colors/dark"
 
 ! --  Extensions -- !
-URxvt.perl-ext-common:     matcher,keyboard-select,url-select,clipboard,font-size
-URxvt.keysym.M-Escape:     perl:keyboard-select:activate
-URxvt.keysym.M-u:          perl:url-select:select_next
-URxvt.keysym.M-s:          perl:keyboard-select:search
+URxvt.perl-ext-common:     clipboard,font-size,keyboard-select,url-select
+URxvt.colorUL:             #4682B4
+!! clipboard
 URxvt.clipboard.autocopy:  true
 URxvt.keysym.M-c:          perl:clipboard:copy
 URxvt.keysym.M-v:          perl:clipboard:paste
 URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
-!URxvt.url-select.launcher: 
-URxvt.matcher.rend.0:      -Uline fg16
-URxvt.matcher.button:      1
-
+!! keyboard-select
+URxvt.keysym.M-i:          perl:keyboard-select:activate
+!! url-select
+URxvt.keysym.M-u:            perl:url-select:select_next
+URxvt.url-select.launcher:   /usr/bin/xdg-open
+URxvt.url-select.underline:  true
 
 ! -- Xterm settings -- !
 xterm*termName: xterm-256color
