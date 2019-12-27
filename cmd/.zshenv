@@ -2,6 +2,9 @@
 # user's environment variables
 ###############################
 
+# point Zsh at the right dotfiles
+ZDOTDIR="${ZDOTDIR:-$HOME/.zsh}"
+
 # MAIN USER SETTINGS
 export MAIN_USER=riddle
 export MAIN_HOME=/home/$MAIN_USER

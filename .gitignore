@@ -129,3 +129,7 @@ xorg/.config/sublime-text-3/Packages/User/*
 
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
+
+cmd/.zsh/.zcompdump
+cmd/.zsh/histfile
+cmd/.zsh/plugins/

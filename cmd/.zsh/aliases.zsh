@@ -1,43 +1,9 @@
 
-# keybinds
-bindkey '^R' history-incremental-search-backward
-bindkey -v
-KEYTIMEOUT=1
-
-if [ -f $MAIN_HOME/$DIRCOLORS ]; then
-        eval $(dircolors $MAIN_HOME/$DIRCOLORS)
-fi
-
-## avoid Ctrl-s freezing the terminal
-stty -ixon
-
-## system information tool for Arch Linux
-alsi -a
-
-## launch tmux
-tmux > /dev/null 2>&1
-
-# Enable colors and change prompt:
-autoload -U colors && colors
-
-# prompt
-PS1="┌─[%{$fg[cyan]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
-%?)%{$reset_color%}]
-└─╼ "
-
-#PS1="%F{74}┌─%F{39}{%F{39}%m %F{73}%~%f%F{39}}
-#%F{74}└─╼ "
-
-#########
-# ALIASES
-#########
-
 # DOTFILES COMMANDS
 alias dot='cd $DOTFILES_DIR'
 alias arp='v $DOTFILES_DIR/packages/archlinux/packages_main_repo'
 alias aur='v $DOTFILES_DIR/packages/archlinux/packages_aur'
 alias dotm='cd $DOTFILES_DIR/.dotfiles-manager/'
-alias makezsh='ln -sf $DOTFILES_DIR/cmd/.zshrc $MAIN_HOME/.zshrc'
 alias ig='v $DOTFILES_DIR/.gitignore'
 alias she='cd $SHELL_SCRIPTS_DIR'
 alias auk='$SHELL_SCRIPTS_DIR/autokey.sh'
@@ -103,8 +69,9 @@ alias tintrc='v $MAIN_HOME/.config/tint2/tint2rc'
 alias vrc='v $MAIN_HOME/.vimrc'
 alias ic='v $MAIN_HOME/.config/i3/config'
 alias xi='v $MAIN_HOME/.xinitrc'
-alias zr='v $MAIN_HOME/.zshrc'
-alias al='v $MAIN_HOME/.zshrc'
+alias zr='v $MAIN_HOME/.zsh/.zshrc'
+alias al='v $ZDOTDIR/aliases.zsh'
+alias fn='v $ZDOTDIR/functions.zsh'
 alias gtk='v $MAIN_HOME/.gtkrc-2.0'
 alias mim='v $MAIN_HOME/.config/mimeapps.list'
 alias vr='v $MAIN_HOME/.vimrc'
@@ -120,8 +87,8 @@ alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
 alias mchef='$MAIN_HOME/programs/mongochef-4.0.4-linux-x64-dist/bin/mongochef.sh'
 #alias ww='python $MAIN_HOME/welcome.py'
 alias hi='mpg123 $MAIN_HOME/ca | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
-alias tb='tail -n 20 $MAIN_HOME/.aliases'
-alias del="sed -i '$ d' $MAIN_HOME/.aliases"
+alias tb='tail -n 20 $ZDOTDIR/aliases.zsh'
+alias del="sed -i '$ d' $ZDOTDIR/aliases.zsh"
 alias t='$MAIN_HOME/.todo/todo.sh'
 alias air='source $MAIN_HOME/pro/env/bin/activate && cd $MAIN_HOME/airflow'
 alias and='cp $MAIN_HOME/Dropbox/sync/android/\(a\)notes/notes.txt $MAIN_HOME/Dropbox/sync/gtd/content/pages/tmp/android.md'
@@ -340,6 +307,8 @@ alias ga='git add'
 alias gb='git branch'
 alias gch='git checkout'
 alias glg='git lg'
+alias grc='git rm -r --cached'
+alias gu='git restore --staged'
 
 ## vagrant
 alias vu='vagrant up'
@@ -409,7 +378,6 @@ alias pu='s pip uninstall'
 alias j='java'
 alias jc='javac'
 alias jcl='rm *.class'
-function jr() { javac $1 && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
 
 ## django
 alias mig='pmp makemigrations && pmp migrate'
@@ -435,49 +403,6 @@ alias ureapache='sudo systemctl restart apache2'
 alias xclip='xclip -selection clipboard'
 alias xclip1='xclip -selection primary'
 alias xclip2='xclip -selection secondary'
-
-
-###########
-# FUNCTIONS
-###########
-
-# MAIN USER FUNCTIONS
-
-## copy argument to clipboard
-function kk() { echo "${MAIN_HOME}/backups/${1}-$(date +%F_%R).bak ${MAIN_HOME}/Dropbox/sync/backup/${1}-$(date +%F_%R).bak"| xargs -n 1 cp -rv ${1}; }
-#function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1"-"$(date +%F_%R)".bak;}
-#function kk() { s cp -r "$1" $MAIN_HOME/backups/"$1"_"$(date)".bak;}
-#alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
-
-## make cmd aliases
-function ma() { echo alias $1="'$2'" >> $MAIN_HOME/.aliases; zsh; }
-
-## copy to mif
-function mif.send() { scp -rp $MAIN_HOME/Downloads/"$1" togi3017@uosis.mif.vu.lt:/stud3/2015/togi3017/Desktop; }
-
-## copy from mif
-function mif.get() { scp -rp togi3017@uosis.mif.vu.lt:/stud3/2015/togi3017/Desktop/"$1" $MAIN_HOME/Downloads; }
-
-
-# SYSTEMWIDE FUNCTIONS
-
-## scp argument to server
-function toserv() { scp $1 root@tomasgiedraitis.com:/home/riddle; }
-
-## unmount argument volume
-function de() { sudo udisks --unmount /dev/$1; }
-
-## unbind cmd from current shell
-function op() { nohup $1 & disown;}
-
-## combine cd & ls
-function cdd() { cd $1; ls;}
-
-## find command in history
-function his() { history | grep $1; }
-
-## copy argument to clipboard
-function copy() { echo "$@" | xclip -selection clipboard;}
 
 ############
 # TEMPORARY
@@ -544,15 +469,8 @@ alias lex='cd /home/riddle/pro/uni-compilers/lab2'
 
 alias stat="systemctl status httpd"
 
-function num() { nl -s ' ' ${1} > tmp && mv tmp ${1} && sed "s/^[ \t]*//" -i ${1} && cat ${1} | xclip }
 
 alias kiek="wc -l"
-
-function makedot() { 
-    img_name="temp";
-    if [ ! -z $2 ]; then img_name=$2; fi;
-    \dot $1 -Tpng -o $img_name.png -v 2>&1;
-}
 
 alias g1='git log --no-merges --oneline'
 alias g2='git log --first-parent'
@@ -564,4 +482,6 @@ alias sp.copy='s cp -r ~/pro/schoolproud/core/{,.}* ./'
 
 alias xr='vim ~/.xinitrc'
 alias xres='vim ~/.Xresources'
+
+alias zdot='cd ~/.zsh'
 
