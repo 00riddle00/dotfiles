@@ -1,1 +1,0 @@
-/home/riddle/.dotfiles/cmd/.emacs.d

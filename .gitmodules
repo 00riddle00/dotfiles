@@ -1,6 +1,6 @@
-[submodule "cmd/.tmux/plugins/tpm"]
-	path = cmd/.tmux/plugins/tpm
+[submodule "xless/.tmux/plugins/tpm"]
+	path = xless/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
-[submodule "cmd/.zsh/plugins/zsh-syntax-highlighting"]
-	path = cmd/.zsh/plugins/zsh-syntax-highlighting
+[submodule "xless/.zsh/plugins/zsh-syntax-highlighting"]
+	path = xless/.zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

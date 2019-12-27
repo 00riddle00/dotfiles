@@ -85,6 +85,7 @@ xterm*color15: #EEEEEC
 
 ! -- Xscreensaver settings -- !
 xscreensaver.splash: false
+xscreensaver.mode: blank
 
 !font settings
 xscreensaver.Dialog.headingFont:        -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*

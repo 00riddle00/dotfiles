@@ -1,4 +1,4 @@
-# "Arch Conky" 
+# "Arch Conky" #
 
 # Default Fonts
 use_xft yes
@@ -16,7 +16,6 @@ net_avg_samples 2
 
 # Window Settings
 own_window yes
-own_window_type normal
 #own_window_class conky
 own_window_transparent yes
 own_window_type desktop
@@ -40,13 +39,13 @@ minimum_size 650 80
 #gap_y 0
 #
 #Laptop
-#gap_x 300
-gap_y 0
+gap_y 50
 
-
-gap_x 2250
+gap_x 900
 
 alignment top_left
 
 TEXT
-${GOTO 30}${font Karat:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Karat:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}
+${GOTO 30}${font Karat:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Karat:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}${color1}Proc ${GOTO 330}:${color}${GOTO 345}${cpu cpu0}%${if_match "${addr enp9s0}" != "No Address"}${GOTO 435}${color1}IP address  ${GOTO 515}:${color}${GOTO 530}${addr enp9s0}${else}${if_match "${addr wlp8s0}" != "No Address"}${GOTO 435}${color1}IP wlp8s0${GOTO 515}:${color}${GOTO 530}${addr wlp8s0}${else}${GOTO 435}${color1}IP Locale${GOTO 515}:${color}${GOTO 530}Not Connected${endif}${endif}${voffset 20}
+${GOTO 40}${voffset 6}${font Karat:bold:size=12}${color1}${time %A %d }${color}${time %B %Y}${font}${voffset -24}${GOTO 330}${color1}:${color}${GOTO 345}${cpu cpu1}%${GOTO 435}${color1}SSID${GOTO 515}:${color}${GOTO 530}${if_match "${addr enp9s0}" == "No Address"}${if_up wlp8s0}${wireless_essid wlp8s0}${else}N/A${endif}${endif}${voffset 6}
+${GOTO 280}${color1}Ram ${GOTO 330}${color1}:${color}${GOTO 345}${memperc}%${GOTO 435}${color1}Signal${GOTO 515}:${color}${GOTO 530}${if_match "${addr enp9s0}" == "No Address"}${if_up wlp8s0}${if_match "unk" != "${wireless_link_qual_perc wlp8s0}"}${wireless_link_qual_perc wlp8s0}%${else}N/A${endif}${else}N/A${endif}${endif}

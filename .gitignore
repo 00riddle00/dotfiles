@@ -7,53 +7,7 @@
 *.swo
 *.swp
 *~
-.bash_history
 .directory
-automation/ssh/*.*
-
-xorg/.config/.mono/
-xorg/.config/Atom/
-xorg/.config/Ethereum Wallet/
-xorg/.config/KeePass/
-xorg/.config/Mist/
-xorg/.config/Mousepad/
-xorg/.config/mpv/
-xorg/.config/QtProject.conf
-xorg/.config/Thunar/
-xorg/.config/Trolltech.conf
-xorg/.config/VirtualBox/
-xorg/.config/calibre/
-xorg/.config/cef_user_data/
-xorg/.config/chromium
-xorg/.config/chromium/
-xorg/.config/configstore/
-xorg/.config/dconf
-xorg/.config/deluge/
-xorg/.config/discord/
-xorg/.config/enchant/
-xorg/.config/epiphany/
-xorg/.config/filezilla/
-xorg/.config/gconf
-xorg/.config/google-chrome/
-xorg/.config/libfm/
-xorg/.config/lxkeymap.cfg
-xorg/.config/lxpanel/
-xorg/.config/lxsession/
-xorg/.config/menus/
-xorg/.config/mirage/
-xorg/.config/nomacs/
-xorg/.config/openmw/
-xorg/.config/pavucontrol.ini
-xorg/.config/pcmanfm/
-xorg/.config/procps/
-xorg/.config/pulse/
-xorg/.config/qalculate/
-xorg/.config/Slack/
-xorg/.config/spotify/
-xorg/.config/teamviewer/
-xorg/.config/user-dirs.dirs
-xorg/.config/user-dirs.locale
-xorg/.config/vlc/
 
 ############################  PARTIAL DIRS GITIGNORE #######################
 
@@ -62,26 +16,16 @@ xorg/.config/libreoffice/4/*
 xorg/.config/libreoffice/4/user/*
 !xorg/.config/libreoffice/4/user/registrymodifications.xcu 
 
-cmd/.emacs.d/*
-!cmd/.emacs.d/init.el
+xless/.emacs.d/*
+!xless/.emacs.d/init.el
 
-cmd/.irssi/*
-!cmd/.irssi/config
+xless/.irssi/*
+!xless/.irssi/config
 
-cmd/.oh-my-zsh/*
-!cmd/.oh-my-zsh/.gitkeep
+xless/.tmux/*
 
-cmd/.tmux/*
-
-cmd/.vim/*
-!cmd/.vim/colors/
-
-xorg/.atom/*
-xorg/.atom/.*
-!xorg/.atom/config.cson
-!xorg/.atom/keymap.cson
-!xorg/.atom/package_list
-!xorg/.atom/style.less
+xless/.vim/*
+!xless/.vim/colors/
 
 xorg/.config/copyq/*
 !xorg/.config/copyq/copyq.conf
@@ -96,26 +40,6 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
-
-
-xorg/.jetbrains.custom_folder/pycharm/*
-
-!xorg/.jetbrains.custom_folder/pycharm/config
-xorg/.jetbrains.custom_folder/pycharm/config/*
-!xorg/.jetbrains.custom_folder/pycharm/config/keymaps
-!xorg/.jetbrains.custom_folder/pycharm/config/colors
-!xorg/.jetbrains.custom_folder/pycharm/config/settings.zip
-
-!xorg/.jetbrains.custom_folder/pycharm/config/options
-xorg/.jetbrains.custom_folder/pycharm/config/options/*
-!xorg/.jetbrains.custom_folder/pycharm/config/options/colors.scheme.xml
-!xorg/.jetbrains.custom_folder/pycharm/config/options/editor.xml
-!xorg/.jetbrains.custom_folder/pycharm/config/options/ide.general.xml
-!xorg/.jetbrains.custom_folder/pycharm/config/options/keymap.xml
-!xorg/.jetbrains.custom_folder/pycharm/config/options/other.xml
-!xorg/.jetbrains.custom_folder/pycharm/config/options/security.xml
-!xorg/.jetbrains.custom_folder/pycharm/config/options/vim_settings.xml
-
 xorg/.config/GIMP/2.10/tags.xml
 xorg/.config/GIMP/2.10/gimpswaprc
 
@@ -129,11 +53,9 @@ xorg/.config/sublime-text-3/Packages/User/*
 !xorg/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
 
-
-
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
 
-cmd/.zsh/.zcompdump
-cmd/.zsh/histfile
-cmd/.zsh/plugins/
+xless/.zsh/.zcompdump
+xless/.zsh/histfile
+xless/.zsh/plugins/
