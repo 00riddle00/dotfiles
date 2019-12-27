@@ -20,7 +20,7 @@ fi;
 xscreensaver -no-splash &
 feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch5.jpg" && 
 conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
-conky -c $DOTFILES_DIR/xorg/.conky/clock_blue_full > /dev/null 2>&1 &
+conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
 # espeak "Welcome home, Riddle!" > /dev/null 2>&1  &&
 # mpg123 $CANDY/startup_sounds/star_wars.mp3 > /dev/null 2>&1 &
 tint2 &
