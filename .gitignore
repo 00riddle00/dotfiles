@@ -40,8 +40,8 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
-xorg/.config/GIMP/2.10/tags.xml
-xorg/.config/GIMP/2.10/gimpswaprc
+xorg/.config/GIMP/*/*
+!xorg/.config/GIMP/*/menurc
 
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/

@@ -302,11 +302,9 @@
       <action name="Iconify"/>
     </keybind>
     <!--<prevent custom "closing shortcuts" behaviour -->
-    <!--
     <keybind key="C-q">
       <action name="Iconify"/>
     </keybind>
-    -->
     <keybind key="A-F4">
       <action name="Iconify"/>
     </keybind>
@@ -567,11 +565,13 @@
     </keybind>
     <!-- emacs/> -->
     <!-- Various -->
+    <!--
     <keybind key="C-q">
       <action name="Execute">
         <command>sh -c "$SHELL_SCRIPTS_DIR/xdotools/lang.sh"</command>
       </action>
     </keybind>
+    -->
     <keybind key="W-t">
       <action name="Execute">
         <command>tint2</command>

@@ -484,4 +484,4 @@ alias xr='vim ~/.xinitrc'
 alias xres='vim ~/.Xresources'
 
 alias zdot='cd ~/.zsh'
-
+alias mm='neomutt'
