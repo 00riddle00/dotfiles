@@ -57,6 +57,7 @@ alias sca='cd $MAIN_HOME/VirtualBox\ VMs/scard-api/'
 alias gri='cd $MAIN_HOME/VirtualBox\ VMs/grigiskes-api/app'
 alias u2='cd $MAIN_HOME/CS/2_semester/programavimas_c/code/U2'
 alias dw='cd $MAIN_HOME/Downloads/'
+alias zs='cd $ZSH_DIR'
 
 ## file editing commands
 alias res='v $MAIN_HOME/.Xresources'
@@ -67,6 +68,7 @@ alias vrc='v $MAIN_HOME/.vimrc'
 alias ic='v $MAIN_HOME/.config/i3/config'
 alias xi='v $MAIN_HOME/.xinitrc'
 alias zr='v $MAIN_HOME/.zsh/.zshrc'
+alias zenv='v $MAIN_HOME/.zshenv'
 alias al='v $ZDOTDIR/aliases.zsh'
 alias fn='v $ZDOTDIR/functions.zsh'
 alias gtk='v $MAIN_HOME/.gtkrc-2.0'
@@ -366,11 +368,15 @@ alias xon='xrandr --output $LAPTOP_SCREEN --auto'
 ## python
 alias p='python'
 alias pel='python -m pelican.server'
-alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 alias venv='source ../venv/bin/activate'
 alias senv='source venv/bin/activate'
 alias qenv='deactivate'
 alias pu='s pip uninstall'
+
+## anaconda
+alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
+## sageMath
+alias pyc='/home/riddle/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/193.5662.61/bin/pycharm.sh'
 
 # java
 alias j='java'
@@ -485,3 +491,7 @@ alias xres='vim ~/.Xresources'
 
 alias zdot='cd ~/.zsh'
 alias mm='neomutt'
+
+alias wp='watch ping -c 1 www.google.com'
+alias hh='htop'
+alias clock.sync='sudo ntpd -qg'

@@ -19,6 +19,7 @@ export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LESSOPEN='|$DOTFILES_DIR/cmd/.lessfilter %s'
 export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
+export ZSH_DIR=$MAIN_HOME/.zsh
 
 # MAIN USER VARS
 export VIMRC=$MAIN_HOME/.vimrc
@@ -34,8 +35,8 @@ export SYNC=$DROPBOX/sync
 export CANDY=$SYNC/candy
 export NOTES=$SYNC/gtd/
 export KEEP=$SYNC/keepass
-export HDMI_SCREEN=HDMI-1-1
-export LAPTOP_SCREEN=eDP-1-1
+export HDMI_SCREEN=HDMI-1 # HDMI-1-1
+export LAPTOP_SCREEN=eDP-1 # eDP-1-1
 
 # CURRENT USER VARS
 ## there has been no need so far
