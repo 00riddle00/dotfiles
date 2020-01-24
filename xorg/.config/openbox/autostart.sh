@@ -4,7 +4,7 @@
 if xset q &>/dev/null; then
 
     ## Configure display
-    ## if HDMI display connected, use it. Else use eDP.
+    ## if monitor is connected, use it. Else use laptop's screen.
     xrandr | awk '/ connected/{print $1}' | grep $HDMI_SCREEN > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         xrandr --output $HDMI_SCREEN --auto
@@ -22,8 +22,8 @@ conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
 flameshot &
 tint2 &
+urxvt -name t2
 # espeak "Welcome home, Riddle!" > /dev/null 2>&1  &&
 # mpg123 $CANDY/startup_sounds/star_wars.mp3 > /dev/null 2>&1 &
 # timeout 30s urxvt -name matrix -e cmatrix
-urxvt -name t2
 
