@@ -479,11 +479,6 @@
         <command>wmctrl -x -a t2.URxvt</command>
       </action>
     </keybind>
-    <keybind key="A-m">
-      <action name="Execute">
-        <command>urxvt -geometry 120x35 -name aux</command>
-      </action>
-    </keybind>
     <keybind key="A-F3">
       <action name="Execute">
         <command>urxvt -geometry 155x70 -name notes -/-hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh</command>

@@ -10,4 +10,18 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>anydo</icon>
+	<name>Create New File</name>
+	<unique-id>1579884715556805-1</unique-id>
+	<command>$DOTFILES_DIR/scripts/newfile.sh</command>
+	<description>Create new file using zenity</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
 </actions>
