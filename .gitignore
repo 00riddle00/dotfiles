@@ -11,11 +11,6 @@
 
 ############################  PARTIAL DIRS GITIGNORE #######################
 
-xorg/.config/libreoffice/4/*
-!xorg/.config/libreoffice/4/user/
-xorg/.config/libreoffice/4/user/*
-!xorg/.config/libreoffice/4/user/registrymodifications.xcu 
-
 xless/.emacs.d/*
 !xless/.emacs.d/init.el
 
@@ -52,6 +47,7 @@ xorg/.config/sublime-text-3/Packages/User/*
 !xorg/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 !xorg/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
+xorg/.config/gtk-3.0/bookmarks
 
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
