@@ -10,7 +10,6 @@
 .directory
 
 ############################  PARTIAL DIRS GITIGNORE #######################
-
 xless/.emacs.d/*
 !xless/.emacs.d/init.el
 
@@ -40,6 +39,8 @@ xorg/.config/filezilla/*
 
 xorg/.config/GIMP/*/*
 !xorg/.config/GIMP/*/menurc
+
+xorg/.config/Thunar/accels.scm
 
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/

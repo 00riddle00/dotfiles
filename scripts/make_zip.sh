@@ -1,13 +1,13 @@
 #! /bin/sh
 
-#this scripts helps to create versioned zip archives.
-#example:
-#> ./make_zip test
-#creates archive test_0.0.0.zip with the contents of current 
-#directory (recursive)
-#> ./make_zip test 
-#the second time it creates test_0.0.1.zip, and puts the former test_0.0.0.zip
-#file inside .test_archives/ dir.
+# this scripts helps to create versioned zip archives.
+# example:
+# > ./make_zip test
+# creates archive test_0.0.0.zip with the contents of current 
+# directory (recursive)
+# > ./make_zip test 
+# the second time it creates test_0.0.1.zip, and puts the former test_0.0.0.zip
+# file inside .test_archives/ dir.
 
 DEBUG=false
 
@@ -17,16 +17,12 @@ print() {
     fi
 }
 
-
-
 if [ -z "$1" ]; then
     echo "ERROR: No argument supplied!"
     exit
 fi
 
-
 package_name=$1
-
 
 file=$(ls $package_name*.zip)
 file_count=$(echo "$file" | wc -w)
@@ -63,4 +59,5 @@ else
     midi=0
     maxi=0
 fi
+
 zip -r ${package_name}_${maxi}.${midi}.${mini}.zip *
