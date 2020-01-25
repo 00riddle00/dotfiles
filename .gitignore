@@ -22,6 +22,9 @@ xless/.tmux/*
 xless/.vim/*
 !xless/.vim/colors/
 
+xless/.config/vifm/vifm-help.txt
+xless/.config/vifm/vifminfo
+
 xorg/.config/copyq/*
 !xorg/.config/copyq/copyq.conf
 
