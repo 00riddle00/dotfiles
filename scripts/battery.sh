@@ -10,3 +10,4 @@ else
     echo "+++++"
     espeak "Your laptop is charging" > /dev/null 2>&1
 fi
+acpi

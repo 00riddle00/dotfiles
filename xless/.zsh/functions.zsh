@@ -2,6 +2,7 @@
 # MAIN USER FUNCTIONS
 
 ## copy argument to clipboard
+function bk() { cp "$1" "$1.bak"; }
 function kk() { echo "${MAIN_HOME}/backups/${1}-$(date +%F_%R).bak ${MAIN_HOME}/Dropbox/sync/backup/${1}-$(date +%F_%R).bak"| xargs -n 1 cp -rv ${1}; }
 
 ## make cmd aliases
