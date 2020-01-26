@@ -51,7 +51,6 @@ set scrolloff=3
 " +xterm_clipboard must be enabled (see vim --version)
 set clipboard+=unnamed                  
 
-
 " Search
 " search ignoring case
 set ignorecase
@@ -79,24 +78,6 @@ set autoindent smartindent
 set nowrap
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
-
-" Custom statusline 
-
-" Tim Pope's statusline
-"set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
-
-" jamessan's statusline
-"set statusline=   " clear the statusline for when vimrc is reloaded
-"set statusline+=%-3.3n\                      " buffer number
-"set statusline+=%f\                          " file name
-"set statusline+=%h%m%r%w                     " flags
-"set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
-"set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
-"set statusline+=%{&fileformat}]              " file format
-"set statusline+=%=                           " right align
-"set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
-"set statusline+=%b,0x%-8B\                   " current char
-"set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
 " jasonwryan's statusline
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
@@ -156,7 +137,6 @@ vmap <C-x> "+c
 """ From secondary clipboard
 nmap     tp             :r !xsel -b<CR>
 
-
 " Treat long lines as break lines
 nmap    j               gj
 nmap    k               gk
@@ -202,7 +182,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 noremap    <c-n>        :NERDTreeToggle<CR>
 noremap    <c-m>        :NERDTreeFocus<CR>
-"
+
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 30
@@ -225,7 +205,6 @@ autocmd VimEnter * wincmd p
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-
 Plugin 'jlanzarotta/bufexplorer'
 " Do not show buffers from other tabs.
 let g:bufExplorerFindActive=0
@@ -237,7 +216,6 @@ nnoremap <leader>[ :bp<CR>
 
 noremap <leader>o :BufExplorer<CR>
 
-
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'easymotion/vim-easymotion'
@@ -245,13 +223,10 @@ let g:EasyMotion_smartcase = 1
 nmap <leader><leader> <Plug>(easymotion-overwin-f)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-
 Plugin 'scrooloose/nerdcommenter'
-
 
 Plugin 'ycm-core/YouCompleteMe'
 let g:ycm_python_binary_path = '/usr/bin/python3'
-
 
 Plugin 'Chiel92/vim-autoformat'
 let g:autoformat_autoindent = 0
@@ -261,10 +236,8 @@ let g:autoformat_remove_trailing_spaces = 0
 let g:formatter_yapf_style = 'pep8'
 noremap <F6> :Autoformat<CR>
 
-
 Plugin 'raimondi/delimitmate'
 let delimitMate_expand_cr=1
-
 
 Plugin 'scrooloose/syntastic'
 nmap     <leader>c      :SyntasticCheck<CR>
@@ -285,12 +258,9 @@ let g:syntastic_python_pep8_args = '--ignore=E501'
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 
-
 Plugin 'tpope/vim-surround'
 
-
 Plugin 'SirVer/ultisnips'
-
 
 Plugin 'tpope/vim-fugitive'
 " fugitive git bindings
@@ -310,28 +280,10 @@ nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
-
 Plugin 'airblade/vim-gitgutter'
 autocmd vimenter * :GitGutterDisable
 
-
 Plugin 'christoomey/vim-tmux-navigator'
-
-
-"Plugin 'vim-airline/vim-airline'
-"let g:airline#extensions#tabline#enabled = 1
-
-"if !exists('g:airline_symbols')
-    "let g:airline_symbols = {}
-"endif
-
-"let g:airline_powerline_fonts = 1
-"let g:Powerline_symbols = 'fancy'
-"let g:airline_theme='kolor'
-
-
-"Plugin 'vim-airline/vim-airline-themes'
-
 
 Plugin 'majutsushi/tagbar'
 nmap <leader>b :TagbarToggle<cr>
@@ -353,7 +305,6 @@ let g:pymode_lint_on_write = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pyflakes_use_quickfix = 0
 let g:pymode_lint_cwindow = 0
-
 
 " Former zen coding, now renamed to emmet.
 " Key to expand: <c-y>,

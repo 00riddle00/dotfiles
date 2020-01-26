@@ -35,8 +35,8 @@ export SYNC=$DROPBOX/sync
 export CANDY=$SYNC/candy
 export NOTES=$SYNC/gtd/
 export KEEP=$SYNC/keepass
-export HDMI_SCREEN=HDMI-1 # HDMI-1-1
-export LAPTOP_SCREEN=eDP-1 # eDP-1-1
+export HDMI_SCREEN=HDMI-1
+export LAPTOP_SCREEN=eDP-1 
 
 # CURRENT USER VARS
 ## there has been no need so far

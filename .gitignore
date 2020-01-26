@@ -10,7 +10,10 @@
 .directory
 
 ############################  PARTIAL DIRS GITIGNORE #######################
+xless/.config/vifm/vifm-help.txt
+xless/.config/vifm/vifminfo
 xless/.emacs.d/*
+
 !xless/.emacs.d/init.el
 
 xless/.irssi/*
@@ -21,11 +24,9 @@ xless/.tmux/*
 xless/.vim/*
 !xless/.vim/colors/
 
-xless/.config/vifm/vifm-help.txt
-xless/.config/vifm/vifminfo
-
-xorg/.config/copyq/*
-!xorg/.config/copyq/copyq.conf
+xless/.zsh/.zcompdump
+xless/.zsh/histfile
+xless/.zsh/plugins/
 
 xorg/.config/cmus/*
 !xorg/.config/cmus/autosave
@@ -37,10 +38,7 @@ xorg/.config/filezilla/*
 !xorg/.config/filezilla/layout.xml
 !xorg/.config/filezilla/sitemanager.xml
 
-xorg/.config/GIMP/*/*
-!xorg/.config/GIMP/*/menurc
-
-xorg/.config/Thunar/accels.scm
+xorg/.config/gtk-3.0/bookmarks
 
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/
@@ -51,11 +49,10 @@ xorg/.config/sublime-text-3/Packages/User/*
 !xorg/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 !xorg/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
-xorg/.config/gtk-3.0/bookmarks
+xorg/.config/GIMP/*/*
+!xorg/.config/GIMP/*/menurc
 
 xorg/.config/thefuck/*
 !xorg/.config/thefuck/settings.py
 
-xless/.zsh/.zcompdump
-xless/.zsh/histfile
-xless/.zsh/plugins/
+xorg/.config/Thunar/accels.scm
