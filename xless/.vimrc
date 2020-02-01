@@ -123,6 +123,8 @@ nmap     tl             :tablast<CR>
 
 " Macros
 let @o="oprint(\"here\")\<Esc>"
+"let @s=":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
+
 
 " Copy/Paste
 vmap <C-c> "+y

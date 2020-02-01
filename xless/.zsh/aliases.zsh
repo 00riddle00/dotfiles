@@ -98,7 +98,7 @@ alias more='less'
 alias off='sudo poweroff'
 alias q='exit'
 alias re='sudo reboot'
-alias rmr='rm -r'  
+alias rmr='sudo rm -r'  
 alias s='sudo'
 alias tar='tar -xvf'
 alias z='zsh'
@@ -108,6 +108,8 @@ alias vs='vagrant ssh'
 alias vu='vagrant up'
 
 # various 
+alias mutable='sudo chattr -i'
+alias immutable='sudo chattr +i'
 alias aminus='amixer set Master 10%-'
 alias aplus='amixer set Master 10%+'
 alias cf='fortune | cowsay'
@@ -293,16 +295,15 @@ alias tof='synclient TouchpadOff=1'
 alias ton='synclient TouchpadOff=0'
 
 ## wifi
-#alias ww='sudo netctl start wlp8s0-Telia-63E82B-Greitas'
 alias essid='iwconfig'
 alias renet=' service networking restart && /etc/init.d/networking restart'
 alias we='sudo netctl start eduroam'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias wifion='sudo ip link set wlp8s0 up'
-alias wk='sudo netctl start wlp8s0-andkarGreitasis'
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
+alias wk='sudo netctl start wlp8s0-andkarGreitasis'
 alias ws='sudo netctl start sodas'
-alias ww='sudo netctl start wlp8s0-VM9277866'
+alias ww='sudo netctl start home'
 
 ### ls
 alias la='ls -al'
@@ -321,6 +322,37 @@ alias let='chmod 755'
 alias letr='chmod -R 755'
 
 ###############
-# TEMPORARY
+# projects
 ###############
+
+# subscription-demo
+alias ve='export VENV=$MAIN_HOME/pro/subscription-demo/env'
+
+alias run='
+    rm /home/riddle/pro/subscription-demo/app/subscriptions.sqlite &&
+    ve &&
+    $VENV/bin/python3 setup.py develop &&
+    $VENV/bin/initialize_subscriptions_db development.ini'
+
+alias run2='
+    ve &&
+    rm -rf $VENV &&
+    python3 -m venv $VENV &&
+    $VENV/bin/pip3 install --upgrade pip setuptools &&
+    run &&
+    chmod -R +x $VENV &&
+    $VENV/bin/pip install -e ".[testing]" &&
+    $VENV/bin/pserve development.ini --reload'
+
+alias test='ve &&$VENV/bin/py.test --cov -q'
+
+alias sub='cd $PRO/subscription-demo/app'
+
+alias senv='source $VENV/bin/activate'
+
+###############
+# temp
+###############
+
+alias gimp.go='cd $DOTFILES_DIR/xorg/.config/GIMP/2.10/'
 

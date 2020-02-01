@@ -834,7 +834,7 @@
 ; (gtk_accel_path "<Actions>/context/context-brush-angle-decrease" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-lower" "")
 ; (gtk_accel_path "<Actions>/context/context-paint-mode-previous" "")
-(gtk_accel_path "<Actions>/tools/tools-bucket-fill" "g")
+(gtk_accel_path "<Actions>/tools/tools-bucket-fill" "<Primary>g")
 ; (gtk_accel_path "<Actions>/view/view-zoom-menu" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-popup" "")
 ; (gtk_accel_path "<Actions>/image/image-rotate-90" "")

@@ -33,6 +33,13 @@ xorg/.config/cmus/*
 !xorg/.config/cmus/lib.pl
 !xorg/.config/cmus/playlist.pl
 
+xorg/.config/Code - OSS/*
+!xorg/.config/Code - OSS/rapid_render.json
+!xorg/.config/Code - OSS/storage.json
+!xorg/.config/Code - OSS/User/
+xorg/.config/Code - OSS/User/*
+!xorg/.config/Code - OSS/User/settings.json
+
 xorg/.config/filezilla/*
 !xorg/.config/filezilla/filezilla.xml
 !xorg/.config/filezilla/layout.xml
@@ -42,8 +49,8 @@ xorg/.config/gtk-3.0/bookmarks
 
 xorg/.config/sublime-text-3/*
 !xorg/.config/sublime-text-3/Packages/
-xorg/.config/sublime-text-3/Packages/
-!xorg/.config/sublime-text-3/Packages/User
+xorg/.config/sublime-text-3/Packages/*
+!xorg/.config/sublime-text-3/Packages/User/
 xorg/.config/sublime-text-3/Packages/User/*
 !xorg/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
 !xorg/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
