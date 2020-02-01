@@ -130,8 +130,7 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save",
-                        "enabled": false
+                        "label": "&&Save"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
@@ -203,8 +202,7 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File",
-                        "enabled": false
+                        "label": "Re&&vert File"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
@@ -883,7 +881,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1016,11 +1015,6 @@
                 "label": "Ctrl+O",
                 "userSettingsLabel": "ctrl+o"
             },
-            "workbench.action.files.openFolder": {
-                "label": "Ctrl+K Ctrl+O",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+o"
-            },
             "workbench.action.reopenClosedEditor": {
                 "label": "Ctrl+Shift+T",
                 "userSettingsLabel": "ctrl+shift+t"
@@ -1045,29 +1039,9 @@
                 "label": "Ctrl+Shift+X",
                 "userSettingsLabel": "ctrl+shift+x"
             },
-            "workbench.action.openGlobalKeybindings": {
-                "label": "Ctrl+K Ctrl+S",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+s"
-            },
-            "workbench.extensions.action.showRecommendedKeymapExtensions": {
-                "label": "Ctrl+K Ctrl+M",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+m"
-            },
-            "workbench.action.selectTheme": {
-                "label": "Ctrl+K Ctrl+T",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+t"
-            },
             "workbench.action.closeActiveEditor": {
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
-            },
-            "workbench.action.closeFolder": {
-                "label": "Ctrl+K F",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Ctrl+W",
@@ -1102,8 +1076,8 @@
                 "userSettingsLabel": "ctrl+f"
             },
             "editor.action.startFindReplaceAction": {
-                "label": "Ctrl+H",
-                "userSettingsLabel": "ctrl+h"
+                "label": "Alt+R",
+                "userSettingsLabel": "alt+r"
             },
             "workbench.action.findInFiles": {
                 "label": "Ctrl+Shift+F",
@@ -1118,8 +1092,8 @@
                 "userSettingsLabel": "ctrl+/"
             },
             "editor.action.blockComment": {
-                "label": "Ctrl+Shift+A",
-                "userSettingsLabel": "ctrl+shift+a"
+                "label": "Ctrl+/",
+                "userSettingsLabel": "ctrl+/"
             },
             "editor.emmet.action.expandAbbreviation": {
                 "label": "Tab",
@@ -1181,18 +1155,9 @@
                 "label": "F11",
                 "userSettingsLabel": "f11"
             },
-            "workbench.action.toggleZenMode": {
-                "label": "Ctrl+K Z",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k z"
-            },
             "workbench.action.toggleSidebarVisibility": {
                 "label": "Ctrl+B",
                 "userSettingsLabel": "ctrl+b"
-            },
-            "workbench.action.togglePanel": {
-                "label": "Ctrl+J",
-                "userSettingsLabel": "ctrl+j"
             },
             "workbench.action.zoomIn": {
                 "label": "Ctrl+=",
@@ -1228,9 +1193,8 @@
                 "userSettingsLabel": "ctrl+shift+d"
             },
             "workbench.action.output.toggleOutput": {
-                "label": "Ctrl+K Ctrl+H",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+h"
+                "label": "Alt+2",
+                "userSettingsLabel": "alt+2"
             },
             "workbench.debug.action.toggleRepl": {
                 "label": "Ctrl+Shift+Y",
@@ -1255,11 +1219,6 @@
             "workbench.action.navigateForward": {
                 "label": "Ctrl+Shift+-",
                 "userSettingsLabel": "ctrl+shift+-"
-            },
-            "workbench.action.navigateToLastEditLocation": {
-                "label": "Ctrl+K Ctrl+Q",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+q"
             },
             "workbench.action.nextEditor": {
                 "label": "Ctrl+PageDown",
@@ -1298,24 +1257,20 @@
                 "userSettingsLabel": "ctrl+5"
             },
             "workbench.action.focusLeftGroup": {
-                "label": "Ctrl+K Ctrl+LeftArrow",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+left"
+                "label": "Ctrl+H",
+                "userSettingsLabel": "ctrl+h"
             },
             "workbench.action.focusRightGroup": {
-                "label": "Ctrl+K Ctrl+RightArrow",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+right"
+                "label": "Ctrl+L",
+                "userSettingsLabel": "ctrl+l"
             },
             "workbench.action.focusAboveGroup": {
-                "label": "Ctrl+K Ctrl+UpArrow",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+up"
+                "label": "Ctrl+K",
+                "userSettingsLabel": "ctrl+k"
             },
             "workbench.action.focusBelowGroup": {
-                "label": "Ctrl+K Ctrl+DownArrow",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+down"
+                "label": "Ctrl+J",
+                "userSettingsLabel": "ctrl+j"
             },
             "workbench.action.quickOpen": {
                 "label": "Ctrl+P",
@@ -1417,11 +1372,6 @@
                 "label": "Ctrl+Shift+B",
                 "userSettingsLabel": "ctrl+shift+b"
             },
-            "workbench.action.keybindingsReference": {
-                "label": "Ctrl+K Ctrl+R",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+r"
-            },
             "workbench.action.toggleDevTools": {
                 "label": "Ctrl+Shift+I",
                 "userSettingsLabel": "ctrl+shift+i"
@@ -1432,13 +1382,14 @@
     "themeBackground": "#1e1e1e",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/riddle/.config/Code - OSS/Backups/1579097923369",
+            "folder": "file:///home/riddle/pro/LaTex/core",
+            "backupPath": "/home/riddle/.config/Code - OSS/Backups/a73f0f1991348eca44ab32206c66f2fb",
             "uiState": {
                 "mode": 0,
-                "x": 448,
-                "y": 156,
-                "width": 1024,
-                "height": 768
+                "x": 4,
+                "y": 0,
+                "width": 1219,
+                "height": 1050
             }
         },
         "openedWindows": []

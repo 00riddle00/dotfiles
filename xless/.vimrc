@@ -97,7 +97,8 @@ nmap    <c-Right>       :vertical resize +5<CR>
 nmap    <c-Up>          :resize +5<CR>
 nmap    <c-Down>        :resize -5<CR>
 nmap    <leader>r       :so $VIMRC<CR>
-nmap    <leader>h       :set hlsearch!<CR>
+"nmap    <leader>h       :set hlsearch!<CR>
+nmap    <leader>h       ilialia<Esc>
 nmap    <c-s>           :w!<CR>
 nmap     ss             :wq<CR>
 nmap     qq             :q<CR>
