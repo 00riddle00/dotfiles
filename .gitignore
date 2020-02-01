@@ -56,6 +56,7 @@ xorg/.config/sublime-text-3/Packages/User/*
 !xorg/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
 xorg/.config/GIMP/*/*
+!xorg/.config/GIMP/*/scripts/
 !xorg/.config/GIMP/*/menurc
 
 xorg/.config/thefuck/*
