@@ -21,6 +21,7 @@ conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
 conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
 flameshot &
+nm-applet &
 tint2 &
 urxvt -name t2
 # espeak "Welcome home, Riddle!" > /dev/null 2>&1  &&

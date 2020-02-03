@@ -42,7 +42,6 @@ export LAPTOP_SCREEN=eDP-1
 ## there has been no need so far
 
 # SYSTEMWIDE VARS
-export FREETYPE_PROPERTIES='truetype:interpreter-version=35'
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim

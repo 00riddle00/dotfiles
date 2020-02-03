@@ -19,6 +19,10 @@ xless/.emacs.d/*
 xless/.irssi/*
 !xless/.irssi/config
 
+xless/.mutt/*
+!xless/.mutt/*muttrc
+!xless/.mutt/*sig
+
 xless/.tmux/*
 
 xless/.vim/*

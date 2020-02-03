@@ -1,0 +1,183 @@
+
+#################
+# common settings
+#################
+
+# directories and commands
+set alias_file          = ~/.mutt/alias                          # alias file
+set header_cache        = ~/.mutt/cache/headers                  # where to store headers        
+set message_cachedir    = ~/.mutt/cache/bodies                   # where to store bodies
+set certificate_file    = ~/.mutt/certificates                   # where to store certs
+set mailcap_path        = ~/.mutt/mailcap                        # entrys for filetypes
+set signature           = ~/.mutt/tg.sig                         # my signature file
+#set sig_on_top=yes ??
+set tmpdir              = ~/.mutt/temp                           # where to keep temp files
+set editor              = `echo \$EDITOR`
+set ispell              = "/usr/bin/aspell -e -c"                # use aspell as ispell
+set imap_peek           = no                                     # Gmail mark as read
+set sleep_time          = 0                                      # instantaneous mailbox change
+
+# main options
+#set mbox_type           = Maildir                                # mailbox type
+#set folder              = ~/.mail                                # mailbox location
+#set spoolfile           = "+JWR/INBOX"                           # default inbox
+set timeout             = 3                                      # idle time before scanning
+set mail_check          = 0                                      # minimum time between scans
+set sort_alias          = alias                                  # sort alias file by alias
+set reverse_alias                                                # show names from alias file in index
+unset move                                                       # gmail does that
+set delete                                                       # don't ask, just do
+unset confirmappend                                              # don't ask, just do!
+set quit                                                         # don't ask, just do!!
+unset mark_old                                                   # read/new is good enough for me
+set beep_new                                                     # bell on new mails
+set pipe_decode                                                  # strip headers and eval mimes when piping
+set thorough_search                                              # strip headers and eval mimes before searching
+set text_flowed         = yes                                    # no hard breaks in quoted text
+unset help
+
+# index options
+set sort                = threads                                # like gmail 
+set sort_aux            = reverse-last-date-received             # like gmail
+#set uncollapse_jump                                              # don't collapse on an unread message 
+#set sort_re                                                      # thread based on regex
+#set reply_regexp        = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+
+# pager options
+set pager_index_lines   = 10                                     # number of index lines to show 
+set pager_context       = 5                                      # number of context lines to show
+set pager_stop                                                   # don't go to next message automatically
+set menu_scroll                                                  # scroll in menus 
+set smart_wrap                                                   # don't split words
+set tilde                                                        # show tildes like in vim
+unset markers                                                    # no ugly plus signs
+set quote_regexp        = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set status_on_top                                                # as you'd expect
+auto_view text/html                                              # view html automatically
+alternative_order text/plain text/enriched text/html             # save html for last
+auto_view text/calendar                                          # view ical files
+alternative_order text/plain text/html text/*
+
+# formats
+set date_format         = "%d/%m/%y at %I:%M%P"
+set index_format        = "%3C %?X?A& ? %S   %D  •  %-25.25L %s %> %c"
+set pager_format        = "Reading message %C of %m %> %lL [%P]" # pager statusbar
+set folder_format       = "%2C %t %N %8s %d %f"                  # mailbox list view
+set status_format       = " %?M?%M/?%m Mails %?n?%n new, ?%?u?%u unread, ?%?p?%p drafts, ?%?t?%t +tagged, ?%?d?%d deleted, ?[%f %l]  %?b?%b unread messages. ?%>  %V  [%P]"
+set alias_format        = "%4n %t %-20a  %r"
+
+# composing mail
+set realname            = "Tomas Giedraitis"                     # who am i?
+set envelope_from                                                # which from?
+set sig_dashes                                                   # dashes before my sig... sweet
+set edit_headers                                                 # show headers when composing
+set fast_reply                                                   # skip to compose when replying
+set sendmail_wait       = -1                                     # don't wait for sending... to complete
+set askcc                                                        # ask for CC:
+set fcc_attach                                                   # save attachments with the body
+set mime_forward                                                 # forward attachments as part of body
+set mime_forward_rest                                            # include attachments
+set forward_format      = "Fwd: %s"                              # format for subject when forwarding
+set forward_decode                                               # decode when forwarding
+set attribution         = "On %d, %n wrote:"                     # set the attribution
+set reply_to                                                     # reply to Reply to: field
+set reverse_name                                                 # reply as whomever it was to
+set include                                                      # include message in replies
+set forward_quote                                                # include message in forwards
+set print_command      = "muttprint"                             # printer…
+
+# headers to show
+ignore *                                                         # ignore all headers
+unignore from: to: cc: date: subject:                            # show only these
+hdr_order from: to: cc: date: subject:                           # and in this order
+
+# boxes
+mailboxes +INBOX +[Gmail]/Spam +KET +sp +Starred
+
+# always sourced
+source $alias_file                                               # required for functionality
+source ~/.mutt/colors_LukeSmithxyz.muttrc                                  # source colors file
+source sidebar.muttrc                                            # source sidebar config
+#source ~/.mutt/jwr.muttrc                                       # source as default
+#source ~/.mutt/gpg.rc                                           # use GPG
+
+# account specific sources
+#folder-hook Gmail/* source ~/.mutt/gmail.muttrc 
+
+# Mailing lists
+lists arch-announce@archlinux.org                                # Arch announcements
+subscribe arch-announce@archlinux.org
+
+lists arch-general@archlinux.org                                 # Arch general list
+subscribe arch-general@archlinux.org
+
+lists aur-general@archlinux.org                                  # AUR general list
+subscribe aur-general@archlinux.org
+
+lists dev@suckless.org                                           # suckless.org
+subscribe dev@suckless.org
+
+# these just give me headaches
+bind index,pager \#     noop
+bind index i            noop
+
+# bindings
+bind pager q            exit
+bind pager /            search
+bind pager <up>         previous-line
+bind pager <down>       next-line
+bind pager k            previous-line
+bind pager j            next-line
+bind pager gg           top
+bind pager G            bottom
+bind index gg           first-entry
+bind index D            purge-message
+bind index G            last-entry
+bind pager K            previous-undeleted
+bind pager J            next-undeleted
+bind index K            previous-unread
+bind index J            next-unread
+bind index W            clear-flag
+bind index w            set-flag
+bind index,pager R      group-reply
+bind compose p          pgp-menu
+bind attach <return>    view-mailcap
+
+#############
+# my settings
+#############
+
+## GMAIL
+set ssl_starttls=yes
+set ssl_force_tls=yes
+source "gpg -d ~/.mutt/passwords.gpg |"
+
+set imap_user = "tomasgiedraitis@gmail.com"
+# set imap_pass = "" // from gpg
+
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "+INBOX"
+
+set imap_keepalive = 900
+
+set smtp_url = "smtps://tomasgiedraitis@smtp.gmail.com:465/"
+# set smtp_pass = "" // from gpg
+set from= "tomasgiedraitis@gmail.com"
+
+set trash = "+[Gmail]/Trash"
+set postponed = "+[Gmail]/Drafts"
+
+### bindings
+bind editor <space> noop
+
+### macros
+macro index,pager a "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
+macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
+macro index,pager <F8> ":source ~/.mutt/muttrc\n" "Reload the muttrc"
+
