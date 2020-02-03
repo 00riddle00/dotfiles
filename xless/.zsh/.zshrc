@@ -61,6 +61,8 @@ if [[ -d "$ZDOTDIR" ]]; then
   done
 fi
 
+eval $(thefuck --alias) 
+
 # execute commands 
 ## avoid Ctrl-s freezing the terminal
 stty -ixon

@@ -10,6 +10,10 @@
 .directory
 
 ############################  PARTIAL DIRS GITIGNORE #######################
+xless/.config/thefuck/
+!xless/.config/thefuck/rules/
+!xless/.config/thefuck/settings.py
+
 xless/.config/vifm/vifm-help.txt
 xless/.config/vifm/vifminfo
 xless/.emacs.d/*

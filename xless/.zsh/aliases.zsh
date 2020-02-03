@@ -346,7 +346,7 @@ alias run2='
     $VENV/bin/pip install -e ".[testing]" &&
     $VENV/bin/pserve development.ini --reload'
 
-alias test='ve &&$VENV/bin/py.test --cov -q'
+#alias test='ve &&$VENV/bin/py.test --cov -q'
 
 alias sub='cd $PRO/subscription-demo/app'
 
