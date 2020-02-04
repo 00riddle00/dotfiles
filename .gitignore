@@ -12,10 +12,6 @@
 ############################  PARTIAL DIRS GITIGNORE #######################
 xless/.emacs.d/*
 
-xless/.config/ranger/*
-!xless/.config/ranger/rc.conf
-!xless/.config/ranger/rifle.conf
-
 xless/.config/thefuck/*
 !xless/.config/thefuck/rules/
 !xless/.config/thefuck/settings.py

@@ -348,7 +348,6 @@ alias run2='
 
 #alias test='ve &&$VENV/bin/py.test --cov -q'
 
-alias sub='cd $PRO/subscription-demo/app'
 
 alias senv='source $VENV/bin/activate'
 
@@ -364,3 +363,5 @@ alias network.edit='nm-connection-editor'
 alias network.list='nmcli device wifi list'
 alias mm='neomutt'
 alias r='ranger'
+alias gop='gotop'
+alias conf='cd ~/.config/'
