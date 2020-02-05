@@ -82,6 +82,8 @@ alias charge='$SHELL_SCRIPTS_DIR/battery.sh'
 alias pyc='$MAIN_HOME/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/193.5662.61/bin/pycharm.sh'
 alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
 alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
+alias rms.say='$SHELL_SCRIPTS_DIR/cowsay/rms_say.sh'
+alias rms.say.gnu='$SHELL_SCRIPTS_DIR/cowsay/rms_say_gnu.sh'
 
 # ssh
 alias sa='ssh-add'
@@ -365,3 +367,8 @@ alias mm='neomutt'
 alias r='ranger'
 alias gop='gotop'
 alias conf='cd ~/.config/'
+alias mpv.image='mpv --no-config --pause --vo=tct'
+alias mpv.video='mpv --no-config --vo=tct'
+alias mpv.youtube='mpv -vo=caca'
+alias sk='cd ~/Screenshots'
+

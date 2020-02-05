@@ -537,13 +537,11 @@
     </keybind>
     <!-- Jetbrains/> -->
     <!-- <emacs -->
-    <!--
       <keybind key="W-w">
          <action name="Execute">
             <command>sh -c "$ACTIVATE emacs"</command>
          </action>
       </keybind>
-      -->
     <!--Activate "emacs" mode-->
     <keybind key="A-o">
       <action name="Execute">
@@ -667,17 +665,33 @@
         <command>sh -c "$ACTIVATE filezilla"</command>
       </action>
     </keybind>
+    <!-- file manager -->
+    <keybind key="A-e">
+      <action name="Execute">
+        <command>urxvt -name  ranger --geometry 100x40 -e ranger</command>
+      </action>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute">
+        <command>wmctrl -x -a ranger.URxvt</command>
+      </action>
+    </keybind>
+   <!-- launch "Thunar" -->
+    <!--
     <keybind key="A-e">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
-    <!-- focus "Thunar" -->
+    -->
+   <!-- focus "Thunar" -->
+    <!--
     <keybind key="W-e">
       <action name="Execute">
         <command>wmctrl -a "file manager"</command>
       </action>
     </keybind>
+    -->
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>

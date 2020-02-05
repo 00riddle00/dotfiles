@@ -13,7 +13,7 @@ export DOTFILES_DIR=$MAIN_HOME/.dotfiles
 # DOTFILES VARS
 export VIMCOLOR=miro8
 export DIRCOLORS=.dircolors
-export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/scripts
+export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/bin
 export ACTIVATE=$SHELL_SCRIPTS_DIR/activate.sh
 export FOCUS=$SHELL_SCRIPTS_DIR/focus.sh
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
