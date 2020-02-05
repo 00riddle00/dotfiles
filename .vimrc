@@ -175,7 +175,7 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=$DOTFILES_DIR/xless/.vim/bundle/Vundle.vim
+set rtp+=$DOTFILES_DIR/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required

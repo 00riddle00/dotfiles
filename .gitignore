@@ -10,68 +10,68 @@
 .directory
 
 ############################  PARTIAL DIRS GITIGNORE #######################
-xless/.emacs.d/*
+.emacs.d/*
 
-xless/.config/thefuck/*
-!xless/.config/thefuck/rules/
-!xless/.config/thefuck/settings.py
+.config/thefuck/*
+!.config/thefuck/rules/
+!.config/thefuck/settings.py
 
-xless/.config/vifm/vifm-help.txt
-xless/.config/vifm/vifminfo
+.config/vifm/vifm-help.txt
+.config/vifm/vifminfo
 
-!xless/.emacs.d/init.el
+!.emacs.d/init.el
 
-xless/.irssi/*
-!xless/.irssi/config
+.irssi/*
+!.irssi/config
 
-xless/.mutt/*
-!xless/.mutt/*muttrc
-!xless/.mutt/*sig
+.mutt/*
+!.mutt/*muttrc
+!.mutt/*sig
 
-xless/.tmux/*
+.tmux/*
 
-xless/.vim/*
-!xless/.vim/colors/
+.vim/*
+!.vim/colors/
 
-xless/.zsh/.zcompdump
-xless/.zsh/histfile
-xless/.zsh/plugins/
+.zsh/.zcompdump
+.zsh/histfile
+.zsh/plugins/
 
-xorg/.config/cmus/*
-!xorg/.config/cmus/autosave
-!xorg/.config/cmus/lib.pl
-!xorg/.config/cmus/playlist.pl
+.config/cmus/*
+!.config/cmus/autosave
+!.config/cmus/lib.pl
+!.config/cmus/playlist.pl
 
-xorg/.config/Code - OSS/*
-!xorg/.config/Code - OSS/storage.json
-!xorg/.config/Code - OSS/User/
-xorg/.config/Code - OSS/User/*
-!xorg/.config/Code - OSS/User/settings.json
+.config/Code - OSS/*
+!.config/Code - OSS/storage.json
+!.config/Code - OSS/User/
+.config/Code - OSS/User/*
+!.config/Code - OSS/User/settings.json
 
-xorg/.config/filezilla/*
-!xorg/.config/filezilla/filezilla.xml
-!xorg/.config/filezilla/layout.xml
-!xorg/.config/filezilla/sitemanager.xml
+.config/filezilla/*
+!.config/filezilla/filezilla.xml
+!.config/filezilla/layout.xml
+!.config/filezilla/sitemanager.xml
 
-xorg/.config/gtk-3.0/bookmarks
+.config/gtk-3.0/bookmarks
 
-xorg/.config/sublime-text-3/*
-!xorg/.config/sublime-text-3/Packages/
-xorg/.config/sublime-text-3/Packages/*
-!xorg/.config/sublime-text-3/Packages/User/
-xorg/.config/sublime-text-3/Packages/User/*
-!xorg/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
-!xorg/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-!xorg/.config/sublime-text-3/Packages/User/Package Control.sublime-settings
+.config/sublime-text-3/*
+!.config/sublime-text-3/Packages/
+.config/sublime-text-3/Packages/*
+!.config/sublime-text-3/Packages/User/
+.config/sublime-text-3/Packages/User/*
+!.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
+!.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+!.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
-xorg/.config/GIMP/*/*
-!xorg/.config/GIMP/*/scripts/
-!xorg/.config/GIMP/*/menurc
+.config/GIMP/*/*
+!.config/GIMP/*/scripts/
+!.config/GIMP/*/menurc
 
-xorg/.config/thefuck/*
-!xorg/.config/thefuck/settings.py
+.config/thefuck/*
+!.config/thefuck/settings.py
 
-xorg/.config/Thunar/accels.scm
+.config/Thunar/accels.scm
 
 scripts/cowsay/**/*.dat
 
