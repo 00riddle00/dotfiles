@@ -37,6 +37,9 @@ export NOTES=$SYNC/gtd/
 export KEEP=$SYNC/keepass
 export HDMI_SCREEN=HDMI-1
 export LAPTOP_SCREEN=eDP-1 
+## for i3
+export TERMINAL=urxvt
+export FILE=ranger
 
 # CURRENT USER VARS
 ## there has been no need so far
