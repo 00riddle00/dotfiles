@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 pacman -Qqm > packages_aur
 pacman -Qqe > pacman.lst

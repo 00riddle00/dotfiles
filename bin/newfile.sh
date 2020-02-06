@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # used for custom "Create New File" shortcut in Thunar
 file=$(zenity --entry \

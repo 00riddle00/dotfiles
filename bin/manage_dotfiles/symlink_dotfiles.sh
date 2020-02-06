@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 for entry in $DOTFILES_DIR/.[a-zA-Z]*; do
     # whenever you iterate over files/folders by globbing, it's good practice to avoid the corner 

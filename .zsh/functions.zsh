@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # MAIN USER FUNCTIONS
 
 ## copy argument to clipboard
@@ -11,9 +9,11 @@ function ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
 
 ## copy to mif
 function mif.send() { scp -rp "$MAIN_HOME/Downloads/$1" "togi3017@uosis.mif.vu.lt:/stud3/2015/togi3017/Desktop"; }
+function g.send() { scp -rp "$MAIN_HOME/Downloads/$1" "root@192.168.1.244:/home/riddle"; }
 
 ## copy from mif
 function mif.get() { scp -rp "togi3017@uosis.mif.vu.lt:/stud3/2015/togi3017/Desktop/$1" "$MAIN_HOME/Downloads"; }
+function g.get() { scp -rp "root@192.168.1.244:/home/riddle/to_ssh" "$MAIN_HOME/Downloads"; }
 
 
 # SYSTEMWIDE FUNCTIONS

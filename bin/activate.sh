@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 window_name="$1"
 

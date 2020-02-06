@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 for entry in $DOTFILES_DIR/.[a-zA-Z]*; do
     [ -e "$entry" ] && 

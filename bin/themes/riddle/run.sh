@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 pkill -f conky & 
 pkill -f terminator &

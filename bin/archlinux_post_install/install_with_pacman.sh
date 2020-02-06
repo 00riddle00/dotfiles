@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env sh
 # if any package is not found, does not install anything from the lift
 # if package is already installed, skips it (shows up-to date message)
 

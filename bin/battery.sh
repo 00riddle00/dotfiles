@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # A script to test whether a laptop is charging
 cmd="upower -i `upower -e | grep 'BAT'` > /dev/null 2>&1"

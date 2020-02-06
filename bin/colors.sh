@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 for x in 0 1 4 5 7 8; do
 	for i in {30..37}; do

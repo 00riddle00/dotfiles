@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # By Ed Wiget
 # This fixes dropbox sync issues on linux

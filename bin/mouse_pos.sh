@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # get current mouse position
 eval $(xdotool getmouselocation --shell)

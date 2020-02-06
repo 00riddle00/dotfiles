@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env sh
 
 xrandr --output HDMI-1 --auto 
 

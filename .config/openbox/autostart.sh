@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env/sh
 
 ## check if X is running
 if xset q &>/dev/null; then

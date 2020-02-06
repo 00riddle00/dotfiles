@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env sh
+
 cat << "EOF"
 
                       _    _      _                                   

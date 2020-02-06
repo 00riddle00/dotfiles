@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env sh
 
 for pkg in yay; do
     git clone https://aur.archlinux.org/$pkg.git &&

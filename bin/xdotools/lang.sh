@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # script which aids in learning language (screen geometry is hardcoded)
 
