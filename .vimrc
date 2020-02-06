@@ -346,3 +346,8 @@ call vundle#end()            " required
 " Enable filetype-specific plugins
 filetype plugin indent on    " required
 
+"################## TEMP ###################
+command Bin %!xxd
+command BinRevert %!xxd -r
+command Hex %!xxd -p
+command HexRevert %!xxd -p -r

@@ -6,6 +6,7 @@ for entry in $DOTFILES_DIR/.[a-zA-Z]*; do
     # (un-matching) glob pattern string itself), hence [ -e "$entry" ] is used
     [ -e "$entry" ] && 
         [[ ${entry##*/} != ".config" ]] &&
+        [[ ${entry##*/} != ".local" ]] &&
         # .gitconfig is also ignored. Will deal with that later
         [[ ${entry##*/} != .git* ]] &&
     ln -sf $entry $HOME/${entry##*/}
@@ -17,4 +18,11 @@ for entry in $DOTFILES_DIR/.config/[a-zA-Z]*; do
     [ -e "$entry" ] &&
     ln -sf $entry $HOME/.config/${entry##*/}
 done
+
+# todo leave ~/.local/share/ folder as is
+for entry in $DOTFILES_DIR/.local/[a-zA-Z]*; do
+    [ -e "$entry" ] &&
+    ln -sf $entry $HOME/.local/${entry##*/}
+done
+
 

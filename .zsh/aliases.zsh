@@ -167,6 +167,8 @@ alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 
 ## aur
 alias ya='trizen'
+alias ya.install='trizen -S'
+alias ya.search='trizen -Si'
 alias yaup='trizen -Syu --aur --noconfirm'
 
 ## c development
@@ -373,3 +375,4 @@ alias mpv.youtube='mpv -vo=caca'
 alias sk='cd ~/Screenshots'
 
 alias ic='vim $MAIN_HOME/.config/i3/config'
+alias kee='cd $DROPBOX/sync/keepass'

@@ -2,6 +2,9 @@
 # user's environment variables
 ###############################
 
+# Adds `~/.local/bin` to $PATH
+export PATH="$PATH:$HOME/.local/bin/"
+
 # point Zsh at the right dotfiles
 ZDOTDIR="${ZDOTDIR:-$HOME/.zsh}"
 
