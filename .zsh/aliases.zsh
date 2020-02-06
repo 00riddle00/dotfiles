@@ -166,10 +166,10 @@ alias vv='sudo vim'
 alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 
 ## aur
-alias ya='trizen'
-alias ya.install='trizen -S'
-alias ya.search='trizen -Si'
-alias yaup='trizen -Syu --aur --noconfirm'
+alias ya='yay'
+alias ya.install='yay -S'
+alias ya.search='yay -Si'
+alias yaup='yay -Syu --noconfirm'
 
 ## c development
 alias gdb.super='gdb --batch --ex run --ex bt --ex q --args'
@@ -254,25 +254,38 @@ alias xres='vim $MAIN_HOME/.Xresources'
 alias zenv='vim $MAIN_HOME/.zshenv'
 alias zr='vim $MAIN_HOME/.zsh/.zshrc'
 
+## make
+
 ## pacman
+alias orphans='pacman -Qdtd'
 alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
-alias ih='ls -la | grepi '
 alias is='sudo pacman -Qqe | grepi '
 alias isa='sudo pacman -Qq | grepi '
 alias mp='makepkg'
 alias mps='makepkg -s'
-alias orphans='pacman -Qdtd'
 alias pacfile='sudo pacman -S --noconfirm - --needed <'
 alias pacr='sudo pacman -R'
-alias pacrs='sudo pacman -Rs'
+alias pacrs='sudo pacman -Rns' # full removal (+nosave+deps)
 alias pacs='sudo pacman -S --noconfirm --needed'
-alias pacu='sudo pacman -U'
 alias pl='sudo pacman -Qqe'  # list all packages
 alias pld='sudo pacman -Qq'  # list all packages with deps
 alias plm='sudo pacman -Qqm' # list aur packages
+# ------------------------------------------------------------------------
+# updates your databases if the repositories haven’t been checked 
+# recently, and upgrades any new package versions.
+alias up='sudo pacman -Syu'
+# forces updates of your databases for all repositories (even if it 
+# was just updated recently) and upgrades any new package versions.
+alias up1='sudo pacman -Syyu'
+#  upgrades packages and also downgrades packages (if you happen to have a
+#  newer version than in the repository). Normally this should not be used.
+#  Only if you’re trying to fix a specific issue due to a new package being
+#  removed from the repository.
 alias up2='sudo pacman -Syuu'
-alias up='sudo pacman -Syyu'
+# ------------------------------------------------------------------------
 alias what='sudo pacman -Qs'
+alias pac.clear='paccache --remove --uninstalled --keep 0'
+
 
 ## process management
 alias au='ps aux | grep -i'
@@ -321,6 +334,7 @@ alias lsal='ls -al'
 alias lsl='ls -l'
 alias lsla='ls -al'
 alias lsr='ls -R'
+alias ih='ls -la | grep -i'
 
 ### permissions
 alias ch='chown -R $MAIN_USER:$MAIN_USER'
@@ -376,3 +390,4 @@ alias sk='cd ~/Screenshots'
 
 alias ic='vim $MAIN_HOME/.config/i3/config'
 alias kee='cd $DROPBOX/sync/keepass'
+alias pacc='sudo vim /etc/pacman.conf'
