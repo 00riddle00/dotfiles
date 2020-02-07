@@ -15,7 +15,6 @@ function g.send() { scp -rp "$MAIN_HOME/Downloads/$1" "root@192.168.1.244:/home/
 function mif.get() { scp -rp "togi3017@uosis.mif.vu.lt:/stud3/2015/togi3017/Desktop/$1" "$MAIN_HOME/Downloads"; }
 function g.get() { scp -rp "root@192.168.1.244:/home/riddle/to_ssh" "$MAIN_HOME/Downloads"; }
 
-
 # SYSTEMWIDE FUNCTIONS
 
 ## find command in history

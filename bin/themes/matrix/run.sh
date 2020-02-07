@@ -6,7 +6,6 @@ pkill -f urxvt &
 pkill -f thunar &
 pkill -f mpg123 &
 
-
 sed -i 's/\bprofile = .*/profile = matrix/' ~/.config/terminator/config &
 sleep 2 
 sed -i 's/export THEME=.*/export THEME=matrix/' ~/.aliases &

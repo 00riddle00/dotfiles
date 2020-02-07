@@ -287,7 +287,6 @@ alias up2='sudo pacman -Syuu'
 alias what='sudo pacman -Qs'
 alias pac.clear='paccache --remove --uninstalled --keep 0'
 
-
 ## process management
 alias au='ps aux | grep -i'
 alias kil='sudo kill -9'
@@ -367,7 +366,6 @@ alias run2='
 
 #alias test='ve &&$VENV/bin/py.test --cov -q'
 
-
 alias senv='source $VENV/bin/activate'
 
 ###############
@@ -393,3 +391,5 @@ alias ic='vim $MAIN_HOME/.config/i3/config'
 alias kee='cd $DROPBOX/sync/keepass'
 alias pacc='sudo vim /etc/pacman.conf'
 alias ss='ssh root@192.168.1.244'
+alias rt='rtorrent'
+alias pls='sudo $(fc -ln -1)'

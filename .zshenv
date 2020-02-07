@@ -1,6 +1,6 @@
-###############################
-# user's environment variables
-###############################
+# ============================= 
+#  user's environment variables
+# ============================= 
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$HOME/.local/bin/"

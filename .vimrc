@@ -1,5 +1,12 @@
-"############################### SETTINGS #####################################
+"---------------------------------------------------
+" file:     ~/.vimrc
+" author:   riddle00 - https://github.com/00riddle00
+" vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
+"---------------------------------------------------
 
+"===================================================
+"  SETTINGS 
+"===================================================
 color $VIMCOLOR
 set background=dark
 
@@ -82,11 +89,17 @@ set complete=.,w,b,u
 " jasonwryan's statusline
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
 
-"######################### FILE SPECIFIC SETTINGS #############################
+"===================================================
+"  FILE SPECIFIC SETTINGS 
+"===================================================
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
-"############################### MAPPINGS #####################################
+
+"===================================================
+"  MAPPINGS
+"===================================================
 let mapleader = '\'
 
+nmap    <leader>i       vbr=
 nmap    <leader>n       :set number!<CR>
 nmap    <leader>p       :setlocal paste!<CR>
 nmap    <leader>v       :vs<cr>
@@ -107,10 +120,15 @@ nmap     <S-F5>         :cprevious<CR>
 nmap     <C-F5>         :cc<CR>
 
 " Windows navigation
-nmap     <c-j>          <C-W>j
-nmap     <c-k>          <C-W>k
-nmap     <c-h>          <C-W>h
-nmap     <c-l>          <C-W>l
+"nmap     <c-j>          <C-W>j
+"nmap     <c-k>          <C-W>k
+"nmap     <c-h>          <C-W>h
+"nmap     <c-l>          <C-W>l
+
+nmap     <c-Up>          <C-W>j
+nmap     <c-Down>          <C-W>k
+nmap     <c-Left>          <C-W>h
+nmap     <c-Right>          <C-W>l
 
 " Tab navigation
 nmap     tt             :tabnew<CR>
@@ -122,9 +140,10 @@ nmap     th             :tabfirst<CR>
 nmap     tl             :tablast<CR>
 
 " Macros
-let @o="oprint(\"here\")\<Esc>"
+let @o="oprint(\"here\")\<Esc>k0"
 "let @s=":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
-
+let @q="lr lv$r=jjhr lv$r=/##"
+let @e="a O11i=2xI# jo11i=2xI# Aak0"
 
 " Copy/Paste
 vmap <C-c> "+y
@@ -147,18 +166,15 @@ nmap    k               gk
 nmap    Q               <nop>
 
 " Scroll half screen to left and right vertically
-no      zh           zH
-no      zl           zL
+noremap      zh           zH
+noremap      zl           zL
 
 " Scroll half screen to left and right vertically
-no      zz           z-
+noremap      zz           z-
 
 " Autocomplete
-ino     <c-k>           <c-p>
-ino     <c-j>           <c-n>
-
-" I often hit :W when I actually mean :w
-command! W              write
+inoremap     <c-k>           <c-p>
+inoremap     <c-j>           <c-n>
 
 " Quick search for python class and def statments.
 nmap    c/          /\<class
@@ -170,8 +186,34 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 "nmap <F8> :w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
 "nmap <F8> :w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>
 
-"############################### PLUGINS #####################################
+"===================================================
+"  COMMANDS
+"===================================================
+" I often hit :W when I actually mean :w
+command! W              write
 
+command Bin %!xxd
+command BinRevert %!xxd -r
+command Hex %!xxd -p
+command HexRevert %!xxd -p -r
+
+" remove double blank lines
+command RM %s/\(\n\n\)\n\+/\1/g
+
+" sort by markdown h1 headings 
+" '@' character should not appear in a file before running
+" replace \n with '@' (except the newlines appearing before '# '),
+"   sort the file, then restore newlines
+command SortPa %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
+
+"===================================================
+"  FUNCTIONS
+"===================================================
+" empty so far
+
+"===================================================
+"  PLUGINS
+"===================================================
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -190,11 +232,6 @@ let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 30
 let NERDTreeIgnore = ['\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
 let g:NERDTreeMapHelp = 'Y'
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
 
 "Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -346,8 +383,21 @@ call vundle#end()            " required
 " Enable filetype-specific plugins
 filetype plugin indent on    " required
 
-"################## TEMP ###################
-command Bin %!xxd
-command BinRevert %!xxd -r
-command Hex %!xxd -p
-command HexRevert %!xxd -p -r
+"===================================================
+"  PLUGIN COMMANDS
+"===================================================
+" empty so far
+
+"===================================================
+"  PLUGIN FUNCTIONS
+"===================================================
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+"===================================================
+"  TEMP
+"===================================================
+" appears mostly when appending output to .vimrc

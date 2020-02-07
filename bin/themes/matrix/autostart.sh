@@ -14,7 +14,6 @@ else
 	conky -c $DOTFILES_DIR/xorg/.conky/stats_green > /dev/null 2>&1 &
 fi
 
-
 ps cax | grep tint2 > /dev/null 2>&1 
 if [ $? -eq 0 ]; then
     :

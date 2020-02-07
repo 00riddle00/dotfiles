@@ -1,7 +1,7 @@
 
-#################
-# common settings
-#################
+# ================
+#  common settings
+# ================
 
 # directories and commands
 set alias_file          = ~/.mutt/alias                          # alias file
@@ -42,7 +42,6 @@ set sort_aux            = reverse-last-date-received             # like gmail
 #set uncollapse_jump                                              # don't collapse on an unread message 
 #set sort_re                                                      # thread based on regex
 #set reply_regexp        = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
-
 
 # pager options
 set pager_index_lines   = 10                                     # number of index lines to show 
@@ -144,9 +143,9 @@ bind index,pager R      group-reply
 bind compose p          pgp-menu
 bind attach <return>    view-mailcap
 
-#############
-# my settings
-#############
+# ============
+#  my settings
+# ============
 
 ## GMAIL
 set ssl_starttls=yes
