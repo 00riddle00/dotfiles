@@ -1,6 +1,6 @@
 [submodule "tpm"]
 	path = .tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm.git
+	url = https://github.com/tmux-plugins/tpm
 [submodule "zsh-syntax-highlighting"]
 	path = .zsh/plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
