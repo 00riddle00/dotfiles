@@ -70,6 +70,9 @@ stty -ixon
 ## system information tool for Arch Linux
 alsi -a
 
+## random delimiter to know that the shell has been reloaded
+# echo "  [========]"
+
 ## launch tmux
 tmux > /dev/null 2>&1
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env/sh
+#!/usr/bin/env sh
 
 ## check if X is running
 if xset q &>/dev/null; then
@@ -16,7 +16,7 @@ if xset q &>/dev/null; then
 fi;
 
 xscreensaver -no-splash &
-feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch5.jpg" && 
+feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch4.jpg" && 
 conky -c $DOTFILES_DIR/.conky/stats_blue > /dev/null 2>&1 &
 conky -c $DOTFILES_DIR/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
