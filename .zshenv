@@ -43,6 +43,7 @@ export LAPTOP_SCREEN=eDP-1
 ## for i3
 export TERMINAL=urxvt
 export FILE=ranger
+export BROWSER=chrome
 
 # CURRENT USER VARS
 ## there has been no need so far

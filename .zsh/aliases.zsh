@@ -1,3 +1,11 @@
+# ============================================
+#  Note: many of these aliases are not being 
+#  used anymore or are being used very rarely, 
+#  however, I still keep them there as a sort
+#  of command-wiki, since quite a few times
+#  it turned out to be pretty useful to look 
+#  up some stuff that I aliased a while ago.
+# ============================================
 
 # assembler
 alias hhh='yasm -fbin hh.asm -o hh.com'
@@ -168,7 +176,7 @@ alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 ## aur
 alias ya='yay'
 alias ya.install='yay -S'
-alias ya.search='yay -Si'
+alias ya.find='yay -Si'
 alias yaup='yay -Syu --noconfirm'
 
 ## c development
@@ -254,8 +262,6 @@ alias xres='vim $MAIN_HOME/.Xresources'
 alias zenv='vim $MAIN_HOME/.zshenv'
 alias zr='vim $MAIN_HOME/.zsh/.zshrc'
 
-## make
-
 ## pacman
 alias orphans='pacman -Qdtd'
 alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
@@ -265,14 +271,16 @@ alias mp='makepkg'
 alias mps='makepkg -s'
 alias pacfile='sudo pacman -S --noconfirm - --needed <'
 alias pacr='sudo pacman -R'
-alias pacrs='sudo pacman -Rns' # full removal (+nosave+deps)
+alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
 alias pacs='sudo pacman -S --noconfirm --needed'
-alias pl='sudo pacman -Qqe'  # list all packages
-alias pld='sudo pacman -Qq'  # list all packages with deps
+alias pl='sudo pacman -Qqe'  # list all packages (explicitly installed)
+alias pld='sudo pacman -Qq'  # list all packages (with deps)
 alias plm='sudo pacman -Qqm' # list aur packages
-# ------------------------------------------------------------------------
-# updates your databases if the repositories haven’t been checked 
+# -------------------------------------------------------------------------
+# updates your pkg databases if the repositories haven’t been checked 
 # recently, and upgrades any new package versions.
+# -y -> update
+# -u -> upgrade
 alias up='sudo pacman -Syu'
 # forces updates of your databases for all repositories (even if it 
 # was just updated recently) and upgrades any new package versions.
@@ -282,8 +290,11 @@ alias up1='sudo pacman -Syyu'
 #  Only if you’re trying to fix a specific issue due to a new package being
 #  removed from the repository.
 alias up2='sudo pacman -Syuu'
-# ------------------------------------------------------------------------
-alias what='sudo pacman -Qs'
+# -------------------------------------------------------------------------
+alias pac.what='sudo pacman -Qs'
+alias pac.deps='sudo pacman -Si'   # show deps for the given package
+alias pac.search='sudo pacman -Ss'
+alias pac.free='sudo pacman -Sc'
 alias pac.clear='paccache --remove --uninstalled --keep 0'
 
 ## process management
@@ -340,9 +351,9 @@ alias ch='chown -R $MAIN_USER:$MAIN_USER'
 alias let='chmod 755'
 alias letr='chmod -R 755'
 
-###############
-# projects
-###############
+# =============
+#  projects
+# =============
 
 # subscription-demo
 alias ve='export VENV=$MAIN_HOME/pro/subscription-demo/env'
@@ -367,9 +378,10 @@ alias run2='
 
 alias senv='source $VENV/bin/activate'
 
-###############
+# =============
 # temp
-###############
+# =============
+# entries appear here after appending output to this file
 
 alias gimp.go='cd $DOTFILES_DIR/xorg/.config/GIMP/2.10/'
 alias services.running='systemctl --type=service'

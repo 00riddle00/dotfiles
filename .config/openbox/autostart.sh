@@ -1,20 +1,6 @@
 #!/usr/bin/env sh
 
-## check if X is running
-if xset q &>/dev/null; then
-
-    ## Configure display
-    ## if monitor is connected, use it. Else use laptop's screen.
-    xrandr | awk '/ connected/{print $1}' | grep $HDMI_SCREEN > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        xrandr --output $HDMI_SCREEN --auto
-        xrandr --output $LAPTOP_SCREEN --off
-        :
-    else
-        xrandr --output $LAPTOP_SCREEN --auto
-    fi;
-fi;
-
+$SHELL_SCRIPTS_DIR/config_monitors.sh
 xscreensaver -no-splash &
 feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch4.jpg" && 
 conky -c $DOTFILES_DIR/.conky/stats_blue > /dev/null 2>&1 &
