@@ -19,7 +19,6 @@ cmatrix
 code
 composer
 conky
-copyq
 coreutils
 cowfortune
 cowsay
@@ -77,7 +76,6 @@ grub
 grub-customizer
 gtk-chtheme
 gtk-theme-switch2
-gvfs
 gvim
 gzip
 hardinfo
@@ -137,7 +135,6 @@ namcap
 nano
 ncmpcpp
 neomutt
-neovim
 net-tools
 netctl
 network-manager-applet
@@ -165,6 +162,7 @@ pass
 patch
 pavucontrol
 pciutils
+pcmanfm-gtk3
 perl
 php
 php-apache
@@ -182,6 +180,7 @@ python-virtualenv
 python-xdg
 python2-xdg
 qalculate-gtk
+qbittorrent
 qutebrowser
 ranger
 redshift
@@ -193,6 +192,7 @@ s-nail
 sagemath-jupyter
 samba
 sc
+screen
 scrot
 sed
 shadow
