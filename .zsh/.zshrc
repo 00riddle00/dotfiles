@@ -77,4 +77,4 @@ alsi -a
 tmux > /dev/null 2>&1
 
 ## conda initialize
-source $ZSH_DIR/conda_env.sh
+# source $ZSH_DIR/conda_env.sh

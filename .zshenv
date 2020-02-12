@@ -52,5 +52,6 @@ export BROWSER=chrome
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim
+export EDITOR_GUI=subl3
 export LC_ALL='en_US.UTF-8'
 export THEME=riddle

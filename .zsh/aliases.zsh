@@ -125,7 +125,7 @@ alias cf='fortune | cowsay'
 alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cg='acpi'
 alias clock.sync='sudo ntpd -qg'
-alias dum='du -h --max-depth=1'
+alias dusort.all='du -h --max-depth=1 | sort -h' # including hidden
 alias dusort='du -hs * | sort -h'
 alias fonts.update='fc-cache -fv'
 alias fonts.current='fc-match --verbose Sans'
@@ -272,10 +272,10 @@ alias mps='makepkg -s'
 alias pacfile='sudo pacman -S --noconfirm - --needed <'
 alias pacr='sudo pacman -R'
 alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
-alias pacs='sudo pacman -S --noconfirm --needed'
+alias pacs='sudo pacman -S --noconfirm --needed' # `needed` does not reinstall targets that are up to date
 alias pl='sudo pacman -Qqe'  # list all packages (explicitly installed)
 alias pld='sudo pacman -Qq'  # list all packages (with deps)
-alias plm='sudo pacman -Qqm' # list aur packages
+alias plm='sudo pacman -Qqm' # list foreign packages (mainly from AUR)
 # -------------------------------------------------------------------------
 # updates your pkg databases if the repositories haven’t been checked 
 # recently, and upgrades any new package versions.
@@ -291,11 +291,14 @@ alias up1='sudo pacman -Syyu'
 #  removed from the repository.
 alias up2='sudo pacman -Syuu'
 # -------------------------------------------------------------------------
-alias pac.what='sudo pacman -Qs'
+alias pac.what='sudo pacman -Qs'   # list local package(s) with description
 alias pac.deps='sudo pacman -Si'   # show deps for the given package
-alias pac.search='sudo pacman -Ss'
-alias pac.free='sudo pacman -Sc'
-alias pac.clear='paccache --remove --uninstalled --keep 0'
+alias pac.find='sudo pacman -Ss'   # search package. with <regexp>
+# removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
+# repos in /var/lib/pacman
+alias pac.clear='sudo pacman -Sc'
+# removes ALL packages from /var/cache/pacman/pkg and ...
+alias pac.clear_all='sudo pacman -Scc'
 
 ## process management
 alias au='ps aux | grep -i'
@@ -345,6 +348,7 @@ alias lsl='ls -l'
 alias lsla='ls -al'
 alias lsr='ls -R'
 alias ih='ls -la | grep -i'
+alias lsh='ls -ld .?*'
 
 ### permissions
 alias ch='chown -R $MAIN_USER:$MAIN_USER'
@@ -411,3 +415,5 @@ alias red.norm='redshift -P -O 6500'
 alias red.warm='redshift -P -O 5000'
 alias t1='i3-msg exec "$TERMINAL -name dropdown_tmuxdd -e tmux" > /dev/null 2>&1'
 alias alsi='alsi -a'
+
+alias flame='flameshot gui -p /home/riddle/Screenshots'

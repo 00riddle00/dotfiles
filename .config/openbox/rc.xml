@@ -594,7 +594,8 @@
 	  -->
     <keybind key="W-q">
       <action name="Execute">
-        <command>sh -c "$ACTIVATE code"</command>
+        <command>sh -c "$FOCUS serv"</command>
+        <!--<command>sh -c "$ACTIVATE code"</command>-->
         <!--<command>sh -c "$ACTIVATE discord"</command>-->
         <!--<command>sh -c "$ACTIVATE slack"</command>-->
         <!--<command>sh -c "$ACTIVATE octave"</command>-->
@@ -666,9 +667,10 @@
       </action>
     </keybind>
     <!-- file manager -->
+    <!--
     <keybind key="A-e">
       <action name="Execute">
-        <command>urxvt -name  ranger --geometry 100x40 -e ranger</command>
+        <command>urxvt -name  ranger -/-geometry 100x40 -e ranger</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -676,22 +678,19 @@
         <command>wmctrl -x -a ranger.URxvt</command>
       </action>
     </keybind>
+    -->
    <!-- launch "Thunar" -->
-    <!--
     <keybind key="A-e">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
-    -->
    <!-- focus "Thunar" -->
-    <!--
     <keybind key="W-e">
       <action name="Execute">
         <command>wmctrl -a "file manager"</command>
       </action>
     </keybind>
-    -->
     <keybind key="W-g">
       <action name="Execute">
         <command>sh -c "$ACTIVATE smartgit"</command>

@@ -14,7 +14,7 @@
 	<icon>anydo</icon>
 	<name>Create New File</name>
 	<unique-id>1579884715556805-1</unique-id>
-	<command>$DOTFILES_DIR/scripts/newfile.sh</command>
+	<command>$SHELL_SCRIPTS_DIR/newfile.sh</command>
 	<description>Create new file using zenity</description>
 	<patterns>*</patterns>
 	<directories/>
