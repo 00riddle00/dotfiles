@@ -292,7 +292,9 @@ alias up1='sudo pacman -Syyu'
 alias up2='sudo pacman -Syuu'
 # -------------------------------------------------------------------------
 alias pac.what='sudo pacman -Qs'   # list local package(s) with description
-alias pac.deps='sudo pacman -Si'   # show deps for the given package
+alias what='sudo pacman -Qs'   
+alias pac.deps='sudo pacman -Qi'   # show deps for the given local package
+# alias pac.deps='sudo pacman -Si'   # show deps for the given package
 alias pac.find='sudo pacman -Ss'   # search package. with <regexp>
 # removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
 # repos in /var/lib/pacman
@@ -370,7 +372,7 @@ alias run='
 
 alias run2='
     ve &&
-    rm -rf $VENV &&
+    rm -r $VENV &&
     python3 -m venv $VENV &&
     $VENV/bin/pip3 install --upgrade pip setuptools &&
     run &&
