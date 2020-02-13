@@ -15,6 +15,7 @@ background_color = #1793D1 100
 border_color = #000000 100
 
 # Panel
+panel_items = ELTSEEEC
 panel_monitor = all
 panel_position =  bottom center horizontal
 panel_size = 104% 31
@@ -41,9 +42,9 @@ taskbar_active_background_id = 0
 # Tasks
 urgent_nb_of_blink = 20
 task_icon = 1
-task_text = 1
+task_text = 1                   # 0 for icon mode
 task_centered = 0
-task_maximum_size = 200 32
+task_maximum_size = 200 32      # 40 32 for icon mode
 task_padding = 10 4
 task_background_id = 0
 task_active_background_id = 2
@@ -94,20 +95,70 @@ tooltip_font = Noto Sans 9
 tooltip_font_color = #FFFFFF 100
 
 # Mouse
-mouse_middle = close
+mouse_middle = none
 mouse_right = none
 mouse_scroll_up = none
 mouse_scroll_down = none
 
-# Battery
-battery = 0
-battery_low_status = 20
-battery_low_cmd = notify-send "battery low"
-battery_hide = 96
-bat1_font = Liberation Mono 8
-bat2_font = Liberation Mono 8
-battery_font_color = #B5B5B5 100
-battery_padding = 2 0
-battery_background_id = 0
+# Executor 0
+execp = new
+execp_command = tint2-arch-logo
+execp_interval = 
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_padding = 2 0
+execp_background_id = 6
+execp_centered = 0
+execp_icon_w = 20
+execp_icon_h = 20
+execp_tooltip = 
+
+# Executor 1
+execp = new
+execp_command = tint2-brightness
+execp_interval = 1
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_padding = 2 0
+execp_background_id = 6
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+execp_tooltip = 
+
+# Executor 2
+execp = new
+execp_command = tint2-volume-icon
+execp_interval = 1
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_padding = 2 0
+execp_background_id = 6
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+execp_tooltip = 
+
+# Executor 3
+execp = new
+execp_command = tint2-battery-icon
+execp_interval = 1
+execp_has_icon = 1
+execp_cache_icon = 1
+execp_continuous = 0
+execp_markup = 1
+execp_padding = 2 0
+execp_background_id = 6
+execp_centered = 0
+execp_icon_w = 15
+execp_icon_h = 15
+execp_tooltip = 
 
 # End of config
+

@@ -1,0 +1,57 @@
+#!/usr/bin/env sh
+
+# This script displays battery icon according to the charge level and charging state
+
+# Author: Piotr Miller
+# e-mail: nwg.piotr@gmail.com
+# Website: http://nwg.pl
+# Project: https://github.com/nwg-piotr/tint2-executors
+# License: GPL3
+
+# Dependencies: `acpi`
+
+bat=$(acpi -b)
+state=$(echo ${bat} | awk '{print $3}')
+
+if [[ "$state" = "Not" ]]; then
+    level=$(echo ${bat} | awk '{print $5}')
+    level=${level::-1}
+
+else
+    level=$(echo ${bat} | awk '{print $4}')
+    if [[ "$state" == *"Unknown"* ]]; then
+        level=${level::-1}
+    else
+        level=${level::-2}
+    fi
+fi
+
+if [[ "$bat" == *"until"* ]]; then
+
+    if [[ "$level" -ge "95" ]]; then
+        echo $CANDY/tint2/bat-full-charging.png
+    elif [[ "$level" -ge "75" ]]; then
+        echo $CANDY/tint2/bat-threefourth-charging.png
+    elif [[ "$level" -ge "35" ]]; then
+        echo $CANDY/tint2/bat-half-charging.png
+    elif [[ "$level" -ge "15" ]]; then
+        echo $CANDY/tint2/bat-quarter-charging.png
+    else
+        echo $CANDY/tint2/bat-empty-charging.png
+    fi
+else
+    if [[ "$level" -ge "95" ]]; then
+        echo $CANDY/tint2/bat-full.png
+    elif [[ "$level" -ge "75" ]]; then
+        echo $CANDY/tint2/bat-threefourth.png
+    elif [[ "$level" -ge "35" ]]; then
+        echo $CANDY/tint2/bat-half.png
+    elif [[ "$level" -ge "15" ]]; then
+        echo $CANDY/tint2/bat-quarter.png
+    else
+        echo $CANDY/tint2/bat-empty.png
+    fi
+fi
+if  [[ $1 = "-l" ]]; then
+    echo ${level}%
+fi

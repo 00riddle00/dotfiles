@@ -263,22 +263,31 @@ alias zenv='vim $MAIN_HOME/.zshenv'
 alias zr='vim $MAIN_HOME/.zsh/.zshrc'
 
 ## pacman
+# --------------------------------------------------------------------------------------------------------------------
+### -Q
 alias orphans='pacman -Qdtd'
-alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
-alias is='sudo pacman -Qqe | grepi '
-alias isa='sudo pacman -Qq | grepi '
-alias mp='makepkg'
-alias mps='makepkg -s'
-alias pacfile='sudo pacman -S --noconfirm - --needed <'
-alias pacr='sudo pacman -R'
-# Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
-# As a result, a package providing a critical dependency could be removed, resulting in a broken system.
-alias pac.forcedel='sudo -k pacman -Rdd'
-alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
-alias pacs='sudo pacman -S --noconfirm --needed' # `needed` does not reinstall targets that are up to date
-alias pl='sudo pacman -Qqe'  # list all packages (explicitly installed)
-alias pld='sudo pacman -Qq'  # list all packages (with deps)
-alias plm='sudo pacman -Qqm' # list foreign packages (mainly from AUR)
+alias is='sudo pacman -Qqe | grepi '     # grep for explicitly installed package
+alias isa='sudo pacman -Qq | grepi '     # grep for installed package
+alias pl='sudo pacman -Qqe'              # list all explicitly installed packages 
+alias pld='sudo pacman -Qq'              # list all packages 
+alias plm='sudo pacman -Qqm'             # list foreign packages (mainly from AUR)
+alias pac.owner='sudo pacman -Qo'        # who owns the file
+alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group
+alias pac.what='sudo pacman -Qs'         # list local package(s) with description
+alias what='sudo pacman -Qs'   
+alias pac.deps='sudo pacman -Qi'         # show deps for the given local package
+### -S
+alias pacfile='sudo pacman -S --noconfirm - --needed <'       # install from file
+alias pacs='sudo pacman -S --noconfirm --needed'              # `needed` does not reinstall targets that are up to date
+alias pac.group_remote='sudo pacman -Sgq'                     # list packages belonging to a group
+alias pac.base='expac -S '%E' base | xargs -n1 | sort'        # list packages depending on `base` metapackage
+alias pac.deps_remote='sudo pacman -Si'                       # show deps for the given package
+alias pac.find='sudo pacman -Ss'                              # search package. with <regexp>
+# removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
+# repos in /var/lib/pacman
+alias pac.clear='sudo pacman -Sc'
+# removes ALL packages from /var/cache/pacman/pkg and ...
+alias pac.clear_all='sudo pacman -Scc'
 # -------------------------------------------------------------------------
 # updates your pkg databases if the repositories haven’t been checked 
 # recently, and upgrades any new package versions.
@@ -294,17 +303,14 @@ alias up1='sudo pacman -Syyu'
 #  removed from the repository.
 alias up2='sudo pacman -Syuu'
 # -------------------------------------------------------------------------
-alias pac.owner='sudo pacman -Qo'   # who owns the file
-alias pac.what='sudo pacman -Qs'   # list local package(s) with description
-alias what='sudo pacman -Qs'   
-alias pac.deps='sudo pacman -Qi'   # show deps for the given local package
-alias pac.deps_foreign='sudo pacman -Si'   # show deps for the given package
-alias pac.find='sudo pacman -Ss'   # search package. with <regexp>
-# removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
-# repos in /var/lib/pacman
-alias pac.clear='sudo pacman -Sc'
-# removes ALL packages from /var/cache/pacman/pkg and ...
-alias pac.clear_all='sudo pacman -Scc'
+### -R
+alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
+alias pacr='sudo pacman -R'
+# Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
+# As a result, a package providing a critical dependency could be removed, resulting in a broken system.
+alias pac.forcedel='sudo -k pacman -Rdd'
+alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
+# --------------------------------------------------------------------------------------------------------------------
 
 ## process management
 alias au='ps aux | grep -i'
@@ -429,3 +435,8 @@ alias t1='i3-msg exec "$TERMINAL -name dropdown_tmuxdd -e tmux" > /dev/null 2>&1
 alias alsi='alsi -a'
 
 alias flame='flameshot gui -p /home/riddle/Screenshots'
+
+alias ss1='ssh test@141.98.10.154'
+alias ss2='ssh userv@141.98.10.54 -p 22033'
+alias ss3='ssh userv@141.98.10.157 -p 22033'
+alias ss4='ssh userv@141.98.10.158 -p 22033'

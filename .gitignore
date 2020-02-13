@@ -17,6 +17,9 @@
 
 .emacs.d/*
 
+.tmux/plugins/*
+!.tmux/plugins/tpm
+
 .config/thefuck/*
 !.config/thefuck/rules/
 !.config/thefuck/settings.py
