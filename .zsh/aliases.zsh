@@ -271,6 +271,9 @@ alias mp='makepkg'
 alias mps='makepkg -s'
 alias pacfile='sudo pacman -S --noconfirm - --needed <'
 alias pacr='sudo pacman -R'
+# Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
+# As a result, a package providing a critical dependency could be removed, resulting in a broken system.
+alias pac.forcedel='sudo -k pacman -Rdd'
 alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
 alias pacs='sudo pacman -S --noconfirm --needed' # `needed` does not reinstall targets that are up to date
 alias pl='sudo pacman -Qqe'  # list all packages (explicitly installed)
@@ -291,10 +294,11 @@ alias up1='sudo pacman -Syyu'
 #  removed from the repository.
 alias up2='sudo pacman -Syuu'
 # -------------------------------------------------------------------------
+alias pac.owner='sudo pacman -Qo'   # who owns the file
 alias pac.what='sudo pacman -Qs'   # list local package(s) with description
 alias what='sudo pacman -Qs'   
 alias pac.deps='sudo pacman -Qi'   # show deps for the given local package
-# alias pac.deps='sudo pacman -Si'   # show deps for the given package
+alias pac.deps_foreign='sudo pacman -Si'   # show deps for the given package
 alias pac.find='sudo pacman -Ss'   # search package. with <regexp>
 # removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
 # repos in /var/lib/pacman
@@ -329,15 +333,21 @@ alias tof='synclient TouchpadOff=1'
 alias ton='synclient TouchpadOff=0'
 
 ## wifi
+alias wpa='wpa_supplicant -Dnl80211 -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant.conf'
+alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
+alias wifih='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start home'
+alias wifie='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start eduroam'
+alias wifid='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start donatas'
+alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
+alias wpad='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/donatas.conf'
+alias wifim='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start modem'
+
 alias essid='iwconfig'
 alias renet=' service networking restart && /etc/init.d/networking restart'
 alias we='sudo netctl start eduroam'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias wifion='sudo ip link set wlp8s0 up'
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
-alias wk='sudo netctl start wlp8s0-andkarGreitasis'
-alias ws='sudo netctl start sodas'
-alias ww='sudo netctl start home'
 
 ### ls
 alias la='ls -al'

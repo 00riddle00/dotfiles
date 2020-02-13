@@ -8,9 +8,10 @@ conky -c $DOTFILES_DIR/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
 flameshot &
 nm-applet &
+safeeyes &
 tint2 &
 urxvt -name t2
 # espeak "Welcome home, Riddle!" > /dev/null 2>&1  &&
-# mpg123 $CANDY/startup_sounds/star_wars.mp3 > /dev/null 2>&1 &
+# mpg123 $CANDY/audio/star_wars.mp3 > /dev/null 2>&1 &
 # timeout 30s urxvt -name matrix -e cmatrix
 

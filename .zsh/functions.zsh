@@ -33,3 +33,5 @@ function sym.home() { ln -s "$(pwd)/$1" "${MAIN_HOME}/$1"; }
 # go to command with a flag in man, ex. `mango grep -r`
 function mango () { man "$1" | less -p "^ +$2"; }
 
+# returns "A" \ "B" (subtracting identical lines)
+function a_minus_b() { grep -Fvx -f "$2" "$1"; }
