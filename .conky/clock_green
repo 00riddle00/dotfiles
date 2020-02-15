@@ -27,17 +27,18 @@ draw_shades yes
 
 # Default Color
 default_color E0DFDE
-color1 93d117
+color1 00ff41
 
 # Color Title.
 color0 DD3A21
+
 
 # Size and position
 minimum_size 650 80
 #2 monitors
 #gap_x 500
 #gap_y 0
-#
+
 #Laptop
 #gap_x 300
 gap_y 0

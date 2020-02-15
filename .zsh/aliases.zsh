@@ -442,3 +442,7 @@ alias ss3='ssh userv@141.98.10.157 -p 22033'
 alias ss4='ssh userv@141.98.10.158 -p 22033'
 
 alias bin='cd $MAIN_HOME/.local/bin'
+
+alias rrr='cd /home/riddle/.dotfiles/bin/themes && vim'
+alias no='killall mpg123'
+alias ccc='head ~/.gtkrc-2.0 && echo "\n\n" && head ~/.config/gtk-3.0/settings.ini'

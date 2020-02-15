@@ -1,29 +1,15 @@
 #!/usr/bin/env sh
 
-## check if X is running
-if xset q &>/dev/null; then
-
-    ## Configure display
-    ## if monitor is connected, use it. Else use laptop's screen.
-    xrandr | awk '/ connected/{print $1}' | grep $HDMI_SCREEN > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        xrandr --output $HDMI_SCREEN --auto
-        xrandr --output $LAPTOP_SCREEN --off
-        :
-    else
-        xrandr --output $LAPTOP_SCREEN --auto
-    fi;
-fi;
-
+$SHELL_SCRIPTS_DIR/config_monitors.sh
 xscreensaver -no-splash &
-feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch5.jpg" && 
-conky -c $DOTFILES_DIR/xorg/.conky/stats_blue > /dev/null 2>&1 &
-conky -c $DOTFILES_DIR/xorg/.conky/clock_blue > /dev/null 2>&1 &
+feh  --bg-scale "$CANDY/images/desktop/arch0.jpg" &&
+conky -c $DOTFILES_DIR/.conky/stats_blue > /dev/null 2>&1 &
+conky -c $DOTFILES_DIR/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
 flameshot &
 tint2 &
-urxvt -name t2
-# espeak "Welcome home, Riddle!" > /dev/null 2>&1  &&
-# mpg123 $CANDY/startup_sounds/star_wars.mp3 > /dev/null 2>&1 &
-# timeout 30s urxvt -name matrix -e cmatrix
+urxvt -name t1 &
+espeak "Welcome home, Riddle!" > /dev/null 2>&1  &&
+mpg123 $CANDY/audio/star_wars.mp3 > /dev/null 2>&1 &
+urxvt -geometry 90x20 -name t2 --hold -e "$SHELL_SCRIPTS_DIR/greeting.sh" &
 

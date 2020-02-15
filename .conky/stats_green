@@ -42,47 +42,47 @@ xftalpha 0.8
 xftfont  Bitstream Vera Sans Mono:size=9
 
 TEXT
-${color #93d117}$nodename     ${alignc}$sysname $kernel ${alignr}$color${time %k:%M}
+${color #00ff41}$nodename     ${alignc}$sysname $kernel ${alignr}$color${time %k:%M}
 
-${color #93d117}Uptime:$color $uptime ${color #93d117} Load:$color $loadavg
-${color #93d117}CPU:$color ${cpu}% ${color #93d117}${cpubar 5,85}   
-${color #93d117}Disk I/O: $color${diskio}
-${color #93d117}${cpugraph 0 32,155 104E8B 93d117} $alignr
-${color #93d117}${diskiograph 32,155 104E8B 93d117 750}
-${color #93d117}RAM Usage:$color $mem${color #93d117}/${color}$memmax -
-$memperc% ${color #93d117}$membar
-${color #93d117}Swap Usage:$color $swap${color #93d117}/${color}$swapmax -
-$swapperc% ${color #93d117}${swapbar}
-${color #93d117}Procs:$color $processes ${color #93d117}Run:$color $running_processes 
-${color #93d117}CPU:$color ${#CPUtemp} ${color #93d117} MB:$color ${#MBtemp} ${color #93d117}HD:$color ${#HDDtemp}
-${color #93d117}Entropy: ${color}${entropy_avail} ${color #93d117}/${color}${entropy_poolsize} 
-${color #93d117}${entropy_bar}
-${color #93d117}Net Down:$color ${downspeed eth0} k/s      
-${color #93d117}Net Up:$color ${upspeed eth0} k/s
-${color #93d117}     ${downspeedgraph eth0 32,155 104E8B 93d117} $alignr
-${color #93d117}     ${upspeedgraph eth0 32,155 104E8B 93d117}
-${color #93d117}File systems:
- ${color #93d117}/          $color${fs_used /}/${fs_size /}${alignr}
- ${color #93d117}${fs_bar 5,120 /}
- ${color #93d117}/home      $color${fs_used /home}/${fs_size /home}${alignr}${color #93d117}${fs_bar 5,120 /home}
+${color #00ff41}Uptime:$color $uptime ${color #00ff41} Load:$color $loadavg
+${color #00ff41}CPU:$color ${cpu}% ${color #00ff41}${cpubar 5,85}   
+${color #00ff41}Disk I/O: $color${diskio}
+${color #00ff41}${cpugraph 0 32,155 104E8B 00ff41} $alignr
+${color #00ff41}${diskiograph 32,155 104E8B 00ff41 750}
+${color #00ff41}RAM Usage:$color $mem${color #00ff41}/${color}$memmax -
+$memperc% ${color #00ff41}$membar
+${color #00ff41}Swap Usage:$color $swap${color #00ff41}/${color}$swapmax -
+$swapperc% ${color #00ff41}${swapbar}
+${color #00ff41}Procs:$color $processes ${color #00ff41}Run:$color $running_processes 
+${color #00ff41}CPU:$color ${#CPUtemp} ${color #00ff41} MB:$color ${#MBtemp} ${color #00ff41}HD:$color ${#HDDtemp}
+${color #00ff41}Entropy: ${color}${entropy_avail} ${color #00ff41}/${color}${entropy_poolsize} 
+${color #00ff41}${entropy_bar}
+${color #00ff41}Net Down:$color ${downspeed eth0} k/s      
+${color #00ff41}Net Up:$color ${upspeed eth0} k/s
+${color #00ff41}     ${downspeedgraph eth0 32,155 104E8B 00ff41} $alignr
+${color #00ff41}     ${upspeedgraph eth0 32,155 104E8B 00ff41}
+${color #00ff41}File systems:
+ ${color #00ff41}/          $color${fs_used /}/${fs_size /}${alignr}
+ ${color #00ff41}${fs_bar 5,120 /}
+ ${color #00ff41}/home      $color${fs_used /home}/${fs_size /home}${alignr}${color #00ff41}${fs_bar 5,120 /home}
 
-  ${color #93d117}/opt       $color${fs_used /opt}/${fs_size /opt}${alignr}${color #93d117}${fs_bar 5,120 /opt}
+  ${color #00ff41}/opt       $color${fs_used /opt}/${fs_size /opt}${alignr}${color #00ff41}${fs_bar 5,120 /opt}
 
-   ${color #93d117}/usr/local $color${fs_used /usr/local}/${fs_size /usr/local}${alignr}${color #93d117}${fs_bar 5,120 /usr/local}
+   ${color #00ff41}/usr/local $color${fs_used /usr/local}/${fs_size /usr/local}${alignr}${color #00ff41}${fs_bar 5,120 /usr/local}
 
-    ${color #93d117}/var       $color${fs_used /var}/${fs_size /var}${alignr}${color #93d117}${fs_bar 5,120 /var}
+    ${color #00ff41}/var       $color${fs_used /var}/${fs_size /var}${alignr}${color #00ff41}${fs_bar 5,120 /var}
 
-     ${color #93d117}/share1   $color${fs_used /share1}/${fs_size /share1}${alignr}${color #93d117}${fs_bar 5,120 /share1}
+     ${color #00ff41}/share1   $color${fs_used /share1}/${fs_size /share1}${alignr}${color #00ff41}${fs_bar 5,120 /share1}
 
-      ${color #93d117}Top Processes:
-      ${color #93d117}Name              PID     CPU%   MEM%
+      ${color #00ff41}Top Processes:
+      ${color #00ff41}Name              PID     CPU%   MEM%
       $color ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
       $color ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
       $color ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
       $color ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
       $color ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
       $color ${top name 6} ${top pid 6} ${top cpu 6} ${top mem 6}
-      ${color #93d117}Mem usage
+      ${color #00ff41}Mem usage
       $color ${top_mem name 1} ${top_mem pid 1} ${top_mem cpu 1} ${top_mem mem
       1}
       $color ${top_mem name 2} ${top_mem pid 2} ${top_mem cpu 2} ${top_mem mem
@@ -96,14 +96,14 @@ ${color #93d117}File systems:
       $color ${top_mem name 6} ${top_mem pid 6} ${top_mem cpu 6} ${top_mem mem
       6}
        
-       ${color #93d117}Port(s)${alignr}#Connections
+       ${color #00ff41}Port(s)${alignr}#Connections
        $color Inbound: ${tcp_portmon 1 32767 count}  Outbound: ${tcp_portmon 32768 61000 count}${alignr}ALL: ${tcp_portmon 1 65535 count} 
-       ${color #93d117}Inbound Connection ${alignr} Local Service/Port$color
+       ${color #00ff41}Inbound Connection ${alignr} Local Service/Port$color
         ${tcp_portmon 1 32767 rhost 0} ${alignr} ${tcp_portmon 1 32767 lservice
         0}
          ${tcp_portmon 1 32767 rhost 1} ${alignr} ${tcp_portmon 1 32767 lservice
          1}
-           ${color #93d117}Outbound Connection ${alignr}   Remote S/P$color
+           ${color #00ff41}Outbound Connection ${alignr}   Remote S/P$color
              ${tcp_portmon 32768 61000 rhost 0} ${alignr} ${tcp_portmon 32768
              61000 rservice 0}
               ${tcp_portmon 32768 61000 rhost 1} ${alignr} ${tcp_portmon 32768
