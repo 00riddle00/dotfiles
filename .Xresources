@@ -13,7 +13,7 @@ URxvt.transparent: 0
 URxvt*.shading: 0
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
-URxvt*iconFile: /usr/share/icons/la-capitaine-icon-theme/apps/scalable/urxvt.svg
+URxvt*iconFile: /home/riddle/Dropbox/sync/candy/images/icons/urxvt.svg
 ! disable the Ctrl+Shift binding (ISO 14755) in urxvt
 URxvt.iso14755: false
 URxvt.iso14755_52: false

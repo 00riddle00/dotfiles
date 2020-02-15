@@ -9,4 +9,3 @@ fi
 
 exec openbox-session
 # exec i3
-# exec gnome-session

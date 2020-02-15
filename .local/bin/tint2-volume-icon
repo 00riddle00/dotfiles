@@ -17,17 +17,17 @@ if [[ "$(amixer sget Master | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {print $4}'
     vol=$(amixer sget Master | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {sub(/%/, ""); printf "%0.0f\n", $2}')
 
     if [[ ${vol} -ge 90 ]]; then
-        echo $CANDY/tint2/vol-full.png
+        echo $CANDY/images/tint2/vol-full.png
     elif [[ ${vol} -ge 40 ]]; then
-        echo $CANDY/tint2/vol-medium.png
+        echo $CANDY/images/tint2/vol-medium.png
     elif [[ ${vol} -ge 10 ]]; then
-        echo $CANDY/tint2/vol-low.png
+        echo $CANDY/images/tint2/vol-low.png
     else
-        echo $CANDY/tint2/vol-lowest.png
+        echo $CANDY/images/tint2/vol-lowest.png
     fi
     if  [[ $1 = "-l" ]]; then
         echo ${vol}%
     fi
 else
-    echo $CANDY/tint2/vol-muted.png
+    echo $CANDY/images/tint2/vol-muted.png
 fi

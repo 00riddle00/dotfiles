@@ -369,7 +369,7 @@ alias ih='ls -la | grep -i'
 alias lsh='ls -ld .?*'
 
 ### permissions
-alias ch='chown -R $MAIN_USER:$MAIN_USER'
+alias ch='sudo chown -R $MAIN_USER:$MAIN_USER'
 alias let='chmod 755'
 alias letr='chmod -R 755'
 
@@ -440,3 +440,5 @@ alias ss1='ssh test@141.98.10.154'
 alias ss2='ssh userv@141.98.10.54 -p 22033'
 alias ss3='ssh userv@141.98.10.157 -p 22033'
 alias ss4='ssh userv@141.98.10.158 -p 22033'
+
+alias bin='cd $MAIN_HOME/.local/bin'
