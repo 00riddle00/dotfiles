@@ -2,7 +2,7 @@
 
 $SHELL_SCRIPTS_DIR/config_monitors.sh
 xscreensaver -no-splash &
-feh  --bg-scale "$MAIN_HOME/Dropbox/sync/candy/wallpapers/arch4.jpg" && 
+feh  --bg-scale "$CANDY/images/desktop/arch4.jpg" &&
 conky -c $DOTFILES_DIR/.conky/stats_blue > /dev/null 2>&1 &
 conky -c $DOTFILES_DIR/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
