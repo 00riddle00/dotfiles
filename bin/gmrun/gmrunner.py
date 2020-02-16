@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+# the script modifies gmrun cmd history,
+# since gmrun allows the option to
+# 'show last history line selected when invoked'
+# (seem ~/.gmrunrc)
+
 from collections import OrderedDict
 import os
 import sys

@@ -3,10 +3,9 @@
 # GPL v2.0 applies
 
 # Set terminal
-Terminal = terminator
-TermExec = ${Terminal} -e
-AlwaysInTerm = ssh telnet ftp lynx mc vi vim pine centericq perldoc man
-out = openbox --exit
+Terminal = urxvt
+TermExec = ${Terminal} --hold -e
+AlwaysInTerm = ssh telnet ftp lftp lynx mc ranger vim neomutt irssi man grabc
 
 # Set window geometry (except height)
 Width = 250
@@ -33,22 +32,9 @@ TabTimeout = 0
 #   - %u gets replaced with the whole URL ("http://www.google.com")
 #   - %s gets replaced with "//www.google.com".  This is useful for URL-s
 #     like "man:printf" --> %s will get replaced with "printf"
-URL_http = firefox -remote "openURL(%u, new-window)"
-URL_mailto = mozilla -remote "mailto(%s)"
-URL_man = ${TermExec} 'man %s'
-URL_t = ${TermExec} '%s'
-URL_info = ${TermExec} 'info %s'
-URL_pd = ${TermExec} 'perldoc %s'
-URL_file = dolphin $HOME_DIR/%s
-URL_readme = ${TermExec} 'less /usr/doc/%s/README'
-URL_info = ${TermExec} 'info %s'
-URL_sh = sh -c '%s'
+URL_f = thunar $HOME/%s
+URL_theme = sh -c '$SHELL_SCRIPTS_DIR/themes/%s/run.sh'
+URL_run = urxvt --hold -e sh -c  '$SHELL_SCRIPTS_DIR/%s.sh'
 URL_s = google-chrome-stable 'http://www.google.com/search?q=%s'
-URL_out = ${TermExec} 'openbox --exit'
-URL_i = ${TermExec} 'google-chrome-stable %s'
+URL_g = google-chrome-stable '%s'
 
-# extension handlers
-EXT:doc,rtf = AbiWord %s
-EXT:txt,cc,cpp,h,java,html,htm,epl,tex,latex,js,css,xml,xsl,am = emacs %s
-EXT:ps = gv %s
-EXT:pdf = xpdf %s
