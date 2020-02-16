@@ -35,3 +35,6 @@ function mango () { man "$1" | less -p "^ +$2"; }
 
 # returns "A" \ "B" (subtracting identical lines)
 function a_minus_b() { grep -Fvx -f "$2" "$1"; }
+
+# find all files from current folder | prints extension of files if any | make a unique sorted list
+function ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }

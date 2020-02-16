@@ -22,13 +22,13 @@ fi
 bri=$(echo "($b+0.5)/1" | bc)
 
 if [[ "$bri" -gt "90" ]]; then
-    echo $CANDY/images/tint2/bri-full.png
+    echo $CANDY/icons/tint2/bri-full.png
 elif [[ "$bri" -gt "50" ]]; then
-    echo $CANDY/images/tint2/bri-high.png
+    echo $CANDY/icons/tint2/bri-high.png
 elif [[ "$bri" -gt "30" ]]; then
-    echo $CANDY/images/tint2/bri-medium.png
+    echo $CANDY/icons/tint2/bri-medium.png
 else
-    echo $CANDY/images/tint2/bri-low.png
+    echo $CANDY/icons/tint2/bri-low.png
 fi
 if  [[ $1 = "-l" ]]; then
     echo ${bri}%

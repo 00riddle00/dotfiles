@@ -8,7 +8,6 @@ conky -c $DOTFILES_DIR/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
 flameshot &
 tint2 &
-dunst &
 urxvt -name t2 &
 espeak "Welcome home, Riddle!" > /dev/null 2>&1
 urxvt -geometry 90x20 -name t2 --hold -e "$SHELL_SCRIPTS_DIR/greeting.sh" &

@@ -29,29 +29,29 @@ fi
 if [[ "$bat" == *"until"* ]]; then
 
     if [[ "$level" -ge "95" ]]; then
-        echo $CANDY/images/tint2/bat-full-charging.png
+        echo $CANDY/icons/tint2/bat-full-charging.png
     elif [[ "$level" -ge "75" ]]; then
-        echo $CANDY/images/tint2/bat-threefourth-charging.png
+        echo $CANDY/icons/tint2/bat-threefourth-charging.png
     elif [[ "$level" -ge "35" ]]; then
-        echo $CANDY/images/tint2/bat-half-charging.png
+        echo $CANDY/icons/tint2/bat-half-charging.png
     elif [[ "$level" -ge "15" ]]; then
-        echo $CANDY/images/tint2/bat-quarter-charging.png
+        echo $CANDY/icons/tint2/bat-quarter-charging.png
     else
-        echo $CANDY/images/tint2/bat-empty-charging.png
+        echo $CANDY/icons/tint2/bat-empty-charging.png
     fi
 else
     if [[ "$level" -ge "95" ]]; then
-        echo $CANDY/images/tint2/bat-full.png
+        echo $CANDY/icons/tint2/bat-full.png
     elif [[ "$level" -ge "75" ]]; then
-        echo $CANDY/images/tint2/bat-threefourth.png
+        echo $CANDY/icons/tint2/bat-threefourth.png
     elif [[ "$level" -ge "35" ]]; then
-        echo $CANDY/images/tint2/bat-half.png
+        echo $CANDY/icons/tint2/bat-half.png
     elif [[ "$level" -ge "15" ]]; then
-        echo $CANDY/images/tint2/bat-quarter.png
+        echo $CANDY/icons/tint2/bat-quarter.png
     else
         # a bug. Will fix later
-        # echo $CANDY/images/tint2/bat-empty.png
-        echo $CANDY/images/tint2/bat-full-charging.png
+        # echo $CANDY/icons/tint2/bat-empty.png
+        echo $CANDY/icons/tint2/bat-full-charging.png
     fi
 fi
 if  [[ $1 = "-l" ]]; then
