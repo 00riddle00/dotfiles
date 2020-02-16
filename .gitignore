@@ -75,7 +75,5 @@
 .config/thefuck/*
 !.config/thefuck/settings.py
 
-.config/Thunar/accels.scm
-
 bin/cowsay/**/*.dat
 
