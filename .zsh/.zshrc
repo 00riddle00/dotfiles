@@ -19,6 +19,10 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' file-sort name
 zstyle ':completion:*' ignore-parents pwd
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# navigation
+setopt AUTO_CD
 
 # history options
 export HISTFILE="$ZDOTDIR/histfile"
