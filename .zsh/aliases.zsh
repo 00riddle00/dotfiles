@@ -399,4 +399,5 @@ alias letr='chmod -R 755'
 # temp
 # =============
 # entries appear here after appending output to this file
-
+alias iii='ip route get 8.8.8.8'
+alias xe='sudo journalctl -xe'

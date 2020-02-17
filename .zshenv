@@ -54,3 +54,5 @@ export LESS='-R'
 export EDITOR=vim
 export EDITOR_GUI=subl3
 export LC_ALL='en_US.UTF-8'
+# Uniform look for Qt and GTK applications
+export QT_QPA_PLATFORMTHEME=gtk3

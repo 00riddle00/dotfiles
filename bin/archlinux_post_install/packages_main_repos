@@ -24,6 +24,7 @@ cowsay
 cryptsetup
 ctags
 device-mapper
+dhclient
 dhcpcd
 dia
 dialog
@@ -38,6 +39,7 @@ e2fsprogs
 efibootmgr
 emacs
 espeak
+ethtool
 expac
 fakeroot
 fbgrab
@@ -82,7 +84,7 @@ hwloc
 i3-gaps
 i3blocks
 i3status
-imagemagick
+ifplugd
 inetutils
 inkscape
 iproute2
@@ -127,12 +129,12 @@ mupdf
 mutt
 ncmpcpp
 neomutt
+netctl
 newsboat
 nm-connection-editor
 nmap
 nnn
 nomacs
-notification-daemon
 noto-fonts
 ntfs-3g
 ntp
@@ -168,6 +170,7 @@ python-pip
 python-xdg
 qalculate-gtk
 qbittorrent
+qt5-styleplugins
 qutebrowser
 ranger
 redshift
@@ -223,6 +226,7 @@ vifm
 w3m
 which
 wmctrl
+wpa_supplicant
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
