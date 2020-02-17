@@ -15,8 +15,8 @@
 # =============================
 
 for_window [class="^.*"] border pixel 2
-gaps inner 15
-gaps outer 15
+gaps inner 8
+gaps outer 4
 # smart_gaps on # gaps used if only more than one container on the workspace
 floating_modifier $alt
 
@@ -47,6 +47,9 @@ exec --no-startup-id $SHELL_SCRIPTS_DIR/config_monitors.sh
 exec $term -name t1 
 exec $term -name dropdown_math -e R -q
 exec --no-startup-id flameshot
+exec --no-startup-id feh --bg-scale "$CANDY/images/desktop/arch0.jpg" 
+exec --no-startup-id tint2
+exec --no-startup-id xscreensaver -no-splash
 
 # =============================
 #  Window traits 
@@ -63,96 +66,48 @@ for_window [instance="dropdown_*"] move position center
 for_window [title="GIMP Startup"] move workspace $ws5
 for_window [class="Gimp"] move workspace $ws5
 
-# ===================
-#  Various
-# ===================
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
-set $mode_gaps Toggle gaps: (1) on (2) off
-mode "$mode_gaps" {
-    bindsym 1 mode "default", gaps inner all set 15, gaps outer all set 15
-    bindsym 2 mode "default", gaps inner all set 0, gaps outer all set 0
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
-# bindsym $mod+Shift+r        exec --no-startup-id winresize
-# bindsym $mod+Shift+r        exec --no-startup-id i3resize
-# bindsym $mod+Shift+u		exec --no-startup-id i3resize down
-# bindsym $mod+Shift+i		exec --no-startup-id i3resize up
-# bindsym $mod+Shift+o		exec --no-startup-id i3resize right
-# bindsym $mod+Shift+y       exec --no-startup-id i3resize left
-
-# bindsym $mod+Shift+r mode "resize"
-
 # =============================
 #  Basic Bindings
 # =============================
 
 bindsym $mod+Return         exec $term
 
-bindsym $mod+Shift+space    floating toggle
 bindsym $mod+space          focus mode_toggle
+bindsym $mod+Shift+space    floating toggle
+
+bindsym $alt+$esc           kill
+
+bindsym $print exec --no-startup-id flameshot gui -p /home/riddle/Screenshots 
+bindsym Shift+$print exec --no-startup-id scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 
 # =============================
 #  Letter Bindings
 # =============================
 
-bindsym $mod+u           [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
-bindsym $print exec --no-startup-id flameshot gui
-
-bindsym $alt+$esc kill
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+r exec $term -e $FILE
+bindsym $mod+y exec $term -e calcurse -D ~/.config/calcurse
+bindsym $mod+i exec $term -e htop
+bindsym $mod+s exec --no-startup-id xscreensaver-command --lock
+bindsym $mod+g exec --no-startup-id gimp
 
-bindsym $mod+w              exec $term -e nmtui
+bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
+bindsym $mod+o sticky toggle
+bindsym $mod+b bar mode toggle
+bindsym $mod+Shift+t mode "$mode_gaps"
 
-bindsym $mod+r          exec $term -e $FILE
-
-bindsym $mod+t          split toggle
+bindsym $mod+t split toggle
 bindsym $mod+apostrophe split horizontal
 bindsym $mod+slash split vertical
 
-bindsym $mod+Shift+t        mode "$mode_gaps"
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
 
-bindsym $mod+y         exec $term -e calcurse -D ~/.config/calcurse
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
 
-bindsym $mod+i 			exec $term -e htop
-bindsym $mod+o			sticky toggle
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # change focus
 bindsym $mod+h focus left
@@ -166,17 +121,11 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-
-# reload the configuration file
-bindsym $mod+Shift+c reload
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# resize focused window
+bindsym $mod+Shift+u exec --no-startup-id i3resize down
+bindsym $mod+Shift+i exec --no-startup-id i3resize up
+bindsym $mod+Shift+o exec --no-startup-id i3resize right
+bindsym $mod+Shift+y exec --no-startup-id i3resize left
 
 # =============================
 #  Workspace Bindings
@@ -221,10 +170,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #  Function Buttons
 # ===================
 
-bindsym F7        exec $ACTIVATE thunderbird
-bindsym F9        exec $ACTIVATE $BROWSER
-bindsym $mod+F11 exec "amixer set Master 10%-"
-bindsym $mod+F12 exec "amixer set Master 10%+"
+bindsym F7 exec $ACTIVATE thunderbird
+bindsym F9 exec $ACTIVATE $BROWSER
+bindsym $mod+F11 exec --no-startup-id "amixer set Master 10%-"
+bindsym $mod+F12 exec --no-startup-id "amixer set Master 10%+"
 
 # ===================
 #  Arrow keys
@@ -243,33 +192,48 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # ===================
+#  Media keys
+# ===================
+
+# Volume keys
+bindsym $mod+plus		    exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
+bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
+bindsym $mod+minus 		    exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
+bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
+bindsym $mod+less 		    exec --no-startup-id mpc prev
+bindsym $mod+Shift+less		exec --no-startup-id mpc seek 0%
+bindsym $mod+greater		exec --no-startup-id mpc next
+bindsym $mod+Shift+greater	exec --no-startup-id mpc next
+
+# For advancing forward/backward in an mpd song
+bindsym $mod+bracketleft 	      exec --no-startup-id mpc seek -10
+bindsym $mod+Shift+bracketleft 	  exec --no-startup-id mpc seek -120
+bindsym $mod+bracketright 	      exec --no-startup-id mpc seek +10
+bindsym $mod+Shift+bracketright   exec --no-startup-id mpc seek +120
+
+# ===================
 #  Extra XF86 Keys
 # ===================
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+bindsym XF86AudioRaiseVolume    exec --no-startup-id "amixer set Master 10%+"
+bindsym XF86AudioLowerVolume    exec --no-startup-id "amixer set Master 10%-"
+bindsym XF86TouchpadToggle      exec --no-startup-id toggletouchpad
+bindsym XF86TouchpadOn          exec --no-startup-id synclient TouchpadOff=0
+bindsym XF86TouchpadOff         exec --no-startup-id synclient TouchpadOff=1
+bindsym XF86MonBrightnessUp     exec --no-startup-id "light -A 10"
+bindsym XF86MonBrightnessDown   exec --no-startup-id "light -U 10"
+##bindsym XF86Sleep             This binding is typically mapped by systemd automatically.
+bindsym XF86RFKill              nop
 
 # =============================
-#  SCRIPTS 
+#  MODES 
 # =============================
 
-# set $stoprec --no-startup-id dmenurecord kill
-# bindsym $mod+grave      exec --no-startup-id dmenuunicode
-
-# bindsym $mod+Shift+BackSpace    exec --no-startup-id prompt "Reboot
-# computer?" "$reboot"
-
-# Show selection:
-# bindsym $mod+Insert         exec --no-startup-id showclip
-
-# STOP/HIDE EVERYTHING:
-# bindsym $mod+Shift+Delete   exec --no-startup-id amixer sset Master mute ; exec --no-startup-id mpc pause && pkill -RTMIN+10 i3blocks ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e $FILE
-
-# bindsym $mod+u          exec --no-startup-id ddspawn tmuxdd
-
-# bindsym $mod+e          exec $term -e neomutt && pkill -RTMIN+12 i3blocks
-# bindsym $mod+Shift+e        exec --no-startup-id tutorialvids
+set $mode_gaps Toggle gaps: (1) on (2) off
+mode "$mode_gaps" {
+    bindsym 1 mode "default", gaps inner all set 8, gaps outer all set 4
+    bindsym 2 mode "default", gaps inner all set 0, gaps outer all set 0
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 

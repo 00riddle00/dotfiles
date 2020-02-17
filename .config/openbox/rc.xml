@@ -576,7 +576,6 @@
     <keybind key="Print">
       <action name="Execute">
         <!--<command>scrot -s /home/riddle/Screenshots/screenshot-%F-%H%M%S.png</command>-->
-        <!--<command> flameshot gui </command>-->
         <command> flameshot gui -p /home/riddle/Screenshots </command>
       </action>
     </keybind>

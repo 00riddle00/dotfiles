@@ -401,3 +401,4 @@ alias letr='chmod -R 755'
 # entries appear here after appending output to this file
 alias iii='ip route get 8.8.8.8'
 alias xe='sudo journalctl -xe'
+alias i3out='i3-msg exit'

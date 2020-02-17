@@ -7,5 +7,5 @@ if type setxkbmap >/dev/null 2>&1; then
     setxkbmap -option caps:escape 2>/dev/null
 fi
 
-exec openbox-session
-# exec i3
+# exec openbox-session
+exec i3
