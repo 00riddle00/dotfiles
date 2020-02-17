@@ -7,6 +7,7 @@ conky -c $DOTFILES_DIR/.conky/stats_blue > /dev/null 2>&1 &
 conky -c $DOTFILES_DIR/.conky/clock_blue > /dev/null 2>&1 &
 dropbox &
 flameshot &
-safeeyes &
 tint2 &
+dunst &
 urxvt -name t2 &
+safeeyes &

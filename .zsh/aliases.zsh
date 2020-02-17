@@ -64,6 +64,17 @@ alias jcl='rm *.class'
 alias npm.ls='npm list --depth=0'
 alias npm.ls.g='npm list -g --depth=0'
 
+# launch console programs
+alias mm='neomutt'
+alias r='ranger'
+alias rt='rtorrent'
+# console programs with options
+alias mpv.image='mpv --no-config --pause --vo=tct'
+alias mpv.video='mpv --no-config --vo=tct'
+alias mpv.youtube='mpv -vo=caca'
+alias red.norm='redshift -P -O 6500'
+alias red.warm='redshift -P -O 5000'
+
 # launch GUI programs
 alias fire='firefox'
 alias gg='google-chrome-stable'
@@ -95,7 +106,6 @@ alias rms.say.gnu='$SHELL_SCRIPTS_DIR/cowsay/rms_say_gnu.sh'
 # ssh
 alias sa='ssh-add'
 alias sl='ssh-add -l'
-alias mif='ssh -f -N togi3017@uosis.mif.vu.lt -L 5555:linux:3389' # create ssh tunnel to mif and run it in the background
 
 # standard cmds
 alias c='clear'
@@ -105,6 +115,8 @@ alias grepi='grep -i'
 alias h='history'
 alias more='less'
 alias off='sudo poweroff'
+alias pls='sudo $(fc -ln -1)'
+alias plz='sudo $(fc -ln -1)'
 alias q='exit'
 alias re='sudo reboot'
 alias rmr='sudo rm -r'  
@@ -194,12 +206,10 @@ alias xclip.prim='xclip -selection primary'
 alias xclip.sec='xclip -selection secondary'
 
 ## databases
-alias mysqlon='sudo systemctl start mysqld'
 alias mysqlr='mysql -u root -p'
 alias mysqlri='mysql -u user -p'
 alias pg='sudo -u postgres psql postgres'
 alias pgm='psql -d biblio -U togi3017'
-alias post='systemctl start postgresql'
 
 ## django
 alias cs='python manage.py collectstatic --noinput'
@@ -207,8 +217,8 @@ alias mig='pmp makemigrations && pmp migrate'
 alias pmp='python manage.py'
 alias runs='python manage.py runserver'
 
-## lan
-alias net='systemctl start dhcpcd@enp9s0.service'
+## killing stuff
+alias no='killall mpg123'
 
 ## languages
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
@@ -217,16 +227,21 @@ alias ru='setxkbmap ru phonetic'
 
 ## navigation
 alias bak='cd $MAIN_HOME/backups'
+alias bin='cd $MAIN_HOME/.local/bin'
 alias candy='cd $CANDY'
+alias conf='cd ~/.config/'
 alias drop.bak='cd $MAIN_HOME/Dropbox/sync/backup'
 alias drop.phone='cd $MAIN_HOME/Dropbox/sync/phone'
 alias drop='cd $DROPBOX'
 alias dw='cd $MAIN_HOME/Downloads/'
+alias kee='cd $DROPBOX/sync/keepass'
+alias lok='cd $MAIN_HOME/.local'
 alias notes='cd $NOTES'
 alias op='cd $MAIN_HOME/.config/openbox'
 alias pak='cd $SHELL_SCRIPTS_DIR/archlinux_post_install/'
 alias pro='cd $MAIN_HOME/pro'
 alias serv='cd /var/www'
+alias sk='cd ~/Screenshots'
 alias srv='cd /srv/http/'
 alias tmp1='cd $MAIN_HOME/tmp1'
 alias tmp2='cd $MAIN_HOME/tmp2'
@@ -250,6 +265,7 @@ alias wp='watch "ping -c 1 www.google.com"'
 alias al='vim $ZDOTDIR/aliases.zsh'
 alias br='vim $MAIN_HOME/.bashrc'
 alias fn='vim $ZDOTDIR/functions.zsh'
+alias ic='vim $MAIN_HOME/.config/i3/config'
 alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
 alias res='vim $MAIN_HOME/.Xresources'
 alias start='vim $MAIN_HOME/.config/openbox/autostart.sh'
@@ -329,31 +345,37 @@ alias xn='xrandr --output $HDMI_SCREEN --rotate normal'
 alias xland='xrandr --output $HDMI_SCREEN --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
 alias xport='xrandr --output $HDMI_SCREEN --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
 
-## server
+## systemd
+#### general
+alias services.running='systemctl --type=service'
+alias services.list='systemctl list-unit-files'
+alias services.enabled='systemctl list-unit-files | grep enabled'
+#### db
+alias mysqlon='sudo systemctl start mysqld'
+alias post='systemctl start postgresql'
+#### server
 alias apache='systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 alias stat="systemctl status httpd"
+#### lan
+alias net='systemctl start dhcpcd@enp9s0.service'
+alias renet='systemctl restart dhcpcd@enp9s0.service'
+#### wifi
+alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
+alias rewnet='sudo systemctl start dhcpcd@wlp8s0.service'
 
 ## touchpad
 alias tof='synclient TouchpadOff=1'
 alias ton='synclient TouchpadOff=0'
 
 ## wifi
-alias wpa='wpa_supplicant -Dnl80211 -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant.conf'
-alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
-alias wifih='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start home'
-alias wifie='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start eduroam'
-alias wifid='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start donatas'
-alias wpam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/modem.conf'
-alias wpad='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/donatas.conf'
-alias wifim='sudo ip link set wlp8s0 up && sudo systemctl start dhcpcd@wlp8s0.service && sudo netctl start modem'
-
 alias essid='iwconfig'
-alias renet=' service networking restart && /etc/init.d/networking restart'
-alias we='sudo netctl start eduroam'
+alias wpa='wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
+alias wpas='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf'
+alias wpac='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias wifion='sudo ip link set wlp8s0 up'
-alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 
 ### ls
 alias la='ls -al'
@@ -374,75 +396,7 @@ alias let='chmod 755'
 alias letr='chmod -R 755'
 
 # =============
-#  projects
-# =============
-
-# subscription-demo
-alias ve='export VENV=$MAIN_HOME/pro/subscription-demo/env'
-
-alias run='
-    rm /home/riddle/pro/subscription-demo/app/subscriptions.sqlite &&
-    ve &&
-    $VENV/bin/python3 setup.py develop &&
-    $VENV/bin/initialize_subscriptions_db development.ini'
-
-alias run2='
-    ve &&
-    rm -r $VENV &&
-    python3 -m venv $VENV &&
-    $VENV/bin/pip3 install --upgrade pip setuptools &&
-    run &&
-    chmod -R +x $VENV &&
-    $VENV/bin/pip install -e ".[testing]" &&
-    $VENV/bin/pserve development.ini --reload'
-
-#alias test='ve &&$VENV/bin/py.test --cov -q'
-
-alias senv='source $VENV/bin/activate'
-
-# =============
 # temp
 # =============
 # entries appear here after appending output to this file
 
-alias gimp.go='cd $DOTFILES_DIR/xorg/.config/GIMP/2.10/'
-alias services.running='systemctl --type=service'
-alias services.list='systemctl list-unit-files'
-alias services.enabled='systemctl list-unit-files | grep enabled'
-alias network.edit='nm-connection-editor' 
-alias network.list='nmcli device wifi list'
-alias mm='neomutt'
-alias r='ranger'
-alias gop='gotop'
-alias conf='cd ~/.config/'
-alias mpv.image='mpv --no-config --pause --vo=tct'
-alias mpv.video='mpv --no-config --vo=tct'
-alias mpv.youtube='mpv -vo=caca'
-alias sk='cd ~/Screenshots'
-
-alias ic='vim $MAIN_HOME/.config/i3/config'
-alias kee='cd $DROPBOX/sync/keepass'
-alias pacc='sudo vim /etc/pacman.conf'
-alias ss='ssh root@192.168.1.244'
-alias rt='rtorrent'
-alias pls='sudo $(fc -ln -1)'
-alias plz='sudo $(fc -ln -1)'
-
-alias red='redshift -P -O'
-alias red.norm='redshift -P -O 6500'
-alias red.warm='redshift -P -O 5000'
-alias t1='i3-msg exec "$TERMINAL -name dropdown_tmuxdd -e tmux" > /dev/null 2>&1'
-alias alsi='alsi -a'
-
-alias flame='flameshot gui -p /home/riddle/Screenshots'
-
-alias ss1='ssh test@141.98.10.154'
-alias ss2='ssh userv@141.98.10.54 -p 22033'
-alias ss3='ssh userv@141.98.10.157 -p 22033'
-alias ss4='ssh userv@141.98.10.158 -p 22033'
-
-alias bin='cd $MAIN_HOME/.local/bin'
-
-alias rrr='cd /home/riddle/.dotfiles/bin/themes && vim'
-alias no='killall mpg123'
-alias ccc='head ~/.gtkrc-2.0 && echo "\n\n" && head ~/.config/gtk-3.0/settings.ini'

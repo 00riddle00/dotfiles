@@ -15,37 +15,7 @@
 #  PARTIAL DIRS GITIGNORE 
 # =======================
 
-.emacs.d/*
-
-.tmux/plugins/*
-!.tmux/plugins/tpm
-
-.config/thefuck/*
-!.config/thefuck/rules/
-!.config/thefuck/settings.py
-
-.config/vifm/vifm-help.txt
-.config/vifm/vifminfo
-
-!.emacs.d/init.el
-
-.irssi/*
-!.irssi/config
-
-.mutt/*
-!.mutt/*muttrc
-!.mutt/*sig
-
-.vim/*
-!.vim/colors/
-
-.zsh/.zcompdump
-.zsh/histfile
-
-.config/cmus/*
-!.config/cmus/autosave
-!.config/cmus/lib.pl
-!.config/cmus/playlist.pl
+bin/cowsay/**/*.dat
 
 # left this just in case I decide to track this folder again,
 # since now it is done automatically by vscode in github gist
@@ -54,6 +24,15 @@
 !.config/Code - OSS/User/
 .config/Code - OSS/User/*
 !.config/Code - OSS/User/settings.json
+
+.config/cmus/*
+!.config/cmus/autosave
+!.config/cmus/lib.pl
+!.config/cmus/playlist.pl
+
+.config/GIMP/*/*
+!.config/GIMP/*/scripts/
+!.config/GIMP/*/menurc
 
 .config/filezilla/*
 !.config/filezilla/filezilla.xml
@@ -68,12 +47,30 @@
 !.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 !.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
-.config/GIMP/*/*
-!.config/GIMP/*/scripts/
-!.config/GIMP/*/menurc
-
 .config/thefuck/*
+!.config/thefuck/rules/
 !.config/thefuck/settings.py
 
-bin/cowsay/**/*.dat
+.config/vifm/vifm-help.txt
+.config/vifm/vifminfo
 
+.emacs.d/*
+!.emacs.d/init.el
+
+.irssi/*
+!.irssi/config
+
+.mutt/*
+!.mutt/*muttrc
+!.mutt/*sig
+
+.tmux/plugins/*
+!.tmux/plugins/tpm
+
+.vim/*
+!.vim/colors/
+
+.zsh/.zcompdump
+.zsh/aliases.local.zsh
+.zsh/functions.local.zsh
+.zsh/histfile
