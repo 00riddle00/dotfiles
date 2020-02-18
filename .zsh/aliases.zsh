@@ -402,3 +402,5 @@ alias letr='chmod -R 755'
 alias iii='ip route get 8.8.8.8'
 alias xe='sudo journalctl -xe'
 alias i3out='i3-msg exit'
+alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
+

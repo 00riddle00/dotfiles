@@ -20,7 +20,8 @@ gaps outer 4
 # smart_gaps on # gaps used if only more than one container on the workspace
 floating_modifier $alt
 
-set $term --no-startup-id $TERMINAL 
+set $term $TERMINAL 
+set $run exec --no-startup-id 
 set $mod Mod4
 set $alt Mod1
 set $esc Escape
@@ -43,13 +44,16 @@ bar {
 #  Startup
 # =============================
 
-exec --no-startup-id $SHELL_SCRIPTS_DIR/config_monitors.sh
-exec $term -name t1 
-exec $term -name dropdown_math -e R -q
-exec --no-startup-id flameshot
-exec --no-startup-id feh --bg-scale "$CANDY/images/desktop/arch0.jpg" 
-exec --no-startup-id tint2
-exec --no-startup-id xscreensaver -no-splash
+$run $SHELL_SCRIPTS_DIR/config_monitors.sh
+$run xscreensaver -no-splash
+$run feh --bg-scale "$CANDY/images/desktop/arch0.jpg" 
+$run dropbox
+$run flameshot
+$run tint2
+$run dunst
+$run i3-msg 'workspace $ws1; $run $term -name t2'
+$run $term -name dropdown_math -e R -q
+$run safeeyes
 
 # =============================
 #  Window traits 
@@ -70,44 +74,59 @@ for_window [class="Gimp"] move workspace $ws5
 #  Basic Bindings
 # =============================
 
-bindsym $mod+Return         exec $term
+bindsym $mod+Return         $run $term
 
 bindsym $mod+space          focus mode_toggle
 bindsym $mod+Shift+space    floating toggle
 
 bindsym $alt+$esc           kill
 
-bindsym $print exec --no-startup-id flameshot gui -p /home/riddle/Screenshots 
-bindsym Shift+$print exec --no-startup-id scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
+# bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
+bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
+bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 
 # =============================
 #  Letter Bindings
 # =============================
 
-bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+r exec $term -e $FILE
-bindsym $mod+y exec $term -e calcurse -D ~/.config/calcurse
-bindsym $mod+i exec $term -e htop
-bindsym $mod+s exec --no-startup-id xscreensaver-command --lock
-bindsym $mod+g exec --no-startup-id gimp
+bindsym $mod+c $run activate spotify
+bindsym $mod+p $run activate pycharm
+bindsym $mod+q $run activate code
+bindsym $mod+t $run tint2
+bindsym $mod+Shift+t $run killall tint2 
+bindsym $mod+Shift+d $run activate qbittorrent
+bindsym $mod+m $run activate nomacs
+bindsym $mod+o $run "keepass $DROPBOX/sync/keepass/8gb.kdbx"
+bindsym $mod+f $run activate filezilla
+bindsym $alt+e $run thunar
+bindsym $mod+e $run focus "file manager"
+bindsym $mod+g $run activate smartgit
+bindsym $mod+semicolon $run activate libreoffice
+
+bindsym Insert $run dmenu_run
+bindsym $mod+r $run $term -e $FILE
+bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
+bindsym $mod+i $run $term -e htop
+bindsym $mod+s $run xscreensaver-command --lock
+bindsym $mod+Shift+b $run gimp
+
+bindsym $mod+d $run i3showdesktop
+bindsym $alt+q fullscreen disable
 
 bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
-bindsym $mod+o sticky toggle
+# bindsym $mod+o sticky toggle
 bindsym $mod+b bar mode toggle
-bindsym $mod+Shift+t mode "$mode_gaps"
+# bindsym $mod+Shift+t mode "$mode_gaps"
 
-bindsym $mod+t split toggle
+# bindsym $mod+t split toggle
 bindsym $mod+apostrophe split horizontal
 bindsym $mod+slash split vertical
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+x fullscreen toggle
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e $run "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # change focus
 bindsym $mod+h focus left
@@ -122,10 +141,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # resize focused window
-bindsym $mod+Shift+u exec --no-startup-id i3resize down
-bindsym $mod+Shift+i exec --no-startup-id i3resize up
-bindsym $mod+Shift+o exec --no-startup-id i3resize right
-bindsym $mod+Shift+y exec --no-startup-id i3resize left
+bindsym $mod+Shift+u $run i3resize down
+bindsym $mod+Shift+i $run i3resize up
+bindsym $mod+Shift+o $run i3resize right
+bindsym $mod+Shift+y $run i3resize left
 
 # =============================
 #  Workspace Bindings
@@ -170,10 +189,23 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #  Function Buttons
 # ===================
 
-bindsym F7 exec $ACTIVATE thunderbird
-bindsym F9 exec $ACTIVATE $BROWSER
-bindsym $mod+F11 exec --no-startup-id "amixer set Master 10%-"
-bindsym $mod+F12 exec --no-startup-id "amixer set Master 10%+"
+bindsym $alt+F2 $run i3-msg '$run $term -name t2'
+bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
+
+bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
+
+bindsym F4 $run activate firefox
+bindsym F5 $run subl3
+bindsym F7 $run activate thunderbird
+bindsym F9 $run activate $BROWSER
+bindsym F10 $run activate qalculate-gtk
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym F12 restart
+
+bindsym $mod+F5 $run "light -U 10"
+bindsym $mod+F6 $run "light -A 10"
+bindsym $mod+F11 $run "amixer set Master 10%-"
+bindsym $mod+F12 $run "amixer set Master 10%+"
 
 # ===================
 #  Arrow keys
@@ -196,32 +228,32 @@ bindsym $mod+Shift+Right move right
 # ===================
 
 # Volume keys
-bindsym $mod+plus		    exec --no-startup-id amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
-bindsym $mod+Shift+plus		exec --no-startup-id amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
-bindsym $mod+minus 		    exec --no-startup-id amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
-bindsym $mod+Shift+minus	exec --no-startup-id amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
-bindsym $mod+less 		    exec --no-startup-id mpc prev
-bindsym $mod+Shift+less		exec --no-startup-id mpc seek 0%
-bindsym $mod+greater		exec --no-startup-id mpc next
-bindsym $mod+Shift+greater	exec --no-startup-id mpc next
+bindsym $mod+plus		    $run amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
+bindsym $mod+Shift+plus		$run amixer sset Master 15%+ && pkill -RTMIN+10 i3blocks
+bindsym $mod+minus 		    $run amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
+bindsym $mod+Shift+minus	$run amixer sset Master 15%- && pkill -RTMIN+10 i3blocks
+bindsym $mod+less 		    $run mpc prev
+bindsym $mod+Shift+less		$run mpc seek 0%
+bindsym $mod+greater		$run mpc next
+bindsym $mod+Shift+greater	$run mpc next
 
 # For advancing forward/backward in an mpd song
-bindsym $mod+bracketleft 	      exec --no-startup-id mpc seek -10
-bindsym $mod+Shift+bracketleft 	  exec --no-startup-id mpc seek -120
-bindsym $mod+bracketright 	      exec --no-startup-id mpc seek +10
-bindsym $mod+Shift+bracketright   exec --no-startup-id mpc seek +120
+bindsym $mod+bracketleft 	      $run mpc seek -10
+bindsym $mod+Shift+bracketleft 	  $run mpc seek -120
+bindsym $mod+bracketright 	      $run mpc seek +10
+bindsym $mod+Shift+bracketright   $run mpc seek +120
 
 # ===================
 #  Extra XF86 Keys
 # ===================
 
-bindsym XF86AudioRaiseVolume    exec --no-startup-id "amixer set Master 10%+"
-bindsym XF86AudioLowerVolume    exec --no-startup-id "amixer set Master 10%-"
-bindsym XF86TouchpadToggle      exec --no-startup-id toggletouchpad
-bindsym XF86TouchpadOn          exec --no-startup-id synclient TouchpadOff=0
-bindsym XF86TouchpadOff         exec --no-startup-id synclient TouchpadOff=1
-bindsym XF86MonBrightnessUp     exec --no-startup-id "light -A 10"
-bindsym XF86MonBrightnessDown   exec --no-startup-id "light -U 10"
+bindsym XF86AudioRaiseVolume    $run "amixer set Master 10%+"
+bindsym XF86AudioLowerVolume    $run "amixer set Master 10%-"
+bindsym XF86TouchpadToggle      $run toggletouchpad
+bindsym XF86TouchpadOn          $run synclient TouchpadOff=0
+bindsym XF86TouchpadOff         $run synclient TouchpadOff=1
+bindsym XF86MonBrightnessUp     $run "light -A 10"
+bindsym XF86MonBrightnessDown   $run "light -U 10"
 ##bindsym XF86Sleep             This binding is typically mapped by systemd automatically.
 bindsym XF86RFKill              nop
 
