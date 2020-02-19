@@ -451,7 +451,7 @@
     </keybind>
     <keybind key="A-F3">
       <action name="Execute">
-        <command>urxvt -geometry 135x61 -name notes -hold -e tmux new vim -c "e $DROPBOX/sync/gtd/coding/koding.md | :cd %:p:h | :cd .."</command>
+        <command>opboxvimnotes</command>
       </action>
     </keybind>
     <keybind key="F3">
@@ -528,7 +528,7 @@
 	  -->
     <keybind key="W-q">
       <action name="Execute">
-        <command>sh -c "activate code"</command>
+        <command>sh -c "activate serv"</command>
       </action>
     </keybind>
     <keybind key="W-S-d">

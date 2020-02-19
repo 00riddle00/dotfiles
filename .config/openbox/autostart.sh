@@ -11,3 +11,4 @@ tint2 &
 dunst &
 urxvt -name t2 &
 safeeyes &
+nm-applet &

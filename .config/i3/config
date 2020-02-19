@@ -81,7 +81,6 @@ bindsym $mod+Shift+space    floating toggle
 
 bindsym $alt+$esc           kill
 
-# bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
 bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
 bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 
@@ -114,11 +113,10 @@ bindsym $mod+d $run i3showdesktop
 bindsym $alt+q fullscreen disable
 
 bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
-# bindsym $mod+o sticky toggle
+bindsym $alt+z sticky toggle
 bindsym $mod+b bar mode toggle
 # bindsym $mod+Shift+t mode "$mode_gaps"
 
-# bindsym $mod+t split toggle
 bindsym $mod+apostrophe split horizontal
 bindsym $mod+slash split vertical
 
@@ -192,6 +190,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $alt+F2 $run i3-msg '$run $term -name t2'
 bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
 
+bindsym $alt+F3 $run i3vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox
@@ -254,7 +253,6 @@ bindsym XF86TouchpadOn          $run synclient TouchpadOff=0
 bindsym XF86TouchpadOff         $run synclient TouchpadOff=1
 bindsym XF86MonBrightnessUp     $run "light -A 10"
 bindsym XF86MonBrightnessDown   $run "light -U 10"
-##bindsym XF86Sleep             This binding is typically mapped by systemd automatically.
 bindsym XF86RFKill              nop
 
 # =============================
