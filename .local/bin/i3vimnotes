@@ -1,2 +1,4 @@
 #!/usr/bin/env sh
-urxvt -geometry 135x61 -name notes -hold -e tmux new-session\; new-window -n notes vim -c "e $DROPBOX/sync/gtd/coding/koding.md | :cd %:p:h | :cd .. | :NERDTreeToggle "\; swap-window -t -1\; 
+urxvt -geometry 135x61 -name notes -hold -e tmux new-session\; new-window -n notes vim -c "e $DROPBOX/sync/gtd/coding/koding.md | :cd %:p:h | :cd .. | :NERDTreeToggle "\; swap-window -t -1\;  && 
+i3-msg '[instance="notes"] move left'  &&
+i3-msg '[instance="notes"] move left'  

@@ -115,7 +115,7 @@ execp_tooltip =
 
 # Executor 1
 execp = new
-execp_command = tint2-brightness
+execp_command = tint2-volume-icon
 execp_interval = 1
 execp_has_icon = 1
 execp_cache_icon = 1
@@ -130,7 +130,7 @@ execp_tooltip =
 
 # Executor 2
 execp = new
-execp_command = tint2-volume-icon
+execp_command = tint2-brightness
 execp_interval = 1
 execp_has_icon = 1
 execp_cache_icon = 1

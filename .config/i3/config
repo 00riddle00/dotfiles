@@ -1,5 +1,13 @@
 # vim: filetype=i3
 
+
+#  _ _____                    __ _
+# (_)___ /    ___ ___  _ __  / _(_) __ _
+# | | |_ \   / __/ _ \| '_ \| |_| |/ _` |
+# | |___) | | (_| (_) | | | |  _| | (_| |
+# |_|____/   \___\___/|_| |_|_| |_|\__, |
+#                                  |___/
+
 # This config file will use environmental variables such as $BROWSER and $TERMINAL.
 # You can set these variables in ~/.profile or ~/.zshenv if you have it as below:
 #
@@ -9,16 +17,14 @@
 # Explanations
 # [1](Being a command-line utility, i3-msg does not support startup notifications,
 # hence the exec --no-startup-id.)
+# [2] example in config file:
+#           $run $term -name dropdown_math -e R -q
+#     same command in terminal:
+#           i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
 
 # =============================
 #  Basic Definitions
 # =============================
-
-for_window [class="^.*"] border pixel 2
-gaps inner 8
-gaps outer 4
-# smart_gaps on # gaps used if only more than one container on the workspace
-floating_modifier $alt
 
 set $term $TERMINAL 
 set $run exec --no-startup-id 
@@ -31,14 +37,7 @@ set $print Print
 set $shutdown sudo shutdown -h now
 set $reboot sudo reboot
 
-# statusbar
-bar {
-	font pango:mono 10
-	status_command i3blocks # default=i3status
-	position top
-	mode dock
-	modifier None
-}
+floating_modifier $alt
 
 # =============================
 #  Startup
@@ -49,11 +48,77 @@ $run xscreensaver -no-splash
 $run feh --bg-scale "$CANDY/images/desktop/arch0.jpg" 
 $run dropbox
 $run flameshot
-$run tint2
 $run dunst
+$run picom -b
+$run safeeyes
 $run i3-msg 'workspace $ws1; $run $term -name t2'
 $run $term -name dropdown_math -e R -q
-$run safeeyes
+
+# =============================
+#  Appearance
+# =============================
+
+# GAP VARIABLES
+# standard
+# set $inner 8 
+# set $outer 4
+# set $top   0
+
+# fancy
+set $inner 30 
+set $outer 0
+set $top   5
+
+for_window [class="^.*"] border pixel 1
+border_radius 1
+smart_borders on
+
+gaps inner $inner
+gaps outer $outer
+gaps top   $top
+# smart_gaps on     # gaps used if only more than one container on the workspace
+
+set $arch_blue            #1793d1 
+set $pretty_blue          #268bd2
+set $another_blue         #47afdf
+set $light_blue           #79bac1
+set $bar_bg               #002b36
+set $pretty_light_blue    #00afd7
+set $aquamarine           #06989a
+set $sea                  #bdced3
+
+# statusbar
+bar {
+    font xft:SauceCodePro Nerd Font Bold 10
+	status_command i3blocks
+	position top
+    tray_padding 5
+    bindsym button4 nop
+    bindsym button5 nop
+    workspace_buttons yes
+    strip_workspace_numbers no
+
+  colors {
+    separator   $pretty_blue
+    background  $bar_bg
+    statusline  $pretty_blue
+
+    #                    border       bg          text    
+    focused_workspace    $bar_bg      $bar_bg     $arch_blue
+    inactive_workspace   $bar_bg      $bar_bg     #79bac1
+    active_workspace     $bar_bg      $bar_bg     #ffffff
+    urgent_workspace     $arch_blue   $arch_blue  #ffffff
+    binding_mode         #b71c1c      #b71c1c     #000000
+  }
+}
+
+# Colors
+# class                    border         bg                    text            indicator
+client.focused             $arch_blue     $pretty_light_blue    $light_blue     $arch_blue
+# client.focused_inactive  $arch_blue     $arch_blue            $light_blue     $arch_blue
+# client.unfocused         $arch_blue     $arch_blue            $light_blue     $arch_blue
+# client.urgent            $arch_blue     $arch_blue            $light_blue     $arch_blue
+# client.placeholder       $arch_blue     $arch_blue            $light_blue     $arch_blue
 
 # =============================
 #  Window traits 
@@ -91,31 +156,31 @@ bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.pn
 bindsym $mod+c $run activate spotify
 bindsym $mod+p $run activate pycharm
 bindsym $mod+q $run activate code
-bindsym $mod+t $run tint2
-bindsym $mod+Shift+t $run killall tint2 
 bindsym $mod+Shift+d $run activate qbittorrent
 bindsym $mod+m $run activate nomacs
 bindsym $mod+o $run "keepass $DROPBOX/sync/keepass/8gb.kdbx"
 bindsym $mod+f $run activate filezilla
 bindsym $alt+e $run thunar
-bindsym $mod+e $run focus "file manager"
+bindsym $mod+e $run wmctrl -a "File Manager"
 bindsym $mod+g $run activate smartgit
 bindsym $mod+semicolon $run activate libreoffice
+# bindsym $mod+t $run tint2
+# bindsym $mod+Shift+t $run killall tint2 
 
 bindsym Insert $run dmenu_run
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
 bindsym $mod+s $run xscreensaver-command --lock
-bindsym $mod+Shift+b $run gimp
+bindsym $mod+b $run gimp
 
 bindsym $mod+d $run i3showdesktop
 bindsym $alt+q fullscreen disable
 
 bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
 bindsym $alt+z sticky toggle
-bindsym $mod+b bar mode toggle
-# bindsym $mod+Shift+t mode "$mode_gaps"
+bindsym $mod+Shift+b bar mode toggle
+bindsym $mod+Shift+t mode "$mode_gaps"
 
 bindsym $mod+apostrophe split horizontal
 bindsym $mod+slash split vertical
@@ -200,11 +265,13 @@ bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym F12 restart
+# restart picom (former compton)
+bindsym $mod+F1 $run "killall picom && picom -b"
 
 bindsym $mod+F5 $run "light -U 10"
 bindsym $mod+F6 $run "light -A 10"
-bindsym $mod+F11 $run "amixer set Master 10%-"
-bindsym $mod+F12 $run "amixer set Master 10%+"
+bindsym $mod+F11 $run "amixer set Master 10%- && pkill -RTMIN+1 i3blocks"
+bindsym $mod+F12 $run "amixer set Master 10%+ && pkill -RTMIN+1 i3blocks"
 
 # ===================
 #  Arrow keys
@@ -251,8 +318,8 @@ bindsym XF86AudioLowerVolume    $run "amixer set Master 10%-"
 bindsym XF86TouchpadToggle      $run toggletouchpad
 bindsym XF86TouchpadOn          $run synclient TouchpadOff=0
 bindsym XF86TouchpadOff         $run synclient TouchpadOff=1
-bindsym XF86MonBrightnessUp     $run "light -A 10"
-bindsym XF86MonBrightnessDown   $run "light -U 10"
+bindsym XF86MonBrightnessUp     $run "light -A 10 && pkill -RTMIN+2 i3blocks"
+bindsym XF86MonBrightnessDown   $run "light -U 10 && pkill -RTMIN+2 i3blocks"
 bindsym XF86RFKill              nop
 
 # =============================

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+info=$(cmus-remote -Q 2> /dev/null)
+echo "$info" | grep "^file" | tail -c +25

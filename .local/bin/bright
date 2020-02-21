@@ -1,0 +1,4 @@
+#!/bin/bash
+info=$(light)
+
+printf '%s\n' "${info::-3}"
