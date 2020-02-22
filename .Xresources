@@ -7,8 +7,10 @@ URxvt.cursorBlink: true
 URxvt.geometry: 110x50
 URxvt.scrollBar: false
 URxvt*scrollBar_right: false
-URxvt.borderLess: false
-URxvt.borderColor: #37454e
+URxvt.borderLess: true
+URxvt.borderWidth: 0
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
 URxvt.transparent: 0
 URxvt*.shading: 0
 URxvt.letterSpace: 0

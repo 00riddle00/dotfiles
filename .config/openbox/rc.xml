@@ -44,6 +44,7 @@
   <theme>
     <name>Numix-Archblue</name>
     <titleLayout>NLIMC</titleLayout>
+    <cornerRadius>10</cornerRadius>
     <!--
        available characters are NDSLIMC, each can occur at most once.
        N: window icon
