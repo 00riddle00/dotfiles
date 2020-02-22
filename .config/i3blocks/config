@@ -86,7 +86,7 @@ color=#ef6191
 label=<span color="#ef6191"> </span>
 
 [time]
-command=date '+%I:%M'
+command=date '+%R'
 interval=5
 color=#47afdf
 label=<span color="#47afdf"> </span>
