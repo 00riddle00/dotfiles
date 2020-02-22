@@ -255,7 +255,7 @@ nnoremap <leader>[ :bp<CR>
 
 noremap <leader>o :BufExplorer<CR>
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'easymotion/vim-easymotion'
 let g:EasyMotion_smartcase = 1
@@ -388,6 +388,8 @@ Plugin 'dracula/vim'
 Plugin 'hzchirs/vim-material'
 Plugin 'joshdick/onedark.vim'
 
+" icon theme
+Plugin 'ryanoasis/vim-devicons'
 
 "===================================================
 "  PLUGIN COMMANDS
