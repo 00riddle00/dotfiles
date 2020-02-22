@@ -42,14 +42,13 @@ floating_modifier $alt
 
 $run $SHELL_SCRIPTS_DIR/config_monitors.sh
 $run xscreensaver -no-splash
-$run feh --bg-scale "$CANDY/images/desktop/arch0.jpg" 
+$run feh --bg-scale "$CANDY/images/desktop/arch3.jpg" 
 $run dropbox
 $run flameshot
 $run dunst
 $run picom -b
 $run safeeyes
 $run nm-applet
-$run i3-msg 'workspace $ws1; $run $term -name t2'
 $run $term -name dropdown_math -e R -q
 
 # =============================
@@ -103,9 +102,9 @@ bar {
 
     #                    border       bg          text    
     focused_workspace    $bar_bg      $bar_bg     $arch_blue
-    inactive_workspace   $bar_bg      $bar_bg     #79bac1
+    inactive_workspace   $bar_bg      $bar_bg     $light_blue
     active_workspace     $bar_bg      $bar_bg     #ffffff
-    urgent_workspace     $arch_blue   $arch_blue  #ffffff
+    urgent_workspace     $arch_blue   $arch_blue  $bar_bg
     binding_mode         #b71c1c      #b71c1c     #000000
   }
 }
@@ -213,16 +212,20 @@ bindsym $mod+Shift+y $run i3resize left
 #  Workspace Bindings
 # =============================
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 " 1:  "
+set $ws2 " 2:  "
+set $ws3 " 3:  "  
+set $ws4 " 4:  "
+set $ws5 " 5:  "
+set $ws6 " 6:  "
+set $ws7 " 7:  "
+set $ws8 " 8: ♫ "
+set $ws9 " 9:  "
+set $ws10 " 10:  "
+
+# moved this line after assigning workspaces so as 
+# not to break ws1 icon
+$run i3-msg 'workspace $ws1; $run $term -name t2'
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -264,10 +267,13 @@ bindsym F5 $run subl3
 bindsym F7 $run activate thunderbird
 bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
+bindsym F11 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym F12 restart
 # restart picom (former compton)
 bindsym $mod+F1 $run "killall picom && picom -b"
+
+bindsym $mod+End exit
 
 bindsym $mod+F5 $run light -U 10 && pkill -RTMIN+2 i3blocks
 bindsym $mod+F6 $run light -A 10 && pkill -RTMIN+2 i3blocks
