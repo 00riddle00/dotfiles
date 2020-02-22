@@ -151,6 +151,8 @@ bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.pn
 #  Letter Bindings
 # =============================
 
+bindsym $mod+Insert $run "xrdb $MAIN_HOME/.Xresources"
+
 bindsym $mod+c $run activate spotify
 bindsym $mod+p $run activate pycharm
 bindsym $mod+q $run activate code

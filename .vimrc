@@ -383,6 +383,12 @@ call vundle#end()            " required
 " Enable filetype-specific plugins
 filetype plugin indent on    " required
 
+" color themes
+Plugin 'dracula/vim'
+Plugin 'hzchirs/vim-material'
+Plugin 'joshdick/onedark.vim'
+
+
 "===================================================
 "  PLUGIN COMMANDS
 "===================================================
@@ -391,11 +397,20 @@ filetype plugin indent on    " required
 "===================================================
 "  PLUGIN FUNCTIONS
 "===================================================
-" NERDTress File highlighting
+" NERDTrees File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
     exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
     exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
+
+" Dracula theme:
+function! s:Dra()
+    colorscheme dracula
+    set background=light
+    set background=dark
+endfunction
+command Dra call s:Dra()
+
 
 "===================================================
 "  TEMP

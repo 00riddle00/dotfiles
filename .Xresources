@@ -7,11 +7,11 @@ URxvt.cursorBlink: true
 URxvt.geometry: 110x50
 URxvt.scrollBar: false
 URxvt*scrollBar_right: false
-URxvt.borderLess: true
-URxvt.borderWidth: 0
-URxvt.internalBorder: 0
-URxvt.externalBorder: 0
-URxvt.transparent: 0
+!URxvt.borderLess: true
+!URxvt.borderWidth: 0
+!URxvt.internalBorder: 0
+!URxvt.externalBorder: 0
+!URxvt.transparent: 0
 URxvt*.shading: 0
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
@@ -45,14 +45,14 @@ URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9:antialias=tr
 ! --  Extensions -- !
 URxvt.perl-ext-common:     clipboard,font-size,keyboard-select,url-select
 URxvt.colorUL:             #4682B4
-!! clipboard
+!clipboard
 URxvt.clipboard.autocopy:  true
 URxvt.keysym.M-c:          perl:clipboard:copy
 URxvt.keysym.M-v:          perl:clipboard:paste
 URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
-!! keyboard-select
+!keyboard-select
 URxvt.keysym.M-i:          perl:keyboard-select:activate
-!! url-select
+!url-select
 URxvt.keysym.M-u:            perl:url-select:select_next
 URxvt.url-select.launcher:   /usr/bin/xdg-open
 URxvt.url-select.underline:  true
@@ -100,7 +100,7 @@ xscreensaver.Dialog.bodyFont:           -misc-dejavu sans-medium-r-*-*-18-*-*-*-
 xscreensaver.Dialog.labelFont:          -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
 xscreensaver.Dialog.unameFont:          -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
 xscreensaver.Dialog.buttonFont:         -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver.Dialog.dateFont:           -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
 xscreensaver.passwd.passwdFont:         -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
 
 !general dialog box (affects main hostname, username, password text)
@@ -123,5 +123,5 @@ xscreensaver.passwd.thermometer.foreground:   #1792d0
 xscreensaver.passwd.thermometer.background:  #7262b3
 xscreensaver.passwd.thermometer.width:       6
 
-!!datestamp format--see the strftime(3) manual page for details
-xscreensaver.dateFormat:    %I:%M%p - %a %b %d, %Y
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %Y, %b %d, %a, %R
