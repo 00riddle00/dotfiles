@@ -38,6 +38,9 @@ bin/cowsay/**/*.dat
 !.config/filezilla/filezilla.xml
 !.config/filezilla/filters.xml
 
+.config/ranger/plugins/__init__.py
+.config/ranger/plugins/__pycache__/
+
 .config/sublime-text-3/*
 !.config/sublime-text-3/Packages/
 .config/sublime-text-3/Packages/*

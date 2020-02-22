@@ -29,12 +29,17 @@ Xft.hinting: true
 Xft.hintstyle: hinstlight 
 
 ! Current Xft Font 
-URxvt*font: xft:Source Code Pro:size=9:antialias=true:hinting=true, xft:SauceCodePro Nerd Font
-URxvt*boldFont: xft:Source Code Pro:size=9:antialias=true:hinting=true, xft:SauceCodePro Nerd Font
-URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=9:antialias=true:hinting=true, xft:SauceCodePro Nerd Font
-URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9:antialias=true:hinting=true, xft:SauceCodePro Nerd Font
+URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true, \
+            xft:Symbola:size=9, \
+            xft:Noto Color Emoji:size=9, \
+            xft:SauceCodePro Nerd Font:size=9, \
+            xft:UbuntuMono Nerd Font:size=9, \
+            xft:Inconsolata Nerd Font Mono:size=9, \
+            xft:DejaVuSansMono Nerd Font:size=9, \
+            xft:DroidSansMono Nerd Font:size=9, \
+            xft:FuraMono Nerd Font:size=9, \
+            xft:RobotoMono Nerd Font:size=9
 
-!URxvt*font: xft:Source Code Pro:size=9:antialias=true:hinting=true
 !URxvt*boldFont: xft:Source Code Pro:size=9:antialias=true:hinting=true
 !URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=9:antialias=true:hinting=true
 !URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9:antialias=true:hinting=true
