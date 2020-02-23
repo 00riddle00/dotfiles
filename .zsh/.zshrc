@@ -50,8 +50,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey '^R' history-incremental-search-backward
 
 # colors for ls
-if [ -f $MAIN_HOME/$DIRCOLORS ]; then
-    eval $(dircolors $MAIN_HOME/$DIRCOLORS)
+if [ -f $DIRCOLORS ]; then
+    eval $(dircolors $DIRCOLORS)
 fi
 
 # source highlighting

@@ -67,7 +67,7 @@ set $outer 0
 set $top   5
 
 for_window [class="^.*"] border pixel 1
-border_radius 1
+border_radius 0
 smart_borders on
 
 gaps inner $inner
@@ -150,8 +150,6 @@ bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.pn
 #  Letter Bindings
 # =============================
 
-bindsym $mod+Insert $run "xrdb $MAIN_HOME/.Xresources"
-
 bindsym $mod+c $run activate spotify
 bindsym $mod+p $run activate pycharm
 bindsym $mod+q $run activate code
@@ -166,20 +164,24 @@ bindsym $mod+semicolon $run activate libreoffice
 # bindsym $mod+t $run tint2
 # bindsym $mod+Shift+t $run killall tint2 
 
-bindsym Insert $run dmenu_run
+bindsym Insert $run rofi -show
+bindsym $mod+Insert $run dmenu_run
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
 bindsym $mod+s $run xscreensaver-command --lock
 bindsym $mod+b $run gimp
 
-bindsym $mod+d $run i3showdesktop
+# bindsym $mod+d $run i3showdesktop
 bindsym $alt+q fullscreen disable
 
 bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
-bindsym $alt+z sticky toggle
-bindsym $mod+Shift+b bar mode toggle
-bindsym $mod+Shift+t mode "$mode_gaps"
+bindsym $alt+z          sticky toggle
+bindsym $mod+Shift+b    bar mode toggle
+bindsym $mod+Prior      gaps inner current plus 3
+bindsym $mod+Next       gaps inner current minus 3
+bindsym $mod+t          gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
+bindsym $mod+Shift+t    gaps inner current set 0; gaps outer current set 0; gaps top current set 0
 
 bindsym $mod+apostrophe split horizontal
 bindsym $mod+slash split vertical
@@ -225,7 +227,8 @@ set $ws10 " 10:  "
 
 # moved this line after assigning workspaces so as 
 # not to break ws1 icon
-$run i3-msg 'workspace $ws1; $run $term -name t2'
+# $run i3-msg 'workspace $ws1; $run $term -name t2'
+$run i3vimnotes
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -273,23 +276,25 @@ bindsym F12 restart
 # restart picom (former compton)
 bindsym $mod+F1 $run "killall picom && picom -b"
 
-bindsym $mod+End exit
+bindsym $mod+Left     $run rofi -show Open -modi Open:$SHELL_SCRIPTS_DIR/rofi/open.sh 
+bindsym $mod+End      $run rofi -show Power -modi Power:$SHELL_SCRIPTS_DIR/rofi/power.sh 
+bindsym $mod+Delete   $run rofi -show Kill -modi Kill:$SHELL_SCRIPTS_DIR/rofi/kill.sh 
 
-bindsym $mod+F5 $run light -U 10 && pkill -RTMIN+2 i3blocks
-bindsym $mod+F6 $run light -A 10 && pkill -RTMIN+2 i3blocks
-bindsym $mod+F11 $run amixer set Master 10%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+F12 $run amixer set Master 10%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+Delete $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
+bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
+bindsym $mod+F6            $run light -A 10 && pkill -RTMIN+2 i3blocks
+bindsym $mod+F11           $run amixer set Master 10%- && pkill -RTMIN+1 i3blocks
+bindsym $mod+F12           $run amixer set Master 10%+ && pkill -RTMIN+1 i3blocks
+bindsym $mod+Shift+Delete  $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
 
 # ===================
 #  Arrow keys
 # ===================
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -329,16 +334,4 @@ bindsym XF86TouchpadOff         $run synclient TouchpadOff=1
 bindsym XF86MonBrightnessUp     $run light -A 10 && pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessDown   $run light -U 10 && pkill -RTMIN+2 i3blocks
 bindsym XF86RFKill              nop
-
-# =============================
-#  MODES 
-# =============================
-
-set $mode_gaps Toggle gaps: (1) on (2) off
-mode "$mode_gaps" {
-    bindsym 1 mode "default", gaps inner all set 8, gaps outer all set 4
-    bindsym 2 mode "default", gaps inner all set 0, gaps outer all set 0
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
 

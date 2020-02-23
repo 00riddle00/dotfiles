@@ -14,7 +14,7 @@
 @define-color sea                   #bdced3;
 
 * {
-	font:	Noto Sans 12;
+    font: 12px Noto Sans;
 }
 
 .scrollbar {

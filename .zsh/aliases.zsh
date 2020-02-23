@@ -365,12 +365,6 @@ alias renet='systemctl restart dhcpcd@enp9s0.service'
 #### wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias rewnet='sudo systemctl start dhcpcd@wlp8s0.service'
-
-## touchpad
-alias tof='synclient TouchpadOff=1'
-alias ton='synclient TouchpadOff=0'
-
-## wifi
 alias essid='iwconfig'
 alias wpa='wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
@@ -379,7 +373,14 @@ alias wpac='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf'
 alias wifiof='sudo ip link set wlp8s0 down'
 alias wifion='sudo ip link set wlp8s0 up'
 
-### ls
+## touchpad
+alias tof='synclient TouchpadOff=1'
+alias ton='synclient TouchpadOff=0'
+
+## cat
+alias cat='bat'
+
+## ls
 # alias ls='ls --color=auto'
 # alias la='ls -al'
 # alias las='ls -al'
@@ -392,7 +393,7 @@ alias wifion='sudo ip link set wlp8s0 up'
 # alias ih='ls -la | grep -i'
 # alias lsh='ls -ld .?*'
 
-### colorls
+## colorls
 alias ls='colorls'
 alias la='colorls -al'
 alias lc='colorls -1'
