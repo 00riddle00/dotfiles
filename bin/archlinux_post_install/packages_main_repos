@@ -8,13 +8,16 @@ atool
 autoconf
 automake
 bash
+bat
 bc
 bind-tools
 binutils
 bison
 breeze
+broot
 bzip2
 calcurse
+cloc
 cmatrix
 cmus
 code
@@ -31,7 +34,6 @@ dia
 dialog
 diffutils
 discord
-dmenu
 dosbox
 dosemu
 dosfstools
@@ -130,6 +132,7 @@ mpv
 mupdf
 mutt
 ncmpcpp
+neofetch
 neomutt
 netctl
 network-manager-applet
@@ -184,6 +187,8 @@ ranger
 rdesktop
 redshift
 remmina
+rofi
+rofimoji
 rtorrent
 ruby-irb
 sc

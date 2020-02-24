@@ -86,3 +86,5 @@ tmux > /dev/null 2>&1
 # broot
 source $HOME/.config/broot/launcher/bash/br
 
+# prevent Ctrl+d from exiting the shell
+set -o ignoreeof 
