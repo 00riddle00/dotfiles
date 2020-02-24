@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+info=$(light)
+printf '%s\n' "${info::-3}"

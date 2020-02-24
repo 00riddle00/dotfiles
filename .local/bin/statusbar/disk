@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+df -h /home | awk 'FNR==2{print $4}'

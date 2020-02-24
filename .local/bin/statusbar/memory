@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+free -h --si | awk 'FNR==2{ print $0 }' | awk '{ print $7 }'

@@ -4,70 +4,57 @@
 # | |___) | |_) | | (_) | (__|   <\__ \
 # |_|____/|_.__/|_|\___/ \___|_|\_\___/
 
+command=~/.local/bin/statusbar/$BLOCK_NAME
 align=center
 separator=false
 separator_block_width=20
-color=#ffffff
-# color=#bdced3  # sea
-# color=#00afd7  # pretty_light_blue
-# color=#79bac1  # light blue
-# color=#06989a  # aquamarine
 markup=pango
 
 [mediaplayer]
-command=cmus_music
-#instance=cmus
+# instance=spotify
 interval=5
 color=#f77b71
 label=<span color="#f77b71"> </span>
-signal=3
+signal=10
 
 [volume]
-command=pulseaudio-ctl full-status | awk '{ printf "%i%\n", $1 }'
 interval=once
 color=#ef6191
 label=<span color="#ef6191"> </span>
 signal=1
 
-[bright]
-command=bright
+[brightness]
 interval=once
 color=#ef6191
 label=<span color="#ef6191"> </span>
 signal=2
 
-[home]
-command=df -h /home | awk 'FNR==2{print $4}'
+[disk]
 interval=5
 color=#b967c7
 label=<span color="#b967c7"> </span>
 
 [cpu-temp]
-command=cpu_temp
 interval=10
 color=#47afdf
 label=<span color="#47afdf"> </span>
 
 [cpu-usage]
-command=cpu_usage
 interval=10
 color=#81c784
 label=<span color="#81c784">  </span>
 
 [gpu-temp]
-command=gpu_temp
 interval=10
 color=#ffb64c
 label=<span color="#ffb86c"> </span>
 
 [memory]
-command=free -h --si | awk 'FNR==2{ print $0 }' | awk '{ print $7 }'
 interval=2
 color=#f77b71
 label=<span color="#f77b71"> </span>
 
 [wifi]
-command=grep $(iwgetid -m | awk '{ printf "%s", $1 }') /proc/net/wireless | awk '{ printf "%i%\n", int($3 * 100 / 70) }'
 instance=wlp8s0
 interval=5
 color=#81c784
@@ -75,24 +62,20 @@ label=<span color="#81c784">  </span>
 
 [battery]
 interval=5
-command=acpi -b | grep -oP "\d+%" 
 color=#47afdf
 label=<span color="#47afdf">  </span>
 
 [date]
-command=date '+%A %e'
 interval=60
 color=#ef6191
 label=<span color="#ef6191"> </span>
 
 [time]
-command=date '+%R'
 interval=5
 color=#47afdf
 label=<span color="#47afdf"> </span>
 
 [arch-update]
-command=checkupdates | wc -l
 interval=60
 color=#1793d1
 label=<span color="#1793d1"> </span>

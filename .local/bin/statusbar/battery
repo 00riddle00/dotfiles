@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+acpi -b | grep -oP "\d+%" 
+

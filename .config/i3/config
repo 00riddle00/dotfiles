@@ -170,8 +170,7 @@ bindsym $mod+i $run $term -e htop
 #bindsym $mod+s $run xscreensaver-command --lock
 bindsym $mod+s $run betterlockscreen -t "" -l
 bindsym $mod+b $run gimp
-
-bindsym $mod+d $run i3showdesktop
+bindsym $mod+d $run i3-showdesktop $ws10 
 bindsym $alt+q fullscreen disable
 
 bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
@@ -181,6 +180,11 @@ bindsym $mod+Prior      gaps inner current plus 3
 bindsym $mod+Next       gaps inner current minus 3
 bindsym $mod+t          gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
 bindsym $mod+Shift+t    gaps inner current set 0; gaps outer current set 0; gaps top current set 0
+
+# distraction free mode
+bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer current set 0; gaps top current set 0
+# turn off distraction free mode
+bindsym $mod+Shift+grave    bar mode dock; gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
 
 bindsym $mod+apostrophe split horizontal
 bindsym $mod+slash split vertical
@@ -204,10 +208,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # resize focused window
-bindsym $mod+Shift+u $run i3resize down
-bindsym $mod+Shift+i $run i3resize up
-bindsym $mod+Shift+o $run i3resize right
-bindsym $mod+Shift+y $run i3resize left
+bindsym $mod+Shift+u $run i3-resize down
+bindsym $mod+Shift+i $run i3-resize up
+bindsym $mod+Shift+o $run i3-resize right
+bindsym $mod+Shift+y $run i3-resize left
 
 # =============================
 #  Workspace Bindings
@@ -227,7 +231,7 @@ set $ws10 " 10:  "
 # moved this line after assigning workspaces so as 
 # not to break ws1 icon
 # $run i3-msg 'workspace $ws1; $run $term -name t2'
-$run i3vimnotes
+$run i3-vimnotes
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -261,7 +265,7 @@ bindsym F1 $run terminator
 bindsym $alt+F2 $run i3-msg '$run $term -name t2'
 bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
 
-bindsym $alt+F3 $run i3vimnotes
+bindsym $alt+F3 $run i3-vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox

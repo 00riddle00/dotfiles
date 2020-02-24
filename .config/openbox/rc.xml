@@ -452,7 +452,7 @@
     </keybind>
     <keybind key="A-F3">
       <action name="Execute">
-        <command>opboxvimnotes</command>
+        <command>openbox-vimnotes</command>
       </action>
     </keybind>
     <keybind key="F3">

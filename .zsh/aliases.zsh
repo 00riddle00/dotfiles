@@ -421,8 +421,8 @@ alias xe='sudo journalctl -xe'
 alias i3out='i3-msg exit'
 alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
 
-alias sw='switchwm'
-alias ww='switchwm'
+alias sw='$SHELL_SCRIPTS_DIR/switchwm'
+alias ww='$SHELL_SCRIPTS_DIR/switchwm'
 alias gtk='vim ~/.config/gtk-3.0/gtk.css'
 alias cm='vim ~/.config/picom/picom.conf'
 #alias repicom='killall picom && picom -b'
@@ -432,3 +432,5 @@ alias ku='killall urxvt'
 alias kx='killall xscreensaver && xscreensaver -no-splash &'
 
 alias nn='neofetch'
+alias dmenu_big='dmenu -fn "Ubuntu Mono:pixelsize=50"'
+
