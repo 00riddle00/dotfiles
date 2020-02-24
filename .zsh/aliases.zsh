@@ -152,7 +152,6 @@ alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/id_rsa'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mute='amixer -q sset Master toggle'
-alias nn='cd $NOTES && tree'
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
 alias phone='jmtpfs ~/.phone'
 alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
@@ -265,7 +264,7 @@ alias wp='watch "ping -c 1 www.google.com"'
 
 ## open files to edit with vim
 alias al='vim $ZDOTDIR/aliases.zsh'
-alias br='vim $MAIN_HOME/.bashrc'
+# alias br='vim $MAIN_HOME/.bashrc'
 alias fn='vim $ZDOTDIR/functions.zsh'
 alias ic='vim $MAIN_HOME/.config/i3/config'
 alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
@@ -380,6 +379,9 @@ alias ton='synclient TouchpadOff=0'
 ## cat
 alias cat='bat'
 
+## tree
+alias tree='broot'
+
 ## ls
 # alias ls='ls --color=auto'
 # alias la='ls -al'
@@ -403,7 +405,7 @@ alias lsla='colorls -al'
 alias lsl='colorls -l'
 alias ih='colorls -la | grep -i'
 alias lsh='colorls -ld .?*'
-alias tree='colorls --tree'
+# alias tree='colorls --tree'
 
 ### permissions
 alias ch='sudo chown -R $MAIN_USER:$MAIN_USER'
@@ -429,3 +431,4 @@ alias icc='vim $MAIN_HOME/.config/i3blocks/config'
 alias ku='killall urxvt'
 alias kx='killall xscreensaver && xscreensaver -no-splash &'
 
+alias nn='neofetch'

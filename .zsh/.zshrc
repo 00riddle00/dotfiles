@@ -72,7 +72,7 @@ eval $(thefuck --alias)
 stty -ixon
 
 ## system information tool for Arch Linux
-alsi -a
+neofetch
 
 ## random delimiter to know that the shell has been reloaded
 # echo "  [========]"
@@ -82,3 +82,7 @@ tmux > /dev/null 2>&1
 
 ## conda initialize
 # source $ZSH_DIR/conda_env.sh
+
+# broot
+source $HOME/.config/broot/launcher/bash/br
+

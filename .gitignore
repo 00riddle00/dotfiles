@@ -17,6 +17,8 @@
 
 bin/cowsay/**/*.dat
 
+.config/broot/launcher
+
 # left this just in case I decide to track this folder again,
 # since now it is done automatically by vscode in github gist
 .config/Code - OSS/*

@@ -164,15 +164,14 @@ bindsym $mod+semicolon $run activate libreoffice
 # bindsym $mod+t $run tint2
 # bindsym $mod+Shift+t $run killall tint2 
 
-bindsym Insert $run rofi -show
-bindsym $mod+Insert $run dmenu_run
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
-bindsym $mod+s $run xscreensaver-command --lock
+#bindsym $mod+s $run xscreensaver-command --lock
+bindsym $mod+s $run betterlockscreen -t "" -l
 bindsym $mod+b $run gimp
 
-# bindsym $mod+d $run i3showdesktop
+bindsym $mod+d $run i3showdesktop
 bindsym $alt+q fullscreen disable
 
 bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
@@ -276,9 +275,11 @@ bindsym F12 restart
 # restart picom (former compton)
 bindsym $mod+F1 $run "killall picom && picom -b"
 
-bindsym $mod+Left     $run rofi -show Open -modi Open:$SHELL_SCRIPTS_DIR/rofi/open.sh 
-bindsym $mod+End      $run rofi -show Power -modi Power:$SHELL_SCRIPTS_DIR/rofi/power.sh 
-bindsym $mod+Delete   $run rofi -show Kill -modi Kill:$SHELL_SCRIPTS_DIR/rofi/kill.sh 
+bindsym Insert             $run rofi -show
+bindsym $mod+Shift+Insert  $run dmenu_run
+bindsym $mod+Insert        $run rofi -show Open -modi Open:$SHELL_SCRIPTS_DIR/rofi/open.sh 
+bindsym $mod+End           $run rofi -show Power -modi Power:$SHELL_SCRIPTS_DIR/rofi/power.sh 
+bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$SHELL_SCRIPTS_DIR/rofi/kill.sh 
 
 bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
 bindsym $mod+F6            $run light -A 10 && pkill -RTMIN+2 i3blocks

@@ -53,6 +53,7 @@ export BROWSER=chrome
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LESS='-R'
 export EDITOR=vim
+export PAGER='bat'
 export LC_ALL='en_US.UTF-8'
 # Uniform look for Qt and GTK applications
 export QT_QPA_PLATFORMTHEME=gtk3
