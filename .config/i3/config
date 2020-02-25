@@ -133,7 +133,7 @@ for_window [title="GIMP Startup"]  move workspace $ws5
 for_window [class="Gimp"]          move workspace $ws5
 
 for_window [instance="calendar"] floating enable
-for_window [instance="calendar"] resize set 170 120
+for_window [instance="calendar"] resize set 160 140
 for_window [instance="calendar"] move position 1541 26
 for_window [instance="calendar"] border pixel 2
 

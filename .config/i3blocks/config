@@ -59,9 +59,10 @@ color=#81c784
 label=<span color="#81c784">  </span>
 
 [battery]
-interval=5
+interval=30
+# without setting color, perl 
+# script colors do not work
 color=#47afdf
-label=<span color="#47afdf">  </span>
 
 [calendar]
 interval=60

@@ -1,4 +1,68 @@
-#!/usr/bin/env sh
+#!/usr/bin/perl
 
-acpi -b | grep -oP "\d+%" 
+use strict;
+use warnings;
+use utf8;
 
+my $acpi;
+my $status;
+my $percent;
+my $text;
+my $label;
+my $bat_number = $ENV{BAT_NUMBER} || 0;
+
+# read the first line of the "acpi" command output
+open (ACPI, "acpi -b 2>/dev/null| grep 'Battery $bat_number' |") or die;
+$acpi = <ACPI>;
+close(ACPI);
+
+# fail on unexpected output
+if (not defined($acpi)) {
+    # don't print anything to stderr if there is no battery
+    exit(0);
+}
+elsif ($acpi !~ /: ([\w\s]+), (\d+)%/) {
+	die "$acpi\n";
+}
+
+$status = $1;
+$percent = $2;
+
+# set label based on battery charge
+if ($percent < 15) {
+    $label = ""; 
+} elsif ($percent < 25) {
+    $label = ""; 
+} elsif ($percent < 40) {
+    $label = ""; 
+} elsif ($percent < 60) {
+    $label = ""; 
+} else {
+    $label = "";
+}
+
+$text = "$label  $percent%";
+
+# print text
+print "$text\n";
+print "$text\n"; # to get colored output
+
+# consider color and urgent flag only on discharge
+if ($status eq 'Discharging') {
+
+	if ($percent < 25) {
+		print "#EF6191\n";
+	} elsif ($percent < 40) {
+		print "#FFAE00\n";
+	} elsif ($percent < 60) {
+		print "#B967C7\n";
+	} else {
+        print "#06989a\n";
+    }
+
+	if ($percent < 15) {
+		exit(33);
+	}
+}
+
+exit(0);
