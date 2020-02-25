@@ -433,4 +433,4 @@ alias kx='killall xscreensaver && xscreensaver -no-splash &'
 
 alias nn='neofetch'
 alias dmenu_big='dmenu -fn "Ubuntu Mono:pixelsize=50"'
-
+alias getpos='xwininfo -id $(xdotool getactivewindow)'

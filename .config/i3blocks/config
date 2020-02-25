@@ -53,8 +53,8 @@ color=#f77b71
 label=<span color="#f77b71"> </span>
 
 [wifi]
-instance=wlp8s0
-interval=5
+INTERFACE=wlp8s0
+interval=60
 color=#81c784
 label=<span color="#81c784">  </span>
 
@@ -63,15 +63,25 @@ interval=5
 color=#47afdf
 label=<span color="#47afdf">  </span>
 
-[date]
+[calendar]
 interval=60
-color=#ef6191
-label=<span color="#ef6191"> </span>
+color=#81c784
+label=<span color="#81c784">  </span>
+
+[weather]
+interval=3600
+color=#fee12b
+label=<span color="#fee12b"> </span>
 
 [time]
 interval=5
 color=#47afdf
 label=<span color="#47afdf"> </span>
+
+[dunst]
+interval=once
+format=json
+markup=pango
 
 [arch-update]
 interval=60

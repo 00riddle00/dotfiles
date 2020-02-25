@@ -122,15 +122,25 @@ client.focused             $arch_blue     $pretty_light_blue    $light_blue     
 # =============================
 
 # Dropdown windows (the order can matter)
-for_window [instance="dropdown_*"] floating enable
-for_window [instance="dropdown_*"] move scratchpad
-for_window [instance="dropdown_*"] sticky enable
-for_window [instance="dropdown_math"] resize set 625 450
-for_window [instance="dropdown_math"] border pixel 3
-for_window [instance="dropdown_*"] move position center
+for_window [instance="dropdown_*"]     floating enable
+for_window [instance="dropdown_*"]     move scratchpad
+for_window [instance="dropdown_*"]     sticky enable
+for_window [instance="dropdown_math"]  resize set 625 450
+for_window [instance="dropdown_math"]  border pixel 3
+for_window [instance="dropdown_*"]     move position center
 
-for_window [title="GIMP Startup"] move workspace $ws5
-for_window [class="Gimp"] move workspace $ws5
+for_window [title="GIMP Startup"]  move workspace $ws5
+for_window [class="Gimp"]          move workspace $ws5
+
+for_window [instance="calendar"] floating enable
+for_window [instance="calendar"] resize set 170 120
+for_window [instance="calendar"] move position 1541 26
+for_window [instance="calendar"] border pixel 2
+
+for_window [instance="weather"] floating enable
+for_window [instance="weather"] resize set 928 667
+for_window [instance="weather"] move position 988 26
+for_window [instance="weather"] border pixel 2
 
 # =============================
 #  Basic Bindings

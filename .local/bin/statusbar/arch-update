@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 case $BLOCK_BUTTON in
-    1) msg="$(checkupdates | sed 's/ .*//')"; pgrep -x dunst >/dev/null && notify-send "$msg"
+    1|2|3) msg="$(checkupdates | sed 's/ .*//')"; pgrep -x dunst >/dev/null && notify-send "$msg"
 esac
 
 checkupdates | wc -l

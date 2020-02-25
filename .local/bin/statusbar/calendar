@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+title="calendar"
+
+case "$BLOCK_BUTTON" in
+  1) i3-msg -q "exec --no-startup-id urxvt -name $title -hold -e cal -m" ;;
+  3) pid=$(ps aux | grep "urxvt \-name $title" | awk '{print $2}'); kill -9 $pid;
+esac
+
+date '+%A %e'

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+title="weather"
+
+case "$BLOCK_BUTTON" in
+  1)  getforecast && showweather;
+      i3-msg -q "exec --no-startup-id urxvt -name $title -hold -e curl wttr.in" ;;
+  3) pid=$(ps aux | grep "urxvt \-name $title" | awk '{print $2}'); 
+     kill -9 $pid;
+esac
+
+getforecast() { 
+    ping -q -c 1 8.8.8.8 >/dev/null || exit 1
+    curl -s "wttr.in" > "$HOME/.local/share/weatherreport" || exit 1;
+}
+
+showweather() { 
+    sed '4q;d' "$HOME/.local/share/weatherreport" |
+    grep -o "m\\([-+]\\)*[0-9]\\+" |
+    sed -e 1b -e '$!d' | tr '\n|m' ' ' |
+    awk '{print $1 "°" ".." $2 "°"}'
+}
+
+getforecast && showweather
+
