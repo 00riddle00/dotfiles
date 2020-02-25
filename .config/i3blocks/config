@@ -18,9 +18,9 @@ label=<span color="#f77b71"> </span>
 signal=10
 
 [volume]
-interval=once
+SUBSCRIBE=1
+interval=persist
 color=#ef6191
-signal=1
 
 [brightness]
 interval=once
