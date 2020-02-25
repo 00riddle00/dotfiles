@@ -15,8 +15,8 @@ AUDIO_ZERO_SYMBOL='  '
 
 AUDIO_MUTED_SYMBOL='婢  '
 
-FORMAT_NORMAL='${SYMB} ${VOL}% [${INDEX}:${NAME}]'
-FORMAT_MUTED='${SYMB} [${INDEX}:${NAME}]'
+FORMAT_NORMAL='${SYMB} ${VOL}%'
+FORMAT_MUTED='${SYMB}'
 
 SUBSCRIBE=1
 
@@ -25,10 +25,8 @@ if amixer -D pulse info >/dev/null 2>&1 ; then
     MIXER="pulse"
 fi
 
-USE_ALSA_NAME=1
-
 function print_format {
-    echo "$1" | envsubst '${SYMB}${VOL}${INDEX}${NAME}'
+    echo "$1" | envsubst '${SYMB}${VOL}'
 }
 
 function print_block {
@@ -37,30 +35,9 @@ function print_block {
     for name in INDEX NAME VOL MUTED; do
         read $name
     done < <(echo "$ACTIVE")
-    INDEX=$(echo "$INDEX" | grep -o '[0-9]\+')
+
     VOL=$(echo "$VOL" | grep -o "[0-9]*%" | head -1 )
     VOL="${VOL%?}"
-
-    NAME=$(echo "$NAME" | sed \
-'s/.*<.*\.\(.*\)>.*/\1/; t;'\
-'s/.*<\(.*\)>.*/\1/; t;'\
-'s/.*/unknown/')
-
-    if [[ $USE_ALSA_NAME == 1 ]] ; then
-        ALSA_NAME=$(pacmd list-sinks |\
-awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' |\
-grep "alsa.name\|alsa.mixer_name" |\
-head -n1 |\
-sed 's/.*= "\(.*\)".*/\1/')
-        NAME=${ALSA_NAME:-$NAME}
-    elif [[ $USE_DESCRIPTION == 1 ]] ; then
-        DESCRIPTION=$(pacmd list-sinks |\
-awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' |\
-grep "device.description" |\
-head -n1 |\
-sed 's/.*= "\(.*\)".*/\1/')
-        NAME=${DESCRIPTION:-$NAME}
-    fi
 
     if [[ $MUTED =~ "no" ]] ; then
         SYMB=$AUDIO_HIGH_SYMBOL
