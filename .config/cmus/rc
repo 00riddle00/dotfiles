@@ -1,0 +1,15 @@
+colorscheme night
+
+fset 70s=date>=1970&date<1980
+fset 80s=date>=1980&date<1990
+fset 90s=date>=1990&date<2000
+fset electronic=genre="Electronic"|genre="House"|genre="Electro"|genre="Trance"|genre="Dance"
+fset rock=genre="rock"
+fset classical=genre="Classic*"
+fset audiobook=genre="Audiobook"
+fset soundtrack=genre="Soundtrack"
+fset flac=filename="*.flac"
+fset mp3=filename="*.mp3"
+fset music=!(audiobook|soundtrack|poetry)
+fset unheard=play_count=0
+set follow=true

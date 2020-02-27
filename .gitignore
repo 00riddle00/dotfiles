@@ -28,9 +28,8 @@ bin/cowsay/**/*.dat
 !.config/Code - OSS/User/settings.json
 
 .config/cmus/*
-!.config/cmus/autosave
-!.config/cmus/lib.pl
-!.config/cmus/playlist.pl
+!.config/cmus/rc
+!.config/cmus/*.theme
 
 .config/GIMP/*/*
 !.config/GIMP/*/scripts/
