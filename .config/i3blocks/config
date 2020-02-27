@@ -11,10 +11,10 @@ separator_block_width=20
 markup=pango
 
 [mediaplayer]
-# instance=spotify
-interval=5
+# instance=cmus
+interval=20
 color=#f77b71
-label=<span color="#f77b71"> </span>
+label=<span color="#f77b71">  </span>
 signal=10
 
 [volume]
@@ -59,15 +59,15 @@ color=#81c784
 label=<span color="#81c784">  </span>
 
 [battery]
-interval=30
+interval=10
 # without setting color, perl 
 # script colors do not work
 color=#47afdf
 
 [calendar]
 interval=60
-color=#81c784
-label=<span color="#81c784">  </span>
+color=#ef6191
+label=<span color="#ef6191">  </span>
 
 [weather]
 interval=3600

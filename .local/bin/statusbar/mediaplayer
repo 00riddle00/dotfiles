@@ -1,4 +1,127 @@
-#!/usr/bin/env sh
+#!/usr/bin/env perl
 
-info=$(cmus-remote -Q 2> /dev/null)
-echo "$info" | grep "^file" | tail -c +25
+use Time::HiRes qw(usleep);
+use Env qw(BLOCK_INSTANCE);
+
+use constant DELAY => 50; # Delay in ms to let network-based players (spotify) reflect new data.
+use constant SPOTIFY_STR => 'spotify';
+
+my @metadata = ();
+my $player_arg = "";
+
+if ($BLOCK_INSTANCE) {
+    $player_arg = "--player='$BLOCK_INSTANCE'";
+} else {
+    my $pid = `ps -C cmus -o pid=`; 
+    if ($pid) {
+        $player_arg = "--player='cmus'";
+    } else {
+        $pid = `ps -C spotify -o pid=`; 
+        if ($pid) {
+            $player_arg = "--player='spotify'";
+        } 
+    } 
+}
+
+sub buttons {
+    my $method = shift;
+
+    if($method eq 'mpd') {
+        if ($ENV{'BLOCK_BUTTON'} == 1) {
+            system("mpc prev");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 2) {
+            system("mpc toggle");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 3) {
+            system("mpc next");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 4) {
+            system("mpc volume +10");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 5) {
+            system("mpc volume -10");
+        }
+    } elsif ($method eq 'cmus') {
+        if ($ENV{'BLOCK_BUTTON'} == 1) {
+            system("cmus-remote --prev");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 2) {
+            system("cmus-remote --pause");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 3) {
+            system("cmus-remote --next");
+        }
+    } elsif ($method eq 'playerctl') {
+        if ($ENV{'BLOCK_BUTTON'} == 1) {
+            system("playerctl $player_arg previous");
+            usleep(DELAY * 1000) if $BLOCK_INSTANCE eq SPOTIFY_STR;
+        } elsif ($ENV{'BLOCK_BUTTON'} == 2) {
+            system("playerctl $player_arg play-pause");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 3) {
+            system("playerctl $player_arg next");
+            usleep(DELAY * 1000) if $BLOCK_INSTANCE eq SPOTIFY_STR;
+        }
+    }
+}
+
+sub cmus {
+    my @cmus = split /^/, qx(cmus-remote -Q);
+    if ($? == 0) {
+        foreach my $line (@cmus) {
+            my @data = split /\s/, $line;
+            my $item = shift @data;
+            if ($item eq 'tag') {
+                my $key = shift @data;
+                my $value = join ' ', @data;
+                @metadata[0] = $value if $key eq 'artist';
+                @metadata[1] = $value if $key eq 'title';
+            } elsif ($item eq 'file') {
+                my @path = split /\//, $line;
+                my $song = pop @path;
+                # strip file extension
+                $song =~ s{\.[^.]+$}{}; 
+                @metadata[0] = $song;
+            }
+        }
+
+        if (@metadata) {
+            buttons('cmus');
+
+            # metadata found so we are done
+            print(join ' - ', @metadata);
+        } 
+    }
+}
+
+sub mpd {
+    my $data = qx(mpc current);
+    if (not $data eq '') {
+        buttons("mpd");
+        print($data);
+        exit 0;
+    }
+}
+
+sub playerctl {
+    buttons('playerctl');
+
+    my $artist = qx(playerctl $player_arg metadata artist);
+    chomp $artist;
+    # exit status will be nonzero when playerctl cannot find your player
+    exit(0) if $? || $artist eq '(null)';
+
+    push(@metadata, $artist) if $artist;
+
+    my $title = qx(playerctl $player_arg metadata title);
+    exit(0) if $? || $title eq '(null)';
+
+    push(@metadata, $title) if $title;
+
+    print(join(" - ", @metadata)) if @metadata;
+}
+
+if ($player_arg eq '' or $player_arg =~ /mpd/) {
+    mpd;
+}
+elsif ($player_arg =~ /cmus/) {
+    cmus;
+}
+else {
+    playerctl;
+}
+# print("\n");

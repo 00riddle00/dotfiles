@@ -49,7 +49,7 @@ $run dunst
 $run picom -b
 $run safeeyes
 $run nm-applet
-$run $term -name dropdown_math -e R -q
+$run $term -name dropdown_cmus -e cmus
 
 # =============================
 #  Appearance
@@ -127,6 +127,8 @@ for_window [instance="dropdown_*"]     move scratchpad
 for_window [instance="dropdown_*"]     sticky enable
 for_window [instance="dropdown_math"]  resize set 625 450
 for_window [instance="dropdown_math"]  border pixel 3
+for_window [instance="dropdown_cmus"]  resize set 625 450
+for_window [instance="dropdown_cmus"]  border pixel 3
 for_window [instance="dropdown_*"]     move position center
 
 for_window [title="GIMP Startup"]  move workspace $ws5
@@ -183,7 +185,8 @@ bindsym $mod+b $run gimp
 bindsym $mod+d $run i3-showdesktop $ws10 
 bindsym $alt+q fullscreen disable
 
-bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
+# bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
+bindsym $mod+u [instance="dropdown_cmus"] scratchpad show; [instance="dropdown_cmus"] move position center
 bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle
 bindsym $mod+Prior      gaps inner current plus 3
