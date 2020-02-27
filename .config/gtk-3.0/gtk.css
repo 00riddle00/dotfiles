@@ -1,4 +1,8 @@
 
+* {	
+    font: 12px Noto Sans;	
+}
+
 window#vim-main-window {
   background-color: #1793d1;
 }

@@ -2,7 +2,7 @@
 
 # Default Fonts
 use_xft yes
-xftfont Karat:bold:size=12
+xftfont Noto Sans:bold:size=12
 
 override_utf8_locale yes
 text_buffer_size 2048
@@ -48,4 +48,4 @@ gap_x 2250
 alignment top_left
 
 TEXT
-${GOTO 30}${font Karat:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Karat:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}
+${GOTO 30}${font Noto Sans:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Noto Sans:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}
