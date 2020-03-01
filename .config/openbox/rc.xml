@@ -44,7 +44,7 @@
   <theme>
     <name>Numix-Archblue</name>
     <titleLayout>NLIMC</titleLayout>
-    <cornerRadius>10</cornerRadius>
+    <cornerRadius>0</cornerRadius>
     <!--
        available characters are NDSLIMC, each can occur at most once.
        N: window icon
@@ -489,7 +489,7 @@
     <!--Activate "emacs" mode-->
     <keybind key="A-o">
       <action name="Execute">
-        <command>setxkbmap -option ctrl:nocaps</command>
+        <command>sh -c "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"</command>
       </action>
     </keybind>
     <!--Deactivate "emacs" mode-->
@@ -529,7 +529,8 @@
 	  -->
     <keybind key="W-q">
       <action name="Execute">
-        <command>sh -c "activate serv"</command>
+        <!--<command>sh -c "activate serv"</command>-->
+        <command>sh -c "activate emacs"</command>
       </action>
     </keybind>
     <keybind key="W-S-d">

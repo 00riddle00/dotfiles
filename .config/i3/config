@@ -164,7 +164,11 @@ bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.pn
 
 bindsym $mod+c $run activate spotify
 bindsym $mod+p $run activate pycharm
-bindsym $mod+q $run activate code
+
+bindsym $mod+q $run activate emacs
+bindsym $mod+Prior $run "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"
+bindsym $mod+Next $run "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"
+
 bindsym $mod+Shift+d $run activate qbittorrent
 bindsym $mod+m $run activate nomacs
 bindsym $mod+o $run "keepass $DROPBOX/sync/keepass/8gb.kdbx"
@@ -189,8 +193,8 @@ bindsym $alt+q fullscreen disable
 bindsym $mod+u [instance="dropdown_cmus"] scratchpad show; [instance="dropdown_cmus"] move position center
 bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle
-bindsym $mod+Prior      gaps inner current plus 3
-bindsym $mod+Next       gaps inner current minus 3
+# bindsym $mod+Prior      gaps inner current plus 3
+# bindsym $mod+Next       gaps inner current minus 3
 bindsym $mod+t          gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
 bindsym $mod+Shift+t    gaps inner current set 0; gaps outer current set 0; gaps top current set 0
 
