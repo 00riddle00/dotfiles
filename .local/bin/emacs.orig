@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+rm -f $HOME/.emacs.d
+ln -s $HOME/.emacs/orig/.emacs.d $HOME/.emacs.d
+# ln -s $HOME/.emacs_profiles/orig/.emacs.d $HOME/.emacs.d
