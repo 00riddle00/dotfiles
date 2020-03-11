@@ -105,13 +105,13 @@ nmap    <leader>p       :setlocal paste!<CR>
 nmap    <leader>v       :vs<cr>
 nmap    <leader>s       :sp<cr>
 nmap    <leader>d       :pwd<cr>
-nmap    <c-Left>        :vertical resize -5<CR>
-nmap    <c-Right>       :vertical resize +5<CR>
-nmap    <c-Up>          :resize +5<CR>
-nmap    <c-Down>        :resize -5<CR>
+nmap    <C-Left>        :vertical resize -5<CR>
+nmap    <C-Right>       :vertical resize +5<CR>
+nmap    <C-Up>          :resize +5<CR>
+nmap    <C-Down>        :resize -5<CR>
 nmap    <leader>r       :so $VIMRC<CR>
 nmap    <leader>h       :set hlsearch!<CR>
-nmap    <c-s>           :w!<CR>
+nmap    <C-s>           :w!<CR>
 nmap     ss             :wq<CR>
 nmap     qq             :q<CR>
 nmap     <leader>e      :e<CR>
@@ -120,15 +120,10 @@ nmap     <S-F5>         :cprevious<CR>
 nmap     <C-F5>         :cc<CR>
 
 " Windows navigation
-"nmap     <c-j>          <C-W>j
-"nmap     <c-k>          <C-W>k
-"nmap     <c-h>          <C-W>h
-"nmap     <c-l>          <C-W>l
-
-nmap     <c-Up>          <C-W>j
-nmap     <c-Down>          <C-W>k
-nmap     <c-Left>          <C-W>h
-nmap     <c-Right>          <C-W>l
+"nmap     <C-j>          <C-W>j
+"nmap     <C-k>          <C-W>k
+"nmap     <C-h>          <C-W>h
+"nmap     <C-l>          <C-W>l
 
 " Tab navigation
 nmap     tt             :tabnew<CR>
@@ -173,8 +168,8 @@ noremap      zl           zL
 noremap      zz           z-
 
 " Autocomplete
-inoremap     <c-k>           <c-p>
-inoremap     <c-j>           <c-n>
+inoremap     <C-k>           <C-p>
+inoremap     <C-j>           <C-n>
 
 " Quick search for python class and def statments.
 nmap    c/          /\<class
@@ -224,8 +219,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-noremap    <c-n>        :NERDTreeToggle<CR>
-noremap    <c-m>        :NERDTreeFocus<CR>
+noremap    <C-n>        :NERDTreeToggle<CR>
+noremap    <C-m>        :NERDTreeFocus<CR>
 
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"
@@ -346,7 +341,7 @@ let g:pyflakes_use_quickfix = 0
 let g:pymode_lint_cwindow = 0
 
 " Former zen coding, now renamed to emmet.
-" Key to expand: <c-y>,
+" Key to expand: <C-y>,
 Plugin 'mattn/emmet-vim'
 let g:user_zen_settings = {
 \  'indentation' : '    '
