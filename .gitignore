@@ -41,6 +41,8 @@ bin/cowsay/**/*.dat
 
 .config/ranger/plugins/__init__.py
 .config/ranger/plugins/__pycache__/
+.config/ranger/colorschemes/__init__.py
+.config/ranger/colorschemes/__pycache__/
 
 .config/sublime-text-3/*
 !.config/sublime-text-3/Packages/

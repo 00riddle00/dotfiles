@@ -436,3 +436,4 @@ alias dmenu_big='dmenu -fn "Ubuntu Mono:pixelsize=50"'
 alias getpos='xwininfo -id $(xdotool getactivewindow)'
 alias cmus.run='urxvt -name dropdown_cmus -e cmus &'
 
+alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
