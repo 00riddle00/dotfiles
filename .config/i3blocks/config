@@ -11,7 +11,7 @@ separator_block_width=20
 markup=pango
 
 [mediaplayer]
-# instance=cmus
+instance=spotify
 interval=20
 color=#f77b71
 label=<span color="#f77b71">  </span>
