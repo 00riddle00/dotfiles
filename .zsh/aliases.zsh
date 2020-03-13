@@ -437,3 +437,4 @@ alias getpos='xwininfo -id $(xdotool getactivewindow)'
 alias cmus.run='urxvt -name dropdown_cmus -e cmus &'
 
 alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
+alias redd='killall dunst && dunst &'

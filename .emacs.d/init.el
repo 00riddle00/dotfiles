@@ -31,6 +31,7 @@
   (setq apropos-sort-by-scores t)
   (set-face-attribute 'default nil :height 80)
   (global-set-key (kbd "C-z") 'evil-local-mode)
+  (global-display-line-numbers-mode)
   
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
