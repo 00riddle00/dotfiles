@@ -63,7 +63,7 @@ bin/cowsay/**/*.dat
 .emacs.d/*
 !.emacs.d/init.el
 
-.irssi/*
+.irssi/logs
 !.irssi/config
 
 .mutt/*

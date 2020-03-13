@@ -175,7 +175,8 @@ statusbar = {
       visible = "always";
 
       items = {
-        uberprompt = { priority = "-1"; };
+        prompt = { priority = "-1"; };
+        prompt_empty = { priority = "-1"; };
         input = { priority = "10"; };
       };
     };
@@ -206,9 +207,10 @@ settings = {
     nick = "riddle00";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { 
-      autolog = "yes";
-      autolog_path = "~/.irssi/logs/$tag/%Y-%m-%d/$0.log";
+  "fe-common/core" = {
+    autolog = "yes";
+    autolog_path = "~/.irssi/logs/$tag/%Y-%m-%d/$0.log";
+    theme = "h3rbz";
   };
 };
 logs = { };
