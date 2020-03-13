@@ -63,6 +63,9 @@ bin/cowsay/**/*.dat
 .emacs.d/*
 !.emacs.d/init.el
 
+.irssi/config.autosave
+.irssi/default.theme
+.irssi/irssi.pem
 .irssi/logs
 !.irssi/config
 
