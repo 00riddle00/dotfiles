@@ -18,12 +18,10 @@ export VIMCOLOR=miro8
 export DIRCOLORS=$MAIN_HOME/.dircolors
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/bin
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
-export LESSOPEN='|$DOTFILES_DIR/.lessfilter %s'
 export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
 export ZSH_DIR=$MAIN_HOME/.zsh
 # bat used as a colorizing pager for man
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export PYGMENTIZE_STYLE='monokai'
 
 # MAIN USER VARS
 export VIMRC=$MAIN_HOME/.vimrc
@@ -50,8 +48,6 @@ export BROWSER=chrome
 ## there has been no need so far
 
 # SYSTEMWIDE VARS
-export LSCOLORS=ExFxCxDxBxegedabagacad
-export LESS='-R'
 export EDITOR=vim
 export PAGER='bat'
 export LC_ALL='en_US.UTF-8'
