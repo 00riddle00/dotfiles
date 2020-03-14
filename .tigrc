@@ -1,0 +1,30 @@
+# Synopsis:
+# # set <variable> = <value>
+# # bind <keymap> <key> <action>
+# # color <area> <fgcolor> <bgcolor> [attributes]
+# # source <path>
+
+# ==================================
+# Keybindings
+# ==================================
+
+bind generic I !git commit
+bind generic <Ctrl-f> !git fetch --prune
+bind generic L !git log %(file)
+bind generic P !git pull --rebase origin %(branch)
+bind generic R !git revert %(commit)
+bind generic U !git add -A
+bind generic <Ctrl-r> !git reset --soft %(commit)
+bind generic + !git commit --amend
+bind generic > !git push %(remote) %(branch)
+bind generic <Ctrl-x> !git branch -D %(branch)
+bind generic <Ctrl-b> !git push %(remote) --delete %(branch)
+bind generic <Ctrl-j> !git checkout %(branch)
+bind refs    <Ctrl-h> !@git reset --hard %(remote)/%(branch)
+
+bind generic s view-status
+bind generic S !git status
+bind generic g move-first-line
+bind generic G move-last-line
+bind generic E edit
+

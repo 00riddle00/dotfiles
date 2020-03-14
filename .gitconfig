@@ -6,7 +6,7 @@
 [credential]
 	helper = cache --timeout=3600
 [merge]
-        tool = vimdiff
+    tool = vimdiff
 [diff]
 	tool = vimdiff
 [difftool]
