@@ -1,0 +1,26 @@
+# mappings
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
+
+# appearance
+set page-padding 3
+set statusbar-h-padding 3
+set statusbar-v-padding 3
+# set guioptions ''
+set selection-clipboard clipboard
+
+# colors
+set inputbar-bg             "#000000"
+set inputbar-fg             "#ffffff" 
+
+set statusbar-bg            "#002b36"    
+set statusbar-fg            "#1793d1"
+
+set default-bg              "#002b36"

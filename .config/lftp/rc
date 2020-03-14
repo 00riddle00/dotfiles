@@ -46,3 +46,10 @@ set pget:default-n 4
 set pget:save-status 3s
 set cmd:queue-parallel 4
 set mirror:parallel-transfer-count 4
+
+## This can be used for automatic saving of configuration
+set at-exit "set > ~/.config/lftp/settings"
+source ~/.config/lftp/settings
+
+## colour prompt
+set prompt "\[\033[36m\]\h\[\033[31m\]:ftp\[\033[32m\] [\[\033[32m\]\w\[\033[32m\]]: \[\033[0m\]"
