@@ -13,6 +13,7 @@ bc
 bind-tools
 binutils
 bison
+brave
 breeze
 broot
 bzip2
@@ -67,7 +68,6 @@ gimp
 git
 git-lfs
 glibc
-gmrun
 gnuplot
 gparted
 gperf
@@ -83,7 +83,6 @@ gvim
 gzip
 hardinfo
 hicolor-icon-theme
-htop
 hwloc
 i3blocks
 i3status
@@ -94,6 +93,7 @@ inotify-tools
 iproute2
 iputils
 irssi
+ispell
 jp2a
 jq
 kdenlive
@@ -112,6 +112,7 @@ linux-firmware
 logrotate
 lostfiles
 lshw
+lsof
 lvm2
 lxappearance
 lxc
@@ -121,7 +122,6 @@ make
 man-db
 man-pages
 mariadb
-mc
 mdp
 meld
 mlocate
@@ -130,7 +130,6 @@ moreutils
 mpc
 mpd
 mpv
-mupdf
 mutt
 ncmpcpp
 neofetch
@@ -142,8 +141,6 @@ networkmanager-openvpn
 newsboat
 nm-connection-editor
 nmap
-nnn
-nomacs
 noto-fonts
 noto-fonts-emoji
 ntfs-3g
@@ -174,13 +171,12 @@ projectm
 psmisc
 pulseaudio
 pulseaudio-alsa
-pygmentize
 python-jupyter_client
 python-lxml
 python-pip
+python-pywal
 python-xdg
 qalculate-gtk
-qbittorrent
 qt5-styleplugins
 qutebrowser
 r
@@ -192,13 +188,14 @@ rofi
 rofimoji
 rtorrent
 ruby-irb
-sc
 scrot
 sed
 shadow
 speedtest-cli
 steam
+strace
 sudo
+surf
 surfraw
 sxiv
 sysfsutils
@@ -239,7 +236,6 @@ unzip
 upower
 urxvt-perls
 util-linux
-vifm
 w3m
 which
 wmctrl
@@ -296,5 +292,6 @@ xorg-xwininfo
 xorg-xwud
 youtube-dl
 zathura
+zathura-pdf-mupdf
 zip
 zsh
