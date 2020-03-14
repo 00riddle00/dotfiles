@@ -17,6 +17,10 @@
 
 bin/cowsay/**/*.dat
 
+.calcurse/*
+!.calcurse/conf
+!.calcurse/keys
+
 .config/broot/launcher
 
 # left this just in case I decide to track this folder again,
