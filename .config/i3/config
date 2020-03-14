@@ -300,7 +300,8 @@ bindsym $mod+F1 $run "killall picom && picom -b"
 
 bindsym Insert             $run rofi -show
 bindsym $mod+Shift+Insert  $run dmenu_run
-bindsym $mod+Insert        $run rofi -show Open -modi Open:$SHELL_SCRIPTS_DIR/rofi/open.sh 
+bindsym $mod+Insert        $run dmenu-surfraw
+# bindsym $mod+Insert        $run rofi -show Open -modi Open:$SHELL_SCRIPTS_DIR/rofi/open.sh 
 bindsym $mod+End           $run rofi -show Power -modi Power:$SHELL_SCRIPTS_DIR/rofi/power.sh 
 bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$SHELL_SCRIPTS_DIR/rofi/kill.sh 
 

@@ -130,3 +130,7 @@ xscreensaver.passwd.thermometer.width:       6
 
 !datestamp format--see the strftime(3) manual page for details
 xscreensaver.dateFormat:    %Y, %b %d, %a, %R
+
+!sxiv image viewer
+Sxiv.foreground: #1167b1
+Sxiv.background: #222222

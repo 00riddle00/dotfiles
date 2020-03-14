@@ -1,0 +1,24 @@
+set autocalc
+set numeric
+set numeric_decimal=0
+set overlap
+set xlsx_readformulas
+set newline_action=l
+set ignorecase
+
+# Swapping these mappings makes more sense to me:
+# use gg/G to jump within a column
+# Unfortunately, there's no mappings for visual mode
+nnoremap "gg" "^"
+nnoremap "^" "gg"
+nnoremap "G" "#"
+nnoremap "#" "G"
+
+color "type=INPUT fg=WHITE bg=DEFAULT_COLOR"
+color "type=NORMAL fg=WHITE bg=WHITE"
+color "type=WELCOME fg=WHITE bg=DEFAULT_COLOR"
+color "type=HEADINGS fg=DEFAULT_COLOR bg=BLACK bold=0"
+color "type=CELL_SELECTION fg=WHITE bg=GREEN bold=1"
+color "type=MODE fg=WHITE bg=DEFAULT_COLOR"
+
+

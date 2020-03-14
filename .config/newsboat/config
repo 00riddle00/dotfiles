@@ -58,6 +58,7 @@ highlight article "\\[embedded flash: [0-9][0-9]*\\]" color66 default bold
 
 # External programs.
 browser google-chrome-stable
+external-url-viewer "urlview"
 player mpv
 
 # macros
