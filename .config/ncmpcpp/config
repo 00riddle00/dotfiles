@@ -1,0 +1,45 @@
+
+# mpd stuff
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "/home/derek/Music"
+mpd_connection_timeout = "5"
+
+# visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30" 
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_look = "+|"
+
+# colors
+colors_enabled = "yes"
+header_window_color = "blue"
+state_line_color = "green"
+state_flags_color = "blue"
+main_window_color = "blue"
+progressbar_color = "blue"
+statusbar_color = "default"
+statusbar_time_color = cyan:b
+alternative_ui_separator_color = "green"
+window_border_color = "magenta"
+active_window_border = "blue"
+empty_tag_color = magenta
+current_item_inactive_column_prefix = "$(magenta)$r"
+current_item_inactive_column_suffix = "$/r$(end)""
+current_item_prefix = "$(cyan)$r"
+current_item_suffix = "$/r$(end)" 
+
+# more stuff
+display_volume_level = no
+jump_to_now_playing_song_at_start = "yes"
+clock_display_seconds = "yes"
+ignore_leading_the = "yes"
+mouse_support = "no"
+empty_tag_marker = "-"
+enable_window_title = "yes"
+startup_screen = media_library
+progressbar_look = ->
+use_console_editor = yes
+external_editor = vim

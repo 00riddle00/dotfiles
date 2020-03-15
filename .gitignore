@@ -45,6 +45,13 @@ bin/cowsay/**/*.dat
 
 .config/lftp/settings
 
+.config/mpd/*
+!.config/mpd/mpd.conf
+
+.config/ncmpcpp/*
+!.config/ncmpcpp/bindings
+!.config/ncmpcpp/config
+
 .config/ranger/plugins/__init__.py
 .config/ranger/plugins/__pycache__/
 .config/ranger/colorschemes/__init__.py
