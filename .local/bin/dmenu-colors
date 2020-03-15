@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Must have xclip installed to even show menu.
+xclip -h 2>/dev/null || exit 1
+
+chosen=$(cat ~/.local/bin/share/colors | dmenu -i -l 20 | cut -d ';' -f2 |  sed "s/ *//")
+
+[ "$chosen" != "" ] || exit
+
+echo "$chosen" | tr -d '\n' | xclip -selection clipboard
+notify-send "$chosen copied to clipboard." &

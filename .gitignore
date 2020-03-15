@@ -66,6 +66,8 @@ bin/cowsay/**/*.dat
 .config/vifm/vifm-help.txt
 .config/vifm/vifminfo
 
+.config/vis/vis.log
+
 .emacs.d/*
 !.emacs.d/init.el
 

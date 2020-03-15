@@ -118,6 +118,7 @@ nmap     <leader>e      :e<CR>
 nmap     <F5>           :cnext<CR>
 nmap     <S-F5>         :cprevious<CR>
 nmap     <C-F5>         :cc<CR>
+nnoremap <leader>u      :!urlview %<CR>
 
 " Windows navigation
 "nmap     <C-j>          <C-W>j

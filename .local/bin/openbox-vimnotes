@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-urxvt -geometry 135x61 -name notes -hold -e tmux new vim -c "e $DROPBOX/sync/gtd/coding/koding.md | :cd %:p:h | :cd .."
+urxvt -geometry 135x61 -name notes -hold -e tmux new vim -c "e $DROPBOX/sync/gtd/coding/main.md | :cd %:p:h | :cd .."
