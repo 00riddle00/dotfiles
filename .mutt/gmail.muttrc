@@ -1,0 +1,34 @@
+# =======================
+#  gmail specific options
+# =======================
+
+source "gpg -d ~/.mutt/gmail_passwd.gpg |"
+
+set imap_user = "tomasgiedraitis@gmail.com"
+# set imap_pass = "" // from gpg
+set imap_keepalive = 900
+
+set smtp_url = "smtps://tomasgiedraitis@smtp.gmail.com:465/"
+# set smtp_pass = "" // from gpg
+set from= "tomasgiedraitis@gmail.com"
+
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "+INBOX"
+set record = "+[Gmail].Sent Mail"
+set trash = "+[Gmail]/Trash"
+set postponed = "+[Gmail]/Drafts"
+
+# boxes
+named-mailboxes "   Inbox" =INBOX
+named-mailboxes "―――――――――― ♠ ―――――――――" =dummy1
+named-mailboxes "   Drafts" =[Gmail].Drafts
+named-mailboxes "   Sent Mail" ="[Gmail].Sent Mail"
+named-mailboxes "   All Mail" ="[Gmail].All Mail"
+named-mailboxes "   Spam" =[Gmail].Spam
+named-mailboxes "   Trash" =[Gmail].Trash
+named-mailboxes "   Starred" =[Gmail].Starred
+named-mailboxes "―――――――――― ♠ ―――――――――" =dummy2
+named-mailboxes " •  code" =code
+named-mailboxes " •  free" =free
+named-mailboxes " •  KET" =KET
+

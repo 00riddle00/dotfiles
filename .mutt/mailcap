@@ -1,0 +1,11 @@
+text/html; run-browser %s &>/dev/null; nametemplate=%s.html; test=test -n "$DISPLAY"; needsterminal;
+image/*; sxiv %s &>/dev/null
+video/*; mpv %s
+audio/*; mpv %s
+text/*; vim %s ;
+application/pdf; zathura %s
+application/odt; libreoffice %s; copiousoutput
+application/ods; libreoffice %s; copiousoutput
+application/msword; libreoffice %s; copiousoutput
+application/vnd.oasis.opendocument.text; libreoffice %s; copiousoutput
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; libreoffice %s &>/dev/null; copiousoutput

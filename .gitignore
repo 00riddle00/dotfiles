@@ -87,6 +87,7 @@ bin/cowsay/**/*.dat
 .mutt/*
 !.mutt/*muttrc
 !.mutt/*sig
+!.mutt/mailcap
 
 .tmux/plugins/*
 !.tmux/plugins/tpm
