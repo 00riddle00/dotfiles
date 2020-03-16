@@ -68,6 +68,7 @@ set alias_format        = "%4n %t %-20a  %r"
 
 # composing mail
 set realname            = "Tomas Giedraitis"                     # who am i?
+# set use_from                                                
 set envelope_from                                                # which from?
 set sig_dashes                                                   # dashes before my sig... sweet
 set edit_headers                                                 # show headers when composing
@@ -91,15 +92,12 @@ ignore *                                                         # ignore all he
 unignore from: to: cc: date: subject:                            # show only these
 hdr_order from: to: cc: date: subject:                           # and in this order
 
-# boxes
-mailboxes +INBOX +[Gmail]/Spam +KET +sp +Starred
-
 # always sourced
-source $alias_file                                               # required for functionality
+# source $alias_file                                               # required for functionality
 source ~/.mutt/colors_LukeSmithxyz.muttrc                                  # source colors file
 source sidebar.muttrc                                            # source sidebar config
-#source ~/.mutt/jwr.muttrc                                       # source as default
-#source ~/.mutt/gpg.rc                                           # use GPG
+# source ~/.mutt/jwr.muttrc                                       # source as default
+# source ~/.mutt/gpg.rc                                           # use GPG
 
 # account specific sources
 #folder-hook Gmail/* source ~/.mutt/gmail.muttrc 
@@ -128,8 +126,10 @@ bind pager <up>         previous-line
 bind pager <down>       next-line
 bind pager k            previous-line
 bind pager j            next-line
+bind pager g            noop
 bind pager gg           top
 bind pager G            bottom
+bind index g            noop
 bind index gg           first-entry
 bind index D            purge-message
 bind index G            last-entry
@@ -142,6 +142,17 @@ bind index w            set-flag
 bind index,pager R      group-reply
 bind compose p          pgp-menu
 bind attach <return>    view-mailcap
+bind editor <space> noop
+
+### macros
+macro index,pager a "<save-message>=[Gmail].All Mail<enter><enter>" "archive"
+macro index,pager d "<save-message>=[Gmail].Trash<enter><enter>" "delete"
+macro index gi "<change-folder>=INBOX<enter>" "Go to Inbox"
+macro index gd "<change-folder>=[Gmail].Drafts<enter>" "Go to Drafts"
+macro index gs "<change-folder>=[Gmail].Sent Mail<enter>" "Go to Sent Mail"
+macro index ga "<change-folder>=[Gmail].All Mail<enter>" "Go to All Mail"
+macro index gt "<change-folder>=[Gmail].Trash<enter>" "Go to Trash"
+macro index,pager <F8> ":source ~/.mutt/muttrc\n" "Reload the muttrc"
 
 # ============
 #  my settings
@@ -156,7 +167,10 @@ set imap_user = "tomasgiedraitis@gmail.com"
 # set imap_pass = "" // from gpg
 
 set folder = "imaps://imap.gmail.com/"
-set spoolfile = "+INBOX"
+set spoolfile = "=INBOX"
+# set spoolfile = "+INBOX"
+# set record = ""
+# unset record
 
 set imap_keepalive = 900
 
@@ -164,19 +178,20 @@ set smtp_url = "smtps://tomasgiedraitis@smtp.gmail.com:465/"
 # set smtp_pass = "" // from gpg
 set from= "tomasgiedraitis@gmail.com"
 
-set trash = "+[Gmail]/Trash"
-set postponed = "+[Gmail]/Drafts"
+set trash = "=[Gmail]/Trash"
+set postponed = "=[Gmail]/Drafts"
+# set trash = "+[Gmail]/Trash"
+# set postponed = "+[Gmail]/Drafts"
 
-### bindings
-bind editor <space> noop
-
-### macros
-macro index,pager a "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
-macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
-macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
-macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
-macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
-macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro index gt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
-macro index,pager <F8> ":source ~/.mutt/muttrc\n" "Reload the muttrc"
+# boxes
+named-mailboxes "   Inbox" =INBOX
+named-mailboxes "   Drafts" =[Gmail].Drafts
+named-mailboxes "   Sent Mail" ="[Gmail].Sent Mail"
+named-mailboxes "   All Mail" ="[Gmail].All Mail"
+named-mailboxes "   Spam" =[Gmail].Spam
+named-mailboxes "   Trash" =[Gmail].Trash
+named-mailboxes "   Starred" =[Gmail].Starred
+named-mailboxes " •  code" =code
+named-mailboxes " •  free" =free
+named-mailboxes " •  KET" =KET
 

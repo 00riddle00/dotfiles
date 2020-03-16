@@ -101,3 +101,31 @@ print = (cat, "Logging to ", (cfg.logfile))
 log.open_file = "log", (cfg.logfile)
 log.add_output = "info", "log"
 # log.add_output = "tracker_debug", "log"
+
+# Colors
+ui.color.alarm.set=""
+ui.color.focus.set="reverse"
+ui.color.footer.set="yellow on black"
+ui.color.incomplete.set="yellow"
+ui.color.info.set="cyan"
+ui.color.label.set="blue"
+ui.color.leeching.set="bold bright yellow"
+ui.color.queued.set="magenta"
+ui.color.seeding.set="bold bright green"
+ui.color.title.set="green on black"
+
+# 256 color tweak
+ui.color.complete.set=41
+ui.color.stopped.set=33
+ui.color.even.set="on 234"
+ui.color.odd.set="on 232"
+ui.color.progress0.set=196
+ui.color.progress20.set=202
+ui.color.progress40.set=213
+ui.color.progress60.set=214
+ui.color.progress80.set=226
+ui.color.progress100.set=41
+ui.color.progress120.set="bold bright green"
+
+# ASCII glyphs
+ui.style.ratio.set=0

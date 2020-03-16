@@ -67,7 +67,7 @@ alias npm.ls.g='npm list -g --depth=0'
 # launch console programs
 alias mm='neomutt'
 alias r='ranger'
-alias rt='rtorrent'
+alias tor='rtorrent'
 # console programs with options
 alias mpv.image='mpv --no-config --pause --vo=tct'
 alias mpv.video='mpv --no-config --vo=tct'
@@ -416,7 +416,8 @@ alias letr='chmod -R 755'
 # temp
 # =============
 # entries appear here after appending output to this file
-alias iii='ip route get 8.8.8.8'
+## this is useful to get current active interface name
+alias iii='ip route get 8.8.8.8' 
 alias xe='sudo journalctl -xe'
 alias i3out='i3-msg exit'
 alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
@@ -442,7 +443,6 @@ alias ir='irssi'
 alias rss='newsboat'
 alias pi='cd $HOME/pics'
 alias sc='sc-im'
-alias tor='rtorrent'
 alias cal='calcurse'
 alias copy='xclip'
 alias tg='vim ~/.tigrc'
