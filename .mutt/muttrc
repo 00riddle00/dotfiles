@@ -17,9 +17,11 @@ set imap_peek           = no                                     # Gmail mark as
 set sleep_time          = 0                                      # instantaneous mailbox change
 
 # main options
-set ssl_starttls=yes
 set ssl_force_tls=yes
+set ssl_starttls=yes
 set mbox_type           = Maildir                                # mailbox type
+# set folder              = ~/.mail                                # mailbox location
+# set spoolfile           = "+INBOX"                               # default inbox
 set timeout             = 3                                      # idle time before scanning
 set mail_check          = 0                                      # minimum time between scans
 set sort_alias          = alias                                  # sort alias file by alias
@@ -67,7 +69,7 @@ set alias_format        = "%4n %t %-20a  %r"
 
 # composing mail
 set realname            = "Tomas Giedraitis"                     # who am i?
-# set use_from                                                
+set use_from                                                
 set envelope_from                                                # which from?
 set sig_dashes                                                   # dashes before my sig... sweet
 set edit_headers                                                 # show headers when composing
@@ -92,6 +94,7 @@ unignore from: to: cc: date: subject:                            # show only the
 hdr_order from: to: cc: date: subject:                           # and in this order
 
 # always sourced
+source $alias_file                                               # required for functionality
 source ~/.mutt/colors_LukeSmithxyz.muttrc                        # source colors file
 source sidebar.muttrc                                            # source sidebar config
 source ~/.mutt/gmail.muttrc                                      # source as default

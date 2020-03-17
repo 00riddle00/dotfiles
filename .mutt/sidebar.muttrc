@@ -80,7 +80,7 @@ bind index,pager B sidebar-toggle-visible
 # Note: This is a general NeoMutt option which colors all selected items.
 color indicator cyan black
 # Color of the highlighted, but not open, mailbox.
-color sidebar_highlight black color8
+color sidebar_highlight green black
 # Color of the divider separating the Sidebar from NeoMutt panels
 color sidebar_divider color8 black
 # Color to give mailboxes containing flagged mail
