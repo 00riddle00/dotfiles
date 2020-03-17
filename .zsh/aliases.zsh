@@ -122,6 +122,8 @@ alias re='sudo reboot'
 alias rmr='sudo rm -r'  
 alias s='sudo'
 alias tar='tar -xvf'
+## A trailing space in VALUE causes the next word to be checked for alias substitution when the alias is expanded.
+alias watch='watch '
 alias z='zsh'
 
 # vagrant
@@ -330,7 +332,8 @@ alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config fi
 # --------------------------------------------------------------------------------------------------------------------
 
 ## process management
-alias au='ps aux | grep -i'
+### exclude all lines that matches with grep 
+alias au='ps aux | grep -v grep | grep -i'
 alias kil='sudo kill -9'
 
 ## python
@@ -447,3 +450,9 @@ alias cal='calcurse'
 alias copy='xclip'
 alias tg='vim ~/.tigrc'
 alias music='ncmpcpp'
+
+alias ce='crontab -e'
+alias cl='crontab -l'
+alias ex='chmod +x'
+alias dun='vim /home/riddle/.dotfiles/.config/dunst/dunstrc'
+

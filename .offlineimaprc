@@ -1,0 +1,20 @@
+[general]
+ui = ttyui
+accounts = Gmail
+
+[Account Gmail]
+localrepository = Gmail-Local
+remoterepository = Gmail-Remote
+
+[Repository Gmail-Local]
+type = Maildir
+localfolders = ~/.mail/Gmail
+
+[Repository Gmail-Remote]
+type = Gmail
+remoteuser = tomasgiedraitis@gmail.com
+remotepass = 
+maxconnections = 3
+ssl = yes
+realdelete = no
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt

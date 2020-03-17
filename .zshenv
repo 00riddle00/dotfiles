@@ -3,7 +3,7 @@
 # ============================= 
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin/"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron"
 
 # point Zsh at the right dotfiles
 ZDOTDIR="${ZDOTDIR:-$HOME/.zsh}"

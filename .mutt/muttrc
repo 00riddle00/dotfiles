@@ -20,8 +20,8 @@ set sleep_time          = 0                                      # instantaneous
 set ssl_force_tls=yes
 set ssl_starttls=yes
 set mbox_type           = Maildir                                # mailbox type
-# set folder              = ~/.mail                                # mailbox location
-# set spoolfile           = "+INBOX"                               # default inbox
+set folder              = ~/.mail                                # mailbox location
+set spoolfile           = "+INBOX"                               # default inbox
 set timeout             = 3                                      # idle time before scanning
 set mail_check          = 0                                      # minimum time between scans
 set sort_alias          = alias                                  # sort alias file by alias
@@ -60,7 +60,7 @@ auto_view text/calendar                                          # view ical fil
 alternative_order text/plain text/html text/*
 
 # formats
-set date_format         = "%d/%m/%y at %I:%M%P"
+set date_format         = "[%y] %m-%d at %H:%M"
 set index_format        = "%3C %?X?A& ? %S   %D  •  %-25.25L %s %> %c"
 set pager_format        = "Reading message %C of %m %> %lL [%P]" # pager statusbar
 set folder_format       = "%2C %t %N %8s %d %f"                  # mailbox list view
@@ -139,7 +139,13 @@ bind index w            set-flag
 bind index,pager R      group-reply
 bind compose p          pgp-menu
 bind attach <return>    view-mailcap
-bind editor <space> noop
+bind editor <space>     noop
+bind index,pager \Cu    half-up
+bind index,pager \Cd    half-down
+bind generic z          noop
+bind generic z<return>  current-top
+bind generic z.         current-middle
+bind generic zz         current-bottom
 
 # macros
 ## general

@@ -137,3 +137,6 @@
 
     timeout = 0
 
+#[play_sound]
+#summary = "beep"
+#script = ~/.local/bin/e51-beep

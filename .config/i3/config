@@ -128,13 +128,26 @@ for_window [instance="dropdown_*"]     move scratchpad
 for_window [instance="dropdown_*"]     sticky enable
 for_window [instance="dropdown_math"]  resize set 625 450
 for_window [instance="dropdown_math"]  border pixel 3
-for_window [instance="dropdown_aux"]  resize set 625 450
-for_window [instance="dropdown_aux"]  border pixel 3
+for_window [instance="dropdown_aux"]   resize set 625 450
+for_window [instance="dropdown_aux"]   border pixel 3
 for_window [instance="dropdown_*"]     move position center
+
+for_window [class="Pavucontrol"]   floating enable
+for_window [class="Pavucontrol"]   sticky enable
+for_window [class="Pavucontrol"]   resize set 625 450
+for_window [class="Pavucontrol"]   border pixel 3
+for_window [class="Pavucontrol"]   move position center
+
+for_window [class="qutebrowser"]   floating enable
+for_window [class="qutebrowser"]   sticky enable
+for_window [class="qutebrowser"]   resize set 1000 800
+for_window [class="qutebrowser"]   border pixel 3
+for_window [class="qutebrowser"]   move position center
 
 for_window [title="GIMP Startup"]  move workspace $ws5
 for_window [class="Gimp"]          move workspace $ws5
 for_window [class="Spotify"]       move workspace $ws8
+for_window [class="kdenlive"]      move workspace $ws9
 
 for_window [instance="calendar"] floating enable
 for_window [instance="calendar"] resize set 160 140
@@ -181,6 +194,8 @@ bindsym $mod+g $run activate smartgit
 bindsym $mod+semicolon $run activate libreoffice
 # bindsym $mod+t $run tint2
 # bindsym $mod+Shift+t $run killall tint2 
+bindsym $mod+n workspace $ws2; $run chrome
+bindsym $mod+t $run qutebrowser "https://translate.google.com/#view=home&op=translate&sl=en&tl=lt"
 
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
@@ -197,8 +212,8 @@ bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle
 # bindsym $mod+Prior      gaps inner current plus 3
 # bindsym $mod+Next       gaps inner current minus 3
-bindsym $mod+t          gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
-bindsym $mod+Shift+t    gaps inner current set 0; gaps outer current set 0; gaps top current set 0
+# bindsym $mod+t          gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
+# bindsym $mod+Shift+t    gaps inner current set 0; gaps outer current set 0; gaps top current set 0
 
 # distraction free mode
 bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer current set 0; gaps top current set 0

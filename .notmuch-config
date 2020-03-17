@@ -1,0 +1,16 @@
+[database]
+path=/home/riddle/.mail
+
+[user]
+name=Tomas Giedraitis
+primary_email=tomasgiedraitis@gmail.com
+
+[new]
+tags=new;
+ignore=
+
+[search]
+exclude_tags=deleted;spam;
+
+[maildir]
+synchronize_flags=true
