@@ -9,7 +9,6 @@ set header_cache        = ~/.mutt/cache/headers                  # where to stor
 set message_cachedir    = ~/.mutt/cache/bodies                   # where to store bodies
 set certificate_file    = ~/.mutt/certificates                   # where to store certs
 set mailcap_path        = ~/.mutt/mailcap                        # entrys for filetypes
-set signature           = ~/.mutt/tg.sig                         # my signature file
 set tmpdir              = ~/.mutt/temp                           # where to keep temp files
 set editor              = `echo \$EDITOR`
 set ispell              = "/usr/bin/aspell -e -c"                # use aspell as ispell
@@ -20,8 +19,6 @@ set sleep_time          = 0                                      # instantaneous
 set ssl_force_tls=yes
 set ssl_starttls=yes
 set mbox_type           = Maildir                                # mailbox type
-set folder              = ~/.mail                                # mailbox location
-set spoolfile           = "+INBOX"                               # default inbox
 set timeout             = 3                                      # idle time before scanning
 set mail_check          = 0                                      # minimum time between scans
 set sort_alias          = alias                                  # sort alias file by alias
@@ -99,6 +96,10 @@ source ~/.mutt/colors_LukeSmithxyz.muttrc                        # source colors
 source sidebar.muttrc                                            # source sidebar config
 source ~/.mutt/gmail.muttrc                                      # source as default
 
+# account specific sources
+folder-hook "~/.mail/Gmail" 'source ~/.mutt/gmail.muttrc'
+folder-hook "~/.mail/Posteo" 'source ~/.mutt/posteo.muttrc'
+
 # Mailing lists
 lists arch-announce@archlinux.org                                # Arch announcements
 subscribe arch-announce@archlinux.org
@@ -149,6 +150,8 @@ bind generic zz         current-bottom
 
 # macros
 ## general
+macro index,pager gm '<sync-mailbox><enter-command>source ~/.mutt/gmail.muttrc<enter><change-folder>!<enter>'
+macro index,pager gp '<sync-mailbox><enter-command>source ~/.mutt/posteo.muttrc<enter><change-folder>!<enter>'
 macro index,pager <F8> ":source ~/.mutt/muttrc\n" "Reload the muttrc"
 ## gmail
 macro index,pager a "<save-message>=[Gmail].All Mail<enter><enter>" "archive"

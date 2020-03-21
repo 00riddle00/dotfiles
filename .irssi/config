@@ -12,7 +12,8 @@ servers = (
 );
 
 channels = (
-  { name = "#haskell"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#haskell"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#distrotube"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {

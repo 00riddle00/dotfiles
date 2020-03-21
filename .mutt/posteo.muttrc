@@ -1,0 +1,20 @@
+# ========================
+#  Posteo specific options
+# ========================
+
+set from         = "tomasgiedraitis@posteo.net"
+set signature    = "~/.mutt/tg_posteo.sig"
+set sendmail     = "/usr/bin/msmtp -a posteo"
+set folder       = "~/.mail/Posteo"
+set spoolfile   = "+INBOX"
+set record       = "+Sent"
+set postponed    = "+Drafts"
+set trash        = "+Trash"
+
+unmailboxes *
+named-mailboxes "   Inbox" =INBOX
+named-mailboxes "―――――――――― ♠ ―――――――――" =code.@
+named-mailboxes "   Drafts" =Drafts
+named-mailboxes "   Sent Mail" =Sent
+named-mailboxes "   All Mail" =Archive
+named-mailboxes "   Trash" =Trash

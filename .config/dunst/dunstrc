@@ -1,3 +1,5 @@
+# vim: ft=cfg
+
 [global]
     ### Display ###
 
@@ -137,6 +139,14 @@
 
     timeout = 0
 
-#[play_sound]
-#summary = "beep"
-#script = ~/.local/bin/e51-beep
+[sound_beep]
+summary = "beep"
+script = ~/.local/bin/play_sound/beep
+
+[sound_email]
+summary = "email"
+script = ~/.local/bin/play_sound/email-synced
+
+[sound_update]
+summary = "update"
+script = ~/.local/bin/play_sound/arch-updated

@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+case $BLOCK_BUTTON in
+    1|2|3) vpn_info=$(curl -s ipinfo.io | jq -r '.ip, .country' | tr '\n' ' '); pgrep -x dunst >/dev/null && notify-send "$vpn_info" > /dev/null 2>&1
+esac
+
+echo "vpn"
+

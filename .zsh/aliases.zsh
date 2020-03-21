@@ -81,7 +81,7 @@ alias gg='google-chrome-stable'
 alias li='libreoffice'
 alias libre='libreoffice'
 alias mi='nomacs'
-alias play='vlc'
+alias play='mpv'
 alias sub='/usr/bin/subl3'
 alias t='thunar ./'
 alias tint='tint2 & disown'
@@ -102,6 +102,7 @@ alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
 alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
 alias rms.say='$SHELL_SCRIPTS_DIR/cowsay/rms_say.sh'
 alias rms.say.gnu='$SHELL_SCRIPTS_DIR/cowsay/rms_say_gnu.sh'
+alias gnu.say='cowsay -f "$SHELL_SCRIPTS_DIR/cowsay/cows/gnu.cow"'
 
 # ssh
 alias sa='ssh-add'
@@ -192,7 +193,8 @@ alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 alias ya='yay'
 alias ya.install='yay -S'
 alias ya.find='yay -Si'
-alias yaup='yay -Syu --noconfirm'
+#alias yaup='yay -Syu --noconfirm'
+alias yaup='arch-update'
 
 ## c development
 alias gdb.super='gdb --batch --ex run --ex bt --ex q --args'
@@ -261,7 +263,7 @@ alias zdot='cd $ZSH_DIR'
 
 ## network
 alias pp='ping -c 3 www.google.com'
-alias whatip='curl http://icanhazip.com'
+alias whatip='curl icanhazip.com'
 alias wp='watch "ping -c 1 www.google.com"'
 
 ## open files to edit with vim
@@ -453,6 +455,10 @@ alias music='ncmpcpp'
 
 alias ce='crontab -e'
 alias cl='crontab -l'
-alias ex='chmod +x'
+alias exe='chmod +x'
 alias dun='vim /home/riddle/.dotfiles/.config/dunst/dunstrc'
-
+alias scratch.cmus="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
+alias timely='termdown | lolcat'
+alias irc='irssi'
+alias espeak='espeak -ven-uk'
+alias count='wc -l'

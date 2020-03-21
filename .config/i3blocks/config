@@ -84,6 +84,11 @@ interval=once
 format=json
 markup=pango
 
+[vpn]
+interval=once
+color=#1793d1
+label=<span color="#1793d1">爵 </span>
+
 [arch-update]
 interval=60
 color=#1793d1

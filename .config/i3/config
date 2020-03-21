@@ -178,7 +178,7 @@ bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.pn
 # =============================
 
 bindsym $mod+c $run activate spotify
-bindsym $mod+p $run activate pycharm
+bindsym $mod+p $run dmenu-pastes
 
 bindsym $mod+q $run activate emacs
 bindsym $mod+Prior $run "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"

@@ -1,17 +1,18 @@
 # =======================
-#  gmail specific options
+#  Gmail specific options
 # =======================
 
 set from         = "tomasgiedraitis@gmail.com"
+set signature    = "~/.mutt/tg_gmail.sig"
 set sendmail     = "/usr/bin/msmtp -a gmail"
-set folder       = "$HOME/.mail/Gmail"
+set folder       = "~/.mail/Gmail"
 set spoolfile    = "+INBOX"
-set postponed    = "+[Gmail].Drafts"
 set record       = "+[Gmail].Sent Mail"
-set mbox         = "+[Gmail].All Mail"
+set postponed    = "+[Gmail].Drafts"
 set trash        = "+[Gmail].Trash"
 
 # boxes
+unmailboxes *
 named-mailboxes "   Inbox" =INBOX
 named-mailboxes "―――――――――― ♠ ―――――――――" =code.@
 named-mailboxes "   Drafts" =[Gmail].Drafts

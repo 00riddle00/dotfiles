@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+yay -Syu --noconfirm &&
+notify-send "update" "Arch updated"
+

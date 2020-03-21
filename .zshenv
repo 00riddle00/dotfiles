@@ -3,7 +3,8 @@
 # ============================= 
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu"
+
 
 # point Zsh at the right dotfiles
 ZDOTDIR="${ZDOTDIR:-$HOME/.zsh}"
@@ -17,6 +18,7 @@ export DOTFILES_DIR=$MAIN_HOME/.dotfiles
 export VIMCOLOR=miro8
 export DIRCOLORS=$MAIN_HOME/.dircolors
 export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/bin
+export SHARE=$HOME/.local/bin/share
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
 export ZSH_DIR=$MAIN_HOME/.zsh

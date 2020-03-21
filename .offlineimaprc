@@ -1,6 +1,6 @@
 [general]
 ui = ttyui
-accounts = Gmail
+accounts = Gmail, Posteo
 
 [Account Gmail]
 localrepository = Gmail-Local
@@ -15,6 +15,23 @@ type = Gmail
 remoteuser = tomasgiedraitis@gmail.com
 remotepass = 
 maxconnections = 3
+ssl = yes
+realdelete = no
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+[Account Posteo]
+localrepository = Posteo-Local
+remoterepository = Posteo-Remote
+
+[Repository Posteo-Local]
+type = Maildir
+localfolders = ~/.mail/Posteo
+
+[Repository Posteo-Remote]
+type = IMAP
+remotehost = posteo.de
+remoteuser = tomasgiedraitis@posteo.net
+remotepass = 
 ssl = yes
 realdelete = no
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
