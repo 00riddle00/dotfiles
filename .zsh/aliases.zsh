@@ -440,7 +440,7 @@ alias kx='killall xscreensaver && xscreensaver -no-splash &'
 alias nn='neofetch'
 alias dmenu_big='dmenu -fn "Ubuntu Mono:pixelsize=50"'
 alias getpos='xwininfo -id $(xdotool getactivewindow)'
-alias cmus.run='urxvt -name dropdown_cmus -e cmus &'
+alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 
 alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
 alias redd='killall dunst && dunst &'
