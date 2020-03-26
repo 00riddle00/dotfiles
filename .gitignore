@@ -17,9 +17,9 @@
 
 bin/cowsay/**/*.dat
 
-.calcurse/*
-!.calcurse/conf
-!.calcurse/keys
+.config/calcurse/*
+!.config/calcurse/conf
+!.config/calcurse/keys
 
 .config/broot/launcher
 
@@ -84,10 +84,10 @@ bin/cowsay/**/*.dat
 .irssi/logs
 !.irssi/config
 
-.mutt/*
-!.mutt/*muttrc
-!.mutt/*sig
-!.mutt/mailcap
+.config/mutt/*
+!.config/mutt/*muttrc
+!.config/mutt/*sig
+!.config/mutt/mailcap
 
 .tmux/plugins/*
 !.tmux/plugins/tpm
@@ -95,7 +95,7 @@ bin/cowsay/**/*.dat
 .vim/*
 !.vim/colors/
 
-.zsh/.zcompdump
-.zsh/aliases.local.zsh
-.zsh/functions.local.zsh
-.zsh/histfile
+.config/zsh/.zcompdump
+.config/zsh/aliases.local.zsh
+.config/zsh/functions.local.zsh
+.config/zsh/histfile
