@@ -47,6 +47,12 @@ interval=10
 color=#ffb64c
 label=<span color="#ffb86c"> </span>
 
+[gpu-load]
+interval=10
+color=#b967c7
+label=<span color="#b967c7">﬙ </span>
+#VERBOSE=1
+
 [memory]
 interval=2
 color=#f77b71

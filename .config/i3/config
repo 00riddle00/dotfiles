@@ -253,7 +253,6 @@ bindsym $mod+Shift+y $run i3-resize left
 
 set $ws1 " 1:  "
 set $ws2 " 2:  "
-# set $ws3 " 3:  "  
 set $ws3 " 3:  "  
 set $ws4 " 4:  "
 set $ws5 " 5:  "
@@ -266,7 +265,8 @@ set $ws10 " 10:  "
 # moved this line after assigning workspaces so as 
 # not to break ws1 icon
 # $run i3-msg 'workspace $ws1; $run $term -name t2'
-$run i3-vimnotes
+$run i3-msg 'workspace $ws1; $run i3-vimnotes' 
+#$run i3-vimnotes
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -304,7 +304,7 @@ bindsym $alt+F3 $run i3-vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox
-bindsym F5 $run subl3
+bindsym F6 $run subl3
 bindsym F7 $run activate thunderbird
 bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
