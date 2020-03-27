@@ -45,8 +45,15 @@ bin/cowsay/**/*.dat
 
 .config/lftp/settings
 
+.config/lynx/bookmarks.html
+
 .config/mpd/*
 !.config/mpd/mpd.conf
+
+.config/mutt/*
+!.config/mutt/*muttrc
+!.config/mutt/*sig
+!.config/mutt/mailcap
 
 .config/ncmpcpp/*
 !.config/ncmpcpp/bindings
@@ -78,6 +85,11 @@ bin/cowsay/**/*.dat
 
 .config/vis/vis.log
 
+.config/zsh/.zcompdump
+.config/zsh/aliases.local.zsh
+.config/zsh/functions.local.zsh
+.config/zsh/histfile
+
 .emacs.d/*
 !.emacs.d/init.el
 
@@ -87,18 +99,10 @@ bin/cowsay/**/*.dat
 .irssi/logs
 !.irssi/config
 
-.config/mutt/*
-!.config/mutt/*muttrc
-!.config/mutt/*sig
-!.config/mutt/mailcap
-
 .tmux/plugins/*
 !.tmux/plugins/tpm
 
 .vim/*
 !.vim/colors/
 
-.config/zsh/.zcompdump
-.config/zsh/aliases.local.zsh
-.config/zsh/functions.local.zsh
-.config/zsh/histfile
+

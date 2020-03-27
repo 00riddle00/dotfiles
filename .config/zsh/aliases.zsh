@@ -74,6 +74,7 @@ alias mpv.video='mpv --no-config --vo=tct'
 alias mpv.youtube='mpv -vo=caca'
 alias red.norm='redshift -P -O 6500'
 alias red.warm='redshift -P -O 5000'
+alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
 
 # launch GUI programs
 alias fire='firefox'
@@ -472,4 +473,3 @@ alias bloat='lsa | wc -l'
 # xdg specs
 alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
 alias cal='calcurse'
-#alias lynx='lynx --display_charset=utf-8'

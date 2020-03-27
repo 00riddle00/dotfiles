@@ -1,0 +1,10 @@
+INCLUDE:/etc/lynx.cfg
+INCLUDE:~/.config/lynx/keymap:KEYMAP
+DEFAULT_BOOKMARK_FILE:~/.config/lynx/bookmarks.html
+STARTFILE:file:///~/.config/lynx/bookmarks.html
+CHARACTER_SET:utf-8
+LOCALE_CHARSET:TRUE
+ACCEPT_ALL_COOKIES:TRUE
+NO_DOT_FILES:FALSE
+SYSLOG_REQUESTED_URLS:FALSE
+VI_KEYS_ALWAYS_ON:TRUE
