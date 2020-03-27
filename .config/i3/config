@@ -138,11 +138,11 @@ for_window [class="Pavucontrol"]   resize set 625 450
 for_window [class="Pavucontrol"]   border pixel 3
 for_window [class="Pavucontrol"]   move position center
 
-for_window [class="qutebrowser"]   floating enable
-for_window [class="qutebrowser"]   sticky enable
-for_window [class="qutebrowser"]   resize set 1000 800
-for_window [class="qutebrowser"]   border pixel 3
-for_window [class="qutebrowser"]   move position center
+#for_window [class="qutebrowser"]   floating enable
+#for_window [class="qutebrowser"]   sticky enable
+#for_window [class="qutebrowser"]   resize set 1000 800
+#for_window [class="qutebrowser"]   border pixel 3
+#for_window [class="qutebrowser"]   move position center
 
 for_window [title="GIMP Startup"]  move workspace $ws5
 for_window [class="Gimp"]          move workspace $ws5
@@ -195,7 +195,8 @@ bindsym $mod+semicolon $run activate libreoffice
 # bindsym $mod+t $run tint2
 # bindsym $mod+Shift+t $run killall tint2 
 bindsym $mod+n workspace $ws2; $run brave
-bindsym $mod+t $run qutebrowser "https://translate.google.com/#view=home&op=translate&sl=en&tl=lt"
+# bindsym $mod+t $run qutebrowser "https://translate.google.com/#view=home&op=translate&sl=en&tl=lt"
+bindsym $mod+t $run qutebrowser-wall 
 
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse

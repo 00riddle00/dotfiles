@@ -97,3 +97,6 @@ bin/cowsay/**/*.dat
 .vim/*
 !.vim/colors/
 
+.local/bin/share/start-page/*.jpg
+
+

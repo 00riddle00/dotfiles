@@ -1,0 +1,23 @@
+
+body {
+  background-color: #063441;
+}
+
+h2 {
+  color: #1793d1; 
+  margin-left: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.panorama {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+}
