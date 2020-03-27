@@ -52,6 +52,9 @@ bin/cowsay/**/*.dat
 !.config/ncmpcpp/bindings
 !.config/ncmpcpp/config
 
+.config/qutebrowser/*
+!.config/qutebrowser/config.py
+
 .config/ranger/plugins/__init__.py
 .config/ranger/plugins/__pycache__/
 .config/ranger/colorschemes/__init__.py

@@ -17,7 +17,7 @@ case $cur_wm in
       ;;
 esac
 
-sed  -Ei "s/exec (.*)/exec $new_wm/" $file
+sed  -Ei --follow-symlinks "s/exec (.*)/exec $new_wm/" $file
 echo "$cur_wm -> $new_wm"
 
 

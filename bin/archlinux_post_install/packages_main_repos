@@ -13,7 +13,6 @@ automake
 bash
 bat
 bc
-beep
 bind-tools
 binutils
 bison
@@ -140,7 +139,6 @@ moc
 moreutils
 mpc
 mpd
-mplayer
 mpv
 msmtp
 mutt
@@ -164,7 +162,6 @@ obs-studio
 octave
 offlineimap
 openssh
-opera
 p7zip
 pacgraph
 pacman
@@ -195,7 +192,6 @@ qt5-styleplugins
 qutebrowser
 r
 ranger
-razercfg
 rdesktop
 redshift
 remmina
@@ -210,14 +206,12 @@ speedtest-cli
 steam
 strace
 sudo
-surf
 surfraw
 sxiv
 sysfsutils
 sysstat
 systemd
 systemd-sysvcompat
-tabbed
 tar
 termdown
 texinfo
@@ -238,7 +232,6 @@ texlive-publishers
 texlive-science
 texmaker
 the_silver_searcher
-thefuck
 thunar
 thunar-volman
 thunderbird
@@ -252,13 +245,13 @@ unzip
 upower
 urxvt-perls
 util-linux
-vimb
 virt-manager
 w3m
 which
 whois
 wmctrl
 wpa_supplicant
+xdg-user-dirs
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
