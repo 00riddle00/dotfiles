@@ -472,3 +472,4 @@ alias bloat='lsa | wc -l'
 # xdg specs
 alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
 alias cal='calcurse'
+#alias lynx='lynx --display_charset=utf-8'

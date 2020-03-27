@@ -19,10 +19,12 @@ binutils
 bison
 brave
 breeze
+bridge-utils
 broot
 bzip2
 calcurse
 cloc
+cmake
 cmatrix
 cmus
 code
@@ -40,12 +42,14 @@ dia
 dialog
 diffutils
 discord
+dnsmasq
 doge
 dosbox
 dosemu
 dosfstools
 dunst
 e2fsprogs
+ebtables
 efibootmgr
 emacs
 espeak-ng
@@ -111,8 +115,8 @@ lftp
 lib32-nvidia-utils
 libreoffice-fresh
 libtool
+libvirt
 licenses
-links
 linux
 linux-firmware
 logrotate
@@ -120,7 +124,6 @@ lolcat
 lostfiles
 lshw
 lsof
-luakit
 lvm2
 lxappearance
 lxc
@@ -147,7 +150,6 @@ neomutt
 netctl
 nethack
 newsboat
-nm-connection-editor
 nmap
 notmuch
 notmuch-mutt
@@ -188,7 +190,7 @@ python-pip
 python-pywal
 python-xdg
 qalculate-gtk
-qbittorrent
+qemu
 qt5-styleplugins
 qutebrowser
 r
@@ -218,7 +220,6 @@ systemd-sysvcompat
 tabbed
 tar
 termdown
-terminator
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -252,8 +253,10 @@ upower
 urxvt-perls
 util-linux
 vimb
+virt-manager
 w3m
 which
+whois
 wmctrl
 wpa_supplicant
 xf86-video-vesa

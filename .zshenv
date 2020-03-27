@@ -8,7 +8,7 @@ export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$
 # Default programs:
 export EDITOR="vim"
 export TERMINAL="urxvt"
-export BROWSER="chrome"
+export BROWSER="brave"
 export READER="zathura"
 export STATUSBAR="i3blocks"
 export PAGER='bat'
