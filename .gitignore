@@ -76,13 +76,6 @@ bin/cowsay/**/*.dat
 !.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 !.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
-.config/thefuck/*
-!.config/thefuck/rules/
-!.config/thefuck/settings.py
-
-.config/vifm/vifm-help.txt
-.config/vifm/vifminfo
-
 .config/vis/vis.log
 
 .config/zsh/.zcompdump
@@ -100,9 +93,7 @@ bin/cowsay/**/*.dat
 !.irssi/config
 
 .tmux/plugins/*
-!.tmux/plugins/tpm
 
 .vim/*
 !.vim/colors/
-
 
