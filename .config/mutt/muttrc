@@ -4,12 +4,12 @@
 # ================
 
 # directories and commands
-set alias_file          = ~/.mutt/alias                          # alias file
-set header_cache        = ~/.mutt/cache/headers                  # where to store headers        
-set message_cachedir    = ~/.mutt/cache/bodies                   # where to store bodies
-set certificate_file    = ~/.mutt/certificates                   # where to store certs
-set mailcap_path        = ~/.mutt/mailcap                        # entrys for filetypes
-set tmpdir              = ~/.mutt/temp                           # where to keep temp files
+set alias_file          = $XDG_CONFIG_HOME/mutt/alias            # alias file
+set header_cache        = $XDG_CONFIG_HOME/mutt/cache/headers                  # where to store headers        
+set message_cachedir    = $XDG_CONFIG_HOME/mutt/cache/bodies                   # where to store bodies
+set certificate_file    = $XDG_CONFIG_HOME/mutt/certificates                   # where to store certs
+set mailcap_path        = $XDG_CONFIG_HOME/mutt/mailcap                        # entrys for filetypes
+set tmpdir              = $XDG_CONFIG_HOME/mutt/temp                           # where to keep temp files
 set editor              = `echo \$EDITOR`
 set ispell              = "/usr/bin/aspell -e -c"                # use aspell as ispell
 set imap_peek           = no                                     # Gmail mark as read
@@ -92,13 +92,13 @@ hdr_order from: to: cc: date: subject:                           # and in this o
 
 # always sourced
 source $alias_file                                               # required for functionality
-source ~/.mutt/colors_LukeSmithxyz.muttrc                        # source colors file
+source $XDG_CONFIG_HOME/mutt/colors_LukeSmithxyz.muttrc                        # source colors file
 source sidebar.muttrc                                            # source sidebar config
-source ~/.mutt/gmail.muttrc                                      # source as default
+source $XDG_CONFIG_HOME/mutt/gmail.muttrc                                      # source as default
 
 # account specific sources
-folder-hook "~/.mail/Gmail" 'source ~/.mutt/gmail.muttrc'
-folder-hook "~/.mail/Posteo" 'source ~/.mutt/posteo.muttrc'
+folder-hook "~/.mail/Gmail" 'source $XDG_CONFIG_HOME/mutt/gmail.muttrc'
+folder-hook "~/.mail/Posteo" 'source $XDG_CONFIG_HOME/mutt/posteo.muttrc'
 
 # Mailing lists
 lists arch-announce@archlinux.org                                # Arch announcements
@@ -150,9 +150,9 @@ bind generic zz         current-bottom
 
 # macros
 ## general
-macro index,pager gm '<sync-mailbox><enter-command>source ~/.mutt/gmail.muttrc<enter><change-folder>!<enter>'
-macro index,pager gp '<sync-mailbox><enter-command>source ~/.mutt/posteo.muttrc<enter><change-folder>!<enter>'
-macro index,pager <F8> ":source ~/.mutt/muttrc\n" "Reload the muttrc"
+macro index,pager gm '<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/gmail.muttrc<enter><change-folder>!<enter>'
+macro index,pager gp '<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/posteo.muttrc<enter><change-folder>!<enter>'
+macro index,pager <F8> ":source $XDG_CONFIG_HOME/mutt/muttrc\n" "Reload the muttrc"
 ## gmail
 macro index,pager a "<save-message>=[Gmail].All Mail<enter><enter>" "archive"
 macro index,pager d "<save-message>=[Gmail].Trash<enter><enter>" "delete"
