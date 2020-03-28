@@ -2,14 +2,14 @@
 #  Gmail specific options
 # =======================
 
-set from         = "tomasgiedraitis@gmail.com"
-set signature    = "~/.mutt/tg_gmail.sig"
-set sendmail     = "/usr/bin/msmtp -a gmail"
-set folder       = "~/.mail/Gmail"
-set spoolfile    = "+INBOX"
-set record       = "+[Gmail].Sent Mail"
-set postponed    = "+[Gmail].Drafts"
-set trash        = "+[Gmail].Trash"
+set from          = "tomasgiedraitis@gmail.com"
+set signature     = "$XDG_CONFIG_HOME/mutt/tg_gmail.sig"
+set sendmail      = "/usr/bin/msmtp -a gmail"
+set folder        = "~/.mail/Gmail"
+set spoolfile     = "+INBOX"
+set record        = "+[Gmail].Sent Mail"
+set postponed     = "+[Gmail].Drafts"
+set trash         = "+[Gmail].Trash"
 
 # boxes
 unmailboxes *

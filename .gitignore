@@ -54,6 +54,7 @@ bin/cowsay/**/*.dat
 !.config/mutt/*muttrc
 !.config/mutt/*sig
 !.config/mutt/mailcap
+!offlineimap_gpg.py
 
 .config/ncmpcpp/*
 !.config/ncmpcpp/bindings

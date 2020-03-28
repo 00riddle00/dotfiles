@@ -1,6 +1,7 @@
 [general]
 ui = ttyui
 accounts = Gmail, Posteo
+pythonfile = $XDG_CONFIG_HOME/mutt/offlineimap_gpg.py
 
 [Account Gmail]
 localrepository = Gmail-Local
@@ -13,7 +14,7 @@ localfolders = ~/.mail/Gmail
 [Repository Gmail-Remote]
 type = Gmail
 remoteuser = tomasgiedraitis@gmail.com
-remotepass = 
+remotepasseval = get_pass('gmail')
 maxconnections = 3
 ssl = yes
 realdelete = no
@@ -31,7 +32,7 @@ localfolders = ~/.mail/Posteo
 type = IMAP
 remotehost = posteo.de
 remoteuser = tomasgiedraitis@posteo.net
-remotepass = 
+remotepasseval = get_pass('posteo')
 ssl = yes
 realdelete = no
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
