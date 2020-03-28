@@ -1,10 +1,9 @@
 # Synopsis:
-# # set <variable> = <value>
-# # bind <keymap> <key> <action>
-# # color <area> <fgcolor> <bgcolor> [attributes]
-# # source <path>
-
-# @note-to-self: pretty rich tigrc exists in distrotube
+## set <variable> = <value>
+## bind <keymap> <key> <action>
+## color <area> <fgcolor> <bgcolor> [attributes]
+## source <path>
+# note to self: DistroTube (https://distrotube.com) has a pretty rich .tigrc
 
 # ==================================
 # Keybindings

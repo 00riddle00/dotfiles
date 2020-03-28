@@ -49,7 +49,7 @@ $run dunst
 $run picom -b
 $run safeeyes
 $run nm-applet
-$run $term -name dropdown_aux -e tmux new-session cmus\; 
+$run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux"] move scratchpad
 
 # =============================
 #  Appearance
@@ -123,31 +123,28 @@ client.focused             $arch_blue     $pretty_light_blue    $light_blue     
 # =============================
 
 # Dropdown windows (the order can matter)
-for_window [instance="dropdown_*"]     floating enable
-for_window [instance="dropdown_*"]     move scratchpad
-for_window [instance="dropdown_*"]     sticky enable
-for_window [instance="dropdown_math"]  resize set 625 450
-for_window [instance="dropdown_math"]  border pixel 3
-for_window [instance="dropdown_aux"]   resize set 625 450
-for_window [instance="dropdown_aux"]   border pixel 3
-for_window [instance="dropdown_*"]     move position center
+for_window [instance="dropdown_*"] floating enable
+for_window [instance="dropdown_*"] sticky enable
+for_window [instance="dropdown_*"] resize set 625 450
+for_window [instance="dropdown_*"] border pixel 3
+for_window [instance="dropdown_*"] move position center
 
-for_window [class="Pavucontrol"]   floating enable
-for_window [class="Pavucontrol"]   sticky enable
-for_window [class="Pavucontrol"]   resize set 625 450
-for_window [class="Pavucontrol"]   border pixel 3
-for_window [class="Pavucontrol"]   move position center
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Pavucontrol"] sticky enable
+for_window [class="Pavucontrol"] resize set 625 450
+for_window [class="Pavucontrol"] border pixel 3
+for_window [class="Pavucontrol"] move position center
 
-#for_window [class="qutebrowser"]   floating enable
-#for_window [class="qutebrowser"]   sticky enable
-#for_window [class="qutebrowser"]   resize set 1000 800
-#for_window [class="qutebrowser"]   border pixel 3
-#for_window [class="qutebrowser"]   move position center
+#for_window [class="qutebrowser"] floating enable
+#for_window [class="qutebrowser"] sticky enable
+#for_window [class="qutebrowser"] resize set 1000 800
+#for_window [class="qutebrowser"] border pixel 3
+#for_window [class="qutebrowser"] move position center
 
-for_window [title="GIMP Startup"]  move workspace $ws5
-for_window [class="Gimp"]          move workspace $ws5
-for_window [class="Spotify"]       move workspace $ws8
-for_window [class="kdenlive"]      move workspace $ws9
+for_window [title="GIMP Startup"] move workspace $ws5
+for_window [class="Gimp"]         move workspace $ws5
+for_window [class="Spotify"]      move workspace $ws8
+for_window [class="kdenlive"]     move workspace $ws9
 
 for_window [instance="calendar"] floating enable
 for_window [instance="calendar"] resize set 160 140

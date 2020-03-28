@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Dmenu script for launching surfaw, a command line search utility.
-# Kudos to Derek Taylor (DistroTube)
+# dmenu script for launching surfaw, a command line search utility.
+# kudos to DistroTube (https://distrotube.com)
 
 cmd="dmenu -i"
 

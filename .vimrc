@@ -86,7 +86,7 @@ set nowrap
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
 
-" jasonwryan's statusline
+" kudos to jason ryan (http://jasonwryan.com)
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
 
 "===================================================
