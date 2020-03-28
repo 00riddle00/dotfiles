@@ -1,4 +1,4 @@
-# kudos to jason ryan (http://jasonwryan.com)
+# kudos to Jason Ryan (http://jasonwryan.com)
 
 # general settings
 c.url.default_page = 'file:///home/riddle/.local/share/riddle00/start-page/index.html'

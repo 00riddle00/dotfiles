@@ -92,7 +92,7 @@ hdr_order from: to: cc: date: subject:                           # and in this o
 
 # always sourced
 source $alias_file                                               # required for functionality
-source $XDG_CONFIG_HOME/mutt/colors_LukeSmithxyz.muttrc                        # source colors file
+source $XDG_CONFIG_HOME/mutt/colors01.muttrc                        # source colors file
 source sidebar.muttrc                                            # source sidebar config
 source $XDG_CONFIG_HOME/mutt/gmail.muttrc                                      # source as default
 

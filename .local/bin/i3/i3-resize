@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # This script was made by `goferito` on Github.
-# Some cleanup by LukeSmithxyz
+# Some cleanup by Luke Smith (https://lukesmith.xyz)
 
 [ -z "$1" ] && echo "No direction provided" && exit 1
 distanceStr="2 px or 2 ppt"
