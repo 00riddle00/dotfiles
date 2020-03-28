@@ -97,7 +97,5 @@ bin/cowsay/**/*.dat
 .vim/*
 !.vim/colors/
 
-.local/bin/share/start-page/*.jpg
-.local/bin/share/start-page/*.png
-
-
+.local/share/riddle00/start-page/*.jpg
+.local/share/riddle00/start-page/*.png

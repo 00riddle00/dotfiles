@@ -15,7 +15,9 @@ for entry in $DOTFILES_DIR/.config/[a-zA-Z]*; do
     [ -e "$entry" ] &&  [ -L "$HOME/.config/${entry##*/}" ] && rm -rf $HOME/.config/${entry##*/}
 done
 
-# todo leave ~/.local/share/ folder as is
-for entry in $DOTFILES_DIR/.local/[a-zA-Z]*; do
-    [ -e "$entry" ] &&  [ -L "$HOME/.local/${entry##*/}" ] && rm -rf $HOME/.local/${entry##*/}
-done
+local_bin="$DOTFILES_DIR/.local/bin"
+[ -e "$local_bin" ] &&  [ -L "$HOME/.local/${local_bin##*/}" ] && rm -rf $HOME/.local/${local_bin##*/}
+
+local_shared="$DOTFILES_DIR/.local/share/riddle00"
+[ -e "$local_shared" ] &&  [ -L "$HOME/.local/share/${local_shared##*/}" ] && rm -rf $HOME/.local/share/${local_shared##*/}
+

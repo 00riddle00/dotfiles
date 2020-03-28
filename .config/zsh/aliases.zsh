@@ -473,3 +473,7 @@ alias bloat='lsa | wc -l'
 # xdg specs
 alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
 alias cal='calcurse'
+
+## if this alias does not work, use the command directly
+alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
+alias share="cd $SHARE"
