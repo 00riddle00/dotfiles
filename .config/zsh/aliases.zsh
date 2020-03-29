@@ -1,11 +1,19 @@
-# ============================================
-#  Note: many of these aliases are not being 
+# =============================================
+#  NOTE: many of these aliases are not being 
 #  used anymore or are being used very rarely, 
 #  however, I still keep them there as a sort
 #  of command-wiki, since quite a few times
 #  it turned out to be pretty useful to look 
 #  up some stuff that I aliased a while ago.
-# ============================================
+#
+#  In the future, since the number of aliases
+#  is getting big, in order to avoid unexpected 
+#  outcomes in the command line and shell 
+#  scripts, it would be reasonable not to 
+#  source them in .zshrc, but to put in a 
+#  separate text file and access using fzf or 
+#  smth.
+# =============================================
 
 # assembler
 alias hhh='yasm -fbin hh.asm -o hh.com'
@@ -47,7 +55,9 @@ alias gp='git push'
 alias grc='git rm -r --cached'
 alias gs='git status'
 alias gu='git restore --staged'
-alias push='com && gp'
+## alias containing other aliases. 
+## try to use those as little as possible
+alias push='key && com && gp'
 
 # info output
 alias fl='sudo fdisk -l'
@@ -78,17 +88,12 @@ alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
 
 # launch GUI programs
 alias fire='firefox'
-alias gg='google-chrome-stable'
-alias li='libreoffice'
 alias libre='libreoffice'
 alias mi='sxiv'
 alias play='mpv'
 alias sub='/usr/bin/subl3'
-alias t='thunar ./'
 alias tint='tint2 & disown'
-alias tt='sudo thunar ./'
 alias vbox='virtualbox'
-alias xterm='xterm -r'
 
 # openbox
 alias out='sudo openbox --exit'
@@ -96,8 +101,9 @@ alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
 
 # run shell scripts
-alias autostart='$MAIN_HOME/.config/openbox/autostart.sh' # in sageMath shell
+alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 alias charge='$SHELL_SCRIPTS_DIR/battery.sh'
+## used in sageMath shell
 alias pyc='$MAIN_HOME/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/193.5662.61/bin/pycharm.sh'
 alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
 alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
@@ -115,10 +121,11 @@ alias cpr='cp -r'
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias grepi='grep -i'
 alias h='history'
-alias more='less'
 alias off='sudo poweroff'
 alias pls='sudo $(fc -ln -1)'
 alias plz='sudo $(fc -ln -1)'
+alias prego='sudo $(fc -ln -1)'
+alias merci='sudo $(fc -ln -1)'
 alias q='exit'
 alias re='sudo reboot'
 alias rmr='sudo rm -r'  
@@ -152,15 +159,14 @@ alias getkey='gpg --keyserver keyserver.ubuntu.com --recv'
 alias getsums='updpkgsums'
 alias ggp='gprolog'
 alias hh='htop'
-alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/id_rsa'
+alias key='eval $(ssh-agent -s) && ssh-add $MAIN_HOME/.ssh/cmd_rsa'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mute='amixer -q sset Master toggle'
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
-alias phone='jmtpfs ~/.phone'
+alias phone.on='jmtpfs ~/.phone'
+alias phone.off='umount ~/.phone'
 alias pic='scrot -s $MAIN_HOME/Screenshots/screenshot-%F-%H%M%S.png'
-alias power='upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep percentage'
-alias ra='ranger'
 alias rl='readlink -f'
 alias show_hidden='setopt -s glob_dots'
 alias starwars='telnet towel.blinkenlights.nl'
@@ -169,13 +175,11 @@ alias tb='tail -n 20 $ZDOTDIR/aliases.zsh'
 alias timezone.update='timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
 alias trackmem.hidden='watch -n 5 "du -h --max-depth=1 | sort -h"'
 alias trackmem='watch -n 5 "du -hs * | sort -h"'
-alias unphone='umount ~/.phone'
 alias unrar='unrar x'
-alias vf='vifm'
 alias wl="wc -l"
+alias count='wc -l'
 alias xminus='light -U 10'
 alias xplus='light -A 10'
-alias xres.merge='xrdb -merge $MAIN_HOME/.Xresources'
 alias xres.restart='xrdb $MAIN_HOME/.Xresources'
 alias xres.show='xrdb -query -all'
 alias yd='youtube-dl'
@@ -194,8 +198,10 @@ alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 alias ya='yay'
 alias ya.install='yay -S'
 alias ya.find='yay -Si'
-#alias yaup='yay -Syu --noconfirm'
+# alias yaup='yay -Syu --noconfirm'
 alias yaup='arch-update'
+### fuzzy-search through the AUR, preview info and install selected packages
+alias fzf.aur='yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S'
 
 ## c development
 alias gdb.super='gdb --batch --ex run --ex bt --ex q --args'
@@ -210,6 +216,7 @@ alias vt='valgrind --track-origins=yes'
 alias xclip='xclip -selection clipboard'
 alias xclip.prim='xclip -selection primary'
 alias xclip.sec='xclip -selection secondary'
+alias copy='xclip'
 
 ## databases
 alias mysqlr='mysql -u root -p'
@@ -227,9 +234,9 @@ alias runs='python manage.py runserver'
 alias no='killall mpg123'
 
 ## languages
+alias lt='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
-alias il='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
-alias ru='setxkbmap ru phonetic'
+alias ru="setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
 
 ## navigation
 alias bak='cd $MAIN_HOME/backups'
@@ -240,15 +247,13 @@ alias drop.bak='cd $MAIN_HOME/Dropbox/sync/backup'
 alias drop.phone='cd $MAIN_HOME/Dropbox/sync/phone'
 alias drop='cd $DROPBOX'
 alias dw='cd $MAIN_HOME/Downloads/'
-alias kee='cd $DROPBOX/sync/keepass'
-alias lok='cd $MAIN_HOME/.local'
+alias ll='cd $MAIN_HOME/.local'
 alias notes='cd $NOTES'
-alias op='cd $MAIN_HOME/.config/openbox'
 alias pak='cd $SHELL_SCRIPTS_DIR/archlinux_post_install/'
 alias pro='cd $MAIN_HOME/pro'
-alias serv='cd /var/www'
-alias sk='cd ~/Screenshots'
+alias serv='cd /srv/http'
 alias srv='cd /srv/http/'
+alias sk='cd ~/Screenshots'
 alias tmp1='cd $MAIN_HOME/tmp1'
 alias tmp2='cd $MAIN_HOME/tmp2'
 alias tmp3='cd $MAIN_HOME/tmp3'
@@ -259,30 +264,27 @@ alias tmp7='cd $MAIN_HOME/tmp7'
 alias tmp8='cd $MAIN_HOME/tmp8'
 alias tmp='cd $MAIN_HOME/tmp1'
 alias vi='cd $MAIN_HOME/VirtualBox\ VMs/'
-alias zdir='cd $ZSH_DIR'
-alias zdot='cd $ZSH_DIR'
+alias zdot='cd $ZDOTDIR'
 
 ## network
 alias pp='ping -c 3 www.google.com'
 alias whatip='curl icanhazip.com'
-alias wp='watch "ping -c 1 www.google.com"'
+alias ppw='watch "ping -c 1 www.google.com"'
 
-## open files to edit with vim
+## vim into conf files
 alias al='vim $ZDOTDIR/aliases.zsh'
-# alias br='vim $MAIN_HOME/.bashrc'
 alias fn='vim $ZDOTDIR/functions.zsh'
 alias ic='vim $MAIN_HOME/.config/i3/config'
-alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
-alias res='vim $MAIN_HOME/.Xresources'
-alias start='vim $MAIN_HOME/.config/openbox/autostart.sh'
-alias termc='vim $MAIN_HOME/.config/terminator/config'
-alias tintrc='vim $MAIN_HOME/.config/tint2/tint2rc'
 alias tmuxr='vim $MAIN_HOME/.tmux.conf '
 alias vr='vim $MAIN_HOME/.vimrc'
 alias xi='vim $MAIN_HOME/.xinitrc'
 alias xres='vim $MAIN_HOME/.Xresources'
 alias zenv='vim $MAIN_HOME/.zshenv'
-alias zr='vim $MAIN_HOME/.zsh/.zshrc'
+alias zr='vim $ZDOTDIR/.zshrc'
+### openbox specific
+# alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
+# alias start='vim $MAIN_HOME/.config/openbox/autostart.sh'
+# alias tintrc='vim $MAIN_HOME/.config/tint2/tint2rc'
 
 ## pacman
 # --------------------------------------------------------------------------------------------------------------------
@@ -310,6 +312,8 @@ alias pac.find='sudo pacman -Ss'                              # search package. 
 alias pac.clear='sudo pacman -Sc'
 # removes ALL packages from /var/cache/pacman/pkg and ...
 alias pac.clear_all='sudo pacman -Scc'
+# fuzzy-search through all available packages, with package info shown in a preview window, and then install selected packages
+alias fzf.pac='pacman -Slq | fzf -m --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 # -------------------------------------------------------------------------
 # updates your pkg databases if the repositories haven’t been checked 
 # recently, and upgrades any new package versions.
@@ -341,6 +345,7 @@ alias kil='sudo kill -9'
 
 ## python
 alias p='python'
+alias p2='python2'
 alias qenv='deactivate'
 alias venv='source venv/bin/activate'
 
@@ -354,11 +359,11 @@ alias xport='xrandr --output $HDMI_SCREEN --auto --rotate left --output $LAPTOP_
 
 ## systemd
 #### general
-alias services.running='systemctl --type=service'
-alias services.list='systemctl list-unit-files'
-alias services.enabled='systemctl list-unit-files | grep enabled'
+alias systemd.running='systemctl --type=service'
+alias systemd.list='systemctl list-unit-files'
+alias systemd.enabled='systemctl list-unit-files | grep enabled'
 #### db
-alias mysqlon='sudo systemctl start mysqld'
+alias mysql.start='sudo systemctl start mysqld'
 alias post='systemctl start postgresql'
 #### server
 alias apache='systemctl start httpd.service'
@@ -424,13 +429,10 @@ alias letr='chmod -R 755'
 # entries appear here after appending output to this file
 ## this is useful to get current active interface name
 alias iii='ip route get 8.8.8.8' 
-alias xe='sudo journalctl -xe'
-alias i3out='i3-msg exit'
+alias i3.out='i3-msg exit'
 alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
 
 alias sw='$SHELL_SCRIPTS_DIR/switchwm'
-alias ww='$SHELL_SCRIPTS_DIR/switchwm'
-alias gtk='vim ~/.config/gtk-3.0/gtk.css'
 alias cm='vim ~/.config/picom/picom.conf'
 #alias repicom='killall picom && picom -b'
 alias weva='curl wttr.in'
@@ -449,7 +451,6 @@ alias ir='irssi'
 alias rss='newsboat'
 alias pi='cd $HOME/pics'
 alias sc='sc-im'
-alias copy='xclip'
 alias tg='vim ~/.tigrc'
 alias music='ncmpcpp'
 
@@ -461,7 +462,6 @@ alias scratch.cmus="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmu
 alias timely='termdown | lolcat'
 alias irc='irssi'
 alias espeak='espeak -ven-uk'
-alias count='wc -l'
 alias vpn.on='systemctl start openvpn-client@airvpn.service'
 alias vpn.off='systemctl stop openvpn-client@airvpn.service'
 
@@ -478,3 +478,4 @@ alias cal='calcurse'
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
 alias share="cd $SHARE"
 alias mux='tmuxinator'
+alias tigl='lazygit'

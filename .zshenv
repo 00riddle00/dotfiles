@@ -36,7 +36,6 @@ export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/bin
 export SHARE=$HOME/.local/share/riddle00
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
-export ZSH_DIR=$MAIN_HOME/.zsh
 
 # MAIN USER VARS
 export VIMRC=$MAIN_HOME/.vimrc

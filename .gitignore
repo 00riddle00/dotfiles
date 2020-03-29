@@ -35,6 +35,10 @@ bin/cowsay/**/*.dat
 !.config/cmus/rc
 !.config/cmus/*.theme
 
+.config/filezilla/*
+!.config/filezilla/filezilla.xml
+!.config/filezilla/filters.xml
+
 .config/GIMP/*/*
 !.config/GIMP/*/scripts/
 !.config/GIMP/*/menurc
@@ -42,6 +46,9 @@ bin/cowsay/**/*.dat
 .config/filezilla/*
 !.config/filezilla/filezilla.xml
 !.config/filezilla/filters.xml
+
+.config/jesseduffield/lazygit/*
+!.config/jesseduffield/lazygit/config.yml
 
 .config/lftp/settings
 
