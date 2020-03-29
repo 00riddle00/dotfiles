@@ -1,0 +1,9 @@
+name: music
+root: ~/
+
+windows:
+  - music:
+      layout: main-horizontail
+      panes:
+        - player: cmus
+        - visualizer: cava

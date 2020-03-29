@@ -94,6 +94,7 @@ bin/cowsay/**/*.dat
 !.irssi/config
 
 .tmux/plugins/*
+.tmux/resurrect/*
 
 .vim/*
 !.vim/colors/

@@ -477,3 +477,4 @@ alias cal='calcurse'
 ## if this alias does not work, use the command directly
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
 alias share="cd $SHARE"
+alias mux='tmuxinator'
