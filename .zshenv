@@ -3,7 +3,7 @@
 # ============================= 
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu:$HOME/.local/bin/mutt"
 
 # Default programs:
 export EDITOR="vim"

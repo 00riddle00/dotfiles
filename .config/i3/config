@@ -202,10 +202,11 @@ bindsym $mod+i $run $term -e htop
 bindsym $mod+s $run betterlockscreen -t "" -l
 bindsym $mod+b $run gimp
 bindsym $mod+d $run i3-showdesktop $ws10 
-bindsym $alt+q fullscreen disable
+# bindsym $alt+q fullscreen disable
 
 # bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
 bindsym $mod+u [instance="dropdown_aux"] scratchpad show; [instance="dropdown_aux"] move position center
+bindsym $alt+q [instance="dropdown_aux"] move scratchpad;
 bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle
 # bindsym $mod+Prior      gaps inner current plus 3

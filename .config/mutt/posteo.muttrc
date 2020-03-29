@@ -18,3 +18,5 @@ named-mailboxes "   Drafts" =Drafts
 named-mailboxes "   Sent Mail" =Sent
 named-mailboxes "   All Mail" =Archive
 named-mailboxes "   Trash" =Trash
+named-mailboxes "―――――――――― ♠ ―――――――――" =code.@@
+named-mailboxes "   notmuch" ~/.mail/temporary/search

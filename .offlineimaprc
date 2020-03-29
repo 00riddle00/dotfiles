@@ -6,6 +6,7 @@ pythonfile = $XDG_CONFIG_HOME/mutt/offlineimap_gpg.py
 [Account Gmail]
 localrepository = Gmail-Local
 remoterepository = Gmail-Remote
+postsynchook = notmuch new
 
 [Repository Gmail-Local]
 type = Maildir
@@ -23,6 +24,7 @@ sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 [Account Posteo]
 localrepository = Posteo-Local
 remoterepository = Posteo-Remote
+postsynchook = notmuch new
 
 [Repository Posteo-Local]
 type = Maildir

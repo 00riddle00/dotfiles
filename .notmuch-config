@@ -4,9 +4,10 @@ path=/home/riddle/.mail
 [user]
 name=Tomas Giedraitis
 primary_email=tomasgiedraitis@gmail.com
+other_email=tomasgiedraitis@posteo.net;
 
 [new]
-tags=new;
+tags=unread;inbox;
 ignore=
 
 [search]

@@ -2,12 +2,10 @@
 
 PID=$(pgrep offlineimap)
 
-# -n : check if not empty
+# -n : checks if not empty
 [ -n "$PID" ] && exit 1
 
 offlineimap -o -u quiet &>/dev/null &
-
-notmuch new
 
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 export DISPLAY=:0; 

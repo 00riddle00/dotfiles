@@ -150,8 +150,8 @@ bind generic zz         current-bottom
 
 # macros
 ## general
-macro index,pager gm '<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/gmail.muttrc<enter><change-folder>!<enter>'
-macro index,pager gp '<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/posteo.muttrc<enter><change-folder>!<enter>'
+macro index,pager gm "<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/gmail.muttrc<enter><change-folder>!<enter>"
+macro index,pager gp "<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/posteo.muttrc<enter><change-folder>!<enter>"
 macro index,pager <F8> ":source $XDG_CONFIG_HOME/mutt/muttrc\n" "Reload the muttrc"
 ## gmail
 macro index,pager a "<save-message>=[Gmail].All Mail<enter><enter>" "archive"
@@ -161,3 +161,6 @@ macro index gd "<change-folder>=[Gmail].Drafts<enter>" "Go to Drafts"
 macro index gs "<change-folder>=[Gmail].Sent Mail<enter>" "Go to Sent Mail"
 macro index ga "<change-folder>=[Gmail].All Mail<enter>" "Go to All Mail"
 macro index gt "<change-folder>=[Gmail].Trash<enter>" "Go to Trash"
+## notmuch
+### search mail
+macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch.py -g ~/.mail/temporary/search<enter><change-folder-readonly>~/.mail/temporary/search<enter>" "search mail (using notmuch)"

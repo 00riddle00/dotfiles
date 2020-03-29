@@ -25,4 +25,5 @@ named-mailboxes "―――――――――― ♠ ―――――――――"
 named-mailboxes " •  code" =code
 named-mailboxes " •  free" =free
 named-mailboxes " •  KET" =KET
-
+named-mailboxes "―――――――――― ♠ ―――――――――" =code.@@@
+named-mailboxes "   notmuch" ~/.mail/temporary/search
