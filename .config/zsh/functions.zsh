@@ -29,11 +29,3 @@ a_minus_b() { grep -Fvx -f "$2" "$1"; }
 # find all files from current folder | prints extension of files if any | make a unique sorted list
 ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }
 
-# copy using fzf
-fcp() { cp -v "$1" "$(awk '{print $2}' ~/.config/directories | fzf | sed "s|~|$HOME|")" ; }
-
-# open file in $EDITOR using fzf
-fvim() { fzf | xargs -o $EDITOR }
-
-# edit scripts (using fzf)
-se() { du -a $SHELL_SCRIPTS_DIR/* ~/.local/bin/* | awk '{print $2}' | fzf | xargs -o $EDITOR ; }

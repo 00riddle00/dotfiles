@@ -5,6 +5,9 @@
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu:$HOME/.local/bin/mutt"
 
+# Fuzzy finder
+export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --border"
+
 # Default programs:
 export EDITOR="vim"
 export TERMINAL="urxvt"
