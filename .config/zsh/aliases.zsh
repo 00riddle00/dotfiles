@@ -78,13 +78,24 @@ alias npm.ls.g='npm list -g --depth=0'
 alias mm='neomutt'
 alias r='ranger'
 alias tor='rtorrent'
+alias irc='irssi'
+alias rss='newsboat'
+alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
+alias music='ncmpcpp'
+alias sc='sc-im'
+alias mux='tmuxinator'
+alias espeak='espeak -ven-uk'
+alias tigl='lazygit'
+## adhering to XDG base dir specs
+alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
+alias cal='calcurse'
 # console programs with options
 alias mpv.image='mpv --no-config --pause --vo=tct'
 alias mpv.video='mpv --no-config --vo=tct'
 alias mpv.youtube='mpv -vo=caca'
 alias red.norm='redshift -P -O 6500'
 alias red.warm='redshift -P -O 5000'
-alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
+alias timely='termdown | lolcat'
 
 # launch GUI programs
 alias fire='firefox'
@@ -100,6 +111,12 @@ alias out='sudo openbox --exit'
 alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
 
+# i3
+alias i3.out='i3-msg exit'
+alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
+alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
+alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
+
 # run shell scripts
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 alias charge='$SHELL_SCRIPTS_DIR/battery.sh'
@@ -110,6 +127,7 @@ alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
 alias rms.say='$SHELL_SCRIPTS_DIR/cowsay/rms_say.sh'
 alias rms.say.gnu='$SHELL_SCRIPTS_DIR/cowsay/rms_say_gnu.sh'
 alias gnu.say='cowsay -f "$SHELL_SCRIPTS_DIR/cowsay/cows/gnu.cow"'
+alias sw='$SHELL_SCRIPTS_DIR/switchwm'
 
 # ssh
 alias sa='ssh-add'
@@ -134,12 +152,16 @@ alias tar='tar -xvf'
 ## A trailing space in VALUE causes the next word to be checked for alias substitution when the alias is expanded.
 alias watch='watch '
 alias z='zsh'
+alias exe='chmod +x'
+alias ce='crontab -e'
+alias cl='crontab -l'
 
 # vagrant
 alias vs='vagrant ssh'
 alias vu='vagrant up'
 
 # various 
+alias bloat='lsa | wc -l'
 alias mutable='sudo chattr -i'
 alias immutable='sudo chattr +i'
 alias aminus='amixer set Master 10%-'
@@ -150,6 +172,7 @@ alias cg='acpi'
 alias clock.sync='sudo ntpd -qg'
 alias dusort.all='du -h --max-depth=1 | sort -h' # including hidden
 alias dusort='du -hs * | sort -h'
+alias memory=' du -s --si'
 alias fonts.update='fc-cache -fv'
 alias fonts.current='fc-match --verbose Sans'
 alias fonts.find='fc-list | grep -i'
@@ -185,6 +208,13 @@ alias xres.show='xrdb -query -all'
 alias yd='youtube-dl'
 alias ydn='youtube-dl --no-playlist' 
 alias ydna='youtube-dl --no-playlist --extract-audio --audio-format mp3'
+alias repicom='killall picom && picom -b'
+alias getpos='xwininfo -id $(xdotool getactivewindow)'
+alias gpu.which='glxinfo|egrep "OpenGL vendor|OpenGL renderer"'
+alias redd='killall dunst && dunst &'
+## count different file extensions
+alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
+alias files='find . -type f | count'
 
 # vim
 alias v='vim'
@@ -201,7 +231,7 @@ alias ya.find='yay -Si'
 # alias yaup='yay -Syu --noconfirm'
 alias yaup='arch-update'
 ### fuzzy-search through the AUR, preview info and install selected packages
-alias fzf.aur='yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S'
+alias fzf.yay='yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S'
 
 ## c development
 alias gdb.super='gdb --batch --ex run --ex bt --ex q --args'
@@ -250,6 +280,7 @@ alias dw='cd $MAIN_HOME/Downloads/'
 alias ll='cd $MAIN_HOME/.local'
 alias notes='cd $NOTES'
 alias pak='cd $SHELL_SCRIPTS_DIR/archlinux_post_install/'
+alias pi='cd $HOME/pics'
 alias pro='cd $MAIN_HOME/pro'
 alias serv='cd /srv/http'
 alias srv='cd /srv/http/'
@@ -265,22 +296,32 @@ alias tmp8='cd $MAIN_HOME/tmp8'
 alias tmp='cd $MAIN_HOME/tmp1'
 alias vi='cd $MAIN_HOME/VirtualBox\ VMs/'
 alias zdot='cd $ZDOTDIR'
+alias share="cd $SHARE"
 
 ## network
 alias pp='ping -c 3 www.google.com'
 alias whatip='curl icanhazip.com'
 alias ppw='watch "ping -c 1 www.google.com"'
+### this is useful to get the current active interface name
+alias iii='ip route get 8.8.8.8' 
+alias vpn.on='systemctl start openvpn-client@airvpn.service'
+alias vpn.off='systemctl stop openvpn-client@airvpn.service'
 
 ## vim into conf files
 alias al='vim $ZDOTDIR/aliases.zsh'
+alias dun='vim /home/riddle/.dotfiles/.config/dunst/dunstrc'
+alias cm='vim ~/.config/picom/picom.conf'
 alias fn='vim $ZDOTDIR/functions.zsh'
 alias ic='vim $MAIN_HOME/.config/i3/config'
+alias icc='vim $MAIN_HOME/.config/i3blocks/config'
 alias tmuxr='vim $MAIN_HOME/.tmux.conf '
 alias vr='vim $MAIN_HOME/.vimrc'
 alias xi='vim $MAIN_HOME/.xinitrc'
 alias xres='vim $MAIN_HOME/.Xresources'
 alias zenv='vim $MAIN_HOME/.zshenv'
 alias zr='vim $ZDOTDIR/.zshrc'
+alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
+alias tg='vim ~/.tigrc'
 ### openbox specific
 # alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
 # alias start='vim $MAIN_HOME/.config/openbox/autostart.sh'
@@ -368,7 +409,6 @@ alias post='systemctl start postgresql'
 #### server
 alias apache='systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
-alias stat="systemctl status httpd"
 #### lan
 alias net='systemctl start dhcpcd@enp9s0.service'
 alias renet='systemctl restart dhcpcd@enp9s0.service'
@@ -380,12 +420,8 @@ alias wpa='wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/wpa_supplicant.con
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
 alias wpas='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf'
 alias wpac='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf'
-alias wifiof='sudo ip link set wlp8s0 down'
-alias wifion='sudo ip link set wlp8s0 up'
-
-## touchpad
-alias tof='synclient TouchpadOff=1'
-alias ton='synclient TouchpadOff=0'
+alias wifi.off='sudo ip link set wlp8s0 down'
+alias wifi.on='sudo ip link set wlp8s0 up'
 
 ## cat
 alias cat='bat'
@@ -427,55 +463,4 @@ alias letr='chmod -R 755'
 # temp
 # =============
 # entries appear here after appending output to this file
-## this is useful to get current active interface name
-alias iii='ip route get 8.8.8.8' 
-alias i3.out='i3-msg exit'
-alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
-
-alias sw='$SHELL_SCRIPTS_DIR/switchwm'
-alias cm='vim ~/.config/picom/picom.conf'
-#alias repicom='killall picom && picom -b'
-alias weva='curl wttr.in'
-alias icc='vim $MAIN_HOME/.config/i3blocks/config'
-alias ku='killall urxvt'
-alias kx='killall xscreensaver && xscreensaver -no-splash &'
-
-alias nn='neofetch'
-alias dmenu_big='dmenu -fn "Ubuntu Mono:pixelsize=50"'
-alias getpos='xwininfo -id $(xdotool getactivewindow)'
-alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
-
-alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
-alias redd='killall dunst && dunst &'
-alias ir='irssi'
-alias rss='newsboat'
-alias pi='cd $HOME/pics'
-alias sc='sc-im'
-alias tg='vim ~/.tigrc'
-alias music='ncmpcpp'
-
-alias ce='crontab -e'
-alias cl='crontab -l'
-alias exe='chmod +x'
-alias dun='vim /home/riddle/.dotfiles/.config/dunst/dunstrc'
-alias scratch.cmus="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
-alias timely='termdown | lolcat'
-alias irc='irssi'
-alias espeak='espeak -ven-uk'
-alias vpn.on='systemctl start openvpn-client@airvpn.service'
-alias vpn.off='systemctl stop openvpn-client@airvpn.service'
-
-alias gpu.which='glxinfo|egrep "OpenGL vendor|OpenGL renderer"'
 alias corona='curl https://corona-stats.online/lithuania'
-
-alias bloat='lsa | wc -l'
-
-# xdg specs
-alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
-alias cal='calcurse'
-
-## if this alias does not work, use the command directly
-alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
-alias share="cd $SHARE"
-alias mux='tmuxinator'
-alias tigl='lazygit'
