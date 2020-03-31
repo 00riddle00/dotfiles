@@ -277,7 +277,7 @@ alias drop.bak='cd $MAIN_HOME/Dropbox/sync/backup'
 alias drop.phone='cd $MAIN_HOME/Dropbox/sync/phone'
 alias drop='cd $DROPBOX'
 alias dw='cd $MAIN_HOME/Downloads/'
-alias ll='cd $MAIN_HOME/.local'
+alias lok='cd $MAIN_HOME/.local'
 alias notes='cd $NOTES'
 alias pak='cd $SHELL_SCRIPTS_DIR/archlinux_post_install/'
 alias pi='cd $HOME/pics'
@@ -464,3 +464,4 @@ alias letr='chmod -R 755'
 # =============
 # entries appear here after appending output to this file
 alias corona='curl https://corona-stats.online/lithuania'
+alias grep.info='grep -rHn'
