@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-image=$(find $HOME/pics -type f -iname '*.jpg' | shuf -n 1)
+image=$(find $HOME/Images -type f -iname '*.jpg' | shuf -n 1)
 cp $image $SHARE/start-page/panorama.jpg
 qutebrowser & > /dev/null 2>&1
 

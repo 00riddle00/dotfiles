@@ -214,7 +214,7 @@ alias gpu.which='glxinfo|egrep "OpenGL vendor|OpenGL renderer"'
 alias redd='killall dunst && dunst &'
 ## count different file extensions
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
-alias files='find . -type f | count'
+alias files='find . -type f | wc -l'
 
 # vim
 alias v='vim'
@@ -312,6 +312,7 @@ alias al='vim $ZDOTDIR/aliases.zsh'
 alias dun='vim /home/riddle/.dotfiles/.config/dunst/dunstrc'
 alias cm='vim ~/.config/picom/picom.conf'
 alias fn='vim $ZDOTDIR/functions.zsh'
+alias fn.fzf='vim $ZDOTDIR/functions_fzf.zsh'
 alias ic='vim $MAIN_HOME/.config/i3/config'
 alias icc='vim $MAIN_HOME/.config/i3blocks/config'
 alias tmuxr='vim $MAIN_HOME/.tmux.conf '
@@ -465,3 +466,4 @@ alias letr='chmod -R 755'
 # entries appear here after appending output to this file
 alias corona='curl https://corona-stats.online/lithuania'
 alias grep.info='grep -rHn'
+alias sso='ssh -p 22033 centos@ovh'

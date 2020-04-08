@@ -14,4 +14,6 @@ xinput set-prop "pointer:Razer Razer Naga Trinity" "libinput Accel Speed" -0.8
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
-exec i3
+# exec i3
+xsetroot -name "Thanks for all the fish!" &
+dwm.loop

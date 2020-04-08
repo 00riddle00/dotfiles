@@ -80,10 +80,10 @@ set $arch_blue            #1793d1
 set $pretty_blue          #268bd2
 set $another_blue         #47afdf
 set $light_blue           #79bac1
-set $bar_bg               #002b36
 set $pretty_light_blue    #00afd7
 set $aquamarine           #06989a
 set $sea                  #bdced3
+set $bar_bg               #002b36
 
 # statusbar
 bar {
@@ -143,6 +143,7 @@ for_window [class="Pavucontrol"] move position center
 
 for_window [title="GIMP Startup"] move workspace $ws5
 for_window [class="Gimp"]         move workspace $ws5
+for_window [class="Thunderbird"]  move workspace $ws7
 for_window [class="Spotify"]      move workspace $ws8
 for_window [class="kdenlive"]     move workspace $ws9
 
@@ -307,7 +308,7 @@ bindsym F5 $run subl3
 bindsym F7 $run activate thunderbird
 bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
-bindsym F11 reload
+#bindsym F11 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym F12 restart
 # restart picom (former compton)

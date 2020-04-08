@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+cd $TMP1
+
+rm -f config.h &&
+sudo make && 
+sudo make install &&
+make clean &&
+rm -f config.h

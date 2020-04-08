@@ -43,6 +43,7 @@ diffutils
 discord
 dnsmasq
 doge
+dos2unix
 dosbox
 dosemu
 dosfstools
@@ -56,6 +57,7 @@ ethtool
 expac
 fakeroot
 fbgrab
+fd
 feh
 figlet
 file
@@ -149,7 +151,6 @@ nethack
 newsboat
 nmap
 notmuch
-notmuch-mutt
 notmuch-vim
 noto-fonts
 noto-fonts-emoji
@@ -184,7 +185,7 @@ python-jupyter_client
 python-lxml
 python-pip
 python-pywal
-python-xdg
+python-pyxdg
 qalculate-gtk
 qemu
 qt5-styleplugins
@@ -245,12 +246,14 @@ upower
 urxvt-perls
 util-linux
 virt-manager
+virtualbox
 w3m
 which
 whois
 wmctrl
 wpa_supplicant
 xf86-video-vesa
+xonotic
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
