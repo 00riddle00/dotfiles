@@ -13,6 +13,7 @@
 - Separate repos for suckless:
 	- [dwm](https://github.com/00riddle00/dwm)
 	- [dmenu](https://github.com/00riddle00/dmenu)
+- Wallpapers [repo](https://github.com/00riddle00/wallpapers)
 
 ### Window managers
 - Openbox
