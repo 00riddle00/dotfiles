@@ -66,7 +66,7 @@ Deployment scripts are reserved for the bright future.
 * Arch installed with `base` and `base-devel`
 * [list of programs](https://github.com/00riddle00/dotfiles/blob/master/progs.csv)
 ```bash
-git clone https://github.com/00riddle00/dotfiles $HOME/.dotfiles
+git clone --recurse-submodules -j8 https://github.com/00riddle00/dotfiles $HOME/.dotfiles
 $HOME/.dotfiles/bin/manage_dotfiles/symlink_dotfiles.sh
 $HOME/.dotfiles/bin/manage_dotfiles/install_vim_plugins.sh
 ```
