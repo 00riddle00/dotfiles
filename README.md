@@ -78,5 +78,5 @@ The usual suspects are
 
 As well as:
 * Jason Ryan: [http://jasonwryan.com/](http://jasonwryan.com/), [sourcehut](https://hg.sr.ht/~jasonwryan) -> best colors in terminal apps
-* Andrea Denisse: [https://github.com/da-edra](https://github.com/da-edra) -> beautiful i3blocks
+* Andrea Denisse: [https://github.com/da-edra](https://github.com/da-edra) -> beautiful i3blocks and neofetch pacman image
 * Micah Halter: [https://www.mehalter.com/](https://www.mehalter.com/), [Git](https://git.mehalter.com/mehalter) -> many things
