@@ -117,6 +117,11 @@ alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DI
 alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 
+# xmonad
+alias mod='vim $XDG_CONFIG_HOME/xmonad/xmonad.hs'
+## temp workaround (xdg base dir issues)
+alias mod.recompile='rm -r ~/.xmonad && xmonad --recompile'
+
 # run shell scripts
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 alias charge='$SHELL_SCRIPTS_DIR/battery.sh'

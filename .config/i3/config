@@ -28,11 +28,7 @@ set $run exec --no-startup-id
 set $mod Mod4
 set $alt Mod1
 set $esc Escape
-set $ctrl Control
-set $tab Tab
 set $print Print
-set $shutdown sudo shutdown -h now
-set $reboot sudo reboot
 
 floating_modifier $alt
 
@@ -48,7 +44,6 @@ $run flameshot
 $run dunst
 $run picom -b
 $run safeeyes
-$run nm-applet
 $run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux"] move scratchpad
 
 # =============================
@@ -56,16 +51,9 @@ $run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux
 # =============================
 
 # GAP VARIABLES
-#
-# standard
 set $inner 8 
 set $outer 4
 set $top   0
-#
-# fancy
-# set $inner 30 
-# set $outer 0
-# set $top   5
 
 for_window [class="^.*"] border pixel 1
 border_radius 0
@@ -113,10 +101,10 @@ bar {
 # Colors
 # class                    border         bg                    text            indicator
 client.focused             $arch_blue     $pretty_light_blue    $light_blue     $arch_blue
-# client.focused_inactive  $arch_blue     $arch_blue            $light_blue     $arch_blue
-# client.unfocused         $arch_blue     $arch_blue            $light_blue     $arch_blue
-# client.urgent            $arch_blue     $arch_blue            $light_blue     $arch_blue
-# client.placeholder       $arch_blue     $arch_blue            $light_blue     $arch_blue
+client.focused_inactive    $arch_blue     $arch_blue            $light_blue     $arch_blue
+client.unfocused           $arch_blue     $arch_blue            $light_blue     $arch_blue
+client.urgent              $arch_blue     $arch_blue            $light_blue     $arch_blue
+client.placeholder         $arch_blue     $arch_blue            $light_blue     $arch_blue
 
 # =============================
 #  Window traits 
@@ -135,27 +123,20 @@ for_window [class="Pavucontrol"] resize set 625 450
 for_window [class="Pavucontrol"] border pixel 3
 for_window [class="Pavucontrol"] move position center
 
-#for_window [class="qutebrowser"] floating enable
-#for_window [class="qutebrowser"] sticky enable
-#for_window [class="qutebrowser"] resize set 1000 800
-#for_window [class="qutebrowser"] border pixel 3
-#for_window [class="qutebrowser"] move position center
-
-for_window [title="GIMP Startup"] move workspace $ws5
 for_window [class="Gimp"]         move workspace $ws5
 for_window [class="Thunderbird"]  move workspace $ws7
 for_window [class="Spotify"]      move workspace $ws8
 for_window [class="kdenlive"]     move workspace $ws9
 
-for_window [instance="calendar"] floating enable
-for_window [instance="calendar"] resize set 160 140
-for_window [instance="calendar"] move position 1541 26
-for_window [instance="calendar"] border pixel 2
+for_window [instance="i3blocks_calendar"] floating enable
+for_window [instance="i3blocks_calendar"] resize set 160 140
+for_window [instance="i3blocks_calendar"] move position 1430 28
+for_window [instance="i3blocks_calendar"] border pixel 2
 
-for_window [instance="weather"] floating enable
-for_window [instance="weather"] resize set 928 667
-for_window [instance="weather"] move position 988 26
-for_window [instance="weather"] border pixel 2
+for_window [instance="i3blocks_weather"] floating enable
+for_window [instance="i3blocks_weather"] resize set 928 667
+for_window [instance="i3blocks_weather"] move position 988 28
+for_window [instance="i3blocks_weather"] border pixel 2
 
 # =============================
 #  Basic Bindings
@@ -168,52 +149,32 @@ bindsym $mod+Shift+space    floating toggle
 
 bindsym $alt+$esc           kill
 
-bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
-bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
-
 # =============================
 #  Letter Bindings
 # =============================
 
 bindsym $mod+c $run activate spotify
 bindsym $mod+p $run dmenu-pastes
-
 bindsym $mod+q $run activate emacs
-bindsym $mod+Prior $run "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"
-bindsym $mod+Next $run "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"
-
-bindsym $mod+Shift+d $run activate qbittorrent
-bindsym $mod+m $run activate nomacs
 bindsym $mod+o $run "keepass $DROPBOX/sync/keepass/8gb.kdbx"
 bindsym $mod+f $run activate filezilla
 bindsym $alt+e $run thunar
 bindsym $mod+e $run wmctrl -a "File Manager"
 bindsym $mod+g $run activate smartgit
 bindsym $mod+semicolon $run activate libreoffice
-# bindsym $mod+t $run tint2
-# bindsym $mod+Shift+t $run killall tint2 
 bindsym $mod+n workspace $ws2; $run brave
-# bindsym $mod+t $run qutebrowser "https://translate.google.com/#view=home&op=translate&sl=en&tl=lt"
 bindsym $mod+t $run qutebrowser-wall 
-
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
-#bindsym $mod+s $run xscreensaver-command --lock
 bindsym $mod+s $run betterlockscreen -t "" -l
 bindsym $mod+b $run gimp
 bindsym $mod+d $run i3-showdesktop $ws10 
-# bindsym $alt+q fullscreen disable
 
-# bindsym $mod+u [instance="dropdown_math"] scratchpad show; [instance="dropdown_math"] move position center
 bindsym $mod+u [instance="dropdown_aux"] scratchpad show; [instance="dropdown_aux"] move position center
 bindsym $alt+q [instance="dropdown_aux"] move scratchpad;
 bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle
-# bindsym $mod+Prior      gaps inner current plus 3
-# bindsym $mod+Next       gaps inner current minus 3
-# bindsym $mod+t          gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
-# bindsym $mod+Shift+t    gaps inner current set 0; gaps outer current set 0; gaps top current set 0
 
 # distraction free mode
 bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer current set 0; gaps top current set 0
@@ -264,9 +225,7 @@ set $ws10 " 10:  "
 
 # moved this line after assigning workspaces so as 
 # not to break ws1 icon
-# $run i3-msg 'workspace $ws1; $run $term -name t2'
 $run i3-msg 'workspace $ws1; $run i3-vimnotes' 
-#$run i3-vimnotes
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -297,6 +256,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # ===================
 
 bindsym F1 $run terminator
+bindsym $mod+F1 $run "killall picom && picom -b"
 bindsym $alt+F2 $run i3-msg '$run $term -name t2'
 bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
 
@@ -311,8 +271,12 @@ bindsym F10 $run activate qalculate-gtk
 #bindsym F11 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym F12 restart
-# restart picom (former compton)
-bindsym $mod+F1 $run "killall picom && picom -b"
+
+bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
+bindsym $mod+F6            $run light -A 10 && pkill -RTMIN+2 i3blocks
+bindsym $mod+F11           $run amixer set Master 10%- && pkill -RTMIN+1 i3blocks
+bindsym $mod+F12           $run amixer set Master 10%+ && pkill -RTMIN+1 i3blocks
+bindsym $mod+Shift+Delete  $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
 
 bindsym Insert             $run rofi -show
 bindsym $mod+Shift+Insert  $run dmenu_run
@@ -321,21 +285,15 @@ bindsym $mod+Insert        $run dmenu-surfraw
 bindsym $mod+End           $run rofi -show Power -modi Power:$SHELL_SCRIPTS_DIR/rofi/power.sh 
 bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$SHELL_SCRIPTS_DIR/rofi/kill.sh 
 
-bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
-bindsym $mod+F6            $run light -A 10 && pkill -RTMIN+2 i3blocks
-bindsym $mod+F11           $run amixer set Master 10%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+F12           $run amixer set Master 10%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+Shift+Delete  $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
+bindsym $mod+Prior $run "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"
+bindsym $mod+Next $run "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"
+
+bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
+bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 
 # ===================
 #  Arrow keys
 # ===================
-
-# alternatively, you can use the cursor keys:
-# bindsym $mod+Left focus left
-# bindsym $mod+Down focus down
-# bindsym $mod+Up focus up
-# bindsym $mod+Right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left

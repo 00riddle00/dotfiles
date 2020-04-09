@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-title="weather"
+title="i3blocks_weather"
 
 case "$BLOCK_BUTTON" in
   1)  getforecast && showweather;

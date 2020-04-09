@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-title="calendar"
+title="i3blocks_calendar"
 
 case "$BLOCK_BUTTON" in
   1) i3-msg -q "exec --no-startup-id urxvt -name $title -hold -e cal -m" ;;

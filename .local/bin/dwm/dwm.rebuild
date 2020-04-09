@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-cd $TMP1
+cd $TMP1/dwm
 
 rm -f config.h &&
 sudo make && 
