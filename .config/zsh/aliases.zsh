@@ -329,7 +329,7 @@ alias zr='vim $ZDOTDIR/.zshrc'
 alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
 alias tg='vim ~/.tigrc'
 ### openbox specific
-# alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
+alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'
 # alias start='vim $MAIN_HOME/.config/openbox/autostart.sh'
 # alias tintrc='vim $MAIN_HOME/.config/tint2/tint2rc'
 
@@ -472,3 +472,4 @@ alias letr='chmod -R 755'
 alias corona='curl https://corona-stats.online/lithuania'
 alias grep.info='grep -rHn'
 alias sso='ssh -p 22033 centos@ovh'
+alias pa='pac.owner'

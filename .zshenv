@@ -3,7 +3,7 @@
 # ============================= 
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu:$HOME/.local/bin/mutt:$HOME/.local/bin/dwm"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu:$HOME/.local/bin/mutt:$HOME/.local/bin/dwm:$HOME/.local/bin/openbox"
 
 # Fuzzy finder
 export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --border"

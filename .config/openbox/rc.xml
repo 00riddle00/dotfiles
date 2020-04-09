@@ -44,7 +44,7 @@
   <theme>
     <name>Numix-Archblue</name>
     <titleLayout>NLIMC</titleLayout>
-    <cornerRadius>0</cornerRadius>
+    <cornerRadius>3</cornerRadius>
     <!--
        available characters are NDSLIMC, each can occur at most once.
        N: window icon
@@ -555,7 +555,7 @@
     </keybind>
     <keybind key="F9">
       <action name="Execute">
-        <command>sh -c "activate chrome"</command>
+        <command>sh -c "activate brave"</command>
       </action>
     </keybind>
     <keybind key="F4">

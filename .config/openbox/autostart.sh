@@ -1,15 +1,10 @@
 #!/usr/bin/env sh
 
-$SHELL_SCRIPTS_DIR/config_monitors.sh
-xscreensaver -no-splash &
+# apps are mainly started via ~/.xinitrc
 feh  --bg-scale "$CANDY/images/desktop/arch0.jpg" 
 conky -c $XDG_CONFIG_HOME/conky/stats_blue > /dev/null 2>&1 &
 conky -c $XDG_CONFIG_HOME/conky/clock_blue > /dev/null 2>&1 &
-#picom -b &
-dropbox &
-flameshot &
+# picom -b &
 tint2 &
-dunst &
-urxvt -name t2 &
-safeeyes &
-nm-applet &
+openbox-vimnotes &
+# urxvt -name t2 &

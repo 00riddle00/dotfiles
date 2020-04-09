@@ -36,14 +36,9 @@ floating_modifier $alt
 #  Startup
 # =============================
 
-$run $SHELL_SCRIPTS_DIR/config_monitors.sh
-$run xscreensaver -no-splash
-$run feh --bg-scale "$CANDY/images/desktop/arch3.jpg" 
-$run dropbox
-$run flameshot
-$run dunst
+# apps are mainly started via ~/.xinitrc
+$run feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
 $run picom -b
-$run safeeyes
 $run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux"] move scratchpad
 
 # =============================

@@ -15,14 +15,11 @@ xrandr --auto
 
 # launch apps
 $SHELL_SCRIPTS_DIR/config_monitors.sh
-feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
-dropbox &
-dunst &
-# picom -b &
-safeeyes &
 xscreensaver -no-splash &
 flameshot &
-# urxvt -e i3-vimnotes &
+dropbox &
+dunst &
+safeeyes &
 
 # launch wm
 
@@ -30,7 +27,6 @@ flameshot &
 
 exec i3
 
-## xsetroot -name "Thanks for all the fish!" &
-## dwm.loop
-
+# xsetroot -name "Thanks for all the fish!" &
+# dwm.loop
 
