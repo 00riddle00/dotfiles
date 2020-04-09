@@ -1,0 +1,80 @@
+REPO(S),TAG,NAME IN REPO (or git url),PURPOSE
+Official,app,bat,lightweight terminal-based calendar.
+Official,app,broot,
+Official,app,calcurse,
+Official,app,cmus,
+Official,app,conky,
+Official,app,dunst,suckless notification system.
+Official,app,espeak-ng,
+Official,app,fd,
+Official,app,feh,
+Official,app,flameshot,
+Official,app,fzf,fuzzy finder tool.
+Official,app,irssi,
+Official,app,lxappearance,
+Official,app,mpd,lightweight music daemon.
+Official,app,mpv,video player.
+Official,app,msmtp,
+Official,app,ncmpcpp,ncurses interface for music with multiple formats and a powerful tag editor.
+Official,app,neofetch,
+Official,app,neomutt,
+Official,app,newsboat,terminal RSS client.
+Official,app,notmuch,
+Official,app,offlineimap,
+Official,app,playerctl,
+Official,app,qutebrowser,
+Official,app,ranger,
+Official,app,rofi,
+Official,app,rofimoji,
+Official,app,rtv,
+Official,app,scrot,
+Official,app,surfraw,
+Official,app,sxiv,minimalist image viewer.
+Official,app,tig,
+Official,app,tint2,
+Official,app,tmux,terminal multiplexer
+Official,app,picom,
+Official,app,urxvt-perls,
+Official,app,w3m,
+Official,app,wmctrl,
+Official,app,youtube-dl,can download any YouTube video (or playlist or channel) when given the link.
+Official,app,zathura,pdf viewer with vim-like bindings.
+Official,app,zathura-pdf-mupdf,allows mupdf pdf compatibility in zathura.
+Official,app,zsh,
+Official,wm,i3-gaps,the main graphical user interface and window manager.
+Official,wm,xmonad,
+Official,wm,xmonad-contrib,
+Official,wm,i3blocks,the i3 status bar.
+Official,font,adobe-source-code-pro-fonts,
+Official,font,noto-fonts,
+Official,font,noto-fonts-emoji,
+AUR,app,betterlockscreen,
+AUR,app,cava,
+AUR,app,cli-visualizer,
+AUR,app,gotop,
+AUR,app,htop-vim-git,
+AUR,app,lazygit,
+AUR,app,rtorrent-ps,
+AUR,app,light-git,
+AUR,app,lynx-git,terminal browser which can also view images.
+AUR,app,rxvt-unicode-patched,
+AUR,app,safeeyes,
+AUR,app,sc-im,Excel-like terminal spreadsheet manager.
+AUR,app,sxiv-rifle,
+AUR,app,tmuxinator,
+AUR,app,urlview,
+AUR,app,urxvt-font-size-git,
+AUR,lib,libxft-bgra,
+AUR,lib,libtorrent-ps,
+AUR,wm,openbox-patched,
+AUR,theme,la-capitaine-icon-theme,
+AUR,theme,numix-cursor-theme,
+AUR,theme,numix-themes-archblue,
+AUR,font,nerd-fonts-dejavu-complete,
+AUR,font,nerd-fonts-droid-sans-mono,
+AUR,font,nerd-fonts-fira-code,
+AUR,font,nerd-fonts-inconsolata,
+AUR,font,nerd-fonts-roboto-mono,
+AUR,font,nerd-fonts-source-code-pro,
+AUR,font,nerd-fonts-ubuntu-mono,
+AUR,font,ttf-symbola-free,
