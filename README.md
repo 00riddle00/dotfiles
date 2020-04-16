@@ -20,7 +20,6 @@
 - Openbox
 - i3-gaps
 - dwm
-- Xmonad
 
 ### Applications
 - bat
