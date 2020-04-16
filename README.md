@@ -6,6 +6,9 @@
 #### i3
 ![i3_preview](https://github.com/00riddle00/dotfiles/raw/master/preview_i3.png) 
 
+#### dwm
+![dwm_preview](https://github.com/00riddle00/dotfiles/raw/master/preview_dwm.png) 
+
 - Scripts are in  `bin/` and `.local/bin/`
 - Adhering to XDG Base Directory specification:
 	- All configs that can be in `~/.config/` are being moved there (in progress).

@@ -70,7 +70,7 @@ fi
 stty -ixon
 
 ## system information tool for Arch Linux
-neofetch
+# neofetch
 
 ## random delimiter to know that the shell has been reloaded
 # echo "  [========]"
