@@ -20,13 +20,18 @@ flameshot &
 dropbox &
 dunst &
 safeeyes &
+nm-applet &
 
+# ----------------------------
 # launch wm
+# ----------------------------
 
-## exec xmonad
+# exec openbox-session
 
-exec i3
+# exec i3
 
-# xsetroot -name "Thanks for all the fish!" &
-# dwm.loop
+# exec xmonad
 
+xsetroot -name "$(date +"%m-%d %H:%M")" &
+feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
+dwm.loop
