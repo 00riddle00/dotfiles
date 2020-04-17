@@ -15,9 +15,9 @@
 	- Some environmental variables have been set in `~/.zshenv` to move configs into `~/.config/`
 - Separate repos for suckless:
 	- [dwm](https://github.com/00riddle00/dwm)
+	- [dwmblocks](https://github.com/00riddle00/dwmblocks)
 	- [dmenu](https://github.com/00riddle00/dmenu)
 	- [st](https://github.com/00riddle00/st)
-	- [dwmblocks](https://github.com/00riddle00/dwmblocks)
 - Wallpapers [repo](https://github.com/00riddle00/wallpapers)
 
 ### Window managers
