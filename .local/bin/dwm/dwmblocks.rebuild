@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+cd $TMP1/dwmblocks
+sudo make clean install
+killall dwmblocks
+dwmblocks &

@@ -117,6 +117,9 @@ alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DI
 alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 
+# dwm
+alias dout='killall xinit'
+
 # run shell scripts
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 alias charge='$SHELL_SCRIPTS_DIR/battery.sh'
@@ -469,3 +472,4 @@ alias grep.info='grep -rHn'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
 alias ll='dwm.rebuild'
+alias ll2='dwmblocks.rebuild'

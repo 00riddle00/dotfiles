@@ -4,7 +4,7 @@
 # | |___) | |_) | | (_) | (__|   <\__ \
 # |_|____/|_.__/|_|\___/ \___|_|\_\___/
 
-command=~/.local/bin/i3/i3blocks/$BLOCK_NAME
+command=~/.local/bin/statusbar/$BLOCK_NAME
 align=center
 separator=false
 separator_block_width=20

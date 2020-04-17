@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 cd $TMP1/dwm
 sudo make clean install
+killall dwm

@@ -30,8 +30,6 @@ nm-applet &
 
 # exec i3
 
-# exec xmonad
-
-xsetroot -name "$(date +"%m-%d %H:%M")" &
 feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
+dwmblocks &
 dwm.loop
