@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+if [ ! -d $HOME/.config ]; then
+      mkdir -p $HOME/.config;
+fi
+
+if [ ! -d $HOME/.local/share/applications ]; then
+      mkdir -p $HOME/.local/share/applications;
+fi
+
 # $HOME dir
 for entry in $DOTFILES_DIR/.[a-zA-Z]*; do
     # whenever you iterate over files/folders by globbing, it's good practice to avoid the corner 
