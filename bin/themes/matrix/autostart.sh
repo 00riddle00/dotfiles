@@ -1,12 +1,8 @@
 #!/usr/bin/env sh
 
-$SHELL_SCRIPTS_DIR/config_monitors.sh
-xscreensaver -no-splash &
 feh  --bg-scale "$CANDY/images/desktop/matrix.jpg" 
-conky -c $DOTFILES_DIR/.conky/stats_green > /dev/null 2>&1 &
-conky -c $DOTFILES_DIR/.conky/clock_green > /dev/null 2>&1 &
-dropbox &
-flameshot &
+conky -c $XDG_CONFIG_HOME/conky/stats_green > /dev/null 2>&1 &
+conky -c $XDG_CONFIG_HOME/conky/clock_green > /dev/null 2>&1 &
 tint2 &
 terminator --geometry=700x500 -T t1 &
 thunar &

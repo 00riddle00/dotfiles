@@ -19,17 +19,15 @@ xscreensaver -no-splash &
 flameshot &
 dropbox &
 dunst &
-safeeyes &
-nm-applet &
 
 # ----------------------------
 # launch wm
 # ----------------------------
 
-# exec openbox-session
+#exec openbox-session
 
-# exec i3
+exec i3
 
-feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
-dwmblocks &
-dwm.loop
+#feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
+#dwmblocks &
+#dwm.loop

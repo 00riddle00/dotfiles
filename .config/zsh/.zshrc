@@ -81,8 +81,5 @@ tmux > /dev/null 2>&1
 ## conda initialize
 # source $ZSH_DIR/conda_env.sh
 
-# broot
-source $HOME/.config/broot/launcher/bash/br
-
 # prevent Ctrl+d from exiting the shell
 set -o ignoreeof 

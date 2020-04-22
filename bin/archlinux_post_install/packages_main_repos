@@ -16,9 +16,9 @@ bc
 bind-tools
 binutils
 bison
+brave
 breeze
 bridge-utils
-broot
 calcurse
 cloc
 cmake
@@ -130,6 +130,7 @@ mutt
 ncmpcpp
 neofetch
 neomutt
+neovim
 netctl
 nethack
 newsboat
@@ -162,6 +163,7 @@ projectm
 pulseaudio
 pulseaudio-alsa
 python
+python-configobj
 python-jupyter_client
 python-lxml
 python-pip
@@ -183,6 +185,7 @@ ruby-irb
 scrot
 sed
 speedtest-cli
+steam-native-runtime
 strace
 sudo
 surfraw
@@ -190,6 +193,7 @@ sxiv
 sysfsutils
 sysstat
 termdown
+terminator
 texinfo
 texlive-bibtexextra
 texlive-core
