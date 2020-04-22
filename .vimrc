@@ -86,6 +86,9 @@ set nowrap
 " Scan only opened buffers and current file, makes autocompletion faster.
 set complete=.,w,b,u
 
+" Splits
+set splitbelow splitright
+
 " kudos to Jason Ryan (http://jasonwryan.com)
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
 
@@ -105,10 +108,25 @@ nmap    <leader>p       :setlocal paste!<CR>
 nmap    <leader>v       :vs<cr>
 nmap    <leader>s       :sp<cr>
 nmap    <leader>d       :pwd<cr>
-nmap    <C-Left>        :vertical resize -5<CR>
-nmap    <C-Right>       :vertical resize +5<CR>
-nmap    <C-Up>          :resize +5<CR>
-nmap    <C-Down>        :resize -5<CR>
+
+"<C-Left>
+nmap <silent> [1;5D :vertical resize -5<CR> 
+"<C-Right>
+nmap <silent> [1;5C :vertical resize +5<CR>
+"<C-Up>
+nmap <silent> [1;5A :resize +5<CR>
+"<C-Down>
+nmap <silent> [1;5B :resize -5<CR>
+
+" Change 2 split windows from vert to horiz or horiz to vert
+nmap <leader>th <C-w>t<C-w>H
+nmap <leader>tk <C-w>t<C-w>K
+
+" Double pressed tmux prefix key sends commands to
+" this spawned terminal instead of the parent one,
+" in which vim  is running
+map <leader>tt :vert term zsh<CR>
+
 nmap    <leader>r       :so $VIMRC<CR>
 nmap    <leader>h       :set hlsearch!<CR>
 nmap    <C-s>           :w!<CR>
@@ -131,8 +149,8 @@ nmap     tt             :tabnew<CR>
 nmap     te             :tabedit %<CR>
 nmap     tc             :tabclose<CR>
 nmap     tj             gT
-nmap     tk             gt
-nmap     th             :tabfirst<CR>
+"nmap     tk             gt
+"nmap     th             :tabfirst<CR>
 nmap     tl             :tablast<CR>
 
 " Macros
