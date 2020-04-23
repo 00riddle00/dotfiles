@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source $HOME/.dotfiles/.zshenv
+
 # $HOME dir
 for entry in $DOTFILES_DIR/.[a-zA-Z]*; do
     [ -e "$entry" ] && 

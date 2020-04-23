@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source $HOME/.dotfiles/.zshenv
+
 if [ ! -d $HOME/.config ]; then
       mkdir -p $HOME/.config;
 fi
