@@ -17,6 +17,7 @@ for app in "${apps[@]}"; do
     fi
 done
 
-git clone https://github.com/VundleVim/Vundle.vim.git $DOTFILES_DIR/.vim/bundle/Vundle.vim &&
-vim +PluginInstall +qall &&
+rm -rf $DOTFILES_DIR/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $DOTFILES_DIR/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 python ~/.vim/bundle/YouCompleteMe/install.py

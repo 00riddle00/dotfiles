@@ -473,3 +473,7 @@ alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
 alias ll='dwm.rebuild'
 alias ll2='dwmblocks.rebuild'
+
+alias main.process='a_minus_b main main.light > main.bloat'
+alias aur.process='a_minus_b aur aur.light > aur.bloat'
+

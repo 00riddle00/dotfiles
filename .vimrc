@@ -124,7 +124,11 @@ nmap <leader>tk <C-w>t<C-w>K
 
 " Double pressed tmux prefix key sends commands to
 " this spawned terminal instead of the parent one,
-" in which vim  is running
+" in which vim is running
+"
+" Smart pane switching (C-h, C-j, C-k, C-l) keys do work inside
+" the inner tmux session, which is being run in this spawned terminal
+" from vim, in contrast with ssh-ing into VM and spawning terminal with tmux.
 map <leader>tt :vert term zsh<CR>
 
 nmap    <leader>r       :so $VIMRC<CR>
