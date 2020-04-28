@@ -27,7 +27,6 @@
 
 ### Applications
 - bat
-- broot
 - calcurse
 - cmus
 - irssi
@@ -63,9 +62,10 @@
 
 ## Install
 
-Deployment scripts are reserved for the bright future.
+Deployment scripts are being crafted:
+[NPbuild](https://github.com/00riddle00/NPbuild)
 
-(just for myself so far):
+(installing so far):
 #### Prerequisites
 * Arch installed with `base` and `base-devel`
 * [list of programs](https://github.com/00riddle00/dotfiles/blob/master/progs.csv)
