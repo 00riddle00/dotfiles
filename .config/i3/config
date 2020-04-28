@@ -37,7 +37,7 @@ floating_modifier $alt
 # =============================
 
 # apps are mainly started via ~/.xinitrc
-$run feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
+$run feh --bg-scale "$DOTFILES_DIR/images/desktop/sea_color.jpg" &
 $run picom -b
 $run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux"] move scratchpad
 
