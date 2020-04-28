@@ -3,7 +3,12 @@
 autoload -U colors && colors
 
 # prompt
-PS1="┌─[%{$fg[cyan]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
+host_color="cyan"
+if [ "$HOST" != "riddle" ]; then
+  host_color="red"
+fi
+
+PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
 %?)%{$reset_color%}]
 └─╼ "
 
