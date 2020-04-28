@@ -35,3 +35,5 @@ a_union_b() { cat "$1" "$2" | sort -u }
 # find all files from current folder | prints extension of files if any | make a unique sorted list
 ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }
 
+# copy argumentsto clipboard
+sel() { echo "$@" | xclip}
