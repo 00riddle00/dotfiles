@@ -312,7 +312,7 @@ alias vpn.off='systemctl stop openvpn-client@airvpn.service'
 
 ## vim into conf files
 alias al='vim $ZDOTDIR/aliases.zsh'
-alias dun='vim /home/riddle/.dotfiles/.config/dunst/dunstrc'
+alias dun='vim $DOTFILES_DIR/.config/dunst/dunstrc'
 alias cm='vim ~/.config/picom/picom.conf'
 alias fn='vim $ZDOTDIR/functions.zsh'
 alias fn.fzf='vim $ZDOTDIR/functions_fzf.zsh'
