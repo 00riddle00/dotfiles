@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Script to open Browser instances
-
-exec qutebrowser --target tab "$1" &
