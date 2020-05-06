@@ -486,19 +486,6 @@
             <command>sh -c "activate emacs"</command>
          </action>
       </keybind>
-    <!--Activate "emacs" mode-->
-    <keybind key="A-o">
-      <action name="Execute">
-        <command>sh -c "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"</command>
-      </action>
-    </keybind>
-    <!--Deactivate "emacs" mode-->
-    <keybind key="A-n">
-      <action name="Execute">
-        <command>sh -c "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"</command>
-      </action>
-    </keybind>
-    <!-- emacs/> -->
     <!-- Various -->
     <keybind key="W-t">
       <action name="Execute">

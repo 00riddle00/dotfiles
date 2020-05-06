@@ -122,15 +122,10 @@ alias dout='killall xinit'
 
 # run shell scripts
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
-alias charge='$SHELL_SCRIPTS_DIR/battery.sh'
 ## used in sageMath shell
 alias pyc='$MAIN_HOME/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/193.5662.61/bin/pycharm.sh'
 alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
 alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
-alias rms.say='$SHELL_SCRIPTS_DIR/cowsay/rms_say.sh'
-alias rms.say.gnu='$SHELL_SCRIPTS_DIR/cowsay/rms_say_gnu.sh'
-alias gnu.say='cowsay -f "$SHELL_SCRIPTS_DIR/cowsay/cows/gnu.cow"'
-alias sw='$SHELL_SCRIPTS_DIR/switchwm'
 
 # ssh
 alias sa='ssh-add'
@@ -430,9 +425,6 @@ alias wifi.on='sudo ip link set wlp8s0 up'
 ## cat
 alias cat='bat'
 
-## tree
-alias tree='broot'
-
 ## ls
 # alias ls='ls --color=auto'
 # alias la='ls -al'
@@ -468,7 +460,6 @@ alias letr='chmod -R 755'
 # =============
 # entries appear here after appending output to this file
 alias corona='curl https://corona-stats.online/lithuania'
-alias grep.info='grep -rHn'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
 alias ll='dwm.rebuild'
@@ -476,4 +467,7 @@ alias ll2='dwmblocks.rebuild'
 
 alias main.process='a_minus_b main main.light > main.bloat'
 alias aur.process='a_minus_b aur aur.light > aur.bloat'
+
+alias grep.info='grep -rHn --exclude=histfile'
+alias gi='grep -rHn --exclude=histfile'
 

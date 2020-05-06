@@ -280,9 +280,6 @@ bindsym $mod+Insert        $run dmenu-surfraw
 bindsym $mod+End           $run rofi -show Power -modi Power:$SHELL_SCRIPTS_DIR/rofi/power.sh 
 bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$SHELL_SCRIPTS_DIR/rofi/kill.sh 
 
-bindsym $mod+Prior $run "$SHELL_SCRIPTS_DIR/reactivate_xkbmap.sh"
-bindsym $mod+Next $run "$SHELL_SCRIPTS_DIR/deactivate_xkbmap.sh"
-
 bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
 bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 
