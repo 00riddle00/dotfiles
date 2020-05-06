@@ -35,7 +35,7 @@ export DOTFILES_DIR=$MAIN_HOME/.dotfiles
 # DOTFILES VARS
 export VIMCOLOR=miro8
 export DIRCOLORS=$XDG_CONFIG_HOME/dircolors
-export SHELL_SCRIPTS_DIR=$DOTFILES_DIR/bin
+export SHELL_SCRIPTS_DIR=~/.local/bin
 export SHARE=$HOME/.local/share/riddle00
 export VIMNOTES='$SHELL_SCRIPTS_DIR/vimnotes.sh'
 export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
