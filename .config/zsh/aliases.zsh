@@ -124,8 +124,8 @@ alias dout='killall xinit'
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 ## used in sageMath shell
 alias pyc='$MAIN_HOME/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/193.5662.61/bin/pycharm.sh'
-alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run.sh'
-alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run.sh'
+alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run'
+alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run'
 
 # ssh
 alias sa='ssh-add'
