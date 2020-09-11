@@ -48,20 +48,8 @@ export KEEP="$SYNC/keepass"
 export HDMI_SCREEN="HDMI-1-1"
 export LAPTOP_SCREEN="eDP-1-1"
 
-# MAIN USER SETTINGS
-export USER=riddle
-
-# DOTFILES VARS
-export VIMNOTES='$BIN/vimnotes.sh'
-export LD_LIBRARY_PATH=$HOME/mylibs
-
 # Fuzzy finder
 export FZF_DEFAULT_OPTS="--height 100% --layout=reverse --border"
 
-# CURRENT USER VARS
-## there has been no need so far
-
-# SYSTEMWIDE VARS
-export LC_ALL='en_US.UTF-8'
 # Uniform look for Qt and GTK applications
 export QT_QPA_PLATFORMTHEME="gtk3"
