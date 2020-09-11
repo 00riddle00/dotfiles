@@ -4,18 +4,6 @@
 
 export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu:$HOME/.local/bin/mutt:$HOME/.local/bin/dwm:$HOME/.local/bin/openbox"
 
-# Default programs:
-export EDITOR="vim"
-export TERMINAL="urxvt"
-export BROWSER="brave"
-export READER="zathura"
-export STATUSBAR="i3blocks"
-export PAGER="bat"
-# bat used as a colorizing pager for man
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-## for i3
-export FILE="ranger"
-
 # XDG BASE DIR variables
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -27,6 +15,18 @@ export ZDOTDIR="$HOME/.config/zsh"
 export VIMCOLOR="miro8"
 export VIMRC="$HOME/.vimrc"
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
+
+# Default programs
+export EDITOR="vim"
+export TERMINAL="urxvt"
+export BROWSER="brave"
+export READER="zathura"
+export STATUSBAR="i3blocks"
+export PAGER="bat"
+# bat used as a colorizing pager for man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+## for i3
+export FILE="ranger"
 
 # Directories
 export DOTFILES="$HOME/.dotfiles"
