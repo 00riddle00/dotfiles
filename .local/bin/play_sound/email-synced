@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
-dir="$SHARE/sounds/email-synced"
+dir="$DOTSHARE/sounds/email-synced"
 sound=$(ls $dir |sort -R | head -1)
 mpv "$dir/$sound" > /dev/null 2>&1

@@ -2,7 +2,7 @@
 
 error() { echo "$1"; exit 1; }
 
-cowsay_dir="$SHARE/cowsay"
+cowsay_dir="$DOTSHARE/cowsay"
 cows_dir="$cowsay_dir/cows"
 phrases_dir="$cowsay_dir/phrases"
 

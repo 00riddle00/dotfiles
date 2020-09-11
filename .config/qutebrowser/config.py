@@ -1,8 +1,8 @@
 # kudos to Jason Ryan (http://jasonwryan.com)
 
 # general settings
-c.url.default_page = 'file:///home/riddle/.local/share/riddle00/qutebrowser-homepage/index.html'
-c.url.start_pages = 'file:///home/riddle/.local/share/riddle00/qutebrowser-homepage/index.html'
+c.url.default_page = 'file:///home/riddle/.local/share/dotshare/qutebrowser-homepage/index.html'
+c.url.start_pages = 'file:///home/riddle/.local/share/dotshare/qutebrowser-homepage/index.html'
 c.editor.command = ["urxvt", "-name", "dropdown_vim", "-e", "vim", "-f", "{}"]
 c.new_instance_open_target = "tab-bg"
 c.prompt.filebrowser = False

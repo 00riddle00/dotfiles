@@ -269,8 +269,8 @@ alias bak='cd $HOME/backups'
 alias bin='cd $HOME/.local/bin'
 alias candy='cd $CANDY'
 alias conf='cd ~/.config/'
-alias drop.bak='cd $HOME/Dropbox/sync/backup'
-alias drop.phone='cd $HOME/Dropbox/sync/phone'
+alias drop.bak='cd $HOME/Dropbox/backup'
+alias drop.phone='cd $HOME/Dropbox/phone'
 alias drop='cd $DROPBOX'
 alias dw='cd $HOME/Downloads/'
 alias lok='cd $HOME/.local'
@@ -292,7 +292,7 @@ alias tmp8='cd $HOME/tmp8'
 alias tmp='cd $HOME/tmp1'
 alias vi='cd $HOME/VirtualBox\ VMs/'
 alias zdot='cd $ZDOTDIR'
-alias share="cd $SHARE"
+alias share="cd $DOTSHARE"
 
 ## network
 alias pp='ping -c 3 www.google.com'
@@ -468,4 +468,4 @@ alias aur.process='a_minus_b aur aur.light > aur.bloat'
 
 alias grep.info='grep -rHn --exclude=histfile'
 alias gi='grep -rHn --exclude=histfile'
-
+alias get='curl -LO'

@@ -151,7 +151,7 @@ bindsym $alt+$esc           kill
 bindsym $mod+c $run activate spotify
 bindsym $mod+p $run dmenu-pastes
 bindsym $mod+q $run activate emacs
-bindsym $mod+o $run "keepass $DROPBOX/sync/keepass/8gb.kdbx"
+bindsym $mod+o $run "keepass $DROPBOX/keepass/8gb.kdbx"
 bindsym $mod+f $run activate filezilla
 bindsym $alt+e $run thunar
 bindsym $mod+e $run wmctrl -a "File Manager"

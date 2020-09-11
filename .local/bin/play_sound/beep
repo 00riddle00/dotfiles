@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-mpv $SHARE/sounds/beep.mp3 > /dev/null 2>&1
+mpv $DOTSHARE/sounds/beep.mp3 > /dev/null 2>&1

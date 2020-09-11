@@ -3,7 +3,7 @@
 # Must have xclip installed to even show menu.
 xclip -h 2>/dev/null || exit 1
 
-chosen=$(cat $SHARE/colors | dmenu -i -l 20 | cut -d ';' -f2 |  sed "s/ *//")
+chosen=$(cat $DOTSHARE/colors | dmenu -i -l 20 | cut -d ';' -f2 |  sed "s/ *//")
 
 [ "$chosen" != "" ] || exit
 
