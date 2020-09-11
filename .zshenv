@@ -53,3 +53,6 @@ export FZF_DEFAULT_OPTS="--height 100% --layout=reverse --border"
 
 # Uniform look for Qt and GTK applications
 export QT_QPA_PLATFORMTHEME="gtk3"
+
+# SYSTEMWIDE VARS
+export LC_ALL='en_US.UTF-8'
