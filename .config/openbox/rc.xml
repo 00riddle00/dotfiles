@@ -563,7 +563,7 @@
     <keybind key="Insert">
       <action name="Execute">
         <!-- <command>xdotool key Right</command> -->
-        <command>sh -c "$SHELL_SCRIPTS_DIR/gmrun/gmrunner.py"</command>
+        <command>sh -c "$BIN/gmrun/gmrunner.py"</command>
       </action>
     </keybind>
     <keybind key="W-f">

@@ -14,7 +14,7 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
 # launch apps
-$SHELL_SCRIPTS_DIR/config_monitors
+$BIN/config_monitors
 xscreensaver -no-splash &
 flameshot &
 dropbox &

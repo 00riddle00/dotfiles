@@ -25,7 +25,7 @@ sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Oxygen-14-Matrix-Green
 cp $HOME/.config/tint2/tint2rc.matrix $HOME/.config/tint2/tint2rc 
 
 # change openbox autostart file
-cp $SHELL_SCRIPTS_DIR/themes/matrix/autostart.sh $HOME/.config/openbox/autostart.sh 
+cp $BIN/themes/matrix/autostart.sh $HOME/.config/openbox/autostart.sh 
 
 # run openbox autostart
 $HOME/.config/openbox/autostart.sh

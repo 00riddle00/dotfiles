@@ -27,12 +27,12 @@ alias .....='cd ../../../..'
 alias root='cd /'
 
 # dotfiles
-alias arp='vim $SHELL_SCRIPTS_DIR/archlinux_post_install/packages_main_repos'
-alias aur='vim $SHELL_SCRIPTS_DIR/archlinux_post_install/packages_aur'
+alias arp='vim $BIN/archlinux_post_install/packages_main_repos'
+alias aur='vim $BIN/archlinux_post_install/packages_aur'
 alias dot='cd $DOTFILES_DIR'
-alias dotm='cd $SHELL_SCRIPTS_DIR/manage_dotfiles'
+alias dotm='cd $BIN/manage_dotfiles'
 alias ig='vim $DOTFILES_DIR/.gitignore'
-alias she='cd $SHELL_SCRIPTS_DIR'
+alias she='cd $BIN'
 
 # emacs
 alias ee='vim ~/.emacs.d/init.el'
@@ -113,7 +113,7 @@ alias wall='feh --bg-scale'
 
 # i3
 alias i3.out='i3-msg exit'
-alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $SHELL_SCRIPTS_DIR/vimnotes.sh"'
+alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes.sh"'
 alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 
@@ -124,8 +124,8 @@ alias dout='killall xinit'
 alias autostart='$MAIN_HOME/.config/openbox/autostart.sh'
 ## used in sageMath shell
 alias pyc='$MAIN_HOME/.local/share/JetBrains/Toolbox/apps/PyCharm-P/ch-0/193.5662.61/bin/pycharm.sh'
-alias theme.matrix='$SHELL_SCRIPTS_DIR/themes/matrix/run'
-alias theme.riddle='$SHELL_SCRIPTS_DIR/themes/riddle/run'
+alias theme.matrix='$BIN/themes/matrix/run'
+alias theme.riddle='$BIN/themes/riddle/run'
 
 # ssh
 alias sa='ssh-add'
@@ -277,7 +277,7 @@ alias drop='cd $DROPBOX'
 alias dw='cd $MAIN_HOME/Downloads/'
 alias lok='cd $MAIN_HOME/.local'
 alias notes='cd $NOTES'
-alias pak='cd $SHELL_SCRIPTS_DIR/archlinux_post_install/'
+alias pak='cd $BIN/archlinux_post_install/'
 alias pi='cd $HOME/pics'
 alias pro='cd $MAIN_HOME/pro'
 alias serv='cd /srv/http'

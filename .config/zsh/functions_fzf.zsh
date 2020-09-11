@@ -2,7 +2,7 @@
 fcp() { cp -v "$1" "$(awk '{print $2}' ~/.config/directories | fzf | sed "s|~|$HOME|")" ; }
  
 # edit scripts (using fzf)
-se() { du -a $SHELL_SCRIPTS_DIR/* ~/.local/bin/* | awk '{print $2}' | fzf --preview 'bat --color always {}' | xargs -ro $EDITOR ; }
+se() { du -a $BIN/* ~/.local/bin/* | awk '{print $2}' | fzf --preview 'bat --color always {}' | xargs -ro $EDITOR ; }
 
 # -----------------------------------------------------------------------------
 # file
