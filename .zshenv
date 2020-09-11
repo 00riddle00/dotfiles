@@ -28,9 +28,9 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some DMs.
 export ZDOTDIR="$HOME/.config/zsh"
 
 # MAIN USER SETTINGS
-export MAIN_USER=riddle
-export MAIN_HOME=/home/$MAIN_USER
-export DOTFILES=$MAIN_HOME/.dotfiles
+export USER=riddle
+export HOME=/home/$USER
+export DOTFILES=$HOME/.dotfiles
 
 # DOTFILES VARS
 export VIMCOLOR=miro8
@@ -38,18 +38,18 @@ export DIRCOLORS=$XDG_CONFIG_HOME/dircolors
 export BIN=$HOME/.local/bin
 export SHARE=$HOME/.local/share/riddle00
 export VIMNOTES='$BIN/vimnotes.sh'
-export LD_LIBRARY_PATH=$MAIN_HOME/mylibs
+export LD_LIBRARY_PATH=$HOME/mylibs
 
 # MAIN USER VARS
-export VIMRC=$MAIN_HOME/.vimrc
-export DOWNLOADS=$MAIN_HOME/Downloads
-export DW=$MAIN_HOME/Downloads
-export DROPBOX=$MAIN_HOME/Dropbox
-export TMP1=$MAIN_HOME/tmp1
-export TMP2=$MAIN_HOME/tmp2
-export TMP3=$MAIN_HOME/tmp3
-export TMP4=$MAIN_HOME/tmp4
-export PRO=$MAIN_HOME/pro
+export VIMRC=$HOME/.vimrc
+export DOWNLOADS=$HOME/Downloads
+export DW=$HOME/Downloads
+export DROPBOX=$HOME/Dropbox
+export TMP1=$HOME/tmp1
+export TMP2=$HOME/tmp2
+export TMP3=$HOME/tmp3
+export TMP4=$HOME/tmp4
+export PRO=$HOME/pro
 export SYNC=$DROPBOX/sync
 export CANDY=$SYNC/candy
 export NOTES=$SYNC/gtd/
