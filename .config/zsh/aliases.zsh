@@ -29,9 +29,9 @@ alias root='cd /'
 # dotfiles
 alias arp='vim $BIN/archlinux_post_install/packages_main_repos'
 alias aur='vim $BIN/archlinux_post_install/packages_aur'
-alias dot='cd $DOTFILES_DIR'
+alias dot='cd $DOTFILES'
 alias dotm='cd $BIN/manage_dotfiles'
-alias ig='vim $DOTFILES_DIR/.gitignore'
+alias ig='vim $DOTFILES/.gitignore'
 alias she='cd $BIN'
 
 # emacs
@@ -307,7 +307,7 @@ alias vpn.off='systemctl stop openvpn-client@airvpn.service'
 
 ## vim into conf files
 alias al='vim $ZDOTDIR/aliases.zsh'
-alias dun='vim $DOTFILES_DIR/.config/dunst/dunstrc'
+alias dun='vim $DOTFILES/.config/dunst/dunstrc'
 alias cm='vim ~/.config/picom/picom.conf'
 alias fn='vim $ZDOTDIR/functions.zsh'
 alias fn.fzf='vim $ZDOTDIR/functions_fzf.zsh'
@@ -319,7 +319,7 @@ alias xi='vim $MAIN_HOME/.xinitrc'
 alias xres='vim $MAIN_HOME/.Xresources'
 alias zenv='vim $MAIN_HOME/.zshenv'
 alias zr='vim $ZDOTDIR/.zshrc'
-alias rr='vim $DOTFILES_DIR/.config/ranger/rc.conf'
+alias rr='vim $DOTFILES/.config/ranger/rc.conf'
 alias tg='vim ~/.tigrc'
 ### openbox specific
 alias rc='vim $MAIN_HOME/.config/openbox/rc.xml'

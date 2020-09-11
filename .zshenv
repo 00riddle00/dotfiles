@@ -30,7 +30,7 @@ export ZDOTDIR="$HOME/.config/zsh"
 # MAIN USER SETTINGS
 export MAIN_USER=riddle
 export MAIN_HOME=/home/$MAIN_USER
-export DOTFILES_DIR=$MAIN_HOME/.dotfiles
+export DOTFILES=$MAIN_HOME/.dotfiles
 
 # DOTFILES VARS
 export VIMCOLOR=miro8

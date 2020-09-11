@@ -235,7 +235,7 @@ command SortPa %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=$DOTFILES_DIR/.vim/bundle/Vundle.vim
+set rtp+=$DOTFILES/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
