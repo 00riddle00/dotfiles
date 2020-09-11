@@ -4,9 +4,7 @@ autoload -U colors && colors
 
 # prompt
 host_color="cyan"
-if [ "$HOST" != "riddle" ]; then
-  host_color="red"
-fi
+[[ $HOST != "riddle" ]] && host_color="red";
 
 PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
 %?)%{$reset_color%}]
@@ -76,9 +74,6 @@ stty -ixon
 
 ## system information tool for Arch Linux
 # neofetch
-
-## random delimiter to know that the shell has been reloaded
-# echo "  [========]"
 
 ## launch tmux
 tmux > /dev/null 2>&1
