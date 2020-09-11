@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+error() { echo "$1"; exit 1; }
+
+cowsay_dir="$SHARE/cowsay"
+cows_dir="$cowsay_dir/cows"
+phrases_dir="$cowsay_dir/phrases"
+
+shopt -s nullglob
+cows=( "$cows_dir"/* )
+shopt -u nullglob
+[[ ${#cows[@]} -eq 0 ]] && error "ERR: no cows exist"
+
+cows=( "${cows[@]##*/}" )
+cows=( "${cows[@]%.cow}" )
+
+cows_list=$(printf "'%s', " "${cows[@]}")
+
+err_msg="ERR: WHO { ${cows_list%,*} } should say WHAT {'gnu_wisdom', 'gnu_linux', '<your text>'}?"
+
+[[ -n "$1" ]] && cow="$1" || error "$err_msg"
+[[ -n "$2" ]] && phrase="$2" || error "$err_msg"
+
+[[ " ${cows[@]} " =~ " ${cow} " ]] || error "ERR: '$cow' - no such cow"
+
+case $phrase in
+    gnu_wisdom)       
+        file="$phrases_dir/gnu_wisdom"
+        [[ -f "$file" ]] || error "ERR: there is no 'gnu_wisdom'"
+        [[ -f "$file.dat" ]] || strfile "$file" &> /dev/null
+        fortune "$phrases_dir/gnu_wisdom" | cowsay -f "$cows_dir/$cow.cow" | lolcat
+        ;;
+    gnu_linux)
+        file="$phrases_dir/gnu_linux"
+        [[ -f "$file" ]] || error "ERR: there is no 'gnu_linux'"
+        cowsay -f "$cows_dir/$cow.cow" < "$phrases_dir/gnu_linux" | lolcat
+        ;;            
+    *)              
+        cowsay -f "$cows_dir/$cow.cow" "$phrase" | lolcat
+esac 
