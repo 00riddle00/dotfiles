@@ -1,8 +1,8 @@
 # kudos to Jason Ryan (http://jasonwryan.com)
 
 # general settings
-c.url.default_page = 'file:///home/riddle/.local/share/riddle00/start-page/index.html'
-c.url.start_pages = 'file:///home/riddle/.local/share/riddle00/start-page/index.html'
+c.url.default_page = 'file:///home/riddle/.local/share/riddle00/qutebrowser-homepage/index.html'
+c.url.start_pages = 'file:///home/riddle/.local/share/riddle00/qutebrowser-homepage/index.html'
 c.editor.command = ["urxvt", "-name", "dropdown_vim", "-e", "vim", "-f", "{}"]
 c.new_instance_open_target = "tab-bg"
 c.prompt.filebrowser = False
@@ -24,7 +24,7 @@ c.hints.mode = "number"
 c.hints.chars = "123456789"
 c.hints.min_chars = 1
 c.keyhint.blacklist = ["*"]
-c.statusbar.hide = True
+## c.statusbar.hide = True
 
 # searches
 c.url.searchengines['d'] = 'https://duckduckgo.com/?q={}'
@@ -99,7 +99,7 @@ c.colors.prompts.bg = "#DDDDDD"
 c.colors.prompts.selected.bg = "#4779B3"
 
 # fonts
-c.fonts.tabs = "9pt Noto Sans Mono"
+## c.fonts.tabs = "9pt Noto Sans Mono"
 c.fonts.statusbar = "9pt Noto Sans Mono"
 c.fonts.downloads = c.fonts.statusbar
 c.fonts.prompts = c.fonts.statusbar
