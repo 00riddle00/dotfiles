@@ -276,9 +276,9 @@ bindsym $mod+Shift+Delete  $run amixer -q sset Master toggle && pkill -RTMIN+1 i
 bindsym Insert             $run rofi -show
 bindsym $mod+Shift+Insert  $run dmenu_run
 bindsym $mod+Insert        $run dmenu-surfraw
-# bindsym $mod+Insert        $run rofi -show Open -modi Open:$BIN/rofi/open
-bindsym $mod+End           $run rofi -show Power -modi Power:$BIN/rofi/power
-bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$BIN/rofi/kill
+# bindsym $mod+Insert        $run rofi -show Open -modi Open:$BIN/rofi-open
+bindsym $mod+End           $run rofi -show Power -modi Power:$BIN/rofi-power
+bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$BIN/rofi-kill
 
 bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
 bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
