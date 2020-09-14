@@ -2,7 +2,7 @@
 #  user's environment variables
 # ============================= 
 
-export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/i3:$HOME/.local/bin/tint2:$HOME/.local/bin/dmenu:$HOME/.local/bin/mutt:$HOME/.local/bin/dwm:$HOME/.local/bin/openbox"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron"
 
 # XDG BASE DIR variables
 export XDG_CONFIG_HOME="$HOME/.config"

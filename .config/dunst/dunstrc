@@ -141,12 +141,12 @@
 
 [sound_beep]
 summary = "beep"
-script = ~/.local/bin/play_sound/beep
+script = ~/.local/bin/sounds/beep
 
 [sound_email]
 summary = "email"
-script = ~/.local/bin/play_sound/email-synced
+script = ~/.local/bin/sounds/email-synced
 
 [sound_update]
 summary = "update"
-script = ~/.local/bin/play_sound/arch-updated
+script = ~/.local/bin/sounds/arch-updated
