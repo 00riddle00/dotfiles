@@ -176,8 +176,8 @@ bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer curren
 # turn off distraction free mode
 bindsym $mod+Shift+grave    bar mode dock; gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
 
-bindsym $mod+apostrophe split horizontal
-bindsym $mod+slash split vertical
+bindsym $mod+slash split horizontal
+bindsym $mod+period split vertical
 
 # enter fullscreen mode for the focused container
 bindsym $mod+x fullscreen toggle

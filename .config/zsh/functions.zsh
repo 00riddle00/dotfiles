@@ -37,3 +37,5 @@ ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }
 
 # copy argumentsto clipboard
 sel() { echo "$@" | xclip}
+
+get-mp3() { youtube-dl --no-playlist --extract-audio --audio-format mp3 "$1"; }
