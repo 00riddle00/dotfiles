@@ -90,12 +90,16 @@ set complete=.,w,b,u
 set splitbelow splitright
 
 " kudos to Jason Ryan (http://jasonwryan.com)
-set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %l/%L]\ 
+set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\ 
 
 "===================================================
 "  FILE SPECIFIC SETTINGS 
 "===================================================
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
+autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
+autocmd BufNewFile,BufRead *.bat set ft=dosbatch syntax=dosbatch
+autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
 
 "===================================================
 "  MAPPINGS
@@ -210,10 +214,13 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " I often hit :W when I actually mean :w
 command! W              write
 
+" file formats
 command Bin %!xxd
 command BinRevert %!xxd -r
 command Hex %!xxd -p
 command HexRevert %!xxd -p -r
+command FFunix :e ++ff=unix
+command FFdos :e ++ff=dos
 
 " remove double blank lines
 command RM %s/\(\n\n\)\n\+/\1/g
@@ -436,3 +443,6 @@ command Dra call s:Dra()
 "  TEMP
 "===================================================
 " appears mostly when appending output to .vimrc
+
+" shows how many times a search pattern occurs in the current buffer
+set shortmess-=S

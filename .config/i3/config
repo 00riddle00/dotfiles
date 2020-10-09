@@ -149,7 +149,10 @@ bindsym $alt+$esc           kill
 # =============================
 
 bindsym $mod+c $run activate spotify
-bindsym $mod+p $run dmenu-pastes
+#bindsym $mod+p $run dmenu-pastes
+bindsym $mod+p $run pavucontrol  
+bindsym $alt+p $run killall pavucontrol
+bindsym $alt+d $run dosbox
 bindsym $mod+q $run activate emacs
 bindsym $mod+o $run "keepass $DROPBOX/keepass/8gb.kdbx"
 bindsym $mod+f $run activate filezilla
@@ -176,7 +179,7 @@ bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer curren
 # turn off distraction free mode
 bindsym $mod+Shift+grave    bar mode dock; gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
 
-bindsym $mod+slash split horizontal
+bindsym $mod+apostrophe split horizontal
 bindsym $mod+period split vertical
 
 # enter fullscreen mode for the focused container

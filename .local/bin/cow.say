@@ -16,7 +16,7 @@ cows=( "${cows[@]%.cow}" )
 
 cows_list=$(printf "'%s', " "${cows[@]}")
 
-err_msg="ERR: WHO { ${cows_list%,*} } should say WHAT {'gnu_wisdom', 'gnu_linux', '<your text>'}?"
+err_msg="ERR: USAGE: WHO { ${cows_list%,*} } should say WHAT {'gnu_wisdom', 'gnu_linux', '<your text>'}?"
 
 [[ -n "$1" ]] && cow="$1" || error "$err_msg"
 [[ -n "$2" ]] && phrase="$2" || error "$err_msg"
