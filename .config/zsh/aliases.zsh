@@ -458,6 +458,7 @@ alias letr='chmod -R 755'
 # =============
 # entries appear here after appending output to this file
 alias corona='curl https://corona-stats.online/lithuania'
+alias corona.global='curl https://corona-stats.online/lithuania'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
 alias ll='dwm.rebuild'
@@ -470,3 +471,8 @@ alias grep.info='grep -rHn --exclude=histfile'
 alias gi='grep -rHn --exclude=histfile'
 alias get='curl -LO'
 alias dos='cd ~/dosbox'
+# convert to ascii art
+alias ascii='figlet'  
+alias get.winclass='xprop | grep -i class'
+alias get.winsize='xwininfo'
+alias get.keyname='xev'

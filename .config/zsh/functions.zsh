@@ -39,3 +39,6 @@ ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }
 sel() { echo "$@" | xclip}
 
 get-mp3() { youtube-dl --no-playlist --extract-audio --audio-format mp3 "$1"; }
+
+yy() { name="${1%.asm}"; yasm "$name.asm" -fbin -o "$name.com"; }
+

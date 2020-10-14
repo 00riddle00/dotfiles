@@ -118,10 +118,12 @@ for_window [class="Pavucontrol"] resize set 625 450
 for_window [class="Pavucontrol"] border pixel 3
 for_window [class="Pavucontrol"] move position center
 
-for_window [class="Gimp"]         move workspace $ws5
-for_window [class="Thunderbird"]  move workspace $ws7
-for_window [class="Spotify"]      move workspace $ws8
-for_window [class="kdenlive"]     move workspace $ws9
+for_window [class="Gimp"]                move workspace $ws5
+for_window [class="Thunderbird"]         move workspace $ws7
+for_window [class="Spotify"]             move workspace $ws8
+for_window [class="Microsoft Teams*"]    move workspace $ws8
+for_window [class="discord"]             move workspace $ws8
+for_window [class="kdenlive"]            move workspace $ws9
 
 for_window [instance="i3blocks_calendar"] floating enable
 for_window [instance="i3blocks_calendar"] resize set 160 140
@@ -129,7 +131,7 @@ for_window [instance="i3blocks_calendar"] move position 1430 28
 for_window [instance="i3blocks_calendar"] border pixel 2
 
 for_window [instance="i3blocks_weather"] floating enable
-for_window [instance="i3blocks_weather"] resize set 928 667
+for_window [instance="i3blocks_weather"] resize set 1012 667
 for_window [instance="i3blocks_weather"] move position 988 28
 for_window [instance="i3blocks_weather"] border pixel 2
 
@@ -161,7 +163,8 @@ bindsym $mod+e $run wmctrl -a "File Manager"
 bindsym $mod+g $run activate smartgit
 bindsym $mod+semicolon $run activate libreoffice
 bindsym $mod+n workspace $ws2; $run brave
-bindsym $mod+t $run qutebrowser-wall 
+bindsym $mod+t $run activate teams
+#bindsym $mod+t $run qutebrowser-wall 
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
@@ -180,7 +183,7 @@ bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer curren
 bindsym $mod+Shift+grave    bar mode dock; gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
 
 bindsym $mod+apostrophe split horizontal
-bindsym $mod+period split vertical
+bindsym $mod+slash split vertical
 
 # enter fullscreen mode for the focused container
 bindsym $mod+x fullscreen toggle
@@ -211,15 +214,16 @@ bindsym $mod+Shift+y $run i3-resize left
 # =============================
 
 set $ws1 " 1:  "
-set $ws2 " 2:  "
-set $ws3 " 3:  "  
+set $ws2 " 2:  "
+set $ws3 " 3:  "  
 set $ws4 " 4:  "
 set $ws5 " 5:  "
 set $ws6 " 6:  "
 set $ws7 " 7:  "
-set $ws8 " 8: ♫ "
-set $ws9 " 9:  "
-set $ws10 " 10:  "
+set $ws8 " 8:  "
+set $ws9 " 9: ♫ "
+set $ws10 " 10: 雷 " 
+# previously used: {, }
 
 # moved this line after assigning workspaces so as 
 # not to break ws1 icon
@@ -256,15 +260,15 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym F1 $run terminator
 bindsym $mod+F1 $run "killall picom && picom -b"
 bindsym $alt+F2 $run i3-msg '$run $term -name t2'
-bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
+# bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
 
 bindsym $alt+F3 $run i3-vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox
 bindsym F5 $run subl3
-bindsym F7 $run activate thunderbird
-bindsym F9 $run activate $BROWSER
+# bindsym F7 $run activate thunderbird
+# bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
 #bindsym F11 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
