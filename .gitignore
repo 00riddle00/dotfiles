@@ -94,6 +94,8 @@ bin/cowsay/**/*.dat
 .config/zsh/functions.local.zsh
 .config/zsh/histfile
 
+.dosbox/capture/
+
 .emacs.d/*
 !.emacs.d/init.el
 

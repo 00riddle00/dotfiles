@@ -17,6 +17,7 @@ jr() { javac "$1" && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
 num() { nl -s ' ' "$1" > tmp && mv tmp "$1" && sed "s/^[ \t]*//" -i "$1" && cat "$1" | xclip }
 
 # if 1st arg is a dir, no "/" should be appended
+# ln -s {FILE_PATH} {SYMLINK_PATH}
 sym() { ln -s "$(pwd)/$1" "$2"; }
 sym.dir() { ln -s "$(pwd)/$1" "$2/$1"; }
 

@@ -260,15 +260,15 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym F1 $run terminator
 bindsym $mod+F1 $run "killall picom && picom -b"
 bindsym $alt+F2 $run i3-msg '$run $term -name t2'
-# bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
+bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
 
 bindsym $alt+F3 $run i3-vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox
 bindsym F5 $run subl3
-# bindsym F7 $run activate thunderbird
-# bindsym F9 $run activate $BROWSER
+bindsym F7 $run activate thunderbird
+bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
 #bindsym F11 reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
