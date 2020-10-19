@@ -476,3 +476,7 @@ alias ascii='figlet'
 alias get.winclass='xprop | grep -i class'
 alias get.winsize='xwininfo'
 alias get.keyname='xev'
+alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/BSc2-ComputerArchitecture'
+
+alias py.exe='python -c'
+alias perl.exe='perl -le'

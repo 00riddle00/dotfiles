@@ -163,8 +163,7 @@ bindsym $mod+e $run wmctrl -a "File Manager"
 bindsym $mod+g $run activate smartgit
 bindsym $mod+semicolon $run activate libreoffice
 bindsym $mod+n workspace $ws2; $run brave
-bindsym $mod+t $run activate teams
-#bindsym $mod+t $run qutebrowser-wall 
+bindsym $mod+t $run qutebrowser-wall 
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
@@ -268,6 +267,7 @@ bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 bindsym F4 $run activate firefox
 bindsym F5 $run subl3
 bindsym F7 $run activate thunderbird
+bindsym F8 $run activate teams
 bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk
 #bindsym F11 reload

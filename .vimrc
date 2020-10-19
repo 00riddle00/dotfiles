@@ -67,6 +67,8 @@ set incsearch
 set nohlsearch
 " Override the 'ignorecase' option if the search pattern contains upper case characters. 
 set smartcase
+" shows how many times a search pattern occurs in the current buffer
+set shortmess-=S
 
 " Tabs
 "Use the appropriate number of spaces to insert a <Tab>
@@ -125,6 +127,9 @@ nmap <silent> [1;5B :resize -5<CR>
 " Change 2 split windows from vert to horiz or horiz to vert
 nmap <leader>th <C-w>t<C-w>H
 nmap <leader>tk <C-w>t<C-w>K
+" <C-w>= make splits equal size
+" <C-w>- increase ex mode split size
+" <C-w>_ standard ex mode split size
 
 " Double pressed tmux prefix key sends commands to
 " this spawned terminal instead of the parent one,
@@ -215,10 +220,11 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 command! W              write
 
 " file formats
-command Bin %!xxd
+command Bin %!xxd -b -c 8
 command BinRevert %!xxd -r
-command Hex %!xxd -p
-command HexRevert %!xxd -p -r
+command Hex %!xxd -c 16 -g 1
+command HexRevert %!xxd -c 16 -r
+command HexDump %!hexdump -C
 command FFunix :e ++ff=unix
 command FFdos :e ++ff=dos
 
@@ -281,6 +287,24 @@ nnoremap <leader>[ :bp<CR>
 noremap <leader>o :BufExplorer<CR>
 
 Plugin 'ctrlpvim/ctrlp.vim'
+nmap <leader>bb :CtrlPBuffer<cr>
+" ignoring in ctrlp
+if executable('ag')
+  " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+  set grepprg=ag\ --nogroup\ --nocolor
+  " Use ag in CtrlP for listing files. Lightning fast, respects .gitignore
+  " and .ignore. Ignores hidden files by default.
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -f -g ""'
+else
+  "ctrl+p ignore files in .gitignore
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+endif
+
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+\}
 
 Plugin 'easymotion/vim-easymotion'
 let g:EasyMotion_smartcase = 1
@@ -419,7 +443,8 @@ Plugin 'ryanoasis/vim-devicons'
 "===================================================
 "  PLUGIN COMMANDS
 "===================================================
-" empty so far
+" CtrlP refresh
+command CC CtrlPClearAllCaches
 
 "===================================================
 "  PLUGIN FUNCTIONS
@@ -430,19 +455,8 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
     exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
-" Dracula theme:
-function! s:Dra()
-    colorscheme dracula
-    set background=light
-    set background=dark
-endfunction
-command Dra call s:Dra()
-
-
 "===================================================
 "  TEMP
 "===================================================
 " appears mostly when appending output to .vimrc
 
-" shows how many times a search pattern occurs in the current buffer
-set shortmess-=S
