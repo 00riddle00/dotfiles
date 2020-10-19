@@ -14,7 +14,8 @@
 # Explanations
 # [1](Being a command-line utility, i3-msg does not support startup notifications,
 # hence the exec --no-startup-id.)
-# [2] example in config file:
+# [2] exec_always - execute on i3-restart (without quitting the wm)
+# [3] example in config file:
 #           $run $term -name dropdown_math -e R -q
 #     same command in terminal:
 #           i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
@@ -40,6 +41,7 @@ floating_modifier $alt
 $run feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg" &
 $run picom -b
 $run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux"] move scratchpad
+exec_always --no-startup-id autotiling
 
 # =============================
 #  Appearance
@@ -119,6 +121,7 @@ for_window [class="Pavucontrol"] border pixel 3
 for_window [class="Pavucontrol"] move position center
 
 for_window [class="Gimp"]                move workspace $ws5
+for_window [class="SmartGit"]            move workspace $ws6
 for_window [class="Thunderbird"]         move workspace $ws7
 for_window [class="Spotify"]             move workspace $ws8
 for_window [class="Microsoft Teams*"]    move workspace $ws8
@@ -213,20 +216,22 @@ bindsym $mod+Shift+y $run i3-resize left
 # =============================
 
 set $ws1 " 1:  "
-set $ws2 " 2:  "
+set $ws2 " 2:  "
 set $ws3 " 3:  "  
 set $ws4 " 4:  "
 set $ws5 " 5:  "
-set $ws6 " 6:  "
-set $ws7 " 7:  "
+set $ws6 " 6:  "
+set $ws7 " 7:  "
 set $ws8 " 8:  "
 set $ws9 " 9: ♫ "
 set $ws10 " 10: 雷 " 
-# previously used: {, }
+# previously used icons: {, , , , }
 
-# moved this line after assigning workspaces so as 
-# not to break ws1 icon
+# =========== runs on i3 startup =============
+# moved this line after assigning workspaces 
+# so as not to break ws1 icon
 $run i3-msg 'workspace $ws1; $run i3-vimnotes' 
+# ============================================
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1

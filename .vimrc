@@ -1,13 +1,14 @@
-"---------------------------------------------------
+"---------------------------------------------------------------
 " file:     ~/.vimrc
 " author:   riddle00 - https://github.com/00riddle00
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
-"---------------------------------------------------
+"---------------------------------------------------------------
 
-"===================================================
-"  SETTINGS 
-"===================================================
+"===============================================================
+"  SETTINGS
+"===============================================================
 color $VIMCOLOR
+
 set background=dark
 
 " Make sure we're getting 256 colors when it's available
@@ -58,28 +59,6 @@ set scrolloff=3
 " +xterm_clipboard must be enabled (see vim --version)
 set clipboard+=unnamed                  
 
-" Search
-" search ignoring case
-set ignorecase
-" incremental search
-set incsearch
-" do not highlight the search
-set nohlsearch
-" Override the 'ignorecase' option if the search pattern contains upper case characters. 
-set smartcase
-" shows how many times a search pattern occurs in the current buffer
-set shortmess-=S
-
-" Tabs
-"Use the appropriate number of spaces to insert a <Tab>
-set expandtab
-" Number of spaces that a <Tab> in the file counts for.
-set tabstop=4
-" Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>. 
-set softtabstop=4
-" How much spaces to autoindent
-set shiftwidth=4
-
 " Auto/smart indent
 set autoindent smartindent
 
@@ -94,27 +73,79 @@ set splitbelow splitright
 " kudos to Jason Ryan (http://jasonwryan.com)
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\ 
 
-"===================================================
-"  FILE SPECIFIC SETTINGS 
-"===================================================
-autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
-autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
-autocmd BufNewFile,BufRead *.bat set ft=dosbatch syntax=dosbatch
-autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
+"=========================================
+" [SETTINGS] Search
+"=========================================
+" search ignoring case
+set ignorecase
+" incremental search
+set incsearch
+" do not highlight the search
+set nohlsearch
+" Override the 'ignorecase' option if the search pattern contains upper case characters. 
+set smartcase
 
-"===================================================
+"=========================================
+" [SETTINGS] Tabs
+"=========================================
+"Use the appropriate number of spaces to insert a <Tab>
+set expandtab
+" Number of spaces that a <Tab> in the file counts for.
+set tabstop=4
+" Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>. 
+set softtabstop=4
+" How much spaces to autoindent
+set shiftwidth=4
+
+"===============================================================
 "  MAPPINGS
-"===================================================
+"===============================================================
 let mapleader = '\'
 
-nmap    <leader>i       vbr=
-nmap    <leader>n       :set number!<CR>
-nmap    <leader>p       :setlocal paste!<CR>
-nmap    <leader>v       :vs<cr>
-nmap    <leader>s       :sp<cr>
+nmap     <C-F5>         :cc<CR>
+nmap     <F5>           :cnext<CR>
+nmap     <S-F5>         :cprevious<CR>
+" Reload file
+nmap     <leader>e      :e<CR>
+nmap     qq             :q<CR>
+nmap     ss             :wq<CR>
+nmap    <C-s>           :w!<CR>
 nmap    <leader>d       :pwd<cr>
+nmap    <leader>h       :set hlsearch!<CR>
+nmap    <leader>n       :set relativenumber!<CR>
+nmap    <leader>p       :setlocal paste!<CR>
+nmap    <leader>r       :so $VIMRC<CR>
+nmap    <leader>s       :sp<cr>
+nmap    <leader>v       :vs<cr>
+nnoremap <leader>u      :!urlview %<CR>
+" replace {more than one blank lines} with 
+" {exactly one blank line}
+nmap <leader>l  :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 
+" Treat long lines as break lines
+nmap    j               gj
+nmap    k               gk
+
+" Disable key for ex mode
+nmap    Q               <nop>
+
+"=========================================
+" [MAPPINGS] Windows
+"=========================================
+
+"--------------------------------
+" [MAPPINGS] [Windows] navigation
+"--------------------------------
+"These mappings are set by vim-tmux-navigator plugin
+
+"nmap     <C-j>          <C-W>j
+"nmap     <C-k>          <C-W>k
+"nmap     <C-h>          <C-W>h
+"nmap     <C-l>          <C-W>l
+
+"----------------------------
+" [MAPPINGS] [Windows] resize
+"----------------------------
 "<C-Left>
 nmap <silent> [1;5D :vertical resize -5<CR> 
 "<C-Right>
@@ -124,74 +155,29 @@ nmap <silent> [1;5A :resize +5<CR>
 "<C-Down>
 nmap <silent> [1;5B :resize -5<CR>
 
+"----------------------------
+" [MAPPINGS] [Windows] layout
+"----------------------------
 " Change 2 split windows from vert to horiz or horiz to vert
-nmap <leader>th <C-w>t<C-w>H
-nmap <leader>tk <C-w>t<C-w>K
-" <C-w>= make splits equal size
-" <C-w>- increase ex mode split size
-" <C-w>_ standard ex mode split size
+nmap <leader>tv <C-w>t<C-w>H
+nmap <leader>th <C-w>t<C-w>K
+" ::note:: <C-w>= make splits equal size
+" ::note:: <C-w>- increase ex mode split size
+" ::note:: <C-w>_ standard ex mode split size
 
-" Double pressed tmux prefix key sends commands to
-" this spawned terminal instead of the parent one,
-" in which vim is running
-"
-" Smart pane switching (C-h, C-j, C-k, C-l) keys do work inside
-" the inner tmux session, which is being run in this spawned terminal
-" from vim, in contrast with ssh-ing into VM and spawning terminal with tmux.
-map <leader>tt :vert term zsh<CR>
-
-nmap    <leader>r       :so $VIMRC<CR>
-nmap    <leader>h       :set hlsearch!<CR>
-nmap    <C-s>           :w!<CR>
-nmap     ss             :wq<CR>
-nmap     qq             :q<CR>
-nmap     <leader>e      :e<CR>
-nmap     <F5>           :cnext<CR>
-nmap     <S-F5>         :cprevious<CR>
-nmap     <C-F5>         :cc<CR>
-nnoremap <leader>u      :!urlview %<CR>
-
-" Windows navigation
-"nmap     <C-j>          <C-W>j
-"nmap     <C-k>          <C-W>k
-"nmap     <C-h>          <C-W>h
-"nmap     <C-l>          <C-W>l
-
-" Tab navigation
+"=========================================
+" [MAPPINGS] Tabs (layout)
+"=========================================
 nmap     tt             :tabnew<CR>
+nmap     t0             :tabfirst<CR>
+nmap     t$             :tablast<CR>
 nmap     te             :tabedit %<CR>
-nmap     tc             :tabclose<CR>
-nmap     tj             gT
-"nmap     tk             gt
-"nmap     th             :tabfirst<CR>
-nmap     tl             :tablast<CR>
+nmap     th             gT
+nmap     tl             gt
 
-" Macros
-let @o="oprint(\"here\")\<Esc>k0"
-"let @s=":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
-let @q="lr lv$r=jjhr lv$r=/##"
-let @e="a O11i=2xI# jo11i=2xI# Aak0"
-
-" Copy/Paste
-vmap <C-c> "+y
-"vmap <C-c> "+yi
-vmap <C-x> "+c
-"vmap <C-v> c<ESC>"+p
-"map <C-v> <ESC>"+pa
-
-"" Long text paste
-""" From primary clipboard
-" nmap     tp             :r !xsel<CR>
-""" From secondary clipboard
-nmap     tp             :r !xsel -b<CR>
-
-" Treat long lines as break lines
-nmap    j               gj
-nmap    k               gk
-
-" I don't even know how to use Ex mode.
-nmap    Q               <nop>
-
+"=========================================
+" [MAPPINGS] In-buffer navigation
+"=========================================
 " Scroll half screen to left and right vertically
 noremap      zh           zH
 noremap      zl           zL
@@ -199,24 +185,65 @@ noremap      zl           zL
 " Scroll half screen to left and right vertically
 noremap      zz           z-
 
-" Autocomplete
+"=========================================
+" [MAPPINGS] Autocomplete
+"=========================================
 inoremap     <C-k>           <C-p>
 inoremap     <C-j>           <C-n>
 
-" Quick search for python class and def statments.
+"=========================================
+" [MAPPINGS] Clipboard
+"=========================================
+
+" Copy/Paste
+vmap <C-c> "+y
+vmap <C-x> "+c
+"map <C-v> <ESC>"+pa
+
+"" Long text paste
+""" From primary clipboard
+"nmap     tp             :r !xsel<CR>
+""" From secondary clipboard
+nmap     tp             :r !xsel -b<CR>
+
+"=========================================
+" [MAPPINGS] Shell
+"=========================================
+" Double pressed tmux prefix key sends commands to this spawned 
+" terminal instead of the parent one, in which vim is running.
+"
+" Smart pane switching (C-h, C-j, C-k, C-l) keys do work inside
+" the inner tmux session, which is being run in this spawned terminal
+" from vim, in contrast with ssh-ing into VM and spawning terminal with tmux.
+map <leader>tt :vert term zsh<CR>
+
+"=========================================
+" [MAPPINGS] Project/Language specific
+"=========================================
+
+" [Python specific] Quick search for python class and def statments.
 nmap    c/          /\<class
 nmap    m/          /\<def
 
-" Build DSA project 
+" [C specific] Build DSA project 
 nmap <F8> :w \| !make rebuild && ./demo <CR>
 "nmap <F8> :w \| :make rebuild <CR> \| :copen 30 <CR>
 "nmap <F8> :w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
 "nmap <F8> :w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>
 
-"===================================================
+"===============================================================
+" AUTOCOMMANDS
+"===============================================================
+autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
+autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
+autocmd BufNewFile,BufRead *.bat set ft=dosbatch syntax=dosbatch
+autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
+
+"===============================================================
 "  COMMANDS
-"===================================================
-" I often hit :W when I actually mean :w
+"===============================================================
+" mistype fix
 command! W              write
 
 " file formats
@@ -228,8 +255,9 @@ command HexDump %!hexdump -C
 command FFunix :e ++ff=unix
 command FFdos :e ++ff=dos
 
-" remove double blank lines
-command RM %s/\(\n\n\)\n\+/\1/g
+"when searching: \n is newline, \r is <CR>
+"when replacing: \r is newline, \n is a null byte.
+command Dos2Unix %s/\r/\r/g
 
 " sort by markdown h1 headings 
 " '@' character should not appear in a file before running
@@ -237,33 +265,65 @@ command RM %s/\(\n\n\)\n\+/\1/g
 "   sort the file, then restore newlines
 command SortPa %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 
-"===================================================
+"===============================================================
+"  MACROS
+"===============================================================
+
+" insert heading separator above and below the line
+let @e="a O11i=2xI# jo11i=2xI# Aak0"
+
+" ???
+"let @s=":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
+
+" [Python specific] for debug
+let @o="oprint(\"here\")\<Esc>k0"
+
+"===============================================================
 "  FUNCTIONS
-"===================================================
-" empty so far
+"===============================================================
+" empty
 
-"===================================================
+"===============================================================
 "  PLUGINS
-"===================================================
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"===============================================================
 
+set nocompatible              " be iMproved, required (@Vundle)
+
+" It is Vim's feature. Vim makes cache for filetype plugins from 
+" runtimepath. So if vundle changes runtimepath, it must reset 
+" before calling. (@Vundle)
+filetype off                  " required (@Vundle)
+
+" set the runtime path to include Vundle and initialize (@Vundle)
 set rtp+=$DOTFILES/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+"=========================================
+" [PLUGIN] NERDTree
+"=========================================
 Plugin 'scrooloose/nerdtree'
-noremap    <C-n>        :NERDTreeToggle<CR>
-noremap    <C-m>        :NERDTreeFocus<CR>
 
+"-----------------------------
+" [PLUGIN] [NERDTree] Settings
+"-----------------------------
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 30
 let NERDTreeIgnore = ['\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
 let g:NERDTreeMapHelp = 'Y'
 
+"-----------------------------
+" [PLUGIN] [NERDTree] Mappings
+"-----------------------------
+noremap    <C-n>        :NERDTreeToggle<CR>
+noremap    <C-m>        :NERDTreeFocus<CR>
+
+"---------------------------------
+" [PLUGIN] [NERDTree] Autocommands
+"---------------------------------
 "Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " open a NERDTree automatically when vim starts up
@@ -275,19 +335,35 @@ autocmd VimEnter * wincmd p
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+"=========================================
+" [PLUGIN] bufExplorer
+"=========================================
 Plugin 'jlanzarotta/bufexplorer'
+
+"-------------------------------
+" [PLUGIN] [bufExplorer] Settings
+"-------------------------------
 " Do not show buffers from other tabs.
 let g:bufExplorerFindActive=0
 let g:bufExplorerShowTabBuffer=0
 let g:bufExplorerShowRelativePath=1
 
+"--------------------------------
+" [PLUGIN] [bufExplorer] Mappings
+"--------------------------------
+noremap <leader>o :BufExplorer<CR>
 nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
 
-noremap <leader>o :BufExplorer<CR>
-
+"=========================================
+" [PLUGIN] CtrlP
+"=========================================
 Plugin 'ctrlpvim/ctrlp.vim'
-nmap <leader>bb :CtrlPBuffer<cr>
+
+"--------------------------
+" [PLUGIN] [CtrlP] Settings
+"--------------------------
+
 " ignoring in ctrlp
 if executable('ag')
   " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
@@ -300,36 +376,98 @@ else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
 
+"--------------------------
+" [PLUGIN] [CtrlP] Mappings
+"--------------------------
+nmap <leader>bb :CtrlPBuffer<cr>
 
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
-  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
-\}
+"--------------------------
+" [PLUGIN] [CtrlP] Commands
+"--------------------------
+" CtrlP refresh
+command CC CtrlPClearAllCaches
 
+"=========================================
+" [PLUGIN] EasyMotion
+"=========================================
 Plugin 'easymotion/vim-easymotion'
+
+"-------------------------------
+" [PLUGIN] [EasyMotion] Settings
+"-------------------------------
 let g:EasyMotion_smartcase = 1
+
+"-------------------------------
+" [PLUGIN] [EasyMotion] Mappings
+"-------------------------------
 nmap <leader><leader> <Plug>(easymotion-overwin-f)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
+"=========================================
+" [PLUGIN] NERDCommenter
+"=========================================
 Plugin 'scrooloose/nerdcommenter'
 
+"=========================================
+" [PLUGIN] YouCompleteMe
+"=========================================
 Plugin 'ycm-core/YouCompleteMe'
+
+"----------------------------------
+" [PLUGIN] [YouCompleteMe] Settings
+"----------------------------------
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
+"=========================================
+" [PLUGIN] Autoformat
+"=========================================
 Plugin 'Chiel92/vim-autoformat'
+
+"-----------------------------------
+" [PLUGIN] [Autoformat] Settings
+"-----------------------------------
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
-
 let g:formatter_yapf_style = 'pep8'
+
+"-----------------------------------
+" [PLUGIN] [Autoformat] Commands
+"-----------------------------------
 noremap <F6> :Autoformat<CR>
 
+"=========================================
+" [PLUGIN] EasyAlign
+"=========================================
+Plugin 'junegunn/vim-easy-align'
+
+"------------------------------
+" [PLUGIN] [EasyAlign] Mappings
+"------------------------------
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+"=========================================
+" [PLUGIN] delimitMate
+"=========================================
 Plugin 'raimondi/delimitmate'
+
+"--------------------------------
+" [PLUGIN] [delimitMate] Settings
+"--------------------------------
 let delimitMate_expand_cr=1
 
+"=========================================
+" [PLUGIN] Syntastic
+"=========================================
 Plugin 'scrooloose/syntastic'
-nmap     <leader>c      :SyntasticCheck<CR>
 
+"------------------------------
+" [PLUGIN] [Syntastic] Settings
+"------------------------------
 let g:syntastic_enable_signs = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -346,12 +484,29 @@ let g:syntastic_python_pep8_args = '--ignore=E501'
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
 
+"------------------------------
+" [PLUGIN] [Syntastic] Mappings
+"------------------------------
+nmap     <leader>c      :SyntasticCheck<CR>
+
+"=========================================
+" [PLUGIN] Surround
+"=========================================
 Plugin 'tpope/vim-surround'
 
+"=========================================
+" [PLUGIN] UltiSnips
+"=========================================
 Plugin 'SirVer/ultisnips'
 
+"=========================================
+" [PLUGIN] fugitive
+"=========================================
 Plugin 'tpope/vim-fugitive'
-" fugitive git bindings
+
+"-----------------------------
+" [PLUGIN] [fugitive] Mappings
+"-----------------------------
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gc :Gcommit -v -q<CR>
@@ -368,25 +523,66 @@ nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
+"=========================================
+" [PLUGIN] GitGutter
+"=========================================
 Plugin 'airblade/vim-gitgutter'
+
+"----------------------------------
+" [PLUGIN] [GitGutter] Autocommands
+"----------------------------------
 autocmd vimenter * :GitGutterDisable
 
+"=========================================
+" [PLUGIN] vim-tmux-navigator
+"=========================================
 Plugin 'christoomey/vim-tmux-navigator'
 
+"=========================================
+" [PLUGIN] TagBar
+"=========================================
 Plugin 'majutsushi/tagbar'
-nmap <leader>b :TagbarToggle<cr>
+
+"---------------------------
+" [PLUGIN] [TagBar] Settings
+"---------------------------
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
 
-"[Markdown]
+"---------------------------
+" [PLUGIN] [TagBar] Mappings
+"---------------------------
+nmap <leader>b :TagbarToggle<cr>
+
+"=========================================
+" [PLUGIN] Tabular
+"=========================================
 "The tabular plugin must come before vim-markdown
 Plugin 'godlygeek/tabular'
+
+"=========================================
+" [PLUGIN] Markdown
+"=========================================
 Plugin 'plasticboy/vim-markdown'
+
+"=========================================
+" [PLUGIN] instant-markdown
+"=========================================
 Plugin 'suan/vim-instant-markdown'
+
+"-------------------------------------
+" [PLUGIN] [instant-markdown] Settings
+"-------------------------------------
 let g:instant_markdown_autostart = 0
 
-"Python
+"=========================================
+" [PLUGIN] python-mode
+"=========================================
 Plugin 'python-mode/python-mode'
+
+"--------------------------------
+" [PLUGIN] [python-mode] Settings
+"--------------------------------
 let g:pymode_lint_checkers = ['pyflakes']
 let g:pymode_lint_cwindow = 0
 let g:pymode_lint_on_write = 0
@@ -394,69 +590,102 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pyflakes_use_quickfix = 0
 let g:pymode_lint_cwindow = 0
 
-" Former zen coding, now renamed to emmet.
+"=========================================
+" [PLUGIN] emmet
+"=========================================
 " Key to expand: <C-y>,
 Plugin 'mattn/emmet-vim'
+
+"--------------------------
+" [PLUGIN] [emmet] Settings
+"-------------------------
 let g:user_zen_settings = {
 \  'indentation' : '    '
 \}
 
+"=========================================
+" [PLUGIN] JavaScript
+"=========================================
 " JSX support
 Plugin 'pangloss/vim-javascript'
+
+"=========================================
+" [PLUGIN] jsx
+"=========================================
 Plugin 'mxw/vim-jsx'
 
-" ==== PLUGIN SYNTAXES ====
+"=========================================
+" [PLUGIN] scss-syntax
+"=========================================
 Plugin 'cakebaker/scss-syntax.vim'
 
+"=========================================
+" [PLUGIN] bnf
+"=========================================
 Plugin 'vim-scripts/bnf.vim'
 
+"=========================================
+" [PLUGIN] python-syntax
+"=========================================
 Plugin 'hdima/python-syntax'
+
+"----------------------------------
+" [PLUGIN] [python-syntax] Settings
+"----------------------------------
 let g:python_highlight_all = 1
 
+"=========================================
+" [PLUGIN] cpp-enhanced-highlight
+"=========================================
 Plugin 'octol/vim-cpp-enhanced-highlight'
+
+"------------------------------------------
+" [PLUGIN] [cpp-enhanced-highlight] Settings
+"------------------------------------------
 "Vim tend to a have issues with flagging braces as errors,
 "see for example https://github.com/vim-jp/vim-cpp/issues/16.
 "A workaround is to set:
 let c_no_curly_error=1
 
+"=========================================
+" [PLUGIN] QuickRun
+"=========================================
 "*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
 "It provides :QuickRun command for it.
 Plugin 'thinca/vim-quickrun'
 
-"vimshell depends on |vimproc|
+"=========================================
+" [PLUGIN] vimproc
+"=========================================
 Plugin 'Shougo/vimproc.vim'
+
+"=========================================
+" [PLUGIN] vimshell
+"=========================================
+"vimshell depends on |vimproc|
 Plugin 'Shougo/vimshell.vim'
 
-" All plugins must be added before the following line
-call vundle#end()            " required
-" Enable filetype-specific plugins
-filetype plugin indent on    " required
-
-" color themes
-Plugin 'dracula/vim'
-Plugin 'hzchirs/vim-material'
+"=========================================
+" [PLUGIN] onedark (color theme)
+"=========================================
 Plugin 'joshdick/onedark.vim'
 
-" icon theme
+"=========================================
+" [PLUGIN] devicons (icon theme)
+"=========================================
 Plugin 'ryanoasis/vim-devicons'
 
-"===================================================
-"  PLUGIN COMMANDS
-"===================================================
-" CtrlP refresh
-command CC CtrlPClearAllCaches
+" All plugins must be added before the following line (@Vundle)
+call vundle#end()            " required (@Vundle)
+" Enable filetype-specific plugins (filetype auto-detection) (@Vundle)
+filetype plugin indent on    " required (@Vundle)
+syntax on
 
-"===================================================
-"  PLUGIN FUNCTIONS
-"===================================================
-" NERDTrees File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-"===================================================
+"===============================================================
 "  TEMP
-"===================================================
+"===============================================================
 " appears mostly when appending output to .vimrc
 
+" shows how many times a search pattern occurs in the current buffer
+" somewhy this settings works only when it's placed at the end of the file
+set shortmess-=S
