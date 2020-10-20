@@ -41,6 +41,9 @@ floating_modifier $alt
 $run feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg" &
 $run picom -b
 $run $term -name dropdown_aux -e tmux new-session cmus\; [instance="dropdown_aux"] move scratchpad
+
+" This amazing script uses the i3ipc-python library to switch the layout 
+" splith/splitv depending on the currently focused window dimensions.
 exec_always --no-startup-id autotiling
 
 # =============================

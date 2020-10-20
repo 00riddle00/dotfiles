@@ -11,7 +11,7 @@
 "=========================================
 " [SETTINGS] Colors
 "=========================================
-
+"
 color $VIMCOLOR
 set background=dark
 
@@ -208,6 +208,19 @@ nmap     Q            <nop>
 " replace {more than one blank lines} with {exactly one blank line}
 nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>   
 
+" ::note:: Ctrl+O  takes you to the previous location
+" ::note:: Ctrl+I  takes you to the next location
+" ::note:: '.      takes you to the last change you made
+" ::note:: gi -    jump to the position where last time Insert mode was stopped, and set insert mode (uses '^)
+" ::note:: "''     jumps back to the start of the line you were on before you searched/jumped.
+" ::note:: Ctrl+]  go where the tag leads
+" ::note:: Ctrl+T  go back to the leading tag
+"
+" ::note:: cmdline history
+" ::note:: g:      commands
+" ::note:: q:      search
+" ::note:: i to edit, <CR> to use, C-c to quit
+
 "=========================================
 " [MAPPINGS] Windows
 "=========================================
@@ -320,7 +333,7 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " AUTOCOMMANDS
 "===============================================================
 
-autocmd FileType help wincmd L
+autocmd FileType help wincmd L  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
