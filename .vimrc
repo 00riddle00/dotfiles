@@ -457,9 +457,9 @@ endfunction
  Plug 'jlanzarotta/bufexplorer'
 "==============================================
 
-"-------------------------------
+"--------------------------------
 " [PLUGIN] [bufExplorer] Settings
-"-------------------------------
+"--------------------------------
 
 " Do not show buffers from other tabs.
 let g:bufExplorerFindActive=0
@@ -554,18 +554,18 @@ inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
  Plug 'Chiel92/vim-autoformat'
 "==============================================
 
-"-----------------------------------
+"-------------------------------
 " [PLUGIN] [Autoformat] Settings
-"-----------------------------------
+"-------------------------------
 
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
 let g:formatter_yapf_style = 'pep8'
 
-"-----------------------------------
+"-------------------------------
 " [PLUGIN] [Autoformat] Commands
-"-----------------------------------
+"-------------------------------
 
 noremap <F6> :Autoformat<CR>
 
@@ -738,7 +738,7 @@ let g:pymode_lint_cwindow = 0
 
 "--------------------------
 " [PLUGIN] [emmet] Settings
-"-------------------------
+"--------------------------
 
 let g:user_zen_settings = {
 \  'indentation' : '    '
