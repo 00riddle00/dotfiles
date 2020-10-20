@@ -7,8 +7,12 @@
 "===============================================================
 "  SETTINGS
 "===============================================================
-color $VIMCOLOR
 
+"=========================================
+" [SETTINGS] Colors
+"=========================================
+
+color $VIMCOLOR
 set background=dark
 
 " Make sure we're getting 256 colors when it's available
@@ -16,66 +20,95 @@ if $TERM == "xterm-256color" || $TERM == "rxvt-unicode-256color" || $TERM == "sc
     set t_Co=256
 endif
 
-" enable syntax hightlighting
-syntax enable
+"=========================================
+" [SETTINGS] Appearance
+"=========================================
+
 " Show count of selected lines or characters
 set showcmd     
 " Show line numbers
 set number
 " Always show statusline
 set laststatus=2
-" Set mouse to work in all modes
-set mouse=a
-" Allow to skip between buffers without writing or abandoning changes
-set hidden
 " Set relative numbering
 set relativenumber
-" set tags location
-set tags=./tags,tags;$HOME
-" Don't save backups
-set nobackup
-" Show matching brackets when cursor is over them
-set showmatch
-" Do not use swap file
-set noswapfile
-" Do not fold text/code
-set nofoldenable
-" Set character encoding used inside Vim
-set encoding=utf-8
 " show the line number on the bar
 set ruler
-set shell=/bin/zsh
-" Text wrapping
-set textwidth=79
+" kudos to Jason Ryan (http://jasonwryan.com)
+set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\ 
+
+"=========================================
+" [SETTINGS] Displaying text
+"=========================================
+
+" Set character encoding used inside Vim
+set encoding=utf-8
+" enable syntax hightlighting
+syntax enable
+" Do not fold text/code
+set nofoldenable
+" Do not wrap lines
+set nowrap
 " Spelling
 set spelllang=lt,en
+
+"=========================================
+" [SETTINGS] Editing text
+"=========================================
+
+" Text wrapping
+set textwidth=79
+" Auto/smart indent
+set autoindent smartindent
+
+"=========================================
+" [SETTINGS] Cursor movement
+"=========================================
+
 " Cursor movement behaviour
 set nostartofline
 " Jump 5 lines when running out of the screen
 set scrolljump=5
 " Indicate jump out of the screen when 3 lines before end of the screen
 set scrolloff=3
+" Show matching brackets when cursor is over them
+set showmatch
+
+"=========================================
+" [SETTINGS] Mouse
+"=========================================
+
+" Set mouse to work in all modes
+set mouse=a
+
+"=========================================
+" [SETTINGS] Buffers
+"=========================================
+
+" Allow to skip between buffers without 
+" writing or abandoning changes
+set hidden
+
+"=========================================
+" [SETTINGS] Windows
+"=========================================
+
+" open the new window below the current one for horizontal splits,
+" and to the right of the current one for vertical splits.
+set splitbelow splitright
+
+"=========================================
+" [SETTINGS] Clipboard
+"=========================================
+
 " Yank and copy to X clipboard
 " +xterm_clipboard must be enabled (see vim --version)
 set clipboard+=unnamed                  
 
-" Auto/smart indent
-set autoindent smartindent
-
-" Do not wrap lines automatically
-set nowrap
-" Scan only opened buffers and current file, makes autocompletion faster.
-set complete=.,w,b,u
-
-" Splits
-set splitbelow splitright
-
-" kudos to Jason Ryan (http://jasonwryan.com)
-set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\ 
-
 "=========================================
 " [SETTINGS] Search
 "=========================================
+
 " search ignoring case
 set ignorecase
 " incremental search
@@ -86,48 +119,94 @@ set nohlsearch
 set smartcase
 
 "=========================================
+" [SETTINGS] Autocomplete
+"=========================================
+
+" Scan only opened buffers and current file, makes autocompletion faster.
+set complete=.,w,b,u
+
+"=========================================
+" [SETTINGS] Tags
+"=========================================
+
+" set tags location
+set tags=./tags,tags;$HOME
+
+"=========================================
+" [SETTINGS] Shell
+"=========================================
+
+set shell=/bin/zsh
+
+"=========================================
+" [SETTINGS] Backups
+"=========================================
+
+" Don't save backups
+set nobackup
+" Do not use swap file
+set noswapfile
+
+"=========================================
+" [SETTINGS] Spaces
+"=========================================
+
+" How much spaces to autoindent
+set shiftwidth=4
+
+" show spaces as '.'
+" ::note:: enable with 'set list'
+set listchars+=space:.
+
+"=========================================
 " [SETTINGS] Tabs
 "=========================================
+
 "Use the appropriate number of spaces to insert a <Tab>
 set expandtab
 " Number of spaces that a <Tab> in the file counts for.
 set tabstop=4
-" Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>. 
+
+" Number of spaces that a <Tab> counts for while 
+" performing editing operations, like inserting 
+" a <Tab> or using <BS>. 
 set softtabstop=4
-" How much spaces to autoindent
-set shiftwidth=4
+
+" show tabs as '|___'
+" ::note:: enable with 'set list'
+set listchars+=tab:\|_,extends:>,precedes:<,nbsp:+
 
 "===============================================================
 "  MAPPINGS
 "===============================================================
+
 let mapleader = '\'
 
-nmap     <C-F5>         :cc<CR>
-nmap     <F5>           :cnext<CR>
-nmap     <S-F5>         :cprevious<CR>
-" Reload file
-nmap     <leader>e      :e<CR>
-nmap     qq             :q<CR>
-nmap     ss             :wq<CR>
-nmap    <C-s>           :w!<CR>
-nmap    <leader>d       :pwd<cr>
-nmap    <leader>h       :set hlsearch!<CR>
-nmap    <leader>n       :set relativenumber!<CR>
-nmap    <leader>p       :setlocal paste!<CR>
-nmap    <leader>r       :so $VIMRC<CR>
-nmap    <leader>s       :sp<cr>
-nmap    <leader>v       :vs<cr>
-nnoremap <leader>u      :!urlview %<CR>
-" replace {more than one blank lines} with 
-" {exactly one blank line}
-nmap <leader>l  :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
+nmap     qq           :q<CR>
+nmap     ss           :wq<CR>
+nmap     <C-s>        :w!<CR>
+nmap     <C-F5>       :cc<CR>
+nmap     <S-F5>       :cprevious<CR>
+nmap     <F5>         :cnext<CR>
+nmap     <leader>d    :pwd<cr>
+nmap     <leader>e    :e<CR>    " reload file
+nmap     <leader>h    :set hlsearch!<CR>
+nmap     <leader>n    :set relativenumber!<CR>
+nmap     <leader>p    :setlocal paste!<CR>
+nmap     <leader>r    :so $VIMRC<CR>
+nmap     <leader>s    :sp<cr>
+nnoremap <leader>u    :!urlview %<CR>
+nmap     <leader>v    :vs<cr>
 
 " Treat long lines as break lines
-nmap    j               gj
-nmap    k               gk
+nmap     j            gj
+nmap     k            gk
 
 " Disable key for ex mode
-nmap    Q               <nop>
+nmap     Q            <nop>
+
+" replace {more than one blank lines} with {exactly one blank line}
+nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>   
 
 "=========================================
 " [MAPPINGS] Windows
@@ -136,8 +215,8 @@ nmap    Q               <nop>
 "--------------------------------
 " [MAPPINGS] [Windows] navigation
 "--------------------------------
-"These mappings are set by vim-tmux-navigator plugin
 
+"These mappings are set by vim-tmux-navigator plugin
 "nmap     <C-j>          <C-W>j
 "nmap     <C-k>          <C-W>k
 "nmap     <C-h>          <C-W>h
@@ -146,6 +225,7 @@ nmap    Q               <nop>
 "----------------------------
 " [MAPPINGS] [Windows] resize
 "----------------------------
+
 "<C-Left>
 nmap <silent> [1;5D :vertical resize -5<CR> 
 "<C-Right>
@@ -158,6 +238,7 @@ nmap <silent> [1;5B :resize -5<CR>
 "----------------------------
 " [MAPPINGS] [Windows] layout
 "----------------------------
+
 " Change 2 split windows from vert to horiz or horiz to vert
 nmap <leader>tv <C-w>t<C-w>H
 nmap <leader>th <C-w>t<C-w>K
@@ -168,6 +249,7 @@ nmap <leader>th <C-w>t<C-w>K
 "=========================================
 " [MAPPINGS] Tabs (layout)
 "=========================================
+
 nmap     tt             :tabnew<CR>
 nmap     t0             :tabfirst<CR>
 nmap     t$             :tablast<CR>
@@ -178,6 +260,7 @@ nmap     tl             gt
 "=========================================
 " [MAPPINGS] In-buffer navigation
 "=========================================
+
 " Scroll half screen to left and right vertically
 noremap      zh           zH
 noremap      zl           zL
@@ -188,6 +271,7 @@ noremap      zz           z-
 "=========================================
 " [MAPPINGS] Autocomplete
 "=========================================
+
 inoremap     <C-k>           <C-p>
 inoremap     <C-j>           <C-n>
 
@@ -200,15 +284,16 @@ vmap <C-c> "+y
 vmap <C-x> "+c
 "map <C-v> <ESC>"+pa
 
-"" Long text paste
-""" From primary clipboard
-"nmap     tp             :r !xsel<CR>
-""" From secondary clipboard
+" Long text paste
+"""" From primary clipboard
+"nmap     tp            :r !xsel<CR>
+"""" From secondary clipboard
 nmap     tp             :r !xsel -b<CR>
 
 "=========================================
 " [MAPPINGS] Shell
 "=========================================
+
 " Double pressed tmux prefix key sends commands to this spawned 
 " terminal instead of the parent one, in which vim is running.
 "
@@ -234,6 +319,7 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 "===============================================================
 " AUTOCOMMANDS
 "===============================================================
+
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
@@ -243,45 +329,47 @@ autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
 "===============================================================
 "  COMMANDS
 "===============================================================
+
 " mistype fix
-command! W              write
+command! W          write
 
 " file formats
-command Bin %!xxd -b -c 8
-command BinRevert %!xxd -r
-command Hex %!xxd -c 16 -g 1
-command HexRevert %!xxd -c 16 -r
-command HexDump %!hexdump -C
-command FFunix :e ++ff=unix
-command FFdos :e ++ff=dos
+command Bin         %!xxd -b -c 8
+command BinRevert   %!xxd -r
+command Hex         %!xxd -c 16 -g 1
+command HexRevert   %!xxd -c 16 -r
+command HexDump     %!hexdump -C
+command FFunix      :e ++ff=unix
+command FFdos       :e ++ff=dos
 
 "when searching: \n is newline, \r is <CR>
 "when replacing: \r is newline, \n is a null byte.
-command Dos2Unix %s/\r/\r/g
+command Dos2Unix    %s/\r/\r/g
 
 " sort by markdown h1 headings 
 " '@' character should not appear in a file before running
 " replace \n with '@' (except the newlines appearing before '# '),
 "   sort the file, then restore newlines
-command SortPa %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
+command SortPa      %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 
 "===============================================================
 "  MACROS
 "===============================================================
 
 " insert heading separator above and below the line
-let @e="a O11i=2xI# jo11i=2xI# Aak0"
+let @e = "a O11i=2xI# jo11i=2xI# Aak0"
 
 " ???
-"let @s=":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
+"let @s = \":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
 
 " [Python specific] for debug
-let @o="oprint(\"here\")\<Esc>k0"
+let @o = "oprint(\"here\")\<Esc>k0"
 
 "===============================================================
 "  FUNCTIONS
 "===============================================================
-" empty
+
+" <empty>
 
 "===============================================================
 "  PLUGINS
@@ -301,14 +389,16 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-"=========================================
-" [PLUGIN] NERDTree
-"=========================================
-Plugin 'scrooloose/nerdtree'
+"---------------------------------------------------------------
+
+"==============================================
+ Plugin 'scrooloose/nerdtree'
+"==============================================
 
 "-----------------------------
 " [PLUGIN] [NERDTree] Settings
 "-----------------------------
+
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 30
@@ -318,31 +408,32 @@ let g:NERDTreeMapHelp = 'Y'
 "-----------------------------
 " [PLUGIN] [NERDTree] Mappings
 "-----------------------------
+
 noremap    <C-n>        :NERDTreeToggle<CR>
 noremap    <C-m>        :NERDTreeFocus<CR>
 
 "---------------------------------
 " [PLUGIN] [NERDTree] Autocommands
 "---------------------------------
+
 "Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
 " Focus the window and not the NERDTree (which is also opened) when vim starts up
 autocmd VimEnter * wincmd p
-
 " open a NERDTree automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-"=========================================
-" [PLUGIN] bufExplorer
-"=========================================
-Plugin 'jlanzarotta/bufexplorer'
+"==============================================
+ Plugin 'jlanzarotta/bufexplorer'
+"==============================================
 
 "-------------------------------
 " [PLUGIN] [bufExplorer] Settings
 "-------------------------------
+
 " Do not show buffers from other tabs.
 let g:bufExplorerFindActive=0
 let g:bufExplorerShowTabBuffer=0
@@ -351,14 +442,14 @@ let g:bufExplorerShowRelativePath=1
 "--------------------------------
 " [PLUGIN] [bufExplorer] Mappings
 "--------------------------------
+
 noremap <leader>o :BufExplorer<CR>
 nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
 
-"=========================================
-" [PLUGIN] CtrlP
-"=========================================
-Plugin 'ctrlpvim/ctrlp.vim'
+"==============================================
+ Plugin 'ctrlpvim/ctrlp.vim'
+"==============================================
 
 "--------------------------
 " [PLUGIN] [CtrlP] Settings
@@ -379,53 +470,57 @@ endif
 "--------------------------
 " [PLUGIN] [CtrlP] Mappings
 "--------------------------
+
 nmap <leader>bb :CtrlPBuffer<cr>
 
 "--------------------------
 " [PLUGIN] [CtrlP] Commands
 "--------------------------
-" CtrlP refresh
-command CC CtrlPClearAllCaches
 
-"=========================================
-" [PLUGIN] EasyMotion
-"=========================================
-Plugin 'easymotion/vim-easymotion'
+" CtrlP refresh
+command CC CtrlPClearAllCaches  
+
+"==============================================
+ Plugin 'easymotion/vim-easymotion'
+"==============================================
 
 "-------------------------------
 " [PLUGIN] [EasyMotion] Settings
 "-------------------------------
+
 let g:EasyMotion_smartcase = 1
 
 "-------------------------------
 " [PLUGIN] [EasyMotion] Mappings
 "-------------------------------
+
 nmap <leader><leader> <Plug>(easymotion-overwin-f)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-"=========================================
-" [PLUGIN] NERDCommenter
-"=========================================
-Plugin 'scrooloose/nerdcommenter'
+"==============================================
+ Plugin 'scrooloose/nerdcommenter'
+"==============================================
 
-"=========================================
-" [PLUGIN] YouCompleteMe
-"=========================================
-Plugin 'ycm-core/YouCompleteMe'
+" <empty>
+
+"==============================================
+ Plugin 'ycm-core/YouCompleteMe'
+"==============================================
 
 "----------------------------------
 " [PLUGIN] [YouCompleteMe] Settings
 "----------------------------------
+
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
-"=========================================
-" [PLUGIN] Autoformat
-"=========================================
-Plugin 'Chiel92/vim-autoformat'
+"==============================================
+ Plugin 'Chiel92/vim-autoformat'
+"==============================================
 
 "-----------------------------------
 " [PLUGIN] [Autoformat] Settings
 "-----------------------------------
+
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0
@@ -434,40 +529,40 @@ let g:formatter_yapf_style = 'pep8'
 "-----------------------------------
 " [PLUGIN] [Autoformat] Commands
 "-----------------------------------
+
 noremap <F6> :Autoformat<CR>
 
-"=========================================
-" [PLUGIN] EasyAlign
-"=========================================
-Plugin 'junegunn/vim-easy-align'
+"==============================================
+ Plugin 'junegunn/vim-easy-align'
+"==============================================
 
 "------------------------------
 " [PLUGIN] [EasyAlign] Mappings
 "------------------------------
+
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-"=========================================
-" [PLUGIN] delimitMate
-"=========================================
-Plugin 'raimondi/delimitmate'
+"==============================================
+ Plugin 'raimondi/delimitmate'
+"==============================================
 
 "--------------------------------
 " [PLUGIN] [delimitMate] Settings
 "--------------------------------
+
 let delimitMate_expand_cr=1
 
-"=========================================
-" [PLUGIN] Syntastic
-"=========================================
-Plugin 'scrooloose/syntastic'
+"==============================================
+ Plugin 'scrooloose/syntastic'
+"==============================================
 
 "------------------------------
 " [PLUGIN] [Syntastic] Settings
 "------------------------------
+
 let g:syntastic_enable_signs = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -487,26 +582,29 @@ let g:syntastic_html_tidy_exec = 'tidy5'
 "------------------------------
 " [PLUGIN] [Syntastic] Mappings
 "------------------------------
+
 nmap     <leader>c      :SyntasticCheck<CR>
 
-"=========================================
-" [PLUGIN] Surround
-"=========================================
-Plugin 'tpope/vim-surround'
+"==============================================
+ Plugin 'tpope/vim-surround'
+"==============================================
 
-"=========================================
-" [PLUGIN] UltiSnips
-"=========================================
-Plugin 'SirVer/ultisnips'
+" <empty>
 
-"=========================================
-" [PLUGIN] fugitive
-"=========================================
-Plugin 'tpope/vim-fugitive'
+"==============================================
+ Plugin 'SirVer/ultisnips'
+"==============================================
+
+" <empty>
+
+"==============================================
+ Plugin 'tpope/vim-fugitive'
+"==============================================
 
 "-----------------------------
 " [PLUGIN] [fugitive] Mappings
 "-----------------------------
+
 nnoremap <space>ga :Git add %:p<CR><CR>
 nnoremap <space>gs :Gstatus<CR>
 nnoremap <space>gc :Gcommit -v -q<CR>
@@ -523,66 +621,71 @@ nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
-"=========================================
-" [PLUGIN] GitGutter
-"=========================================
-Plugin 'airblade/vim-gitgutter'
+"==============================================
+ Plugin 'airblade/vim-gitgutter'
+"==============================================
 
 "----------------------------------
 " [PLUGIN] [GitGutter] Autocommands
 "----------------------------------
+
 autocmd vimenter * :GitGutterDisable
 
-"=========================================
-" [PLUGIN] vim-tmux-navigator
-"=========================================
-Plugin 'christoomey/vim-tmux-navigator'
+"==============================================
+ Plugin 'christoomey/vim-tmux-navigator'
+"==============================================
 
-"=========================================
-" [PLUGIN] TagBar
-"=========================================
-Plugin 'majutsushi/tagbar'
+" <empty>
+
+"==============================================
+ Plugin 'majutsushi/tagbar'
+"==============================================
 
 "---------------------------
 " [PLUGIN] [TagBar] Settings
 "---------------------------
+
 let g:tagbar_width = 30
 let g:tagbar_sort = 0
 
 "---------------------------
 " [PLUGIN] [TagBar] Mappings
 "---------------------------
+
 nmap <leader>b :TagbarToggle<cr>
 
-"=========================================
-" [PLUGIN] Tabular
-"=========================================
-"The tabular plugin must come before vim-markdown
-Plugin 'godlygeek/tabular'
+"==============================================
+ Plugin 'godlygeek/tabular'
+"==============================================
 
-"=========================================
-" [PLUGIN] Markdown
-"=========================================
-Plugin 'plasticboy/vim-markdown'
+" The tabular plugin must come before vim-markdown
+"
+" <empty>
 
-"=========================================
-" [PLUGIN] instant-markdown
-"=========================================
-Plugin 'suan/vim-instant-markdown'
+"==============================================
+ Plugin 'plasticboy/vim-markdown'
+"==============================================
+
+" <empty>
+
+"==============================================
+ Plugin 'suan/vim-instant-markdown'
+"==============================================
 
 "-------------------------------------
 " [PLUGIN] [instant-markdown] Settings
 "-------------------------------------
+
 let g:instant_markdown_autostart = 0
 
-"=========================================
-" [PLUGIN] python-mode
-"=========================================
-Plugin 'python-mode/python-mode'
+"==============================================
+ Plugin 'python-mode/python-mode'
+"==============================================
 
 "--------------------------------
 " [PLUGIN] [python-mode] Settings
 "--------------------------------
+
 let g:pymode_lint_checkers = ['pyflakes']
 let g:pymode_lint_cwindow = 0
 let g:pymode_lint_on_write = 0
@@ -590,90 +693,105 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pyflakes_use_quickfix = 0
 let g:pymode_lint_cwindow = 0
 
-"=========================================
-" [PLUGIN] emmet
-"=========================================
+"==============================================
+ Plugin 'mattn/emmet-vim'
+"==============================================
+
 " Key to expand: <C-y>,
-Plugin 'mattn/emmet-vim'
 
 "--------------------------
 " [PLUGIN] [emmet] Settings
 "-------------------------
+
 let g:user_zen_settings = {
 \  'indentation' : '    '
 \}
 
-"=========================================
-" [PLUGIN] JavaScript
-"=========================================
-" JSX support
-Plugin 'pangloss/vim-javascript'
+"==============================================
+ Plugin 'pangloss/vim-javascript'
+"==============================================
 
-"=========================================
-" [PLUGIN] jsx
-"=========================================
-Plugin 'mxw/vim-jsx'
+" <empty>
 
-"=========================================
-" [PLUGIN] scss-syntax
-"=========================================
-Plugin 'cakebaker/scss-syntax.vim'
+"==============================================
+ Plugin 'mxw/vim-jsx'
+"==============================================
 
-"=========================================
-" [PLUGIN] bnf
-"=========================================
-Plugin 'vim-scripts/bnf.vim'
+" <empty>
 
-"=========================================
-" [PLUGIN] python-syntax
-"=========================================
-Plugin 'hdima/python-syntax'
+"==============================================
+ Plugin 'cakebaker/scss-syntax.vim'
+"==============================================
+
+" <empty>
+
+"==============================================
+ Plugin 'vim-scripts/bnf.vim'
+"==============================================
+
+" <empty>
+
+"==============================================
+ Plugin 'hdima/python-syntax'
+"==============================================
 
 "----------------------------------
 " [PLUGIN] [python-syntax] Settings
 "----------------------------------
+
 let g:python_highlight_all = 1
 
-"=========================================
-" [PLUGIN] cpp-enhanced-highlight
-"=========================================
-Plugin 'octol/vim-cpp-enhanced-highlight'
+"==============================================
+ Plugin 'octol/vim-cpp-enhanced-highlight'
+"==============================================
 
-"------------------------------------------
+"-------------------------------------------
 " [PLUGIN] [cpp-enhanced-highlight] Settings
-"------------------------------------------
+"-------------------------------------------
+
 "Vim tend to a have issues with flagging braces as errors,
 "see for example https://github.com/vim-jp/vim-cpp/issues/16.
 "A workaround is to set:
 let c_no_curly_error=1
 
-"=========================================
-" [PLUGIN] QuickRun
-"=========================================
+"==============================================
+ Plugin 'thinca/vim-quickrun'
+"==============================================
+
 "*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
 "It provides :QuickRun command for it.
-Plugin 'thinca/vim-quickrun'
+"
+" <empty>
 
-"=========================================
-" [PLUGIN] vimproc
-"=========================================
-Plugin 'Shougo/vimproc.vim'
+"==============================================
+ Plugin 'Shougo/vimproc.vim'
+"==============================================
 
-"=========================================
-" [PLUGIN] vimshell
-"=========================================
+" <empty>
+
+"==============================================
+ Plugin 'Shougo/vimshell.vim'
+"==============================================
+
 "vimshell depends on |vimproc|
-Plugin 'Shougo/vimshell.vim'
+"
+" <empty>
 
-"=========================================
-" [PLUGIN] onedark (color theme)
-"=========================================
-Plugin 'joshdick/onedark.vim'
+"==============================================
+ Plugin 'joshdick/onedark.vim'
+"==============================================
 
-"=========================================
-" [PLUGIN] devicons (icon theme)
-"=========================================
-Plugin 'ryanoasis/vim-devicons'
+" OneDark (color theme)
+"
+" <empty>
+
+"==============================================
+ Plugin 'ryanoasis/vim-devicons'
+"==============================================
+
+" <empty>
+
+"---------------------------------------------------------------
 
 " All plugins must be added before the following line (@Vundle)
 call vundle#end()            " required (@Vundle)
@@ -689,3 +807,4 @@ syntax on
 " shows how many times a search pattern occurs in the current buffer
 " somewhy this settings works only when it's placed at the end of the file
 set shortmess-=S
+
