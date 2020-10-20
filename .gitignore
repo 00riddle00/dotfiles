@@ -108,8 +108,5 @@ bin/cowsay/**/*.dat
 .tmux/plugins/*
 .tmux/resurrect/*
 
-.vim/*
-!.vim/colors/
-
 .local/share/dotshare/qutebrowser-homepage/panorama.jpg
 .local/share/dotshare/cowsay/phrases/*.dat

@@ -320,6 +320,7 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " AUTOCOMMANDS
 "===============================================================
 
+autocmd FileType help wincmd L
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
@@ -369,30 +370,39 @@ let @o = "oprint(\"here\")\<Esc>k0"
 "  FUNCTIONS
 "===============================================================
 
-" <empty>
+"=========================================
+" [FUNCTIONS] Startup
+"=========================================
+
+" a post-update hook after YCM install
+function! BuildYCM(info)
+  " info is a dictionary with 3 fields
+  " - name:   name of the plugin
+  " - status: 'installed', 'updated', or 'unchanged'
+  " - force:  set on PlugInstall! or PlugUpdate!
+  if a:info.status == 'installed' || a:info.force
+    !./install.py
+  endif
+endfunction
 
 "===============================================================
 "  PLUGINS
 "===============================================================
 
-set nocompatible              " be iMproved, required (@Vundle)
-
-" It is Vim's feature. Vim makes cache for filetype plugins from 
-" runtimepath. So if vundle changes runtimepath, it must reset 
-" before calling. (@Vundle)
-filetype off                  " required (@Vundle)
-
-" set the runtime path to include Vundle and initialize (@Vundle)
-set rtp+=$DOTFILES/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" vim-plug is eliberately designed to be in a single file 
+" so that it can be easily downloaded and put into ~/.vim/autoload,
+" so no manual modification of runtimepath is required. 
+"
+" vim-plug also does the filetype off and on trick for you
+"
+" (vim-plug) Specify a directory for plugins
+" Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
 "---------------------------------------------------------------
 
 "==============================================
- Plugin 'scrooloose/nerdtree'
+ Plug 'scrooloose/nerdtree'
 "==============================================
 
 "-----------------------------
@@ -427,7 +437,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "==============================================
- Plugin 'jlanzarotta/bufexplorer'
+ Plug 'jlanzarotta/bufexplorer'
 "==============================================
 
 "-------------------------------
@@ -448,7 +458,7 @@ nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
 
 "==============================================
- Plugin 'ctrlpvim/ctrlp.vim'
+ Plug 'ctrlpvim/ctrlp.vim'
 "==============================================
 
 "--------------------------
@@ -481,7 +491,7 @@ nmap <leader>bb :CtrlPBuffer<cr>
 command CC CtrlPClearAllCaches  
 
 "==============================================
- Plugin 'easymotion/vim-easymotion'
+ Plug 'easymotion/vim-easymotion'
 "==============================================
 
 "-------------------------------
@@ -498,14 +508,15 @@ nmap <leader><leader> <Plug>(easymotion-overwin-f)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 "==============================================
- Plugin 'scrooloose/nerdcommenter'
+ Plug 'scrooloose/nerdcommenter'
 "==============================================
 
 " <empty>
 
-"==============================================
- Plugin 'ycm-core/YouCompleteMe'
-"==============================================
+
+"=============================================================
+ Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
+"=============================================================
 
 "----------------------------------
 " [PLUGIN] [YouCompleteMe] Settings
@@ -514,7 +525,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 let g:ycm_python_binary_path = '/usr/bin/python3'
 
 "==============================================
- Plugin 'Chiel92/vim-autoformat'
+ Plug 'Chiel92/vim-autoformat'
 "==============================================
 
 "-----------------------------------
@@ -533,7 +544,7 @@ let g:formatter_yapf_style = 'pep8'
 noremap <F6> :Autoformat<CR>
 
 "==============================================
- Plugin 'junegunn/vim-easy-align'
+ Plug 'junegunn/vim-easy-align'
 "==============================================
 
 "------------------------------
@@ -546,7 +557,7 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 "==============================================
- Plugin 'raimondi/delimitmate'
+ Plug 'raimondi/delimitmate'
 "==============================================
 
 "--------------------------------
@@ -556,7 +567,7 @@ nmap ga <Plug>(EasyAlign)
 let delimitMate_expand_cr=1
 
 "==============================================
- Plugin 'scrooloose/syntastic'
+ Plug 'scrooloose/syntastic'
 "==============================================
 
 "------------------------------
@@ -586,19 +597,19 @@ let g:syntastic_html_tidy_exec = 'tidy5'
 nmap     <leader>c      :SyntasticCheck<CR>
 
 "==============================================
- Plugin 'tpope/vim-surround'
+ Plug 'tpope/vim-surround'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'SirVer/ultisnips'
+ Plug 'SirVer/ultisnips'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'tpope/vim-fugitive'
+ Plug 'tpope/vim-fugitive'
 "==============================================
 
 "-----------------------------
@@ -622,7 +633,7 @@ nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
 "==============================================
- Plugin 'airblade/vim-gitgutter'
+ Plug 'airblade/vim-gitgutter'
 "==============================================
 
 "----------------------------------
@@ -632,13 +643,13 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 autocmd vimenter * :GitGutterDisable
 
 "==============================================
- Plugin 'christoomey/vim-tmux-navigator'
+ Plug 'christoomey/vim-tmux-navigator'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'majutsushi/tagbar'
+ Plug 'majutsushi/tagbar'
 "==============================================
 
 "---------------------------
@@ -655,7 +666,7 @@ let g:tagbar_sort = 0
 nmap <leader>b :TagbarToggle<cr>
 
 "==============================================
- Plugin 'godlygeek/tabular'
+ Plug 'godlygeek/tabular'
 "==============================================
 
 " The tabular plugin must come before vim-markdown
@@ -663,13 +674,13 @@ nmap <leader>b :TagbarToggle<cr>
 " <empty>
 
 "==============================================
- Plugin 'plasticboy/vim-markdown'
+ Plug 'plasticboy/vim-markdown'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'suan/vim-instant-markdown'
+ Plug 'suan/vim-instant-markdown'
 "==============================================
 
 "-------------------------------------
@@ -679,7 +690,7 @@ nmap <leader>b :TagbarToggle<cr>
 let g:instant_markdown_autostart = 0
 
 "==============================================
- Plugin 'python-mode/python-mode'
+ Plug 'python-mode/python-mode'
 "==============================================
 
 "--------------------------------
@@ -694,7 +705,7 @@ let g:pyflakes_use_quickfix = 0
 let g:pymode_lint_cwindow = 0
 
 "==============================================
- Plugin 'mattn/emmet-vim'
+ Plug 'mattn/emmet-vim'
 "==============================================
 
 " Key to expand: <C-y>,
@@ -708,31 +719,31 @@ let g:user_zen_settings = {
 \}
 
 "==============================================
- Plugin 'pangloss/vim-javascript'
+ Plug 'pangloss/vim-javascript'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'mxw/vim-jsx'
+ Plug 'mxw/vim-jsx'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'cakebaker/scss-syntax.vim'
+ Plug 'cakebaker/scss-syntax.vim'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'vim-scripts/bnf.vim'
+ Plug 'vim-scripts/bnf.vim'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'hdima/python-syntax'
+ Plug 'hdima/python-syntax'
 "==============================================
 
 "----------------------------------
@@ -742,7 +753,7 @@ let g:user_zen_settings = {
 let g:python_highlight_all = 1
 
 "==============================================
- Plugin 'octol/vim-cpp-enhanced-highlight'
+ Plug 'octol/vim-cpp-enhanced-highlight'
 "==============================================
 
 "-------------------------------------------
@@ -755,7 +766,7 @@ let g:python_highlight_all = 1
 let c_no_curly_error=1
 
 "==============================================
- Plugin 'thinca/vim-quickrun'
+ Plug 'thinca/vim-quickrun'
 "==============================================
 
 "*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
@@ -764,13 +775,13 @@ let c_no_curly_error=1
 " <empty>
 
 "==============================================
- Plugin 'Shougo/vimproc.vim'
+ Plug 'Shougo/vimproc.vim'
 "==============================================
 
 " <empty>
 
 "==============================================
- Plugin 'Shougo/vimshell.vim'
+ Plug 'Shougo/vimshell.vim'
 "==============================================
 
 "vimshell depends on |vimproc|
@@ -778,7 +789,7 @@ let c_no_curly_error=1
 " <empty>
 
 "==============================================
- Plugin 'joshdick/onedark.vim'
+ Plug 'joshdick/onedark.vim'
 "==============================================
 
 " OneDark (color theme)
@@ -786,18 +797,17 @@ let c_no_curly_error=1
 " <empty>
 
 "==============================================
- Plugin 'ryanoasis/vim-devicons'
+ Plug 'ryanoasis/vim-devicons'
 "==============================================
 
 " <empty>
 
 "---------------------------------------------------------------
 
-" All plugins must be added before the following line (@Vundle)
-call vundle#end()            " required (@Vundle)
-" Enable filetype-specific plugins (filetype auto-detection) (@Vundle)
-filetype plugin indent on    " required (@Vundle)
-syntax on
+" (vim-plug) Initialize plugin system 
+" Automatically executes 'filetype plugin indent' on and 'syntax enable'. You can
+" revert the settings after the call. e.g. 'filetype indent off', 'syntax off', etc.
+call plug#end()
 
 "===============================================================
 "  TEMP
