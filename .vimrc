@@ -447,7 +447,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " if no new file is opened via NERDTree
 function! FocusNERDTree()
   if @% =~ "NERD_tree_*"
-      echo "True!"
       exe "normal \<C-w>p"
   else
       NERDTreeFocus
