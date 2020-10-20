@@ -11,7 +11,7 @@
 "=========================================
 " [SETTINGS] Colors
 "=========================================
-"
+
 color $VIMCOLOR
 set background=dark
 
@@ -155,7 +155,7 @@ set noswapfile
 set shiftwidth=4
 
 " show spaces as '.'
-" ::note:: enable with 'set list'
+" enable with ':set list'
 set listchars+=space:.
 
 "=========================================
@@ -173,7 +173,7 @@ set tabstop=4
 set softtabstop=4
 
 " show tabs as '|___'
-" ::note:: enable with 'set list'
+" enable with ':set list'
 set listchars+=tab:\|_,extends:>,precedes:<,nbsp:+
 
 "===============================================================
@@ -208,18 +208,17 @@ nmap     Q            <nop>
 " replace {more than one blank lines} with {exactly one blank line}
 nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>   
 
-" ::note:: Ctrl+O  takes you to the previous location
-" ::note:: Ctrl+I  takes you to the next location
-" ::note:: '.      takes you to the last change you made
-" ::note:: gi -    jump to the position where last time Insert mode was stopped, and set insert mode (uses '^)
-" ::note:: "''     jumps back to the start of the line you were on before you searched/jumped.
-" ::note:: Ctrl+]  go where the tag leads
-" ::note:: Ctrl+T  go back to the leading tag
-"
-" ::note:: cmdline history
-" ::note:: g:      commands
-" ::note:: q:      search
-" ::note:: i to edit, <CR> to use, C-c to quit
+" cmdline mappings
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+cnoremap <C-b> <Left>
+" exception, since <C-f> in cmdline 
+" is already taken by default
+cnoremap <C-l> <Right>
+" <C-h>, <C-w>, <C-u> also work 
+" just like in vim's insert mode
 
 "=========================================
 " [MAPPINGS] Windows
@@ -255,9 +254,6 @@ nmap <silent> [1;5B :resize -5<CR>
 " Change 2 split windows from vert to horiz or horiz to vert
 nmap <leader>tv <C-w>t<C-w>H
 nmap <leader>th <C-w>t<C-w>K
-" ::note:: <C-w>= make splits equal size
-" ::note:: <C-w>- increase ex mode split size
-" ::note:: <C-w>_ standard ex mode split size
 
 "=========================================
 " [MAPPINGS] Tabs (layout)
@@ -282,20 +278,13 @@ noremap      zl           zL
 noremap      zz           z-
 
 "=========================================
-" [MAPPINGS] Autocomplete
-"=========================================
-
-inoremap     <C-k>           <C-p>
-inoremap     <C-j>           <C-n>
-
-"=========================================
 " [MAPPINGS] Clipboard
 "=========================================
 
 " Copy/Paste
 vmap <C-c> "+y
 vmap <C-x> "+c
-"map <C-v> <ESC>"+pa
+"nmap <C-v> <ESC>"+pa
 
 " Long text paste
 """" From primary clipboard
@@ -433,7 +422,7 @@ let g:NERDTreeMapHelp = 'Y'
 "-----------------------------
 
 noremap    <C-n>        :NERDTreeToggle<CR>
-noremap    <C-m>        :NERDTreeFocus<CR>
+noremap    <C-x>        :call FocusNERDTree()<CR>
 
 "---------------------------------
 " [PLUGIN] [NERDTree] Autocommands
@@ -448,6 +437,22 @@ autocmd VimEnter * wincmd p
 " open a NERDTree automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"------------------------------
+" [PLUGIN] [NERDTree] Functions
+"------------------------------
+
+" focus/unfocus NERDTree 
+" place the cursor back in the same window
+" if no new file is opened via NERDTree
+function! FocusNERDTree()
+  if @% =~ "NERD_tree_*"
+      echo "True!"
+      exe "normal \<C-w>p"
+  else
+      NERDTreeFocus
+  endif
+endfunction
 
 "==============================================
  Plug 'jlanzarotta/bufexplorer'
@@ -536,6 +541,15 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "----------------------------------
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
+
+"----------------------------------
+" [PLUGIN] [YouCompleteMe] Mappings
+"----------------------------------
+
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr> <C-d> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
+inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
 
 "==============================================
  Plug 'Chiel92/vim-autoformat'

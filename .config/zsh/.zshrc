@@ -39,9 +39,28 @@ setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
 
 # keybinds
+autoload -U edit-command-line
+zle -N edit-command-line
+
 ## vi mode
 bindkey -v
 KEYTIMEOUT=1
+
+## emacs like keybindings
+bindkey '^a'  vi-beginning-of-line
+bindkey '^e'  vi-end-of-line
+bindkey '^f'  forward-char
+bindkey '^[f' forward-word
+bindkey '^[x' backward-word
+### exception, since '^h' is already used for pane switching
+bindkey '^b'  backward-delete-char
+bindkey '^Y'  yank
+bindkey '^d'  delete-char-or-list
+bindkey '^p'  history-beginning-search-backward
+bindkey '^n'  history-beginning-search-forward
+
+## 'v' in visual mode opens VIM to edit the command in a full editor.
+bindkey -M vicmd v edit-command-line
 
 ## use the vi navigation keys in menu completion
 bindkey -M menuselect 'h' vi-backward-char
