@@ -46,27 +46,35 @@ zle -N edit-command-line
 bindkey -v
 KEYTIMEOUT=1
 
-## emacs like keybindings
-bindkey '^a'  vi-beginning-of-line
-bindkey '^e'  vi-end-of-line
-bindkey '^f'  forward-char
-bindkey '^[f' forward-word
-bindkey '^[x' backward-word
-### exception, since '^h' is already used for pane switching
-bindkey '^b'  backward-delete-char
-bindkey '^Y'  yank
-bindkey '^d'  delete-char-or-list
-bindkey '^p'  history-beginning-search-backward
-bindkey '^n'  history-beginning-search-forward
-
-## 'v' in visual mode opens VIM to edit the command in a full editor.
+### 'v' in visual mode opens VIM to edit the command in a full editor.
 bindkey -M vicmd v edit-command-line
 
-## use the vi navigation keys in menu completion
+### use the vi navigation keys in menu completion
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
+
+## emacs-like keybindings
+bindkey '^f'  forward-char
+bindkey '^b'  backward-char
+bindkey '^[f' forward-word
+bindkey '^[b' backward-word
+bindkey '^e'  vi-end-of-line
+bindkey '^a'  vi-beginning-of-line
+
+bindkey '^d'  delete-char-or-list
+# <DEL> (ie. backspace) - backward-delete-char
+bindkey '^[d'  delete-word
+# <C-W> backward-delete-word (vim's key)
+# none  - delete to the end of line (<C-k> is already taken)
+# <C-u> - delete to start of line (vim's key)
+
+bindkey '^p'  history-beginning-search-backward
+bindkey '^n'  history-beginning-search-forward
+
+bindkey '^y'  yank
+bindkey '^g' kill-whole-line 
 
 ## history
 bindkey '^R' history-incremental-search-backward

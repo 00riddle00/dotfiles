@@ -189,7 +189,7 @@ nmap     <C-F5>       :cc<CR>
 nmap     <S-F5>       :cprevious<CR>
 nmap     <F5>         :cnext<CR>
 nmap     <leader>d    :pwd<cr>
-nmap     <leader>e    :e<CR>    " reload file
+nmap     <leader>e    :e<CR>|  " reload file
 nmap     <leader>h    :set hlsearch!<CR>
 nmap     <leader>n    :set relativenumber!<CR>
 nmap     <leader>p    :setlocal paste!<CR>
@@ -208,17 +208,54 @@ nmap     Q            <nop>
 " replace {more than one blank lines} with {exactly one blank line}
 nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>   
 
-" cmdline mappings
-cnoremap <C-a> <Home>
+"=========================================
+" [MAPPINGS] Emacs-like cmdline
+"=========================================
+
+" emacs-like cmdline mappings
+cnoremap <C-l> <Right>| " exception, since <C-f> in cmdline is taken
+cnoremap <C-b> <Left>
+cnoremap <M-f> <S-Right>
+cnoremap <M-b> <S-Left>
 cnoremap <C-e> <End>
+cnoremap <C-a> <Home>
+
+cnoremap <C-d> <Del>
+" <C-h> - backward delete char (like in INSERT mode) (as well as <BS>)
+" none  - forward delete word (no single keymap for that in vim)
+" <C-w> - backward delete word (like in INSERT mode) ??-<M-DEL>
+" none  - forward delete to $ (no single keymap for that in vim)
+" <C-u> - backward delete to ^ (like in INSERT mode)
+
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
-cnoremap <C-b> <Left>
-" exception, since <C-f> in cmdline 
-" is already taken by default
-cnoremap <C-l> <Right>
-" <C-h>, <C-w>, <C-u> also work 
-" just like in vim's insert mode
+
+cnoremap <C-y> <C-r>"
+cnoremap <C-g> <C-c>
+
+"=========================================
+" [MAPPINGS] Emacs-like insert mode
+"=========================================
+
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <M-f> <S-Right>
+inoremap <M-b> <S-Left>
+inoremap <C-e> <End>
+inoremap <C-a> <Home>
+
+inoremap <C-l> <Del>| " exception, since <C-d> does not work
+" <C-h> - backward delete char (like in INSERT mode) (as well as <BS>)
+" none  - forward delete word (no single keymap for that in vim)
+" <C-w> - backward delete word (like in INSERT mode)
+" none  - forward delete to $ (no single keymap for that in vim)
+" <C-u> - backward delete to ^ (like in INSERT mode)
+
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+
+inoremap <C-y> <C-r>"
+inoremap <C-g> <C-c>
 
 "=========================================
 " [MAPPINGS] Windows
@@ -322,7 +359,11 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " AUTOCOMMANDS
 "===============================================================
 
-autocmd FileType help wincmd L  " opens help window vertically
+" mapping ALT key
+execute "set <M-f>=\ef"
+execute "set <M-b>=\eb"
+
+autocmd FileType help wincmd L|  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
