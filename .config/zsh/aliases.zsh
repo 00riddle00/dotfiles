@@ -36,7 +36,8 @@ alias she='cd $BIN'
 
 # emacs
 alias ee='vim ~/.emacs.d/init.el'
-alias emac='emacs --no-window-system'
+alias emacs.cmd='emacs --no-window-system'
+alias emacs.nocaps='setxkbmap -option ctrl:nocaps'
 
 # git
 alias com="git add . && git commit -m '.'"
