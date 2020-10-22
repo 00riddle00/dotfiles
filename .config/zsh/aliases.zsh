@@ -474,10 +474,15 @@ alias get='curl -LO'
 alias dos='cd ~/dosbox'
 # convert to ascii art
 alias ascii='figlet'  
-alias get.winclass='xprop | grep -i class'
-alias get.winsize='xwininfo'
+alias get.win_class='xprop | grep -i class'
+alias get.win_pos_size='xwininfo'
 alias get.keyname='xev'
 alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/BSc2-ComputerArchitecture'
 
 alias py.exe='python -c'
 alias perl.exe='perl -le'
+alias temp='vim /tmp/temp1.md'
+
+# avoid tmux session using an old I3SOCK environment variable after i3 restart
+alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
+
