@@ -128,6 +128,11 @@ for_window [instance="i3blocks_weather"] resize set 1012 667
 for_window [instance="i3blocks_weather"] move position 988 28
 for_window [instance="i3blocks_weather"] border pixel 2
 
+for_window [class="KeePass2"] floating enable
+for_window [class="KeePass2"] sticky enable
+for_window [class="KeePass2"] resize set 730 700
+for_window [class="KeePass2"] move position 1100 220
+
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Pavucontrol"] sticky enable
 for_window [class="Pavucontrol"] resize set 625 450
@@ -150,13 +155,19 @@ for_window [class="Steam"]               move workspace $ws8
 for_window [class="kdenlive"]            move workspace $ws9
 
 # =============================
+#  Workspace traits 
+# =============================
+
+for_window [workspace=$ws10]     layout tabbed
+
+# =============================
 #  Basic Bindings
 # =============================
 
 bindsym $mod+Return         $run $term
 
-bindsym $mod+space          focus mode_toggle
-bindsym $mod+Shift+space    floating toggle
+bindsym $mod+space          floating toggle
+bindsym $mod+Shift+space    focus mode_toggle
 
 bindsym $alt+$esc           kill
 

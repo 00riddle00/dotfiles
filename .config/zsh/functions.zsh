@@ -43,3 +43,10 @@ get-mp3() { youtube-dl --no-playlist --extract-audio --audio-format mp3 "$1"; }
 
 yy() { name="${1%.asm}"; yasm "$name.asm" -fbin -o "$name.com"; }
 
+# opens a temporary file with a given extension
+# (default extension: .md)
+temp() {
+    ext="$1";
+    [[ -z "$1" ]] && ext="md"
+    vim "/tmp/temp_$(date +%F_%H_%M_%S).$ext";
+}

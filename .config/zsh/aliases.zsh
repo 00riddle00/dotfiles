@@ -20,6 +20,7 @@ alias hhh='yasm -fbin hh.asm -o hh.com'
 alias yf='yasm -fbin'
 
 # cd
+alias d='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -401,6 +402,7 @@ alias xport='xrandr --output $HDMI_SCREEN --auto --rotate left --output $LAPTOP_
 alias systemd.running='systemctl --type=service'
 alias systemd.list='systemctl list-unit-files'
 alias systemd.enabled='systemctl list-unit-files | grep enabled'
+alias systemd.boot='systemd-analyze blame'
 #### db
 alias mysql.start='sudo systemctl start mysqld'
 alias post='systemctl start postgresql'
@@ -481,8 +483,6 @@ alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/BSc2-ComputerArchitecture'
 
 alias py.exe='python -c'
 alias perl.exe='perl -le'
-alias temp='vim /tmp/temp1.md'
 
 # avoid tmux session using an old I3SOCK environment variable after i3 restart
 alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
-
