@@ -410,7 +410,7 @@ alias post='systemctl start postgresql'
 alias apache='systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 #### lan
-alias net='systemctl start dhcpcd@enp9s0.service'
+#alias net='systemctl start dhcpcd@enp9s0.service'
 alias renet='systemctl restart dhcpcd@enp9s0.service'
 #### wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
@@ -479,10 +479,14 @@ alias ascii='figlet'
 alias get.win_class='xprop | grep -i class'
 alias get.win_pos_size='xwininfo'
 alias get.keyname='xev'
-alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/BSc2-ComputerArchitecture'
+alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/KA_2020/exercises/BSc2-ComputerArchitecture'
 
 alias py.exe='python -c'
 alias perl.exe='perl -le'
 
 # avoid tmux session using an old I3SOCK environment variable after i3 restart
 alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
+
+# connect to home wifi
+alias net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
+
