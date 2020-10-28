@@ -298,10 +298,13 @@ alias share="cd $DOTSHARE"
 
 ## network
 alias pp='ping -c 3 www.google.com'
-alias whatip='curl icanhazip.com'
-alias ppw='watch "ping -c 1 www.google.com"'
-### this is useful to get the current active interface name
-alias iii='ip route get 8.8.8.8' 
+alias get.my_ip='curl -w "\n" ifconfig.me'
+alias get.local_ip='ip route | head -n 1'
+alias get.gateway='ip route | head -n 1'
+alias get.net_interface='ip route | head -n 1' # get the current active interface name
+alias check.ip='whois'
+alias check.dns='nslookup'
+alias check.domain='whois'
 alias vpn.on='systemctl start openvpn-client@airvpn.service'
 alias vpn.off='systemctl stop openvpn-client@airvpn.service'
 
