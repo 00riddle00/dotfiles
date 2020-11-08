@@ -77,7 +77,7 @@ alias npm.ls='npm list --depth=0'
 alias npm.ls.g='npm list -g --depth=0'
 
 # launch console programs
-alias mm='neomutt'
+#alias mm='neomutt'
 alias r='ranger'
 alias tor='rtorrent'
 alias irc='irssi'
@@ -233,7 +233,7 @@ alias fzf.yay='yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S'
 
 ## c development
 alias gdb.super='gdb --batch --ex run --ex bt --ex q --args'
-alias ms='make rebuild'
+#alias ms='make rebuild'
 alias vl='valgrind'
 alias vll='vlt --leak-check=full --show-leak-kinds=all'
 alias vllv='vlt --leak-check=full --show-leak-kinds=all -v'
@@ -464,7 +464,7 @@ alias letr='chmod -R 755'
 # =============
 # entries appear here after appending output to this file
 alias corona='curl https://corona-stats.online/lithuania'
-alias corona.global='curl https://corona-stats.online/lithuania'
+alias corona.global='curl https://corona-stats.online'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
 alias ll='dwm.rebuild'
@@ -482,6 +482,7 @@ alias ascii='figlet'
 alias get.win_class='xprop | grep -i class'
 alias get.win_pos_size='xwininfo'
 alias get.keyname='xev'
+alias get.key_escape_sequence='sed -n l'
 alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/KA_2020/exercises/BSc2-ComputerArchitecture'
 
 alias py.exe='python -c'
@@ -493,3 +494,12 @@ alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3
 # connect to home wifi
 alias net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
 
+
+# c prog
+alias mc='make clean'
+#alias ms='make test'
+#alias l='./test'
+
+alias ms='make clean && make'
+alias t='./tsh'
+alias l='./tsh'

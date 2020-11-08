@@ -102,7 +102,7 @@ set splitbelow splitright
 "=========================================
 
 " Yank and copy to X clipboard
-" +xterm_clipboard must be enabled (see vim --version)
+" +xterm_clipboard must be enabled (see $(vim --version | grep 'xterm_clipboard'))
 set clipboard+=unnamed                  
 
 "=========================================
@@ -207,6 +207,16 @@ nmap     Q            <nop>
 
 " replace {more than one blank lines} with {exactly one blank line}
 nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>   
+
+"=========================================
+" [MAPPINGS] Commenting
+"=========================================
+
+" Escape sequences depend on the terminal emulator.
+" Use `sed -n l` to test keys' ESC sequences.
+" ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
+map <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
+imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
 
 "=========================================
 " [MAPPINGS] Emacs-like cmdline
@@ -359,6 +369,10 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " AUTOCOMMANDS
 "===============================================================
 
+" save all files on losing focus 
+" (unnamed buffers are not saved)
+autocmd FocusLost * silent! wa
+
 " mapping ALT key
 execute "set <M-f>=\ef"
 execute "set <M-b>=\eb"
@@ -399,6 +413,9 @@ command SortPa      %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 "===============================================================
 "  MACROS
 "===============================================================
+
+" copy the current line without '\n' to secondary clipboard
+let @c = "0v$h\"+y:echo 'line copied!'"
 
 " insert heading separator above and below the line
 let @e = "a O11i=2xI# jo11i=2xI# Aak0"
@@ -462,8 +479,8 @@ let g:NERDTreeMapHelp = 'Y'
 " [PLUGIN] [NERDTree] Mappings
 "-----------------------------
 
-noremap    <C-n>        :NERDTreeToggle<CR>
-noremap    <C-x>        :call FocusNERDTree()<CR>
+noremap    <C-n>                :NERDTreeToggle<CR>
+noremap    <silent><C-x>        :call FocusNERDTree()<CR>
 
 "---------------------------------
 " [PLUGIN] [NERDTree] Autocommands

@@ -3,7 +3,7 @@
 ## make a temp backup
 bk() { cp "$1" "$1.bak"; }
 
-## make cmd aliases
+## make cmdline aliases for zsh
 ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
 
 # SYSTEMWIDE FUNCTIONS
@@ -13,9 +13,11 @@ his() { history | grep "$1"; }
 
 jr() { javac "$1" && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
 
-# usage: num file.txt, where file.txt is the file to be line-numbered
+# add numbers to non empty lines in a file
+# usage: num <file>
 num() { nl -s ' ' "$1" > tmp && mv tmp "$1" && sed "s/^[ \t]*//" -i "$1" && cat "$1" | xclip }
 
+# make symbolic links
 # if 1st arg is a dir, no "/" should be appended
 # ln -s {FILE_PATH} {SYMLINK_PATH}
 sym() { ln -s "$(pwd)/$1" "$2"; }
@@ -45,6 +47,7 @@ yy() { name="${1%.asm}"; yasm "$name.asm" -fbin -o "$name.com"; }
 
 # opens a temporary file with a given extension
 # (default extension: .md)
+# file is opened in /tmp dir, it's name contains a timestamp
 temp() {
     ext="$1";
     [[ -z "$1" ]] && ext="md"
