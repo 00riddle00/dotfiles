@@ -16,7 +16,7 @@ color $VIMCOLOR
 set background=dark
 
 " Make sure we're getting 256 colors when it's available
-if $TERM == "xterm-256color" || $TERM == "rxvt-unicode-256color" || $TERM == "screen-256color" 
+if $TERM == "xterm-256color" || $TERM == "rxvt-unicode-256color" || $TERM == "screen-256color"
     set t_Co=256
 endif
 
@@ -25,7 +25,7 @@ endif
 "=========================================
 
 " Show count of selected lines or characters
-set showcmd     
+set showcmd
 " Show line numbers
 set number
 " Always show statusline
@@ -35,7 +35,7 @@ set relativenumber
 " show the line number on the bar
 set ruler
 " kudos to Jason Ryan (http://jasonwryan.com)
-set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\ 
+set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\
 
 "=========================================
 " [SETTINGS] Displaying text
@@ -48,6 +48,7 @@ syntax enable
 " Do not fold text/code
 set nofoldenable
 " Do not wrap lines
+"
 set nowrap
 " Spelling
 set spelllang=lt,en
@@ -85,7 +86,7 @@ set mouse=a
 " [SETTINGS] Buffers
 "=========================================
 
-" Allow to skip between buffers without 
+" Allow to skip between buffers without
 " writing or abandoning changes
 set hidden
 
@@ -103,7 +104,7 @@ set splitbelow splitright
 
 " Yank and copy to X clipboard
 " +xterm_clipboard must be enabled (see $(vim --version | grep 'xterm_clipboard'))
-set clipboard+=unnamed                  
+set clipboard+=unnamed
 
 "=========================================
 " [SETTINGS] Search
@@ -115,7 +116,7 @@ set ignorecase
 set incsearch
 " do not highlight the search
 set nohlsearch
-" Override the 'ignorecase' option if the search pattern contains upper case characters. 
+" Override the 'ignorecase' option if the search pattern contains upper case characters.
 set smartcase
 
 "=========================================
@@ -167,9 +168,9 @@ set expandtab
 " Number of spaces that a <Tab> in the file counts for.
 set tabstop=4
 
-" Number of spaces that a <Tab> counts for while 
-" performing editing operations, like inserting 
-" a <Tab> or using <BS>. 
+" Number of spaces that a <Tab> counts for while
+" performing editing operations, like inserting
+" a <Tab> or using <BS>.
 set softtabstop=4
 
 " show tabs as '|___'
@@ -206,7 +207,30 @@ nmap     k            gk
 nmap     Q            <nop>
 
 " replace {more than one blank lines} with {exactly one blank line}
-nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>   
+"nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
+
+" remove trailing whitespace
+nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
+
+"This removes all trailing lines that contain only whitespace.
+"To remove only truly "empty" lines, remove the \s* from the above command.
+"
+"
+"
+"nmap <leader>l      :%s#\s\+$##e<CR><C-o> \| nmap <leader>l      :%s/\(\n\n\)\n\+/\1/e<CR><C-o> \| nmap <leader>l      :%s#\($\n\s*\)\+\%$##e<CR><C-o>
+
+"nmap <leader>l      :%s#\s\+$##e<CR><C-o>
+"nmap <leader>l      :%s/\(\n\n\)\n\+/\1/e<CR><C-o>
+"nmap <leader>l      :%s#\($\n\s*\)\+\%$##e<CR><C-o>
+
+
+    
+
+"explanation:
+"$\n - Match a new line (end-of-line character followed by a carriage return).
+"\s* - Allow any amount of whitespace on this new line
+"\+  - Allow any number of occurrences of this group (one or more).
+"\%$ - Match the end of the file
 
 "=========================================
 " [MAPPINGS] Commenting
@@ -215,8 +239,12 @@ nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 " Escape sequences depend on the terminal emulator.
 " Use `sed -n l` to test keys' ESC sequences.
 " ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
-map <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
+map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
 imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
+
+" vim registers <C-/> as <C-_>
+map  <C-_>         <Plug>NERDCommenterToggle<CR>
+imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
 
 "=========================================
 " [MAPPINGS] Emacs-like cmdline
@@ -286,7 +314,7 @@ inoremap <C-g> <C-c>
 "----------------------------
 
 "<C-Left>
-nmap <silent> [1;5D :vertical resize -5<CR> 
+nmap <silent> [1;5D :vertical resize -5<CR>
 "<C-Right>
 nmap <silent> [1;5C :vertical resize +5<CR>
 "<C-Up>
@@ -343,7 +371,7 @@ nmap     tp             :r !xsel -b<CR>
 " [MAPPINGS] Shell
 "=========================================
 
-" Double pressed tmux prefix key sends commands to this spawned 
+" Double pressed tmux prefix key sends commands to this spawned
 " terminal instead of the parent one, in which vim is running.
 "
 " Smart pane switching (C-h, C-j, C-k, C-l) keys do work inside
@@ -359,7 +387,7 @@ map <leader>tt :vert term zsh<CR>
 nmap    c/          /\<class
 nmap    m/          /\<def
 
-" [C specific] Build DSA project 
+" [C specific] Build DSA project
 nmap <F8> :w \| !make rebuild && ./demo <CR>
 "nmap <F8> :w \| :make rebuild <CR> \| :copen 30 <CR>
 "nmap <F8> :w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>
@@ -369,11 +397,15 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " AUTOCOMMANDS
 "===============================================================
 
-" save all files on losing focus 
+" save all files on losing focus
 " (unnamed buffers are not saved)
-autocmd FocusLost * silent! wa
+"autocmd FocusLost * silent! wa
+
+" update current file when leaving insert mode
+autocmd InsertLeave * silent! if expand('%') != '' | update | endif
 
 " mapping ALT key
+"
 execute "set <M-f>=\ef"
 execute "set <M-b>=\eb"
 
@@ -404,7 +436,7 @@ command FFdos       :e ++ff=dos
 "when replacing: \r is newline, \n is a null byte.
 command Dos2Unix    %s/\r/\r/g
 
-" sort by markdown h1 headings 
+" sort by markdown h1 headings
 " '@' character should not appear in a file before running
 " replace \n with '@' (except the newlines appearing before '# '),
 "   sort the file, then restore newlines
@@ -449,9 +481,9 @@ endfunction
 "  PLUGINS
 "===============================================================
 
-" vim-plug is eliberately designed to be in a single file 
+" vim-plug is eliberately designed to be in a single file
 " so that it can be easily downloaded and put into ~/.vim/autoload,
-" so no manual modification of runtimepath is required. 
+" so no manual modification of runtimepath is required.
 "
 " vim-plug also does the filetype off and on trick for you
 "
@@ -500,7 +532,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " [PLUGIN] [NERDTree] Functions
 "------------------------------
 
-" focus/unfocus NERDTree 
+" focus/unfocus NERDTree
 " place the cursor back in the same window
 " if no new file is opened via NERDTree
 function! FocusNERDTree()
@@ -563,7 +595,7 @@ nmap <leader>bb :CtrlPBuffer<cr>
 "--------------------------
 
 " CtrlP refresh
-command CC CtrlPClearAllCaches  
+command CC CtrlPClearAllCaches
 
 "==============================================
  Plug 'easymotion/vim-easymotion'
@@ -587,7 +619,6 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "==============================================
 
 " <empty>
-
 
 "=============================================================
  Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
@@ -888,7 +919,7 @@ let c_no_curly_error=1
 
 "---------------------------------------------------------------
 
-" (vim-plug) Initialize plugin system 
+" (vim-plug) Initialize plugin system
 " Automatically executes 'filetype plugin indent' on and 'syntax enable'. You can
 " revert the settings after the call. e.g. 'filetype indent off', 'syntax off', etc.
 call plug#end()
@@ -901,4 +932,3 @@ call plug#end()
 " shows how many times a search pattern occurs in the current buffer
 " somewhy this settings works only when it's placed at the end of the file
 set shortmess-=S
-

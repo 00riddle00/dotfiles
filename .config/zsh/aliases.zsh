@@ -283,7 +283,15 @@ alias pro='cd $HOME/pro'
 alias serv='cd /srv/http'
 alias srv='cd /srv/http/'
 alias sk='cd ~/Screenshots'
+alias vi='cd $HOME/VirtualBox\ VMs/'
+alias zdot='cd $ZDOTDIR'
+alias share="cd $DOTSHARE"
+
 alias tmp1='cd $HOME/tmp1'
+alias tmp='tmp1'
+alias mp='tmp1'
+alias mp1='tmp1'
+
 alias tmp2='cd $HOME/tmp2'
 alias tmp3='cd $HOME/tmp3'
 alias tmp4='cd $HOME/tmp4'
@@ -291,10 +299,14 @@ alias tmp5='cd $HOME/tmp5'
 alias tmp6='cd $HOME/tmp6'
 alias tmp7='cd $HOME/tmp7'
 alias tmp8='cd $HOME/tmp8'
-alias tmp='cd $HOME/tmp1'
-alias vi='cd $HOME/VirtualBox\ VMs/'
-alias zdot='cd $ZDOTDIR'
-alias share="cd $DOTSHARE"
+
+alias mp2='tmp2'
+alias mp3='tmp3'
+alias mp4='tmp4'
+alias mp5='tmp5'
+alias mp6='tmp6'
+alias mp7='tmp7'
+alias mp8='tmp8'
 
 ## network
 alias pp='ping -c 3 www.google.com'
@@ -382,9 +394,19 @@ alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config fi
 # --------------------------------------------------------------------------------------------------------------------
 
 ## process management
-### exclude all lines that matches with grep 
-alias au='ps aux | grep -v grep | grep -i'
 alias kil='sudo kill -9'
+### display every active process on a Linux system in Unix format
+alias ae='ps -e | grep -v grep | grep -i'
+### To perform a full-format listing: -ef
+### ps c -ef: simple name of executable
+alias aef='ps -ef | grep -m1 ""  && ps -ef | grep -v grep | grep -i'
+### Display all processes in BSD format 
+### ps cax: simple name of executable
+alias au='ps ax | grep -v grep | grep -i'    
+### See manpage for 'x'
+alias aux='ps aux | grep -v grep | grep -i'  
+### also show parent pid
+alias aup='ps ax l | grep -v grep | grep -i'
 
 ## python
 alias p='python'
@@ -473,6 +495,8 @@ alias ll2='dwmblocks.rebuild'
 alias main.process='a_minus_b main main.light > main.bloat'
 alias aur.process='a_minus_b aur aur.light > aur.bloat'
 
+# find string in current dir (recursive) and show 
+# matches # with filename and line number
 alias grep.info='grep -rHn --exclude=histfile'
 alias gi='grep -rHn --exclude=histfile'
 alias get='curl -LO'
@@ -503,3 +527,8 @@ alias mc='make clean'
 alias ms='make clean && make'
 alias t='./tsh'
 alias l='./tsh'
+alias pa='ps ax | grep -v grep | grep sleep'
+
+
+
+
