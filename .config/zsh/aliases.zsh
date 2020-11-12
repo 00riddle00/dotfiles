@@ -68,7 +68,7 @@ alias lf='lsblk -f'
 alias ssid='eval $(ssh-agent -s)'
 
 # java
-alias j='java'
+#alias j='java'
 alias jc='javac'
 alias jcl='rm *.class'
 
@@ -341,8 +341,9 @@ alias rc='vim $HOME/.config/openbox/rc.xml'
 # alias start='vim $HOME/.config/openbox/autostart.sh'
 # alias tintrc='vim $HOME/.config/tint2/tint2rc'
 
+##--------------------------------------------------------------------------------------------------------------------
 ## pacman
-# --------------------------------------------------------------------------------------------------------------------
+##--------------------------------------------------------------------------------------------------------------------
 ### -Q
 alias orphans='pacman -Qdtd'
 alias is='sudo pacman -Qqe | grepi '     # grep for explicitly installed package
@@ -391,22 +392,37 @@ alias pacr='sudo pacman -R'
 # As a result, a package providing a critical dependency could be removed, resulting in a broken system.
 alias pac.forcedel='sudo -k pacman -Rdd'
 alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
-# --------------------------------------------------------------------------------------------------------------------
+##--------------------------------------------------------------------------------------------------------------------
 
+##--------------------------------------------------------------------------------------------------------------------
 ## process management
+##--------------------------------------------------------------------------------------------------------------------
 alias kil='sudo kill -9'
-### display every active process on a Linux system in Unix format
+
+### `ps -e` displays every active process on a Linux system in Unix format
 alias ae='ps -e | grep -v grep | grep -i'
-### To perform a full-format listing: -ef
-### ps c -ef: simple name of executable
+###     use `ps c -ef` for a simple name of executable (as well as showing process status)
+
+### '-f' performs a full-format listing
 alias aef='ps -ef | grep -m1 ""  && ps -ef | grep -v grep | grep -i'
+
+### another way of listing (shows session id)
+alias aes="ps -e -o 'user,pid,pgid,sess,args' | grep -m1 \"\" && ps -e -o 'user,pid,pgid,sess,args' | grep -v grep | grep -i"
+
 ### Display all processes in BSD format 
-### ps cax: simple name of executable
+###     'a' option displays the processes belonging to every user
+###     'x' option tells ps to show all the processes regardless of 
+###         what terminal (if any) they are controlled ('?" in TTY column indicated
+###         no controlling terminal)
 alias au='ps ax | grep -v grep | grep -i'    
-### See manpage for 'x'
+###     use `ps cax` for a simple name of executable (as well as showing process status)
+
+###     'u' option is for user-oriented format
 alias aux='ps aux | grep -v grep | grep -i'  
+
 ### also show parent pid
 alias aup='ps ax l | grep -v grep | grep -i'
+# --------------------------------------------------------------------------------------------------------------------
 
 ## python
 alias p='python'
@@ -498,7 +514,10 @@ alias aur.process='a_minus_b aur aur.light > aur.bloat'
 # find string in current dir (recursive) and show 
 # matches # with filename and line number
 alias grep.info='grep -rHn --exclude=histfile'
-alias gi='grep -rHn --exclude=histfile'
+alias grep.iinfo='grep -i -rHn --exclude=histfile'
+alias gi=grep.info
+alias gii=grep.iinfo
+
 alias get='curl -LO'
 alias dos='cd ~/dosbox'
 # convert to ascii art
@@ -518,6 +537,7 @@ alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3
 # connect to home wifi
 alias net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
 
+alias retmux='tmux source-file ~/.tmux.conf'
 
 # c prog
 alias mc='make clean'
@@ -528,7 +548,5 @@ alias ms='make clean && make'
 alias t='./tsh'
 alias l='./tsh'
 alias pa='ps ax | grep -v grep | grep sleep'
-
-
-
+alias j='jobs'
 

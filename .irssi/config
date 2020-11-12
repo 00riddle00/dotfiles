@@ -177,8 +177,7 @@ statusbar = {
       visible = "always";
 
       items = {
-        prompt = { priority = "-1"; };
-        prompt_empty = { priority = "-1"; };
+        uberprompt = { priority = "-1"; };
         input = { priority = "10"; };
       };
     };
@@ -212,7 +211,8 @@ settings = {
   "fe-common/core" = {
     autolog = "yes";
     autolog_path = "~/.irssi/logs/$tag/%Y-%m-%d/$0.log";
-    theme = "h3rbz";
+
+    theme = "miromiro";
   };
 };
 logs = { };

@@ -233,20 +233,6 @@ nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 "\%$ - Match the end of the file
 
 "=========================================
-" [MAPPINGS] Commenting
-"=========================================
-
-" Escape sequences depend on the terminal emulator.
-" Use `sed -n l` to test keys' ESC sequences.
-" ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
-map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
-imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
-
-" vim registers <C-/> as <C-_>
-map  <C-_>         <Plug>NERDCommenterToggle<CR>
-imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
-
-"=========================================
 " [MAPPINGS] Emacs-like cmdline
 "=========================================
 
@@ -618,7 +604,23 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
  Plug 'scrooloose/nerdcommenter'
 "==============================================
 
-" <empty>
+"----------------------------------
+" [PLUGIN] [NERDCommenter] Mappings
+"----------------------------------
+
+" Escape sequences depend on the terminal emulator.
+" Use `sed -n l` to test keys' ESC sequences.
+" ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
+map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
+imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
+
+" vim registers <C-/> as <C-_>
+map  <C-_>         <Plug>NERDCommenterToggle<CR>
+imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
+
+" ignore default NERDCommenter keybindings
+map  <leader>cc   <nop>
+map  <leader>cu   <nop>
 
 "=============================================================
  Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }

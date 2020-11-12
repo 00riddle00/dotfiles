@@ -233,6 +233,8 @@ bindsym $mod+Shift+u $run i3-resize down
 bindsym $mod+Shift+i $run i3-resize up
 bindsym $mod+Shift+o $run i3-resize right
 bindsym $mod+Shift+y $run i3-resize left
+# to restore win sizes, move one of the windows around
+# a few times (ex. $mod+Shift+l and $mod+Shift+h)
 
 # =============================
 #  Workspace Bindings
