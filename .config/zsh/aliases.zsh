@@ -299,6 +299,7 @@ alias tmp5='cd $HOME/tmp5'
 alias tmp6='cd $HOME/tmp6'
 alias tmp7='cd $HOME/tmp7'
 alias tmp8='cd $HOME/tmp8'
+alias tmp0=tmp8
 
 alias mp2='tmp2'
 alias mp3='tmp3'
@@ -307,6 +308,7 @@ alias mp5='tmp5'
 alias mp6='tmp6'
 alias mp7='tmp7'
 alias mp8='tmp8'
+alias mp0='tmp8'
 
 ## network
 alias pp='ping -c 3 www.google.com'

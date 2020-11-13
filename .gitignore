@@ -75,6 +75,11 @@ bin/cowsay/**/*.dat
 .config/ranger/colorschemes/__init__.py
 .config/ranger/colorschemes/__pycache__/
 
+.config/smartgit/*
+!.config/smartgit/20.1/
+.config/smartgit/20.1/*
+!.config/smartgit/20.1/accelerators.yml
+
 .config/sublime-text-3/*
 !.config/sublime-text-3/Packages/
 .config/sublime-text-3/Packages/*

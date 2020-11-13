@@ -25,6 +25,9 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # navigation
+
+## 'setopt' modifies shell optional behavior.
+##   (is not regarded as a special builtin by the POSIX standard)
 setopt AUTO_CD
 
 # history options
@@ -39,14 +42,14 @@ setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
 
 # keybinds
-autoload -U edit-command-line
-zle -N edit-command-line
 
 ## vi mode
 bindkey -v
 KEYTIMEOUT=1
 
 ### 'v' in visual mode opens VIM to edit the command in a full editor.
+autoload -U edit-command-line
+zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 ### use the vi navigation keys in menu completion
@@ -96,17 +99,23 @@ if [[ -d "$ZDOTDIR" ]]; then
 fi
 
 # execute commands 
-## avoid Ctrl-s freezing the terminal
-stty -ixon
+
+## software flow control bytes:
+##   XOFF (ASCII 0x13, DC3, sent with Ctrl-S) - pause transmission
+##   XON  (ASCII 0x11, DC1, sent with Ctrl-Q) - resume transmission
+## OS's terminal driver is responsible for this
+stty -ixon ## disables XON/XOFF flow control
 
 ## system information tool for Arch Linux
-# neofetch
+#neofetch
 
 ## launch tmux
 tmux > /dev/null 2>&1
 
 ## conda initialize
-# source $ZSH_DIR/conda_env.sh
+#source $ZSH_DIR/conda_env.sh
 
-# prevent Ctrl+d from exiting the shell
-set -o ignoreeof 
+## 'set' - shell builtin that control various 
+##   shell options and positional parameters 
+##   (regarded as a special builtin by the POSIX standard)
+set -o ignoreeof ## prevents Ctrl+d from exiting the shell
