@@ -540,6 +540,7 @@ alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3
 alias net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
 
 alias retmux='tmux source-file ~/.tmux.conf'
+alias tmux.kill='tmux kill-server'
 
 # c prog
 alias mc='make clean'
@@ -551,4 +552,7 @@ alias t='./tsh'
 alias l='./tsh'
 alias pa='ps ax | grep -v grep | grep sleep'
 alias j='jobs'
+alias ddd='gdb tsh'
+alias l2='cd ~/tmp1/LAB2'
 
+alias tl='translit'

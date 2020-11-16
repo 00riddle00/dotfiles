@@ -194,7 +194,15 @@ bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
 bindsym $mod+s $run betterlockscreen -t "" -l
 bindsym $mod+b $run gimp
+
+# imitate "show desktop" behaviour
 bindsym $mod+d $run i3-showdesktop $ws10 
+# imitate "win+tab" behaviour
+bindsym $mod+Tab $run i3-msg 'workspace next'
+# imitate "win+shift+tab" behaviour
+bindsym $mod+Shift+Tab $run i3-msg 'workspace prev'
+# imitate "alt+tab" behaviour
+bindsym $alt+Tab $run i3-msg 'workspace back_and_forth'
 
 bindsym $mod+u $run i3-activate-dropdown
 bindsym $alt+u $run $term -name dropdown_aux -e tmux new-session

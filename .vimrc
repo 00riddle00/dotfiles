@@ -35,7 +35,9 @@ set relativenumber
 " show the line number on the bar
 set ruler
 " kudos to Jason Ryan (http://jasonwryan.com)
-set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\
+" (last element in statusline - escaped space character, 
+"  do not remove it when removing trailing spaces from a file)
+set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&encoding}\%=\ %c\ [%p%%:\ %l/%L]\ 
 
 "=========================================
 " [SETTINGS] Displaying text

@@ -1,3 +1,4 @@
+# load X resources
 [[ -f ~/.Xresources ]] && xrdb ~/.Xresources
 
 # remap keys with setxkbmap (if installed)
@@ -20,13 +21,23 @@ flameshot &
 dropbox &
 dunst &
 
+# launch wm (only one option should be uncommented)
+
 # ----------------------------
-# launch wm
+# openbox
 # ----------------------------
 
 #exec openbox-session
 
+# ----------------------------
+# i3wm
+# ----------------------------
+
 exec i3
+
+# ----------------------------
+# dwm
+# ----------------------------
 
 #feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
 #dwmblocks &
