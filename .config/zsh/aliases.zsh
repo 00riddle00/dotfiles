@@ -15,6 +15,9 @@
 #  smth.
 # =============================================
 
+# communication
+alias thanks='($BIN/sounds/thanks-hal &) > /dev/null'
+
 # assembler
 alias hhh='yasm -fbin hh.asm -o hh.com'
 alias yf='yasm -fbin'
@@ -446,6 +449,7 @@ alias systemd.running='systemctl --type=service'
 alias systemd.list='systemctl list-unit-files'
 alias systemd.enabled='systemctl list-unit-files | grep enabled'
 alias systemd.boot='systemd-analyze blame'
+alias systemd.boot_total='systemd-analyze time'
 #### db
 alias mysql.start='sudo systemctl start mysqld'
 alias post='systemctl start postgresql'
@@ -453,8 +457,8 @@ alias post='systemctl start postgresql'
 alias apache='systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 #### lan
-#alias net='systemctl start dhcpcd@enp9s0.service'
-alias renet='systemctl restart dhcpcd@enp9s0.service'
+alias wired.net='systemctl start dhcpcd@enp9s0.service'
+alias wired.renet='systemctl restart dhcpcd@enp9s0.service'
 #### wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias rewnet='sudo systemctl start dhcpcd@wlp8s0.service'

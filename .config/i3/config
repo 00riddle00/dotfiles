@@ -133,6 +133,12 @@ for_window [class="KeePass2"] sticky enable
 for_window [class="KeePass2"] resize set 730 700
 for_window [class="KeePass2"] move position 1100 220
 
+for_window [class="Lxappearance"] floating enable
+for_window [class="Lxappearance"] sticky enable
+for_window [class="Lxappearance"] resize set 625 450
+for_window [class="Lxappearance"] border pixel 3
+for_window [class="Lxappearance"] move position 1187 295
+
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Pavucontrol"] sticky enable
 for_window [class="Pavucontrol"] resize set 625 450
@@ -192,7 +198,8 @@ bindsym $mod+t $run qutebrowser-wall
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
-bindsym $mod+s $run betterlockscreen -t "" -l
+#bindsym $mod+s $run betterlockscreen -t "" -l
+bindsym $mod+s $run xscreensaver-command --lock
 bindsym $mod+b $run gimp
 
 # imitate "show desktop" behaviour
@@ -315,7 +322,7 @@ bindsym F10 $run activate qalculate-gtk
 # layout/session is preserved. Runs exec-always directives 
 bindsym F12 restart
 
-#bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
+bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
 bindsym $mod+F6            $run light -A 10 && pkill -RTMIN+2 i3blocks
 bindsym $mod+F11           $run amixer set Master 10%- && pkill -RTMIN+1 i3blocks
 bindsym $mod+F12           $run amixer set Master 10%+ && pkill -RTMIN+1 i3blocks

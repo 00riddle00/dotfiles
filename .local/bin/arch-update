@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 yay -Syu --noconfirm &&
 notify-send "update" "Arch updated"
+# further instructions are then placed 
+# in $XDG_CONFIG_HOME/dunst/dunstrc
 

@@ -1,3 +1,4 @@
+"₂₂
 "---------------------------------------------------------------
 " file:     ~/.vimrc
 " author:   riddle00 - https://github.com/00riddle00
@@ -633,6 +634,7 @@ map  <leader>cu   <nop>
 "----------------------------------
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>', '<Tab>']
 
 "----------------------------------
 " [PLUGIN] [YouCompleteMe] Mappings
