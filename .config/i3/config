@@ -343,6 +343,13 @@ bindsym $mod+End           $run rofi -show Power -modi Power:$BIN/rofi-power
 # kill a process by its name/pid 
 bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$BIN/rofi-kill
 
+# PageUp (standard light)
+bindsym $mod+Prior         $run  redshift -P -O 6500
+# PageDown (warm light)
+bindsym $mod+Next          $run  redshift -P -O 5000
+# Just for fun
+bindsym $mod+Pause         $run  redshift -P -O 1000
+
 bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
 bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 

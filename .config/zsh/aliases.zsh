@@ -319,6 +319,7 @@ alias get.my_ip='curl -w "\n" ifconfig.me'
 alias get.local_ip='ip route | head -n 1'
 alias get.gateway='ip route | head -n 1'
 alias get.net_interface='ip route | head -n 1' # get the current active interface name
+alias iii='get.net_interface'
 alias check.ip='whois'
 alias check.dns='nslookup'
 alias check.domain='whois'

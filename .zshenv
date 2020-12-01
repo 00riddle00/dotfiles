@@ -22,9 +22,10 @@ export TERMINAL="urxvt"
 export BROWSER="brave"
 export READER="zathura"
 export STATUSBAR="i3blocks"
-export PAGER="bat"
+export PAGER="less"
 # bat used as a colorizing pager for man
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_PAGER="less -RF"
 ## for i3
 export FILE="ranger"
 

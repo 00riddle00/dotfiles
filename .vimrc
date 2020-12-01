@@ -414,8 +414,7 @@ command! W          write
 
 " file formats
 command Bin         %!xxd -b -c 8
-command BinRevert   %!xxd -r
-command Hex         %!xxd -c 16 -g 1
+command Hex         %!xxd -c 16 -g 1 -u
 command HexRevert   %!xxd -c 16 -r
 command HexDump     %!hexdump -C
 command FFunix      :e ++ff=unix
