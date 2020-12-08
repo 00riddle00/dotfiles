@@ -1,4 +1,4 @@
-"₂₂
+"
 "---------------------------------------------------------------
 " file:     ~/.vimrc
 " author:   riddle00 - https://github.com/00riddle00
@@ -51,7 +51,6 @@ syntax enable
 " Do not fold text/code
 set nofoldenable
 " Do not wrap lines
-"
 set nowrap
 " Spelling
 set spelllang=lt,en
@@ -61,7 +60,7 @@ set spelllang=lt,en
 "=========================================
 
 " Text wrapping
-set textwidth=79
+set textwidth=149
 " Auto/smart indent
 set autoindent smartindent
 
@@ -303,13 +302,22 @@ inoremap <C-g> <C-c>
 "----------------------------
 
 "<C-Left>
-nmap <silent> [1;5D :vertical resize -5<CR>
+nmap <silent> [1;5D :call ResizeLeft()<CR>
 "<C-Right>
-nmap <silent> [1;5C :vertical resize +5<CR>
+nmap <silent> [1;5C :call ResizeRight()<CR>
 "<C-Up>
-nmap <silent> [1;5A :resize +5<CR>
+nmap <silent> [1;5A :call ResizeUp()<CR>
 "<C-Down>
-nmap <silent> [1;5B :resize -5<CR>
+nmap <silent> [1;5B :call ResizeDown()<CR>
+
+"<C-Left>
+"nmap <silent> [1;5D :vertical resize -5<CR>
+"<C-Right>
+"nmap <silent> [1;5C :vertical resize +5<CR>
+"<C-Up>
+"nmap <silent> [1;5A :resize +5<CR>
+"<C-Down>
+"nmap <silent> [1;5B :resize -5<CR>
 
 "----------------------------
 " [MAPPINGS] [Windows] layout
@@ -437,6 +445,9 @@ command SortPa      %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 " copy the current line without '\n' to secondary clipboard
 let @c = "0v$h\"+y:echo 'line copied!'"
 
+" tmp macro for marking progress
+let @p = "ver+W"
+
 " insert heading separator above and below the line
 let @e = "a O11i=2xI# jo11i=2xI# Aak0"
 
@@ -462,6 +473,76 @@ function! BuildYCM(info)
   " - force:  set on PlugInstall! or PlugUpdate!
   if a:info.status == 'installed' || a:info.force
     !./install.py
+  endif
+endfunction
+
+"=========================================
+" [FUNCTIONS] Resizing windows
+"=========================================
+
+"TODO wrap these 4 functions
+"preferably in a single funciton
+
+"TODO these functions to more than 
+"2 windows
+
+function! ResizeLeft()
+  " if there are more than 2 windows
+  if winnr('$') != 2 
+    exe ":vertical resize -5"
+    return
+  endif
+  " if it's a left window 
+  " (when the split is vertical)
+  if winnr() == 1
+    exe ":vertical resize -5"
+  else
+    exe ":vertical resize +5"
+  endif
+endfunction
+
+function! ResizeRight()
+  " if there are more than 2 windows
+  if winnr('$') != 2
+    exe ":vertical resize +5"
+    return
+  endif
+  " if it's a left window 
+  " (when the split is vertical)
+  if winnr() == 1 
+    exe ":vertical resize +5"
+  else
+    exe ":vertical resize -5"
+  endif
+endfunction
+
+function! ResizeUp()
+  " if there are more than 2 windows
+  if winnr('$') != 2
+    exe ":resize -5"
+    return
+  endif
+  " if it's a left window 
+  " (when the split is vertical)
+  if winnr() == 1 
+    exe ":resize -5"
+  else
+    exe ":resize +5"
+  endif
+endfunction
+ 
+function! ResizeDown()
+  " if there are more than 2 windows
+  if winnr('$') != 2
+    exe ":resize +5"
+    return
+  endif
+  " if it's a left window 
+  " (when the split is vertical)
+  if winnr() == 1 
+    exe ":resize +5"
+  else
+    exe ":resize -5"
   endif
 endfunction
 
@@ -661,7 +742,7 @@ let g:formatter_yapf_style = 'pep8'
 " [PLUGIN] [Autoformat] Commands
 "-------------------------------
 
-noremap <F6> :Autoformat<CR>
+"noremap <F6> :Autoformat<CR>
 
 "==============================================
  Plug 'junegunn/vim-easy-align'
