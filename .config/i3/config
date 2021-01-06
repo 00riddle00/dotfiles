@@ -152,6 +152,7 @@ for_window [class="Qalculate-gtk"] border pixel 3
 for_window [class="Qalculate-gtk"] move position 1187 295
 
 for_window [class="Gimp"]                move workspace $ws5
+for_window [class="Inkscape"]            move workspace $ws5
 for_window [class="SmartGit"]            move workspace $ws6
 for_window [class="Thunderbird"]         move workspace $ws7
 for_window [class="Spotify"]             move workspace $ws8
@@ -311,7 +312,7 @@ bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox
 bindsym F5 $run subl3
-bindsym F7 $run activate thunderbird
+bindsym $mod+F7 $run activate thunderbird
 bindsym F8 $run activate teams
 bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk

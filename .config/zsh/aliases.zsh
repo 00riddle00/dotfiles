@@ -561,3 +561,9 @@ alias ddd='gdb tsh'
 alias l2='cd ~/tmp1/LAB2'
 
 alias tl='translit'
+
+alias cda='cp ~/dosbox/da.asm ./disasm.asm && cp ~/dosbox/progress.txt ./ && cp ~/dosbox/opTable.inc ./'
+alias dosv='vim ~/.dosbox/dosbox-0.74-3.conf'
+
+alias distest='disasm-test'
+alias tt='disasm-test'

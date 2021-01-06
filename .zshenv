@@ -17,6 +17,7 @@ export VIMRC="$HOME/.vimrc"
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
 
 # Default programs
+export CC="gcc"
 export EDITOR="vim"
 export TERMINAL="urxvt"
 export BROWSER="brave"

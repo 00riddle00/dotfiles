@@ -1,0 +1,5 @@
+completionKeyStroke: CTRL+SPACE
+global:
+- {action: goto-next-diff, keyStroke: J}
+- {action: goto-previous-diff, keyStroke: CTRL+U}
+- {action: previewCompareIndexVsWT, keyStroke: CTRL+N}

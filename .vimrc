@@ -1,4 +1,4 @@
-"
+
 "---------------------------------------------------------------
 " file:     ~/.vimrc
 " author:   riddle00 - https://github.com/00riddle00
@@ -60,7 +60,7 @@ set spelllang=lt,en
 "=========================================
 
 " Text wrapping
-set textwidth=149
+set textwidth=199 " temporary setting
 " Auto/smart indent
 set autoindent smartindent
 
@@ -233,6 +233,9 @@ nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 "\s* - Allow any amount of whitespace on this new line
 "\+  - Allow any number of occurrences of this group (one or more).
 "\%$ - Match the end of the file
+
+nmap <leader>j  :J<CR>
+"command J    silent e!| Hex
 
 "=========================================
 " [MAPPINGS] Emacs-like cmdline
@@ -416,7 +419,6 @@ autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
 "===============================================================
 "  COMMANDS
 "===============================================================
-
 " mistype fix
 command! W          write
 
@@ -427,6 +429,9 @@ command HexRevert   %!xxd -c 16 -r
 command HexDump     %!hexdump -C
 command FFunix      :e ++ff=unix
 command FFdos       :e ++ff=dos
+
+" temp (for disasm)
+command J    silent e!| Hex
 
 "when searching: \n is newline, \r is <CR>
 "when replacing: \r is newline, \n is a null byte.
@@ -742,7 +747,7 @@ let g:formatter_yapf_style = 'pep8'
 " [PLUGIN] [Autoformat] Commands
 "-------------------------------
 
-"noremap <F6> :Autoformat<CR>
+noremap <F6> :Autoformat<CR>
 
 "==============================================
  Plug 'junegunn/vim-easy-align'
@@ -1018,3 +1023,6 @@ call plug#end()
 " shows how many times a search pattern occurs in the current buffer
 " somewhy this settings works only when it's placed at the end of the file
 set shortmess-=S
+
+nmap <F1> :echo<CR>
+imap <F1> <C-o>:echo<CR>

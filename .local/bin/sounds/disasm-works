@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+mpv $DOTSHARE/sounds/disasm-works.mp3 > /dev/null 2>&1
