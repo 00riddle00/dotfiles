@@ -1,4 +1,4 @@
-
+" test
 "---------------------------------------------------------------
 " file:     ~/.vimrc
 " author:   riddle00 - https://github.com/00riddle00
