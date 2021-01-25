@@ -192,7 +192,7 @@ nmap     <C-F5>       :cc<CR>
 nmap     <S-F5>       :cprevious<CR>
 nmap     <F5>         :cnext<CR>
 nmap     <leader>d    :pwd<cr>
-nmap     <leader>e    :e<CR>|  " reload file
+"nmap     <leader>e    :e<CR>|  " reload file
 nmap     <leader>h    :set hlsearch!<CR>
 nmap     <leader>n    :set relativenumber!<CR>
 nmap     <leader>p    :setlocal paste!<CR>
@@ -234,6 +234,7 @@ nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 "\+  - Allow any number of occurrences of this group (one or more).
 "\%$ - Match the end of the file
 
+nmap <leader>e  :silent e!<CR>
 nmap <leader>j  :J<CR>
 "command J    silent e!| Hex
 
@@ -405,7 +406,6 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 autocmd InsertLeave * silent! if expand('%') != '' | update | endif
 
 " mapping ALT key
-"
 execute "set <M-f>=\ef"
 execute "set <M-b>=\eb"
 
@@ -415,6 +415,10 @@ autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.bat set ft=dosbatch syntax=dosbatch
 autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
+
+" set Python 80th char vertical line color
+" (temporary workaround using 'autocmd')
+autocmd FileType python highlight ColorColumn ctermbg=black
 
 "===============================================================
 "  COMMANDS
@@ -426,6 +430,7 @@ command! W          write
 command Bin         %!xxd -b -c 8
 command Hex         %!xxd -c 16 -g 1 -u
 command HexRevert   %!xxd -c 16 -r
+command ReHex       :HexRevert
 command HexDump     %!hexdump -C
 command FFunix      :e ++ff=unix
 command FFdos       :e ++ff=dos

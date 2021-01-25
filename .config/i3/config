@@ -210,6 +210,7 @@ bindsym $mod+Tab $run i3-msg 'workspace next'
 # imitate "win+shift+tab" behaviour
 bindsym $mod+Shift+Tab $run i3-msg 'workspace prev'
 # imitate "alt+tab" behaviour
+# also very useful for switching between two displays
 bindsym $alt+Tab $run i3-msg 'workspace back_and_forth'
 
 bindsym $mod+u $run i3-activate-dropdown
@@ -312,7 +313,7 @@ bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 bindsym F4 $run activate firefox
 bindsym F5 $run subl3
-bindsym $mod+F7 $run activate thunderbird
+bindsym F7 $run activate thunderbird
 bindsym F8 $run activate teams
 bindsym F9 $run activate $BROWSER
 bindsym F10 $run activate qalculate-gtk

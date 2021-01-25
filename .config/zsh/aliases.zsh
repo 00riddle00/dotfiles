@@ -105,7 +105,8 @@ alias timely='termdown | lolcat'
 # launch GUI programs
 alias fire='firefox'
 alias libre='libreoffice'
-alias mi='sxiv'
+#alias mi='sxiv'
+alias mi='nomacs'
 alias play='mpv'
 alias sub='/usr/bin/subl3'
 alias tint='tint2 & disown'
@@ -433,16 +434,21 @@ alias aup='ps ax l | grep -v grep | grep -i'
 ## python
 alias p='python'
 alias p2='python2'
+alias venv.init='python3 -m venv env'
 alias qenv='deactivate'
-alias venv='source venv/bin/activate'
+#alias venv='source venv/bin/activate'
+alias venv='source env/bin/activate'
 
 ## screen setup
 alias xof='xrandr --output $LAPTOP_SCREEN --off'
 alias xon='xrandr --output $LAPTOP_SCREEN --auto'
 alias xl='xrandr --output $HDMI_SCREEN --rotate left'
+alias xr='xrandr --output $HDMI_SCREEN --rotate right'
 alias xn='xrandr --output $HDMI_SCREEN --rotate normal'
-alias xland='xrandr --output $HDMI_SCREEN --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias xland='xrandr --output $HDMI_SCREEN -s 2560x1440 --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias xland2='xrandr --output $HDMI_SCREEN --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
 alias xport='xrandr --output $HDMI_SCREEN --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+#alias xport='xrandr --output $HDMI_SCREEN -s 1440x2560 --auto --rotate right --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
 
 ## systemd
 #### general
@@ -562,8 +568,29 @@ alias l2='cd ~/tmp1/LAB2'
 
 alias tl='translit'
 
-alias cda='cp ~/dosbox/da.asm ./disasm.asm && cp ~/dosbox/progress.txt ./ && cp ~/dosbox/opTable.inc ./'
+alias cda='cp ~/dosbox/da.asm ./disasm.asm && cp ~/dosbox/progress.txt ./ && cp ~/dosbox/macros.asm ./'
 alias dosv='vim ~/.dosbox/dosbox-0.74-3.conf'
 
 alias distest='disasm-test'
 alias tt='disasm-test'
+alias vib='vim -b'
+
+alias senv='source ../env/bin/activate'
+
+#alias enc='./test_fano_with_tree.py e assets/simple.txt results/fano/encoded.simple.txt.bin $K'
+#alias dec='./test_fano_with_tree.py d results/fano/encoded.simple.txt.bin results/fano/decoded.simple.txt'
+
+#alias enc='./test_fano_with_tree_debug.py e assets/simple.txt results/fano/encoded.simple.txt.bin $K'
+#alias dec='./test_fano_with_tree_debug.py d results/fano/encoded.simple.txt.bin results/fano/decoded.simple.txt'
+
+#alias ff='diff -s                          assets/simple.txt                   results/fano/decoded.simple.txt'
+
+#alias enc='./test_fano_with_tree_debug.py  e assets/"$TESTFILE"                   results/fano/encoded."$TESTFILE".bin $PARAMETER'
+#alias dec='./test_fano_with_tree_debug.py  d results/fano/encoded."$TESTFILE".bin results/fano/decoded."$TESTFILE"'
+#alias ff='diff -s                           assets/"$TESTFILE"                   results/fano/decoded."$TESTFILE"'
+
+
+TESTFILE='dog.png'
+alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                                results/adaptive-huffman/encoded."$TESTFILE".bin'
+alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
+alias ff='diff -s                            assets/"$TESTFILE"                                results/adaptive-huffman/decoded."$TESTFILE"'
