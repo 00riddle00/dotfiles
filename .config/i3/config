@@ -246,6 +246,8 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # resize focused window
+#   (!!) also works by holding right mouse button
+#   near the edge and dragging the window
 bindsym $mod+Shift+u $run i3-resize down
 bindsym $mod+Shift+i $run i3-resize up
 bindsym $mod+Shift+o $run i3-resize right

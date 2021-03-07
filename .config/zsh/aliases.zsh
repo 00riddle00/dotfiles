@@ -71,7 +71,7 @@ alias lf='lsblk -f'
 alias ssid='eval $(ssh-agent -s)'
 
 # java
-#alias j='java'
+alias j='java'
 alias jc='javac'
 alias jcl='rm *.class'
 
@@ -464,8 +464,8 @@ alias post='systemctl start postgresql'
 alias apache='systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 #### lan
-alias wired.net='systemctl start dhcpcd@enp9s0.service'
-alias wired.renet='systemctl restart dhcpcd@enp9s0.service'
+alias net='systemctl start dhcpcd@enp9s0.service'
+alias renet='systemctl restart dhcpcd@enp9s0.service'
 #### wifi
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias rewnet='sudo systemctl start dhcpcd@wlp8s0.service'
@@ -548,7 +548,7 @@ alias perl.exe='perl -le'
 alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
 
 # connect to home wifi
-alias net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
+alias wifi.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
 
 alias retmux='tmux source-file ~/.tmux.conf'
 alias tmux.kill='tmux kill-server'
@@ -562,7 +562,7 @@ alias ms='make clean && make'
 alias t='./tsh'
 alias l='./tsh'
 alias pa='ps ax | grep -v grep | grep sleep'
-alias j='jobs'
+#alias j='jobs'
 alias ddd='gdb tsh'
 alias l2='cd ~/tmp1/LAB2'
 
@@ -590,7 +590,8 @@ alias senv='source ../env/bin/activate'
 #alias ff='diff -s                           assets/"$TESTFILE"                   results/fano/decoded."$TESTFILE"'
 
 
-TESTFILE='dog.png'
+TESTFILE='simple.txt'
 alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                                results/adaptive-huffman/encoded."$TESTFILE".bin'
 alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
 alias ff='diff -s                            assets/"$TESTFILE"                                results/adaptive-huffman/decoded."$TESTFILE"'
+

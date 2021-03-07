@@ -58,3 +58,6 @@ export QT_QPA_PLATFORMTHEME="gtk3"
 
 # SYSTEMWIDE VARS
 export LC_ALL='en_US.UTF-8'
+
+# Java
+export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8"
