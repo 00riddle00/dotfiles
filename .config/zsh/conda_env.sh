@@ -1,4 +1,5 @@
-# >>> conda initialize >>>
+# >>> conda initialize for zsh >>>
+# (updated 2020-03-10)
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then

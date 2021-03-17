@@ -113,7 +113,7 @@ stty -ixon ## disables XON/XOFF flow control
 tmux > /dev/null 2>&1
 
 ## conda initialize
-#source $ZSH_DIR/conda_env.sh
+#source $ZDOTDIR/conda_env.sh
 
 ## 'set' - shell builtin that control various 
 ##   shell options and positional parameters 

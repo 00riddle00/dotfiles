@@ -908,6 +908,7 @@ let g:instant_markdown_autostart = 0
 " [PLUGIN] [python-mode] Settings
 "--------------------------------
 
+" run python file with <leader>r (amazing functionality!)
 let g:pymode_lint_checkers = ['pyflakes']
 let g:pymode_lint_cwindow = 0
 let g:pymode_lint_on_write = 0
@@ -954,7 +955,7 @@ let g:user_zen_settings = {
 " <empty>
 
 "==============================================
- Plug 'hdima/python-syntax'
+ Plug 'vim-python/python-syntax'
 "==============================================
 
 "----------------------------------

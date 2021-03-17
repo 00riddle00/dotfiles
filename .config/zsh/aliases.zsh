@@ -355,6 +355,7 @@ alias rc='vim $HOME/.config/openbox/rc.xml'
 alias orphans='pacman -Qdtd'
 alias is='sudo pacman -Qqe | grepi '     # grep for explicitly installed package
 alias isa='sudo pacman -Qq | grepi '     # grep for installed package
+alias isa.ver='sudo pacman -Q | grepi '  # grep for installed package with version info
 alias pl='sudo pacman -Qqe'              # list all explicitly installed packages 
 alias pld='sudo pacman -Qq'              # list all packages 
 alias plm='sudo pacman -Qqm'             # list foreign packages (mainly from AUR)
@@ -595,3 +596,8 @@ alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                 
 alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
 alias ff='diff -s                            assets/"$TESTFILE"                                results/adaptive-huffman/decoded."$TESTFILE"'
 
+alias jj='j'
+alias svn.diff='svn diff --diff-cmd="meld"'
+alias thesis='cd $HOME/Tomas_Giedraitis'
+alias vak='/home/riddle/tmp7/vakarasOS'
+alias run='javac Main.java && java Main'
