@@ -61,3 +61,7 @@ export LC_ALL='en_US.UTF-8'
 
 # Java
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8"
+
+GPG_TTY=$(tty)
+export GPG_TTY
+eval $(gpg-agent --daemon)

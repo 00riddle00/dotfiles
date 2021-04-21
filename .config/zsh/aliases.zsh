@@ -519,7 +519,7 @@ alias corona='curl https://corona-stats.online/lithuania'
 alias corona.global='curl https://corona-stats.online'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
-alias ll='dwm.rebuild'
+#alias ll='dwm.rebuild'
 alias ll2='dwmblocks.rebuild'
 
 alias main.process='a_minus_b main main.light > main.bloat'
@@ -550,6 +550,8 @@ alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3
 
 # connect to home wifi
 alias wifi.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
+#alias wifi.comet.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf && systemctl start dhcpcd@wlp8s0'
+#alias wifi.sodas.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf && systemctl start dhcpcd@wlp8s0'
 
 alias retmux='tmux source-file ~/.tmux.conf'
 alias tmux.kill='tmux kill-server'
@@ -596,8 +598,16 @@ alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                 
 alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
 alias ff='diff -s                            assets/"$TESTFILE"                                results/adaptive-huffman/decoded."$TESTFILE"'
 
-alias jj='j'
 alias svn.diff='svn diff --diff-cmd="meld"'
 alias thesis='cd $HOME/Tomas_Giedraitis'
 alias vak='/home/riddle/tmp7/vakarasOS'
 alias run='javac Main.java && java Main'
+alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
+alias ll='./test_perceptron.py'
+
+#GPG_TTY=$(tty)
+#export GPG_TTY
+#eval $(gpg-agent --daemon)
+alias l3='cd $HOME/tmp1/lab3'
+
+alias setx='fix-xkbmap'
