@@ -156,10 +156,12 @@ for_window [class="Inkscape"]            move workspace $ws5
 for_window [class="SmartGit"]            move workspace $ws6
 for_window [class="Thunderbird"]         move workspace $ws7
 for_window [class="Spotify"]             move workspace $ws8
+for_window [class="Clementine"]          move workspace $ws8
 for_window [class="discord"]             move workspace $ws8
 for_window [class="Microsoft Teams*"]    move workspace $ws8
 for_window [class="Steam"]               move workspace $ws8
 for_window [class="kdenlive"]            move workspace $ws9
+for_window [class="obs"]            move workspace $ws9
 
 # =============================
 #  Workspace traits 
@@ -183,7 +185,7 @@ bindsym $alt+$esc           kill
 # =============================
 
 bindsym $mod+c $run activate spotify
-#bindsym $mod+p $run dmenu-pastes
+bindsym $mod+Shift+p $run dmenu-pastes
 bindsym $mod+p $run pavucontrol  
 bindsym $alt+p $run killall pavucontrol
 bindsym $alt+d $run dosbox
@@ -207,7 +209,7 @@ bindsym $mod+b $run gimp
 bindsym $mod+d $run i3-showdesktop $ws10 
 # imitate "win+tab" behaviour
 bindsym $mod+Tab $run i3-msg 'workspace next'
-# imitate "win+shift+tab" behaviour
+# imitate "win+Shift+tab" behaviour
 bindsym $mod+Shift+Tab $run i3-msg 'workspace prev'
 # imitate "alt+tab" behaviour
 # also very useful for switching between two displays

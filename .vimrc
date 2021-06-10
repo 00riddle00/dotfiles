@@ -154,6 +154,7 @@ set noswapfile
 "=========================================
 
 " How much spaces to autoindent
+" shiftwidth governs indentation via >>, << 
 set shiftwidth=4
 
 " show spaces as '.'

@@ -15,6 +15,8 @@
 #  PARTIAL DIRS GITIGNORE 
 # =======================
 
+.local/bin/sg_scripts/
+
 bin/cowsay/**/*.dat
 
 .config/calcurse/*

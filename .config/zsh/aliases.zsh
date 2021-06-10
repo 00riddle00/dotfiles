@@ -100,7 +100,7 @@ alias mpv.video='mpv --no-config --vo=tct'
 alias mpv.youtube='mpv -vo=caca'
 alias red.norm='redshift -P -O 6500'
 alias red.warm='redshift -P -O 5000'
-alias timely='termdown | lolcat'
+alias timer='termdown -B | lolcat'
 
 # launch GUI programs
 alias fire='firefox'
@@ -189,7 +189,7 @@ alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mute='amixer -q sset Master toggle'
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
-alias phone.on='jmtpfs ~/phone'
+alias phone.on='jmtpfs ~/phone' # if problems, remount + restart thunar
 alias phone.off='umount ~/phone'
 alias pic='scrot -s $HOME/Screenshots/screenshot-%F-%H%M%S.png'
 alias rl='readlink -f'
@@ -232,6 +232,8 @@ alias ya.install='yay -S'
 alias ya.find='yay -Si'
 # alias yaup='yay -Syu --noconfirm'
 alias yaup='arch-update'
+alias yaup.dontcare="yay -Suy --noconfirm anaconda --overwrite '*'"
+
 ### fuzzy-search through the AUR, preview info and install selected packages
 alias fzf.yay='yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S'
 
@@ -266,6 +268,7 @@ alias runs='python manage.py runserver'
 alias no='killall mpg123'
 
 ## languages
+# choosing 'lt' also resets languages to the usual  'us,lt' combination
 alias lt='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias ru="setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
@@ -341,7 +344,7 @@ alias xi='vim $HOME/.xinitrc'
 alias xres='vim $HOME/.Xresources'
 alias zenv='vim $HOME/.zshenv'
 alias zr='vim $ZDOTDIR/.zshrc'
-alias rr='vim $DOTFILES/.config/ranger/rc.conf'
+#alias rr='vim $DOTFILES/.config/ranger/rc.conf'
 alias tg='vim ~/.tigrc'
 ### openbox specific
 alias rc='vim $HOME/.config/openbox/rc.xml'
@@ -437,8 +440,8 @@ alias p='python'
 alias p2='python2'
 alias venv.init='python3 -m venv env'
 alias qenv='deactivate'
-#alias venv='source venv/bin/activate'
-alias venv='source env/bin/activate'
+alias venv='source venv/bin/activate'
+#alias venv='source env/bin/activate'
 
 ## screen setup
 alias xof='xrandr --output $LAPTOP_SCREEN --off'
@@ -520,7 +523,7 @@ alias corona.global='curl https://corona-stats.online'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
 #alias ll='dwm.rebuild'
-alias ll2='dwmblocks.rebuild'
+#alias ll2='dwmblocks.rebuild'
 
 alias main.process='a_minus_b main main.light > main.bloat'
 alias aur.process='a_minus_b aur aur.light > aur.bloat'
@@ -575,7 +578,7 @@ alias cda='cp ~/dosbox/da.asm ./disasm.asm && cp ~/dosbox/progress.txt ./ && cp 
 alias dosv='vim ~/.dosbox/dosbox-0.74-3.conf'
 
 alias distest='disasm-test'
-alias tt='disasm-test'
+#alias tt='disasm-test'
 alias vib='vim -b'
 
 alias senv='source ../env/bin/activate'
@@ -601,13 +604,39 @@ alias ff='diff -s                            assets/"$TESTFILE"                 
 alias svn.diff='svn diff --diff-cmd="meld"'
 alias thesis='cd $HOME/Tomas_Giedraitis'
 alias vak='/home/riddle/tmp7/vakarasOS'
-alias run='javac Main.java && java Main'
+#alias run='javac Main.java && java Main'
+#alias test='javac Test.java && java Test'
+alias test1='javac TTest.java && java TTest'
+alias test2='javac TTest2.java && java TTest2'
 alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
-alias ll='./test_perceptron.py'
+#alias ll='./test_perceptron.py'
 
-#GPG_TTY=$(tty)
-#export GPG_TTY
-#eval $(gpg-agent --daemon)
-alias l3='cd $HOME/tmp1/lab3'
+GPG_TTY=$(tty)
+export GPG_TTY
+eval $(gpg-agent --daemon)
+
 
 alias setx='fix-xkbmap'
+alias ll='./test.py'
+
+unsetopt BEEP
+alias os4='cd $HOME/tmp7/OS4'
+#alias run='python main.py'
+alias som='cd $HOME/som'
+
+alias tt='cd $HOME/tt'
+alias tt2='cd $HOME/tt2'
+#alias run='make && ./main 2 100'
+alias l4='cd $HOME/tmp4/lab4'
+alias l44='cd $HOME/tmp4/Game-Of-Life/'
+alias cpex='cp input.example.txt input.txt'
+alias run='./run.sh'
+
+# usage: command `--use_commit_times`
+alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
+alias mm='make main && ./main'
+alias tsp='./tsp_branch_bound.py'
+alias rr='./tsp_branch_bound.py ./tests/inputs/input_test_07'
+alias l5='cd $HOME/tmp1/lab5'
+alias somcp='cp $HOME/som/som.py $HOME/tmp1/lab5/'
+
