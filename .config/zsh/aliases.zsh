@@ -364,6 +364,7 @@ alias pld='sudo pacman -Qq'              # list all packages
 alias plm='sudo pacman -Qqm'             # list foreign packages (mainly from AUR)
 alias pac.owner='sudo pacman -Qo'        # who owns the file
 alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group
+alias pac.base-devel='pac.group base-devel' # list packages depending on `base` metapackage
 alias pac.what='sudo pacman -Qs'         # list local package(s) with description
 alias what='sudo pacman -Qs'   
 alias pac.deps='sudo pacman -Qi'         # show deps for the given local package
