@@ -2,7 +2,7 @@
 #  user's environment variables
 # ============================= 
 
-export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron"
+export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/sg_scripts"
 
 # XDG BASE DIR variables
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -62,6 +62,6 @@ export LC_ALL='en_US.UTF-8'
 # Java
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8"
 
-GPG_TTY=$(tty)
-export GPG_TTY
-eval $(gpg-agent --daemon)
+#GPG_TTY=$(tty)
+#export GPG_TTY
+#eval $(gpg-agent --daemon)

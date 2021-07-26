@@ -40,7 +40,7 @@ alias she='cd $BIN'
 
 # emacs
 alias ee='vim ~/.emacs.d/init.el'
-alias emacs.cmd='emacs --no-window-system'
+alias emacs.cmd='emacs -nw' # --no-window-system'
 alias emacs.nocaps='setxkbmap -option ctrl:nocaps'
 
 # git
@@ -173,7 +173,7 @@ alias cfr='fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 alias cg='acpi'
 alias clock.sync='sudo ntpd -qg'
 alias dusort.all='du -h --max-depth=1 | sort -h' # including hidden
-alias dusort='du -hs * | sort -h'
+alias dusort='du -chs * | sort -h'
 alias memory=' du -s --si'
 alias fonts.update='fc-cache -fv'
 alias fonts.current='fc-match --verbose Sans'
@@ -497,6 +497,7 @@ alias cat='bat'
 # alias lsr='ls -R'
 # alias ih='ls -la | grep -i'
 # alias lsh='ls -ld .?*'
+alias ll='\ls -lL'
 
 ## colorls
 alias ls='colorls'
@@ -539,7 +540,7 @@ alias gii=grep.iinfo
 alias get='curl -LO'
 alias dos='cd ~/dosbox'
 # convert to ascii art
-alias ascii='figlet'  
+#alias ascii='figlet'  
 alias get.win_class='xprop | grep -i class'
 alias get.win_pos_size='xwininfo'
 alias get.keyname='xev'
@@ -596,7 +597,6 @@ alias senv='source ../env/bin/activate'
 #alias dec='./test_fano_with_tree_debug.py  d results/fano/encoded."$TESTFILE".bin results/fano/decoded."$TESTFILE"'
 #alias ff='diff -s                           assets/"$TESTFILE"                   results/fano/decoded."$TESTFILE"'
 
-
 TESTFILE='simple.txt'
 alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                                results/adaptive-huffman/encoded."$TESTFILE".bin'
 alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
@@ -612,13 +612,12 @@ alias test2='javac TTest2.java && java TTest2'
 alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
 #alias ll='./test_perceptron.py'
 
-GPG_TTY=$(tty)
-export GPG_TTY
-eval $(gpg-agent --daemon)
-
+#GPG_TTY=$(tty)
+#export GPG_TTY
+#eval $(gpg-agent --daemon)
 
 alias setx='fix-xkbmap'
-alias ll='./test.py'
+#alias ll='./test.py'
 
 unsetopt BEEP
 alias os4='cd $HOME/tmp7/OS4'
@@ -640,4 +639,7 @@ alias tsp='./tsp_branch_bound.py'
 alias rr='./tsp_branch_bound.py ./tests/inputs/input_test_07'
 alias l5='cd $HOME/tmp1/lab5'
 alias somcp='cp $HOME/som/som.py $HOME/tmp1/lab5/'
+
+alias exp='cd $HOME/Tomas_Giedraitis/experiments'
+alias svn.log='svn log -r 1:HEAD'
 
