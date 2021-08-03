@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# TODO maybe use a better password hiding technique
+dmenu -p "$1" -nf black -nb black <&- && echo
