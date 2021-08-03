@@ -600,12 +600,12 @@ noremap    <silent><C-x>        :call FocusNERDTree()<CR>
 "Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 " Focus the window and not the NERDTree (which is also opened) when vim starts up
 autocmd VimEnter * wincmd p
 " open a NERDTree automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "------------------------------
 " [PLUGIN] [NERDTree] Functions
@@ -851,7 +851,7 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 " [PLUGIN] [GitGutter] Autocommands
 "----------------------------------
 
-autocmd vimenter * :GitGutterDisable
+"autocmd vimenter * :GitGutterDisable
 
 "==============================================
  Plug 'christoomey/vim-tmux-navigator'
