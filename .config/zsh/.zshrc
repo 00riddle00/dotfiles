@@ -106,7 +106,8 @@ fi
 ## OS's terminal driver is responsible for this
 stty -ixon ## disables XON/XOFF flow control
 
-## system information tool for Arch Linux
+## system information tool (configured for Arch Linux)
+## to use the original neofetch, delete $XDG_CONFIG_HOME/neofetch/
 #neofetch
 
 ## launch tmux

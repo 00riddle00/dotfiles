@@ -8,8 +8,9 @@
 # This config file will use environmental variables such as $BROWSER and $TERMINAL.
 # You can set these variables in ~/.profile or ~/.zshenv if you have it as below:
 #
-# export FILE=ranger
-# export TERMINAL=urxvt
+# export TERMINAL="urxvt"
+# export BROWSER="brave"
+# export FILE="ranger"
 
 # Explanations
 # [1](Being a command-line utility, i3-msg does not support startup notifications,
@@ -393,6 +394,8 @@ bindsym $mod+Shift+bracketright   $run mpc seek +120
 # ===================
 #  Extra XF86 Keys
 # ===================
+
+# Caution: Airplane mode turns off internet!
 
 bindsym XF86AudioRaiseVolume    $run "amixer set Master 10%+"
 bindsym XF86AudioLowerVolume    $run "amixer set Master 10%-"
