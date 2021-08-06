@@ -497,7 +497,7 @@ alias cat='bat'
 # alias lsr='ls -R'
 # alias ih='ls -la | grep -i'
 # alias lsh='ls -ld .?*'
-alias ll='\ls -lL'
+# alias ll='\ls -lL'
 
 ## colorls
 alias ls='colorls'
@@ -524,8 +524,10 @@ alias corona='curl https://corona-stats.online/lithuania'
 alias corona.global='curl https://corona-stats.online'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
-#alias ll='dwm.rebuild'
-#alias ll2='dwmblocks.rebuild'
+alias ll='dwm.rebuild'
+alias ll2='dwmblocks.rebuild'
+alias id='vim $TMP1/dwm/config.h'
+alias i3ex='vim $TMP1/dwm/i3-config-example'
 
 alias main.process='a_minus_b main main.light > main.bloat'
 alias aur.process='a_minus_b aur aur.light > aur.bloat'
@@ -610,14 +612,12 @@ alias vak='/home/riddle/tmp7/vakarasOS'
 alias test1='javac TTest.java && java TTest'
 alias test2='javac TTest2.java && java TTest2'
 alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
-#alias ll='./test_perceptron.py'
 
 #GPG_TTY=$(tty)
 #export GPG_TTY
 #eval $(gpg-agent --daemon)
 
 alias setx='fix-xkbmap'
-#alias ll='./test.py'
 
 unsetopt BEEP
 alias os4='cd $HOME/tmp7/OS4'

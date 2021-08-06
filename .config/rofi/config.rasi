@@ -1,0 +1,15 @@
+configuration {
+	modi: "drun,window,ssh,combi,keys,windowcd,run";
+	width: 40;
+	lines: 8;
+	columns: 2;
+	font: "SauceCodePro Nerd Font 12";
+	yoffset: -130;
+	fixed-num-lines: false;
+	show-icons: true;
+	terminal: "urxvt -hold";
+	sorting-method: "fzf";
+	combi-modi: "drun,run";
+	theme: "themes/riddle_solarized.rasi";
+	combi-hide-mode-prefix: true;
+}

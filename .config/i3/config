@@ -395,7 +395,7 @@ bindsym $mod+Shift+bracketright   $run mpc seek +120
 #  Extra XF86 Keys
 # ===================
 
-# Caution: Airplane mode turns off internet!
+# Caution: Airplane mode button turns off internet!
 
 bindsym XF86AudioRaiseVolume    $run "amixer set Master 10%+"
 bindsym XF86AudioLowerVolume    $run "amixer set Master 10%-"

@@ -7,7 +7,7 @@ if [ "$@" ]
 then
 	case $@ in
 		*Logout)
-			i3-msg exit
+			i3-msg exit | killall xinit;
 			;;
 		*Shutdown)
 			shutdown now

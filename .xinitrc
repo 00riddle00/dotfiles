@@ -39,6 +39,6 @@ exec i3
 # dwm
 # ============================
 
-#feh --bg-scale "$CANDY/images/desktop/arch3.jpg" &
+#feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg" &
 #dwmblocks &
 #dwm.loop
