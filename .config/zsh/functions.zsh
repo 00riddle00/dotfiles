@@ -22,6 +22,7 @@ num() { nl -s ' ' "$1" > tmp && mv tmp "$1" && sed "s/^[ \t]*//" -i "$1" && cat 
 # ln -s {FILE_PATH} {SYMLINK_PATH}
 sym() { ln -s "$(pwd)/$1" "$2"; }
 sym.dir() { ln -s "$(pwd)/$1" "$2/$1"; }
+# example: cd $DOTFILES/.config && sym.dir smartgit /home/riddle/.config
 
 # go to command's flag description in  manpage, ex. `manf grep -r`
 manf () { man "$1" | less -p "^ +$2"; }
@@ -52,4 +53,8 @@ temp() {
     ext="$1";
     [[ -z "$1" ]] && ext="md"
     vim "/tmp/temp_$(date +%F_%H_%M_%S).$ext";
+}
+
+open() {
+    vim $(codid2file "$1")
 }

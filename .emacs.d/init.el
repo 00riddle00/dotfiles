@@ -8,11 +8,13 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
- '(custom-enabled-themes (quote (deeper-blue)))
+ '(custom-enabled-themes '(deeper-blue))
  '(custom-unlispify-menu-entries nil)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(nil nil t)
+ '(package-selected-packages
+   '(undo-tree linum-relative evil))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 

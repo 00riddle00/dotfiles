@@ -977,6 +977,25 @@ let g:python_highlight_all = 1
 "A workaround is to set:
 let c_no_curly_error=1
 
+"======================================================
+ Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+"======================================================
+
+" Run `:LLPStartPreview` to open pdf viewer
+
+"-------------------------------------------
+" [PLUGIN] [vim-latex-live-preview] Settings
+"-------------------------------------------
+
+let g:livepreview_engine = 'pdflatex'
+let g:livepreview_previewer = 'zathura'
+
+"==============================================
+Plug 'lervag/vimtex'
+"==============================================
+"
+" <empty>
+
 "==============================================
  Plug 'thinca/vim-quickrun'
 "==============================================

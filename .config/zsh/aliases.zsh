@@ -87,7 +87,7 @@ alias irc='irssi'
 alias rss='newsboat'
 alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
 alias music='ncmpcpp'
-alias sc='sc-im'
+#alias sc='sc-im'
 alias mux='tmuxinator'
 alias espeak='espeak -ven-uk'
 alias tigl='lazygit'
@@ -183,7 +183,7 @@ alias getkey='gpg --keyserver keyserver.ubuntu.com --recv'
 # alias getkey='gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv'
 alias getsums='updpkgsums'
 alias ggp='gprolog'
-alias hh='htop'
+#alias hh='htop'
 alias key='eval $(ssh-agent -s) && ssh-add $HOME/.ssh/cmd_rsa'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
@@ -363,7 +363,9 @@ alias pl='sudo pacman -Qqe'              # list all explicitly installed package
 alias pld='sudo pacman -Qq'              # list all packages 
 alias plm='sudo pacman -Qqm'             # list foreign packages (mainly from AUR)
 alias pac.owner='sudo pacman -Qo'        # who owns the file
-alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group
+alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group 
+                                         # (or list all groups and packages if no argument is passed)
+alias pac.group.belongs='sudo pacman -Qgq | grepi' # show which group the package belongs to
 alias pac.base-devel='pac.group base-devel' # list packages depending on `base` metapackage
 alias pac.what='sudo pacman -Qs'         # list local package(s) with description
 alias what='sudo pacman -Qs'   
@@ -475,7 +477,8 @@ alias renet='systemctl restart dhcpcd@enp9s0.service'
 alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias rewnet='sudo systemctl start dhcpcd@wlp8s0.service'
 alias essid='iwconfig'
-alias wpa='wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wpa='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wpae='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/eduroam.conf'
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
 alias wpas='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf'
 alias wpac='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf'
@@ -524,8 +527,8 @@ alias corona='curl https://corona-stats.online/lithuania'
 alias corona.global='curl https://corona-stats.online'
 alias local.al='vim $ZDOTDIR/aliases.local.zsh'
 alias local.fn='vim $ZDOTDIR/functions.local.zsh'
-alias ll='dwm.rebuild'
-alias ll2='dwmblocks.rebuild'
+#alias ll='dwm.rebuild'
+#alias ll2='dwmblocks.rebuild'
 alias id='vim $TMP1/dwm/config.h'
 alias i3ex='vim $TMP1/dwm/i3-config-example'
 
@@ -604,14 +607,14 @@ alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                 
 alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
 alias ff='diff -s                            assets/"$TESTFILE"                                results/adaptive-huffman/decoded."$TESTFILE"'
 
-alias svn.diff='svn diff --diff-cmd="meld"'
 alias thesis='cd $HOME/Tomas_Giedraitis'
+alias th='cd $HOME/Tomas_Giedraitis'
 alias vak='/home/riddle/tmp7/vakarasOS'
 #alias run='javac Main.java && java Main'
 #alias test='javac Test.java && java Test'
 alias test1='javac TTest.java && java TTest'
 alias test2='javac TTest2.java && java TTest2'
-alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
+#alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
 
 #GPG_TTY=$(tty)
 #export GPG_TTY
@@ -636,10 +639,30 @@ alias run='./run.sh'
 alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
 alias mm='make main && ./main'
 alias tsp='./tsp_branch_bound.py'
-alias rr='./tsp_branch_bound.py ./tests/inputs/input_test_07'
+#alias rr='./tsp_branch_bound.py ./tests/inputs/input_test_07'
 alias l5='cd $HOME/tmp1/lab5'
 alias somcp='cp $HOME/som/som.py $HOME/tmp1/lab5/'
 
-alias exp='cd $HOME/Tomas_Giedraitis/experiments'
+alias exp='cd $HOME/Tomas_Giedraitis/experiments/cod_melting_points'
 alias svn.log='svn log -r 1:HEAD'
+alias svn.log.head='svn log -r HEAD:1 --limit 5'
+alias svn.diff='svn diff --diff-cmd="meld"'
+alias sst='svn st'
 
+alias ll='cd /home/riddle/tmp1/LaTex_learn'
+alias hh='cd /home/riddle/tmp1/BSc4-Haskell'
+alias gg='ghc -dynamic'
+alias ggm='ghc -dynamic --make'
+alias ggi='ghci'
+alias cc='clisp lisp-tut.lisp'
+
+alias sc='cd $HOME/CS/6_semestras/Science'
+alias uu='vim $HOME/Tomas_Giedraitis/discussions/shared_files/unix-commands.lst'
+alias shar='cd $HOME/Tomas_Giedraitis/discussions/shared_files'
+alias disc='cd $HOME/Tomas_Giedraitis/discussions/shared_files'
+
+alias jj='cd $HOME/tmp1/BSc2-Java/'
+alias jjj='/home/riddle/tmp1/BSc2-Java/out/production/BSc2-Java'
+alias cc='cd /home/riddle/tmp1/BSc4-CodingTheory'
+alias rr='cd /home/riddle/tmp1/Robotics/'
+alias rrr='cd /home/riddle/tmp1/Robotics/BSc4-Robotics/'
