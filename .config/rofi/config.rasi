@@ -10,6 +10,7 @@ configuration {
 	terminal: "urxvt -hold";
 	sorting-method: "fzf";
 	combi-modi: "drun,run";
-	theme: "themes/riddle_solarized.rasi";
 	combi-hide-mode-prefix: true;
 }
+
+@theme "themes/riddle_solarized.rasi"
