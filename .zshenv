@@ -64,7 +64,3 @@ export SUDO_ASKPASS="$BIN/dmenu-pass"
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8"
 # Fixes misbehaving Java applications in dwm
 export _JAVA_AWT_WM_NONREPARENTING=1
-
-#GPG_TTY=$(tty)
-#export GPG_TTY
-#eval $(gpg-agent --daemon)

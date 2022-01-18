@@ -38,6 +38,10 @@ floating_modifier $alt
 # =============================
 #  Startup
 # =============================
+
+# Unlocking KWallet automatically in i3
+# (to unlock KWallet protected by the login password)
+$run /usr/lib/pam_kwallet_init
 # apps are mainly started via ~/.xinitrc
 $run feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg" &
 #$run picom -b
@@ -80,6 +84,7 @@ bar {
 	status_command i3blocks
 	position top
     tray_padding 5
+    #tray_output none   # hides tray icons
     bindsym button4 nop
     bindsym button5 nop
     workspace_buttons yes
@@ -156,13 +161,13 @@ for_window [class="Gimp"]                move workspace $ws5
 for_window [class="Inkscape"]            move workspace $ws5
 for_window [class="SmartGit"]            move workspace $ws6
 for_window [class="Thunderbird"]         move workspace $ws7
-for_window [class="Spotify"]             move workspace $ws8
 for_window [class="Clementine"]          move workspace $ws8
 for_window [class="discord"]             move workspace $ws8
 for_window [class="Microsoft Teams*"]    move workspace $ws8
 for_window [class="Steam"]               move workspace $ws8
 for_window [class="kdenlive"]            move workspace $ws9
-for_window [class="obs"]            move workspace $ws9
+for_window [class="obs"]                 move workspace $ws9
+for_window [class="Spotify"]             move workspace $ws9
 
 # =============================
 #  Workspace traits 

@@ -4,6 +4,8 @@
 bk() { cp "$1" "$1.bak"; }
 
 ## make cmdline aliases for zsh
+## ex. usage (called from specific directory):
+##      ma "vedit" "vim $(readlink -f file_to_edit.txt)"
 ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
 
 # SYSTEMWIDE FUNCTIONS
