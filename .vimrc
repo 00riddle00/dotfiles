@@ -420,6 +420,10 @@ autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
 " (temporary workaround using 'autocmd')
 autocmd FileType python highlight ColorColumn ctermbg=black
 
+autocmd FileType tex nnoremap <space><space> /(<>)<CR>
+autocmd FileType tex inoremap ;c \ctext[RGB]{0,255,255}{}<Space>(<>)<Esc>T{i
+autocmd FileType tex inoremap ;it \textit{}<Space>(<>)<Esc>T{i
+
 "===============================================================
 "  COMMANDS
 "===============================================================
@@ -983,6 +987,7 @@ Plug 'lervag/vimtex'
 
 "VimtexView - open pdf reader
 "VimtexCompile - compile (and then autocompiles on :w)
+"VimtexTocOpen - open ToC navigation on the left
 "To change LaTeX engine, refer to plugin's documentation.
 
 "-------------------------------------------
