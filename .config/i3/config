@@ -160,6 +160,7 @@ for_window [class="Qalculate-gtk"] move position 1187 295
 for_window [class="Gimp"]                move workspace $ws5
 for_window [class="Inkscape"]            move workspace $ws5
 for_window [class="SmartGit"]            move workspace $ws6
+for_window [class="SmartSVN"]            move workspace $ws6
 for_window [class="Thunderbird"]         move workspace $ws7
 for_window [class="Clementine"]          move workspace $ws8
 for_window [class="discord"]             move workspace $ws8
@@ -200,7 +201,8 @@ bindsym $mod+o $run "keepass $DROPBOX/keepass/8gb.kdbx"
 bindsym $mod+f $run activate filezilla
 bindsym $alt+e $run thunar
 bindsym $mod+e $run wmctrl -a "File Manager"
-bindsym $mod+g $run activate smartgit
+#bindsym $mod+g $run activate smartgit
+bindsym $mod+g $run activate smartsvn
 bindsym $mod+semicolon $run activate libreoffice
 bindsym $mod+n workspace $ws2; $run brave
 bindsym $mod+t $run qutebrowser-wall 

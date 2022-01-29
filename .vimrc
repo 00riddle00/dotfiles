@@ -977,24 +977,19 @@ let g:python_highlight_all = 1
 "A workaround is to set:
 let c_no_curly_error=1
 
-"======================================================
- Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-"======================================================
-
-" Run `:LLPStartPreview` to open pdf viewer
-
-"-------------------------------------------
-" [PLUGIN] [vim-latex-live-preview] Settings
-"-------------------------------------------
-
-let g:livepreview_engine = 'pdflatex'
-let g:livepreview_previewer = 'zathura'
-
 "==============================================
 Plug 'lervag/vimtex'
 "==============================================
-"
-" <empty>
+
+"VimtexView - open pdf reader
+"VimtexCompile - compile (and then autocompiles on :w)
+"To change LaTeX engine, refer to plugin's documentation.
+
+"-------------------------------------------
+" [PLUGIN] [vimtex] Settings
+"-------------------------------------------
+
+let g:vimtex_view_method = 'zathura'
 
 "==============================================
  Plug 'thinca/vim-quickrun'
@@ -1036,7 +1031,7 @@ Plug 'lervag/vimtex'
 "---------------------------------------------------------------
 
 " (vim-plug) Initialize plugin system
-" Automatically executes 'filetype plugin indent' on and 'syntax enable'. You can
+" Automatically executes 'filetype plugin indent on' and 'syntax enable'. You can
 " revert the settings after the call. e.g. 'filetype indent off', 'syntax off', etc.
 call plug#end()
 

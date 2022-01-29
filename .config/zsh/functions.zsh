@@ -32,6 +32,9 @@ manf () { man "$1" | less -p "^ +$2"; }
 # returns "A" \ "B" (subtracting identical lines)
 a_minus_b() { grep -Fvx -f "$2" "$1" | sort; }
 
+# removes lines from file "A" which contain string from file "B"
+a_minus_string_in_b() { grep -Fv -f "$2" "$1" | sort; }
+
 # returns "A" & "B" (identical lines)
 a_and_b() { comm -12 <( sort "$1" ) <( sort "$2" ) }
 
@@ -59,4 +62,16 @@ temp() {
 
 open() {
     vim $(codid2file "$1")
+}
+
+# usage: fields <file>
+fields () {
+    awk -F"\t" '{print NF}' "$1" | uniq -c
+}
+
+# usage: cols <col_no> <file>
+cols () {
+    col_no="\$$1";
+    col_no="{print $col_no}";
+    awk -F$'\t' -f <(echo "$col_no") "$2" | sort | uniq
 }
