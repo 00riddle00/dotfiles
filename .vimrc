@@ -225,7 +225,6 @@ nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 "nmap <leader>l      :%s/\(\n\n\)\n\+/\1/e<CR><C-o>
 "nmap <leader>l      :%s#\($\n\s*\)\+\%$##e<CR><C-o>
 
-
     
 
 "explanation:
@@ -419,6 +418,17 @@ autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
 " set Python 80th char vertical line color
 " (temporary workaround using 'autocmd')
 autocmd FileType python highlight ColorColumn ctermbg=black
+
+" disable Syntastic by default with TeX files
+autocmd FileType tex SyntasticToggleMode
+
+" temporary fix - to keep the cursor inside the editor buffer 
+" after compilation, and not moving it to the quickfix buffer
+autocmd FileType tex let g:Tex_GotoError=0 
+
+autocmd FileType tex set textwidth=100
+autocmd FileType tex set colorcolumn=-1
+autocmd FileType tex highlight ColorColumn ctermbg=black
 
 autocmd FileType tex nnoremap <space><space> /(<>)<CR>
 autocmd FileType tex inoremap ;c \ctext[RGB]{0,255,255}{}<Space>(<>)<Esc>T{i
