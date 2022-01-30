@@ -1,10 +1,9 @@
-
 * {
-    --light-blue:           rgba(121, 186, 193, 1);   
-    --pretty-light-blue:    rgba(0, 175, 215, 1);     
+    light-blue:           rgba(121, 186, 193, 100 %);   
+    pretty-light-blue:    rgba(  0, 175, 215, 100 %);     
 
     selected-normal-foreground:  rgba ( 255, 255, 255, 100 % );
-    foreground: var(--light-blue);
+    foreground:                  @light-blue;
     normal-foreground:           @foreground;
     alternate-normal-background: rgba ( 0, 54, 67, 100 % );
     red:                         rgba ( 220, 50, 47, 100 % );
@@ -22,7 +21,7 @@
     normal-background:           rgba ( 0, 43, 55, 100 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
     selected-normal-background:  rgba ( 0, 142, 212, 100 % );
-    border-color:                var(--pretty-light-blue);
+    border-color:                @pretty-light-blue;
     spacing:                     2;
     separatorcolor:              rgba ( 0, 54, 66, 100 % );
     urgent-background:           rgba ( 0, 43, 55, 100 % );
