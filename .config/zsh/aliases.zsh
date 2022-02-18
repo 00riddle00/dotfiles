@@ -64,11 +64,28 @@ alias gu='git restore --staged'
 ## try to use those as little as possible
 alias push='key && com && gp'
 
+# subversion
+alias ss='svn st'
+alias ssa='svn add'
+alias svn.diff='svn diff --diff-cmd="meld"'
+alias ssd='svn.diff'
+alias svn.log='svn log -r 1:HEAD'
+alias svn.log.head='svn log -r HEAD:1 --limit 5'
+
 # info output
 alias fl='sudo fdisk -l'
 alias info.video='lspci | grep -e VGA -e 3D'
 alias lf='lsblk -f'
 alias ssid='eval $(ssh-agent -s)'
+
+# windows info
+alias get.win_class='xprop | grep -i class'
+alias get.win_pos_size='xwininfo'
+
+# keys info
+alias get.keyname='xev'
+## press keys and Enter
+alias get.key_escape_sequence='sed -n l'
 
 # java
 alias j='java'
@@ -122,6 +139,9 @@ alias i3.out='i3-msg exit'
 alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes.sh"'
 alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
+## avoid tmux session using an old I3SOCK environment variable after i3 restart
+## run this instead of `i3-msg` while in tmux
+alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
 
 # dwm
 alias dout='killall xinit'
@@ -130,6 +150,7 @@ alias dout='killall xinit'
 alias autostart='$HOME/.config/openbox/autostart.sh'
 alias theme.matrix='$BIN/themes/matrix/run'
 alias theme.riddle='$BIN/themes/riddle/run'
+alias setx='fix-xkbmap'
 
 # ssh
 alias sa='ssh-add'
@@ -140,6 +161,9 @@ alias c='clear'
 alias cpr='cp -r'
 alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias grepi='grep -i'
+# find string in current dir (recursive) and show matches with filename and line number
+alias grep.find='grep -rHn --exclude=histfile'
+alias grepi.find='grep -i -rHn --exclude=histfile'
 alias h='history'
 alias off='sudo poweroff'
 alias pls='sudo $(fc -ln -1)'
@@ -183,7 +207,6 @@ alias getkey='gpg --keyserver keyserver.ubuntu.com --recv'
 # alias getkey='gpg --keyserver hkps://hkps.pool.sks-keyservers.net --recv'
 alias getsums='updpkgsums'
 alias ggp='gprolog'
-#alias hh='htop'
 alias key='eval $(ssh-agent -s) && ssh-add $HOME/.ssh/cmd_rsa'
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
@@ -220,8 +243,23 @@ alias files='find . -type f | wc -l'
 
 # vim
 alias v='vim'
-alias vim.plugins='vim +PluginInstall +qall'
+alias vmi='vim'
+alias vib='vim -b'
 alias vv='sudo vim'
+alias vim.plugins='vim +PlugInstall +qall'
+
+# tmux
+alias retmux='tmux source-file ~/.tmux.conf'
+alias tmux.kill='tmux kill-server'
+
+# LaTeX
+alias kx='killall xelatex'
+alias ka='rm *.aux'
+
+## npBuild
+alias main.process='a_minus_b main main.light > main.bloat'
+alias aur.process='a_minus_b aur aur.light > aur.bloat'
+alias get='curl -LO'
 
 ## anaconda
 alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
@@ -272,6 +310,7 @@ alias no='killall mpg123'
 alias lt='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias ru="setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
+alias tl='translit'
 
 ## navigation
 alias bak='cd $HOME/backups'
@@ -290,7 +329,7 @@ alias pro='cd $HOME/pro'
 alias serv='cd /srv/http'
 alias srv='cd /srv/http/'
 alias sk='cd ~/Screenshots'
-alias vi='cd $HOME/VirtualBox\ VMs/'
+#alias vi='cd $HOME/VirtualBox\ VMs/'
 alias zdot='cd $ZDOTDIR'
 alias share="cd $DOTSHARE"
 
@@ -344,6 +383,8 @@ alias xi='vim $HOME/.xinitrc'
 alias xres='vim $HOME/.Xresources'
 alias zenv='vim $HOME/.zshenv'
 alias zr='vim $ZDOTDIR/.zshrc'
+alias lal='vim $ZDOTDIR/aliases.local.zsh'
+alias lfn='vim $ZDOTDIR/functions.local.zsh'
 #alias rr='vim $DOTFILES/.config/ranger/rc.conf'
 alias tg='vim ~/.tigrc'
 ### openbox specific
@@ -405,7 +446,6 @@ alias pacr='sudo pacman -R'
 # Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
 # As a result, a package providing a critical dependency could be removed, resulting in a broken system.
 alias pac.forcedel='sudo -k pacman -Rdd'
-alias pacrs='sudo pacman -Rns' # full removal (+nosave (removes system config file) +deps)
 ##--------------------------------------------------------------------------------------------------------------------
 
 ##--------------------------------------------------------------------------------------------------------------------
@@ -436,15 +476,26 @@ alias aux='ps aux | grep -v grep | grep -i'
 
 ### also show parent pid
 alias aup='ps ax l | grep -v grep | grep -i'
+
+## show sleeping processes
+alias asleep='ps ax | grep -v grep | grep sleep'
 # --------------------------------------------------------------------------------------------------------------------
 
 ## python
 alias p='python'
 alias p2='python2'
+alias py.exe='python -c'
 alias venv.init='python3 -m venv env'
-alias qenv='deactivate'
 alias venv='source venv/bin/activate'
-#alias venv='source env/bin/activate'
+alias qenv='deactivate'
+
+## perl
+alias perl.exe='perl -le'
+
+## haskell
+alias gg='ghc -dynamic'
+alias ggm='ghc -dynamic --make'
+alias ggi='ghci'
 
 ## screen setup
 alias xof='xrandr --output $LAPTOP_SCREEN --off'
@@ -482,6 +533,9 @@ alias wpae='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/eduroam.conf
 alias wpah='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
 alias wpas='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf'
 alias wpac='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf'
+alias wifi.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
+#alias wifi.comet.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf && systemctl start dhcpcd@wlp8s0'
+#alias wifi.sodas.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf && systemctl start dhcpcd@wlp8s0'
 alias wifi.off='sudo ip link set wlp8s0 down'
 alias wifi.on='sudo ip link set wlp8s0 up'
 
@@ -519,150 +573,20 @@ alias ch='sudo chown -R $USER:$USER'
 alias let='chmod 755'
 alias letr='chmod -R 755'
 
-# =============
-# temp
-# =============
-# entries appear here after appending output to this file
-alias corona='curl https://corona-stats.online/lithuania'
-alias corona.global='curl https://corona-stats.online'
-alias local.al='vim $ZDOTDIR/aliases.local.zsh'
-alias local.fn='vim $ZDOTDIR/functions.local.zsh'
-#alias ll='dwm.rebuild'
-#alias ll2='dwmblocks.rebuild'
-alias id='vim $TMP1/dwm/config.h'
-alias i3ex='vim $TMP1/dwm/i3-config-example'
-
-alias main.process='a_minus_b main main.light > main.bloat'
-alias aur.process='a_minus_b aur aur.light > aur.bloat'
-
-# find string in current dir (recursive) and show 
-# matches # with filename and line number
-alias grep.info='grep -rHn --exclude=histfile'
-alias grep.iinfo='grep -i -rHn --exclude=histfile'
-alias gi=grep.info
-alias gii=grep.iinfo
-
-alias get='curl -LO'
-alias dos='cd ~/dosbox'
-# convert to ascii art
-#alias ascii='figlet'  
-alias get.win_class='xprop | grep -i class'
-alias get.win_pos_size='xwininfo'
-alias get.keyname='xev'
-alias get.key_escape_sequence='sed -n l'
-alias ka='cd /home/riddle/CS/Kompiuteriu_Architektura/KA_2020/exercises/BSc2-ComputerArchitecture'
-
-alias py.exe='python -c'
-alias perl.exe='perl -le'
-
-# avoid tmux session using an old I3SOCK environment variable after i3 restart
-alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
-
-# connect to home wifi
-alias wifi.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf && systemctl start dhcpcd@wlp8s0'
-#alias wifi.comet.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf && systemctl start dhcpcd@wlp8s0'
-#alias wifi.sodas.net='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf && systemctl start dhcpcd@wlp8s0'
-
-alias retmux='tmux source-file ~/.tmux.conf'
-alias tmux.kill='tmux kill-server'
-
-# c prog
-alias mc='make clean'
-#alias ms='make test'
-#alias l='./test'
-
-alias ms='make clean && make'
-alias t='./tsh'
-alias l='./tsh'
-alias pa='ps ax | grep -v grep | grep sleep'
-#alias j='jobs'
-alias ddd='gdb tsh'
-alias l2='cd ~/tmp1/LAB2'
-
-alias tl='translit'
-
-alias cda='cp ~/dosbox/da.asm ./disasm.asm && cp ~/dosbox/progress.txt ./ && cp ~/dosbox/macros.asm ./'
-alias dosv='vim ~/.dosbox/dosbox-0.74-3.conf'
-
-alias distest='disasm-test'
-#alias tt='disasm-test'
-alias vib='vim -b'
-
-alias senv='source ../env/bin/activate'
-
-#alias enc='./test_fano_with_tree.py e assets/simple.txt results/fano/encoded.simple.txt.bin $K'
-#alias dec='./test_fano_with_tree.py d results/fano/encoded.simple.txt.bin results/fano/decoded.simple.txt'
-
-#alias enc='./test_fano_with_tree_debug.py e assets/simple.txt results/fano/encoded.simple.txt.bin $K'
-#alias dec='./test_fano_with_tree_debug.py d results/fano/encoded.simple.txt.bin results/fano/decoded.simple.txt'
-
-#alias ff='diff -s                          assets/simple.txt                   results/fano/decoded.simple.txt'
-
-#alias enc='./test_fano_with_tree_debug.py  e assets/"$TESTFILE"                   results/fano/encoded."$TESTFILE".bin $PARAMETER'
-#alias dec='./test_fano_with_tree_debug.py  d results/fano/encoded."$TESTFILE".bin results/fano/decoded."$TESTFILE"'
-#alias ff='diff -s                           assets/"$TESTFILE"                   results/fano/decoded."$TESTFILE"'
-
-TESTFILE='simple.txt'
-alias enc='./adaptive-huffman-compress.py    assets/"$TESTFILE"                                results/adaptive-huffman/encoded."$TESTFILE".bin'
-alias dec='./adaptive-huffman-decompress.py  results/adaptive-huffman/encoded."$TESTFILE".bin  results/adaptive-huffman/decoded."$TESTFILE"'
-alias ff='diff -s                            assets/"$TESTFILE"                                results/adaptive-huffman/decoded."$TESTFILE"'
-
-alias thesis='cd $HOME/Tomas_Giedraitis'
-alias th='cd $HOME/Tomas_Giedraitis'
-alias vak='/home/riddle/tmp7/vakarasOS'
-#alias run='javac Main.java && java Main'
-#alias test='javac Test.java && java Test'
-alias test1='javac TTest.java && java TTest'
-alias test2='javac TTest2.java && java TTest2'
-#alias jj='./lab2_iris_1.py > res_1.md  && ./lab2_iris_2.py > res_2.md'
-
-#GPG_TTY=$(tty)
-#export GPG_TTY
-#eval $(gpg-agent --daemon)
-
-alias setx='fix-xkbmap'
-
-unsetopt BEEP
-alias os4='cd $HOME/tmp7/OS4'
-#alias run='python main.py'
-alias som='cd $HOME/som'
-
-alias tt='cd $HOME/tt'
-alias tt2='cd $HOME/tt2'
-#alias run='make && ./main 2 100'
-alias l4='cd $HOME/tmp4/lab4'
-alias l44='cd $HOME/tmp4/Game-Of-Life/'
-alias cpex='cp input.example.txt input.txt'
-alias run='./run.sh'
-
+### aliases as flags
 # usage: command `--use_commit_times`
 alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
-alias mm='make main && ./main'
-alias tsp='./tsp_branch_bound.py'
-#alias rr='./tsp_branch_bound.py ./tests/inputs/input_test_07'
-alias l5='cd $HOME/tmp1/lab5'
-alias somcp='cp $HOME/som/som.py $HOME/tmp1/lab5/'
 
+# =====================================================================
+# temp
+# =====================================================================
+
+alias corona='curl https://corona-stats.online/lithuania'
+alias corona.global='curl https://corona-stats.online'
+
+alias thesis='cd $HOME/Tomas_Giedraitis/course_work'
+alias tt='cd $HOME/Tomas_Giedraitis'
 alias exp='cd $HOME/Tomas_Giedraitis/experiments/cod_melting_points'
-alias svn.log='svn log -r 1:HEAD'
-alias svn.log.head='svn log -r HEAD:1 --limit 5'
-alias svn.diff='svn diff --diff-cmd="meld"'
-alias sst='svn st'
+alias bb='cd $HOME/Tomas_Giedraitis/bibliography'
 
-alias ll='cd /home/riddle/tmp1/LaTex_learn'
-alias hh='cd /home/riddle/tmp1/BSc4-Haskell'
-alias gg='ghc -dynamic'
-alias ggm='ghc -dynamic --make'
-alias ggi='ghci'
-alias cc='clisp lisp-tut.lisp'
-
-alias sc='cd $HOME/CS/6_semestras/Science'
-alias uu='vim $HOME/Tomas_Giedraitis/discussions/shared_files/unix-commands.lst'
-alias shar='cd $HOME/Tomas_Giedraitis/discussions/shared_files'
-alias disc='cd $HOME/Tomas_Giedraitis/discussions/shared_files'
-
-alias jj='cd $HOME/tmp1/BSc2-Java/'
-alias jjj='/home/riddle/tmp1/BSc2-Java/out/production/BSc2-Java'
-alias cc='cd /home/riddle/tmp1/BSc4-CodingTheory'
-alias rr='cd /home/riddle/tmp1/Robotics/'
-alias rrr='cd /home/riddle/tmp1/Robotics/BSc4-Robotics/'
+alias ms='make cleanAll && make'

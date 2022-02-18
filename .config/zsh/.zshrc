@@ -120,3 +120,5 @@ tmux > /dev/null 2>&1
 ##   shell options and positional parameters 
 ##   (regarded as a special builtin by the POSIX standard)
 set -o ignoreeof ## prevents Ctrl+d from exiting the shell
+
+unsetopt BEEP
