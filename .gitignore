@@ -91,6 +91,10 @@ bin/cowsay/**/*.dat
 !.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 !.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
+.config/Thunar/renamerrc
+!.config/Thunar/accels.scm
+#!.config/Thunar/uca.xml
+
 .config/vis/vis.log
 
 .config/xmonad/*
