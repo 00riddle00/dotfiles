@@ -816,6 +816,8 @@ let g:syntastic_filetype_map = {'python.django': 'python'}
 let g:syntastic_python_pep8_args = '--ignore=E501'
 let g:syntastic_yaml_checkers = ['jsyaml']
 let g:syntastic_html_tidy_exec = 'tidy5'
+let g:syntastic_tex_checkers = ['chktex']
+"let g:syntastic_tex_checkers = ['lacheck']
 
 "------------------------------
 " [PLUGIN] [Syntastic] Mappings

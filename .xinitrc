@@ -21,6 +21,8 @@ flameshot &
 dropbox &
 dunst &
 
+eval $(ssh-agent -s)
+
 # launch wm (only one option should be uncommented)
 
 # ============================
