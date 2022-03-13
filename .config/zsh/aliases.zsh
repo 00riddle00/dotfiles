@@ -60,6 +60,7 @@ alias gp='key && git push'
 alias grc='git rm -r --cached'
 alias gs='git status'
 alias gu='git restore --staged'
+alias clone='git clone'
 ## alias containing other aliases. 
 ## try to use those as little as possible
 alias push='key && com && gp'
@@ -166,10 +167,7 @@ alias grep.find='grep -rHn --exclude=histfile'
 alias grepi.find='grep -i -rHn --exclude=histfile'
 alias h='history'
 alias off='sudo poweroff'
-alias pls='sudo $(fc -ln -1)'
-alias plz='sudo $(fc -ln -1)'
 alias prego='sudo $(fc -ln -1)'
-alias merci='sudo $(fc -ln -1)'
 alias q='exit'
 alias re='sudo reboot'
 alias rmr='sudo rm -r'  
@@ -198,6 +196,7 @@ alias cg='acpi'
 alias clock.sync='sudo ntpd -qg'
 alias dusort.all='du -h --max-depth=1 | sort -h' # including hidden
 alias dusort='du -chs * | sort -h'
+alias emp='truncate -s 0'
 alias memory=' du -s --si'
 alias fonts.update='fc-cache -fv'
 alias fonts.current='fc-match --verbose Sans'
@@ -576,6 +575,7 @@ alias letr='chmod -R 755'
 ### aliases as flags
 # usage: command `--use_commit_times`
 alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
+alias -- --date='date "+%F"'
 
 # =====================================================================
 # temp
@@ -586,7 +586,7 @@ alias corona.global='curl https://corona-stats.online'
 
 alias thesis='cd $HOME/Tomas_Giedraitis/course_work'
 alias tt='cd $HOME/Tomas_Giedraitis'
-alias exp='cd $HOME/Tomas_Giedraitis/experiments/cod_melting_points'
+alias exp='cd $HOME/Tomas_Giedraitis/experiments'
 alias bb='cd $HOME/Tomas_Giedraitis/bibliography'
 
 alias ms='make cleanAll && make'
