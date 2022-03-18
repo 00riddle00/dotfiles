@@ -2,7 +2,16 @@
 #  user's environment variables
 # ============================= 
 
-export PATH="$PATH:$HOME/.local/bin/:$HOME/.local/bin/cron:$HOME/.local/bin/sg_scripts"
+typeset -U path
+
+path=(
+    $HOME/bin
+    $HOME/.local/bin
+    $HOME/.local/bin/cron
+    $HOME/.local/bin/scripts
+    $path)
+
+export PATH
 
 # XDG BASE DIR variables
 export XDG_CONFIG_HOME="$HOME/.config"

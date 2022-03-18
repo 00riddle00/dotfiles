@@ -396,9 +396,9 @@ alias rc='vim $HOME/.config/openbox/rc.xml'
 ##--------------------------------------------------------------------------------------------------------------------
 ### -Q
 alias orphans='pacman -Qdtd'
-alias is='sudo pacman -Qqe | grepi '     # grep for explicitly installed package
-alias isa='sudo pacman -Qq | grepi '     # grep for installed package
-alias isa.ver='sudo pacman -Q | grepi '  # grep for installed package with version info
+alias is='sudo pacman -Qqe | grepi '     # grep for explicitly installed package (package 'is' in the system)
+alias isa='sudo pacman -Qq | grepi '     # grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
+alias visa='sudo pacman -Q | grepi '     # grep for installed package with version info ('visa' = 'is -a -v')
 alias pl='sudo pacman -Qqe'              # list all explicitly installed packages 
 alias pld='sudo pacman -Qq'              # list all packages 
 alias plm='sudo pacman -Qqm'             # list foreign packages (mainly from AUR)
@@ -573,7 +573,7 @@ alias let='chmod 755'
 alias letr='chmod -R 755'
 
 ### aliases as flags
-# usage: command `--use_commit_times`
+# usage: command `--use-commit-times`
 alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
 alias -- --date='date "+%F"'
 
@@ -590,3 +590,4 @@ alias exp='cd $HOME/Tomas_Giedraitis/experiments'
 alias bb='cd $HOME/Tomas_Giedraitis/bibliography'
 
 alias ms='make cleanAll && make'
+alias shar='cd /home/riddle/Tomas_Giedraitis/discussions/shared_files'

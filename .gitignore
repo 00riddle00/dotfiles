@@ -15,7 +15,7 @@
 #  PARTIAL DIRS GITIGNORE 
 # =======================
 
-.local/bin/sg_scripts/
+.local/bin/scripts/
 
 bin/cowsay/**/*.dat
 

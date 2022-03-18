@@ -6,6 +6,7 @@ bk() { cp "$1" "$1.bak"; }
 ## make cmdline aliases for zsh
 ## ex. usage (called from specific directory):
 ##      ma "vedit" "vim $(readlink -f file_to_edit.txt)"
+##      ma "cddir" "cd $(pwd)"
 ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
 
 # SYSTEMWIDE FUNCTIONS
@@ -74,4 +75,10 @@ cols () {
     col_no="\$$1";
     col_no="{print $col_no}";
     awk -F$'\t' -f <(echo "$col_no") "$2" | sort | uniq
+}
+
+# convert epoch to human-readable date
+# usage: epoch-to-date 1643294515
+epoch-to-date () {
+    date  -d @"$1" "+%F"
 }
