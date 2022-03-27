@@ -67,6 +67,7 @@ alias push='key && com && gp'
 
 # subversion
 alias ss='svn st'
+alias sup='svn up'
 alias ssa='svn add'
 alias svn.diff='svn diff --diff-cmd="meld"'
 alias ssd='svn.diff'
@@ -131,7 +132,7 @@ alias tint='tint2 & disown'
 alias vbox='virtualbox'
 
 # openbox
-alias out='sudo openbox --exit'
+#alias out='sudo openbox --exit'
 alias reop='openbox --reconfigure'
 alias wall='feh --bg-scale'
 
@@ -239,6 +240,11 @@ alias redd='killall dunst && dunst &'
 ## count different file extensions
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
 alias files='find . -type f | wc -l'
+# fuser -v {file/socket name(s)} - show info about process, working with the file(s)/socket(s)
+alias fuserv='fuser -v'
+# fuser -vk {file/socket name(s)} - kill the process working with the file(s)/socket(s)
+# ex. usage: fuser -vk *.log
+alias fuserk='fuser -vk'
 
 # vim
 alias v='vim'
@@ -576,18 +582,3 @@ alias letr='chmod -R 755'
 # usage: command `--use-commit-times`
 alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
 alias -- --date='date "+%F"'
-
-# =====================================================================
-# temp
-# =====================================================================
-
-alias corona='curl https://corona-stats.online/lithuania'
-alias corona.global='curl https://corona-stats.online'
-
-alias thesis='cd $HOME/Tomas_Giedraitis/course_work'
-alias tt='cd $HOME/Tomas_Giedraitis'
-alias exp='cd $HOME/Tomas_Giedraitis/experiments'
-alias bb='cd $HOME/Tomas_Giedraitis/bibliography'
-
-alias ms='make cleanAll && make'
-alias shar='cd /home/riddle/Tomas_Giedraitis/discussions/shared_files'

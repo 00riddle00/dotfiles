@@ -47,7 +47,11 @@ setopt EXTENDED_HISTORY
 bindkey -v
 KEYTIMEOUT=1
 
-### 'v' in visual mode opens VIM to edit the command in a full editor.
+### 'v' (lowercase) in visual mode opens VIM to edit the command.
+### :wq brings back the edited command in the zsh prompt (before 
+### that, it can be useful to call :w {filename} and save the 
+### command to a file).
+### P.S. 'V' (uppercase) just performs the selection as usual.
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
@@ -58,7 +62,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
-## emacs-like keybindings
+## emacs keybindings
 bindkey '^f'  forward-char
 bindkey '^b'  backward-char
 bindkey '^[f' forward-word
@@ -66,18 +70,20 @@ bindkey '^[b' backward-word
 bindkey '^e'  vi-end-of-line
 bindkey '^a'  vi-beginning-of-line
 
-bindkey '^d'  delete-char-or-list
-# <DEL> (ie. backspace) - backward-delete-char
-bindkey '^[d'  delete-word
-# <C-W> backward-delete-word (vim's key)
-# none  - delete to the end of line (<C-k> is already taken)
-# <C-u> - delete to start of line (vim's key)
-
 bindkey '^p'  history-beginning-search-backward
 bindkey '^n'  history-beginning-search-forward
 
+bindkey '^d'  delete-char-or-list
+#<backspace>  backward-delete-char
+#             (<C-h> is already taken by tmux).
+bindkey '^[d' delete-word
+bindkey '^w'  backward-delete-word 
+# none        kill-line
+#             (<C-k> is already taken by tmux).
+bindkey '^u'  backward-kill-line
+bindkey '^g'  kill-whole-line 
+
 bindkey '^y'  yank
-bindkey '^g' kill-whole-line 
 
 ## history
 bindkey '^R' history-incremental-search-backward
