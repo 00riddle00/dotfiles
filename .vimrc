@@ -790,7 +790,7 @@ let g:syntastic_tex_checkers = ['chktex']
 " [PLUGIN] [Syntastic] Mappings
 "------------------------------
 
-nmap     <leader>c      :SyntasticCheck<CR>
+nmap     <leader>c      :SyntasticToggleMode<CR>
 
 "==============================================
  Plug 'majutsushi/tagbar'
