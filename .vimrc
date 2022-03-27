@@ -45,7 +45,7 @@ set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\ %{&fileencoding?&fileencoding:&e
 
 " Set character encoding used inside Vim
 set encoding=utf-8
-" enable syntax hightlighting
+" enable syntax highlighting
 syntax enable
 " Do not fold text/code
 set nofoldenable
@@ -761,12 +761,6 @@ let g:pymode_lint_cwindow = 0
 let g:python_highlight_all = 1
 
 "==============================================
- Plug 'cakebaker/scss-syntax.vim'
-"==============================================
-
-" <empty>
-
-"==============================================
  Plug 'scrooloose/syntastic'
 "==============================================
 
@@ -799,14 +793,6 @@ let g:syntastic_tex_checkers = ['chktex']
 nmap     <leader>c      :SyntasticCheck<CR>
 
 "==============================================
- Plug 'godlygeek/tabular'
-"==============================================
-
-" The tabular plugin must come before vim-markdown
-"
-" <empty>
-
-"==============================================
  Plug 'majutsushi/tagbar'
 "==============================================
 
@@ -822,12 +808,6 @@ let g:tagbar_sort = 0
 "---------------------------
 
 nmap <leader>b :TagbarToggle<cr>
-
-"==============================================
- Plug 'SirVer/ultisnips'
-"==============================================
-
-" <empty>
 
 "==============================================
  Plug 'Chiel92/vim-autoformat'
@@ -912,7 +892,7 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "-----------------------------
 
 nnoremap <space>ga :Git add %:p<CR><CR>
-nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gs :Git<CR>
 nnoremap <space>gc :Gcommit -v -q<CR>
 noremap  <space>gt :Gcommit -v -q %:p<CR>
 nnoremap <space>gd :Gdiff<CR>
@@ -928,54 +908,13 @@ nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
 "==============================================
- Plug 'airblade/vim-gitgutter'
-"==============================================
-
-"----------------------------------
-" [PLUGIN] [GitGutter] Autocommands
-"----------------------------------
-
-autocmd vimenter * :GitGutterDisable
-
-"==============================================
- Plug 'suan/vim-instant-markdown'
-"==============================================
-
-"-------------------------------------
-" [PLUGIN] [instant-markdown] Settings
-"-------------------------------------
-
-let g:instant_markdown_autostart = 0
-
-"==============================================
- Plug 'pangloss/vim-javascript'
-"==============================================
-
-" <empty>
-
-"==============================================
- Plug 'mxw/vim-jsx'
-"==============================================
-
-" <empty>
-
-"==============================================
- Plug 'plasticboy/vim-markdown'
-"==============================================
-
-" <empty>
-
-"==============================================
  Plug 'thinca/vim-quickrun'
 "==============================================
 
-"*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
-"It provides :QuickRun command for it.
-"
 " <empty>
 
 "==============================================
- Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-surround'
 "==============================================
 
 " <empty>
@@ -983,20 +922,6 @@ let g:instant_markdown_autostart = 0
 "==============================================
  Plug 'christoomey/vim-tmux-navigator'
 "==============================================
-
-" <empty>
-
-"==============================================
- Plug 'Shougo/vimproc.vim'
-"==============================================
-
-" <empty>
-
-"==============================================
- Plug 'Shougo/vimshell.vim'
-"==============================================
-
-"vimshell depends on |vimproc|
 
 " <empty>
 
