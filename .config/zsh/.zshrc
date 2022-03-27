@@ -43,7 +43,7 @@ setopt EXTENDED_HISTORY
 
 # keybinds
 
-## vi mode
+## mode (-v: vim, -e: emacs)
 bindkey -v
 KEYTIMEOUT=1
 
@@ -67,23 +67,27 @@ bindkey '^f'  forward-char
 bindkey '^b'  backward-char
 bindkey '^[f' forward-word
 bindkey '^[b' backward-word
-bindkey '^e'  vi-end-of-line
-bindkey '^a'  vi-beginning-of-line
+bindkey '^e'  end-of-line
+bindkey '^a'  beginning-of-line
 
-bindkey '^p'  history-beginning-search-backward
-bindkey '^n'  history-beginning-search-forward
+bindkey '^p'  up-line
+bindkey '^n'  down-line
 
 bindkey '^d'  delete-char-or-list
-#<backspace>  backward-delete-char
+bindkey '^?'  backward-delete-char
 #             (<C-h> is already taken by tmux).
-bindkey '^[d' delete-word
-bindkey '^w'  backward-delete-word 
+bindkey '^[d' kill-word
+bindkey '^w'  backward-kill-word 
 # none        kill-line
-#             (<C-k> is already taken by tmux).
+#             (<C-k> is already taken by tmux, 
+#             use <M-d> multiple times).
 bindkey '^u'  backward-kill-line
 bindkey '^g'  kill-whole-line 
 
 bindkey '^y'  yank
+
+bindkey '^t'  transpose-chars
+bindkey '^[t' transpose-words
 
 ## history
 bindkey '^R' history-incremental-search-backward
