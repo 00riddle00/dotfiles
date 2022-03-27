@@ -663,8 +663,12 @@ let delimitMate_expand_cr=1
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 30
-let NERDTreeIgnore = ['\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
 let g:NERDTreeMapHelp = 'Y'
+let NERDTreeIgnore = [
+    \ '\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo',
+    \ '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', 
+    \ '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*'
+\ ]
 
 "-----------------------------
 " [PLUGIN] [NERDTree] Mappings
@@ -677,7 +681,7 @@ noremap    <silent><C-x>        :call FocusNERDTree()<CR>
 " [PLUGIN] [NERDTree] Autocommands
 "---------------------------------
 
-"Close vim if the only window left open is a NERDTree
+" Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " open a NERDTree automatically when vim starts up
 autocmd vimenter * NERDTree
