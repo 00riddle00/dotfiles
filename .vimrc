@@ -584,60 +584,10 @@ call plug#begin('~/.vim/plugged')
 "---------------------------------------------------------------
 
 "==============================================
-Plug 'houtsnip/vim-emacscommandline'
+ Plug 'vim-scripts/bnf.vim'
 "==============================================
 
-"<empty> (see doc/ for more info)
-
-"==============================================
- Plug 'scrooloose/nerdtree'
-"==============================================
-
-"-----------------------------
-" [PLUGIN] [NERDTree] Settings
-"-----------------------------
-
-let g:NERDTreeQuitOnOpen = 0
-let g:NERDTreeWinPos = "left"
-let g:NERDTreeWinSize = 30
-let NERDTreeIgnore = ['\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
-let g:NERDTreeMapHelp = 'Y'
-
-"-----------------------------
-" [PLUGIN] [NERDTree] Mappings
-"-----------------------------
-
-noremap    <C-n>                :NERDTreeToggle<CR>
-noremap    <silent><C-x>        :call FocusNERDTree()<CR>
-
-"---------------------------------
-" [PLUGIN] [NERDTree] Autocommands
-"---------------------------------
-
-"Close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-" open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
-" Focus the window and not the NERDTree (which is also opened) when vim starts up
-autocmd VimEnter * wincmd p
-" open a NERDTree automatically when vim starts up if no files were specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-"------------------------------
-" [PLUGIN] [NERDTree] Functions
-"------------------------------
-
-" focus/unfocus NERDTree
-" place the cursor back in the same window
-" if no new file is opened via NERDTree
-function! FocusNERDTree()
-  if @% =~ "NERD_tree_*"
-      exe "normal \<C-w>p"
-  else
-      NERDTreeFocus
-  endif
-endfunction
+" <empty>
 
 "==============================================
  Plug 'jlanzarotta/bufexplorer'
@@ -693,21 +643,64 @@ nmap <leader>bb :CtrlPBuffer<cr>
 command CC CtrlPClearAllCaches
 
 "==============================================
- Plug 'easymotion/vim-easymotion'
+ Plug 'raimondi/delimitmate'
 "==============================================
 
-"-------------------------------
-" [PLUGIN] [EasyMotion] Settings
-"-------------------------------
+"--------------------------------
+" [PLUGIN] [delimitMate] Settings
+"--------------------------------
 
-let g:EasyMotion_smartcase = 1
+let delimitMate_expand_cr=1
 
-"-------------------------------
-" [PLUGIN] [EasyMotion] Mappings
-"-------------------------------
+"==============================================
+ Plug 'scrooloose/nerdtree'
+"==============================================
 
-nmap <leader><leader> <Plug>(easymotion-overwin-f)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+"-----------------------------
+" [PLUGIN] [NERDTree] Settings
+"-----------------------------
+
+let g:NERDTreeQuitOnOpen = 0
+let g:NERDTreeWinPos = "left"
+let g:NERDTreeWinSize = 30
+let NERDTreeIgnore = ['\~$','\.pyc$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '[a-zA-Z]*cache[a-zA-Z]*']
+let g:NERDTreeMapHelp = 'Y'
+
+"-----------------------------
+" [PLUGIN] [NERDTree] Mappings
+"-----------------------------
+
+noremap    <C-n>                :NERDTreeToggle<CR>
+noremap    <silent><C-x>        :call FocusNERDTree()<CR>
+
+"---------------------------------
+" [PLUGIN] [NERDTree] Autocommands
+"---------------------------------
+
+"Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" open a NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+" Focus the window and not the NERDTree (which is also opened) when vim starts up
+autocmd VimEnter * wincmd p
+" open a NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"------------------------------
+" [PLUGIN] [NERDTree] Functions
+"------------------------------
+
+" focus/unfocus NERDTree
+" place the cursor back in the same window
+" if no new file is opened via NERDTree
+function! FocusNERDTree()
+  if @% =~ "NERD_tree_*"
+      exe "normal \<C-w>p"
+  else
+      NERDTreeFocus
+  endif
+endfunction
 
 "==============================================
  Plug 'scrooloose/nerdcommenter'
@@ -730,6 +723,30 @@ imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
 " ignore default NERDCommenter keybindings
 map  <leader>cc   <nop>
 map  <leader>cu   <nop>
+
+"==============================================
+ Plug 'easymotion/vim-easymotion'
+"==============================================
+
+"-------------------------------
+" [PLUGIN] [EasyMotion] Settings
+"-------------------------------
+
+let g:EasyMotion_smartcase = 1
+
+"-------------------------------
+" [PLUGIN] [EasyMotion] Mappings
+"-------------------------------
+
+nmap <leader><leader> <Plug>(easymotion-overwin-f)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+"==============================================
+Plug 'houtsnip/vim-emacscommandline'
+"==============================================
+
+"<empty> (see doc/ for more info)
+
 
 "=============================================================
  Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
@@ -782,16 +799,6 @@ noremap <F6> :Autoformat<CR>
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-
-"==============================================
- Plug 'raimondi/delimitmate'
-"==============================================
-
-"--------------------------------
-" [PLUGIN] [delimitMate] Settings
-"--------------------------------
-
-let delimitMate_expand_cr=1
 
 "==============================================
  Plug 'scrooloose/syntastic'
@@ -948,12 +955,6 @@ let g:pymode_lint_cwindow = 0
 
 "==============================================
  Plug 'cakebaker/scss-syntax.vim'
-"==============================================
-
-" <empty>
-
-"==============================================
- Plug 'vim-scripts/bnf.vim'
 "==============================================
 
 " <empty>
