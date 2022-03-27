@@ -201,6 +201,10 @@ nmap     <leader>s    :sp<cr>
 nnoremap <leader>u    :!urlview %<CR>
 nmap     <leader>v    :vs<cr>
 
+" Move between buffers
+nnoremap <leader>] :bn<CR>
+nnoremap <leader>[ :bp<CR>
+
 " Treat long lines as break lines
 nmap     j            gj
 nmap     k            gk
@@ -238,53 +242,36 @@ nmap <leader>j  :J<CR>
 "command J    silent e!| Hex
 
 "=========================================
-" [MAPPINGS] Emacs-like cmdline
-"=========================================
-
-" emacs-like cmdline mappings
-cnoremap <C-l> <Right>| " exception, since <C-f> in cmdline is taken
-cnoremap <C-b> <Left>
-cnoremap <M-f> <S-Right>
-cnoremap <M-b> <S-Left>
-cnoremap <C-e> <End>
-cnoremap <C-a> <Home>
-
-cnoremap <C-d> <Del>
-" <C-h> - backward delete char (like in INSERT mode) (as well as <BS>)
-" none  - forward delete word (no single keymap for that in vim)
-" <C-w> - backward delete word (like in INSERT mode) ??-<M-DEL>
-" none  - forward delete to $ (no single keymap for that in vim)
-" <C-u> - backward delete to ^ (like in INSERT mode)
-
-cnoremap <C-p> <Up>
-cnoremap <C-n> <Down>
-
-cnoremap <C-y> <C-r>"
-cnoremap <C-g> <C-c>
-
-"=========================================
 " [MAPPINGS] Emacs-like insert mode
 "=========================================
 
+" motion
 inoremap <C-f> <Right>
 inoremap <C-b> <Left>
+
 inoremap <M-f> <S-Right>
 inoremap <M-b> <S-Left>
-inoremap <C-e> <End>
-inoremap <C-a> <Home>
 
-inoremap <C-l> <Del>| " exception, since <C-d> does not work
-" <C-h> - backward delete char (like in INSERT mode) (as well as <BS>)
-" none  - forward delete word (no single keymap for that in vim)
-" <C-w> - backward delete word (like in INSERT mode)
-" none  - forward delete to $ (no single keymap for that in vim)
-" <C-u> - backward delete to ^ (like in INSERT mode)
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
 
 inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 
+" kill
+inoremap <C-l> <Del> | "since <C-d> does not map
+"<C-h> - already works.
+
+inoremap <M-d> <Esc>ldwi
+"<C-w> - already works.
+
+inoremap <C-k> <Esc>lDa 
+"<C-u> - already works.
+
+inoremap <C-g> <Esc>cc 
+
+" yank
 inoremap <C-y> <C-r>"
-inoremap <C-g> <C-c>
 
 "=========================================
 " [MAPPINGS] Windows
@@ -404,9 +391,11 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 " update current file when leaving insert mode
 autocmd InsertLeave * silent! if expand('%') != '' | update | endif
 
+" Use `sed -n l` to test keys ESC sequences.
 " mapping ALT key
-execute "set <M-f>=\ef"
+execute "set <M-f>=\ef"  
 execute "set <M-b>=\eb"
+execute "set <M-d>=\ed"
 
 autocmd FileType help wincmd L|  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -414,6 +403,12 @@ autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.bat set ft=dosbatch syntax=dosbatch
 autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
+
+autocmd BufNewFile,BufRead *.bnf set ft=bnf
+
+autocmd BufNewFile,BufRead *.lst set ft=text
+
+autocmd FileType python SyntasticToggleMode
 
 " set Python 80th char vertical line color
 " (temporary workaround using 'autocmd')
@@ -469,7 +464,7 @@ command SortPa      %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 "===============================================================
 
 " copy the current line without '\n' to secondary clipboard
-let @c = "0v$h\"+y:echo 'line copied!'"
+"let @c = "0v$h\"+y:echo 'line copied!'
 
 " tmp macro for marking progress
 let @p = "ver+W"
@@ -656,8 +651,6 @@ let g:bufExplorerShowRelativePath=1
 "--------------------------------
 
 noremap <leader>o :BufExplorer<CR>
-nnoremap <leader>] :bn<CR>
-nnoremap <leader>[ :bp<CR>
 
 "==============================================
  Plug 'ctrlpvim/ctrlp.vim'
@@ -683,6 +676,7 @@ endif
 " [PLUGIN] [CtrlP] Mappings
 "--------------------------
 
+" search for a file among open buffers
 nmap <leader>bb :CtrlPBuffer<cr>
 
 "--------------------------
