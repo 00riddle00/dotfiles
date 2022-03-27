@@ -935,20 +935,6 @@ let g:pyflakes_use_quickfix = 0
 let g:pymode_lint_cwindow = 0
 
 "==============================================
- Plug 'mattn/emmet-vim'
-"==============================================
-
-" Key to expand: <C-y>,
-
-"--------------------------
-" [PLUGIN] [emmet] Settings
-"--------------------------
-
-let g:user_zen_settings = {
-\  'indentation' : '    '
-\}
-
-"==============================================
  Plug 'pangloss/vim-javascript'
 "==============================================
 
