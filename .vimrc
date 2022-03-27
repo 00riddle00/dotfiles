@@ -653,6 +653,28 @@ command CC CtrlPClearAllCaches
 let delimitMate_expand_cr=1
 
 "==============================================
+ Plug 'scrooloose/nerdcommenter'
+"==============================================
+
+"----------------------------------
+" [PLUGIN] [NERDCommenter] Mappings
+"----------------------------------
+
+" Escape sequences depend on the terminal emulator.
+" Use `sed -n l` to test keys' ESC sequences.
+" ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
+map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
+imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
+
+" vim registers <C-/> as <C-_>
+map  <C-_>         <Plug>NERDCommenterToggle<CR>
+imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
+
+" ignore default NERDCommenter keybindings
+map  <leader>cc   <nop>
+map  <leader>cu   <nop>
+
+"==============================================
  Plug 'scrooloose/nerdtree'
 "==============================================
 
@@ -707,28 +729,6 @@ function! FocusNERDTree()
 endfunction
 
 "==============================================
- Plug 'scrooloose/nerdcommenter'
-"==============================================
-
-"----------------------------------
-" [PLUGIN] [NERDCommenter] Mappings
-"----------------------------------
-
-" Escape sequences depend on the terminal emulator.
-" Use `sed -n l` to test keys' ESC sequences.
-" ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
-map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
-imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
-
-" vim registers <C-/> as <C-_>
-map  <C-_>         <Plug>NERDCommenterToggle<CR>
-imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
-
-" ignore default NERDCommenter keybindings
-map  <leader>cc   <nop>
-map  <leader>cu   <nop>
-
-"==============================================
  Plug 'easymotion/vim-easymotion'
 "==============================================
 
@@ -750,7 +750,6 @@ Plug 'houtsnip/vim-emacscommandline'
 "==============================================
 
 "<empty> (see doc/ for more info)
-
 
 "=============================================================
  Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
