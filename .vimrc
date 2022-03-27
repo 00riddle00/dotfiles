@@ -729,79 +729,42 @@ function! FocusNERDTree()
 endfunction
 
 "==============================================
- Plug 'easymotion/vim-easymotion'
+ Plug 'joshdick/onedark.vim'
 "==============================================
 
-"-------------------------------
-" [PLUGIN] [EasyMotion] Settings
-"-------------------------------
-
-let g:EasyMotion_smartcase = 1
-
-"-------------------------------
-" [PLUGIN] [EasyMotion] Mappings
-"-------------------------------
-
-nmap <leader><leader> <Plug>(easymotion-overwin-f)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+" <empty>
 
 "==============================================
-Plug 'houtsnip/vim-emacscommandline'
+ Plug 'python-mode/python-mode'
 "==============================================
 
-"<empty> (see doc/ for more info)
+"--------------------------------
+" [PLUGIN] [python-mode] Settings
+"--------------------------------
 
-"=============================================================
- Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
-"=============================================================
+" run python file with <leader>r (amazing functionality!)
+let g:pymode_lint_checkers = ['pyflakes']
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_on_write = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pyflakes_use_quickfix = 0
+let g:pymode_lint_cwindow = 0
+
+"==============================================
+ Plug 'vim-python/python-syntax'
+"==============================================
 
 "----------------------------------
-" [PLUGIN] [YouCompleteMe] Settings
+" [PLUGIN] [python-syntax] Settings
 "----------------------------------
 
-let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>', '<Tab>']
-
-"----------------------------------
-" [PLUGIN] [YouCompleteMe] Mappings
-"----------------------------------
-
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-inoremap <expr> <C-d> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
-inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
+let g:python_highlight_all = 1
 
 "==============================================
- Plug 'Chiel92/vim-autoformat'
+ Plug 'cakebaker/scss-syntax.vim'
 "==============================================
 
-"-------------------------------
-" [PLUGIN] [Autoformat] Settings
-"-------------------------------
-
-let g:autoformat_autoindent = 0
-let g:autoformat_retab = 0
-let g:autoformat_remove_trailing_spaces = 0
-let g:formatter_yapf_style = 'pep8'
-
-"-------------------------------
-" [PLUGIN] [Autoformat] Commands
-"-------------------------------
-
-noremap <F6> :Autoformat<CR>
-
-"==============================================
- Plug 'junegunn/vim-easy-align'
-"==============================================
-
-"------------------------------
-" [PLUGIN] [EasyAlign] Mappings
-"------------------------------
-
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+" <empty>
 
 "==============================================
  Plug 'scrooloose/syntastic'
@@ -836,16 +799,109 @@ let g:syntastic_tex_checkers = ['chktex']
 nmap     <leader>c      :SyntasticCheck<CR>
 
 "==============================================
- Plug 'tpope/vim-surround'
+ Plug 'godlygeek/tabular'
 "==============================================
 
+" The tabular plugin must come before vim-markdown
+"
 " <empty>
+
+"==============================================
+ Plug 'majutsushi/tagbar'
+"==============================================
+
+"---------------------------
+" [PLUGIN] [TagBar] Settings
+"---------------------------
+
+let g:tagbar_width = 30
+let g:tagbar_sort = 0
+
+"---------------------------
+" [PLUGIN] [TagBar] Mappings
+"---------------------------
+
+nmap <leader>b :TagbarToggle<cr>
 
 "==============================================
  Plug 'SirVer/ultisnips'
 "==============================================
 
 " <empty>
+
+"==============================================
+ Plug 'Chiel92/vim-autoformat'
+"==============================================
+
+"-------------------------------
+" [PLUGIN] [Autoformat] Settings
+"-------------------------------
+
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+let g:formatter_yapf_style = 'pep8'
+
+"-------------------------------
+" [PLUGIN] [Autoformat] Commands
+"-------------------------------
+
+noremap <F6> :Autoformat<CR>
+
+"==============================================
+ Plug 'octol/vim-cpp-enhanced-highlight'
+"==============================================
+
+"-------------------------------------------
+" [PLUGIN] [cpp-enhanced-highlight] Settings
+"-------------------------------------------
+
+"Vim tend to a have issues with flagging braces as errors,
+"see for example https://github.com/vim-jp/vim-cpp/issues/16.
+"A workaround is to set:
+let c_no_curly_error=1
+
+"==============================================
+ Plug 'ryanoasis/vim-devicons'
+"==============================================
+
+" <empty>
+
+"==============================================
+ Plug 'junegunn/vim-easy-align'
+"==============================================
+
+"------------------------------
+" [PLUGIN] [EasyAlign] Mappings
+"------------------------------
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+"==============================================
+ Plug 'easymotion/vim-easymotion'
+"==============================================
+
+"-------------------------------
+" [PLUGIN] [EasyMotion] Settings
+"-------------------------------
+
+let g:EasyMotion_smartcase = 1
+
+"-------------------------------
+" [PLUGIN] [EasyMotion] Mappings
+"-------------------------------
+
+nmap <leader><leader> <Plug>(easymotion-overwin-f)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+"==============================================
+ Plug 'houtsnip/vim-emacscommandline'
+"==============================================
+
+"<empty> (see doc/ for more info)
 
 "==============================================
  Plug 'tpope/vim-fugitive'
@@ -882,43 +938,6 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 autocmd vimenter * :GitGutterDisable
 
 "==============================================
- Plug 'christoomey/vim-tmux-navigator'
-"==============================================
-
-" <empty>
-
-"==============================================
- Plug 'majutsushi/tagbar'
-"==============================================
-
-"---------------------------
-" [PLUGIN] [TagBar] Settings
-"---------------------------
-
-let g:tagbar_width = 30
-let g:tagbar_sort = 0
-
-"---------------------------
-" [PLUGIN] [TagBar] Mappings
-"---------------------------
-
-nmap <leader>b :TagbarToggle<cr>
-
-"==============================================
- Plug 'godlygeek/tabular'
-"==============================================
-
-" The tabular plugin must come before vim-markdown
-"
-" <empty>
-
-"==============================================
- Plug 'plasticboy/vim-markdown'
-"==============================================
-
-" <empty>
-
-"==============================================
  Plug 'suan/vim-instant-markdown'
 "==============================================
 
@@ -927,22 +946,6 @@ nmap <leader>b :TagbarToggle<cr>
 "-------------------------------------
 
 let g:instant_markdown_autostart = 0
-
-"==============================================
- Plug 'python-mode/python-mode'
-"==============================================
-
-"--------------------------------
-" [PLUGIN] [python-mode] Settings
-"--------------------------------
-
-" run python file with <leader>r (amazing functionality!)
-let g:pymode_lint_checkers = ['pyflakes']
-let g:pymode_lint_cwindow = 0
-let g:pymode_lint_on_write = 0
-let g:pymode_rope_complete_on_dot = 0
-let g:pyflakes_use_quickfix = 0
-let g:pymode_lint_cwindow = 0
 
 "==============================================
  Plug 'pangloss/vim-javascript'
@@ -957,48 +960,10 @@ let g:pymode_lint_cwindow = 0
 " <empty>
 
 "==============================================
- Plug 'cakebaker/scss-syntax.vim'
+ Plug 'plasticboy/vim-markdown'
 "==============================================
 
 " <empty>
-
-"==============================================
- Plug 'vim-python/python-syntax'
-"==============================================
-
-"----------------------------------
-" [PLUGIN] [python-syntax] Settings
-"----------------------------------
-
-let g:python_highlight_all = 1
-
-"==============================================
- Plug 'octol/vim-cpp-enhanced-highlight'
-"==============================================
-
-"-------------------------------------------
-" [PLUGIN] [cpp-enhanced-highlight] Settings
-"-------------------------------------------
-
-"Vim tend to a have issues with flagging braces as errors,
-"see for example https://github.com/vim-jp/vim-cpp/issues/16.
-"A workaround is to set:
-let c_no_curly_error=1
-
-"==============================================
-Plug 'lervag/vimtex'
-"==============================================
-
-"VimtexView - open pdf reader
-"VimtexCompile - compile (and then autocompiles on :w)
-"VimtexTocOpen - open ToC navigation on the left
-"To change LaTeX engine, refer to plugin's documentation.
-
-"-------------------------------------------
-" [PLUGIN] [vimtex] Settings
-"-------------------------------------------
-
-let g:vimtex_view_method = 'zathura'
 
 "==============================================
  Plug 'thinca/vim-quickrun'
@@ -1007,6 +972,18 @@ let g:vimtex_view_method = 'zathura'
 "*quickrun* is Vim plugin to execute whole/part of editing file and show the result.
 "It provides :QuickRun command for it.
 "
+" <empty>
+
+"==============================================
+ Plug 'tpope/vim-surround'
+"==============================================
+
+" <empty>
+
+"==============================================
+ Plug 'christoomey/vim-tmux-navigator'
+"==============================================
+
 " <empty>
 
 "==============================================
@@ -1020,22 +997,43 @@ let g:vimtex_view_method = 'zathura'
 "==============================================
 
 "vimshell depends on |vimproc|
-"
-" <empty>
-
-"==============================================
- Plug 'joshdick/onedark.vim'
-"==============================================
-
-" OneDark (color theme)
-"
-" <empty>
-
-"==============================================
- Plug 'ryanoasis/vim-devicons'
-"==============================================
 
 " <empty>
+
+"==============================================
+ Plug 'lervag/vimtex'
+"==============================================
+
+"VimtexView - open pdf reader
+"VimtexCompile - compile (and then autocompiles on :w)
+"VimtexTocOpen - open ToC navigation on the left
+"To change LaTeX engine, refer to plugin's documentation.
+
+"-------------------------------------------
+" [PLUGIN] [vimtex] Settings
+"-------------------------------------------
+
+let g:vimtex_view_method = 'zathura'
+
+"=============================================================
+ Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
+"=============================================================
+
+"----------------------------------
+" [PLUGIN] [YouCompleteMe] Settings
+"----------------------------------
+
+let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>', '<Tab>']
+
+"----------------------------------
+" [PLUGIN] [YouCompleteMe] Mappings
+"----------------------------------
+
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr> <C-d> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
+inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
 
 "---------------------------------------------------------------
 
