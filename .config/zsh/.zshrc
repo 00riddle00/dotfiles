@@ -63,34 +63,37 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 ## emacs keybindings
-bindkey '^f'  forward-char
-bindkey '^b'  backward-char
-bindkey '^[f' forward-word
-bindkey '^[b' backward-word
-bindkey '^e'  end-of-line
-bindkey '^a'  beginning-of-line
+bindkey '^f'   forward-char
+bindkey '^b'   backward-char
+bindkey '^[f'  forward-word
+bindkey '^[b'  backward-word
+bindkey '^e'   end-of-line
+bindkey '^a'   beginning-of-line
 
-bindkey '^p'  up-line
-bindkey '^n'  down-line
+bindkey '^p'   up-line
+bindkey '^n'   down-line
 
-bindkey '^d'  delete-char-or-list
-bindkey '^?'  backward-delete-char
-#             (<C-h> is already taken by tmux).
-bindkey '^[d' kill-word
-bindkey '^w'  backward-kill-word 
-# none        kill-line
-#             (<C-k> is already taken by tmux, 
-#             use <M-d> multiple times).
-bindkey '^u'  backward-kill-line
-bindkey '^g'  kill-whole-line 
+bindkey '^d'   delete-char-or-list
+bindkey '^?'   backward-delete-char
+#              (<C-h> is already taken by tmux).
+bindkey '^[d'  kill-word
+bindkey '^w'   backward-kill-word 
+bindkey '^[^?' backward-kill-word 
+# none         kill-line
+#              (<C-k> is already taken by tmux, 
+#              use <M-d> multiple times).
+bindkey '^u'   backward-kill-line
+bindkey '^g'   kill-whole-line 
 
-bindkey '^y'  yank
+bindkey '^y'   yank
 
-bindkey '^t'  transpose-chars
-bindkey '^[t' transpose-words
+bindkey '^t'   transpose-chars
+bindkey '^[t'  transpose-words
+
+bindkey '^_'   undo # <C-/>
 
 ## history
-bindkey '^R' history-incremental-search-backward
+bindkey '^R'   history-incremental-search-backward
 
 # colors for ls
 if [ -f $DIRCOLORS ]; then

@@ -47,7 +47,6 @@
 
 ;; -------------------------------------------------------------
 (custom-set-variables
-;; -------------------------------------------------------------
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
@@ -61,14 +60,12 @@
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(nil nil t)
- '(package-selected-packages
-   '(undo-tree linum-relative evil))
+ '(package-selected-packages '(undo-tree linum-relative evil))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 
 ;; -------------------------------------------------------------
 (custom-set-faces
-;; -------------------------------------------------------------
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.

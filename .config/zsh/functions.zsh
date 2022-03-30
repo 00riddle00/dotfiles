@@ -3,11 +3,14 @@
 ## make a temp backup
 bk() { cp "$1" "$1.bak"; }
 
-## make cmdline aliases for zsh
+## make an alias for zsh
 ## ex. usage (called from specific directory):
 ##      ma "vedit" "vim $(readlink -f file_to_edit.txt)"
 ##      ma "cddir" "cd $(pwd)"
 ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
+
+## make an alias for zsh to cd into current dir.
+macd() { echo alias "$1='cd $(pwd)'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
 
 # SYSTEMWIDE FUNCTIONS
 

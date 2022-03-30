@@ -404,6 +404,7 @@ execute "set <M-t>=\et"
 
 autocmd FileType help wincmd L|  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType markdown colorscheme miro8
 autocmd BufNewFile,BufRead *.asm set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.ASM set ft=tasm syntax=tasm
 autocmd BufNewFile,BufRead *.bat set ft=dosbatch syntax=dosbatch
@@ -412,8 +413,6 @@ autocmd BufNewFile,BufRead *.BAT set ft=dosbatch syntax=dosbatch
 autocmd BufNewFile,BufRead *.bnf set ft=bnf
 
 autocmd BufNewFile,BufRead *.lst set ft=text
-
-autocmd FileType python SyntasticToggleMode
 
 " set Python 80th char vertical line color
 " (temporary workaround using 'autocmd')
