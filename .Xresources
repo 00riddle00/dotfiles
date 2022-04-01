@@ -52,7 +52,7 @@ URxvt.perl-ext-common:     clipboard,font-size,keyboard-select,url-select
 URxvt.colorUL:             #4682B4
 !clipboard
 URxvt.clipboard.autocopy:  true
-URxvt.keysym.M-c:          perl:clipboard:copy
+!URxvt.keysym.M-c:          perl:clipboard:copy
 URxvt.keysym.M-v:          perl:clipboard:paste
 URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
 !keyboard-select
@@ -62,7 +62,7 @@ URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
 URxvt.keysym.M-i:          perl:keyboard-select:activate
 !url-select
 !  M-u, and then move through URLs with hjkl keys
-URxvt.keysym.M-u:            perl:url-select:select_next
+!URxvt.keysym.M-u:            perl:url-select:select_next
 ! or use /usr/bin/xdg-open
 URxvt.url-select.launcher:   /usr/bin/brave
 URxvt.url-select.underline:  true

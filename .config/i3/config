@@ -224,7 +224,7 @@ bindsym $mod+Shift+Tab $run i3-msg 'workspace prev'
 bindsym $alt+Tab $run i3-msg 'workspace back_and_forth'
 
 bindsym $mod+u $run i3-activate-dropdown
-bindsym $alt+u $run $term -name dropdown_aux -e tmux new-session
+#bindsym $alt+u $run $term -name dropdown_aux -e tmux new-session
 bindsym $alt+q [instance="dropdown_aux"] move scratchpad;
 bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle

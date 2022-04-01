@@ -273,9 +273,8 @@ inoremap <C-g> <Esc>cc
 " yank
 inoremap <C-y> <C-r>"
 
-" transpose
+" transpose chars
 inoremap <silent> <C-t> <ESC>hxpa
-inoremap <silent> <M-t> <ESC>"_yiw?\w\+\_W\+\%#<CR>:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>:nohlsearch<CR>
 
 "=========================================
 " [MAPPINGS] Windows
@@ -400,7 +399,6 @@ autocmd InsertLeave * silent! if expand('%') != '' | update | endif
 execute "set <M-f>=\ef"  
 execute "set <M-b>=\eb"
 execute "set <M-d>=\ed"
-execute "set <M-t>=\et"
 
 autocmd FileType help wincmd L|  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2

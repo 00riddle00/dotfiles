@@ -90,6 +90,10 @@ bindkey '^y'   yank
 bindkey '^t'   transpose-chars
 bindkey '^[t'  transpose-words
 
+bindkey '^[u'  up-case-word
+bindkey '^[l'  down-case-word
+bindkey '^[c'  capitalize-word
+
 bindkey '^_'   undo # <C-/>
 
 ## history
