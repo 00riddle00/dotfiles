@@ -415,10 +415,6 @@ autocmd BufNewFile,BufRead *.lst set ft=text
 " set Python 80th char vertical line color
 " (temporary workaround using 'autocmd')
 autocmd FileType python highlight ColorColumn ctermbg=black
-autocmd FileType python SyntasticToggleMode
-
-" disable Syntastic by default with TeX files
-autocmd FileType tex SyntasticToggleMode
 
 " temporary fix - to keep the cursor inside the editor buffer 
 " after compilation, and not moving it to the quickfix buffer
@@ -769,6 +765,8 @@ let g:python_highlight_all = 1
 "------------------------------
 " [PLUGIN] [Syntastic] Settings
 "------------------------------
+
+let g:syntastic_mode_map = { 'mode': 'passive' }
 
 let g:syntastic_enable_signs = 1
 let g:syntastic_always_populate_loc_list = 1
