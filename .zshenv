@@ -9,6 +9,7 @@ path=(
     $HOME/.local/bin
     $HOME/.local/bin/cron
     $HOME/.local/bin/scripts
+    $HOME/.emacs.d/bin
     $path)
 
 export PATH
@@ -71,5 +72,6 @@ export SUDO_ASKPASS="$BIN/dmenu-pass"
 
 # Java
 export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8"
+export CLASSPATH="$CLASSPATH:/usr/share/weka/weka.jar"
 # Fixes misbehaving Java applications in dwm
 export _JAVA_AWT_WM_NONREPARENTING=1

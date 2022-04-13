@@ -237,7 +237,7 @@ nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 "\+  - Allow any number of occurrences of this group (one or more).
 "\%$ - Match the end of the file
 
-nmap <leader>e  :silent e!<CR>
+nmap <silent> <leader>e  :e!<CR>
 nmap <leader>j  :J<CR>
 "command J    silent e!| Hex
 
@@ -881,7 +881,8 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
  Plug 'houtsnip/vim-emacscommandline'
 "==============================================
 
-"<empty> (see doc/ for more info)
+" (see :h emacscommandline for more info)
+let g:EmacsCommandLineSearchCommandLineDisable = 1
 
 "==============================================
  Plug 'tpope/vim-fugitive'
