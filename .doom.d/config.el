@@ -86,3 +86,8 @@
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 )
+
+(custom-set-faces
+  ;'(default ((t (face-attribute 'default :background))))
+  '(hl-line ((t (face-attribute 'default :background))))
+)
