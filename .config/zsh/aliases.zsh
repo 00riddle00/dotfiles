@@ -40,6 +40,7 @@ alias she='cd $BIN'
 
 # emacs
 alias ee='vim ~/.emacs.d/init.el'
+alias emacs.vanilla='env HOME="$HOME/.dotfiles/.emacs.env.vanilla" emacs'
 alias emacs.cmd='emacs -nw' # --no-window-system'
 alias emacs.nocaps='setxkbmap -option ctrl:nocaps'
 
@@ -86,8 +87,9 @@ alias get.win_pos_size='xwininfo'
 
 # keys info
 alias get.keyname='xev'
-## press keys and Enter
-alias get.key_escape_sequence='sed -n l'
+## press keys and Enter (`cat` also can be used)
+alias get.key_code_1='sed -n l'
+alias get.key_code_2='showkey --ascii'
 
 # java
 alias j='java'
@@ -100,7 +102,7 @@ alias npm.ls.g='npm list -g --depth=0'
 
 # launch console programs
 #alias mm='neomutt'
-alias r='ranger'
+#alias r='ranger'
 alias tor='rtorrent'
 alias irc='irssi'
 alias rss='newsboat'
@@ -250,6 +252,7 @@ alias fuserk='fuser -vk'
 alias v='vim'
 alias vmi='vim'
 alias vib='vim -b'
+alias vim.bare='vim -u NONE'
 alias vv='sudo vim'
 alias vim.plugins='vim +PlugInstall +qall'
 
@@ -390,7 +393,7 @@ alias zenv='vim $HOME/.zshenv'
 alias zr='vim $ZDOTDIR/.zshrc'
 alias lal='vim $ZDOTDIR/aliases.local.zsh'
 alias lfn='vim $ZDOTDIR/functions.local.zsh'
-#alias rr='vim $DOTFILES/.config/ranger/rc.conf'
+alias rr='vim $DOTFILES/.config/ranger/rc.conf'
 alias tg='vim ~/.tigrc'
 ### openbox specific
 alias rc='vim $HOME/.config/openbox/rc.xml'
@@ -582,3 +585,36 @@ alias letr='chmod -R 755'
 # usage: command `--use-commit-times`
 alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-times=yes'
 alias -- --date='date "+%F"'
+alias -- --date='date "+%F"'
+alias -- --datetime='date +%F_%H_%M_%S'
+
+# =====================================================================
+# temp
+# =====================================================================
+
+alias corona='curl https://corona-stats.online/lithuania'
+alias corona.global='curl https://corona-stats.online'
+
+alias thesis='cd $HOME/Tomas_Giedraitis/course_work'
+alias tt='cd $HOME/Tomas_Giedraitis'
+alias exp='cd $HOME/Tomas_Giedraitis/experiments'
+alias bb='cd $HOME/Tomas_Giedraitis/bibliography'
+
+alias ms='make cleanAll && make'
+alias shar='cd /home/riddle/Tomas_Giedraitis/discussions/shared_files'
+alias data='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data'
+#alias sc='cd /home/riddle/.local/bin/scripts'
+
+alias cel='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data/working_files/grep_codcif/value_with_C_was_changed_to_Kelvin_numeric_value'
+alias kel='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data/working_files/grep_codcif/value_with_K_was_changed_to_numeric_value'
+alias sc='cd /home/riddle/Tomas_Giedraitis/experiments/scripts'
+alias in='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data/inputs'
+alias out='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data/outputs'
+alias vp='cd /home/riddle/.vim/plugged'
+alias fp='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/setups/classifiers/melting_points_2_classes'
+alias dotvim='cd /home/riddle/.vim'
+alias skr='cd /home/riddle/.local/bin/scripts'
+#alias r='./formula_mp_to_vector inputs/data.tsv outputs/chem_elements.lst'
+alias r='./lab outputs/input_vectors.csv --split 273'
+alias res='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/results/classifiers/melting_points_2_classes'
+alias hh='vim /home/riddle/pro/2022/histfiles/histfile'

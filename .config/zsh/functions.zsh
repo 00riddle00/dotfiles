@@ -73,6 +73,11 @@ fields () {
     awk -F"\t" '{print NF}' "$1" | uniq -c
 }
 
+# usage: fields <file>
+fields-csv () {
+    awk -F, '{print NF}' "$1" | uniq -c
+}
+
 # usage: cols <col_no> <file>
 cols () {
     col_no="\$$1";
@@ -80,8 +85,21 @@ cols () {
     awk -F$'\t' -f <(echo "$col_no") "$2" | sort | uniq
 }
 
+# usage: cols <col_no> <file>
+cols-csv () {
+    col_no="\$$1";
+    col_no="{print $col_no}";
+    awk -F, -f <(echo "$col_no") "$2" | sort | uniq
+}
+
 # convert epoch to human-readable date
 # usage: epoch-to-date 1643294515
 epoch-to-date () {
     date  -d @"$1" "+%F"
+}
+
+ddif() {
+    meld \
+        <( cat "$1" | (sed -u 1q; sort -k1 -n) ) \
+        <( cat "$2" | (sed -u 1q; sort -k1 -n) ) \
 }
