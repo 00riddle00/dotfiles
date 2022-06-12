@@ -197,9 +197,11 @@ nmap     <leader>h    :set hlsearch!<CR>
 nmap     <leader>n    :set relativenumber!<CR>
 nmap     <leader>p    :setlocal paste!<CR>
 nmap     <leader>r    :so $VIMRC<CR>
-nmap     <leader>s    :sp<cr>
 nnoremap <leader>u    :!urlview %<CR>
-nmap     <leader>v    :vs<cr>
+"nmap     <leader>s    :sp<cr>
+"nmap     <leader>v    :vs<cr>
+nmap     <leader>s    :VimtexStop<CR>
+nmap     <leader>v    :VimtexCompile<CR>
 
 " Move between buffers
 nnoremap <leader>] :bn<CR>

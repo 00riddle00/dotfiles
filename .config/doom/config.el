@@ -88,6 +88,25 @@
 )
 
 (custom-set-faces
-  ;'(default ((t (face-attribute 'default :background))))
   '(hl-line ((t (face-attribute 'default :background))))
 )
+
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-S-s") 'save-buffer)
+
+(map!
+ (:after evil
+   :en "C-h"   #'evil-window-left
+   :en "C-j"   #'evil-window-down
+   :en "C-k"   #'evil-window-up
+   :en "C-l"   #'evil-window-right)
+ )
+
+(map! :after evil-org
+      :map evil-org-mode-map
+      :n "C-j" #'evil-window-down
+      :n "C-k" #'evil-window-up)
+
+(map! :map general-override-mode-map
+      :n "C-j" #'evil-window-down
+      :n "C-k" #'evil-window-up)
