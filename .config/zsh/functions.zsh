@@ -103,3 +103,7 @@ ddif() {
         <( cat "$1" | (sed -u 1q; sort -k1 -n) ) \
         <( cat "$2" | (sed -u 1q; sort -k1 -n) ) \
 }
+
+minsec_to_hours() {
+    bc -l <<<"$1/60 + $2/3600"
+}

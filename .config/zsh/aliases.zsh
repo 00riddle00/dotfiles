@@ -317,6 +317,7 @@ alias no='killall mpg123'
 # choosing 'lt' also resets languages to the usual  'us,lt' combination
 alias lt='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
+alias he='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias ru="setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
 alias tl='translit'
 
@@ -629,3 +630,11 @@ alias cs='thesis'
 alias pr='practice'
 alias cdres='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/results/classifiers/melting_points_5_classes'
 alias ww='wpa_rde && wnet'
+alias neo='neofetch'
+# usage: 
+#    > hours \\
+#    dquote> 18:09
+#    dquote> 28:17
+#    dquote> "
+#    > 0.773889
+alias hours="awk -F: '{s += "\$1"/60 + "\$2"/3600} END {print s}' <<<\""
