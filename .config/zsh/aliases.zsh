@@ -634,9 +634,10 @@ alias cdres='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/wek
 alias ww='wpa_rde && wnet'
 alias neo='neofetch'
 # usage: 
-#    > hours \\
+#    > hours \
 #    dquote> 18:09
 #    dquote> 28:17
 #    dquote> "
 #    > 0.773889
 alias hours="awk -F: '{s += "\$1"/60 + "\$2"/3600} END {print s}' <<<\""
+alias mag='cd /home/riddle/pro/2021/magic_3'
