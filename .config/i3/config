@@ -165,7 +165,7 @@ for_window [class="Thunderbird"]         move workspace $ws7
 for_window [class="Clementine"]          move workspace $ws8
 for_window [class="discord"]             move workspace $ws8
 for_window [class="Microsoft Teams*"]    move workspace $ws8
-for_window [class="Steam"]               move workspace $ws8
+for_window [class="Steam"]               move workspace $ws9
 for_window [class="kdenlive"]            move workspace $ws9
 for_window [class="obs"]                 move workspace $ws9
 for_window [class="Spotify"]             move workspace $ws9
@@ -174,7 +174,7 @@ for_window [class="Spotify"]             move workspace $ws9
 #  Workspace traits 
 # =============================
 
-for_window [workspace=$ws10]     layout tabbed
+# for_window [workspace=$ws10]     layout tabbed
 
 # =============================
 #  Basic Bindings
@@ -316,15 +316,15 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #  Function Buttons
 # ===================
 
-bindsym F1 $run terminator
+#bindsym F1 $run terminator
 bindsym $mod+F1 $run "killall picom && picom -b"
 bindsym $alt+F2 $run i3-msg '$run $term -name t2'
-bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
+#bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
 
 bindsym $alt+F3 $run i3-vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
-bindsym F4 $run activate firefox
+#bindsym F4 $run activate firefox
 bindsym F5 $run subl3
 bindsym F7 $run activate thunderbird
 bindsym F8 $run activate "teams" "teams --no-sandbox"

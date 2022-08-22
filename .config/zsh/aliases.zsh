@@ -367,7 +367,7 @@ alias mp0='tmp8'
 
 ## network
 alias pp='ping -c 3 www.google.com'
-alias p='watch -n 0.5 "ping -c 3 www.google.com"'
+#alias p='watch -n 0.5 "ping -c 3 www.google.com"'
 alias get.my_ip='curl -w "\n" ifconfig.me'
 alias get.local_ip='ip route | head -n 1'
 alias get.gateway='ip route | head -n 1'
@@ -492,7 +492,7 @@ alias asleep='ps ax | grep -v grep | grep sleep'
 # --------------------------------------------------------------------------------------------------------------------
 
 ## python
-alias ppp='python'
+alias p='python'
 alias p2='python2'
 alias py.exe='python -c'
 alias venv.init='python3 -m venv env'
@@ -641,3 +641,4 @@ alias neo='neofetch'
 #    > 0.773889
 alias hours="awk -F: '{s += "\$1"/60 + "\$2"/3600} END {print s}' <<<\""
 alias mag='cd /home/riddle/pro/2021/magic_3'
+alias ydl-clean-cache='youtube-dl --rm-cache-dir'
