@@ -25,13 +25,13 @@ bin/cowsay/**/*.dat
 
 .config/broot/launcher
 
-# left this just in case I decide to track this folder again,
-# since now it is done automatically by vscode in github gist
+# VS Code settings are also synced automatically to a Gist on GitHub
+# TODO use only either a Gist or the files here
 .config/Code - OSS/*
-!.config/Code - OSS/storage.json
 !.config/Code - OSS/User/
 .config/Code - OSS/User/*
 !.config/Code - OSS/User/settings.json
+!.config/Code - OSS/User/keybindings.json
 
 .config/cmus/*
 !.config/cmus/rc
