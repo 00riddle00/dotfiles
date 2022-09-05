@@ -223,9 +223,10 @@ bindsym $mod+Shift+Tab $run i3-msg 'workspace prev'
 # also very useful for switching between two displays
 bindsym $alt+Tab $run i3-msg 'workspace back_and_forth'
 
+bindsym $alt+u $run i3-activate-dropdown-alacritty
 bindsym $mod+u $run i3-activate-dropdown
 #bindsym $alt+u $run $term -name dropdown_aux -e tmux new-session
-bindsym $alt+q [instance="dropdown_aux"] move scratchpad;
+bindsym $alt+q [instance="dropdown_*"] move scratchpad;
 bindsym $alt+z          sticky toggle
 bindsym $mod+Shift+b    bar mode toggle
 

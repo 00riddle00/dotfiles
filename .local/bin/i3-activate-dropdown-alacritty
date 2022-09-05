@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+instance="dropdown_alacritty"
+
+if  [ "_$(xdotool search --classname "$instance" | head -1)"  = "_" ]; then
+    i3-msg "exec --no-startup-id alacritty --class dropdown_alacritty"
+    #i3-msg "exec --no-startup-id alacritty --class dropdown_alacritty -e tmux new-session"
+else
+    i3-msg "[instance=\"$instance\"] scratchpad show"
+fi
