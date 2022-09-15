@@ -27,6 +27,7 @@ num() { nl -s ' ' "$1" > tmp && mv tmp "$1" && sed "s/^[ \t]*//" -i "$1" && cat 
 # if 1st arg is a dir, no "/" should be appended
 # ln -s {FILE_PATH} {SYMLINK_PATH}
 sym() { ln -s "$(pwd)/$1" "$2"; }
+# example: cd $DOTFILES/ && sym .inputrc /home/riddle/
 sym.dir() { ln -s "$(pwd)/$1" "$2/$1"; }
 # example: cd $DOTFILES/.config && sym.dir smartgit /home/riddle/.config
 
