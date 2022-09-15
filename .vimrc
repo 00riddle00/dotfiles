@@ -568,9 +568,29 @@ function! ResizeDown()
 endfunction
 
 "===============================================================
-"  PLUGINS
+"  PLUGINS (STANDARD)
 "===============================================================
 
+"==============================================
+" Standard-plugin 'matchparen'
+"==============================================
+ 
+"--------------------------------
+" [PLUGIN][matchparen] Settings
+"--------------------------------
+ 
+" To disable the plugin after it was loaded:
+":NoMatchParen
+" And to enable it again:
+":DoMatchParen
+"
+" Avoid loading the plugin
+let g:loaded_matchparen=1
+ 
+"===============================================================
+"  PLUGINS (EXTERNAL)
+"===============================================================
+"
 " vim-plug is eliberately designed to be in a single file
 " so that it can be easily downloaded and put into ~/.vim/autoload,
 " so no manual modification of runtimepath is required.
@@ -662,9 +682,16 @@ let delimitMate_expand_cr=1
 
 " Escape sequences depend on the terminal emulator.
 " Use `sed -n l` to test keys' ESC sequences.
-" ex. ^[^[OP (for Alt-<F1> in urxvt) means <Esc><Esc>OP
+" ex. ^[^[OP (for Alt-<F1> in rxvt-unicode) means <Esc><Esc>OP
+"
+" rxvt-unicode
 map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
 imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
+"
+" Alacritty
+map  <Esc>[1;3P <Plug>NERDCommenterToggle<CR>
+imap  <Esc>[1;3P <ESC><Plug>NERDCommenterToggle<CR>
+
 
 " vim registers <C-/> as <C-_>
 map  <C-_>         <Plug>NERDCommenterToggle<CR>
