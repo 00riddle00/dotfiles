@@ -1,38 +1,146 @@
-// Place your key bindings in this file to override the defaults
 [
+    /* ---------------------
+     * Enabled actions
+     * ---------------------
+     */
+    // ` + {}
     {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.togglePanel"
+        "key": "` '",
+        "command": "workbench.action.splitEditor"
     },
     {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
+        "key": "` -",
+        "command": "workbench.action.splitEditorOrthogonal"
     },
+    // Alt + {}
     {
         "key": "alt+f1",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "alt+1",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
+        "key": "alt+2",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "alt+3",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "alt+4",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "alt+r",
+        "command": "editor.action.startFindReplaceAction"
+    },
+    // Ctrl + {}
     {
         "key": "ctrl+/",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+f1",
-        "command": "-editor.action.showAccessibilityHelp"
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    // Ctrl + Shift + {}
+    {
+        "key": "ctrl+shift+a",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Shift + {}
     {
         "key": "shift+f1",
         "command": "workbench.action.showCommands"
     },
+    /* ---------------------
+     * Disabled actions
+     * ---------------------
+     */
+    // Function keys
     {
         "key": "f1",
         "command": "-workbench.action.showCommands"
+    },
+    // Alt + {}
+    {
+        "key": "alt+f1",
+        "command": "-editor.action.showAccessibilityHelp"
+    },
+    // Ctrl + {}
+    {
+        "key": "ctrl+0",
+        "command": "-workbench.action.focusSideBar"
     },
     {
         "key": "ctrl+a",
         "command": "-extension.vim_ctrl+a",
         "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-extension.vim_ctrl+e",
+        "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    // Ctrl + k  Ctrl + {}
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+h",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "ctrl+k ctrl+up",
+        "command": "-workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "-workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
     }
 ]
