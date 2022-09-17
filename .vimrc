@@ -585,7 +585,7 @@ endfunction
 ":DoMatchParen
 "
 " Avoid loading the plugin
-let g:loaded_matchparen=1
+"let g:loaded_matchparen=1
  
 "===============================================================
 "  PLUGINS (EXTERNAL)
