@@ -25,8 +25,7 @@ bin/cowsay/**/*.dat
 
 .config/broot/launcher
 
-# VS Code settings are also synced automatically to a Gist on GitHub
-# TODO use only either a Gist or the files here
+# VS Code settings can also be synced automatically to a Gist on GitHub
 .config/Code - OSS/*
 !.config/Code - OSS/User/
 .config/Code - OSS/User/*
