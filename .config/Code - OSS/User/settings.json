@@ -3,6 +3,7 @@
     // "breadcrumbs.enabled": false,
     "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
     "editor.fontSize": 18,
+    "editor.lineNumbers": "relative",
     "files.autoSave": "afterDelay",
     "keyboard.dispatch": "keyCode",
     "telemetry.telemetryLevel": "off",
