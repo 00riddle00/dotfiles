@@ -4,6 +4,7 @@
     "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
     "editor.fontSize": 18,
     "keyboard.dispatch": "keyCode",
+    "telemetry.telemetryLevel": "off",
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "$HOME/.vimrc",
     "workbench.colorTheme": "Default Dark+",
