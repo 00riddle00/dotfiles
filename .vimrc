@@ -7,6 +7,9 @@
 "===============================================================
 "  SETTINGS
 "===============================================================
+"
+" In Arch linux, vim loads the /usr/share/vim/vimfiles/archlinux.vim 
+" settings file at the beginning
 
 "=========================================
 " [SETTINGS] Colors
