@@ -130,7 +130,7 @@ alias libre='libreoffice'
 #alias mi='sxiv'
 alias mi='nomacs'
 alias play='mpv'
-alias sub='/usr/bin/subl3'
+alias sub='/usr/bin/subl'
 alias tint='tint2 & disown'
 alias vbox='virtualbox'
 
@@ -276,10 +276,10 @@ alias condaenv='source /opt/anaconda/bin/activate /opt/anaconda/'
 ## aur
 alias ya='yay'
 alias ya.install='yay -S'
-alias ya.find='yay -Si'
+alias ya.info='yay -Si'
 # alias yaup='yay -Syu --noconfirm'
 alias yaup='arch-update'
-alias yaup.dontcare="yay -Suy --noconfirm anaconda --overwrite '*'"
+alias yaup.dontcare="yay -Syu --noconfirm anaconda --overwrite '*'"
 
 ### fuzzy-search through the AUR, preview info and install selected packages
 alias fzf.yay='yay -Slq | fzf -m --preview 'yay -Si {1}'| xargs -ro yay -S'
@@ -407,28 +407,31 @@ alias rc='vim $HOME/.config/openbox/rc.xml'
 ## pacman
 ##--------------------------------------------------------------------------------------------------------------------
 ### -Q
-alias orphans='pacman -Qdtd'
-alias is='sudo pacman -Qqe | grepi '     # grep for explicitly installed package (package 'is' in the system)
+alias orphans='pacman -Qdtq'
+alias is='sudo pacman -Qeq | grepi '     # grep for explicitly installed package (package 'is' in the system)
 alias isa='sudo pacman -Qq | grepi '     # grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
 alias visa='sudo pacman -Q | grepi '     # grep for installed package with version info ('visa' = 'is -a -v')
-alias pl='sudo pacman -Qqe'              # list all explicitly installed packages 
-alias pld='sudo pacman -Qq'              # list all packages 
-alias plm='sudo pacman -Qqm'             # list foreign packages (mainly from AUR)
-alias pac.owner='sudo pacman -Qo'        # who owns the file
-alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group 
-                                         # (or list all groups and packages if no argument is passed)
-alias pac.group.belongs='sudo pacman -Qgq | grepi' # show which group the package belongs to
-alias pac.base-devel='pac.group base-devel' # list packages depending on `base` metapackage
-alias pac.what='sudo pacman -Qs'         # list local package(s) with description
-alias what='sudo pacman -Qs'   
-alias pac.deps='sudo pacman -Qi'         # show deps for the given local package
+alias pl='sudo pacman -Qeq'              # list explicitly installed packages 
+alias ple='sudo pacman -Qeq'             # ------||------
+alias pla='sudo pacman -Qq'              # list all installed packages 
+alias pld='sudo pacman -Qdq'             # list packages dependencies
+alias plm='sudo pacman -Qmq'             # list foreign packages (mainly from AUR)
+alias pac.owner='sudo pacman -Qo'        # which package owns the specified file(s)
+alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group (or list all groups and packages if no argument is passed)
+alias pac.group.belongs='sudo pacman -Qgq | grepi' # show which group the installed package belongs to
+#alias pac.base='...'                     # list installed packages depending on `base` metapackage
+alias pac.base-devel='pac.group base-devel' # list installed packages belonging to the `base-devel` group
+alias pac.info='sudo pacman -Qi'         # display info on a given installed package
+alias pac.search='sudo pacman -Qs'       # search each installed package for names or descriptions that match regexp
 ### -S
 alias pacfile='sudo pacman -S --noconfirm - --needed <'       # install from file
 alias pacs='sudo pacman -S --noconfirm --needed'              # `needed` does not reinstall targets that are up to date
-alias pac.group_remote='sudo pacman -Sgq'                     # list packages belonging to a group
-alias pac.base='expac -S '%E' base | xargs -n1 | sort'        # list packages depending on `base` metapackage
-alias pac.deps_remote='sudo pacman -Si'                       # show deps for the given package
-alias pac.find='sudo pacman -Ss'                              # search package. with <regexp>
+alias pac.group_remote='sudo pacman -Sgq'                     # list packages from sync database belonging to a group
+alias pac.base_remote='expac -S '%E' base | xargs -n1 | sort' # list packages from sync database depending on `base` metapackage
+alias pac.base-devel_remote='pac.group_remote base-devel'     # list packages from sync database belonging to the `base-devel` group
+alias pac.info_remote='sudo pacman -Si'                       # display info on a given sync database package
+alias pac.info_remote_full='sudo pacman -Sii'                 # ^--- and also display those packages in all repos that depend on this package.
+alias pac.search_remote='sudo pacman -Ss'                     # search each package from sync database for names or descriptions that match regexp
 # removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
 # repos in /var/lib/pacman
 alias pac.clear='sudo pacman -Sc'
@@ -646,3 +649,4 @@ alias hours="awk -F: '{s += "\$1"/60 + "\$2"/3600} END {print s}' <<<\""
 alias mag='cd /home/riddle/pro/2021/magic_3'
 alias ydl-clean-cache='youtube-dl --rm-cache-dir'
 alias vig='cd $HOME/pro/2022/vigi_23'
+alias nn='neofetch'

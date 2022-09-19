@@ -326,7 +326,7 @@ bindsym $alt+F3 $run i3-vimnotes
 bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
 
 #bindsym F4 $run activate firefox
-bindsym F5 $run subl3
+bindsym F5 $run subl
 bindsym F7 $run activate thunderbird
 bindsym F8 $run activate "teams" "teams --no-sandbox"
 bindsym F9 $run activate $BROWSER
