@@ -1,6 +1,7 @@
 [user]
 	email = tomasgiedraitis@gmail.com
 	name = Tomas Giedraitis
+	signingkey = D18AF5003042DB3E
 [core]
 	editor = vim
 [credential]
@@ -26,3 +27,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true
