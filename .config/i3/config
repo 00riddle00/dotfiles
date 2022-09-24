@@ -191,7 +191,8 @@ bindsym $alt+$esc           kill
 #  Letter Bindings
 # =============================
 
-bindsym $mod+c $run activate spotify
+#bindsym $mod+c $run activate spotify
+bindsym $mod+c $run activate code
 bindsym $mod+Shift+p $run dmenu-pastes
 bindsym $mod+p $run pavucontrol  
 bindsym $alt+p $run killall pavucontrol

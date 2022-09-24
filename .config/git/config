@@ -5,7 +5,8 @@
 [core]
 	editor = vim
 [credential]
-	helper = cache --timeout=3600
+    # cache for 1 day
+	helper = cache --timeout=86400
 [merge]
     tool = vimdiff
 [diff]
@@ -29,3 +30,5 @@
 	required = true
 [commit]
 	gpgsign = true
+[pull]
+	ff = only

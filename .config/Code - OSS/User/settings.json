@@ -2,13 +2,14 @@
     // "editor.minimap.enabled": false,
     // "breadcrumbs.enabled": false,
     "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.lineNumbers": "relative",
+    "editor.rulers": [80],
     "files.autoSave": "afterDelay",
     "keyboard.dispatch": "keyCode",
     "telemetry.telemetryLevel": "off",
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "$HOME/.vimrc",
     "workbench.colorTheme": "Default Dark+",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
 }

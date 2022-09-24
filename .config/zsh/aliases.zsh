@@ -177,8 +177,18 @@ alias re='sudo reboot'
 alias rmr='sudo rm -r'  
 alias s='sudo'
 alias tar='tar -xvf'
-## A trailing space in VALUE causes the next word to be checked for alias substitution when the alias is expanded.
+## A trailing space in `watch ` causes the next word to be checked for 
+## alias substitution when the alias is expanded.
+##
+## Usage:
+## watch ple                     # OK:  alias `ple` is expanded as `pacman -Qeq`
+## watch ple | grep ^z           # BAD: multiple commands, need to quote everything
+## watch "ple | grep ^z"         # BAD: when quoted, aliases do not expand in this case
+## watch "pacman -Qeq | grep ^z" # OK:  no aliases inside quotes
+##
+## `watch -n 0` is equivalent to `watch -n 0.1`
 alias watch='watch '
+##
 alias z='zsh'
 alias exe='chmod +x'
 alias ce='crontab -e'
@@ -215,7 +225,7 @@ alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
 alias mute='amixer -q sset Master toggle'
 alias nocaps='sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
-alias phone.on='jmtpfs ~/phone' # if problems, remount + restart thunar
+alias phone.on='simple-mtpfs ~/phone' # if problems, remount + restart thunar
 alias phone.off='umount ~/phone'
 alias pic='scrot -s $HOME/Screenshots/screenshot-%F-%H%M%S.png'
 alias rl='readlink -f'
@@ -413,9 +423,10 @@ alias isa='sudo pacman -Qq | grepi '     # grep for installed package ('isa' = '
 alias visa='sudo pacman -Q | grepi '     # grep for installed package with version info ('visa' = 'is -a -v')
 alias pl='sudo pacman -Qeq'              # list explicitly installed packages 
 alias ple='sudo pacman -Qeq'             # ------||------
+alias ple_no_aur='a_minus_b <(ple) <(plm)' # list explicitly installed packages (without showing AUR packages)
 alias pla='sudo pacman -Qq'              # list all installed packages 
 alias pld='sudo pacman -Qdq'             # list packages dependencies
-alias plm='sudo pacman -Qmq'             # list foreign packages (mainly from AUR)
+alias plm='sudo pacman -Qmq | sort'      # list foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
 alias pac.owner='sudo pacman -Qo'        # which package owns the specified file(s)
 alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group (or list all groups and packages if no argument is passed)
 alias pac.group.belongs='sudo pacman -Qgq | grepi' # show which group the installed package belongs to
@@ -455,8 +466,9 @@ alias up1='sudo pacman -Syyu'
 alias up2='sudo pacman -Syuu'
 # -------------------------------------------------------------------------
 ### -R
-alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
+# TODO: change it do -Rsn !
 alias pacr='sudo pacman -R'
+alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
 # Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
 # As a result, a package providing a critical dependency could be removed, resulting in a broken system.
 alias pac.forcedel='sudo -k pacman -Rdd'
@@ -650,3 +662,4 @@ alias mag='cd /home/riddle/pro/2021/magic_3'
 alias ydl-clean-cache='youtube-dl --rm-cache-dir'
 alias vig='cd $HOME/pro/2022/vigi_23'
 alias nn='neofetch'
+alias paux='ps aux'
