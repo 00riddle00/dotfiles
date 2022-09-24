@@ -378,7 +378,7 @@ alias mp0='tmp8'
 
 ## network
 alias pp='ping -c 3 www.google.com'
-#alias p='watch -n 0.5 "ping -c 3 www.google.com"'
+#alias ppp='watch -n 0.5 "ping -c 3 www.google.com"'
 alias get.my_ip='curl -w "\n" ifconfig.me'
 alias get.local_ip='ip route | head -n 1'
 alias get.gateway='ip route | head -n 1'
@@ -418,22 +418,22 @@ alias rc='vim $HOME/.config/openbox/rc.xml'
 ##--------------------------------------------------------------------------------------------------------------------
 ### -Q
 alias orphans='pacman -Qdtq'
-alias is='sudo pacman -Qeq | grepi '     # grep for explicitly installed package (package 'is' in the system)
-alias isa='sudo pacman -Qq | grepi '     # grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
-alias visa='sudo pacman -Q | grepi '     # grep for installed package with version info ('visa' = 'is -a -v')
-alias pl='sudo pacman -Qeq'              # list explicitly installed packages 
-alias ple='sudo pacman -Qeq'             # ------||------
+alias is='pacman -Qeq | grepi '     # grep for explicitly installed package (package 'is' in the system)
+alias isa='pacman -Qq | grepi '     # grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
+alias visa='pacman -Q | grepi '     # grep for installed package with version info ('visa' = 'is -a -v')
+alias pl='pacman -Qeq'              # list explicitly installed packages
+alias ple='pacman -Qeq'             # ------||------
 alias ple_no_aur='a_minus_b <(ple) <(plm)' # list explicitly installed packages (without showing AUR packages)
-alias pla='sudo pacman -Qq'              # list all installed packages 
-alias pld='sudo pacman -Qdq'             # list packages dependencies
-alias plm='sudo pacman -Qmq | sort'      # list foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
-alias pac.owner='sudo pacman -Qo'        # which package owns the specified file(s)
-alias pac.group='sudo pacman -Qgq'       # list installed packages belonging to a group (or list all groups and packages if no argument is passed)
-alias pac.group.belongs='sudo pacman -Qgq | grepi' # show which group the installed package belongs to
-#alias pac.base='...'                     # list installed packages depending on `base` metapackage
+alias pla='pacman -Qq'              # list all installed packages
+alias pld='pacman -Qdq'             # list packages dependencies
+alias plm='pacman -Qmq | sort'      # list foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
+alias pac.owner='pacman -Qo'        # which package owns the specified file(s)
+alias pac.group='pacman -Qgq'       # list installed packages belonging to a group (or list all groups and packages if no argument is passed)
+alias pac.group.belongs='pacman -Qgq | grepi' # show which group the installed package belongs to
+alias pac.base='a_and_b <(pac.base_remote) <(pla)' # list installed packages depending on `base` metapackage
 alias pac.base-devel='pac.group base-devel' # list installed packages belonging to the `base-devel` group
-alias pac.info='sudo pacman -Qi'         # display info on a given installed package
-alias pac.search='sudo pacman -Qs'       # search each installed package for names or descriptions that match regexp
+alias pac.info='pacman -Qi'         # display info on a given installed package
+alias pac.search='pacman -Qs'       # search each installed package for names or descriptions that match regexp
 ### -S
 alias pacfile='sudo pacman -S --noconfirm - --needed <'       # install from file
 alias pacs='sudo pacman -S --noconfirm --needed'              # `needed` does not reinstall targets that are up to date

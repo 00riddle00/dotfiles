@@ -61,7 +61,6 @@ set $outer 4
 set $top   0
 
 for_window [class="^.*"] border pixel 1
-border_radius 0
 smart_borders on
 
 gaps inner $inner
