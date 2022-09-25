@@ -42,13 +42,15 @@ bin/cowsay/**/*.dat
 
 .config/GIMP/*/*
 !.config/GIMP/*/scripts/
-# Ignore it temporarily
+# HACK Ignore it temporarily
 .config/GIMP/*/menurc
+!.config/GIMP/*/menurc.old
 
 .config/filezilla/*
 !.config/filezilla/filters.xml
-# Ignore it temporarily
+# HACK Ignore it temporarily
 .config/filezilla/filezilla.xml
+!.config/filezilla/filezilla.xml.old
 
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
@@ -94,8 +96,9 @@ bin/cowsay/**/*.dat
 
 .config/Thunar/renamerrc
 !.config/Thunar/uca.xml
-# Ignore these temporarily
+# HACK Ignore it temporarily
 .config/Thunar/accels.scm
+!.config/Thunar/accels.scm.old
 
 .config/vis/vis.log
 
