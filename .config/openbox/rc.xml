@@ -481,11 +481,11 @@
     </keybind>
     <!-- Jetbrains/> -->
     <!-- <emacs -->
-      <keybind key="W-w">
-         <action name="Execute">
-            <command>sh -c "activate emacs"</command>
-         </action>
-      </keybind>
+    <keybind key="W-w">
+      <action name="Execute">
+        <command>sh -c "activate emacs"</command>
+      </action>
+    </keybind>
     <!-- Various -->
     <keybind key="W-t">
       <action name="Execute">
@@ -585,13 +585,13 @@
       </action>
     </keybind>
     -->
-   <!-- launch "Thunar" -->
+    <!-- launch "Thunar" -->
     <keybind key="A-e">
       <action name="Execute">
         <command>thunar</command>
       </action>
     </keybind>
-   <!-- focus "Thunar" -->
+    <!-- focus "Thunar" -->
     <keybind key="W-e">
       <action name="Execute">
         <command>wmctrl -a "file manager"</command>
