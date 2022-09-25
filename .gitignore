@@ -42,11 +42,13 @@ bin/cowsay/**/*.dat
 
 .config/GIMP/*/*
 !.config/GIMP/*/scripts/
-!.config/GIMP/*/menurc
+# Ignore it temporarily
+.config/GIMP/*/menurc
 
 .config/filezilla/*
-!.config/filezilla/filezilla.xml
 !.config/filezilla/filters.xml
+# Ignore it temporarily
+.config/filezilla/filezilla.xml
 
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
@@ -91,8 +93,9 @@ bin/cowsay/**/*.dat
 !.config/sublime-text-3/Packages/User/Package Control.sublime-settings
 
 .config/Thunar/renamerrc
-!.config/Thunar/accels.scm
-#!.config/Thunar/uca.xml
+!.config/Thunar/uca.xml
+# Ignore these temporarily
+.config/Thunar/accels.scm
 
 .config/vis/vis.log
 
