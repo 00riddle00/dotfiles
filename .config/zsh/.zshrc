@@ -105,7 +105,7 @@ if [ -f $DIRCOLORS ]; then
 fi
 
 # source highlighting
-source "$ZDOTDIR"/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 # aliases and functions
@@ -126,6 +126,7 @@ stty -ixon ## disables XON/XOFF flow control
 ## system information tool (configured for Arch Linux)
 ## to use the original neofetch, delete $XDG_CONFIG_HOME/neofetch/
 #neofetch
+#archey3
 
 ## launch tmux
 tmux > /dev/null 2>&1
