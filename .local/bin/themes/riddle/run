@@ -12,13 +12,13 @@ pkill -f tint2
 sed -i 's/\bprofile = .*/profile = solarized-dark/' $HOME/.config/terminator/config 
 
 # changes to gtk2 config
-sed -i 's/.*gtk-theme-name.*/gtk-theme-name="Numix-Archblue"/' $HOME/.gtkrc-2.0 &
-sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name="la-capitaine"/' $HOME/.gtkrc-2.0 &
+sed -i 's/.*gtk-theme-name.*/gtk-theme-name="Numix-Archblue"/' $HOME/.gtkrc-2.0 
+sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name="la-capitaine"/' $HOME/.gtkrc-2.0 
 sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name="Numix-Cursor-Light"/' $HOME/.gtkrc-2.0 
 
 # changes to gtk3 config
-sed -i 's/.*gtk-theme-name.*/gtk-theme-name=Numix-Archblue/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini &
-sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=la-capitaine/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini &
+sed -i 's/.*gtk-theme-name.*/gtk-theme-name=Numix-Archblue/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini 
+sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=la-capitaine/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini 
 sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Numix-Cursor-Light/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini 
 
 # change tint2 config
