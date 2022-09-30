@@ -1,4 +1,3 @@
-
 /* Comment this out for a custom .thunar style to be applied
  * TODO: solve this without the need to comment out
  */
@@ -11,6 +10,6 @@
 }
 
 window#vim-main-window {
-  background-color: #1793d1;
+    background-color: #1793d1;
 }
 
