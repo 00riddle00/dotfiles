@@ -2,10 +2,10 @@
  * TODO: solve this without the need to comment out
  */
 *:not(.thunar) {
-    font: 12px Noto Sans;	
+    font: 12px Noto Sans;
 }
 
-.thunar { 
+.thunar {
     font-size: 16px;
 }
 
