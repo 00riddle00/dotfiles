@@ -17,5 +17,11 @@
   "[python]": {
     "editor.formatOnPaste": false,
     "editor.defaultFormatter": null
+  },
+  "files.associations": {
+    "*html": "jinja-html"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": null,
   }
 }
