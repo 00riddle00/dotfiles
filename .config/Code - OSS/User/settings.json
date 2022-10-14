@@ -22,7 +22,7 @@
     "*html": "jinja-html"
   },
   "[jinja-html]": {
-    "editor.defaultFormatter": null,
+    "editor.defaultFormatter": null
   },
   "git.confirmSync": false,
   "cSpell.userWords": [
@@ -38,7 +38,6 @@
     "venv",
     "wtforms"
   ],
-  "cSpell.enableFiletypes": [
-    "jinja-html"
-  ]
+  "cSpell.enableFiletypes": ["jinja-html"],
+  "window.menuBarVisibility": "toggle"
 }
