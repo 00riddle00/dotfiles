@@ -23,5 +23,18 @@
   },
   "[jinja-html]": {
     "editor.defaultFormatter": null,
-  }
+  },
+  "git.confirmSync": false,
+  "cSpell.userWords": [
+    "Giedraitis",
+    "backref",
+    "fontawesome",
+    "sqlalchemy",
+    "templating",
+    "venv",
+    "wtforms"
+  ],
+  "cSpell.enableFiletypes": [
+    "jinja-html"
+  ]
 }
