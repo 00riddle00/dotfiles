@@ -445,11 +445,13 @@
         <command>urxvt -name t2</command>
       </action>
     </keybind>
+    <!--
     <keybind key="F2">
       <action name="Execute">
         <command>wmctrl -x -a t2.URxvt</command>
       </action>
     </keybind>
+    -->
     <keybind key="A-F3">
       <action name="Execute">
         <command>openbox-vimnotes</command>
@@ -461,15 +463,17 @@
       </action>
     </keybind>
     <!-- urxvt/> -->
+    <!--
     <keybind key="F1">
       <action name="Execute">
-        <command>sh -c "activate 't1' 'terminator --geometry=700x800 -T t1'"</command>
+        <command>sh -c "activate 't1' 'terminator -/-geometry=700x800 -T t1'"</command>
       </action>
     </keybind>
+    -->
     <!-- <Jetbrains -->
     <keybind key="W-c">
       <action name="Execute">
-        <command>sh -c "activate spotify"</command>
+        <command>sh -c "activate code"</command>
         <!--pastes from PRIMARY clipboard (works in terminal)-->
         <!--<command>sh -c 'xsel | xvkbd -xsendevent -file - 2&gt;/dev/null'</command>-->
       </action>
@@ -552,12 +556,12 @@
     </keybind>
     <keybind key="F5">
       <action name="Execute">
-        <command>subl3</command>
+        <command>subl</command>
       </action>
     </keybind>
     <keybind key="W-o">
       <action name="Execute">
-        <command>keepass /home/riddle/Dropbox/keepass/8gb.kdbx</command>
+        <command>keepassxc /home/riddle/Dropbox/keepass/8gb.kdbx</command>
       </action>
     </keybind>
     <keybind key="Insert">
