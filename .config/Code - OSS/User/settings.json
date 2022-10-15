@@ -9,6 +9,7 @@
   "files.autoSave": "afterDelay",
   "keyboard.dispatch": "keyCode",
   "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "79"],
   "telemetry.telemetryLevel": "off",
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "$HOME/.vimrc",

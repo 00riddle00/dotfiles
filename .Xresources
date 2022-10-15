@@ -48,7 +48,7 @@ URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true, \
 #include ".config/colors/dark"
 
 ! --  Extensions -- !
-URxvt.perl-ext-common:     clipboard,font-size,keyboard-select,url-select
+URxvt.perl-ext-common:     clipboard,resize-font,keyboard-select,url-select
 URxvt.colorUL:             #4682B4
 !clipboard
 URxvt.clipboard.autocopy:  true
