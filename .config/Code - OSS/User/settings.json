@@ -27,5 +27,7 @@
   },
   "git.confirmSync": false,
   "cSpell.enableFiletypes": ["jinja-html"],
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
   "window.menuBarVisibility": "toggle"
 }
