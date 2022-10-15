@@ -62,6 +62,7 @@ alias gp='key && git push'
 alias grc='git rm -r --cached'
 alias gs='git status'
 alias gu='git restore --staged'
+alias grs='git restore --staged'
 alias clone='git clone'
 ## alias containing other aliases. 
 ## try to use those as little as possible
