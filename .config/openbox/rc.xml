@@ -257,7 +257,7 @@
     <keybind key="W-Up">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <height>540</height>
+        <height>50%</height>
       </action>
       <action name="MoveToEdge">
         <direction>north</direction>
@@ -266,7 +266,7 @@
     <keybind key="W-Down">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <height>540</height>
+        <height>50%</height>
       </action>
       <action name="MoveToEdgeSouth"/>
     </keybind>
@@ -274,7 +274,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>960</width>
+        <width>50%</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -282,7 +282,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>960</width>
+        <width>50%</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -291,7 +291,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-        <width>700</width>
+        <width>35%</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
