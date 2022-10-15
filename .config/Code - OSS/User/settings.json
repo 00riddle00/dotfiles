@@ -2,7 +2,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
   "editor.fontSize": 16,
-  "editor.renderLineHighlight": "none",
+  // "editor.renderLineHighlight": "none",
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.rulers": [80],
@@ -26,19 +26,6 @@
     "editor.defaultFormatter": null
   },
   "git.confirmSync": false,
-  "cSpell.userWords": [
-    "backref",
-    "endfilter",
-    "endfor",
-    "endmacro",
-    "fontawesome",
-    "Giedraitis",
-    "pagetitle",
-    "sqlalchemy",
-    "templating",
-    "venv",
-    "wtforms"
-  ],
   "cSpell.enableFiletypes": ["jinja-html"],
   "window.menuBarVisibility": "toggle"
 }
