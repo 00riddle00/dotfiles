@@ -149,6 +149,10 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.toggleColumnSelection"
+    },
+    {
         "key": "ctrl+shift+p",
         "command": "workbench.action.showAllSymbols"
     },
