@@ -30,5 +30,8 @@
   "cSpell.enableFiletypes": ["jinja-html"],
   "window.titleBarStyle": "custom",
   "window.customMenuBarAltFocus": false,
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "toggle",
+  "files.exclude": {
+    "**/__pycache__": true
+  }
 }
