@@ -3,15 +3,6 @@
    * Enabled actions
    * ---------------------
    */
-  // ` + {}
-  {
-    "key": "` '",
-    "command": "workbench.action.splitEditor"
-  },
-  {
-    "key": "` -",
-    "command": "workbench.action.splitEditorOrthogonal"
-  },
   // Alt + {}
   {
     "key": "alt+f1",
@@ -244,6 +235,12 @@
   {
     "key": "ctrl+k ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
+  },
+  // Ctrl + Alt + {}
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
   },
   // Ctrl + Shift + {}
   {
