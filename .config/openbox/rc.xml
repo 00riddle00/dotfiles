@@ -478,6 +478,11 @@
         <!--<command>sh -c 'xsel | xvkbd -xsendevent -file - 2&gt;/dev/null'</command>-->
       </action>
     </keybind>
+    <keybind key="A-c">
+      <action name="Execute">
+        <command>sh -c "activate discord"</command>
+      </action>
+    </keybind>
     <keybind key="W-p">
       <action name="Execute">
         <command>wmctrl -a "pycharm"</command>

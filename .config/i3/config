@@ -41,11 +41,11 @@ floating_modifier $alt
 
 # Unlocking KWallet automatically in i3
 # (to unlock KWallet protected by the login password)
-$run /usr/lib/pam_kwallet_init
+#$run /usr/lib/pam_kwallet_init
 # apps are mainly started via ~/.xinitrc
 $run feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg" &
 #$run picom -b
-$run $term -name dropdown_aux -e tmux new-session
+#$run $term -name dropdown_aux -e tmux new-session
 
 # This amazing script uses the i3ipc-python library to switch the layout 
 # splith/splitv depending on the currently focused window dimensions.
