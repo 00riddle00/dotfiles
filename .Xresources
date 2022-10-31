@@ -32,12 +32,10 @@ Xft.hintstyle: hinstlight
 URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true, \
             xft:Symbola:size=9, \
             xft:Noto Color Emoji:size=9, \
-            xft:SauceCodePro Nerd Font:size=9, \
-            xft:UbuntuMono Nerd Font:size=9, \
             xft:Inconsolata Nerd Font Mono:size=9, \
             xft:DejaVuSansMono Nerd Font:size=9, \
             xft:DroidSansMono Nerd Font:size=9, \
-            xft:FuraMono Nerd Font:size=9, \
+            xft:FiraCode Nerd Font:size=9, \
             xft:RobotoMono Nerd Font:size=9
 
 !URxvt*boldFont: xft:Source Code Pro:size=9:antialias=true:hinting=true
