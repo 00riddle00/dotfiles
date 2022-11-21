@@ -86,14 +86,14 @@ bin/cowsay/**/*.dat
 .config/smartgit/21.2/*
 !.config/smartgit/21.2/accelerators.yml
 
-.config/sublime-text-3/*
-!.config/sublime-text-3/Packages/
-.config/sublime-text-3/Packages/*
-!.config/sublime-text-3/Packages/User/
-.config/sublime-text-3/Packages/User/*
-!.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap
-!.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-!.config/sublime-text-3/Packages/User/Package Control.sublime-settings
+.config/sublime-text/*
+!.config/sublime-text/Packages/
+.config/sublime-text/Packages/*
+!.config/sublime-text/Packages/User/
+.config/sublime-text/Packages/User/*
+!.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
+!.config/sublime-text/Packages/User/Preferences.sublime-settings
+!.config/sublime-text/Packages/User/Package Control.sublime-settings
 
 .config/Thunar/renamerrc
 !.config/Thunar/uca.xml
