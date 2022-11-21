@@ -484,13 +484,11 @@
       </action>
     </keybind>
     <!-- focus rxvt-unicode window named "t2" -->
-    <!--
     <keybind key="F2">
       <action name="Execute">
         <command>wmctrl -x -a t2.URxvt</command>
       </action>
     </keybind>
-    -->
     <!-- launch rxvt-unicode (window name "notes") -->
     <keybind key="A-F3">
       <action name="Execute">

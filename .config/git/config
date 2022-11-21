@@ -23,12 +23,12 @@
 	d = difftool
 [gui]
 	recentrepo = /home/riddle/tmp7
+[commit]
+	gpgsign = true
+[pull]
+	ff = only
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[commit]
-	gpgsign = true
-[pull]
-	ff = only

@@ -253,7 +253,7 @@ alias ydn='youtube-dl --no-playlist'
 alias ydna='youtube-dl --no-playlist --extract-audio --audio-format mp3'
 alias repicom='killall picom && picom -b'
 alias getpos='xwininfo -id $(xdotool getactivewindow)'
-alias gpu.which='glxinfo|egrep "OpenGL vendor|OpenGL renderer"'
+alias gpu.which='glxinfo | grep -E "OpenGL vendor|OpenGL renderer"'
 alias redd='killall dunst && dunst &'
 ## count different file extensions
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
@@ -513,8 +513,6 @@ alias asleep='ps ax | grep -v grep | grep sleep'
 # --------------------------------------------------------------------------------------------------------------------
 
 ## python
-alias python='python3.11'
-alias python3='python3.11'
 alias p='python'
 alias pi='ipython --TerminalInteractiveShell.editing_mode=vi'
 alias py.exe='python -c'
@@ -676,4 +674,6 @@ alias fs='flask shell'
 alias fdb='flask db'
 alias see='sqlitebrowser'
 alias ss="source $BIN/flask_app_configs"
-alias soc="cd $HOME/pro/2022/vigi_23/social_blogging_app"
+alias we="cd $HOME/pro/2022/vigi_23/webuzz"
+alias freeze='pip freeze'
+alias pick='git cherry-pick'

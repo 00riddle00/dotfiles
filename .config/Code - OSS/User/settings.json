@@ -34,5 +34,6 @@
   "files.exclude": {
     "**/__pycache__": true
   },
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }
