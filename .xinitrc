@@ -29,13 +29,13 @@ eval $(ssh-agent -s)
 # openbox
 # ============================
 
-#exec openbox-session
+exec openbox-session
 
 # ============================
 # i3wm
 # ============================
 
-exec i3
+#exec i3
 
 # ============================
 # dwm

@@ -32,7 +32,7 @@ setopt AUTO_CD
 
 # history options
 export HISTFILE="$ZDOTDIR/histfile"
-export HISTSIZE=20000
+export HISTSIZE=200000
 export SAVEHIST=$((HISTSIZE/2))
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
