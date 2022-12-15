@@ -10,9 +10,20 @@ path=(
     $HOME/.local/bin/cron
     $HOME/.local/bin/scripts
     $HOME/.emacs.d/bin
+    $HOME/perl5/bin
     $path)
 
 export PATH
+
+PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+PERL_LOCAL_LIB_ROOT="$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+PERL_MB_OPT="--install_base \"$HOME/perl5\""
+PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"
+
+export PERL5LIB
+export PERL_LOCAL_LIB_ROOT
+export PERL_MB_OPT
+export PERL_MM_OPT
 
 # XDG BASE DIR variables
 export XDG_CONFIG_HOME="$HOME/.config"
