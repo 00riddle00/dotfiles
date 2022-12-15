@@ -169,7 +169,7 @@ alias sl='ssh-add -l'
 # standard cmds
 alias c='clear'
 alias cpr='cp -r'
-alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+#alias grep='grep  --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias grepi='grep -i'
 # find string in current dir (recursive) and show matches with filename and line number
 alias grep.find='grep -rHn --exclude=histfile'
@@ -419,6 +419,14 @@ alias rc='vim $HOME/.config/openbox/rc.xml'
 # alias tintrc='vim $HOME/.config/tint2/tint2rc'
 
 ##--------------------------------------------------------------------------------------------------------------------
+## ABS (Arch Build System)
+##--------------------------------------------------------------------------------------------------------------------
+alias mps='makepkg -s'      # --syncdeps
+alias mpi='makepkg -si'     # --install
+alias mpic='makepkg -sic'   # --clean
+alias pacu='sudo pacman -U' # argument: pkgname-pkgver.pkg.tar.zst
+
+##--------------------------------------------------------------------------------------------------------------------
 ## pacman
 ##--------------------------------------------------------------------------------------------------------------------
 ### -Q
@@ -605,7 +613,7 @@ alias lsla='colorls -al'
 alias lsl='colorls -l'
 alias ih='colorls -la | grep -i'
 alias lsh='colorls -ld .?*'
-#alias tree='colorls --tree'
+alias tree='colorls --tree'
 
 ### permissions
 alias ch='sudo chown -R $USER:$USER'
@@ -647,7 +655,7 @@ alias fp='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_a
 alias dotvim='cd /home/riddle/.vim'
 alias skr='cd /home/riddle/.local/bin/scripts'
 #alias r='./formula_mp_to_vector inputs/data.tsv outputs/chem_elements.lst'
-alias r='./lab outputs/input_vectors.csv --split 273'
+#alias r='./lab outputs/input_vectors.csv --split 273'
 alias res='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/results/classifiers/melting_points_2_classes'
 alias hh='vim /home/riddle/histfiles/histfile'
 alias cs='thesis'
@@ -667,7 +675,7 @@ alias ydl-clean-cache='youtube-dl --rm-cache-dir'
 alias vig='cd $HOME/pro/2022/vigi_23'
 alias nn='neofetch'
 alias paux='ps aux'
-alias np='cd $TMP1/npBuild'
+alias np='cd $PRO/2022/npBuild'
 alias cc='cd "$XDG_CONFIG_HOME/Code - OSS/User"'
 alias run='venv && flask --debug run'
 alias fs='flask shell'
@@ -676,3 +684,7 @@ alias see='sqlitebrowser'
 alias we="cd $HOME/pro/2022/vigi_23/webuzz"
 alias freeze='pip freeze'
 alias pick='git cherry-pick'
+alias paruc='cd $HOME/.cache/paru/clone'
+alias parug='paru -G'
+alias skri='cd /home/riddle/Tomas_Giedraitis/experiments/scripts'
+alias tom='cd /home/riddle/Tomas_Giedraitis'

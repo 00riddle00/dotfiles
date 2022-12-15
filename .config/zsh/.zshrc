@@ -98,6 +98,7 @@ bindkey '^_'   undo # <C-/>
 
 ## history
 bindkey '^R'   history-incremental-search-backward
+bindkey '^O'   history-incremental-search-forward
 
 # colors for ls
 if [ -f $DIRCOLORS ]; then
