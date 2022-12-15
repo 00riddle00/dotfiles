@@ -1,3 +1,9 @@
+# This file is sourced by .zshenv.
+#
+# It adds scripts from different folders in $HOME/cod-tools/
+# directory (svn://www.crystallography.net/cod-tools/)
+# to the PATH, as well as sets 'CODPATH' to cif/
+# folder in $HOME/cod/ directory (svn://www.crystallography.net/cod)
 
 MY_COD_TOOLS_DIR="${HOME}/cod-tools"
 
@@ -28,3 +34,4 @@ done
 unset MY_COD_TOOLS_DIR
 
 export CODPATH=$HOME/cod/cif/
+
