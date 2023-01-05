@@ -49,7 +49,7 @@ a_union_b() { cat "$1" "$2" | sort -u }
 # find all files from current folder | prints extension of files if any | make a unique sorted list
 ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }
 
-# copy argumentsto clipboard
+# copy arguments to clipboard
 sel() { echo "$@" | xclip}
 
 get-mp3() { youtube-dl --no-playlist --extract-audio --audio-format mp3 "$1"; }
@@ -80,6 +80,8 @@ fields-csv () {
 }
 
 # usage: cols <col_no> <file>
+# $1 - col no
+# $2 - file name
 cols () {
     col_no="\$$1";
     col_no="{print $col_no}";
@@ -91,6 +93,20 @@ cols-csv () {
     col_no="\$$1";
     col_no="{print $col_no}";
     awk -F, -f <(echo "$col_no") "$2" | sort | uniq
+}
+
+# usage: cols <col_no> <file>
+ncols () {
+    col_no="\$$1";
+    col_no="{print $col_no}";
+    awk -F$'\t' -f <(echo "$col_no") "$2" | sort -n | uniq
+}
+
+# usage: pcols <col_no> <file>
+pcols () {
+    col_no="\$$1";
+    col_no="{print $col_no}";
+    awk -F$'\t' -f <(echo "$col_no") "$2" | perl -e '@data = map {[split(/\t/,$_)]} <>; print map {join("\t",@$_)} sort {$a->[0] <=> $b->[0]} @data' | uniq
 }
 
 # convert epoch to human-readable date
