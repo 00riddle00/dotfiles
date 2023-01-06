@@ -3,9 +3,11 @@
 <action>
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
+	<submenu></submenu>
 	<unique-id>1667162052306439-1</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
 	<description>Example for a custom action</description>
+	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
@@ -13,9 +15,11 @@
 <action>
 	<icon>anydo</icon>
 	<name>Create New File</name>
+	<submenu></submenu>
 	<unique-id>1667162350606943-1</unique-id>
 	<command>$BIN/thunar-newfile</command>
 	<description>Create new file using zenity</description>
+	<range></range>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>
