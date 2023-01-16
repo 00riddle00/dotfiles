@@ -7,9 +7,6 @@ if type setxkbmap >/dev/null 2>&1; then
     setxkbmap -option caps:escape 2>/dev/null
 fi
 
-# temp workaround for Razer mouse
-xinput set-prop "pointer:Razer Razer Naga Trinity" "libinput Accel Speed" -0.8
-
 # Use NVIDIA graphics only
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
