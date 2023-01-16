@@ -447,6 +447,9 @@ alias pac.base='a_and_b <(pac.base_remote) <(pla)' # list installed packages dep
 alias pac.base-devel='pac.group base-devel' # list installed packages belonging to the `base-devel` group
 alias pac.info='pacman -Qi'         # display info on a given installed package
 alias pac.search='pacman -Qs'       # search each installed package for names or descriptions that match regexp
+alias pac.check_files='pacman -Qk'  # for all installed pkgs, check that all files owned by the given package(s) are present on the system.
+alias pac.check_files_detailed='pacman -Qkk' # more detailed checking (+ permissions, file sizes, and modification times) for pkgs that contain the needed mtree file.
+
 ### -S
 alias pacfile='sudo pacman -S --noconfirm - --needed <'       # install from file
 alias pacs='sudo pacman -S --noconfirm --needed'              # `needed` does not reinstall targets that are up to date
@@ -696,3 +699,5 @@ alias prepdate='sed -i "1i $(date "+#DATE: %F %T %Z")"'
 alias v3='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/classifiers/melting_points_5_classes/v.3'
 alias v4='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/classifiers/melting_points_5_classes/v.4'
 alias wek='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/classifiers'
+alias bs='basename'
+alias work='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data/working_files/grep_codcif'
