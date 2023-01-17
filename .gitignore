@@ -46,9 +46,7 @@ bin/cowsay/**/*.dat
 
 .config/GIMP/*/*
 !.config/GIMP/*/scripts/
-# HACK Ignore it temporarily
-.config/GIMP/*/menurc
-!.config/GIMP/*/menurc.old
+!.config/GIMP/*/menurc.excerpt
 
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
