@@ -352,6 +352,7 @@ noremap      zz           z-
 "=========================================
 
 " Copy/Paste
+" TODO add comments about GVIM package
 vmap <C-c> "+y
 vmap <C-x> "+c
 "nmap <C-v> <ESC>"+pa
@@ -972,6 +973,16 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 "-------------------------------------------
 
 let g:vimtex_view_method = 'zathura'
+
+let g:vimtex_compiler_latexmk_engines = {
+    \ '_'                : '-xelatex',
+    \}
+
+
+let g:vimtex_quickfix_ignore_filters = [
+      \ 'Underfull',
+      \ 'Overfull',
+      \]
 
 "=============================================================
  Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }

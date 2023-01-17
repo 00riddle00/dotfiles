@@ -701,3 +701,4 @@ alias v4='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_a
 alias wek='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/weka_ann_classifier/classifiers'
 alias bs='basename'
 alias work='cd /home/riddle/Tomas_Giedraitis/experiments/cod_melting_points/mp_data/working_files/grep_codcif'
+alias lag='ls -la | grep'
