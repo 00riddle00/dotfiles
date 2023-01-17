@@ -126,5 +126,11 @@ bin/cowsay/**/*.dat
 .tmux/plugins/*
 .tmux/resurrect/*
 
+# See https://wiki.archlinux.org/title/XDG_Base_Directory,
+# the entry for `tig` in application table:
+# `~/.local/share/tig` directory must exist, writes to `~/.tig_history` otherwise.
+.local/share/tig/*
+!.local/share/tig/.gitkeep
+
 .local/share/dotshare/qutebrowser-homepage/panorama.jpg
 .local/share/dotshare/cowsay/phrases/*.dat
