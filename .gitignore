@@ -67,6 +67,9 @@ bin/cowsay/**/*.dat
 !.config/ncmpcpp/bindings
 !.config/ncmpcpp/config
 
+.config/nomacs/*
+!.config/nomacs/Image Lounge.conf.excerpt
+
 .config/qutebrowser/*
 !.config/qutebrowser/config.py
 
