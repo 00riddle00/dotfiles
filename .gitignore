@@ -47,12 +47,6 @@ bin/cowsay/**/*.dat
 .config/GIMP/*/menurc
 !.config/GIMP/*/menurc.old
 
-.config/filezilla/*
-!.config/filezilla/filters.xml
-# HACK Ignore it temporarily
-.config/filezilla/filezilla.xml
-!.config/filezilla/filezilla.xml.old
-
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
 

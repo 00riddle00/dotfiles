@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<FileZilla3 version="3.62.2" platform="*nix">
+	<Settings>
+        <!-- ... -->
+        <Setting name="Date Format">1</Setting>
+        <Setting name="Time Format">1</Setting>
+        <Setting name="Size format">1</Setting>
+        <!-- ... -->
+        <Setting name="Kiosk mode">1</Setting>
+        <Setting name="Prompt password save">0</Setting>
+        <!-- ... -->
+        <Setting name="Default editor" platform="unix">2/usr/bin/subl</Setting>
+        <Setting name="Always use default editor">1</Setting>
+        <Setting name="File doubleclick action">2</Setting>
+        <!-- ... -->
+	</Settings>
+</FileZilla3>
