@@ -48,6 +48,9 @@ bin/cowsay/**/*.dat
 !.config/GIMP/*/scripts/
 !.config/GIMP/*/menurc.excerpt
 
+.config/htop/*
+!.config/htop/htoprc.excerpt
+
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
 

@@ -1,0 +1,19 @@
+# Beware! This file is rewritten by htop when settings are changed in the interface.
+# The parser is also very primitive, and not human-friendly.
+# ...
+hide_kernel_threads=0
+# ...
+shadow_other_users=1
+# ...
+detailed_cpu_time=1
+cpu_count_from_one=1
+# ...
+show_cpu_frequency=1
+# ...
+update_process_names=1
+account_guest_in_cpu_meter=1
+# ...
+column_meters_0=AllCPUs Memory Swap Blank CPU
+column_meter_modes_0=1 1 1 2 3
+column_meters_1=Hostname Clock Uptime Tasks LoadAverage Blank CPU Memory Blank PressureStallCPUSome PressureStallMemoryFull PressureStallIOFull
+column_meter_modes_1=2 2 2 2 2 2 2 2 2 2 2 2
