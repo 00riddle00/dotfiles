@@ -51,6 +51,9 @@ bin/cowsay/**/*.dat
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
 
+.config/keepassxc/*
+!.config/keepassxc/keepassxc.ini.excerpt
+
 .config/lftp/settings
 
 .config/lynx/bookmarks.html
