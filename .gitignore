@@ -38,7 +38,7 @@ bin/cowsay/**/*.dat
 !.config/cmus/*.theme
 
 .config/filezilla/*
-!.config/filezilla/filezilla.xml
+!.config/filezilla/filezilla.xml.excerpt
 !.config/filezilla/filters.xml
 
 .config/GIMP/*/*
