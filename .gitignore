@@ -99,11 +99,8 @@ bin/cowsay/**/*.dat
 !.config/sublime-text/Packages/User/Preferences.sublime-settings
 !.config/sublime-text/Packages/User/Package Control.sublime-settings
 
-.config/Thunar/renamerrc
+.config/Thunar/*
 !.config/Thunar/uca.xml
-# HACK Ignore it temporarily
-.config/Thunar/accels.scm
-!.config/Thunar/accels.scm.old
 
 .config/vis/vis.log
 
