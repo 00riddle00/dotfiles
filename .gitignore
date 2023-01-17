@@ -41,6 +41,9 @@ bin/cowsay/**/*.dat
 !.config/filezilla/filezilla.xml.excerpt
 !.config/filezilla/filters.xml
 
+.config/flameshot/*
+!.config/flameshot/flameshot.ini.excerpt
+
 .config/GIMP/*/*
 !.config/GIMP/*/scripts/
 # HACK Ignore it temporarily
