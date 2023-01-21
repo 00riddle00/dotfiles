@@ -823,6 +823,7 @@ let g:syntastic_tex_checkers = ['chktex']
 " [PLUGIN] [Syntastic] Mappings
 "------------------------------
 
+" Turn off Syntastic for the major part of working with LaTeX
 nmap     <leader>c      :SyntasticToggleMode<CR>
 
 "==============================================
