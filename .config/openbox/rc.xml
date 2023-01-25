@@ -571,11 +571,13 @@
         <command>sh -c "activate qalculate-gtk"</command>
       </action>
     </keybind>
+    <!--
     <keybind key="A-c">
       <action name="Execute">
         <command>sh -c "activate discord"</command>
       </action>
     </keybind>
+    -->
     <keybind key="W-f">
       <action name="Execute">
         <command>sh -c "activate filezilla"</command>
