@@ -114,8 +114,8 @@ bin/cowsay/**/*.dat
 
 .dosbox/capture/
 
-.emacs.d/*
-!.emacs.d/init.el
+.emacs.d.gnu/*
+!.emacs.d.gnu/init.el
 
 .irssi/config.autosave
 .irssi/default.theme
