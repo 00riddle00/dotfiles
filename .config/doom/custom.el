@@ -10,6 +10,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ ;;
+ ;; Make the current horizontal line (on which the cursor currently is) invisible.
  '(hl-line ((t (face-attribute 'default :background)))))
+
+;; Enable the disabled commands in all future editing sessions.
+;; These commands were disabled since they can sometimes be found confusing.
+;;
+;; Uppcase the region (C-x C-u).
 (put 'upcase-region 'disabled nil)
+;; Downcase the region (C-X C-l).
 (put 'downcase-region 'disabled nil)
