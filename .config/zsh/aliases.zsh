@@ -41,6 +41,8 @@ alias she='cd $BIN'
 # emacs
 alias ee='vim ~/.emacs.d.gnu/init.el'
 alias emacs.cmd='emacs -nw' # --no-window-system'
+alias emacs.gnu='ln -nsf $HOME/.emacs.d.gnu $HOME/.emacs.d'
+alias emacs.doom='ln -nsf $HOME/.emacs.d.doom $HOME/.emacs.d'
 alias emacs.nocaps='setxkbmap -option ctrl:nocaps'
 alias emacs.caps='setxkbmap -option && fix-xkbmap'
 
