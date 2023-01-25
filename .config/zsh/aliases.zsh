@@ -39,10 +39,10 @@ alias ig='vim $DOTFILES/.gitignore'
 alias she='cd $BIN'
 
 # emacs
-alias ee='vim ~/.emacs.d/init.el'
-alias emacs.vanilla='env HOME="$HOME/.dotfiles/.emacs.env.vanilla" emacs'
+alias ee='vim ~/.emacs.d.gnu/init.el'
 alias emacs.cmd='emacs -nw' # --no-window-system'
 alias emacs.nocaps='setxkbmap -option ctrl:nocaps'
+alias emacs.caps='setxkbmap -option && fix-xkbmap'
 
 # git
 alias com="git add . && git commit -m '.'"
