@@ -33,8 +33,14 @@
 ;; font height
 (set-face-attribute 'default nil :height 80)
 
-;; Do not display Emacs built-in line numbers
-(setq display-line-numbers-type nil)
+;; Disable fringes
+(set-fringe-mode 0)
+
+;; Use line numbers
+(global-display-line-numbers-mode)
+
+;; Use relative line numbers
+(setq display-line-numbers-type 'relative)
 
 ;; -------------------------------------------------------------
 ;; packages and their settings
