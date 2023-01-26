@@ -93,9 +93,7 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
- '(custom-enabled-themes '(atom-one-dark))
- '(custom-safe-themes
-   '("171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" default))
+ '(custom-enabled-themes '(deeper-blue))
  '(custom-unlispify-menu-entries nil)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
