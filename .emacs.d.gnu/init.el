@@ -5,10 +5,9 @@
 ;; move point (cursor) from window to window with Shift and arrow keys
 (windmove-default-keybindings)
 
-;; map C-h to backspace
-(define-key key-translation-map [?\C-h] [?\C-?])
+(global-set-key (kbd "C-h") 'delete-backward-char)
 
-(global-set-key (kbd "C-z") 'evil-local-mode)
+(global-set-key (kbd "C-z") 'evil-mode)
 
 ;; Enable the disabled commands in all future editing sessions.
 ;; These commands were disabled since they can sometimes be found confusing.
