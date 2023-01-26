@@ -52,15 +52,20 @@
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (package-initialize)
 
-(require 'evil)
-(evil-mode 1)
+; Needs to appear before (require 'evil)
 (setq evil-want-C-u-scroll t )
-
-(require 'linum-relative)
-(linum-relative-global-mode)
+;
+(require 'evil)
+(setq evil-toggle-key "C-z")
+(evil-mode 0)
+(define-key evil-normal-state-map (kbd "C-s") 'evil-write)
+(define-key evil-normal-state-map (kbd "C-S-s") 'evil-save)
+(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
+(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
+(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
 
 (require 'org)
-
 (setq org-directory "~/Dropbox/gtd/org/")
 (setq org-agenda-files '("~/Dropbox/gtd/org/agenda.org"))
 ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
