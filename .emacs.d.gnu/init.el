@@ -72,6 +72,12 @@
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
+(require 'evil-org)
+(add-hook 'org-mode-hook 'evil-org-mode)
+(evil-org-set-key-theme '(textobjects insert navigation additional shift todo heading))
+(require 'evil-org-agenda)
+(evil-org-agenda-set-keys)
+
 (require 'undo-tree)
 (global-undo-tree-mode)
 ;; either C-_ or C-/  (`undo-tree-undo')
@@ -94,14 +100,15 @@
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(nil nil t)
+ '(package-selected-packages 
+   '(atom-one-dark-theme
+     evil
+     org
+     evil-org
+     org-bullets
+     undo-tree))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
- '(package-selected-packages
-   '(atom-one-dark-theme
-      evil
-      linum-relative
-      org-bullets
-      undo-tree))
 ;; -------------------------------------------------------------
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
