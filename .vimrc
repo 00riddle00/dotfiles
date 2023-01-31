@@ -299,23 +299,10 @@ inoremap <silent> <C-t> <ESC>hxpa
 " [MAPPINGS] [Windows] resize
 "----------------------------
 
-"<C-Left>
-nmap <silent> [1;5D :call ResizeLeft()<CR>
-"<C-Right>
-nmap <silent> [1;5C :call ResizeRight()<CR>
-"<C-Up>
-nmap <silent> [1;5A :call ResizeUp()<CR>
-"<C-Down>
-nmap <silent> [1;5B :call ResizeDown()<CR>
-
-"<C-Left>
-"nmap <silent> [1;5D :vertical resize -5<CR>
-"<C-Right>
-"nmap <silent> [1;5C :vertical resize +5<CR>
-"<C-Up>
-"nmap <silent> [1;5A :resize +5<CR>
-"<C-Down>
-"nmap <silent> [1;5B :resize -5<CR>
+nmap <silent> <C-Left>  :call ResizeLeft()<CR>
+nmap <silent> <C-Right> :call ResizeRight()<CR>
+nmap <silent> <C-Up>    :call ResizeUp()<CR>
+nmap <silent> <C-Down>  :call ResizeDown()<CR>
 
 "----------------------------
 " [MAPPINGS] [Windows] layout
