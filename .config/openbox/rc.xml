@@ -511,7 +511,7 @@
     <!-- focus "Thunar" -->
     <keybind key="W-e">
       <action name="Execute">
-        <command>wmctrl -a "file manager"</command>
+        <command>wmctrl -a "- Thunar"</command>
       </action>
     </keybind>
     <!-- ===========================
