@@ -11,12 +11,12 @@ if type setxkbmap >/dev/null 2>&1; then
     setxkbmap -option caps:escape 2>/dev/null
 fi
 
-# Use NVIDIA graphics only
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
+# Use NVIDIA graphics only (gecko only)
+#xrandr --setprovideroutputsource modesetting NVIDIA-0
+#xrandr --auto
 
-# Configure multiple monitors
-$BIN/config-monitors
+# Configure multiple monitors (gecko only)
+#$BIN/config-monitors
 
 # Launch applications
 xscreensaver -no-splash &
