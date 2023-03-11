@@ -124,3 +124,7 @@ ddif() {
 minsec_to_hours() {
     bc -l <<<"$1/60 + $2/3600"
 }
+
+bcc() {
+    basename "$1" | xclip
+}
