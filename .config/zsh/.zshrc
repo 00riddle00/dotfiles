@@ -4,7 +4,7 @@ autoload -U colors && colors
 
 # prompt
 host_color="cyan"
-[[ $HOST != "riddle" ]] && host_color="red";
+[[ ! $HOST =~ "^(riddle|gecko|tulkun)$" ]] && host_color="red";
 
 PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
 %?)%{$reset_color%}]
