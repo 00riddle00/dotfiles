@@ -663,6 +663,13 @@ command CC CtrlPClearAllCaches
 
 let delimitMate_expand_cr=1
 
+
+"==============================================
+ Plug 'othree/eregex.vim'
+"==============================================
+
+" <empty>
+
 "==============================================
  Plug 'scrooloose/nerdcommenter'
 "==============================================
