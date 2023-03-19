@@ -256,6 +256,7 @@ alias ydna='youtube-dl --no-playlist --extract-audio --audio-format mp3'
 alias repicom='killall picom && picom -b'
 alias getpos='xwininfo -id $(xdotool getactivewindow)'
 alias gpu.which='glxinfo | grep -E "OpenGL vendor|OpenGL renderer"'
+alias gpu.load='watch -n 1 nvidia-smi'
 alias redd='killall dunst && dunst &'
 ## count different file extensions
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
