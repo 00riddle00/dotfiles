@@ -515,11 +515,16 @@
       </action>
     </keybind>
     <!-- ===========================
-    Text Editors
+    Text Editors / IDEs
     ============================ -->
     <keybind key="W-c">
       <action name="Execute">
         <command>sh -c "activate code"</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <command>wmctrl -x -a "jetbrains-pycharm"</command>
       </action>
     </keybind>
     <keybind key="W-q">

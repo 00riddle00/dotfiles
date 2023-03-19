@@ -715,3 +715,6 @@ alias data2='cd /home/riddle/Tomas_Giedraitis_377/experiments/cod_melting_points
 alias o='open'
 alias mem='cd $HOME/Videos'
 alias t='thunar .'
+alias pwc='pwd | xclip'
+alias jup='vim $HOME/tmp5/jupyter'
+alias pipu='pip install --upgrade pip'

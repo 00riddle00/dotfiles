@@ -40,6 +40,8 @@ a_minus_b() { grep -Fvx -f "$2" "$1" | sort; }
 # removes lines from file "A" which contain string from file "B"
 a_minus_string_in_b() { grep -Fv -f "$2" "$1" | sort; }
 
+a_and_string_in_b() { grep -F -f "$2" "$1" | sort; }
+
 # returns "A" & "B" (identical lines)
 a_and_b() { comm -12 <( sort "$1" ) <( sort "$2" ) }
 
@@ -128,3 +130,11 @@ minsec_to_hours() {
 bcc() {
     basename "$1" | xclip
 }
+
+rlc() {
+    readlink -f "$1" | xclip
+} 
+
+catc() {
+    cat "$1" | xclip
+} 
