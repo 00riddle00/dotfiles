@@ -106,9 +106,21 @@ set splitbelow splitright
 " [SETTINGS] Clipboard
 "=========================================
 
-" Yank and copy to X clipboard
-" +xterm_clipboard must be enabled (see $(vim --version | grep 'xterm_clipboard'))
-set clipboard+=unnamed
+" Use the clipboard register '*' (primary clipboard) for all yank, delete,
+" change and put operations which would normally go to the unnamed register.
+"
+" For cross-application support,
+" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
+" Easiest way for that is to just install gvim instead of vim.
+"set clipboard+=unnamed
+
+" Use the clipboard register '+' (secondary clipboard) for all yank, delete,
+" change and put operations which would normally go to the unnamed register.
+"
+" For this to work at all,
+" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
+" Easiest way for that is to just install gvim instead of vim.
+"set clipboard+=unnamedplus
 
 "=========================================
 " [SETTINGS] Search
