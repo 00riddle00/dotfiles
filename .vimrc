@@ -226,7 +226,7 @@ nnoremap <leader>[ :bp<CR>
 nmap     j            gj
 nmap     k            gk
 
-" Disable key for ex mode
+" Disable key for entering Ex-mode
 nmap     Q            <nop>
 
 " replace {more than one blank lines} with {exactly one blank line}
@@ -292,6 +292,35 @@ inoremap <C-y> <C-r>"
 
 " transpose chars
 inoremap <silent> <C-t> <ESC>hxpa
+
+"=========================================
+" [MAPPINGS] Command-line mode
+"=========================================
+
+"See :help command-line-mode
+"    :help command-line-window
+
+"Not to be confused with Ex mode (see :help ex-mode)
+
+"<Up>   - previous command in history
+"<Down> - next command in history
+
+"<C-r>{register} - insert the contents of a numbered or named register
+"<C-r>" - insert the unnamed register, containing the text of the last delete or yank
+"<C-r>* - insert the primary clipboard contents (X11: primary selection)
+"<C-r>+ - insert the secondary clipboard contents
+"<C-r>/ - insert the last search pattern
+"<C-r>: - insert the last command-line
+"<C-r>% - insert the current file name
+
+"q: — open with a command history from normal mode
+"q/ — open with a search history from normal mode (to search forward)
+"q? — open with a search history from normal mode (to search backward)
+"<C-f> — open with a command history from command mode
+
+"<C-w> - delete the |word| before the cursor.
+"<C-u> - remove all characters between the cursor position and the beginning of the line
+"<C-c> - close command line window (if open) or return to normal mode
 
 "=========================================
 " [MAPPINGS] Windows
