@@ -350,16 +350,33 @@ noremap      zz           z-
 " [MAPPINGS] Clipboard
 "=========================================
 
-" Copy/Paste
-" TODO add comments about GVIM package
+" Yank into the system secondary clipboard register
+"
+" For this to work,
+" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
+" Easiest way for that is to just install gvim instead of vim.
 vmap <C-c> "+y
-vmap <C-x> "+c
+
+" Yank into the system secondary clipboard register and delete the visually selected text.
+"
+" For this to work,
+" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
+" Easiest way for that is to just install gvim instead of vim.
+"vmap <C-x> "+c
+
+" Paste from the system secondary clipboard register and enter insert mode right after.
+"
+" For this to work,
+" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
+" Easiest way for that is to just install gvim instead of vim.
 "nmap <C-v> <ESC>"+pa
 
-" Long text paste
-"""" From primary clipboard
-"nmap     tp            :r !xsel<CR>
-"""" From secondary clipboard
+""" Paste from the system primary clipboard register (X11: primary selection)
+""" (works for multiline indented text - as if 'paste' option has been set)
+"nmap     to            :r !xsel<CR>
+
+""" Paste from system secondary clipboard register
+""" (works for multiline indented text - as if 'paste' option has been set)
 nmap     tp             :r !xsel -b<CR>
 
 "=========================================
