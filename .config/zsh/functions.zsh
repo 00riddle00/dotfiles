@@ -91,6 +91,15 @@ cols () {
 }
 
 # usage: cols <col_no> <file>
+# $1 - col no
+# $2 - file name
+colss () {
+    col_no="\$$1";
+    col_no="{print $col_no}";
+    awk -F$'\t' -f <(echo "$col_no") "$2" | sort
+}
+
+# usage: cols <col_no> <file>
 cols-csv () {
     col_no="\$$1";
     col_no="{print $col_no}";
