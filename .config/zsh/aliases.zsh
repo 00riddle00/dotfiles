@@ -277,7 +277,8 @@ alias vmi='vim'
 alias vib='vim -b'
 alias vim.bare='vim -u NONE'
 alias vv='sudo vim'
-alias vim.plugins='vim +PlugInstall +qall'
+alias vim.plug.ins='vim +PlugInstall +qall'
+alias vim.plug.up='vim +PlugUpdate +qall'
 
 # tmux
 alias retmux='tmux source-file ~/.tmux.conf'
