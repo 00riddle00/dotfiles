@@ -68,7 +68,8 @@ export NOTES="$DROPBOX/gtd/"
 export KEEP="$DROPBOX/keepass"
 
 # Screen
-export HDMI_SCREEN="HDMI-1-1"
+export DP_SCREEN="DP-0"
+export HDMI_SCREEN="HDMI-0"
 export LAPTOP_SCREEN="eDP-1-1"
 
 # Fuzzy finder

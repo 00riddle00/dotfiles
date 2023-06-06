@@ -33,8 +33,8 @@ set showcmd
 set number
 " Always show statusline
 set laststatus=2
-" Set relative numbering
-set relativenumber
+" Set relative line numbering
+"set norelativenumber
 " show the line number on the bar
 set ruler
 " kudos to Jason Ryan (http://jasonwryan.com)
@@ -516,16 +516,17 @@ command SortPa      %s/\n\(# \)\@!/@/g | sort | %s/@/\r/g
 "let @c = "0v$h\"+y:echo 'line copied!'
 
 " tmp macro for marking progress
-let @p = "ver+W"
+"let @p = "ver+W"
 
 " insert heading separator above and below the line
-let @e = "a O11i=2xI# jo11i=2xI# Aak0"
+"let @e = "a O11i=2xI# jo11i=2xI# Aak0"
 
 " ???
 "let @s = \":%s/\(.\+\)\n/\1@/ | sort | %s/@/\r/g <CR>"
 
 " [Python specific] for debug
-let @o = "oprint(\"here\")\<Esc>k0"
+"let @o = "oprint(\"here\")\<Esc>k0"
+let @o = "xi`p"
 
 "===============================================================
 "  FUNCTIONS
