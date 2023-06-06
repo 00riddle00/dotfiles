@@ -494,7 +494,7 @@ alias up2='sudo pacman -Syuu'
 ### -R
 # TODO: change it do -Rsn !
 alias pacr='sudo pacman -R'
-alias freeorphans='sudo pacman -Rs $(pacman -Qdtq)'
+alias freeorphans='sudo pacman -Rns $(pacman -Qdtq)'
 # Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
 # As a result, a package providing a critical dependency could be removed, resulting in a broken system.
 alias pac.forcedel='sudo -k pacman -Rdd'

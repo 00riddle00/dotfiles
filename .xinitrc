@@ -11,12 +11,16 @@ if type setxkbmap >/dev/null 2>&1; then
     setxkbmap -option caps:escape 2>/dev/null
 fi
 
-# Use NVIDIA graphics only (gecko only)
-#xrandr --setprovideroutputsource modesetting NVIDIA-0
-#xrandr --auto
+if [[ "$(hostname)" == "gecko" ]]; then
+    # Use NVIDIA graphics only
+    xrandr --setprovideroutputsource modesetting NVIDIA-0
+    xrandr --auto
+fi
 
-# Configure multiple monitors (gecko only)
-#$BIN/config-monitors
+if [[ "$(hostname)" == "gecko" ]]; then
+    # Configure multiple monitors
+    $BIN/config-monitors
+fi
 
 # Launch applications
 xscreensaver -no-splash &
