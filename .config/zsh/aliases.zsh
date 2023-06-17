@@ -71,6 +71,14 @@ alias clone='git clone'
 ## alias containing other aliases. 
 ## try to use those as little as possible
 alias push='key && com && gp'
+# By default, `git fetch` does not remove remote branches that 
+# no longer have a counterpart branch on the remote. In order 
+# to do that, you explicitly need to prune the list of remote branches:
+# `git fetch --prune`. This will automatically get rid of remote branches 
+# that no longer exist on the remote. Afterwards, `git branch --remote` 
+# will show you an updated list of branches that really exist on the 
+# remote: And those you can delete using git push.
+alias gfp='git fetch --prune'
 
 # subversion
 alias ss='svn st'
@@ -738,6 +746,7 @@ alias e.restore='cp orig.weka_run_mlp.com weka_run_mlp.com'
 alias pra='cd $HOME/Tomas_Giedraitis/course_project'
 alias pra='cd $HOME/Tomas_Giedraitis/course_project'
 alias prac='pra; vim $HOME/Tomas_Giedraitis/course_project/course_project_presentation.tex'
-alias pps='cd $HOME/tmp1/problem-solving/Codewars'
+alias pps='cd $HOME/tmp4/problem-solving/Codewars'
 alias lw='wl'
 alias vig='cd $HOME/pro/2023/PTUA6'
+alias ptu='cd $HOME/pro/2022/CodeAcademy/PTUA6'
