@@ -349,6 +349,7 @@ alias no='killall mpg123'
 # choosing 'lt' also resets languages to the usual  'us,lt' combination
 alias lt='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
 alias de='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
+alias es='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,es'
 alias he='setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias ru="setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
 alias tl='translit'
