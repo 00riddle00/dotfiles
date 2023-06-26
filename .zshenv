@@ -68,7 +68,7 @@ export NOTES="$DROPBOX/gtd/"
 export KEEP="$DROPBOX/keepass"
 
 # Screen
-export DP_SCREEN="DP-0"
+export DP_SCREEN="DP-2"
 export HDMI_SCREEN="HDMI-0"
 export LAPTOP_SCREEN="eDP-1-1"
 

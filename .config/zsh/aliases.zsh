@@ -272,6 +272,8 @@ alias gpu.load='watch -n 1 nvidia-smi'
 alias redd='killall dunst && dunst &'
 ## count different file extensions
 alias files.ext="find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u"
+## find different file extensions, exluding ./.git, ./venv and ./.idea dirs.
+alias files.ext2="find . -path ./.git -o -path ./venv -prune -o -path ./.idea -prune -o -type f | sed -rn 's|.*/[^/]+\.([^/.]+)$|\1|p' | sort -u"
 alias files='find . -type f | wc -l'
 # fuser -v {file/socket name(s)} - show info about process, working with the file(s)/socket(s)
 alias fuserv='fuser -v'
@@ -557,15 +559,24 @@ alias ggm='ghc -dynamic --make'
 alias ggi='ghci'
 
 ## screen setup
-alias xof='xrandr --output $LAPTOP_SCREEN --off'
 alias xon='xrandr --output $LAPTOP_SCREEN --auto'
-alias xl='xrandr --output $HDMI_SCREEN --rotate left'
-alias xr='xrandr --output $HDMI_SCREEN --rotate right'
-alias xn='xrandr --output $HDMI_SCREEN --rotate normal'
-alias xland='xrandr --output $HDMI_SCREEN --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
-#alias xland='xrandr --output $HDMI_SCREEN -s 2560x1440 --auto --rotate normal --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
-alias xland2='xrandr --output $DP_SCREEN --auto --rotate normal --output $HDMI_SCREEN --auto --right-of $DP_SCREEN'
-alias xport='xrandr --output $HDMI_SCREEN --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias xof='xrandr --output $LAPTOP_SCREEN --off'
+alias x.hdmi.on='xrandr --output $HDMI_SCREEN --auto'
+alias x.hdmi.of='xrandr --output $HDMI_SCREEN --off'
+alias x.dp.on='xrandr --output $DP_SCREEN --auto'
+alias x.dp.of='xrandr --output $DP_SCREEN --off'
+alias x.hdmi.port='xrandr --output $HDMI_SCREEN --rotate left'
+alias x.hdmi.normal='xrandr --output $HDMI_SCREEN --rotate normal'
+alias x.hdmi.laptop='xrandr --output $HDMI_SCREEN --primary --auto --rotate normal --output $LAPTOP_SCREEN --auto --rotate-normal --right-of $HDMI_SCREEN'
+alias x.hdmi.port.laptop='xrandr --output $HDMI_SCREEN --primary --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias x.dp.hdmi='xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --auto --rotate normal --right-of $DP_SCREEN'
+alias x.dp.hdmi.port='xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --auto --rotate left --right-of $DP_SCREEN'
+alias x.dp.hdmi.primary='xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --primary --auto --rotate normal --right-of $DP_SCREEN'
+alias x.dp.hdmi.primary.port='xrandr --output $DP_SCREEN --auto --rotate normal --output $HDMI_SCREEN --primary --auto --rotate left --right-of $DP_SCREEN'
+alias xland='x.dp.hdmi'
+alias xport='x.dp.hdmi.port'
+alias xlandp='x.dp.hdmi.primary'
+alias xportp='x.dp.hdmi.primary.port'
 
 ## systemd
 #### general
