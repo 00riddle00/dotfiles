@@ -559,6 +559,7 @@ alias ggm='ghc -dynamic --make'
 alias ggi='ghci'
 
 ## screen setup
+alias rewallpaper='feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg"'
 alias xon='xrandr --output $LAPTOP_SCREEN --auto'
 alias xof='xrandr --output $LAPTOP_SCREEN --off'
 alias x.hdmi.on='xrandr --output $HDMI_SCREEN --auto'
@@ -573,10 +574,10 @@ alias x.dp.hdmi='xrandr --output $DP_SCREEN --primary --auto --rotate normal --o
 alias x.dp.hdmi.port='xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --auto --rotate left --right-of $DP_SCREEN'
 alias x.dp.hdmi.primary='xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --primary --auto --rotate normal --right-of $DP_SCREEN'
 alias x.dp.hdmi.primary.port='xrandr --output $DP_SCREEN --auto --rotate normal --output $HDMI_SCREEN --primary --auto --rotate left --right-of $DP_SCREEN'
-alias xland='x.dp.hdmi'
-alias xport='x.dp.hdmi.port'
-alias xlandp='x.dp.hdmi.primary'
-alias xportp='x.dp.hdmi.primary.port'
+alias xland='x.dp.hdmi; rewallpaper'
+alias xport='x.dp.hdmi.port; rewallpaper'
+alias xlandp='x.dp.hdmi.primary; rewallpaper'
+alias xportp='x.dp.hdmi.primary.port; rewallpaper'
 
 ## systemd
 #### general
