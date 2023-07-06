@@ -678,6 +678,17 @@ let g:bufExplorerShowRelativePath=1
 
 noremap <leader>o :BufExplorer<CR>
 
+
+"==============================================
+ Plug 'github/copilot.vim'
+"==============================================
+"
+"--------------------------
+" [PLUGIN] [Copilot] Settings
+"--------------------------
+
+let g:copilot_enabled = v:false
+
 "==============================================
  Plug 'ctrlpvim/ctrlp.vim'
 "==============================================
