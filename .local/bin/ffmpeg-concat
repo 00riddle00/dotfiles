@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+dir="${INSERT_HERE}"
+file1="${dir}/INSERT_HERE"
+file2="${dir}/INSERT_HERE"
+ofile="${dir}/INSERT_HERE"
+
+ffmpeg  \
+    -loglevel info \
+    -f concat \
+    -safe 0 \
+    -i <(echo "file ${file1}"; \
+         echo "file ${file2}"; \
+        ) \
+    -c copy "${ofile}"
