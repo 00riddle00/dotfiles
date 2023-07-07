@@ -35,5 +35,6 @@
     "**/__pycache__": true
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.inlineSuggest.enabled": true
 }
