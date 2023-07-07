@@ -687,7 +687,7 @@ noremap <leader>o :BufExplorer<CR>
 " [PLUGIN] [Copilot] Settings
 "--------------------------
 
-let g:copilot_enabled = v:false
+"let g:copilot_enabled = v:false
 
 "==============================================
  Plug 'ctrlpvim/ctrlp.vim'
@@ -1058,7 +1058,10 @@ let g:vimtex_quickfix_ignore_filters = [
 "----------------------------------
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>', '<Tab>']
+"let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>', '<TAB>'] "before using GitHub Copilot
+let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
+"let g:ycm_key_list_select_completion = ['<Down>', '<TAB>'] "before using GitHub Copilot
+let g:ycm_key_list_select_completion = ['<Down>']
 
 "----------------------------------
 " [PLUGIN] [YouCompleteMe] Mappings
