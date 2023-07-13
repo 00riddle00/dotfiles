@@ -1,4 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Torrent
+Name=rTorrent
+GenericName=BitTorrent client
 Exec=/usr/bin/env torradd %U
+Terminal=true
+Comment=The script toradd launches rTorrent in terminal

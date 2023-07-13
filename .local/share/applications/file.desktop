@@ -1,4 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=File Manager
+Name=ranger
+GenericName=File Manager
 Exec=/usr/bin/urxvt -e ranger %u
+Terminal=true
+Comment=Launches ranger in terminal

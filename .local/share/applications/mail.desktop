@@ -1,4 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Mail
+Name=neomutt
+GenericName=Mail reader
 Exec=/usr/bin/urxvt -e neomutt %u
+Terminal=true
+Comment=NeoMutt is a command line mail reader (or MUA)

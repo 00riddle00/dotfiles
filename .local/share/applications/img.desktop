@@ -1,4 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Image viewer
-Exec=/usr/bin/nomacs %u
+Name=nomacs
+GenericName=Image Viewer
+Exec=/usr/bin/nomacs %f
+Terminal=false
+Comment=nomacs is a free, open source image viewer

@@ -1,4 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Text editor
+Name=Vim
+GenericName=Text Editor
 Exec=/usr/bin/urxvt -e vim %u
+Terminal=true
+Comment=Launches Vim in terminal
