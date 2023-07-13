@@ -3,5 +3,5 @@ Type=Application
 Name=Vim
 GenericName=Text Editor
 Exec=/usr/bin/urxvt -e vim %u
-Terminal=true
+Terminal=false
 Comment=Launches Vim in terminal
