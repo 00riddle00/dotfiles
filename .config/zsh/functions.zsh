@@ -147,3 +147,11 @@ rlc() {
 catc() {
     cat "$1" | xclip
 } 
+
+find.file() {
+    find . -iname "*${1}*" | sort -u
+}
+
+find.file.abs() {
+    readlink -f **/** | grep -i "${1}" | sort -u
+}
