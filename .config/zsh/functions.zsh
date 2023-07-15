@@ -155,3 +155,8 @@ find.file() {
 find.file.abs() {
     readlink -f **/** | grep -i "${1}" | sort -u
 }
+
+recent ()
+{
+    history | grep "$1" | grep -v "recent $1" | grep -v "grep $1" | tail -1
+}
