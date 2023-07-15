@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+openbox_config="${XDG_CONFIG_HOME}/openbox/rc.xml"
+
+sed -i '
+/<keybind key="F2">/{
+    :loop
+    N
+    /\(\(.*\n\)\{4\}\).*/{
+        i\    <!--
+        a\    -->
+        b
+    }
+    b loop
+}
+' "${openbox_config}"
+
+openbox --reconfigure
