@@ -35,6 +35,7 @@ set number
 set laststatus=2
 " Set relative line numbering
 "set norelativenumber
+set relativenumber
 " show the line number on the bar
 set ruler
 " kudos to Jason Ryan (http://jasonwryan.com)
@@ -229,11 +230,20 @@ nmap     k            gk
 " Disable key for entering Ex-mode
 nmap     Q            <nop>
 
+" set textwidth to 80 characters
+nmap     <leader>8    :set tw=80<CR>
+
+" set textwidth to 100 characters
+nmap     <leader>1    :set tw=100<CR>
+
+" toggle showing all white spaces as characters
+nmap     <leader>l    :set list!<CR>
+
 " replace {more than one blank lines} with {exactly one blank line}
 "nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 
 " remove trailing whitespace
-nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
+"nmap     <leader>l    :%s/\(\n\n\)\n\+/\1/g<CR> <C-o>
 
 "This removes all trailing lines that contain only whitespace.
 "To remove only truly "empty" lines, remove the \s* from the above command.
