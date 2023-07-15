@@ -169,8 +169,10 @@ alias autostart='$HOME/.config/openbox/autostart.sh'
 alias theme.matrix='$BIN/themes/matrix/run'
 alias theme.riddle='$BIN/themes/riddle/run'
 alias setx='fix-xkbmap'
-alias 12on='gtk3-enable-12-font'
-alias 12of='gtk3-disable-12-font'
+alias 12on='gtk3-enable-12px-font'
+alias 12of='gtk3-disable-12px-font'
+alias f2on='openbox-enable-F2-keybinding'
+alias f2of='openbox-disable-F2-keybinding'
 
 # ssh
 alias sa='ssh-add'
