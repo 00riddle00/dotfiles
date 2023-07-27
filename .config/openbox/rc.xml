@@ -454,6 +454,16 @@
     <!-- ===========================
     Sound
     ============================ -->
+    <keybind key="W-F9">
+      <action name="Execute">
+        <command>pactl set-sink-input-volume 26 -5%</command>
+      </action>
+    </keybind>
+    <keybind key="W-F10">
+      <action name="Execute">
+        <command>pactl set-sink-input-volume 26 +5%</command>
+      </action>
+    </keybind>
     <keybind key="W-F11">
       <action name="Execute">
         <command>amixer set Master 10%-</command>
@@ -524,7 +534,7 @@
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>wmctrl -x -a "jetbrains-pycharm"</command>
+        <command>sh -c "activate pycharm"</command>
       </action>
     </keybind>
     <keybind key="W-q">
