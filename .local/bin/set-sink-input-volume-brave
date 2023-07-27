@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+sink_input_index=$(list-sink-inputs-human-readable | grep -i brave | awk -F':' '{print $2}')
+pactl set-sink-input-volume ${sink_input_index} ${1}

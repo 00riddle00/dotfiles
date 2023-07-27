@@ -456,12 +456,12 @@
     ============================ -->
     <keybind key="W-F9">
       <action name="Execute">
-        <command>pactl set-sink-input-volume 26 -5%</command>
+        <command>set-sink-input-volume-brave -5%</command>
       </action>
     </keybind>
     <keybind key="W-F10">
       <action name="Execute">
-        <command>pactl set-sink-input-volume 26 +5%</command>
+        <command>set-sink-input-volume-brave +5%</command>
       </action>
     </keybind>
     <keybind key="W-F11">
