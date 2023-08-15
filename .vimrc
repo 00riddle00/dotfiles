@@ -230,8 +230,8 @@ nmap     k            gk
 " Disable key for entering Ex-mode
 nmap     Q            <nop>
 
-" set textwidth to 80 characters
-nmap     <leader>8    :set tw=80<CR>
+" set textwidth to 79 characters
+nmap     <leader>8    :set tw=79<CR>
 
 " set textwidth to 100 characters
 nmap     <leader>1    :set tw=100<CR>
