@@ -593,12 +593,12 @@ alias x.hdmi.port.laptop='xrandr --output $HDMI_SCREEN --primary --auto --rotate
 # =========================================
 # 2 Monitors
 # =========================================
-# Display Port connection
+# Display Port connections
 alias x.dp1.dp2='xrandr --output $DP1_SCREEN --primary --auto --rotate normal --output $DP2_SCREEN --auto --rotate normal --right-of $DP1_SCREEN'
 alias x.dp1.dp2.port='xrandr --output $DP1_SCREEN --primary --auto --rotate normal --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
 alias x.dp1.dp2.primary='xrandr --output $DP1_SCREEN --primary --auto --rotate normal --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN'
 alias x.dp1.dp2.port.primary='xrandr --output $DP1_SCREEN --auto --rotate normal --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
-# Mixed connection (DisplayPort + HDMI)
+# Mixed connections (DisplayPort + HDMI)
 # ------------------------------------------------------
 # Left: Monitor via DisplayPort, Right: Monitor via HDMI
 # ------------------------------------------------------
@@ -609,14 +609,21 @@ alias x.dp.hdmi.port.primary='xrandr --output $DP_SCREEN --auto --rotate normal 
 # =========================================
 # 3 Monitors
 # =========================================
-# Mixed connection (HDMI + DisplayPort + DisplayPort)
+# Mixed connections (HDMI + DisplayPort + DisplayPort)
 # ------------------------------------------------------
 # Leftmost: Monitor via HDMI
 # ------------------------------------------------------
 alias x.hdmi.dp1.dp2='xrandr --output $HDMI_SCREEN --auto --rotate normal --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --auto --rotate normal --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.dp2.port='xrandr --output $HDMI_SCREEN --auto --rotate left --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.dp2.primary='xrandr --output $HDMI_SCREEN --auto --rotate left --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.dp2.port.primary='xrandr --output $HDMI_SCREEN --auto --rotate left --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.dp2.port='xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.1080.dp2.port='xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --mode 1920x1080 --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.1440.dp2.port='xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --mode 2560x1440 --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.dp2.primary='xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.dp2.port.primary='xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+# Display Port connections
+alias x.dp1.dp2.dp3='xrandr --output $DP1_SCREEN --auto --rotate normal --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN --output $DP3_SCREEN --auto --rotate normal --right-of $DP2_SCREEN'
+alias x.dp1.port.dp2.dp3.port='xrandr --output $DP1_SCREEN --auto --rotate left --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN --output $DP3_SCREEN --auto --rotate left --right-of $DP2_SCREEN'
+alias x.dp1.port.dp2.dp3.primary='xrandr --output $DP1_SCREEN --auto --rotate left --output $DP2_SCREEN --auto --rotate normal --right-of $DP1_SCREEN --output $DP3_SCREEN --primary --auto --rotate normal --right-of $DP2_SCREEN'
+alias x.dp1.port.dp2.dp3.port.primary='xrandr --output $DP1_SCREEN --auto --rotate left --output $DP2_SCREEN --auto --rotate normal --right-of $DP1_SCREEN --output $DP3_SCREEN --primary --auto --rotate left --right-of $DP2_SCREEN'
 # =========================================
 # Utils
 # =========================================
@@ -640,6 +647,8 @@ alias rewallpaper='feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg"'
 # -------
 alias xland='x.hdmi.dp1.dp2; rewallpaper'
 alias xport='x.hdmi.port.dp1.dp2.port; rewallpaper'
+alias xport.1080='x.hdmi.port.dp1.1080.dp2.port; rewallpaper'
+alias xport.1440='x.hdmi.port.dp1.1440.dp2.port; rewallpaper'
 alias xlandp='x.hdmi.port.dp1.dp2.primary; rewallpaper'
 alias xportp='x.hdmi.port.dp1.dp2.port.primary; rewallpaper'
 
