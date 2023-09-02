@@ -102,7 +102,7 @@ xterm*color15: #EEEEEC
 xscreensaver.mode:         blank
 xscreensaver.timeout:      0:10:00
 xscreensaver.fade:         True
-xscreensaver.unfade:       True
+xscreensaver.unfade:       False
 xscreensaver.fadeSeconds:  0:00:03
 xscreensaver.splash:       False
 
