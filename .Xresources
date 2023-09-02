@@ -99,41 +99,45 @@ xterm*color14: #34E2E2
 xterm*color15: #EEEEEC
 
 ! -- Xscreensaver settings -- !
-xscreensaver.splash: false
-xscreensaver.mode: blank
+xscreensaver.mode:         blank
+xscreensaver.timeout:      0:10:00
+xscreensaver.fade:         True
+xscreensaver.unfade:       True
+xscreensaver.fadeSeconds:  0:00:03
+xscreensaver.splash:       False
 
 !font settings
-xscreensaver.Dialog.headingFont:        -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver.Dialog.bodyFont:           -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver.Dialog.labelFont:          -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver.Dialog.unameFont:          -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver.Dialog.buttonFont:         -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver.Dialog.dateFont:           -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
-xscreensaver.passwd.passwdFont:         -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.headingFont:  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.bodyFont:     -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.labelFont:    -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.unameFont:    -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.buttonFont:   -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.dateFont:     -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
+xscreensaver-auth.?.passwd.passwdFont:   -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
 
 !general dialog box (affects main hostname, username, password text)
-xscreensaver.Dialog.foreground:         #1792d0
-xscreensaver.Dialog.background:         #202020
-xscreensaver.Dialog.topShadowColor:     #000000
-xscreensaver.Dialog.bottomShadowColor:  #000000
-xscreensaver.Dialog.Button.foreground:  #1792d0
-xscreensaver.Dialog.Button.background:  #000000
+xscreensaver-auth.?.Dialog.foreground:         #1792d0
+xscreensaver-auth.?.Dialog.background:         #202020
+xscreensaver-auth.?.Dialog.topShadowColor:     #000000
+xscreensaver-auth.?.Dialog.bottomShadowColor:  #000000
+xscreensaver-auth.?.Dialog.Button.foreground:  #1792d0
+xscreensaver-auth.?.Dialog.Button.background:  #000000
 
 !username/password input box and date text colour
-xscreensaver.Dialog.text.foreground:    #7262b3
-xscreensaver.Dialog.text.background:    #002626
-xscreensaver.Dialog.internalBorderWidth: 45
-xscreensaver.Dialog.borderWidth:        0
-xscreensaver.Dialog.shadowThickness:    4
+xscreensaver-auth.?.Dialog.text.foreground:      #7262b3
+xscreensaver-auth.?.Dialog.text.background:      #002626
+xscreensaver-auth.?.Dialog.internalBorderWidth:  45
+xscreensaver-auth.?.Dialog.borderWidth:          0
+xscreensaver-auth.?.Dialog.shadowThickness:      4
 
 !timeout bar (background is actually determined by Dialog.text.background)
-xscreensaver.passwd.thermometer.foreground:   #1792d0 
-xscreensaver.passwd.thermometer.background:  #7262b3
-xscreensaver.passwd.thermometer.width:       6
+xscreensaver-auth.?.passwd.thermometer.foreground:  #1792d0 
+xscreensaver-auth.?.passwd.thermometer.background:  #7262b3
+xscreensaver-auth.?.passwd.thermometer.width:       6
 
 !datestamp format--see the strftime(3) manual page for details
-xscreensaver.dateFormat:    %Y, %b %d, %a, %R
+xscreensaver-auth.?.dateFormat:  %Y, %b %d, %a, %R
 
-!sxiv image viewer
+! -- Sxiv image viewer settings -- !
 Sxiv.foreground: #1167b1
 Sxiv.background: #222222
