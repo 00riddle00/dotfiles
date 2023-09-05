@@ -13,4 +13,4 @@ if xset q &>/dev/null; then
     else
         xrandr --output $LAPTOP_SCREEN --auto
     fi;
-fi;
+fi

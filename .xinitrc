@@ -17,9 +17,11 @@ if [[ "$(hostname)" == "gecko" ]]; then
     xrandr --auto
 fi
 
+# Configure multiple monitors
 if [[ "$(hostname)" == "gecko" ]]; then
-    # Configure multiple monitors
-    $BIN/config-monitors
+    $BIN/config-monitors-gecko
+elif [[ "$(hostname)" == "tulkun" ]]; then
+    $BIN/config-monitors-tulkun
 fi
 
 # Launch applications
