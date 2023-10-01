@@ -20,6 +20,8 @@ fi
 # Configure multiple monitors
 if [[ "$(hostname)" == "gecko" ]]; then
     $BIN/config-monitors-gecko
+elif [[ "$(hostname)" == "panther" ]]; then
+    $BIN/config-monitors-panther
 elif [[ "$(hostname)" == "tulkun" ]]; then
     $BIN/config-monitors-tulkun
 fi

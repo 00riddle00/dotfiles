@@ -845,3 +845,4 @@ alias vif='cd /home/riddle/pro/2023/PTUA6/Tomas_Giedraitis/Solutions_to_problems
 alias gtk='cd /home/riddle/.config/gtk-3.0/'
 alias gtk4='cd /home/riddle/.config/gtk-4.0/'
 alias bud='cd /home/riddle/pro/2023/PTUA6/Tomas_Giedraitis/Solutions_to_problems/Flask/budget'
+alias hist='cd $HOME/histfiles/'
