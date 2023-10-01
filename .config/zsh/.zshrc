@@ -4,7 +4,7 @@ autoload -U colors && colors
 
 # prompt
 host_color="cyan"
-[[ ! $HOST =~ "^(riddle|gecko|tulkun)$" ]] && host_color="red";
+[[ ! $HOST =~ "^(gecko|panther|tulkun)$" ]] && host_color="red";
 
 PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
 %?)%{$reset_color%}]
@@ -32,7 +32,7 @@ setopt AUTO_CD
 
 # history options
 export HISTFILE="$ZDOTDIR/histfile"
-export HISTSIZE=200000
+export HISTSIZE=400000
 export SAVEHIST=$((HISTSIZE/2))
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
