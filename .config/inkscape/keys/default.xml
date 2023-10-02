@@ -2,6 +2,18 @@
 <keys
    name="User Shortcuts">
   <bind
+     gaction="app.duplicate"
+     keys="&lt;Primary&gt;d" />
+  <bind
+     gaction="app.object-set-clip"
+     keys="c" />
+  <bind
+     gaction="app.object-set-inverse-clip"
+     keys="&lt;Shift&gt;c" />
+  <bind
+     gaction="app.preferences"
+     keys="&lt;Primary&gt;&lt;Alt&gt;s" />
+  <bind
      gaction="win.tool-switch('Select')"
      keys="v" />
 </keys>
