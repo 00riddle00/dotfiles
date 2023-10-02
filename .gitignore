@@ -51,6 +51,9 @@ bin/cowsay/**/*.dat
 .config/htop/*
 !.config/htop/htoprc.excerpt
 
+.config/inkscape/*
+!.config/inkscape/keys
+
 .config/jesseduffield/lazygit/*
 !.config/jesseduffield/lazygit/config.yml
 
