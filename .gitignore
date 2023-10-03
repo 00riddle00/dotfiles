@@ -89,9 +89,14 @@ bin/cowsay/**/*.dat
 .config/ranger/colorschemes/__pycache__/
 
 .config/smartgit/*
-!.config/smartgit/21.2/
-.config/smartgit/21.2/*
-!.config/smartgit/21.2/accelerators.yml
+!.config/smartgit/22.1/
+.config/smartgit/22.1/*
+!.config/smartgit/22.1/accelerators.yml
+
+.config/smartsvn/*
+!.config/smartsvn/14.3/
+.config/smartsvn/14.3/*
+!.config/smartsvn/14.3/accelerators.yml
 
 .config/sublime-text/*
 !.config/sublime-text/Packages/

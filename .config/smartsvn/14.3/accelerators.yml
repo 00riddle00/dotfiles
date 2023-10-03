@@ -1,0 +1,3 @@
+global:
+- {action: goto-next-diff, keyStroke: ALT+F7}
+- {action: goto-previous-diff, keyStroke: SHIFT+F7}
