@@ -337,7 +337,7 @@ alias copy='xclip'
 ## databases
 alias mysqlr='mysql -u root -p'
 alias mysqlri='mysql -u user -p'
-alias pg='sudo -u postgres psql postgres'
+alias pg='sudo -iu postgres psql postgres'
 alias pgm='psql -d biblio -U togi3017'
 
 ## django
