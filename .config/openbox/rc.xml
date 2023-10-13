@@ -344,6 +344,11 @@
     <!-- ===========================
     Switching between windows
     ============================ -->
+    <keybind key="A-Tab">
+      <action name="Execute">
+        <command>skippy-xd</command>
+      </action>
+    </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
         <bar>no</bar>

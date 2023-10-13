@@ -565,6 +565,8 @@ alias ggi='ghci'
 # Laptop only
 # =========================================
 alias x.laptop.auto='xrandr --output $LAPTOP_SCREEN --auto'
+alias x.laptop.normal='xrandr --output $LAPTOP_SCREEN --rotate normal'
+alias x.laptop.port='xrandr --output $LAPTOP_SCREEN --rotate left'
 alias x.laptop.of='xrandr --output $LAPTOP_SCREEN --off'
 # =========================================
 # 1 Monitor only
@@ -845,4 +847,5 @@ alias vif='cd /home/riddle/pro/2023/PTUA6/Tomas_Giedraitis/Solutions_to_problems
 alias gtk='cd /home/riddle/.config/gtk-3.0/'
 alias gtk4='cd /home/riddle/.config/gtk-4.0/'
 alias bud='cd /home/riddle/pro/2023/PTUA6/Tomas_Giedraitis/Solutions_to_problems/Flask/budget'
+alias ser='cd /home/riddle/pro/2023/PTUA6/Tomas_Giedraitis/Solutions_to_problems/Django/car_service'
 alias hist='cd $HOME/histfiles/'
