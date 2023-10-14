@@ -116,8 +116,8 @@ bin/cowsay/**/*.dat
 !.config/xmonad/xmonad.hs
 
 .config/zsh/.zcompdump
-.config/zsh/aliases.local.zsh
-.config/zsh/functions.local.zsh
+.config/zsh/aliases.local*.zsh
+.config/zsh/functions.local*.zsh
 .config/zsh/histfile
 
 .dosbox/capture/
