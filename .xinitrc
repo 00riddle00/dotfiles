@@ -26,6 +26,11 @@ elif [[ "$(hostname)" == "tulkun" ]]; then
     $BIN/config-monitors-tulkun
 fi
 
+# Disable touchpad on a ThinkPad
+if [[ "$(hostname)" == "panther" ]]; then
+    xinput disable "SYNA8005:00 06CB:CD8C Touchpad"
+fi
+
 # Launch applications
 xscreensaver -no-splash &
 flameshot &
