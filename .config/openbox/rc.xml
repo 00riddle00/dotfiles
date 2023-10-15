@@ -542,7 +542,7 @@
     </keybind>
     <keybind key="W-p">
       <action name="Execute">
-        <command>sh -c "activate pycharm"</command>
+        <command>sh -c "activate pycharm jetbrains-pycharm alt"</command>
       </action>
     </keybind>
     <keybind key="W-q">
@@ -583,7 +583,7 @@
     </keybind>
     <keybind key="W-b">
       <action name="Execute">
-        <command>sh -c "activate 'gnu image' 'gimp'"</command>
+        <command>sh -c "activate gimp"</command>
       </action>
     </keybind>
     <!-- ===========================
@@ -596,7 +596,7 @@
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>sh -c "activate qalculate-gtk"</command>
+        <command>sh -c "activate qalculate-gtk qalculate"</command>
       </action>
     </keybind>
     <!--
