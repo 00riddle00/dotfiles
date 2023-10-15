@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Nested comments are not allowed, so you need to remove slash from "<-/-" 
-     and "-/->" in comments inside comments when uncommenting -->
+<!-- Nested comments are not allowed, so you need to remove backslashes from 
+    "<\-\-" and "\-\->" (and everywhere else where two or more consecutive 
+    hyphens are found) in comments inside comments when uncommenting -->
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -181,11 +182,13 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Apply updated config -->
+    <!-- 
     <keybind key="F12">
       <action name="Execute">
-        <command>openbox --reconfigure</command>
+        <command>openbox \-\-reconfigure</command>
       </action>
     </keybind>
+    -->
     <!-- ===========================
     Desktop management 
     ============================ -->
@@ -558,6 +561,11 @@
     <keybind key="F9">
       <action name="Execute">
         <command>sh -c "activate brave"</command>
+      </action>
+    </keybind>
+    <keybind key="F12">
+      <action name="Execute">
+        <command>sh -c "wmctrl -a bravo"</command>
       </action>
     </keybind>
     <keybind key="F4">
