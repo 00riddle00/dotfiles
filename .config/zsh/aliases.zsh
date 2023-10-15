@@ -81,13 +81,20 @@ alias push='key && com && gp'
 alias gfp='git fetch --prune'
 
 # subversion
-alias ss='svn st'
-alias sup='svn up'
-alias ssa='svn add'
+## preview
+alias ss='svn status'
 alias svn.diff='svn diff --diff-cmd="meld"'
-alias ssd='svn.diff'
+alias ssd='svn diff --diff-cmd="meld"'
 alias svn.log='svn log -r 1:HEAD'
 alias svn.log.head='svn log -r HEAD:1 --limit 5'
+## actions
+alias svn.checkout='svn checkout `--use-commit-times`'
+alias svn.up='svn update `--use-commit-times`'
+alias ssa='svn add'
+alias svn.recommit='svn commit -F svn-commit.tmp'
+alias svn.revert='svn revert `--use-commit-times`'
+alias svn.revertr='svn revert -R `--use-commit-times`'
+alias svn.clean='svn cleanup --remove-unversioned'
 
 # info output
 alias fl='sudo fdisk -l'
