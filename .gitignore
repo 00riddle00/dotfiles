@@ -80,6 +80,9 @@ bin/cowsay/**/*.dat
 .config/nomacs/*
 !.config/nomacs/Image Lounge.conf.excerpt
 
+.config/qalculate/*
+!.config/qalculate/qalculate-gtk.cfg.excerpt 
+
 .config/qutebrowser/*
 !.config/qutebrowser/config.py
 
