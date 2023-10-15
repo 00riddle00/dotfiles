@@ -34,8 +34,8 @@ set number
 " Always show statusline
 set laststatus=2
 " Set relative line numbering
-set norelativenumber
-"set relativenumber
+set relativenumber
+"set norelativenumber
 " show the line number on the bar
 set ruler
 " kudos to Jason Ryan (http://jasonwryan.com)
