@@ -348,6 +348,14 @@
     Switching between windows
     ============================ -->
     <keybind key="A-Tab">
+      <action name="ForEach">
+        <desktop>current</desktop>
+        <then>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </then>
+      </action>
       <action name="Execute">
         <command>skippy-xd</command>
       </action>

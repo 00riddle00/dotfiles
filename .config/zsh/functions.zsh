@@ -160,3 +160,7 @@ recent ()
 {
     history | grep "$1" | grep -v "recent $1" | grep -v "grep $1" | tail -1
 }
+
+auf() {
+ ps ax | grep -v grep | grep -i "${1}" | awk '{print $1}'
+}
