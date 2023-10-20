@@ -571,6 +571,11 @@
         <command>sh -c "activate brave"</command>
       </action>
     </keybind>
+    <keybind key="F8">
+      <action name="Execute">
+        <command>sh -c "wmctrl -a alpha"</command>
+      </action>
+    </keybind>
     <keybind key="F12">
       <action name="Execute">
         <command>sh -c "wmctrl -a bravo"</command>
