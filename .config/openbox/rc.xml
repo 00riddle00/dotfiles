@@ -543,11 +543,13 @@
     <!-- ===========================
     Text Editors / IDEs
     ============================ -->
+    <!--
     <keybind key="W-c">
       <action name="Execute">
         <command>sh -c "activate code"</command>
       </action>
     </keybind>
+    -->
     <keybind key="W-p">
       <action name="Execute">
         <command>sh -c "activate pycharm jetbrains-pycharm alt"</command>
@@ -571,7 +573,7 @@
         <command>sh -c "activate brave"</command>
       </action>
     </keybind>
-    <keybind key="F8">
+    <keybind key="F1">
       <action name="Execute">
         <command>sh -c "wmctrl -a alpha"</command>
       </action>
