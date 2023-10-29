@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+#*
+# Allows color output.
+#
+# USAGE:
+#     $0 "git diff text_file/to/diff.txt"
+#**
+
+command="${1}"
+time=2
+
+while sleep ${time}
+do 
+    clear; 
+    printf "Every %.1fs: %s\n\n" "${time}" "${command}";
+    ${command};
+done
