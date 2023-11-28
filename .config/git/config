@@ -22,13 +22,21 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	d = difftool
 [gui]
+	pruneduringfetch = true
 	recentrepo = /home/riddle/tmp7
 [commit]
 	gpgsign = true
 [pull]
+	rebase = false
 	ff = only
+[push]
+	recurseSubmodules = check
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[smartgit "submodule"]
+	fetchalways = false
+	update = true
+	initializenew = true
