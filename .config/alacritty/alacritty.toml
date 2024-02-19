@@ -1,5 +1,8 @@
-key_bindings:
-  - { key: V, mods: Alt, mode: ~Vi, action: Paste }
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mode = "~Vi"
+mods = "Alt"
 
 # alacritty-themes package from AUR is a good way to view and apply themes
 # Also, check out the themes at https://github.com/eendroroy/alacritty-theme
