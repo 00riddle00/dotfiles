@@ -43,12 +43,10 @@ URxvt.font: xft:Source Code Pro:size=9, \
 #include ".config/colors/dark"
 
 ! --  Extensions -- !
-URxvt.perl-ext-common:     default,clipboard,selection-to-clipboard,matcher,resize-font,keyboard-select
-!clipboard
-URxvt.clipboard.autocopy:  true
-!URxvt.keysym.M-c:          perl:clipboard:copy
-URxvt.keysym.M-v:          perl:clipboard:paste
-URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
+URxvt.perl-ext-common:     default,matcher,resize-font,keyboard-select
+!copy and paste
+URxvt.keysym.M-c:             eval:selection_to_clipboard
+URxvt.keysym.M-v:             eval:paste_clipboard
 !keyboard-select
 !  activate selecting text
 !  then use vim commands ('v' for visual mode)
@@ -57,7 +55,6 @@ URxvt.keysym.M-i:          perl:keyboard-select:activate
 ! url open with matcher
 URxvt.url-launcher:                 /usr/bin/brave
 ! ^----(or use /usr/bin/xdg-open)
-URxvt.keysym.C-Delete:              perl:matcher:last
 URxvt.keysym.M-Delete:              perl:matcher:list
 URxvt.matcher.button:               1
 URxvt.matcher.rend.0:               Uline Bold fg4
