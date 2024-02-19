@@ -7,6 +7,8 @@ URxvt.cursorBlink: true
 URxvt.reverseVideo: false
 URxvt.termName: rxvt-unicode-256color
 URxvt.depth: 32
+URxvt.refreshRate:                 0
+URxvt.skipScroll:                  false
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.geometry: 110x50
@@ -56,8 +58,6 @@ URxvt.keysym.M-v:             eval:paste_clipboard
 URxvt.keysym.M-i:          perl:keyboard-select:activate
 URxvt.keysym.M-s:                   perl:keyboard-select:search
 URxvt.keyboard-select.clipboard:    true
-
-
 ! url open with matcher
 URxvt.url-launcher:                 /usr/bin/brave
 ! ^----(or use /usr/bin/xdg-open)
