@@ -17,7 +17,7 @@ URxvt.depth: 32
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
 URxvt.iconFile: /home/riddle/Dropbox/candy/icons/terminal/term_green_2.svg
-! disable the Ctrl+Shift binding (ISO 14755) in urxvt
+! Disable ISO 14755 unicode input so we can use Ctrl+Shift bindings
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
@@ -43,7 +43,7 @@ URxvt.font: xft:Source Code Pro:size=9, \
 #include ".config/colors/dark"
 
 ! --  Extensions -- !
-URxvt.perl-ext-common:     default,clipboard,matcher,resize-font,keyboard-select
+URxvt.perl-ext-common:     default,clipboard,selection-to-clipboard,matcher,resize-font,keyboard-select
 !clipboard
 URxvt.clipboard.autocopy:  true
 !URxvt.keysym.M-c:          perl:clipboard:copy
