@@ -13,6 +13,7 @@ URxvt.scrollBar_right: false
 !URxvt.externalBorder: 0
 !URxvt.transparent: 0
 URxvt.shading: 0
+URxvt.depth: 32
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
 URxvt.iconFile: /home/riddle/Dropbox/candy/icons/terminal/term_green_2.svg
@@ -37,10 +38,6 @@ URxvt.font: xft:Source Code Pro:size=9, \
             xft:DroidSansMono Nerd Font:size=9, \
             xft:FiraCode Nerd Font:size=9, \
             xft:RobotoMono Nerd Font:size=9
-
-!URxvt.boldFont: xft:Source Code Pro:size=9
-!URxvt.italicFont: xft:Source Code Pro:style=Oblique:size=9
-!URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9
 
 ! -- Colors -- !
 #include ".config/colors/dark"
