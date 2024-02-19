@@ -29,7 +29,7 @@ Xft.hinting: true
 Xft.hintstyle: hinstlight 
 
 ! Current Xft Font 
-URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true, \
+URxvt.font: xft:Source Code Pro:size=9, \
             xft:Symbola:size=9, \
             xft:Noto Color Emoji:size=9, \
             xft:Inconsolata Nerd Font Mono:size=9, \
@@ -38,9 +38,9 @@ URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true, \
             xft:FiraCode Nerd Font:size=9, \
             xft:RobotoMono Nerd Font:size=9
 
-!URxvt*boldFont: xft:Source Code Pro:size=9:antialias=true:hinting=true
-!URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=9:antialias=true:hinting=true
-!URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9:antialias=true:hinting=true
+!URxvt*boldFont: xft:Source Code Pro:size=9
+!URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=9
+!URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9
 
 ! -- Colors -- !
 #include ".config/colors/dark"
