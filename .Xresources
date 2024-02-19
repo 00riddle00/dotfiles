@@ -4,6 +4,7 @@ URxvt.buffered: true
 URxvt.cursorColor: #5E468C 
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
+URxvt.reverseVideo: false
 URxvt.termName: rxvt-unicode-256color
 URxvt.depth: 32
 URxvt.scrollBar: false
@@ -53,6 +54,10 @@ URxvt.keysym.M-v:             eval:paste_clipboard
 !  then use vim commands ('v' for visual mode)
 !  after pressing Enter, the selection is saved in clipboard
 URxvt.keysym.M-i:          perl:keyboard-select:activate
+URxvt.keysym.M-s:                   perl:keyboard-select:search
+URxvt.keyboard-select.clipboard:    true
+
+
 ! url open with matcher
 URxvt.url-launcher:                 /usr/bin/brave
 ! ^----(or use /usr/bin/xdg-open)
