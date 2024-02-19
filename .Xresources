@@ -6,16 +6,16 @@ URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
 URxvt.geometry: 110x50
 URxvt.scrollBar: false
-URxvt*scrollBar_right: false
+URxvt.scrollBar_right: false
 !URxvt.borderLess: true
 !URxvt.borderWidth: 0
 !URxvt.internalBorder: 0
 !URxvt.externalBorder: 0
 !URxvt.transparent: 0
-URxvt*.shading: 0
+URxvt.shading: 0
 URxvt.letterSpace: 0
 URxvt.lineSpace: 1
-URxvt*iconFile: /home/riddle/Dropbox/candy/icons/terminal/term_green_2.svg
+URxvt.iconFile: /home/riddle/Dropbox/candy/icons/terminal/term_green_2.svg
 ! disable the Ctrl+Shift binding (ISO 14755) in urxvt
 URxvt.iso14755: false
 URxvt.iso14755_52: false
@@ -38,9 +38,9 @@ URxvt.font: xft:Source Code Pro:size=9, \
             xft:FiraCode Nerd Font:size=9, \
             xft:RobotoMono Nerd Font:size=9
 
-!URxvt*boldFont: xft:Source Code Pro:size=9
-!URxvt*italicFont: xft:Source Code Pro:style=Oblique:size=9
-!URxvt*boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9
+!URxvt.boldFont: xft:Source Code Pro:size=9
+!URxvt.italicFont: xft:Source Code Pro:style=Oblique:size=9
+!URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Oblique:size=9
 
 ! -- Colors -- !
 #include ".config/colors/dark"
