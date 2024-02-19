@@ -136,7 +136,7 @@ minsec_to_hours() {
     bc -l <<<"$1/60 + $2/3600"
 }
 
-bcc() {
+bsc() {
     basename "$1" | xclip
 }
 
@@ -148,10 +148,12 @@ catc() {
     cat "$1" | xclip
 } 
 
+# Searches hidden files as well
 find.file() {
     find . -iname "*${1}*" | sort -u
 }
 
+# Does not search hidden files
 find.file.abs() {
     readlink -f **/** | grep -i "${1}" | sort -u
 }
