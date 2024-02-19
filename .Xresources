@@ -46,8 +46,7 @@ URxvt.font: xft:Source Code Pro:size=9:antialias=true:hinting=true, \
 #include ".config/colors/dark"
 
 ! --  Extensions -- !
-URxvt.perl-ext-common:     clipboard,resize-font,keyboard-select,url-select
-URxvt.colorUL:             #4682B4
+URxvt.perl-ext-common:     default,clipboard,matcher,resize-font,keyboard-select
 !clipboard
 URxvt.clipboard.autocopy:  true
 !URxvt.keysym.M-c:          perl:clipboard:copy
@@ -58,12 +57,14 @@ URxvt.keysym.M-C-v:        perl:clipboard:paste_escaped
 !  then use vim commands ('v' for visual mode)
 !  after pressing Enter, the selection is saved in clipboard
 URxvt.keysym.M-i:          perl:keyboard-select:activate
-!url-select
-!  M-u, and then move through URLs with hjkl keys
-!URxvt.keysym.M-u:            perl:url-select:select_next
-! or use /usr/bin/xdg-open
-URxvt.url-select.launcher:   /usr/bin/brave
-URxvt.url-select.underline:  true
+! url open with matcher
+URxvt.url-launcher:                 /usr/bin/brave
+! ^----(or use /usr/bin/xdg-open)
+URxvt.keysym.C-Delete:              perl:matcher:last
+URxvt.keysym.M-Delete:              perl:matcher:list
+URxvt.matcher.button:               1
+URxvt.matcher.rend.0:               Uline Bold fg4
+URxvt.colorUL:                      #4682B4
 
 ! -- Xterm settings -- !
 xterm*termName: xterm-256color
