@@ -1,4 +1,6 @@
 {
+    // ...
+    // ...
 	// Enable auto complete to be triggered automatically when typing.
 	"auto_complete": true,
 	// Sets the colors used within the text area.
@@ -36,4 +38,6 @@
 	// The value "auto" will switch between the "light_theme" and "dark_theme"
 	// based on the operating system appearance.
 	"theme": "Material-Theme.sublime-theme",
+    // ...
+    // ...
 }

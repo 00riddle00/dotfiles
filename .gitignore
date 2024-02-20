@@ -50,6 +50,9 @@ bin/cowsay/**/*.dat
 
 .config/gtk-2.0/gtkfilechooser.ini 
 
+.config/gtk-3.0/bookmarks
+# ^--- commit instead the file "bookmarks.excerpt"
+
 .config/htop/*
 !.config/htop/htoprc.excerpt
 
@@ -109,7 +112,7 @@ bin/cowsay/**/*.dat
 !.config/sublime-text/Packages/User/
 .config/sublime-text/Packages/User/*
 !.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
-!.config/sublime-text/Packages/User/Preferences.sublime-settings
+!.config/sublime-text/Packages/User/Preferences.sublime-settings.excerpt
 !.config/sublime-text/Packages/User/Package Control.sublime-settings
 
 .config/Thunar/*
