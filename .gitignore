@@ -48,6 +48,8 @@ bin/cowsay/**/*.dat
 !.config/GIMP/*/scripts/
 !.config/GIMP/*/menurc.excerpt
 
+.config/gtk-2.0/gtkfilechooser.ini 
+
 .config/htop/*
 !.config/htop/htoprc.excerpt
 
