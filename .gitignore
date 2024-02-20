@@ -138,8 +138,7 @@ bin/cowsay/**/*.dat
 !.subversion/config
 !.subversion/servers
 
-.config/tmux/plugins/*
-.config/tmux/resurrect/*
+.config/tmux/plugins/
 
 # See https://wiki.archlinux.org/title/XDG_Base_Directory,
 # the entry for `tig` in application table:
