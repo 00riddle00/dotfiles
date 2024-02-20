@@ -45,6 +45,7 @@ export TEXMFHOME=$XDG_DATA_HOME/texmf
 export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export LYNX_CFG_PATH="$XDG_CONFIG_HOME"/lynx.cfg
+export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"
 
 export VIMCOLOR="miro8"
 export VIMRC="$HOME/.vimrc"
