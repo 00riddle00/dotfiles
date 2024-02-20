@@ -1,13 +1,13 @@
 ## dotfiles
 
 #### Openbox 
-![openbox_preview](https://github.com/00riddle00/dotfiles/raw/master/preview_openbox.png) 
+![openbox_preview](https://i.imgur.com/plt4Ygj.png)
 
 #### i3
-![i3_preview](https://github.com/00riddle00/dotfiles/raw/master/preview_i3.png) 
+![i3_preview](https://i.imgur.com/64izSk1.png)
 
 #### dwm
-![dwm_preview](https://github.com/00riddle00/dotfiles/raw/master/preview_dwm.png) 
+![dwm_preview](https://i.imgur.com/FZodx5f.png) 
 
 - Scripts are in  `bin/` and `.local/bin/`
 - Adhering to XDG Base Directory specification:
