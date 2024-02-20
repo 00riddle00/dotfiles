@@ -1,5 +1,5 @@
 # Load X resources
-[[ -f ~/.Xresources ]] && xrdb ~/.Xresources
+[[ -f ~/.config/X11/Xresources ]] && xrdb ~/.config/X11/Xresources
 
 # Remap keys with setxkbmap (if installed)
 #

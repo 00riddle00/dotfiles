@@ -42,7 +42,7 @@ URxvt.font: xft:Source Code Pro:size=9, \
             xft:RobotoMono Nerd Font:size=9
 
 ! -- Colors -- !
-#include ".config/colors/dark"
+#include "colors/dark"
 
 ! --  Extensions -- !
 URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,keyboard-select,resize-font
