@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-feh  --bg-scale "$DOTFILES/images/desktop/sea_color.jpg"
+xsetroot -solid "#073542" &
 #conky -c $XDG_CONFIG_HOME/conky/stats_blue > /dev/null 2>&1 &
 #conky -c $XDG_CONFIG_HOME/conky/clock_blue > /dev/null 2>&1 &
 tint2 &

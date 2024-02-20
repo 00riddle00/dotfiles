@@ -43,7 +43,8 @@ floating_modifier $alt
 # (to unlock KWallet protected by the login password)
 #$run /usr/lib/pam_kwallet_init
 # apps are mainly started via ~/.xinitrc
-$run feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg" &
+$run xsetroot -solid "#073542" &
+
 #$run picom -b
 #$run $term -name dropdown_aux -e tmux new-session
 
