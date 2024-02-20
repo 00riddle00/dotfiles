@@ -127,7 +127,6 @@ alias npm.ls.g='npm list -g --depth=0'
 alias tor='rtorrent'
 alias irc='irssi'
 alias rss='newsboat'
-alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
 alias music='ncmpcpp'
 #alias sc='sc-im'
 alias mux='tmuxinator'
@@ -136,6 +135,10 @@ alias tigl='lazygit'
 ## adhering to XDG base dir specs
 alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
 alias cal='calcurse'
+alias dosbox='dosbox -conf "$XDG_CONFIG_HOME"/dosbox/dosbox.conf'
+alias lynx='lynx -cfg=$HOME/.config/lynx/config  -lss=$HOME/.config/lynx/colors'
+alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi'
+alias svn='svn --config-dir "$XDG_CONFIG_HOME"/subversion'
 # console programs with options
 alias mpv.image='mpv --no-config --pause --vo=tct'
 alias mpv.video='mpv --no-config --vo=tct'
@@ -147,6 +150,7 @@ alias timer='termdown -B | lolcat'
 # launch GUI programs
 alias fire='firefox'
 alias libre='libreoffice'
+alias li='libreoffice'
 #alias mi='sxiv'
 alias mi='nomacs'
 alias play='mpv'
@@ -744,6 +748,7 @@ alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-t
 alias -- --date='date "+%F"'
 alias -- --date='date "+%F"'
 alias -- --datetime='date +%F_%H_%M_%S'
+alias -- -time='date +%H:%M:%S'
 
 # =====================================================================
 # temp

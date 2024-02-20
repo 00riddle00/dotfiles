@@ -29,9 +29,14 @@ export PERL_MM_OPT
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
+
 # HOME dir clean-up (for XDG BASE DIR specs)
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some # DMs.
 export ZDOTDIR="$HOME/.config/zsh"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export FEHBG_PATH="$XDG_DATA_HOME"/fehbg
 
 export VIMCOLOR="miro8"
 export VIMRC="$HOME/.vimrc"
