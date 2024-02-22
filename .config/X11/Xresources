@@ -32,14 +32,14 @@ Xft.hinting: true
 Xft.hintstyle: hinstlight 
 
 ! Current Xft Font 
-URxvt.font: xft:Source Code Pro:size=9, \
-            xft:Symbola:size=9, \
-            xft:Noto Color Emoji:size=9, \
-            xft:Inconsolata Nerd Font Mono:size=9, \
-            xft:DejaVuSansMono Nerd Font:size=9, \
-            xft:DroidSansMono Nerd Font:size=9, \
-            xft:FiraCode Nerd Font:size=9, \
-            xft:RobotoMono Nerd Font:size=9
+URxvt.font: xft:Source Code Pro:size=11, \
+            xft:Symbola:size=11, \
+            xft:Noto Color Emoji:size=11, \
+            xft:Inconsolata Nerd Font Mono:size=11, \
+            xft:DejaVuSansMono Nerd Font:size=11, \
+            xft:DroidSansMono Nerd Font:size=11, \
+            xft:FiraCode Nerd Font:size=11, \
+            xft:RobotoMono Nerd Font:size=11
 
 ! -- Colors -- !
 #include "colors/dark"
