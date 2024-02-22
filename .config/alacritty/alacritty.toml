@@ -317,8 +317,9 @@ alphabet = "jfkdls;ahgurieowpq"  # Default: "jfkdls;ahgurieowpq"
 [keyboard]
 
 # Define keyboard bindings here
-# Example placeholder (actual bindings need to be defined based on user preference)
+# binding = { key = "...", mods = "...", mode = "..." }
 bindings = [
+    { key = "V", mods = "Alt", mode = "~Vi", action = "Paste" },
     # { key = "Key", mods = "Modifiers", action = "Action" },
     # { key = "Key", mods = "Modifiers", chars = "Characters to send" },
     # ...
