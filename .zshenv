@@ -66,7 +66,6 @@ export BAT_PAGER="less -RF"
 export FILE="ranger"
 
 # Directories
-export DOTFILES="$HOME/.dotfiles"
 export BIN="$HOME/.local/bin"
 export DOTSHARE="$HOME/.local/share/dotshare"
 export DOWNLOADS="$HOME/Downloads"

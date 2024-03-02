@@ -10,9 +10,6 @@
 ![dwm_preview](https://i.imgur.com/FZodx5f.png) 
 
 - Scripts are in  `bin/` and `.local/bin/`
-- Adhering to XDG Base Directory specification:
-	- All configs that can be in `~/.config/` are being moved there (in progress).
-	- Some environmental variables have been set in `~/.zshenv` to move configs into `~/.config/`
 - Separate repos for suckless:
 	- [dwm](https://github.com/00riddle00/dwm)
 	- [dwmblocks](https://github.com/00riddle00/dwmblocks)
@@ -62,18 +59,11 @@
 
 ## Install
 
-Deployment scripts are being crafted:
-[NPbuild](https://github.com/00riddle00/NPbuild)
-
-(installing so far):
 #### Prerequisites
 * Arch installed with `base` and `base-devel`
-* [list of programs](https://github.com/00riddle00/dotfiles/blob/master/progs.csv)
-```bash
-git clone --recurse-submodules -j8 https://github.com/00riddle00/dotfiles $HOME/.dotfiles
-$HOME/.dotfiles/bin/manage_dotfiles/symlink_dotfiles.sh
-$HOME/.dotfiles/bin/manage_dotfiles/install_vim_plugins.sh
-```
+
+Deployment scripts are being crafted:
+[NPbuild](https://github.com/00riddle00/NPbuild)
 
 ## Gratitude
 The usual suspects are
