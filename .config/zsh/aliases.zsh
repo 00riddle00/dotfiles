@@ -606,8 +606,8 @@ alias stop='killall mpg123'
 # Switching configs
 #---------------------------------------
 
-alias emacs.gnu='ln -nsf $DOTFILES/.config/emacs $XDG_CONFIG_HOME/emacs'
-alias emacs.doom='ln -nsf $XDG_CONFIG_HOME/doom-emacs $XDG_CONFIG_HOME/emacs'
+alias emacs.gnu='ln -nsf $XDG_CONFIG_HOME/emacs.gnu $XDG_CONFIG_HOME/emacs'
+alias emacs.doom='ln -nsf $XDG_CONFIG_HOME/emacs.doom $XDG_CONFIG_HOME/emacs'
 
 #---------------------------------------
 # Reloading configs
