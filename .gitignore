@@ -49,9 +49,9 @@
 
 !/.config/doom/
 
-!/.config/emacs/
-/.config/emacs/*
-!.config/emacs/init.el
+!/.config/emacs.gnu/
+/.config/emacs.gnu/*
+!/.config/emacs.gnu/init.el
 
 !/.config/filezilla/
 /.config/filezilla/*
