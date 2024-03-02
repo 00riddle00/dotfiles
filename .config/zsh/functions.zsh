@@ -67,10 +67,6 @@ temp() {
     vim "/tmp/temp_$(date +%F_%H_%M_%S).$ext";
 }
 
-open() {
-    vim $(codid2file "$1")
-}
-
 # usage: fields <file>
 fields () {
     awk -F"\t" '{print NF}' "$1" | uniq -c
@@ -130,10 +126,6 @@ ddif() {
     meld \
         <( cat "$1" | (sed -u 1q; sort -k1 -n) ) \
         <( cat "$2" | (sed -u 1q; sort -k1 -n) ) \
-}
-
-minsec_to_hours() {
-    bc -l <<<"$1/60 + $2/3600"
 }
 
 bsc() {
