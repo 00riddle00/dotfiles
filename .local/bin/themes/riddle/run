@@ -17,9 +17,9 @@ sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name="la-capitaine"/' $HOME/.gt
 sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name="Numix-Cursor-Light"/' $HOME/.gtkrc-2.0
 
 # changes to gtk3 config
-sed -i 's/.*gtk-theme-name.*/gtk-theme-name=Numix-Archblue/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini
-sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=la-capitaine/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini
-sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Numix-Cursor-Light/' $HOME/.dotfiles/.config/gtk-3.0/settings.ini
+sed -i 's/.*gtk-theme-name.*/gtk-theme-name=Numix-Archblue/' $HOME/.config/gtk-3.0/settings.ini
+sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=la-capitaine/' $HOME/.config/gtk-3.0/settings.ini
+sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Numix-Cursor-Light/' $HOME/.config/gtk-3.0/settings.ini
 
 # change tint2 config
 cp $HOME/.config/tint2/tint2rc.riddle $HOME/.config/tint2/tint2rc

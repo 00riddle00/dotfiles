@@ -8,5 +8,4 @@ if xset q &>/dev/null; then
         --output $HDMI_SCREEN --auto --rotate right \
         --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN \
         --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN ; 
-        feh --bg-scale "$DOTFILES/images/desktop/sea_color.jpg"
 fi
