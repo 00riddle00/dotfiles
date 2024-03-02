@@ -1,23 +1,7 @@
-# ================
-#  USUAL GITIGNORE 
-# ================
-*.bak
-*.out
-*.swl
-*.swm
-*.swn
-*.swo
-*.swp
-*~
-.directory
 
 # =======================
-#  PARTIAL DIRS GITIGNORE 
+#  .config/
 # =======================
-
-.local/bin/scripts/
-
-bin/cowsay/**/*.dat
 
 .config/calcurse/*
 !.config/calcurse/conf
@@ -76,7 +60,7 @@ bin/cowsay/**/*.dat
 !.config/mutt/*muttrc
 !.config/mutt/*sig
 !.config/mutt/mailcap
-!offlineimap_gpg.py
+!.config/mutt/offlineimap_gpg.py
 
 .config/ncmpcpp/*
 !.config/ncmpcpp/bindings
@@ -128,28 +112,38 @@ bin/cowsay/**/*.dat
 .config/zsh/functions.local*.zsh
 .config/zsh/histfile
 
-.dosbox/capture/
+.config/emacs/*
+!.config/emacs/init.el
 
-.emacs.d.gnu/*
-!.emacs.d.gnu/init.el
+.config/irssi/config.autosave
+.config/irssi/default.theme
+.config/irssi/irssi.pem
+.config/irssi/logs
+!.config/irssi/config
 
-.irssi/config.autosave
-.irssi/default.theme
-.irssi/irssi.pem
-.irssi/logs
-!.irssi/config
-
-.subversion/*
-!.subversion/config
-!.subversion/servers
+.config/subversion/*
+!.config/subversion/config
+!.config/subversion/servers
 
 .config/tmux/plugins/
 
-# See https://wiki.archlinux.org/title/XDG_Base_Directory,
-# the entry for `tig` in application table:
+# =======================
+# .local/
+# =======================
+
+# See https://wiki.archlinux.org/title/XDG_Base_Directory#Supported
+# for the entry `tig`, in "Notes" section:
 # `~/.local/share/tig` directory must exist, writes to `~/.tig_history` otherwise.
 .local/share/tig/*
 !.local/share/tig/.gitkeep
 
-.local/share/dotshare/qutebrowser-homepage/panorama.jpg
 .local/share/dotshare/cowsay/phrases/*.dat
+.local/share/dotshare/qutebrowser-homepage/panorama.jpg
+
+# ================
+#  misc
+# ================
+
+# Emacs backup files
+*~
+
