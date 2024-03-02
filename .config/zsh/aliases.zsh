@@ -859,6 +859,7 @@ alias xportp='x.hdmi.port.dp1.dp2.port.primary'
 
 # count files in the directory:
 alias cf='ls -1 | wc -l'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias empty='truncate -s 0'
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv'
 alias immutable='sudo chattr +i'
@@ -869,4 +870,3 @@ alias rows='tr "\\n" " "'
 alias tag='ctags -R .'
 alias wl='wc -l'
 alias xres.show='xrdb -query -all'
-
