@@ -37,16 +37,18 @@
 #  24. Programming
 #  25. Screen setup
 #  26. Misc
+#  27. Temporary
 
 #------------------------------------------------------------------------------
 # 1. Navigation
 #------------------------------------------------------------------------------
 
 # Going up
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
+alias ..='c ..'
+alias ...='c ../..'
+alias ....='c ../../..'
+alias .....='c ../../../..'
+alias ./='c ..'
 
 ## Temporary directories
 alias mp='cd $HOME/tmp1'
@@ -112,14 +114,14 @@ alias get.key_code_2='showkey --ascii'
 # 3. Standard commands
 #------------------------------------------------------------------------------
 
-alias c='clear'
+alias x='clear'
 alias cpr='cp -r'
-alias h='history'
 alias off='sudo poweroff'
 alias prego='sudo $(fc -ln -1)'
 alias q='exit'
 alias re='sudo reboot'
-alias rmr='sudo rm -r'  
+alias rmr='rm -rf'  
+alias rmrf='sudo rm -r'  
 
 #------------------------------------------------------------------------------
 # 4. Modifying shell behavior
@@ -427,15 +429,15 @@ alias mc='mc --nosubshell'
 alias mi='nomacs'
 alias nn='neofetch'
 alias rss='newsboat'
-alias svn='svn --config-dir "$XDG_CONFIG_HOME/subversion"'
-alias t='thunar'
+#alias svn='svn --config-dir "$XDG_CONFIG_HOME/subversion"'
+#alias t='thunar'
 alias tar='tar -xvf'
 alias timer='termdown -B | lolcat'
 alias tl='translit'
 alias unrar='unrar x'
-alias v='vim'
-alias vmi='vim'
-alias vv='sudo vim'
+alias v='$EDITOR'
+alias vmi='$EDITOR'
+alias vv='sudo $EDITOR'
 alias yd='yt-dlp'
 alias z='zsh'
 ## A trailing space in `watch ` causes the next word to be checked for 
@@ -463,6 +465,7 @@ alias lsla='colorls -al'
 alias lsl='colorls -l'
 alias ih='colorls -la | grep -i'
 alias lsh='colorls -ld .?*'
+alias since='colorls -lt'
 # display only directories:
 alias dod='colorls -ld'
 # display only files:
@@ -547,7 +550,7 @@ alias grepp='grep -P'
 #alias lsl='ls -l'
 #alias lsla='ls -al'
 #alias lsr='ls -R'
-#alias since='ls -ltL | head'
+#alias since='\ls -ltL | head'
 # display only directories:
 #alias dod='\ls -l | grep ^d'
 # display only files:
@@ -557,31 +560,41 @@ alias grepp='grep -P'
 alias pic='scrot -s $HOME/Screenshots/screenshot-%F-%H%M%S.png'
 
 # SSH
-alias sa='ssh-add'
+#alias sa='ssh-add'
 alias sl='ssh-add -l'
 alias ssid='eval $(ssh-agent -s)'
 
+
 # Subversion
 # --Preview
-alias ss='svn status'
-alias sd='svn diff'
+alias s='svn status'
+alias ss='echo "Change your habits!"'
+alias sd='svndiff'
+alias sdd='svn diff'
 alias ssd='svn diff --diff-cmd="meld"'
 alias svn.log='svn log -r 1:HEAD'
 alias svn.log.head='svn log -r HEAD:1 --limit 5'
 # --Actions
+alias sa='svn add'
+alias sr='svn revert `--use-commit-times`'
+alias sm='svn move'
+alias ci='svn commit'
+alias sc='svn cleanup --remove-unversioned'
+alias key='svn propset svn:keywords "Author Date Revision URL Id"'
+alias ex='svn propset svn:executable on'
 alias svn.checkout='svn checkout `--use-commit-times`'
 alias svn.up='svn update `--use-commit-times`'
 alias svn.recommit='svn commit -F svn-commit.tmp'
-alias svn.revert='svn revert `--use-commit-times`'
 alias svn.clean='svn cleanup --remove-unversioned'
 
-# Vim
-alias vib='vim -b'
-alias vim.bare='vim -u NONE'
-alias vim.plug.install='vim +PlugInstall +qall'
-alias vim.plug.up='vim +PlugUpdate +qall'
-alias vim.plug.clean='vim +PlugClean +qall'
-alias vim.plug.list='vim +PlugStatus'
+# Vim/Neovim
+alias vim='$EDITOR'
+alias vib='$EDITOR -b'
+alias vim.bare='$EDITOR -u NONE'
+alias vim.plug.install='$EDITOR +PlugInstall +qall'
+alias vim.plug.up='$EDITOR +PlugUpdate +qall'
+alias vim.plug.clean='$EDITOR +PlugClean +qall'
+alias vim.plug.list='$EDITOR +PlugStatus'
 
 # yt-dlp
 alias ydn='yt-dlp --no-playlist' 
@@ -593,7 +606,7 @@ alias ydl-clean-cache='yt-dlp --rm-cache-dir'
 # Quitting programs
 #--------------------------------------
 
-alias out='killall xinit'
+#alias out='killall xinit'
 alias stop='killall mpg123'
 
 #------------------------------------------------------------------------------
@@ -620,30 +633,30 @@ alias retmux='tmux kill-server; tmux source-file ~/.tmux.conf; tmux'
 # Editing configs
 #---------------------------------------
 
-alias al='vim $ZDOTDIR/aliases.zsh'
-alias cm='vim $XDG_CONFIG_HOME/picom/picom.conf'
-alias dun='vim $XDG_CONFIG_HOME/dunst/dunstrc'
-alias ee='vim $XDG_CONFIG_HOME/emacs/init.el'
-alias eed='cd $XDG_CONFIG_HOME/doom; vim init.el'
-alias fn.fzf='vim $ZDOTDIR/functions_fzf.zsh'
-alias fn='vim $ZDOTDIR/functions.zsh'
-alias ic='vim $XDG_CONFIG_HOME/i3/config'
-alias icc='vim $XDG_CONFIG_HOME/i3blocks/config'
-alias gitconf='vim $XDG_CONFIG_HOME/git/config'
-alias lal='vim $ZDOTDIR/aliases.local.zsh'
-alias lfn='vim $ZDOTDIR/functions.local.zsh'
-alias mime='vim $XDG_CONFIG_HOME/mimeapps.list'
-alias rc='vim $XDG_CONFIG_HOME/openbox/rc.xml'
-alias rr='vim $XDG_CONFIG_HOME/ranger/rc.conf'
-alias start='vim $XDG_CONFIG_HOME/openbox/autostart.sh'
-alias tg='vim $XDG_CONFIG_HOME/tig/config'
-alias tintrc='vim $XDG_CONFIG_HOME/tint2/tint2rc'
-alias tmuxr='vim $XDG_CONFIG_HOME/tmux/tmux.conf'
-alias vr='vim $XDG_CONFIG_HOME/vim/vimrc'
-alias xi='vim $XDG_CONFIG_HOME/X11/xinitrc'
-alias xres='vim $XDG_CONFIG_HOME/X11/Xresources'
-alias zenv='vim $HOME/.zshenv'
-alias zr='vim $ZDOTDIR/.zshrc'
+alias al='$EDITOR $ZDOTDIR/aliases.zsh'
+alias cm='$EDITOR $XDG_CONFIG_HOME/picom/picom.conf'
+alias dun='$EDITOR $XDG_CONFIG_HOME/dunst/dunstrc'
+alias ee='$EDITOR $XDG_CONFIG_HOME/emacs/init.el'
+alias eed='cd $XDG_CONFIG_HOME/doom; $EDITOR init.el'
+alias fn.fzf='$EDITOR $ZDOTDIR/functions_fzf.zsh'
+alias fn='$EDITOR $ZDOTDIR/functions.zsh'
+alias ic='$EDITOR $XDG_CONFIG_HOME/i3/config'
+alias icc='$EDITOR $XDG_CONFIG_HOME/i3blocks/config'
+alias gitconf='$EDITOR $XDG_CONFIG_HOME/git/config'
+alias lal='$EDITOR $ZDOTDIR/aliases.local.zsh'
+alias lfn='$EDITOR $ZDOTDIR/functions.local.zsh'
+alias mime='$EDITOR $XDG_CONFIG_HOME/mimeapps.list'
+alias rc='$EDITOR $XDG_CONFIG_HOME/openbox/rc.xml'
+alias rr='$EDITOR $XDG_CONFIG_HOME/ranger/rc.conf'
+alias start='$EDITOR $XDG_CONFIG_HOME/openbox/autostart.sh'
+alias tg='$EDITOR $XDG_CONFIG_HOME/tig/config'
+alias tintrc='$EDITOR $XDG_CONFIG_HOME/tint2/tint2rc'
+alias tmuxr='$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf'
+alias vr='$EDITOR $XDG_CONFIG_HOME/$EDITOR/$EDITORrc'
+alias xi='$EDITOR $XDG_CONFIG_HOME/X11/xinitrc'
+alias xres='$EDITOR $XDG_CONFIG_HOME/X11/Xresources'
+alias zenv='$EDITOR $HOME/.zshenv'
+alias zr='$EDITOR $ZDOTDIR/.zshrc'
 
 #------------------------------------------------------------------------------
 # 21. Window manager-specific
@@ -855,7 +868,10 @@ alias xportp='x.hdmi.port.dp1.dp2.port.primary'
 #------------------------------------------------------------------------------
 
 # count files in the directory:
-alias cf='ls -1 | wc -l'
+alias cf='setopt CSH_NULL_GLOB; files=(*); echo ${#files[@]};'
+# count only hidden files in the directory:
+alias cfa='setopt CSH_NULL_GLOB; files=(.*); echo ${#files[@]};'
+
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias empty='truncate -s 0'
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv'
@@ -867,3 +883,60 @@ alias rows='tr "\\n" " "'
 alias tag='ctags -R .'
 alias wl='wc -l'
 alias xres.show='xrdb -query -all'
+
+#------------------------------------------------------------------------------
+# 27. Temporary (maybe they will stick)
+#------------------------------------------------------------------------------
+
+#---------------------------------------
+# AWK
+#---------------------------------------
+alias awk-1='awk '\''{print $1}'\'
+alias awk-2='awk '\''{print $2}'\'
+alias awk-3='awk '\''{print $3}'\'
+alias awk-4='awk '\''{print $3}'\'
+alias awk--4='awk '\''{print $(NF-3)}'\'
+alias awk--3='awk '\''{print $(NF-2)}'\'
+alias awk--2='awk '\''{print $(NF-1)}'\'
+alias awk--1='awk '\''{print $(NF)}'\'
+alias awk--='awk '\''{print $NF}'\'
+# ---------------------------------------
+alias awk-t-1='awk -F$'\''\t'\'' '\''{print $1}'\'
+alias awk-t-2='awk -F$'\''\t'\'' '\''{print $2}'\'
+alias awk-t-3='awk -F$'\''\t'\'' '\''{print $3}'\'
+alias awk-t-4='awk -F$'\''\t'\'' '\''{print $4}'\'
+alias awk-t--4='awk -F$'\''\t'\'' '\''{print $(NF-3)}'\'
+alias awk-t--3='awk -F$'\''\t'\'' '\''{print $(NF-2)}'\'
+alias awk-t--2='awk -F$'\''\t'\'' '\''{print $(NF-1)}'\'
+alias awk-t--1='awk -F$'\''\t'\'' '\''{print $(NF)}'\'
+alias awk-t--='awk -F$'\''\t'\'' '\''{print $NF}'\'
+# ---------------------------------------
+alias awk-c-1='awk -F: '\''{print $1}'\'
+alias awk-c-2='awk -F: '\''{print $2}'\'
+alias awk-c-3='awk -F: '\''{print $3}'\'
+alias awk-c-4='awk -F: '\''{print $4}'\'
+alias awk-c--4='awk -F: '\''{print $(NF-3)}'\'
+alias awk-c--3='awk -F: '\''{print $(NF-2)}'\'
+alias awk-c--2='awk -F: '\''{print $(NF-1)}'\'
+alias awk-c--1='awk -F: '\''{print $(NF)}'\'
+alias awk-c--='awk -F: '\''{print $NF}'\'
+
+# A trailing space in VALUE causes the next word to be checked for
+# alias substitution when the alias is expanded.
+alias xargs='xargs '
+alias cl='clear'
+alias d='clear'
+alias c-='c "$OLDPWD"'
+alias l='ls'
+alias r='ranger'
+alias ink='inkscape'
+alias scc='svn copy'
+alias f='fzf'
+alias h='head'
+alias ll='copy'
+alias g='grep'
+alias t='tail'
+alias vvim='export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"; vim'
+alias cs='config status'
+alias csd='config diff'
+alias csa='config add'
