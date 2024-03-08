@@ -241,10 +241,10 @@ nmap     <leader>n    :set relativenumber!<CR>
 nmap     <leader>p    :setlocal paste!<CR>
 nmap     <leader>r    :so $VIMRC<CR>
 nnoremap <leader>u    :!urlview %<CR>
-"nmap     <leader>s    :sp<cr>
-"nmap     <leader>v    :vs<cr>
-nmap     <leader>s    :VimtexStop<CR>
-nmap     <leader>v    :VimtexCompile<CR>
+nmap     <leader>s    :sp<cr>
+nmap     <leader>v    :vs<cr>
+"nmap     <leader>s    :VimtexStop<CR>
+"nmap     <leader>v    :VimtexCompile<CR>
 
 " Move between buffers
 nnoremap <leader>] :bn<CR>
@@ -1127,3 +1127,7 @@ set shortmess-=S
 
 nmap <F1> :echo<CR>
 imap <F1> <C-o>:echo<CR>
+
+nnoremap Y "+y
+nnoremap YY "+yy
+
