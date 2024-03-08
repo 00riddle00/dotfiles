@@ -52,7 +52,7 @@ KEYTIMEOUT=1
 ### that, it can be useful to call :w {filename} and save the 
 ### command to a file).
 ### P.S. 'V' (uppercase) just performs the selection as usual.
-autoload -U edit-command-line
+autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
@@ -87,8 +87,8 @@ bindkey '^g'   kill-whole-line
 
 bindkey '^y'   yank
 
-bindkey '^t'   transpose-chars
-bindkey '^[t'  transpose-words
+#bindkey '^t'   transpose-chars
+#bindkey '^[t'  transpose-words
 
 bindkey '^[u'  up-case-word
 bindkey '^[l'  down-case-word
@@ -141,3 +141,11 @@ tmux > /dev/null 2>&1
 set -o ignoreeof ## prevents Ctrl+d from exiting the shell
 
 unsetopt BEEP
+
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+if [ -x "$(command -v fzf)"  ]
+then
+    source /usr/share/fzf/key-bindings.zsh
+fi
+

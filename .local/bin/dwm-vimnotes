@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-urxvt -geometry 135x61 -name notes -hold -e tmux new-session\; new-window -n notes vim -c "e $DROPBOX/gtd/coding/main.md | :cd %:p:h | :cd .. | :NERDTreeToggle "\; swap-window -t -1\;
+urxvt -geometry 135x61 -name notes -hold -e tmux new-session\; new-window -n notes $EDITOR -c "e $DROPBOX/gtd/coding/main.md | :cd %:p:h | :cd .. | :NERDTreeToggle "\; swap-window -t -1\;

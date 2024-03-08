@@ -45,15 +45,19 @@ export TEXMFHOME=$XDG_DATA_HOME/texmf
 export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export LYNX_CFG_PATH="$XDG_CONFIG_HOME"/lynx.cfg
-export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"
-
-export VIMCOLOR="miro8"
-export VIMRC="$HOME/.vimrc"
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
+
+if [ ! -x "$(command -v nvim)" ];
+then 
+    export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"
+fi
+export VIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+export VIMCOLOR="miro8"
 
 # Default programs
 export CC="gcc"
-export EDITOR="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 export TERMINAL="urxvt"
 export BROWSER="brave"
 export READER="zathura"
