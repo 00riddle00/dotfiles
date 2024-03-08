@@ -7,10 +7,10 @@ bk() { cp "$1" "$1.bak"; }
 ## ex. usage (called from specific directory):
 ##      ma "vedit" "vim $(readlink -f file_to_edit.txt)"
 ##      ma "cddir" "cd $(pwd)"
-ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
+ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; echo "***Alias added***\nalias $1='$2'"; zsh }
 
 ## make an alias for zsh to cd into current dir.
-macd() { echo alias "$1='cd $(pwd)'" >> "$ZDOTDIR/aliases.zsh"; zsh; }
+macd() { echo alias "$1='cd $(pwd)'" >> "$ZDOTDIR/aliases.zsh"; echo "***Alias added***\nalias $1='cd $(pwd)'"; zsh }
 
 # SYSTEMWIDE FUNCTIONS
 
@@ -148,5 +148,25 @@ recent ()
 }
 
 auf() {
- ps ax | grep -v grep | grep -i "${1}" | awk '{print $1}'
+    ps ax | grep -v grep | grep -i "${1}" | awk '{print $1}'
 }
+
+svndiff() {
+  sep="\n$(perl -e 'print("@" x 100);')\n"
+
+  svn diff "$@" \
+  | awk -v sep="$sep" '/^Index: / {print sep} {print}' \
+  | bat --language diff
+}
+
+c() {
+  if [ -z "$1" ]; then
+    cd
+  elif [ "$(find "$1" -maxdepth 1 -type f | head -n 51 | wc -l)" -gt 50 ]; then
+    cd "$1" 
+    echo "large dir"
+  else
+    cd "$1" && ls
+  fi
+}
+

@@ -48,7 +48,7 @@ URxvt.font: xft:Source Code Pro:size=11, \
 URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,keyboard-select,resize-font
 
 !copy and paste
-URxvt.keysym.M-c:      eval:selection_to_clipboard
+!URxvt.keysym.M-c:      eval:selection_to_clipboard
 URxvt.keysym.M-v:      eval:paste_clipboard
 !keyboard-select
 !  activate selecting text
