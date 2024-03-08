@@ -1,42 +1,14 @@
 "---------------------------------------------------------------
-" file:     $XDG_CONFIG_HOME/vim/vimrc
+" file:     $XDG_CONFIG_HOME/nvim/init.vim
 " author:   riddle00 - https://github.com/00riddle00
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
 "---------------------------------------------------------------
-
-" XDG support
-
-if empty($MYVIMRC) | let $MYVIMRC = expand('<sfile>:p') | endif
-
-if empty($XDG_CACHE_HOME)  | let $XDG_CACHE_HOME  = $HOME."/.cache"       | endif
-if empty($XDG_CONFIG_HOME) | let $XDG_CONFIG_HOME = $HOME."/.config"      | endif
-if empty($XDG_DATA_HOME)   | let $XDG_DATA_HOME   = $HOME."/.local/share" | endif
-if empty($XDG_STATE_HOME)  | let $XDG_STATE_HOME  = $HOME."/.local/state" | endif
-
-set runtimepath^=$XDG_CONFIG_HOME/vim
-set runtimepath+=$XDG_DATA_HOME/vim
-set runtimepath+=$XDG_CONFIG_HOME/vim/after
-
-set packpath^=$XDG_DATA_HOME/vim,$XDG_CONFIG_HOME/vim
-set packpath+=$XDG_CONFIG_HOME/vim/after,$XDG_DATA_HOME/vim/after
-
-let g:netrw_home = $XDG_DATA_HOME."/vim"
-call mkdir($XDG_DATA_HOME."/vim/spell", 'p', 0700)
-
-set backupdir=$XDG_STATE_HOME/vim/backup | call mkdir(&backupdir, 'p', 0700)
-set directory=$XDG_STATE_HOME/vim/swap   | call mkdir(&directory, 'p', 0700)
-set undodir=$XDG_STATE_HOME/vim/undo     | call mkdir(&undodir,   'p', 0700)
-set viewdir=$XDG_STATE_HOME/vim/view     | call mkdir(&viewdir,   'p', 0700)
-
-if !has('nvim') " Neovim has its own special location
-  set viminfofile=$XDG_STATE_HOME/vim/viminfo
-endif
 
 "===============================================================
 "  SETTINGS
 "===============================================================
 "
-" In Arch linux, vim loads the /usr/share/vim/vimfiles/archlinux.vim 
+" In Arch linux, Neovim loads the /usr/share/vim/vimfiles/archlinux.vim 
 " settings file at the beginning
 
 "=========================================
@@ -484,9 +456,9 @@ autocmd InsertLeave * silent! if expand('%') != '' | update | endif
 
 " Use `sed -n l` to test keys ESC sequences.
 " mapping ALT key
-execute "set <M-f>=\ef"  
-execute "set <M-b>=\eb"
-execute "set <M-d>=\ed"
+"execute "set <M-f>=\ef"  
+"execute "set <M-b>=\eb"
+"execute "set <M-d>=\ed"
 
 autocmd FileType help wincmd L|  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -686,7 +658,7 @@ endfunction
 "
 " (vim-plug) Specify a directory for plugins
 " Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.config/vim/plugged')
+call plug#begin('~/.local/share/nvim/site/plugged')
 
 "---------------------------------------------------------------
 
@@ -891,6 +863,12 @@ let g:pymode_lint_cwindow = 0
 "----------------------------------
 
 let g:python_highlight_all = 1
+
+"==============================================
+ Plug 'wookayin/semshi', { 'do': ':UpdateRemotePlugins', 'tag': '*' }
+"==============================================
+
+" <empty>
 
 "==============================================
  Plug 'scrooloose/syntastic'
@@ -1129,5 +1107,6 @@ nmap <F1> :echo<CR>
 imap <F1> <C-o>:echo<CR>
 
 nnoremap Y "+y
+
 nnoremap YY "+yy
 
