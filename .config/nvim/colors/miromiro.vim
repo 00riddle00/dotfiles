@@ -12,7 +12,7 @@ let g:colors_name="miromiro"
 " Normal colors  --- 
 hi Normal          ctermfg=15
 hi Ignore          ctermfg=8
-hi Comment         ctermfg=7  cterm=italic
+hi Comment         ctermfg=7
 hi LineNr          ctermfg=8
 hi Float           ctermfg=3
 hi Include         ctermfg=5
@@ -20,9 +20,9 @@ hi Define          ctermfg=2
 hi Macro           ctermfg=13
 hi PreProc         ctermfg=10
 hi PreCondit       ctermfg=13
-hi NonText         ctermfg=6
+hi NonText         ctermfg=15
 hi Directory       ctermfg=6
-hi SpecialKey      ctermfg=11
+hi SpecialKey      ctermfg=15
 hi Type            ctermfg=6
 hi String          ctermfg=2
 hi Constant        ctermfg=13
@@ -35,16 +35,16 @@ hi Repeat          ctermfg=9
 hi Statement       ctermfg=4
 hi Label           ctermfg=13
 hi Operator        ctermfg=3
-hi Keyword         ctermfg=9   
-hi StorageClass    ctermfg=11  
+hi Keyword         ctermfg=9
+hi StorageClass    ctermfg=11
 hi Structure       ctermfg=5
 hi Typedef         ctermfg=6
 hi Function        ctermfg=11
 hi Exception       ctermfg=1
 hi Underlined      ctermfg=4
-hi Title           ctermfg=3   
+hi Title           ctermfg=3
 hi Tag             ctermfg=11
-hi Delimiter       ctermfg=12  
+hi Delimiter       ctermfg=12
 hi SpecialComment  ctermfg=9
 hi Boolean         ctermfg=3
 hi Todo            ctermfg=9
@@ -63,7 +63,7 @@ hi Pmenu           ctermfg=2    ctermbg=15
 hi PmenuSel        ctermfg=1    ctermbg=15
 hi Visual          ctermfg=8    ctermbg=15
 hi CursorLine      cterm=NONE   ctermbg=233
-hi CursorLineNr    ctermfg=11   ctermbg=233
+hi CursorLineNr    cterm=NONE   ctermfg=11   ctermbg=233
 hi StatusLine      ctermfg=0    ctermbg=7
 hi StatusLineNC    ctermfg=8    ctermbg=0
 
@@ -74,15 +74,15 @@ hi DiffAdd         ctermfg=7    ctermbg=5
 hi DiffChange      ctermfg=0    ctermbg=4
 hi DiffDelete      ctermfg=0
 
-" Specific for Vim script  --- 
+" Specific for Vim script  ---
 hi vimCommentTitle ctermfg=10
 hi vimFold         ctermfg=0    ctermbg=15
 
-" Specific for help files  --- 
+" Specific for help files  ---
 hi helpHyperTextJump ctermfg=11
 
 " JS numbers only ---
-hi javaScriptNumber ctermfg=11 
+hi javaScriptNumber ctermfg=11
 
 " Special for HTML ---
 hi htmlTag        ctermfg=6
@@ -96,10 +96,10 @@ hi perlStatementStorage ctermfg=1
 hi perlVarPlain   ctermfg=3
 hi perlVarPlain2  ctermfg=11
 
-" Specific for Ruby  --- 
+" Specific for Ruby  ---
 hi rubySharpBang  ctermfg=10  term=standout
 
-" Spell checking  --- 
+" Spell checking  ---
 if version >= 700
   hi clear SpellBad
   hi clear SpellCap
@@ -111,4 +111,3 @@ if version >= 700
   hi SpellLocal  cterm=None
 endif
 " vim: foldmethod=marker foldmarker={{{,}}}:
-

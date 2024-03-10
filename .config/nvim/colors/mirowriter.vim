@@ -9,7 +9,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="mirowriter"
 
-hi Normal       ctermfg=15   ctermbg=NONE
+hi Normal       ctermfg=15   ctermbg=232
 hi Ignore       ctermfg=8
 hi Statement    ctermfg=4
 hi Float        ctermfg=3
@@ -28,6 +28,7 @@ hi Title        ctermfg=3
 hi PreProc      ctermfg=10
 hi LineNr       ctermfg=8
 hi Comment      ctermfg=7
+hi NonText      ctermfg=16
 hi WarningMsg   ctermfg=9    ctermbg=15
 hi ErrorMsg     ctermfg=1    ctermbg=11
 hi Visual       ctermfg=8	 ctermbg=15
@@ -38,7 +39,7 @@ hi Folded       ctermfg=6    ctermbg=0    cterm=reverse
 
 " Reset by distract free
 hi NonText      ctermfg=232  ctermbg=232
-hi VertSplit    ctermfg=232  ctermbg=NONE
+hi VertSplit    ctermfg=232  ctermbg=0
 
 " Spell checking  --- 
 if version >= 700
