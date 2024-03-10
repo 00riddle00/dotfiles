@@ -14,7 +14,7 @@ hi Normal          ctermfg=white	cterm=bold
 hi Ignore          ctermfg=black	cterm=bold
 hi Comment         ctermfg=grey
 hi LineNr          ctermfg=black	cterm=bold
-hi NonText         ctermfg=yellow	cterm=bold
+hi NonText         ctermfg=blue	cterm=bold
 hi Float           ctermfg=yellow
 hi Include         ctermfg=magenta
 hi Define          ctermfg=green
@@ -66,6 +66,7 @@ hi StatusLine      ctermfg=black    ctermbg=grey
 hi StatusLineNC    ctermfg=white    ctermbg=black   cterm=bold
 hi CursorLine      cterm=NONE       ctermbg=NONE
 hi CursorLineNr    ctermfg=yellow   ctermbg=NONE    cterm=bold
+hi VertSplit       ctermfg=24       ctermbg=NONE
 
 " Diff lines ---
 hi DiffLine        ctermbg=yellow

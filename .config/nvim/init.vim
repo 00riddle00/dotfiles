@@ -37,6 +37,10 @@ set laststatus=2
 set relativenumber
 " show the line number on the bar
 set ruler
+" Vertical separator style
+set fillchars+=vert:\|
+" Do not show the tildes at the end of buffer
+set fillchars+=eob:\ 
 " kudos to Jason Ryan (http://jasonwryan.com)
 " (last element in statusline - escaped space character, 
 "  do not remove it when removing trailing spaces from a file)
