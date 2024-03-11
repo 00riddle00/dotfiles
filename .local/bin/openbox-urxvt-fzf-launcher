@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+urxvt -geometry 70x30 -name fzf-launcher -e sh -c "fzf-launcher"

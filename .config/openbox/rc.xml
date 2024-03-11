@@ -438,7 +438,7 @@
     ============================ -->
     <keybind key="Insert">
       <action name="Execute">
-        <command>gmrun</command>
+        <command>openbox-urxvt-fzf-launcher</command>
       </action>
     </keybind>
     <!-- ===========================
@@ -1089,6 +1089,12 @@
     -->
     <application class="*">
       <decor>no</decor>
+    </application>
+    <application name="fzf-launcher">
+      <position force="no">
+        <x>center</x>
+        <y>center</y>
+      </position>
     </application>
   </applications>
 </openbox_config>

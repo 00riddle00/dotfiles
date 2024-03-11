@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+alacritty --class fzf-launcher -o "window.dimensions.lines=27" "window.dimensions.columns=70" -e sh -c "fzf-launcher"
