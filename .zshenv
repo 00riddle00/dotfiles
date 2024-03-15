@@ -47,17 +47,22 @@ export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export LYNX_CFG_PATH="$XDG_CONFIG_HOME"/lynx.cfg
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
 
-if [ ! -x "$(command -v nvim)" ];
+# Editor
+if [ -x "$(command -v nvim)" ];
 then 
-    export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"
+    export EDITOR="nvim"
+    export VISUAL="nvim"
+    export VIMRC="$XDG_CONFIG_HOME/nvim/init.vim"
+else
+    export EDITOR="vim"
+    export VISUAL="vim"
+    export VIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+    export VIMINIT="set nocp | source ${XDG_CONFIG_HOME}/vim/vimrc"
 fi
-export VIMRC="$XDG_CONFIG_HOME/vim/vimrc"
 export VIMCOLOR="miro8"
 
 # Default programs
 export CC="gcc"
-export EDITOR="nvim"
-export VISUAL="nvim"
 export TERMINAL="urxvt"
 export BROWSER="brave"
 export READER="zathura"
@@ -66,6 +71,9 @@ export PAGER="less"
 # bat used as a colorizing pager for man
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export BAT_PAGER="less -RF"
+#   It might also be necessary to set MANROFFOPT="-c"
+#   if you experience formatting problems (I do).
+export MANROFFOPT="-c"
 ## for i3
 export FILE="ranger"
 
@@ -82,7 +90,6 @@ export TMP4="$HOME/tmp4"
 export PRO="$HOME/pro"
 export CANDY="$DROPBOX/candy"
 export NOTES="$DROPBOX/gtd/"
-export KEEP="$DROPBOX/keepass"
 
 # Screen
 export DP_SCREEN="DP-0"
