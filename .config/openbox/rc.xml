@@ -525,6 +525,18 @@
         <command>wmctrl -x -a notes.URxvt</command>
       </action>
     </keybind>
+    <!-- launch rxvt-unicode (window name "clipboard") -->
+    <keybind key="A-F5">
+      <action name="Execute">
+        <command>openbox-urxvt-clipboard</command>
+      </action>
+    </keybind>
+    <!-- focus rxvt-unicode window named "clipboard" -->
+    <keybind key="F5">
+      <action name="Execute">
+        <command>wmctrl -x -a clipboard.URxvt</command>
+      </action>
+    </keybind>
     <!-- ===========================
     File Manager
     ============================ -->
@@ -560,11 +572,13 @@
         <command>sh -c "activate emacs"</command>
       </action>
     </keybind>
+    <!--
     <keybind key="F5">
       <action name="Execute">
         <command>subl</command>
       </action>
     </keybind>
+    -->
     <!-- ===========================
     Web Browsers
     ============================ -->
