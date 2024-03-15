@@ -138,6 +138,8 @@ set incsearch
 set nohlsearch
 " Override the 'ignorecase' option if the search pattern contains upper case characters.
 set smartcase
+" shows how many times a search pattern occurs in the current buffer
+set shortmess-=S
 
 "=========================================
 " [SETTINGS] Autocomplete
@@ -233,8 +235,15 @@ nmap     k            gk
 " Disable key for entering Ex-mode
 nmap     Q            <nop>
 
+"Disable F1 built-in help key
+nmap     <F1>         :echo<CR>
+imap     <F1>          <C-o>:echo<CR>
+
 " set textwidth to 79 characters
 nmap     <leader>8    :set tw=79<CR>
+
+" set textwidth to 88 characters
+nmap     <leader>0    :set tw=88<CR>
 
 " set textwidth to 100 characters
 nmap     <leader>1    :set tw=100<CR>
@@ -302,6 +311,10 @@ inoremap <C-g> <Esc>cc
 
 " yank
 inoremap <C-y> <C-r>"
+
+" undo
+" vim registers <C-/> as <C-_>
+inoremap <C-_> <C-O>u
 
 " transpose chars
 inoremap <silent> <C-t> <ESC>hxpa
@@ -398,6 +411,9 @@ noremap      zz           z-
 " +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
 " Easiest way for that is to just install gvim instead of vim.
 vmap <C-c> "+y
+nnoremap Y "+y
+vnoremap Y "+y
+nnoremap YY "+yy
 
 " Yank into the system secondary clipboard register and delete the visually selected text.
 "
@@ -457,12 +473,6 @@ nmap <F8> :w \| !make rebuild && ./demo <CR>
 
 " update current file when leaving insert mode
 autocmd InsertLeave * silent! if expand('%') != '' | update | endif
-
-" Use `sed -n l` to test keys ESC sequences.
-" mapping ALT key
-"execute "set <M-f>=\ef"  
-"execute "set <M-b>=\eb"
-"execute "set <M-d>=\ed"
 
 autocmd FileType help wincmd L|  " opens help window vertically
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -754,7 +764,7 @@ let delimitMate_expand_cr=1
 " <empty>
 
 "==============================================
- Plug 'scrooloose/nerdcommenter'
+ Plug 'preservim/nerdcommenter'
 "==============================================
 
 "----------------------------------
@@ -766,24 +776,23 @@ let delimitMate_expand_cr=1
 " ex. ^[^[OP (for Alt-<F1> in rxvt-unicode) means <Esc><Esc>OP
 "
 " rxvt-unicode
-map  <Esc><Esc>OP <Plug>NERDCommenterToggle<CR>
-imap <Esc><Esc>OP <ESC><Plug>NERDCommenterToggle<CR>
+map  <M-F1> <Plug>NERDCommenterToggle<CR>
+imap <M-F1> <ESC><Plug>NERDCommenterToggle<CR>
 "
 " Alacritty
 map  <Esc>[1;3P <Plug>NERDCommenterToggle<CR>
 imap  <Esc>[1;3P <ESC><Plug>NERDCommenterToggle<CR>
 
-
 " vim registers <C-/> as <C-_>
-map  <C-_>         <Plug>NERDCommenterToggle<CR>
-imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
+"map  <C-_>         <Plug>NERDCommenterToggle<CR>
+"imap <C-_>         <ESC><Plug>NERDCommenterToggle<CR>
 
 " ignore default NERDCommenter keybindings
 map  <leader>cc   <nop>
 map  <leader>cu   <nop>
 
 "==============================================
- Plug 'scrooloose/nerdtree'
+ Plug 'preservim/nerdtree'
 "==============================================
 
 "-----------------------------
@@ -875,8 +884,10 @@ let g:python_highlight_all = 1
 " <empty>
 
 "==============================================
- Plug 'scrooloose/syntastic'
+ Plug 'vim-syntastic/syntastic'
 "==============================================
+
+" TODO migrate to ALE
 
 "------------------------------
 " [PLUGIN] [Syntastic] Settings
@@ -910,7 +921,7 @@ let g:syntastic_tex_checkers = ['chktex']
 nmap     <leader>c      :SyntasticToggleMode<CR>
 
 "==============================================
- Plug 'majutsushi/tagbar'
+ Plug 'preservim/tagbar'
 "==============================================
 
 "---------------------------
@@ -927,7 +938,7 @@ let g:tagbar_sort = 0
 nmap <leader>b :TagbarToggle<cr>
 
 "==============================================
- Plug 'Chiel92/vim-autoformat'
+ Plug 'vim-autoformat/vim-autoformat'
 "==============================================
 
 "-------------------------------
@@ -998,8 +1009,15 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
  Plug 'houtsnip/vim-emacscommandline'
 "==============================================
 
+" This plugin makes the command-line mode behave more like the Unix command
+" line, by adding Emacs-style mappings (like in the Bash shell).  Some of the
+" mappings just map existing vim commands, but the rest implement functionality
+" that is not available natively.
+
 " (see :h emacscommandline for more info)
 let g:EmacsCommandLineSearchCommandLineDisable = 1
+let g:EmacsCommandLineOlderMatchingCommandLineDisable = 1
+let g:EmacsCommandLineNewerMatchingCommandLineDisable = 1
 
 "==============================================
  Plug 'tpope/vim-fugitive'
@@ -1032,8 +1050,11 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 " <empty>
 
 "==============================================
-" Plug 'tpope/vim-surround'
+ Plug 'tpope/vim-surround'
 "==============================================
+
+" TODO possibly install repeat.vim, since:
+" The . command will work with ds, cs, and yss if you install repeat.vim.
 
 " <empty>
 
@@ -1078,7 +1099,7 @@ let g:vimtex_quickfix_ignore_filters = [
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
 "let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>', '<TAB>'] "before using GitHub Copilot
-let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
+let g:ycm_key_list_stop_completion = ['<C-y>', '<C-f>', '<Enter>']
 "let g:ycm_key_list_select_completion = ['<Down>', '<TAB>'] "before using GitHub Copilot
 let g:ycm_key_list_select_completion = ['<Down>']
 
@@ -1090,6 +1111,10 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 inoremap <expr> <C-d> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<C-d>"
 inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
+"It will map the return key in insert mode to input CTRL-Y when the popup menu
+"is visible. CTRL-Y selects the currently selected item in the menu without
+"entering a new line. Otherwise it will make the return key act like normal.
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
 
 "---------------------------------------------------------------
 
@@ -1099,18 +1124,8 @@ inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
 call plug#end()
 
 "===============================================================
-"  TEMP
+" Temporary (maybe they will stick)
 "===============================================================
-" appears mostly when appending output to .vimrc
 
-" shows how many times a search pattern occurs in the current buffer
-" somewhy this settings works only when it's placed at the end of the file
-set shortmess-=S
-
-nmap <F1> :echo<CR>
-imap <F1> <C-o>:echo<CR>
-
-nnoremap Y "+y
-
-nnoremap YY "+yy
+" <empty>
 
