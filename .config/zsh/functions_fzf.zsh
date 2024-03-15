@@ -9,17 +9,21 @@ se() { du -a $BIN/* ~/.local/bin/* | awk '{print $2}' | fzf --preview 'bat --col
 # -----------------------------------------------------------------------------
 
 # fe - open file with $EDITOR
-## xargs -r flag does not run vim if STDIN is empty (ex. if one quits fzf (CTRL-C))
-fe() { 
-    fzf --preview 'bat --color always {}' \
-      | xargs -ro $EDITOR }
+fe() {
+  local file
+  file="$(
+    /usr/bin/fd --type f --follow --exclude .git --max-depth=1 2> /dev/null \
+      | fzf +m --preview "bat --color=always --style=numbers --line-range=:500 {}" --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' --preview-window=right:60%:wrap
+  )" || return
+  $EDITOR "$file" || return
+}
 
 # fea - including hidden files (only in current dir)
 fea() {
   local file
   file="$(
     /usr/bin/fd --type f --hidden --follow --exclude .git --max-depth=1 2> /dev/null \
-      | fzf +m
+      | fzf +m --preview "bat --color=always --style=numbers --line-range=:500 {}" --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' --preview-window=right:60%:wrap
   )" || return
   $EDITOR "$file" || return
 }

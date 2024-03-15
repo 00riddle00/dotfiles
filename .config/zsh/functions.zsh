@@ -170,3 +170,10 @@ c() {
   fi
 }
 
+out() {
+    if [ -z "$1" ]; then
+        echo "Usage: out <file>"
+    else
+        $EDITOR "outputs/${1%.com}."*
+    fi
+}
