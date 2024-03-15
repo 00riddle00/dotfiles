@@ -1,4 +1,3 @@
-
 # Enable colors 
 autoload -U colors && colors
 
@@ -148,4 +147,3 @@ if [ -x "$(command -v fzf)"  ]
 then
     source /usr/share/fzf/key-bindings.zsh
 fi
-

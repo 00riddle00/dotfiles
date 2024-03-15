@@ -67,7 +67,7 @@ alias bak='cd $HOME/backups'
 alias bin='cd $HOME/.local/bin'
 alias candy='cd $CANDY'
 alias conf='cd $XDG_CONFIG_HOME'
-alias data='cd $XDG_DATA_HOME'
+#alias data='cd $XDG_DATA_HOME'
 alias drop='cd $DROPBOX'
 alias drop.bak='cd $DROPBOX/backup'
 alias dw='cd $HOME/Downloads'
@@ -211,14 +211,14 @@ alias apache='systemctl start httpd.service'
 alias reapache='systemctl restart httpd'
 
 # Wired
-alias net='systemctl start dhcpcd@enp9s0.service'
-alias renet='systemctl restart dhcpcd@enp9s0.service'
+alias net="systemctl start dhcpcd@$(basename -a /sys/class/net/enp*).service"
+alias renet="systemctl restart dhcpcd@$(basename -a /sys/class/net/wlp*).service"
 
 # Wireless
-alias wnet='sudo systemctl start dhcpcd@wlp8s0.service'
-alias rewnet='sudo systemctl start dhcpcd@wlp8s0.service'
-alias wifi.off='sudo ip link set wlp8s0 down'
-alias wifi.on='sudo ip link set wlp8s0 up'
+alias wnet="sudo systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
+alias rewnet="sudo systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
+alias wifi.off="sudo ip link set $(basename -a /sys/class/net/wlp*) down"
+alias wifi.on="sudo ip link set $(basename -a /sys/class/net/wlp*) up"
 
 #------------------------------------------------------------------------------
 # 13. Network
@@ -238,17 +238,17 @@ alias check.domain='whois'
 # 14. WPA Supplicant
 #------------------------------------------------------------------------------
 
-alias wpa.caffeine='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/caffeine.conf'
-alias wpa.caif='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/caif-cafe.conf'
-alias wpa.comet='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/comet.conf'
-alias wpa.eduroam='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/eduroam.conf'
-alias wpa.home='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/home.conf'
-alias wpa.huracan='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/huracan.conf'
-alias wpa.mif='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/mif-open.conf'
-alias wpa.rde='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/rde.conf'
-alias wpa.sodas='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/sodas.conf'
-alias wpa.vu='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/vu-wifi.conf'
-alias wpa.wpa='sudo wpa_supplicant -B -i wlp8s0 -c /etc/wpa_supplicant/wpa_supplicant.conf'
+alias wpa.caffeine="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/caffeine.conf"
+alias wpa.caif="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/caif-cafe.conf"
+alias wpa.comet="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/comet.conf"
+alias wpa.eduroam="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/eduroam.conf"
+alias wpa.home="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/home.conf"
+alias wpa.huracan="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/huracan.conf"
+alias wpa.mif="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/mif-open.conf"
+alias wpa.rde="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/rde.conf"
+alias wpa.sodas="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/sodas.conf"
+alias wpa.vu="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/vu-wifi.conf"
+alias wpa.wpa="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/wpa_supplicant.conf"
 
 #------------------------------------------------------------------------------
 # 15. Mount/Unmount
@@ -439,7 +439,6 @@ alias v='$EDITOR'
 alias vmi='$EDITOR'
 alias vv='sudo $EDITOR'
 alias yd='yt-dlp'
-alias z='zsh'
 ## A trailing space in `watch ` causes the next word to be checked for 
 ## alias substitution when the alias is expanded.
 ##
@@ -628,6 +627,7 @@ alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit='sudo mkinitcpio -p linux'
 alias xres.restart='xrdb $XDG_CONFIG_HOME/X11/Xresources'
 alias retmux='tmux kill-server; tmux source-file ~/.tmux.conf; tmux'
+alias z='source $ZDOTDIR/.zshrc'
 
 #---------------------------------------
 # Editing configs
@@ -652,7 +652,7 @@ alias start='$EDITOR $XDG_CONFIG_HOME/openbox/autostart.sh'
 alias tg='$EDITOR $XDG_CONFIG_HOME/tig/config'
 alias tintrc='$EDITOR $XDG_CONFIG_HOME/tint2/tint2rc'
 alias tmuxr='$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf'
-alias vr='$EDITOR $XDG_CONFIG_HOME/$EDITOR/$EDITORrc'
+alias vr='$EDITOR $VIMRC'
 alias xi='$EDITOR $XDG_CONFIG_HOME/X11/xinitrc'
 alias xres='$EDITOR $XDG_CONFIG_HOME/X11/Xresources'
 alias zenv='$EDITOR $HOME/.zshenv'
@@ -894,10 +894,10 @@ alias xres.show='xrdb -query -all'
 alias awk-1='awk '\''{print $1}'\'
 alias awk-2='awk '\''{print $2}'\'
 alias awk-3='awk '\''{print $3}'\'
-alias awk-4='awk '\''{print $3}'\'
-alias awk--4='awk '\''{print $(NF-3)}'\'
-alias awk--3='awk '\''{print $(NF-2)}'\'
-alias awk--2='awk '\''{print $(NF-1)}'\'
+alias awk-4='awk '\''{print $4}'\'
+alias awk--4='awk '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk--3='awk '\''{print $(NF-1?NF-2:0)}'\'
+alias awk--2='awk '\''{print $(NF?NF-1:0)}'\'
 alias awk--1='awk '\''{print $(NF)}'\'
 alias awk--='awk '\''{print $NF}'\'
 # ---------------------------------------
@@ -905,9 +905,9 @@ alias awk-t-1='awk -F$'\''\t'\'' '\''{print $1}'\'
 alias awk-t-2='awk -F$'\''\t'\'' '\''{print $2}'\'
 alias awk-t-3='awk -F$'\''\t'\'' '\''{print $3}'\'
 alias awk-t-4='awk -F$'\''\t'\'' '\''{print $4}'\'
-alias awk-t--4='awk -F$'\''\t'\'' '\''{print $(NF-3)}'\'
-alias awk-t--3='awk -F$'\''\t'\'' '\''{print $(NF-2)}'\'
-alias awk-t--2='awk -F$'\''\t'\'' '\''{print $(NF-1)}'\'
+alias awk-t--4='awk -F$'\''\t'\'' '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-t--3='awk -F$'\''\t'\'' '\''{print $(NF-1?NF-2:0)}'\'
+alias awk-t--2='awk -F$'\''\t'\'' '\''{print $(NF?NF-1:0)}'\'
 alias awk-t--1='awk -F$'\''\t'\'' '\''{print $(NF)}'\'
 alias awk-t--='awk -F$'\''\t'\'' '\''{print $NF}'\'
 # ---------------------------------------
@@ -915,11 +915,21 @@ alias awk-c-1='awk -F: '\''{print $1}'\'
 alias awk-c-2='awk -F: '\''{print $2}'\'
 alias awk-c-3='awk -F: '\''{print $3}'\'
 alias awk-c-4='awk -F: '\''{print $4}'\'
-alias awk-c--4='awk -F: '\''{print $(NF-3)}'\'
-alias awk-c--3='awk -F: '\''{print $(NF-2)}'\'
-alias awk-c--2='awk -F: '\''{print $(NF-1)}'\'
+alias awk-c--4='awk -F: '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-c--3='awk -F: '\''{print $(NF-1?NF-2:0)}'\'
+alias awk-c--2='awk -F: '\''{print $(NF?NF-1:0)}'\'
 alias awk-c--1='awk -F: '\''{print $(NF)}'\'
 alias awk-c--='awk -F: '\''{print $NF}'\'
+# ---------------------------------------
+alias awk-s-1='awk -F/ '\''{print $1}'\'
+alias awk-s-2='awk -F/ '\''{print $2}'\'
+alias awk-s-3='awk -F/ '\''{print $3}'\'
+alias awk-s-4='awk -F/ '\''{print $4}'\'
+alias awk-s--4='awk -F/ '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-s--3='awk -F/ '\''{print $(NF-1?NF-2:0)}'\'
+alias awk-s--2='awk -F/ '\''{print $(NF?NF-1:0)}'\'
+alias awk-s--1='awk -F/ '\''{print $(NF)}'\'
+alias awk-s--='awk -F/ '\''{print $NF}'\'
 
 # A trailing space in VALUE causes the next word to be checked for
 # alias substitution when the alias is expanded.
@@ -927,6 +937,7 @@ alias xargs='xargs '
 alias cl='clear'
 alias d='clear'
 alias c-='c "$OLDPWD"'
+alias -- -='c "$OLDPWD"'
 alias l='ls'
 alias r='ranger'
 alias ink='inkscape'
@@ -936,7 +947,10 @@ alias h='head'
 alias ll='copy'
 alias g='grep'
 alias t='tail'
-alias vvim='export VIMINIT="set nocp | source ${XDG_CONFIG_HOME:-$HOME/.config}/vim/vimrc"; vim'
+alias vvim='export VIMINIT="set nocp | source ${XDG_CONFIG_HOME}/vim/vimrc"; \vim'
 alias cs='config status'
 alias csd='config diff'
 alias csa='config add'
+alias mann='MANPAGER=less; man '
+alias tmux.which="tmux display-message -p '#S'"
+alias sca='svn cat'
