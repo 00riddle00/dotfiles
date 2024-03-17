@@ -69,8 +69,10 @@ bindkey '^[b'  backward-word
 bindkey '^e'   end-of-line
 bindkey '^a'   beginning-of-line
 
-bindkey '^p'   up-line
-bindkey '^n'   down-line
+#bindkey '^p'   up-line
+#bindkey '^n'   down-line
+bindkey '^p'   up-history
+bindkey '^n'   down-history
 
 bindkey '^d'   delete-char-or-list
 bindkey '^?'   backward-delete-char
@@ -87,7 +89,7 @@ bindkey '^g'   kill-whole-line
 bindkey '^y'   yank
 
 #bindkey '^t'   transpose-chars
-#bindkey '^[t'  transpose-words
+bindkey '^[t'  transpose-words
 
 bindkey '^[u'  up-case-word
 bindkey '^[l'  down-case-word
