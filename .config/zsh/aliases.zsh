@@ -954,3 +954,4 @@ alias csa='config add'
 alias mann='MANPAGER=less; man '
 alias tmux.which="tmux display-message -p '#S'"
 alias sca='svn cat'
+alias th='thunar .'

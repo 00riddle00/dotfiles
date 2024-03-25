@@ -758,7 +758,7 @@ let delimitMate_expand_cr=1
 
 
 "==============================================
- Plug 'othree/eregex.vim'
+ "Plug 'othree/eregex.vim'
 "==============================================
 
 " <empty>

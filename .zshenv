@@ -5,11 +5,8 @@
 typeset -U path
 
 path=(
-    $HOME/bin
-    $HOME/bin/scripts
     $HOME/.local/bin
     $HOME/.local/bin/cron
-    $HOME/.emacs.d/bin
     $HOME/perl5/bin
     $path)
 
