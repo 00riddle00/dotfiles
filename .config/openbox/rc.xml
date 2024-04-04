@@ -558,18 +558,18 @@
     <!--
     <keybind key="W-c">
       <action name="Execute">
-        <command>sh -c "activate code"</command>
+        <command>fast-activate code</command>
       </action>
     </keybind>
     -->
     <keybind key="W-p">
       <action name="Execute">
-        <command>sh -c "activate pycharm jetbrains-pycharm alt"</command>
+        <command>fast-activate pycharm jetbrains-pycharm -x</command>
       </action>
     </keybind>
     <keybind key="W-q">
       <action name="Execute">
-        <command>sh -c "activate emacs"</command>
+        <command>fast-activate emacs</command>
       </action>
     </keybind>
     <!--
@@ -584,22 +584,22 @@
     ============================ -->
     <keybind key="F9">
       <action name="Execute">
-        <command>sh -c "activate brave"</command>
+        <command>activate-brave-ignoring alpha bravo</command>
       </action>
     </keybind>
     <keybind key="F1">
       <action name="Execute">
-        <command>sh -c "wmctrl -a alpha"</command>
+        <command>activate-brave alpha</command>
       </action>
     </keybind>
     <keybind key="F12">
       <action name="Execute">
-        <command>sh -c "wmctrl -a bravo"</command>
+        <command>activate-brave bravo</command>
       </action>
     </keybind>
     <keybind key="F4">
       <action name="Execute">
-        <command>sh -c "activate chromium"</command>
+        <command>fast-activate chromium</command>
       </action>
     </keybind>
     <!-- ===========================
@@ -607,12 +607,12 @@
     ============================ -->
     <keybind key="W-m">
       <action name="Execute">
-        <command>sh -c "activate nomacs"</command>
+        <command>fast-activate nomacs</command>
       </action>
     </keybind>
     <keybind key="W-b">
       <action name="Execute">
-        <command>sh -c "activate gimp"</command>
+        <command>fast-activate gimp</command>
       </action>
     </keybind>
     <!-- ===========================
@@ -620,34 +620,34 @@
     ============================ -->
     <keybind key="F7">
       <action name="Execute">
-        <command>sh -c "activate thunderbird"</command>
+        <command>fast-activate thunderbird</command>
       </action>
     </keybind>
     <keybind key="F10">
       <action name="Execute">
-        <command>sh -c "activate qalculate-gtk qalculate"</command>
+        <command>fast-activate qalculate-gtk qalculate</command>
       </action>
     </keybind>
     <!--
     <keybind key="A-c">
       <action name="Execute">
-        <command>sh -c "activate discord"</command>
+        <command>fast-activate discord</command>
       </action>
     </keybind>
     -->
     <keybind key="W-f">
       <action name="Execute">
-        <command>sh -c "activate filezilla"</command>
+        <command>fast-activate filezilla</command>
       </action>
     </keybind>
     <keybind key="W-g">
       <action name="Execute">
-        <command>sh -c "activate smartgit"</command>
+        <command>fast-activate smartgit</command>
       </action>
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>sh -c "activate libreoffice"</command>
+        <command>fast-activate libreoffice</command>
       </action>
     </keybind>
     <keybind key="W-o">
@@ -657,7 +657,7 @@
     </keybind>
     <keybind key="W-S-d">
       <action name="Execute">
-        <command>sh -c "activate qbittorrent"</command>
+        <command>fast-activate qbittorrent</command>
       </action>
     </keybind>
   </keyboard>

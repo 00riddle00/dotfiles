@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 [Tomas Giedraitis]
+# Date:   2024-04-04 23:50:52 EEST
+# Path:   ~/.local/bin/activate-brave-ignoring
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Check if there is a brave window except the ones with the given name in
+# arguments: If there is, activate it and exit. If there isn't, open a new
+# brave window (with the default title).
+#
+# If more than one argument, join them with | to create a regex pattern: e.g.
+# "activate-brave-ignoring foo bar" will match windows with title "foo" or
+# "bar".
+#
+# Usage: activate-brave-ignoring <window-name-1> [<window-name-2> ...]
+#**
+
+if [[ -z "$1" ]]; then
+    echo "Usage: activate-brave-ignoring <window-name-1> [<window-name-2> ...]"
+    exit 1
+fi
+
+if [[ "$#" -gt 1 ]]; then
+    win_names_regex=$(echo "$@" | tr ' ' '|')
+else
+    win_names_regex="$1"
+fi
+
+if wmctrl -lx \
+    | grep "brave-browser.Brave-browser.*$" \
+    | awk -v win_names_regex="$win_names_regex" '$NF !~ win_names_regex {print}' \
+    | grep -q . \
+; then
+    wmctrl -a "brave"
+else
+    brave
+fi

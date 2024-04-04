@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 [Tomas Giedraitis]
+# Date:   2024-04-04 23:50:52 EEST
+# Path:   ~/.local/bin/fast-activate
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open a program if it is not running, or focus on it if it is running.
+#
+# Usage: fast-activate <command_name> [window_name] [-x]
+#**
+
+command_name="${1}"
+
+if [[ -n "${2}" ]]; then
+    window_name="${2}"
+else
+    window_name="${command_name}"
+fi
+
+if [[ -z  "`wmctrl -lx | grep -i ${window_name}`" ]]; then
+    # No program is running, so start one.
+    ${command_name} &
+else
+    # Program is opened, so focus on it.
+    if [[ "${3}" == "-x" ]]; then
+        wmctrl -x -a ${window_name}
+    else
+        wmctrl -a ${window_name}
+    fi
+fi

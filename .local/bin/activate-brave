@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 [Tomas Giedraitis]
+# Date:   2024-04-04 23:50:52 EEST
+# Path:   ~/.local/bin/activate-brave
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Activate a Brave window by name, or create a new one if it doesn't exist.
+#
+# Usage: activate-brave <window-name>
+#**
+
+if [[ -z "$1" ]]; then
+    echo "Usage: activate-brave <window-name>"
+    exit 1
+fi
+
+if \
+    wmctrl -lx \
+    | grep -q "brave-browser.Brave-browser.*${1}$" \
+; then
+    wmctrl -F -a "${1}"
+else
+    brave --window-name="${1}"
+fi
