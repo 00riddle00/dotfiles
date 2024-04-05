@@ -2,25 +2,19 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 [Tomas Giedraitis]
-# Date:   2024-04-05 20:08:33 EEST
+# Date:   2024-04-05 20:27:30 EEST
 # Path:   ~/.local/bin/fast-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Focus on the program if it is running.
 #
-# Usage: $0 <command_name> [window_name] [-x]
+# Usage: $0 <window_name_or_class> [-x]
 #**
 
-command_name="${1}"
+window_name="${1}"
 
-if [[ -n "${2}" ]]; then
-    window_name="${2}"
-else
-    window_name="${command_name}"
-fi
-
-if [[ "${3}" == "-x" ]]; then
+if [[ "${2}" == "-x" ]]; then
     # Raise and focus window by class (fuzzy match). If no such window is
     # found, just do nothing.
     wmctrl -x -a "${window_name}"
