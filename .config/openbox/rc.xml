@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 00:03:14 EEST
+# Date:   2024-04-06 01:30:27 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -554,7 +554,7 @@
   <!-- Open/focus Emacs window by its name/title. -->
   <keybind key="W-q">
     <action name="Execute">
-      <command>fast-open-or-focus emacs</command>
+      <command>fast-open-or-focus emacs emacs.Emacs -x</command>
     </action>
   </keybind>
   <!--
