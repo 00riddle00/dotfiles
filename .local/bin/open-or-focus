@@ -2,19 +2,19 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 [Tomas Giedraitis]
-# Date:   2024-04-05 01:24:29 EEST
-# Path:   ~/.local/bin/activate
+# Date:   2024-04-05 19:45:03 EEST
+# Path:   ~/.local/bin/open-or-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # ...
 #
 # USAGE:
-#     activate brave
-#     activate qalculate-gtk -n qalculate
-#     activate qalculate-gtk -e -n 'Qalculate!'
-#     activate pycharm -c jetbrains-pycharm
-#     activate thunar -e -c "thunar.Thunar"
+#     $0 brave
+#     $0 qalculate-gtk -n qalculate
+#     $0 qalculate-gtk -e -n 'Qalculate!'
+#     $0 pycharm -c jetbrains-pycharm
+#     $0 thunar -e -c "thunar.Thunar"
 #
 # Last checked with:
 # wmctrl v1.07

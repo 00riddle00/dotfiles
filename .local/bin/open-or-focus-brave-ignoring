@@ -2,24 +2,23 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 [Tomas Giedraitis]
-# Date:   2024-04-05 01:24:33 EEST
-# Path:   ~/.local/bin/activate-brave-ignoring
+# Date:   2024-04-05 19:47:15 EEST
+# Path:   ~/.local/bin/open-or-focus-brave-ignoring
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Check if there is a brave window except the ones with the given name in
-# arguments: If there is, activate it and exit. If there isn't, open a new
+# arguments: If there is, focus it and exit. If there isn't, open a new
 # brave window (with the default title).
 #
 # If more than one argument, join them with | to create a regex pattern: e.g.
-# "activate-brave-ignoring foo bar" will match windows with title "foo" or
-# "bar".
+# "$0 foo bar" will match windows with title "foo" or "bar".
 #
-# Usage: activate-brave-ignoring <window-name-1> [<window-name-2> ...]
+# Usage: $0 <window-name-1> [<window-name-2> ...]
 #**
 
 if [[ -z "$1" ]]; then
-    echo "Usage: activate-brave-ignoring <window-name-1> [<window-name-2> ...]"
+    echo "Usage: $0 <window-name-1> [<window-name-2> ...]"
     exit 1
 fi
 

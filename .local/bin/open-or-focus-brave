@@ -2,18 +2,18 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 [Tomas Giedraitis]
-# Date:   2024-04-05 01:24:31 EEST
-# Path:   ~/.local/bin/activate-brave
+# Date:   2024-04-05 19:46:09 EEST
+# Path:   ~/.local/bin/open-or-focus-brave
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Activate a Brave window by name, or create a new one if it doesn't exist.
+# Focus a Brave window by name, or create a new one if it doesn't exist.
 #
-# Usage: activate-brave <window-name>
+# Usage: $0 <window-name>
 #**
 
 if [[ -z "$1" ]]; then
-    echo "Usage: activate-brave <window-name>"
+    echo "Usage: $0 <window-name>"
     exit 1
 fi
 
