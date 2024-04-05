@@ -2,19 +2,23 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 [Tomas Giedraitis]
-# Date:   2024-04-05 19:45:03 EEST
+# Date:   2024-04-05 19:41:39 EEST
 # Path:   ~/.local/bin/open-or-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# ...
+# TODO Add description.
+# TODO Make it work with USAGE script.
+# TODO Add description on OPTIONS.
 #
 # USAGE:
 #     $0 brave
+#     $0 brave --focus
 #     $0 qalculate-gtk -n qalculate
-#     $0 qalculate-gtk -e -n 'Qalculate!'
-#     $0 pycharm -c jetbrains-pycharm
-#     $0 thunar -e -c "thunar.Thunar"
+#     $0 qalculate-gtk --exact --name 'Qalculate!'
+#     $0 qalculate-gtk -e -f 'Qalculate!'
+#     $0 pycharm --class jetbrains-pycharm
+#     $0 thunar -c -e 'thunar.Thunar'
 #
 # Last checked with:
 # wmctrl v1.07
@@ -23,30 +27,34 @@
 POSITIONAL_ARGS=()
 
 while [[ $# -gt 0 ]]; do
-  case $1 in
-    -c|--class)
-      WIN_CLASS="$2"
-      shift
-      shift
-      ;;
-    -e|--exact)
-        EXACT=true
-        shift
-        ;;
-    -n|--name)
-      WIN_NAME="$2"
-      shift
-      shift
-      ;;
-    -*|--*)
-      echo "Unknown option $1"
-      exit 1
-      ;;
-    *)
-      POSITIONAL_ARGS+=("$1")
-      shift
-      ;;
-  esac
+    case $1 in
+        -c|--class)
+            WIN_CLASS="$2"
+            shift
+            shift
+            ;;
+        -e|--exact)
+            EXACT=true
+            shift
+            ;;
+        -f|--focus)
+            FOCUS=true
+            shift
+            ;;
+        -n|--name)
+            WIN_NAME="$2"
+            shift
+            shift
+            ;;
+        -*|--*)
+            echo "Unknown option $1"
+            exit 1
+            ;;
+        *)
+            POSITIONAL_ARGS+=("$1")
+            shift
+            ;;
+    esac
 done
 
 set -- "${POSITIONAL_ARGS[@]}"
@@ -62,10 +70,32 @@ if [[ -z "${WIN_NAME}" && -z "${WIN_CLASS}" ]]; then
     WIN_NAME="${1}"
 fi
 
-if [[ -n "${EXACT}" ]]; then
-    echo EXAC
+# TODO simplify this code with so much repetitions in conditionals by putting
+# wmctrl flags into variables.
+if [[ -n "${FOCUS}" ]]; then
     if [[ -n "${WIN_CLASS}" ]]; then
-        echo winclas
+        if [[ -n "${EXACT}" ]]; then
+            # Raise and focus window by class (exact match). If no such window
+            # is found, just do nothing.
+            wmctrl -F -x -a "${WIN_CLASS}"
+        else
+            # Raise and focus window by class (fuzzy match). If no such window
+            # is found, just do nothing.
+            wmctrl -x -a "${WIN_CLASS}"
+        fi
+    else
+        if [[ -n "${EXACT}" ]]; then
+            # Raise and focus window by name (title) (exact match). If no such
+            # window is found, just do nothing.
+            wmctrl -F -a "${WIN_NAME}"
+        else
+            # Raise and focus window by name (title) (fuzzy match). If no such
+            # window is found, just do nothing.
+            wmctrl -a "${WIN_NAME}"
+        fi
+    fi
+elif [[ -n "${EXACT}" ]]; then
+    if [[ -n "${WIN_CLASS}" ]]; then
         if wmctrl -l -x | awk '{print $3}' | grep -q "^${WIN_CLASS}$"; then
             # Window by class found (exact match), raise and focus it.
             wmctrl -F -x -a "${WIN_CLASS}"
@@ -75,7 +105,7 @@ if [[ -n "${EXACT}" ]]; then
         fi
     else
         if wmctrl -l | tr -s ' ' | cut -d ' ' -f4- | grep -q "^${WIN_NAME}$" ; then
-            # Window by title found (exact match), raise and focus it.
+            # Window by name (title) found (exact match), raise and focus it.
             wmctrl -F -a "${WIN_NAME}"
         else
             # No window found, launch the program.
@@ -93,7 +123,7 @@ else
         fi
     else
         if wmctrl -l | tr -s ' ' | cut -d ' ' -f4- | grep -iq "${WIN_NAME}" ; then
-            # Window by title found (fuzzy match), raise and focus it.
+            # Window by name (title) found (fuzzy match), raise and focus it.
             wmctrl -a "${WIN_NAME}"
         else
             # No window found, launch the program.
