@@ -1,6 +1,6 @@
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-05 21:02:56 EEST
+# Date:   2024-04-06 01:18:26 EEST
 # Path:   ~/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -86,6 +86,7 @@ export FILE="ranger"
 export BIN="$HOME/.local/bin"
 export DOTSHARE="$HOME/.local/share/dotshare"
 export DOWNLOADS="$HOME/Downloads"
+export SCREENSHOTS="$HOME/Screenshots"
 export DROPBOX="$HOME/Dropbox"
 export SYNC="$HOME/Dropbox"
 export TMP1="$HOME/tmp1"

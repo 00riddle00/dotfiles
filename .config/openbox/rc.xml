@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-05 23:09:07 EEST
+# Date:   2024-04-06 00:03:14 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -435,12 +435,12 @@
   ============================ -->
   <keybind key="Print">
     <action name="Execute">
-      <command>flameshot gui -p "${SCREENSHOTS}"</command>
+      <command>sh -c 'flameshot gui -p "${SCREENSHOTS}"'</command>
     </action>
   </keybind>
   <keybind key="S-Print">
     <action name="Execute">
-      <command>scrot "${SCREENSHOTS}"/screenshot-%F_%H-%M_%S.png</command>
+      <command>sh -c 'scrot "${SCREENSHOTS}/scrot-%F_%H-%M_%S.png"'</command>
     </action>
   </keybind>
   <!-- ===========================
