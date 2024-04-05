@@ -1,3 +1,10 @@
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-05 21:02:56 EEST
+# Path:   ~/.zshenv
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+
 # ============================= 
 #  user's environment variables
 # ============================= 
@@ -43,6 +50,7 @@ export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export LYNX_CFG_PATH="$XDG_CONFIG_HOME"/lynx.cfg
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
+export AUR_HELPER="paru"
 
 # Editor
 if [ -x "$(command -v nvim)" ];

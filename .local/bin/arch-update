@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
-yay -Syu --noconfirm &&
-notify-send "update" "Arch updated"
-# further instructions are then placed 
-# in $XDG_CONFIG_HOME/dunst/dunstrc
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 [Tomas Giedraitis]
+# Date:   2024-04-05 21:02:15 EEST
+# Path:   ~/.local/bin/arch-update
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Update Arch Linux.
+#**
 
+${AUR_HELPER:-paru} -Syu --noconfirm \
+&& notify-send "update" "Arch updated"
+
+# Dunst notification daemon handles the notification according to the existing
+# configuration in $XDG_CONFIG_HOME/dunst/dunstrc. 
