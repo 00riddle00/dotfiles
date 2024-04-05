@@ -2,14 +2,14 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 [Tomas Giedraitis]
-# Date:   2024-04-05 01:24:37 EEST
-# Path:   ~/.local/bin/fast-activate
+# Date:   2024-04-05 19:53:02 EEST
+# Path:   ~/.local/bin/fast-open-or-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Open a program if it is not running, or focus on it if it is running.
 #
-# Usage: fast-activate <command_name> [window_name] [-x]
+# Usage: $0 <command_name> [window_name] [-x]
 #**
 
 command_name="${1}"
