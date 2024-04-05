@@ -1,4 +1,10 @@
-# =============================================================================
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-06 01:46:23 EEST
+# Path:   ~/.config/zsh/aliases.zsh
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+#*
 #  NOTE: many of these aliases are not being used anymore or are being used
 #  very rarely, however, I still keep them there as a sort of command-wiki,
 #  since quite a few times it turned out to be pretty useful to look up some
@@ -7,7 +13,7 @@
 #  In the future, since the number of aliases is getting big, in order to avoid
 #  unexpected outcomes in the command line, it would be reasonable not to
 #  source them in .zshrc, but to put in a separate text file.
-# =============================================================================
+#**
 #
 # Table of contents
 # -----------------
@@ -76,7 +82,6 @@ alias notes='cd $NOTES'
 alias pro='cd $HOME/pro'
 alias share='cd $DOTSHARE'
 alias sk='cd $HOME/Screenshots'
-alias skr='cd $HOME/bin/scripts'
 alias zdot='cd $ZDOTDIR'
 alias res='cd $XDG_DATA_HOME/tmux/resurrect'
 alias op='cd $XDG_CONFIG_HOME/openbox'
@@ -536,6 +541,13 @@ alias grep.find='grep -rHn'
 alias grepi.find='grep -i -rHn'
 alias grepp='grep -P'
 
+# Silver Searcher
+alias agi='ag -i'
+alias ag.find='ag -rs --noheading'
+alias agi.find='ag -rsi --noheading'
+alias ag.find_all='ag -rs --noheading --hidden'
+alias agi.find_all='ag -rsi --noheading --hidden'
+
 # ls
 #alias l='ls'
 #alias la='ls -al'
@@ -573,16 +585,18 @@ alias sdd='svn diff'
 alias ssd='svn diff --diff-cmd="meld"'
 alias svn.log='svn log -r 1:HEAD'
 alias svn.log.head='svn log -r HEAD:1 --limit 5'
+alias slh='svn log -r HEAD:1 --limit 5'
 # --Actions
 alias sa='svn add'
 alias sr='svn revert `--use-commit-times`'
 alias sm='svn move'
-alias ci='svn commit'
+alias sci='svn commit'
 alias sc='svn cleanup --remove-unversioned'
 alias key='svn propset svn:keywords "Author Date Revision URL Id"'
 alias ex='svn propset svn:executable on'
 alias svn.checkout='svn checkout `--use-commit-times`'
 alias svn.up='svn update `--use-commit-times`'
+alias sup='svn update `--use-commit-times`'
 alias svn.recommit='svn commit -F svn-commit.tmp'
 alias svn.clean='svn cleanup --remove-unversioned'
 
@@ -636,8 +650,8 @@ alias z='source $ZDOTDIR/.zshrc'
 alias al='$EDITOR $ZDOTDIR/aliases.zsh'
 alias cm='$EDITOR $XDG_CONFIG_HOME/picom/picom.conf'
 alias dun='$EDITOR $XDG_CONFIG_HOME/dunst/dunstrc'
-alias ee='$EDITOR $XDG_CONFIG_HOME/emacs/init.el'
-alias eed='cd $XDG_CONFIG_HOME/doom; $EDITOR init.el'
+alias ee='$EDITOR $XDG_CONFIG_HOME/emacs.gnu/init.el'
+alias eed='$EDITOR $XDG_CONFIG_HOME/doom/init.el'
 alias fn.fzf='$EDITOR $ZDOTDIR/functions_fzf.zsh'
 alias fn='$EDITOR $ZDOTDIR/functions.zsh'
 alias ic='$EDITOR $XDG_CONFIG_HOME/i3/config'
@@ -703,6 +717,7 @@ alias -- --use-commit-times='echo --config-option=config:miscellany:use-commit-t
 alias -- --date='date "+%F"'
 alias -- --datetime='date +%F_%H_%M_%S'
 alias -- -time='date +%H:%M:%S'
+alias -- --st'--staged'
 
 #------------------------------------------------------------------------------
 # 24. Programming
@@ -872,7 +887,7 @@ alias cf='setopt CSH_NULL_GLOB; files=(*); echo ${#files[@]};'
 # count only hidden files in the directory:
 alias cfa='setopt CSH_NULL_GLOB; files=(.*); echo ${#files[@]};'
 
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias empty='truncate -s 0'
 alias getkey='gpg --keyserver keyserver.ubuntu.com --recv'
 alias immutable='sudo chattr +i'
@@ -948,10 +963,32 @@ alias ll='copy'
 alias g='grep'
 alias t='tail'
 alias vvim='export VIMINIT="set nocp | source ${XDG_CONFIG_HOME}/vim/vimrc"; \vim'
-alias cs='config status'
-alias csd='config diff'
-alias csa='config add'
+alias cs='dot status'
+alias csr='dot restore'
+alias csd='dot diff'
+alias csa='dot add'
 alias mann='MANPAGER=less; man '
 alias tmux.which="tmux display-message -p '#S'"
 alias sca='svn cat'
 alias th='thunar .'
+alias br='vim ~/.bashrc'
+alias fld='fold -w 80 -s'
+alias pir='pip install -r requirements.txt'
+alias show='sqlitebrowser'
+alias wik='cd $DOWNLOADS/wikis'
+alias tmux.clean='tmux ls | grep -v attached | cut -d: -f1 | xargs -I{} tmux kill-session -t {}'
+alias tls='tmux ls'
+# Similar text can be shown with `man perlrun`
+alias prun='perldoc perlrun'
+alias play='mpv'
+alias ppi='pip install'
+alias wpi='which pip'
+alias vi='venv.init'
+alias ppir='pip install -r requirements.txt'
+alias san='svn add -N'
+alias csc='dot commit'
+alias csp='dot push'
+alias win='wmctrl -l'
+alias winx='wmctrl -lx'
+alias wing='wmctrl -l -G'
+alias csdc='dot diff --staged'

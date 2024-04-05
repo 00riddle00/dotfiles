@@ -1,4 +1,9 @@
-# MAIN USER FUNCTIONS
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-06 01:46:18 EEST
+# Path:   ~/.config/zsh/functions.zsh
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
 
 ## make a temp backup
 bk() { cp "$1" "$1.bak"; }
@@ -176,4 +181,8 @@ out() {
     else
         $EDITOR "outputs/${1%.com}."*
     fi
+}
+
+sedit() {
+    $EDITOR "$(which "$1")"
 }
