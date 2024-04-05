@@ -1,0 +1,14 @@
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-05 23:13:09 EEST
+# Path:   ~/.config/openbox/environment
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+#*
+# User-specific environment variables are set here for Openbox.
+# They can then be referenced in rc.xml configuration file.
+# #
+# System-wide environment variables should be placed in
+# /etc/xdg/openbox/environment.
+#**
+SCREENSHOTS="$HOME/Screenshots"

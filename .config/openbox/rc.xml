@@ -2,14 +2,18 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-05 22:45:40 EEST
+# Date:   2024-04-05 23:09:07 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
+#*
+# Openbox configuration.
+#
+# Nested comments are not allowed, so you need to remove backslashes from 
+# "<!\-\-" and "\-\->" (and everywhere else where two or more consecutive 
+# hyphens are found) in comments inside comments when uncommenting.
+#**
 -->
-<!-- Nested comments are not allowed, so you need to remove backslashes from 
-    "<!\-\-" and "\-\->" (and everywhere else where two or more consecutive 
-    hyphens are found) in comments inside comments when uncommenting. -->
 <openbox_config xmlns="http://openbox.org/3.4/rc"
 		xmlns:xi="http://www.w3.org/2001/XInclude">
 <resistance>
@@ -431,15 +435,14 @@
   ============================ -->
   <keybind key="Print">
     <action name="Execute">
-      <command> flameshot gui -p /home/riddle/Screenshots </command>
+      <command>flameshot gui -p "${SCREENSHOTS}"</command>
     </action>
   </keybind>
   <keybind key="S-Print">
     <action name="Execute">
-      <command>scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png</command>
+      <command>scrot "${SCREENSHOTS}"/screenshot-%F_%H-%M_%S.png</command>
     </action>
   </keybind>
-
   <!-- ===========================
   RUN: Brightness
   ============================ -->
