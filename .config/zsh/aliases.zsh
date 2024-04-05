@@ -1,6 +1,6 @@
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 02:04:38 EEST
+# Date:   2024-04-06 02:37:08 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -630,8 +630,8 @@ alias stop='killall mpg123'
 # Switching configs
 #---------------------------------------
 
-alias emacs.gnu='ln -nsf $XDG_CONFIG_HOME/emacs.gnu $XDG_CONFIG_HOME/emacs'
-alias emacs.doom='ln -nsf $XDG_CONFIG_HOME/emacs.doom $XDG_CONFIG_HOME/emacs'
+alias emacs.gnu='ln -nsf $XDG_CONFIG_HOME/emacs-gnu $XDG_CONFIG_HOME/emacs'
+alias emacs.doom='ln -nsf $XDG_CONFIG_HOME/emacs-doom $XDG_CONFIG_HOME/emacs'
 
 #---------------------------------------
 # Reloading configs
@@ -650,7 +650,7 @@ alias z='source $ZDOTDIR/.zshrc'
 alias al='$EDITOR $ZDOTDIR/aliases.zsh'
 alias cm='$EDITOR $XDG_CONFIG_HOME/picom/picom.conf'
 alias dun='$EDITOR $XDG_CONFIG_HOME/dunst/dunstrc'
-alias ee='$EDITOR $XDG_CONFIG_HOME/emacs.gnu/init.el'
+alias ee='$EDITOR $XDG_CONFIG_HOME/emacs-gnu/init.el'
 alias eed='$EDITOR $XDG_CONFIG_HOME/doom/init.el'
 alias fn.fzf='$EDITOR $ZDOTDIR/functions_fzf.zsh'
 alias fn='$EDITOR $ZDOTDIR/functions.zsh'
