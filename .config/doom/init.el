@@ -1,4 +1,10 @@
 ;;; init.el -*- lexical-binding: t; -*-
+;#------------------------------------------------------------------------------
+;# Author: 00riddle00 (Tomas Giedraitis)
+;# Date:   2024-04-06 01:33:52 EEST
+;# Path:   ~/.config/doom/init.el
+;# URL:    https://github.com/00riddle00/dotfiles
+;#------------------------------------------------------------------------------
 
 ;; This file controls what Doom modules are enabled and what order they load
 ;; in. Remember to run 'doom sync' after modifying it!

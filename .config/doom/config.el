@@ -1,4 +1,10 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+;#------------------------------------------------------------------------------
+;# Author: 00riddle00 (Tomas Giedraitis)
+;# Date:   2024-04-06 01:32:14 EEST
+;# Path:   ~/.config/doom/config.el
+;# URL:    https://github.com/00riddle00/dotfiles
+;#------------------------------------------------------------------------------
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
@@ -75,8 +81,8 @@
 ;; they are implemented.
 
 (after! org
-  (setq org-directory "~/Dropbox/gtd/org/")
-  (setq org-agenda-files '("~/Dropbox/gtd/org/agenda.org"))
+  (setq org-directory "$NOTES/gtd/org/")
+  (setq org-agenda-files '("$NOTES/gtd/org/agenda.org"))
   ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
@@ -84,6 +90,10 @@
 
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-S-s") 'save-buffer)
+
+(require 'openwith)
+(openwith-mode t)
+(setq openwith-associations '(("\\.mp4\\'" "mpv" (file))))
 
 (map!
  (:after evil

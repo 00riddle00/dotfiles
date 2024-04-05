@@ -1,4 +1,10 @@
 ;; -*- no-byte-compile: t; -*-
+;#------------------------------------------------------------------------------
+;# Author: 00riddle00 (Tomas Giedraitis)
+;# Date:   2024-04-06 01:33:56 EEST
+;# Path:   ~/.config/doom/packages.el
+;# URL:    https://github.com/00riddle00/dotfiles
+;#------------------------------------------------------------------------------
 ;;; $DOOMDIR/packages.el
 
 ;; To install a package with Doom you must declare them here and run 'doom sync'
@@ -50,5 +56,6 @@
 ;(unpin! t)
 
 (package! atom-one-dark-theme)
+(package! openwith)
 (package! org-bullets)
 (package! undo-tree)

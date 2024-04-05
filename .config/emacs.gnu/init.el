@@ -1,3 +1,10 @@
+;#------------------------------------------------------------------------------
+;# Author: 00riddle00 (Tomas Giedraitis)
+;# Date:   2024-04-06 01:35:27 EEST
+;# Path:   ~/.config/emacs.gnu/init.el
+;# URL:    https://github.com/00riddle00/dotfiles
+;#------------------------------------------------------------------------------
+
 ;; -------------------------------------------------------------
 ;; keybindings
 ;; -------------------------------------------------------------
@@ -83,6 +90,10 @@
 ;; either C-_ or C-/  (`undo-tree-undo')
 ;; C-?                (`undo-tree-redo')
 
+(require 'openwith)
+(openwith-mode t)
+(setq openwith-associations '(("\\.mp4\\'" "mpv" (file))))
+
 ;; -------------------------------------------------------------
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -98,13 +109,16 @@
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(nil nil t)
- '(package-selected-packages 
-   '(atom-one-dark-theme
-     evil
-     org
-     evil-org
-     org-bullets
-     undo-tree))
+  '(package-selected-packages
+    '(
+       atom-one-dark-theme
+       evil
+       openwith
+       org
+       evil-org
+       org-bullets
+       undo-tree
+     ))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 ;; -------------------------------------------------------------
