@@ -1,6 +1,14 @@
-<!--empty menu-->
 <?xml version="1.0" encoding="utf-8"?>
-<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
-	<menu id="root-menu" label="Openbox 3">
-	</menu>
+<!--
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-05 21:18:34 EEST
+# Path:   ~/.config/openbox/menu.xml
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+-->
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+<menu id="root-menu" label="Openbox 3">
+    <!-- Empty menu. -->
+</menu>
 </openbox_menu>
