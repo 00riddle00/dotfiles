@@ -1,6 +1,6 @@
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 01:46:23 EEST
+# Date:   2024-04-06 02:04:38 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -963,10 +963,10 @@ alias ll='copy'
 alias g='grep'
 alias t='tail'
 alias vvim='export VIMINIT="set nocp | source ${XDG_CONFIG_HOME}/vim/vimrc"; \vim'
-alias cs='dot status'
-alias csr='dot restore'
-alias csd='dot diff'
-alias csa='dot add'
+alias ds='dot status'
+alias dsr='dot restore'
+alias dsd='dot diff'
+alias dsa='dot add'
 alias mann='MANPAGER=less; man '
 alias tmux.which="tmux display-message -p '#S'"
 alias sca='svn cat'
@@ -986,9 +986,10 @@ alias wpi='which pip'
 alias vi='venv.init'
 alias ppir='pip install -r requirements.txt'
 alias san='svn add -N'
-alias csc='dot commit'
-alias csp='dot push'
+alias dsc='dot commit'
+alias dsp='dot push'
 alias win='wmctrl -l'
 alias winx='wmctrl -lx'
 alias wing='wmctrl -l -G'
-alias csdc='dot diff --staged'
+alias dsdc='dot diff --staged'
+alias dsu='dot status -u .'
