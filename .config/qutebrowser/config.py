@@ -1,5 +1,9 @@
 # kudos to Jason Ryan (http://jasonwryan.com)
 
+## This is here so configs done via the GUI are still loaded.
+## Remove it to not load settings done via the GUI.
+config.load_autoconfig(False)
+
 # general settings
 c.url.default_page = 'file:///home/riddle/.local/share/dotshare/qutebrowser-homepage/index.html'
 c.url.start_pages = 'file:///home/riddle/.local/share/dotshare/qutebrowser-homepage/index.html'
@@ -18,7 +22,7 @@ c.downloads.location.directory = '/home/riddle/Downloads'
 c.content.geolocation = False
 c.content.cache.size = 52428800
 c.content.webgl = False
-c.content.notifications = False
+c.content.notifications.enabled = False
 c.hints.border = "1px solid #CCCCCC"
 c.hints.mode = "number"
 c.hints.chars = "123456789"
