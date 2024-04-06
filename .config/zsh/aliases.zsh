@@ -1,9 +1,9 @@
-#==============================================================================
+#------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 02:37:08 EEST
+# Date:   2024-04-06 22:17:38 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
-#==============================================================================
+#------------------------------------------------------------------------------
 #*
 #  NOTE: many of these aliases are not being used anymore or are being used
 #  very rarely, however, I still keep them there as a sort of command-wiki,
