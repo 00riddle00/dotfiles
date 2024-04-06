@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-06 21:40:56 EEST
+# Path:   ~/.local/bin/set-up-monitors-tulkun
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Set up multiple monitors using xrandr for the computer with hostname
+# "tulkun". HDMI connection is used for one monitor, and DisplayPort
+# connections are used for two other monitors. The HDMI monitor is rotated to
+# the right, the first DisplayPort monitor is the primary monitor, and the
+# second DisplayPort monitor is rotated to the left.
+#**
+
+# TODO make it so that if external screen names are not found, it would not
+# fail, but search for the first connected screen/s and use it/them.
+# 
+## Check if X is running.
+if xset q &>/dev/null; then
+    xrandr \
+        --output $HDMI_SCREEN --auto --rotate right \
+        --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN \
+        --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN
+fi
