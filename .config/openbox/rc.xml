@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 01:30:27 EEST
+# Date:   2024-04-06 03:10:52 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -503,6 +503,12 @@
   <keybind key="F2">
     <action name="Execute">
       <command>fast-focus t2.URxvt -x</command>
+    </action>
+  </keybind>
+  <!-- Open URxvt notes window. -->
+  <keybind key="A-F3">
+    <action name="Execute">
+      <command>openbox-vimnotes</command>
     </action>
   </keybind>
   <!-- Open/focus URxvt window for notes by its class name. -->
