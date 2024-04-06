@@ -1,6 +1,6 @@
-# R2-D2
+# vim:ft=perl
+# R2-D2 - from http://www.ascii-art.de/ascii/s/starwars.txt
 #
-# from http://www.ascii-art.de/ascii/s/starwars.txt
 $the_cow = <<EOC;
    $thoughts
     $thoughts
