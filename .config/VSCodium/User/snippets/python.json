@@ -1,586 +1,415 @@
+//#============================================================================
+//# User: (00riddle00) Tomas Giedraitis
+//# Date: 2024-04-06 18:13:47 EEST
+//# Path: ~/.config/VSCodium/User/snippets/python.json
+//# URL:  https://github.com/00riddle00/dotfiles
+//#----------------------------------------------------------------------------
+//# Author: (cstrap) Christian Strappazzon
+//# Orig. URL: https://github.com/cstrap/python-snippets
+//# Orig. URL Retrieval: 2024-04-06 18:13:47 EEST
+//# Orig. Files:
+//#   * https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/base.json
+//#   * https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/comprehension.json
+//#   * https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/debug.json
+//#   * https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/tkinter.json
+//#   * https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/unittest.json
+//# Orig. Files Retrieval: 2024-04-06 18:13:47 EEST
+//#============================================================================
+// VSCodium allows to have comments in this file.
+
 {
-  // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
-  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-  // same ids are connected.
-  // Example:
-  // "Print to console": {
-  // 	"prefix": "log",
-  // 	"body": [
-  // 		"console.log('$1');",
-  // 		"$2"
-  // 	],
-  // 	"description": "Log output to console"
-  // }
+    // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
 
-  // 20221013155043
-  // https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/base.json
+    // ---------------------
+    // Base
+    // ---------------------
 
-  "#!/usr/bin/env python": {
-    "prefix": "env",
-    "body": "#!/usr/bin/env python\n$0",
-    "description": "Adds shebang line for default python interpreter."
-  },
-  "#!/usr/bin/env python3": {
-    "prefix": "env3",
-    "body": "#!/usr/bin/env python3\n$0",
-    "description": "Adds shebang line for default python 3 interpreter."
-  },
-  "# -*- coding=utf-8 -*-": {
-    "prefix": "enc",
-    "body": "# -*- coding=utf-8 -*-\n$0",
-    "description": "set default python2.x encoding specification to utf-8 as it is mentioned in pep-0263."
-  },
-  "# coding=utf-8": {
-    "prefix": "enco",
-    "body": "# coding=utf-8\n$0",
-    "description": "Set default python3 encoding specification to utf-8, by default this is the encoding for python3.x as it is mentioned in pep-3120."
-  },
-  "from future import ...": {
-    "prefix": "fenc",
-    "body": [
-      "# -*- coding: utf-8 -*-",
-      "from __future__ import absolute_import, division, print_function, unicode_literals"
-    ],
-    "description": "Import future statement definitions for python2.x scripts using utf-8 as encoding."
-  },
-  "from future import ... v1": {
-    "prefix": "fenco",
-    "body": [
-      "# coding: utf-8",
-      "from __future__ import absolute_import, division, print_function, unicode_literals"
-    ],
-    "description": "Import future statement definitions for python3.x scripts using utf-8 as encoding."
-  },
-  "import": {
-    "prefix": "im",
-    "body": "import ${1:package/module}$0",
-    "description": "Import a package or module"
-  },
-  "from ... import ...": {
-    "prefix": "fim",
-    "body": "from ${1:package/module} import ${2:names}$0",
-    "description": "Import statement that allows individual objects from the module to be imported directly into the caller’s symbol table."
-  },
-  "New class": {
-    "prefix": "class",
-    "body": [
-      "class ${1:ClassName}(${2:object}):",
-      "\t\"\"\"${3:docstring for $1.}\"\"\"",
-      "\tdef __init__(self, ${4:arg}):",
-      "\t\t${5:super($1, self).__init__()}",
-      "\t${4/([^,=]+)(?:=[^,]+)?(,\\s*|)/\tself.$1 = $1${2:+\n\t}/g}",
-      "\n\t$0"
-    ],
-    "description": "Code snippet for a class definition."
-  },
-  "New dataclass": {
-    "prefix": "classd",
-    "body": [
-      "from dataclasses import dataclass\n\n",
-      "@dataclass",
-      "class ${1:ClassName}(${2:object}):",
-      "\t\"\"\"${3:Docstring for $1.}\"\"\"",
-      "\t${4:property}: ${type}",
-      "\t$0"
-    ],
-    "description": "Code snippet for a dataclass definition."
-  },
-  "New method": {
-    "prefix": "defs",
-    "body": "def ${1:mname}(self, ${2:arg}):\n\t${3:pass}$0",
-    "description": "Code snippet for a class method definition."
-  },
-  "New function": {
-    "prefix": "def",
-    "body": "def ${1:fname}(${2:arg}):\n\t${3:pass}$0",
-    "description": "Code snippet for function definition."
-  },
-  "New async function": {
-    "prefix": "adef",
-    "body": "async def ${1:fname}(${2:arg}):\n\t${3:pass}$0",
-    "description": "Code snippet for async function definition."
-  },
-  "New property": {
-    "prefix": "property",
-    "body": "@property\ndef ${1:foo}(self):\n    \"\"\"${2:The $1 property.}\"\"\"\n    ${3:return self._$1}\n@${4:$1}.setter\ndef ${5:$1}(self, value):\n    ${6:self._$1} = value",
-    "description": "New property: get and set via decorator"
-  },
-  "New froperty": {
-    "prefix": "property",
-    "body": "def ${1:foo}():\n    doc = \"${2:The $1 property.}\"\n    def fget(self):\n        ${3:return self._$1}\n    def fset(self, value):\n        ${4:self._$1 = value}\n    def fdel(self):\n        ${5:del self._$1}\n    return locals()\n$1 = property(**$1())$0",
-    "description": ""
-  },
-  "New enum": {
-    "prefix": "enum",
-    "body": [
-      "from enum import Enum\n\n",
-      "class ${1:MyEnum}(Enum):",
-      "\t\"\"\"${2:Docstring for $1.}\"\"\"",
-      "\t${3:FIRST_ENUM} = \"some_value\"",
-      "\t${4:SECOND_ENUM} = \"some_other_value\"",
-      "\t$0"
-    ],
-    "description": "Code snippet for enum definition."
-  },
-  "if": {
-    "prefix": "if",
-    "body": "if ${1:condition}:\n\t${2:pass}$0",
-    "description": "Code snippet for the if statement."
-  },
-  "for": {
-    "prefix": "for",
-    "body": "for ${1:value} in ${2:iterable}:\n\t${3:pass}$0",
-    "description": "Code snippet to create a for loop structure."
-  },
-  "while": {
-    "prefix": "while",
-    "body": "while ${1:condition}:\n\t${2:pass}$0",
-    "description": "Code snippet to create a while loop structure."
-  },
-  "dowhile": {
-    "prefix": "dowhile",
-    "body": "do = True\nwhile do or ${2:condition}:\n\tdo = False\n\t${1:body}$0",
-    "description": "Code snippet to create a do-while loop structure."
-  },
-  "try:except:": {
-    "prefix": "try",
-    "body": "try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}$0",
-    "description": "Code Snippet for a try and except blocks."
-  },
-  "try:except:else:finally": {
-    "prefix": "tryef",
-    "body": "try:\n\t${1:pass}\nexcept${2: ${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t${6:pass}\nfinally:\n\t${7:pass}$0",
-    "description": "Code Snippet for a try/except/finally with else statement."
-  },
-  "try:except:else": {
-    "prefix": "trye",
-    "body": "try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t${5:pass}$0",
-    "description": "Code Snippet for a try/except with else statement."
-  },
-  "try:except:finally": {
-    "prefix": "tryf",
-    "body": "try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t${5:pass}$0",
-    "description": "Code Snippet for a try/except/finally."
-  },
-  "self": {
-    "prefix": "s",
-    "body": "self.$0",
-    "description": "Shortend snippet to reference the self property in an object."
-  },
-  "__magic__": {
-    "prefix": "__",
-    "body": "__${1:init}__$0",
-    "description": "Code snippet to create magic methods."
-  },
-  "if __name__ == \"__main__\"": {
-    "prefix": "ifmain",
-    "body": "if __name__ == \"__main__\":\n\t${1:main()}$0",
-    "description": "Create implicitly all the code at the top level using the __name__ special variable."
-  },
-  "lambda": {
-    "prefix": "lam",
-    "body": "lambda ${1:args}: ${2:expr}",
-    "description": "Create template for lambda function"
-  },
+    "#!/usr/bin/env python": {
+        "prefix": "env",
+        "body": "#!/usr/bin/env python\n$0",
+        "description" : "Adds shebang line for default python interpreter."
+    },
+    "#!/usr/bin/env python3": {
+        "prefix": "env3",
+        "body": "#!/usr/bin/env python3\n$0",
+        "description" : "Adds shebang line for default python 3 interpreter."
+    },
+    "# -*- coding=utf-8 -*-": {
+        "prefix": "enc",
+        "body": "# -*- coding=utf-8 -*-\n$0",
+        "description" : "set default python2.x encoding specification to utf-8 as it is mentioned in pep-0263."
+    },
+    "# coding=utf-8": {
+        "prefix": "enco",
+        "body": "# coding=utf-8\n$0",
+        "description" : "Set default python3 encoding specification to utf-8, by default this is the encoding for python3.x as it is mentioned in pep-3120."
+    },
+    "from future import ...": {
+        "prefix": "fenc",
+        "body": [
+            "# -*- coding: utf-8 -*-",
+            "from __future__ import absolute_import, division, print_function, unicode_literals"
+        ],
+        "description" : "Import future statement definitions for python2.x scripts using utf-8 as encoding."
+    },
+    "from future import ... v1": {
+        "prefix": "fenco",
+        "body": [
+            "# coding: utf-8",
+            "from __future__ import absolute_import, division, print_function, unicode_literals"
+        ],
+        "description" : "Import future statement definitions for python3.x scripts using utf-8 as encoding."
+    },
+    "import": {
+        "prefix": "im",
+        "body": "import ${1:package/module}$0",
+        "description" : "Import a package or module"
+    },
+    "from ... import ...": {
+        "prefix": "fim",
+        "body": "from ${1:package/module} import ${2:names}$0",
+        "description" : "Import statement that allows individual objects from the module to be imported directly into the caller’s symbol table."
+    },
+    "New class": {
+        "prefix": "class",
+        "body": [
+            "class ${1:ClassName}(${2:object}):",
+            "\t\"\"\"${3:docstring for $1.}\"\"\"",
+            "\tdef __init__(self, ${4:arg}):",
+            "\t\t${5:super($1, self).__init__()}",
+            "\t${4/([^,=]+)(?:=[^,]+)?(,\\s*|)/\tself.$1 = $1${2:+\n\t}/g}",
+            "\n\t$0"
+        ],
+        "description" : "Code snippet for a class definition."
+    },
+    "New dataclass": {
+        "prefix": "classd",
+        "body": [
+            "from dataclasses import dataclass\n\n",
+            "@dataclass",
+            "class ${1:ClassName}(${2:object}):",
+            "\t\"\"\"${3:Docstring for $1.}\"\"\"",
+            "\t${4:property}: ${type}",
+            "\t$0"
+        ],
+        "description": "Code snippet for a dataclass definition."
+    },
+    "New method": {
+        "prefix": "defs",
+        "body": "def ${1:mname}(self, ${2:arg}):\n\t${3:pass}$0",
+        "description" : "Code snippet for a class method definition."
+    },
+    "New function": {
+        "prefix": "def",
+        "body": "def ${1:fname}(${2:arg}):\n\t${3:pass}$0",
+        "description" : "Code snippet for function definition."
+    },
+    "New async function": {
+        "prefix": "adef",
+        "body": "async def ${1:fname}(${2:arg}):\n\t${3:pass}$0",
+        "description" : "Code snippet for async function definition."
+    },
+    "New property": {
+        "prefix": "property",
+        "body": "@property\ndef ${1:foo}(self):\n    \"\"\"${2:The $1 property.}\"\"\"\n    ${3:return self._$1}\n@${4:$1}.setter\ndef ${5:$1}(self, value):\n    ${6:self._$1} = value",
+        "description": "New property: get and set via decorator"
+    },
+    "New froperty": {
+        "prefix": "property",
+        "body": "def ${1:foo}():\n    doc = \"${2:The $1 property.}\"\n    def fget(self):\n        ${3:return self._$1}\n    def fset(self, value):\n        ${4:self._$1 = value}\n    def fdel(self):\n        ${5:del self._$1}\n    return locals()\n$1 = property(**$1())$0",
+        "description" : ""
+    },
+    "New enum": {
+        "prefix": "enum",
+        "body": [
+            "from enum import Enum\n\n",
+            "class ${1:MyEnum}(Enum):",
+            "\t\"\"\"${2:Docstring for $1.}\"\"\"",
+            "\t${3:FIRST_ENUM} = \"some_value\"",
+            "\t${4:SECOND_ENUM} = \"some_other_value\"",
+            "\t$0"
+        ],
+        "description": "Code snippet for enum definition."
+    },
+    "if": {
+        "prefix": "if",
+        "body": "if ${1:condition}:\n\t${2:pass}$0",
+        "description" : "Code snippet for the if statement."
+    },
+    "for": {
+        "prefix": "for",
+        "body": "for ${1:value} in ${2:iterable}:\n\t${3:pass}$0",
+        "description" : "Code snippet to create a for loop structure."
+    },
+    "while": {
+        "prefix": "while",
+        "body": "while ${1:condition}:\n\t${2:pass}$0",
+        "description" : "Code snippet to create a while loop structure."
+    },
+    "dowhile": {
+        "prefix": "dowhile",
+        "body": "do = True\nwhile do or ${2:condition}:\n\tdo = False\n\t${1:body}$0",
+        "description" : "Code snippet to create a do-while loop structure."
+    },
+    "try:except:": {
+        "prefix": "try",
+        "body": "try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}$0",
+        "description" : "Code Snippet for a try and except blocks."
+    },
+    "try:except:else:finally": {
+        "prefix": "tryef",
+        "body": "try:\n\t${1:pass}\nexcept${2: ${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t${6:pass}\nfinally:\n\t${7:pass}$0",
+        "description" : "Code Snippet for a try/except/finally with else statement."
+    },
+    "try:except:else": {
+        "prefix": "trye",
+        "body": "try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t${5:pass}$0",
+        "description" : "Code Snippet for a try/except with else statement."
+    },
+    "try:except:finally": {
+        "prefix": "tryf",
+        "body": "try:\n\t${1:pass}\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t${5:pass}$0",
+        "description" : "Code Snippet for a try/except/finally."
+    },
+    "self": {
+        "prefix": "s",
+        "body": "self.$0",
+        "description" : "Shortend snippet to reference the self property in an object."
+    },
+    "__magic__": {
+        "prefix": "__",
+        "body": "__${1:init}__$0",
+        "description" : "Code snippet to create magic methods."
+    },
+    "if __name__ == \"__main__\"": {
+        "prefix": "ifmain",
+        "body": "if __name__ == \"__main__\":\n\t${1:main()}$0",
+        "description" : "Create implicitly all the code at the top level using the __name__ special variable."
+    },
+    "lambda": {
+        "prefix": "lam",
+        "body": "lambda ${1:args}: ${2:expr}",
+        "description": "Create template for lambda function"
+    },
 
-  // 20221013155802
-  // https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/debug.json
+    // ---------------------
+    // Comprehension
+    // ---------------------
 
-  "PDB set trace": {
-    "prefix": "pdb",
-    "body": "import pdb; pdb.set_trace()$0"
-  },
-  "iPDB set trace": {
-    "prefix": "ipdb",
-    "body": "import ipdb; ipdb.set_trace()$0"
-  },
-  "rPDB set trace": {
-    "prefix": "rpdb",
-    "body": "import rpdb2; rpdb2.start_embedded_debugger('${1:debug_password}')$0"
-  },
-  "PuDB set trace": {
-    "prefix": "pudb",
-    "body": "import pudb; pudb.set_trace()$0"
-  },
-  "IPython set trace": {
-    "prefix": "ipydb",
-    "body": "from IPython import embed; embed()$0"
-  },
+    "List comprehension": {
+        "prefix": "lc",
+        "body": "[${1:value} for ${2:value} in ${3:iterable}]$0",
+        "description" : "List comprehension for creating a list based on existing lists."
+    },
+    "List comprehension if else": {
+        "prefix": "lcie",
+        "body": "[${1:value} if ${2:condition} else ${3:condition} for ${4:value} in ${5:iterable}]$0", 
+        "description" : "List comprehension for creating a list based on existing lists, with conditional if-else statement."
+    },
+    "List comprehension if filter": {
+        "prefix": "lci",
+        "body": "[${1:value} for ${2:value} in ${3:iterable} if ${4:condition}$0]", 
+        "description" : "List comprehension for creating a list based on existing lists, with conditional if statement."
+    },
+    "Dictionary comprehension": {
+        "prefix": "dc",
+        "body": "{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:iterable}}$0", 
+        "description" : "Handy and faster way to create dictories based on existing dictionaries."
+    },
+    "Dictionary comprehension if filter": {
+        "prefix": "dci",
+        "body": "{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:iterable} if ${6:condition}}$0", 
+        "description" : "Handy and faster way to create dictories based on existing dictionaries, with conditional if statement."
+    },
+    "Set comprehension": {
+        "prefix": "sc",
+        "body": "{${1:value} for ${2:value} in ${3:iterable}}$0", 
+        "description" : "Create a set based on existing iterables."
+    },
+    "Set Comprehension if filter": {
+        "prefix": "sci",
+        "body": "{${1:value} for ${2:value} in ${3:iterable} if ${4:condition}}$0", 
+        "description" : "Create a set based on existing iterables, with condition if statement."
+    },
+    "Generator comprehension": {
+        "prefix": "gc",
+        "body": "(${1:key} for ${2:value} in ${3:iterable})$0", 
+        "description" : "Create a generator based on existing iterables."
+    },
+    "Generator comprehension if filter": {
+        "prefix": "gci",
+        "body": "(${1:key} for ${2:value} in ${3:iterable} if ${4:condition})$0", 
+        "description" : "Create a generator based on existing iterables, with condition if statement."
+    },
 
-  // 20221013155833
-  // https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/comprehension.json
+    // ---------------------
+    // Debug
+    // ---------------------
 
-  "List comprehension": {
-    "prefix": "lc",
-    "body": "[${1:value} for ${2:value} in ${3:iterable}]$0",
-    "description": "List comprehension for creating a list based on existing lists."
-  },
-  "List comprehension if else": {
-    "prefix": "lcie",
-    "body": "[${1:value} if ${2:condition} else ${3:condition} for ${4:value} in ${5:iterable}]$0",
-    "description": "List comprehension for creating a list based on existing lists, with conditional if-else statement."
-  },
-  "List comprehension if filter": {
-    "prefix": "lci",
-    "body": "[${1:value} for ${2:value} in ${3:iterable} if ${4:condition}$0]",
-    "description": "List comprehension for creating a list based on existing lists, with conditional if statement."
-  },
-  "Dictionary comprehension": {
-    "prefix": "dc",
-    "body": "{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:iterable}}$0",
-    "description": "Handy and faster way to create dictories based on existing dictionaries."
-  },
-  "Dictionary comprehension if filter": {
-    "prefix": "dci",
-    "body": "{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:iterable} if ${6:condition}}$0",
-    "description": "Handy and faster way to create dictories based on existing dictionaries, with conditional if statement."
-  },
-  "Set comprehension": {
-    "prefix": "sc",
-    "body": "{${1:value} for ${2:value} in ${3:iterable}}$0",
-    "description": "Create a set based on existing iterables."
-  },
-  "Set Comprehension if filter": {
-    "prefix": "sci",
-    "body": "{${1:value} for ${2:value} in ${3:iterable} if ${4:condition}}$0",
-    "description": "Create a set based on existing iterables, with condition if statement."
-  },
-  "Generator comprehension": {
-    "prefix": "gc",
-    "body": "(${1:key} for ${2:value} in ${3:iterable})$0",
-    "description": "Create a generator based on existing iterables."
-  },
-  "Generator comprehension if filter": {
-    "prefix": "gci",
-    "body": "(${1:key} for ${2:value} in ${3:iterable} if ${4:condition})$0",
-    "description": "Create a generator based on existing iterables, with condition if statement."
-  },
+    "PDB set trace": {
+        "prefix": "pdb",
+        "body": "import pdb; pdb.set_trace()$0"
+    },
+    "iPDB set trace": {
+        "prefix": "ipdb",
+        "body": "import ipdb; ipdb.set_trace()$0"
+    },
+    "rPDB set trace": {
+        "prefix": "rpdb",
+        "body": "import rpdb2; rpdb2.start_embedded_debugger('${1:debug_password}')$0"
+    },
+    "PuDB set trace": {
+        "prefix": "pudb",
+        "body": "import pudb; pudb.set_trace()$0"
+    },
+    "IPython set trace": {
+        "prefix": "ipydb",
+        "body": "from IPython import embed; embed()$0"
+    },
 
-  // 20221013155906
-  // https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/tkinter.json
+    // ---------------------
+    // Tkinter
+    // ---------------------
 
-  "Import Tkinter": {
-    "prefix": "imtk",
-    "body": "import Tkinter as tk$0"
-  },
-  "Import tkinter": {
-    "prefix": "imtk3",
-    "body": "import tkinter as tk$0"
-  },
-  "Root configuration": {
-    "prefix": "config",
-    "body": "config(menu=$1)$0"
-  },
-  "Button": {
-    "prefix": "button",
-    "body": "tk.Button(${1:root}, text=\"$2\")$0"
-  },
-  "Label": {
-    "prefix": "label",
-    "body": "tk.Label(${1:root}, text=\"$2\")$0"
-  },
-  "Frame": {
-    "prefix": "frame",
-    "body": "tk.Frame(${1:root})$0"
-  },
-  "Entry": {
-    "prefix": "entry",
-    "body": "tk.Entry(${1:root})$0"
-  },
-  "Grid": {
-    "prefix": "grid",
-    "body": "grid(row=$1, colomn=$2)$0"
-  },
-  "Sticky": {
-    "prefix": "sticky",
-    "body": "sticky=tk.$0"
-  },
-  "Check button": {
-    "prefix": "checkbutton",
-    "body": "tk.Checkbutton(${1:root}, text=\"$2\")$0"
-  },
-  "Main loop": {
-    "prefix": "mainloop",
-    "body": "mainloop()$0"
-  },
-  "Pack": {
-    "prefix": "pack",
-    "body": "pack($1)$0"
-  },
-  "Side": {
-    "prefix": "side",
-    "body": "side=tk.$0"
-  },
-  "Bind": {
-    "prefix": "bind",
-    "body": "bind(\"<Button-${1:1}>\", ${2:fxn})$0"
-  },
-  "Menu": {
-    "prefix": "menu",
-    "body": "tk.menu(${1:root})$0"
-  },
-  "Add cascade": {
-    "prefix": "addcascade",
-    "body": "add_cascade(label=\"$1\", menu=$2)$0"
-  },
-  "Add command": {
-    "prefix": "addcommand",
-    "body": "add_command(label=\"$1\", command=$2)$0"
-  },
-  "Add seperator": {
-    "prefix": "addseperator",
-    "body": "add_separator()$0"
-  },
+    "Import Tkinter": {
+        "prefix": "imtk",
+        "body": "import Tkinter as tk$0"
+    },
+    "Import tkinter": {
+        "prefix": "imtk3",
+        "body": "import tkinter as tk$0"
+    },
+    "Root configuration": {
+        "prefix": "config",
+        "body": "config(menu=$1)$0"
+    },
+    "Button": {
+        "prefix": "button",
+        "body": "tk.Button(${1:root}, text=\"$2\")$0"
+    },
+    "Label": {
+        "prefix": "label",
+        "body": "tk.Label(${1:root}, text=\"$2\")$0"
+    },
+    "Frame": {
+        "prefix": "frame",
+        "body": "tk.Frame(${1:root})$0"
+    },
+    "Entry": {
+        "prefix": "entry",
+        "body": "tk.Entry(${1:root})$0"
+    },
+    "Grid": {
+        "prefix": "grid",
+        "body": "grid(row=$1, colomn=$2)$0"
+    },
+    "Sticky": {
+        "prefix": "sticky",
+        "body": "sticky=tk.$0"
+    },
+    "Check button": {
+        "prefix": "checkbutton",
+        "body": "tk.Checkbutton(${1:root}, text=\"$2\")$0"
+    },
+    "Main loop": {
+        "prefix": "mainloop",
+        "body": "mainloop()$0"
+    },
+    "Pack": {
+        "prefix": "pack",
+        "body": "pack($1)$0"
+    },
+    "Side": {
+        "prefix": "side",
+        "body": "side=tk.$0"
+    },
+    "Bind": {
+        "prefix": "bind",
+        "body": "bind(\"<Button-${1:1}>\", ${2:fxn})$0"
+    },
+    "Menu": {
+        "prefix": "menu",
+        "body": "tk.menu(${1:root})$0"
+    },
+    "Add cascade": {
+        "prefix": "addcascade",
+        "body": "add_cascade(label=\"$1\", menu=$2)$0"
+    },
+    "Add command": {
+        "prefix": "addcommand",
+        "body": "add_command(label=\"$1\", command=$2)$0"
+    },
+    "Add seperator": {
+        "prefix": "addseperator",
+        "body": "add_separator()$0"
+    },
 
-  // 20221013155927
-  // https://raw.githubusercontent.com/cstrap/python-snippets/master/snippets/unittest.json
+    // ---------------------
+    // Unittest
+    // ---------------------
 
-  "Assert equal": {
-    "prefix": "ase",
-    "body": "self.assertEqual(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
-  },
-  "Assert not equal": {
-    "prefix": "asne",
-    "body": "self.assertNotEqual(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
-  },
-  "Assert raises": {
-    "prefix": "asr",
-    "body": "self.assertRaises(${1:exception}, ${2:callable}, ${3:args})$0"
-  },
-  "Assert True": {
-    "prefix": "ast",
-    "body": "self.assertTrue(${1:actual}${2:, '${3:message}'})$0"
-  },
-  "Assert False": {
-    "prefix": "asf",
-    "body": "self.assertFalse(${1:actual}${2:, '${3:message}'})$0"
-  },
-  "Assert is": {
-    "prefix": "asi",
-    "body": "self.assertIs(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
-  },
-  "Assert is not": {
-    "prefix": "asint",
-    "body": "self.assertIsNot(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
-  },
-  "Assert is None": {
-    "prefix": "asino",
-    "body": "self.assertIsNone(${1:actual}${2:, '${3:message}'})$0"
-  },
-  "Assert is not None": {
-    "prefix": "asinno",
-    "body": "self.assertIsNotNone(${1:actual}${2:, '${3:message}'})$0"
-  },
-  "Assert in": {
-    "prefix": "asin",
-    "body": "self.assertIn(${1:needle}, ${2:haystack}${3:, '${4:message}'})$0"
-  },
-  "Assert not in": {
-    "prefix": "asni",
-    "body": "self.assertNotIn(${1:needle}, ${2:haystack}${3:, '${4:message}'})$0"
-  },
-  "Assert": {
-    "prefix": "as",
-    "body": "self.assert_(${1:boolean expression}${2:, '${3:message}'})$0"
-  },
-  "Fail (a test)": {
-    "prefix": "fail",
-    "body": "self.fail('${1:message}')$0"
-  },
-
-  // 20221013160157
-  // https://raw.githubusercontent.com/cstrap/flask-snippets/master/snippets/base.json
-
-  "Flask hello world": {
-    "prefix": "hw",
-    "body": [
-      "from flask import Flask",
-      "app = Flask(__name__)",
-      "",
-      "@app.route('/')",
-      "def hello():",
-      "    return 'Hello World!'",
-      "",
-      "if __name__ == '__main__':",
-      "    app.run(debug=True)"
-    ]
-  },
-  "Flask route": {
-    "prefix": "route",
-    "body": [
-      "@app.route('/${1:route_name}')",
-      "def ${2:method_name}():",
-      "    pass$0"
-    ]
-  },
-  "Flask route with GET, POST": {
-    "prefix": "routegp",
-    "body": [
-      "@app.route('/${1:route_name}', methods=['GET', 'POST'])",
-      "def ${2:method_name}():",
-      "    pass$0"
-    ]
-  },
-  "Flask route POST only": {
-    "prefix": "routep",
-    "body": [
-      "@app.route('/${1:route_name}', methods=['POST'])",
-      "def ${2:method_name}():",
-      "    pass$0"
-    ]
-  },
-
-  // 20221013160158
-  // https://raw.githubusercontent.com/cstrap/flask-snippets/master/snippets/controls.json
-
-  "ML docstring": {
-    "prefix": "\"\"\"",
-    "body": "\"\"\"${1:sumary_line}\n\nKeyword arguments:\n${2:argument} -- ${3:description}\nReturn: ${4:return_description}\n\"\"\"\n$0"
-  },
-  "SL docstring": {
-    "prefix": "\"\"",
-    "body": "\"\"\"${1:sumary_line}\"\"\"\n$0"
-  },
-  "Flask App": {
-    "prefix": "fapp",
-    "body": "from flask import Flask, render_template\napp = Flask(__name__)\n\n\n@app.route('${1:/}')\ndef ${2:index}():\n    return render_template('${3:index}.html')\n\nif __name__ == '__main__':\n    app.run(host='${4:127.0.0.1}', port=${5:8000}, debug=${6:True})\n$0 $0"
-  },
-  "Flask route": {
-    "prefix": "froute",
-    "body": "@app.route('${1:path}')\ndef ${2:func_name}(${3:foo}):\n    return render_template('${4:expression}')$0"
-  },
-  "URL generator": {
-    "prefix": "furl",
-    "body": "url_for('${1:foo}'$2)$0"
-  },
-  "URL methods": {
-    "prefix": "fmeth",
-    "body": "methods=['GET', 'POST']$0"
-  },
-  "Render template": {
-    "prefix": "frt",
-    "body": "render_template('${1:page}.html', ${2:foo}=${3:bar})$0"
-  },
-  "Test request": {
-    "prefix": "ftreq",
-    "body": "with app.test_request_context('${1:path}', method='${2:POST}'):\n\t\tassert request.path == '${1:path}'\n\t\tassert.method == '${2:POST}'\n$0"
-  },
-  "Flask upload": {
-    "prefix": "fup",
-    "body": "@app.route('${1:/upload}', methods=['GET', 'POST'])\ndef ${2:upload_file}():\n    if request.method == 'POST':\n        ${3:f} = request.files['${4:the_file}']\n        ${3:f}.save('${6:/path/to/save/}${4:the_file}.${5:txt}')\n$0"
-  },
-  "Secure upload": {
-    "prefix": "fsup",
-    "body": "from werkzeug.utils import secure_filename\n\n@app.route('${1:/upload}', methods=['GET', 'POST'])\ndef ${2:upload_file}():\n    if request.method == 'POST':\n        ${3:f} = request.files['${4:the_file}']\n        ${3:f}.save('${5:/path/to/save/}' + secure_filename(${3:f}.filename))$0"
-  },
-  "Read cookie": {
-    "prefix": "frc",
-    "body": "${1:foo} = request.cookies.get$('${2:key}')\n$0"
-  },
-  "Set cookie": {
-    "prefix": "fsc",
-    "body": "${1:foo} = make_response(${2:expression})\n${1:foo}.set_cookie('${3:key}', '${4:value}')\nreturn ${1:foo}\n$0"
-  },
-  "Error handler": {
-    "prefix": "feh",
-    "body": "@app.errorhandler(${1:404})\ndef ${2:bar}(error):\n    return render_template('${3:error.html}'), ${1:404}\n$0"
-  },
-  "Flask logging": {
-    "prefix": "flog",
-    "body": "app.logger.${1:debug}(\"${2:A message}\")\n$0"
-  },
-
-  // 20221013160159
-  // https://raw.githubusercontent.com/cstrap/flask-snippets/master/snippets/templates.json
-
-  "Flask expresion": {
-    "prefix": "fexp",
-    "body": "{{ ${1:foo.bar} }}$0"
-  },
-  "Flask filter": {
-    "prefix": "ffilter",
-    "body": "{{ ${1:foo.bar}|${2:filter} }}$0"
-  },
-  "Flask comment": {
-    "prefix": "fcomment",
-    "body": "{# \n\t${1:comment} \n#}$0"
-  },
-  "Flask block": {
-    "prefix": "fblock",
-    "body": "{% ${1:block} ${2:foo} %}$3{% end${1:block} %}\n$0"
-  },
-  "Flask extends": {
-    "prefix": "fextends",
-    "body": "{% extends ${1:layout_template} %}\n\n$0"
-  },
-  "Flask self": {
-    "prefix": "fself",
-    "body": "{{ self.${1:block_name}() }}$0"
-  },
-  "Flask super": {
-    "prefix": "fsuper",
-    "body": "{{ self.supper() }}$0"
-  },
-  "Flask for": {
-    "prefix": "ffor",
-    "body": "{% for ${1:element} in ${2:collection} %}\n\t\t$3{{ ${1:element}|e }}$4\n{% endfor %}\n$0"
-  },
-  "Flask if": {
-    "prefix": "fif",
-    "body": "{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% endif %}\n$0"
-  },
-  "Flask ife": {
-    "prefix": "fife",
-    "body": "{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% else %}\n\t\t${3:blockofcode}\n{% endif %}\n$0"
-  },
-  "Flask elif": {
-    "prefix": "felif",
-    "body": "{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% elif ${3:expression2} %}\n\t\t${4:blockofcode}\n{% else %}\n\t\t${5:blockofcode}\n{% endif %}\n$0"
-  },
-  "Flask macro": {
-    "prefix": "fmacro",
-    "body": "{% macro ${1:expression} -%}\n\t\t${2:blockofcode}\n{%- endmacro %}$0"
-  },
-  "Flask filter block": {
-    "prefix": "ffb",
-    "body": "{% filter ${1:foo} %}\n\t\t${2:blockofcode}\n{% endfilter %}$0"
-  },
-  "Flask set": {
-    "prefix": "fset",
-    "body": "{% set ${1:expression} %}$0"
-  },
-  "Flask include": {
-    "prefix": "finclude",
-    "body": "{% include \"${1:template}\" %}$0"
-  },
-  "Flask import": {
-    "prefix": "fimport",
-    "body": "{% import \"${1:template}\" as ${2:alias} %}\n$0"
-  },
-  "Flask from import": {
-    "prefix": "ffrom",
-    "body": "{% from '${1:template}.html' import ${2:object} %}\n$3",
-    "description": "flask from import"
-  },
-  "Flask autoescape": {
-    "prefix": "fautoescape",
-    "body": "{% autoescape ${1:true} %}\n\t\t${2:blockofcode}\n{% endautoescape %}\n$0"
-  },
-  "Flask url": {
-    "prefix": "furl",
-    "body": "{{ url_for(\"${1:template}\") }}$0"
-  },
-  "Flask title": {
-    "prefix": "ftitle",
-    "body": "{% block title %}\n\t${1:name}\n{% endblock %}"
-  },
-  "Flask var": {
-    "prefix": "fvar",
-    "body": "{{${1:Name var}}}"
-  },
-  "Flask content block": {
-    "prefix": "fcontent",
-    "body": "{% block content %}\n\t${1:Some content}\n{% endblock %}"
-  }
+    "Assert equal": {
+        "prefix": "ase",
+        "body": "self.assertEqual(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
+    },
+    "Assert not equal": {
+        "prefix": "asne",
+        "body": "self.assertNotEqual(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
+    },
+    "Assert raises": {
+        "prefix": "asr",
+        "body": "self.assertRaises(${1:exception}, ${2:callable}, ${3:args})$0"
+    },
+    "Assert True": {
+        "prefix": "ast",
+        "body": "self.assertTrue(${1:actual}${2:, '${3:message}'})$0"
+    },
+    "Assert False": {
+        "prefix": "asf",
+        "body": "self.assertFalse(${1:actual}${2:, '${3:message}'})$0"
+    },
+    "Assert is": {
+        "prefix": "asi",
+        "body": "self.assertIs(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
+    },
+    "Assert is not": {
+        "prefix": "asint",
+        "body": "self.assertIsNot(${1:expected}, ${2:actual}${3:, '${4:message}'})$0"
+    },
+    "Assert is None": {
+        "prefix": "asino",
+        "body": "self.assertIsNone(${1:actual}${2:, '${3:message}'})$0"
+    },
+    "Assert is not None": {
+        "prefix": "asinno",
+        "body": "self.assertIsNotNone(${1:actual}${2:, '${3:message}'})$0"
+    },
+    "Assert in": {
+        "prefix": "asin",
+        "body": "self.assertIn(${1:needle}, ${2:haystack}${3:, '${4:message}'})$0"
+    },
+    "Assert not in": {
+        "prefix": "asni",
+        "body": "self.assertNotIn(${1:needle}, ${2:haystack}${3:, '${4:message}'})$0"
+    },
+    "Assert": {
+        "prefix": "as",
+        "body": "self.assert_(${1:boolean expression}${2:, '${3:message}'})$0"
+    },
+    "Fail (a test)": {
+        "prefix": "fail",
+        "body": "self.fail('${1:message}')$0"
+    }
 }

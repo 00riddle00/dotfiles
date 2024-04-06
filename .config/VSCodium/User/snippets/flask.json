@@ -1,0 +1,230 @@
+//#============================================================================
+//# User: (00riddle00) Tomas Giedraitis
+//# Date: 2024-04-06 17:50:12 EEST
+//# Path: ~/.config/VSCodium/User/snippets/flask.json
+//# URL:  https://github.com/00riddle00/dotfiles
+//#----------------------------------------------------------------------------
+//# Author: (cstrap) Christian Strappazzon
+//# Orig. URL: https://github.com/cstrap/flask-snippets
+//# Orig. URL Retrieval: 2024-04-06 17:50:12 EEST
+//# Orig. Files:
+//#   * https://raw.githubusercontent.com/cstrap/flask-snippets/master/snippets/base.json
+//#   * https://raw.githubusercontent.com/cstrap/flask-snippets/master/snippets/controls.json
+//#   * https://raw.githubusercontent.com/cstrap/flask-snippets/master/snippets/templates.json
+//# Orig. Files Retrieval: 2024-04-06 17:50:12 EEST
+//#============================================================================
+// VSCodium allows to have comments in this file.
+
+{
+    // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+
+    // ---------------------
+    // Base
+    // ---------------------
+
+    "Flask hello world": {
+        "prefix": "hw",
+        "body": [
+            "from flask import Flask",
+            "app = Flask(__name__)",
+            "",
+            "@app.route('/')",
+            "def hello():",
+            "    return 'Hello World!'",
+            "",
+            "if __name__ == '__main__':",
+            "    app.run(debug=True)"
+        ]
+    },
+    "Flask route": {
+        "prefix": "route",
+        "body": [
+            "@app.route('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+    "Flask route with GET, POST": {
+        "prefix": "routegp",
+        "body": [
+            "@app.route('/${1:route_name}', methods=['GET', 'POST'])",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+    "Flask route POST only": {
+        "prefix": "routep",
+        "body": [
+            "@app.route('/${1:route_name}', methods=['POST'])",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+
+    // ---------------------
+    // Controls
+    // ---------------------
+
+    "ML docstring": {
+        "prefix": "\"\"\"",
+        "body": "\"\"\"${1:sumary_line}\n\nKeyword arguments:\n${2:argument} -- ${3:description}\nReturn: ${4:return_description}\n\"\"\"\n$0"
+    },
+    "SL docstring": {
+        "prefix": "\"\"",
+        "body": "\"\"\"${1:sumary_line}\"\"\"\n$0"
+    },
+    "Flask App": {
+        "prefix": "fapp",
+        "body": "from flask import Flask, render_template\napp = Flask(__name__)\n\n\n@app.route('${1:/}')\ndef ${2:index}():\n    return render_template('${3:index}.html')\n\nif __name__ == '__main__':\n    app.run(host='${4:127.0.0.1}', port=${5:8000}, debug=${6:True})\n$0 $0"
+    },
+    "Flask route": {
+        "prefix": "froute",
+        "body": "@app.route('${1:path}')\ndef ${2:func_name}(${3:foo}):\n    return render_template('${4:expression}')$0"
+    },
+    "URL generator": {
+        "prefix": "furl",
+        "body": "url_for('${1:foo}'$2)$0"
+    },
+    "URL methods": {
+        "prefix": "fmeth",
+        "body": "methods=['GET', 'POST']$0"
+    },
+    "Render template": {
+        "prefix": "frt",
+        "body": "render_template('${1:page}.html', ${2:foo}=${3:bar})$0"
+    },
+    "Test request": {
+        "prefix": "ftreq",
+        "body": "with app.test_request_context('${1:path}', method='${2:POST}'):\n\t\tassert request.path == '${1:path}'\n\t\tassert.method == '${2:POST}'\n$0"
+    },
+    "Flask upload": {
+        "prefix": "fup",
+        "body": "@app.route('${1:/upload}', methods=['GET', 'POST'])\ndef ${2:upload_file}():\n    if request.method == 'POST':\n        ${3:f} = request.files['${4:the_file}']\n        ${3:f}.save('${6:/path/to/save/}${4:the_file}.${5:txt}')\n$0"
+    },
+    "Secure upload": {
+        "prefix": "fsup",
+        "body": "from werkzeug.utils import secure_filename\n\n@app.route('${1:/upload}', methods=['GET', 'POST'])\ndef ${2:upload_file}():\n    if request.method == 'POST':\n        ${3:f} = request.files['${4:the_file}']\n        ${3:f}.save('${5:/path/to/save/}' + secure_filename(${3:f}.filename))$0"
+    },
+    "Read cookie": {
+        "prefix": "frc",
+        "body": "${1:foo} = request.cookies.get$('${2:key}')\n$0"
+    },
+    "Set cookie": {
+        "prefix": "fsc",
+        "body": "${1:foo} = make_response(${2:expression})\n${1:foo}.set_cookie('${3:key}', '${4:value}')\nreturn ${1:foo}\n$0"
+    },
+    "Error handler": {
+        "prefix": "feh",
+        "body": "@app.errorhandler(${1:404})\ndef ${2:bar}(error):\n    return render_template('${3:error.html}'), ${1:404}\n$0"
+    },
+    "Flask logging": {
+        "prefix": "flog",
+        "body": "app.logger.${1:debug}(\"${2:A message}\")\n$0"
+    },
+
+    // ---------------------
+    // Templates
+    // ---------------------
+
+    "Flask expresion": {
+        "prefix": "fexp",
+        "body": "{{ ${1:foo.bar} }}$0"
+    },
+    "Flask filter": {
+        "prefix": "ffilter",
+        "body": "{{ ${1:foo.bar}|${2:filter} }}$0"
+    },
+    "Flask comment": {
+        "prefix": "fcomment",
+        "body": "{# \n\t${1:comment} \n#}$0"
+    },
+    "Flask block": {
+        "prefix": "fblock",
+        "body": "{% ${1:block} ${2:foo} %}$3{% end${1:block} %}\n$0"
+    },
+    "Flask extends": {
+        "prefix": "fextends",
+        "body": "{% extends ${1:layout_template} %}\n\n$0"
+    },
+    "Flask self": {
+        "prefix": "fself",
+        "body": "{{ self.${1:block_name}() }}$0"
+    },
+    "Flask super": {
+        "prefix": "fsuper",
+        "body": "{{ self.super() }}$0"
+    },
+    "Flask for": {
+        "prefix": "ffor",
+        "body": "{% for ${1:element} in ${2:collection} %}\n\t\t$3{{ ${1:element}|e }}$4\n{% endfor %}\n$0"
+    },
+    "Flask if": {
+        "prefix": "fif",
+        "body": "{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% endif %}\n$0"
+    },
+    "Flask ife": {
+        "prefix": "fife",
+        "body": "{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% else %}\n\t\t${3:blockofcode}\n{% endif %}\n$0"
+    },
+    "Flask elif": {
+        "prefix": "felif",
+        "body": "{% if ${1:expression} %}\n\t\t${2:blockofcode}\n{% elif ${3:expression2} %}\n\t\t${4:blockofcode}\n{% else %}\n\t\t${5:blockofcode}\n{% endif %}\n$0"
+    },
+    "Flask macro": {
+        "prefix": "fmacro",
+        "body": "{% macro ${1:expression} -%}\n\t\t${2:blockofcode}\n{%- endmacro %}$0"
+    },
+    "Flask filter block": {
+        "prefix": "ffb",
+        "body": "{% filter ${1:foo} %}\n\t\t${2:blockofcode}\n{% endfilter %}$0"
+    },
+    "Flask set": {
+        "prefix": "fset",
+        "body": "{% set ${1:expression} %}$0"
+    },
+    "Flask include": {
+        "prefix": "finclude",
+        "body": "{% include \"${1:template}\" %}$0"
+    },
+    "Flask import": {
+        "prefix": "fimport",
+        "body": "{% import \"${1:template}\" as ${2:alias} %}\n$0"
+    },
+    "Flask from import": {
+        "prefix": "ffrom",
+        "body": "{% from '${1:template}.html' import ${2:object} %}\n$3",
+        "description": "flask from import"
+    },
+    "Flask autoescape": {
+        "prefix": "fautoescape",
+        "body": "{% autoescape ${1:true} %}\n\t\t${2:blockofcode}\n{% endautoescape %}\n$0"
+    },
+    "Flask url": {
+        "prefix": "furl",
+        "body": "{{ url_for(\"${1:template}\") }}$0"
+    },
+    "Flask title": {
+        "prefix": "ftitle",
+        "body": "{% block title %}\n\t${1:name}\n{% endblock %}"
+    },
+    "Flask var": {
+        "prefix": "fvar",
+        "body": "{{${1:Name var}}}"
+    },
+    "Flask content block": {
+        "prefix": "fcontent",
+        "body": "{% block content %}\n\t${1:Some content}\n{% endblock %}"
+    }
+}
