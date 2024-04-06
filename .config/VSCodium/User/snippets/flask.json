@@ -1,6 +1,6 @@
 //#============================================================================
 //# User: (00riddle00) Tomas Giedraitis
-//# Date: 2024-04-06 17:50:12 EEST
+//# Date: 2024-04-06 18:32:06 EEST
 //# Path: ~/.config/VSCodium/User/snippets/flask.json
 //# URL:  https://github.com/00riddle00/dotfiles
 //#----------------------------------------------------------------------------
@@ -89,7 +89,7 @@
         "prefix": "fapp",
         "body": "from flask import Flask, render_template\napp = Flask(__name__)\n\n\n@app.route('${1:/}')\ndef ${2:index}():\n    return render_template('${3:index}.html')\n\nif __name__ == '__main__':\n    app.run(host='${4:127.0.0.1}', port=${5:8000}, debug=${6:True})\n$0 $0"
     },
-    "Flask route": {
+    "Flask Route": {
         "prefix": "froute",
         "body": "@app.route('${1:path}')\ndef ${2:func_name}(${3:foo}):\n    return render_template('${4:expression}')$0"
     },
