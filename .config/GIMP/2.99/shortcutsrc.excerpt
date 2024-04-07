@@ -1,0 +1,44 @@
+;------------------------------------------------------------------------------
+; Author: 00riddle00 (Tomas Giedraitis)
+; Date:   2024-04-08 01:02:48 EEST
+; Path:   ~/.config/GIMP/2.99/shortcutsrc.excerpt
+; URL:    https://github.com/00riddle00/dotfiles
+;------------------------------------------------------------------------------
+# GIMP shortcutsrc
+# 
+# If you delete this file, all shortcuts will be reset to defaults.
+
+(file-version 1)
+
+# ...
+# ...
+(action "tools-crop" "c")
+(action "dialogs-gradients")
+(action "view-zoom-fit-in" "<Primary>0")
+(action "layers-new" "equal")
+(action "tools-scale" "<Primary>t")
+(action "image-resize" "<Primary><Alt>c")
+(action "tools-free-select" "l")
+(action "layers-duplicate" "<Primary>j")
+(action "tools-warp")
+(action "tools-fuzzy-select" "w")
+(action "image-scale" "<Primary><Alt>i")
+(action "image-duplicate")
+(action "dialogs-keyboard-shortcuts" "<Primary><Alt>s")
+(action "tools-move" "v")
+(action "tools-vector")
+(action "file-print-gtk" "<Primary>p")
+(action "select-none" "<Primary>d")
+(action "view-show-selection")
+(action "tools-rotate" "<Primary>r")
+(action "layers-delete" "minus")
+(action "tools-color-picker" "i")
+(action "view-zoom-out")
+(action "file-open-recent-10")
+(action "tools-clone")
+(action "tools-iscissors")
+(action "tools-bucket-fill" "<Primary>g")
+(action "view-shrink-wrap")
+(action "tools-convolve" "b")
+# ...
+# ...
