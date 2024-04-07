@@ -1,4 +1,0 @@
-global:
-- {action: goto-next-diff, keyStroke: ALT+F7}
-- {action: goto-previous-diff, keyStroke: SHIFT+F7}
-- {action: preferences, keyStroke: ALT+CTRL+S}
