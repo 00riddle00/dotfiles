@@ -1,3 +1,14 @@
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-04-08 15:13:04 EEST
+# Path: ~/.local/share/irssi/scripts/uberprompt.pl
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: shabble (Tom Feist-Hassan) (https://github.com/shabble)
+# Orig. URL: https://raw.githubusercontent.com/irssi/scripts.irssi.org/master/scripts/uberprompt.pl
+# Orig. URL/File Retrieval: 2024-04-08 15:13:04 EEST
+#------------------------------------------------------------------------------
+
 =pod
 
 =head1 NAME

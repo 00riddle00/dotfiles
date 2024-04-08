@@ -1,9 +1,20 @@
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-04-08 14:59:42 EEST
+# Path: ~/.local/share/irssi/miromiro.theme
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: jasonwryan (Jason Ryan)
+# Orig. URL: https://hg.sr.ht/~jasonwryan/centurion/browse/.irssi/miromiro.theme?rev=327f83b9ecc6
+# Orig. URL/File Retrieval: 2024-04-08 14:59:42 EEST
+# Description from the author:
 #------------------------------------------
-# file: ~/.irssi/miromiro.theme           
+# file: ~/.irssi/miromiro.theme
 # author: jason ryan http://jasonwryan.com/
-# vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:   
+# vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:
 #------------------------------------------
 # Based on Pat Brisbin's theme
+#------------------------------------------------------------------------------
 
 # default foreground color (%N) - -1 is the "default terminal color"
 default_color = "-1";
@@ -18,7 +29,7 @@ replaces = { "[]" = "%g$*%n"; };
 abstracts = {
 
   ############# generic ###############################
-  
+
   # text to insert at the beginning of each non-message line
   #line_start = "%g//%n ";
   line_start = "";
