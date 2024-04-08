@@ -3,16 +3,21 @@
 	name = Tomas Giedraitis
 	signingkey = D18AF5003042DB3E
 [core]
+    #pager = delta
 	editor = vim
 [credential]
     # cache for 1 day
 	helper = cache --timeout=86400
 [merge]
     tool = vimdiff
+    conflictstyle = diff3
 [diff]
 	tool = vimdiff
+    colorMoved = default
 [difftool]
 	prompt = false
+[interactive]
+    diffFilter = delta --color-only
 [alias]
     lgfirstparent = log --first-parent
     lgnomerges = log --no-merges --oneline
@@ -23,7 +28,6 @@
 	d = difftool
 [gui]
 	pruneduringfetch = true
-	recentrepo = /home/riddle/tmp7
 [commit]
 	gpgsign = true
 [pull]
@@ -40,3 +44,7 @@
 	fetchalways = false
 	update = true
 	initializenew = true
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true

@@ -1,1 +1,8 @@
-source ~/.config/vim/vimrc
+"------------------------------------------------------------------------------
+" Author: 00riddle00 (Tomas Giedraitis)
+" Date:   2024-04-08 13:26:39 EEST
+" Path:   ~/.config/ideavim/ideavimrc
+" URL:    https://github.com/00riddle00/dotfiles
+"------------------------------------------------------------------------------
+
+source ~/.config/nvim/init.vim

@@ -1,3 +1,10 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-07 01:29:27 EEST
+# Path:   ~/.config/cmus/rc
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 colorscheme night
 
 fset 70s=date>=1970&date<1980

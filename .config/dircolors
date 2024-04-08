@@ -1,8 +1,18 @@
-# ----------------------------------------
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-04-08 15:23:13 EEST
+# Path: ~/.config/dircolors
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
+# Orig. URL: https://hg.sr.ht/~jasonwryan/shiv/raw/.dir_colors?rev=6fbaa8dd13a6
+# Orig. URL/File Retrieval: 2024-04-08 15:23:13 EEST
+# Description from the author:
+#----------------------------------------
 # file: $HOME/.dir_colors
 # author: jason ryan http:/jasonwryan.com
 # vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:
-# ----------------------------------------
+#------------------------------------------------------------------------------
 #
 # COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
 # pipes. 'all' adds color characters to all output. 'none' shuts colorization
@@ -87,6 +97,7 @@ STICKY             01;34      # dir with the sticky bit set (+t) and not other-w
 .smc.gz            00;32
 .fig.gz            00;32
 .sfc.gz            00;32
+.flac              00;32
 
 .avi               01;35
 .flc               01;35
@@ -174,6 +185,7 @@ STICKY             01;34      # dir with the sticky bit set (+t) and not other-w
 .lua               00;33
 .map               00;33
 .markdown          00;33
+.mbsyncrc          00;33
 .md                00;33
 .mf                00;33
 .mfasl             00;33
@@ -231,9 +243,11 @@ STICKY             01;34      # dir with the sticky bit set (+t) and not other-w
 .ttytterrc         01;35
 .vim               01;35
 .vimrc             00;32
+.wpa_cli_history   00;33
 .xbindkeysrc       01;33
 .xinitrc           01;33 
 .Xauthority        01;31
+.XCompose          01;33
 .Xmodmap           00;31
 .Xresources        01;33
 .zcompdump         00;31

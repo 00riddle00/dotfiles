@@ -1,9 +1,9 @@
-;#------------------------------------------------------------------------------
-;# Author: 00riddle00 (Tomas Giedraitis)
-;# Date:   2024-04-06 01:33:04 EEST
-;# Path:   ~/.config/doom/custom.el
-;# URL:    https://github.com/00riddle00/dotfiles
-;#------------------------------------------------------------------------------
+;------------------------------------------------------------------------------
+; Author: 00riddle00 (Tomas Giedraitis)
+; Date:   2024-04-07 02:10:50 EEST
+; Path:   ~/.config/doom/custom.el
+; URL:    https://github.com/00riddle00/dotfiles
+;------------------------------------------------------------------------------
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

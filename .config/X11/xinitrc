@@ -1,3 +1,10 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-07 01:16:19 EEST
+# Path:   ~/.config/X11/xinitrc
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 # Load X resources
 [[ -f ~/.config/X11/Xresources ]] && xrdb ~/.config/X11/Xresources
 
@@ -19,11 +26,11 @@ fi
 
 # Configure multiple monitors
 if [[ "$(hostname)" == "gecko" ]]; then
-    $BIN/config-monitors-gecko
+    $BIN/set-up-monitors-gecko
 elif [[ "$(hostname)" == "panther" ]]; then
-    $BIN/config-monitors-panther
+    $BIN/set-up-monitors-panther
 elif [[ "$(hostname)" == "tulkun" ]]; then
-    $BIN/config-monitors-tulkun
+    $BIN/set-up-monitors-tulkun
 fi
 
 # Disable touchpad on a ThinkPad

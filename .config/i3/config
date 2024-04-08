@@ -1,9 +1,9 @@
-#  _ _____                    __ _
-# (_)___ /    ___ ___  _ __  / _(_) __ _
-# | | |_ \   / __/ _ \| '_ \| |_| |/ _` |
-# | |___) | | (_| (_) | | | |  _| | (_| |
-# |_|____/   \___\___/|_| |_|_| |_|\__, |
-#                                  |___/
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-08 13:22:17 EEST
+# Path:   ~/.config/i3/config
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
 
 # This config file will use environmental variables such as $BROWSER and $TERMINAL.
 # You can set these variables in ~/.profile or ~/.zshenv if you have it as below:
