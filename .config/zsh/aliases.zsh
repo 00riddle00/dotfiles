@@ -430,6 +430,7 @@ alias irssi='irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HO
 alias libre='libreoffice'
 alias ls='colorls'
 #alias ls='ls --color=auto'
+alias lynx='lynx -lss="$XDG_CONFIG_HOME/lynx/lynx.lss"'
 alias mc='mc --nosubshell'
 alias mi='nomacs'
 alias nn='neofetch'
