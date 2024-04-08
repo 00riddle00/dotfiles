@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-gtk3_css="$XDG_CONFIG_HOME/gtk-3.0/gtk.css"
-
-sed -i '/^    \/\*$/d' $gtk3_css
-sed -i '/^    \*\/$/d' $gtk3_css
