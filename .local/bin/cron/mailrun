@@ -1,4 +1,11 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-08 15:52:20 EEST
+# Path:   ~/.local/bin/cron/mailrun
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
 
 PID=$(pgrep offlineimap)
 
@@ -13,4 +20,3 @@ export DISPLAY=:0;
 notify-send "email" "email synced" > /dev/null 2>&1
 
 exit 0
-
