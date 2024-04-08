@@ -1,10 +1,17 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-08 14:45:08 EEST
+# Path:   ~/.config/irssi/config
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 servers = (
   {
     address = "chat.freenode.net";
     chatnet = "Freenode";
     port = "6697";
     use_tls = "yes";
-    tls_cert = "~/.irssi/irssi.pem";
+    tls_cert = "~/.ssh/certs/irssi.pem";
     tls_verify = "yes";
     tls_capath = "/etc/ssl/certs";
     autoconnect = "yes";
@@ -177,7 +184,8 @@ statusbar = {
       visible = "always";
 
       items = {
-        uberprompt = { priority = "-1"; };
+        prompt = { priority = "-1"; };
+        prompt_empty = { priority = "-1"; };
         input = { priority = "10"; };
       };
     };
@@ -210,9 +218,9 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     autolog = "yes";
-    autolog_path = "~/.irssi/logs/$tag/%Y-%m-%d/$0.log";
+    autolog_path = "~/.local/state/irssi/logs/$tag/%Y-%m-%d/$0.log";
 
-    theme = "miromiro";
+    theme = "h3rbz";
   };
 };
 logs = { };
