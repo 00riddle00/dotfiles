@@ -48,7 +48,7 @@ export _JAVA_OPTIONS=-Djavafx.cachedir="$XDG_CACHE_HOME"/openjfx
 export TEXMFHOME=$XDG_DATA_HOME/texmf
 export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
-export LYNX_CFG_PATH="$XDG_CONFIG_HOME"/lynx.cfg
+export LYNX_CFG="$XDG_CONFIG_HOME"/lynx/lynx.cfg
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
 export AUR_HELPER="paru"
 
