@@ -2,35 +2,33 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 00:34:32 EEST
+# Date:   2024-04-12 15:11:47 EEST
 # Path:   ~/.config/Thunar/uca.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
--->
 # Additional custom actions for Thunar's context menu.
+-->
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
+	<icon>terminal</icon>
 	<name>Open Terminal Here</name>
 	<submenu></submenu>
-	<unique-id>1667162052306439-1</unique-id>
+	<unique-id>1712922767337151-1</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Example for a custom action</description>
-	<range></range>
+	<description>Open Terminal in the current directory.</description>
+	<range>*</range>
 	<patterns>*</patterns>
-	<startup-notify/>
 	<directories/>
 </action>
 <action>
 	<icon>anydo</icon>
 	<name>Create New File</name>
 	<submenu></submenu>
-	<unique-id>1667162350606943-1</unique-id>
-	<command>$BIN/thunar-newfile</command>
-	<description>Create new file using zenity</description>
-	<range></range>
+	<unique-id>1712922860051143-2</unique-id>
+	<command>thunar-newfile</command>
+	<description>Create new file in the current directory.</description>
+	<range>*</range>
 	<patterns>*</patterns>
-	<startup-notify/>
 	<directories/>
 </action>
 </actions>
