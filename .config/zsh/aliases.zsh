@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 22:17:38 EEST
+# Date:   2024-04-12 15:17:49 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -142,6 +142,7 @@ alias ch='sudo chown -R $USER:$USER'
 alias let='chmod 755'
 alias letr='chmod -R 755'
 alias exe='chmod +x'
+alias noexe='chmod -x'
 
 #------------------------------------------------------------------------------
 # 6. Clipboard
@@ -586,13 +587,13 @@ alias sdd='svn diff'
 alias ssd='svn diff --diff-cmd="meld"'
 alias svn.log='svn log -r 1:HEAD'
 alias svn.log.head='svn log -r HEAD:1 --limit 5'
-alias slh='svn log -r HEAD:1 --limit 5'
+alias slg='svn log -r HEAD:1 --limit 5'
 # --Actions
 alias sa='svn add'
 alias sr='svn revert `--use-commit-times`'
 alias sm='svn move'
-alias sci='svn commit'
-alias sc='svn cleanup --remove-unversioned'
+alias ci='svn commit'
+alias sc='confirm "svn cleanup --remove-unversioned"'
 alias key='svn propset svn:keywords "Author Date Revision URL Id"'
 alias ex='svn propset svn:executable on'
 alias svn.checkout='svn checkout `--use-commit-times`'
@@ -946,6 +947,16 @@ alias awk-s--3='awk -F/ '\''{print $(NF-1?NF-2:0)}'\'
 alias awk-s--2='awk -F/ '\''{print $(NF?NF-1:0)}'\'
 alias awk-s--1='awk -F/ '\''{print $(NF)}'\'
 alias awk-s--='awk -F/ '\''{print $NF}'\'
+# ---------------------------------------
+alias awk-o-1='awk -F, '\''{print $1}'\'
+alias awk-o-2='awk -F, '\''{print $2}'\'
+alias awk-o-3='awk -F, '\''{print $3}'\'
+alias awk-o-4='awk -F, '\''{print $4}'\'
+alias awk-o--4='awk -F, '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-o--3='awk -F, '\''{print $(NF-1?NF-2:0)}'\'
+alias awk-o--2='awk -F, '\''{print $(NF?NF-1:0)}'\'
+alias awk-o--1='awk -F, '\''{print $(NF)}'\'
+alias awk-o--='awk -F, '\''{print $NF}'\'
 
 # A trailing space in VALUE causes the next word to be checked for
 # alias substitution when the alias is expanded.

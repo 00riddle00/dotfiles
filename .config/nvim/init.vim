@@ -720,6 +720,8 @@ noremap <leader>o :BufExplorer<CR>
 " [PLUGIN] [CtrlP] Settings
 "--------------------------
 
+let g:ctrlp_working_path_mode = '0'
+
 " ignoring in ctrlp
 if executable('ag')
   " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher

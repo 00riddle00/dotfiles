@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 22:17:32 EEST
+# Date:   2024-04-12 15:17:58 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -114,9 +114,17 @@ pcols () {
 }
 
 # convert epoch to human-readable date
-# usage: epoch-to-date 1643294515
-epoch-to-date () {
+# usage: epoch-to-date 1643234400
+# output: 2022-01-27
+epoch-to-date() {
     date  -d @"$1" "+%F"
+}
+
+# convert epoch to human-readable date
+# usage: date-to-epoch 2022-01-27
+# output: 1643234400
+date-to-epoch() {
+    date  -d "$1" "+%s"
 }
 
 ddif() {
