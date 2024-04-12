@@ -1,6 +1,6 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-04-07 00:35:19 EEST
+! Date:   2024-04-12 20:51:56 EEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
@@ -107,12 +107,6 @@ xterm*color14: #34E2E2
 xterm*color15: #EEEEEC
 
 ! -- Xscreensaver settings -- !
-xscreensaver.mode:         blank
-xscreensaver.timeout:      0:10:00
-xscreensaver.fade:         True
-xscreensaver.unfade:       False
-xscreensaver.fadeSeconds:  0:00:03
-xscreensaver.splash:       False
 
 !font settings
 xscreensaver-auth.?.Dialog.headingFont:  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
