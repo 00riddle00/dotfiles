@@ -47,13 +47,6 @@ dunst &
 # Spawn SSH Agent
 eval $(ssh-agent -s)
 
-# Launch a window manager (only one option should be uncommented)
-
-# --------- openbox ---------
-exec openbox-session
-# ---------- i3-wm ----------
+# Window manager
 #exec i3
-# ----------- dwm -----------
-#hsetroot -solid "#073542" &
-#dwmblocks &
-#dwm.loop
+exec openbox-session
