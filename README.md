@@ -6,21 +6,16 @@
 #### i3
 ![i3_preview](https://i.imgur.com/64izSk1.png)
 
-#### dwm
-![dwm_preview](https://i.imgur.com/FZodx5f.png) 
-
-- Scripts are in  `bin/` and `.local/bin/`
-- Separate repos for suckless:
+- Separate repos for suckless (I actually only use dmenu).
 	- [dwm](https://github.com/00riddle00/dwm)
 	- [dwmblocks](https://github.com/00riddle00/dwmblocks)
 	- [dmenu](https://github.com/00riddle00/dmenu)
 	- [st](https://github.com/00riddle00/st)
 - Wallpapers [repo](https://github.com/00riddle00/wallpapers)
 
-### Window managers
+### Window managers (depending on the mood)
 - Openbox
 - i3-gaps
-- dwm
 
 ### Applications
 - bat
