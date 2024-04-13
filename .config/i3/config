@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-08 13:22:17 EEST
+# Date:   2024-04-13 20:45:46 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ floating_modifier $alt
 # (to unlock KWallet protected by the login password)
 #$run /usr/lib/pam_kwallet_init
 # apps are mainly started via ~/.xinitrc
-$run xsetroot -solid "#073542" &
+$run hsetroot -solid "#073542" &
 
 #$run picom -b
 #$run $term -name dropdown_aux -e tmux new-session

@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 01:16:19 EEST
+# Date:   2024-04-13 20:45:40 EEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -54,6 +54,6 @@ exec openbox-session
 # ---------- i3-wm ----------
 #exec i3
 # ----------- dwm -----------
-#xsetroot -solid "#073542" &
+#hsetroot -solid "#073542" &
 #dwmblocks &
 #dwm.loop
