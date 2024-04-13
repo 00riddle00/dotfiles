@@ -1,7 +1,3 @@
-# Custom .desktop entries can added and changed in ~/.local/share/applications/
-# After searching there, the system-wide .desktop entries can be found in /usr/share/applications/
-# xdg-open will use these settings to determine how to open filetypes.
-
 [Default Applications]
 application/epub+zip=calibre-gui.desktop;zathura.desktop;
 application/msword=libreoffice-writer.desktop;
