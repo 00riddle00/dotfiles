@@ -420,23 +420,25 @@ alias pacu='sudo pacman -U' # argument: pkgname-pkgver.pkg.tar.zst
 # Launching programs
 #--------------------------------------
 
+# Adhering to XDG BASE DIR spec:
+alias dosbox='dosbox -conf "$XDG_CONFIG_HOME/dosbox/dosbox-0.74-3.conf"'
+alias irssi='irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"'
+alias lynx='lynx -lss="$XDG_CONFIG_HOME/lynx/lynx.lss"'
+#alias svn='svn --config-dir "$XDG_CONFIG_HOME/subversion"'
+
 alias bs='basename'
 alias cat='bat'
-alias dosbox='dosbox -conf "$XDG_CONFIG_HOME/dosbox/dosbox-0.74-3.conf"'
 alias emacs.cmd='emacs -nw' # --no-window-system'
 alias enc='uchardet'
 alias espeak='espeak -ven-uk'
 alias fire='firefox'
-alias irssi='irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"'
 alias libre='libreoffice'
 alias ls='colorls'
 #alias ls='ls --color=auto'
-alias lynx='lynx -lss="$XDG_CONFIG_HOME/lynx/lynx.lss"'
 alias mc='mc --nosubshell'
 alias mi='nomacs'
 alias nn='neofetch'
 alias rss='newsboat'
-#alias svn='svn --config-dir "$XDG_CONFIG_HOME/subversion"'
 #alias t='thunar'
 alias tar='tar -xvf'
 alias timer='termdown -B | lolcat'
@@ -664,7 +666,7 @@ alias lfn='$EDITOR $ZDOTDIR/functions.local.zsh'
 alias mime='$EDITOR $XDG_CONFIG_HOME/mimeapps.list'
 alias rc='$EDITOR $XDG_CONFIG_HOME/openbox/rc.xml'
 alias rr='$EDITOR $XDG_CONFIG_HOME/ranger/rc.conf'
-alias start='$EDITOR $XDG_CONFIG_HOME/openbox/autostart.sh'
+alias start='$EDITOR $XDG_CONFIG_HOME/openbox/autostart'
 alias tg='$EDITOR $XDG_CONFIG_HOME/tig/config'
 alias tintrc='$EDITOR $XDG_CONFIG_HOME/tint2/tint2rc'
 alias tmuxr='$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf'
@@ -683,7 +685,7 @@ alias zr='$EDITOR $ZDOTDIR/.zshrc'
 #---------------------------------------
 
 alias i3.out='i3-msg exit'
-alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes.sh"'
+alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes"'
 alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 ## avoid tmux session using an old I3SOCK environment variable after i3 restart
@@ -694,7 +696,7 @@ alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3
 # Openbox
 #---------------------------------------
 
-alias autostart='$XDG_CONFIG_HOME/openbox/autostart.sh'
+alias autostart='$XDG_CONFIG_HOME/openbox/autostart'
 alias theme.matrix='$BIN/themes/matrix/run'
 alias theme.riddle='$BIN/themes/riddle/run'
 alias f2on='openbox-enable-F2-keybinding'

@@ -128,7 +128,7 @@ stty -ixon ## disables XON/XOFF flow control
 ## system information tool (configured for Arch Linux)
 ## to use the original neofetch, delete $XDG_CONFIG_HOME/neofetch/
 #neofetch
-#archey3
+#archey
 
 ## launch tmux
 tmux > /dev/null 2>&1
