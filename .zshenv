@@ -62,6 +62,9 @@ export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
 export PYTHONUSERBASE=$XDG_DATA_HOME/python
 export RXVT_SOCKET="$XDG_RUNTIME_DIR"/urxvtd
 export W3M_DIR="$XDG_STATE_HOME/w3m"
+# For Qt programs, GTK or Qt programs on Wayland to use cursors in
+# XDG_DATA_HOME/icons:
+export XCURSOR_PATH=${XCURSOR_PATH}:${XDG_DATA_HOME}/icons
 
 # Editor
 if [ -x "$(command -v nvim)" ];
