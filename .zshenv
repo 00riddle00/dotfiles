@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 22:17:25 EEST
+# Date:   2024-04-14 17:05:19 EEST
 # Path:   ~/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -9,12 +9,16 @@
 #  user's environment variables
 # ============================= 
 
+# Ruby
+export GEM_HOME="$(gem env user_gemhome)"
+
 typeset -U path
 
 path=(
     $HOME/.local/bin
     $HOME/.local/bin/cron
     $HOME/perl5/bin
+    $GEM_HOME/bin
     $path)
 
 export PATH
@@ -50,7 +54,14 @@ export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
 export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 export LYNX_CFG="$XDG_CONFIG_HOME"/lynx/lynx.cfg
 export DIRCOLORS="$XDG_CONFIG_HOME/dircolors"
-export AUR_HELPER="paru"
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+export PYTHON_HISTORY=$XDG_STATE_HOME/python/history
+export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
+export PYTHONUSERBASE=$XDG_DATA_HOME/python
+export RXVT_SOCKET="$XDG_RUNTIME_DIR"/urxvtd
+export W3M_DIR="$XDG_STATE_HOME/w3m"
 
 # Editor
 if [ -x "$(command -v nvim)" ];
@@ -81,6 +92,9 @@ export BAT_PAGER="less -RF"
 export MANROFFOPT="-c"
 ## for i3
 export FILE="ranger"
+
+# Default programs (custom ENV vars)
+export AUR_HELPER="paru"
 
 # Directories
 export BIN="$HOME/.local/bin"
