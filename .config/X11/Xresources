@@ -1,11 +1,17 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-04-12 20:51:56 EEST
+! Date:   2024-04-16 02:39:11 EEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
 
-! -- Urxvt settings -- !
+! ----------------- Sxiv ----------------- !
+Sxiv.foreground: #1167b1
+Sxiv.background: #222222
+
+! ----------------- Urxvt ---------------- !
+#include "urxvt-colors/dark"
+
 URxvt.buffered: true
 URxvt.cursorColor: #5E468C 
 URxvt.cursorUnderline: false
@@ -29,34 +35,24 @@ URxvt.iconFile: /home/riddle/Dropbox/candy/icons/terminal/term_green_2.svg
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-! -- Fonts -- !
-! Xft Font Configuration 
-Xft.dpi: 96
-Xft.antialias: true 
-Xft.rgba: rgb
-Xft.hinting: true 
-Xft.hintstyle: hinstlight 
+#define FONT1  JetBrains Mono:size=11
+#define FONT2  JetBrainsMono Nerd Font:size=11
+#define FONT3  Source Code Pro:pixelsize=11
+#define FONT4  DejaVu Sans Mono:size=11
+#define FONT5  DejaVuSansM Nerd Font:size=11
+#define FONT6  Noto Color Emoji:size=11
 
-! Current Xft Font 
-URxvt.font: xft:Source Code Pro:size=11, \
-            xft:Symbola:size=11, \
-            xft:Noto Color Emoji:size=11, \
-            xft:Inconsolata Nerd Font Mono:size=11, \
-            xft:DejaVuSansMono Nerd Font:size=11, \
-            xft:DroidSansMono Nerd Font:size=11, \
-            xft:FiraCode Nerd Font:size=11, \
-            xft:RobotoMono Nerd Font:size=11
-
-! -- Colors -- !
-#include "colors/dark"
+URxvt.font: xft:FONT1, \
+            xft:FONT2, \
+            xft:FONT6
 
 ! --  Extensions -- !
 URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,keyboard-select,resize-font
 
-!copy and paste
+! copy and paste
 !URxvt.keysym.M-c:      eval:selection_to_clipboard
 URxvt.keysym.M-v:      eval:paste_clipboard
-!keyboard-select
+! keyboard-select
 !  activate selecting text
 !  then use vim commands ('v' for visual mode)
 !  after pressing Enter, the selection is saved in clipboard
@@ -70,10 +66,10 @@ URxvt.keysym.M-u:                   matcher:select
 URxvt.matcher.button:               1
 URxvt.matcher.rend.0:               Uline Bold fg4
 URxvt.colorUL:                      #4682B4
-!resize-font
+! resize-font
 URxvt.resize-font.step:  2
 
-! -- Xterm settings -- !
+! ----------------- Xterm ---------------- !
 xterm*termName: xterm-256color
 xterm*locale: true
 xterm*cursorColor: #1792d0
@@ -106,9 +102,9 @@ xterm*color13: #AD7FA8
 xterm*color14: #34E2E2
 xterm*color15: #EEEEEC
 
-! -- Xscreensaver settings -- !
+! ------------- Xscreensaver ------------- !
 
-!font settings
+! font settings
 xscreensaver-auth.?.Dialog.headingFont:  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
 xscreensaver-auth.?.Dialog.bodyFont:     -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
 xscreensaver-auth.?.Dialog.labelFont:    -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
@@ -117,7 +113,7 @@ xscreensaver-auth.?.Dialog.buttonFont:   -misc-dejavu sans-bold-r-*-*-18-*-*-*-*
 xscreensaver-auth.?.Dialog.dateFont:     -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
 xscreensaver-auth.?.passwd.passwdFont:   -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
 
-!general dialog box (affects main hostname, username, password text)
+! general dialog box (affects main hostname, username, password text)
 xscreensaver-auth.?.Dialog.foreground:         #1792d0
 xscreensaver-auth.?.Dialog.background:         #202020
 xscreensaver-auth.?.Dialog.topShadowColor:     #000000
@@ -125,21 +121,28 @@ xscreensaver-auth.?.Dialog.bottomShadowColor:  #000000
 xscreensaver-auth.?.Dialog.Button.foreground:  #1792d0
 xscreensaver-auth.?.Dialog.Button.background:  #000000
 
-!username/password input box and date text colour
+! username/password input box and date text colour
 xscreensaver-auth.?.Dialog.text.foreground:      #7262b3
 xscreensaver-auth.?.Dialog.text.background:      #002626
 xscreensaver-auth.?.Dialog.internalBorderWidth:  45
 xscreensaver-auth.?.Dialog.borderWidth:          0
 xscreensaver-auth.?.Dialog.shadowThickness:      4
 
-!timeout bar (background is actually determined by Dialog.text.background)
+! timeout bar (background is actually determined by Dialog.text.background)
 xscreensaver-auth.?.passwd.thermometer.foreground:  #1792d0 
 xscreensaver-auth.?.passwd.thermometer.background:  #7262b3
 xscreensaver-auth.?.passwd.thermometer.width:       6
 
-!datestamp format--see the strftime(3) manual page for details
+! datestamp format--see the strftime(3) manual page for details
 xscreensaver-auth.?.dateFormat:  %Y, %b %d, %a, %R
 
-! -- Sxiv image viewer settings -- !
-Sxiv.foreground: #1167b1
-Sxiv.background: #222222
+! -------------- Xft (Fonts) ------------- !
+! dpi default 96, recommended values 120 [125%], 144 [150%], 168 [175%], 192 [200%]
+Xft.dpi:       96
+Xft.rgba:      rgb
+Xft.lcdfilter: lcddefault
+!Xft.hintstyle: hintslight
+Xft.hintstyle: hintfull
+Xft.hinting:   1
+Xft.autohint:  0
+Xft.antialias: 1
