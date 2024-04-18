@@ -227,8 +227,9 @@ nmap     <leader>r    :so $VIMRC<CR>
 nnoremap <leader>u    :!urlview %<CR>
 nmap     <leader>s    :sp<cr>
 nmap     <leader>v    :vs<cr>
-"nmap     <leader>s    :VimtexStop<CR>
-"nmap     <leader>v    :VimtexCompile<CR>
+nmap     <leader>s    :VimtexStop<CR>
+nmap     <leader>v    :VimtexCompile<CR>
+"inoremap jk <esc> # "Ctrl + [" does the same
 
 " Move between buffers
 nnoremap <leader>] :bn<CR>
@@ -984,7 +985,7 @@ let c_no_curly_error=1
 " <empty>
 
 "==============================================
- Plug 'junegunn/vim-easy-align'
+ "Plug 'junegunn/vim-easy-align'
 "==============================================
 
 "------------------------------
@@ -997,7 +998,7 @@ let c_no_curly_error=1
 "nmap ga <Plug>(EasyAlign)
 
 "==============================================
- Plug 'easymotion/vim-easymotion'
+ "Plug 'easymotion/vim-easymotion'
 "==============================================
 
 "-------------------------------
@@ -1091,7 +1092,6 @@ let g:vimtex_compiler_latexmk_engines = {
     \ '_'                : '-xelatex',
     \}
 
-
 let g:vimtex_quickfix_ignore_filters = [
       \ 'Underfull',
       \ 'Overfull',
@@ -1122,13 +1122,15 @@ inoremap <expr> <C-u> pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<C-u>"
 "It will map the return key in insert mode to input CTRL-Y when the popup menu
 "is visible. CTRL-Y selects the currently selected item in the menu without
 "entering a new line. Otherwise it will make the return key act like normal.
-inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+"inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+" ^----- Commented out since it interferes PyCharm - ENTER key becomes unusable.
 
 "---------------------------------------------------------------
 
 " (vim-plug) Initialize plugin system
 " Automatically executes 'filetype plugin indent on' and 'syntax enable'. You can
 " revert the settings after the call. e.g. 'filetype indent off', 'syntax off', etc.
+" To see the current status, type :filetype
 call plug#end()
 
 "===============================================================
