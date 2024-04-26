@@ -23,11 +23,14 @@
 
 vim.cmd [[colorscheme $VIMCOLOR]]
 o.background = "dark"
+o.termguicolors = false
 
 -------------------------------------------
 -- Appearance
 -------------------------------------------
 
+-- Number of screen lines to use for the command-line.
+o.cmdheight = 1
 -- Show count of selected lines or characters
 o.showcmd = true
 -- Show line numbers
@@ -65,7 +68,7 @@ o.foldenable = false
 -- Do not wrap lines
 o.wrap = false
 -- Spelling
-o.spelllang="en_us"
+o.spelllang = { "en_gb", "lt" }
 
 -------------------------------------------
 -- Editing text
@@ -85,8 +88,12 @@ o.smartindent = true
 o.startofline = false
 -- Jump 5 lines when running out of the screen
 o.scrolljump = 5
--- Indicate jump out of the screen when 3 lines before end of the screen
-o.scrolloff = 3
+-- Indicate "running out of the screen" when 3 lines before end of the screen
+o.scrolloff = 4
+-- Scroll horizontally 5 chars when running out of the screen
+o.sidescroll = 5
+-- Indicate "running out of the screen" when 8 chars before end of the screen
+o.sidescrolloff = 8
 -- Show matching brackets when cursor is over them
 o.showmatch = true
 
@@ -139,7 +146,7 @@ o.shortmess = "filnxtToOFcI"
 -- Wildcards
 -------------------------------------------
 
-o.wildignore = "*/build/*,*/__pycache__/*,*/venv/*"
+o.wildignore = { "*.pyc", "build", "__pycache__", "venv" }
 
 -------------------------------------------
 -- Autocomplete
