@@ -275,22 +275,11 @@ vmap("<C-_>", [[<Plug>NERDCommenterToggle<CR>]])
 imap("<C-_>", [[<ESC><Plug>NERDCommenterToggle<CR>]])
 
 -------------------------------------------
--- [Plugin] "preservim/nerdtree"
--------------------------------------------
+-- [Plugin] "nvim-tree/nvim-tree.lua
+-- ----------------------------------------
 
-_G.FocusNERDTree = function()
-  -- Check if the current buffer's name matches "NERD_tree_*"
-  if vim.fn.bufname() ~= "" and string.match(vim.fn.bufname(), "NERD_tree_") then
-    -- Execute the normal mode command to switch to the previously active window
-    vim.api.nvim_command("normal! <C-w>p")
-  else
-    -- Focus or open NERDTree if the current buffer is not a NERDTree buffer
-    vim.api.nvim_command("NERDTreeFocus")
-  end
-end
-
-noremap("<C-n>", [[:NERDTreeToggle<CR>]])
-noremap("<C-x>", [[<cmd>lua FocusNERDTree()<CR>]])
+noremap("<C-n>", [[:NvimTreeToggle<CR>]])
+noremap("<C-x>", [[:NvimTreeFocus<CR>]])
 
 -------------------------------------------
 -- [Plugin] "nvim-telescope/telescope.nvim"

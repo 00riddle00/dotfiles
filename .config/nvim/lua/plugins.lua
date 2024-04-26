@@ -18,7 +18,7 @@ return require("packer").startup(function(use)
   use { "github/copilot.vim", config = function() require("plugins/copilot") end }
   use { "raimondi/delimitmate", config = function() require("plugins/delimitmate") end }
   use { "preservim/nerdcommenter" }
-  use { "preservim/nerdtree", config = function() require("plugins/nerdtree") end }
+  use { 'nvim-tree/nvim-tree.lua', requires = {{ 'nvim-tree/nvim-web-devicons' }}, config = function() require("plugins/nvim-tree") end }
   use { "nvim-treesitter/nvim-treesitter", run = function() local ts_update = require("nvim-treesitter.install").update({ with_sync = true }) ts_update() end, config = function() require("plugins/nvim-treesitter") end }
   use { "preservim/tagbar", config = function() require("plugins/tagbar") end }
   use { "nvim-telescope/telescope.nvim", requires = {{ "nvim-lua/plenary.nvim" }}, config = function() require("plugins/_telescope") end }
