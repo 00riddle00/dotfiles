@@ -40,7 +40,7 @@ nmap(      "<leader>s",     [[:sp<CR>]])
 nmap(      "<leader>v",     [[:vs<CR>]])
 --nmap(    "<leader>s",     [[:VimtexStop<CR>]])
 --nmap(    "<leader>v",     [[:VimtexCompile<CR>]])
---nmap(    "<leader>e",     [[:e<CR>]])  -- reload file
+nmap(    "<leader>e",       [[:e<CR>]])  -- reload file
 --inoremap("jk",            [[<esc>]]) -- "<C-[>" does the same
 nnoremap(  "<leader>u",     [[:!urlview %<CR>]])
 
@@ -169,73 +169,10 @@ inoremap("<C-t>", [[<ESC>BB"xdiWdWep"xpa]])
 -- [Windows] resize
 -------------------------------------------
 
--- TODO simplify these functions and preferably put in a single function
-
-_G.ResizeLeft = function()
-  -- if there are more than 2 windows
-  if vim.fn.winnr("$") ~= 2 then
-    vim.cmd(":vertical resize -5")
-    return
-  end
-  -- if it's a left window
-  -- (when the split is vertical)
-  if vim.fn.winnr() == 1 then
-    vim.cmd(":vertical resize -5")
-  else
-    vim.cmd(":vertical resize +5")
-  end
-end
-
-_G.ResizeRight = function()
-  -- if there are more than 2 windows
-  if vim.fn.winnr("$") ~= 2 then
-    vim.cmd(":vertical resize +5")
-    return
-  end
-  -- if it's a left window
-  -- (when the split is vertical)
-  if vim.fn.winnr() == 1 then
-    vim.cmd(":vertical resize +5")
-  else
-    vim.cmd(":vertical resize -5")
-  end
-end
-
-_G.ResizeUp = function()
-  -- if there are more than 2 windows
-  if vim.fn.winnr("$") ~= 2 then
-    vim.cmd(":resize -5")
-    return
-  end
-  -- if it's a left window
-  -- (when the split is vertical)
-  if vim.fn.winnr() == 1 then
-    vim.cmd(":resize -5")
-  else
-    vim.cmd(":resize +5")
-  end
-end
-
-_G.ResizeDown = function()
-  -- if there are more than 2 windows
-  if vim.fn.winnr("$") ~= 2 then
-    vim.cmd(":resize +5")
-    return
-  end
-  -- if it's a left window
-  -- (when the split is vertical)
-  if vim.fn.winnr() == 1 then
-    vim.cmd(":resize +5")
-  else
-    vim.cmd(":resize -5")
-  end
-end
-
--- Key mappings
-nmap("<C-Left>",  [[<cmd>lua ResizeLeft()<CR>]])
-nmap("<C-Right>", [[<cmd>lua ResizeRight()<CR>]])
-nmap("<C-Up>",    [[<cmd>lua ResizeUp()<CR>]])
-nmap("<C-Down>",  [[<cmd>lua ResizeDown()<CR>]])
+nmap("<C-Up>",    [[:resize -2<CR>]])
+nmap("<C-Down>",  [[:resize +2<CR>]])
+nmap("<C-Left>",  [[:vertical resize -2<CR>]])
+nmap("<C-Right>", [[:vertical resize +2<CR>]])
 
 -------------------------------------------
 -- [Windows] layout
@@ -325,34 +262,17 @@ nmap("m/", [[/\<def ]])
 noremap("<leader>o", [[:BufExplorer<CR>]])
 
 -------------------------------------------
--- [Plugin] "ctrlpvim/ctrlp.vim"
--------------------------------------------
-
--- Search for a file among open buffers.
-nmap("<leader>bb", [[:CtrlPBuffer<CR>]])
-
--------------------------------------------
 -- [Plugin] "preservim/nerdcommenter"
 -------------------------------------------
 
--- Escape sequences depend on the terminal emulator.
--- Use `sed -n l` to test keys' ESC sequences.
--- ex. ^[^[OP (for Alt-<F1> in rxvt-unicode) means <Esc><Esc>OP
-
--- rxvt-unicode
-nmap("<M-F1>", [[<Plug>NERDCommenterToggle]])
-vmap("<M-F1>", [[<Plug>NERDCommenterToggle]])
-imap("<M-F1>", [[<ESC><Plug>NERDCommenterToggle]])
-
--- Alacritty
-nmap("<Esc>[1;3P", [[<Plug>NERDCommenterToggle]])
-vmap("<Esc>[1;3P", [[<Plug>NERDCommenterToggle]])
-imap("<Esc>[1;3P", [[<ESC><Plug>NERDCommenterToggle]])
+nmap("<M-F1>", [[<Plug>NERDCommenterToggle<CR>]])
+vmap("<M-F1>", [[<Plug>NERDCommenterToggle<CR>]])
+imap("<M-F1>", [[<ESC><Plug>NERDCommenterToggle<CR>]])
 
 -- vim registers <C-/> as <C-_>
-nmap("<C-_>", [[<Plug>NERDCommenterToggle]])
-vmap("<C-_>", [[<Plug>NERDCommenterToggle]])
-imap("<C-_>", [[<ESC><Plug>NERDCommenterToggle]])
+nmap("<C-_>", [[<Plug>NERDCommenterToggle<CR>]])
+vmap("<C-_>", [[<Plug>NERDCommenterToggle<CR>]])
+imap("<C-_>", [[<ESC><Plug>NERDCommenterToggle<CR>]])
 
 -------------------------------------------
 -- [Plugin] "preservim/nerdtree"
