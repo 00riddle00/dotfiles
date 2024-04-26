@@ -30,9 +30,3 @@ command("SortPa", function()
   vim.cmd("sort")
   vim.cmd("%s/@/\\r/g")
 end, {})
-
--------------------------------------------
--- [Plugin] "ctrlpvim/ctrlp.vim"
--------------------------------------------
-
-command("CC", "CtrlPClearAllCaches", {})

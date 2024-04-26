@@ -373,6 +373,12 @@ noremap("<C-n>", [[:NERDTreeToggle<CR>]])
 noremap("<C-x>", [[<cmd>lua FocusNERDTree()<CR>]])
 
 -------------------------------------------
+-- [Plugin] "nvim-telescope/telescope.nvim"
+-------------------------------------------
+
+nmap("<C-p>", [[<cmd>lua require("telescope.builtin").find_files()<cr>]])
+
+-------------------------------------------
 -- [Plugin] "preservim/tagbar"
 -------------------------------------------
 

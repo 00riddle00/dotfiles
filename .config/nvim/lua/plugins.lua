@@ -16,11 +16,13 @@ return require("packer").startup(function(use)
   use { "wbthomason/packer.nvim" }
   use { "jlanzarotta/bufexplorer", config = function() require("plugins/bufexplorer") end }
   use { "github/copilot.vim", config = function() require("plugins/copilot") end }
-  use { "ctrlpvim/ctrlp.vim", config = function() require("plugins/ctrlp") end }
   use { "raimondi/delimitmate", config = function() require("plugins/delimitmate") end }
   use { "preservim/nerdcommenter" }
   use { "preservim/nerdtree", config = function() require("plugins/nerdtree") end }
+  use { "nvim-treesitter/nvim-treesitter", run = function() local ts_update = require("nvim-treesitter.install").update({ with_sync = true }) ts_update() end, config = function() require("plugins/nvim-treesitter") end }
   use { "preservim/tagbar", config = function() require("plugins/tagbar") end }
+  use { "nvim-telescope/telescope.nvim", requires = {{ "nvim-lua/plenary.nvim" }}, config = function() require("plugins/_telescope") end }
+  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "vim-autoformat/vim-autoformat", config = function() require("plugins/vim-autoformat") end }
   use { "ryanoasis/vim-devicons" }
   use { "junegunn/vim-easy-align" }
