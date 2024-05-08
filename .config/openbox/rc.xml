@@ -9,8 +9,8 @@
 #*
 # Openbox configuration.
 #
-# Nested comments are not allowed, so you need to remove backslashes from 
-# "<!\-\-" and "\-\->" (and everywhere else where two or more consecutive 
+# Nested comments are not allowed, so you need to remove backslashes from
+# "<!\-\-" and "\-\->" (and everywhere else where two or more consecutive
 # hyphens are found) in comments inside comments when uncommenting.
 #**
 -->
@@ -23,7 +23,7 @@
 
 <focus>
   <focusNew>yes</focusNew>
-  <!-- Always try to focus new windows when they appear. Other rules do 
+  <!-- Always try to focus new windows when they appear. Other rules do
        apply. -->
   <followMouse>yes</followMouse>
   <!-- Move focus to a window when you move the mouse into it. -->
@@ -130,19 +130,19 @@
   </font>
 </theme>
 
-<!-- This stuff is only used at startup, pagers allow you to change them 
+<!-- This stuff is only used at startup, pagers allow you to change them
      during a session.
 
-     These are default values to use when other ones are not already set by 
+     These are default values to use when other ones are not already set by
      other applications, or saved in your session.
 
-     Use obconf if you want to change these without having to log out and 
+     Use obconf if you want to change these without having to log out and
      back in. -->
 <desktops>
   <number>4</number>
   <firstdesk>1</firstdesk>
   <names>
-    <!-- 
+    <!--
     Set names up here if you want to, like this:
       <name>desktop 1</name>
       <name>desktop 2</name>
@@ -169,7 +169,7 @@
   </popupFixedPosition>
 </resize>
 
-<!-- You can reserve a portion of your screen where windows will not cover 
+<!-- You can reserve a portion of your screen where windows will not cover
      when they are maximized, or when they are initially placed.
      Many programs reserve space automatically, but you can use this in other
      cases. -->
@@ -203,12 +203,12 @@
   <chainQuitKey>C-g</chainQuitKey>
 
   <!-- ===========================
-  Desktop switching 
+  Desktop switching
   ============================ -->
-  <keybind key="C-A-Left">
+  <keybind key="W-Left">
     <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
   </keybind>
-  <keybind key="C-A-Right">
+  <keybind key="W-Right">
     <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
   </keybind>
   <keybind key="S-A-Left">
@@ -236,7 +236,7 @@
   <!-- ===========================
   Window movement and resizing
   ============================ -->
-  <keybind key="W-Up">
+  <keybind key="W-k">
     <action name="UnmaximizeFull"/>
     <action name="MoveResizeTo">
       <height>50%</height>
@@ -245,14 +245,14 @@
       <direction>north</direction>
     </action>
   </keybind>
-  <keybind key="W-Down">
+  <keybind key="W-j">
     <action name="UnmaximizeFull"/>
     <action name="MoveResizeTo">
       <height>50%</height>
     </action>
     <action name="MoveToEdgeSouth"/>
   </keybind>
-  <keybind key="W-Left">
+  <keybind key="W-h">
     <action name="UnmaximizeFull"/>
     <action name="MaximizeVert"/>
     <action name="MoveResizeTo">
@@ -260,7 +260,7 @@
     </action>
     <action name="MoveToEdgeWest"/>
   </keybind>
-  <keybind key="W-Right">
+  <keybind key="W-l">
     <action name="UnmaximizeFull"/>
     <action name="MaximizeVert"/>
     <action name="MoveResizeTo">
@@ -268,28 +268,28 @@
     </action>
     <action name="MoveToEdgeEast"/>
   </keybind>
-  <keybind key="W-A-Up">
+  <keybind key="W-A-k">
     <action name="GrowToEdgeNorth"/>
   </keybind>
-  <keybind key="W-A-Down">
+  <keybind key="W-A-j">
     <action name="GrowToEdgeSouth"/>
   </keybind>
-  <keybind key="W-A-Left">
+  <keybind key="W-A-h">
     <action name="GrowToEdgeWest"/>
   </keybind>
-  <keybind key="W-A-Right">
+  <keybind key="W-A-l">
     <action name="GrowToEdgeEast"/>
   </keybind>
-  <keybind key="C-W-Up">
+  <keybind key="C-W-k">
     <action name="MoveToEdgeNorth"/>
   </keybind>
-  <keybind key="C-W-Down">
+  <keybind key="C-W-j">
     <action name="MoveToEdgeSouth"/>
   </keybind>
-  <keybind key="C-W-Left">
+  <keybind key="C-W-h">
     <action name="MoveToEdgeWest"/>
   </keybind>
-  <keybind key="C-W-Right">
+  <keybind key="C-W-l">
     <action name="MoveToEdgeEast"/>
   </keybind>
   <!-- Maximize active window -->
@@ -364,7 +364,7 @@
       </finalactions>
     </action>
   </keybind>
-  <keybind key="W-j">
+  <keybind key="W-Down">
     <action name="NextWindow">
       <bar>no</bar>
       <finalactions>
@@ -374,7 +374,7 @@
       </finalactions>
     </action>
   </keybind>
-  <keybind key="W-k">
+  <keybind key="W-Up">
     <action name="PreviousWindow">
       <bar>no</bar>
       <finalactions>
@@ -402,6 +402,28 @@
     </action>
   </keybind>
   <keybind key="W-S-Down">
+    <action name="DirectionalCycleWindows">
+      <direction>down</direction>
+    </action>
+  </keybind>
+
+  <!-- Window switching with the hjkl keys -->
+  <keybind key="W-S-l">
+    <action name="DirectionalCycleWindows">
+      <direction>right</direction>
+    </action>
+  </keybind>
+  <keybind key="W-S-h">
+    <action name="DirectionalCycleWindows">
+      <direction>left</direction>
+    </action>
+  </keybind>
+  <keybind key="W-S-k">
+    <action name="DirectionalCycleWindows">
+      <direction>up</direction>
+    </action>
+  </keybind>
+  <keybind key="W-S-j">
     <action name="DirectionalCycleWindows">
       <direction>down</direction>
     </action>
@@ -521,6 +543,12 @@
   <keybind key="F4">
     <action name="Execute">
       <command>fast-open-or-focus openbox-urxvt-clipboard clipboard.URxvt -x</command>
+    </action>
+  </keybind>
+  <!-- Open/focus Urxvt window for editing $VIMRC by its class name. -->
+  <keybind key="A-o">
+    <action name="Execute">
+      <command>fast-open-or-focus openbox-vimrc vimrc.URxvt -x</command>
     </action>
   </keybind>
 
@@ -645,6 +673,14 @@
     </action>
   </keybind>
   -->
+  <!-- Open/focus text input window (Vim + GitHub Copilot). -->
+  <!--
+  <keybind key="A-f">
+    <action name="Execute">
+      <command>fast-open-or-focus openbox-text-input text-input.URxvt -x</command>
+    </action>
+  </keybind>
+  -->
   <!-- Open/focus FileZilla window by its name. -->
   <keybind key="W-f">
     <action name="Execute">
@@ -658,11 +694,13 @@
     </action>
   </keybind>
   <!-- Open/focus LibreOffice window by its name. -->
+  <!--
   <keybind key="W-l">
     <action name="Execute">
       <command>fast-open-or-focus libreoffice</command>
     </action>
   </keybind>
+  -->
   <keybind key="W-o">
     <action name="Execute">
       <command>keepassxc</command>
@@ -959,7 +997,7 @@
   <context name="Root">
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind> 
+    </mousebind>
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
@@ -987,19 +1025,19 @@
 
   <!-- Default menu file (or custom one in $HOME/.config/openbox/) -->
   <file>menu.xml</file>
-  <!-- If a press-release lasts longer than this setting (in milliseconds), the 
+  <!-- If a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again. -->
   <hideDelay>200</hideDelay>
   <!-- Center submenus vertically about the parent entry. -->
   <middle>no</middle>
-  <!-- Time to delay before showing a submenu after hovering over the parent 
+  <!-- Time to delay before showing a submenu after hovering over the parent
        entry.
-       If this is a negative value, then the delay is infinite and the 
+       If this is a negative value, then the delay is infinite and the
        submenu will not be shown until it is clicked on -->
   <submenuShowDelay>100</submenuShowDelay>
-  <!-- Time to delay before hiding a submenu when selecting another entry in 
+  <!-- Time to delay before hiding a submenu when selecting another entry in
        parent menu.
-       If this is a negative value, then the delay is infinite and the 
+       If this is a negative value, then the delay is infinite and the
        submenu will not be hidden until a different submenu is opened. -->
   <submenuHideDelay>400</submenuHideDelay>
   <!-- Controls if icons appear in the client-list-(combined-)menu. -->
@@ -1010,22 +1048,22 @@
 
 <applications>
   <!--
-  # This is an example with comments through out. use these to make your own 
+  # This is an example with comments through out. use these to make your own
   # rules, but without the comments of course.
-  # You may use one or more of the name/class/role/title/type rules to 
+  # You may use one or more of the name/class/role/title/type rules to
   # specify windows to match.
 
-  # You may set only one of name/class/role/title/type, or you may use more 
+  # You may set only one of name/class/role/title/type, or you may use more
   # than one together to restrict your matches.
 
-  # The name, class, role, and title use simple wildcard matching such as 
-  # those used by a shell. 
+  # The name, class, role, and title use simple wildcard matching such as
+  # those used by a shell.
   # You can use * to match any characters and ? to match any single character.
 
-  # The type is one of: 
+  # The type is one of:
   # normal, dialog, splash, utility, menu, toolbar, dock, or desktop
 
-  # When multiple rules match a window, they will all be applied, in the 
+  # When multiple rules match a window, they will all be applied, in the
   # order that they appear in this list
 
   <application name="the window's _OB_APP_NAME property (see obxprop)"
@@ -1052,9 +1090,9 @@
     # says you want it placed elsewhere. This is to override buggy
     # applications who refuse to behave
     <position force="no">
-      # A number like 50, or 'center' to center on screen. Use a negative 
-      # number to start from the right (or bottom for <y>), ie -50 is 50 
-      # pixels from the right edge (or bottom). Use 'default' to specify 
+      # A number like 50, or 'center' to center on screen. Use a negative
+      # number to start from the right (or bottom for <y>), ie -50 is 50
+      # pixels from the right edge (or bottom). Use 'default' to specify
       # using value provided by the application, or chosen by openbox, instead.
       <x>center</x>
       <y>200</y>
@@ -1107,6 +1145,12 @@
     <decor>no</decor>
   </application>
   <application name="fzf-launcher">
+    <position force="no">
+      <x>center</x>
+      <y>center</y>
+    </position>
+  </application>
+  <application name="text-input">
     <position force="no">
       <x>center</x>
       <y>center</y>
