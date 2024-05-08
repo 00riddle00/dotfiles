@@ -26,23 +26,21 @@ local xnoremap = Util.xnoremap
 
 vim.g.mapleader = "\\"
 
-nmap(      "ss",            [[:wq<CR>]])
-nmap(      "qq",            [[:q<CR>]])
-nmap(      "<C-s>",         [[:w!<CR>]])
-nmap(      "<F5>",          [[:cnext<CR>]])
-nmap(      "<S-F5>",        [[:cprevious<CR>]])
-nmap(      "<C-F5>",        [[:cc<CR>]])
-nmap(      "<leader>d",     [[:pwd<CR>]])
-nmap(      "<leader>h",     [[:set hlsearch!<CR>]])
-nmap(      "<leader>n",     [[:set relativenumber!<CR>]])
-nmap(      "<leader>p",     [[:setlocal paste!<CR>]])
-nmap(      "<leader>s",     [[:sp<CR>]])
-nmap(      "<leader>v",     [[:vs<CR>]])
---nmap(    "<leader>s",     [[:VimtexStop<CR>]])
---nmap(    "<leader>v",     [[:VimtexCompile<CR>]])
-nmap(    "<leader>e",       [[:e<CR>]])  -- reload file
---inoremap("jk",            [[<esc>]]) -- "<C-[>" does the same
-nnoremap(  "<leader>u",     [[:!urlview %<CR>]])
+nmap("ss",        [[:wq<CR>]])
+nmap("qq",        [[:q<CR>]])
+nmap("<C-s>",     [[:w!<CR>]])
+nmap("<F5>",      [[:cnext<CR>]])
+nmap("<S-F5>",    [[:cprevious<CR>]])
+nmap("<C-F5>",    [[:cc<CR>]])
+nmap("<leader>d", [[:pwd<CR>]])
+nmap("<leader>h", [[:set hlsearch!<CR>]])
+nmap("<leader>n", [[:set relativenumber!<CR>]])
+nmap("<leader>p", [[:setlocal paste!<CR>]])
+nmap("<leader>s", [[:split<CR>]])
+nmap("<leader>v", [[:vsplit<CR>]])
+nmap("<leader>e", [[:edit<CR>]])
+nmap("<leader>u", [[:!urlview %<CR>]])
+--inoremap("jk", [[<esc>]]) -- "<C-[>" does the same
 
 -- Move between buffers
 nnoremap("<leader>]", [[:bn<CR>]])

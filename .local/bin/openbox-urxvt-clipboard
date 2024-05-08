@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-urxvt -geometry 135x61 -name clipboard -hold -e tmux new $EDITOR -c "e $DROPBOX/gtd/coding/clipboard.md | :cd %:p:h | :cd .."
+urxvt -geometry 135x61 -name clipboard -hold -e tmux new $EDITOR -c "e $DROPBOX/gtd/coding/clipboard.md | :cd %:p:h | call feedkeys(\"\<C-n>\")"

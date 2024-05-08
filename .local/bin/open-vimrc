@@ -1,2 +1,0 @@
-#!/usr/bin/env sh
-urxvt -geometry 135x61 -name vimrc -hold -e tmux new $EDITOR -c "e $VIMRC | :cd %:p:h | :cd .."
