@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-12 15:17:49 EEST
+# Date:   2024-04-17 03:29:44 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ alias hist='cd $HOME/histfiles/'
 
 # Hostname and path
 alias path='echo $PATH | tr ":" "\n"'
-alias host='echo $HOST' 
+alias host='echo $HOST'
 
 # Disk info
 alias fl='sudo fdisk -l'
@@ -126,8 +126,8 @@ alias off='sudo poweroff'
 alias prego='sudo $(fc -ln -1)'
 alias q='exit'
 alias re='sudo reboot'
-alias rmr='rm -rf'  
-alias rmrf='sudo rm -r'  
+alias rmr='rm -rf'
+alias rmrf='sudo rm -r'
 
 #------------------------------------------------------------------------------
 # 4. Modifying shell behavior
@@ -140,7 +140,7 @@ alias show_hidden='setopt -s glob_dots'
 #------------------------------------------------------------------------------
 
 alias ch='sudo chown -R $USER:$USER'
-alias let='chmod 755'
+#alias let='chmod 755'
 alias letr='chmod -R 755'
 alias exe='chmod +x'
 alias noexe='chmod -x'
@@ -280,16 +280,16 @@ alias aef='ps -ef | grep -m1 ""  && ps -ef | grep -v grep | grep -i'
 ### another way of listing (shows session id)
 alias aes="ps -e -o 'user,pid,pgid,sess,args' | grep -m1 \"\" && ps -e -o 'user,pid,pgid,sess,args' | grep -v grep | grep -i"
 
-### Display all processes in BSD format 
+### Display all processes in BSD format
 ###     'a' option displays the processes belonging to every user
-###     'x' option tells ps to show all the processes regardless of 
+###     'x' option tells ps to show all the processes regardless of
 ###         what terminal (if any) they are controlled ('?" in TTY column indicated
 ###         no controlling terminal)
-alias au='ps ax | grep -v grep | grep -i'    
+alias au='ps ax | grep -v grep | grep -i'
 ###     use `ps cax` for a simple name of executable (as well as showing process status)
 
 ###     'u' option is for user-oriented format
-alias aux='ps aux | grep -v grep | grep -i'  
+alias aux='ps aux | grep -v grep | grep -i'
 
 ### also show parent pid
 alias aup='ps ax l | grep -v grep | grep -i'
@@ -363,12 +363,12 @@ alias pac.clear_all='sudo pacman -Scc'
 # fuzzy-search through all available packages, with package info shown in a preview window, and then install selected packages
 alias fzf.pac='pacman -Slq | fzf -m --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 # -------------------------------------------------------------------------
-# updates your pkg databases if the repositories haven’t been checked 
+# updates your pkg databases if the repositories haven’t been checked
 # recently, and upgrades any new package versions.
 # -y -> update
 # -u -> upgrade
 alias up='sudo pacman -Syu'
-# forces updates of your databases for all repositories (even if it 
+# forces updates of your databases for all repositories (even if it
 # was just updated recently) and upgrades any new package versions.
 alias up1='sudo pacman -Syyu'
 #  upgrades packages and also downgrades packages (if you happen to have a
@@ -384,7 +384,7 @@ alias up2='sudo pacman -Syuu'
 
 alias pacr='sudo pacman -Rns'
 alias freeorphans='sudo pacman -Rns $(pacman -Qdtq)'
-# Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal. 
+# Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal.
 # As a result, a package providing a critical dependency could be removed, resulting in a broken system.
 alias pac.forcedel='sudo -k pacman -Rdd'
 
@@ -441,7 +441,7 @@ alias mi='nomacs'
 alias nn='neofetch'
 alias rss='newsboat'
 #alias t='thunar'
-alias tar='tar -xvf'
+#alias tar='tar -xvf'
 alias timer='termdown -B | lolcat'
 alias tl='translit'
 alias unrar='unrar x'
@@ -449,7 +449,7 @@ alias v='$EDITOR'
 alias vmi='$EDITOR'
 alias vv='sudo $EDITOR'
 alias yd='yt-dlp'
-## A trailing space in `watch ` causes the next word to be checked for 
+## A trailing space in `watch ` causes the next word to be checked for
 ## alias substitution when the alias is expanded.
 ##
 ## Usage:
@@ -526,12 +526,12 @@ alias gs='git status'
 alias gr='git restore'
 alias grs='git restore --staged'
 alias clone='git clone'
-# By default, `git fetch` does not remove remote branches that 
-# no longer have a counterpart branch on the remote. In order 
+# By default, `git fetch` does not remove remote branches that
+# no longer have a counterpart branch on the remote. In order
 # to do that, you explicitly need to prune the list of remote branches:
-# `git fetch --prune`. This will automatically get rid of remote branches 
-# that no longer exist on the remote. Afterwards, `git branch --remote` 
-# will show you an updated list of branches that really exist on the 
+# `git fetch --prune`. This will automatically get rid of remote branches
+# that no longer exist on the remote. Afterwards, `git branch --remote`
+# will show you an updated list of branches that really exist on the
 # remote: And those you can delete using git push.
 alias gfp='git fetch --prune'
 
@@ -611,11 +611,12 @@ alias vib='$EDITOR -b'
 alias vim.bare='$EDITOR -u NONE'
 alias vim.plug.install='$EDITOR +PlugInstall +qall'
 alias vim.plug.up='$EDITOR +PlugUpdate +qall'
+alias vim.plug.upgrade='$EDITOR +PlugUpgrade +qall'
 alias vim.plug.clean='$EDITOR +PlugClean +qall'
 alias vim.plug.list='$EDITOR +PlugStatus'
 
 # yt-dlp
-alias ydn='yt-dlp --no-playlist' 
+alias ydn='yt-dlp --no-playlist'
 alias ydna='yt-dlp --no-playlist --extract-audio'
 alias ydna3='yt-dlp --no-playlist --extract-audio --audio-format mp3'
 alias ydl-clean-cache='yt-dlp --rm-cache-dir'
@@ -691,7 +692,7 @@ alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 ## avoid tmux session using an old I3SOCK environment variable after i3 restart
 ## run this instead of `i3-msg` while in tmux
-alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{print $1}" | grep ipc | head -n 1)"'
+alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{OFS=FS} {print $1}" | grep ipc | head -n 1)"'
 
 #---------------------------------------
 # Openbox
@@ -912,55 +913,55 @@ alias xres.show='xrdb -query -all'
 #---------------------------------------
 # AWK
 #---------------------------------------
-alias awk-1='awk '\''{print $1}'\'
-alias awk-2='awk '\''{print $2}'\'
-alias awk-3='awk '\''{print $3}'\'
-alias awk-4='awk '\''{print $4}'\'
-alias awk--4='awk '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk--3='awk '\''{print $(NF-1?NF-2:0)}'\'
-alias awk--2='awk '\''{print $(NF?NF-1:0)}'\'
-alias awk--1='awk '\''{print $(NF)}'\'
-alias awk--='awk '\''{print $NF}'\'
+alias awk-1='awk '\''{OFS=FS} {print $1}'\'
+alias awk-2='awk '\''{OFS=FS} {print $2}'\'
+alias awk-3='awk '\''{OFS=FS} {print $3}'\'
+alias awk-4='awk '\''{OFS=FS} {print $4}'\'
+alias awk--4='awk '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk--3='awk '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alias awk--2='awk '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alias awk--1='awk '\''{OFS=FS} {print $(NF)}'\'
+alias awk--='awk '\''{OFS=FS} {print $NF}'\'
 # ---------------------------------------
-alias awk-t-1='awk -F$'\''\t'\'' '\''{print $1}'\'
-alias awk-t-2='awk -F$'\''\t'\'' '\''{print $2}'\'
-alias awk-t-3='awk -F$'\''\t'\'' '\''{print $3}'\'
-alias awk-t-4='awk -F$'\''\t'\'' '\''{print $4}'\'
-alias awk-t--4='awk -F$'\''\t'\'' '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-t--3='awk -F$'\''\t'\'' '\''{print $(NF-1?NF-2:0)}'\'
-alias awk-t--2='awk -F$'\''\t'\'' '\''{print $(NF?NF-1:0)}'\'
-alias awk-t--1='awk -F$'\''\t'\'' '\''{print $(NF)}'\'
-alias awk-t--='awk -F$'\''\t'\'' '\''{print $NF}'\'
+alias awk-t-1='awk -F$'\''\t'\'' '\''{OFS=FS} {print $1}'\'
+alias awk-t-2='awk -F$'\''\t'\'' '\''{OFS=FS} {print $2}'\'
+alias awk-t-3='awk -F$'\''\t'\'' '\''{OFS=FS} {print $3}'\'
+alias awk-t-4='awk -F$'\''\t'\'' '\''{OFS=FS} {print $4}'\'
+alias awk-t--4='awk -F$'\''\t'\'' '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-t--3='awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alias awk-t--2='awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alias awk-t--1='awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF)}'\'
+alias awk-t--='awk -F$'\''\t'\'' '\''{OFS=FS} {print $NF}'\'
 # ---------------------------------------
-alias awk-c-1='awk -F: '\''{print $1}'\'
-alias awk-c-2='awk -F: '\''{print $2}'\'
-alias awk-c-3='awk -F: '\''{print $3}'\'
-alias awk-c-4='awk -F: '\''{print $4}'\'
-alias awk-c--4='awk -F: '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-c--3='awk -F: '\''{print $(NF-1?NF-2:0)}'\'
-alias awk-c--2='awk -F: '\''{print $(NF?NF-1:0)}'\'
-alias awk-c--1='awk -F: '\''{print $(NF)}'\'
-alias awk-c--='awk -F: '\''{print $NF}'\'
+alias awk-c-1='awk -F: '\''{OFS=FS} {print $1}'\'
+alias awk-c-2='awk -F: '\''{OFS=FS} {print $2}'\'
+alias awk-c-3='awk -F: '\''{OFS=FS} {print $3}'\'
+alias awk-c-4='awk -F: '\''{OFS=FS} {print $4}'\'
+alias awk-c--4='awk -F: '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-c--3='awk -F: '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alias awk-c--2='awk -F: '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alias awk-c--1='awk -F: '\''{OFS=FS} {print $(NF)}'\'
+alias awk-c--='awk -F: '\''{OFS=FS} {print $NF}'\'
 # ---------------------------------------
-alias awk-s-1='awk -F/ '\''{print $1}'\'
-alias awk-s-2='awk -F/ '\''{print $2}'\'
-alias awk-s-3='awk -F/ '\''{print $3}'\'
-alias awk-s-4='awk -F/ '\''{print $4}'\'
-alias awk-s--4='awk -F/ '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-s--3='awk -F/ '\''{print $(NF-1?NF-2:0)}'\'
-alias awk-s--2='awk -F/ '\''{print $(NF?NF-1:0)}'\'
-alias awk-s--1='awk -F/ '\''{print $(NF)}'\'
-alias awk-s--='awk -F/ '\''{print $NF}'\'
+alias awk-s-1='awk -F/ '\''{OFS=FS} {print $1}'\'
+alias awk-s-2='awk -F/ '\''{OFS=FS} {print $2}'\'
+alias awk-s-3='awk -F/ '\''{OFS=FS} {print $3}'\'
+alias awk-s-4='awk -F/ '\''{OFS=FS} {print $4}'\'
+alias awk-s--4='awk -F/ '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-s--3='awk -F/ '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alias awk-s--2='awk -F/ '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alias awk-s--1='awk -F/ '\''{OFS=FS} {print $(NF)}'\'
+alias awk-s--='awk -F/ '\''{OFS=FS} {print $NF}'\'
 # ---------------------------------------
-alias awk-o-1='awk -F, '\''{print $1}'\'
-alias awk-o-2='awk -F, '\''{print $2}'\'
-alias awk-o-3='awk -F, '\''{print $3}'\'
-alias awk-o-4='awk -F, '\''{print $4}'\'
-alias awk-o--4='awk -F, '\''{print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-o--3='awk -F, '\''{print $(NF-1?NF-2:0)}'\'
-alias awk-o--2='awk -F, '\''{print $(NF?NF-1:0)}'\'
-alias awk-o--1='awk -F, '\''{print $(NF)}'\'
-alias awk-o--='awk -F, '\''{print $NF}'\'
+alias awk-o-1='awk -F, '\''{OFS=FS} {print $1}'\'
+alias awk-o-2='awk -F, '\''{OFS=FS} {print $2}'\'
+alias awk-o-3='awk -F, '\''{OFS=FS} {print $3}'\'
+alias awk-o-4='awk -F, '\''{OFS=FS} {print $4}'\'
+alias awk-o--4='awk -F, '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-o--3='awk -F, '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alias awk-o--2='awk -F, '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alias awk-o--1='awk -F, '\''{OFS=FS} {print $(NF)}'\'
+alias awk-o--='awk -F, '\''{OFS=FS} {print $NF}'\'
 
 # A trailing space in VALUE causes the next word to be checked for
 # alias substitution when the alias is expanded.
@@ -973,7 +974,7 @@ alias l='ls'
 alias r='ranger'
 alias ink='inkscape'
 alias scc='svn copy'
-alias f='fzf'
+#alias f='fzf'
 alias h='head'
 alias ll='copy'
 alias g='grep'
@@ -992,8 +993,10 @@ alias fld='fold -w 80 -s'
 alias pir='pip install -r requirements.txt'
 alias show='sqlitebrowser'
 alias wik='cd $DOWNLOADS/wikis'
-alias tmux.clean='tmux ls | grep -v attached | cut -d: -f1 | xargs -I{} tmux kill-session -t {}'
-alias tls='tmux ls'
+alias tmux.ls='tmux ls'
+alias tmux.clean='echo "Sucessfully killed unattached Tmux sessions.\n--------------------------------------------\nBefore:"; tmux ls; tmux ls | grep -v attached | cut -d: -f1 | xargs -I{} tmux kill-session -t {}; echo "After:"; tmux ls'
+alias tl='tmux.ls'
+alias tc='tmux.clean'
 # Similar text can be shown with `man perlrun`
 alias prun='perldoc perlrun'
 alias play='mpv'
@@ -1010,6 +1013,10 @@ alias wing='wmctrl -l -G'
 alias dsdc='dot diff --staged'
 alias dsu='dot status -u .'
 alias vid='cd $XDG_VIDEOS_DIR'
-alias e='echo'
+#alias e='echo'
 alias cache='cd $XDG_CACHE_HOME'
 alias fonts.list="fc-list ':' file"
+alias m='make'
+alias let='vim -c "e lua/plugins.lua | :vsplit init.vim.old"'
+alias f='fields'
+alias e='exe'

@@ -149,3 +149,5 @@ if [ -x "$(command -v fzf)"  ]
 then
     source /usr/share/fzf/key-bindings.zsh
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

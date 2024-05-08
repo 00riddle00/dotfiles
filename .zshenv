@@ -5,9 +5,9 @@
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-# ============================= 
+# =============================
 #  user's environment variables
-# ============================= 
+# =============================
 
 # Ruby
 export GEM_HOME="$(gem env user_gemhome)"
@@ -80,7 +80,7 @@ export W3M_DIR="$XDG_STATE_HOME/w3m"
 
 # Editor
 if [ -x "$(command -v nvim)" ];
-then 
+then
     export EDITOR="nvim"
     export VISUAL="nvim"
     export VIMRC="$XDG_CONFIG_HOME/nvim/init.vim"
@@ -149,3 +149,5 @@ export JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF8"
 export CLASSPATH="$CLASSPATH:/usr/share/weka/weka.jar"
 # Fixes misbehaving Java applications in dwm
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+export npm_config_prefix="$HOME/.local"

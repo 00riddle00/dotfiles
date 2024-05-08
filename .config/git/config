@@ -4,15 +4,15 @@
     signingkey = D18AF5003042DB3E
 [core]
     #pager = delta
-    editor = vim
+    editor = nvim
 [credential]
     # cache for 1 day
     helper = cache --timeout=86400
 [merge]
-    tool = vimdiff
+    tool = nvim -d
     conflictstyle = diff3
 [diff]
-    tool = vimdiff
+    tool = nvim -d
     colorMoved = default
 [difftool]
     prompt = false
