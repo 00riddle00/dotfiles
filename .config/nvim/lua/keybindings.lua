@@ -43,8 +43,8 @@ nmap("<leader>u", [[:!urlview %<CR>]])
 --inoremap("jk", [[<esc>]]) -- "<C-[>" does the same
 
 -- Move between buffers
-nnoremap("<leader>]", [[:bn<CR>]])
-nnoremap("<leader>[", [[:bp<CR>]])
+nnoremap("<leader>]", [[:bnext<CR>]])
+nnoremap("<leader>[", [[:bprevious<CR>]])
 
 -- Treat long lines as break lines
 nmap("j", [[gj]])

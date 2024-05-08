@@ -1,8 +1,118 @@
+" vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-04-08 13:26:39 EEST
+" Date:   2024-05-08 11:39:34 EEST
 " Path:   ~/.config/ideavim/ideavimrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
 
-source ~/.config/nvim/init.vim
+"=========================================
+" [SETTINGS] Appearance
+"=========================================
+
+" Show (partial) command in the status bar
+set showcmd
+" Show line numbers
+set number
+" Set relative line numbering
+set relativenumber
+
+"=========================================
+" [SETTINGS] Cursor movement
+"=========================================
+
+" When "on" some commands move the cursor to the first non-blank of the line.
+" When "off" the cursor is kept in the same column (if possible).
+set nostartofline
+" Jump 5 lines when running out of the screen
+set scrolljump=5
+" Indicate "running out of the screen" when 3 lines before end of the screen
+set scrolloff=4
+" Scroll horizontally 5 chars when running out of the screen
+set sidescroll=5
+" Indicate "running out of the screen" when 8 chars before end of the screen
+set sidescrolloff=8
+
+"=========================================
+" [SETTINGS] Clipboard
+"=========================================
+
+" Use the clipboard register '*' (primary clipboard) for all yank, delete,
+" change and put operations which would normally go to the unnamed register.
+"
+"set clipboard+=unnamed
+
+" Use the clipboard register '+' (secondary clipboard) for all yank, delete,
+" change and put operations which would normally go to the unnamed register.
+"
+"set clipboard+=unnamedplus
+
+"=========================================
+" [SETTINGS] Search
+"=========================================
+
+" search ignoring case
+set ignorecase
+" incremental search
+set incsearch
+" do not highlight the search
+set nohlsearch
+" Override the 'ignorecase' option if the search pattern contains upper case characters.
+set smartcase
+
+"===============================================================
+"  MAPPINGS
+"===============================================================
+
+let mapleader = '\'
+
+nmap     qq           :q<CR>
+nmap     ss           :wq<CR>
+nmap     <leader>h    :set hlsearch!<CR>
+nmap     <leader>n    :set relativenumber!<CR>
+nmap     <leader>s    :split<cr>
+nmap     <leader>v    :vsplit<cr>
+
+" Move between buffers
+nnoremap <leader>] :bnext<CR>
+nnoremap <leader>[ :bprevious<CR>
+
+" Treat long lines as break lines
+nmap     j            gj
+nmap     k            gk
+
+" Disable key for entering Ex-mode
+nmap     Q            <nop>
+
+"=========================================
+" [MAPPINGS] In-buffer navigation
+"=========================================
+
+" Scroll half screen to left and right vertically
+noremap      zh           zH
+noremap      zl           zL
+
+" Scroll half screen to left and right vertically
+noremap      zz           z-
+
+"=========================================
+" [MAPPINGS] Clipboard
+"=========================================
+
+" Yank into the system secondary clipboard register
+"
+" For this to work,
+" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
+" Easiest way for that is to just install gvim instead of vim.
+vmap <C-c> "+y
+nnoremap Y "+y
+vnoremap Y "+y
+nnoremap YY "+yy
+
+"=========================================
+" [MAPPINGS] Project/Language specific
+"=========================================
+
+" [Python specific] Quick search for python class and def statments.
+nmap    c/          /\<class
+nmap    m/          /\<def
