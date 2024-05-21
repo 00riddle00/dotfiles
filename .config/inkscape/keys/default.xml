@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--
-#==============================================================================
-# Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-08 13:28:24 EEST
-# Path:   ~/.config/inkscape/keys/default.xml
-# URL:    https://github.com/00riddle00/dotfiles
-#==============================================================================
--->
 <keys
    name="User Shortcuts">
   <bind
      gaction="app.duplicate"
-     keys="&lt;Primary&gt;d" />
+     keys="&lt;Alt&gt;d" />
+  <bind
+     gaction="app.object-rotate-90-cw"
+     keys="&lt;Primary&gt;r" />
   <bind
      gaction="app.object-set-clip"
      keys="c" />
@@ -21,6 +16,33 @@
   <bind
      gaction="app.preferences"
      keys="&lt;Primary&gt;&lt;Alt&gt;s" />
+  <bind
+     gaction="app.swap-fill-and-stroke"
+     keys="x" />
+  <bind
+     gaction="win.canvas-rulers"
+     keys="&lt;Primary&gt;&lt;Shift&gt;r" />
+  <bind
+     gaction="win.canvas-zoom-drawing"
+     keys="&lt;Primary&gt;0" />
+  <bind
+     gaction="win.dialog-open('DocumentProperties')"
+     keys="&lt;Primary&gt;&lt;Alt&gt;c" />
+  <bind
+     gaction="win.dialog-open('FillStroke')"
+     keys="&lt;Primary&gt;f" />
+  <bind
+     gaction="win.dialog-open('Find')"
+     keys="&lt;Primary&gt;&lt;Shift&gt;f" />
+  <bind
+     gaction="win.select-invert"
+     keys="&lt;Alt&gt;i" />
+  <bind
+     gaction="win.tool-switch('Dropper')"
+     keys="i" />
+  <bind
+     gaction="win.tool-switch('PaintBucket')"
+     keys="&lt;Primary&gt;g" />
   <bind
      gaction="win.tool-switch('Select')"
      keys="v" />
