@@ -658,6 +658,12 @@
       <command>fast-open-or-focus qalculate-gtk qalculate</command>
     </action>
   </keybind>
+  <!-- Open/focus Zathura document viewer by its class name. -->
+  <keybind key="A-a">
+    <action name="Execute">
+      <command>fast-focus org.pwmt.zathura.Zathura -x</command>
+    </action>
+  </keybind>
   <!--
   <!\-\- Open/focus Discord window by its name. \-\->
   <keybind key="A-c">
@@ -687,10 +693,10 @@
       <command>fast-open-or-focus filezilla</command>
     </action>
   </keybind>
-  <!-- Open/focus SmartGit window by its name. -->
+  <!-- Open/focus SmartSVN window by its name. -->
   <keybind key="W-g">
     <action name="Execute">
-      <command>fast-open-or-focus smartgit</command>
+      <command>fast-open-or-focus smartsvn</command>
     </action>
   </keybind>
   <!-- Open/focus LibreOffice window by its name. -->

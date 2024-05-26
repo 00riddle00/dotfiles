@@ -78,7 +78,7 @@ autocmd("FileType", {
   pattern = "python",
   callback = function()
     vim.opt.colorcolumn = "-1"
-    vim.cmd("highlight ColorColumn ctermbg=black")
+    vim.cmd("highlight ColorColumn cterm=NONE ctermbg=black")
   end,
   group = general,
 })
@@ -122,7 +122,7 @@ autocmd("FileType", {
     --      buffer after compilation, and not moving it to the quickfix buffer.
     vim.opt.textwidth = 100
     vim.opt.colorcolumn = "-1"
-    vim.cmd("highlight ColorColumn ctermbg=black")
+    vim.cmd("highlight ColorColumn cterm=NONE ctermbg=black")
     vim.api.nvim_buf_set_keymap(0, "n", "<space><space>", "/(<>)<CR>", {noremap = true})
     vim.api.nvim_buf_set_keymap(0, "i", ";c", "\\ctext[RGB]{0,255,255}{} (<>)<Esc>T{i", {noremap = true})
     vim.api.nvim_buf_set_keymap(0, "i", ";it", "\\textit{} (<>)<Esc>T{i", {noremap = true})
