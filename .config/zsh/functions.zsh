@@ -61,7 +61,7 @@ yy() { name="${1%.asm}"; yasm "$name.asm" -fbin -o "$name.com"; }
 temp() {
     ext="$1";
     [[ -z "$1" ]] && ext="md"
-    vim "/tmp/temp_$(date +%F_%H_%M_%S).$ext";
+    vim -c "e /tmp/temp_$(date +%F_%H_%M_%S).$ext | :cd %:p:h"
 }
 
 # usage: fields <file>

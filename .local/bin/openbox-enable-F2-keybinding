@@ -2,7 +2,7 @@
 
 openbox_config="${XDG_CONFIG_HOME}/openbox/rc.xml"
 
-vim -e \
+nvim -e \
     -c 'g/<keybind key="F2">/.-1d' \
     -c 'g/<keybind key="F2">/.+5d' \
     -c 'wq' \
