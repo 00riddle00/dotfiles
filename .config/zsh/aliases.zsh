@@ -249,6 +249,7 @@ alias wpa.caffeine="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*)
 alias wpa.caif="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/caif-cafe.conf"
 alias wpa.comet="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/comet.conf"
 alias wpa.eduroam="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/eduroam.conf"
+alias wpa.iphone="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/iphone.conf"
 alias wpa.home="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/home.conf"
 alias wpa.huracan="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/huracan.conf"
 alias wpa.mif="sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/mif-open.conf"
