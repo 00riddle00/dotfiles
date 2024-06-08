@@ -277,7 +277,7 @@ imap("<C-_>", [[<ESC><Plug>NERDCommenterToggle<CR>]])
 -- ----------------------------------------
 
 noremap("<C-n>", [[:NvimTreeToggle<CR>]])
-noremap("<C-x>", [[:NvimTreeFocus<CR>]])
+--noremap("<C-x>", [[:NvimTreeFocus<CR>]])
 
 -------------------------------------------
 -- [Plugin] "nvim-telescope/telescope.nvim"
