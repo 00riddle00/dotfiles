@@ -177,7 +177,7 @@ c() {
     cd
   elif [ "$(find "$1" -maxdepth 1 -type f | head -n 51 | wc -l)" -gt 50 ]; then
     cd "$1" 
-    echo "large dir"
+    echo "Large dir"
   else
     cd "$1" && ls
   fi
