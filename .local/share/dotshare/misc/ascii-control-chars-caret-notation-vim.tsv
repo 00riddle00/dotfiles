@@ -1,0 +1,34 @@
+dec code	char	caret notation	vim keybinding	vim alternative keybinding	notes
+00	NUL	^@	C-v 000	C-v C-j	See :help NL-used-for-Nul
+01	SOH	^A	C-v C-a		
+02	STX	^B	C-v C-b		
+03	ETX	^C	C-v C-c		
+04	EOT	^D	C-v C-d		
+05	ENQ	^E	C-v C-e		
+06	ACK	^F	C-v C-f		
+07	BEL	^G	C-v C-g		
+08	BS	^H	C-v C-h	C-v C-<BS>	
+09	HT	^I	C-v C-i	C-v <TAB>	Shown as tab in vim, need to use :set listchars=tab:^I
+10	LF	^J	<ENTER>		Shown as newline in vim. Use binary or hex mode to see it as LF
+11	VT	^K	C-v C-k		
+12	FF	^L	C-v C-l		
+13	CR	^M	C-v C-m	C-v <ENTER>	
+14	SO	^N	C-v C-n		
+15	SI	^O	C-v C-o		
+16	DLE	^P	C-v C-p		
+17	DC1	^Q	C-v C-q		
+18	DC2	^R	C-v C-r		
+19	DC3	^S	C-v C-s		
+20	DC4	^T	C-v C-t		
+21	NAK	^U	C-v C-u		
+22	SYN	^V	C-v C-v		
+23	ETB	^W	C-v C-w		
+24	CAN	^X	C-v C-x		
+25	EM	^Y	C-v C-y		
+26	SUB	^Z	C-v C-z		
+27	ESC	^[	C-v C-[	C-v <ESC>	
+28	FS	^\	C-v C-\		
+29	GS	^]	C-v C-]		
+30	RS	^^	C-v C-^		
+31	US	^_	C-v C-_	C-v C-?	Shift key needs to be pressed for "C-_"
+127	DEL	^?	C-v 127		
