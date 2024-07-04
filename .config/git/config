@@ -35,11 +35,6 @@
     ff = only
 [push]
     recurseSubmodules = check
-[filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
 [smartgit "submodule"]
     fetchalways = false
     update = true
