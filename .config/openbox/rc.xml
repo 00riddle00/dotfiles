@@ -678,6 +678,13 @@
       <command>fast-open-or-focus openbox-cmus cmus.URxvt -x</command>
     </action>
   </keybind>
+  <!-- Open/focus Termdown timer window by its name. -->
+  <!--
+  <keybind key="A-c">
+    <action name="Execute">
+      <command>fast-open-or-focus openbox-timer timer.URxvt -x</command>
+    </action>
+  </keybind>
   -->
   <!-- Open/focus text input window (Vim + GitHub Copilot). -->
   <!--
