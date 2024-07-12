@@ -1,8 +1,13 @@
-
-# ===========================================
-#  mutt colors file
-#  kudos to Jason Ryan (http://jasonwryan.com)
-# ============================================
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-12 22:09:44 EEST
+# Path: ~/.config/mutt/colors02.muttrc
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
+# Orig URL: https://hg.sr.ht/~jasonwryan/shiv/browse/.mutt/colors.muttrc?rev=93b38cdd25350b2843b41d4b8615b3fa00f03ace
+# Orig. URL/File Retrieval: 2020-02-03 14:00 EET
+#------------------------------------------------------------------------------
 
 # set default
   color normal     white        default
