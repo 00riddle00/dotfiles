@@ -1,4 +1,10 @@
-
+# vim: syntax=neomuttrc
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-12 23:01:36 EEST
+# Path: ~/.config/mutt/sidebar.muttrc
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
 # Example NeoMutt config file for the sidebar feature.
 
 # --------------------------------------------------------------------------
@@ -90,5 +96,3 @@ color sidebar_new green black
 # Color to give mailboxes containing no new/flagged mail, etc.
 color sidebar_ordinary color245 default
 # --------------------------------------------------------------------------
-
-# vim: syntax=neomuttrc

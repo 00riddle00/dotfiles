@@ -1,9 +1,15 @@
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-12 22:42:19 EEST
+# Path: ~/.config/mutt/mailcap
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
 text/html; run-browser %s &>/dev/null; nametemplate=%s.html; test=test -n "$DISPLAY"; needsterminal;
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
-image/*; sxiv %s &>/dev/null
+image/*; nsxiv %s &>/dev/null
 video/*; mpv %s
 audio/*; mpv %s
-text/*; vim %s ;
+text/*; nvim %s
 application/pdf; zathura %s
 application/odt; libreoffice %s; copiousoutput
 application/ods; libreoffice %s; copiousoutput

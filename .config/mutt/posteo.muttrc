@@ -1,11 +1,15 @@
-# ========================
-#  Posteo specific options
-# ========================
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-12 23:00:15 EEST
+# Path: ~/.config/mutt/posteo.muttrc
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Posteo specific options
 
 set from          = "tomasgiedraitis@posteo.net"
 set signature     = "$XDG_CONFIG_HOME/mutt/tg_posteo.sig"
 set sendmail      = "/usr/bin/msmtp -a posteo"
-set folder        = "~/.mail/Posteo"
+set folder        = "~/Mail/Posteo"
 set spoolfile     = "+INBOX"
 set record        = "+Sent"
 set postponed     = "+Drafts"
@@ -19,4 +23,4 @@ named-mailboxes "   Sent Mail" =Sent
 named-mailboxes "   All Mail" =Archive
 named-mailboxes "   Trash" =Trash
 named-mailboxes "―――――――――― ♠ ―――――――――" =code.@@
-named-mailboxes "   notmuch" ~/.mail/temporary/search
+named-mailboxes "   notmuch" ~/Mail/temporary/search
