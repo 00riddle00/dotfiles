@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+# This file configures external key events. 
+# "C-x" first needs to be pressed to send the next key to the external
+# key-handler.
 while read file
 do
     case "$1" in
