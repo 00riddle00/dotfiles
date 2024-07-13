@@ -490,7 +490,7 @@ considered a bug and reported.
 
 B<NOTE:> This script is still under heavy development, and there may be bugs.
 Please submit reproducible sequences to the bug-tracker at:
-L<http://github.com/shabble/irssi-scripts/issues/new>
+L<https://github.com/shabble/irssi-scripts/issues/new>
 
 or contact rudi_s or shabble on irc.freenode.net (#irssi and #irssi_vim)
 

@@ -61,7 +61,7 @@
 ### It does not remove or invalidate existing stored credentials.
 ### To do that, see the 'svn auth --remove' command, or remove the
 ### cache files by hand as described in the Subversion book at
-### http://svnbook.red-bean.com/nightly/en/svn.serverconfig.netmodel.html#svn.tour.initial.authn-cache-purge
+### https://svnbook.red-bean.com/nightly/en/svn.serverconfig.netmodel.html#svn.tour.initial.authn-cache-purge
 ###
 ### HTTP timeouts, if given, are specified in seconds.  A timeout
 ### of 0, i.e. zero, causes a builtin default to be used.
