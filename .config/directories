@@ -4,24 +4,23 @@
 # Path:   ~/.config/directories
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
-# You can add comments to these files with #
 
-h	~/
-rr  /root
-b   ~/backups
-d	~/Downloads
-i   ~/Images
-m   ~/Media
-mu	~/Music
-vv	~/Videos
-cf	~/.config
-sc	~/.local/bin
-mn	/mnt
-m1	~/tmp1
-m2	~/tmp2
-m3	~/tmp3
-m4	~/tmp4
-m5	~/tmp5
-m6	~/tmp6
-m7	~/tmp7
-m8	~/tmp8
+h    ~/
+rr   /root
+b    ~/backups
+d    ~/Downloads
+m    ~/Media
+mu   ~/Music
+pi   ~/Pictures
+vv   ~/Videos
+cf   ~/.config
+sc   ~/.local/bin
+mn   /mnt
+m1   ~/tmp1
+m2   ~/tmp2
+m3   ~/tmp3
+m4   ~/tmp4
+m5   ~/tmp5
+m6   ~/tmp6
+m7   ~/tmp7
+m8   ~/tmp8

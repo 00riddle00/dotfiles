@@ -81,8 +81,8 @@ set $bar_bg               #002b36
 # statusbar
 bar {
     font xft:SauceCodePro Nerd Font Bold 10
-	status_command i3blocks
-	position top
+    status_command i3blocks
+    position top
     tray_padding 5
     #tray_output none   # hides tray icons
     bindsym button4 nop
@@ -385,19 +385,19 @@ bindsym $mod+Shift+Right move right
 # ===================
 
 # Volume keys
-bindsym $mod+plus		    $run amixer sset Master 5%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+Shift+plus		$run amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+minus 		    $run amixer sset Master 5%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+Shift+minus	$run amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+less 		    $run mpc prev
-bindsym $mod+Shift+less		$run mpc seek 0%
-bindsym $mod+greater		$run mpc next
-bindsym $mod+Shift+greater	$run mpc next
+bindsym $mod+plus           $run amixer sset Master 5%+ && pkill -RTMIN+1 i3blocks
+bindsym $mod+Shift+plus     $run amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
+bindsym $mod+minus          $run amixer sset Master 5%- && pkill -RTMIN+1 i3blocks
+bindsym $mod+Shift+minus    $run amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
+bindsym $mod+less           $run mpc prev
+bindsym $mod+Shift+less     $run mpc seek 0%
+bindsym $mod+greater        $run mpc next
+bindsym $mod+Shift+greater  $run mpc next
 
 # For advancing forward/backward in an mpd song
-bindsym $mod+bracketleft 	      $run mpc seek -10
-bindsym $mod+Shift+bracketleft 	  $run mpc seek -120
-bindsym $mod+bracketright 	      $run mpc seek +10
+bindsym $mod+bracketleft          $run mpc seek -10
+bindsym $mod+Shift+bracketleft    $run mpc seek -120
+bindsym $mod+bracketright         $run mpc seek +10
 bindsym $mod+Shift+bracketright   $run mpc seek +120
 
 # ===================

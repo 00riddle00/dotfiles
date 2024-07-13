@@ -44,7 +44,7 @@ hi Comment      ctermfg=7
 hi NonText      ctermfg=16
 hi WarningMsg   ctermfg=9    ctermbg=15
 hi ErrorMsg     ctermfg=1    ctermbg=11
-hi Visual       ctermfg=8	 ctermbg=15
+hi Visual       ctermfg=8    ctermbg=15
 hi Search       ctermfg=1    ctermbg=15
 hi IncSearch    ctermfg=1    ctermbg=15
 hi Cursorline   ctermfg=0    ctermbg=233

@@ -10,25 +10,25 @@
 -->
 <actions>
 <action>
-	<icon>terminal</icon>
-	<name>Open Terminal Here</name>
-	<submenu></submenu>
-	<unique-id>1712922767337151-1</unique-id>
-	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Open Terminal in the current directory.</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<directories/>
+    <icon>terminal</icon>
+    <name>Open Terminal Here</name>
+    <submenu></submenu>
+    <unique-id>1712922767337151-1</unique-id>
+    <command>exo-open --working-directory %f --launch TerminalEmulator</command>
+    <description>Open Terminal in the current directory.</description>
+    <range>*</range>
+    <patterns>*</patterns>
+    <directories/>
 </action>
 <action>
-	<icon>anydo</icon>
-	<name>Create New File</name>
-	<submenu></submenu>
-	<unique-id>1712922860051143-2</unique-id>
-	<command>thunar-newfile</command>
-	<description>Create new file in the current directory.</description>
-	<range>*</range>
-	<patterns>*</patterns>
-	<directories/>
+    <icon>anydo</icon>
+    <name>Create New File</name>
+    <submenu></submenu>
+    <unique-id>1712922860051143-2</unique-id>
+    <command>thunar-newfile</command>
+    <description>Create new file in the current directory.</description>
+    <range>*</range>
+    <patterns>*</patterns>
+    <directories/>
 </action>
 </actions>

@@ -15,10 +15,10 @@ for general info, see [this](https://wiki.archlinux.org/title/XDG_Base_Directory
 ![i3_preview](https://i.imgur.com/64izSk1.png)
 
 - Separate repos for suckless (I actually only use dmenu).
-	- [dwm](https://github.com/00riddle00/dwm)
-	- [dwmblocks](https://github.com/00riddle00/dwmblocks)
-	- [dmenu](https://github.com/00riddle00/dmenu)
-	- [st](https://github.com/00riddle00/st)
+  - [dwm](https://github.com/00riddle00/dwm)
+  - [dwmblocks](https://github.com/00riddle00/dwmblocks)
+  - [dmenu](https://github.com/00riddle00/dmenu)
+  - [st](https://github.com/00riddle00/st)
 - Wallpapers [repo](https://github.com/00riddle00/wallpapers)
 
 ### Window managers (depending on the mood)

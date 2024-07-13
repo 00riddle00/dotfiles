@@ -73,11 +73,11 @@
 
         (points          (cons-array 4 'double))
         (theMiddleWingEndPointX 0)    (theMiddleWingEndPointY 0)
-		(PreviousOpacity 100.0)
+        (PreviousOpacity 100.0)
         )
         (begin
-		(set! PreviousOpacity (car (gimp-context-get-opacity)))
-		(gimp-context-set-opacity 100.0)
+        (set! PreviousOpacity (car (gimp-context-get-opacity)))
+        (gimp-context-set-opacity 100.0)
         ; collect points for arrow-tail and draw them
         (aset points 0 inPointToX)               (aset points 1 inPointToY)
         (aset points 2 inPointFromX)             (aset points 3 inPointFromY)
@@ -119,7 +119,7 @@
             (gimp-edit-bucket-fill drawable FG-BUCKET-FILL NORMAL-MODE 100 0 FALSE 0 0)
             (gimp-selection-none image)
         ))
-		(gimp-context-set-opacity PreviousOpacity)
+        (gimp-context-set-opacity PreviousOpacity)
         ) ; begin
     ) ; let
 ) ; define
@@ -185,8 +185,8 @@
             (define (sqr x) (* x x))
             (set! theArrowLength (exp (* 0.5 (log (+ (sqr (- inPoint_1X inPoint_2X)) (sqr (- inPoint_1Y inPoint_2Y)))))))
             (if (< WingLengthRatio 0)
-            	(set! theWingLength (* theArrowLength (/ -1 WingLengthRatio)))
-            	(set! theWingLength WingLengthRatio)
+                (set! theWingLength (* theArrowLength (/ -1 WingLengthRatio)))
+                (set! theWingLength WingLengthRatio)
             )
 
             ; define new brush for drawing operation
@@ -242,7 +242,7 @@
   SF-TOGGLE      "Delete path after arrow was drawn?" FALSE
   SF-TOGGLE      "Use new layer for arrow?" TRUE
   SF-TOGGLE      "Draw double headed arrow?" FALSE
-  SF-TOGGLE		 "*) Positive values stand for absolute pixel size,\nnegative for values relative to arrow length\n(the value of this checkbox is ignored)" FALSE
+  SF-TOGGLE         "*) Positive values stand for absolute pixel size,\nnegative for values relative to arrow length\n(the value of this checkbox is ignored)" FALSE
 )
 
 (script-fu-menu-register "script-fu-draw-arrow" "<Image>/Tools/")

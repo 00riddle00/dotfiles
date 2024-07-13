@@ -22,7 +22,7 @@ if (not defined($acpi)) {
     exit(0);
 }
 elsif ($acpi !~ /: ([\w\s]+), (\d+)%/) {
-	die "$acpi\n";
+    die "$acpi\n";
 }
 
 $status = $1;
@@ -50,19 +50,19 @@ print "$text\n"; # to get colored output
 # consider color and urgent flag only on discharge
 if ($status eq 'Discharging') {
 
-	if ($percent < 25) {
-		print "#EF6191\n";
-	} elsif ($percent < 40) {
-		print "#FFAE00\n";
-	} elsif ($percent < 60) {
-		print "#B967C7\n";
-	} else {
+    if ($percent < 25) {
+        print "#EF6191\n";
+    } elsif ($percent < 40) {
+        print "#FFAE00\n";
+    } elsif ($percent < 60) {
+        print "#B967C7\n";
+    } else {
         print "#06989a\n";
     }
 
-	if ($percent < 15) {
-		exit(33);
-	}
+    if ($percent < 15) {
+        exit(33);
+    }
 }
 
 exit(0);
