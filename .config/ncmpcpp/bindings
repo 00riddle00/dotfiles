@@ -1,6 +1,13 @@
-# ============================================
-#  kudos to Luke Smith (https://lukesmith.xyz)
-# ============================================
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-13 12:03:44 EEST
+# Path: ~/.config/ncmpcpp/bindings
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: lukesmithxyz (Luke Smith) (https://github.com/lukesmithxyz)
+# Orig. URL: https://raw.githubusercontent.com/LukeSmithxyz/voidrice/00a0a7d45b47d553a6746ba0a37cb45238576664/.config/ncmpcpp/bindings
+# Orig. URL/File Retrieval: 2020-03-15 22:15 EET
+#------------------------------------------------------------------------------
 
 def_key "+"
     show_clock
