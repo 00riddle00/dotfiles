@@ -212,7 +212,7 @@ alias systemd.boot_total='systemd-analyze time'
 # Databases
 alias post='systemctl start postgresql'
 alias myst='systemctl start mysqld'
-alias mongost='systemctl start mongodb'
+alias most='systemctl start mongodb'
 
 # Servers
 alias apache='systemctl start httpd.service'
