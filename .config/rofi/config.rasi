@@ -1,16 +1,23 @@
+/*------------------------------------------------------------------------------
+* Author: 00riddle00 (Tomas Giedraitis)
+* Date:   2024-07-13 22:19:03 EEST
+* Path:   ~/.config/rofi/config.rasi
+* URL:    https://github.com/00riddle00/dotfiles
+*-----------------------------------------------------------------------------*/
+
 configuration {
-	modi: "drun,window,ssh,combi,keys,windowcd,run";
-	width: 40;
-	lines: 8;
-	columns: 2;
-	font: "SauceCodePro Nerd Font 12";
-	yoffset: -130;
-	fixed-num-lines: false;
-	show-icons: true;
-	terminal: "urxvt -hold";
-	sorting-method: "fzf";
-	combi-modi: "drun,run";
-	combi-hide-mode-prefix: true;
+    modi: "drun,window,ssh,combi,keys,windowcd,run";
+    width: 40;
+    lines: 8;
+    columns: 2;
+    font: "JetBrainsMono Nerd Font Mono 14";
+    yoffset: -130;
+    fixed-num-lines: false;
+    show-icons: true;
+    terminal: "urxvt -hold";
+    sorting-method: "fzf";
+    combi-modi: "drun,run";
+    combi-hide-mode-prefix: true;
 }
 
 @theme "themes/riddle_solarized.rasi"
