@@ -13,6 +13,7 @@
 " miro8 colours
 " Author:  jasonwryan
 " URL:     https://jasonwryan.com
+" vim: foldmethod=marker foldmarker={{{,}}}:
 "------------------------------------------------------------------------------
 
 set background=dark
@@ -127,5 +128,3 @@ if version >= 700
 endif
 
 "endif
-	
-" vim: foldmethod=marker foldmarker={{{,}}}:

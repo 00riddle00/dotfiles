@@ -13,6 +13,7 @@
 " miromiro colours
 " Author:  jasonwryan
 " URL:     https://jasonwryan.com
+" vim: foldmethod=marker foldmarker={{{,}}}:
 "------------------------------------------------------------------------------
 
 set background=dark
@@ -123,4 +124,3 @@ if version >= 700
   hi SpellRare   ctermfg=13   cterm=underline
   hi SpellLocal  cterm=None
 endif
-" vim: foldmethod=marker foldmarker={{{,}}}:
