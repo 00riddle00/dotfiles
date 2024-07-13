@@ -1,7 +1,18 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-04-05 21:08:51 EEST
+# Path:   ~/.local/bin/arch-update
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
 # This file configures external key events. 
+# 
 # "C-x" first needs to be pressed to send the next key to the external
 # key-handler.
+#**
+
 while read file
 do
     case "$1" in
@@ -10,6 +21,7 @@ do
 	"R")
 		convert -rotate -90 "$file" "$file" ;;
 	"d")
-		[ "$(printf "No\\nYes" | dmenu -i -p "Really delete $file?")" = "Yes" ] && rm "$file" && notify-send "$file deleted." ;;
+		[[ "$(printf "No\\nYes" | dmenu -i -p "Really delete $file?")" = "Yes" ]] \
+        && rm "$file" && notify-send "$file deleted." ;;
         esac
 done
