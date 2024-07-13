@@ -30,5 +30,5 @@ dec code	char	caret notation	vim keybinding	vim alternative keybinding	notes (P.
 28	FS	^\	C-v C-\		
 29	GS	^]	C-v C-]		
 30	RS	^^	C-v C-^		
-31	US	^_	C-v C-_	C-v C-?	Shift key needs to be pressed for "C-_"
+31	US	^_	C-v C-_	C-v C-?	Shift key needs to be pressed for 'C-_'
 127	DEL	^?	C-v 127		
