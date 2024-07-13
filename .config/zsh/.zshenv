@@ -50,8 +50,8 @@ export XDG_TEMPLATES_DIR="$HOME/Templates"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
 # HOME dir clean-up (for XDG BASE DIR specs)
+# NB: `export ZDOTDIR=$HOME/.config/zsh` is set in /etc/zsh/zshenv
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some # DMs.
-export ZDOTDIR="$HOME/.config/zsh"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc

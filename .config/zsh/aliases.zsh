@@ -688,7 +688,7 @@ alias tmuxr='$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf'
 alias vr='$EDITOR $VIMRC'
 alias xi='$EDITOR $XDG_CONFIG_HOME/X11/xinitrc'
 alias xres='$EDITOR $XDG_CONFIG_HOME/X11/Xresources'
-alias zenv='$EDITOR $HOME/.zshenv'
+alias zenv='$EDITOR $ZDOTDIR/.zshenv'
 alias zr='$EDITOR $ZDOTDIR/.zshrc'
 
 #------------------------------------------------------------------------------
