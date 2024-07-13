@@ -5,7 +5,7 @@
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Author: shabble (Tom Feist-Hassan) (https://github.com/shabble)
-# Orig. URL: https://raw.githubusercontent.com/irssi/scripts.irssi.org/master/scripts/uberprompt.pl
+# Orig. URL: https://raw.githubusercontent.com/irssi/scripts.irssi.org/f159b467f63d8783aac4da4d0e8dee42145df64d/scripts/uberprompt.pl
 # Orig. URL/File Retrieval: 2024-04-08 15:13:04 EEST
 #------------------------------------------------------------------------------
 

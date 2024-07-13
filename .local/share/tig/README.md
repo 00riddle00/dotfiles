@@ -1,3 +1,5 @@
+Last updated: `2024-04-08 15:42:31 EEST`
+
 This file acts as `.gitkeep`.
 
 `~/.local/share/tig` directory must exist, otherwise Tig writes to

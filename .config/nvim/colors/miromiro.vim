@@ -1,6 +1,19 @@
+"------------------------------------------------------------------------------
+" User: 00riddle00 (Tomas Giedraitis)
+" Date: 2024-07-13 16:10:42 EEST
+" Path: ~/.config/nvim/colors/miromiro.vim
+" URL:  https://github.com/00riddle00/dotfiles
+"------------------------------------------------------------------------------
+" Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
+" Orig. URL: https://hg.sr.ht/~jasonwryan/shiv/raw/.vim/colors/miromiro.vim?rev=abb7abfe70bbbdf92a354044eaebf286de9ca80e
+" Orig. URL/File Retrieval: 2017-06-28 16:53:59 EEST
+" -------------------------------------------------
+" Description from the author:
+" -------------------------------------------------
 " miromiro colours
 " Author:  jasonwryan
-" URL:     http://jasonwryan.com
+" URL:     https://jasonwryan.com
+"------------------------------------------------------------------------------
 
 set background=dark
 hi clear

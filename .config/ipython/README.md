@@ -1,3 +1,5 @@
+Last updated: `2024-04-08 15:42:31 EEST`
+
 This file acts as `.gitkeep`.
 
 IPython checks if `$XDG_CONFIG_HOME/ipython` (or `~/.config/ipython` if

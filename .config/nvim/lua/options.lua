@@ -50,7 +50,7 @@ o.relativenumber = true
 o.ruler = true
 -- Vertical separator style, and do not show the tildes at the end of buffer
 o.fillchars = { vert = "|", eob = " " }
--- kudos to Jason Ryan (http://jasonwryan.com)
+-- Kudos to jasonwryan (Jason Ryan) (https://jasonwryan.com) for the statusline
 -- (last element in statusline - escaped space character,
 --  do not remove it when removing trailing spaces from a file)
 local stl = {

@@ -41,7 +41,7 @@ autocmd("BufReadPre", {
   group = general
 })
 
--- http://vim.wikia.com/wiki/Speed_up_Syntax_Highlighting
+-- https://vim.wikia.com/wiki/Speed_up_Syntax_Highlighting
 autocmd("syntax", {
   callback = function()
     local line = vim.fn.line

@@ -5,7 +5,7 @@
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Author: shabble (Tom Feist-Hassan) (https://github.com/shabble)
-# Orig. URL: https://raw.githubusercontent.com/shabble/irssi-scripts/master/vim-mode/vim_mode.pl
+# Orig. URL: https://raw.githubusercontent.com/shabble/irssi-scripts/729aa35aa10c62cba2813f26e2818fd1dffd5fb8/vim-mode/vim_mode.pl
 # Orig. URL/File Retrieval: 2024-04-08 15:18:19 EEST
 #------------------------------------------------------------------------------
 

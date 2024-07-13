@@ -1,5 +1,4 @@
-## Important Note
-Date: `2024-04-08 15:55:52 EEST`
+Last updated: `2024-04-08 15:55:52 EEST`
 
 These cronjobs have components that require information about your current
 display to display notifications correctly.

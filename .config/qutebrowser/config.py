@@ -1,4 +1,4 @@
-# kudos to Jason Ryan (http://jasonwryan.com)
+# kudos to Jason Ryan (https://jasonwryan.com)
 
 ## This is here so configs done via the GUI are still loaded.
 ## Remove it to not load settings done via the GUI.
@@ -148,5 +148,5 @@ config.bind('xb', ':config-cycle statusbar.hide')
 
 # shortcut keybinds
 config.bind(',mp', ':open https://maps.google.com')
-config.bind(',rd', ':open http://reddit.com')
+config.bind(',rd', ':open https://reddit.com')
 config.bind(',yt', ':open https://youtube.com')

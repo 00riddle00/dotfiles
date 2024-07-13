@@ -5,15 +5,16 @@
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
-# Orig. URL: https://hg.sr.ht/~jasonwryan/shiv/raw/.dir_colors?rev=6fbaa8dd13a6
+# Orig. URL: https://hg.sr.ht/~jasonwryan/shiv/raw/.dir_colors?rev=523f1ce9bc315308feeeb07587089487544d089c
 # Orig. URL/File Retrieval: 2024-04-08 15:23:13 EEST
+#----------------------------------------
 # Description from the author:
 #----------------------------------------
 # file: $HOME/.dir_colors
-# author: jason ryan http:/jasonwryan.com
+# author: jason ryan https://jasonwryan.com
 # vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:
 #------------------------------------------------------------------------------
-#
+ 
 # COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
 # pipes. 'all' adds color characters to all output. 'none' shuts colorization
 # off.

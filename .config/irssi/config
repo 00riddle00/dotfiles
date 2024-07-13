@@ -63,7 +63,7 @@ aliases = {
   SB = "SCROLLBACK";
   SBAR = "STATUSBAR";
   SIGNOFF = "QUIT";
-  SV = "MSG * Irssi $J ($V) - http://www.irssi.org";
+  SV = "MSG * Irssi $J ($V) - https://www.irssi.org";
   T = "TOPIC";
   UB = "UNBAN";
   UMODE = "MODE $N";
@@ -118,7 +118,7 @@ statusbar = {
     prompt_empty = "{prompt $winname}";
 
     topic = " $topic";
-    topic_empty = " Irssi v$J - http://www.irssi.org";
+    topic_empty = " Irssi v$J - https://www.irssi.org";
 
     # all of these treated specially, they're only displayed when needed
     lag = "{sb Lag: $0-}";
