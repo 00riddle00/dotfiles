@@ -1,24 +1,34 @@
-# kudos to Jason Ryan (https://jasonwryan.com)
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-13 20:00:54 EEST
+# Path: ~/.config/qutebrowser/config.py
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
+# Orig. URL: https://hg.sr.ht/~jasonwryan/shiv/raw/.config/qutebrowser/config.py?rev=704b29cb8023a94bb1d81cb1923982aa0dd1a134
+# Orig. URL/File Retrieval: 2020-03-28 12:26:56 EET
+#------------------------------------------------------------------------------
+import os
 
 ## This is here so configs done via the GUI are still loaded.
 ## Remove it to not load settings done via the GUI.
 config.load_autoconfig(False)
 
 # general settings
-c.url.default_page = 'file:///home/riddle/.local/share/dotshare/qutebrowser-homepage/index.html'
-c.url.start_pages = 'file:///home/riddle/.local/share/dotshare/qutebrowser-homepage/index.html'
+c.url.default_page = f"file://{os.getenv('DOTSHARE')}/qutebrowser-homepage/index.html"
+c.url.start_pages = f"file://{os.getenv('DOTSHARE')}/qutebrowser-homepage/index.html"
 c.editor.command = ["urxvt", "-name", "dropdown_vim", "-e", "vim", "-f", "{}"]
 c.new_instance_open_target = "tab-bg"
 c.prompt.filebrowser = False
 c.completion.height = "30%"
 c.completion.web_history.max_items = 1000
 c.input.partial_timeout = 2000
-c.tabs.show = 'multiple'
+c.tabs.show = "multiple"
 c.tabs.background = True
 c.tabs.favicons.show = "never"
 c.tabs.title.format = "{audio}{current_title}"
 c.tabs.new_position.related = "last"
-c.downloads.location.directory = '/home/riddle/Downloads'
+c.downloads.location.directory = f"{os.getenv('HOME')}/Downloads"
 c.content.geolocation = False
 c.content.cache.size = 52428800
 c.content.webgl = False
@@ -31,20 +41,20 @@ c.keyhint.blacklist = ["*"]
 ## c.statusbar.hide = True
 
 # searches
-c.url.searchengines['d'] = 'https://duckduckgo.com/?q={}'
-c.url.searchengines['qw'] = 'https://www.qwant.com/?q={}'
-c.url.searchengines['g'] = 'https://www.google.com/search?hl=en&q={}'
-c.url.searchengines['w'] = 'https://en.wikipedia.org/?search={}'
-c.url.searchengines['yt'] = 'https://youtube.com/results?search_query={}'
-c.url.searchengines['gh'] = 'https://github.com/search?q={}&type=Code'
-c.url.searchengines['rd'] = 'https://reddit.com/r/{}'
-c.url.searchengines['aw'] = 'https://wiki.archlinux.org/?search={}'
-c.url.searchengines['ap'] = 'https://www.archlinux.org/packages/?sort=&q={}'
-c.url.searchengines['DEFAULT'] = c.url.searchengines['d']
+c.url.searchengines["d"] = "https://duckduckgo.com/?q={}"
+c.url.searchengines["qw"] = "https://qwant.com/?q={}"
+c.url.searchengines["g"] = "https://google.com/search?hl=en&q={}"
+c.url.searchengines["w"] = "https://en.wikipedia.org/?search={}"
+c.url.searchengines["yt"] = "https://youtube.com/results?search_query={}"
+c.url.searchengines["gh"] = "https://github.com/search?q={}&type=Code"
+c.url.searchengines["rd"] = "https://reddit.com/r/{}"
+c.url.searchengines["aw"] = "https://wiki.archlinux.org/?search={}"
+c.url.searchengines["ap"] = "https://archlinux.org/packages/?sort=&q={}"
+c.url.searchengines["DEFAULT"] = c.url.searchengines["d"]
 
 # aliases
-c.aliases['gh'] = 'open -t https://github.com/00riddle00'
-c.aliases['gl'] = 'open -t https://gitlab.com/00riddle00'
+c.aliases["gh"] = "open -t https://github.com/00riddle00"
+c.aliases["gl"] = "open -t https://gitlab.com/00riddle00"
 
 # colors
 c.colors.completion.fg = "#899CA1"
@@ -116,37 +126,37 @@ c.fonts.completion.entry = c.fonts.statusbar
 c.fonts.completion.category = c.fonts.statusbar
 
 # keybinds
-config.unbind('b', mode='normal')
-config.unbind('m', mode='normal')
-config.unbind('D', mode='normal')
-config.unbind('<Ctrl-B>', mode='normal')
-config.bind('d', 'scroll-page 0 0.5')
-config.bind('u', 'scroll-page 0 -0.5')
-config.bind('j', 'scroll down ;; scroll down')
-config.bind('k', 'scroll up ;; scroll up')
-config.bind('<Ctrl-r>', 'restart', mode='normal')
-config.bind('<Ctrl-q>', ':tab-prev', mode='normal')
-config.bind('<Ctrl-w>', ':tab-next', mode='normal')
-config.bind('<Ctrl-e>', ':tab-close', mode='normal')
-config.bind('x', ':tab-close', mode='normal')
-config.bind('X', 'undo')
-config.bind('>', 'tab-move +', mode='normal')
-config.bind('<', 'tab-move -', mode='normal')
-config.bind('b', 'back', mode='normal')
-config.bind('m', 'forward', mode='normal')
-config.bind('t', 'set-cmd-text -s :open -t', mode='normal')
-config.bind('W', ':tab-give', mode='normal')
-config.bind('<Ctrl-m>', 'set-cmd-text -s :quickmark-save', mode='normal')
-config.bind('<Shift-m>', 'set-cmd-text -s :quickmark-save', mode='normal')
-config.bind('<Escape>', 'leave-mode', mode='passthrough')
-config.bind('gi', 'enter-mode insert ;; jseval --quiet var inputs = document.getElementsByTagName("input"); for(var i = 0; i < inputs.length; i++) { var hidden = false; for(var j = 0; j < inputs[i].attributes.length; j++) { hidden = hidden || inputs[i].attributes[j].value.includes("hidden"); }; if(!hidden) { inputs[i].focus(); break; } }')
-config.bind('sd', 'set -p -t -u {url} content.javascript.enabled false')
-config.bind('se', 'set -p -t -u {url} content.javascript.enabled true')
-config.bind(';m', 'hint links spawn mpv {hint-url}')
-config.bind('e', ':open-editor')
-config.bind('xb', ':config-cycle statusbar.hide')
+config.unbind("b", mode="normal")
+config.unbind("m", mode="normal")
+config.unbind("D", mode="normal")
+config.unbind("<Ctrl-B>", mode="normal")
+config.bind("d", "scroll-page 0 0.5")
+config.bind("u", "scroll-page 0 -0.5")
+config.bind("j", "scroll down ;; scroll down")
+config.bind("k", "scroll up ;; scroll up")
+config.bind("<Ctrl-r>", "restart", mode="normal")
+config.bind("<Ctrl-q>", ":tab-prev", mode="normal")
+config.bind("<Ctrl-w>", ":tab-next", mode="normal")
+config.bind("<Ctrl-e>", ":tab-close", mode="normal")
+config.bind("x", ":tab-close", mode="normal")
+config.bind("X", "undo")
+config.bind(">", "tab-move +", mode="normal")
+config.bind("<", "tab-move -", mode="normal")
+config.bind("b", "back", mode="normal")
+config.bind("m", "forward", mode="normal")
+config.bind("t", "set-cmd-text -s :open -t", mode="normal")
+config.bind("W", ":tab-give", mode="normal")
+config.bind("<Ctrl-m>", "set-cmd-text -s :quickmark-save", mode="normal")
+config.bind("<Shift-m>", "set-cmd-text -s :quickmark-save", mode="normal")
+config.bind("<Escape>", "leave-mode", mode="passthrough")
+config.bind("gi", "enter-mode insert ;; jseval --quiet var inputs = document.getElementsByTagName('input'); for(var i = 0; i < inputs.length; i++) { var hidden = false; for(var j = 0; j < inputs[i].attributes.length; j++) { hidden = hidden || inputs[i].attributes[j].value.includes('hidden'); }; if(!hidden) { inputs[i].focus(); break; } }")
+config.bind("sd", "set -p -t -u {url} content.javascript.enabled false")
+config.bind("se", "set -p -t -u {url} content.javascript.enabled true")
+config.bind(";m", "hint links spawn mpv {hint-url}")
+config.bind("e", ":open-editor")
+config.bind("xb", ":config-cycle statusbar.hide")
 
 # shortcut keybinds
-config.bind(',mp', ':open https://maps.google.com')
-config.bind(',rd', ':open https://reddit.com')
-config.bind(',yt', ':open https://youtube.com')
+config.bind(",mp", ":open https://maps.google.com")
+config.bind(",rd", ":open https://reddit.com")
+config.bind(",yt", ":open https://youtube.com")
