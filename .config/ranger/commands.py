@@ -41,7 +41,7 @@ class my_edit(Command):
             target_filename = self.fm.thisfile.path
 
         # This is a generic function to print text in ranger.
-        self.fm.notify("Let's edit the file " + target_filename + "!")
+        self.fm.notify("Let us edit the file " + target_filename + "!")
 
         # Using bad=True in fm.notify allows you to print error messages:
         if not os.path.exists(target_filename):
@@ -85,7 +85,7 @@ class fzf_select(Command):
         fzf = self.fm.execute_command(command, stdout=subprocess.PIPE)
         stdout, stderr = fzf.communicate()
         if fzf.returncode == 0:
-            fzf_file = os.path.abspath(stdout.decode('utf-8').rstrip('\n'))
+            fzf_file = os.path.abspath(stdout.decode("utf-8").rstrip("\n"))
             if os.path.isdir(fzf_file):
                 self.fm.cd(fzf_file)
             else:
@@ -109,7 +109,7 @@ class fzf_locate(Command):
         fzf = self.fm.execute_command(command, stdout=subprocess.PIPE)
         stdout, stderr = fzf.communicate()
         if fzf.returncode == 0:
-            fzf_file = os.path.abspath(stdout.decode('utf-8').rstrip('\n'))
+            fzf_file = os.path.abspath(stdout.decode("utf-8").rstrip("\n"))
             if os.path.isdir(fzf_file):
                 self.fm.cd(fzf_file)
             else:
@@ -136,7 +136,7 @@ class fzf_bring(Command):
         fzf = self.fm.execute_command(command, stdout=subprocess.PIPE)
         stdout, stderr = fzf.communicate()
         if fzf.returncode == 0:
-            fzf_file = os.path.abspath(stdout.decode('utf-8').rstrip('\n'))
+            fzf_file = os.path.abspath(stdout.decode("utf-8").rstrip("\n"))
             shutil.move(fzf_file, self.fm.thisdir.path)
 
 
@@ -158,17 +158,17 @@ class compress(Command):
         au_flags = parts[1:]
 
         descr = "compressing files in: " + os.path.basename(parts[1])
-        obj = CommandLoader(args=['apack'] + au_flags + \
+        obj = CommandLoader(args=["apack"] + au_flags + \
                 [os.path.relpath(f.path, cwd.path) for f in marked_files], descr=descr)
 
-        obj.signal_bind('after', refresh)
+        obj.signal_bind("after", refresh)
         self.fm.loader.add(obj)
 
     def tab(self):
         """ Complete with current folder name """
 
-        extension = ['.zip', '.tar.gz', '.rar', '.7z']
-        return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
+        extension = [".zip", ".tar.gz", ".rar", ".7z"]
+        return ["compress " + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
 
 
 class extracthere(Command):
@@ -186,9 +186,9 @@ class extracthere(Command):
         one_file = copied_files[0]
         cwd = self.fm.thisdir
         original_path = cwd.path
-        au_flags = ['-X', cwd.path]
+        au_flags = ["-X", cwd.path]
         au_flags += self.line.split()[1:]
-        au_flags += ['-e']
+        au_flags += ["-e"]
 
         self.fm.copy_buffer.clear()
         self.fm.cut_buffer = False
@@ -196,10 +196,10 @@ class extracthere(Command):
             descr = "extracting: " + os.path.basename(one_file.path)
         else:
             descr = "extracting files from: " + os.path.basename(one_file.dirname)
-        obj = CommandLoader(args=['aunpack'] + au_flags \
+        obj = CommandLoader(args=["aunpack"] + au_flags \
                 + [f.path for f in copied_files], descr=descr)
 
-        obj.signal_bind('after', refresh)
+        obj.signal_bind("after", refresh)
         self.fm.loader.add(obj)
 
 

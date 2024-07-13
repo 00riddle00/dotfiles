@@ -38,7 +38,7 @@ from optparse import OptionParser
 from collections import defaultdict
 import readline
 
-VERSION = '1.3.0'
+VERSION = "1.3.0"
 
 try:
     from commands import getoutput
@@ -52,13 +52,13 @@ except NameError:
 
 
 def digest(filename):
-    with open(filename, 'rb') as f:
+    with open(filename, "rb") as f:
         return hashlib.sha1(f.read()).hexdigest()
 
 
 def pick_all_mail(messages):
     for m in messages:
-        if 'All Mail' in m:
+        if "All Mail" in m:
             return m
 
 
@@ -73,9 +73,9 @@ def command(cmd):
 
 def normalize(path):
     if path:
-      # Use expanduser() so that os.symlink() won't get weirded out by
+      # Use expanduser() so that os.symlink() will not get weirded out by
       # tildes.
-      return os.path.expanduser(path).rstrip('/')
+      return os.path.expanduser(path).rstrip("/")
 
 
 def main(dest_box, options):
@@ -84,16 +84,16 @@ def main(dest_box, options):
     history_path = normalize(options.history_path)
     if history_path and os.path.exists(history_path):
         readline.read_history_file(history_path)
-    query = input('Query: ')
+    query = input("Query: ")
     if history_path:
       readline.write_history_file(history_path)
 
-    command('mkdir -p %s/cur' % dest_box)
-    command('mkdir -p %s/new' % dest_box)
+    command("mkdir -p %s/cur" % dest_box)
+    command("mkdir -p %s/new" % dest_box)
 
     empty_dir(dest_box)
 
-    files = command('notmuch search --output=files {}'.format(quote(query))).split('\n')
+    files = command("notmuch search --output=files {}".format(quote(query))).split("\n")
 
     data = defaultdict(list)
     messages = []
@@ -109,7 +109,7 @@ def main(dest_box, options):
             sha = digest(f)
             data[sha].append(f)
         except IOError:
-            print('File %s does not exist' % f)
+            print("File %s does not exist" % f)
 
     for sha in data:
         if is_gmail and len(data[sha]) > 1:
@@ -121,31 +121,31 @@ def main(dest_box, options):
         if not m:
             continue
 
-        target = os.path.join(dest_box, 'cur', os.path.basename(m))
+        target = os.path.join(dest_box, "cur", os.path.basename(m))
         if not os.path.exists(target):
             os.symlink(m, target)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     p = OptionParser("usage: %prog [OPTIONS] [RESULTDIR]")
-    p.add_option('-g', '--gmail', dest='gmail',
-                 action='store_true', default=True,
-                 help='gmail-specific behavior')
-    p.add_option('-G', '--not-gmail', dest='gmail',
-                 action='store_false',
-                 help='Normal, non-gmail-specific behavior')
-    p.add_option('-p', '--base-path', dest='base_path',
-                 help='Only include messages in given base path')
-    p.add_option('--history-path', dest='history_path',
-                 help='Save/restore query history to given path')
-    p.add_option('-v', '--version', dest='version', action='store_true',
-                 help='Show version')
+    p.add_option("-g", "--gmail", dest="gmail",
+                 action="store_true", default=True,
+                 help="gmail-specific behavior")
+    p.add_option("-G", "--not-gmail", dest="gmail",
+                 action="store_false",
+                 help="Normal, non-gmail-specific behavior")
+    p.add_option("-p", "--base-path", dest="base_path",
+                 help="Only include messages in given base path")
+    p.add_option("--history-path", dest="history_path",
+                 help="Save/restore query history to given path")
+    p.add_option("-v", "--version", dest="version", action="store_true",
+                 help="Show version")
     (options, args) = p.parse_args()
 
     if args:
         dest = args[0]
     else:
-        dest = '~/.cache/mutt_results'
+        dest = "~/.cache/mutt_results"
 
     if options.version:
         print(VERSION)

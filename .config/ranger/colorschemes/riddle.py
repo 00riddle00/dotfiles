@@ -68,13 +68,13 @@ class Default(ColorScheme):
                 attr |= bold
                 fg = black
                 fg += BRIGHT
-                # If the terminal doesn't support bright colors, use dim white
+                # If the terminal does not support bright colors, use dim white
                 # instead of black.
                 if BRIGHT == 0:
                     attr |= dim
                     fg = white
             if context.main_column:
-                # Doubling up with BRIGHT here causes issues because it's
+                # Doubling up with BRIGHT here causes issues because it is
                 # additive not idempotent.
                 if context.selected:
                     attr |= bold

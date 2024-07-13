@@ -1060,3 +1060,6 @@ alias kc='killall cmus'
 alias fs='flask --app flasky.py shell'
 alias ta='tail'
 alias xav='xargs vim'
+alias dotr='dot rev-list --all --pretty=oneline -- '
+alias gitr='git rev-list --all --pretty=oneline -- '
+alias dotd="dot log --date=format:'%Y-%m-%d %H:%M:%S EE(S)T' "

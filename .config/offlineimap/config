@@ -10,7 +10,7 @@ postsynchook = notmuch new
 
 [Repository Gmail-Local]
 type = Maildir
-localfolders = ~/.mail/Gmail
+localfolders = ~/Mail/Gmail
 
 [Repository Gmail-Remote]
 type = Gmail
@@ -28,7 +28,7 @@ postsynchook = notmuch new
 
 [Repository Posteo-Local]
 type = Maildir
-localfolders = ~/.mail/Posteo
+localfolders = ~/Mail/Posteo
 
 [Repository Posteo-Remote]
 type = IMAP
