@@ -206,6 +206,8 @@ alias timezone.update='timedatectl set-timezone "$(curl --fail https://ipapi.co/
 alias systemd.running='systemctl --type=service'
 alias systemd.list='systemctl list-unit-files'
 alias systemd.enabled='systemctl list-unit-files | grep enabled'
+alias systemd.enabled.2='find /etc/systemd -type l -exec test -f {} \; -print | awk -F'\''/'\'' '\''{ printf ("%-40s | %s\n", $(NF-0), $(NF-1)) }'\'' | sort -f'
+# ^--- Kudos to seth (https://bbs.archlinux.org/profile.php?id=63451)
 alias systemd.boot='systemd-analyze blame'
 alias systemd.boot_total='systemd-analyze time'
 
