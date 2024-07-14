@@ -2,27 +2,29 @@
 
 # apps to be killed:
 pkill -f conky
-pkill -f terminator
 pkill -f urxvt
 pkill -f thunar
 pkill -f mpg123
 pkill -f tint2
 
-# change terminator config
-sed -i 's/\bprofile = .*/profile = solarized-dark/' $HOME/.config/terminator/config
+# change urxvt colors
+sed -i 's|^#include "urxvt-colors/[a-z]*"|#include "urxvt-colors/dark"|' $XDG_CONFIG_HOME/X11/Xresources
+xrdb $XDG_CONFIG_HOME/X11/Xresources
 
 # changes to gtk2 config
 sed -i 's/.*gtk-theme-name.*/gtk-theme-name="Numix-Archblue"/' $HOME/.gtkrc-2.0
 sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name="la-capitaine"/' $HOME/.gtkrc-2.0
-sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name="Numix-Cursor-Light"/' $HOME/.gtkrc-2.0
+sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name="riddle-cursors"/' $HOME/.gtkrc-2.0
 
 # changes to gtk3 config
 sed -i 's/.*gtk-theme-name.*/gtk-theme-name=Numix-Archblue/' $HOME/.config/gtk-3.0/settings.ini
 sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=la-capitaine/' $HOME/.config/gtk-3.0/settings.ini
-sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Numix-Cursor-Light/' $HOME/.config/gtk-3.0/settings.ini
+sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=riddle-cursors/' $HOME/.config/gtk-3.0/settings.ini
 
 # change tint2 config
-cp $HOME/.config/tint2/tint2rc.riddle $HOME/.config/tint2/tint2rc
+cd $HOME/.config/tint2/ || exit 1
+ln -sf ./tint2rc.riddle ./tint2rc
+cd - || exit 1
 
 # change openbox autostart file
 cp $BIN/themes/riddle/autostart.sh $HOME/.config/openbox/autostart.sh
