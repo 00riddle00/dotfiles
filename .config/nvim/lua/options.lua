@@ -50,14 +50,14 @@ o.relativenumber = true
 o.ruler = true
 -- Vertical separator style, and do not show the tildes at the end of buffer
 o.fillchars = { vert = "|", eob = " " }
--- Kudos to jasonwryan (Jason Ryan) (https://jasonwryan.com) for the statusline
--- (last element in statusline - escaped space character,
---  do not remove it when removing trailing spaces from a file)
+-- Last element in statusline - escaped space character,
+--  do not remove it when removing trailing spaces from a file.
 local stl = {
     " %f%m%r%h%w", " ::", " %y", " [%{&ff}]",
     " %{&fileencoding?&fileencoding:&encoding}%=",
     " %c", " [%p%%: %l/%L]"
 }
+-- ^---- Kudos to jasonwryan (Jason Ryan) (https://jasonwryan.com) for the statusline!
 o.statusline = table.concat(stl)
 
 -------------------------------------------
