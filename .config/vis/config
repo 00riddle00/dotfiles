@@ -1,26 +1,40 @@
-# Refresh rate of the visualizers. A really high refresh rate may cause screen tearing. Default is 20.
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-07-14 20:37:57 EEST
+# Path:   ~/.config/vis/config
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+# Refresh rate of the visualizers. A really high refresh rate may cause screen tearing. 
+# Defaults to 20.
 visualizer.fps=20
 
-# Configures what character the spectrum visualizer will use. Specifying a space (e.g " ") means the
-# background will be colored instead of the character. Defaults to " ".
+# Configures what character the spectrum visualizer will use. Specifying a space means
+# the background will be colored instead of the character.
+# Defaults to " ".
 #visualizer.spectrum.character=-
 
-# Spectrum bar width. Defaults to 1.
+# Spectrum bar width.
+# Defaults to 1.
 visualizer.spectrum.bar.width=2
 
-# Sets the audio sources to use. Currently available ones are "mpd" and "alsa"Sets the audio sources to use.
-# Currently available ones are "mpd", "pulse", and "alsa". Defaults to "mpd".
+# Sets the audio sources to use.
+# Defaults to "mpd".
 audio.sources=pulse
 
-# Configures what character the ellipse visualizer will use. Specifying a space (e.g " ") means the
-# background will be colored instead of the character. Defaults to " ".
+# Configures what character the ellipse visualizer will use. Specifying a space means
+# the background will be colored instead of the character.
+# Defaults to " ".
 visualizer.ellipse.character=@
 
-# The radius of each color ring in the ellipse visualizer. Defaults to 2.
+# The radius of each color ring in the ellipse visualizer.
+# Defaults to 2.
 visualizer.ellipse.radius=1 
 
-## Turns off overriding the user's terminal colors
+# Turns off overriding the user's terminal colors.
 colors.override.terminal=false
 
-# Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/ directory. Default is "colors"
+# Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/
+# directory. 
+# Defaults to "colors".
 colors.scheme=blue
