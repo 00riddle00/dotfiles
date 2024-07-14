@@ -1,9 +1,11 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-04-12 20:50:53 EEST
-! Path:   ~/.xscreensaver
+! Date:   2024-07-14 09:30:35 EEST
+! Path:   ~/.config/xscreensaver/xscreensaver
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
+! Symbolic link needs to be created in $HOME to point to this file:
+!   cd $HOME && ln -s .config/xscreensaver/xscreensaver ~/.xscreensaver
 
 mode:         blank
 timeout:      0:10:00
