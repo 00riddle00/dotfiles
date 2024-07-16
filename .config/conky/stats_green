@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 01:48:35 EEST
+# Date:   2024-07-16 23:51:07 EEST
 # Path:   ~/.config/conky/stats_green
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,11 +18,10 @@ draw_graph_borders yes
 draw_outline no
 draw_shades no
 
-#2 monitors
+# For 2 monitors:
 #gap_x 1375 
 #gap_y 15 
-
-#Laptop
+# For laptop:
 gap_x 10  
 gap_y 15 
 
@@ -121,4 +120,3 @@ ${color #00ff41}File systems:
                 61000 rservice 3}
                  ${tcp_portmon 32768 61000 rhost 4} ${alignr}${tcp_portmon 32768 
                  61000 rservice 4}
-

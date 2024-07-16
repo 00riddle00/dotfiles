@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 01:48:06 EEST
+# Date:   2024-07-16 23:51:03 EEST
 # Path:   ~/.config/conky/clock_green
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -34,23 +34,21 @@ draw_shades yes
 default_color E0DFDE
 color1 00ff41
 
-# Color Title.
+# Color Title
 color0 DD3A21
 
-
 # Size and position
-minimum_size 650 80
-#2 monitors
-#gap_x 500
-#gap_y 0
-
-#Laptop
-#gap_x 300
-gap_y 0
-
-gap_x 2250
-
 alignment top_left
+minimum_size 650 80
+gap_x 2250
+gap_y 0
+#   For 2 monitors:
+#gap_x 500
+#   For laptop:
+#gap_x 300
 
 TEXT
-${GOTO 30}${font Noto Sans:bold:size=36}${color1}${time %H}:${color}${time %M}${font}${voffset -3}${font Noto Sans:bold:size=12}: ${time %S}${font}${GOTO 280}${voffset -22}
+# Hours and minutes
+${GOTO 30}${font Noto Sans:bold:size=36}${color1}${time %H}:${color}${time %M}${font}\
+# Seconds
+${voffset -3}${font Noto Sans:bold:size=12}: ${time %S}${font}\
