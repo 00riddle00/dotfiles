@@ -1,9 +1,16 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-07-16 11:17:40 EEST
+# Path:   ~/.config/tmuxinator/music.yml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 name: music
 root: ~/
 
 windows:
   - music:
-      layout: main-horizontail
+      layout: main-horizontal
       panes:
         - player: cmus
-        - visualizer: cava
+        - visualizer: vis
