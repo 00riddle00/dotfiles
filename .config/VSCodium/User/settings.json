@@ -1,16 +1,17 @@
-//-----------------------------------------------------------------------------
-// Author: 00riddle00 (Tomas Giedraitis)
-// Date:   2024-04-06 22:08:49 EEST
-// Path:   ~/.config/VSCodium/User/settings.json
-// URL:    https://github.com/00riddle00/dotfiles
-//-----------------------------------------------------------------------------
-// VSCodium allows to have comments in this file.
+/*-----------------------------------------------------------------------------
+* Author: 00riddle00 (Tomas Giedraitis)
+* Date:   2024-07-16 12:58:27 EEST
+* Path:   ~/.config/VSCodium/User/settings.json
+* URL:    https://github.com/00riddle00/dotfiles
+*------------------------------------------------------------------------------
+* VSCodium allows to have comments in this file.
+*/
 
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
     "editor.fontSize": 16,
-    // "editor.renderLineHighlight": "none",
+    //"editor.renderLineHighlight": "none",
     "editor.lineNumbers": "relative",
     "editor.linkedEditing": true,
     "editor.rulers": [79],

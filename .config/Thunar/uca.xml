@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-#==============================================================================
-# Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-12 15:11:47 EEST
-# Path:   ~/.config/Thunar/uca.xml
-# URL:    https://github.com/00riddle00/dotfiles
-#==============================================================================
-# Additional custom actions for Thunar's context menu.
+*------------------------------------------------------------------------------
+* Author: 00riddle00 (Tomas Giedraitis)
+* Date:   2024-07-16 12:52:43 EEST
+* Path:   ~/.config/Thunar/uca.xml
+* URL:    https://github.com/00riddle00/dotfiles
+*------------------------------------------------------------------------------
+* Additional custom actions for Thunar's context menu.
 -->
+
 <actions>
 <action>
     <icon>terminal</icon>

@@ -1,4 +1,4 @@
-dec code	char	caret notation	vim keybinding	vim alternative keybinding	notes (P.S. see also https://en.wikipedia.org/wiki/Caret_notation#:~:text=Caret%20notation%20is%20a%20notation,%2C%20non%2Dalphabetic%20ASCII%20characters and https://www.aivosto.com/articles/control-characters.html)
+Dec. code	Char	Caret notation	Vim keybinding	Vim alternative keybinding	Notes (P.S. see also https://en.wikipedia.org/wiki/Caret_notation#:~:text=Caret%20notation%20is%20a%20notation,%2C%20non%2Dalphabetic%20ASCII%20characters and https://www.aivosto.com/articles/control-characters.html)
 00	NUL	^@	C-v 000	C-v C-j	See :help NL-used-for-Nul
 01	SOH	^A	C-v C-a		
 02	STX	^B	C-v C-b		

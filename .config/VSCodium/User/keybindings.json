@@ -1,15 +1,16 @@
-//-----------------------------------------------------------------------------
-// Author: 00riddle00 (Tomas Giedraitis)
-// Date:   2024-04-06 22:10:24 EEST
-// Path:   ~/.config/VSCodium/User/keybindings.json
-// URL:    https://github.com/00riddle00/dotfiles
-//-----------------------------------------------------------------------------
-// VSCodium allows to have comments in this file.
+/*-----------------------------------------------------------------------------
+* Author: 00riddle00 (Tomas Giedraitis)
+* Date:   2024-07-16 12:58:24 EEST
+* Path:   ~/.config/VSCodium/User/keybindings.json
+* URL:    https://github.com/00riddle00/dotfiles
+*------------------------------------------------------------------------------
+* VSCodium allows to have comments in this file.
+*/
 
 [
-    // ---------------------
-    // Enabled actions
-    // ---------------------
+    /* ---------------------
+     * Enabled actions
+     * -------------------*/
 
     // Alt + {}
     {
@@ -159,9 +160,9 @@
         "key": "ctrl+shift+r",
         "command": "workbench.action.replaceInFiles"
     },
-    // ---------------------
-    // Disabled actions
-    // ---------------------
+    /* ---------------------
+     * Disabled actions
+     * -------------------*/
 
     // Function keys
     {
