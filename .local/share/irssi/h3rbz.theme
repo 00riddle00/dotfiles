@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-04-08 14:53:01 EEST
+# Date:   2024-07-16 12:30:02 EEST
 # Path: ~/.local/share/irssi/h3rbz.theme
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -305,6 +305,7 @@ abstracts = {
   # hilight with specified color, $0 = color, $1 = text
   sb_act_hilight_color = "$0$1-%n";
 };
+
 formats = {
   "fe-common/core" = {
     own_msg = "{ownmsgnick $2 {ownnick $[-9]0}}$1";

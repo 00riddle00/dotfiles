@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-04-08 15:18:19 EEST
+# Date:   2024-07-16 12:31:13 EEST
 # Path: ~/.local/share/irssi/scripts/vim_mode.pl
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -3791,4 +3791,5 @@ sub ex_history_show {
         $win->print("$i " . $ex_history[$i] . $flag);
     }
 }
+
 vim_mode_init();
