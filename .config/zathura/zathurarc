@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 11:30:15 EEST
+# Date:   2024-07-16 15:47:55 EEST
 # Path:   ~/.config/zathura/zathurarc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -17,11 +17,11 @@ map i recolor
 map p print
 
 # Appearance
-set page-padding 3
+set page-padding        3
 set statusbar-h-padding 3
 set statusbar-v-padding 3
 set selection-clipboard clipboard
-#set guioptions ''
+#set guioptions          ''
 
 # Colors
 set default-bg   "#002b36"

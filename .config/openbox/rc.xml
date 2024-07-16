@@ -2,17 +2,16 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 03:10:52 EEST
+# Date:   2024-07-16 15:47:39 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
-#*
+#
 # Openbox configuration.
 #
 # Nested comments are not allowed, so you need to remove backslashes from
 # "<!\-\-" and "\-\->" (and everywhere else where two or more consecutive
 # hyphens are found) in comments inside comments when uncommenting.
-#**
 -->
 <openbox_config xmlns="https://openbox.org/3.4/rc"
         xmlns:xi="https://www.w3.org/2001/XInclude">
@@ -39,7 +38,6 @@
   <!-- When followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window. -->
 </focus>
-
 
 <placement>
   <policy>Smart</policy>

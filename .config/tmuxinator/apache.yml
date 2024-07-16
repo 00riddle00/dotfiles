@@ -1,0 +1,18 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-07-16 15:47:51 EEST
+# Path:   ~/.config/tmuxinator/apache.yml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+name: apache
+root: ~/
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - zsh
+  - server: cd /srv/http
+  - logs: tail -f /var/log/httpd/access_log

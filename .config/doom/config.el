@@ -1,7 +1,7 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-04-07 02:10:45 EEST
+; Date:   2024-07-16 15:40:55 EEST
 ; Path:   ~/.config/doom/config.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
@@ -81,8 +81,8 @@
 ;; they are implemented.
 
 (after! org
-  (setq org-directory "$NOTES/gtd/org/")
-  (setq org-agenda-files '("$NOTES/gtd/org/agenda.org"))
+  (setq org-directory "$NOTES/org/")
+  (setq org-agenda-files '("$NOTES/org/agenda.org"))
   ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
@@ -97,10 +97,10 @@
 
 (map!
  (:after evil
-   :en "C-h"   #'evil-window-left
-   :en "C-j"   #'evil-window-down
-   :en "C-k"   #'evil-window-up
-   :en "C-l"   #'evil-window-right)
+   :en "C-h" #'evil-window-left
+   :en "C-j" #'evil-window-down
+   :en "C-k" #'evil-window-up
+   :en "C-l" #'evil-window-right)
  )
 
 (map! :after evil-org

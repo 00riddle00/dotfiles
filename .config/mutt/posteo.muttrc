@@ -1,26 +1,27 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-13 13:17:07 EEST
+# Date:   2024-07-16 15:45:17 EEST
 # Path:   ~/.config/mutt/posteo.muttrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
+
 # Posteo specific options
 
-set from          = "tomasgiedraitis@posteo.net"
-set signature     = "$XDG_CONFIG_HOME/mutt/tg_posteo.sig"
-set sendmail      = "/usr/bin/msmtp -a posteo"
-set folder        = "~/Mail/Posteo"
-set spoolfile     = "+INBOX"
-set record        = "+Sent"
-set postponed     = "+Drafts"
-set trash         = "+Trash"
+set from        = "tomasgiedraitis@posteo.net"
+set signature   = "$XDG_CONFIG_HOME/mutt/tg_posteo.sig"
+set sendmail    = "/usr/bin/msmtp -a posteo"
+set folder      = "~/Mail/Posteo"
+set spoolfile   = "+INBOX"
+set record      = "+Sent"
+set postponed   = "+Drafts"
+set trash       = "+Trash"
 
 unmailboxes *
-named-mailboxes "   Inbox" =INBOX
+named-mailboxes "   Inbox"              =INBOX
 named-mailboxes "―――――――――― ♠ ―――――――――" =code.@
-named-mailboxes "   Drafts" =Drafts
-named-mailboxes "   Sent Mail" =Sent
-named-mailboxes "   All Mail" =Archive
-named-mailboxes "   Trash" =Trash
+named-mailboxes "   Drafts"             =Drafts
+named-mailboxes "   Sent Mail"          =Sent
+named-mailboxes "   All Mail"           =Archive
+named-mailboxes "   Trash"              =Trash
 named-mailboxes "―――――――――― ♠ ―――――――――" =code.@@
-named-mailboxes "   notmuch" ~/Mail/temporary/search
+named-mailboxes "   notmuch"            ~/Mail/temporary/search

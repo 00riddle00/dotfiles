@@ -1,12 +1,11 @@
-# Beware! This file is rewritten by htop when settings are changed in the interface.
-# The parser is also very primitive, and not human-friendly.
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 01:35:11 EEST
+# Date:   2024-07-16 15:41:49 EEST
 # Path:   ~/.config/htop/htoprc.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
-
+# Beware! This file is rewritten by htop when settings are changed in the interface.
+# The parser is also very primitive, and not human-friendly.
 # ...
 hide_kernel_threads=0
 # ...
@@ -24,3 +23,4 @@ column_meters_0=AllCPUs Memory Swap Blank CPU
 column_meter_modes_0=1 1 1 2 3
 column_meters_1=Hostname Clock Uptime Tasks LoadAverage Blank CPU Memory Blank PressureStallCPUSome PressureStallMemoryFull PressureStallIOFull
 column_meter_modes_1=2 2 2 2 2 2 2 2 2 2 2 2
+# ...

@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-12 22:09:44 EEST
+# Date:   2024-07-16 15:44:13 EEST
 # Path: ~/.config/mutt/colors02.muttrc
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,7 +10,7 @@
 #------------------------------------------------------------------------------
 
 # set default
-  color normal     white        default
+  color normal     white         default
 
 # main colors
   color tree       brightmagenta default
@@ -22,12 +22,12 @@
   color index      blue          default "~u"
 
 # uncolor certain messages
-uncolor index "~P"
-uncolor index "~C @.com"
-uncolor index "~N ~u"
-uncolor index "~N !~u" 
-uncolor index "~T"
-uncolor index "~D"
+  uncolor index "~P"
+  uncolor index "~C @.com"
+  uncolor index "~N ~u"
+  uncolor index "~N !~u"
+  uncolor index "~T"
+  uncolor index "~D"
 
 # and recolor them appropriately
   color index      brightyellow  default "~P"
@@ -74,7 +74,7 @@ uncolor index "~D"
   color quoted5    brightgreen   default
   color quoted6    brightyellow  default
   color quoted7    brightcyan    default
-     
+
 # PGP messages
   color body      brightgreen    default "^gpg: Good signature .*"
   color body      yellow         default "^gpg: "
