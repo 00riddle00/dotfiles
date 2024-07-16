@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-17 03:29:44 EEST
+# Date:   2024-07-16 11:42:53 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -496,11 +496,10 @@ alias ce='crontab -e'
 alias cl='crontab -l'
 
 # du
-alias dusort.all='du -h --max-depth=1 | sort -h' # including hidden files
 alias dusort='du -chs * | sort -h'
-alias du.total=' du -s --si'
-alias trackmem.hidden='watch -n 5 "du -h --max-depth=1 | sort -h"'
-alias trackmem='watch -n 5 "du -hs * | sort -h"'
+alias dusort.all='du -chs * .* | sort -h' # include hidden files
+alias trackmem='watch -n 5 "du -chs * | sort -h"'
+alias trackmem.all='watch -n 5 "du -chs * .* | sort -h"'
 
 # feh
 alias wall='feh --bg-scale'

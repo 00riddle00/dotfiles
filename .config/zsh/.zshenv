@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-14 09:36:39 EEST
+# Date:   2024-07-16 12:00:18 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ export XDG_VIDEOS_DIR="$HOME/Videos"
 
 # HOME dir clean-up (for XDG BASE DIR specs)
 # NB: `export ZDOTDIR=$HOME/.config/zsh` is set in /etc/zsh/zshenv
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some # DMs.
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some DMs
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc

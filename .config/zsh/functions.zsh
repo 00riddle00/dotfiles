@@ -1,20 +1,20 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-12 15:17:58 EEST
+# Date:   2024-07-16 12:01:14 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-## make a temp backup
+# Make a temp backup
 bk() { cp "$1" "$1.bak"; }
 
-## make an alias for zsh
-## ex. usage (called from specific directory):
-##      ma "vedit" "vim $(readlink -f file_to_edit.txt)"
-##      ma "cddir" "cd $(pwd)"
+# Make an alias for zsh
+#   ex. usage (called from specific directory):
+#      ma "vedit" "vim $(readlink -f file_to_edit.txt)"
+#      ma "cddir" "cd $(pwd)"
 ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; echo "***Alias added***\nalias $1='$2'"; zsh }
 
-## make an alias for zsh to cd into current dir.
+# Make an alias for zsh to cd into current dir.
 macd() { echo alias "$1='cd $(pwd)'" >> "$ZDOTDIR/aliases.zsh"; echo "***Alias added***\nalias $1='cd $(pwd)'"; zsh }
 
 # SYSTEMWIDE FUNCTIONS

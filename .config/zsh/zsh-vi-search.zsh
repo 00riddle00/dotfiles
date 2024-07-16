@@ -1,3 +1,18 @@
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-07-16 12:03:40 EEST
+# Path: ~/.config/zsh/zsh-vi-search.zsh
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
+# Orig. URL: https://hg.sr.ht/~jasonwryan/centurion/raw/.irssi/miromiro.theme?rev=327f83b9ecc663e7ede05887460d45dd4f0cf56d
+# Orig. URL/File Retrieval: 2024-04-08 14:59:42 EEST
+#------------------------------------------
+# Description from the author:
+#------------------------------------------
+# ...
+#------------------------------------------------------------------------------
+
 autoload -U read-from-minibuffer
 
 function _index-of {

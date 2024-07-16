@@ -1,3 +1,10 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-07-14 17:22:03 EEST
+# Path:   ~/.config/zsh/.zshrc
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 # Enable colors 
 autoload -U colors && colors
 
@@ -107,7 +114,10 @@ if [ -f $DIRCOLORS ]; then
 fi
 
 # source highlighting
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source \
+    /usr/share/zsh/plugins/fast-syntax-highlighting/\
+fast-syntax-highlighting.plugin.zsh
+
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 # aliases and functions
