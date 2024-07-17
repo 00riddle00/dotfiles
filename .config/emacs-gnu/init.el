@@ -1,31 +1,30 @@
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-04-07 02:10:25 EEST
+; Date:   2024-07-17 17:23:24 EEST
 ; Path:   ~/.config/emacs.gnu/init.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
 
 ;; -------------------------------------------------------------
-;; keybindings
+;; Keybindings
 ;; -------------------------------------------------------------
 
-;; move point (cursor) from window to window with Shift and arrow keys
+;; Move point (cursor) from window to window with Shift and arrow keys
 (windmove-default-keybindings)
 
 (global-set-key (kbd "C-h") 'delete-backward-char)
-
 (global-set-key (kbd "C-z") 'evil-mode)
 
 ;; Enable the disabled commands in all future editing sessions.
 ;; These commands were disabled since they can sometimes be found confusing.
 ;;
 ;; Uppcase the region (C-x C-u).
-(put 'upcase-region 'disabled nil)
+(put 'upcase-region   'disabled nil)
 ;; Downcase the region (C-X C-l).
 (put 'downcase-region 'disabled nil)
 
 ;; -------------------------------------------------------------
-;; settings
+;; Settings
 ;; -------------------------------------------------------------
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration,
@@ -33,11 +32,11 @@
 (setq user-full-name "Tomas Giedraitis"
       user-mail-address "tomasgiedraitis@gmail.com")
 
-;; apropos commands try to guess the relevance of each result, and
+;; "apropos" commands try to guess the relevance of each result, and
 ;; display the most relevant ones first, instead of lex. ordering.
 (setq apropos-sort-by-scores t)
 
-;; font height
+;; Font height
 (set-face-attribute 'default nil :height 80)
 
 ;; Disable fringes
@@ -50,12 +49,12 @@
 (setq display-line-numbers-type 'relative)
 
 ;; -------------------------------------------------------------
-;; packages and their settings
+;; Packages and their settings
 ;; -------------------------------------------------------------
 
 (require 'package)
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
+(setq package-archives '(("gnu"   . "https://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/"   )))
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 (package-initialize)
 
@@ -65,16 +64,16 @@
 (require 'evil)
 (setq evil-toggle-key "C-z")
 (evil-mode 0)
-(define-key evil-normal-state-map (kbd "C-s") 'evil-write)
+(define-key evil-normal-state-map (kbd "C-s")   'evil-write)
 (define-key evil-normal-state-map (kbd "C-S-s") 'evil-save)
-(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
-(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
-(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
-(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+(define-key evil-normal-state-map (kbd "C-h")   'evil-window-left)
+(define-key evil-normal-state-map (kbd "C-j")   'evil-window-down)
+(define-key evil-normal-state-map (kbd "C-k")   'evil-window-up)
+(define-key evil-normal-state-map (kbd "C-l")   'evil-window-right)
 
 (require 'org)
-(setq org-directory "~/Dropbox/gtd/org/")
-(setq org-agenda-files '("~/Dropbox/gtd/org/agenda.org"))
+(setq org-directory      "$NOTES/org/")
+(setq org-agenda-files '("$NOTES/org/agenda.org"))
 ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
@@ -87,7 +86,7 @@
 
 (require 'undo-tree)
 (global-undo-tree-mode)
-;; either C-_ or C-/  (`undo-tree-undo')
+;; Either C-_ or C-/  (`undo-tree-undo')
 ;; C-?                (`undo-tree-redo')
 
 (require 'openwith)
@@ -96,10 +95,10 @@
 
 ;; -------------------------------------------------------------
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+ ;; "custom-set-variables" was added by Custom.
+ ;; Careful when editing it manually, there is a change of messing it up.
+ ;; The init file should contain only one such instance.
+ ;; If there is more than one, it will not work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
@@ -123,9 +122,9 @@
  '(tool-bar-mode nil))
 ;; -------------------------------------------------------------
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+ ;; "custom-set-faces" was added by Custom.
+ ;; Careful when editing it manually, there is a change of messing it up.
+ ;; The init file should contain only one such instance.
+ ;; If there is more than one, it will not work right.
  )
 ;; -------------------------------------------------------------

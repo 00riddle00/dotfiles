@@ -1,18 +1,25 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-07-17 17:23:02 EEST
+# Path:   ~/.config/git/config
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 [user]
-    email = tomasgiedraitis@gmail.com
-    name = Tomas Giedraitis
+    email      = tomasgiedraitis@gmail.com
+    name       = Tomas Giedraitis
     signingkey = D18AF5003042DB3E
 [core]
     #pager = delta
     editor = nvim
 [credential]
-    # cache for 1 day
+    # Cache for 24 hours
     helper = cache --timeout=86400
 [merge]
-    tool = nvim -d
+    tool          = nvim -d
     conflictstyle = diff3
 [diff]
-    tool = nvim -d
+    tool       = nvim -d
     colorMoved = default
 [difftool]
     prompt = false
@@ -20,12 +27,16 @@
     diffFilter = delta --color-only
 [alias]
     lgfirstparent = log --first-parent
-    lgnomerges = log --no-merges --oneline
-    # e.g. git graphviz --first-parent master | dotty /dev/stdin
-    graphviz = "!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+    lgnomerges    = log --no-merges --oneline
+    # E.g.:
+    #      git graphviz --first-parent main > graph.dot
+    #      \dot -Tpng graph.dot -o graph.png
+    #      xdg-open graph.png
+    graphviz = "!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> \
+        { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
     # Pretty log
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    d = difftool
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s \
+        %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [gui]
     pruneduringfetch = true
 [commit]
@@ -35,11 +46,11 @@
     ff = only
 [push]
     recurseSubmodules = check
-[smartgit "submodule"]
-    fetchalways = false
-    update = true
-    initializenew = true
 [delta]
-    navigate = true    # use n and N to move between diff sections
-    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
-    side-by-side = true
+    navigate      = true
+    light         = false
+    side-by-side  = true
+[smartgit "submodule"]
+    fetchalways   = false
+    update        = true
+    initializenew = true
