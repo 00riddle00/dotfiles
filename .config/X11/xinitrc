@@ -20,19 +20,11 @@ if type setxkbmap >/dev/null 2>&1; then
         -option caps:escape 2>/dev/null
 fi
 
-if [[ "$(hostname)" == "gecko" ]]; then
-    # Use NVIDIA graphics only
-    xrandr --setprovideroutputsource modesetting NVIDIA-0
-    xrandr --auto
-fi
-
 # Configure multiple monitors
-if [[ "$(hostname)" == "gecko" ]]; then
-    $BIN/set-up-monitors-gecko
-elif [[ "$(hostname)" == "panther" ]]; then
-    $BIN/set-up-monitors-panther
+if [[ "$(hostname)" == "panther" ]]; then
+    set-up-monitors-panther
 elif [[ "$(hostname)" == "tulkun" ]]; then
-    $BIN/set-up-monitors-tulkun
+    set-up-monitors-tulkun
 fi
 
 # Disable touchpad on a ThinkPad
