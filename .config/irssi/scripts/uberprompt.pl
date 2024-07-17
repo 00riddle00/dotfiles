@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-04-08 15:13:04 EEST
-# Path: ~/.local/share/irssi/scripts/uberprompt.pl
+# Date: 2024-07-17 11:54:09 EEST
+# Path: ~/.config/irssi/scripts/uberprompt.pl
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Author: shabble (Tom Feist-Hassan) (https://github.com/shabble)

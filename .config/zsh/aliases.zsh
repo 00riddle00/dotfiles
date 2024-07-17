@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 11:42:53 EEST
+# Date:   2024-07-17 11:57:55 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -427,7 +427,7 @@ alias pacu='sudo pacman -U' # argument: pkgname-pkgver.pkg.tar.zst
 
 # Adhering to XDG BASE DIR spec:
 alias dosbox='dosbox -conf "$XDG_CONFIG_HOME/dosbox/dosbox-0.74-3.conf"'
-alias irssi='irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_DATA_HOME/irssi"'
+alias irssi='irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_CONFIG_HOME/irssi"
 alias lynx='lynx -lss="$XDG_CONFIG_HOME/lynx/lynx.lss"'
 #alias svn='svn --config-dir "$XDG_CONFIG_HOME/subversion"'
 

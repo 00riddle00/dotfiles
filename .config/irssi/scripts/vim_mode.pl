@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 12:31:13 EEST
-# Path: ~/.local/share/irssi/scripts/vim_mode.pl
+# Date: 2024-07-17 11:54:15 EEST
+# Path: ~/.config/irssi/scripts/vim_mode.pl
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Author: shabble (Tom Feist-Hassan) (https://github.com/shabble)
