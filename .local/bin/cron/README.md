@@ -1,12 +1,12 @@
-Last updated: `2024-04-08 15:55:52 EEST`
+Last updated: `2024-07-17 11:08:21 EEST`
 
-These cronjobs have components that require information about your current
-display to display notifications correctly.
+These cronjobs have components that require information about the current
+display to show notifications correctly.
 
-When you add them as cronjobs, I recommend you precede the command with
-commands as those below:
+When adding them as cronjobs, it is recommended to precede the command with the
+following:
 
-```
+```bash
 export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 export DISPLAY=:0
 . $HOME/.zshenv

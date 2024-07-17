@@ -1,11 +1,6 @@
-Last updated: `2024-04-08 15:42:31 EEST`
+Last updated: `2024-07-17 11:12:29 EEST`
 
-This file acts as `.gitkeep`.
-
-IPython checks if `$XDG_CONFIG_HOME/ipython` (or `~/.config/ipython` if
-`XDG_CONFIG_HOME` is unset) exists, otherwise it uses `~/.ipython`.
+`~/.config/ipython` directory must exist, otherwise IPython uses `~/.ipython`.
 
 See [XDG_Base_Directory](https://wiki.archlinux.org/title/XDG_Base_Directory)
-in Arch Wiki for `ipython` entry.
-
-URL retrieval: `2024-04-07 16:23:14 EEST`
+(retrieved `2024-07-17 11:12:29 EEST`) in Arch Wiki for `ipython` entry.
