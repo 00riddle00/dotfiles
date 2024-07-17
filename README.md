@@ -30,7 +30,6 @@ for general info, see [this](https://wiki.archlinux.org/title/XDG_Base_Directory
 - calcurse
 - cmus
 - irssi
-- ncmpcpp
 - neomutt
 - newsboat
 - notmuch
