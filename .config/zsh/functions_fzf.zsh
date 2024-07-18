@@ -15,7 +15,7 @@
 
 # copy using fzf
 fcp() { cp -v "$1" "$(awk '{print $2}' ~/.config/directories | fzf | sed "s|~|$HOME|")" ; }
- 
+
 # edit scripts (using fzf)
 se() { du -a $BIN/* ~/.local/bin/* | awk '{print $2}' | fzf --preview 'bat --color always {}' | xargs -ro $EDITOR ; }
 

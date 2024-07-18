@@ -23,7 +23,7 @@ if exists("syntax_on")
 endif
 
 let g:colors_name="miromiro"
-" Normal colors  --- 
+" Normal colors  ---
 hi Normal          ctermfg=15
 hi Ignore          ctermfg=8
 hi Comment         ctermfg=7
@@ -103,7 +103,7 @@ hi htmlTag        ctermfg=6
 hi htmlEndTag     ctermfg=6
 hi htmlTagName    ctermfg=11
 
-" Specific for Perl  --- 
+" Specific for Perl  ---
 hi perlSharpBang  ctermfg=10  term=standout
 hi perlStatement  ctermfg=13
 hi perlStatementStorage ctermfg=1

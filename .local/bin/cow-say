@@ -31,7 +31,7 @@ err_msg="ERR: USAGE: WHO { ${cows_list%,*} } should say WHAT {'gnu-wisdom', 'gnu
 [[ " ${cows[@]} " =~ " ${cow} " ]] || error "ERR: '$cow' - no such cow"
 
 case $phrase in
-    gnu-wisdom)       
+    gnu-wisdom)
         file="$phrases_dir/gnu-wisdom"
         [[ -f "$file" ]] || error "ERR: there is no 'gnu-wisdom'"
         [[ -f "$file.dat" ]] || strfile "$file" &> /dev/null
@@ -41,7 +41,7 @@ case $phrase in
         file="$phrases_dir/gnu-linux"
         [[ -f "$file" ]] || error "ERR: there is no 'gnu-linux'"
         cowsay -f "$cows_dir/$cow.cow" < "$phrases_dir/gnu-linux" | lolcat
-        ;;            
-    *)              
+        ;;
+    *)
         cowsay -f "$cows_dir/$cow.cow" "$phrase" | lolcat
-esac 
+esac

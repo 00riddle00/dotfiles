@@ -54,7 +54,7 @@ hi Folded       ctermfg=6    ctermbg=0    cterm=reverse
 hi NonText      ctermfg=232  ctermbg=232
 hi VertSplit    ctermfg=232  ctermbg=0
 
-" Spell checking  --- 
+" Spell checking  ---
 if version >= 700
   hi clear SpellBad
   hi clear SpellCap

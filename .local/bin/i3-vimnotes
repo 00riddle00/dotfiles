@@ -2,6 +2,6 @@
 #file_to_open="$DROPBOX/gtd/coding/main.md"
 file_to_open="$DROPBOX/gtd/pro/ca_python.md"
 
-urxvt -geometry 135x61 -name notes -hold -e tmux new-session\; new-window -n notes $EDITOR -c "e $file_to_open | :cd %:p:h | :cd .. | :NERDTreeToggle "\; swap-window -t -1\;  && 
+urxvt -geometry 135x61 -name notes -hold -e tmux new-session\; new-window -n notes $EDITOR -c "e $file_to_open | :cd %:p:h | :cd .. | :NERDTreeToggle "\; swap-window -t -1\;  &&
 i3-msg '[instance="notes"] move left'  &&
-i3-msg '[instance="notes"] move left'  
+i3-msg '[instance="notes"] move left'

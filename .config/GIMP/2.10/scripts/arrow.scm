@@ -25,7 +25,7 @@
 ; GNU General Public License for more details.
 ;
 ; If you use this script and/or like it the author would be happy to
-; receive a postcard from you: 
+; receive a postcard from you:
 ;
 ; You should have received a copy of the GNU General Public License
 ; along with this program; if not, write to the Free Software
@@ -41,7 +41,7 @@
 
 (define pi (* 4 (atan 1.0)))
 
-(define 
+(define
     (script-fu-help-1Arrow
         inPointToX
         inPointToY
@@ -56,7 +56,7 @@
     )
     (let*
         (
-        ; calculate absolute angle of both wings in image from relative angle 
+        ; calculate absolute angle of both wings in image from relative angle
         ; between wings and arrow-tail and absolut angle of arrow-tail
         (theArrowAngle (if (= (- inPointToY inPointFromY) 0)
             (/ pi (if (< (- inPointToX inPointFromX) 0) 2 -2))
@@ -95,7 +95,7 @@
         (if (= FullHead 1) (begin
             ; calculate intersection of connection between the wings end points and arrow tail
             ; shrink distance between this point and arrow head if MiddlePoint < 100
-            (set! theMiddleWingEndPointX (+ inPointToX 
+            (set! theMiddleWingEndPointX (+ inPointToX
                                             (* (/ MiddlePoint 100) (- (/ (+ theLeftWingEndPointX theRightWingEndPointX) 2) inPointToX))
                                          ))
             (set! theMiddleWingEndPointY (+ inPointToY
@@ -180,7 +180,7 @@
             (set! inPoint_1Y    (aref theStrokePoints 3))
             (set! inPoint_2X    (aref theStrokePoints (- theNumPoints 4)))
             (set! inPoint_2Y    (aref theStrokePoints (- theNumPoints 3)))
-            
+
             ; calculate length of arrows depending on the length of the whole arrow
             (define (sqr x) (* x x))
             (set! theArrowLength (exp (* 0.5 (log (+ (sqr (- inPoint_1X inPoint_2X)) (sqr (- inPoint_1Y inPoint_2Y)))))))

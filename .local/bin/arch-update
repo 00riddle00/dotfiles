@@ -14,4 +14,4 @@ ${AUR_HELPER:-paru} -Syu --noconfirm \
 && notify-send "update" "Arch updated"
 
 # Dunst notification daemon handles the notification according to the existing
-# configuration in $XDG_CONFIG_HOME/dunst/dunstrc. 
+# configuration in $XDG_CONFIG_HOME/dunst/dunstrc.

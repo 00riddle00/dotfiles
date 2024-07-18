@@ -526,7 +526,7 @@
             ;(quit)
          ; )    ; end - prog1
         ;)   ; end - if
- 
+
         (if (= (car (gimp-item-id-is-layer drawable)) 0)
           (prog1
             (gimp-message "The drawable must be a layer (not a mask, channel or other\ntype of drawable) for this script to work.")
@@ -786,7 +786,7 @@
 (script-fu-register
     "script-fu-draw-arrowV3"
     "ArrowV3"
-    "Draw a nearly arbitrary arrow in your image" 
+    "Draw a nearly arbitrary arrow in your image"
     "Berengar W. Lehr <B-Ranger@web.de>"
     "2009, Berengar W. Lehr / MPG@IDIR, UH Jena, Germany."
     "19th November 2009"

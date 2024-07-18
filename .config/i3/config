@@ -25,9 +25,9 @@
 #  Basic Definitions
 # =============================
 
-set $term $TERMINAL 
-set $run exec --no-startup-id 
-set $run_always exec_always --no-startup-id 
+set $term $TERMINAL
+set $run exec --no-startup-id
+set $run_always exec_always --no-startup-id
 set $mod Mod4
 set $alt Mod1
 set $esc Escape
@@ -48,7 +48,7 @@ $run hsetroot -solid "#073542" &
 #$run picom -b
 #$run $term -name dropdown_aux -e tmux new-session
 
-# This amazing script uses the i3ipc-python library to switch the layout 
+# This amazing script uses the i3ipc-python library to switch the layout
 # splith/splitv depending on the currently focused window dimensions.
 $run_always autotiling
 
@@ -57,7 +57,7 @@ $run_always autotiling
 # =============================
 
 # GAP VARIABLES
-set $inner 8 
+set $inner 8
 set $outer 4
 set $top   0
 
@@ -69,7 +69,7 @@ gaps outer $outer
 gaps top   $top
 # smart_gaps on     # gaps used if only more than one container on the workspace
 
-set $arch_blue            #1793d1 
+set $arch_blue            #1793d1
 set $pretty_blue          #268bd2
 set $another_blue         #47afdf
 set $light_blue           #79bac1
@@ -95,7 +95,7 @@ bar {
     background  $bar_bg
     statusline  $pretty_blue
 
-    #                    border       bg          text    
+    #                    border       bg          text
     focused_workspace    $bar_bg      $bar_bg     $arch_blue
     inactive_workspace   $bar_bg      $bar_bg     $light_blue
     active_workspace     $bar_bg      $bar_bg     #ffffff
@@ -113,7 +113,7 @@ client.urgent              $arch_blue     $arch_blue            $light_blue     
 client.placeholder         $arch_blue     $arch_blue            $light_blue     $arch_blue
 
 # =============================
-#  Window traits 
+#  Window traits
 # =============================
 
 # Dropdown windows (the order can matter)
@@ -171,7 +171,7 @@ for_window [class="obs"]                 move workspace $ws9
 for_window [class="Spotify"]             move workspace $ws9
 
 # =============================
-#  Workspace traits 
+#  Workspace traits
 # =============================
 
 # for_window [workspace=$ws10]     layout tabbed
@@ -194,7 +194,7 @@ bindsym $alt+$esc           kill
 #bindsym $mod+c $run activate spotify
 bindsym $mod+c $run activate code
 bindsym $mod+Shift+p $run dmenu-pastes
-bindsym $mod+p $run pavucontrol  
+bindsym $mod+p $run pavucontrol
 bindsym $alt+p $run killall pavucontrol
 #bindsym $alt+d $run dosbox
 bindsym $mod+q $run activate emacs
@@ -206,7 +206,7 @@ bindsym $mod+e $run wmctrl -a "File Manager"
 bindsym $mod+g $run activate smartsvn
 bindsym $mod+semicolon $run activate libreoffice
 bindsym $mod+n workspace $ws2; $run brave
-bindsym $mod+t $run qutebrowser-wall 
+bindsym $mod+t $run qutebrowser-wall
 bindsym $mod+r $run $term -e $FILE
 bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
 bindsym $mod+i $run $term -e htop
@@ -215,7 +215,7 @@ bindsym $mod+s $run xscreensaver-command --lock
 bindsym $mod+b $run gimp
 
 # imitate "show desktop" behaviour
-bindsym $mod+d $run i3-showdesktop $ws10 
+bindsym $mod+d $run i3-showdesktop $ws10
 # imitate "win+tab" behaviour
 bindsym $mod+Tab $run i3-msg 'workspace next'
 # imitate "win+Shift+tab" behaviour
@@ -274,20 +274,20 @@ bindsym $mod+Shift+y $run i3-resize left
 
 set $ws1 " 1:  "
 set $ws2 " 2:  "
-set $ws3 " 3:  "  
+set $ws3 " 3:  "
 set $ws4 " 4:  "
 set $ws5 " 5:  "
 set $ws6 " 6:  "
 set $ws7 " 7:  "
 set $ws8 " 8:  "
 set $ws9 " 9: ♫ "
-set $ws10 " 10: 雷 " 
+set $ws10 " 10: 雷 "
 # previously used icons: {, , , , }
 
 # =========== runs on i3 startup =============
-# moved this line after assigning workspaces 
+# moved this line after assigning workspaces
 # so as not to break ws1 icon
-$run i3-msg 'workspace $ws1; $run i3-vimnotes' 
+$run i3-msg 'workspace $ws1; $run i3-vimnotes'
 # ============================================
 
 # switch to workspace
@@ -336,7 +336,7 @@ bindsym F10 $run activate qalculate-gtk
 # simply reloads the configuration in-memory (as in "source")
 # bindsym F11 reload
 # replaces the entire i3 instance with a new one (as in "exec")
-# layout/session is preserved. Runs exec-always directives 
+# layout/session is preserved. Runs exec-always directives
 bindsym F12 restart
 
 bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
@@ -357,7 +357,7 @@ bindsym $mod+Shift+Insert  $run dmenu_run
 #bindsym $mod+Insert        $run rofi -show Open -modi Open:$BIN/rofi-open
 # run logout/shutdown/reboot prompt
 bindsym $mod+End           $run rofi -show Power -modi Power:$BIN/rofi-power
-# kill a process by its name/pid 
+# kill a process by its name/pid
 bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$BIN/rofi-kill
 
 # PageUp (standard light)
@@ -367,7 +367,7 @@ bindsym $mod+Next          $run  redshift -P -O 5000
 # Just for fun
 bindsym $mod+Pause         $run  redshift -P -O 1000
 
-bindsym $print $run flameshot gui -p /home/riddle/Screenshots 
+bindsym $print $run flameshot gui -p /home/riddle/Screenshots
 bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
 
 # ===================
@@ -414,4 +414,3 @@ bindsym XF86TouchpadOff         $run synclient TouchpadOff=1
 bindsym XF86MonBrightnessUp     $run light -A 10 && pkill -RTMIN+2 i3blocks
 bindsym XF86MonBrightnessDown   $run light -U 10 && pkill -RTMIN+2 i3blocks
 bindsym XF86RFKill              nop
-

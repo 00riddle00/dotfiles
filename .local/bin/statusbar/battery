@@ -30,13 +30,13 @@ $percent = $2;
 
 # set label based on battery charge
 if ($percent < 15) {
-    $label = ""; 
+    $label = "";
 } elsif ($percent < 25) {
-    $label = ""; 
+    $label = "";
 } elsif ($percent < 40) {
-    $label = ""; 
+    $label = "";
 } elsif ($percent < 60) {
-    $label = ""; 
+    $label = "";
 } else {
     $label = "";
 }

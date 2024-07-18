@@ -11,8 +11,8 @@ command="${1}"
 time=2
 
 while sleep ${time}
-do 
-    clear; 
+do
+    clear;
     printf "Every %.1fs: %s\n\n" "${time}" "${command}";
     ${command};
 done

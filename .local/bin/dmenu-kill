@@ -5,7 +5,7 @@ lines="-l 20"
 selected="$(ps -a -u $USER | \
             dmenu -i -p "Type to search and select process to kill" \
             $lines $colors $font | \
-            awk '{print $1" "$4}')"; 
+            awk '{print $1" "$4}')";
 
 if [[ ! -z $selected ]]; then
 
@@ -14,7 +14,7 @@ if [[ ! -z $selected ]]; then
             $lines $colors $font )"
 
     if [[ $answer == "Yes" ]]; then
-        selpid="$(awk '{print $1}' <<< $selected)"; 
+        selpid="$(awk '{print $1}' <<< $selected)";
         kill -9 $selpid
     fi
 fi

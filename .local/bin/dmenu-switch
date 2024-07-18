@@ -1,4 +1,4 @@
-# dmenu-based window switcher using wmctrl. 
+# dmenu-based window switcher using wmctrl.
 # If using dwm, requires the ewmhtags or focusonnetactive patch to be usefull.
 
 windows=$(wmctrl -xl | tr -s '[:blank:]' | cut -d ' ' -f 3-3,5- | sed 's/^[a-zA-Z0-9-]*\.//' | sort | uniq)

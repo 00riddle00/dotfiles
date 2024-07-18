@@ -151,4 +151,3 @@ nnoremap YY "+yy
 " [Python specific] Quick search for python class and def statments.
 nmap    c/          /\<class
 nmap    m/          /\<def
-

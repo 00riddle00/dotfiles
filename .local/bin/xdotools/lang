@@ -23,7 +23,7 @@ xdotool mousemove 1729 727 && xdotool click 1
 # revert video back 2-3 seconds by pressing "ArrowLeft"
 # xdotool key Left
 # go to GoogleTranslate tab, clear current input and paste the new word
-xdotool search --name "LANG" windowactivate --sync mousemove 179 238 
+xdotool search --name "LANG" windowactivate --sync mousemove 179 238
 xdotool click 1
 xdotool key ctrl+a
 xdotool key delete
@@ -33,7 +33,7 @@ xdotool key ctrl+v
 # mouse position
 sleep 6
 xdotool mousemove 1729 727 && xdotool click 1
-xdotool search --name "BOOK" windowactivate --sync mousemove $w $h 
+xdotool search --name "BOOK" windowactivate --sync mousemove $w $h
 
-# after listening exercise is done, copy words from Google Translate history 
+# after listening exercise is done, copy words from Google Translate history
 # to your notes.

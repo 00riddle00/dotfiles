@@ -13,7 +13,7 @@ Sxiv.background: #222222
 #include "urxvt-colors/dark"
 
 URxvt.buffered: true
-URxvt.cursorColor: #5E468C 
+URxvt.cursorColor: #5E468C
 URxvt.cursorUnderline: false
 URxvt.cursorBlink: true
 URxvt.reverseVideo: false
@@ -129,7 +129,7 @@ xscreensaver-auth.?.Dialog.borderWidth:          0
 xscreensaver-auth.?.Dialog.shadowThickness:      4
 
 ! timeout bar (background is actually determined by Dialog.text.background)
-xscreensaver-auth.?.passwd.thermometer.foreground:  #1792d0 
+xscreensaver-auth.?.passwd.thermometer.foreground:  #1792d0
 xscreensaver-auth.?.passwd.thermometer.background:  #7262b3
 xscreensaver-auth.?.passwd.thermometer.width:       6
 

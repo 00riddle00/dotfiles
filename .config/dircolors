@@ -14,7 +14,7 @@
 # author: jason ryan https://jasonwryan.com
 # vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:
 #------------------------------------------------------------------------------
- 
+
 # COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
 # pipes. 'all' adds color characters to all output. 'none' shuts colorization
 # off.
@@ -32,13 +32,13 @@ EIGHTBIT 1
 
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
-# Attribute codes: 
+# Attribute codes:
 # 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
 # Text color codes:
 # 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
 # Background color codes:
 # 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
- 
+
 NORMAL             00         # global default, although everything should be something.
 FILE               00;37      # normal file
 DIR                00;34      # directory
@@ -48,7 +48,7 @@ SOCK               01;35      # socket
 BLK                01;33;40   # block device driver
 CHR                01;35;40   # character device driver
 ORPHAN             01;30
-#EXEC              01;31 
+#EXEC              01;31
 STICKY_OTHER_WRITABLE 01;33   # dir that is sticky and other-writable (+t,o+w)
 OTHER_WRITABLE     01;35      # dir that is other-writable (o+w) and not sticky
 STICKY             01;34      # dir with the sticky bit set (+t) and not other-writable
@@ -140,7 +140,7 @@ STICKY             01;34      # dir with the sticky bit set (+t) and not other-w
 .curlrc            01;34
 .db                00;32
 .deb               00;36
-.diff              01;33 
+.diff              01;33
 .dir_colors        01;33
 .dmenurc           00;32
 .dmenu_cache       00;32
@@ -246,7 +246,7 @@ STICKY             01;34      # dir with the sticky bit set (+t) and not other-w
 .vimrc             00;32
 .wpa_cli_history   00;33
 .xbindkeysrc       01;33
-.xinitrc           01;33 
+.xinitrc           01;33
 .Xauthority        01;31
 .XCompose          01;33
 .Xmodmap           00;31
@@ -314,4 +314,4 @@ TERM xterm-16color
 TERM xterm-256color
 TERM xterm-88color
 TERM xterm-color
-TERM xterm-debian 
+TERM xterm-debian

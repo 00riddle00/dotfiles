@@ -12,15 +12,15 @@ my $player_arg = "";
 if ($BLOCK_INSTANCE) {
     $player_arg = "--player='$BLOCK_INSTANCE'";
 } else {
-    my $pid = `ps -C cmus -o pid=`; 
+    my $pid = `ps -C cmus -o pid=`;
     if ($pid) {
         $player_arg = "--player='cmus'";
     } else {
-        $pid = `ps -C spotify -o pid=`; 
+        $pid = `ps -C spotify -o pid=`;
         if ($pid) {
             $player_arg = "--player='spotify'";
-        } 
-    } 
+        }
+    }
 }
 
 sub buttons {
@@ -74,7 +74,7 @@ sub cmus {
                 my @path = split /\//, $line;
                 my $song = pop @path;
                 # strip file extension
-                $song =~ s{\.[^.]+$}{}; 
+                $song =~ s{\.[^.]+$}{};
                 @metadata[0] = $song;
             }
         }
@@ -84,7 +84,7 @@ sub cmus {
 
             # metadata found so we are done
             print(join ' - ', @metadata);
-        } 
+        }
     }
 }
 

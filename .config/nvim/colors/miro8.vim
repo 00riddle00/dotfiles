@@ -89,11 +89,11 @@ hi DiffAdd         ctermfg=black      ctermbg=yellow
 hi DiffChange      ctermfg=black
 hi DiffDelete      ctermfg=black    ctermbg=blue
 
-" Specific for Vim script  --- 
+" Specific for Vim script  ---
 hi vimCommentTitle ctermfg=green    cterm=bold
 hi vimFold         ctermfg=black    ctermbg=white   cterm=bold
 
-" Specific for help files  --- 
+" Specific for help files  ---
 hi helpHyperTextJump ctermfg=yellow   cterm=bold
 
 " JS numbers only ---
@@ -104,17 +104,17 @@ hi htmlTag        ctermfg=cyan
 hi htmlEndTag     ctermfg=cyan
 hi htmlTagName    ctermfg=yellow   cterm=bold
 
-" Specific for Perl  --- 
+" Specific for Perl  ---
 hi perlSharpBang  ctermfg=green     cterm=bold   term=standout
 hi perlStatement  ctermfg=magenta   cterm=bold
 hi perlStatementStorage ctermfg=red
 hi perlVarPlain   ctermfg=yellow
 hi perlVarPlain2  ctermfg=yellow    cterm=bold
 
-" Specific for Ruby  --- 
+" Specific for Ruby  ---
 hi rubySharpBang  ctermfg=green     cterm=bold term=standout
 
-" Spell checking  --- 
+" Spell checking  ---
 if version >= 700
   hi clear SpellBad
   hi clear SpellCap

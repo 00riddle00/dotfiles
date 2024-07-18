@@ -19,11 +19,11 @@ draw_outline no
 draw_shades no
 
 # For 2 monitors:
-#gap_x 1375 
-#gap_y 15 
+#gap_x 1375
+#gap_y 15
 # For laptop:
-gap_x 10  
-gap_y 15 
+gap_x 10
+gap_y 15
 
 maximum_width 330
 max_port_monitor_connections 64
@@ -51,7 +51,7 @@ TEXT
 ${color #00ff41}$nodename     ${alignc}$sysname $kernel ${alignr}$color${time %k:%M}
 
 ${color #00ff41}Uptime:$color $uptime ${color #00ff41} Load:$color $loadavg
-${color #00ff41}CPU:$color ${cpu}% ${color #00ff41}${cpubar 5,85}   
+${color #00ff41}CPU:$color ${cpu}% ${color #00ff41}${cpubar 5,85}
 ${color #00ff41}Disk I/O: $color${diskio}
 ${color #00ff41}${cpugraph 0 32,155 104E8B 00ff41} $alignr
 ${color #00ff41}${diskiograph 32,155 104E8B 00ff41 750}
@@ -59,11 +59,11 @@ ${color #00ff41}RAM Usage:$color $mem${color #00ff41}/${color}$memmax -
 $memperc% ${color #00ff41}$membar
 ${color #00ff41}Swap Usage:$color $swap${color #00ff41}/${color}$swapmax -
 $swapperc% ${color #00ff41}${swapbar}
-${color #00ff41}Procs:$color $processes ${color #00ff41}Run:$color $running_processes 
+${color #00ff41}Procs:$color $processes ${color #00ff41}Run:$color $running_processes
 ${color #00ff41}CPU:$color ${#CPUtemp} ${color #00ff41} MB:$color ${#MBtemp} ${color #00ff41}HD:$color ${#HDDtemp}
-${color #00ff41}Entropy: ${color}${entropy_avail} ${color #00ff41}/${color}${entropy_poolsize} 
+${color #00ff41}Entropy: ${color}${entropy_avail} ${color #00ff41}/${color}${entropy_poolsize}
 ${color #00ff41}${entropy_bar}
-${color #00ff41}Net Down:$color ${downspeed eth0} k/s      
+${color #00ff41}Net Down:$color ${downspeed eth0} k/s
 ${color #00ff41}Net Up:$color ${upspeed eth0} k/s
 ${color #00ff41}     ${downspeedgraph eth0 32,155 104E8B 00ff41} $alignr
 ${color #00ff41}     ${upspeedgraph eth0 32,155 104E8B 00ff41}
@@ -101,9 +101,9 @@ ${color #00ff41}File systems:
       5}
       $color ${top_mem name 6} ${top_mem pid 6} ${top_mem cpu 6} ${top_mem mem
       6}
-       
+
        ${color #00ff41}Port(s)${alignr}#Connections
-       $color Inbound: ${tcp_portmon 1 32767 count}  Outbound: ${tcp_portmon 32768 61000 count}${alignr}ALL: ${tcp_portmon 1 65535 count} 
+       $color Inbound: ${tcp_portmon 1 32767 count}  Outbound: ${tcp_portmon 32768 61000 count}${alignr}ALL: ${tcp_portmon 1 65535 count}
        ${color #00ff41}Inbound Connection ${alignr} Local Service/Port$color
         ${tcp_portmon 1 32767 rhost 0} ${alignr} ${tcp_portmon 1 32767 lservice
         0}
@@ -118,5 +118,5 @@ ${color #00ff41}File systems:
                61000 rservice 2}
                 ${tcp_portmon 32768 61000 rhost 3} ${alignr} ${tcp_portmon 32768
                 61000 rservice 3}
-                 ${tcp_portmon 32768 61000 rhost 4} ${alignr}${tcp_portmon 32768 
+                 ${tcp_portmon 32768 61000 rhost 4} ${alignr}${tcp_portmon 32768
                  61000 rservice 4}

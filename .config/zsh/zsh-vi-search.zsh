@@ -36,7 +36,7 @@ function _index-of {
       return
     fi
   done
-  
+
   return -1
 }
 

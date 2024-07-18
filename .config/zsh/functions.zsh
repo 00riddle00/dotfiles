@@ -139,11 +139,11 @@ bsc() {
 
 rlc() {
     readlink -f "$1" | xclip
-} 
+}
 
 catc() {
     cat "$1" | xclip
-} 
+}
 
 # Searches hidden files as well
 find.file() {
@@ -176,7 +176,7 @@ c() {
   if [ -z "$1" ]; then
     cd
   elif [ "$(find "$1" -maxdepth 1 -type f | head -n 51 | wc -l)" -gt 50 ]; then
-    cd "$1" 
+    cd "$1"
     echo "Large dir"
   else
     cd "$1" && ls

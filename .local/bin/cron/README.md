@@ -13,7 +13,7 @@ export DISPLAY=:0
 {{ COMMAND_GOES_HERE }}
 ```
 
-This ensures that notifications will display 
-(`export DBUS_SESSION_BUS_ADDRESS=...`), 
-xdotool commands will function (`export DISPLAY=...`) 
+This ensures that notifications will display
+(`export DBUS_SESSION_BUS_ADDRESS=...`),
+xdotool commands will function (`export DISPLAY=...`)
 and environmental variables will work as well (`.$HOME/.zshenv`).

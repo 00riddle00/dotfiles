@@ -5,7 +5,7 @@
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-# Enable colors 
+# Enable colors
 autoload -U colors && colors
 
 # prompt
@@ -54,8 +54,8 @@ bindkey -v
 KEYTIMEOUT=1
 
 ### 'v' (lowercase) in visual mode opens VIM to edit the command.
-### :wq brings back the edited command in the zsh prompt (before 
-### that, it can be useful to call :w {filename} and save the 
+### :wq brings back the edited command in the zsh prompt (before
+### that, it can be useful to call :w {filename} and save the
 ### command to a file).
 ### P.S. 'V' (uppercase) just performs the selection as usual.
 autoload -Uz edit-command-line
@@ -85,13 +85,13 @@ bindkey '^d'   delete-char-or-list
 bindkey '^?'   backward-delete-char
 #              (<C-h> is already taken by tmux).
 bindkey '^[d'  kill-word
-bindkey '^w'   backward-kill-word 
-bindkey '^[^?' backward-kill-word 
+bindkey '^w'   backward-kill-word
+bindkey '^[^?' backward-kill-word
 # none         kill-line
-#              (<C-k> is already taken by tmux, 
+#              (<C-k> is already taken by tmux,
 #              use <M-d> multiple times).
 bindkey '^u'   backward-kill-line
-bindkey '^g'   kill-whole-line 
+bindkey '^g'   kill-whole-line
 
 bindkey '^y'   yank
 
@@ -127,7 +127,7 @@ if [[ -d "$ZDOTDIR" ]]; then
   done
 fi
 
-# execute commands 
+# execute commands
 
 ## software flow control bytes:
 ##   XOFF (ASCII 0x13, DC3, sent with Ctrl-S) - pause transmission
@@ -146,8 +146,8 @@ tmux > /dev/null 2>&1
 ## conda initialize
 #source $ZDOTDIR/conda_env.sh
 
-## 'set' - shell builtin that control various 
-##   shell options and positional parameters 
+## 'set' - shell builtin that control various
+##   shell options and positional parameters
 ##   (regarded as a special builtin by the POSIX standard)
 set -o ignoreeof ## prevents Ctrl+d from exiting the shell
 

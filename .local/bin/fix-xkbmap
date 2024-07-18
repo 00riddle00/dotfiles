@@ -3,7 +3,7 @@
 # Remap keys with setxkbmap (if installed)
 #
 # if Alt + Shift is needed for something,
-# use `grp:win_space_toggle` instead of `grp:alt_shift_toggle` 
+# use `grp:win_space_toggle` instead of `grp:alt_shift_toggle`
 #
 if type setxkbmap >/dev/null 2>&1; then
     setxkbmap \

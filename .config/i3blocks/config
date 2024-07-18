@@ -67,7 +67,7 @@ label=<span color="#81c784">  </span>
 
 [battery]
 interval=10
-# without setting color, perl 
+# without setting color, perl
 # script colors do not work
 color=#47afdf
 
@@ -100,4 +100,3 @@ label=<span color="#1793d1">爵 </span>
 interval=60
 color=#1793d1
 label=<span color="#1793d1"> </span>
-

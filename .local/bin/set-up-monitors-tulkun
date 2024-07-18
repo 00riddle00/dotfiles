@@ -16,7 +16,7 @@
 
 # TODO make it so that if external screen names are not found, it would not
 # fail, but search for the first connected screen/s and use it/them.
-# 
+#
 ## Check if X is running.
 if xset q &>/dev/null; then
     xrandr \

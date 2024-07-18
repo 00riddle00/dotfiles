@@ -3,8 +3,8 @@
 # TODO check if dmenu is running, else just use 'sudo',
 #      or maybe spawn a terminal for sudo prompt
 #
-# $SUDO_ASKPASS variable must be set to a dmenu 
-# command which reads a password 
+# $SUDO_ASKPASS variable must be set to a dmenu
+# command which reads a password
 cd $TMP1/dwm
 sudo -A make clean install
 killall dwm
