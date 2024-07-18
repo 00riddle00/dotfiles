@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-13 13:16:05 EEST
+# Date:   2024-07-18 16:04:31 EEST
 # Path:   ~/.config/mutt/muttrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ set reply_to                                                     # reply to Repl
 set reverse_name                                                 # reply as whomever it was to
 set include                                                      # include message in replies
 set forward_quote                                                # include message in forwards
-set print_command      = "muttprint"                             # printer…
+set print_command      = "muttprint"                             # printer
 
 # headers to show
 ignore *                                                         # ignore all headers

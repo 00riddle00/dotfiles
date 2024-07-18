@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * User: (00riddle00) Tomas Giedraitis
-* Date:   2024-07-16 12:58:34 EEST
+* Date: 2024-07-18 16:04:24 EEST
 * Path: ~/.config/VSCodium/User/snippets/python.json
 * URL:  https://github.com/00riddle00/dotfiles
 *-----------------------------------------------------------------------------
@@ -80,7 +80,7 @@
     "from ... import ...": {
         "prefix": "fim",
         "body": "from ${1:package/module} import ${2:names}$0",
-        "description" : "Import statement that allows individual objects from the module to be imported directly into the caller’s symbol table."
+        "description" : "Import statement that allows individual objects from the module to be imported directly into the caller's symbol table."
     },
     "New class": {
         "prefix": "class",
