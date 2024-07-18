@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-12 21:42:32 EEST
+# Date: 2024-07-18 16:25:33 EEST
 # Path: ~/.config/mutt/colors01.muttrc
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -9,18 +9,18 @@
 # Orig. URL/File Retrieval: 2020-02-03 14:00:00 EET
 #------------------------------------------------------------------------------
 
-# Default index colors:
+# Default index colors
 color index yellow default '.*'
 color index_author red default '.*'
 color index_number blue default
 color index_subject cyan default '.*'
 
-# For new mail:
+# For new mail
 color index brightyellow black "~N"
 color index_author brightred black "~N"
 color index_subject brightcyan black "~N"
 
-# Header colors:
+# Header colors
 color header blue default ".*"
 color header brightmagenta default "^(From)"
 color header brightcyan default "^(Subject)"

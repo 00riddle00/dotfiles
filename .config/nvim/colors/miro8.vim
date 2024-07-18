@@ -1,6 +1,6 @@
 "------------------------------------------------------------------------------
 " User: 00riddle00 (Tomas Giedraitis)
-" Date: 2024-07-13 16:11:34 EEST
+" Date: 2024-07-18 16:25:46 EEST
 " Path: ~/.config/nvim/colors/miro8.vim
 " URL:  https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -88,7 +88,6 @@ hi DiffText        ctermfg=white
 hi DiffAdd         ctermfg=black      ctermbg=yellow
 hi DiffChange      ctermfg=black
 hi DiffDelete      ctermfg=black    ctermbg=blue
-"test
 
 " Specific for Vim script  --- 
 hi vimCommentTitle ctermfg=green    cterm=bold
@@ -126,5 +125,3 @@ if version >= 700
   hi SpellRare   ctermfg=13   cterm=underline
   hi SpellLocal  cterm=None
 endif
-
-"endif

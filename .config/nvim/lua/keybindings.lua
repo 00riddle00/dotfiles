@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-04-22 02:18:03 EEST
+-- Date:   2024-07-18 16:26:05 EEST
 -- Path:   ~/.config/nvim/lua/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -250,8 +250,7 @@ nmap("m/", [[/\<def ]])
 --nmap("<F8>", [[:w \| !make rebuild && ./demo <CR>]])
 --nmap("<F8>", [[:w \| :make rebuild <CR> \| :copen 30 <CR>]])
 --nmap("<F8>", [[:w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>]])
---nmap("<F8>", [[:w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.vim/output<CR>:split ~/.vim/output<CR>:redraw!<CR>]])
-
+--nmap("<F8>", [[:w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.config/vim/output<CR>:split ~/.config/vim/output<CR>:redraw!<CR>]])
 
 -------------------------------------------
 -- [Plugin] "jlanzarotta/bufexplorer"

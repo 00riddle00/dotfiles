@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-13 23:19:14 EEST
+# Date:   2024-07-18 16:26:13 EEST
 # Path:   ~/.config/sc-im/scimrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -17,9 +17,9 @@ set ignorecase
 # use gg/G to jump within a column
 # Unfortunately, there's no mappings for visual mode
 nnoremap "gg" "^"
-nnoremap "^" "gg"
-nnoremap "G" "#"
-nnoremap "#" "G"
+nnoremap "^"  "gg"
+nnoremap "G"  "#"
+nnoremap "#"  "G"
 
 color "type=INPUT fg=WHITE bg=DEFAULT_COLOR"
 color "type=NORMAL fg=WHITE bg=WHITE"

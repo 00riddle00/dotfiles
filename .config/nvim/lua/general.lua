@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-04-22 02:17:59 EEST
+-- Date:   2024-07-18 16:26:00 EEST
 -- Path:   ~/.config/nvim/lua/general.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ local cmd = Util.nvim_command
 
 local General = {}
 
--- NOTE: inspired by a similar function in Damian Conway's vimrc
+-- NOTE: Inspired by a similar function in Damian Conway's vimrc
 -- SOURCE: https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/.vimrc
 function General.EnsureDirExists()
   local required_dir = vim.fn.expand("%:h")

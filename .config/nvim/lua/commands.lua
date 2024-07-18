@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-04-22 02:17:56 EEST
+-- Date:   2024-07-18 16:25:53 EEST
 -- Path:   ~/.config/nvim/lua/commands.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -21,10 +21,10 @@ command("HexDump", "%!hexdump -C", {})
 command("FFunix", "e ++ff=unix", {})
 command("FFdos", "e ++ff=dos", {})
 
--- sort by markdown h1 headings
--- "@" character should not appear in a file before running
--- replace \n with "@" (except the newlines appearing before "# "),
---   sort the file, then restore newlines
+-- Sort by Markdown H1 headings
+--   "@" character should not appear in a file before running replace
+--   "\n" with "@" (except the newlines appearing before "# ").
+--   Sorts the file, then restores newlines.
 command("SortPa", function()
   vim.cmd("%s/\\n\\(# \\)\\@!/@/g")
   vim.cmd("sort")
