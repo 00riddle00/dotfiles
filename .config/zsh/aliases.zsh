@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-17 11:57:55 EEST
+# Date:   2024-07-21 18:21:14 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -222,11 +222,11 @@ alias reapache='systemctl restart httpd'
 
 # Wired
 alias net="systemctl start dhcpcd@$(basename -a /sys/class/net/enp*).service"
-alias renet="systemctl restart dhcpcd@$(basename -a /sys/class/net/wlp*).service"
+alias renet="systemctl restart dhcpcd@$(basename -a /sys/class/net/enp*).service"
 
 # Wireless
 alias wnet="sudo systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
-alias rewnet="sudo systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
+alias rewnet="sudo systemctl restart dhcpcd@$(basename -a /sys/class/net/wlp*).service"
 alias wifi.off="sudo ip link set $(basename -a /sys/class/net/wlp*) down"
 alias wifi.on="sudo ip link set $(basename -a /sys/class/net/wlp*) up"
 
