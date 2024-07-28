@@ -1,40 +1,40 @@
 [general]
-ui = ttyui
-accounts = Gmail, Posteo
+ui         = ttyui
+accounts   = Gmail, Posteo
 pythonfile = $XDG_CONFIG_HOME/mutt/offlineimap_gpg.py
 
 [Account Gmail]
-localrepository = Gmail-Local
+localrepository  = Gmail-Local
 remoterepository = Gmail-Remote
-postsynchook = notmuch new
+postsynchook     = notmuch new
 
 [Repository Gmail-Local]
-type = Maildir
+type         = Maildir
 localfolders = ~/Mail/Gmail
 
 [Repository Gmail-Remote]
-type = Gmail
-remoteuser = tomasgiedraitis@gmail.com
+type           = Gmail
+remoteuser     = tomasgiedraitis@gmail.com
 remotepasseval = get_pass('gmail')
 maxconnections = 3
-ssl = yes
-realdelete = no
-sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl            = yes
+realdelete     = no
+sslcacertfile  = /etc/ssl/certs/ca-certificates.crt
 
 [Account Posteo]
-localrepository = Posteo-Local
+localrepository  = Posteo-Local
 remoterepository = Posteo-Remote
-postsynchook = notmuch new
+postsynchook     = notmuch new
 
 [Repository Posteo-Local]
-type = Maildir
+type         = Maildir
 localfolders = ~/Mail/Posteo
 
 [Repository Posteo-Remote]
-type = IMAP
-remotehost = posteo.de
-remoteuser = tomasgiedraitis@posteo.net
+type           = IMAP
+remotehost     = posteo.de
+remoteuser     = tomasgiedraitis@posteo.net
 remotepasseval = get_pass('posteo')
-ssl = yes
-realdelete = no
-sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl            = yes
+realdelete     = no
+sslcacertfile  = /etc/ssl/certs/ca-certificates.crt
