@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 20:44:22 EEST
+# Date:   2024-07-28 22:16:06 EEST
 # Path:   ~/.config/irssi/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -234,7 +234,7 @@ settings = {
   "fe-text"        = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     autolog        = "yes";
-    autolog_path   = "~/.local/state/irssi/logs/$tag/%Y-%m-%d/$0.log";
+    autolog_path   = "$XDG_STATE_HOME/irssi/logs/$tag/%Y-%m-%d/$0.log";
     theme          = "h3rbz";
   };
 };

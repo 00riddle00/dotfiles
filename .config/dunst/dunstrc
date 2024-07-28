@@ -1,7 +1,7 @@
 # vim:ft=cfg
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 20:28:12 EEST
+# Date:   2024-07-28 22:07:47 EEST
 # Path:   ~/.config/dunst/dunstrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -78,7 +78,7 @@
     ### Misc/Advanced ###
 
     dmenu   = /usr/bin/dmenu -p dunst:
-    browser = /usr/bin/chrome -new-tab
+    browser = /usr/bin/brave -new-tab
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -112,19 +112,9 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
 
-
-    #set $arch_blue         #1793d1
-    #set $pretty_blue       #268bd2
-    #set $another_blue      #47afdf
-    #set $light_blue        #79bac1
-    #set $bar_bg            #002b36
-    #set $pretty_light_blue #00afd7
-    #set $aquamarine        #06989a
-    #set $sea               #bdced3
-
-    background  = "#080c0e"  # urxvt black
-    foreground  = "#4a938f"  # urxvt cyan
-    frame_color = "#1793d1"  # arch blue
+    background  = "#080c0e"
+    foreground  = "#4a938f"
+    frame_color = "#1793d1"
 
     #background = "#282828"
     #foreground = "#928374"
@@ -133,25 +123,25 @@
     #icon       = /path/to/icon
 
 [urgency_normal]
-    background  = "#080c0e"  # urxvt black
-    foreground  = "#1793d1"  # arch blue
-    frame_color = "#1793d1"  # arch blue
+    background  = "#080c0e"
+    foreground  = "#1793d1"
+    frame_color = "#1793d1"
     timeout     = 5
 
 [urgency_critical]
-    background  = "#080c0e"  # urxvt black
-    foreground  = "#cc2421"  # red
-    frame_color = "#cc2421"  # red
+    background  = "#080c0e"
+    foreground  = "#cc2421"
+    frame_color = "#cc2421"
     timeout     = 0
 
 [sound_beep]
 summary = "beep"
-script  = ~/.local/bin/sounds/beep
+script  = $BIN/bin/sounds/beep
 
 [sound_email]
 summary = "email"
-script  = ~/.local/bin/sounds/email-synced
+script  = $BIN/sounds/email-synced
 
 [sound_update]
 summary = "update"
-script  = ~/.local/bin/sounds/arch-updated
+script  = $BIN/sounds/arch-updated

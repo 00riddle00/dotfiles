@@ -1,13 +1,13 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-07-28 20:28:05 EEST
+! Date:   2024-07-28 21:58:30 EEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
 
-! ----------------- Sxiv ----------------- !
-Sxiv.foreground: #1167b1
-Sxiv.background: #222222
+! ----------------- Nsxiv ----------------- !
+Nsxiv.window.foreground: #1167b1
+Nsxiv.window.background: #222222
 
 ! ----------------- Urxvt ---------------- !
 #include "urxvt-colors/dark"
@@ -30,7 +30,7 @@ URxvt.geometry:        110x50
 URxvt.shading:         0
 URxvt.letterSpace:     0
 URxvt.lineSpace:       1
-URxvt.iconFile:        /home/riddle/Dropbox/candy/icons/terminal/term_green_fancy.svg
+URxvt.iconFile:        $CANDY/icons/terminal/term_green_fancy.svg
 ! Disable ISO 14755 unicode input so we can use Ctrl+Shift bindings
 URxvt.iso14755:        false
 URxvt.iso14755_52:     false
