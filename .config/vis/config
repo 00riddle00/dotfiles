@@ -1,16 +1,17 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-14 20:37:57 EEST
+# Date:   2024-07-28 17:54:22 EEST
 # Path:   ~/.config/vis/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-# Refresh rate of the visualizers. A really high refresh rate may cause screen tearing.
+# Refresh rate of the visualizers. A really high refresh rate may cause screen
+# tearing. 
 # Defaults to 20.
 visualizer.fps=20
 
-# Configures what character the spectrum visualizer will use. Specifying a space means
-# the background will be colored instead of the character.
+# Configures what character the spectrum visualizer will use. Specifying a
+# space means the background will be colored instead of the character.
 # Defaults to " ".
 #visualizer.spectrum.character=-
 
@@ -22,8 +23,8 @@ visualizer.spectrum.bar.width=2
 # Defaults to "mpd".
 audio.sources=pulse
 
-# Configures what character the ellipse visualizer will use. Specifying a space means
-# the background will be colored instead of the character.
+# Configures what character the ellipse visualizer will use. Specifying a space
+# means the background will be colored instead of the character.
 # Defaults to " ".
 visualizer.ellipse.character=@
 
@@ -34,7 +35,7 @@ visualizer.ellipse.radius=1
 # Turns off overriding the user's terminal colors.
 colors.override.terminal=false
 
-# Specifies the color scheme. The color scheme must be in ~/.config/vis/colors/
-# directory.
+# Specifies the color scheme. 
+# The color scheme must be in ~/.config/vis/colors/ directory.
 # Defaults to "colors".
 colors.scheme=blue

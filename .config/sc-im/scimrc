@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-18 16:26:13 EEST
+# Date:   2024-07-28 17:52:20 EEST
 # Path:   ~/.config/sc-im/scimrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -21,9 +21,9 @@ nnoremap "^"  "gg"
 nnoremap "G"  "#"
 nnoremap "#"  "G"
 
-color "type=INPUT fg=WHITE bg=DEFAULT_COLOR"
-color "type=NORMAL fg=WHITE bg=WHITE"
-color "type=WELCOME fg=WHITE bg=DEFAULT_COLOR"
-color "type=HEADINGS fg=DEFAULT_COLOR bg=BLACK bold=0"
-color "type=CELL_SELECTION fg=WHITE bg=GREEN bold=1"
-color "type=MODE fg=WHITE bg=DEFAULT_COLOR"
+color "type=INPUT          fg=WHITE         bg=DEFAULT_COLOR"
+color "type=NORMAL         fg=WHITE         bg=WHITE"
+color "type=WELCOME        fg=WHITE         bg=DEFAULT_COLOR"
+color "type=HEADINGS       fg=DEFAULT_COLOR bg=BLACK bold=0"
+color "type=CELL_SELECTION fg=WHITE         bg=GREEN bold=1"
+color "type=MODE           fg=WHITE         bg=DEFAULT_COLOR"
