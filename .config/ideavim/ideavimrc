@@ -1,153 +1,139 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-06-17 12:35:37 EEST
+" Date:   2024-07-28 12:26:27 EEST
 " Path:   ~/.config/ideavim/ideavimrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
 
-"=========================================
-" [KEY HANDLERS]
-"=========================================
+"-----------------------------------------------------------
+" Key handlers
+"-----------------------------------------------------------
 
-sethandler <C-2> a:ide
+sethandler <C-2>   a:ide
 sethandler <C-S-2> a:ide
-sethandler <C-6> a:ide
+sethandler <C-6>   a:ide
 sethandler <C-S-6> a:ide
-sethandler <C-A> a:ide
-sethandler <C-B> a:ide
-sethandler <C-C> a:ide
-sethandler <C-D> a:vim
-sethandler <C-E> a:ide
-sethandler <C-F> a:ide
-sethandler <C-G> a:ide
-sethandler <C-H> a:ide
-sethandler <C-I> a:vim
-sethandler <C-L> a:ide
-sethandler <C-M> a:vim
-sethandler <C-N> a:ide
-sethandler <C-O> a:vim
-sethandler <C-P> a:ide
-sethandler <C-Q> a:ide
-sethandler <C-R> a:vim
-sethandler <C-S> a:ide
-sethandler <C-T> a:ide
-sethandler <C-U> a:ide
-sethandler <C-V> a:ide
-sethandler <C-W> a:vim
-sethandler <C-X> a:ide
-sethandler <C-Y> a:ide
-sethandler <C-[> a:ide
-sethandler <C-\> a:ide
-sethandler <C-]> a:ide
+sethandler <C-A>   a:ide
+sethandler <C-B>   a:ide
+sethandler <C-C>   a:ide
+sethandler <C-D>   a:vim
+sethandler <C-E>   a:ide
+sethandler <C-F>   a:ide
+sethandler <C-G>   a:ide
+sethandler <C-H>   a:ide
+sethandler <C-I>   a:vim
+sethandler <C-L>   a:ide
+sethandler <C-M>   a:vim
+sethandler <C-N>   a:ide
+sethandler <C-O>   a:vim
+sethandler <C-P>   a:ide
+sethandler <C-Q>   a:ide
+sethandler <C-R>   a:vim
+sethandler <C-S>   a:ide
+sethandler <C-T>   a:ide
+sethandler <C-U>   a:ide
+sethandler <C-V>   a:ide
+sethandler <C-W>   a:vim
+sethandler <C-X>   a:ide
+sethandler <C-Y>   a:ide
+sethandler <C-[>   a:ide
+sethandler <C-\>   a:ide
+sethandler <C-]>   a:ide
 
-"=========================================
-" [SETTINGS] Appearance
-"=========================================
+"---------------------------------------------------------------
+" Settings
+"---------------------------------------------------------------
 
-" Show (partial) command in the status bar
+"-----------------------------------
+" Appearance
+"-----------------------------------
+
+" Show (partial) command in the status bar, including the count of selected
+" lines or characters.
 set showcmd
 " Show line numbers
 set number
 " Set relative line numbering
 set relativenumber
 
-"=========================================
-" [SETTINGS] Cursor movement
-"=========================================
+"-----------------------------------
+" Cursor movement
+"-----------------------------------
 
-" When "on" some commands move the cursor to the first non-blank of the line.
-" When "off" the cursor is kept in the same column (if possible).
+" Cursor movement behaviour
 set nostartofline
 " Jump 5 lines when running out of the screen
 set scrolljump=5
-" Indicate "running out of the screen" when 3 lines before end of the screen
+" Indicate "running out of the screen" when 4 lines before end of the screen
 set scrolloff=4
 " Scroll horizontally 5 chars when running out of the screen
 set sidescroll=5
 " Indicate "running out of the screen" when 8 chars before end of the screen
 set sidescrolloff=8
 
-"=========================================
-" [SETTINGS] Clipboard
-"=========================================
+"-----------------------------------
+" Search
+"-----------------------------------
 
-" Use the clipboard register '*' (primary clipboard) for all yank, delete,
-" change and put operations which would normally go to the unnamed register.
-"
-"set clipboard+=unnamed
-
-" Use the clipboard register '+' (secondary clipboard) for all yank, delete,
-" change and put operations which would normally go to the unnamed register.
-"
-"set clipboard+=unnamedplus
-
-"=========================================
-" [SETTINGS] Search
-"=========================================
-
-" search ignoring case
+" Search ignoring case
 set ignorecase
-" incremental search
+" Incremental search
 set incsearch
-" do not highlight the search
+" Do not highlight the search
 set nohlsearch
-" Override the 'ignorecase' option if the search pattern contains upper case characters.
+" Override the 'ignorecase' option if the search pattern contains upper case
+" characters.
 set smartcase
 
-"===============================================================
-"  MAPPINGS
-"===============================================================
+"-----------------------------------------------------------
+" Mappings
+"-----------------------------------------------------------
+
+"-----------------------------------
+" General
+"-----------------------------------
 
 let mapleader = '\'
 
-nmap     qq           :q<CR>
-nmap     ss           :wq<CR>
-nmap     <leader>h    :set hlsearch!<CR>
-nmap     <leader>n    :set relativenumber!<CR>
-nmap     <leader>s    :split<cr>
-nmap     <leader>v    :vsplit<cr>
+nmap ss        :wq<CR>
+nmap qq        :q<CR>
+nmap <leader>h :set hlsearch!<CR>
+nmap <leader>n :set relativenumber!<CR>
+nmap <leader>s :split<CR>
+nmap <leader>v :vsplit<CR>
 
 " Move between buffers
 nnoremap <leader>] :bnext<CR>
 nnoremap <leader>[ :bprevious<CR>
 
 " Treat long lines as break lines
-nmap     j            gj
-nmap     k            gk
+nmap j gj
+nmap k gk
 
-" Disable key for entering Ex-mode
-nmap     Q            <nop>
-
-"=========================================
-" [MAPPINGS] In-buffer navigation
-"=========================================
+"-----------------------------------
+" In-buffer navigation
+"-----------------------------------
 
 " Scroll half screen to left and right vertically
-noremap      zh           zH
-noremap      zl           zL
+noremap zh zH
+noremap zl zL
 
 " Scroll half screen to left and right vertically
-noremap      zz           z-
+noremap zz z-
 
-"=========================================
-" [MAPPINGS] Clipboard
-"=========================================
+"-----------------------------------
+" Clipboard
+"-----------------------------------
 
 " Yank into the system secondary clipboard register
-"
-" For this to work,
-" +xterm_clipboard must be enabled (see `vim --version | grep xterm_clipboard`)
-" Easiest way for that is to just install gvim instead of vim.
-vmap <C-c> "+y
-nnoremap Y "+y
-vnoremap Y "+y
+vnoremap Y  "+y
 nnoremap YY "+yy
 
-"=========================================
-" [MAPPINGS] Project/Language specific
-"=========================================
+"-----------------------------------
+" Project/Language specific
+"-----------------------------------
 
-" [Python specific] Quick search for python class and def statments.
-nmap    c/          /\<class
-nmap    m/          /\<def
+" [Python] Quick search for python class and def statments.
+nmap c/ /\<class
+nmap m/ /\<def
