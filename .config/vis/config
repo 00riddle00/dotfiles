@@ -1,12 +1,12 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 17:54:22 EEST
+# Date:   2024-07-28 21:51:40 EEST
 # Path:   ~/.config/vis/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 # Refresh rate of the visualizers. A really high refresh rate may cause screen
-# tearing. 
+# tearing.
 # Defaults to 20.
 visualizer.fps=20
 
@@ -35,7 +35,7 @@ visualizer.ellipse.radius=1
 # Turns off overriding the user's terminal colors.
 colors.override.terminal=false
 
-# Specifies the color scheme. 
+# Specifies the color scheme.
 # The color scheme must be in ~/.config/vis/colors/ directory.
 # Defaults to "colors".
 colors.scheme=blue

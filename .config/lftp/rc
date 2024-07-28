@@ -1,54 +1,54 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-12 15:13:34 EEST
+# Date:   2024-07-28 20:29:32 EEST
 # Path:   ~/.config/lftp/rc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-# aliases
-alias c !clear
-alias ls cls -lh
-alias .. cd ..
-alias q queue
-alias jobs jobs -v
+# Aliases
+alias c      !clear
+alias ls     cls -lh
+alias ..     cd ..
+alias q      queue
+alias jobs   jobs -v
 alias mirror mirror -v
-alias vt !verify-torrent
-alias tn !tvnamer
+alias vt     !verify-torrent
+alias tn     !tvnamer
 
 set ssl:check-hostname no
 
-# only use ssl
+# Only use ssl
 set ftp:ssl-force yes
 
-# use ssl for data transfers
+# Use ssl for data transfers
 set ftp:ssl-protect-data yes
 
-# use ssl for data transfer b/w two ftp servers in FXP mode
+# Use ssl for data transfer b/w two ftp servers in FXP mode
 set ftp:ssl-protect-fxp yes
 
-# use ssl for file list transfers
+# Use ssl for file list transfers
 set ftp:ssl-protect-list yes
 
-# verify ssl certificates
+# Verify ssl certificates
 set ssl:verify-certificate yes
 
-# don't log or save history
+# Don't log or save history
 set cmd:save-cwd-history no
 set cmd:save-rl-history no
 
-# don't overwrite existing files
+# Don't overwrite existing files
 set xfer:clobber no
 
-# error when disk is full
+# Error when disk is full
 set xfer:disk-full-fatal yes
 
-# show full (not terse) eta
+# Show full (not terse) eta
 set xfer:eta-terse no
 
-# verify file integrity
+# Verify file integrity
 set xfer:verify yes
 
-# parallel downloading
+# Parallel downloading
 set pget:default-n 4
 set pget:save-status 3s
 set cmd:queue-parallel 4
@@ -58,5 +58,6 @@ set mirror:parallel-transfer-count 4
 set at-exit "set > ~/.config/lftp/settings"
 source ~/.config/lftp/settings
 
-## colour prompt
-set prompt "\[\033[36m\]\h\[\033[31m\]:ftp\[\033[32m\] [\[\033[32m\]\w\[\033[32m\]]: \[\033[0m\]"
+## Colour prompt
+set prompt "\[\033[36m\]\h\[\033[31m\]:ftp\[\033[32m\] \
+[\[\033[32m\]\w\[\033[32m\]]: \[\033[0m\]"

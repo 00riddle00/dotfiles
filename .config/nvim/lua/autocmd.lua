@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-04-22 02:17:47 EEST
+-- Date:   2024-07-28 18:19:18 EEST
 -- Path:   ~/.config/nvim/lua/autocmd.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -123,10 +123,17 @@ autocmd("FileType", {
     vim.opt.textwidth = 100
     vim.opt.colorcolumn = "-1"
     vim.cmd("highlight ColorColumn cterm=NONE ctermbg=black")
-    vim.api.nvim_buf_set_keymap(0, "n", "<space><space>", "/(<>)<CR>", {noremap = true})
-    vim.api.nvim_buf_set_keymap(0, "i", ";c", "\\ctext[RGB]{0,255,255}{} (<>)<Esc>T{i", {noremap = true})
-    vim.api.nvim_buf_set_keymap(0, "i", ";it", "\\textit{} (<>)<Esc>T{i", {noremap = true})
-    vim.api.nvim_buf_set_keymap(0, "i", ';"', "„“ (<>)<Esc>T„i", {noremap = true})
+    vim.api.nvim_buf_set_keymap(0, "n", "<space><space>", "/(<>)<CR>",
+      {noremap = true})
+    vim.api.nvim_buf_set_keymap(0, "i", ";c",
+      "\\ctext[RGB]{0,255,255}{} (<>)<Esc>T{i",
+      {noremap = true})
+    vim.api.nvim_buf_set_keymap(0, "i", ";it",
+      "\\textit{} (<>)<Esc>T{i",
+      {noremap = true})
+    vim.api.nvim_buf_set_keymap(0, "i", ';"',
+      "„“ (<>)<Esc>T„i",
+      {noremap = true})
   end,
   group = general,
 })

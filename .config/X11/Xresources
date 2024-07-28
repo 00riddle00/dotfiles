@@ -1,6 +1,6 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-04-16 02:39:11 EEST
+! Date:   2024-07-28 20:28:05 EEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
@@ -12,89 +12,94 @@ Sxiv.background: #222222
 ! ----------------- Urxvt ---------------- !
 #include "urxvt-colors/dark"
 
-URxvt.buffered: true
-URxvt.cursorColor: #5E468C
+URxvt.buffered:        true
+URxvt.cursorColor:     #5E468C
 URxvt.cursorUnderline: false
-URxvt.cursorBlink: true
-URxvt.reverseVideo: false
-URxvt.depth: 32
-URxvt.refreshRate: 0
-URxvt.scrollBar: false
+URxvt.cursorBlink:     true
+URxvt.reverseVideo:    false
+URxvt.depth:           32
+URxvt.refreshRate:     0
+URxvt.scrollBar:       false
 URxvt.scrollBar_right: false
-URxvt.geometry: 110x50
-!URxvt.borderLess: true
-!URxvt.borderWidth: 0
-!URxvt.internalBorder: 0
-!URxvt.externalBorder: 0
-!URxvt.transparent: 0
-URxvt.shading: 0
-URxvt.letterSpace: 0
-URxvt.lineSpace: 1
-URxvt.iconFile: /home/riddle/Dropbox/candy/icons/terminal/term_green_2.svg
+URxvt.geometry:        110x50
+!URxvt.borderLess:      true
+!URxvt.borderWidth:     0
+!URxvt.internalBorder:  0
+!URxvt.externalBorder:  0
+!URxvt.transparent:     0
+URxvt.shading:         0
+URxvt.letterSpace:     0
+URxvt.lineSpace:       1
+URxvt.iconFile:        /home/riddle/Dropbox/candy/icons/terminal/term_green_fancy.svg
 ! Disable ISO 14755 unicode input so we can use Ctrl+Shift bindings
-URxvt.iso14755: false
-URxvt.iso14755_52: false
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
 
-#define FONT1  JetBrains Mono:size=11
-#define FONT2  JetBrainsMono Nerd Font:size=11
-#define FONT3  Source Code Pro:pixelsize=11
-#define FONT4  DejaVu Sans Mono:size=11
-#define FONT5  DejaVuSansM Nerd Font:size=11
-#define FONT6  Noto Color Emoji:size=11
+#define FONT1  JetBrains Mono:          size=11
+#define FONT2  JetBrainsMono Nerd Font: size=11
+#define FONT3  Source Code Pro:         pixelsize=11
+#define FONT4  DejaVu Sans Mono:        size=11
+#define FONT5  DejaVuSansM Nerd Font:   size=11
+#define FONT6  Noto Color Emoji:        size=11
 
 URxvt.font: xft:FONT1, \
             xft:FONT2, \
             xft:FONT6
 
 ! --  Extensions -- !
-URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,keyboard-select,resize-font
+URxvt.perl-ext-common: \
+  eval, \
+  matcher, \
+  selection, \
+  selection-to-clipboard, \
+  keyboard-select,resize-font
 
-! copy and paste
-!URxvt.keysym.M-c:      eval:selection_to_clipboard
-URxvt.keysym.M-v:      eval:paste_clipboard
-! keyboard-select
-!  activate selecting text
+! Copy and paste
+!URxvt.keysym.M-c:                eval:selection_to_clipboard
+URxvt.keysym.M-v:                eval:paste_clipboard
+! Keyboard-select
+!  Activate selecting text
 !  then use vim commands ('v' for visual mode)
 !  after pressing Enter, the selection is saved in clipboard
-URxvt.keysym.M-i:      keyboard-select:activate
-URxvt.keysym.M-s:      keyboard-select:search
-URxvt.keyboard-select.clipboard:    true
+URxvt.keysym.M-i:                keyboard-select:activate
+URxvt.keysym.M-s:                keyboard-select:search
+URxvt.keyboard-select.clipboard: true
 ! url open with matcher
-URxvt.url-launcher:                 /usr/bin/brave
+URxvt.url-launcher:              /usr/bin/brave
 ! ^----(or use /usr/bin/xdg-open)
-URxvt.keysym.M-u:                   matcher:select
-URxvt.matcher.button:               1
-URxvt.matcher.rend.0:               Uline Bold fg4
-URxvt.colorUL:                      #4682B4
+URxvt.keysym.M-u:                matcher:select
+URxvt.matcher.button:            1
+URxvt.matcher.rend.0:            Uline Bold fg4
+URxvt.colorUL:                   #4682B4
 ! resize-font
-URxvt.resize-font.step:  2
+URxvt.resize-font.step:          2
 
 ! ----------------- Xterm ---------------- !
-xterm*termName: xterm-256color
-xterm*locale: true
-xterm*cursorColor: #1792d0
-xterm*toolBar: false
-xterm*scrollBar: false
-xterm*rightScrollBar: false
-xterm*faceName: anonymous pro:bold:size=8
-xterm*allowBoldFonts: true
-xterm*dynamiccolors: true
+xterm*termName:           xterm-256color
+xterm*locale:             true
+xterm*cursorColor:        #1792d0
+xterm*toolBar:            false
+xterm*scrollBar:          false
+xterm*rightScrollBar:     false
+xterm*faceName:           anonymous pro:bold:size=8
+xterm*allowBoldFonts:     true
+xterm*dynamiccolors:      true
 xterm*utf8:               2
 xterm*geometry:           100x50
 xterm*visualBell:         off
 xterm*highlightSelection: true
-xterm*scrollTtyOutput: true
+xterm*scrollTtyOutput:    true
 
-xterm*color0: #000000
-xterm*color1: #CC0000
-xterm*color2: #4E9A06
-xterm*color3: #C4A000
-xterm*color4: #3465A4
-xterm*color5: #75507B
-xterm*color6: #06989A
-xterm*color7: #D3D7CF
-xterm*color8: #555753
-xterm*color9: #EF2929
+xterm*color0:  #000000
+xterm*color1:  #CC0000
+xterm*color2:  #4E9A06
+xterm*color3:  #C4A000
+xterm*color4:  #3465A4
+xterm*color5:  #75507B
+xterm*color6:  #06989A
+xterm*color7:  #D3D7CF
+xterm*color8:  #555753
+xterm*color9:  #EF2929
 xterm*color10: #8AE234
 xterm*color11: #FCE94F
 xterm*color12: #729FCF
@@ -104,40 +109,48 @@ xterm*color15: #EEEEEC
 
 ! ------------- Xscreensaver ------------- !
 
-! font settings
-xscreensaver-auth.?.Dialog.headingFont:  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.bodyFont:     -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.labelFont:    -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.unameFont:    -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.buttonFont:   -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.dateFont:     -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
-xscreensaver-auth.?.passwd.passwdFont:   -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+! Font settings
+xscreensaver-auth.?.Dialog.headingFont: \
+  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.bodyFont: \
+  -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.labelFont: \
+  -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.unameFont: \
+  -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.buttonFont: \
+  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.dateFont: \
+  -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
+xscreensaver-auth.?.passwd.passwdFont: \
+  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
 
-! general dialog box (affects main hostname, username, password text)
-xscreensaver-auth.?.Dialog.foreground:         #1792d0
-xscreensaver-auth.?.Dialog.background:         #202020
-xscreensaver-auth.?.Dialog.topShadowColor:     #000000
-xscreensaver-auth.?.Dialog.bottomShadowColor:  #000000
-xscreensaver-auth.?.Dialog.Button.foreground:  #1792d0
-xscreensaver-auth.?.Dialog.Button.background:  #000000
+! General dialog box (affects main hostname, username, password text)
+xscreensaver-auth.?.Dialog.foreground:        #1792d0
+xscreensaver-auth.?.Dialog.background:        #202020
+xscreensaver-auth.?.Dialog.topShadowColor:    #000000
+xscreensaver-auth.?.Dialog.bottomShadowColor: #000000
+xscreensaver-auth.?.Dialog.Button.foreground: #1792d0
+xscreensaver-auth.?.Dialog.Button.background: #000000
 
-! username/password input box and date text colour
-xscreensaver-auth.?.Dialog.text.foreground:      #7262b3
-xscreensaver-auth.?.Dialog.text.background:      #002626
-xscreensaver-auth.?.Dialog.internalBorderWidth:  45
-xscreensaver-auth.?.Dialog.borderWidth:          0
-xscreensaver-auth.?.Dialog.shadowThickness:      4
+! Username/password input box and date text colour
+xscreensaver-auth.?.Dialog.text.foreground:     #7262b3
+xscreensaver-auth.?.Dialog.text.background:     #002626
+xscreensaver-auth.?.Dialog.internalBorderWidth: 45
+xscreensaver-auth.?.Dialog.borderWidth:         0
+xscreensaver-auth.?.Dialog.shadowThickness:     4
 
-! timeout bar (background is actually determined by Dialog.text.background)
-xscreensaver-auth.?.passwd.thermometer.foreground:  #1792d0
-xscreensaver-auth.?.passwd.thermometer.background:  #7262b3
-xscreensaver-auth.?.passwd.thermometer.width:       6
+! Timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver-auth.?.passwd.thermometer.foreground: #1792d0
+xscreensaver-auth.?.passwd.thermometer.background: #7262b3
+xscreensaver-auth.?.passwd.thermometer.width:      6
 
-! datestamp format--see the strftime(3) manual page for details
-xscreensaver-auth.?.dateFormat:  %Y, %b %d, %a, %R
+! Datestamp format--see the strftime(3) manual page for details
+xscreensaver-auth.?.dateFormat: %Y, %b %d, %a, %R
 
 ! -------------- Xft (Fonts) ------------- !
-! dpi default 96, recommended values 120 [125%], 144 [150%], 168 [175%], 192 [200%]
+! DPI default 96, recommended values:
+!   120 [125%], 144 [150%], 168 [175%], 192 [200%]
 Xft.dpi:       96
 Xft.rgba:      rgb
 Xft.lcdfilter: lcddefault

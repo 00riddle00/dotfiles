@@ -1,16 +1,16 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-28 13:50:38 EEST
+-- Date:   2024-07-28 18:26:00 EEST
 -- Path:   ~/.config/nvim/lua/options.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
 -- Meta accessors for vim options {{{
-    local o = vim.opt
---  local bo = vim.bo
---  local wo = vim.wo
---  local fn = vim.fn
+  local o = vim.opt
+  --local bo = vim.bo
+  --local wo = vim.wo
+  --local fn = vim.fn
 -- }}}
 
 -- In Arch linux, Neovim reads the /etc/xdg/nvim/sysinit.vim,
@@ -21,7 +21,7 @@
 -- Netrw
 -------------------------------------------
 -- disable netrw
-vim.g.loaded_netrw = 1
+vim.g.loaded_netrw       = 1
 vim.g.loaded_netrwPlugin = 1
 
 -------------------------------------------
@@ -29,7 +29,7 @@ vim.g.loaded_netrwPlugin = 1
 -------------------------------------------
 
 vim.cmd [[colorscheme $VIMCOLOR]]
-o.background = "dark"
+o.background    = "dark"
 o.termguicolors = false
 
 -------------------------------------------
@@ -47,7 +47,7 @@ o.number = true
 o.laststatus = 2
 -- Set relative line numbering
 o.relativenumber = true
--- show the line number on the bar
+-- Show the line number on the bar
 o.ruler = true
 -- Vertical separator style, and do not show the tildes at the end of buffer
 o.fillchars = { vert = "|", eob = " " }
@@ -58,7 +58,8 @@ local stl = {
     " %{&fileencoding?&fileencoding:&encoding}%=",
     " %c", " [%p%%: %l/%L]"
 }
--- ^---- Kudos to jasonwryan (Jason Ryan) (https://jasonwryan.com) for the statusline!
+-- ^---- Kudos to jasonwryan (Jason Ryan) (https://jasonwryan.com) for the
+--       statusline!
 o.statusline = table.concat(stl)
 
 -------------------------------------------
@@ -85,7 +86,7 @@ o.spelllang = { "en_gb", "lt" }
 -- Text wrapping
 o.textwidth = 199 -- temporary setting
 -- Auto/smart indent
-o.autoindent = true
+o.autoindent  = true
 o.smartindent = true
 
 -------------------------------------------
@@ -123,7 +124,7 @@ o.hidden = true
 -- Windows
 -------------------------------------------
 
--- open the new window below the current one for horizontal splits,
+-- Open the new window below the current one for horizontal splits,
 -- and to the right of the current one for vertical splits.
 o.splitright = true
 o.splitbelow = true
@@ -138,11 +139,11 @@ o.clipboard = "unnamed"
 -- Search
 -------------------------------------------
 
--- search ignoring case
+-- Search ignoring case
 o.ignorecase = true
--- incremental search
+-- Incremental search
 o.incsearch = true
--- do not highlight the search
+-- Do not highlight the search
 o.hlsearch = false
 -- Override the "ignorecase" option if the search pattern contains upper case
 -- characters.
@@ -167,7 +168,7 @@ o.complete = ".,w,b,u"
 -- Tags
 -------------------------------------------
 
--- set tags location
+-- Set tags location
 o.tags = "./tags,tags;$HOME"
 
 -------------------------------------------
@@ -193,7 +194,7 @@ o.swapfile = false
 -- shiftwidth governs indentation via >>, <<
 o.shiftwidth = 4
 
--- show spaces as "."
+-- Show spaces as "."
 -- enable with ":set list"
 o.listchars:append("space:.")
 
@@ -211,6 +212,6 @@ o.tabstop = 4
 -- a <Tab> or using <BS>.
 o.softtabstop = 4
 
--- show tabs as "|___"
+-- Show tabs as "|___"
 -- enable with ":set list"
 o.listchars:append("tab:|_,extends:>,precedes:<,nbsp:+")

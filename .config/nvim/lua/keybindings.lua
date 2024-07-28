@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-28 13:50:32 EEST
+-- Date:   2024-07-28 18:23:04 EEST
 -- Path:   ~/.config/nvim/lua/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -12,9 +12,9 @@ local nmap = Util.nmap
 local vmap = Util.vmap
 local imap = Util.imap
 local xmap = Util.xmap
-local map = vim.keymap.set
+local map  = vim.keymap.set
 
-local noremap = Util.noremap
+local noremap  = Util.noremap
 local inoremap = Util.inoremap
 local nnoremap = Util.nnoremap
 local vnoremap = Util.vnoremap
@@ -40,7 +40,7 @@ nmap("<leader>s", [[:split<CR>]])
 nmap("<leader>v", [[:vsplit<CR>]])
 nmap("<leader>e", [[:edit<CR>]])
 nmap("<leader>u", [[:!urlview %<CR>]])
---inoremap("jk", [[<esc>]]) -- "<C-[>" does the same
+--inoremap("jk",    [[<esc>]]) -- "<C-[>" does the same
 
 -- Move between buffers
 nnoremap("<leader>]", [[:bnext<CR>]])
@@ -57,26 +57,26 @@ nmap("Q", "")
 nmap("<F1>", "")
 imap("<F1>", "")
 
--- set textwidth to 79 characters
+-- Set textwidth to 79 characters
 nmap("<leader>8", [[:set textwidth=79<CR>]])
 
--- set textwidth to 88 characters
+-- Set textwidth to 88 characters
 nmap("<leader>0", [[:set textwidth=88<CR>]])
 
--- set textwidth to 100 characters
+-- Set textwidth to 100 characters
 nmap("<leader>1", [[:set textwidth=100<CR>]])
 
--- toggle showing all white spaces as characters
+-- Toggle showing all white spaces as characters
 nmap("<leader>l", [[:set list!<CR>]])
 
--- replace {more than one blank lines} with {exactly one blank line}
+-- Replace {more than one blank lines} with {exactly one blank line}
 --nmap("<leader>l", [[:%s/\(\n\n\)\n\+/\1/g<CR> <C-o>]])
 --
 -- :%s#\s\+$##e<CR><C-o>
 -- :%s/\(\n\n\)\n\+/\1/e<CR><C-o>
 -- :%s#\($\n\s*\)\+\%$##e<CR><C-o>
 --
--- explanation:
+-- Explanation:
 -- $\n - Match a new line (end-of-line character followed by a carriage return).
 -- \s* - Allow any amount of whitespace on this new line
 -- \+  - Allow any number of occurrences of this group (one or more).
@@ -86,7 +86,7 @@ nmap("<leader>l", [[:set list!<CR>]])
 -- Emacs-like insert mode
 -------------------------------------------
 
--- motion
+-- Motion
 inoremap("<C-f>", [[<Right>]])
 inoremap("<C-b>", [[<Left>]])
 
@@ -99,7 +99,7 @@ inoremap("<C-e>", [[<End>]])
 inoremap("<C-p>", [[<Up>]])
 inoremap("<C-n>", [[<Down>]])
 
--- kill
+-- Kill
 inoremap("<C-d>", [[<Del>]])
 -- <C-h> - already works.
 
@@ -111,16 +111,16 @@ inoremap("<C-k>", [[<Esc>lDa]])
 
 inoremap("<C-g>", [[<Esc>cc]])
 
--- yank
+-- Yank
 inoremap("<C-y>", [[<C-r>"]])
 
--- undo (vim registers <C-/> as <C-_>)
+-- Undo (vim registers <C-/> as <C-_>)
 inoremap("<C-_>", [[<C-O>u]])
 
--- transpose chars
+-- Transpose chars
 --inoremap("<C-t>", [[<ESC>hxpa]])
 
--- transpose words (very fragile)
+-- Transpose words (very fragile)
 inoremap("<C-t>", [[<ESC>BB"xdiWdWep"xpa]])
 
 -------------------------------------------
@@ -136,7 +136,8 @@ inoremap("<C-t>", [[<ESC>BB"xdiWdWep"xpa]])
 -- <Down> - next command in history
 
 -- <C-r>{register} - insert the contents of a numbered or named register
--- <C-r>" - insert the unnamed register, containing the text of the last delete or yank
+-- <C-r>" - insert the unnamed register, containing the text of the last delete
+--          or yank
 -- <C-r>* - insert the primary clipboard contents (X11: primary selection)
 -- <C-r>+ - insert the secondary clipboard contents
 -- <C-r>/ - insert the last search pattern
@@ -149,7 +150,8 @@ inoremap("<C-t>", [[<ESC>BB"xdiWdWep"xpa]])
 -- <C-f> — open with a command history from command mode
 
 -- <C-w> - delete the |word| before the cursor.
--- <C-u> - remove all characters between the cursor position and the beginning of the line
+-- <C-u> - remove all characters between the cursor position and the beginning
+--         of the line
 -- <C-c> - close command line window (if open) or return to normal mode
 
 -------------------------------------------
@@ -207,14 +209,16 @@ noremap("zz", [[z-]])
 -------------------------------------------
 
 -- Yank into the system secondary clipboard register
-vmap("<C-c>", [["+y]])
-vnoremap("Y", [["+y]])
-nnoremap("YY", [["+yy]])
+vmap(    "<C-c>",  [["+y]])
+vnoremap("Y",      [["+y]])
+nnoremap("YY",     [["+yy]])
 
--- Yank into the system secondary clipboard register and delete the visually selected text.
+-- Yank into the system secondary clipboard register and delete the visually
+-- selected text.
 --vmap("<C-x>", [["+c]])
 
--- Paste from the system secondary clipboard register and enter insert mode right after.
+-- Paste from the system secondary clipboard register and enter insert mode
+-- right after.
 --nmap("<C-v>", [[<ESC>"+pa]])
 
 -- Paste from the system primary clipboard register (X11: primary selection)
@@ -241,15 +245,19 @@ nmap("<leader>tt", [[:vert term zsh<CR>]])
 -- Project/Language specific
 -------------------------------------------
 
--- [Python specific] Quick search for python class and def statments.
+-- [Python] Quick search for python class and def statments.
 nmap("c/", [[/\<class ]])
 nmap("m/", [[/\<def ]])
 
--- [C specific] C playground
+-- [C] C playground
 --nmap("<F8>", [[:w \| !make rebuild && ./demo <CR>]])
 --nmap("<F8>", [[:w \| :make rebuild <CR> \| :copen 30 <CR>]])
---nmap("<F8>", [[:w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> :tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>]])
---nmap("<F8>", [[:w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee ~/.config/vim/output<CR>:split ~/.config/vim/output<CR>:redraw!<CR>]])
+
+--nmap("<F8>", [[:w<CR>:silent !make rebuild <CR>:silent !./demo > .tmp.xyz<CR> \
+--:tabnew<CR>:r .tmp.xyz<CR>:silent !rm .tmp.xyz<CR>:redraw!<CR>]])
+
+--nmap("<F8>", [[:w<CR>:silent !chmod +x %:p<CR>:silent !%:p 2>&1 | tee \
+--~/.config/vim/output<CR>:split ~/.config/vim/output<CR>:redraw!<CR>]])
 
 -------------------------------------------
 -- [Plugin] "jlanzarotta/bufexplorer"
@@ -309,7 +317,7 @@ xmap("ga", [[<Plug>(EasyAlign)]])
 -------------------------------------------
 
 nmap("<leader><leader>", [[<Plug>(easymotion-overwin-f)]])
-nmap("<Leader>w", [[<Plug>(easymotion-overwin-w)]])
+nmap("<Leader>w",        [[<Plug>(easymotion-overwin-w)]])
 
 -------------------------------------------
 -- [Plugin] "tpope/vim-fugitive"

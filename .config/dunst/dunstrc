@@ -1,26 +1,26 @@
 # vim:ft=cfg
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 17:11:50 EEST
+# Date:   2024-07-28 20:28:12 EEST
 # Path:   ~/.config/dunst/dunstrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 [global]
-    ### Display ###
+### Display ###
 
-    monitor = 0
-    follow = keyboard
-    geometry = "350x5-0+24"
-    indicate_hidden = yes
-    shrink = yes
-    transparency = 10
+    monitor             = 0
+    follow              = keyboard
+    geometry            = "350x5-0+24"
+    indicate_hidden     = yes
+    shrink              = yes
+    transparency        = 10
     notification_height = 0
-    separator_height = 2
-    padding = 4
-    horizontal_padding = 8
-    frame_width = 2
-    frame_color = "#1793d1"
+    separator_height    = 2
+    padding             = 4
+    horizontal_padding  = 8
+    frame_width         = 2
+    frame_color         = "#1793d1"
 
     # Define a color for the separator.
     # possible values are:
@@ -37,9 +37,9 @@
 
     ### Text ###
 
-    font = Monospace 12
+    font        = Monospace 12
     line_height = 0
-    markup = full
+    markup      = full
 
     # The format of the message.  Possible variables are:
     #   %a  appname
@@ -53,22 +53,22 @@
     # Markup is allowed
     format = "<b>%s</b>\n%b"
 
-    alignment = left
-    verticl_alignment = center
-    show_age_threshold = 60
-    word_wrap = yes
-    ellipsize = middle
-    ignore_newline = no
-    stack_duplicates = true
+    alignment            = left
+    verticl_alignment    = center
+    show_age_threshold   = 60
+    word_wrap            = yes
+    ellipsize            = middle
+    ignore_newline       = no
+    stack_duplicates     = true
     hide_duplicate_count = true
-    show_indicators = yes
+    show_indicators      = yes
 
     ### Icons ###
 
     icon_position = left
     min_icon_size = 0
     max_icon_size = 40
-    #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/:/usr/share/icons/Adwaita/256x256/status/
+    #icon_path     = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/:/usr/share/icons/Adwaita/256x256/status/
 
     ### History ###
 
@@ -77,82 +77,81 @@
 
     ### Misc/Advanced ###
 
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu   = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/chrome -new-tab
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
 
-    title = Dunst
-    class = Dunst
+    title                = Dunst
+    class                = Dunst
     startup_notification = false
-    verbosity = warn
-    corner_radius = 0
+    verbosity            = warn
+    corner_radius        = 0
 
     ### Legacy
 
     force_xinerama = false
 
-    ### mouse
+    ### Mouse
 
-    mouse_left_click = close_current
+    mouse_left_click   = close_current
     mouse_middle_click = do_action
-    mouse_right_click = close_all
+    mouse_right_click  = close_all
 
 [experimental]
     per_monitor_dpi = false
 
 [shortcuts]
-    close = ctrl+space
+    close     = ctrl+space
     close_all = ctrl+shift+space
-    history = ctrl+grave
-    context = ctrl+shift+period
+    history   = ctrl+grave
+    context   = ctrl+shift+period
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
 
 
-    #set $arch_blue            #1793d1
-    #set $pretty_blue          #268bd2
-    #set $another_blue         #47afdf
-    #set $light_blue           #79bac1
-    #set $bar_bg               #002b36
-    #set $pretty_light_blue    #00afd7
-    #set $aquamarine           #06989a
-    #set $sea                  #bdced3
+    #set $arch_blue         #1793d1
+    #set $pretty_blue       #268bd2
+    #set $another_blue      #47afdf
+    #set $light_blue        #79bac1
+    #set $bar_bg            #002b36
+    #set $pretty_light_blue #00afd7
+    #set $aquamarine        #06989a
+    #set $sea               #bdced3
 
-    background = "#080c0e"  # urxvt black
-    foreground = "#4a938f"  # urxvt cyan
-    frame_color = "#1793d1" # arch blue
+    background  = "#080c0e"  # urxvt black
+    foreground  = "#4a938f"  # urxvt cyan
+    frame_color = "#1793d1"  # arch blue
 
     #background = "#282828"
     #foreground = "#928374"
-    timeout = 5
+    timeout    = 5
     # Icon for notifications with low urgency, uncomment to enable
-    #icon = /path/to/icon
+    #icon       = /path/to/icon
 
 [urgency_normal]
-    background = "#080c0e"  # urxvt black
-    foreground = "#1793d1"  # arch blue
-    frame_color = "#1793d1" # arch blue
-    timeout = 5
+    background  = "#080c0e"  # urxvt black
+    foreground  = "#1793d1"  # arch blue
+    frame_color = "#1793d1"  # arch blue
+    timeout     = 5
 
 [urgency_critical]
-    background = "#080c0e"  # urxvt black
-    foreground = "#cc2421"  # red
-    frame_color = "#cc2421" # red
-
-    timeout = 0
+    background  = "#080c0e"  # urxvt black
+    foreground  = "#cc2421"  # red
+    frame_color = "#cc2421"  # red
+    timeout     = 0
 
 [sound_beep]
 summary = "beep"
-script = ~/.local/bin/sounds/beep
+script  = ~/.local/bin/sounds/beep
 
 [sound_email]
 summary = "email"
-script = ~/.local/bin/sounds/email-synced
+script  = ~/.local/bin/sounds/email-synced
 
 [sound_update]
 summary = "update"
-script = ~/.local/bin/sounds/arch-updated
+script  = ~/.local/bin/sounds/arch-updated

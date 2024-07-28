@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-18 16:26:10 EEST
+-- Date:   2024-07-28 18:22:13 EEST
 -- Path:   ~/.config/nvim/lua/util.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ function Util.exists(path)
   return io.open(path, "r") and true or false
 end
 
--- create directory if it does not exist yet
+-- Create directory if it does not exist yet
 function Util.mkdir(path)
   if Util.exists(path) then return false end
   return os.execute("mkdir " .. path) and true or false

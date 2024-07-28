@@ -1,92 +1,108 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-08 14:45:08 EEST
+# Date:   2024-07-28 20:44:22 EEST
 # Path:   ~/.config/irssi/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 servers = (
   {
-    address = "chat.freenode.net";
-    chatnet = "Freenode";
-    port = "6697";
-    use_tls = "yes";
-    tls_cert = "~/.ssh/certs/irssi.pem";
-    tls_verify = "yes";
-    tls_capath = "/etc/ssl/certs";
+    address     = "chat.freenode.net";
+    chatnet     = "Freenode";
+    port        = "6697";
+    use_tls     = "yes";
+    tls_cert    = "~/.ssh/certs/irssi.pem";
+    tls_verify  = "yes";
+    tls_capath  = "/etc/ssl/certs";
     autoconnect = "yes";
   }
 );
 
 channels = (
-  { name = "#haskell"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#haskell";    chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#distrotube"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
-  ATAG = "WINDOW SERVER";
-  ADDALLCHANS = "SCRIPT EXEC foreach my \\$channel (Irssi::channels()) { Irssi::command(\"CHANNEL ADD -auto \\$channel->{name} \\$channel->{server}->{tag} \\$channel->{key}\")\\;}";
-  B = "BAN";
-  BACK = "AWAY";
-  BANS = "BAN";
-  BYE = "QUIT";
-  C = "CLEAR";
-  CALC = "EXEC - if command -v bc >/dev/null 2>&1\\; then printf '%s=' '$*'\\; echo '$*' | bc -l\\; else echo bc was not found\\; fi";
-  CHAT = "DCC CHAT";
-  CUBES = "SCRIPT EXEC Irssi::active_win->print(\"%_bases\", MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print( do { join '', map { \"%x0\\${_}0\\$_\" } '0'..'9','A'..'F' }, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print(\"%_cubes\", MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print( do { my \\$y = \\$_*6 \\; join '', map { my \\$x = \\$_ \\; map { \"%x\\$x\\$_\\$x\\$_\" } @{['0'..'9','A'..'Z']}[\\$y .. \\$y+5] } 1..6 }, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) for 0..5 \\; Irssi::active_win->print(\"%_grays\", MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print( do { join '', map { \"%x7\\${_}7\\$_\" } 'A'..'X' }, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print(\"%_mIRC extended colours\", MSGLEVEL_CLIENTCRAP) \\; my \\$x \\; \\$x .= sprintf \"\00399,%02d%02d\",\\$_,\\$_ for 0..15 \\; Irssi::active_win->print(\\$x, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) \\; for my \\$z (0..6) { my \\$x \\; \\$x .= sprintf \"\00399,%02d%02d\",\\$_,\\$_ for 16+(\\$z*12)..16+(\\$z*12)+11 \\; Irssi::active_win->print(\\$x, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) }";
-  DATE = "TIME";
+  ATAG        = "WINDOW SERVER";
+  ADDALLCHANS = "SCRIPT EXEC foreach my \\$channel (Irssi::channels()) { \
+    Irssi::command(\"CHANNEL ADD -auto \\$channel->{name} \\$channel->{server}->{tag} \
+    \\$channel->{key}\")\\;}";
+  B           = "BAN";
+  BACK        = "AWAY";
+  BANS        = "BAN";
+  BYE         = "QUIT";
+  C           = "CLEAR";
+  CALC        = "EXEC - if command -v bc >/dev/null 2>&1\\; then printf '%s=' '$*'\\; \
+    echo '$*' | bc -l\\; else echo bc was not found\\; fi";
+  CHAT        = "DCC CHAT";
+  CUBES       = "SCRIPT EXEC Irssi::active_win->print(\"%_bases\", MSGLEVEL_CLIENTCRAP) \\; \
+    Irssi::active_win->print( do { join '', map { \"%x0\\${_}0\\$_\" } '0'..'9','A'..'F' }, \
+    MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print(\"%_cubes\", \
+    MSGLEVEL_CLIENTCRAP) \\; Irssi::active_win->print( do { my \\$y = \\$_*6 \\; join '', map \
+    { my \\$x = \\$_ \\; map { \"%x\\$x\\$_\\$x\\$_\" } @{['0'..'9','A'..'Z']}[\\$y .. \\$y+5] } \
+    1..6 }, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) for 0..5 \\; \
+    Irssi::active_win->print(\"%_grays\", MSGLEVEL_CLIENTCRAP) \\; \
+    Irssi::active_win->print( do { join '', map { \"%x7\\${_}7\\$_\" } 'A'..'X' }, \
+    MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) \\; \
+    Irssi::active_win->print(\"%_mIRC extended colours\", MSGLEVEL_CLIENTCRAP) \\; my \\$x \\; \
+    \\$x .= sprintf \"\00399,%02d%02d\",\\$_,\\$_ for 0..15 \\; \
+    Irssi::active_win->print(\\$x, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) \\; for my \\$z (0..6) \
+    { my \\$x \\; \\$x .= sprintf \"\00399,%02d%02d\",\\$_,\\$_ for 16+(\\$z*12)..16+(\\$z*12)+11 \
+    \\; Irssi::active_win->print(\\$x, MSGLEVEL_NEVER | MSGLEVEL_CLIENTCRAP) }";
+  DATE        = "TIME";
   DEHIGHLIGHT = "DEHILIGHT";
-  DESCRIBE = "ACTION";
-  DHL = "DEHILIGHT";
-  EXEMPTLIST = "MODE $C +e";
-  EXIT = "QUIT";
-  GOTO = "SCROLLBACK GOTO";
-  HIGHLIGHT = "HILIGHT";
-  HL = "HILIGHT";
-  HOST = "USERHOST";
-  INVITELIST = "MODE $C +I";
-  J = "JOIN";
-  K = "KICK";
-  KB = "KICKBAN";
-  KN = "KNOCKOUT";
-  LAST = "LASTLOG";
-  LEAVE = "PART";
-  M = "MSG";
-  MUB = "UNBAN *";
-  N = "NAMES";
-  NMSG = "^MSG";
-  P = "PART";
-  Q = "QUERY";
-  RESET = "SET -default";
-  RUN = "SCRIPT LOAD";
-  SAY = "MSG *";
-  SB = "SCROLLBACK";
-  SBAR = "STATUSBAR";
-  SIGNOFF = "QUIT";
-  SV = "MSG * Irssi $J ($V) - https://www.irssi.org";
-  T = "TOPIC";
-  UB = "UNBAN";
-  UMODE = "MODE $N";
-  UNSET = "SET -clear";
-  W = "WHO";
-  WC = "WINDOW CLOSE";
-  WG = "WINDOW GOTO";
-  WJOIN = "JOIN -window";
-  WI = "WHOIS";
-  WII = "WHOIS $0 $0";
-  WL = "WINDOW LIST";
-  WN = "WINDOW NEW HIDDEN";
-  WQUERY = "QUERY -window";
-  WW = "WHOWAS";
-  1 = "WINDOW GOTO 1";
-  2 = "WINDOW GOTO 2";
-  3 = "WINDOW GOTO 3";
-  4 = "WINDOW GOTO 4";
-  5 = "WINDOW GOTO 5";
-  6 = "WINDOW GOTO 6";
-  7 = "WINDOW GOTO 7";
-  8 = "WINDOW GOTO 8";
-  9 = "WINDOW GOTO 9";
+  DESCRIBE    = "ACTION";
+  DHL         = "DEHILIGHT";
+  EXEMPTLIST  = "MODE $C +e";
+  EXIT        = "QUIT";
+  GOTO        = "SCROLLBACK GOTO";
+  HIGHLIGHT   = "HILIGHT";
+  HL          = "HILIGHT";
+  HOST        = "USERHOST";
+  INVITELIST  = "MODE $C +I";
+  J           = "JOIN";
+  K           = "KICK";
+  KB          = "KICKBAN";
+  KN          = "KNOCKOUT";
+  LAST        = "LASTLOG";
+  LEAVE       = "PART";
+  M           = "MSG";
+  MUB         = "UNBAN *";
+  N           = "NAMES";
+  NMSG        = "^MSG";
+  P           = "PART";
+  Q           = "QUERY";
+  RESET       = "SET -default";
+  RUN         = "SCRIPT LOAD";
+  SAY         = "MSG *";
+  SB          = "SCROLLBACK";
+  SBAR        = "STATUSBAR";
+  SIGNOFF     = "QUIT";
+  SV          = "MSG * Irssi $J ($V) - https://www.irssi.org";
+  T           = "TOPIC";
+  UB          = "UNBAN";
+  UMODE       = "MODE $N";
+  UNSET       = "SET -clear";
+  W           = "WHO";
+  WC          = "WINDOW CLOSE";
+  WG          = "WINDOW GOTO";
+  WJOIN       = "JOIN -window";
+  WI          = "WHOIS";
+  WII         = "WHOIS $0 $0";
+  WL          = "WINDOW LIST";
+  WN          = "WINDOW NEW HIDDEN";
+  WQUERY      = "QUERY -window";
+  WW          = "WHOWAS";
+  1           = "WINDOW GOTO 1";
+  2           = "WINDOW GOTO 2";
+  3           = "WINDOW GOTO 3";
+  4           = "WINDOW GOTO 4";
+  5           = "WINDOW GOTO 5";
+  6           = "WINDOW GOTO 6";
+  7           = "WINDOW GOTO 7";
+  8           = "WINDOW GOTO 8";
+  9           = "WINDOW GOTO 9";
 };
 
 statusbar = {
@@ -97,13 +113,13 @@ statusbar = {
 
   items = {
     # start/end text in statusbars
-    barstart = "{sbstart}";
-    barend = "{sbend}";
-    vim_mode = { };
-    vim_windows = { };
+    barstart      = "{sbstart}";
+    barend        = "{sbend}";
+    vim_mode      = { };
+    vim_windows   = { };
 
     topicbarstart = "{topicsbstart}";
-    topicbarend = "{topicsbend}";
+    topicbarend   = "{topicsbend}";
 
     # treated "normally", you could change the time/user name to whatever
     time = "{sb $Z}";
@@ -111,18 +127,18 @@ statusbar = {
 
     # treated specially .. window is printed with non-empty windows,
     # window_empty is printed with empty windows
-    window = "{sb $winref:$tag/$itemname{sbmode $M}}";
+    window       = "{sb $winref:$tag/$itemname{sbmode $M}}";
     window_empty = "{sb $winref{sbservertag $tag}}";
 
-    prompt = "{prompt $[.15]itemname}";
+    prompt       = "{prompt $[.15]itemname}";
     prompt_empty = "{prompt $winname}";
 
-    topic = " $topic";
-    topic_empty = " Irssi v$J - https://www.irssi.org";
+    topic        = " $topic";
+    topic_empty  = " Irssi v$J - https://www.irssi.org";
 
     # all of these treated specially, they're only displayed when needed
-    lag = "{sb Lag: $0-}";
-    act = "{sb Act: $0-}";
+    lag  = "{sb Lag: $0-}";
+    act  = "{sb Act: $0-}";
     more = "-- more --";
   };
 
@@ -135,58 +151,58 @@ statusbar = {
     # contains all the normal items.
 
     window = {
-      disabled = "no";
+      disabled  = "no";
 
       # window, root
-      type = "window";
+      type      = "window";
       # top, bottom
       placement = "bottom";
       # number
-      position = "1";
+      position  = "1";
       # active, inactive, always
-      visible = "active";
+      visible   = "active";
 
       # list of items in statusbar in the display order
       items = {
-        barstart = { priority = "100"; };
-        time = { };
-        user = { };
-        window = { };
+        barstart     = { priority = "100"; };
+        time         = { };
+        user         = { };
+        window       = { };
         window_empty = { };
-        lag = { priority = "-1"; };
-        act = { priority = "10"; };
-        more = { priority = "-1"; alignment = "right"; };
-        barend = { priority = "100"; alignment = "right"; };
+        lag          = { priority = "-1"; };
+        act          = { priority = "10"; };
+        more         = { priority = "-1";  alignment = "right"; };
+        barend       = { priority = "100"; alignment = "right"; };
       };
     };
 
     # statusbar to use in inactive split windows
     window_inact = {
 
-      type = "window";
+      type      = "window";
       placement = "bottom";
-      position = "1";
-      visible = "inactive";
+      position  = "1";
+      visible   = "inactive";
 
       items = {
-        barstart = { priority = "100"; };
-        window = { };
+        barstart     = { priority = "100"; };
+        window       = { };
         window_empty = { };
-        more = { priority = "-1"; alignment = "right"; };
-        barend = { priority = "100"; alignment = "right"; };
+        more         = { priority = "-1";  alignment = "right"; };
+        barend       = { priority = "100"; alignment = "right"; };
       };
     };
 
     prompt = {
-      type = "root";
+      type      = "root";
       placement = "bottom";
-      position = "100";
-      visible = "always";
+      position  = "100";
+      visible   = "always";
 
-      items = {
-        prompt = { priority = "-1"; };
+      items     = {
+        prompt       = { priority = "-1"; };
         prompt_empty = { priority = "-1"; };
-        input = { priority = "10"; };
+        input        = { priority = "10"; };
       };
     };
 
@@ -195,16 +211,16 @@ statusbar = {
 
     # topicbar
     topic = {
-      type = "root";
+      type      = "root";
       placement = "top";
-      position = "1";
-      visible = "always";
+      position  = "1";
+      visible   = "always";
 
-      items = {
+      items     = {
         topicbarstart = { priority = "100"; };
-        topic = { };
-        topic_empty = { };
-        topicbarend = { priority = "100"; alignment = "right"; };
+        topic         = { };
+        topic_empty   = { };
+        topicbarend   = { priority = "100"; alignment = "right"; };
       };
     };
   };
@@ -213,19 +229,18 @@ settings = {
   core = {
     real_name = "Tomas";
     user_name = "riddle00";
-    nick = "riddle00";
+    nick      = "riddle00";
   };
-  "fe-text" = { actlist_sort = "refnum"; };
+  "fe-text"        = { actlist_sort = "refnum"; };
   "fe-common/core" = {
-    autolog = "yes";
-    autolog_path = "~/.local/state/irssi/logs/$tag/%Y-%m-%d/$0.log";
-
-    theme = "h3rbz";
+    autolog        = "yes";
+    autolog_path   = "~/.local/state/irssi/logs/$tag/%Y-%m-%d/$0.log";
+    theme          = "h3rbz";
   };
 };
 logs = { };
 hilights = (
-  { text = "nick"; nick = "yes"; word = "yes"; },
+  { text = "nick";     nick = "yes"; word = "yes"; },
   { text = "riddle00"; nick = "yes"; word = "yes"; }
 );
 ignores = (
