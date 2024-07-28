@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-04-22 02:18:05 EEST
+-- Date:   2024-07-28 13:50:38 EEST
 -- Path:   ~/.config/nvim/lua/options.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -38,7 +38,8 @@ o.termguicolors = false
 
 -- Number of screen lines to use for the command-line.
 o.cmdheight = 1
--- Show count of selected lines or characters
+-- Show (partial) command in the status bar, including the count of selected
+-- lines or characters.
 o.showcmd = true
 -- Show line numbers
 o.number = true
@@ -95,7 +96,7 @@ o.smartindent = true
 o.startofline = false
 -- Jump 5 lines when running out of the screen
 o.scrolljump = 5
--- Indicate "running out of the screen" when 3 lines before end of the screen
+-- Indicate "running out of the screen" when 4 lines before end of the screen
 o.scrolloff = 4
 -- Scroll horizontally 5 chars when running out of the screen
 o.sidescroll = 5

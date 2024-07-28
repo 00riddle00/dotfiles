@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-21 18:21:14 EEST
+# Date:   2024-07-28 13:50:17 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -1008,7 +1008,7 @@ alias br='vim ~/.bashrc'
 alias fld='fold -w 80 -s'
 alias pir='pip install -r requirements.txt'
 alias show='sqlitebrowser'
-alias wik='cd $TMP1/wikis'
+alias wik='cd $TMP1/wikis/ca-wiki'
 alias tmux.ls='tmux ls'
 alias tmux.clean='echo "Sucessfully killed unattached Tmux sessions.\n--------------------------------------------\nBefore:"; tmux ls; tmux ls | grep -v attached | cut -d: -f1 | xargs -I{} tmux kill-session -t {}; echo "After:"; tmux ls'
 alias tl='tmux.ls'
@@ -1051,6 +1051,7 @@ alias si='svn info'
 alias sol='cd $PRO/2023/Solutions-To-Problems/Codewars'
 alias tem='cd /home/riddle/pro/2023/Solutions-To-Problems/Codewars/temp'
 alias gaa='ga . && gc -m '.' && gp'
+alias gcp='gc -m '.' && gp'
 alias xa='xargs '
 alias we='cd $TMP1/webuzz && venv'
 alias bu='cd $TMP1/budget && venv'
@@ -1064,3 +1065,5 @@ alias xav='xargs vim'
 alias dotr='dot rev-list --all --pretty=oneline -- '
 alias gitr='git rev-list --all --pretty=oneline -- '
 alias dotd="dot log --date=format:'%Y-%m-%d %H:%M:%S EE(S)T' "
+alias gau='git add -u .'
+alias p6='cd /home/riddle/pro/2024/PTUA6'

@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-18 16:26:05 EEST
+-- Date:   2024-07-28 13:50:32 EEST
 -- Path:   ~/.config/nvim/lua/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -208,9 +208,8 @@ noremap("zz", [[z-]])
 
 -- Yank into the system secondary clipboard register
 vmap("<C-c>", [["+y]])
---nnoremap("Y", [["+y]])
---vnoremap("Y", [["+y]])
---nnoremap("YY", [["+yy]])
+vnoremap("Y", [["+y]])
+nnoremap("YY", [["+yy]])
 
 -- Yank into the system secondary clipboard register and delete the visually selected text.
 --vmap("<C-x>", [["+c]])
@@ -282,7 +281,7 @@ noremap("<C-n>", [[:NvimTreeToggle<CR>]])
 -- [Plugin] "nvim-telescope/telescope.nvim"
 -------------------------------------------
 
-nmap("<C-p>", [[<cmd>lua require("telescope.builtin").find_files()<cr>]])
+nmap("<C-p>", [[<cmd>lua require("telescope.builtin").find_files()<CR>]])
 
 -------------------------------------------
 -- [Plugin] "preservim/tagbar"
