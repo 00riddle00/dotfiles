@@ -1,21 +1,20 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-08 13:22:56 EEST
+# Date:   2024-07-30 00:22:16 EEST
 # Path:   ~/.config/i3blocks/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-command=~/.local/bin/statusbar/$BLOCK_NAME
+command=$BIN/statusbar/$BLOCK_NAME
 align=center
 separator=false
 separator_block_width=20
 markup=pango
 
 [mediaplayer]
-# instance=cmus
 interval=20
 color=#f77b71
-label=<span color="#f77b71">  </span>
+label=<span color="#f77b71">♫ </span>
 signal=10
 
 [volume]
@@ -41,7 +40,7 @@ label=<span color="#47afdf"> </span>
 [cpu-usage]
 interval=10
 color=#81c784
-label=<span color="#81c784">  </span>
+label=<span color="#81c784"> </span>
 
 [gpu-temp]
 interval=10
@@ -51,7 +50,7 @@ label=<span color="#ffb86c"> </span>
 [gpu-load]
 interval=10
 color=#b967c7
-label=<span color="#b967c7">﬙ </span>
+label=<span color="#b967c7">󰘚 </span>
 #VERBOSE=1
 
 [memory]
@@ -60,7 +59,6 @@ color=#f77b71
 label=<span color="#f77b71"> </span>
 
 [wifi]
-INTERFACE=wlp8s0
 interval=60
 color=#81c784
 label=<span color="#81c784">  </span>
@@ -94,7 +92,7 @@ markup=pango
 [vpn]
 interval=once
 color=#1793d1
-label=<span color="#1793d1">爵 </span>
+label=<span color="#1793d1"> </span>
 
 [arch-update]
 interval=60
