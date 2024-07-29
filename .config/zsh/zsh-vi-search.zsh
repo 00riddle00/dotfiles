@@ -1,16 +1,12 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-16 12:03:40 EEST
+# Date: 2024-07-29 11:10:36 EEST
 # Path: ~/.config/zsh/zsh-vi-search.zsh
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
-# Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
-# Orig. URL: https://hg.sr.ht/~jasonwryan/centurion/raw/.irssi/miromiro.theme?rev=327f83b9ecc663e7ede05887460d45dd4f0cf56d
-# Orig. URL/File Retrieval: 2024-04-08 14:59:42 EEST
-#------------------------------------------
-# Description from the author:
-#------------------------------------------
-# ...
+# Author: Soheil Rashidi (https://github.com/soheilpro)
+# Orig. URL: https://raw.githubusercontent.com/soheilpro/zsh-vi-search/187973653275062c77379dd9078f235ced3733ad/src/zsh-vi-search.zsh
+# Orig. URL/File Retrieval: 2024-03-17 22:41:58 EET
 #------------------------------------------------------------------------------
 
 autoload -U read-from-minibuffer
@@ -24,9 +20,9 @@ function _index-of {
   local START=${3:-0}
   local DIRECTION=${4:-1}
 
-  [[ $STRLEN -ge 0 ]] || return 1
-  [[ $SUBSTRLEN -ge 0 ]] || return 2
-  [[ $START -ge 0 ]] || return 3
+  [[ $STRLEN -ge 0 ]]      || return 1
+  [[ $SUBSTRLEN -ge 0 ]]   || return 2
+  [[ $START -ge 0 ]]       || return 3
   [[ $START -lt $STRLEN ]] || return 4
   [[ $DIRECTION -eq 1 || $DIRECTION -eq -1 ]] || return 5
 
@@ -84,9 +80,9 @@ function _vi-search-repeat-reverse {
   fi
 }
 
-zle -N vi-search-backward _vi-search-backward
-zle -N vi-search-forward _vi-search-forward
-zle -N vi-search-repeat _vi-search-repeat
+zle -N vi-search-backward       _vi-search-backward
+zle -N vi-search-forward        _vi-search-forward
+zle -N vi-search-repeat         _vi-search-repeat
 zle -N vi-search-repeat-reverse _vi-search-repeat-reverse
 
 bindkey -M vicmd '?' vi-search-backward
