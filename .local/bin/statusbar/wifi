@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+INTERFACE="$(basename -a /sys/class/net/wlp*)"
 #------------------------------------------------------------------------
 if [[ -z "$INTERFACE" ]] ; then
     INTERFACE="${BLOCK_INSTANCE:-wlan0}"
