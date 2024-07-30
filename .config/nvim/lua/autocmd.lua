@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-28 18:19:18 EEST
+-- Date:   2024-07-30 16:11:03 EEST
 -- Path:   ~/.config/nvim/lua/autocmd.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ autocmd("QuitPre", {
       end
     end
     if 1 == #wins - #floating_wins - #tree_wins then
-      -- Should quit, so we close all invalid windows.
+      -- Should quit, so close all invalid windows.
       for _, w in ipairs(tree_wins) do
         vim.api.nvim_win_close(w, true)
       end

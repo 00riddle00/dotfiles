@@ -1,6 +1,6 @@
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-07-17 17:23:24 EEST
+; Date:   2024-07-30 16:10:46 EEST
 ; Path:   ~/.config/emacs.gnu/init.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
@@ -27,7 +27,7 @@
 ;; Settings
 ;; -------------------------------------------------------------
 
-;; Some functionality uses this to identify you, e.g. GPG configuration,
+;; Some functionality uses this for identification, e.g. GPG configuration,
 ;; email clients, file templates and snippets. It is optional.
 (setq user-full-name "Tomas Giedraitis"
       user-mail-address "tomasgiedraitis@gmail.com")
@@ -96,7 +96,7 @@
 ;; -------------------------------------------------------------
 (custom-set-variables
  ;; "custom-set-variables" was added by Custom.
- ;; Careful when editing it manually, there is a change of messing it up.
+ ;; Careful when editing it manually, there is a chance of messing it up.
  ;; The init file should contain only one such instance.
  ;; If there is more than one, it will not work right.
  '(ansi-color-faces-vector
@@ -123,7 +123,7 @@
 ;; -------------------------------------------------------------
 (custom-set-faces
  ;; "custom-set-faces" was added by Custom.
- ;; Careful when editing it manually, there is a change of messing it up.
+ ;; Careful when editing it manually, there is a chance of messing it up.
  ;; The init file should contain only one such instance.
  ;; If there is more than one, it will not work right.
  )

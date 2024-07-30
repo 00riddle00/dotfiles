@@ -1,7 +1,7 @@
 # vim:syntax=neomuttrc
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-29 11:01:12 EEST
+# Date: 2024-07-30 16:10:54 EEST
 # Path: ~/.config/mutt/sidebar.muttrc
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -90,11 +90,11 @@ bind index,pager \Cn sidebar-next
 bind index,pager \Co sidebar-open
 
 # Move the highlight to the previous page
-# This is useful if you have a LOT of mailboxes.
+# This is useful if there are a LOT of mailboxes.
 bind index,pager <F3> sidebar-page-up
 
 # Move the highlight to the next page
-# This is useful if you have a LOT of mailboxes.
+# This is useful if there are a LOT of mailboxes.
 bind index,pager <F4> sidebar-page-down
 
 # Move the highlight to the previous mailbox containing new, or flagged,

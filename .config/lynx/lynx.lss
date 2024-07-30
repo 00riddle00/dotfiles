@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 13:50:04 EEST
+# Date:   2024-07-30 16:10:50 EEST
 # Path:   ~/.config/lynx/lynx.lss
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -97,8 +97,8 @@ link.green.toc: bold: white:  green
 # (commandline option -prettysrc).
 span.htmlsrc_comment: normal: white
 span.htmlsrc_tag:     normal: white
-# If you do not like that the tag name and attribute name are displayed
-# in different colors, comment the following line.
+# Comment out the following line to use the same color for both the tag
+# name and the attribute name.
 span.htmlsrc_attrib:   normal: cyan
 span.htmlsrc_attrval:  normal: magenta
 span.htmlsrc_abracket: normal: white

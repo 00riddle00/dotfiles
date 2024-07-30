@@ -1,21 +1,22 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-13 22:06:44 EEST
+# Date:   2024-07-30 16:11:21 EEST
 # Path:   ~/.config/ranger/commands.py
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 from __future__ import (absolute_import, division, print_function)
 
-# You can import any python module as needed.
+# Any needed python module can be imported.
 import os
 
-# You always need to import ranger.api.commands here to get the Command class:
+# ranger.api.commands are always needed to be imported here to get the 
+# Command class:
 from ranger.api.commands import Command
 from ranger.core.loader import CommandLoader
 
 # https://github.com/ranger/ranger/wiki/Integrating-File-Search-with-fzf
-# Now, simply bind this function to a key, by adding this to your
+# Now, simply bind this function to a key, by adding this to
 # ~/.config/ranger/rc.conf: map <C-f> fzf_select
 class fzf_select(Command):
     """

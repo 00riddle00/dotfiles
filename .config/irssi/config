@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 22:16:06 EEST
+# Date:   2024-07-30 16:10:49 EEST
 # Path:   ~/.config/irssi/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -106,13 +106,13 @@ aliases = {
 };
 
 statusbar = {
-  # formats:
-  # when using {templates}, the template is shown only if it's argument isn't
+  # Formats:
+  # When using {templates}, the template is shown only if it's argument isn't
   # empty unless no argument is given. for example {sb} is printed always,
   # but {sb $T} is printed only if $T isn't empty.
 
   items = {
-    # start/end text in statusbars
+    # Start/end text in statusbars
     barstart      = "{sbstart}";
     barend        = "{sbend}";
     vim_mode      = { };
@@ -121,11 +121,11 @@ statusbar = {
     topicbarstart = "{topicsbstart}";
     topicbarend   = "{topicsbend}";
 
-    # treated "normally", you could change the time/user name to whatever
+    # Treated "normally", time/user name can be changed to whatever
     time = "{sb $Z}";
     user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}";
 
-    # treated specially .. window is printed with non-empty windows,
+    # Treated specially .. window is printed with non-empty windows,
     # window_empty is printed with empty windows
     window       = "{sb $winref:$tag/$itemname{sbmode $M}}";
     window_empty = "{sb $winref{sbservertag $tag}}";
@@ -136,33 +136,33 @@ statusbar = {
     topic        = " $topic";
     topic_empty  = " Irssi v$J - https://www.irssi.org";
 
-    # all of these treated specially, they're only displayed when needed
+    # All of these treated specially, they're only displayed when needed
     lag  = "{sb Lag: $0-}";
     act  = "{sb Act: $0-}";
     more = "-- more --";
   };
 
 
-  # there's two type of statusbars. root statusbars are either at the top
+  # There's two type of statusbars. root statusbars are either at the top
   # of the screen or at the bottom of the screen. window statusbars are at
   # the top/bottom of each split window in screen.
   default = {
-    # the "default statusbar" to be displayed at the bottom of the window.
+    # The "default statusbar" to be displayed at the bottom of the window.
     # contains all the normal items.
 
     window = {
       disabled  = "no";
 
-      # window, root
+      # Window, root
       type      = "window";
-      # top, bottom
+      # Top, bottom
       placement = "bottom";
-      # number
+      # Number
       position  = "1";
-      # active, inactive, always
+      # Active, inactive, always
       visible   = "active";
 
-      # list of items in statusbar in the display order
+      # List of items in statusbar in the display order
       items = {
         barstart     = { priority = "100"; };
         time         = { };
@@ -176,7 +176,7 @@ statusbar = {
       };
     };
 
-    # statusbar to use in inactive split windows
+    # Statusbar to use in inactive split windows
     window_inact = {
 
       type      = "window";
@@ -206,10 +206,10 @@ statusbar = {
       };
     };
 
-    # we treat input line as yet another statusbar :) It's possible to
+    # Treat the input line as yet another statusbar :) It's possible to
     # add other items before or after the input line item.
 
-    # topicbar
+    # Topicbar
     topic = {
       type      = "root";
       placement = "top";

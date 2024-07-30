@@ -1,6 +1,6 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-07-28 21:58:30 EEST
+! Date:   2024-07-30 16:10:37 EEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ URxvt.shading:         0
 URxvt.letterSpace:     0
 URxvt.lineSpace:       1
 URxvt.iconFile:        $CANDY/icons/terminal/term_green_fancy.svg
-! Disable ISO 14755 unicode input so we can use Ctrl+Shift bindings
+! Disable ISO 14755 unicode input so Ctrl+Shift bindings could be used
 URxvt.iso14755:        false
 URxvt.iso14755_52:     false
 
