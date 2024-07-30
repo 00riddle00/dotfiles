@@ -3,7 +3,7 @@
 # Must have xclip installed to even show menu.
 xclip -h 2>/dev/null || exit 1
 
-chosen=$(cat $DOTSHARE/pastes | dmenu -i -l 20)
+chosen=$(cat $DOTSHARE/misc/pastes.lst | dmenu -i -l 20)
 
 [ "$chosen" != "" ] || exit
 

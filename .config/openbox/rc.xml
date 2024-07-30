@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-30 16:11:14 EEST
+# Date:   2024-07-31 00:14:21 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -637,7 +637,7 @@
   <!-- Open/focus Gimp window by its name. -->
   <keybind key="W-b">
     <action name="Execute">
-      <command>fast-open-or-focus gimp</command>
+      <command>fast-open-or-focus gimp Gimp -x</command>
     </action>
   </keybind>
 
