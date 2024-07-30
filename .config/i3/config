@@ -1,416 +1,395 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-13 20:45:46 EEST
+# Date:   2024-07-31 00:56:58 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-# This config file will use environmental variables such as $BROWSER and $TERMINAL.
-# You can set these variables in ~/.profile or ~/.zshenv if you have it as below:
+# ================================================
+#  Definitions
+# ================================================
+
+# i3-msg command in this config file:
+#   exec --no-startup-id urxvt -name dropdown_math -e R -q
+# To run the same command from the terminal (but not inside Tmux):
+#   i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
 #
-# export TERMINAL="urxvt"
-# export BROWSER="brave"
-# export FILE="ranger"
-
-# Explanations
-# [1](Being a command-line utility, i3-msg does not support startup notifications,
-# hence the exec --no-startup-id.)
-# [2] exec_always - execute on i3-restart (without quitting the wm)
-# [3] example in config file:
-#           $run $term -name dropdown_math -e R -q
-#     same command in terminal:
-#           i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
-
-# =============================
-#  Basic Definitions
-# =============================
-
-set $term $TERMINAL
+# Being a command-line utility, i3-msg does not support startup
+# notifications, hence the exec --no-startup-id.
 set $run exec --no-startup-id
+# exec_always - execute on i3-restart (without quitting the WM)
 set $run_always exec_always --no-startup-id
+
 set $mod Mod4
 set $alt Mod1
-set $esc Escape
-set $print Print
 
 floating_modifier $alt
 
-# =============================
-#  Startup
-# =============================
+set $gap_size_top   0
+set $gap_size_inner 8
+set $gap_size_outer 4
 
-# Unlocking KWallet automatically in i3
-# (to unlock KWallet protected by the login password)
-#$run /usr/lib/pam_kwallet_init
-# apps are mainly started via ~/.xinitrc
+set $col_bar_bg            #002b36
+set $col_arch_blue         #1793d1
+set $col_light_blue        #79bac1
+set $col_pretty_blue       #268bd2
+set $col_pretty_light_blue #00afd7
+
+set $wspace1  " 1:  "
+set $wspace2  " 2:  "
+set $wspace3  " 3:  "
+set $wspace4  " 4:  "
+set $wspace5  " 5:  "
+set $wspace6  " 6:  "
+set $wspace7  " 7: 󰇮 "
+set $wspace8  " 8:  "
+set $wspace9  " 9: ♫ "
+set $wspace10 " 10:  "
+
+# ================================================
+#  Startup
+# ================================================
+
+# Programs are started via $XDG_CONFIG_HOME/X11/xinitrc
+
+# To automatically unlock KWallet protected by the login password,
+# in addition to configuring PAM.
+$run /usr/lib/pam_kwallet_init
+
+# Background color
 $run hsetroot -solid "#073542" &
 
-#$run picom -b
-#$run $term -name dropdown_aux -e tmux new-session
-
-# This amazing script uses the i3ipc-python library to switch the layout
-# splith/splitv depending on the currently focused window dimensions.
+# This amazing script uses the python-i3ipc library to switch the layout
+# between horizontal and vertical splits depending on the currently focused
+# window dimensions.
 $run_always autotiling
 
-# =============================
+# Open notes
+$run i3-msg 'workspace $wspace1; $run i3-vimnotes'
+
+# ================================================
 #  Appearance
-# =============================
+# ================================================
 
-# GAP VARIABLES
-set $inner 8
-set $outer 4
-set $top   0
+# Gaps
+gaps top   $gap_size_top
+gaps outer $gap_size_outer
+gaps inner $gap_size_inner
+# Smart gaps turn off gaps if only one
+# container on the workspace is present
+smart_gaps off
 
+# Window borders
 for_window [class="^.*"] border pixel 1
 smart_borders on
 
-gaps inner $inner
-gaps outer $outer
-gaps top   $top
-# smart_gaps on     # gaps used if only more than one container on the workspace
-
-set $arch_blue            #1793d1
-set $pretty_blue          #268bd2
-set $another_blue         #47afdf
-set $light_blue           #79bac1
-set $pretty_light_blue    #00afd7
-set $aquamarine           #06989a
-set $sea                  #bdced3
-set $bar_bg               #002b36
-
-# statusbar
+# Status bar
 bar {
-    font xft:SauceCodePro Nerd Font Bold 10
-    status_command i3blocks
-    position top
-    tray_padding 5
-    #tray_output none   # hides tray icons
-    bindsym button4 nop
-    bindsym button5 nop
-    workspace_buttons yes
-    strip_workspace_numbers no
+  font                    xft:Source Code Pro Bold 12
+  status_command          i3blocks
+  position                top
+  tray_padding            5
+  # Hide tray icons:
+  #tray_output             none
+  bindsym button4         nop
+  bindsym button5         nop
+  workspace_buttons       yes
+  strip_workspace_numbers no
 
   colors {
-    separator   $pretty_blue
-    background  $bar_bg
-    statusline  $pretty_blue
+    separator  $col_pretty_blue
+    background $col_bar_bg
+    statusline $col_pretty_blue
 
-    #                    border       bg          text
-    focused_workspace    $bar_bg      $bar_bg     $arch_blue
-    inactive_workspace   $bar_bg      $bar_bg     $light_blue
-    active_workspace     $bar_bg      $bar_bg     #ffffff
-    urgent_workspace     $arch_blue   $arch_blue  $bar_bg
-    binding_mode         #b71c1c      #b71c1c     #000000
+    #                  Border         Background     Text
+    focused_workspace  $col_bar_bg    $col_bar_bg    $col_pretty_light_blue
+    active_workspace   $col_bar_bg    $col_bar_bg    $col_arch_blue
+    inactive_workspace $col_bar_bg    $col_bar_bg    $col_light_blue
+    urgent_workspace   $col_arch_blue $col_arch_blue $col_bar_bg
+    binding_mode       #b71c1c        #b71c1c        #000000
   }
 }
 
 # Colors
-# class                    border         bg                    text            indicator
-client.focused             $arch_blue     $pretty_light_blue    $light_blue     $arch_blue
-client.focused_inactive    $arch_blue     $arch_blue            $light_blue     $arch_blue
-client.unfocused           $arch_blue     $arch_blue            $light_blue     $arch_blue
-client.urgent              $arch_blue     $arch_blue            $light_blue     $arch_blue
-client.placeholder         $arch_blue     $arch_blue            $light_blue     $arch_blue
+# Class                 Border         Background             Text             Indicator
+client.focused          $col_arch_blue $col_pretty_light_blue $col_light_blue  $col_arch_blue
+client.focused_inactive $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+client.unfocused        $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+client.urgent           $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+client.placeholder      $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
 
-# =============================
+# ================================================
 #  Window traits
-# =============================
+# ================================================
 
 # Dropdown windows (the order can matter)
 for_window [instance="dropdown_*"] floating enable
-for_window [instance="dropdown_*"] sticky enable
-for_window [instance="dropdown_*"] resize set 625 450
-for_window [instance="dropdown_*"] border pixel 3
-for_window [instance="dropdown_*"] move position 1187 295
-for_window [instance="dropdown_*"] move scratchpad
+for_window [instance="dropdown_*"] sticky   enable
+for_window [instance="dropdown_*"] border   pixel    3
+for_window [instance="dropdown_*"] resize   set      841 571
+for_window [instance="dropdown_*"] move     position 2953 722
+for_window [instance="dropdown_*"] move     scratchpad
+
+for_window [instance="clipboard"] floating enable
+for_window [instance="clipboard"] sticky   enable
+for_window [instance="clipboard"] border   pixel    3
+for_window [instance="clipboard"] resize   set      1075 1222
+for_window [instance="clipboard"] move     position 183  768
 
 for_window [instance="i3blocks_calendar"] floating enable
-for_window [instance="i3blocks_calendar"] resize set 160 140
-for_window [instance="i3blocks_calendar"] move position 1430 28
-for_window [instance="i3blocks_calendar"] border pixel 2
+for_window [instance="i3blocks_calendar"] border   pixel    2
+for_window [instance="i3blocks_calendar"] resize   set      184  151
+for_window [instance="i3blocks_calendar"] move     position 4783 37
 
 for_window [instance="i3blocks_weather"] floating enable
-for_window [instance="i3blocks_weather"] resize set 1012 667
-for_window [instance="i3blocks_weather"] move position 988 28
-for_window [instance="i3blocks_weather"] border pixel 2
+for_window [instance="i3blocks_weather"] border   pixel    2
+for_window [instance="i3blocks_weather"] resize   set      1165 865
+for_window [instance="i3blocks_weather"] move     position 4103 37
 
-for_window [class="KeePass2"] floating enable
-for_window [class="KeePass2"] sticky enable
-for_window [class="KeePass2"] resize set 730 700
-for_window [class="KeePass2"] move position 1100 220
+for_window [class="KeePassXC"] floating enable
+for_window [class="KeePassXC"] sticky   enable
+for_window [class="KeePassXC"] resize   set      922 937
+for_window [class="KeePassXC"] move     position 278 887
 
 for_window [class="Lxappearance"] floating enable
-for_window [class="Lxappearance"] sticky enable
-for_window [class="Lxappearance"] resize set 625 450
-for_window [class="Lxappearance"] border pixel 3
-for_window [class="Lxappearance"] move position 1187 295
+for_window [class="Lxappearance"] sticky   enable
+for_window [class="Lxappearance"] border   pixel    3
+for_window [class="Lxappearance"] resize   set      710 504
+for_window [class="Lxappearance"] move     position 3004 757
 
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Pavucontrol"] sticky enable
-for_window [class="Pavucontrol"] resize set 625 450
-for_window [class="Pavucontrol"] border pixel 3
-for_window [class="Pavucontrol"] move position 1187 295
+for_window [class="pavucontrol"] floating enable
+for_window [class="pavucontrol"] sticky   enable
+for_window [class="pavucontrol"] border   pixel    3
+for_window [class="pavucontrol"] resize   set      852 596
+for_window [class="pavucontrol"] move     position 261 1500
 
 for_window [class="Qalculate-gtk"] floating enable
-for_window [class="Qalculate-gtk"] sticky enable
-for_window [class="Qalculate-gtk"] resize set 625 450
-for_window [class="Qalculate-gtk"] border pixel 3
-for_window [class="Qalculate-gtk"] move position 1187 295
+for_window [class="Qalculate-gtk"] sticky   enable
+for_window [class="Qalculate-gtk"] border   pixel    3
+for_window [class="Qalculate-gtk"] resize   set      782 545
+for_window [class="Qalculate-gtk"] move     position 3963 1360
 
-for_window [class="Gimp"]                move workspace $ws5
-for_window [class="Inkscape"]            move workspace $ws5
-for_window [class="SmartGit"]            move workspace $ws6
-for_window [class="SmartSVN"]            move workspace $ws6
-for_window [class="thunderbird"]         move workspace $ws7
-for_window [class="Clementine"]          move workspace $ws8
-for_window [class="discord"]             move workspace $ws8
-for_window [class="Microsoft Teams*"]    move workspace $ws8
-for_window [class="Steam"]               move workspace $ws9
-for_window [class="kdenlive"]            move workspace $ws9
-for_window [class="obs"]                 move workspace $ws9
-for_window [class="Spotify"]             move workspace $ws9
+for_window [class="Gimp"]             move workspace $wspace5
+for_window [class="Inkscape"]         move workspace $wspace5
+for_window [class="SmartSVN"]         move workspace $wspace6
+for_window [class="thunderbird"]      move workspace $wspace7
+for_window [class="discord"]          move workspace $wspace8
+for_window [class="obs"]              move workspace $wspace8
+for_window [class="steam"]            move workspace $wspace8
+for_window [class="Spotify"]          move workspace $wspace9
 
-# =============================
-#  Workspace traits
-# =============================
+# ================================================
+#  Keybindings
+# ================================================
 
-# for_window [workspace=$ws10]     layout tabbed
+# ----------------------------
+#  Escape, Return, Space keys
+# ----------------------------
 
-# =============================
-#  Basic Bindings
-# =============================
+bindsym $mod + Return        $run     $TERMINAL
+bindsym $mod + space         floating toggle
+bindsym $mod + Shift + space focus    mode_toggle
+bindsym $alt + Escape        kill
 
-bindsym $mod+Return         $run $term
+# ----------------------------
+#  Letter keys
+# ----------------------------
 
-#bindsym $mod+space          floating toggle
-#bindsym $mod+Shift+space    focus mode_toggle
+bindsym $alt + c         $run fast-open-or-focus discord
+bindsym $alt + e         $run thunar
+bindsym $alt + p         $run pavucontrol
+bindsym $mod + b         $run fast-open-or-focus gimp Gimp -x
+bindsym $mod + c         $run fast-open-or-focus code
+bindsym $mod + e         $run fast-focus "- Thunar"
+bindsym $mod + g         $run fast-open-or-focus smartsvn
+bindsym $mod + i         $run $TERMINAL -e htop
+bindsym $mod + m         $run fast-open-or-focus nomacs
+bindsym $mod + n         workspace $wspace2; $run brave
+bindsym $mod + o         $run keepassxc
+bindsym $mod + p         $run fast-open-or-focus pycharm jetbrains-pycharm -x
+bindsym $mod + Shift + p $run dmenu-pastes
+bindsym $mod + q         $run fast-open-or-focus emacs emacs.Emacs -x emacs
+bindsym $mod + r         $run $TERMINAL -e ranger
+bindsym $mod + s         $run xscreensaver-command --lock
+bindsym $mod + t         $run qutebrowser-wall
+bindsym $mod + y         $run $TERMINAL -e calcurse -D $XDG_CONFIG_HOME/calcurse
+bindsym $mod + semicolon $run fast-open-or-focus libreoffice
 
-bindsym $alt+$esc           kill
+# Imitate "Show Desktop"
+bindsym $mod + d           $run i3-showdesktop $wspace10
+# Imitate "Alt+Tab"
+#   Also very useful for switching between two displays
+bindsym $alt + Tab         $run i3-msg 'workspace back_and_forth'
+# Imitate "Win+Tab"
+bindsym $mod + Tab         $run i3-msg 'workspace next'
+# Imitate "Win+Shift+Tab"
+bindsym $mod + Shift + Tab $run i3-msg 'workspace prev'
 
-# =============================
-#  Letter Bindings
-# =============================
+bindsym $alt + q         [instance="dropdown_*"] move scratchpad;
+bindsym $alt + u         $run i3-activate-dropdown
+bindsym $alt + z         sticky toggle
+bindsym $mod + Shift + b bar mode toggle
+bindsym $mod + u         $run i3-activate-dropdown-alacritty
 
-#bindsym $mod+c $run activate spotify
-bindsym $mod+c $run activate code
-bindsym $mod+Shift+p $run dmenu-pastes
-bindsym $mod+p $run pavucontrol
-bindsym $alt+p $run killall pavucontrol
-#bindsym $alt+d $run dosbox
-bindsym $mod+q $run activate emacs
-bindsym $mod+o $run "keepass $DROPBOX/keepass/8gb.kdbx"
-bindsym $mod+f $run activate filezilla
-bindsym $alt+e $run thunar
-bindsym $mod+e $run wmctrl -a "File Manager"
-#bindsym $mod+g $run activate smartgit
-bindsym $mod+g $run activate smartsvn
-bindsym $mod+semicolon $run activate libreoffice
-bindsym $mod+n workspace $ws2; $run brave
-bindsym $mod+t $run qutebrowser-wall
-bindsym $mod+r $run $term -e $FILE
-bindsym $mod+y $run $term -e calcurse -D ~/.config/calcurse
-bindsym $mod+i $run $term -e htop
-#bindsym $mod+s $run betterlockscreen -t "" -l
-bindsym $mod+s $run xscreensaver-command --lock
-bindsym $mod+b $run gimp
+# Distraction free mode
+#   Turn on: (holding $mod key glances at the statusbar)
+bindsym $mod + grave bar mode hide; \
+  gaps inner current set 0; \
+  gaps outer current set 0; \
+  gaps top current set 0
+#   Turn off:
+bindsym $mod + Shift + grave bar mode dock; \
+  gaps inner current set $gap_size_inner; \
+  gaps outer current set $gap_size_outer; \
+  gaps top current set $gap_size_top
 
-# imitate "show desktop" behaviour
-bindsym $mod+d $run i3-showdesktop $ws10
-# imitate "win+tab" behaviour
-bindsym $mod+Tab $run i3-msg 'workspace next'
-# imitate "win+Shift+tab" behaviour
-bindsym $mod+Shift+Tab $run i3-msg 'workspace prev'
-# imitate "alt+tab" behaviour
-# also very useful for switching between two displays
-bindsym $alt+Tab $run i3-msg 'workspace back_and_forth'
+# Place new windows to the right of the current one
+bindsym $mod + apostrophe split horizontal
+# Place new windows below the current one
+bindsym $mod + slash      split vertical
 
-bindsym $mod+u $run i3-activate-dropdown-alacritty
-bindsym $alt+u $run i3-activate-dropdown
-#bindsym $alt+u $run $term -name dropdown_aux -e tmux new-session
-bindsym $alt+q [instance="dropdown_*"] move scratchpad;
-bindsym $alt+z          sticky toggle
-bindsym $mod+Shift+b    bar mode toggle
+# Enter fullscreen mode for the focused container
+bindsym $mod + x fullscreen toggle
 
-# distraction free mode
-# $mod key (win key), when held, will show the statusbar
-bindsym $mod+grave    bar mode hide; gaps inner current set 0; gaps outer current set 0; gaps top current set 0
-# turn off distraction free mode
-bindsym $mod+Shift+grave    bar mode dock; gaps inner current set $inner; gaps outer current set $outer; gaps top current set $top
+# Exit i3 (logs out of the X session)
+bindsym $mod + Shift + e $run \
+    "i3-nagbar -t warning -m 'You pressed the exit shortcut. \
+     Do you really want to exit i3? This will end your X session.' \
+     -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+apostrophe split horizontal
-bindsym $mod+slash split vertical
+# Change focus
+bindsym $mod+h   focus left
+bindsym $mod + j focus down
+bindsym $mod + k focus up
+bindsym $mod + l focus right
 
-# enter fullscreen mode for the focused container
-bindsym $mod+x fullscreen toggle
+# Move focused window
+bindsym $mod + Shift + h move left
+bindsym $mod + Shift + j move down
+bindsym $mod + Shift + k move up
+bindsym $mod + Shift + l move right
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e $run "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-# change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
-# move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
-
-# resize focused window
-#   (!!) also works by holding right mouse button
+# Resize focused window
+#   Also works by holding the right mouse button
 #   near the edge and dragging the window
-bindsym $mod+Shift+u $run i3-resize down
-bindsym $mod+Shift+i $run i3-resize up
-bindsym $mod+Shift+o $run i3-resize right
-bindsym $mod+Shift+y $run i3-resize left
-# to restore win sizes, move one of the windows around
-# a few times (ex. $mod+Shift+l and $mod+Shift+h)
+# To restore window sizes, move one of the windows around
+# a few times (e.g. $mod + Shift + l and $mod + Shift + h)
+bindsym $mod + Shift + y $run i3-resize left
+bindsym $mod + Shift + u $run i3-resize down
+bindsym $mod + Shift + i $run i3-resize up
+bindsym $mod + Shift + o $run i3-resize right
 
-# =============================
-#  Workspace Bindings
-# =============================
+# Switch to a certain workspace
+bindsym $mod + 1 workspace number $wspace1
+bindsym $mod + 2 workspace number $wspace2
+bindsym $mod + 3 workspace number $wspace3
+bindsym $mod + 4 workspace number $wspace4
+bindsym $mod + 5 workspace number $wspace5
+bindsym $mod + 6 workspace number $wspace6
+bindsym $mod + 7 workspace number $wspace7
+bindsym $mod + 8 workspace number $wspace8
+bindsym $mod + 9 workspace number $wspace9
+bindsym $mod + 0 workspace number $wspace10
 
-set $ws1 " 1:  "
-set $ws2 " 2:  "
-set $ws3 " 3:  "
-set $ws4 " 4:  "
-set $ws5 " 5:  "
-set $ws6 " 6:  "
-set $ws7 " 7:  "
-set $ws8 " 8:  "
-set $ws9 " 9: ♫ "
-set $ws10 " 10: 雷 "
-# previously used icons: {, , , , }
+# Move focused container to a certain workspace
+bindsym $mod + Shift + 1 move container to workspace number $wspace1
+bindsym $mod + Shift + 2 move container to workspace number $wspace2
+bindsym $mod + Shift + 3 move container to workspace number $wspace3
+bindsym $mod + Shift + 4 move container to workspace number $wspace4
+bindsym $mod + Shift + 5 move container to workspace number $wspace5
+bindsym $mod + Shift + 6 move container to workspace number $wspace6
+bindsym $mod + Shift + 7 move container to workspace number $wspace7
+bindsym $mod + Shift + 8 move container to workspace number $wspace8
+bindsym $mod + Shift + 9 move container to workspace number $wspace9
+bindsym $mod + Shift + 0 move container to workspace number $wspace10
 
-# =========== runs on i3 startup =============
-# moved this line after assigning workspaces
-# so as not to break ws1 icon
-$run i3-msg 'workspace $ws1; $run i3-vimnotes'
-# ============================================
+# ----------------------------
+#  Function keys
+# ----------------------------
 
-# switch to workspace
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+bindsym F1         $run "picom -b"
+bindsym $mod + F1  $run "killall picom"
+bindsym F2         $run fast-focus t2.URxvt -x
+bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
+bindsym F3         $run fast-open-or-focus i3-vimnotes notes.URxvt -x
+bindsym $alt + F3  $run i3-vimnotes
+bindsym F4         $run fast-open-or-focus i3-urxvt-clipboard clipboard.URxvt -x
+bindsym F5         $run fast-open-or-focus chromium
+bindsym F7         $run fast-open-or-focus thunderbird
+bindsym F9         $run open-or-focus-brave-ignoring alpha bravo
+bindsym F10        $run fast-open-or-focus qalculate-gtk qalculate
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
-
-# ===================
-#  Function Buttons
-# ===================
-
-#bindsym F1 $run terminator
-bindsym $mod+F1 $run "killall picom && picom -b"
-bindsym $alt+F2 $run i3-msg '$run $term -name t2'
-#bindsym F2 $run i3-msg '$run wmctrl -x -a t2.URxvt'
-
-bindsym $alt+F3 $run i3-vimnotes
-bindsym F3 $run i3-msg '$run wmctrl -x -a notes.URxvt'
-
-#bindsym F4 $run activate firefox
-bindsym F5 $run subl
-bindsym F7 $run activate thunderbird
-bindsym F8 $run activate "teams" "teams --no-sandbox"
-bindsym F9 $run activate $BROWSER
-bindsym F10 $run activate qalculate-gtk
-
-# simply reloads the configuration in-memory (as in "source")
-# bindsym F11 reload
-# replaces the entire i3 instance with a new one (as in "exec")
-# layout/session is preserved. Runs exec-always directives
+# Simply reloads the configuration in-memory (as in "source")
+bindsym F11 reload
+# Replaces the entire i3 instance with a new one (as in "exec")
+# Layout/session is preserved. Runs exec_always directives
 bindsym F12 restart
 
-bindsym $mod+F5            $run light -U 10 && pkill -RTMIN+2 i3blocks
-bindsym $mod+F6            $run light -A 10 && pkill -RTMIN+2 i3blocks
-bindsym $mod+F11           $run amixer set Master 10%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+F12           $run amixer set Master 10%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+Shift+Delete  $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
+bindsym $mod + F5             $run light -U 10                  && pkill -RTMIN+2 i3blocks
+bindsym $mod + F6             $run light -A 10                  && pkill -RTMIN+2 i3blocks
+bindsym $mod + F11            $run amixer     set Master 10%-   && pkill -RTMIN+1 i3blocks
+bindsym $mod + F12            $run amixer     set Master 10%+   && pkill -RTMIN+1 i3blocks
+bindsym $mod + Shift + Delete $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
 
-# open programs
-bindsym Insert             $run rofi -show
-# run scripts
-bindsym $mod+Insert        $run rofi -show run
-# run dmenu
-bindsym $mod+Shift+Insert  $run dmenu_run
-# run surfraw
-#bindsym $mod+Insert        $run dmenu-surfraw
-# run activate/focus program
-#bindsym $mod+Insert        $run rofi -show Open -modi Open:$BIN/rofi-open
-# run logout/shutdown/reboot prompt
-bindsym $mod+End           $run rofi -show Power -modi Power:$BIN/rofi-power
-# kill a process by its name/pid
-bindsym $mod+Delete        $run rofi -show Kill -modi Kill:$BIN/rofi-kill
+# Open programs
+bindsym Insert                $run rofi -show
+# Run scripts
+bindsym $mod + Insert         $run rofi -show run
+# Run dmenu
+bindsym $mod + Shift + Insert $run dmenu_run
+# Activate/focus a program
+#bindsym $mod + Insert         $run rofi -show Open  -modi Open:rofi-open
+# Open logout/shutdown/reboot prompt
+bindsym $mod + End            $run rofi -show Power -modi Power:rofi-power
+# Kill a process by its name/PID
+bindsym $mod + Delete         $run rofi -show Kill  -modi Kill:rofi-kill
 
-# PageUp (standard light)
-bindsym $mod+Prior         $run  redshift -P -O 6500
-# PageDown (warm light)
-bindsym $mod+Next          $run  redshift -P -O 5000
+# Standard light (PageUp key)
+bindsym $mod + Prior  $run  redshift -P -O 6500
+# Warm light (PageDown key)
+bindsym $mod + Next   $run  redshift -P -O 5000
 # Just for fun
-bindsym $mod+Pause         $run  redshift -P -O 1000
+bindsym $mod + Pause  $run  redshift -P -O 1000
 
-bindsym $print $run flameshot gui -p /home/riddle/Screenshots
-bindsym Shift+$print $run scrot /home/riddle/Screenshots/screenshot-%F-%H%M%S.png
+bindsym Print         $run flameshot gui -p $SCREENSHOTS
+bindsym Shift + Print $run scrot $SCREENSHOTS/screenshot-%F-%H%M%S.png
 
-# ===================
+# ----------------------------
 #  Arrow keys
-# ===================
+# ----------------------------
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod + Shift + Left  move left
+bindsym $mod + Shift + Down  move down
+bindsym $mod + Shift + Up    move up
+bindsym $mod + Shift + Right move right
 
-# ===================
-#  Media keys
-# ===================
+# ----------------------------
+#  +/=, -, <, >, [, ] keys
+# ----------------------------
 
 # Volume keys
-bindsym $mod+plus           $run amixer sset Master 5%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+Shift+plus     $run amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod+minus          $run amixer sset Master 5%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+Shift+minus    $run amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
-bindsym $mod+less           $run mpc prev
-bindsym $mod+Shift+less     $run mpc seek 0%
-bindsym $mod+greater        $run mpc next
-bindsym $mod+Shift+greater  $run mpc next
+bindsym $mod + plus          $run amixer sset Master 5%+  && pkill -RTMIN+1 i3blocks
+bindsym $mod + Shift + plus  $run amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
+bindsym $mod + minus         $run amixer sset Master 5%-  && pkill -RTMIN+1 i3blocks
+bindsym $mod + Shift + minus $run amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
 
-# For advancing forward/backward in an mpd song
-bindsym $mod+bracketleft          $run mpc seek -10
-bindsym $mod+Shift+bracketleft    $run mpc seek -120
-bindsym $mod+bracketright         $run mpc seek +10
-bindsym $mod+Shift+bracketright   $run mpc seek +120
+# MPD server: switching between songs, advancing forward/backward in a song
+bindsym $mod + less                 $run mpc prev
+bindsym $mod + Shift + less         $run mpc seek 0%
+bindsym $mod + greater              $run mpc next
+bindsym $mod + Shift + greater      $run mpc next
+bindsym $mod + bracketleft          $run mpc seek -10
+bindsym $mod + Shift + bracketleft  $run mpc seek -120
+bindsym $mod + bracketright         $run mpc seek +10
+bindsym $mod + Shift + bracketright $run mpc seek +120
 
-# ===================
-#  Extra XF86 Keys
-# ===================
+# ----------------------------
+#  Extra XF86 keys
+# ----------------------------
 
-# Caution: Airplane mode button turns off internet!
-
-bindsym XF86AudioRaiseVolume    $run "amixer set Master 10%+"
-bindsym XF86AudioLowerVolume    $run "amixer set Master 10%-"
-bindsym XF86TouchpadToggle      $run toggletouchpad
-bindsym XF86TouchpadOn          $run synclient TouchpadOff=0
-bindsym XF86TouchpadOff         $run synclient TouchpadOff=1
-bindsym XF86MonBrightnessUp     $run light -A 10 && pkill -RTMIN+2 i3blocks
-bindsym XF86MonBrightnessDown   $run light -U 10 && pkill -RTMIN+2 i3blocks
-bindsym XF86RFKill              nop
+# Caution: Airplane mode button turns off the internet!
+bindsym XF86AudioRaiseVolume  $run amixer sset Master 10%+ && pkill -RTMIN+1 i3blocks
+bindsym XF86AudioLowerVolume  $run amixer sset Master 10%- && pkill -RTMIN+1 i3blocks
+bindsym XF86MonBrightnessUp   $run light -A 10 && pkill -RTMIN+2 i3blocks
+bindsym XF86MonBrightnessDown $run light -U 10 && pkill -RTMIN+2 i3blocks
+bindsym XF86RFKill            nop

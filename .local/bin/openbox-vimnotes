@@ -1,2 +1,5 @@
 #!/usr/bin/env sh
-urxvt -geometry 135x61 -name notes -hold -e tmux new $EDITOR -c "e $DROPBOX/gtd/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose"
+
+file_to_open="$NOTES/coding/main.md"
+
+urxvt -geometry 135x61 -name notes -hold -e tmux new $EDITOR -c "e $file_to_open | :cd %:p:h | :cd .. | :NvimTreeClose"
