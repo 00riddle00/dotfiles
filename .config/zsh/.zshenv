@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 12:00:18 EEST
+# Date:   2024-07-30 16:10:25 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -96,8 +96,6 @@ export VIMCOLOR="miro8"
 export CC="gcc"
 export TERMINAL="urxvt"
 export BROWSER="brave"
-export READER="zathura"
-export STATUSBAR="i3blocks"
 export PAGER="less"
 # bat used as a colorizing pager for man
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -105,8 +103,6 @@ export BAT_PAGER="less -RF"
 #   It might also be necessary to set MANROFFOPT="-c"
 #   if you experience formatting problems (I do).
 export MANROFFOPT="-c"
-## for i3
-export FILE="ranger"
 
 # Default programs (custom ENV vars)
 export AUR_HELPER="paru"

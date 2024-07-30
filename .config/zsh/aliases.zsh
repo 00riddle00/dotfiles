@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 13:50:17 EEST
+# Date:   2024-07-30 16:10:13 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -223,12 +223,14 @@ alias reapache='systemctl restart httpd'
 # Wired
 alias net="systemctl start dhcpcd@$(basename -a /sys/class/net/enp*).service"
 alias renet="systemctl restart dhcpcd@$(basename -a /sys/class/net/enp*).service"
+alias lan.on="sudo ip link set $(basename -a /sys/class/net/enp*) up"
+alias lan.off="sudo ip link set $(basename -a /sys/class/net/enp*) down"
 
 # Wireless
 alias wnet="sudo systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
 alias rewnet="sudo systemctl restart dhcpcd@$(basename -a /sys/class/net/wlp*).service"
-alias wifi.off="sudo ip link set $(basename -a /sys/class/net/wlp*) down"
 alias wifi.on="sudo ip link set $(basename -a /sys/class/net/wlp*) up"
+alias wifi.off="sudo ip link set $(basename -a /sys/class/net/wlp*) down"
 
 #------------------------------------------------------------------------------
 # 13. Network
@@ -700,7 +702,7 @@ alias zr='$EDITOR $ZDOTDIR/.zshrc'
 # i3
 #---------------------------------------
 
-alias i3.out='i3-msg exit'
+alias i3.exit='i3-msg exit'
 alias i3.notes='i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes"'
 alias cmus.run='urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch="i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
@@ -713,6 +715,7 @@ alias i3-msg-tmux='i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3
 #---------------------------------------
 
 alias autostart='$XDG_CONFIG_HOME/openbox/autostart'
+alias op.exit='openbox --exit'
 alias theme.matrix='$BIN/themes/matrix/run'
 alias theme.riddle='$BIN/themes/riddle/run'
 alias f2on='openbox-enable-F2-keybinding'
@@ -1067,3 +1070,5 @@ alias gitr='git rev-list --all --pretty=oneline -- '
 alias dotd="dot log --date=format:'%Y-%m-%d %H:%M:%S EE(S)T' "
 alias gau='git add -u .'
 alias p6='cd /home/riddle/pro/2024/PTUA6'
+alias x.out='killall xinit'
+alias sta='cd $BIN/statusbar'
