@@ -1,7 +1,7 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-07-28 12:26:27 EEST
+" Date:   2024-07-31 18:59:39 EEST
 " Path:   ~/.config/ideavim/ideavimrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -10,36 +10,36 @@
 " Key handlers
 "-----------------------------------------------------------
 
-sethandler <C-2>   a:ide
+sethandler <C-2> a:ide
 sethandler <C-S-2> a:ide
-sethandler <C-6>   a:ide
+sethandler <C-6> a:ide
 sethandler <C-S-6> a:ide
-sethandler <C-A>   a:ide
-sethandler <C-B>   a:ide
-sethandler <C-C>   a:ide
-sethandler <C-D>   a:vim
-sethandler <C-E>   a:ide
-sethandler <C-F>   a:ide
-sethandler <C-G>   a:ide
-sethandler <C-H>   a:ide
-sethandler <C-I>   a:vim
-sethandler <C-L>   a:ide
-sethandler <C-M>   a:vim
-sethandler <C-N>   a:ide
-sethandler <C-O>   a:vim
-sethandler <C-P>   a:ide
-sethandler <C-Q>   a:ide
-sethandler <C-R>   a:vim
-sethandler <C-S>   a:ide
-sethandler <C-T>   a:ide
-sethandler <C-U>   a:ide
-sethandler <C-V>   a:ide
-sethandler <C-W>   a:vim
-sethandler <C-X>   a:ide
-sethandler <C-Y>   a:ide
-sethandler <C-[>   a:ide
-sethandler <C-\>   a:ide
-sethandler <C-]>   a:ide
+sethandler <C-A> a:ide
+sethandler <C-B> a:ide
+sethandler <C-C> a:ide
+sethandler <C-D> a:vim
+sethandler <C-E> a:ide
+sethandler <C-F> a:ide
+sethandler <C-G> a:ide
+sethandler <C-H> a:ide
+sethandler <C-I> a:vim
+sethandler <C-L> a:ide
+sethandler <C-M> a:vim
+sethandler <C-N> a:ide
+sethandler <C-O> a:vim
+sethandler <C-P> a:ide
+sethandler <C-Q> a:ide
+sethandler <C-R> a:vim
+sethandler <C-S> a:ide
+sethandler <C-T> a:ide
+sethandler <C-U> a:ide
+sethandler <C-V> a:ide
+sethandler <C-W> a:vim
+sethandler <C-X> a:ide
+sethandler <C-Y> a:ide
+sethandler <C-[> a:ide
+sethandler <C-\> a:ide
+sethandler <C-]> a:ide
 
 "---------------------------------------------------------------
 " Settings
