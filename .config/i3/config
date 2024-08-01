@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-31 00:13:38 EEST
+# Date:   2024-07-31 00:56:58 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -29,11 +29,11 @@ set $gap_size_top   0
 set $gap_size_inner 8
 set $gap_size_outer 4
 
-set $col_arch_blue         #1793d1
-set $col_pretty_blue       #268bd2
-set $col_light_blue        #79bac1
-set $col_pretty_light_blue #00afd7
 set $col_bar_bg            #002b36
+set $col_arch_blue         #1793d1
+set $col_light_blue        #79bac1
+set $col_pretty_blue       #268bd2
+set $col_pretty_light_blue #00afd7
 
 set $wspace1  " 1:  "
 set $wspace2  " 2:  "
@@ -89,7 +89,7 @@ bar {
   status_command          i3blocks
   position                top
   tray_padding            5
-  # Hides tray icons:
+  # Hide tray icons:
   #tray_output             none
   bindsym button4         nop
   bindsym button5         nop
@@ -171,15 +171,11 @@ for_window [class="Qalculate-gtk"] move     position 3963 1360
 
 for_window [class="Gimp"]             move workspace $wspace5
 for_window [class="Inkscape"]         move workspace $wspace5
-for_window [class="SmartGit"]         move workspace $wspace6
 for_window [class="SmartSVN"]         move workspace $wspace6
 for_window [class="thunderbird"]      move workspace $wspace7
 for_window [class="discord"]          move workspace $wspace8
-for_window [class="kdenlive"]         move workspace $wspace8
-for_window [class="Microsoft Teams*"] move workspace $wspace8
 for_window [class="obs"]              move workspace $wspace8
 for_window [class="steam"]            move workspace $wspace8
-for_window [class="Clementine"]       move workspace $wspace9
 for_window [class="Spotify"]          move workspace $wspace9
 
 # ================================================
@@ -199,39 +195,41 @@ bindsym $alt + Escape        kill
 #  Letter keys
 # ----------------------------
 
-bindsym $mod + c         $run fast-open-or-focus code
-bindsym $mod + Shift + p $run dmenu-pastes
-bindsym $mod + p         $run pavucontrol
-bindsym $alt + p         $run killall pavucontrol
-bindsym $mod + q         $run fast-open-or-focus emacs emacs.Emacs -x emacs
-bindsym $mod + o         $run keepassxc
+bindsym $alt + c         $run fast-open-or-focus discord
 bindsym $alt + e         $run thunar
-bindsym $mod + e         $run fast-focus "- Thunar"
-bindsym $mod + g         $run fast-open-or-focus smartgit
-bindsym $mod + semicolon $run fast-open-or-focus libreoffice
-bindsym $mod + n         workspace $wspace2; $run brave
-bindsym $mod + t         $run qutebrowser-wall
-bindsym $mod + r         $run $TERMINAL -e ranger
-bindsym $mod + y         $run $TERMINAL -e calcurse -D $XDG_CONFIG_HOME/calcurse
-bindsym $mod + i         $run $TERMINAL -e htop
-bindsym $mod + s         $run xscreensaver-command --lock
+bindsym $alt + p         $run pavucontrol
 bindsym $mod + b         $run fast-open-or-focus gimp Gimp -x
+bindsym $mod + c         $run fast-open-or-focus code
+bindsym $mod + e         $run fast-focus "- Thunar"
+bindsym $mod + g         $run fast-open-or-focus smartsvn
+bindsym $mod + i         $run $TERMINAL -e htop
+bindsym $mod + m         $run fast-open-or-focus nomacs
+bindsym $mod + n         workspace $wspace2; $run brave
+bindsym $mod + o         $run keepassxc
+bindsym $mod + p         $run fast-open-or-focus pycharm jetbrains-pycharm -x
+bindsym $mod + Shift + p $run dmenu-pastes
+bindsym $mod + q         $run fast-open-or-focus emacs emacs.Emacs -x emacs
+bindsym $mod + r         $run $TERMINAL -e ranger
+bindsym $mod + s         $run xscreensaver-command --lock
+bindsym $mod + t         $run qutebrowser-wall
+bindsym $mod + y         $run $TERMINAL -e calcurse -D $XDG_CONFIG_HOME/calcurse
+bindsym $mod + semicolon $run fast-open-or-focus libreoffice
 
 # Imitate "Show Desktop"
 bindsym $mod + d           $run i3-showdesktop $wspace10
+# Imitate "Alt+Tab"
+#   Also very useful for switching between two displays
+bindsym $alt + Tab         $run i3-msg 'workspace back_and_forth'
 # Imitate "Win+Tab"
 bindsym $mod + Tab         $run i3-msg 'workspace next'
 # Imitate "Win+Shift+Tab"
 bindsym $mod + Shift + Tab $run i3-msg 'workspace prev'
-# Imitate "Alt+Tab"
-#   Also very useful for switching between two displays
-bindsym $alt + Tab         $run i3-msg 'workspace back_and_forth'
 
-bindsym $mod + u         $run i3-activate-dropdown-alacritty
-bindsym $alt + u         $run i3-activate-dropdown
 bindsym $alt + q         [instance="dropdown_*"] move scratchpad;
+bindsym $alt + u         $run i3-activate-dropdown
 bindsym $alt + z         sticky toggle
 bindsym $mod + Shift + b bar mode toggle
+bindsym $mod + u         $run i3-activate-dropdown-alacritty
 
 # Distraction free mode
 #   Turn on: (holding $mod key glances at the statusbar)
@@ -276,10 +274,10 @@ bindsym $mod + Shift + l move right
 #   near the edge and dragging the window
 # To restore window sizes, move one of the windows around
 # a few times (e.g. $mod + Shift + l and $mod + Shift + h)
+bindsym $mod + Shift + y $run i3-resize left
 bindsym $mod + Shift + u $run i3-resize down
 bindsym $mod + Shift + i $run i3-resize up
 bindsym $mod + Shift + o $run i3-resize right
-bindsym $mod + Shift + y $run i3-resize left
 
 # Switch to a certain workspace
 bindsym $mod + 1 workspace number $wspace1
@@ -311,11 +309,12 @@ bindsym $mod + Shift + 0 move container to workspace number $wspace10
 
 bindsym F1         $run "picom -b"
 bindsym $mod + F1  $run "killall picom"
-bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
 bindsym F2         $run fast-focus t2.URxvt -x
-bindsym $alt + F3  $run i3-vimnotes
+bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
 bindsym F3         $run fast-open-or-focus i3-vimnotes notes.URxvt -x
+bindsym $alt + F3  $run i3-vimnotes
 bindsym F4         $run fast-open-or-focus i3-urxvt-clipboard clipboard.URxvt -x
+bindsym F5         $run fast-open-or-focus chromium
 bindsym F7         $run fast-open-or-focus thunderbird
 bindsym F9         $run open-or-focus-brave-ignoring alpha bravo
 bindsym F10        $run fast-open-or-focus qalculate-gtk qalculate
@@ -346,11 +345,11 @@ bindsym $mod + End            $run rofi -show Power -modi Power:rofi-power
 bindsym $mod + Delete         $run rofi -show Kill  -modi Kill:rofi-kill
 
 # Standard light (PageUp key)
-bindsym $mod + Prior $run  redshift -P -O 6500
+bindsym $mod + Prior  $run  redshift -P -O 6500
 # Warm light (PageDown key)
-bindsym $mod + Next  $run  redshift -P -O 5000
+bindsym $mod + Next   $run  redshift -P -O 5000
 # Just for fun
-bindsym $mod+Pause   $run  redshift -P -O 1000
+bindsym $mod + Pause  $run  redshift -P -O 1000
 
 bindsym Print         $run flameshot gui -p $SCREENSHOTS
 bindsym Shift + Print $run scrot $SCREENSHOTS/screenshot-%F-%H%M%S.png
