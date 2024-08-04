@@ -1,6 +1,6 @@
 --
-Kind regards,
+Beste Grüße,
 Tomas Giedraitis
 
-+370 624 62239
++49 1520 1466926
 tomasgiedraitis@posteo.net
