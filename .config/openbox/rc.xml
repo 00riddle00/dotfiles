@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-31 00:57:08 EEST
+# Date:   2024-08-04 23:56:42 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -543,12 +543,6 @@
       <command>fast-open-or-focus openbox-urxvt-clipboard clipboard.URxvt -x</command>
     </action>
   </keybind>
-  <!-- Open/focus Urxvt window for editing $VIMRC by its class name. -->
-  <keybind key="A-o">
-    <action name="Execute">
-      <command>fast-open-or-focus openbox-vimrc vimrc.URxvt -x</command>
-    </action>
-  </keybind>
 
   <!-- ===========================
   RUN: File Manager
@@ -585,6 +579,16 @@
   <keybind key="W-q">
     <action name="Execute">
       <command>fast-open-or-focus emacs emacs.Emacs -x</command>
+    </action>
+  </keybind>
+
+  <!-- ===========================
+  RUN: dmenu
+  ============================ -->
+  <!-- Open/focus PyCharm window by its class name. -->
+  <keybind key="W-S-p">
+    <action name="Execute">
+      <command>dmenu-pastes</command>
     </action>
   </keybind>
 

@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-04 22:58:41 EEST
+# Date:   2024-08-04 23:55:21 EEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # HISTFILE, HISTSIZE, SAVEHIST variables are set in .zshenv
 # Remove all duplicate entries from the history file
 setopt HIST_IGNORE_ALL_DUPS
-# Remove duplicate entries before older entries when the 
+# Remove duplicate entries before older entries when the
 # history file reaches its maximum size.
 setopt HIST_EXPIRE_DUPS_FIRST
 # Prevent duplicate commands from being saved to the history file
@@ -73,7 +73,7 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 # Append each command to the history file as soon as it is executed
 setopt INC_APPEND_HISTORY
-# Save additional information in the history file, such as the 
+# Save additional information in the history file, such as the
 # timestamp for each command.
 setopt EXTENDED_HISTORY
 
@@ -90,7 +90,7 @@ bindkey "^[h" run-help
 
 # vi mode
 bindkey -v
-# Make the shell wait for 0.1 seconds for the next key in a sequence 
+# Make the shell wait for 0.01 seconds for the next key in a sequence
 # before it times out and considers the input complete
 KEYTIMEOUT=1
 
@@ -99,8 +99,8 @@ autoload -Uz edit-command-line
 # Create a new Zsh Line Editor (ZLE) widget or to redefine an existing one
 zle -N edit-command-line
 # 'v' (lowercase) in visual mode opens VIM to edit the command.
-# :wq brings back the edited command in the zsh prompt (before that, it 
-#   can be useful to call :w {filename} and save the command to a file). 
+# :wq brings back the edited command in the zsh prompt (before that, it
+#   can be useful to call :w {filename} and save the command to a file).
 # 'V' (uppercase) just performs the selection as usual.
 bindkey -M vicmd v edit-command-line
 
@@ -124,7 +124,7 @@ bindkey '^p'  up-history
 bindkey '^n'  down-history
 
 bindkey '^d'  delete-char-or-list
-#bindkey '^h'  backward-delete-char 
+#bindkey '^h'  backward-delete-char
 # ^-- <C-h> is used by vim-tmux-navigator, instead use <BS>
 bindkey '^[d' kill-word
 bindkey '^w'  backward-kill-word
@@ -155,7 +155,7 @@ bindkey '^_'  undo
 setopt AUTO_CD
 
 # Prevent <C-d> from exiting the shell
-set -o ignoreeof  
+set -o ignoreeof
 
 # Disable audible notifications
 unsetopt BEEP
@@ -178,7 +178,7 @@ if [[ -x "$(command -v fzf)"  ]]; then
   source /usr/share/fzf/key-bindings.zsh
 fi
 
-# A fix to make PyCharm auto-activate Python virtual 
+# A fix to make PyCharm auto-activate Python virtual
 # environment upon opening a new terminal tab.
 # See https://youtrack.jetbrains.com/issue/PY-61593/Activate-virtualenv-terminal-option-does-not-work-after-installing-oh-my-zsh
 if [ -n "$JEDITERM_SOURCE" ]; then

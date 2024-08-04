@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-28 18:26:00 EEST
+-- Date:   2024-08-04 23:54:15 EEST
 -- Path:   ~/.config/nvim/lua/options.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ vim.g.loaded_netrwPlugin = 1
 -- Colors
 -------------------------------------------
 
-vim.cmd [[colorscheme $VIMCOLOR]]
+vim.cmd [[colorscheme miro8]]
 o.background    = "dark"
 o.termguicolors = false
 
