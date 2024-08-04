@@ -3,7 +3,7 @@
 To allow for this, wider system configuration needs to set the `ZDOTDIR` enviroment
 variable beforehand. This can be done in e.g. `/etc/zsh/zshenv`:
 ```bash
-export ZDOTDIR=$HOME/.config/zsh
+export ZDOTDIR="$HOME/.config/zsh"
 ```
 See [this](https://www.zsh.org/mla/workers/2013/msg00692.html) mailing list and,
 for general info, see [this](https://wiki.archlinux.org/title/XDG_Base_Directory) wiki page.
