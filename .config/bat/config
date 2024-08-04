@@ -1,17 +1,20 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-07 01:18:22 EEST
+# Date:   2024-08-04 23:53:32 EEST
 # Path:   ~/.config/bat/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 --theme="OneHalfDark"
 
-# Show line numbers, Git modifications and file header (but no grid)
+# Use "less" as a pager
+--pager="less"
+
+# Show line numbers, Git modifications (but no grid)
 --style="numbers,changes"
 
 # Use C++ syntax (instead of C) for .h header files
---map-syntax h:cpp
+--map-syntax="h:cpp"
 
 # Use C++ syntax for .ino files
---map-syntax "*.ino:C++"
+--map-syntax="*.ino:C++"
