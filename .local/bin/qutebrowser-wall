@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-image=$(find $XDG_PICTURES_DIR -type f -iname '*.jpg' | shuf -n 1)
+image=$(find $XDG_PICTURES_DIR/Wallpapers -type f -iname '*.jpg' | shuf -n 1)
 cp $image $DOTSHARE/qutebrowser-homepage/panorama.jpg
 qutebrowser & > /dev/null 2>&1
 

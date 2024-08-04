@@ -10,7 +10,7 @@
 # Update Arch Linux.
 #**
 
-${AUR_HELPER:-paru} -Syu --noconfirm \
+sudo pacman -Syu --noconfirm \
 && notify-send "update" "Arch updated"
 
 # Dunst notification daemon handles the notification according to the existing

@@ -20,7 +20,7 @@
 ## Check if X is running.
 if xset q &>/dev/null; then
     xrandr \
-        --output $HDMI_SCREEN --auto --rotate right \
-        --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN \
+        --output $HDMI1_SCREEN --auto --rotate right \
+        --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI1_SCREEN \
         --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN
 fi
