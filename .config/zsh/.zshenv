@@ -69,7 +69,6 @@ export TEXMFVAR="$XDG_CACHE_HOME/texlive/texmf-var"
 export TMUX_PLUGIN_MANAGER_PATH="$XDG_CONFIG_HOME/tmux/plugins/"
 export W3M_DIR="$XDG_STATE_HOME/w3m"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
-#export XINITRC="$XDG_CONFIG_HOME/X11/xinit/xinitrc"
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export ZDOTDIR="${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}"
@@ -90,9 +89,6 @@ export LC_ALL="en_US.UTF-8"
 
 # Default POSIX collation order
 export LC_COLLATE="C"
-
-# Inform applications that terminal emulator supports True Color
-export COLORTERM=truecolor
 
 # Uniform look for Qt and GTK applications
 export QT_QPA_PLATFORMTHEME="gtk3"
