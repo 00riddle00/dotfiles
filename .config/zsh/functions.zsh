@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 12:01:14 EEST
+# Date:   2024-08-06 00:55:50 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -17,64 +17,64 @@ ma() { echo alias "$1='$2'" >> "$ZDOTDIR/aliases.zsh"; echo "***Alias added***\n
 # Make an alias for zsh to cd into current dir.
 macd() { echo alias "$1='cd $(pwd)'" >> "$ZDOTDIR/aliases.zsh"; echo "***Alias added***\nalias $1='cd $(pwd)'"; zsh }
 
-# SYSTEMWIDE FUNCTIONS
+# Systemwide functions
 
-## find command in history
+## Find command in history
 his() { history | grep "$1"; }
 
 jr() { javac "$1" && java $(echo $1 | sed 's/.java//') $(echo "${@:2}"); }
 
-# add numbers to non empty lines in a file
-# usage: num <file>
+# Add numbers to non empty lines in a file
+# Usage: num <file>
 num() { nl -s ' ' "$1" > tmp && mv tmp "$1" && sed "s/^[ \t]*//" -i "$1" && cat "$1" | xclip }
 
-# go to command's flag description in  manpage, ex. `manf grep -r`
+# Go to command's flag description in  manpage, ex. `manf grep -r`
 manf () { man "$1" | less -p "^ +$2"; }
 
-# returns "A" \ "B" (subtracting identical lines)
+# Returns "A" \ "B" (subtracting identical lines)
 a_minus_b() { grep -Fvx -f "$2" "$1" | sort; }
 
-# removes lines from file "A" which contain string from file "B"
+# Removes lines from file "A" which contain string from file "B"
 a_minus_string_in_b() { grep -Fv -f "$2" "$1" | sort; }
 
 a_and_string_in_b() { grep -F -f "$2" "$1" | sort; }
 
-# returns "A" & "B" (identical lines)
+# Returns "A" & "B" (identical lines)
 a_and_b() { comm -12 <( sort "$1" ) <( sort "$2" ) }
 
-# returns "A" U "B" (union of lines, removes duplicate lines)
+# Returns "A" U "B" (union of lines, removes duplicate lines)
 a_union_b() { cat "$1" "$2" | sort -u }
 
-# find all files from current folder | prints extension of files if any | make a unique sorted list
+# Find all files from current folder | prints extension of files if any | make a unique sorted list
 ext() { find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort -u; }
 
-# copy arguments to clipboard
+# Copy arguments to clipboard
 sel() { echo "$@" | xclip}
 
 get-mp3() { youtube-dl --no-playlist --extract-audio --audio-format mp3 "$1"; }
 
 yy() { name="${1%.asm}"; yasm "$name.asm" -fbin -o "$name.com"; }
 
-# opens a temporary file with a given extension
+# Opens a temporary file with a given extension
 # (default extension: .md)
-# file is opened in /tmp dir, it's name contains a timestamp
+# File is opened in /tmp dir, it's name contains a timestamp
 temp() {
     ext="$1";
     [[ -z "$1" ]] && ext="md"
     vim -c "e /tmp/temp_$(date +%F_%H_%M_%S).$ext | :cd %:p:h"
 }
 
-# usage: fields <file>
+# Usage: fields <file>
 fields () {
     awk -F"\t" '{print NF}' "$1" | uniq -c
 }
 
-# usage: fields <file>
+# Usage: fields <file>
 fields-csv () {
     awk -F, '{print NF}' "$1" | uniq -c
 }
 
-# usage: cols <col_no> <file>
+# Usage: cols <col_no> <file>
 # $1 - col no
 # $2 - file name
 cols () {
@@ -83,7 +83,7 @@ cols () {
     awk -F$'\t' -f <(echo "$col_no") "$2" | sort | uniq
 }
 
-# usage: cols <col_no> <file>
+# Usage: cols <col_no> <file>
 # $1 - col no
 # $2 - file name
 colss () {
@@ -92,37 +92,37 @@ colss () {
     awk -F$'\t' -f <(echo "$col_no") "$2" | sort
 }
 
-# usage: cols <col_no> <file>
+# Usage: cols <col_no> <file>
 cols-csv () {
     col_no="\$$1";
     col_no="{print $col_no}";
     awk -F, -f <(echo "$col_no") "$2" | sort | uniq
 }
 
-# usage: cols <col_no> <file>
+# Usage: cols <col_no> <file>
 ncols () {
     col_no="\$$1";
     col_no="{print $col_no}";
     awk -F$'\t' -f <(echo "$col_no") "$2" | sort -n | uniq
 }
 
-# usage: pcols <col_no> <file>
+# Usage: pcols <col_no> <file>
 pcols () {
     col_no="\$$1";
     col_no="{print $col_no}";
     awk -F$'\t' -f <(echo "$col_no") "$2" | perl -e '@data = map {[split(/\t/,$_)]} <>; print map {join("\t",@$_)} sort {$a->[0] <=> $b->[0]} @data' | uniq
 }
 
-# convert epoch to human-readable date
-# usage: epoch-to-date 1643234400
-# output: 2022-01-27
+# Convert epoch to human-readable date
+# Usage: epoch-to-date 1643234400
+# Output: 2022-01-27
 epoch-to-date() {
     date  -d @"$1" "+%F"
 }
 
-# convert epoch to human-readable date
-# usage: date-to-epoch 2022-01-27
-# output: 1643234400
+# Convert epoch to human-readable date
+# Usage: date-to-epoch 2022-01-27
+# Output: 1643234400
 date-to-epoch() {
     date  -d "$1" "+%s"
 }

@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-06 00:36:33 EEST
+# Date:   2024-08-06 00:55:48 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -170,7 +170,7 @@ alias fonts.match   'fc-match'
 #------------------------------------------------------------------------------
 #
 alias lt           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
-# ^--choosing 'lt' also resets languages to the usual  'us,lt' combination
+# ^--Choosing 'lt' also resets languages to the usual 'us,lt' combination
 alias de           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias es           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,es'
 alias he           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
@@ -281,12 +281,12 @@ alias kil 'sudo kill -9'
 
 ### `ps -e` displays every active process on a Linux system in Unix format
 alias ae 'ps -e | grep -v grep | grep -i'
-###     use `ps c -ef` for a simple name of executable (as well as showing process status)
+###     Use `ps c -ef` for a simple name of executable (as well as showing process status)
 
 ### '-f' performs a full-format listing
 alias aef 'ps -ef | grep -m1 ""  && ps -ef | grep -v grep | grep -i'
 
-### another way of listing (shows session id)
+### Another way of listing (shows session id)
 alias aes "ps -e -o 'user,pid,pgid,sess,args' | grep -m1 \"\" && ps -e -o 'user,pid,pgid,sess,args' | grep -v grep | grep -i"
 
 ### Display all processes in BSD format
@@ -295,22 +295,22 @@ alias aes "ps -e -o 'user,pid,pgid,sess,args' | grep -m1 \"\" && ps -e -o 'user,
 ###         what terminal (if any) they are controlled ('?" in TTY column indicated
 ###         no controlling terminal)
 alias au 'ps ax | grep -v grep | grep -i'
-###     use `ps cax` for a simple name of executable (as well as showing process status)
+###     Use `ps cax` for a simple name of executable (as well as showing process status)
 
 ###     'u' option is for user-oriented format
 alias aux 'ps aux | grep -v grep | grep -i'
 
-### also show parent pid
+### Also show parent PID
 alias aup 'ps ax l | grep -v grep | grep -i'
 
-## show sleeping processes
+## Show sleeping processes
 alias asleep 'ps ax | grep -v grep | grep sleep'
 
 # fuser -v {file/socket name(s)} - show info about process, working with the file(s)/socket(s)
 alias fuserv 'fuser -v'
 
 # fuser -vk {file/socket name(s)} - kill the process working with the file(s)/socket(s)
-# ex. usage: fuser -vk *.log
+# E.g. usage: fuser -vk *.log
 alias fuserk 'fuser -vk'
 
 #------------------------------------------------------------------------------
@@ -333,54 +333,54 @@ alias npm.ls.g 'npm list -g --depth=0'
 #------------------
 
 alias orphans             'pacman -Qdtq'
-alias is                  'pacman -Qeq | grepi '                     # grep for explicitly installed package (package 'is' in the system)
-alias isa                 'pacman -Qq | grepi '                      # grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
-alias visa                'pacman -Q | grepi '                       # grep for installed package with version info ('visa' = 'is -a -v')
-alias pl                  'pacman -Qeq'                              # list explicitly installed packages
+alias is                  'pacman -Qeq | grepi '                     # Grep for explicitly installed package (package 'is' in the system)
+alias isa                 'pacman -Qq | grepi '                      # Grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
+alias visa                'pacman -Q | grepi '                       # Grep for installed package with version info ('visa' = 'is -a -v')
+alias pl                  'pacman -Qeq'                              # List explicitly installed packages
 alias ple                 'pacman -Qeq'                              # ------||------
-alias ple_no_aur          'a_minus_b <(ple) <(plm)'                  # list explicitly installed packages (without showing AUR packages)
-alias pla                 'pacman -Qq'                               # list all installed packages
-alias pld                 'pacman -Qdq'                              # list packages dependencies
-alias plm                 'pacman -Qmq | sort'                       # list foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
-alias pac.owner           'pacman -Qo'                               # which package owns the specified file(s)
-alias pac.group           'pacman -Qgq'                              # list installed packages belonging to a group (or list all groups and packages if no argument is passed)
-alias pac.group.belongs   'pacman -Qgq | grepi'                      # show which group the installed package belongs to
-alias pac.base            'a_and_b <(pac.base_remote) <(pla)'        # list installed packages depending on `base` metapackage
-alias pac.base-devel      'a_and_b <(pac.base-devel_remote) <(pla)'  # list installed packages depending on `base-devel` metapackage
-alias pac.info            'pacman -Qi'                               # display info on a given installed package
-alias pac.search          'pacman -Qs'                               # search each installed package for names or descriptions that match regexp
-alias pac.check_files     'pacman -Qk'                               # for all installed pkgs, check that all files owned by the given package(s) are present on the system.
-alias pac.check_files_det 'pacman -Qkk'                              # more detailed checking (+ permissions, file sizes, and modification times) for pkgs that contain the needed mtree file.
+alias ple_no_aur          'a_minus_b <(ple) <(plm)'                  # List explicitly installed packages (without showing AUR packages)
+alias pla                 'pacman -Qq'                               # List all installed packages
+alias pld                 'pacman -Qdq'                              # List packages dependencies
+alias plm                 'pacman -Qmq | sort'                       # List foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
+alias pac.owner           'pacman -Qo'                               # Which package owns the specified file(s)
+alias pac.group           'pacman -Qgq'                              # List installed packages belonging to a group (or list all groups and packages if no argument is passed)
+alias pac.group.belongs   'pacman -Qgq | grepi'                      # Show which group the installed package belongs to
+alias pac.base            'a_and_b <(pac.base_remote) <(pla)'        # List installed packages depending on `base` metapackage
+alias pac.base-devel      'a_and_b <(pac.base-devel_remote) <(pla)'  # List installed packages depending on `base-devel` metapackage
+alias pac.info            'pacman -Qi'                               # Display info on a given installed package
+alias pac.search          'pacman -Qs'                               # Search each installed package for names or descriptions that match regexp
+alias pac.check_files     'pacman -Qk'                               # For all installed pkgs, check that all files owned by the given package(s) are present on the system.
+alias pac.check_files_det 'pacman -Qkk'                              # More detailed checking (+ permissions, file sizes, and modification times) for pkgs that contain the needed mtree file.
 
 #------------------
 # -S flag
 #------------------
 
-alias pacfile               'sudo pacman -S --noconfirm - --needed <'      # install from file
+alias pacfile               'sudo pacman -S --noconfirm - --needed <'      # Install from file
 alias pacs                  'sudo pacman -S --noconfirm --needed'          # `needed` does not reinstall targets that are up to date
-alias pac.group_remote      'sudo pacman -Sgq'                             # list packages from sync database belonging to a group
-alias pac.base_remote       'expac -S '%E' base | xargs -n1 | sort'        # list packages from sync database depending on `base` metapackage
-alias pac.base-devel_remote 'expac -S '%E' base-devel | xargs -n1 | sort'  # list packages from sync database depending on `base-devel` metapackage
-alias pac.info_remote       'sudo pacman -Si'                              # display info on a given sync database package
+alias pac.group_remote      'sudo pacman -Sgq'                             # List packages from sync database belonging to a group
+alias pac.base_remote       'expac -S '%E' base | xargs -n1 | sort'        # List packages from sync database depending on `base` metapackage
+alias pac.base-devel_remote 'expac -S '%E' base-devel | xargs -n1 | sort'  # List packages from sync database depending on `base-devel` metapackage
+alias pac.info_remote       'sudo pacman -Si'                              # Display info on a given sync database package
 alias pac.info_remote_full  'sudo pacman -Sii'                             # ^--- and also display those packages in all repos that depend on this package.
-alias pac.search_remote     'sudo pacman -Ss'                              # search each package from sync database for names or descriptions that match regexp
-# removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
+alias pac.search_remote     'sudo pacman -Ss'                              # Search each package from sync database for names or descriptions that match regexp
+# Removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
 # repos in /var/lib/pacman
 alias pac.clear             'sudo pacman -Sc'
-# removes ALL packages from /var/cache/pacman/pkg and ...
+# Removes ALL packages from /var/cache/pacman/pkg and ...
 alias pac.clear_all         'sudo pacman -Scc'
-# fuzzy-search through all available packages, with package info shown in a preview window, and then install selected packages
+# Fuzzy-search through all available packages, with package info shown in a preview window, and then install selected packages
 alias fzf.pac               'pacman -Slq | fzf -m --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 # -------------------------------------------------------------------------
-# updates your pkg databases if the repositories haven’t been checked
+# Updates your pkg databases if the repositories haven’t been checked
 # recently, and upgrades any new package versions.
 # -y -> update
 # -u -> upgrade
 alias up                    'sudo pacman -Syu'
-# forces updates of your databases for all repositories (even if it
+# Forces updates of your databases for all repositories (even if it
 # was just updated recently) and upgrades any new package versions.
 alias up1                   'sudo pacman -Syyu'
-#  upgrades packages and also downgrades packages (if you happen to have a
+#  Upgrades packages and also downgrades packages (if you happen to have a
 #  newer version than in the repository). Normally this should not be used.
 #  Only if you’re trying to fix a specific issue due to a new package being
 #  removed from the repository.
@@ -404,7 +404,7 @@ alias pac.forcedel 'sudo -k pacman -Rdd'
 alias parus     'paru -S'
 alias paru.info 'paru -Si'
 alias parug     'paru -G'
-### fuzzy-search through the AUR, preview info and install selected packages
+### Fuzzy-search through the AUR, preview info and install selected packages
 alias fzf.paru  'paru -Slq | fzf -m --preview "paru -Si {1}" | xargs -ro paru -S --noconfirm'
 
 #---------------------------------------
@@ -486,9 +486,9 @@ alias lsh    'colorls -ld .?*'
 #alias since  'colorls -lt'
 alias since  'colorls -lt | head'
 alias sincee 'colorls -lt'
-# display only directories:
+# Display only directories:
 alias dod    'colorls -ld'
-# display only files:
+# Display only files:
 alias dof    'colorls -lf'
 
 # Cowfortune
@@ -577,9 +577,9 @@ alias agi.find_all 'ag -rsi --noheading --hidden'
 #alias lsla  'ls -al'
 #alias lsr   'ls -R'
 #alias since '\ls -ltL | head'
-# display only directories:
+# Display only directories:
 #alias dod   '\ls -l | grep ^d'
-# display only files:
+# Display only files:
 #alias dof   '\ls -l | grep ^-'
 
 # Scrot
@@ -707,8 +707,8 @@ alias i3.exit      'i3-msg exit'
 alias i3.notes     'i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes"'
 alias cmus.run     'urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch "i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
-## avoid tmux session using an old I3SOCK environment variable after i3 restart
-## run this instead of `i3-msg` while in tmux
+## Avoid tmux session using an old I3SOCK environment variable after i3 restart
+## Run this instead of `i3-msg` while in tmux
 alias i3-msg-tmux  'i3-msg --socket "/run/user/1000/i3/$(\ls -t /run/user/1000/i3/ | awk "{OFS=FS} {print $1}" | grep ipc | head -n 1)"'
 
 #---------------------------------------
@@ -908,9 +908,9 @@ alias xportp     'x.hdmi.port.dp1.dp2.port.primary'
 # 26. Misc
 #------------------------------------------------------------------------------
 
-# count files in the directory:
+# Count files in the directory:
 alias cf  'setopt CSH_NULL_GLOB; files=(*); echo ${#files[@]};'
-# count only hidden files in the directory:
+# Count only hidden files in the directory:
 alias cfa 'setopt CSH_NULL_GLOB; files=(.*); echo ${#files[@]};'
 
 alias dot       '/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -920,7 +920,7 @@ alias getkey    'gpg --keyserver keyserver.ubuntu.com --recv'
 alias immutable 'sudo chattr +i'
 alias mutable   'sudo chattr -i'
 alias rl        'readlink -f'
-# used in a pipe, ... | rows
+# Used in a pipe, ... | rows
 alias rows      'tr "\\n" " "'
 alias tag       'ctags -R .'
 alias wl        'wc -l'
