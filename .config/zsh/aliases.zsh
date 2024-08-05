@@ -1,11 +1,11 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-06 00:55:48 EEST
+# Date:   2024-08-06 01:08:51 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-#  NOTE: many of these aliases are not being used anymore or are being used
+#  NOTE: Many of these aliases are not being used anymore or are being used
 #  very rarely, however, I still keep them there as a sort of command-wiki,
 #  since quite a few times it turned out to be pretty useful to look up some
 #  stuff that I aliased a while ago.
@@ -45,10 +45,6 @@
 #  26. Misc
 #  27. Temporary
 
-alias() {
-  builtin alias -- $1="$2"
-}
-
 #------------------------------------------------------------------------------
 # 1. Navigation
 #------------------------------------------------------------------------------
@@ -79,7 +75,7 @@ alias candy    'cd $CANDY'
 alias conf     'cd $XDG_CONFIG_HOME'
 alias drop     'cd $DROPBOX'
 alias drop.bak 'cd $DROPBOX/backup'
-alias dw       'cd $HOME/Downloads'
+alias dw       'cd $XDG_DOWNLOAD_DIR'
 alias lok      'cd $HOME/.local'
 alias notes    'cd $NOTES'
 alias pro      'cd $HOME/pro'
@@ -170,7 +166,7 @@ alias fonts.match   'fc-match'
 #------------------------------------------------------------------------------
 #
 alias lt           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
-# ^--Choosing 'lt' also resets languages to the usual 'us,lt' combination
+# ^-- Choosing 'lt' also resets languages to the usual 'us,lt' combination
 alias de           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
 alias es           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,es'
 alias he           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
@@ -240,11 +236,11 @@ alias wifi.off "sudo ip link set $(basename -a /sys/class/net/wlp*) down"
 #------------------------------------------------------------------------------
 
 alias pp                'ping -c 3 www.google.com'
-alias ppp               'watch -n 0.5 "ping -c 3 www.google.com"'
+alias pwp               'watch -n 0.5 "ping -c 3 www.google.com"'
 alias get.my_ip         'curl -w "\n" ifconfig.me'
 alias get.local_ip      'ip route | head -n 1'
 alias get.gateway       'ip route | head -n 1'
-alias get.net_interface 'ip route | head -n 1'  # get the current active interface name
+alias get.net_interface 'ip route | head -n 1'  # Get the current active interface name
 alias check.ip          'whois'
 alias check.dns         'nslookup'
 alias check.domain      'whois'
@@ -270,7 +266,7 @@ alias wpa.wpa      "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*)
 # 15. Mount/Unmount
 #------------------------------------------------------------------------------
 
-alias phone.on  'simple-mtpfs $HOME/phone'  # if problems, remount + restart thunar
+alias phone.on  'simple-mtpfs $HOME/phone'  # If problems, remount + restart thunar
 alias phone.off 'umount $HOME/phone'
 
 #------------------------------------------------------------------------------
@@ -372,17 +368,17 @@ alias pac.clear_all         'sudo pacman -Scc'
 # Fuzzy-search through all available packages, with package info shown in a preview window, and then install selected packages
 alias fzf.pac               'pacman -Slq | fzf -m --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 # -------------------------------------------------------------------------
-# Updates your pkg databases if the repositories haven’t been checked
+# Updates the pkg databases if the repositories haven’t been checked
 # recently, and upgrades any new package versions.
 # -y -> update
 # -u -> upgrade
 alias up                    'sudo pacman -Syu'
-# Forces updates of your databases for all repositories (even if it
+# Forces updates of the databases for all repositories (even if it
 # was just updated recently) and upgrades any new package versions.
 alias up1                   'sudo pacman -Syyu'
-#  Upgrades packages and also downgrades packages (if you happen to have a
+#  Upgrades packages and also downgrades packages (if one happens to have a
 #  newer version than in the repository). Normally this should not be used.
-#  Only if you’re trying to fix a specific issue due to a new package being
+#  Only if one is trying to fix a specific issue due to a new package being
 #  removed from the repository.
 alias up2                   'sudo pacman -Syuu'
 # -------------------------------------------------------------------------
@@ -420,7 +416,7 @@ alias pipu 'pip install --upgrade pip'
 alias mps  'makepkg -s'      # --syncdeps
 alias mpi  'makepkg -si'     # --install
 alias mpic 'makepkg -sic'    # --clean
-alias pacu 'sudo pacman -U'  # argument: pkgname-pkgver.pkg.tar.zst
+alias pacu 'sudo pacman -U'  # Argument: pkgname-pkgver.pkg.tar.zst
 
 #------------------------------------------------------------------------------
 # 19. Programs
@@ -538,11 +534,11 @@ alias grs   'git restore --staged'
 alias clone 'git clone'
 # By default, `git fetch` does not remove remote branches that
 # no longer have a counterpart branch on the remote. In order
-# to do that, you explicitly need to prune the list of remote branches:
+# to do that, one explicitly needs to prune the list of remote branches:
 # `git fetch --prune`. This will automatically get rid of remote branches
 # that no longer exist on the remote. Afterwards, `git branch --remote`
-# will show you an updated list of branches that really exist on the
-# remote: And those you can delete using git push.
+# will show an updated list of branches that really exist on the
+# remote: And those one can delete using git push.
 alias gfp   'git fetch --prune'
 
 # GitHub CLI
@@ -689,7 +685,7 @@ alias start  '$EDITOR $XDG_CONFIG_HOME/openbox/autostart'
 alias tg     '$EDITOR $XDG_CONFIG_HOME/tig/config'
 alias tintrc '$EDITOR $XDG_CONFIG_HOME/tint2/tint2rc'
 alias tmuxr  '$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf'
-alias vr     '$EDITOR $VIMRC'
+alias vr     '$EDITOR $XDG_CONFIG_HOME/vim/vimrc'
 alias xi     '$EDITOR $XDG_CONFIG_HOME/X11/xinitrc'
 alias xres   '$EDITOR $XDG_CONFIG_HOME/X11/Xresources'
 alias zenv   '$EDITOR $ZDOTDIR/.zshenv'
@@ -736,7 +732,7 @@ alias thanks '($BIN/sounds/thanks-hal &) > /dev/null'
 # 23. Aliases as flags
 #------------------------------------------------------------------------------
 
-# usage: command `--use-commit-times`
+# Usage: command `--use-commit-times`
 alias --use-commit-times 'echo --config-option=config:miscellany:use-commit-times=yes'
 alias --date             'date "+%F"'
 alias --datetime         'date +%F_%H_%M_%S'
@@ -805,18 +801,18 @@ alias x.laptop.of     'xrandr --output $LAPTOP_SCREEN --off'
 #---------------------------------------
 
 # HDMI connection
-alias x.hdmi.auto   'xrandr --output $HDMI_SCREEN --auto'
-alias x.hdmi.of     'xrandr --output $HDMI_SCREEN --off'
-alias x.hdmi.port   'xrandr --output $HDMI_SCREEN --rotate left'
-alias x.hdmi.normal 'xrandr --output $HDMI_SCREEN --rotate normal'
-alias x.hdmi.1080   'xrandr --output $HDMI_SCREEN --mode 1920x1080'
+alias x.hdmi.auto   'xrandr --output $HDMI1_SCREEN --auto'
+alias x.hdmi.of     'xrandr --output $HDMI1_SCREEN --off'
+alias x.hdmi.port   'xrandr --output $HDMI1_SCREEN --rotate left'
+alias x.hdmi.normal 'xrandr --output $HDMI1_SCREEN --rotate normal'
+alias x.hdmi.1080   'xrandr --output $HDMI1_SCREEN --mode 1920x1080'
 
 # DisplayPort connection
-alias x.dp.auto   'xrandr --output $DP_SCREEN --auto'
-alias x.dp.of     'xrandr --output $DP_SCREEN --off'
-alias x.dp.port   'xrandr --output $DP_SCREEN --rotate left'
-alias x.dp.normal 'xrandr --output $DP_SCREEN --rotate normal'
-alias x.dp.1080   'xrandr --output $DP_SCREEN --mode 1920x1080'
+alias x.dp.auto   'xrandr --output $DP1_SCREEN --auto'
+alias x.dp.of     'xrandr --output $DP1_SCREEN --off'
+alias x.dp.port   'xrandr --output $DP1_SCREEN --rotate left'
+alias x.dp.normal 'xrandr --output $DP1_SCREEN --rotate normal'
+alias x.dp.1080   'xrandr --output $DP1_SCREEN --mode 1920x1080'
 
 #---------------------------------------
 # Laptop + 1 Monitor
@@ -826,8 +822,8 @@ alias x.dp.1080   'xrandr --output $DP_SCREEN --mode 1920x1080'
 # HDMI connection (Left: Monitor, Right: Laptop)
 #------------------
 
-alias x.hdmi.laptop      'xrandr --output $HDMI_SCREEN --primary --auto --rotate normal --output $LAPTOP_SCREEN --auto --rotate-normal --right-of $HDMI_SCREEN'
-alias x.hdmi.port.laptop 'xrandr --output $HDMI_SCREEN --primary --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI_SCREEN'
+alias x.hdmi.laptop      'xrandr --output $HDMI1_SCREEN --primary --auto --rotate normal --output $LAPTOP_SCREEN --auto --rotate-normal --right-of $HDMI1_SCREEN'
+alias x.hdmi.port.laptop 'xrandr --output $HDMI1_SCREEN --primary --auto --rotate left --output $LAPTOP_SCREEN --auto --right-of $HDMI1_SCREEN'
 
 #---------------------------------------
 # 2 Monitors
@@ -846,10 +842,10 @@ alias x.dp1.dp2.port.primary 'xrandr --output $DP1_SCREEN --auto --rotate normal
 # Mixed connections (DisplayPort + HDMI) (Left: Monitor via DisplayPort, Right: Monitor via HDMI)
 #------------------
 
-alias x.dp.hdmi              'xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --auto --rotate normal --right-of $DP_SCREEN'
-alias x.dp.hdmi.port         'xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --auto --rotate left --right-of $DP_SCREEN'
-alias x.dp.hdmi.primary      'xrandr --output $DP_SCREEN --primary --auto --rotate normal --output $HDMI_SCREEN --primary --auto --rotate normal --right-of $DP_SCREEN'
-alias x.dp.hdmi.port.primary 'xrandr --output $DP_SCREEN --auto --rotate normal --output $HDMI_SCREEN --primary --auto --rotate left --right-of $DP_SCREEN'
+alias x.dp.hdmi              'xrandr --output $DP1_SCREEN --primary --auto --rotate normal --output $HDMI1_SCREEN --auto --rotate normal --right-of $DP1_SCREEN'
+alias x.dp.hdmi.port         'xrandr --output $DP1_SCREEN --primary --auto --rotate normal --output $HDMI1_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
+alias x.dp.hdmi.primary      'xrandr --output $DP1_SCREEN --primary --auto --rotate normal --output $HDMI1_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN'
+alias x.dp.hdmi.port.primary 'xrandr --output $DP1_SCREEN --auto --rotate normal --output $HDMI1_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
 
 #---------------------------------------
 # 3 Monitors
@@ -859,13 +855,13 @@ alias x.dp.hdmi.port.primary 'xrandr --output $DP_SCREEN --auto --rotate normal 
 # Mixed connections (HDMI + DisplayPort + DisplayPort) (Leftmost: Monitor via HDMI)
 #------------------
 
-alias x.hdmi.dp1.dp2                        'xrandr --output $HDMI_SCREEN --auto --rotate normal --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --auto --rotate normal --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.dp2.port              'xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.1080.dp2.port         'xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --primary --mode 1920x1080 --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.1080.dp2.port.primary 'xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --mode 1920x1080 --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.1440.dp2.port.primary 'xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --mode 2560x1440 --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.dp2.primary           'xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN'
-alias x.hdmi.port.dp1.dp2.port.primary      'xrandr --output $HDMI_SCREEN --auto --rotate right --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.dp1.dp2                        'xrandr --output $HDMI1_SCREEN --auto --rotate normal --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --auto --rotate normal --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.dp2.port              'xrandr --output $HDMI1_SCREEN --auto --rotate right --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.1080.dp2.port         'xrandr --output $HDMI1_SCREEN --auto --rotate right --output $DP1_SCREEN --primary --mode 1920x1080 --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.1080.dp2.port.primary 'xrandr --output $HDMI1_SCREEN --auto --rotate right --output $DP1_SCREEN --mode 1920x1080 --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.1440.dp2.port.primary 'xrandr --output $HDMI1_SCREEN --auto --rotate right --output $DP1_SCREEN --mode 2560x1440 --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.dp2.primary           'xrandr --output $HDMI1_SCREEN --auto --rotate right --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --primary --auto --rotate normal --right-of $DP1_SCREEN'
+alias x.hdmi.port.dp1.dp2.port.primary      'xrandr --output $HDMI1_SCREEN --auto --rotate right --output $DP1_SCREEN --auto --rotate normal --right-of $HDMI1_SCREEN --output $DP2_SCREEN --primary --auto --rotate left --right-of $DP1_SCREEN'
 
 #------------------
 # Display Port connections
@@ -1026,6 +1022,7 @@ alias vi         'venv.init'
 alias ppir       'pip install -r requirements.txt'
 alias san        'svn add -N'
 alias dsc        'dot commit'
+alias dsco       'dot commit --only'
 alias dsp        'dot push'
 alias dsl        'dot pull'
 alias win        'wmctrl -l'
@@ -1059,8 +1056,8 @@ alias xa         'xargs '
 alias we         'cd $TMP1/webuzz && venv'
 alias bu         'cd $TMP1/budget && venv'
 alias np         'cd $PRO/2022/npBuild'
+alias bl	 'bluetoothctl'
 alias pps        "cd $PRO/2023/problem-solving/Codewars"
-alias bl         'bluetoothctl'
 alias was        'cd $HOME/wastebasket'
 alias kc         'killall cmus'
 alias fs         'flask --app flasky.py shell'
@@ -1072,5 +1069,11 @@ alias dotd       "dot log --date=format:'%Y-%m-%d %H:%M:%S EE(S)T' "
 alias gau        'git add -u .'
 alias p6         'cd /home/riddle/pro/2024/PTUA6'
 alias x.out      'killall xinit'
+alias dout       'killall xinit'
 alias sta        'cd $BIN/statusbar'
 alias sg         'cd /home/riddle/tmp1/SG_shell_settings'
+alias pasta      '$EDITOR "$DOTSHARE/misc/pastes.lst"'
+alias game.on    'cp  $XDG_CONFIG_HOME/openbox/rc.xml.game $XDG_CONFIG_HOME/openbox/rc.xml && openbox --reconfigure'
+alias game.off   'cp $XDG_CONFIG_HOME/openbox/rc.xml.orig $XDG_CONFIG_HOME/openbox/rc.xml && openbox --reconfigure'
+alias gon        'game.on'
+alias gof        'game.off'
