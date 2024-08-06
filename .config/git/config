@@ -43,7 +43,7 @@
     gpgsign = true
 [pull]
     rebase = false
-    ff = only
+    ff     = only
 [push]
     recurseSubmodules = check
 [delta]

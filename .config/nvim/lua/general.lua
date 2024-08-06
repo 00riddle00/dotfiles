@@ -9,7 +9,7 @@
 local Util = require("util")
 
 local mkdir = Util.mkdir
-local cmd = Util.nvim_command
+local cmd   = Util.nvim_command
 
 local General = {}
 
@@ -36,8 +36,8 @@ end
 function General.Preserve(callback)
   -- Preparation: save last search, and cursor position.
   local search = vim.fn.getreg("/")
-  local line = vim.fn.line(".")
-  local col = vim.fn.col(".")
+  local line   = vim.fn.line(".")
+  local col    = vim.fn.col(".")
 
   -- Do the business unless filetype is blacklisted
   local blacklist = {"sql"}

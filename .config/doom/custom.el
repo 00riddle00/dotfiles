@@ -25,6 +25,6 @@
 ;; These commands were disabled since they can sometimes be found confusing.
 ;;
 ;; Uppcase the region (C-x C-u).
-(put 'upcase-region 'disabled nil)
+(put 'upcase-region   'disabled nil)
 ;; Downcase the region (C-X C-l).
 (put 'downcase-region 'disabled nil)

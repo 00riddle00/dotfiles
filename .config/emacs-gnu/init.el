@@ -29,7 +29,7 @@
 
 ;; Some functionality uses this for identification, e.g. GPG configuration,
 ;; email clients, file templates and snippets. It is optional.
-(setq user-full-name "Tomas Giedraitis"
+(setq user-full-name    "Tomas Giedraitis"
       user-mail-address "tomasgiedraitis@gmail.com")
 
 ;; "apropos" commands try to guess the relevance of each result, and

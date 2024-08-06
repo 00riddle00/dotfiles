@@ -10,7 +10,7 @@ from __future__ import (absolute_import, division, print_function)
 # Any needed python module can be imported.
 import os
 
-# ranger.api.commands are always needed to be imported here to get the 
+# ranger.api.commands are always needed to be imported here to get the
 # Command class:
 from ranger.api.commands import Command
 from ranger.core.loader import CommandLoader

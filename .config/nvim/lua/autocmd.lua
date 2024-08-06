@@ -7,7 +7,7 @@
 -------------------------------------------------------------------------------
 
 local General = require("general")
-local vim = vim or {}
+local vim     = vim or {}
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
@@ -71,7 +71,7 @@ autocmd("BufNewFile", {
 autocmd("FileType", {
   pattern = "help",
   command = "wincmd L",
-  group = general,
+  group   = general,
 })
 
 autocmd("FileType", {
@@ -86,8 +86,8 @@ autocmd("FileType", {
 autocmd("FileType", {
   pattern = "markdown",
   callback = function()
-    vim.opt_local.shiftwidth = 2
-    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth  = 2
+    vim.opt_local.tabstop     = 2
     vim.opt_local.softtabstop = 2
     vim.cmd("colorscheme miro8")
   end,
@@ -120,7 +120,7 @@ autocmd("FileType", {
     vim.g.Tex_GotoError = 0
     -- ^--- This is a temporary fix - to keep the cursor inside the editor
     --      buffer after compilation, and not moving it to the quickfix buffer.
-    vim.opt.textwidth = 100
+    vim.opt.textwidth   = 100
     vim.opt.colorcolumn = "-1"
     vim.cmd("highlight ColorColumn cterm=NONE ctermbg=black")
     vim.api.nvim_buf_set_keymap(0, "n", "<space><space>", "/(<>)<CR>",
@@ -145,13 +145,13 @@ local qf_group = augroup("00RIDDLE00__QF", {})
 autocmd("QuickFixCmdPost", {
   pattern = "[^l]*",
   command = "cwindow",
-  group = qf_group
+  group   = qf_group
 })
 
 autocmd("QuickFixCmdPost", {
   pattern = "l*",
   command = "lwindow",
-  group = qf_group
+  group   = qf_group
 })
 
 ---------------------------------------------
@@ -164,8 +164,8 @@ autocmd("QuickFixCmdPost", {
 autocmd({"BufEnter","BufAdd","BufNew","BufNewFile","BufWinEnter"}, {
   group = vim.api.nvim_create_augroup("TS_FOLD_WORKAROUND", {}),
   callback = function()
-    vim.opt.foldmethod     = "expr"
-    vim.opt.foldexpr       = "nvim_treesitter#foldexpr()"
+    vim.opt.foldmethod = "expr"
+    vim.opt.foldexpr   = "nvim_treesitter#foldexpr()"
   end
 })
 
@@ -176,9 +176,9 @@ autocmd({"BufEnter","BufAdd","BufNew","BufNewFile","BufWinEnter"}, {
 -- Close the tab/nvim when nvim-tree is the last window.
 autocmd("QuitPre", {
   callback = function()
-    local tree_wins = {}
+    local tree_wins     = {}
     local floating_wins = {}
-    local wins = vim.api.nvim_list_wins()
+    local wins          = vim.api.nvim_list_wins()
     for _, w in ipairs(wins) do
       local bufname = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(w))
       if bufname:match("NvimTree_") ~= nil then

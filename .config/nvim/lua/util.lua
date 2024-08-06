@@ -9,12 +9,12 @@
 --- Neovim specific shortcuts
 local vim = vim or {}
 local api = vim.api
-local fn = vim.fn
+local fn  = vim.fn
 
 local Util = {}
 
-Util.nvim_command = api.nvim_command
-Util.user_command = api.nvim_create_user_command
+Util.nvim_command       = api.nvim_command
+Util.user_command       = api.nvim_create_user_command
 Util.nvim_call_function = api.nvim_call_function
 
 -- Check if a file or directory exists in this path

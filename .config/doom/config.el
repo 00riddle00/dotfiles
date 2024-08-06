@@ -81,14 +81,14 @@
 ;; they are implemented.
 
 (after! org
-  (setq org-directory "$NOTES/org/")
+  (setq org-directory      "$NOTES/org/")
   (setq org-agenda-files '("$NOTES/org/agenda.org"))
   ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 )
 
-(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-s")   'save-buffer)
 (global-set-key (kbd "C-S-s") 'save-buffer)
 
 (require 'openwith)
@@ -96,18 +96,18 @@
 (setq openwith-associations '(("\\.mp4\\'" "mpv" (file))))
 
 (map!
- (:after evil
-   :en "C-h" #'evil-window-left
-   :en "C-j" #'evil-window-down
-   :en "C-k" #'evil-window-up
-   :en "C-l" #'evil-window-right)
+ ( :after evil
+   :en    "C-h" #'evil-window-left
+   :en    "C-j" #'evil-window-down
+   :en    "C-k" #'evil-window-up
+   :en    "C-l" #'evil-window-right)
  )
 
 (map! :after evil-org
-      :map evil-org-mode-map
-      :n "C-j" #'evil-window-down
-      :n "C-k" #'evil-window-up)
+      :map   evil-org-mode-map
+      :n     "C-j" #'evil-window-down
+      :n     "C-k" #'evil-window-up)
 
 (map! :map general-override-mode-map
-      :n "C-j" #'evil-window-down
-      :n "C-k" #'evil-window-up)
+      :n   "C-j" #'evil-window-down
+      :n   "C-k" #'evil-window-up)

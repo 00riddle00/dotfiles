@@ -7,7 +7,7 @@
 -------------------------------------------------------------------------------
 
 -- Meta accessors for vim options {{{
-  local o = vim.opt
+  local o  = vim.opt
   --local bo = vim.bo
   --local wo = vim.wo
   --local fn = vim.fn

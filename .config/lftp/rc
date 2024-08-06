@@ -34,7 +34,7 @@ set ssl:verify-certificate yes
 
 # Don't log or save history
 set cmd:save-cwd-history no
-set cmd:save-rl-history no
+set cmd:save-rl-history  no
 
 # Don't overwrite existing files
 set xfer:clobber no
@@ -49,9 +49,9 @@ set xfer:eta-terse no
 set xfer:verify yes
 
 # Parallel downloading
-set pget:default-n 4
-set pget:save-status 3s
-set cmd:queue-parallel 4
+set pget:default-n                 4
+set pget:save-status               3s
+set cmd:queue-parallel             4
 set mirror:parallel-transfer-count 4
 
 ## This can be used for automatic saving of configuration

@@ -19,4 +19,4 @@ fset flac=filename="*.flac"
 fset mp3=filename="*.mp3"
 fset music=!(audiobook|soundtrack|poetry)
 fset unheard=play_count=0
-set follow=true
+set  follow=true

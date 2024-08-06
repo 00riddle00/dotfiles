@@ -7,9 +7,9 @@
 ! Symbolic link needs to be created in $HOME to point to this file:
 !   cd $HOME && ln -s .config/xscreensaver/xscreensaver ~/.xscreensaver
 
-mode:         blank
-timeout:      0:10:00
-fade:         True
-unfade:       False
-fadeSeconds:  0:00:03
-splash:       False
+mode:        blank
+timeout:     0:10:00
+fade:        True
+unfade:      False
+fadeSeconds: 0:00:03
+splash:      False
