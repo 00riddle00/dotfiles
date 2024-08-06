@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-06 23:34:23 EEST
+# Date:   2024-08-07 00:47:27 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -28,11 +28,12 @@
 #  19. Programs
 #  20. Configs
 #  21. Window manager-specific
-#  22. Aliases to scripts
-#  23. Aliases as flags
-#  24. Programming
-#  25. Misc
-#  26. Temporary
+#  22. Aliases to Zsh functions
+#  23. Aliases to scripts
+#  24. Aliases as flags
+#  25. Programming
+#  26. Misc
+#  27. Temporary
 
 #------------------------------------------------------------------------------
 # 1. Navigation
@@ -835,7 +836,7 @@ alias 12of   'gtk3-disable-12px-font'
 alias thanks '($BIN/sounds/thanks-hal &) > /dev/null'
 
 #------------------------------------------------------------------------------
-# 23. Aliases as flags
+# 24. Aliases as flags
 #------------------------------------------------------------------------------
 
 # Usage: command `--use-commit-times`
@@ -847,7 +848,7 @@ alias --datecomment      'date "+#DATE: %F %T %Z"'
 alias --time             'date +%H:%M:%S'
 
 #------------------------------------------------------------------------------
-# 24. Programming
+# 25. Programming
 #------------------------------------------------------------------------------
 
 #---------------------------------------
@@ -889,7 +890,7 @@ alias mgu 'mysql -u user -p'
 alias pg  'sudo -iu postgres psql postgres'
 
 #------------------------------------------------------------------------------
-# 25. Misc
+# 26. Misc
 #------------------------------------------------------------------------------
 
 # Count files in the directory:
@@ -908,7 +909,7 @@ alias wl        'wc -l'
 alias xres.show 'xrdb -query -all'
 
 #------------------------------------------------------------------------------
-# 26. Temporary (maybe they will stick)
+# 27. Temporary (maybe they will stick)
 #------------------------------------------------------------------------------
 
 alias books    '$EDITOR -c "e $PRO/2022/books/bibliography.bib | :cd %:p:h"'
