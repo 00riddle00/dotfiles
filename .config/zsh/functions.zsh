@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-06 00:55:50 EEST
+# Date:   2024-08-06 23:34:28 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -193,4 +193,21 @@ out() {
 
 sedit() {
     $EDITOR "$(which "$1")"
+}
+
+tmux-clean() {
+    echo "Sucessfully killed unattached Tmux sessions."
+    echo "--------------------------------------------"
+    echo "Before:"
+    tmux ls
+    tmux ls | grep -v attached | cut -d: -f1 | xargs -I{} tmux kill-session -t {}
+    echo "After:"
+    tmux ls
+}
+
+# Find different file extensions, exluding ./.git, ./venv and ./.idea dirs.
+files-ext() {
+    find . -path ./.git -o -path ./venv -prune -o -path ./.idea -prune -o -type f \
+    | sed -rn 's|.*/[^/]+\.([^/.]+)$|\1|p' \
+    | sort -u
 }

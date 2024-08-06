@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-31 00:56:58 EEST
+# Date:   2024-08-06 23:34:12 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,6 +13,8 @@
 #   exec --no-startup-id urxvt -name dropdown_math -e R -q
 # To run the same command from the terminal (but not inside Tmux):
 #   i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
+#
+#   For Tmux, use the alias 'i3-msg-tmux' (see ~/.config/zsh/aliases.zsh).
 #
 # Being a command-line utility, i3-msg does not support startup
 # notifications, hence the exec --no-startup-id.
