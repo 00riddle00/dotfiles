@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-06 00:36:30 EEST
+# Date:   2024-08-06 16:57:07 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -39,6 +39,7 @@ exp DROPBOX     "$HOME/Dropbox"
 exp NOTES       "$DROPBOX/gtd/"
 exp PRO         "$HOME/pro"
 exp SCREENSHOTS "$HOME/Screenshots"
+exp MP          "$HOME/tmp1"
 exp MP1         "$HOME/tmp1"
 exp MP2         "$HOME/tmp2"
 exp MP3         "$HOME/tmp3"
@@ -47,14 +48,17 @@ exp MP5         "$HOME/tmp5"
 exp MP6         "$HOME/tmp6"
 exp MP7         "$HOME/tmp7"
 exp MP8         "$HOME/tmp8"
+exp MP0         "$HOME/tmp8"
 
 # XDG base directories
 exp AUTOJUMP_ERROR_PATH      "$XDG_DATA_HOME/autojump/errors.log"
 exp CARGO_HOME               "$XDG_DATA_HOME/cargo"
+exp CGDB_DIR                 "$XDG_CONFIG_HOME/cgdb"
 exp CUDA_CACHE_PATH          "$XDG_CACHE_HOME/nv"
 exp DIRCOLORS                "$XDG_CONFIG_HOME/dircolors"
 exp DOCKER_CONFIG            "$XDG_CONFIG_HOME/docker"
 exp FEHBG_PATH               "$XDG_DATA_HOME/fehbg"
+exp GDBHISTFILE              "$XDG_DATA_HOME/gdb/history"
 exp GEM_HOME                 "$(gem env user_gemhome)"
 exp GNUPGHOME                "$XDG_DATA_HOME/gnupg"
 exp GOPATH                   "$XDG_DATA_HOME/go"
