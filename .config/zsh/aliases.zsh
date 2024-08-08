@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-08 16:39:39 EEST
+# Date:   2024-08-09 00:35:37 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -899,6 +899,8 @@ alias pg  'sudo -iu postgres psql postgres'
 alias cf        'setopt CSH_NULL_GLOB; files=(*); echo ${#files[@]};'
 # Count only hidden files in the directory:
 alias cfa       'setopt CSH_NULL_GLOB; files=(.*); echo ${#files[@]};'
+# Count directories:
+alias cfd       'setopt CSH_NULL_GLOB; dirs=(*/); echo ${#dirs[@]};'
 alias empty     'truncate -s 0'
 alias fld       'fold -w 80 -s'
 alias immutable 'sudo chattr +i'

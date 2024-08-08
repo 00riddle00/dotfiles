@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-08 22:28:54 EEST
+# Date:   2024-08-09 00:52:43 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ macd() {
 # Backups
 # --------------------------------------------
 
-# Make a backup of a file / directory in the current directory.
+# Make a backup of a file in the current directory.
 # Usage:
 #   $0 FILE1|DIR1 [FILE2|DIR2] ...
 bk() {
@@ -43,7 +43,7 @@ bk() {
     done
 }
 
-# Make a backup of a file / directory both in local disk and remote location.
+# Make a backup of a file both in local disk and remote location.
 # Usage:
 #   $0 FILE1|DIR1 [FILE2|DIR2] ...
 kk() {
@@ -334,24 +334,33 @@ tmux-clean() {
 }
 
 # --------------------------------------------
-# FZF functions
+# Fuzzy Finder (fzf)
 # --------------------------------------------
 
-# TODO update / tidy up
-# Copy using fzf
-fcp() {
-    cp -v "$1" "$(awk '{print $2}' ~/.config/directories \
-                    | fzf \
-                    | sed "s|~|$HOME|")"
+# Copy files to a selected directory in $HOME.
+# Usage:
+#   $0 FILE1|DIR1 [FILE2|DIR2 ...]
+cpf() {
+    cp -rv "$@" \
+        "$(\ls ~ \
+            | fzf \
+            | sed "s|^|$HOME/|")"
 }
 
-# TODO update / tidy up
-# Edit scripts (using fzf)
+# Open a selected script in $BIN for editing.
+# Usage:
+#   $0
 se() {
-    du -a $BIN/* ~/.local/bin/* \
+    du -a $BIN/* \
         | awk '{print $2}' \
-        | fzf --preview 'bat --color always {}' \
-        | xargs -ro $EDITOR
+        | fzf +m \
+          --preview "bat \
+              --color=always \
+              --style=numbers \
+              --line-range=:500 {}" \
+          --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
+          --preview-window=right:60%:nowrap \
+        | xargs -r $EDITOR
 }
 
 # -----------------------
@@ -370,7 +379,7 @@ fe() {
                 --style=numbers \
                 --line-range=:500 {}" \
             --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
-            --preview-window=right:60%:wrap
+            --preview-window=right:60%:nowrap
     )" || return
   $EDITOR "$file" || return
 }
@@ -387,24 +396,9 @@ fea() {
             --style=numbers \
             --line-range=:500 {}"\
         --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
-        --preview-window=right:60%:wrap
+        --preview-window=right:60%:nowrap
   )" || return
   $EDITOR "$file" || return
-}
-
-# TODO update / tidy up
-# fzf.vi - open files in ~/.viminfo
-fzf.vi() {
-  local files
-  files="$(
-    grep '^>' "$HOME/.viminfo" \
-      | cut -c3- \
-      | while read -r line ; do
-          [[ -f "${line/\~/$HOME}" ]] && echo "$line"
-        done \
-      | fzf -m -0 -1 -q "$*"
-  )"
-  "${EDITOR:-vim}" "${files/\~/$HOME}"
 }
 
 # -----------------------
@@ -535,3 +529,4 @@ ftpane() {
       && tmux select-window -t "$target_window"
   fi
 }
+
