@@ -1,12 +1,12 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-08 16:39:42 EEST
+# Date:   2024-08-08 22:28:54 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 # --------------------------------------------
-# Aliases
+# Creating aliases
 # --------------------------------------------
 
 # Create a Zsh alias.
@@ -58,20 +58,20 @@ kk() {
 # --------------------------------------------
 
 # Find files / directories (incl. hidden ones) in the current directory
-# (recursively) by a case-insensitive substring of the filename / directory
-# name.
+# (recursively) by a case-insensitive pattern for a substring of the filename /
+# directory name.
 # Usage:
-#  $0 SUBSTRING
+#  $0 PATTERN
 find.file() {
     find . -iname "*${1}*" \
         | sort -u
 }
 
 # Find relative paths (incl. paths to hidden files and directories) starting
-# from the current directory (recursively) by a case-insensitive substring of
-# the relative path.
+# from the current directory (recursively) by a case-insensitive pattern for a
+# substring of the relative path.
 # Usage:
-#  $0 SUBSTRING
+#  $0 PATTERN
 find.path() {
     {
         readlink -f **/** ;
@@ -210,7 +210,6 @@ colv () {
 # Convert a Unix epoch to a human-readable date.
 # Usage e.g.:
 #   $0 1640988000 [1643752800 ...]
-#
 epoch-to-date() {
     for epoch in "$@" ; do
         date -d @"${epoch}" "+%F"
@@ -230,24 +229,14 @@ date-to-epoch() {
 # Misc
 # --------------------------------------------
 
-# Go to a command's flag description in its man page.
-# Usage e.g.:
-#   $0 grep -r
-manf () { 
-    man "$1" \
-        | less -p "^ +$2"
-}
-
-# Open a new file with a given extension (default is .md) in /tmp for editing.
+# List all PIDs of processes containing a given string in their name.
 # Usage:
-#   $0 [EXT]
-temp() {
-    ext="$1"
-    [[ -z "$1" ]] && ext="md"
-    $EDITOR -c "\
-        e /tmp/temp_$(date +%F_%H_%M_%S).$ext \
-            | :cd %:p:h \
-        "
+#   $0 STRING
+auf() {
+    ps ax \
+        | grep -v grep \
+        | grep -i "${1}" \
+        | awk '{print $1}'
 }
 
 # Copy the basename of a file / directory to the clipboard.
@@ -270,40 +259,16 @@ rlc() {
         | xclip -selection clipboard
 }
 
-# TODO update / tidy up
-recent () {
-    history \
-        | grep "$1" \
-        | grep -v "recent $1" \
-        | grep -v "grep $1" \
-        | tail -1
-}
-
-# TODO update / tidy up
-auf() {
-    ps ax \
-        | grep -v grep \
-        | grep -i "${1}" \
-        | awk '{print $1}'
-}
-
-# TODO update / tidy up
-svndiff() {
-    sep="\n$(perl -e 'print("@" x 100);')\n"
-
-    svn diff "$@" \
-        | awk -v sep="$sep" '/^Index: / {print sep} {print}' \
-        | bat --language diff
-}
-
-# TODO update / tidy up
+# cd to a directory and list its contents if it has less than 50 files.
+# Usage:
+#  $0 [DIR]
 c() {
-    if [ -z "$1" ] ; then
+    if [[ -z "$1" ]] ; then
         cd
-    elif [ "$(find "$1" -maxdepth 1 -type f \
+    elif [[ "$(find "$1" -maxdepth 1 -type f \
                | head -n 51 \
                | wc -l)" \
-           -gt 50 ] ; then
+           -gt 50 ]] ; then
         cd "$1"
         echo "Large dir"
     else
@@ -311,7 +276,50 @@ c() {
     fi
 }
 
-# TODO update / tidy up
+# Go to a command's flag description in its man page.
+# Usage e.g.:
+#   $0 grep -r
+manf () { 
+    man "$1" \
+        | less -p "^ +$2"
+}
+
+# Show the most recent command containing a given string / substring.
+# Usage:
+#  $0 STRING
+recent () {
+    history -100 \
+        | grep "$1" \
+        | grep -v "recent $1" \
+        | grep -v "grep $1" \
+        | tail -1
+}
+
+# Display Subversion diffs with enhanced formatting and highlighting.
+# Usage:
+#  $0 [FILE1|DIR1 [FILE2|DIR2 ...]]
+svndiff() {
+    sep="\n$(perl -e 'print("@" x 100);')\n"
+    svn diff "$@" \
+        | awk -v sep="$sep" '/^Index: / {print sep} {print}' \
+        | bat --language diff
+}
+
+# Open a new file with a given extension (default is .md) in /tmp for editing.
+# Usage:
+#   $0 [EXT]
+temp() {
+    ext="$1"
+    [[ -z "$1" ]] && ext="md"
+    $EDITOR -c "\
+        e /tmp/temp_$(date +%F_%H_%M_%S).$ext \
+            | :cd %:p:h \
+        "
+}
+
+# Kill all unattached Tmux sessions.
+# Usage:
+#  $0
 tmux-clean() {
     echo "Sucessfully killed unattached Tmux sessions."
     echo "--------------------------------------------"
