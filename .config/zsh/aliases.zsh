@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-07 00:47:27 EEST
+# Date:   2024-08-08 16:39:39 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -435,7 +435,7 @@ alias lynx   'lynx -lss="$XDG_CONFIG_HOME/lynx/lynx.lss"'
 #alias svn    'svn --config-dir "$XDG_CONFIG_HOME/subversion"'
 
 alias bs     'basename'
-alias bl	 'bluetoothctl'
+alias bl     'bluetoothctl'
 alias cat    'bat'
 alias e      'echo'
 alias enc    'uchardet'
@@ -617,6 +617,7 @@ alias dsc   'dot commit'
 alias dsco  'dot commit --only'
 alias dsd   'dot diff'
 alias dsdc  'dot diff --staged'
+alias dsg   'dot lg'
 alias dsl   'dot pull'
 alias dsp   'dot push'
 alias dsr   'dot restore'
@@ -823,8 +824,9 @@ alias reop         'openbox --reconfigure'
 # 22. Aliases to Zsh functions
 #------------------------------------------------------------------------------
 
-alias f  'fields'
-alias tc 'tmux-clean'
+alias f    'fieldc tab'
+alias cols 'colv tab'
+alias tc   'tmux-clean'
 
 #------------------------------------------------------------------------------
 # 23. Aliases to scripts

@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-08 00:35:53 EEST
+# Date:   2024-08-08 16:39:42 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -9,21 +9,21 @@
 # Aliases
 # --------------------------------------------
 
-# Create a Zsh alias
+# Create a Zsh alias.
 # Usage e.g.:
-#     ma "vedit" "vim $(readlink -f file_to_edit.txt)"
-#     ma "cdhere" "cd $(pwd)"
-ma() { 
+#     $0 "vedit" "vim $(readlink -f file_to_edit.txt)"
+#     $0 "cdhere" "cd $(pwd)"
+ma() {
     echo alias "$1  '$2'" >> "$ZDOTDIR/aliases.zsh"
     echo "*** Alias added ***"
     echo "alias $1  '$2'"
     source "$ZDOTDIR/.zshrc"
 }
 
-# Create a Zsh alias to cd into current directory
+# Create a Zsh alias to cd into current directory.
 # Usage e.g.:
-#   macd "cdhere"
-macd() { 
+#   $0 "cdhere"
+macd() {
     echo alias "$1='cd $(pwd)'" >> "$ZDOTDIR/aliases.zsh"
     echo "*** Alias added ***
     alias $1='cd $(pwd)'"
@@ -34,20 +34,20 @@ macd() {
 # Backups
 # --------------------------------------------
 
-# Make a backup in the current directory
+# Make a backup of a file / directory in the current directory.
 # Usage:
-#   bk FILE1|DIR1 [FILE2|DIR2] ...
+#   $0 FILE1|DIR1 [FILE2|DIR2] ...
 bk() {
-    for item in "$@"; do
+    for item in "$@" ; do
         cp -r "$item" "$item.bak"
     done
 }
 
-# Make a backup both in local disk and remote location
+# Make a backup of a file / directory both in local disk and remote location.
 # Usage:
-#   kk FILE1|DIR1 [FILE2|DIR2] ...
-function kk() {
-    for item in "$@"; do
+#   $0 FILE1|DIR1 [FILE2|DIR2] ...
+kk() {
+    for item in "$@" ; do
         cp -rv "$item" "${HOME}/backups/${item}.$(date +%F_%R_%S).bak"
         cp -rv "$item" "${DROPBOX}/backup/${item}.$(date +%F_%R_%S).bak"
     done
@@ -57,36 +57,51 @@ function kk() {
 # Find
 # --------------------------------------------
 
-# List all file extensions in the current directory (recursively)
+# Find files / directories (incl. hidden ones) in the current directory
+# (recursively) by a case-insensitive substring of the filename / directory
+# name.
 # Usage:
-#   ext
-ext() { 
-    find . -type f \
-        | perl -ne 'print $1 if m/\.([^.\/]+)$/' \
+#  $0 SUBSTRING
+find.file() {
+    find . -iname "*${1}*" \
         | sort -u
 }
 
-# TODO update / tidy up
-# Searches hidden files as well
-find.file() {
-    find . -iname "*${1}*" | sort -u
+# Find relative paths (incl. paths to hidden files and directories) starting
+# from the current directory (recursively) by a case-insensitive substring of
+# the relative path.
+# Usage:
+#  $0 SUBSTRING
+find.path() {
+    {
+        readlink -f **/** ;
+        readlink -f **/.* ;
+    } \
+        | sed "s|$(pwd)||" \
+        | grep -i "${1}" \
+        | sort -u
 }
 
-# TODO update / tidy up
-# Does not search hidden files
-find.file.abs() {
-    readlink -f **/** | grep -i "${1}" | sort -u
+# List all file extensions in the current directory (recursively).
+# Usage:
+#   $0
+ext() {
+    find . -type f \
+        | perl -ne 'print $1 if m|\.([^.\/]+)$|' \
+        | sort -u
 }
 
-# TODO update / tidy up
-# Find different file extensions, exluding ./.git, ./venv and ./.idea dirs.
-files-ext() {
+# List all file extensions in the current directory (recursively), excluding
+# .git/, .idea/, venv/ directories and dotfiles.
+# Usage:
+#   $0
+ext-filtered() {
     find . \
-        -path    ./.git \
-        -o -path ./venv  -prune \
+           -path ./.git  -prune \
+        -o -path ./.venv -prune \
         -o -path ./.idea -prune \
         -o -type f \
-            | sed -rn 's|.*/[^/]+\.([^/.]+)$|\1|p' \
+            | perl -ne 'print "$1\n" if m|.*/[^/]+\.([^/.]+)$|' \
             | sort -u
 }
 
@@ -94,142 +109,165 @@ files-ext() {
 # Set operations on files (linewise)
 # --------------------------------------------
 
-# A U B (union of lines, without duplicates)
+# Perform A U B (union of lines, without duplicates).
 # Usage:
-#   a_union_b FILE1 FILE2
-a_union_b() { cat "$1" "$2" | sort -u }
+#   $0 FILE1 FILE2
+a_union_b() { 
+    cat "$1" "$2" \
+        | sort -u
+}
 
-# A & B (intersection of lines)
+# Perform A & B (intersection of lines).
 # Usage:
-#   a_and_b FILE1 FILE2
-a_and_b() { comm -12 <( sort "$1" ) <( sort "$2" ) }
+#   $0 FILE1 FILE2
+a_and_b() { 
+    comm -12 <( sort "$1" ) <( sort "$2" )
+}
 
-# Get all lines from A which contain a string from B
+# Get all lines from A which contain a string from B.
 # Usage:
-#   a_and_string_in_b FILE1 FILE2
-a_and_string_in_b() { grep -F -f "$2" "$1" | sort }
+#   $0 FILE1 FILE2
+a_and_string_in_b() { 
+    grep -F -f "$2" "$1" \
+        | sort
+}
 
-# A \ B (subtract lines from A which appear in B)
+# Perform A \ B (subtract lines from A which appear in B).
 # Usage:
-#   a_minus_b FILE1 FILE2
-a_minus_b() { grep -Fvx -f "$2" "$1" | sort }
+#   $0 FILE1 FILE2
+a_minus_b() { 
+    grep -Fvx -f "$2" "$1" \
+        | sort
+}
 
-# Remove lines from A which contain a string from B
+# Remove lines from A which contain a string from B.
 # Usage:
-#   a_minus_string_in_b FILE1 FILE2
-a_minus_string_in_b() { grep -Fv -f "$2" "$1" | sort }
+#   $0 FILE1 FILE2
+a_minus_string_in_b() { 
+    grep -Fv -f "$2" "$1" \
+        | sort 
+}
 
 # --------------------------------------------
 # Structured data files
 # --------------------------------------------
 
-# Summary of the number of fields in each line of a TSV file
+# Show the summary of the number of fields in each line in a DSV
+# (delimiter-separated values) file.
 # Usage:
-#   fields FILE
-fields () {
-    awk -F"\t" '{print NF}' "$1" | uniq -c
+#   $0 SEP_NAME FILE1 [FILE2 ...]
+# Grammar (ABNF):
+#   SEP_NAME = "comma" / "semicolon" / "tab" / "whitespace"
+fieldc () {
+    local separator
+    case "$1" in
+        comma)      separator=","  ;;
+        semicolon)  separator=";"  ;;
+        tab)        separator="\t" ;;
+        whitespace) separator=" "  ;;
+        *)          echo "Unsupported separator: $1" >&2 ; return 1 ;;
+    esac
+    shift
+
+    for file in "$@" ; do
+        echo "$file"
+        awk -F"$separator" '{print NF}' "$file" \
+            | uniq -c
+    done
 }
 
-# Summary of the number of fields in each line of a CSV file
+# Show all values (sorted) of a given column in a DSV (delimiter-separated
+# values) file.
 # Usage:
-#   fields-csv FILE
-fields-csv () {
-    awk -F, '{print NF}' "$1" | uniq -c
-}
+#   $0 SEP_NAME COL_NO FILE1 [FILE2 ...]
+# Grammar (ABNF):
+#   SEP_NAME = "comma" / "semicolon" / "tab" / "whitespace"
+colv () {
+    local separator
+    case "$1" in
+        comma)      separator=","  ;;
+        semicolon)  separator=";"  ;;
+        tab)        separator="\t" ;;
+        whitespace) separator=" "  ;;
+        *)          echo "Unsupported separator: $1" >&2 ; return 1 ;;
+    esac
+    shift
 
-# TODO update / tidy up
-# Usage: cols <col_no> <file>
-# $1 - col no
-# $2 - file name
-cols () {
-    col_no="\$$1";
-    col_no="{print $col_no}";
-    awk -F$'\t' -f <(echo "$col_no") "$2" | sort | uniq
-}
+    col_no="\$$1"
+    awk_stmt="{print $col_no}"
 
-# TODO update / tidy up
-# Usage: cols <col_no> <file>
-# $1 - col no
-# $2 - file name
-colss () {
-    col_no="\$$1";
-    col_no="{print $col_no}";
-    awk -F$'\t' -f <(echo "$col_no") "$2" | sort
-}
-
-# TODO update / tidy up
-# Usage: cols <col_no> <file>
-cols-csv () {
-    col_no="\$$1";
-    col_no="{print $col_no}";
-    awk -F, -f <(echo "$col_no") "$2" | sort | uniq
-}
-
-# TODO update / tidy up
-# Usage: cols <col_no> <file>
-ncols () {
-    col_no="\$$1";
-    col_no="{print $col_no}";
-    awk -F$'\t' -f <(echo "$col_no") "$2" | sort -n | uniq
-}
-
-# TODO update / tidy up
-# Usage: pcols <col_no> <file>
-pcols () {
-    col_no="\$$1";
-    col_no="{print $col_no}";
-    awk -F$'\t' -f <(echo "$col_no") "$2" \
-        | perl -e '@data = map {[split(/\t/,$_)]} <>; \
-            print map {join("\t",@$_)} sort {$a->[0] <=> $b->[0]} @data' \
-        | uniq
+    for file in "$@" ; do
+        echo "$file"
+        awk -F"$separator" -f <(echo "$awk_stmt") "$2" \
+            | sort
+    done
 }
 
 # --------------------------------------------
 # Timestamps
 # --------------------------------------------
 
-# TODO update / tidy up
-# Convert epoch to human-readable date
-# Usage: epoch-to-date 1643234400
-# Output: 2022-01-27
+# Convert a Unix epoch to a human-readable date.
+# Usage e.g.:
+#   $0 1640988000 [1643752800 ...]
+#
 epoch-to-date() {
-    date  -d @"$1" "+%F"
+    for epoch in "$@" ; do
+        date -d @"${epoch}" "+%F"
+    done
 }
 
-# TODO update / tidy up
-# Convert epoch to human-readable date
-# Usage: date-to-epoch 2022-01-27
-# Output: 1643234400
+# Convert a human-readable date to a Unix epoch.
+# Usage e.g.:
+#   $0 2022-01-01 [2022-02-02 ...]
 date-to-epoch() {
-    date  -d "$1" "+%s"
+    for date_ in "$@" ; do
+        date -d "${date_}" "+%s"
+    done
 }
 
 # --------------------------------------------
 # Misc
 # --------------------------------------------
 
-# Go to a command's flag description in its manpage
+# Go to a command's flag description in its man page.
 # Usage e.g.:
-#   manf grep -r
-manf () { man "$1" | less -p "^ +$2"; }
+#   $0 grep -r
+manf () { 
+    man "$1" \
+        | less -p "^ +$2"
+}
 
-# Edit a new file with a given extension (default is .md) in /tmp
-# Usage: 
-#   temp [EXT]
+# Open a new file with a given extension (default is .md) in /tmp for editing.
+# Usage:
+#   $0 [EXT]
 temp() {
     ext="$1"
     [[ -z "$1" ]] && ext="md"
-    $EDITOR -c "e /tmp/temp_$(date +%F_%H_%M_%S).$ext | :cd %:p:h"
+    $EDITOR -c "\
+        e /tmp/temp_$(date +%F_%H_%M_%S).$ext \
+            | :cd %:p:h \
+        "
 }
 
-# TODO update / tidy up
+# Copy the basename of a file / directory to the clipboard.
+# Usage:
+#   $0 FILE1|DIR1 [FILE2|DIR2 ...]
 bsc() {
-    basename "$1" | xclip
+    for item in "$@" ; do
+        basename "$item"
+    done \
+        | xclip -selection clipboard
 }
 
-# TODO update / tidy up
+# Copy the absolute path of a file / directory to the clipboard.
+# Usage:
+#   $0 FILE1|DIR1 [FILE2|DIR2 ...]
 rlc() {
-    readlink -f "$1" | xclip
+    for item in "$@" ; do
+        readlink -f "$item"
+    done \
+        | xclip -selection clipboard
 }
 
 # TODO update / tidy up
@@ -260,12 +298,12 @@ svndiff() {
 
 # TODO update / tidy up
 c() {
-    if [ -z "$1" ]; then
+    if [ -z "$1" ] ; then
         cd
     elif [ "$(find "$1" -maxdepth 1 -type f \
                | head -n 51 \
                | wc -l)" \
-           -gt 50 ]; then
+           -gt 50 ] ; then
         cd "$1"
         echo "Large dir"
     else
@@ -318,13 +356,13 @@ fe() {
     local file
     file="$(
       /usr/bin/fd --type f --follow --exclude .git --max-depth=1 2> /dev/null \
-      | fzf +m \
-        --preview "bat \
-            --color=always \
-            --style=numbers \
-            --line-range=:500 {}" \
-        --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
-        --preview-window=right:60%:wrap
+          | fzf +m \
+            --preview "bat \
+                --color=always \
+                --style=numbers \
+                --line-range=:500 {}" \
+            --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
+            --preview-window=right:60%:wrap
     )" || return
   $EDITOR "$file" || return
 }
@@ -353,7 +391,7 @@ fzf.vi() {
   files="$(
     grep '^>' "$HOME/.viminfo" \
       | cut -c3- \
-      | while read -r line; do
+      | while read -r line ; do
           [[ -f "${line/\~/$HOME}" ]] && echo "$line"
         done \
       | fzf -m -0 -1 -q "$*"
@@ -370,8 +408,10 @@ fzf.vi() {
 fd() {
   local dir
   dir="$(
-    find "${1:-.}" -path '*/\.*' -prune \
-        -o -type d -print 2> /dev/null \
+    find "${1:-.}" \
+        -path '*/\.*' -prune \
+        -o -type d    -print \
+        2> /dev/null \
       | fzf +m
   )" || return
   cd "$dir" || return
@@ -480,7 +520,7 @@ ftpane() {
       | cut -c 1
   )"
 
-  if [[ "$current_window" -eq "$target_window" ]]; then
+  if [[ "$current_window" -eq "$target_window" ]] ; then
     tmux select-pane -t "$target_window.$target_pane"
   else
     tmux select-pane -t "$target_window.$target_pane" \
