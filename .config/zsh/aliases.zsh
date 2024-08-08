@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 00:35:37 EEST
+# Date:   2024-08-09 00:57:11 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -774,7 +774,7 @@ alias dun    '$EDITOR $XDG_CONFIG_HOME/dunst/dunstrc'
 alias ee     '$EDITOR $XDG_CONFIG_HOME/emacs-gnu/init.el'
 alias eed    '$EDITOR $XDG_CONFIG_HOME/doom/init.el'
 alias fn     '$EDITOR $ZDOTDIR/functions.zsh'
-alias fn.fzf '$EDITOR $ZDOTDIR/functions_fzf.zsh'
+alias fn.fzf '$EDITOR $ZDOTDIR/fzf-functions.zsh'
 alias gconf  '$EDITOR $XDG_CONFIG_HOME/git/config'
 alias ic     '$EDITOR $XDG_CONFIG_HOME/i3/config'
 alias icc    '$EDITOR $XDG_CONFIG_HOME/i3blocks/config'
