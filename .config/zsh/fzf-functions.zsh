@@ -1,39 +1,13 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 00:53:07 EEST
+# Date:   2024-08-09 01:04:40 EEST
 # Path:   ~/.config/zsh/fzf-functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-# Copy files to a selected directory in $HOME.
-# Usage:
-#   $0 FILE1|DIR1 [FILE2|DIR2 ...]
-cpf() {
-    cp -rv "$@" \
-        "$(\ls ~ \
-            | fzf \
-            | sed "s|^|$HOME/|")"
-}
-
-# Open a selected script in $BIN for editing.
-# Usage:
-#   $0
-se() {
-    du -a $BIN/* \
-        | awk '{print $2}' \
-        | fzf +m \
-          --preview "bat \
-              --color=always \
-              --style=numbers \
-              --line-range=:500 {}" \
-          --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
-          --preview-window=right:60%:nowrap \
-        | xargs -r $EDITOR
-}
-
-# -----------------------
-# File
-# -----------------------
+# --------------------------------------------
+# Edit files
+# --------------------------------------------
 
 # TODO update / tidy up
 # fe - open file with $EDITOR
@@ -69,9 +43,25 @@ fea() {
   $EDITOR "$file" || return
 }
 
-# -----------------------
-# Directory
-# -----------------------
+# Open a selected script in $BIN for editing.
+# Usage:
+#   $0
+se() {
+    du -a $BIN/* \
+        | awk '{print $2}' \
+        | fzf +m \
+          --preview "bat \
+              --color=always \
+              --style=numbers \
+              --line-range=:500 {}" \
+          --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
+          --preview-window=right:60%:nowrap \
+        | xargs -r $EDITOR
+}
+
+# --------------------------------------------
+# cd into directories
+# --------------------------------------------
 
 # TODO update / tidy up
 # fd - cd to selected directory
@@ -98,43 +88,19 @@ fda() {
   cd "$dir" || return
 }
 
-# -----------------------
-# History
-# -----------------------
+# --------------------------------------------
+# Misc
+# --------------------------------------------
 
-# TODO update / tidy up
-# runcmd - utility function used to run the command in the shell
-runcmd() {
-  perl -e 'ioctl STDOUT, 0x5412, $_ for split //, <>'
+# Copy files to a selected directory in $HOME.
+# Usage:
+#   $0 FILE1|DIR1 [FILE2|DIR2 ...]
+cpf() {
+    cp -rv "$@" \
+        "$(\ls ~ \
+            | fzf \
+            | sed "s|^|$HOME/|")"
 }
-
-# TODO update / tidy up
-# fh - repeat history
-fh() {
-  ([[ -n "$ZSH_NAME" ]] && fc -l 1 || history) \
-    | fzf +s --tac \
-    | sed -re 's/^\s*[0-9]+\s*//' \
-    | runcmd
-}
-
-# TODO update / tidy up
-# writecmd - utility function used to write the command in the shell
-writecmd() {
-  perl -e 'ioctl STDOUT, 0x5412, $_ for split //, do { chomp($_ = <>); $_ }'
-}
-
-# TODO update / tidy up
-# fhe - repeat history edit
-fhe() {
-  ([[ -n "$ZSH_NAME" ]] && fc -l 1 || history) \
-    | fzf +s --tac \
-    | sed -re 's/^\s*[0-9]+\s*//' \
-    | writecmd
-}
-
-# -----------------------
-# PID
-# -----------------------
 
 # TODO update / tidy up
 # fkill - kill process
@@ -150,10 +116,6 @@ fkill() {
 
   kill -"${1:-9}" "$pid"
 }
-
-# -----------------------
-# Tmux
-# -----------------------
 
 # TODO update / tidy up
 # ftpane - switch pane (@george-b)
