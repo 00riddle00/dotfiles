@@ -1,6 +1,7 @@
+# vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 00:57:11 EEST
+# Date:   2024-08-09 08:53:54 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -45,55 +46,55 @@ alias ..    'c ..'
 alias ...   'c ../..'
 alias ....  'c ../../..'
 alias ..... 'c ../../../..'
-alias -     'c "$OLDPWD"'
-alias c-    'c "$OLDPWD"'
+alias -     'c "${OLDPWD}"'
+alias c-    'c "${OLDPWD}"'
 
 # Temporary directories
-alias mp  'cd $MP '
-alias mp1 'cd $MP1'
-alias mp2 'cd $MP2'
-alias mp3 'cd $MP3'
-alias mp4 'cd $MP4'
-alias mp5 'cd $MP5'
-alias mp6 'cd $MP6'
-alias mp7 'cd $MP7'
-alias mp8 'cd $MP8'
-alias mp0 'cd $MP0'
+alias mp  'cd ${MP} '
+alias mp1 'cd ${MP1}'
+alias mp2 'cd ${MP2}'
+alias mp3 'cd ${MP3}'
+alias mp4 'cd ${MP4}'
+alias mp5 'cd ${MP5}'
+alias mp6 'cd ${MP6}'
+alias mp7 'cd ${MP7}'
+alias mp8 'cd ${MP8}'
+alias mp0 'cd ${MP0}'
 
 # Various locations
-alias bak      'cd $HOME/backups'
-alias bin      'cd $BIN'
-alias cache    'cd $XDG_CACHE_HOME'
-alias can      'cd $CANDY'
-alias conf     'cd $XDG_CONFIG_HOME'
-alias drop     'cd $DROPBOX'
-alias drop.bak 'cd $DROPBOX/backup'
-alias dw       'cd $XDG_DOWNLOAD_DIR'
-alias hist     'cd $HOME/histfiles/'
-alias lok      'cd $HOME/.local'
-alias share    'cd $XDG_DATA_HOME'
-alias dots     'cd $DOTSHARE'
-alias note     'cd $NOTES'
-alias op       'cd $XDG_CONFIG_HOME/openbox'
-alias pro      'cd $PRO'
-alias np       'cd $PRO/2022/npBuild'
-alias sol      'cd $PRO/2023/Solutions-To-Problems/Codewars'
-alias tem      'cd $PRO/2023/Solutions-To-Problems/Codewars/temp'
-alias res      'cd $XDG_DATA_HOME/tmux/resurrect'
-alias sk       'cd $SCREENSHOTS'
-alias we       'cd $MP1/webuzz && venv'
-alias bu       'cd $MP1/budget && venv'
-alias vid      'cd $XDG_VIDEOS_DIR'
-alias was      'cd $HOME/wastebasket'
-alias zdot     'cd $ZDOTDIR'
+alias bak      'cd ${HOME}/backups'
+alias bin      'cd ${BIN}'
+alias cache    'cd ${XDG_CACHE_HOME}'
+alias can      'cd ${CANDY}'
+alias conf     'cd ${XDG_CONFIG_HOME}'
+alias drop     'cd ${DROPBOX}'
+alias drop.bak 'cd ${DROPBOX}/backup'
+alias dw       'cd ${XDG_DOWNLOAD_DIR}'
+alias hist     'cd ${HOME}/histfiles/'
+alias lok      'cd ${HOME}/.local'
+alias share    'cd ${XDG_DATA_HOME}'
+alias dots     'cd ${DOTSHARE}'
+alias note     'cd ${NOTES}'
+alias op       'cd ${XDG_CONFIG_HOME}/openbox'
+alias pro      'cd ${PRO}'
+alias np       'cd ${PRO}/2022/npBuild'
+alias sol      'cd ${PRO}/2023/Solutions-To-Problems/Codewars'
+alias tem      'cd ${PRO}/2023/Solutions-To-Problems/Codewars/temp'
+alias res      'cd ${XDG_DATA_HOME}/tmux/resurrect'
+alias sk       'cd ${SCREENSHOTS}'
+alias we       'cd ${MP1}/webuzz && venv'
+alias bu       'cd ${MP1}/budget && venv'
+alias vid      'cd ${XDG_VIDEOS_DIR}'
+alias was      'cd ${HOME}/wastebasket'
+alias zdot     'cd ${ZDOTDIR}'
 
 #------------------------------------------------------------------------------
 # 2. Getting information
 #------------------------------------------------------------------------------
 
 # Hostname and path
-alias host 'echo $HOST'
-alias path 'echo $PATH | tr ":" "\n"'
+alias host 'echo ${HOST}'
+alias path 'echo ${PATH} | tr ":" "\n"'
 
 # Disk info
 alias fl 'sudo fdisk -l'
@@ -142,7 +143,7 @@ alias exe   'chmod +x'
 alias noexe 'chmod -x'
 alias let   'chmod 755'
 alias letr  'chmod -R 755'
-alias ch    'sudo chown -R $USER:$USER'
+alias ch    'sudo chown -R ${USER}:${USER}'
 
 #------------------------------------------------------------------------------
 # 6. Clipboard
@@ -265,8 +266,8 @@ alias wpa.wpa      "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*)
 # 15. Mount/Unmount
 #------------------------------------------------------------------------------
 
-alias phone.on  'simple-mtpfs $HOME/iPhone'  # If problems, remount + restart thunar
-alias phone.off 'umount $HOME/iPhone'
+alias phone.on  'simple-mtpfs ${HOME}/iPhone'  # If problems, remount + restart thunar
+alias phone.off 'umount ${HOME}/iPhone'
 
 #------------------------------------------------------------------------------
 # 16. Process Management
@@ -429,10 +430,10 @@ alias pacu 'sudo pacman -U'  # Argument: pkgname-pkgver.pkg.tar.zst
 #--------------------------------------
 
 # Adhering to XDG BASE DIR spec:
-alias dosbox 'dosbox -conf "$XDG_CONFIG_HOME/dosbox/dosbox.conf"'
-alias irssi  'irssi --config="$XDG_CONFIG_HOME/irssi/config" --home="$XDG_CONFIG_HOME/irssi"'
-alias lynx   'lynx -lss="$XDG_CONFIG_HOME/lynx/lynx.lss"'
-#alias svn    'svn --config-dir "$XDG_CONFIG_HOME/subversion"'
+alias dosbox 'dosbox -conf "${XDG_CONFIG_HOME}/dosbox/dosbox.conf"'
+alias irssi  'irssi --config="${XDG_CONFIG_HOME}/irssi/config" --home="${XDG_CONFIG_HOME}/irssi"'
+alias lynx   'lynx -lss="${XDG_CONFIG_HOME}/lynx/lynx.lss"'
+#alias svn    'svn --config-dir "${XDG_CONFIG_HOME}/subversion"'
 
 alias bs     'basename'
 alias bl     'bluetoothctl'
@@ -467,10 +468,10 @@ alias timer  'termdown -B | lolcat'
 alias ti     'termdown -B | lolcat'
 alias tl     'translit'
 alias unrar  'unrar x'
-alias v      '$EDITOR'
-alias vim    '$EDITOR'
-alias vmi    '$EDITOR'
-alias vv     'sudo $EDITOR'
+alias v      '${EDITOR}'
+alias vim    '${EDITOR}'
+alias vmi    '${EDITOR}'
+alias vv     'sudo ${EDITOR}'
 # A trailing space in `xargs ` causes the next word to be checked for
 # alias substitution when the alias is expanded.
 alias xargs   'xargs '
@@ -609,7 +610,7 @@ alias gfp   'git fetch --prune'
 alias gaa   'git add . && git commit -m '.' && git push'
 alias gcp   'git commit -m '.' && git push'
 # Git bare repository for dotfiles
-alias dot   '/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot   '/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
 alias dsa   'dot add'
 alias dsau  'dot add -u .'
 alias dsua  'dot add -u .'
@@ -662,11 +663,11 @@ alias mpv.video   'mpv --no-config --vo=tct'
 alias mpv.youtube 'mpv -vo=caca'
 
 # Neovim
-alias vib              '$EDITOR -b'
-alias vim.bare         '$EDITOR -u NONE'
-alias vim.plug.up      '$EDITOR +PackerSync'
-alias vim.plug.clean   '$EDITOR +PackerClean'
-alias vim.plug.list    '$EDITOR +PackerStatus'
+alias vib              '${EDITOR} -b'
+alias vim.bare         '${EDITOR} -u NONE'
+alias vim.plug.up      '${EDITOR} +PackerSync'
+alias vim.plug.clean   '${EDITOR} +PackerClean'
+alias vim.plug.list    '${EDITOR} +PackerStatus'
 
 # Redshift
 alias red.norm 'redshift -P -O 6500'
@@ -680,7 +681,7 @@ alias ag.find_all  'ag -rs --noheading --hidden'
 alias agi.find_all 'ag -rsi --noheading --hidden'
 
 # Scrot
-alias pic 'scrot -s $HOME/Screenshots/screenshot-%F-%H%M%S.png'
+alias pic 'scrot -s ${HOME}/Screenshots/screenshot-%F-%H%M%S.png'
 
 # SSH
 #alias sa   'ssh-add'
@@ -750,8 +751,8 @@ alias dout  'killall xinit'
 # Switching configs
 #---------------------------------------
 
-alias emacs.gnu  'ln -nsf $XDG_CONFIG_HOME/emacs-gnu $XDG_CONFIG_HOME/emacs'
-alias emacs.doom 'ln -nsf $XDG_CONFIG_HOME/emacs-doom $XDG_CONFIG_HOME/emacs'
+alias emacs.gnu  'ln -nsf ${XDG_CONFIG_HOME}/emacs-gnu ${XDG_CONFIG_HOME}/emacs'
+alias emacs.doom 'ln -nsf ${XDG_CONFIG_HOME}/emacs-doom ${XDG_CONFIG_HOME}/emacs'
 
 #---------------------------------------
 # Reloading configs
@@ -759,38 +760,38 @@ alias emacs.doom 'ln -nsf $XDG_CONFIG_HOME/emacs-doom $XDG_CONFIG_HOME/emacs'
 
 alias mkgrub       'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mkinit       'sudo mkinitcpio -p linux'
-alias xres.restart 'xrdb $XDG_CONFIG_HOME/X11/Xresources'
+alias xres.restart 'xrdb ${XDG_CONFIG_HOME}/X11/Xresources'
 alias retmux       'tmux kill-server; tmux source-file ~/.tmux.conf; tmux'
 alias reh          'rehash'
-alias z            'source $ZDOTDIR/.zshrc'
+alias z            'source ${ZDOTDIR}/.zshrc'
 
 #---------------------------------------
 # Editing configs
 #---------------------------------------
 
-alias al     '$EDITOR $ZDOTDIR/aliases.zsh'
-alias cm     '$EDITOR $XDG_CONFIG_HOME/picom/picom.conf'
-alias dun    '$EDITOR $XDG_CONFIG_HOME/dunst/dunstrc'
-alias ee     '$EDITOR $XDG_CONFIG_HOME/emacs-gnu/init.el'
-alias eed    '$EDITOR $XDG_CONFIG_HOME/doom/init.el'
-alias fn     '$EDITOR $ZDOTDIR/functions.zsh'
-alias fn.fzf '$EDITOR $ZDOTDIR/fzf-functions.zsh'
-alias gconf  '$EDITOR $XDG_CONFIG_HOME/git/config'
-alias ic     '$EDITOR $XDG_CONFIG_HOME/i3/config'
-alias icc    '$EDITOR $XDG_CONFIG_HOME/i3blocks/config'
-alias lal    '$EDITOR $ZDOTDIR/aliases.local.zsh'
-alias lfn    '$EDITOR $ZDOTDIR/functions.local.zsh'
-alias mime   '$EDITOR $XDG_CONFIG_HOME/mimeapps.list'
-alias rc     '$EDITOR $XDG_CONFIG_HOME/openbox/rc.xml'
-alias rr     '$EDITOR $XDG_CONFIG_HOME/ranger/rc.conf'
-alias start  '$EDITOR $XDG_CONFIG_HOME/openbox/autostart'
-alias tg     '$EDITOR $XDG_CONFIG_HOME/tig/config'
-alias tintrc '$EDITOR $XDG_CONFIG_HOME/tint2/tint2rc'
-alias tmuxr  '$EDITOR $XDG_CONFIG_HOME/tmux/tmux.conf'
-alias xi     '$EDITOR $XDG_CONFIG_HOME/X11/xinitrc'
-alias xres   '$EDITOR $XDG_CONFIG_HOME/X11/Xresources'
-alias zenv   '$EDITOR $ZDOTDIR/.zshenv'
-alias zr     '$EDITOR $ZDOTDIR/.zshrc'
+alias al     '${EDITOR} ${ZDOTDIR}/aliases.zsh'
+alias cm     '${EDITOR} ${XDG_CONFIG_HOME}/picom/picom.conf'
+alias dun    '${EDITOR} ${XDG_CONFIG_HOME}/dunst/dunstrc'
+alias ee     '${EDITOR} ${XDG_CONFIG_HOME}/emacs-gnu/init.el'
+alias eed    '${EDITOR} ${XDG_CONFIG_HOME}/doom/init.el'
+alias fn     '${EDITOR} ${ZDOTDIR}/functions.zsh'
+alias fn.fzf '${EDITOR} ${ZDOTDIR}/fzf-functions.zsh'
+alias gconf  '${EDITOR} ${XDG_CONFIG_HOME}/git/config'
+alias ic     '${EDITOR} ${XDG_CONFIG_HOME}/i3/config'
+alias icc    '${EDITOR} ${XDG_CONFIG_HOME}/i3blocks/config'
+alias lal    '${EDITOR} ${ZDOTDIR}/aliases.local.zsh'
+alias lfn    '${EDITOR} ${ZDOTDIR}/functions.local.zsh'
+alias mime   '${EDITOR} ${XDG_CONFIG_HOME}/mimeapps.list'
+alias rc     '${EDITOR} ${XDG_CONFIG_HOME}/openbox/rc.xml'
+alias rr     '${EDITOR} ${XDG_CONFIG_HOME}/ranger/rc.conf'
+alias start  '${EDITOR} ${XDG_CONFIG_HOME}/openbox/autostart'
+alias tg     '${EDITOR} ${XDG_CONFIG_HOME}/tig/config'
+alias tintrc '${EDITOR} ${XDG_CONFIG_HOME}/tint2/tint2rc'
+alias tmuxr  '${EDITOR} ${XDG_CONFIG_HOME}/tmux/tmux.conf'
+alias xi     '${EDITOR} ${XDG_CONFIG_HOME}/X11/xinitrc'
+alias xres   '${EDITOR} ${XDG_CONFIG_HOME}/X11/Xresources'
+alias zenv   '${EDITOR} ${ZDOTDIR}/.zshenv'
+alias zr     '${EDITOR} ${ZDOTDIR}/.zshrc'
 
 #------------------------------------------------------------------------------
 # 21. Window manager-specific
@@ -801,7 +802,7 @@ alias zr     '$EDITOR $ZDOTDIR/.zshrc'
 #---------------------------------------
 
 alias i3.out       'i3-msg exit'
-alias i3.notes     'i3-msg exec "urxvt -name notes -hold -e zsh -c $BIN/vimnotes"'
+alias i3.notes     'i3-msg exec "urxvt -name notes -hold -e zsh -c ${BIN}/vimnotes"'
 alias cmus.run     'urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch "i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 # Avoid tmux session using an old I3SOCK environment variable after i3 restart
@@ -812,10 +813,10 @@ alias i3-msg-tmux  'i3-msg --socket "${XDG_RUNTIME_DIR}/i3/$(\ls -t ${XDG_RUNTIM
 # Openbox
 #---------------------------------------
 
-alias autostart    '$XDG_CONFIG_HOME/openbox/autostart'
+alias autostart    '${XDG_CONFIG_HOME}/openbox/autostart'
 alias op.out       'openbox --exit'
-alias theme.matrix '$BIN/themes/matrix/run'
-alias theme.riddle '$BIN/themes/riddle/run'
+alias theme.matrix '${BIN}/themes/matrix/run'
+alias theme.riddle '${BIN}/themes/riddle/run'
 alias f2on         'openbox-enable-F2-keybinding'
 alias f2of         'openbox-disable-F2-keybinding'
 alias reop         'openbox --reconfigure'
@@ -835,7 +836,7 @@ alias tc   'tmux-clean'
 alias setx   'fix-xkbmap'
 alias 12on   'gtk3-enable-12px-font'
 alias 12of   'gtk3-disable-12px-font'
-alias thanks '($BIN/sounds/thanks-hal &) > /dev/null'
+alias thanks '(${BIN}/sounds/thanks-hal &) > /dev/null'
 
 #------------------------------------------------------------------------------
 # 24. Aliases as flags
@@ -916,9 +917,9 @@ alias xres.show 'xrdb -query -all'
 # 27. Temporary (maybe they will stick)
 #------------------------------------------------------------------------------
 
-alias books    '$EDITOR -c "e $PRO/2022/books/bibliography.bib | :cd %:p:h"'
+alias books    '${EDITOR} -c "e ${PRO}/2022/books/bibliography.bib | :cd %:p:h"'
 alias get.date '--datetime | tr -d '\n' | copy'
-alias pasta    '$EDITOR "$DOTSHARE/misc/pastes.lst"'
-alias pst      'cd $PRO/2022/npBuild && ./packageStats'
-alias sg       'cd $HOME/tmp1/SG_shell_settings'
-alias xav      'xargs $EDITOR'
+alias pasta    '${EDITOR} "${DOTSHARE}/misc/pastes.lst"'
+alias pst      'cd ${PRO}/2022/npBuild && ./packageStats'
+alias sg       'cd ${HOME}/tmp1/SG_shell_settings'
+alias xav      'xargs ${EDITOR}'

@@ -1,6 +1,8 @@
+#!/usr/bin/env bash
+# vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-13 20:45:40 EEST
+# Date:   2024-08-09 08:52:53 EEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,22 +16,22 @@
 # use `grp:win_space_toggle` instead of `grp:alt_shift_toggle`
 #
 if type setxkbmap >/dev/null 2>&1; then
-    setxkbmap \
-        -layout us,lt \
-        -option grp:alt_shift_toggle \
-        -option caps:escape 2>/dev/null
+  setxkbmap \
+    -layout us,lt \
+    -option grp:alt_shift_toggle \
+    -option caps:escape 2>/dev/null
 fi
 
 # Configure multiple monitors
 if [[ "$(hostname)" == "panther" ]]; then
-    set-up-monitors-panther
+  set-up-monitors-panther
 elif [[ "$(hostname)" == "tulkun" ]]; then
-    set-up-monitors-tulkun
+  set-up-monitors-tulkun
 fi
 
 # Disable touchpad on a ThinkPad
 if [[ "$(hostname)" == "panther" ]]; then
-    xinput disable "SYNA8005:00 06CB:CD8C Touchpad"
+  xinput disable "SYNA8005:00 06CB:CD8C Touchpad"
 fi
 
 # Launch applications
@@ -39,7 +41,7 @@ dropbox &
 dunst &
 
 # Spawn SSH Agent
-eval $(ssh-agent -s)
+eval "$(ssh-agent -s)"
 
 # Window manager
 #exec i3

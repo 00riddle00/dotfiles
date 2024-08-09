@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-18 16:25:39 EEST
+# Date:   2024-08-09 08:52:59 EEST
 # Path:   ~/.config/nsxiv/exec/key-handler
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,15 +13,19 @@
 # key-handler.
 #**
 
-while read file
-do
-    case "$1" in
+while read -r file; do
+  case "${1}" in
     "r")
-        convert -rotate 90 "$file" "$file" ;;
+      convert -rotate 90 "${file}" "${file}"
+      ;;
     "R")
-        convert -rotate -90 "$file" "$file" ;;
+      convert -rotate -90 "${file}" "${file}"
+      ;;
     "d")
-        [[ "$(printf "No\\nYes" | dmenu -i -p "Really delete $file?")" = "Yes" ]] \
-        && rm "$file" && notify-send "$file deleted." ;;
-        esac
+      [[ "$(printf "No\\nYes" \
+        | dmenu -i -p "Really delete ${file}?")" = "Yes" ]] \
+        && rm "${file}" \
+        && notify-send "${file} deleted."
+      ;;
+  esac
 done

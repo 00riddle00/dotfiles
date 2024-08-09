@@ -1,6 +1,7 @@
+# vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-04 23:55:21 EEST
+# Date:   2024-08-09 08:53:37 EEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,7 +14,7 @@
 autoload -U colors && colors
 
 # Prompt
-if [[ $HOST =~ "^(panther|tulkun)$" ]]; then
+if [[ ${HOST} =~ "^(panther|tulkun)$" ]]; then
   host_color="cyan"
 else
   host_color="red"
@@ -24,8 +25,8 @@ PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(
 └─╼ "
 
 # Set up directory colors in the terminal
-if [[ -f $DIRCOLORS ]]; then
-  eval $(dircolors $DIRCOLORS)
+if [[ -f ${DIRCOLORS} ]]; then
+  eval $(dircolors ${DIRCOLORS})
 fi
 
 # Use zsh-fast-syntax-highlighting package / plugin
@@ -181,16 +182,16 @@ fi
 # A fix to make PyCharm auto-activate Python virtual
 # environment upon opening a new terminal tab.
 # See https://youtrack.jetbrains.com/issue/PY-61593/Activate-virtualenv-terminal-option-does-not-work-after-installing-oh-my-zsh
-if [ -n "$JEDITERM_SOURCE" ]; then
-  source $(echo $JEDITERM_SOURCE)
+if [ -n "${JEDITERM_SOURCE}" ]; then
+  source $(echo ${JEDITERM_SOURCE})
   unset JEDITERM_SOURCE
 fi
 
 # Organize Zsh configuration across multiple files
 # (mainly for aliases and functions)
-if [[ -d "$ZDOTDIR" ]]; then
-  for file in "$ZDOTDIR"/*.zsh; do
-    source "$file"
+if [[ -d "${ZDOTDIR}" ]]; then
+  for file in "${ZDOTDIR}"/*.zsh; do
+    source "${file}"
   done
 fi
 
