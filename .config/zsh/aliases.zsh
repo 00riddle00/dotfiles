@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 08:53:54 EEST
+# Date:   2024-08-10 22:39:13 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -35,6 +35,10 @@
 #  25. Programming
 #  26. Misc
 #  27. Temporary
+
+alias() {
+  builtin alias -- ${1}="${2}"
+}
 
 #------------------------------------------------------------------------------
 # 1. Navigation
@@ -407,10 +411,11 @@ alias fzf.paru  'paru -Slq | fzf -m --preview "paru -Si {1}" | xargs -ro paru -S
 # PIP
 #---------------------------------------
 
-alias pii  'pip install'
-alias pir  'pip install -r requirements.txt'
-alias pipu 'pip install --upgrade pip'
-alias wpi  'which pip'
+alias pipi  'pip install'
+alias pipir 'pip uninstall'
+alias pir   'pip install -r requirements.txt'
+alias pipu  'pip install --upgrade pip'
+alias wpi   'which pip'
 
 #------------------------------------------------------------------------------
 # 18. ABS (Arch Build System)
@@ -921,5 +926,6 @@ alias books    '${EDITOR} -c "e ${PRO}/2022/books/bibliography.bib | :cd %:p:h"'
 alias get.date '--datetime | tr -d '\n' | copy'
 alias pasta    '${EDITOR} "${DOTSHARE}/misc/pastes.lst"'
 alias pst      'cd ${PRO}/2022/npBuild && ./packageStats'
-alias sg       'cd ${HOME}/tmp1/SG_shell_settings'
+alias sg       'cd ${MP1}/SG_shell_settings'
 alias xav      'xargs ${EDITOR}'
+alias dq       'cd ${MP1}/dataquest'
