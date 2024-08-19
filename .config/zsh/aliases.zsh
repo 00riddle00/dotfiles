@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-19 11:22:12 EEST
+# Date:   2024-08-19 14:10:56 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -830,6 +830,8 @@ alias reop         'openbox --reconfigure'
 # 22. Aliases to Zsh functions
 #------------------------------------------------------------------------------
 
+alias fe   'edit-file'
+alias fea  'edit-file --hidden'
 alias f    'fieldc tab'
 alias cols 'colv tab'
 alias tc   'tmux-clean'

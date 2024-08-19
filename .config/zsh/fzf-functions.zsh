@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 08:54:00 EEST
+# Date:   2024-08-19 14:10:45 EEST
 # Path:   ~/.config/zsh/fzf-functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,34 +10,31 @@
 # Edit files
 # --------------------------------------------
 
-# TODO update / tidy up
-# fe - open file with ${EDITOR}
-fe() {
+#* Open a file in the current directory for editing.
+#* USAGE:
+#*   ${0} [--hidden]
+#**
+edit-file() {
+  local include_hidden=""
   local file
+
+  if [[ "$1" == "--hidden" ]]; then
+    include_hidden="--hidden"
+  fi
+
   file="$(
-    /usr/bin/fd --type f --follow --exclude .git --max-depth=1 2> /dev/null \
+    /usr/bin/fd \
+      --type f \
+      $include_hidden \
+      --follow \
+      --exclude .git \
+      --max-depth=1 \
+        2> /dev/null \
       | fzf +m \
         --preview "bat \
           --color=always \
           --style=numbers \
           --line-range=:500 {}" \
-        --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
-        --preview-window=right:60%:nowrap
-  )" || return
-  ${EDITOR} "${file}" || return
-}
-
-# TODO update / tidy up
-# fea - including hidden files (only in current dir)
-fea() {
-  local file
-  file="$(
-    /usr/bin/fd --type f --hidden --follow --exclude .git --max-depth=1 2> /dev/null \
-      | fzf +m \
-        --preview "bat \
-          --color=always \
-          --style=numbers \
-          --line-range=:500 {}"\
         --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
         --preview-window=right:60%:nowrap
   )" || return
@@ -51,43 +48,16 @@ fea() {
 se() {
   du -a ${BIN}/* \
     | awk '{print $2}' \
+    | sed "s|^${BIN}/||" \
     | fzf +m \
       --preview "bat \
         --color=always \
         --style=numbers \
-        --line-range=:500 {}" \
+        --line-range=:500 \
+          ${BIN}/{}" \
       --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
       --preview-window=right:60%:nowrap \
-    | xargs -r ${EDITOR}
-}
-
-# --------------------------------------------
-# cd into directories
-# --------------------------------------------
-
-# TODO update / tidy up
-# fd - cd to selected directory
-fd() {
-  local dir
-  dir="$(
-    find "${1:-.}" \
-      -path '*/\.*' -prune \
-      -o -type d    -print \
-      2> /dev/null \
-    | fzf +m
-  )" || return
-  cd "${dir}" || return
-}
-
-# TODO update / tidy up
-# fda - including hidden directories
-fda() {
-  local dir
-  dir="$(
-    find "${1:-.}" -type d 2> /dev/null \
-      | fzf +m
-  )" || return
-  cd "${dir}" || return
+    | xargs -I {} -r ${EDITOR} "${BIN}/{}"
 }
 
 # --------------------------------------------
@@ -105,23 +75,57 @@ cpf() {
       | sed "s|^|${HOME}/|")"
 }
 
-# TODO update / tidy up
-# fkill - kill process
-fkill() {
-  local pid
+# cd to a selected directory
+#* USAGE:
+#*   ${0} [--hidden] [DIRECTORY]
+#**
+fd() {
+  local include_hidden=false
+  local dir_
 
-  pid="$(
-    ps -ef \
-      | sed 1d \
-      | fzf -m \
-      | awk '{print $2}'
-  )" || return
+  if [[ "$1" == "--hidden" ]]; then
+    include_hidden=true
+    shift
+  fi
 
-  kill -"${1:-9}" "${pid}"
+  if $include_hidden; then
+    dir_="$(
+      find "${1:-.}" -type d 2> /dev/null | fzf +m
+    )" || return
+  else
+    dir_="$(
+      find "${1:-.}" \
+        -path '*/\.*' -prune \
+        -o -type d -print 2> /dev/null \
+      | fzf +m
+    )" || return
+  fi
+
+  cd "${dir_}" || return
 }
 
-# TODO update / tidy up
-# ftpane - switch pane (@george-b)
+# Interactively select a process to kill
+#* USAGE:
+#*   ${0} [signal]
+#**
+fkill() {
+  local pid
+  local signal="${1:-9}"
+
+  pid="$(
+    ps -eo pid,ppid,user,%cpu,%mem,etime,cmd \
+      | sed 1d \
+      | fzf -m --header='Select a process to kill' \
+      | awk '{print $1}'
+  )" || return
+
+  if kill -"$signal" "${pid}"; then
+    echo "Killed PID ${pid} with signal $signal"
+  fi
+}
+
+# Switch pane in tmux
+# ^---- Kudos to @george-b
 ftpane() {
   local panes
   local current_window
