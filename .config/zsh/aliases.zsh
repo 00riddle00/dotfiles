@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-10 22:39:13 EEST
+# Date:   2024-08-19 11:22:12 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ alias hist     'cd ${HOME}/histfiles/'
 alias lok      'cd ${HOME}/.local'
 alias share    'cd ${XDG_DATA_HOME}'
 alias dots     'cd ${DOTSHARE}'
-alias note     'cd ${NOTES}'
+alias notes    'cd ${NOTES}'
 alias op       'cd ${XDG_CONFIG_HOME}/openbox'
 alias pro      'cd ${PRO}'
 alias np       'cd ${PRO}/2022/npBuild'

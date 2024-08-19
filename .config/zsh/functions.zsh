@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 08:53:56 EEST
+# Date:   2024-08-19 11:22:28 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -54,9 +54,17 @@ bk() {
 kk() {
   for item in "${@}" ; do
     cp -rv "${item}" "${HOME}/backups/${item}.$(date +%F_%R_%S).bak"
-    cp -rv "${item}" "${DROPBOX}/backup/${item}.$(date +%F_%R_%S).bak"
+    cp -rv "${item}" "${DROPBOX}/backups/${item}.$(date +%F_%R_%S).bak"
   done
 }
+
+kk() {
+  for item in "${@}" ; do
+    cp -rv "${item}" "${HOME}/backups/$(basename "${item}").$(date +%F_%R_%S).bak"
+    cp -rv "${item}" "${DROPBOX}/backups/$(basename "${item}").$(date +%F_%R_%S).bak"
+  done
+}
+
 
 # --------------------------------------------
 # Find
