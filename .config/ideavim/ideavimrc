@@ -1,7 +1,7 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-07-31 18:59:39 EEST
+" Date:   2024-08-19 11:21:08 EEST
 " Path:   ~/.config/ideavim/ideavimrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ sethandler <C-R> a:vim
 sethandler <C-S> a:ide
 sethandler <C-T> a:ide
 sethandler <C-U> a:ide
-sethandler <C-V> a:ide
+sethandler <C-V> a:vim
 sethandler <C-W> a:vim
 sethandler <C-X> a:ide
 sethandler <C-Y> a:ide

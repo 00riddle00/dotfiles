@@ -626,7 +626,7 @@
   <!-- Open/focus Nomacs window by its name. -->
   <keybind key="W-m">
     <action name="Execute">
-      <command>fast-open-or-focus nomacs</command>
+      <command>fast-open-or-focus nomacs.Image Lounge -x</command>
     </action>
   </keybind>
   <!-- Open/focus Gimp window by its name. -->
