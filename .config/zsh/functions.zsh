@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-19 11:22:28 EEST
+# Date:   2024-08-23 15:31:44 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -304,6 +304,14 @@ c() {
   else
     cd "${1}" && ls
   fi
+}
+
+#* Convert a Git repository's HTTPS URL to an SSH URL.
+#* USAGE:
+#*   ${0} HTTPS_URL
+#**
+https_to_ssh() {
+  echo "$1" | sed -E 's|https://([^/]+)/([^/]+)/([^/]+)|git@\1:\2/\3|'
 }
 
 #* Go to a command's flag description in its man page.
