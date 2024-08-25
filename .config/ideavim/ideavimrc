@@ -1,7 +1,7 @@
 " vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-08-19 11:21:08 EEST
+" Date:   2024-08-25 20:05:12 EEST
 " Path:   ~/.config/ideavim/ideavimrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ sethandler <C-U> a:ide
 sethandler <C-V> a:vim
 sethandler <C-W> a:vim
 sethandler <C-X> a:ide
-sethandler <C-Y> a:ide
+sethandler <C-Y> a:vim
 sethandler <C-[> a:ide
 sethandler <C-\> a:ide
 sethandler <C-]> a:ide
@@ -137,3 +137,9 @@ nnoremap YY "+yy
 " [Python] Quick search for python class and def statments.
 nmap c/ /\<class
 nmap m/ /\<def
+
+"---------------------------------------------------------------
+" Plugins
+"---------------------------------------------------------------
+" Enable tpope's vim-surround functionality
+set surround

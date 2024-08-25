@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-19 14:10:56 EEST
+# Date:   2024-08-25 20:05:04 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -931,3 +931,4 @@ alias pst      'cd ${PRO}/2022/npBuild && ./packageStats'
 alias sg       'cd ${MP1}/SG_shell_settings'
 alias xav      'xargs ${EDITOR}'
 alias dq       'cd ${MP1}/dataquest'
+alias irc      '${EDITOR} "${XDG_CONFIG_HOME}/ideavim/ideavimrc"'
