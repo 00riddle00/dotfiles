@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-25 20:05:04 EEST
+# Date:   2024-08-31 14:59:50 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -834,6 +834,7 @@ alias fe   'edit-file'
 alias fea  'edit-file --hidden'
 alias f    'fieldc tab'
 alias cols 'colv tab'
+alias hs   'https_to_ssh'
 alias tc   'tmux-clean'
 
 #------------------------------------------------------------------------------
