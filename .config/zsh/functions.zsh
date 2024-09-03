@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-23 15:31:44 EEST
+# Date:   2024-09-04 00:51:47 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -312,6 +312,14 @@ c() {
 #**
 https_to_ssh() {
   echo "$1" | sed -E 's|https://([^/]+)/([^/]+)/([^/]+)|git@\1:\2/\3|'
+}
+
+#* Clone a Git repository using SSH instead of HTTPS.
+#* USAGE:
+#*  ${0} HTTPS_URL
+#**
+git_clone_ssh() {
+  git clone "$(https_to_ssh $1)"
 }
 
 #* Go to a command's flag description in its man page.
