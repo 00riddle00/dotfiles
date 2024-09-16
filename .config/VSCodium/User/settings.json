@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-09-16 17:09:57 EEST
+* Date:   2024-09-16 17:13:28 EEST
 * Path:   ~/.config/VSCodium/User/settings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -9,9 +9,9 @@
 
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
   "editor.fontSize": 16,
-  //"editor.renderLineHighlight":  "none",
+  // "editor.renderLineHighlight": "none",
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.rulers": [88],
@@ -54,5 +54,7 @@
   "vim.neovimUseConfigFile": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  }
+  },
+  "editor.fontLigatures": true,
+  "editor.columnSelection": true
 }
