@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * User: (00riddle00) Tomas Giedraitis
-* Date:   2024-07-16 12:58:31 EEST
+* Date: 2024-09-16 17:20:38 EEST
 * Path: ~/.config/VSCodium/User/snippets/jinja2.json
 * URL:  https://github.com/00riddle00/dotfiles
 *-----------------------------------------------------------------------------
@@ -12,186 +12,134 @@
 */
 
 {
-    /* Place your snippets for jinja-html here. Each snippet is defined under a snippet name and has a prefix, body and
-     * description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-     * $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-     * same ids are connected.
-     * Example:
-     * "Print to console": {
-     *     "prefix": "log",
-     *     "body": [
-     *         "console.log('$1');",
-     *         "$2"
-     *     ],
-     *     "description": "Log output to console"
-     * }
-     */
+  /* Place your snippets for jinja-html here. Each snippet is defined under a snippet name and has a prefix, body and
+   * description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+   * $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+   * same ids are connected.
+   * Example:
+   * "Print to console": {
+   *     "prefix": "log",
+   *     "body": [
+   *         "console.log('$1');",
+   *         "$2"
+   *     ],
+   *     "description": "Log output to console"
+   * }
+   */
 
-    "jinja block": {
-        "prefix": "jblock",
-        "body": [
-            "{% block $1 %}",
-            "\t$2",
-            "{% endblock $1 %}$0"
-        ],
-        "description": "jinja block"
-    },
+  "jinja block": {
+    "prefix": "jblock",
+    "body": ["{% block $1 %}", "\t$2", "{% endblock $1 %}$0"],
+    "description": "jinja block"
+  },
 
-    "jinja set": {
-        "prefix": "jset",
-        "body": [
-            "{% set $1 = $2 %}$0"
-        ],
-        "description": "jinja set"
-    },
+  "jinja set": {
+    "prefix": "jset",
+    "body": ["{% set $1 = $2 %}$0"],
+    "description": "jinja set"
+  },
 
-    "jinja if": {
-        "prefix": "jif",
-        "body": [
-            "{% if $1 %}",
-            "\t$2",
-            "{% endif %}$0"
-        ],
-        "description": "jinja if"
-    },
+  "jinja if": {
+    "prefix": "jif",
+    "body": ["{% if $1 %}", "\t$2", "{% endif %}$0"],
+    "description": "jinja if"
+  },
 
-    "jinja if else": {
-        "prefix": "jifelse",
-        "body": [
-            "{% if $1 %}",
-            "\t$2",
-            "{% else %}",
-            "\t$3",
-            "{% endif %}$0"
-        ],
-        "description": "jinja if else"
-    },
+  "jinja if else": {
+    "prefix": "jifelse",
+    "body": ["{% if $1 %}", "\t$2", "{% else %}", "\t$3", "{% endif %}$0"],
+    "description": "jinja if else"
+  },
 
-    "jinja extends": {
-        "prefix": "jextend",
-        "body": [
-            "{% extends '$1.html' %}$0"
-        ],
-        "description": "jinja extends"
-    },
+  "jinja extends": {
+    "prefix": "jextend",
+    "body": ["{% extends '$1.html' %}$0"],
+    "description": "jinja extends"
+  },
 
-    "jinja for loop": {
-        "prefix": "jfor",
-        "body": [
-            "{% for $1 in $2 %}",
-            "\t$3",
-            "{% endfor %}$0"
-        ],
-        "description": "jinja for loop"
-    },
+  "jinja for loop": {
+    "prefix": "jfor",
+    "body": ["{% for $1 in $2 %}", "\t$3", "{% endfor %}$0"],
+    "description": "jinja for loop"
+  },
 
-    "jinja random": {
-        "prefix": "jrandom",
-        "body": [
-            "{{ range($1, $2) | random }}$0"
-        ],
-        "description": "jinja random number generator"
-    },
+  "jinja random": {
+    "prefix": "jrandom",
+    "body": ["{{ range($1, $2) | random }}$0"],
+    "description": "jinja random number generator"
+  },
 
-    "jinja print": {
-        "prefix": ["jprint","jvar"],
-        "body": [
-            "{{ $1 }}$0"
-        ],
-        "description": "jinja print variable"
-    },
+  "jinja print": {
+    "prefix": ["jprint", "jvar"],
+    "body": ["{{ $1 }}$0"],
+    "description": "jinja print variable"
+  },
 
-    "jinja func": {
-        "prefix": "jfunc",
-        "body": [
-            "{% $1 %}$0"
-        ],
-        "description": "jinja function wrapper"
-    },
+  "jinja func": {
+    "prefix": "jfunc",
+    "body": ["{% $1 %}$0"],
+    "description": "jinja function wrapper"
+  },
 
-    "jinja macros": {
-        "prefix": "jmacro",
-        "body": [
-            "{% macro $1 %}",
-            "\t$2",
-            "{% endmacro %}$0"
-        ],
-        "description": "jinja macro block"
-    },
+  "jinja macros": {
+    "prefix": "jmacro",
+    "body": ["{% macro $1 %}", "\t$2", "{% endmacro %}$0"],
+    "description": "jinja macro block"
+  },
 
-    "jinja round": {
-        "prefix": "jround",
-        "body": [
-            "{% $1 | round %}$0"
-        ],
-        "description": "jinja round a float"
-    },
+  "jinja round": {
+    "prefix": "jround",
+    "body": ["{% $1 | round %}$0"],
+    "description": "jinja round a float"
+  },
 
-    "jinja join list": {
-        "prefix": "jjoin",
-        "body": [
-            "{% $1 | join(',') %}$0"
-        ],
-        "description": "jinja join a list"
-    },
+  "jinja join list": {
+    "prefix": "jjoin",
+    "body": ["{% $1 | join(',') %}$0"],
+    "description": "jinja join a list"
+  },
 
-    "jinja url": {
-        "prefix": "jurl",
-        "body": [
-            "{{ url_for('$1', filename='$2') }}$0"
-        ],
-        "description": "jinja url for"
-    },
+  "jinja url": {
+    "prefix": "jurl",
+    "body": ["{{ url_for('$1', filename='$2') }}$0"],
+    "description": "jinja url for"
+  },
 
-    "jinja call": {
-        "prefix": "jcall",
-        "body": [
-            "{% call $1 %}",
-            "\t$2",
-            "{% endcall %}$0"
-        ],
-        "description": "jinja call"
-    },
+  "jinja call": {
+    "prefix": "jcall",
+    "body": ["{% call $1 %}", "\t$2", "{% endcall %}$0"],
+    "description": "jinja call"
+  },
 
-    "jinja filter": {
-        "prefix": "jfilter",
-        "body": [
-            "{% filter $1 %}",
-            "\t$2",
-            "{% endfilter %}$0"
-        ],
-        "description": "jinja filter"
-    },
+  "jinja filter": {
+    "prefix": "jfilter",
+    "body": ["{% filter $1 %}", "\t$2", "{% endfilter %}$0"],
+    "description": "jinja filter"
+  },
 
-    "jinja include": {
-        "prefix": "jinclude",
-        "body": [
-            "{% include '$1.html' %}$0"
-        ],
-        "description": "jinja include"
-    },
+  "jinja include": {
+    "prefix": "jinclude",
+    "body": ["{% include '$1.html' %}$0"],
+    "description": "jinja include"
+  },
 
-    "jinja from": {
-        "prefix": "jfrom",
-        "body": [
-            "{% from '$1' import $2 %}$0"
-        ],
-        "description": "jinja from"
-    },
+  "jinja from": {
+    "prefix": "jfrom",
+    "body": ["{% from '$1' import $2 %}$0"],
+    "description": "jinja from"
+  },
 
-    "jinja image": {
-        "prefix": "jimg",
-        "body": [
-            "<img src=\"{{ url_for('static', filename='$1') }}\" alt=\"$2\">$0"
-        ],
-        "description": "img tag with url_for"
-    },
+  "jinja image": {
+    "prefix": "jimg",
+    "body": [
+      "<img src=\"{{ url_for('static', filename='$1') }}\" alt=\"$2\">$0"
+    ],
+    "description": "img tag with url_for"
+  },
 
-    "jinja href": {
-        "prefix": "jhref",
-        "body": [
-            "<a href=\"{{ url_for('$1') }}\">$2</a>$0"
-        ],
-        "description": "a tag with url_for"
-    }
+  "jinja href": {
+    "prefix": "jhref",
+    "body": ["<a href=\"{{ url_for('$1') }}\">$2</a>$0"],
+    "description": "a tag with url_for"
+  }
 }
