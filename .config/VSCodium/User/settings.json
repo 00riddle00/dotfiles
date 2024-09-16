@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-09-16 17:08:28 EEST
+* Date:   2024-09-16 17:09:57 EEST
 * Path:   ~/.config/VSCodium/User/settings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -8,51 +8,51 @@
 */
 
 {
-    "editor.defaultFormatter":     "esbenp.prettier-vscode",
-    "editor.fontFamily":           "'SourceCodePro-Medium', 'monospace', monospace",
-    "editor.fontSize":             16,
-    //"editor.renderLineHighlight":  "none",
-    "editor.lineNumbers":          "relative",
-    "editor.linkedEditing":        true,
-    "editor.rulers":               [88],
-    "files.autoSave":              "afterDelay",
-    "keyboard.dispatch":           "keyCode",
-    "python.formatting.provider":  "black",
-    "python.formatting.blackArgs": ["--line-length", "88"],
-    "telemetry.telemetryLevel":    "off",
-    "vim.vimrc.enable":            true,
-    "workbench.colorTheme":        "One Dark Pro Darker",
-    "workbench.iconTheme":         "material-icon-theme",
-    "workbench.startupEditor":     "none",
-    "[python]": {
-        "editor.formatOnPaste":    false,
-        "editor.defaultFormatter": null
-    },
-    "files.associations": {
-        "*html": "jinja-html"
-    },
-    "[jinja-html]": {
-        "editor.defaultFormatter": null
-    },
-    "git.confirmSync":              false,
-    "cSpell.enableFiletypes":       ["jinja-html"],
-    "window.titleBarStyle":         "custom",
-    "window.customMenuBarAltFocus": false,
-    "window.menuBarVisibility":     "toggle",
-    "files.exclude": {
-        "**/__pycache__": true
-    },
-    "diffEditor.ignoreTrimWhitespace":                 false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "editor.inlineSuggest.enabled":                    true,
-    "github.copilot.enable": {
-        "*":         true,
-        "plaintext": true,
-        "markdown":  false,
-        "scminput":  false
-    },
-    "vim.neovimUseConfigFile": true,
-    "extensions.experimental.affinity": {
-      "asvetliakov.vscode-neovim": 1
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'SourceCodePro-Medium', 'monospace', monospace",
+  "editor.fontSize": 16,
+  //"editor.renderLineHighlight":  "none",
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.rulers": [88],
+  "files.autoSave": "afterDelay",
+  "keyboard.dispatch": "keyCode",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "88"],
+  "telemetry.telemetryLevel": "off",
+  "vim.vimrc.enable": true,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "[python]": {
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": null
+  },
+  "files.associations": {
+    "*html": "jinja-html"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": null
+  },
+  "git.confirmSync": false,
+  "cSpell.enableFiletypes": ["jinja-html"],
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "window.menuBarVisibility": "toggle",
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "vim.neovimUseConfigFile": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
   }
 }
