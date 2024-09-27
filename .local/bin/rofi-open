@@ -1,16 +1,30 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 22:03:46 EEST
+# Path:   ~/.local/bin/rofi-open
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Focus a program window if it's running or open a program if it's not, using
+# Rofi.
+#**
 
-if [ ! -z "$@" ]
-then
-    app="$1"
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather from Rofi, which
+#*   links to it.
+#**
+if [[ "${#}" -gt 0 ]]; then
+  program="${1}"
 
-    # no app is running, so start one
-    if [ -z  "`wmctrl -lx | grep -i $app`" ]; then
-        coproc ($app > /dev/null 2>&1)
-        exec 1>&-
-        exit;
-    else
-        # app is opened, so focus on it
-        wmctrl -x -R $app
-    fi
+  # No program is running, so start one.
+  if ! wmctrl -lx | grep -i -q -- "${program}"; then
+    coproc "${program}" > /dev/null 2>&1
+    exec 1>&-
+    exit;
+  else
+    # Program is running, so focus on it.
+    wmctrl -x -R "${program}"
+  fi
 fi

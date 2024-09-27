@@ -2,12 +2,12 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:42:26 EEST
-# Path:   ~/.local/bin/term-timer
+# Date:   2024-09-27 21:46:48 EEST
+# Path:   ~/.local/bin/term-nvim-config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open the timer/stopwatch in a new Urxvt terminal window.
+# Open the Neovim config dir with Neovim in a new Urxvt terminal window.
 #**
 
 #* USAGE:
@@ -15,6 +15,8 @@
 #**
 urxvt \
   -geometry 105x40 \
-  -name timer \
+  -name nvim-config \
   -hold \
-  -e tmux new-session "termdown -B | lolcat"
+  -e tmux new-session \
+    "${EDITOR}" -c \
+      "e ${XDG_CONFIG_HOME}/nvim | :cd %:p:h"

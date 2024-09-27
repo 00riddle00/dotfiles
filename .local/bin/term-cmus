@@ -1,2 +1,19 @@
 #!/usr/bin/env bash
-urxvt -geometry 105x40 -name cmus -e tmux new-session "cmus"
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 21:35:01 EEST
+# Path:   ~/.local/bin/term-cmus
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open the C* Music Player in a new Urxvt terminal window.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+urxvt \
+  -geometry 105x40 \
+  -name cmus \
+  -e tmux new-session "cmus"

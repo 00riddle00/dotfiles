@@ -1,5 +1,22 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 21:36:51 EEST
+# Path:   ~/.local/bin/term-notes
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open the notes file in Neovim in a new Urxvt terminal window.
+#**
 
-file_to_open="$NOTES/coding/main.md"
-
-urxvt -geometry 135x61 -name notes -hold -e tmux new $EDITOR -c "e $file_to_open | :cd %:p:h | :cd .. | :NvimTreeClose"
+#* USAGE:
+#*   ${0}
+#**
+urxvt \
+  -geometry 135x61 \
+  -name notes \
+  -hold \
+  -e tmux new-session \
+    "${EDITOR}" -c \
+      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose"

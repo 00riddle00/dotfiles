@@ -1,10 +1,23 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 21:51:27 EEST
+# Path:   ~/.local/bin/rofi-kill
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Kill process using Rofi.
+#**
 
-if [ "$@" ]
-then
-    pid=$(printf "%d" $(echo -e "$@" | cut -d ":" -f 1))
-    echo "$pid"
-    kill -9 "$pid"
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather from Rofi, which
+#*   links to it.
+#**
+if [[ "${#}" -gt 0 ]]; then
+  pid="$(printf "%d" "$(echo -e "${@}" | cut -d ":" -f 1)")"
+  echo "${pid}"
+  kill -9 "${pid}"
 else
-    ps -a -U $USER --no-headers -o pid,comm
+  ps -a -U "${USER}" --no-headers -o pid,comm
 fi

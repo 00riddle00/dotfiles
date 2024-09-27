@@ -1,2 +1,23 @@
 #!/usr/bin/env bash
-urxvt -geometry 105x40 -name text-input -hold -e tmux new-session "$EDITOR" -c "e /tmp/temp_$(date +%F_%H_%M_%S).md | :cd %:p:h | :NvimTreeClose"
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 21:38:35 EEST
+# Path:   ~/.local/bin/term-text-input
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open a temporary Markdown file in Neovim in a new Urxvt terminal window.
+# This is useful for quick writing with the help of GitHub Copilot.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+urxvt \
+  -geometry 105x40 \
+  -name text-input \
+  -hold \
+  -e tmux new-session \
+    "${EDITOR}" -c \
+      "e /tmp/temp_$(date +%F_%H_%M_%S).md | :cd %:p:h | :NvimTreeClose"

@@ -1,2 +1,22 @@
-#!/usr/bin/env sh
-urxvt -geometry 135x61 -name clipboard -hold -e tmux new $EDITOR -c "e $DROPBOX/gtd/coding/clipboard.md | :cd %:p:h | :NvimTreeClose"
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 21:28:46 EEST
+# Path:   ~/.local/bin/term-clipboard
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open the clipboard file in Neovim in a new Urxvt terminal window.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+urxvt \
+  -geometry 135x61 \
+  -name clipboard \
+  -hold \
+  -e tmux new-session \
+    "${EDITOR}" -c \
+      "e ${NOTES}/coding/clipboard.md | :cd %:p:h | :NvimTreeClose"

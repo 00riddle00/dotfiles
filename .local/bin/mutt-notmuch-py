@@ -12,7 +12,11 @@
 #------------------------------------------------------------------------------
 #*
 # This script is needed to search mail using notmuch and (neo)mutt.
-# It is not supposed to be launched directly, but rather from within (neo)mutt.
+#**
+
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather from within
+#*   (neo)mutt.
 #**
 
 """

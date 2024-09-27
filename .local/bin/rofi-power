@@ -1,21 +1,28 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 22:10:24 EEST
+# Path:   ~/.local/bin/rofi-power
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Log out, reboot or shutdown using Rofi.
+#**
 
-OPTIONS="\tLogout\n\tShutdown\n\tReboot"
-
-option=`echo -e $OPTIONS | awk '{print $1}' | tr -d '\r\n\t'`
-if [ "$@" ]
-then
-    case $@ in
-        *Logout)
-            i3-msg exit | killall xinit;
-            ;;
-        *Shutdown)
-            shutdown now
-            ;;
-        *Reboot)
-            reboot
-            ;;
-    esac
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather from Rofi, which
+#*   links to it.
+#**
+if [[ "${#}" -gt 0 ]]; then
+  case "${@}" in
+    *Logout)
+      kill "$(pgrep X)" & ;;
+    *Shutdown)
+      shutdown -r now & ;;
+    *Reboot)
+      shutdown -h now & ;;
+  esac
 else
-    echo -e $OPTIONS
+  echo -e "\tLogout\n\tShutdown\n\tReboot"
 fi
