@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-command="diff $HOME/dosbox/RES $HOME/dosbox/CANON"
-
-([[ -z "$($command)" ]] && echo -e "TESTS PASSED\n" && $BIN/sounds/disasm-works) || echo -e "TESTS FAILED\n"
-$command
-
