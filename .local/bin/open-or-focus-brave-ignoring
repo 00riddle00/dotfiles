@@ -1,38 +1,27 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-05 21:09:23 EEST
+# Date:   2024-09-27 19:23:22 EEST
 # Path:   ~/.local/bin/open-or-focus-brave-ignoring
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Check if there is a brave window except the ones with the given name in
-# arguments: If there is, focus it and exit. If there isn't, open a new
-# brave window (with the default title).
-#
-# If more than one argument, join them with | to create a regex pattern: e.g.
-# "$0 foo bar" will match windows with title "foo" or "bar".
-#
-# Usage: $0 <window-name-1> [<window-name-2> ...]
+# Check if there exists a Brave window whose name does not match any of the
+# given arguments. If there is, focus it. If there isn't, open a new Brave
+# window with the default window name.
 #**
 
-if [[ -z "$1" ]]; then
-    echo "Usage: $0 <window-name-1> [<window-name-2> ...]"
-    exit 1
-fi
-
-if [[ "$#" -gt 1 ]]; then
-    win_names_regex=$(echo "$@" | tr ' ' '|')
-else
-    win_names_regex="$1"
-fi
+#* USAGE:
+#*   ${0} WINDOW_NAME_TO_IGNORE [WINDOW_NAME_TO_IGNORE ...]
+#**
+win_names_regex="$(echo "${@}" | tr ' ' '|')"
 
 if wmctrl -lx \
     | grep "brave-browser.Brave-browser.*$" \
-    | awk -v win_names_regex="$win_names_regex" '$NF !~ win_names_regex {print}' \
-    | grep -q . \
-; then
+    | awk -v names="${win_names_regex}" '$NF !~ names {print}' \
+    | grep -q .
+then
     wmctrl -a "brave"
 else
     brave

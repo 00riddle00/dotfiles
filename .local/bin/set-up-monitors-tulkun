@@ -1,26 +1,29 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 21:40:56 EEST
+# Date:   2024-09-27 20:03:48 EEST
 # Path:   ~/.local/bin/set-up-monitors-tulkun
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Set up multiple monitors using xrandr for the computer with hostname
-# "tulkun". HDMI connection is used for one monitor, and DisplayPort
-# connections are used for two other monitors. The HDMI monitor is rotated to
-# the right, the first DisplayPort monitor is the primary monitor, and the
-# second DisplayPort monitor is rotated to the left.
+# "tulkun". HDMI connection is used for the first monitor (HDMI1 - rotated to
+# the right), and DisplayPort is used for two other monitors (DP1 - primary
+# monitor in the default orientation, DP2 - rotated to the left).
 #**
 
-# TODO make it so that if external screen names are not found, it would not
-# fail, but search for the first connected screen/s and use it/them.
-#
+#* USAGE:
+#*   ${0}
+#**
+
 ## Check if X is running.
 if xset q &>/dev/null; then
-    xrandr \
-        --output $HDMI1_SCREEN --auto --rotate right \
-        --output $DP1_SCREEN --primary --auto --rotate normal --right-of $HDMI1_SCREEN \
-        --output $DP2_SCREEN --auto --rotate left --right-of $DP1_SCREEN
+  xrandr \
+    --output "${HDMI1_SCREEN}" \
+      --auto --rotate right \
+    --output "${DP1_SCREEN}" \
+      --primary --auto --rotate normal --right-of "${HDMI1_SCREEN}" \
+    --output "${DP2_SCREEN}" \
+      --auto --rotate left --right-of "${DP1_SCREEN}"
 fi

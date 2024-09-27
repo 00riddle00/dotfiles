@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 20:03:51 EEST
+# Path:   ~/.local/bin/set-up-monitors-tulkun-gaming
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Disable all monitors except the primary monitor for the computer with
+# hostname "tulkun" for the purpose of gaming.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+
+## Check if X is running.
+if xset q &>/dev/null; then
+  xrandr \
+    --output "${HDMI1_SCREEN}" --off \
+    --output "${DP1_SCREEN}" --primary --auto --rotate normal \
+    --output "${DP2_SCREEN}" --off
+fi

@@ -1,29 +1,28 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-06 21:40:40 EEST
+# Date:   2024-09-27 20:04:00 EEST
 # Path:   ~/.local/bin/set-up-monitors-panther
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Set up monitors using xrandr for the computer with hostname "panther".
-# HDMI connection is used for external monitor.
+# External monitor connects via HDMI.
 #**
 
-# TODO make it so that if laptop and/or external screen names are not found, it
-# would not fail, but search for the first connected screen and use it.
-#
+#* USAGE:
+#*   ${0}
+#**
+
 # Check if X is running.
 if xset q &>/dev/null; then
-    # If external monitor is connected, use it. Else, use laptop's screen.
-    xrandr | awk '/ connected/{print $1}' | grep $HDMI1_SCREEN > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        xrandr \
-            --output $HDMI1_SCREEN --auto \
-            --output $LAPTOP_SCREEN --off
-        :
-    else
-        xrandr --output $LAPTOP_SCREEN --auto
-    fi
+  # If external monitor is connected, use it.
+  if xrandr | awk '/ connected/{print $1}' | grep -q "${HDMI1_SCREEN}"; then
+    xrandr \
+      --output "${HDMI1_SCREEN}" --auto \
+      --output "${LAPTOP_SCREEN}" --off
+  else
+    xrandr --output "${LAPTOP_SCREEN}" --auto
+  fi
 fi
