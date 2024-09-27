@@ -1,22 +1,31 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 12:21:39 EEST
+# Path:   ~/.local/bin/dmenu-kill
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Kill process using dmenu.
+#**
 
-lines="-l 20"
+#* USAGE:
+#*   ${0}
+#**
+pid="$( \
+  ps -a -u "${USER}" -o pid,comm \
+    | dmenu -i -l 20 -p "Type to search and select process to kill" \
+    | awk '{print $1" "$4}' \
+)";
 
-selected="$(ps -a -u $USER | \
-            dmenu -i -p "Type to search and select process to kill" \
-            $lines $colors $font | \
-            awk '{print $1" "$4}')";
+if [[ -n "${pid}" ]]; then
+  choice="$( \
+    echo -e "Yes\nNo" \
+      | dmenu -i -l 20 -p "${pid} will be killed, are you sure?"
+  )"
 
-if [[ ! -z $selected ]]; then
-
-    answer="$(echo -e "Yes\nNo" | \
-            dmenu -i -p "$selected will be killed, are you sure?" \
-            $lines $colors $font )"
-
-    if [[ $answer == "Yes" ]]; then
-        selpid="$(awk '{print $1}' <<< $selected)";
-        kill -9 $selpid
-    fi
+  if [[ "${choice}" == "Yes" ]]; then
+    kill -9 "${pid}"
+  fi
 fi
-
-exit 0

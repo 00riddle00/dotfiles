@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 16:14:25 EEST
+# Path:   ~/.local/bin/colorwatch
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Like `watch` but with colors.
+#
+# USAGE:
+#   ${0} COMMAND [INTERVAL]
+# e.g.:
+#   ${0} "git diff text_file/to/diff.txt" 2
+#**
+cmd="${1}"
+interval="${2:-2}"
+
+while sleep "${interval}"; do
+  clear
+  printf "Every %.1fs: %s\n\n" "${interval}" "${cmd}"
+  eval "${cmd}"
+done

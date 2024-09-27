@@ -11,3 +11,13 @@ if type setxkbmap >/dev/null 2>&1; then
         -option grp:alt_shift_toggle \
         -option caps:escape 2>/dev/null
 fi
+
+# There was also a file called "reset-xkbmap":
+# ```
+# #!/usr/bin/env sh
+# 
+# # reactivate usual keybindings
+# setxkbmap -option 2>/dev/null
+# setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt  2>/dev/null
+# setxkbmap -option caps:escape 2>/dev/null
+# ```

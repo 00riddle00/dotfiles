@@ -1,11 +1,25 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 13:13:58 EEST
+# Path:   ~/.local/bin/dmenu-pastes
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Choose some text to paste from a list and copy it to the clipboard.
+#**
 
-# Must have xclip installed to even show menu.
+#* USAGE:
+#*   ${0}
+#**
+
+# xclip needs to be installed to even show the menu.
 xclip -h 2>/dev/null || exit 1
 
-chosen=$(cat $DOTSHARE/misc/pastes.lst | dmenu -i -l 20)
+text="$(dmenu -i -l 20 < "${DOTSHARE}/misc/pastes.lst")"
 
-[ "$chosen" != "" ] || exit
+[[ -z "${text}" ]] && exit 1
 
-echo "$chosen" | tr -d '\n' | xclip -selection clipboard
-notify-send "$chosen copied to clipboard." &
+echo "${text}" | tr -d '\n' | xclip -selection clipboard
+notify-send "${text} copied to clipboard."

@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-30 16:10:52 EEST
+# Date:   2024-09-27 18:07:47 EEST
 # Path:   ~/.config/mutt/muttrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -170,6 +170,6 @@ macro index       ga "<change-folder>=[Gmail].All Mail<enter>"       "Go to All 
 macro index       gt "<change-folder>=[Gmail].Trash<enter>"          "Go to Trash"
 ## Notmuch
 ### Search mail
-macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch.py -g \
+macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py -g \
 ~/Mail/temporary/search<enter><change-folder-readonly>~/Mail/temporary/search<enter>" \
 "search mail (using notmuch)"

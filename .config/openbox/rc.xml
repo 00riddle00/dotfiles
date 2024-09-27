@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-04 23:56:42 EEST
+# Date:   2024-09-27 18:07:52 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -522,7 +522,7 @@
   <!-- Focus URxvt window for main terminal (codename: t2) by its class name. -->
   <keybind key="F2">
     <action name="Execute">
-      <command>fast-focus t2.URxvt -x</command>
+      <command>focus t2.URxvt -c</command>
     </action>
   </keybind>
   <!-- Open URxvt notes window. -->
@@ -534,13 +534,13 @@
   <!-- Open/focus URxvt window for notes by its class name. -->
   <keybind key="F3">
     <action name="Execute">
-      <command>fast-open-or-focus openbox-vimnotes notes.URxvt -x</command>
+      <command>open-or-focus openbox-vimnotes notes.URxvt -c</command>
     </action>
   </keybind>
   <!-- Open/focus Urxvt window for clipboard by its class name. -->
   <keybind key="F4">
     <action name="Execute">
-      <command>fast-open-or-focus openbox-urxvt-clipboard clipboard.URxvt -x</command>
+      <command>open-or-focus openbox-urxvt-clipboard clipboard.URxvt -c</command>
     </action>
   </keybind>
 
@@ -556,7 +556,7 @@
   <!-- Focus Thunar window by its name/title. -->
   <keybind key="W-e">
     <action name="Execute">
-      <command>fast-focus "- Thunar"</command>
+      <command>focus "- Thunar"</command>
     </action>
   </keybind>
 
@@ -566,19 +566,19 @@
   <!-- Open/focus VS Code window by its name/title. -->
   <keybind key="W-c">
     <action name="Execute">
-      <command>fast-open-or-focus code</command>
+      <command>open-or-focus code</command>
     </action>
   </keybind>
   <!-- Open/focus PyCharm window by its class name. -->
   <keybind key="W-p">
     <action name="Execute">
-      <command>fast-open-or-focus pycharm jetbrains-pycharm -x</command>
+      <command>open-or-focus pycharm jetbrains-pycharm -c</command>
     </action>
   </keybind>
   <!-- Open/focus Emacs window by its name/title. -->
   <keybind key="W-q">
     <action name="Execute">
-      <command>fast-open-or-focus emacs emacs.Emacs -x</command>
+      <command>open-or-focus emacs emacs.Emacs -c</command>
     </action>
   </keybind>
 
@@ -616,7 +616,7 @@
   <keybind key="F5">
     <action name="Execute">
       <!-- Open/focus Chromium window by its name. -->
-      <command>fast-open-or-focus chromium</command>
+      <command>open-or-focus chromium</command>
     </action>
   </keybind>
 
@@ -626,13 +626,13 @@
   <!-- Open/focus Nomacs window by its name. -->
   <keybind key="W-m">
     <action name="Execute">
-      <command>fast-open-or-focus nomacs.Image Lounge -x</command>
+      <command>open-or-focus nomacs.Image Lounge -c</command>
     </action>
   </keybind>
   <!-- Open/focus Gimp window by its name. -->
   <keybind key="W-b">
     <action name="Execute">
-      <command>fast-open-or-focus gimp Gimp -x</command>
+      <command>open-or-focus gimp Gimp -c</command>
     </action>
   </keybind>
 
@@ -642,40 +642,40 @@
   <!-- Open/focus Thunderbird window by its name. -->
   <keybind key="F7">
     <action name="Execute">
-      <command>fast-open-or-focus thunderbird</command>
+      <command>open-or-focus thunderbird</command>
     </action>
   </keybind>
   <!-- Open/focus Qalculate! window by its name. -->
   <keybind key="F10">
     <action name="Execute">
-      <command>fast-open-or-focus qalculate-gtk qalculate</command>
+      <command>open-or-focus qalculate-gtk qalculate</command>
     </action>
   </keybind>
   <!-- Open/focus Zathura document viewer by its class name. -->
   <keybind key="A-a">
     <action name="Execute">
-      <command>fast-focus org.pwmt.zathura.Zathura -x</command>
+      <command>focus org.pwmt.zathura.Zathura -c</command>
     </action>
   </keybind>
   <!-- Open/focus Discord window by its name. -->
   <!--
   <keybind key="A-c">
     <action name="Execute">
-      <command>fast-open-or-focus discord</command>
+      <command>open-or-focus discord</command>
     </action>
   </keybind>
   -->
   <!-- Open/focus C* Music Player window by its name. -->
   <keybind key="A-c">
     <action name="Execute">
-      <command>fast-open-or-focus openbox-cmus cmus.URxvt -x</command>
+      <command>open-or-focus openbox-cmus cmus.URxvt -c</command>
     </action>
   </keybind>
   <!-- Open/focus Termdown timer window by its name. -->
   <!--
   <keybind key="A-c">
     <action name="Execute">
-      <command>fast-open-or-focus openbox-timer timer.URxvt -x</command>
+      <command>open-or-focus openbox-timer timer.URxvt -c</command>
     </action>
   </keybind>
   -->
@@ -683,21 +683,21 @@
   <!--
   <keybind key="A-f">
     <action name="Execute">
-      <command>fast-open-or-focus openbox-text-input text-input.URxvt -x</command>
+      <command>open-or-focus openbox-text-input text-input.URxvt -c</command>
     </action>
   </keybind>
   -->
   <!-- Open/focus SmartSVN window by its name. -->
   <keybind key="W-g">
     <action name="Execute">
-      <command>fast-open-or-focus smartsvn</command>
+      <command>open-or-focus smartsvn</command>
     </action>
   </keybind>
   <!-- Open/focus LibreOffice window by its name. -->
   <!--
   <keybind key="W-l">
     <action name="Execute">
-      <command>fast-open-or-focus libreoffice</command>
+      <command>open-or-focus libreoffice</command>
     </action>
   </keybind>
   -->

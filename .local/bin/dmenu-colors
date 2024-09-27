@@ -1,11 +1,31 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 11:19:34 EEST
+# Path:   ~/.local/bin/dmenu-colors
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Choose a color from a list of colors in dmenu and copy its HEX or RGB code to
+# the clipboard.
+#**
 
-# Must have xclip installed to even show menu.
+#* USAGE:
+#*   ${0}
+#**
+
+# xclip needs to be installed to even show the menu.
 xclip -h 2>/dev/null || exit 1
 
-chosen=$(cat $DOTSHARE/colors | dmenu -i -l 20 | cut -d ';' -f2 |  sed "s/ *//")
+color_code="$( \
+  expand -t 8 "${DOTSHARE}/misc/colors.tsv" \
+    | dmenu -i -l 20 \
+    | awk '{print $2}' \
+    | sed "s/ *//"
+)"
 
-[ "$chosen" != "" ] || exit
+[[ -z "${color_code}" ]] && exit 1
 
-echo "$chosen" | tr -d '\n' | xclip -selection clipboard
-notify-send "$chosen copied to clipboard." &
+echo "${color_code}" | tr -d '\n' | xclip -selection clipboard
+notify-send "${color_code} copied to clipboard."

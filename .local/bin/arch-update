@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-04-05 21:08:51 EEST
+# Date:   2024-09-27 10:40:57 EEST
 # Path:   ~/.local/bin/arch-update
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Update Arch Linux.
+# Update Arch Linux packages and notify the user about the update.
 #**
 
-sudo pacman -Syu --noconfirm \
-&& notify-send "update" "Arch updated"
+#* USAGE:
+#*   ${0}
+#**
 
-# Dunst notification daemon handles the notification according to the existing
-# configuration in $XDG_CONFIG_HOME/dunst/dunstrc.
+# Dunst notification daemon handles the notification according to the
+# existing configuration in ${XDG_CONFIG_HOME}/dunst/dunstrc.
+sudo pacman -Syu --noconfirm \
+  && notify-send "update" "Arch updated"

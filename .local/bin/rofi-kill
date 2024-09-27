@@ -4,7 +4,7 @@ if [ "$@" ]
 then
     pid=$(printf "%d" $(echo -e "$@" | cut -d ":" -f 1))
     echo "$pid"
-    kill "$pid"
+    kill -9 "$pid"
 else
-    ps -U $UID --no-headers -o "%p: %c"
+    ps -a -U $USER --no-headers -o pid,comm
 fi

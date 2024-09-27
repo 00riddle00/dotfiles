@@ -2,16 +2,18 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 10:40:53 EEST
-# Path:   ~/.local/bin/chrome-max
+# Date:   2024-09-27 15:52:37 EEST
+# Path:   ~/.local/bin/bibtex-list-keywords
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Launch 2x scaled Google Chrome for screen sharing while using UHD/4K
-# monitors.
+# List keywords from BibTeX file(s).
 #**
 
 #* USAGE:
-#*   ${0}
+#*   ${0} BIBTEX_FILE [BIBTEX_FILE ...]
 #**
-google-chrome-stable --force-device-scale-factor=2
+grep '^ *keywords *= *{' "${@}" \
+  | perl -lne 'print $1 if /\{(.*)\}/' \
+  | sed 's/; */\n/g' \
+  | sort | uniq -c | sort -nr -k1,1

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 15:22:05 EEST
+# Path:   ~/.local/bin/convert-timestamp
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Convert timestamp from Git commit timestamp format ("RFC 2822-like" date
+# format) to an ISO 8601-like format with a time zone abbreviation.
+#**
+
+#* USAGE:
+#*   ${0} TIMESTAMP
+#* e.g.:
+#*   ${0} "Mon Sep 16 17:13:53 2024 +0300"
+#**
+timestamp=$(echo "${1}" | awk '{print $2, $3, $4, $5}')
+
+# Convert to seconds since the Unix Epoch
+epoch_seconds="$(date -d "${timestamp}" +"%s")"
+
+new_timestamp="$(date -d "@${epoch_seconds}" +"%Y-%m-%d %H:%M:%S %Z")"
+
+echo "${new_timestamp}"

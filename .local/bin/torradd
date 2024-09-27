@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
-urxvt -e rtorrent "$@" &
+${TERMINAL} -e rtorrent "$@" &
 # /usr/bin/i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session rtorrent "$@"'
 notify-send " Torrent added."

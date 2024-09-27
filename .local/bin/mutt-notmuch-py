@@ -1,18 +1,34 @@
 #!/usr/bin/env python
+# vim:ft=python
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-27 16:22:12 EEST
+# Path: ~/.local/bin/mutt-notmuch-py
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Honza Pokorny (me@honza.ca)
+# Orig. URL: https://raw.githubusercontent.com/honza/mutt-notmuch-py/refs/heads/master/mutt-notmuch-py
+# Orig. URL/File Retrieval: 2020-03-29 20:10:50 EEST
+#------------------------------------------------------------------------------
+#*
+# This script is needed to search mail using notmuch and (neo)mutt.
+# It is not supposed to be launched directly, but rather from within (neo)mutt.
+#**
+
 """
 mutt-notmuch-py
 
 This is a Gmail-only version of the original mutt-notmuch script.
 
 It will interactively ask you for a search query and then symlink the matching
-messages to $HOME/.cache/mutt_results.
+messages to ${HOME}/.cache/mutt_results.
 
 Add this to your muttrc.
 
 macro index / "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py<enter><change-folder-readonly>~/.cache/mutt_results<enter>" \
           "search mail (using notmuch)"
 
-This script overrides the $HOME/.cache/mutt_results each time you run a query.
+This script overrides the ${HOME}/.cache/mutt_results each time you run a query.
 
 Install this by adding this file somewhere on your PATH.
 
@@ -73,9 +89,9 @@ def command(cmd):
 
 def normalize(path):
     if path:
-      # Use expanduser() so that os.symlink() will not get weirded out by
-      # tildes.
-      return os.path.expanduser(path).rstrip("/")
+        # Use expanduser() so that os.symlink() will not get weirded out by
+        # tildes.
+        return os.path.expanduser(path).rstrip("/")
 
 
 def main(dest_box, options):
@@ -86,7 +102,7 @@ def main(dest_box, options):
         readline.read_history_file(history_path)
     query = input("Query: ")
     if history_path:
-      readline.write_history_file(history_path)
+        readline.write_history_file(history_path)
 
     command("mkdir -p %s/cur" % dest_box)
     command("mkdir -p %s/new" % dest_box)
@@ -128,18 +144,35 @@ def main(dest_box, options):
 
 if __name__ == "__main__":
     p = OptionParser("usage: %prog [OPTIONS] [RESULTDIR]")
-    p.add_option("-g", "--gmail", dest="gmail",
-                 action="store_true", default=True,
-                 help="gmail-specific behavior")
-    p.add_option("-G", "--not-gmail", dest="gmail",
-                 action="store_false",
-                 help="Normal, non-gmail-specific behavior")
-    p.add_option("-p", "--base-path", dest="base_path",
-                 help="Only include messages in given base path")
-    p.add_option("--history-path", dest="history_path",
-                 help="Save/restore query history to given path")
-    p.add_option("-v", "--version", dest="version", action="store_true",
-                 help="Show version")
+    p.add_option(
+        "-g",
+        "--gmail",
+        dest="gmail",
+        action="store_true",
+        default=True,
+        help="gmail-specific behavior",
+    )
+    p.add_option(
+        "-G",
+        "--not-gmail",
+        dest="gmail",
+        action="store_false",
+        help="Normal, non-gmail-specific behavior",
+    )
+    p.add_option(
+        "-p",
+        "--base-path",
+        dest="base_path",
+        help="Only include messages in given base path",
+    )
+    p.add_option(
+        "--history-path",
+        dest="history_path",
+        help="Save/restore query history to given path",
+    )
+    p.add_option(
+        "-v", "--version", dest="version", action="store_true", help="Show version"
+    )
     (options, args) = p.parse_args()
 
     if args:

@@ -1,16 +1,29 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 14:55:23 EEST
+# Path:   ~/.local/bin/dmenu-surfraw
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Lauch surfraw with dmenu, choose search engine and search query.
+# Kudos to DistroTube (https://distrotube.com).
+#**
 
-# dmenu script for launching surfaw, a command line search utility.
-# kudos to DistroTube (https://distrotube.com)
-
-cmd="dmenu -i"
-
-while [ -z "$engine" ]; do
-engine=$(sr -elvi | gawk '{if (NR!=1) { print $1 }}' | $cmd -p "Search engine?") || exit
+#* USAGE:
+#*   ${0}
+#**
+while [[ -z "${engine}" ]]; do
+  engine="$( \
+    sr -elvi \
+      | awk '{if (NR!=1) { print $1 }}' \
+      | dmenu -i -p "Search engine?"
+  )" || exit
 done
 
-while [ -z "$query" ]; do
-query=$(echo "" | $cmd -p "Searching $engine") || exit
+while [[ -z "${query}" ]]; do
+  query="$(echo "" | dmenu -i -p "Searching ${engine}")" || exit
 done
 
-urxvt -e sr "$engine" "$query"
+"${TERMINAL}" -e sr "${engine}" "${query}"

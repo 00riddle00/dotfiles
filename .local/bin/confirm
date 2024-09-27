@@ -2,16 +2,28 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 10:40:53 EEST
-# Path:   ~/.local/bin/chrome-max
+# Date:   2024-09-27 15:15:28 EEST
+# Path:   ~/.local/bin/confirm
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Launch 2x scaled Google Chrome for screen sharing while using UHD/4K
-# monitors.
+# Confirm the command before running it.
 #**
 
 #* USAGE:
-#*   ${0}
+#*   ${0} COMMAND
 #**
-google-chrome-stable --force-device-scale-factor=2
+cmd="${*}"
+
+echo "Run the following command:"
+echo
+echo "    \$ ${cmd}"
+echo
+echo -n "Answer 'yes' or 'no': "
+
+read -r choice
+if [[ "${choice}" == "yes" ]]; then
+  eval "${cmd}"
+else
+  echo "Aborted."
+fi

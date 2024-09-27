@@ -1,20 +1,54 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-27 15:00:49 EEST
+# Path: ~/.local/bin/dmenu-switch
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: suckless.org
+# Orig. URL: https://tools.suckless.org/dmenu/scripts/switch
+# Orig. URL/File Retrieval: 2024-09-27 14:55:44 EEST
+#------------------------------------------------------------------------------
+#*
 # dmenu-based window switcher using wmctrl.
 # If using dwm, requires the ewmhtags or focusonnetactive patch to be usefull.
+#**
 
-windows=$(wmctrl -xl | tr -s '[:blank:]' | cut -d ' ' -f 3-3,5- | sed 's/^[a-zA-Z0-9-]*\.//' | sort | uniq)
+#* USAGE:
+#*   ${0}
+#**
+windows="$( \
+  wmctrl -lx \
+    | tr -s '[:blank:]' \
+    | cut -d ' ' -f 3-3,5- \
+    | sed 's/^[a-zA-Z0-9-]*\.//' \
+    | sort \
+    | uniq
+)"
 
-# Add spaces to align the WM_NAMEs of the windows
-max=$(echo "$windows" | awk '{cur=length($1); max=(cur>max?cur:max)} END{print max}')
+# Add spaces to align the WM_NAMEs of the windows.
+max="$( \
+  echo "${windows}" \
+    | awk '{cur=length($1); max=(cur>max?cur:max)} END{print max}'
+)"
 
-windows=$(echo "$windows" | \
-              awk -v max="$max" \
-                  '{cur=length($1); printf $1; \
-                    for(i=0; i < max - cur + 1; i++) printf " "; \
-                    $1 = ""; printf "%s\n", $0}')
+windows="$( \
+  echo "${windows}" \
+    | awk -v max="$max" '{
+      cur=length($1); printf $1; \
+      for(i=0; i < max - cur + 1; i++) printf " "; \
+      $1 = ""; printf "%s\n", $0
+    }'
+)"
 
+target="$( \
+  echo "${windows}" \
+    | dmenu -i -l 10 -p "switch:" \
+    | tr -s '[:blank:]' \
+    | cut -d ' ' -f 2-
+)"
 
-target=$(echo "$windows" | dmenu -l 10 -i -p switch: | tr -s '[:blank:]' | cut -d ' ' -f 2-)
-
-if [[ -n $target ]]; then
-    wmctrl -a "$target"
+if [[ -n "${target}" ]]; then
+    wmctrl -a "${target}"
 fi

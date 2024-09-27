@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 17:09:42 EEST
+# Path:   ~/.local/bin/focus
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Focus a program window if it's running.
+#**
+
+#* USAGE:
+#   ${0} WINDOW_NAME
+#   ${0} WINDOW_CLASS -c
+# e.g.:
+#   ${0} "- Thunar"
+#   ${0} org.pwmt.zathura.Zathura -c
+#**
+win_name_or_class="${1}"
+
+if [[ "${2}" == "-c" ]]; then
+  # Raise and focus window by its class (fuzzy match).
+  wmctrl -x -a "${win_name_or_class}"
+else
+  # Raise and focus window by its name (title) (fuzzy match).
+  wmctrl -a "${win_name_or_class}"
+fi

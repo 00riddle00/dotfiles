@@ -1,33 +1,36 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-27 13:24:20 EEST
+# Path:   ~/.local/bin/dmenu-power
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Log out, reboot or shutdown using dmenu.
+#**
 
-kill_apps() {
-  while read -r app; do
-    wmctrl -i -c "$app"
-  done < <(wmctrl -l | awk '{print $1}')
-}
+#* USAGE:
+#*   ${0}
+#**
+[[ -z "${DISPLAY}" ]] && exit 1
 
-choice_by_dmenu() {
-  if [[ -f "$HOME/.dmenurc" ]]; then
-    . "$HOME/.dmenurc"
-  else
-    DMENU='dmenu -i'
-  fi
+choice="$( \
+  echo -e "0:  Logout\n1:  Reboot\n2:  Shutdown" \
+    | dmenu -i \
+    | cut -d ':' -f 1
+)"
 
-  choice=$(echo -e "0:  Logout\n1:  Reboot\n2:  Shutdown" | $DMENU | cut -d ':' -f 1)
-}
+[[ -z "${choice}" ]] && exit 1
 
-[[ -z "$DISPLAY" ]] && exit 1
+# Gracefully close all open apps.
+while read -r app; do
+  wmctrl -i -c "${app}"
+done < <(wmctrl -l | awk '{print $1}')
 
-choice_by_dmenu
-
-[[ -z "$choice" ]] && exit 1
-
-# gracefully close all open apps
-kill_apps
-
-# execute the choice in background
-case "$choice" in
-  0) kill $(pgrep X) & ;;
+# Execute the choice in background.
+case "${choice}" in
+  0) kill "$(pgrep X)" & ;;
   1) shutdown -r now & ;;
   2) shutdown -h now & ;;
 esac
