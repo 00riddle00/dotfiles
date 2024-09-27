@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 08:53:40 EEST
+# Date:   2024-09-27 18:01:03 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -162,7 +162,7 @@ path=(
   ${HOME}/.local/bin
   ${HOME}/.local/bin/cron
   ${PERL5_HOME}/bin
-  $G{EM_HOME}/bin
+  ${GEM_HOME}/bin
   ${path}
 )
 

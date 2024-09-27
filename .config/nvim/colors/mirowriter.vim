@@ -1,6 +1,6 @@
 "------------------------------------------------------------------------------
 " User: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-07-28 18:34:44 EEST
+" Date: 2024-09-27 15:02:26 EEST
 " Path: ~/.config/nvim/colors/mirowriter.vim
 " URL:  https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -10,7 +10,7 @@
 " -------------------------------------------------
 " Description from the author:
 " -------------------------------------------------
-" Adpated colouscheme for DistractFree plugin
+" Adapted colourscheme for DistractFree plugin
 " Author:   Jason Ryan
 " URL:      https://jasonwryan.com
 "------------------------------------------------------------------------------

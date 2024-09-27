@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-06 23:34:12 EEST
+# Date:   2024-09-27 18:01:15 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ set $gap_size_top   0
 set $gap_size_inner 8
 set $gap_size_outer 4
 
-set $col_bar_bg            #002b36
+set $col_i3_bar_bg         #002b36
 set $col_arch_blue         #1793d1
 set $col_light_blue        #79bac1
 set $col_pretty_blue       #268bd2
@@ -100,14 +100,14 @@ bar {
 
   colors {
     separator  $col_pretty_blue
-    background $col_bar_bg
+    background $col_i3_bar_bg
     statusline $col_pretty_blue
 
     #                  Border         Background     Text
-    focused_workspace  $col_bar_bg    $col_bar_bg    $col_pretty_light_blue
-    active_workspace   $col_bar_bg    $col_bar_bg    $col_arch_blue
-    inactive_workspace $col_bar_bg    $col_bar_bg    $col_light_blue
-    urgent_workspace   $col_arch_blue $col_arch_blue $col_bar_bg
+    focused_workspace  $col_i3_bar_bg $col_i3_bar_bg $col_pretty_light_blue
+    active_workspace   $col_i3_bar_bg $col_i3_bar_bg $col_arch_blue
+    inactive_workspace $col_i3_bar_bg $col_i3_bar_bg $col_light_blue
+    urgent_workspace   $col_arch_blue $col_arch_blue $col_i3_bar_bg
     binding_mode       #b71c1c        #b71c1c        #000000
   }
 }
