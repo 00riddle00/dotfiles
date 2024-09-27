@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 18:01:15 EEST
+# Date:   2024-09-27 20:29:06 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ $run hsetroot -solid "#073542" &
 $run_always autotiling
 
 # Open notes
-$run i3-msg 'workspace $wspace1; $run i3-vimnotes'
+$run i3-msg 'workspace $wspace1; $run i3-term-notes'
 
 # ================================================
 #  Appearance
@@ -228,10 +228,9 @@ bindsym $mod + Tab         $run i3-msg 'workspace next'
 bindsym $mod + Shift + Tab $run i3-msg 'workspace prev'
 
 bindsym $alt + q         [instance="dropdown_*"] move scratchpad;
-bindsym $alt + u         $run i3-activate-dropdown
+bindsym $alt + u         $run i3-focus-dropdown
 bindsym $alt + z         sticky toggle
 bindsym $mod + Shift + b bar mode toggle
-bindsym $mod + u         $run i3-activate-dropdown-alacritty
 
 # Distraction free mode
 #   Turn on: (holding $mod key glances at the statusbar)
@@ -313,8 +312,8 @@ bindsym F1         $run "picom -b"
 bindsym $mod + F1  $run "killall picom"
 bindsym F2         $run fast-focus t2.URxvt -x
 bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
-bindsym F3         $run fast-open-or-focus i3-vimnotes notes.URxvt -x
-bindsym $alt + F3  $run i3-vimnotes
+bindsym F3         $run fast-open-or-focus i3-term-notes notes.URxvt -x
+bindsym $alt + F3  $run i3-term-notes
 bindsym F4         $run fast-open-or-focus i3-urxvt-clipboard clipboard.URxvt -x
 bindsym F5         $run fast-open-or-focus chromium
 bindsym F7         $run fast-open-or-focus thunderbird

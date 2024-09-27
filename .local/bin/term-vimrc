@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+urxvt -geometry 105x40 -name vimrc -hold -e tmux new-session $EDITOR -c "e $VIMRC | :cd %:p:h | :NvimTreeClose"

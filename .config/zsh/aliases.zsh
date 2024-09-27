@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-04 00:51:42 EEST
+# Date:   2024-09-27 20:30:12 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -807,7 +807,6 @@ alias zr     '${EDITOR} ${ZDOTDIR}/.zshrc'
 #---------------------------------------
 
 alias i3.out       'i3-msg exit'
-alias i3.notes     'i3-msg exec "urxvt -name notes -hold -e zsh -c ${BIN}/vimnotes"'
 alias cmus.run     'urxvt -name dropdown_aux -e tmux new-session cmus &'
 alias cmus.scratch "i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 # Avoid tmux session using an old I3SOCK environment variable after i3 restart
@@ -843,8 +842,6 @@ alias tc     'tmux-clean'
 #------------------------------------------------------------------------------
 
 alias setx   'set-xkbmap'
-alias 12on   'gtk3-enable-12px-font'
-alias 12of   'gtk3-disable-12px-font'
 alias thanks '(${BIN}/sounds/thanks-hal &) > /dev/null'
 
 #------------------------------------------------------------------------------

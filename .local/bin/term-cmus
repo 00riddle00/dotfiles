@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+urxvt -geometry 105x40 -name cmus -e tmux new-session "cmus"

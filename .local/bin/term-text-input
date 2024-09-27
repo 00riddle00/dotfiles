@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+urxvt -geometry 105x40 -name text-input -hold -e tmux new-session "$EDITOR" -c "e /tmp/temp_$(date +%F_%H_%M_%S).md | :cd %:p:h | :NvimTreeClose"

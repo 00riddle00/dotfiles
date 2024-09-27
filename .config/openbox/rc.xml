@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 18:07:52 EEST
+# Date:   2024-09-27 20:29:12 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -446,7 +446,7 @@
   ============================ -->
   <keybind key="Insert">
     <action name="Execute">
-      <command>openbox-urxvt-fzf-launcher</command>
+      <command>term-fzf-launcher</command>
     </action>
   </keybind>
 
@@ -528,19 +528,19 @@
   <!-- Open URxvt notes window. -->
   <keybind key="A-F3">
     <action name="Execute">
-      <command>openbox-vimnotes</command>
+      <command>term-notes</command>
     </action>
   </keybind>
   <!-- Open/focus URxvt window for notes by its class name. -->
   <keybind key="F3">
     <action name="Execute">
-      <command>open-or-focus openbox-vimnotes notes.URxvt -c</command>
+      <command>open-or-focus term-notes notes.URxvt -c</command>
     </action>
   </keybind>
   <!-- Open/focus Urxvt window for clipboard by its class name. -->
   <keybind key="F4">
     <action name="Execute">
-      <command>open-or-focus openbox-urxvt-clipboard clipboard.URxvt -c</command>
+      <command>open-or-focus term-clipboard clipboard.URxvt -c</command>
     </action>
   </keybind>
 
@@ -668,14 +668,14 @@
   <!-- Open/focus C* Music Player window by its name. -->
   <keybind key="A-c">
     <action name="Execute">
-      <command>open-or-focus openbox-cmus cmus.URxvt -c</command>
+      <command>open-or-focus term-cmus cmus.URxvt -c</command>
     </action>
   </keybind>
   <!-- Open/focus Termdown timer window by its name. -->
   <!--
   <keybind key="A-c">
     <action name="Execute">
-      <command>open-or-focus openbox-timer timer.URxvt -c</command>
+      <command>open-or-focus term-timer timer.URxvt -c</command>
     </action>
   </keybind>
   -->
@@ -683,7 +683,7 @@
   <!--
   <keybind key="A-f">
     <action name="Execute">
-      <command>open-or-focus openbox-text-input text-input.URxvt -c</command>
+      <command>open-or-focus term-text-input text-input.URxvt -c</command>
     </action>
   </keybind>
   -->
