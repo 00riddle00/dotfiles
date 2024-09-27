@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 20:30:12 EEST
+# Date:   2024-09-27 21:23:41 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -179,7 +179,7 @@ alias de           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle
 alias es           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,es'
 alias he           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
 alias ru           "setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
-alias emacs.caps   'setxkbmap -option && fix-xkbmap'
+alias emacs.caps   'setxkbmap -option && set-keyboard-layout'
 alias emacs.nocaps 'setxkbmap -option ctrl:nocaps'
 alias nocaps       'sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
 
@@ -819,8 +819,8 @@ alias i3-msg-tmux  'i3-msg --socket "${XDG_RUNTIME_DIR}/i3/$(\ls -t ${XDG_RUNTIM
 
 alias autostart    '${XDG_CONFIG_HOME}/openbox/autostart'
 alias op.out       'openbox --exit'
-alias theme.matrix '${BIN}/themes/matrix/run'
-alias theme.riddle '${BIN}/themes/riddle/run'
+alias theme.matrix '${BIN}/openbox-themes/matrix/enable'
+alias theme.riddle '${BIN}/openbox-themes/riddle/enable'
 alias f2on         'openbox-enable-F2-keybinding'
 alias f2of         'openbox-disable-F2-keybinding'
 alias reop         'openbox --reconfigure'
@@ -841,7 +841,7 @@ alias tc     'tmux-clean'
 # 23. Aliases to scripts
 #------------------------------------------------------------------------------
 
-alias setx   'set-xkbmap'
+alias setx   'set-keyboard-layout'
 alias thanks '(${BIN}/sounds/thanks-hal &) > /dev/null'
 
 #------------------------------------------------------------------------------

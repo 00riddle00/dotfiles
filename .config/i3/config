@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 20:29:06 EEST
+# Date:   2024-09-27 21:23:31 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -213,12 +213,12 @@ bindsym $mod + Shift + p $run dmenu-pastes
 bindsym $mod + q         $run fast-open-or-focus emacs emacs.Emacs -x emacs
 bindsym $mod + r         $run $TERMINAL -e ranger
 bindsym $mod + s         $run xscreensaver-command --lock
-bindsym $mod + t         $run qutebrowser-wall
+bindsym $mod + t         $run qutebrowser-wallpaper
 bindsym $mod + y         $run $TERMINAL -e calcurse -D $XDG_CONFIG_HOME/calcurse
 bindsym $mod + semicolon $run fast-open-or-focus libreoffice
 
 # Imitate "Show Desktop"
-bindsym $mod + d           $run i3-showdesktop $wspace10
+bindsym $mod + d           $run i3-show-desktop $wspace10
 # Imitate "Alt+Tab"
 #   Also very useful for switching between two displays
 bindsym $alt + Tab         $run i3-msg 'workspace back_and_forth'

@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-sink_input_index=$(list-sink-inputs-human-readable | grep -i brave | awk -F':' '{print $2}')
-pactl set-sink-input-volume ${sink_input_index} ${1}
+brave_sink_input_index=$(pactl list sink-inputs | tr '\n' '\r' | perl -pe 's/.*? *Sink Input #([0-9]+).+?application.name = "([^\r]+)"\r.+?(?=Sink Input #|$)/\2:\1\r/g' | tr '\r' '\n' | grep -i brave | awk -F':' '{print $2}')
+pactl set-sink-input-volume ${brave_sink_input_index} ${1}

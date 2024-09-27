@@ -2,7 +2,7 @@
 <!--
 *------------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-07-16 12:52:43 EEST
+* Date:   2024-09-27 21:23:24 EEST
 * Path:   ~/.config/Thunar/uca.xml
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -26,7 +26,7 @@
     <name>Create New File</name>
     <submenu></submenu>
     <unique-id>1712922860051143-2</unique-id>
-    <command>thunar-newfile</command>
+    <command>thunar-new-file</command>
     <description>Create new file in the current directory.</description>
     <range>*</range>
     <patterns>*</patterns>

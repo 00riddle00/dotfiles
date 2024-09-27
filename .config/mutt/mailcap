@@ -1,11 +1,11 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-13 13:15:07 EEST
+# Date:   2024-09-27 21:23:34 EEST
 # Path:   ~/.config/mutt/mailcap
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-text/html; run-browser %s &>/dev/null; nametemplate=%s.html; test=test -n "$DISPLAY"; needsterminal;
+text/html; qutebrowser --target tab %s &>/dev/null; nametemplate=%s.html; test=test -n "$DISPLAY"; needsterminal;
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
 image/*; nsxiv %s &>/dev/null
 video/*; mpv %s

@@ -2,6 +2,6 @@
 Type=Application
 Name=rTorrent
 GenericName=BitTorrent client
-Exec=/usr/bin/env torradd %U
+Exec=/usr/bin/env add-torrent %U
 Terminal=true
-Comment=The script toradd launches rTorrent in terminal
+Comment=The script add-torrent launches rTorrent in terminal
