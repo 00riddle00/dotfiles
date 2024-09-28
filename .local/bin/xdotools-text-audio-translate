@@ -1,0 +1,126 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 16:15:56 EEST
+# Path:   ~/.local/bin/xdotools-text-audio-translate
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Script using xdotool to aid in learning natural languages. It automates the
+# process of translating selected words from a book in a text format, while
+# listening to that book in an audio format.
+#
+# Assumptions before running the script:
+#  [1] A web browser with a functionality to give a custom name to a browser
+#      window.
+#  [2] A book in a text format (HTML, PDF, etc.) is opened in a browser window,
+#      window name set to "text-book".
+#  [3] A book in an audio format is opened in a browser window in YouTube,
+#      window name set to "youtube-audiobook". Any audio or video file can be
+#      uploaded to YouTube, it is not limited to existing audiobooks on
+#      YouTube.
+#  [4] Google Translate is opened in a browser window with the languages set to
+#      translate from and to, window name set to "google-translate". The polar
+#      coordinates of the Google Translate text input field are set to 315
+#      degrees and 900 pixels from the center of the window.
+#  [5] The mouse cursor is placed on the word which needs to be translated in
+#      the book's text.
+#
+#  The window names and polar coordinates can be changed in the script.
+#
+#  Having all three browser windows opened, place the mouse cursor on the word
+#  to translate in the book's text and run the keyboard shortcut mapped to this
+#  script. The script will:
+#    - Select and copy the word to the clipboard.
+#    - Pause the audiobook.
+#    - Rewind the audiobook by 5 seconds.
+#    - Clear the Google Translate input field.
+#    - Paste the word to Google Translate.
+#    - Wait for 5 seconds (this can also be changed in the script).
+#    - Resume the audiobook.
+#    - Return the mouse cursor to the original position.
+#    - Deselect the word.
+#
+# After a listening exercise, you can copy the words from Google Translate
+# history to your notes. Map this script to a keyboard shortcut and enjoy
+# learning languages!
+#**
+
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather from a keyboard
+#*   shortcut mapped to it, since it requires the mouse cursor to be in a
+#*   specific position on the screen.
+#**
+
+# Variables which can be customized.
+textbook_win_name="text-book"
+audiobook_win_name="youtube-audiobook"
+translator_win_name="google-translate"
+polar_angle=315
+polar_distance=900
+time_to_brain=5
+
+# Save the current mouse position.
+eval "$(xdotool getmouselocation --shell)"
+orig_x="${X}"
+orig_y="${Y}"
+
+# Select the word by double-clicking on it (actually 3 clicks are performed,
+# since 2 clicks happen too fast).
+xdotool click --repeat 3 1
+
+# Copy the word to the clipboard.
+xdotool key ctrl+c
+
+# Move the mouse to the center of the YouTube window with the audiobook.
+xdotool mousemove \
+  --window "$(xdotool search --name ${audiobook_win_name})" \
+  --polar 0 0 \
+  --sync
+
+# Stop the video.
+xdotool click 1
+
+# Rewind the video by 5 seconds.
+xdotool key Left
+
+# Go to Google Translate window's text input field.
+xdotool mousemove \
+  --window "$(xdotool search --name ${translator_win_name})" \
+  --polar "${polar_angle}" "${polar_distance}" \
+  --sync
+
+# Select all text in the input field, delete it and paste the word.
+xdotool click 1
+xdotool key ctrl+a
+xdotool key delete
+xdotool key ctrl+v
+
+# Focus on the center of the Google Translate window.
+xdotool mousemove \
+  --window "$(xdotool search --name ${translator_win_name})" \
+  --polar 0 0 \
+  --sync
+
+# Wait for the translation to happen and then click on the empty space in order
+# to hide Google Translate suggestion pop-up.
+sleep 0.5
+xdotool click 1
+
+# Wait a little for the brain to brain.
+sleep "${time_to_brain}"
+
+# Get back to the audiobook window.
+xdotool mousemove \
+  --window "$(xdotool search --name ${audiobook_win_name})" \
+  --polar 0 0 \
+  --sync
+
+# Resume the video.
+xdotool click 1
+
+# Return the mouse cursor to the original position and deselect the word.
+xdotool search --name "${textbook_win_name}" windowactivate --sync
+xdotool mousemove "${orig_x}" "${orig_y}" --sync
+xdotool click 1
