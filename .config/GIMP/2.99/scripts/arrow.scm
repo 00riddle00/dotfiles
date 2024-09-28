@@ -1,6 +1,6 @@
 ;------------------------------------------------------------------------------
 ; User: 00riddle00 (Tomas Giedraitis)
-; Date: 2024-07-13 17:18:10 EEST
+; Date: 2024-09-28 12:24:35 EEST
 ; Path: ~/.config/GIMP/2.99/scripts/arrow.scm
 ; URL:  https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
@@ -8,7 +8,7 @@
 ; Orig. URL: https://github.com/vitforlinux-gimp/scm/raw/54a7a6ebd781000846a1c94b0d521cc600283e62/arrow_V3.scm
 ; Orig. URL/File Retrieval: 2024-07-13 17:10:35 EEST
 ;----------------------------------------
-; Description from the author:
+; Description by the author:
 ;----------------------------------------
 ; Berengar W. Lehr (Berengar.Lehr@gmx.de)
 ; Medical Physics Group, Department of Diagnostic and Interventional Radiology

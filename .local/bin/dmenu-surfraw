@@ -2,12 +2,13 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 14:55:23 EEST
+# Date:   2024-09-28 12:23:49 EEST
 # Path:   ~/.local/bin/dmenu-surfraw
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Lauch surfraw with dmenu, choose search engine and search query.
+#
 # Kudos to DistroTube (https://distrotube.com).
 #**
 

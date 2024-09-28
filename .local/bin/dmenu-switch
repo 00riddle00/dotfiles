@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-27 15:00:49 EEST
+# Date: 2024-09-28 12:23:51 EEST
 # Path: ~/.local/bin/dmenu-switch
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -50,5 +50,5 @@ target="$( \
 )"
 
 if [[ -n "${target}" ]]; then
-    wmctrl -a "${target}"
+  wmctrl -a "${target}"
 fi

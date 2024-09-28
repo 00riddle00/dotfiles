@@ -2,7 +2,7 @@
 # vim:ft=python
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-27 16:22:12 EEST
+# Date: 2024-09-28 12:23:55 EEST
 # Path: ~/.local/bin/mutt-notmuch-py
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -12,36 +12,37 @@
 #------------------------------------------------------------------------------
 #*
 # This script is needed to search mail using notmuch and (neo)mutt.
+#
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
+# mutt-notmuch-py
+# 
+# This is a Gmail-only version of the original mutt-notmuch script.
+# 
+# It will interactively ask you for a search query and then symlink the matching
+# messages to ${HOME}/.cache/mutt_results.
+# 
+# Add this to your muttrc.
+# 
+# macro index / "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py<enter><change-folder-readonly>~/.cache/mutt_results<enter>" \
+#           "search mail (using notmuch)"
+# 
+# This script overrides the ${HOME}/.cache/mutt_results each time you run a query.
+# 
+# Install this by adding this file somewhere on your PATH.
+#
+# Tested on OSX Lion, OSX El Capitan, Fedora 23, and Arch Linux.
+# 
+# (c) 2012-2016 --- Honza Pokorny
+# Licensed under BSD
+# ----------------------------------------
 #**
 
 #* USAGE:
 #*   The script is not supposed to be run directly, but rather from within
 #*   (neo)mutt.
 #**
-
-"""
-mutt-notmuch-py
-
-This is a Gmail-only version of the original mutt-notmuch script.
-
-It will interactively ask you for a search query and then symlink the matching
-messages to ${HOME}/.cache/mutt_results.
-
-Add this to your muttrc.
-
-macro index / "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py<enter><change-folder-readonly>~/.cache/mutt_results<enter>" \
-          "search mail (using notmuch)"
-
-This script overrides the ${HOME}/.cache/mutt_results each time you run a query.
-
-Install this by adding this file somewhere on your PATH.
-
-Tested on OSX Lion, OSX El Capitan, Fedora 23, and Arch Linux.
-
-(c) 2012-2016 --- Honza Pokorny
-Licensed under BSD
-"""
-
 from __future__ import print_function
 import os
 import hashlib

@@ -1,15 +1,15 @@
 "------------------------------------------------------------------------------
 " User: 00riddle00 (Tomas Giedraitis)
-" Date:   2024-07-28 18:33:58 EEST
+" Date: 2024-09-28 12:25:16 EEST
 " Path: ~/.config/nvim/colors/miro8.vim
 " URL:  https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
 " Author: jasonwryan (Jason Ryan) (https://jasonwryan.com/)
 " Orig. URL: https://hg.sr.ht/~jasonwryan/shiv/raw/.vim/colors/miro8.vim?rev=2cbeb4b9c04f1ece3cf54cb5e90d431a9f78663a
 " Orig. URL/File Retrieval: 2017-06-28 20:37:04 EEST
-" -------------------------------------------------
-" Description from the author:
-" -------------------------------------------------
+"----------------------------------------
+" Description by the author:
+"----------------------------------------
 " miro8 colours
 " Author:  jasonwryan
 " URL:     https://jasonwryan.com
