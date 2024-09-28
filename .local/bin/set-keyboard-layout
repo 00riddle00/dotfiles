@@ -1,23 +1,22 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 13:14:07 EEST
+# Path:   ~/.local/bin/set-keyboard-layout
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Set keyboard layout for the current X11 session using setxkbmap.
+# (If persistent, system-wide changes are needed, use localectl from systemd.)
+#**
 
-# Remap keys with setxkbmap (if installed)
-#
-# if Alt + Shift is needed for something,
-# use `grp:win_space_toggle` instead of `grp:alt_shift_toggle`
-#
+#* USAGE:
+#*   ${0}
+#**
 if type setxkbmap >/dev/null 2>&1; then
-    setxkbmap \
-        -layout us,lt \
-        -option grp:alt_shift_toggle \
-        -option caps:escape 2>/dev/null
+  setxkbmap \
+    -layout us,lt \
+    -option grp:alt_shift_toggle \
+    -option caps:escape 2>/dev/null
 fi
-
-# There was also a file called "reset-xkbmap":
-# ```
-# #!/usr/bin/env sh
-# 
-# # reactivate usual keybindings
-# setxkbmap -option 2>/dev/null
-# setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt  2>/dev/null
-# setxkbmap -option caps:escape 2>/dev/null
-# ```

@@ -1,7 +1,27 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 13:33:54 EEST
+# Path:   ~/.local/bin/thunar-new-file
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Create a new file in the current directory using Zenity dialog. This script
+# is meant to be used as a custom action in Thunar file manager, referenced in
+# the ${XDG_CONFIG_HOME}/Thunar/uca.xml file.
+#**
 
-# used for custom "Create New File" shortcut in Thunar
-file=$(zenity --entry \
-        --title "Create New File" \
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather from within
+#*   Thunar file manager.
+#**
+file=$( \
+  zenity \
+    --entry \
+    --title "Create New File" \
     --text "Enter the new name:" \
-    --entry-text ""); touch "$file"
+    --entry-text ""
+)
+
+touch "${file}"

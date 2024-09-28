@@ -1,5 +1,23 @@
 #!/usr/bin/env bash
-image=$(find $XDG_PICTURES_DIR/Wallpapers -type f -iname '*.jpg' | shuf -n 1)
-cp $image $DOTSHARE/qutebrowser-homepage/panorama.jpg
-qutebrowser & > /dev/null 2>&1
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 14:21:10 EEST
+# Path:   ~/.local/bin/qutebrowser-wallpaper
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Before opening quetbrowser, choose a random home page wallpaper image and
+# overwrite the current one.
+#**
 
+#* USAGE:
+#*   ${0}
+#**
+image=$( \
+  find "${XDG_PICTURES_DIR}/Wallpapers" -type f -iname '*.jpg' \
+    | shuf -n 1
+)
+
+cp "${image}" "${DOTSHARE}/qutebrowser-homepage/panorama.jpg"
+qutebrowser > /dev/null 2>&1 &
