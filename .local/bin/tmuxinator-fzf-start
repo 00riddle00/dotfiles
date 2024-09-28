@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-28 12:26:39 EEST
+# Path: ~/.local/bin/tmuxinator-fzf-start
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Cam Spiers (https://github.com/camspiers)
+# Orig. URL: https://raw.githubusercontent.com/camspiers/tmuxinator-fzf-start/refs/heads/master/tmuxinator-fzf-start.sh
+# Orig. URL/File Retrieval: 2020-03-30 00:51:53 EEST
+#------------------------------------------------------------------------------
+#*
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
+# Uses fzf to provide a selection list for tmuxinator projects.
+#
+# Overview:
+#
+# tmuxinator-fzf-start will open fzf with a multi select
+# list of tmuxinator projects.  Upon selecting project/s each
+# project will have `tmuxinator start` run, and when complete
+# tmux will be attached, or if tmux is already running, a
+# session selection interface will be provided.
+#
+# If an initial query is provided, and only one match results,
+# the project will be automatically opened without user input.
+#
+# Usage:
+#
+# tmuxinator-fzf-start
+# tmuxinator-fzf-start "Query"
+#
+# Expectations:
+#
+# - tmuxinator is on ${PATH}
+# - fzf is on ${PATH}
+# - tmux is on ${PATH}
+# ----------------------------------------
+#**
+
+#* USAGE:
+#*   ${0} [QUERY]
+#**
+
+# Allow the user to select projects via FZF.
+selected_projects=$( \
+  tmuxinator list -n \
+    | tail -n +2 \
+    | fzf --prompt="Project: " -m -1 -q "${1}"
+)
+
+if [[ -n ${selected_projects} ]]; then
+  # Set the IFS to \n to iterate over \n delimited projects.
+  IFS=$'\n'
+
+  # Start each project without attaching.
+  for project in ${selected_projects}; do
+    tmuxinator start "${project}" --no-attach # Force disable attaching
+  done
+
+  # If inside Tmux then select session to switch, otherwise just attach.
+  if [[ -n "${TMUX}" ]]; then
+    session="$(tmux list-sessions -F "#S" | fzf --prompt="Session: ")"
+    if [[ -n "${session}" ]]; then
+      tmux switch-client -t "${session}"
+    fi
+  else
+    tmux attach-session
+  fi
+fi
