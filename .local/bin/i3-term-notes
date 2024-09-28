@@ -1,6 +1,31 @@
-#!/usr/bin/env sh
-file_to_open="$NOTES/coding/main.md"
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 11:53:55 EEST
+# Path:   ~/.local/bin/i3-term-notes
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open the notes file in Neovim in a new Urxvt terminal window, and move it a
+# few times to the left, in i3 window manager. Preferably, this window (with
+# the instance name "notes") should be placed on the 1st (i.e. leftmost)
+# workspace in i3 config.
+#**
 
-urxvt -geometry 135x61 -name notes -hold -e tmux new $EDITOR -c "e $file_to_open | :cd %:p:h | :cd .. | :NvimTreeClose" &&
-i3-msg '[instance="notes"] move left' &&
-i3-msg '[instance="notes"] move left'
+#* USAGE:
+#*   ${0}
+#**
+urxvt \
+  -geometry 135x61 \
+  -name notes \
+  -hold \
+  -e tmux new-session \
+    "${EDITOR}" -c \
+      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose" &
+
+sleep 0.05
+
+for i in {1..3}; do
+  i3-msg "[instance=\"notes\"] move left" > /dev/null 2>&1
+done

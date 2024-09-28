@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:23:31 EEST
+# Date:   2024-09-28 12:18:03 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -9,12 +9,12 @@
 #  Definitions
 # ================================================
 
-# i3-msg command in this config file:
+# i3 'exec' command in this config file, e.g.:
 #   exec --no-startup-id urxvt -name dropdown_math -e R -q
-# To run the same command from the terminal (but not inside Tmux):
+# To run the same command from a terminal (but not inside Tmux):
 #   i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
-#
-#   For Tmux, use the alias 'i3-msg-tmux' (see ~/.config/zsh/aliases.zsh).
+# For Tmux, use the alias 'i3-msg-tmux' instead of 'i3-msg'
+#   (see ${ZDOTDIR}/aliases.zsh).
 #
 # Being a command-line utility, i3-msg does not support startup
 # notifications, hence the exec --no-startup-id.
@@ -37,16 +37,16 @@ set $col_light_blue        #79bac1
 set $col_pretty_blue       #268bd2
 set $col_pretty_light_blue #00afd7
 
-set $wspace1  " 1:  "
-set $wspace2  " 2:  "
-set $wspace3  " 3:  "
-set $wspace4  " 4:  "
-set $wspace5  " 5:  "
-set $wspace6  " 6:  "
-set $wspace7  " 7: 󰇮 "
-set $wspace8  " 8:  "
-set $wspace9  " 9: ♫ "
-set $wspace10 " 10:  "
+set $wspace1  "1:  "
+set $wspace2  "2:  "
+set $wspace3  "3:  "
+set $wspace4  "4:  "
+set $wspace5  "5:  "
+set $wspace6  "6:  "
+set $wspace7  "7: 󰇮 "
+set $wspace8  "8:  "
+set $wspace9  "9: ♫ "
+set $wspace10 "10:  "
 
 # ================================================
 #  Startup
@@ -67,7 +67,7 @@ $run hsetroot -solid "#073542" &
 $run_always autotiling
 
 # Open notes
-$run i3-msg 'workspace $wspace1; $run i3-term-notes'
+$run i3-term-notes
 
 # ================================================
 #  Appearance
@@ -171,14 +171,15 @@ for_window [class="Qalculate-gtk"] border   pixel    3
 for_window [class="Qalculate-gtk"] resize   set      782 545
 for_window [class="Qalculate-gtk"] move     position 3963 1360
 
-for_window [class="Gimp"]             move workspace $wspace5
-for_window [class="Inkscape"]         move workspace $wspace5
-for_window [class="SmartSVN"]         move workspace $wspace6
-for_window [class="thunderbird"]      move workspace $wspace7
-for_window [class="discord"]          move workspace $wspace8
-for_window [class="obs"]              move workspace $wspace8
-for_window [class="steam"]            move workspace $wspace8
-for_window [class="Spotify"]          move workspace $wspace9
+for_window [instance="notes"]    move workspace $wspace1
+for_window [class="Gimp"]        move workspace $wspace5
+for_window [class="Inkscape"]    move workspace $wspace5
+for_window [class="SmartSVN"]    move workspace $wspace6
+for_window [class="thunderbird"] move workspace $wspace7
+for_window [class="discord"]     move workspace $wspace8
+for_window [class="obs"]         move workspace $wspace8
+for_window [class="steam"]       move workspace $wspace8
+for_window [class="Spotify"]     move workspace $wspace9
 
 # ================================================
 #  Keybindings
@@ -197,25 +198,25 @@ bindsym $alt + Escape        kill
 #  Letter keys
 # ----------------------------
 
-bindsym $alt + c         $run fast-open-or-focus discord
+bindsym $alt + c         $run open-or-focus discord
 bindsym $alt + e         $run thunar
 bindsym $alt + p         $run pavucontrol
-bindsym $mod + b         $run fast-open-or-focus gimp Gimp -x
-bindsym $mod + c         $run fast-open-or-focus code
-bindsym $mod + e         $run fast-focus "- Thunar"
-bindsym $mod + g         $run fast-open-or-focus smartsvn
+bindsym $mod + b         $run open-or-focus gimp Gimp -c
+bindsym $mod + c         $run open-or-focus code
+bindsym $mod + e         $run focus "- Thunar"
+bindsym $mod + g         $run open-or-focus smartsvn
 bindsym $mod + i         $run $TERMINAL -e htop
-bindsym $mod + m         $run fast-open-or-focus nomacs
+bindsym $mod + m         $run open-or-focus nomacs
 bindsym $mod + n         workspace $wspace2; $run brave
 bindsym $mod + o         $run keepassxc
-bindsym $mod + p         $run fast-open-or-focus pycharm jetbrains-pycharm -x
+bindsym $mod + p         $run open-or-focus pycharm jetbrains-pycharm -c
 bindsym $mod + Shift + p $run dmenu-pastes
-bindsym $mod + q         $run fast-open-or-focus emacs emacs.Emacs -x emacs
+bindsym $mod + q         $run open-or-focus emacs emacs.Emacs -c emacs
 bindsym $mod + r         $run $TERMINAL -e ranger
 bindsym $mod + s         $run xscreensaver-command --lock
 bindsym $mod + t         $run qutebrowser-wallpaper
 bindsym $mod + y         $run $TERMINAL -e calcurse -D $XDG_CONFIG_HOME/calcurse
-bindsym $mod + semicolon $run fast-open-or-focus libreoffice
+bindsym $mod + semicolon $run open-or-focus libreoffice
 
 # Imitate "Show Desktop"
 bindsym $mod + d           $run i3-show-desktop $wspace10
@@ -228,7 +229,7 @@ bindsym $mod + Tab         $run i3-msg 'workspace next'
 bindsym $mod + Shift + Tab $run i3-msg 'workspace prev'
 
 bindsym $alt + q         [instance="dropdown_*"] move scratchpad;
-bindsym $alt + u         $run i3-focus-dropdown
+bindsym $alt + u         $run i3-open-or-focus-dropdown-term "dropdown_aux"
 bindsym $alt + z         sticky toggle
 bindsym $mod + Shift + b bar mode toggle
 
@@ -275,10 +276,10 @@ bindsym $mod + Shift + l move right
 #   near the edge and dragging the window
 # To restore window sizes, move one of the windows around
 # a few times (e.g. $mod + Shift + l and $mod + Shift + h)
-bindsym $mod + Shift + y $run i3-resize left
-bindsym $mod + Shift + u $run i3-resize down
-bindsym $mod + Shift + i $run i3-resize up
-bindsym $mod + Shift + o $run i3-resize right
+bindsym $mod + Shift + y $run i3-win-resize left
+bindsym $mod + Shift + u $run i3-win-resize down
+bindsym $mod + Shift + i $run i3-win-resize up
+bindsym $mod + Shift + o $run i3-win-resize right
 
 # Switch to a certain workspace
 bindsym $mod + 1 workspace number $wspace1
@@ -310,15 +311,14 @@ bindsym $mod + Shift + 0 move container to workspace number $wspace10
 
 bindsym F1         $run "picom -b"
 bindsym $mod + F1  $run "killall picom"
-bindsym F2         $run fast-focus t2.URxvt -x
+bindsym F2         $run focus t2.URxvt -c
 bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
-bindsym F3         $run fast-open-or-focus i3-term-notes notes.URxvt -x
-bindsym $alt + F3  $run i3-term-notes
-bindsym F4         $run fast-open-or-focus i3-urxvt-clipboard clipboard.URxvt -x
-bindsym F5         $run fast-open-or-focus chromium
-bindsym F7         $run fast-open-or-focus thunderbird
+bindsym F3         $run open-or-focus i3-term-notes notes.URxvt -c
+bindsym F4         $run open-or-focus i3-urxvt-clipboard clipboard.URxvt -c
+bindsym F5         $run open-or-focus chromium
+bindsym F7         $run open-or-focus thunderbird
 bindsym F9         $run open-or-focus-brave-ignoring alpha bravo
-bindsym F10        $run fast-open-or-focus qalculate-gtk qalculate
+bindsym F10        $run open-or-focus qalculate-gtk qalculate
 
 # Simply reloads the configuration in-memory (as in "source")
 bindsym F11 reload
@@ -338,7 +338,7 @@ bindsym Insert                $run rofi -show
 bindsym $mod + Insert         $run rofi -show run
 # Run dmenu
 bindsym $mod + Shift + Insert $run dmenu_run
-# Activate/focus a program
+# Open/focus a program
 #bindsym $mod + Insert         $run rofi -show Open  -modi Open:rofi-open
 # Open logout/shutdown/reboot prompt
 bindsym $mod + End            $run rofi -show Power -modi Power:rofi-power

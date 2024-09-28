@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 10:47:42 EEST
+# Path:   ~/.local/bin/i3-win-resize
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Resize the focused window in the specified direction (for i3 window manager).
+#
+# Kudos to Mr. Goferito (https://github.com/goferito) and Luke Smith
+# (https://github.com/lukesmithxyz).
+#**
+
+#* USAGE:
+#*   ${0} up|down|left|right
+#**
+if [[ -z "${1}" ]]; then
+  echo "No direction provided"
+  echo "Usage: ${0} up|down|left|right"
+  exit 1
+fi
+
+resize_amount="2 px or 2 ppt"
+
+resize_window() {
+  i3-msg resize "${1}" "${2}" "${resize_amount}" | grep -q '"success":true' \
+    || i3-msg resize "${3}" "${4}" "${resize_amount}"
+}
+
+{
+  case "${1}" in
+    up) resize_window grow up shrink down ;;
+    down) resize_window shrink up grow down ;;
+    left) resize_window shrink right grow left ;;
+    right) resize_window grow right shrink left ;;
+  esac 
+} > /dev/null 2>&1
