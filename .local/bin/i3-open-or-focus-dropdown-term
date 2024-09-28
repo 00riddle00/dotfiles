@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 10:01:05 EEST
+# Date:   2024-09-28 13:27:06 EEST
 # Path:   ~/.local/bin/i3-open-or-focus-dropdown-term
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ win_class="${1}"
 
 {
   if ! xdotool search --classname "${win_class}" &> /dev/null; then
-    i3-msg "exec --no-startup-id urxvt -name "${win_class}""
+    i3-msg "exec --no-startup-id urxvt -name ${win_class}"
     sleep 0.05
     i3-msg "[instance=\"${win_class}\"] scratchpad show"
   else
