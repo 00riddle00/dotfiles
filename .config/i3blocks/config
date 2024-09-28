@@ -1,11 +1,11 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-30 00:22:16 EEST
+# Date:   2024-09-28 22:57:45 EEST
 # Path:   ~/.config/i3blocks/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
-command=$BIN/statusbar/$BLOCK_NAME
+command=$BIN/i3blocks/$BLOCK_NAME
 align=center
 separator=false
 separator_block_width=20
