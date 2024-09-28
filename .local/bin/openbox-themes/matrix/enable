@@ -1,33 +1,49 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 22:33:44 EEST
+# Path:   ~/.local/bin/openbox-themes/matrix/enable
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Set up the Matrix Openbox theme and run its Openbox autostart script.
+#**
 
-# apps to be killed:
-pkill -f conky
-pkill -f urxvt
-pkill -f thunar
-pkill -f mpg123
-pkill -f tint2
+#* USAGE:
+#*   ${0}
+#**
 
-# change urxvt colors
-sed -i 's|^#include "urxvt-colors/[a-z]*"|#include "urxvt-colors/matrix"|' $XDG_CONFIG_HOME/X11/Xresources
-xrdb $XDG_CONFIG_HOME/X11/Xresources
+# Kill the applications of interest.
+for process in conky urxvt thunar mpg123 tint2; do
+  pkill -f "${process}"
+done
 
-# changes to gtk2 config
-sed -i 's/.*gtk-theme-name.*/gtk-theme-name="Trinity"/' $HOME/.gtkrc-2.0
-sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name="Ultra-Flat-Green"/' $HOME/.gtkrc-2.0
-sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name="Oxygen-14-Matrix-Green"/' $HOME/.gtkrc-2.0
+# Change urxvt colours.
+sed -i \
+  's|^#include "urxvt-colors/[a-z]*"|#include "urxvt-colors/matrix"|' \
+  "${XDG_CONFIG_HOME}/X11/Xresources"
 
-# changes to gtk3 config
-sed -i 's/.*gtk-theme-name.*/gtk-theme-name=Trinity/' $HOME/.config/gtk-3.0/settings.ini
-sed -i 's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=Ultra-Flat-Green/' $HOME/.config/gtk-3.0/settings.ini
-sed -i 's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Oxygen-14-Matrix-Green/' $HOME/.config/gtk-3.0/settings.ini
+xrdb "${XDG_CONFIG_HOME}/X11/Xresources"
 
-# change tint2 config
-cd $HOME/.config/tint2/ || exit 1
+# Change the GTK3 main theme, icon and cursor themes.
+sed -i \
+  's/.*gtk-theme-name.*/gtk-theme-name=Trinity/' \
+  "${XDG_CONFIG_HOME}/gtk-3.0/settings.ini"
+
+sed -i \
+  's/.*gtk-icon-theme-name.*/gtk-icon-theme-name=Ultra-Flat-Green/' \
+  "${XDG_CONFIG_HOME}/gtk-3.0/settings.ini"
+
+sed -i \
+  's/.*gtk-cursor-theme-name.*/gtk-cursor-theme-name=Oxygen-14-Matrix-Green/' \
+  "${XDG_CONFIG_HOME}/gtk-3.0/settings.ini"
+
+# Replace the tint2 config file.
+cd "${XDG_CONFIG_HOME}/tint2/" || exit 1
 ln -sf ./tint2rc.matrix ./tint2rc
 cd - || exit 1
 
-# change openbox autostart file
-cp $BIN/openbox-themes/matrix/autostart $HOME/.config/openbox/autostart
-
-# run openbox autostart
-$HOME/.config/openbox/autostart
+# Replace the Openbox autostart script and run it.
+cp "${BIN}/openbox-themes/matrix/autostart" "${XDG_CONFIG_HOME}/openbox/autostart"
+"${XDG_CONFIG_HOME}/openbox/autostart"

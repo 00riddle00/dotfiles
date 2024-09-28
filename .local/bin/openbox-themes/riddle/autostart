@@ -1,10 +1,33 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 22:32:08 EEST
+# Path:   ~/.local/bin/openbox-themes/riddle/autostart
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Openbox autostart script for Riddle theme.
+#**
 
-feh --bg-scale "$CANDY/images/wallpapers/black_striped.jpg"
-conky -c $XDG_CONFIG_HOME/conky/stats_blue > /dev/null 2>&1 &
-conky -c $XDG_CONFIG_HOME/conky/clock_blue > /dev/null 2>&1 &
-tint2 &
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather it should be
+#*   copied over the Openbox autostart script manually or by using a separate
+#*   script which also sets up the theme.
+#**
+feh --bg-scale "${CANDY}/images/wallpapers/black_striped.jpg"
+
+conky -c "${XDG_CONFIG_HOME}/conky/stats_blue" > /dev/null 2>&1 &
+
+conky -c "${XDG_CONFIG_HOME}/conky/clock_blue" > /dev/null 2>&1 &
+
+tint2 > /dev/null 2>&1 &
+
 urxvt -name t2 &
-espeak "Welcome home, Riddle!" > /dev/null 2>&1
-urxvt -geometry 90x20 -name t2 --hold -e "$BIN/openbox-themes/riddle/greeting" &
-mpg123 $CANDY/audio/star_wars.mp3 > /dev/null 2>&1
+
+espeak "Welcome home, Riddle!"
+
+urxvt -geometry 90x20 --hold -e bash -c \
+  "cat < ${BIN}/openbox-themes/riddle/greeting.txt" &
+
+mpg123 "${CANDY}/audio/star_wars.mp3" > /dev/null 2>&1

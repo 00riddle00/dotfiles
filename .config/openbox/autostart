@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:23:38 EEST
+# Date:   2024-09-28 22:31:26 EEST
 # Path:   ~/.config/openbox/autostart
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,19 +10,10 @@
 # These user-specific things are run when an Openbox X Session is started.
 #**
 
-#picom -b &
+#picom -b > /dev/null 2>&1 &
 
 hsetroot -solid "#073542" &
 
-#conky -c "${XDG_CONFIG_HOME}/conky/stats_blue" > /dev/null 2>&1 &
-#conky -c "${XDG_CONFIG_HOME}/conky/clock_blue" > /dev/null 2>&1 &
-
-tint2 &
+tint2 > /dev/null 2>&1 &
 
 urxvt -name t2 &
-
-#espeak "Welcome home, Riddle!" > /dev/null 2>&1
-
-#urxvt -geometry 90x20 -name t2 --hold -e "${BIN}/openbox-themes/riddle/greeting" &
-
-#mpg123 "${CANDY}/audio/star_wars.mp3" > /dev/null 2>&1
