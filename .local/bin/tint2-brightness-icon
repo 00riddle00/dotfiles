@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-28 21:48:14 EEST
+# Path: ~/.local/bin/tint2-brightness-icon
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Piotr Miller (https://github.com/nwg-piotr)
+# Orig. URL: https://raw.githubusercontent.com/nwg-piotr/tint2-executors/refs/heads/master/brightness-icon.sh
+# Orig. URL/File Retrieval: 2020-02-14 00:22:48 EET
+#------------------------------------------------------------------------------
+#*
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
+# This script display an appropriate brightness icon according to the
+# brightness level
+#
+# Author: Piotr Miller
+# e-mail: nwg.piotr@gmail.com
+# Website: https://nwg.pl
+# Project: https://github.com/nwg-piotr/tint2-executors
+# License: GPL3
+#
+# Dependencies: `xbacklight` or `light-git'
+# ----------------------------------------
+# ...
+#**
+
+#* USAGE:
+#*   ${0} [-l]
+#*   Use -l when directly running the script to get the text output.
+#*   However, the main purpose of the script is to be used as a command in the
+#*   tint2 configuration file.
+#**
+
+# Prefer the `light` package, use `xbacklight` if `light` not found.
+if [[ "$(which light)" == *"/light"* ]]; then
+  b="$(light -G)"
+else
+  b="$(xbacklight -get)"
+fi
+
+# Round the float result.
+bri="$(echo "(${b}+0.5)/1" | bc)"
+
+# The paths need to be hardcoded, because tint2 might be run by the Openbox
+# window manager, which does not have the same environment variables as the
+# user's shell.
+if [[ "${bri}" -gt "90" ]]; then
+  echo ~/Dropbox/candy/icons/tint2/bri-full.png
+elif [[ "${bri}" -gt "50" ]]; then
+  echo ~/Dropbox/candy/icons/tint2/bri-high.png
+elif [[ "${bri}" -gt "30" ]]; then
+  echo ~/Dropbox/candy/icons/tint2/bri-medium.png
+else
+  echo ~/Dropbox/candy/icons/tint2/bri-low.png
+fi
+
+if [[ "${1}" = "-l" ]]; then
+  echo "${bri}%"
+fi

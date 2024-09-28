@@ -1,33 +1,70 @@
-#!/usr/bin/env sh
-
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-28 21:49:28 EEST
+# Path: ~/.local/bin/tint2-volume-icon
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Piotr Miller (https://github.com/nwg-piotr), Nathaniel (https://github.com/natemaia)
+# Orig. URL: https://raw.githubusercontent.com/nwg-piotr/tint2-executors/refs/heads/master/volume-icon.sh
+# Orig. URL/File Retrieval: 2020-02-14 00:22:48 EET
+#------------------------------------------------------------------------------
+#*
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
 # This script display an appropriate volume icon according to the volume level
-
+#
 # Authors: Piotr Miller, @natemaia
 # e-mail: nwg.piotr@gmail.com
 # Website: https://nwg.pl
 # Project: https://github.com/nwg-piotr/tint2-executors
 # License: GPL3
-
+#
 # Dependencies: `alsa-utils`
+# ----------------------------------------
+# ...
+#**
 
-if [[ "$(amixer sget Master | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {print $4}')" = "on" ]]; then
+#* USAGE:
+#*   ${0} [-l]
+#*   Use -l when directly running the script to get the text output.
+#*   However, the main purpose of the script is to be used as a command in the
+#*   tint2 configuration file.
+#**
+status="$( \
+  amixer sget Master \
+    | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {print $4}'
+)"
 
-    # search for the lines containing 'Right:' or 'Mono:', when more than 1 field exists
-    # we strip the trailing '%' and round it up with printf "%0.0f" just in case
-    vol=$(amixer sget Master | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {sub(/%/, ""); printf "%0.0f\n", $2}')
+if [[ "$status" = "on" ]]; then
+  # Search for the lines containing 'Right:' or 'Mono:', when more than 1 field
+  # exists we strip the trailing '%' and round it up with printf "%0.0f" just
+  # in case.
+  vol="$( \
+    amixer sget Master \
+      | awk -F'[][]' '
+          /Right:|Mono:/ && NF > 1 {sub(/%/, ""); printf "%0.0f\n", $2}
+        '
+  )"
 
-    if [[ ${vol} -ge 90 ]]; then
-        echo $CANDY/icons/tint2/vol-full.png
-    elif [[ ${vol} -ge 40 ]]; then
-        echo $CANDY/icons/tint2/vol-medium.png
-    elif [[ ${vol} -ge 10 ]]; then
-        echo $CANDY/icons/tint2/vol-low.png
-    else
-        echo $CANDY/icons/tint2/vol-lowest.png
-    fi
-    if  [[ $1 = "-l" ]]; then
-        echo ${vol}%
-    fi
+  # The paths need to be hardcoded, because tint2 might be run by the Openbox
+  # window manager, which does not have the same environment variables as the
+  # user's shell.
+  if [[ "${vol}" -ge 90 ]]; then
+    echo ~/Dropbox/candy/icons/tint2/vol-full.png
+  elif [[ "${vol}" -ge 40 ]]; then
+    echo ~/Dropbox/candy/icons/tint2/vol-medium.png
+  elif [[ "${vol}" -ge 10 ]]; then
+    echo ~/Dropbox/candy/icons/tint2/vol-low.png
+  else
+    echo ~/Dropbox/candy/icons/tint2/vol-lowest.png
+  fi
+
+  if [[ "${1}" = "-l" ]]; then
+    echo "${vol}%"
+  fi
 else
-    echo $CANDY/icons/tint2/vol-muted.png
+  echo ~/Dropbox/candy/icons/tint2/vol-muted.png
 fi

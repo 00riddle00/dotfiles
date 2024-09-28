@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-14 20:02:57 EEST
+# Date:   2024-09-28 17:58:01 EEST
 # Path:   ~/.config/tint2/tint2rc.riddle
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ execp_tooltip       =
 
 # Executor 1
 execp               = new
-execp_command       = tint2-brightness
+execp_command       = tint2-brightness-icon
 execp_interval      = 1
 execp_has_icon      = 1
 execp_cache_icon    = 1

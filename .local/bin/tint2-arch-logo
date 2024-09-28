@@ -1,2 +1,21 @@
-#!/usr/bin/env sh
-echo $CANDY/icons/tint2/arch-icon.png
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 21:47:05 EEST
+# Path:   ~/.local/bin/tint2-arch-logo
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Show a small Arch Linux logo in the tint2 panel.
+#**
+
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather used as a
+#*   command in the tint2 configuration file.
+#**
+
+# The path needs to be hardcoded, because tint2 might be run by the Openbox
+# window manager, which does not have the same environment variables as the
+# user's shell.
+echo ~/Dropbox/candy/icons/tint2/arch-icon.png
