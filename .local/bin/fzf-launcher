@@ -1,14 +1,32 @@
 #!/usr/bin/env bash
+# vim:ft=bash:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-28 17:07:41 EEST
+# Path: ~/.local/bin/fzf-launcher
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Moritz Meißelbach (https://github.com/Biont)
+# Orig. URL: https://raw.githubusercontent.com/Biont/sway-launcher-desktop/refs/heads/master/sway-launcher-desktop.sh
+# Orig. URL/File Retrieval: 2024-09-28 17:02:23 EEST
+#------------------------------------------------------------------------------
+#*
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
 # terminal application launcher for sway, using fzf
 # Based on: https://gitlab.com/FlyingWombat/my-scripts/blob/master/sway-launcher
 # https://gist.github.com/Biont/40ef59652acf3673520c7a03c9f22d2a
 #
-# The script no longer depends on the Sway window manager
-# in any way and can be used with just about any WM.
-#
-# Author: https://gist.github.com/Biont
-# Repo: https://github.com/Biont/sway-launcher-desktop
-# Original name of the script: sway-launcher-desktop.sh
+# This is a TUI-based launcher menu made with bash and the amazing fzf. Despite
+# its name, it does not (read: no longer) depend on the Sway window manager in
+# any way and can be used with just about any WM.
+# ----------------------------------------
+#**
+
+#* USAGE:
+#*   ${0} [QUERY]
+#**
 shopt -s nullglob globstar
 set -o pipefail
 if ! { exec 0>&3; } 1>/dev/null 2>&1; then
@@ -19,6 +37,7 @@ trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
 IFS=$'\n\t'
 DEL=$'\34'
 
+FZF_COMMAND="${FZF_COMMAND:=fzf}"
 TERMINAL_COMMAND="${TERMINAL_COMMAND:="$TERMINAL -e"}"
 GLYPH_COMMAND="${GLYPH_COMMAND-  }"
 GLYPH_DESKTOP="${GLYPH_DESKTOP-  }"
@@ -27,6 +46,9 @@ PROVIDERS_FILE="${PROVIDERS_FILE:=providers.conf}"
 if [[ "${PROVIDERS_FILE#/}" == "${PROVIDERS_FILE}" ]]; then
   # $PROVIDERS_FILE is a relative path, prepend $CONFIG_DIR
   PROVIDERS_FILE="${CONFIG_DIR}/${PROVIDERS_FILE}"
+fi
+if [[ ! -v PREVIEW_WINDOW ]]; then
+    PREVIEW_WINDOW=up:2:noborder
 fi
 
 # Provider config entries are separated by the field separator \034 and have the following structure:
@@ -319,10 +341,10 @@ for PROVIDER_NAME in "${!PROVIDERS[@]}"; do
 done
 
 readarray -t COMMAND_STR <<<$(
-  fzf --ansi +s -x -d '\034' --nth ..3 --with-nth 3 \
+  ${FZF_COMMAND} --ansi +s -x -d '\034' --nth ..3 --with-nth 3 \
     --print-query \
     --preview "$0 describe {2} {1}" \
-    --preview-window=up:2:noborder \
+    --preview-window="${PREVIEW_WINDOW}" \
     --no-multi --cycle \
     --prompt="${GLYPH_PROMPT-# }" \
     --header='' --no-info --margin='1,2' \
