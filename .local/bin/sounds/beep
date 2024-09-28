@@ -1,2 +1,18 @@
-#!/usr/bin/env sh
-mpv $DOTSHARE/sounds/beep.mp3 > /dev/null 2>&1
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 13:44:09 EEST
+# Path:   ~/.local/bin/sounds/beep
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Play a classic beep sound. This is put in a separate script so that it could
+# be referenced as a custom action of the Dunst notification system.
+#**
+
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather by Dunst
+#*   notification system.
+#**
+mpv "${DOTSHARE}/sounds/beep.mp3" > /dev/null 2>&1

@@ -1,4 +1,24 @@
-#!/usr/bin/env sh
-dir="$DOTSHARE/sounds/email-synced"
-sound=$(ls $dir |sort -R | head -1)
-mpv "$dir/$sound" > /dev/null 2>&1
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 13:44:04 EEST
+# Path:   ~/.local/bin/sounds/email-synced
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Play one of the sounds notifying about a synchronized email by offlineimap.
+# This is put in a separate script so that it could be referenced as a custom
+# action of the Dunst notification system.
+#**
+
+#* USAGE:
+#*   The script is not supposed to be run directly, but rather by Dunst
+#*   notification system.
+#**
+sound=$( \
+  find "${DOTSHARE}/sounds/email-synced" -mindepth 1 -type f \
+    | sort -R \
+    | head -1
+)
+mpv "${sound}" &> /dev/null
