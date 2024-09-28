@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 13:06:28 EEST
+# Path:   ~/.local/bin/openbox-reenable-F2-keybinding
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Reenable the F2 keybinding in Openbox after having used it for spreadsheet
+# programs or other applications. The script removes the line <!-- above the F2
+# keybinding's XML block and the line --> below it, effectively uncommenting
+# it.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+nvim -e \
+  -c 'g/<keybind key="F2">/.-1d' \
+  -c 'g/<keybind key="F2">/.+5d' \
+  -c 'wq' \
+"${XDG_CONFIG_HOME}/openbox/rc.xml"
+
+openbox --reconfigure

@@ -2,13 +2,14 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 10:40:53 EEST
+# Date:   2024-09-28 12:31:29 EEST
 # Path:   ~/.local/bin/chrome-max
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Launch 2x scaled Google Chrome for screen sharing while using UHD/4K
-# monitors.
+# monitors. This is put in a separate script so that it can be launched from
+# the fzf-launcher.
 #**
 
 #* USAGE:

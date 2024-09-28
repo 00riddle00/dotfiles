@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:23:41 EEST
+# Date:   2024-09-28 13:06:47 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -821,8 +821,8 @@ alias autostart    '${XDG_CONFIG_HOME}/openbox/autostart'
 alias op.out       'openbox --exit'
 alias theme.matrix '${BIN}/openbox-themes/matrix/enable'
 alias theme.riddle '${BIN}/openbox-themes/riddle/enable'
-alias f2on         'openbox-enable-F2-keybinding'
 alias f2of         'openbox-disable-F2-keybinding'
+alias f2on         'openbox-reenable-F2-keybinding'
 alias reop         'openbox --reconfigure'
 
 #------------------------------------------------------------------------------
