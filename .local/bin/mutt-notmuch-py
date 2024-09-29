@@ -2,7 +2,7 @@
 # vim:tw=88
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-29 20:15:03 EEST
+# Date: 2024-09-29 22:31:56 EEST
 # Path: ~/.local/bin/mutt-notmuch-py
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -44,20 +44,20 @@
 #*   (neo)mutt.
 #**
 from __future__ import print_function
-import os
+
 import hashlib
+import os
 
 try:
     from shlex import quote
 except ImportError:
     from pipes import quote
 
+import readline
 import sys
-
+from collections import defaultdict
 from mailbox import Maildir
 from optparse import OptionParser
-from collections import defaultdict
-import readline
 
 VERSION = "1.3.0"
 
