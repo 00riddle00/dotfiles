@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-21 12:39:17 EEST
+# Date:   2024-09-29 20:12:45 EEST
 # Path:   ~/.config/git/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,10 +16,10 @@
     # Cache for 24 hours
     helper = cache --timeout=86400
 [merge]
-    tool          = nvim -d
+    tool          = nvimdiff
     conflictstyle = diff3
 [diff]
-    tool       = nvim -d
+    tool       = nvimdiff
     colorMoved = default
 [difftool]
     prompt = false
