@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 21:47:05 EEST
+# Date:   2024-09-29 20:15:08 EEST
 # Path:   ~/.local/bin/tint2-arch-logo
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -11,8 +11,11 @@
 #**
 
 #* USAGE:
+#*   ${0}
+#*
 #*   The script is not supposed to be run directly, but rather used as a
-#*   command in the tint2 configuration file.
+#*   command in the tint2 configuration file. If run directly, it will output
+#*   the path to the current Arch Linux logo image.
 #**
 
 # The path needs to be hardcoded, because tint2 might be run by the Openbox

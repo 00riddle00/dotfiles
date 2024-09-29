@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-28 21:49:28 EEST
+# Date: 2024-09-29 20:15:16 EEST
 # Path: ~/.local/bin/tint2-volume-icon
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -28,8 +28,9 @@
 #**
 
 #* USAGE:
-#*   ${0} [-l]
-#*   Use -l when directly running the script to get the text output.
+#*   ${0} [--text]
+#*
+#*   Use --text when directly running the script to get the text output.
 #*   However, the main purpose of the script is to be used as a command in the
 #*   tint2 configuration file.
 #**
@@ -62,7 +63,7 @@ if [[ "$status" = "on" ]]; then
     echo ~/Dropbox/candy/icons/tint2/vol-lowest.png
   fi
 
-  if [[ "${1}" = "-l" ]]; then
+  if [[ "${1}" = "--text" ]]; then
     echo "${vol}%"
   fi
 else
