@@ -11,41 +11,48 @@ AUDIO_MED_SYMBOL=' '
 AUDIO_LOW_THRESH=30
 AUDIO_LOW_SYMBOL=' '
 
-AUDIO_ZERO_THRESH=0
 AUDIO_ZERO_SYMBOL=' '
 
 AUDIO_MUTED_SYMBOL=' '
 
 FORMAT_NORMAL='${SYMB} ${VOL}%'
+FORMAT_ZERO='${SYMB}'
 FORMAT_MUTED='${SYMB}'
 
 SUBSCRIBE=1
-
-MIXER="default"
-if amixer -D pulse info >/dev/null 2>&1 ; then
-    MIXER="pulse"
-fi
 
 function print_format {
     echo "$1" | envsubst '${SYMB}${VOL}'
 }
 
 function print_block {
-    ACTIVE=$(pacmd list-sinks | grep "state\: RUNNING" -B4 -A7 | grep "index:\|name:\|volume: front\|muted:")
-    [ -z "$ACTIVE" ] && ACTIVE=$(pacmd list-sinks | grep "index:\|name:\|volume: front\|muted:" | grep -A3 '*')
-    for name in INDEX NAME VOL MUTED; do
-        read $name
-    done < <(echo "$ACTIVE")
+    # Capture the active sink information, now including Sink # (index)
+    ACTIVE=$(pactl list sinks | grep -B4 -A10 "State: RUNNING" | grep "Sink #\|State\|Name\|Mute:")
+    
+    if [[ -z "$ACTIVE" ]]; then
+        # If no active sink, capture default sink (indicated by '*')
+        ACTIVE=$(pactl list sinks | grep -B4 -A10 "Sink #" | grep "Sink #\|State\|Name\|Mute:" | head -n 10)
+    fi
 
-    VOL=$(echo "$VOL" | grep -o "[0-9]*%" | head -1 )
+    # Extract the index, mute status, and volume information
+    INDEX=$(echo "$ACTIVE" | grep -oP "(?<=Sink #)\d+")
+    MUTED=$(echo "$ACTIVE" | grep "Mute:" | awk '{print $2}')
+    
+    # Fetch the volume using 'pactl get-sink-volume'
+    VOL=$(pactl get-sink-volume "$INDEX" | grep -oP "\d+%" | head -1)
     VOL="${VOL%?}"
 
-    if [[ $MUTED =~ "no" ]] ; then
-        SYMB=$AUDIO_HIGH_SYMBOL
-        FORMAT=$FORMAT_NORMAL
-        [[ $VOL -le $AUDIO_MED_THRESH ]] && SYMB=$AUDIO_MED_SYMBOL
-        [[ $VOL -le $AUDIO_LOW_THRESH ]] && SYMB=$AUDIO_LOW_SYMBOL
-        [[ $VOL -eq $AUDIO_ZERO_THRESH ]] && SYMB=$AUDIO_ZERO_SYMBOL
+    if [[ $MUTED == "no" ]]; then
+        if [[ $VOL -eq $AUDIO_ZERO_THRESH ]]; then
+            # Use the zero volume format (only symbol, no percentage)
+            SYMB=$AUDIO_ZERO_SYMBOL
+            FORMAT=$FORMAT_ZERO
+        else
+            SYMB=$AUDIO_HIGH_SYMBOL
+            FORMAT=$FORMAT_NORMAL
+            [[ $VOL -le $AUDIO_MED_THRESH ]] && SYMB=$AUDIO_MED_SYMBOL
+            [[ $VOL -le $AUDIO_LOW_THRESH ]] && SYMB=$AUDIO_LOW_SYMBOL
+        fi
     else
         SYMB=$AUDIO_MUTED_SYMBOL
         FORMAT=$FORMAT_MUTED
