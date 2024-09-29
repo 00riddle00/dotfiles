@@ -1,44 +1,76 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-29 21:58:54 EEST
+# Path:   ~/.local/bin/i3blocks/wifi
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Shows the Wi-Fi signal strength. On click, updates the information (although
+# it also updates the info at regular intervals). It also shows the the ESSID
+# of the connected network on click.
+#**
 
-INTERFACE="$(basename -a /sys/class/net/wlp*)"
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
+interface="$(basename -a /sys/class/net/wlp*)"
 #------------------------------------------------------------------------
-if [[ -z "$INTERFACE" ]] ; then
-    INTERFACE="${BLOCK_INSTANCE:-wlan0}"
+if [[ -z "${interface}" ]]; then
+  # The ${BLOCK_INSTANCE} value comes from the i3blocks config file.
+  interface="${BLOCK_INSTANCE:-wlan0}"
 fi
 #------------------------------------------------------------------------
 
-case $BLOCK_BUTTON in
-    1|2|3) essid=$(iwconfig $INTERFACE 2> /dev/null | awk -F\" '{print $2}'); pgrep -x dunst >/dev/null && notify-send "$essid"
+# The ${BLOCK_BUTTON} value is set by i3blocks, its values correspond to these
+# mouse actions:
+#   1 - left click
+#   2 - middle click
+#   3 - right click
+case "${BLOCK_BUTTON}" in
+  1|2|3)
+    essid=$(iwconfig "${interface}" 2> /dev/null | awk -F\" '{print $2}')
+    pgrep -x dunst >/dev/null && notify-send "${essid}"
+    ;;
 esac
 
-# As per #36 -- It is transparent: e.g. if the machine has no battery or wireless
-# connection (think desktop), the corresponding block should not be displayed.
-[[ ! -d /sys/class/net/${INTERFACE}/wireless ]] && exit
+# As per #36 -- It is transparent: e.g. if the machine has no battery or
+# wireless connection (think desktop), the corresponding block should not be
+# displayed.
+[[ ! -d "/sys/class/net/${interface}/wireless" ]] && exit
 
-# If the wifi interface exists but no connection is active, "down" shall be displayed.
-if [[ "$(cat /sys/class/net/$INTERFACE/operstate)" = 'down' ]]; then
-    echo ""
-    echo ""
-    echo "#81C784"
-    exit
+# If the wifi interface exists but no connection is active, "down" shall be
+# displayed.
+if [[ "$(cat "/sys/class/net/${interface}/operstate")" = 'down' ]]; then
+  echo ""
+  echo ""
+  echo "#81C784"
+  exit
 fi
 
 #------------------------------------------------------------------------
 
-QUALITY=$(grep $INTERFACE /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
+quality=$( \
+  grep "${interface}" /proc/net/wireless \
+    | awk '{ print int($3 * 100 / 70) }'
+)
 
 #------------------------------------------------------------------------
 
-echo $QUALITY% # full text
-echo $QUALITY% # short text
+echo "${quality}%" # full text
+echo "${quality}%" # short text
 
 # color
-if [[ $QUALITY -ge 80 ]]; then
-    echo "#81C784"
-elif [[ $QUALITY -ge 60 ]]; then
-    echo "#FFF600"
-elif [[ $QUALITY -ge 40 ]]; then
-    echo "#FFAE00"
+if [[ "${quality}" -ge 80 ]]; then
+  echo "#81C784"
+elif [[ "${quality}" -ge 60 ]]; then
+  echo "#FFF600"
+elif [[ "${quality}" -ge 40 ]]; then
+  echo "#FFAE00"
 else
-    echo "#FF0000"
+  echo "#FF0000"
 fi

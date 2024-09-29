@@ -1,7 +1,23 @@
 #!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+# shellcheck disable=SC2016,SC2034
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-29 21:12:42 EEST
+# Path:   ~/.local/bin/i3blocks/volume
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Show the current volume level (or muted status) of the active audio sink.
+#**
 
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
 set -a
-
 
 AUDIO_HIGH_SYMBOL=' '
 
@@ -15,60 +31,70 @@ AUDIO_ZERO_SYMBOL=' '
 
 AUDIO_MUTED_SYMBOL=' '
 
-FORMAT_NORMAL='${SYMB} ${VOL}%'
-FORMAT_ZERO='${SYMB}'
-FORMAT_MUTED='${SYMB}'
+FORMAT_NORMAL='${symb} ${vol}%'
+FORMAT_ZERO='${symb}'
+FORMAT_MUTED='${symb}'
 
 SUBSCRIBE=1
 
 function print_format {
-    echo "$1" | envsubst '${SYMB}${VOL}'
+  echo "${1}" | envsubst '${symb}${vol}'
 }
 
 function print_block {
-    # Capture the active sink information, now including Sink # (index)
-    ACTIVE=$(pactl list sinks | grep -B4 -A10 "State: RUNNING" | grep "Sink #\|State\|Name\|Mute:")
-    
-    if [[ -z "$ACTIVE" ]]; then
-        # If no active sink, capture default sink (indicated by '*')
-        ACTIVE=$(pactl list sinks | grep -B4 -A10 "Sink #" | grep "Sink #\|State\|Name\|Mute:" | head -n 10)
-    fi
+  # Capture the active sink information, now including Sink # (index).
+  active=$( \
+    pactl list sinks \
+      | grep -B4 -A10 "State: RUNNING" \
+      | grep "Sink #\|State\|Name\|Mute:"
+    )
+  
+  if [[ -z "${active}" ]]; then
+    # If no active sink, capture default sink (indicated by '*').
+    active=$( \
+      pactl list sinks \
+        | grep -B4 -A10 "Sink #" \
+        | grep "Sink #\|State\|Name\|Mute:" \
+        | head -n 10
+      )
+  fi
 
-    # Extract the index, mute status, and volume information
-    INDEX=$(echo "$ACTIVE" | grep -oP "(?<=Sink #)\d+")
-    MUTED=$(echo "$ACTIVE" | grep "Mute:" | awk '{print $2}')
-    
-    # Fetch the volume using 'pactl get-sink-volume'
-    VOL=$(pactl get-sink-volume "$INDEX" | grep -oP "\d+%" | head -1)
-    VOL="${VOL%?}"
+  # Extract the index, mute status, and volume information.
+  index="$(echo "${active}" | grep -oP "(?<=Sink #)\d+")"
+  muted="$(echo "${active}" | grep "Mute:" | awk '{print $2}')"
+  
+  # Fetch the volume using 'pactl get-sink-volume'.
+  vol="$(pactl get-sink-volume "${index}" | grep -oP "\d+%" | head -1)"
+  vol="${vol%?}"
 
-    if [[ $MUTED == "no" ]]; then
-        if [[ $VOL -eq $AUDIO_ZERO_THRESH ]]; then
-            # Use the zero volume format (only symbol, no percentage)
-            SYMB=$AUDIO_ZERO_SYMBOL
-            FORMAT=$FORMAT_ZERO
-        else
-            SYMB=$AUDIO_HIGH_SYMBOL
-            FORMAT=$FORMAT_NORMAL
-            [[ $VOL -le $AUDIO_MED_THRESH ]] && SYMB=$AUDIO_MED_SYMBOL
-            [[ $VOL -le $AUDIO_LOW_THRESH ]] && SYMB=$AUDIO_LOW_SYMBOL
-        fi
+  if [[ "${muted}" == "no" ]]; then
+    if [[ "${vol}" -eq ${AUDIO_ZERO_THRESH} ]]; then
+      # Use the zero volume format (only symbol, no percentage).
+      symb=${AUDIO_ZERO_SYMBOL}
+      format=${FORMAT_ZERO}
     else
-        SYMB=$AUDIO_MUTED_SYMBOL
-        FORMAT=$FORMAT_MUTED
+      symb=${AUDIO_HIGH_SYMBOL}
+      format=${FORMAT_NORMAL}
+      [[ "${vol}" -le ${AUDIO_MED_THRESH} ]] && symb=${AUDIO_MED_SYMBOL}
+      [[ "${vol}" -le ${AUDIO_LOW_THRESH} ]] && symb=${AUDIO_LOW_SYMBOL}
     fi
+  else
+    symb=${AUDIO_MUTED_SYMBOL}
+    format=${FORMAT_MUTED}
+  fi
 
-    if [[ $SUBSCRIBE == 1 ]] ; then
-        print_format "$FORMAT"
-    else
-        print_format "$FORMAT"
-        echo "$COLOR"
-    fi
+  if [[ "${SUBSCRIBE}" == 1 ]] ; then
+    print_format "${format}"
+  else
+    print_format "${format}"
+    # COLOR variable comes from the i3blocks config file (?)
+    echo "${COLOR}"
+  fi
 }
 
 print_block
-if [[ $SUBSCRIBE == 1 ]] ; then
-    while read -r EVENT; do
-        print_block
-    done < <(pactl subscribe | stdbuf -oL grep change)
+if [[ "${SUBSCRIBE}" == 1 ]] ; then
+  while read -r _; do
+    print_block
+  done < <(pactl subscribe | stdbuf -oL grep change)
 fi

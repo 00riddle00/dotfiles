@@ -2,12 +2,13 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 18:29:20 EEST
+# Date:   2024-09-29 21:22:38 EEST
 # Path:   ~/.local/bin/i3blocks/weather
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# ...
+# Show current weather: low and high temperatures. When clicked, show full
+# weather report in a terminal window. Right click to close it.
 #**
 
 #* USAGE:
@@ -18,24 +19,31 @@
 #**
 title="i3blocks_weather"
 
-case "$BLOCK_BUTTON" in
-  1)  getforecast && showweather;
-      i3-msg -q "exec --no-startup-id urxvt -name $title -hold -e curl wttr.in/Vilnius" ;;
-  3) pid=$(ps aux | grep "urxvt \-name $title" | awk '{print $2}');
-     kill -9 $pid;
+# The ${BLOCK_BUTTON} value is set by i3blocks, its values correspond to these
+# mouse actions:
+#   1 - left click
+#   2 - middle click
+#   3 - right click
+case "${BLOCK_BUTTON}" in
+  1)
+    getforecast && showweather;
+    i3-msg -q "exec --no-startup-id \
+      urxvt -name \"${title}\" -hold -e curl wttr.in/Vilnius" ;;
+  3)
+    pid=$(pgrep -f "urxvt -name ${title}");
+    kill -9 "${pid}" ;;
 esac
 
 getforecast() {
-    ping -q -c 1 8.8.8.8 >/dev/null || exit 1
-    curl -s "wttr.in/Vilnius" > "$HOME/.local/share/weatherreport" || exit 1;
+  ping -q -c 1 8.8.8.8 >/dev/null || exit 1
+  curl -s "wttr.in/Vilnius" > "${XDG_DATA_HOME}/weatherreport" || exit 1;
 }
 
 showweather() {
-    sed '4q;d' "$HOME/.local/share/weatherreport" |
-    grep -o "m\\([-+]\\)*[0-9]\\+" |
-    sed -e 1b -e '$!d' | tr '\n|m' ' ' |
-    awk '{print $1 "°" ".." $2 "°"}'
+  sed '4q;d' "${XDG_DATA_HOME}/weatherreport" |
+  grep -o "m\\([-+]\\)*[0-9]\\+" |
+  sed -e 1b -e '$!d' | tr '\n|m' ' ' |
+  awk '{print $1 "°" ".." $2 "°"}'
 }
 
 getforecast && showweather
-
