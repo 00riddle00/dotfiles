@@ -1,7 +1,7 @@
-# vim:tw=79:sw=2:ts=2:sts=2:et
+# vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 13:06:47 EEST
+# Date:   2024-09-29 20:14:03 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -622,7 +622,9 @@ alias dsua  'dot add -u .'
 alias dsc   'dot commit'
 alias dsco  'dot commit --only'
 alias dsd   'dot diff'
+alias dsde  'PAGER=delta dot diff'
 alias dsdc  'dot diff --staged'
+alias dsdce 'PAGER=delta dot diff --staged'
 alias dsg   'dot lg'
 alias dsl   'dot pull'
 alias dsp   'dot push'
