@@ -1,11 +1,30 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-29 18:56:48 EEST
+# Path:   ~/.local/bin/i3blocks/arch-update
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Show the number of available updates in the Arch Linux system. When clicked,
+# show the list of packages that can be updated.
+#**
 
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
 strip_ansi() {
-    sed -r 's/\x1b\[[0-9;]*m//g'
+  sed -r 's/\x1b\[[0-9;]*m//g'
 }
 
-case $BLOCK_BUTTON in
-    1|2|3) msg="$(checkupdates | strip_ansi | sed 's/ .*//')"; pgrep -x dunst >/dev/null && notify-send "$msg" > /dev/null 2>&1
+case ${BLOCK_BUTTON} in
+  1|2|3)
+    msg="$(checkupdates | strip_ansi | sed 's/ .*//')"
+    pgrep -x dunst >/dev/null && notify-send "${msg}" > /dev/null
 esac
 
 checkupdates | wc -l

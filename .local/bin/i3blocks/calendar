@@ -1,10 +1,27 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-29 19:56:51 EEST
+# Path:   ~/.local/bin/i3blocks/calendar
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Show current date and open calendar on left click. Close calendar on right
+# click.
+#**
 
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
 title="i3blocks_calendar"
 
-case "$BLOCK_BUTTON" in
-  1) i3-msg -q "exec --no-startup-id urxvt -name $title -hold -e cal -m" ;;
-  3) pid=$(ps aux | grep "urxvt \-name $title" | awk '{print $2}'); kill -9 $pid;
+case "${BLOCK_BUTTON}" in
+  1) i3-msg -q "exec --no-startup-id urxvt -name ${title} -hold -e cal -m" ;;
+  3) pid=$(pgrep -f "urxvt -name ${title}"); kill -9 "${pid}";
 esac
 
 date '+%A %e'

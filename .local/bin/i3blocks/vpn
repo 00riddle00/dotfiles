@@ -1,7 +1,26 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-29 20:08:25 EEST
+# Path:   ~/.local/bin/i3blocks/vpn
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Show public IP and country as seen by the external network. If a VPN is
+# connected, show the IP and country assigned by the VPN.
+#**
 
-case $BLOCK_BUTTON in
-    1|2|3) vpn_info=$(curl -s ipinfo.io | jq -r '.ip, .country' | tr '\n' ' '); pgrep -x dunst >/dev/null && notify-send "$vpn_info⚐" > /dev/null 2>&1
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
+case ${BLOCK_BUTTON} in
+  1|2|3)
+    vpn_info=$(curl -s ipinfo.io | jq -r '.ip, .country' | tr '\n' ' ')
+    pgrep -x dunst >/dev/null && notify-send "${vpn_info}" > /dev/null 2>&1
 esac
 
 echo "vpn"
