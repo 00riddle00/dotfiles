@@ -2,13 +2,15 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 21:22:38 EEST
+# Date:   2024-09-30 10:53:57 EEST
 # Path:   ~/.local/bin/i3blocks/weather
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # Show current weather: low and high temperatures. When clicked, show full
 # weather report in a terminal window. Right click to close it.
+#
+# Kudos to Luke Smith (https://github.com/lukesmithxyz).
 #**
 
 #* USAGE:
@@ -28,7 +30,7 @@ case "${BLOCK_BUTTON}" in
   1)
     getforecast && showweather;
     i3-msg -q "exec --no-startup-id \
-      urxvt -name \"${title}\" -hold -e curl wttr.in/Vilnius" ;;
+      urxvt -name \"${title}\" -hold -e curl wttr.in" ;;
   3)
     pid=$(pgrep -f "urxvt -name ${title}");
     kill -9 "${pid}" ;;
@@ -36,7 +38,7 @@ esac
 
 getforecast() {
   ping -q -c 1 8.8.8.8 >/dev/null || exit 1
-  curl -s "wttr.in/Vilnius" > "${XDG_DATA_HOME}/weatherreport" || exit 1;
+  curl -s "wttr.in" > "${XDG_DATA_HOME}/weatherreport" || exit 1;
 }
 
 showweather() {
