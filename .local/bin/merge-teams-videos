@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-10-01 07:58:02 EEST
+# Path:   ~/.local/bin/merge-teams-videos
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Longer lecture video is always split into two parts by Microsoft Teams. This
+# script merges them into a single file, keeping the original date in the file
+# name. File names are in the format: Python...20240930_123456-....mp4.
+#
+#**
+
+#* USAGE:
+#*   ${0}
+#*
+#* The script needs to be run in the directory where the two video files are
+#* located. The first video file will always be lexicographically smaller than
+#* the second one.
+#**
+files=("${PWD}"/Python*.mp4)
+file1="${files[0]}"
+file2="${files[1]}"
+
+_date=$(basename "${file1}" | grep -oP '20\d{6}')
+iso_date="${_date:0:4}-${_date:4:2}-${_date:6:2}"
+
+# The placeholder number 999 will need to be replaced with the actual lecture
+# number, NAME - with the actual lecture name.
+merged_file="${PWD}/999_Python_${iso_date}_NAME.mp4"
+
+ffmpeg \
+    -loglevel info \
+    -f concat \
+    -safe 0 \
+    -i <(
+        echo "file '${file1}'"
+        echo "file '${file2}'"
+    ) \
+    -c copy "${merged_file}"
