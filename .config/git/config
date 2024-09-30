@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 20:12:45 EEST
+# Date:   2024-09-30 15:54:57 EEST
 # Path:   ~/.config/git/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -8,7 +8,7 @@
 [user]
     email      = tomasgiedraitis@gmail.com
     name       = Tomas Giedraitis
-	signingkey = CD0549B10F810F8F
+    signingkey = CD0549B10F810F8F
 [core]
     #pager = delta
     editor = nvim

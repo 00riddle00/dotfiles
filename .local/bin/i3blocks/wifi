@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-30 12:20:03 EEST
+# Date: 2024-09-30 15:55:50 EEST
 # Path: ~/.local/bin/i3blocks/wifi
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 # Shows the Wi-Fi signal strength. On click, updates the information (although
 # it also updates the info at regular intervals). It also shows the the ESSID
 # of the connected network on click.
-# 
+#
 # ----------------------------------------
 # Description by the author:
 # ----------------------------------------
