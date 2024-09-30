@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 10:47:42 EEST
+# Date:   2024-09-30 10:12:24 EEST
 # Path:   ~/.local/bin/i3-win-resize
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -35,5 +35,5 @@ resize_window() {
     down) resize_window shrink up grow down ;;
     left) resize_window shrink right grow left ;;
     right) resize_window grow right shrink left ;;
-  esac 
+  esac
 } > /dev/null 2>&1

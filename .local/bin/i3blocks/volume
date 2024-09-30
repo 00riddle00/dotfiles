@@ -3,7 +3,7 @@
 # shellcheck disable=SC2016,SC2034
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 21:12:42 EEST
+# Date:   2024-09-30 10:14:09 EEST
 # Path:   ~/.local/bin/i3blocks/volume
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ function print_block {
       | grep -B4 -A10 "State: RUNNING" \
       | grep "Sink #\|State\|Name\|Mute:"
     )
-  
+
   if [[ -z "${active}" ]]; then
     # If no active sink, capture default sink (indicated by '*').
     active=$( \
@@ -62,7 +62,7 @@ function print_block {
   # Extract the index, mute status, and volume information.
   index="$(echo "${active}" | grep -oP "(?<=Sink #)\d+")"
   muted="$(echo "${active}" | grep "Mute:" | awk '{print $2}')"
-  
+
   # Fetch the volume using 'pactl get-sink-volume'.
   vol="$(pactl get-sink-volume "${index}" | grep -oP "\d+%" | head -1)"
   vol="${vol%?}"
