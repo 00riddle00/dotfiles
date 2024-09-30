@@ -1,13 +1,33 @@
 #!/usr/bin/perl
 # vim:tw=80
 #------------------------------------------------------------------------------
-# Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-30 10:07:11 EEST
-# Path:   ~/.local/bin/i3blocks/battery
-# URL:    https://github.com/00riddle00/dotfiles
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-30 11:40:44 EEST
+# Path: ~/.local/bin/i3blocks/battery
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Pierre Mavro (https://github.com/deimosfr), Vivien Didelot (https://github.com/vivien)
+# Orig. URL: https://raw.githubusercontent.com/vivien/i3blocks-contrib/refs/heads/master/battery/battery
+# Orig. URL/File Retrieval: 2024-09-30 11:19:54 EEST
 #------------------------------------------------------------------------------
 #*
 # Show battery status, with colors based on charge level.
+#
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
+# Copyright 2014 Pierre Mavro <deimos@deimos.fr>
+# Copyright 2014 Vivien Didelot <vivien@didelot.org>
+#
+# Licensed under the terms of the GNU GPL v3, or any later version.
+#
+# This script is meant to use with i3blocks. It parses the output of the "acpi"
+# command (often provided by a package of the same name) to read the status of
+# the battery, and eventually its remaining time (to full charge or discharge).
+#
+# The color will gradually change for a percentage below 85%, and the urgency
+# (exit code 33) is set if there is less that 5% remaining.
+#------------------------------------------------------------------------------
 #**
 
 #* USAGE:
@@ -20,10 +40,14 @@ use strict;
 use warnings;
 use utf8;
 
+binmode(STDOUT, ":utf8");
+
 my $acpi;
 my $status;
 my $percent;
-my $text;
+my $ac_adapt;
+my $full_text;
+my $short_text;
 my $label;
 # This value comes from the i3blocks config file.
 my $bat_number = $ENV{BAT_NUMBER} || 0;
@@ -58,14 +82,40 @@ if ($percent < 15) {
     $label = "";
 }
 
-$text = "${label}  ${percent}%";
+$full_text = "${label}  ${percent}%";
+$short_text = $full_text;
 
-# print text
-print "${text}\n";
-print "${text}\n"; # to get colored output
+if ($status eq 'Discharging') {
+    $full_text .= ' DIS';
+} elsif ($status eq 'Charging') {
+    $full_text .= ' CHR';
+} elsif ($status eq 'Unknown') {
+    open (AC_ADAPTER, "acpi -a |") or die;
+    $ac_adapt = <AC_ADAPTER>;
+    close(AC_ADAPTER);
+
+    if ($ac_adapt =~ /: ([\w-]+)/) {
+        $ac_adapt = $1;
+
+        if ($ac_adapt eq 'on-line') {
+            $full_text .= ' CHR';
+        } elsif ($ac_adapt eq 'off-line') {
+            $full_text .= ' DIS';
+        }
+    }
+}
+
+if ($acpi =~ /(\d\d:\d\d):/) {
+    $full_text .= " ($1)";
+}
+
+# Print text.
+#print "${full_text}\n";
+print "${short_text}\n";
 
 # Consider color and urgent flag only on discharge.
 if ($status eq 'Discharging') {
+
     if ($percent < 25) {
         print "#EF6191\n";
     } elsif ($percent < 40) {
@@ -73,7 +123,7 @@ if ($status eq 'Discharging') {
     } elsif ($percent < 60) {
         print "#B967C7\n";
     } else {
-        print "#06989a\n";
+        print "#06989A\n";
     }
 
     if ($percent < 15) {
