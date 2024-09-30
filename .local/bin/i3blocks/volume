@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
-# shellcheck disable=SC2016,SC2034
+# shellcheck disable=SC2016
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-30 14:43:50 EEST
+# Date: 2024-09-30 15:53:03 EEST
 # Path: ~/.local/bin/i3blocks/volume
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 #------------------------------------------------------------------------------
 #*
 # Show the current volume level (or muted status) of the active audio sink.
-# 
+#
 # ----------------------------------------
 # Description by the author:
 # ----------------------------------------
@@ -30,152 +30,181 @@
 #**
 set -a
 
-AUDIO_HIGH_SYMBOL=${AUDIO_HIGH_SYMBOL:-' '}
-
-AUDIO_MED_THRESH=${AUDIO_MED_THRESH:-60}
-AUDIO_MED_SYMBOL=${AUDIO_MED_SYMBOL:-' '}
-
-AUDIO_LOW_THRESH=${AUDIO_LOW_THRESH:-30}
-AUDIO_LOW_SYMBOL=${AUDIO_LOW_SYMBOL:-' '}
-
-AUDIO_ZERO_SYMBOL=${AUDIO_ZERO_SYMBOL:-''}
-
-AUDIO_MUTED_SYMBOL=${AUDIO_MUTED_SYMBOL:-''}
+AUDIO_HIGH_SYMBOL="${AUDIO_HIGH_SYMBOL:- }"
+AUDIO_MED_THRESH="${AUDIO_MED_THRESH:-60}"
+AUDIO_MED_SYMBOL="${AUDIO_MED_SYMBOL:- }"
+AUDIO_LOW_THRESH="${AUDIO_LOW_THRESH:-30}"
+AUDIO_LOW_SYMBOL="${AUDIO_LOW_SYMBOL:- }"
+AUDIO_ZERO_SYMBOL="${AUDIO_ZERO_SYMBOL:-}"
+AUDIO_MUTED_SYMBOL="${AUDIO_MUTED_SYMBOL:-}"
 
 # Interval size of volume increase/decrease.
-AUDIO_DELTA=${AUDIO_DELTA:-5}
+AUDIO_DELTA="${AUDIO_DELTA:-5}"
 
-DEFAULT_COLOR=${DEFAULT_COLOR:-"#ffffff"}
-MUTED_COLOR=${MUTED_COLOR:-"#a0a0a0"}
+DEFAULT_COLOR="${DEFAULT_COLOR:-"#ffffff"}"
+MUTED_COLOR="${MUTED_COLOR:-"#a0a0a0"}"
 
-LONG_FORMAT=${LONG_FORMAT:-'${SYMB} ${VOL}% [${INDEX}:${NAME}]'}
-SHORT_FORMAT=${SHORT_FORMAT:-'${SYMB} ${VOL}% [${INDEX}]'}
+LONG_FORMAT="${LONG_FORMAT:-'${SYMB} ${VOL}% [${INDEX}:${NAME}]'}"
+SHORT_FORMAT="${SHORT_FORMAT:-'${SYMB} ${VOL}% [${INDEX}]'}"
 # Custom format, an addition to this script:
 CUSTOM_FORMAT=''
 
 # Use ALSA name if possible.
-USE_ALSA_NAME=${USE_ALSA_NAME:-0}
+USE_ALSA_NAME="${USE_ALSA_NAME:-0}"
 # Use device description instead of name if possible.
-USE_DESCRIPTION=${USE_DESCRIPTION:-0}
+USE_DESCRIPTION="${USE_DESCRIPTION:-0}"
 
 # Subscribe to volume events (requires persistent block, always uses long
 # format).
-SUBSCRIBE=${SUBSCRIBE:-1}
+SUBSCRIBE="${SUBSCRIBE:-1}"
 
 # Use the given mixer.
-MIXER=${MIXER:-""}
+MIXER="${MIXER:-""}"
 # Use the given scontrol.
-SCONTROL=${SCONTROL:-""}
+SCONTROL="${SCONTROL:-""}"
 
-if [[ -z "$MIXER" ]] ; then
-    MIXER="default"
-    if amixer -D pulse info >/dev/null 2>&1 ; then
-        MIXER="pulse"
-    fi
+if [[ -z "${MIXER}" ]] ; then
+  MIXER="default"
+  if amixer -D pulse info >/dev/null 2>&1 ; then
+    MIXER="pulse"
+  fi
 fi
 
-if [[ -z "$SCONTROL" ]] ; then
-    SCONTROL=$(amixer -D "$MIXER" scontrols | sed -n "s/Simple mixer control '\([^']*\)',0/\1/p" | head -n1)
+if [[ -z "${SCONTROL}" ]] ; then
+  SCONTROL=$( \
+    amixer -D "${MIXER}" scontrols \
+      | sed -n "s/Simple mixer control '\([^']*\)',0/\1/p" \
+      | head -n1
+  )
 fi
 
-CAPABILITY=$(amixer -D $MIXER get $SCONTROL | sed -n "s/  Capabilities:.*cvolume.*/Capture/p")
-
+CAPABILITY=$( \
+  amixer -D "${MIXER}" get "${SCONTROL}" \
+    | sed -n "s/  Capabilities:.*cvolume.*/Capture/p"
+  )
 
 function move_sinks_to_new_default {
-    DEFAULT_SINK=$1
-    pactl list sink-inputs | grep 'Sink Input #' | grep -o '[0-9]\+' | while read SINK
-    do
-        pactl move-sink-input $SINK $DEFAULT_SINK
-    done
+  DEFAULT_SINK="${1}"
+  pactl list sink-inputs | grep 'Sink Input #' | grep -o '[0-9]\+' \
+    | while read -r SINK; do
+        pactl move-sink-input "${SINK}" "${DEFAULT_SINK}"
+      done
 }
 
 function set_default_playback_device_next {
-    inc=${1:-1}
-    num_devices=$(pactl list sinks | grep -c Name:)
-    sink_arr=($(pactl list sinks | grep Name: | sed -r 's/\s+Name: (.+)/\1/'))
-    default_sink=$(pactl get-default-sink)
-    default_sink_index=$(for i in "${!sink_arr[@]}"; do if [[ "$default_sink" = "${sink_arr[$i]}" ]]; then echo "$i"; fi done)
-    default_sink_index=$(( ($default_sink_index + $num_devices + $inc) % $num_devices ))
-    default_sink=${sink_arr[$default_sink_index]}
-    pactl set-default-sink $default_sink
-    move_sinks_to_new_default $default_sink
+  inc="${1:-1}"
+  num_devices=$(pactl list sinks | grep -c Name:)
+  mapfile -t sink_arr < \
+    <(pactl list sinks | grep Name: | sed -r 's/\s+Name: (.+)/\1/')
+  default_sink=$(pactl get-default-sink)
+
+  default_sink_index=$(
+    for i in "${!sink_arr[@]}"; do
+      if [[ "${default_sink}" = "${sink_arr[${i}]}" ]]; then
+        echo "${i}"
+      fi
+    done
+  )
+
+  default_sink_index=$((
+    (default_sink_index + num_devices + inc) % num_devices
+  ))
+  default_sink="${sink_arr[${default_sink_index}]}"
+  pactl set-default-sink "${default_sink}"
+  move_sinks_to_new_default "${default_sink}"
 }
 
-case "$BLOCK_BUTTON" in
-    1) set_default_playback_device_next ;;
-    2) amixer -q -D $MIXER sset $SCONTROL $CAPABILITY toggle ;;
-    3) set_default_playback_device_next -1 ;;
-    4) amixer -q -D $MIXER sset $SCONTROL $CAPABILITY $AUDIO_DELTA%+ ;;
-    5) amixer -q -D $MIXER sset $SCONTROL $CAPABILITY $AUDIO_DELTA%- ;;
+case "${BLOCK_BUTTON}" in
+  1) set_default_playback_device_next ;;
+  2) amixer -q -D "${MIXER}" sset "${SCONTROL}" "${CAPABILITY}" toggle ;;
+  3) set_default_playback_device_next -1 ;;
+  4) amixer -q -D \
+    "${MIXER}" sset "${SCONTROL}" "${CAPABILITY}" "${AUDIO_DELTA}"%+ ;;
+  5) amixer -q -D \
+    "${MIXER}" sset "${SCONTROL}" "${CAPABILITY}" "${AUDIO_DELTA}"%- ;;
+
 esac
 
 function print_format {
-    echo "$1" | envsubst '${SYMB}${VOL}${INDEX}${NAME}'
+  echo "${1}" | envsubst '${SYMB}${VOL}${INDEX}${NAME}'
 }
 
 function print_block {
-    ACTIVE="$(pactl list sinks  | grep "State: RUNNING" -B4 -A55)"
-    if [[ $ACTIVE = "" ]] ; then
-        ACTIVE="$(pactl list sinks | grep "$(pactl get-default-sink)" -B4 -A55)"
-    fi
-    ACTIVE="$(echo "$ACTIVE" | grep "Name:\|Volume: \(front-left\|mono\)\|Mute:\|api.alsa.pcm.card = \|node.nick = ")"
-    for Name in NAME MUTED VOL INDEX NICK; do
-        read $Name
-    done < <(echo "$ACTIVE")
-    INDEX=$(echo "$INDEX"  | grep -o '".*"' | sed 's/"//g')
-    VOL=$(echo "$VOL" | grep -o "[0-9]*%" | head -1 )
-    VOL="${VOL%?}"
-    NAME=$(echo "$NICK" | grep -o '".*"' | sed 's/"//g')
+  ACTIVE="$(pactl list sinks | grep "State: RUNNING" -B4 -A55)"
+  if [[ -z "${ACTIVE}" ]] ; then
+    ACTIVE="$(pactl list sinks | grep "$(pactl get-default-sink)" -B4 -A55)"
+  fi
+  ACTIVE="$( \
+    echo "${ACTIVE}" \
+      | grep "Name:\|Volume: \(front-left\|mono\)\|Mute:\|api.alsa.pcm.card = \|node.nick = "
+  )"
+  # shellcheck disable=SC2229
+  for Name in NAME MUTED VOL INDEX NICK; do
+    read -r ${Name}
+  done < <(echo "${ACTIVE}")
+  INDEX=$(echo "${INDEX}" | grep -o '".*"' | sed 's/"//g')
+  VOL=$(echo "${VOL}" | grep -o "[0-9]*%" | head -1 )
+  VOL="${VOL%?}"
+  NAME=$(echo "${NICK}" | grep -o '".*"' | sed 's/"//g')
 
-    if [[ $USE_ALSA_NAME == 1 ]] ; then
-        ALSA_NAME=$(pactl list sinks |\
-awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' |\
-grep "alsa.name\|alsa.mixer_name" |\
-head -n1 |\
-sed 's/.*= "\(.*\)".*/\1/')
-        NAME=${ALSA_NAME:-$NAME}
-    elif [[ $USE_DESCRIPTION == 1 ]] ; then
-        DESCRIPTION=$(pactl list sinks  | grep "State RUNNING" -B4 -A55 | grep 'Description: ' | sed 's/^.*: //')
-        NAME=${DESCRIPTION:-$NAME}
-    fi
+  if [[ "${USE_ALSA_NAME}" == 1 ]] ; then
+    ALSA_NAME=$(pactl list sinks | \
+    awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' | \
+    grep "alsa.name\|alsa.mixer_name" | \
+    head -n1 | \
+    sed 's/.*= "\(.*\)".*/\1/')
+    NAME="${ALSA_NAME:-${NAME}}"
+  elif [[ "${USE_DESCRIPTION}" == 1 ]] ; then
+    DESCRIPTION=$( \
+      pactl list sinks \
+        | grep "State RUNNING" -B4 -A55 \
+        | grep 'Description: ' \
+        | sed 's/^.*: //'
+    )
+    NAME="${DESCRIPTION:-${NAME}}"
+  fi
 
-    if [[ $MUTED =~ "no" ]] ; then
-        if [[ "${VOL}" -eq 0 ]] ; then
-            # Use the zero volume format (only symbol, no percentage), just like with muted.
-            SYMB=$AUDIO_ZERO_SYMBOL
-            CUSTOM_FORMAT='${SYMB}'
-        else
-            SYMB=$AUDIO_HIGH_SYMBOL
-            [[ $VOL -le $AUDIO_MED_THRESH ]] && SYMB=$AUDIO_MED_SYMBOL
-            [[ $VOL -le $AUDIO_LOW_THRESH ]] && SYMB=$AUDIO_LOW_SYMBOL
-            COLOR=$DEFAULT_COLOR
-            CUSTOM_FORMAT='${SYMB} ${VOL}%'
-        fi
+  if [[ "${MUTED}" =~ "no" ]] ; then
+    if [[ "${VOL}" -eq 0 ]] ; then
+      # Use the zero volume format (only symbol, no percentage), just like with
+      # muted.
+      # shellcheck disable=SC2034
+      SYMB="${AUDIO_ZERO_SYMBOL}"
+      CUSTOM_FORMAT='${SYMB}'
     else
-        SYMB=$AUDIO_MUTED_SYMBOL
-        COLOR=$MUTED_COLOR
-        CUSTOM_FORMAT='${SYMB}'
+      # shellcheck disable=SC2034
+      SYMB="${AUDIO_HIGH_SYMBOL}"
+      [[ "${VOL}" -le "${AUDIO_MED_THRESH}" ]] && SYMB="${AUDIO_MED_SYMBOL}"
+      [[ "${VOL}" -le "${AUDIO_LOW_THRESH}" ]] && SYMB="${AUDIO_LOW_SYMBOL}"
+      COLOR="${DEFAULT_COLOR}"
+      CUSTOM_FORMAT='${SYMB} ${VOL}%'
     fi
+  else
+    # shellcheck disable=SC2034
+    SYMB="${AUDIO_MUTED_SYMBOL}"
+    COLOR="${MUTED_COLOR}"
+    CUSTOM_FORMAT='${SYMB}'
+  fi
 
-    if [[ $ACTIVE = "" ]] ; then
-        echo "Sound inactive"
-        COLOR='#222225'
-    fi
+  if [[ -z "${ACTIVE}" ]] ; then
+    echo "Sound inactive"
+    COLOR='#222225'
+  fi
 
-    if [[ $SUBSCRIBE == 1 ]] ; then
-        #print_format "$LONG_FORMAT"
-        print_format "$CUSTOM_FORMAT"
-    else
-        print_format "$LONG_FORMAT"
-        #print_format "$SHORT_FORMAT"
-        print_format "$CUSTOM_FORMAT"
-        echo "$COLOR"
-    fi
+  if [[ "${SUBSCRIBE}" == 1 ]] ; then
+    #print_format "${LONG_FORMAT}"
+    print_format "${CUSTOM_FORMAT}"
+  else
+    print_format "${LONG_FORMAT}"
+    #print_format "${SHORT_FORMAT}"
+    print_format "${CUSTOM_FORMAT}"
+    echo "${COLOR}"
+  fi
 }
 
 print_block
-if [[ $SUBSCRIBE == 1 ]] ; then
-    while read -r EVENT; do
-        print_block
-    done < <(pactl subscribe | stdbuf -oL grep change)
+if [[ "${SUBSCRIBE}" == 1 ]] ; then
+  while read -r _; do
+    print_block
+  done < <(pactl subscribe | stdbuf -oL grep change)
 fi
