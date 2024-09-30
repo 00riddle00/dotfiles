@@ -1,17 +1,50 @@
 #!/usr/bin/perl
 # vim:tw=80
 #------------------------------------------------------------------------------
-# Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-30 10:07:05 EEST
-# Path:   ~/.local/bin/i3blocks/mediaplayer
-# URL:    https://github.com/00riddle00/dotfiles
+# User: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-30 12:50:28 EEST
+# Path: ~/.local/bin/i3blocks/mediaplayer
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Tony Crisci (https://github.com/acrisci), Thiago Perrotta (https://github.com/thiagowfx)
+# Orig. URL: https://raw.githubusercontent.com/vivien/i3blocks-contrib/refs/heads/master/mediaplayer/mediaplayer
+# Orig. URL/File Retrieval: 2024-09-30 12:42:22 EEST
 #------------------------------------------------------------------------------
 #*
-# Show currently playing song in mpd, cmus or spotify using playerctl.
+# Show currently playing song.
 #
 # Left click to go to previous song, middle click to pause/play, right click to
 # go to next song. Scroll up to increase volume, scroll down to decrease
 # volume.
+# 
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
+# Copyright (C) 2014 Tony Crisci <tony@dubstepdish.com>
+# Copyright (C) 2015 Thiago Perrotta <perrotta dot thiago at poli dot ufrj dot br>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# For all media players except mpd/cmus/rhythmbox, MPRIS support should be
+# enabled and the playerctl binary should be in your path.
+# See https://github.com/acrisci/playerctl
+#
+# Set instance=NAME in the i3blocks configuration to specify a music player
+# (playerctl will attempt to connect to org.mpris.MediaPlayer2.[NAME] on your
+# DBus session). If instance is empty, playerctl will connect to the first
+# supported media player it finds.
+# ----------------------------------------
 #**
 
 #* USAGE:
@@ -56,15 +89,15 @@ sub buttons {
     #   5 - scroll down
     if($method eq 'mpd') {
         if ($ENV{'BLOCK_BUTTON'} == 1) {
-            system("mpc prev");
+            system("mpc prev &>/dev/null");
         } elsif ($ENV{'BLOCK_BUTTON'} == 2) {
-            system("mpc toggle");
+            system("mpc toggle &>/dev/null");
         } elsif ($ENV{'BLOCK_BUTTON'} == 3) {
-            system("mpc next");
+            system("mpc next &>/dev/null");
         } elsif ($ENV{'BLOCK_BUTTON'} == 4) {
-            system("mpc volume +10");
+            system("mpc volume +10 &>/dev/null");
         } elsif ($ENV{'BLOCK_BUTTON'} == 5) {
-            system("mpc volume -10");
+            system("mpc volume -10 &>/dev/null");
         }
     } elsif ($method eq 'cmus') {
         if ($ENV{'BLOCK_BUTTON'} == 1) {
@@ -83,6 +116,18 @@ sub buttons {
         } elsif ($ENV{'BLOCK_BUTTON'} == 3) {
             system("playerctl ${player_arg} next");
             usleep(DELAY * 1000) if $BLOCK_INSTANCE eq SPOTIFY_STR;
+        } elsif ($ENV{'BLOCK_BUTTON'} == 4) {
+            system("playerctl ${player_arg} volume 0.01+");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 5) {
+            system("playerctl ${player_arg} volume 0.01-");
+        }
+    } elsif ($method eq 'rhythmbox') {
+        if ($ENV{'BLOCK_BUTTON'} == 1) {
+            system("rhythmbox-client --previous");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 2) {
+            system("rhythmbox-client --play-pause");
+        } elsif ($ENV{'BLOCK_BUTTON'} == 3) {
+            system("rhythmbox-client --next");
         }
     }
 }
@@ -96,6 +141,7 @@ sub cmus {
             if ($item eq 'tag') {
                 my $key = shift @data;
                 my $value = join ' ', @data;
+
                 @metadata[0] = $value if $key eq 'artist';
                 @metadata[1] = $value if $key eq 'title';
             } elsif ($item eq 'file') {
@@ -110,8 +156,10 @@ sub cmus {
         if (@metadata) {
             buttons('cmus');
 
-            # metadata found so we are done
+            # Metadata found so we are done.
             print(join ' - ', @metadata);
+            print("\n");
+            exit 0;
         }
     }
 }
@@ -128,7 +176,7 @@ sub mpd {
 sub playerctl {
     buttons('playerctl');
 
-    my $artist = qx(playerctl ${player_arg} metadata artist);
+    my $artist = qx(playerctl ${player_arg} metadata artist 2>/dev/null);
     chomp $artist;
     # Exit status will be nonzero when playerctl cannot find your player.
     exit(0) if $? || $artist eq '(null)';
@@ -143,11 +191,21 @@ sub playerctl {
     print(join(" - ", @metadata)) if @metadata;
 }
 
-if ($player_arg eq '' or $player_arg =~ /mpd/) {
+sub rhythmbox {
+    buttons('rhythmbox');
+
+    my $data = qx(rhythmbox-client --print-playing --no-start);
+    print($data);
+}
+
+if ($player_arg =~ /mpd/) {
     mpd;
 }
 elsif ($player_arg =~ /cmus/) {
     cmus;
+}
+elsif ($player_arg =~ /rhythmbox/) {
+    rhythmbox;
 }
 else {
     playerctl;
