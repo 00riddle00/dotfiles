@@ -1,5 +1,21 @@
 #!/usr/bin/perl
+# vim:tw=80
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-30 10:07:11 EEST
+# Path:   ~/.local/bin/i3blocks/battery
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Show battery status, with colors based on charge level.
+#**
 
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
 use strict;
 use warnings;
 use utf8;
@@ -9,26 +25,27 @@ my $status;
 my $percent;
 my $text;
 my $label;
+# This value comes from the i3blocks config file.
 my $bat_number = $ENV{BAT_NUMBER} || 0;
 
-# read the first line of the "acpi" command output
-open (ACPI, "acpi -b 2>/dev/null| grep 'Battery $bat_number' |") or die;
+# Read the first line of the "acpi" command output.
+open (ACPI, "acpi -b 2>/dev/null| grep 'Battery ${bat_number}' |") or die;
 $acpi = <ACPI>;
 close(ACPI);
 
-# fail on unexpected output
+# Fail on unexpected output.
 if (not defined($acpi)) {
-    # don't print anything to stderr if there is no battery
+    # Don't print anything to stderr if there is no battery.
     exit(0);
 }
 elsif ($acpi !~ /: ([\w\s]+), (\d+)%/) {
-    die "$acpi\n";
+    die "${acpi}\n";
 }
 
 $status = $1;
 $percent = $2;
 
-# set label based on battery charge
+# Set label based on battery charge.
 if ($percent < 15) {
     $label = "";
 } elsif ($percent < 25) {
@@ -41,15 +58,14 @@ if ($percent < 15) {
     $label = "";
 }
 
-$text = "$label  $percent%";
+$text = "${label}  ${percent}%";
 
 # print text
-print "$text\n";
-print "$text\n"; # to get colored output
+print "${text}\n";
+print "${text}\n"; # to get colored output
 
-# consider color and urgent flag only on discharge
+# Consider color and urgent flag only on discharge.
 if ($status eq 'Discharging') {
-
     if ($percent < 25) {
         print "#EF6191\n";
     } elsif ($percent < 40) {

@@ -1,0 +1,93 @@
+#!/usr/bin/perl
+# vim:tw=80
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-09-30 09:21:34 EEST
+# Path: ~/.local/bin/i3blocks/cpu-load
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Pierre Mavro (https://github.com/deimosfr), Vivien Didelot (https://github.com/vivien), Andreas Guldstrand (andreas.guldstrand@gmail.com)
+# Orig. URL: https://raw.githubusercontent.com/vivien/i3blocks-contrib/refs/heads/master/cpu_usage/cpu_usage
+# Orig. URL/File Retrieval: 2024-09-30 09:06:02 EEST
+#------------------------------------------------------------------------------
+#*
+# Show CPU load.
+#
+# ----------------------------------------
+# Description by the author:
+# ----------------------------------------
+# Copyright 2014 Pierre Mavro <deimos@deimos.fr>
+# Copyright 2014 Vivien Didelot <vivien@didelot.org>
+# Copyright 2014 Andreas Guldstrand <andreas.guldstrand@gmail.com>
+#
+# Licensed under the terms of the GNU GPL v3, or any later version.
+# ----------------------------------------
+#**
+
+#* USAGE:
+#*   ${0}
+#*
+#*   The script is designed to be run by i3blocks status bar manager, but can
+#*   be run from the terminal as well.
+#**
+use strict;
+use warnings;
+use utf8;
+use Getopt::Long;
+
+# Default values.
+my $cpu_usage = -1;
+# These values come from the i3blocks config file:
+my $t_warn = $ENV{T_WARN} // 50;
+my $t_crit = $ENV{T_CRIT} // 80;
+my $decimals = $ENV{DECIMALS} // 2;
+my $label = $ENV{LABEL} // "";
+my $color_normal = $ENV{COLOR_NORMAL} // "#EBDBB2";
+my $color_warn = $ENV{COLOR_WARN} // "#FFFC00";
+my $color_crit = $ENV{COLOR_CRIT} // "#FF0000";
+
+sub help {
+    print "Usage: cpu-load [-w <warning>] [-c <critical>] [-d <decimals>]\n";
+    print "-w <percent>: warning threshold to become yellow\n";
+    print "-c <percent>: critical threshold to become red\n";
+    print "-d <decimals>:  Use <decimals> decimals for percentage ";
+    print                 "(default is ${decimals}) \n";
+    exit 0;
+}
+
+GetOptions("help|h" => \&help,
+           "w=i"    => \$t_warn,
+           "c=i"    => \$t_crit,
+           "d=i"    => \$decimals,
+);
+
+# Get CPU usage
+# If mpstat is not run under en_US locale, things may break, so make sure it is.
+$ENV{LC_ALL}="en_US";
+open (MPSTAT, 'mpstat 1 1 |') or die;
+while (<MPSTAT>) {
+    if (/^.*\s+(\d+\.\d+)[\s\x00]?$/) {
+        $cpu_usage = 100 - $1; # 100% - %idle
+        last;
+    }
+}
+close(MPSTAT);
+
+$cpu_usage eq -1 and die 'Can\'t find CPU information';
+
+# Print short_text, full_text.
+print "${label}";
+printf "%.${decimals}f%%\n", $cpu_usage;
+print "${label}";
+printf "%.${decimals}f%%\n", $cpu_usage;
+
+# Print color, if needed.
+if ($cpu_usage >= $t_crit) {
+    print "${color_crit}\n";
+} elsif ($cpu_usage >= $t_warn) {
+    print "${color_warn}\n";
+} else {
+    print "${color_normal}\n";
+}
+
+exit 0;
