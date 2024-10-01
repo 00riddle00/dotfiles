@@ -1,0 +1,47 @@
+#!/usr/bin/perl
+# vim:tw=80
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-10-01 16:43:49 EEST
+# Path: ~/.local/bin/usage
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Saulius Gražulis (https://saulius-grazulis.lt/~saulius/)
+# Orig. URL: svn://saulius-grazulis.lt/scripts/usage@855
+# Orig. URL/File Retrieval: 2024-03-13 12:45:12 EET
+#------------------------------------------------------------------------------
+#*
+# Print the usage information of the script.
+#**
+
+use strict;
+use warnings;
+
+if( @ARGV == 0 ) {
+    print "$0: need a name of a file or a command as an argument\n";
+    exit 1;
+}
+
+my $filename = shift(@ARGV);
+
+if( ! -f $filename ) {
+    my @file = split( " ", `sh -c 'type $filename'` );
+    $filename = $file[2] if $? == 0;
+}
+
+if( @ARGV > 0 ) {
+    local $\ = "\n";
+    local $, = " ";
+    print "\n", $filename, @ARGV;
+};
+
+@ARGV = ( $filename );
+
+while(<>) {
+    next if /^\s*$/;
+    if( /^ *(?:#|\/\/)\*/ .. /^ *(?:#|\/\/)\*\*/ ) {
+        s/^ *(?:#|\/\/)[*]?[*]?//;
+        s/\$0|\$\{0\}/$ARGV/g;
+        print;
+    }
+}

@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
-# Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 15:52:37 EEST
-# Path:   ~/.local/bin/bibtex-list-keywords
-# URL:    https://github.com/00riddle00/dotfiles
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-10-01 16:25:21 EEST
+# Path: ~/.local/bin/bibtex-list-keywords
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Saulius Gražulis (https://saulius-grazulis.lt/~saulius/)
+# Orig. URL: svn://saulius-grazulis.lt/papers/scripts/list-keywords@7451
+# Orig. URL/File Retrieval: 2024-05-02 12:29:57 EEST
 #------------------------------------------------------------------------------
 #*
-# List keywords from BibTeX file(s).
+# List all keywords from a Jabref-saved BibTeX file(s). Keywords should be
+# written in one line, in the form of "keywords = {keyword1; keyword2; ...}".
 #**
 
 #* USAGE:
