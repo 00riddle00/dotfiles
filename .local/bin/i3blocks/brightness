@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 18:57:13 EEST
+# Date:   2024-10-01 08:22:12 EEST
 # Path:   ~/.local/bin/i3blocks/brightness
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,5 +16,10 @@
 #*   The script is designed to be run by i3blocks status bar manager, but can
 #*   be run from the terminal as well.
 #**
-bri="$(light)"
-printf '%s\n' "${bri::-3}"
+bri="$(light 2>/dev/null)"
+
+# If brightness is "0.00" or no backlight controller is found, do not output
+# anything.
+if [[ "$bri" != "0.00" && -n "$bri" ]]; then
+    printf '%s\n' "${bri::-3}"
+fi
