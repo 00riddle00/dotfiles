@@ -2,12 +2,12 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-30 10:07:25 EEST
+# Date:   2024-10-01 14:33:51 EEST
 # Path:   ~/.local/bin/i3blocks/gpu-temp
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Show GPU temperature using nvidia-smi.
+# Show GPU temperature, detecting the GPU brand (NVIDIA, AMD, or Intel).
 #**
 
 #* USAGE:
@@ -16,5 +16,41 @@
 #*   The script is designed to be run by i3blocks status bar manager, but can
 #*   be run from the terminal as well.
 #**
-temp=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader)
-echo "${temp}.0°C"
+
+# Auto-detect the GPU brand using lspci.
+lspci_output=$(lspci | grep -i --color=never "VGA\|3D\|Display")
+
+if grep -iq "nvidia" <<< "${lspci_output}"; then
+  temp=$( \
+    nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader \
+      | tr -d ' '
+  )
+elif grep -iq "amd\|radeon" <<< "${lspci_output}"; then
+  temp=$( \
+    sensors \
+      | grep -i 'edge\|junction' \
+      | awk '{print $2}' \
+      | sed 's/+//g' \
+      | head -n1
+  )
+elif grep -iq "intel" <<< "${lspci_output}"; then
+  temp=$( \
+    sensors \
+      | grep -i 'Package id 0' \
+      | awk '{print $4}' \
+      | sed 's/+//g' \
+      | head -n1
+  )
+else
+  echo "Unsupported GPU brand or unable to detect GPU."
+  exit 1
+fi
+
+if [[ "${temp}" == *".0°C" ]]; then
+  echo "${temp}"
+elif [[ "${temp}" == *"°C" ]]; then
+  temp="${temp/°C/.0°C}"
+  echo "${temp}"
+else
+  echo "${temp}.0°C"
+fi
