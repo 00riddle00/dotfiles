@@ -1,6 +1,6 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-07-30 16:10:37 EEST
+! Date:   2024-10-02 19:22:22 EEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
@@ -47,12 +47,7 @@ URxvt.font: xft:FONT1, \
             xft:FONT6
 
 ! --  Extensions -- !
-URxvt.perl-ext-common: \
-  eval, \
-  matcher, \
-  selection, \
-  selection-to-clipboard, \
-  keyboard-select,resize-font
+URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,keyboard-select,resize-font
 
 ! Copy and paste
 !URxvt.keysym.M-c:                eval:selection_to_clipboard
