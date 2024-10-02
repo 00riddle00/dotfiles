@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 18:01:03 EEST
+# Date:   2024-10-02 20:46:51 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -147,7 +147,7 @@ setvar PERL5_HOME          = "${HOME}/perl5"
 setvar PERL5LIB            = "${PERL5_HOME}/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 setvar PERL_LOCAL_LIB_ROOT = "${PERL5_HOME}${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
 setvar PERL_MB_OPT         = "--install_base \"${PERL5_HOME}\""
-setvar PERL_MM_OPT         = "INSTALL_BASE=${HOME}/perl5"
+setvar PERL_MM_OPT         = "INSTALL_BASE=${PERL5_HOME}"
 
 export PERL5_HOME
 export PERL5LIB

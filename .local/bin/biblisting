@@ -1,0 +1,47 @@
+#!/usr/bin/awk -f
+# vim:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-10-02 20:40:35 EEST
+# Path: ~/.local/bin/biblisting
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Saulius Gražulis (https://saulius-grazulis.lt/~saulius/)
+# Orig. URL: svn://saulius-grazulis.lt/scripts/biblisting@855
+# Orig. URL/File Retrieval: 2024-03-13 12:45:12 EET
+#------------------------------------------------------------------------------
+#*
+# Extract labels from a BibTeX file and generate list.
+# .bib --> .tex
+#**
+
+#* USAGE:
+#*   ${0} BIBTEX_FILE
+#**
+BEGIN {
+  i = 0; j = 0
+  printf("\\documentclass[11pt]{report}\n")
+  printf("\\usepackage{dina4}\n")
+  printf("\\begin{document}\n\n\n")
+}
+
+{
+  if ($0 ~ /^@/) {
+    sub(/.*\{ */, "", $0)
+    sub(/ *,/, "", $0)
+    STRING[i] = sprintf(" \\cite{%s}\\\\\n", $0)
+    i++
+  }
+}
+
+END {
+  for (j = i; j >= 0; --j) {
+    print STRING[j]
+  }
+
+  sub("\.[^\./]*$", "", FILENAME)  # remove extension from the file name
+  # printf("\n\n\\nocite{TitlesOn}\n")
+  printf("\\bibliographystyle{" STYLE "}\n")
+  printf("\\bibliography{" FILENAME "}\n\n")
+  printf("\\end{document}\n")
+}
