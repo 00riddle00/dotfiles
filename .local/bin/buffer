@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-10-03 14:23:31 EEST
+# Path: ~/.local/bin/buffer
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Saulius Gražulis (https://saulius-grazulis.lt/~saulius/)
+# Orig. URL: svn://saulius-grazulis.lt/scripts/buffer@855
+# Orig. URL/File Retrieval: 2024-03-13 12:45:12 EET
+#------------------------------------------------------------------------------
+#*
+# Saves contents of STDIN to temp file and launches command, specified by
+# command line parameters, appending the name of temp file as the last command
+# line parameter.
+#**
+
+EXT=tmp
+
+VERBOSE=0
+
+INSERT=0
+
+#** USAGE:
+#**   $0 --options command --command-options
+#**   $0 --options command --command-options {} other-arguments
+#**
+#** OPTIONS:
+#**  -e, --extension tmp     Use the specified extension for the temporary file.
+#**  -i, --insert            Insert temporary file name in the place of {} symbols
+#**  -v, --verbose           Print out commeans before executing them.
+#**  -v-, --not-verbose      Do not print out commands (default).
+#**  --help                  Print short help message (this message) and exit
+
+while [ $# -gt 0 ]
+do
+  case $1 in
+      -e|--extension|--extensio|--extensi|--extens|--exten|--exte|--ext|--ex|--e)
+          EXT="$2"
+          shift
+          ;;
+      -i|--insert|--inser|--inse|--ins|--in|--i)
+          INSERT=1
+          ;;
+      -v|--verbose|--verbos|--verbo|--verb|--ver|--ve|--v)
+          VERBOSE=1;
+          ;;
+      -v-|--not-verbose|--not-verbos|--not-verbo|--not-verb|--not-ver|--not-ve|--not-v)
+          VERBOSE=0;
+          ;;
+      --no-verbose|--no-verbos|--no-verbo|--no-verb|--no-ver|--no-ve|--no-v)
+          VERBOSE=0;
+          ;;
+      --help|--hel|--he|--h)
+            awk '/#\*/,/#\*\*/ {
+                    sub("^ *#[*]?[*]?", ""); \
+                    gsub("\\$0","'$(basename $0)'"); \
+                    print $0
+                }' $0
+	    exit
+	    ;;
+      --options|--option|--optio|--opti|--opt|--op|--o)
+          echo "$(basename $0): '--option' is a placeholder, " \
+               "below is the option list:" >&2
+          $0 --help
+          ;;
+      -*) echo "$(basename $0): unknown option $1" >&2 ; exit 1 ;;
+      *)  while [ $# -gt 0 ]
+          do
+              FILES="$FILES '$1'" 
+              shift
+          done
+          ;;
+    esac
+    shift
+done
+
+if [ $VERBOSE = 1 ]
+then
+    set -x;
+fi
+
+TMPFILE=/tmp/tmp-$(basename $0)-$$.${EXT}
+
+## echo ${FILES}
+if [ $INSERT = 0 ]
+then
+    eval set -- "${FILES} '${TMPFILE}'"
+else
+    eval set -- "$(echo "${FILES}" | sed 's;{};'"${TMPFILE}"';')"
+fi
+
+cat /dev/stdin > ${TMPFILE}
+$*
+sleep 2
+rm ${TMPFILE}
