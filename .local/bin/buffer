@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-10-03 14:39:42 EEST
+# Date: 2024-10-03 14:45:55 EEST
 # Path: ~/.local/bin/buffer
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -17,13 +17,13 @@
 #**
 
 #* USAGE:
-#*   ${0} --options command --command-options
-#*   ${0} --options -i command --command-options {} other-arguments
+#*   ${0} --options COMMAND --COMMAND-OPTIONS
+#*   ${0} --options -i COMMAND --COMMAND-OPTIONS {} OTHER-ARGUMENTS
 #* e.g.:
 #*   echo "a:b" | buffer -i awk -F: '{OFS=FS} {print $1}' {} | grep "a"
 #*
 #* OPTIONS:
-#*   -e, --extension tmp     Use the specified extension for the temporary file.
+#*   -e, --extension EXT     Use the specified extension for the temporary file.
 #*   -i, --insert            Insert temporary file name in the place of {} symbols.
 #*   -v, --verbose           Print out commeans before executing them.
 #*   -v-, --not-verbose      Do not print out commands (default).
@@ -72,7 +72,7 @@ do
     *)
       while [[ "${#}" -gt 0 ]]
       do
-        FILES="${FILES} '${1}'"
+        files="${files} '${1}'"
         shift
       done
       ;;
@@ -84,16 +84,16 @@ if [[ "${VERBOSE}" == 1 ]]; then
   set -x
 fi
 
-TMPFILE="/tmp/tmp-$(basename "${0}")-${$}.${EXT}"
+tmpfile="/tmp/tmp-$(basename "${0}")-${$}.${EXT}"
 
-## echo "${FILES}"
+## echo "${files}"
 if [[ "${INSERT}" == 0 ]]; then
-  eval set -- "${FILES} '${TMPFILE}'"
+  eval set -- "${files} '${tmpfile}'"
 else
-  eval set -- "${FILES//\{\}/${TMPFILE}}"
+  eval set -- "${files//\{\}/${tmpfile}}"
 fi
 
-cat /dev/stdin > "${TMPFILE}"
+cat /dev/stdin > "${tmpfile}"
 "${@}"
 sleep 2
-rm "${TMPFILE}"
+rm "${tmpfile}"
