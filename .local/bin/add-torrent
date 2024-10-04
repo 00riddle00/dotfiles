@@ -2,12 +2,12 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:26:01 EEST
+# Date:   2024-10-04 15:51:49 EEST
 # Path:   ~/.local/bin/add-torrent
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Launches rTorrent in the terminal with the given torrent file.
+# Launch rTorrent in the terminal with the given torrent file.
 #**
 
 #* USAGE:

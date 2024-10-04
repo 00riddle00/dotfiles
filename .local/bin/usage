@@ -2,7 +2,7 @@
 # vim:tw=80
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-10-01 16:43:49 EEST
+# Date: 2024-10-04 15:51:36 EEST
 # Path: ~/.local/bin/usage
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,6 +14,9 @@
 # Print the usage information of the script.
 #**
 
+#* USAGE:
+#*   ${0} SCRIPT
+#**
 use strict;
 use warnings;
 
