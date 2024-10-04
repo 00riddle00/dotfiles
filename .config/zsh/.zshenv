@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-02 20:46:51 EEST
+# Date:   2024-10-04 16:54:20 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -109,6 +109,18 @@ exp QT_QPA_PLATFORMTHEME 'gtk3'
 # Customize sudo password prompt
 exp SUDO_PROMPT $'\e[01;32msudo\e[m password: '
 
+# ls color settings
+# Use either '--color=tty' or '--color=never'
+exp LS_COLOR        '--color=tty'
+# Use either '--color=yes' or '--color=never'
+exp LS_COLOR_ALWAYS '--color=yes'
+
+# colorls color settings
+# Use either '--color=auto' or '--color=never'
+exp COLORLS_COLOR        '--color=auto'
+# Use either '--color=always' or '--color=never'
+exp COLORLS_COLOR_ALWAYS '--color=always'
+
 # A more informative and visually appealing interface, leveraging colors and
 # a detailed status column for better usability.
 exp LESS '-MR --use-color -Dd+b$Dk+b$Du+C$DEWb$DNc$DPWb$DRWb$DSWb$DWWB'
@@ -171,3 +183,6 @@ export PATH
 # Ensure that the systemd user instance has the same PATH value, so all
 # services started by systemd will have access to binaries, scripts in ${PATH}.
 systemctl --user import-environment PATH
+
+unset -f exp
+unset -f setvar
