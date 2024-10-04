@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 20:14:03 EEST
+# Date:   2024-10-04 16:54:55 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -44,7 +44,8 @@ alias() {
 # 1. Navigation
 #------------------------------------------------------------------------------
 
-# Going up
+# Going up ('c' is a custom Shell function)
+#alias up    'c ..'
 alias ./    'c ..'
 alias ..    'c ..'
 alias ...   'c ../..'
@@ -91,6 +92,7 @@ alias bu       'cd ${MP1}/budget && venv'
 alias vid      'cd ${XDG_VIDEOS_DIR}'
 alias was      'cd ${HOME}/wastebasket'
 alias zdot     'cd ${ZDOTDIR}'
+alias home     'cd'
 
 #------------------------------------------------------------------------------
 # 2. Getting information
@@ -124,8 +126,16 @@ alias get.keyname    'xev'
 # 3. Standard commands
 #------------------------------------------------------------------------------
 
+#alias c     'cat'
 alias x     'clear'
+alias cls   'clear'
 alias q     'exit'
+#alias h     'history'
+#alias j     'jobs'
+#alias cp    'cp -i'
+#alias mv    'mv -i'
+alias more  'less'
+alias m     'less'
 alias re    'reboot'
 alias off   'poweroff'
 alias prego 'sudo $(fc -ln -1)'
@@ -452,9 +462,6 @@ alias g      'grep'
 alias h      'head'
 alias ink    'inkscape'
 alias libre  'libreoffice'
-alias ls     'colorls'
-#alias ls    'ls --color=auto'
-alias l      'ls'
 alias mann   'MANPAGER=less; man '
 alias mc     'mc --nosubshell'
 alias mi     'nomacs'
@@ -550,20 +557,35 @@ alias awk-o--1 'awk -F, '\''{OFS=FS} {print $(NF)}'\'
 alias awk-o--  'awk -F, '\''{OFS=FS} {print $NF}'\'
 
 # Colorls
-alias la     'colorls -al'
-alias lc     'colorls -1'
-alias lsa    'colorls -a'
-alias lsal   'colorls -al'
-alias lsla   'colorls -al'
-alias lsl    'colorls -l'
-alias ih     'colorls -la | grep -i'
-alias lsh    'colorls -ld .?*'
-alias since  'colorls -lt | head'
-alias sincee 'colorls -lt'
+alias colorls '\colorls ${COLORLS_COLOR}'
+alias ls      'colorls'
+alias l       'colorls'
+alias la      'colorls -al'
+alias las     'colorls -al'
+alias lc      'colorls -1'
+alias ll      'colorls -lL'
+alias lla     'colorls -al .*'
+alias lsa     'colorls -a'
+alias lsal    'colorls -al'
+alias lsla    'colorls -al'
+alias lsl     'colorls -l'
+alias ih      '\colorls -al ${COLORLS_COLOR_ALWAYS} | grep -i'
+alias lsh     'colorls -ld .?*'
+alias lsr     'colorls --tree'
+alias since   '\colorls -lt ${COLORLS_COLOR_ALWAYS} | head'
+alias sincee  '\colorls -lt ${COLORLS_COLOR_ALWAYS}'
 # Display only directories:
-alias dod    'colorls -ld'
+alias dod     'colorls -ld'
+alias dod2    'colorls -d'
 # Display only files:
-alias dof    'colorls -lf'
+alias dof     'colorls -lf'
+alias dof2    'colorls -f'
+# Display only hidden files/directories:
+alias doh     'colorls -ald .*'
+alias doh2    'colorls -a .*'
+# Display large directories:
+alias lm      'colorls -l ${COLORLS_COLOR_ALWAYS} | less'
+
 
 # Cowfortune
 alias cff 'fortune | cowsay'
@@ -574,17 +596,17 @@ alias ce 'crontab -e'
 alias cl 'crontab -l'
 
 # du
-alias dusort       'du -chs * | sort -h'
-alias dus          'du -chs * | sort -h'
-alias dusort.all   'du -chs * .* | sort -h'  # include hidden files
-alias trackmem     'watch -n 5 "du -chs * | sort -h"'
-alias trackmem.all 'watch -n 5 "du -chs * .* | sort -h"'
+alias dusort       'du -chs -- * | sort -h'
+alias dus          'du -chs -- * | sort -h'
+alias dusort.all   'du -chs -- * .* | sort -h'  # include hidden files
+alias trackmem     'watch -n 5 "du -chs -- * | sort -h"'
+alias trackmem.all 'watch -n 5 "du -chs -- * .* | sort -h"'
 
 # feh
 alias wall 'feh --bg-scale'
 
 # find
-alias ff        'find . -name'
+alias ff 'find . -name'
 
 # Git
 alias ga    'git add'
@@ -640,29 +662,42 @@ alias ge 'gh copilot explain'
 
 # Grep
 alias grep       'grep --color=auto'
+alias grepc      'grep --color=always'
 alias grepi      'grep -i'
 alias grep.find  'grep -rHn'
 alias grepi.find 'grep -i -rHn'
 alias grepp      'grep -P'
 
 # ls
-#alias l     'ls'
-#alias la    'ls -al'
-#alias las   'ls -al'
-#alias lc    'ls | cat'
-#alias ll    'ls -lL'
-#alias lla   'ls -lad .*'
-#alias lsa   'ls -a'
-#alias lsal  'ls -al'
-#alias lsh   'ls -ld .?*'
-#alias lsl   'ls -l'
-#alias lsla  'ls -al'
-#alias lsr   'ls -R'
-#alias since '\ls -ltL | head'
+#alias ls     '\ls ${LS_COLOR}'
+#alias l      'ls'
+#alias la     'ls -al'
+#alias las    'ls -al'
+#alias lc     'ls -1'
+#alias ll     'ls -lL'
+#alias lla    'ls -al .*'
+#alias lsa    'ls -a'
+#alias lsal   'ls -al'
+#alias lsla   'ls -al'
+#alias lsl    'ls -l'
+#alias ih     '\ls -al ${LS_COLOR_ALWAYS} | grep -i'
+#alias lsh    'ls -ld .?*'
+#alias lsr    'ls -R'
+#alias since  '\ls -ltL ${LS_COLOR_ALWAYS} | head'
+#alias sincee '\ls -ltL ${LS_COLOR_ALWAYS}'
 # Display only directories:
-#alias dod   '\ls -l | grep ^d'
+#alias dod    '\ls -l ${LS_COLOR_ALWAYS} | grep ^d'
+#alias dod2   '\ls -1F ${LS_COLOR_ALWAYS} | grep /'
 # Display only files:
-#alias dof   '\ls -l | grep ^-'
+#alias dof    '\ls -l ${LS_COLOR_ALWAYS} | grep ^-'
+#alias dof2   '\ls -1F ${LS_COLOR_ALWAYS} | grep -v /'
+# Display only hidden files/directories:
+#alias doh    'ls -ald .*'
+#alias doh2   'ls -ad .*'
+# Display large directories:
+#alias lm     '\ls -l ${LS_COLOR_ALWAYS} | less'
+# Only \ls specific:
+#alias big    '\ls -lR ${LS_COLOR_ALWAYS} | sort -n -r -k5 | less'
 
 # mpv
 alias mpv.image   'mpv --no-config --pause --vo=tct'
@@ -700,7 +735,7 @@ alias ssid 'eval $(ssh-agent -s)'
 alias s            'svn status'
 alias si           'svn info'
 alias sd           'svndiff'
-alias sdd          'svn diff'
+#alias sdd          'svn diff'
 alias ssd          'svn diff --diff-cmd="meld"'
 alias svn.log      'svn log -r 1:HEAD'
 alias svn.log.head 'svn log -r HEAD:1 --limit 5'
@@ -838,6 +873,7 @@ alias cols   'colv tab'
 alias hs     'https_to_ssh'
 alias clones 'git_clone_ssh'
 alias tc     'tmux-clean'
+alias ver    'version'
 
 #------------------------------------------------------------------------------
 # 23. Aliases to scripts
@@ -852,11 +888,30 @@ alias thanks '(${BIN}/sounds/thanks-hal &) > /dev/null'
 
 # Usage: command `--use-commit-times`
 alias --use-commit-times 'echo --config-option=config:miscellany:use-commit-times=yes'
-alias --date             'date "+%F"'
+alias -uname             'uname -sm | sed -e "s/-.* / /" -e "s/ /-/g"'
+alias --uname            'uname -srm | sed -e "s/-.* / /" -e "s/ /-/g"'
 alias --datetime         'date +%F_%H_%M_%S'
-alias --retrieved        'date '\''+%F %H:%M'\'''
+alias --retrieved-time   'date '\''+%F %H:%M'\'''
 alias --datecomment      'date "+#DATE: %F %T %Z"'
+
+alias -time              'date +%H:%M:%S'
 alias --time             'date +%H:%M:%S'
+alias -date              'date +%Y.%m.%d'
+alias --date             'date +%Y-%m-%d'
+alias -today             'date +%Y.%m.%d'
+alias --today            'date +%Y-%m-%d'
+alias -tomorrow          'date -d now+1day +%Y.%m.%d'
+alias --tomorrow         'date -d now+1day +%Y-%m-%d'
+alias -after-tomorrow    'date -d now+2days +%Y.%m.%d'
+alias --after-tomorrow   'date -d now+2days +%Y-%m-%d'
+alias -yesterday         'date -d now-1day +%Y.%m.%d'
+alias --yesterday        'date -d now-1day +%Y-%m-%d'
+alias -before-yesterday  'date -d now-2days +%Y.%m.%d'
+alias --before-yesterday 'date -d now-2days +%Y-%m-%d'
+alias -a-week-ago        'date -d now-7days +%Y.%m.%d'
+alias --a-week-ago       'date -d now-7days +%Y-%m-%d'
+alias -in-a-week         'date -d now+7days +%Y.%m.%d'
+alias --in-a-week        'date -d now+7days +%Y-%m-%d'
 
 #------------------------------------------------------------------------------
 # 25. Programming
@@ -934,3 +989,20 @@ alias xav      'xargs ${EDITOR}'
 alias dq       'cd ${MP1}/dataquest'
 alias irc      '${EDITOR} "${XDG_CONFIG_HOME}/ideavim/ideavimrc"'
 alias sc       'shellcheck'
+alias paco     'pacman -Qo'
+alias rehist   'fc -R'
+alias smv      'sudo mv'
+#alias scp      'sudo cp -r'
+alias srm      'sudo rm -r'
+# Find word differences in a unified diff stream and colourise them:
+# Intended possible use: 'svn diff | wd'
+alias wd       'wdiff -d | colordiff'
+alias mydata   'whoami; pwd; hostname -f; test -d .svn && svnversion; test -d .svn && svn info; date'
+alias pd       'pushd'
+alias pop      'popd'
+alias md       'mkdir'
+alias rd       'rmdir'
+alias go       'xdg-open'
+alias gonull   'xdg-open &> /dev/null'
+alias cutc     'cut -b 1-${COLUMNS}'
+alias ddf      'df -hP | grep ^/'
