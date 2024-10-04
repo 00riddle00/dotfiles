@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-09 08:53:37 EEST
+# Date:   2024-10-04 16:53:10 EEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -77,6 +77,8 @@ setopt INC_APPEND_HISTORY
 # Save additional information in the history file, such as the
 # timestamp for each command.
 setopt EXTENDED_HISTORY
+# Share command history between running shells
+setopt SHARE_HISTORY
 
 # -------------------------------------------
 # Keybindings
@@ -156,10 +158,10 @@ bindkey '^_'  undo
 setopt AUTO_CD
 
 # Prevent <C-d> from exiting the shell
-set -o ignoreeof
+setopt IGNORE_EOF
 
 # Disable audible notifications
-unsetopt BEEP
+setopt NO_BEEP
 
 # Software flow control bytes:
 #   XOFF (ASCII 0x13, DC3, sent with <C-s> key) - pause transmission
@@ -178,6 +180,9 @@ fi
 if [[ -x "$(command -v fzf)"  ]]; then
   source /usr/share/fzf/key-bindings.zsh
 fi
+# ^--- There may exist a file ${ZDOTDIR}/fzf-key-bindings-customized.zsh which
+# adds modifications to the fzf key bindings functionality. It is sourced along
+# with other .zsh files in the ${ZDOTDIR} directory.
 
 # A fix to make PyCharm auto-activate Python virtual
 # environment upon opening a new terminal tab.
