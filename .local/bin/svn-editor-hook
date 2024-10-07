@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2024-10-06 00:22:47 EEST
+# Path: ~/.local/bin/svn-editor-hook
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Author: Saulius Gražulis (https://saulius-grazulis.lt/~saulius/)
+# Orig. URL: svn://saulius-grazulis.lt/scripts/svn-editor-hook@855
+# Orig. URL/File Retrieval: 2024-03-13 12:45:12 EET
+#------------------------------------------------------------------------------
+#*
+# An enhancement script of the SVN editor command that automagically inserts
+# the name of the repository branch to which the commit happens.
+#
+# It also adds the name of the user and the host from which the commit is
+# performed.
+#
+# Loosely based on the code presented in
+# http://blog.jasonantman.com/2011/01/client-side-subversion-commit-message-hooks/
+# 2013-03-02
+#**
+
+#* USAGE:
+#*   ${0} [EDITOR='nano']
+#*
+#* A typical usage may involve setting the SVN_EDITOR variable, or using the
+#* --editor-cmd option of the 'svn' command:
+#
+#   export SVN_EDITOR='${0} vim'
+#   svn commit
+#
+#   svn commit --editor-cmd "${0} 'emacs -nw'"
+#**
+if [[ $# -gt 1 ]]; then
+  OUR_EDITOR="${1}"
+  shift
+else
+  if type nano > /dev/null 2>&1; then
+    OUR_EDITOR="nano"
+  else
+    OUR_EDITOR="vi"
+  fi
+fi
+
+SVN_COMMIT_TMP="${1}"
+
+set -ue
+
+if svn info > /dev/null 2>&1; then
+  REPO="$(svn info | awk '/Repository Root:/{print $3}' | sed 's/^ *//')"
+  BRANCH="$(svn info | awk '/URL:/{print $2; exit}' | sed 's/^ *//')"
+else
+  # We are not committing from a working copy:
+  REPO=""
+  BRANCH=""
+fi
+
+DIR="$(echo "${BRANCH}" \
+| sed "s|^${REPO}||" \
+| sed "s|^/||" \
+| sed 's/%20/ /g')"
+
+[[ -z "${DIR}" && -n "${REPO}" ]] && DIR="$(basename "${REPO}")"
+
+# Check if the URI::Encode module exists
+if perl -MURI::Encode -e 'exit 0' 2> /dev/null; then
+  DECODED_DIR=$( \
+    perl -MURI::Encode -le "print URI::Encode::uri_decode(\"${DIR}\")"
+  )
+else
+  DECODED_DIR="${DIR}"
+fi
+
+[[ -n "${DECODED_DIR}" ]] && DIR="${DECODED_DIR}"
+
+case "${SVN_COMMIT_TMP}" in
+  svn-commit.* )
+    (
+      # Check if we are working under 'sudo', if yes -- let's add the "real"
+      # user name to the log:
+      if [[ -n "${SUDO_USER:-}" ]]; then
+        echo -e "\n\n${DIR}/ ($(whoami)@$(hostname -f), user \"${SUDO_USER}\")"
+      else
+        echo -e "\n\n${DIR}/ ($(whoami)@$(hostname -f))"
+      fi
+      tail -n +2 "${SVN_COMMIT_TMP}"
+    ) \
+    | if type sponge > /dev/null 2>&1; then
+      sponge "${SVN_COMMIT_TMP}"
+    else
+      cat > "${SVN_COMMIT_TMP}.${$}.aux"
+      mv "${SVN_COMMIT_TMP}.${$}.aux" "${SVN_COMMIT_TMP}"
+    fi
+esac
+
+eval exec "${OUR_EDITOR}" "${SVN_COMMIT_TMP}"
