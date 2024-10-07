@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-04 16:54:55 EEST
+# Date:   2024-10-07 13:04:28 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -259,9 +259,9 @@ alias check.ip          'whois'
 alias check.dns         'nslookup'
 alias check.domain      'whois'
 alias get.my_ip         'curl -w "\n" ifconfig.me'
-alias get.local_ip      'ip route | head -n 1'
-alias get.gateway       'ip route | head -n 1'
-alias get.net_interface 'ip route | head -n 1'  # Get the current active interface name
+alias get.local_ip      'ip route --color=always | head -n 1'
+alias get.gateway       'ip route --color=always | head -n 1'
+alias get.net_interface 'ip route --color=always | head -n 1'  # Get the current active interface name
 
 #------------------------------------------------------------------------------
 # 14. WPA Supplicant
@@ -345,7 +345,7 @@ alias npm.ls.g 'npm list -g --depth=0'
 alias orphans             'pacman -Qdtq'
 alias is                  'pacman -Qeq | grepi '                     # Grep for explicitly installed package (package 'is' in the system)
 alias isa                 'pacman -Qq | grepi '                      # Grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
-alias visa                'pacman -Q | grepi '                       # Grep for installed package with version info ('visa' = 'is -a -v')
+alias visa                'pacman -Q --color=always | grepi '        # Grep for installed package with version info ('visa' = 'is -a -v')
 alias pl                  'pacman -Qeq'                              # List explicitly installed packages
 alias ple                 'pacman -Qeq'                              # ------||------
 alias ple_no_aur          'a_minus_b <(ple) <(plm)'                  # List explicitly installed packages (without showing AUR packages)
@@ -483,7 +483,7 @@ alias unrar  'unrar x'
 alias v      '${EDITOR}'
 alias vim    '${EDITOR}'
 alias vmi    '${EDITOR}'
-alias vv     'sudo ${EDITOR}'
+alias vv     'sudo -E ${EDITOR}'
 # A trailing space in `xargs ` causes the next word to be checked for
 # alias substitution when the alias is expanded.
 alias xargs   'xargs '
@@ -1006,3 +1006,4 @@ alias go       'xdg-open'
 alias gonull   'xdg-open &> /dev/null'
 alias cutc     'cut -b 1-${COLUMNS}'
 alias ddf      'df -hP | grep ^/'
+alias mf       'manf'
