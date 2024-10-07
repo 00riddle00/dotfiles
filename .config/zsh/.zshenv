@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-07 13:05:04 EEST
+# Date:   2024-10-07 13:24:40 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -133,7 +133,9 @@ exp MANPAGER   "sh -c 'col -bx | bat -l man -p'"
 exp MANROFFOPT '-c'
 
 # Customize the behavior of the pager (less) used by systemd.
-exp SYSTEMD_LESS "-FSXK ${LESS}"
+exp SYSTEMD_LESS   "-FSXK ${LESS}"
+# Always include colors, even when piped.
+exp SYSTEMD_COLORS 1
 
 # For GPG to prompt for passphrases by using the current terminal
 exp GPG_TTY "$(tty)"
