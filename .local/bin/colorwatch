@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 16:14:25 EEST
+# Date:   2024-10-07 13:06:32 EEST
 # Path:   ~/.local/bin/colorwatch
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,6 +13,9 @@
 #   ${0} COMMAND [INTERVAL]
 # e.g.:
 #   ${0} "git diff text_file/to/diff.txt" 2
+#
+# There is, however, a way to achieve similar effect with `watch`:
+#   watch -n 2 --color "git diff --color=always text_file/to/diff.txt"
 #**
 cmd="${1}"
 interval="${2:-2}"
