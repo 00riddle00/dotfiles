@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-04 16:54:20 EEST
+# Date:   2024-10-07 13:05:04 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -103,6 +103,9 @@ exp LC_ALL 'en_US.UTF-8'
 # Default POSIX collation order
 exp LC_COLLATE 'C'
 
+# ISO date and time format for `ls`, `stat`.
+exp TIME_STYLE 'long-iso'
+
 # Uniform look for Qt and GTK applications
 exp QT_QPA_PLATFORMTHEME 'gtk3'
 
@@ -134,6 +137,9 @@ exp SYSTEMD_LESS "-FSXK ${LESS}"
 
 # For GPG to prompt for passphrases by using the current terminal
 exp GPG_TTY "$(tty)"
+
+# Set the Subversion log/commit message editor to a custom script
+exp SVN_EDITOR 'svn-editor-hook nvim'
 
 # Zsh history
 exp HISTFILE "${ZDOTDIR}/histfile"

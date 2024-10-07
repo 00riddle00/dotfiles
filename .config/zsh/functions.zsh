@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-04 16:55:01 EEST
+# Date:   2024-10-07 13:05:03 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -53,18 +53,10 @@ bk() {
 #**
 kk() {
   for item in "${@}" ; do
-    cp -rv "${item}" "${HOME}/backups/${item}.$(date +%F_%R_%S).bak"
-    cp -rv "${item}" "${DROPBOX}/backups/${item}.$(date +%F_%R_%S).bak"
-  done
-}
-
-kk() {
-  for item in "${@}" ; do
     cp -rv "${item}" "${HOME}/backups/$(basename "${item}").$(date +%F_%R_%S).bak"
     cp -rv "${item}" "${DROPBOX}/backups/$(basename "${item}").$(date +%F_%R_%S).bak"
   done
 }
-
 
 # --------------------------------------------
 # Find
@@ -126,12 +118,14 @@ ext-filtered() {
 # Query programs
 # --------------------------------------------
 
-#* Use the --help flag of a program.
+#* Use the --help flag of a program or its subcommand.
 #* USAGE:
-#*   ${0} PROGRAM_NAME
+#*   ${0} PROGRAM_NAME [SUBCOMMAND]
+#*   ${0} git
+#*   ${0} git commit
 #**
 help() {
-  "${1}" --help
+  "${@}" --help
 }
 
 #* Use the --version flag of a program.
@@ -324,6 +318,14 @@ c() {
   else
     cd "${1}" && ls
   fi
+}
+
+#* Check if ${2} is a symlink of ${1}.
+#* USAGE:
+#*   ${0} TARGET SYMLINK
+#**
+is_symlink() {
+  [[ -L "${2}" && "$(readlink "${2}")" == "${1}" ]]
 }
 
 #* Convert a Git repository's HTTPS URL to an SSH URL.
