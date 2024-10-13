@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-07 13:04:28 EEST
+# Date:   2024-10-13 16:14:00 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -470,10 +470,11 @@ alias play   'mpv'
 alias r      'ranger'
 alias rss    'newsboat'
 alias show   'sqlitebrowser'
-#alias t      'tail'
+alias t      'tail'
 alias ta     'tail'
-alias t      'thunar'
+#alias t      'thunar'
 alias tu     'thunar'
+alias th     'thunar'
 #alias tar    'tar -xvf'
 alias tarr   'tar -xvf'
 alias timer  'termdown -B | lolcat'
@@ -555,6 +556,16 @@ alias awk-o--3 'awk -F, '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
 alias awk-o--2 'awk -F, '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
 alias awk-o--1 'awk -F, '\''{OFS=FS} {print $(NF)}'\'
 alias awk-o--  'awk -F, '\''{OFS=FS} {print $NF}'\'
+#-----------------------------
+alias awk-p-1  'awk -F. '\''{OFS=FS} {print $1}'\'
+alias awk-p-2  'awk -F. '\''{OFS=FS} {print $2}'\'
+alias awk-p-3  'awk -F. '\''{OFS=FS} {print $3}'\'
+alias awk-p-4  'awk -F. '\''{OFS=FS} {print $4}'\'
+alias awk-p--4 'awk -F. '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alias awk-p--3 'awk -F. '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alias awk-p--2 'awk -F. '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alias awk-p--1 'awk -F. '\''{OFS=FS} {print $(NF)}'\'
+alias awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
 
 # Colorls
 alias colorls '\colorls ${COLORLS_COLOR}'
@@ -749,7 +760,7 @@ alias scc          'svn copy'
 alias sm           'svn move'
 alias ci           'svn commit'
 alias cim          'svn commit -m'
-#alias sc           'confirm "svn cleanup --remove-unversioned"'
+alias sc           'confirm "svn cleanup --remove-unversioned"'
 alias key          'svn propset svn:keywords "Author Date Revision URL Id"'
 alias ex           'svn propset svn:executable on'
 alias svn.checkout 'svn checkout `--use-commit-times`'
@@ -988,7 +999,7 @@ alias sg       'cd ${MP1}/SG_shell_settings'
 alias xav      'xargs ${EDITOR}'
 alias dq       'cd ${MP1}/dataquest'
 alias irc      '${EDITOR} "${XDG_CONFIG_HOME}/ideavim/ideavimrc"'
-alias sc       'shellcheck'
+#alias sc       'shellcheck'
 alias paco     'pacman -Qo'
 alias rehist   'fc -R'
 alias smv      'sudo mv'
@@ -1007,3 +1018,4 @@ alias gonull   'xdg-open &> /dev/null'
 alias cutc     'cut -b 1-${COLUMNS}'
 alias ddf      'df -hP | grep ^/'
 alias mf       'manf'
+alias p3       'python3.13'
