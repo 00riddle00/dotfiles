@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 20:29:12 EEST
+# Date:   2025-04-13 16:04:14 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -449,6 +449,11 @@
       <command>term-fzf-launcher</command>
     </action>
   </keybind>
+  <keybind key="S-Insert">
+    <action name="Execute">
+      <command>gmrun</command>
+    </action>
+  </keybind>
 
   <!-- ===========================
   RUN: Screenshots
@@ -687,6 +692,12 @@
     </action>
   </keybind>
   -->
+  <!-- Open/focus pavucontrol. -->
+  <keybind key="A-p">
+    <action name="Execute">
+      <command>pavucontrol</command>
+    </action>
+  </keybind>
   <!-- Open/focus SmartSVN window by its name. -->
   <keybind key="W-g">
     <action name="Execute">
