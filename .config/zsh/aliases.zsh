@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-13 16:14:00 EEST
+# Date:   2025-04-13 16:04:09 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -421,10 +421,10 @@ alias fzf.paru  'paru -Slq | fzf -m --preview "paru -Si {1}" | xargs -ro paru -S
 # PIP
 #---------------------------------------
 
-alias pipi  'pip install'
+alias pii   'pip install'
 alias pipir 'pip uninstall'
 alias pir   'pip install -r requirements.txt'
-alias pipu  'pip install --upgrade pip'
+alias piu   'pip install --upgrade pip'
 alias wpi   'which pip'
 
 #------------------------------------------------------------------------------
@@ -636,7 +636,7 @@ alias grem  'git remote -v'
 alias grs   'git restore --staged'
 alias gitr  'git rev-list --all --pretty=oneline -- '
 alias gs    'git status'
-alias clone 'git clone'
+#alias clone 'git clone'
 # By default, `git fetch` does not remove remote branches that
 # no longer have a counterpart branch on the remote. In order
 # to do that, one explicitly needs to prune the list of remote branches:
@@ -885,6 +885,7 @@ alias hs     'https_to_ssh'
 alias clones 'git_clone_ssh'
 alias tc     'tmux-clean'
 alias ver    'version'
+alias clone  'git_clone_ssh'
 
 #------------------------------------------------------------------------------
 # 23. Aliases to scripts
@@ -1019,3 +1020,11 @@ alias cutc     'cut -b 1-${COLUMNS}'
 alias ddf      'df -hP | grep ^/'
 alias mf       'manf'
 alias p3       'python3.13'
+alias d        'sudo docker'
+alias di       'sudo docker images'
+alias dv       'sudo docker volume ls'
+alias dn       'sudo docker network ls'
+alias ms       'mongosh'
+
+alias run 'npm start'
+alias det 'bg && disown'
