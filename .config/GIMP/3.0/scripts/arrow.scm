@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------------------
 ; User: 00riddle00 (Tomas Giedraitis)
-; Date: 2024-09-28 12:24:35 EEST
-; Path: ~/.config/GIMP/2.99/scripts/arrow.scm
+; Date: 2025-04-13 16:12:22 EEST
+; Path: ~/.config/GIMP/3.0/scripts/arrow.scm
 ; URL:  https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
 ; Author: Berengar W. Lehr (https://github.com/BerengarWLehr) and programmer_ceds (https://gitlab.gnome.org/programmer_ceds) and vitforlinux (https://github.com/vitforlinux-gimp)
