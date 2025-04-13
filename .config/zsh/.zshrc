@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-04 16:53:10 EEST
+# Date:   2025-04-13 16:01:11 EEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -211,3 +211,6 @@ fi
 # Launch tmux
 tmux > /dev/null 2>&1
 true
+
+# Pyenv
+eval "$(pyenv init - zsh)"

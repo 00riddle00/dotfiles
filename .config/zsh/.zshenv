@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-07 13:24:40 EEST
+# Date:   2025-04-13 16:00:57 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -162,6 +162,9 @@ exp DP3_SCREEN    'DP-4'
 exp HDMI1_SCREEN  'HDMI-0'
 exp LAPTOP_SCREEN 'eDP-1'
 
+# Python
+exp PYENV_ROOT "$XDG_DATA_HOME/pyenv"
+
 # Perl
 setvar PERL5_HOME          = "${HOME}/perl5"
 setvar PERL5LIB            = "${PERL5_HOME}/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
@@ -181,6 +184,7 @@ typeset -U path
 path=(
   ${HOME}/.local/bin
   ${HOME}/.local/bin/cron
+  ${PYENV_ROOT}/bin
   ${PERL5_HOME}/bin
   ${GEM_HOME}/bin
   ${path}
