@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-04-13 16:04:09 EEST
+# Date:   2025-04-19 15:19:19 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -470,9 +470,9 @@ alias play   'mpv'
 alias r      'ranger'
 alias rss    'newsboat'
 alias show   'sqlitebrowser'
-alias t      'tail'
+#alias t      'tail'
 alias ta     'tail'
-#alias t      'thunar'
+alias t      'thunar'
 alias tu     'thunar'
 alias th     'thunar'
 #alias tar    'tar -xvf'
@@ -574,7 +574,7 @@ alias l       'colorls'
 alias la      'colorls -al'
 alias las     'colorls -al'
 alias lc      'colorls -1'
-alias ll      'colorls -lL'
+#alias ll      'colorls -lL'
 alias lla     'colorls -al .*'
 alias lsa     'colorls -a'
 alias lsal    'colorls -al'
@@ -1026,5 +1026,8 @@ alias dv       'sudo docker volume ls'
 alias dn       'sudo docker network ls'
 alias ms       'mongosh'
 
-alias run 'npm start'
-alias det 'bg && disown'
+alias run  'npm start'
+alias det  'bg && disown'
+alias down 'sudo downgrade'
+alias dir  'vidir'
+alias rux  'npx react-scripts start'

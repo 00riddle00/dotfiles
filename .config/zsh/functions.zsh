@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-07 13:05:03 EEST
+# Date:   2025-04-19 15:19:23 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -108,6 +108,7 @@ ext-filtered() {
   find . \
     -path ./.git  -prune \
     -o -path ./.venv -prune \
+    -o -path ./venv  -prune \
     -o -path ./.idea -prune \
     -o -type f \
       | perl -ne 'print "${1}\n" if m|.*/[^/]+\.([^/.]+)$|' \
