@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-28 18:32:29 EEST
+-- Date:   2025-04-25 14:42:52 EEST
 -- Path:   ~/.config/nvim/lua/plugins.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -21,6 +21,8 @@ return require("packer").startup(function(use)
   use { "raimondi/delimitmate",
     config = function() require("plugins/delimitmate") end }
   use { "preservim/nerdcommenter" }
+  use { "neovim/nvim-lspconfig",
+    config = function() require("plugins/nvim-lspconfig") end }
   use { 'nvim-tree/nvim-tree.lua',
     requires = {{ 'nvim-tree/nvim-web-devicons' }},
     config = function() require("plugins/nvim-tree") end }
@@ -31,6 +33,8 @@ return require("packer").startup(function(use)
       ts_update()
     end,
     config = function() require("plugins/nvim-treesitter") end }
+  use { "cameron-wags/rainbow_csv.nvim",
+    config = function() require("plugins/rainbow_csv") end }
   use { "preservim/tagbar",
     config = function() require("plugins/tagbar") end }
   use { "nvim-telescope/telescope.nvim",
@@ -51,6 +55,7 @@ return require("packer").startup(function(use)
   use { "tpope/vim-surround",
     requires = {{ "tpope/vim-repeat" }} }
   use { "christoomey/vim-tmux-navigator" }
+  use { "wakatime/vim-wakatime" }
   use { "lervag/vimtex",
     config = function() require("plugins/vimtex") end }
 end)
