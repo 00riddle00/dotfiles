@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-04-19 15:19:19 EEST
+# Date:   2025-04-25 14:48:36 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -470,11 +470,12 @@ alias play   'mpv'
 alias r      'ranger'
 alias rss    'newsboat'
 alias show   'sqlitebrowser'
-#alias t      'tail'
+alias t      'tail'
 alias ta     'tail'
-alias t      'thunar'
+#alias t      'thunar'
 alias tu     'thunar'
 alias th     'thunar'
+alias tt     'thunar'
 #alias tar    'tar -xvf'
 alias tarr   'tar -xvf'
 alias timer  'termdown -B | lolcat'
