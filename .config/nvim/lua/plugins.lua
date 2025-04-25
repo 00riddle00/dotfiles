@@ -1,7 +1,7 @@
 -- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2025-04-25 14:42:52 EEST
+-- Date:   2025-04-25 15:12:01 EEST
 -- Path:   ~/.config/nvim/lua/plugins.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -20,6 +20,8 @@ return require("packer").startup(function(use)
     config = function() require("plugins/copilot") end }
   use { "raimondi/delimitmate",
     config = function() require("plugins/delimitmate") end }
+    use { "smjonas/inc-rename.nvim",
+      config = function() require("inc_rename").setup() end }
   use { "preservim/nerdcommenter" }
   use { "neovim/nvim-lspconfig",
     config = function() require("plugins/nvim-lspconfig") end }
