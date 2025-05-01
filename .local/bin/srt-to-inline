@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+# vim:tw=88
+# ------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2025-05-01 23:42:52 EEST
+# Path:   ~/.local/bin/srt-to-inline
+# URL:    https://github.com/00riddle00/dotfiles
+# ------------------------------------------------------------------------------
+#*
+# Convert .srt subtitle files to inline format with timestamps.
+#
+# INPUTS:
+# -------
+# One or more `.srt` subtitle files, or STDIN, with blocks like:
+#   1
+#   00:00:00,000 --> 00:00:04,000
+#   Some subtitle text.
+#
+# OUTPUT:
+# -------
+# One line per subtitle block, in the format:
+#   [00:00:00,000 --> 00:00:04,000] Some subtitle text.
+# Output is written to standard output.
+#**
+import argparse
+import inspect
+import os
+import re
+import sys
+
+
+Id = "srt-to-inline v1.0.0"
+
+basename = os.path.basename(__file__)
+
+
+#** USAGE:
+#**   $0 file.srt [file2.srt ...]
+#**   $0 <<< "$(cat file.srt)"
+#**
+#** OPTIONS:
+#**  --help                   display this help and exit
+#**  --version                output version information and exit
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=inspect.cleandoc(
+            f"""
+            Convert .srt subtitle files to inline format with timestamps.
+
+            INPUTS:
+            -------
+            One or more `.srt` subtitle files, or STDIN, with blocks like:
+              1
+              00:00:00,000 --> 00:00:04,000
+              Some subtitle text.
+
+            OUTPUT:
+            -------
+            One line per subtitle block, in the format:
+              [00:00:00,000 --> 00:00:04,000] Some subtitle text.
+
+            usage examples:
+              {basename} file.srt
+              {basename} file1.srt file2.srt
+              {basename} <<< "$(cat file.srt)"
+            """
+        ),
+        formatter_class=argparse.RawTextHelpFormatter,
+    )
+
+    parser.add_argument(
+        "input_files",
+        nargs="*",
+        type=argparse.FileType("r"),
+        default=(None if sys.stdin.isatty() else [sys.stdin]),
+        help="Subtitle files to read, or STDIN if none are given.",
+    )
+
+    parser.add_argument("-v", "--version", action="version", version=Id)
+    return parser.parse_args()
+
+
+def convert_srt_to_inline(file_obj):
+    content = file_obj.read()
+    blocks = re.split(r"\n{2,}", content.strip())
+
+    for block in blocks:
+        lines = block.strip().splitlines()
+        if len(lines) >= 3:
+            timestamp = lines[1]
+            text = " ".join(lines[2:])
+            sys.stdout.write(f"[{timestamp}] {text}\n")
+
+
+def main():
+    args = parse_args()
+    if not args.input_files:
+        sys.stderr.write(f"ERROR: no input provided. See --help for usage.\n")
+    for file_obj in args.input_files:
+        convert_srt_to_inline(file_obj)
+
+
+if __name__ == "__main__":
+    main()
