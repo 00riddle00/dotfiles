@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-04 18:02:45 EEST
+# Date:   2025-05-04 19:39:22 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -134,6 +134,12 @@ exp COLORLS_COLOR_ALWAYS '--color=always'
 exp EZA_COLOR        '--color=auto'
 # Use either '--color=always' or '--color=never'
 exp EZA_COLOR_ALWAYS '--color=always'
+
+# eza icon settings
+# Use either '--icons=always' or '--icons=never'
+exp EZA_ICONS_ALWAYS '--icons=always'
+# Any explicit use of the --icons=WHEN flag overrides this behavior:
+exp EZA_ICONS_AUTO    true
 
 # A more informative and visually appealing interface, leveraging colors and
 # a detailed status column for better usability.

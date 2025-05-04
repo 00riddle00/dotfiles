@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-04 18:01:57 EEST
+# Date:   2025-05-04 19:39:07 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -585,7 +585,7 @@ alias awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
 #alias lsh     'colorls -ld .[^.]*'
 #alias lsr     'colorls --T'
 #alias since   '\colorls -lt ${COLORLS_COLOR_ALWAYS} | head'
-#alias sincee  '\colorls -lt ${COLORLS_COLOR_ALWAYS}'
+#alias sincee  '\colorls -lt
 # Display only directories:
 #alias dod     'colorls -ld'
 #alias dod2    'colorls -d1'
@@ -626,11 +626,11 @@ alias lsa     'eza -a'
 alias lsal    'eza -al'
 alias lsla    'eza -al'
 alias lsl     'eza -l'
-alias ih      '\eza -al ${EZA_COLOR_ALWAYS} | grep -i'
+alias ih      '\eza -al ${EZA_COLOR_ALWAYS} ${EZA_ICONS_ALWAYS} | grep -i'
 alias lsh     'eza -ld .[^.]*'
 alias lsr     'eza -T'
-alias since   '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS} | head'
-alias sincee  '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS}'
+alias since   '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS} ${EZA_ICONS_ALWAYS} | head'
+alias sincee  '\eza --sort=oldest -l'
 # Display only directories:
 alias dod     'eza -lD --classify=auto'
 alias dod2    'eza -D1 --classify=auto'
@@ -641,7 +641,7 @@ alias dof2    'eza -f1'
 alias dohd    'eza -ld .[^.]*/ --classify=auto'
 alias dohd2   'eza -d1 .[^.]*/ --classify=auto'
 # Display only hidden files:
-alias doh     'eza -lfa | grep "^\."'
+alias doh     'eza -lfa ${EZA_ICONS_ALWAYS} | grep "^\."'
 alias doh2    'eza -fa | grep "^\."'
 
 # feh
@@ -725,7 +725,7 @@ alias grepp      'grep -P'
 #alias lsh    'ls -ld .[^.]*'
 #alias lsr    'ls -R'
 #alias since  '\ls -ltL ${LS_COLOR_ALWAYS} | head'
-#alias sincee '\ls -ltL ${LS_COLOR_ALWAYS}'
+#alias sincee '\ls -ltL'
 # Display only directories:
 #alias dod    '\ls -l ${LS_COLOR_ALWAYS} | grep ^d'
 #alias dod2   '\ls -1F ${LS_COLOR_ALWAYS} | grep /'
