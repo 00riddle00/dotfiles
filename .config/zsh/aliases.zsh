@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-04 19:39:07 EEST
+# Date:   2025-05-04 23:23:37 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -1062,3 +1062,4 @@ alias down 'sudo downgrade'
 alias dir  'vidir'
 alias rux  'npx react-scripts start'
 alias pak  "${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/plugins.lua"
+alias glh  'git lg --color=always | head -n 15'
