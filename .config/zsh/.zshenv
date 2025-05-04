@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-04-25 14:48:32 EEST
+# Date:   2025-05-04 18:02:45 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -60,6 +60,7 @@ exp CGDB_DIR                    "${XDG_CONFIG_HOME}/cgdb"
 exp CUDA_CACHE_PATH             "${XDG_CACHE_HOME}/nv"
 exp DIRCOLORS                   "${XDG_CONFIG_HOME}/dircolors"
 exp DOCKER_CONFIG               "${XDG_CONFIG_HOME}/docker"
+exp DOTNET_CLI_HOME             "${XDG_DATA_HOME}/dotnet"
 exp FEHBG_PATH                  "${XDG_DATA_HOME}/fehbg"
 exp GDBHISTFILE                 "${XDG_DATA_HOME}/gdb/history"
 exp GEM_HOME                    "$(gem env user_gemhome)"
@@ -72,6 +73,7 @@ exp JUPYTER_PLATFORM_DIRS       '1'
 exp LYNX_CFG                    "${XDG_CONFIG_HOME}/lynx/lynx.cfg"
 exp NPM_CONFIG_USERCONFIG       "${XDG_CONFIG_HOME}/npm/npmrc"
 exp PARALLEL_HOME               "${XDG_CONFIG_HOME}/parallel"
+exp PERL_CPANM_HOME             "${XDG_CACHE_HOME}/cpanm"
 exp PYTHONPYCACHEPREFIX         "${XDG_CACHE_HOME}/python"
 exp PYTHONUSERBASE              "${XDG_DATA_HOME}/python"
 exp PYTHON_HISTORY              "${XDG_STATE_HOME}/python/history"
@@ -86,8 +88,8 @@ exp W3M_DIR                     "${XDG_STATE_HOME}/w3m"
 exp WAKATIME_HOME               "${XDG_CONFIG_HOME}/wakatime"
 exp XAUTHORITY                  "${XDG_RUNTIME_DIR}/Xauthority"
 exp XINITRC                     "${XDG_CONFIG_HOME}/X11/xinitrc"
-exp _JAVA_OPTIONS               "-Djava.util.prefs.userRoot=\"${XDG_CONFIG_HOME}/java\""
 exp ZDOTDIR                     "${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}"
+exp _JAVA_OPTIONS               "-Djava.util.prefs.userRoot=\"${XDG_CONFIG_HOME}/java\" -Djavafx.cachedir=\"${XDG_CACHE_HOME}/openjfx\""
 # ^-- `export ZDOTDIR="${HOME}/.config/zsh"` is set in /etc/zsh/zshenv
 
 # Default programs
@@ -126,6 +128,12 @@ exp LS_COLOR_ALWAYS '--color=yes'
 exp COLORLS_COLOR        '--color=auto'
 # Use either '--color=always' or '--color=never'
 exp COLORLS_COLOR_ALWAYS '--color=always'
+
+# eza color settings
+# Use either '--color=auto' or '--color=never'
+exp EZA_COLOR        '--color=auto'
+# Use either '--color=always' or '--color=never'
+exp EZA_COLOR_ALWAYS '--color=always'
 
 # A more informative and visually appealing interface, leveraging colors and
 # a detailed status column for better usability.

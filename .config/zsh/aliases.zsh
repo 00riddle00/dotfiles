@@ -1,7 +1,7 @@
 # vim:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-04-25 14:48:36 EEST
+# Date:   2025-05-04 18:01:57 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -82,9 +82,9 @@ alias dots     'cd ${DOTSHARE}'
 alias notes    'cd ${NOTES}'
 alias op       'cd ${XDG_CONFIG_HOME}/openbox'
 alias pro      'cd ${PRO}'
-alias np       'cd ${PRO}/2022/npBuild'
-alias sol      'cd ${PRO}/2023/Solutions-To-Problems/Codewars'
-alias tem      'cd ${PRO}/2023/Solutions-To-Problems/Codewars/temp'
+alias np       'cd ${PRO}/archived/2022/npBuild'
+alias sol      'cd ${PRO}/archived/2023/Solutions-To-Problems/Codewars'
+alias tem      'cd ${PRO}/archived/2023/Solutions-To-Problems/Codewars/temp'
 alias res      'cd ${XDG_DATA_HOME}/tmux/resurrect'
 alias sk       'cd ${SCREENSHOTS}'
 alias we       'cd ${MP1}/webuzz && venv'
@@ -411,9 +411,9 @@ alias up2                   'sudo pacman -Syuu'
 # Paru
 #---------------------------------------
 
-alias parus     'paru -S'
-alias paru.info 'paru -Si'
-alias parug     'paru -G'
+alias parus     'paru -S'  # Install a package from AUR
+alias paru.info 'paru -Si' # Display info on a given installed package
+alias parug     'paru -G'  # Download PKGBUILD and other files for a package
 # Fuzzy-search through the AUR, preview info and install selected packages
 alias fzf.paru  'paru -Slq | fzf -m --preview "paru -Si {1}" | xargs -ro paru -S --noconfirm'
 
@@ -430,7 +430,8 @@ alias wpi   'which pip'
 #------------------------------------------------------------------------------
 # 18. ABS (Arch Build System)
 #------------------------------------------------------------------------------
-
+alias mpo  'makepkg -o'      # --nobuild (only extract sources, don't build yet)
+alias mpe  'makepkg -e'      # --noextract (reuse the extracted sources, so the changes stay in place)
 alias mps  'makepkg -s'      # --syncdeps
 alias mpi  'makepkg -si'     # --install
 alias mpic 'makepkg -sic'    # --clean
@@ -569,35 +570,34 @@ alias awk-p--1 'awk -F. '\''{OFS=FS} {print $(NF)}'\'
 alias awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
 
 # Colorls
-alias colorls '\colorls ${COLORLS_COLOR}'
-alias ls      'colorls'
-alias l       'colorls'
-alias la      'colorls -al'
-alias las     'colorls -al'
-alias lc      'colorls -1'
-#alias ll      'colorls -lL'
-alias lla     'colorls -al .*'
-alias lsa     'colorls -a'
-alias lsal    'colorls -al'
-alias lsla    'colorls -al'
-alias lsl     'colorls -l'
-alias ih      '\colorls -al ${COLORLS_COLOR_ALWAYS} | grep -i'
-alias lsh     'colorls -ld .?*'
-alias lsr     'colorls --tree'
-alias since   '\colorls -lt ${COLORLS_COLOR_ALWAYS} | head'
-alias sincee  '\colorls -lt ${COLORLS_COLOR_ALWAYS}'
+#alias colorls '\colorls ${COLORLS_COLOR}'
+#alias ls      'colorls'
+#alias l       'colorls'
+#alias la      'colorls -al'
+#alias las     'colorls -al'
+#alias lc      'colorls -1'
+#alias ll      'colorls -lA --report'
+#alias lsa     'colorls -a'
+#alias lsal    'colorls -al'
+#alias lsla    'colorls -al'
+#alias lsl     'colorls -l'
+#alias ih      '\colorls -al ${COLORLS_COLOR_ALWAYS} | grep -i'
+#alias lsh     'colorls -ld .[^.]*'
+#alias lsr     'colorls --T'
+#alias since   '\colorls -lt ${COLORLS_COLOR_ALWAYS} | head'
+#alias sincee  '\colorls -lt ${COLORLS_COLOR_ALWAYS}'
 # Display only directories:
-alias dod     'colorls -ld'
-alias dod2    'colorls -d'
+#alias dod     'colorls -ld'
+#alias dod2    'colorls -d1'
 # Display only files:
-alias dof     'colorls -lf'
-alias dof2    'colorls -f'
-# Display only hidden files/directories:
-alias doh     'colorls -ald .*'
-alias doh2    'colorls -a .*'
-# Display large directories:
-alias lm      'colorls -l ${COLORLS_COLOR_ALWAYS} | less'
-
+#alias dof     'colorls -lf'
+#alias dof2    'colorls -f1'
+# Display only hidden directories:
+#alias dohd    'colorls -lAd .[^.]*/'
+#alias dohd2   'colorls -Ad1 .[^.]*/'
+# Display only hidden files:
+#alias doh     "colorls -lA | awk '\$NF ~ /^\.[^/]*$/ { print }'"
+#alias doh2    "colorls -1A | awk '\$NF ~ /^\.[^/]*$/ { print }'"
 
 # Cowfortune
 alias cff 'fortune | cowsay'
@@ -613,6 +613,36 @@ alias dus          'du -chs -- * | sort -h'
 alias dusort.all   'du -chs -- * .* | sort -h'  # include hidden files
 alias trackmem     'watch -n 5 "du -chs -- * | sort -h"'
 alias trackmem.all 'watch -n 5 "du -chs -- * .* | sort -h"'
+
+# eza
+alias eza     '\eza ${EZA_COLOR}'
+alias ls      'eza'
+alias l       'eza'
+alias la      'eza -al'
+alias las     'eza -al'
+alias lc      'eza -1'
+alias ll      'eza -lX'
+alias lsa     'eza -a'
+alias lsal    'eza -al'
+alias lsla    'eza -al'
+alias lsl     'eza -l'
+alias ih      '\eza -al ${EZA_COLOR_ALWAYS} | grep -i'
+alias lsh     'eza -ld .[^.]*'
+alias lsr     'eza -T'
+alias since   '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS} | head'
+alias sincee  '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS}'
+# Display only directories:
+alias dod     'eza -lD --classify=auto'
+alias dod2    'eza -D1 --classify=auto'
+# Display only files:
+alias dof     'eza -lf'
+alias dof2    'eza -f1'
+# Display only hidden directories:
+alias dohd    'eza -ld .[^.]*/ --classify=auto'
+alias dohd2   'eza -d1 .[^.]*/ --classify=auto'
+# Display only hidden files:
+alias doh     'eza -lfa | grep "^\."'
+alias doh2    'eza -fa | grep "^\."'
 
 # feh
 alias wall 'feh --bg-scale'
@@ -687,13 +717,12 @@ alias grepp      'grep -P'
 #alias las    'ls -al'
 #alias lc     'ls -1'
 #alias ll     'ls -lL'
-#alias lla    'ls -al .*'
 #alias lsa    'ls -a'
 #alias lsal   'ls -al'
 #alias lsla   'ls -al'
 #alias lsl    'ls -l'
 #alias ih     '\ls -al ${LS_COLOR_ALWAYS} | grep -i'
-#alias lsh    'ls -ld .?*'
+#alias lsh    'ls -ld .[^.]*'
 #alias lsr    'ls -R'
 #alias since  '\ls -ltL ${LS_COLOR_ALWAYS} | head'
 #alias sincee '\ls -ltL ${LS_COLOR_ALWAYS}'
@@ -703,13 +732,12 @@ alias grepp      'grep -P'
 # Display only files:
 #alias dof    '\ls -l ${LS_COLOR_ALWAYS} | grep ^-'
 #alias dof2   '\ls -1F ${LS_COLOR_ALWAYS} | grep -v /'
-# Display only hidden files/directories:
-#alias doh    'ls -ald .*'
-#alias doh2   'ls -ad .*'
-# Display large directories:
-#alias lm     '\ls -l ${LS_COLOR_ALWAYS} | less'
-# Only \ls specific:
-#alias big    '\ls -lR ${LS_COLOR_ALWAYS} | sort -n -r -k5 | less'
+# Display only hidden directories:
+#alias dohd   'ls -ld .[^.]*/'
+#alias dohd2  'ls -ad1 .[^.]*/'
+# Display only hidden files:
+#alias doh    "ls -lAp | awk '{ if ($NF ~ /^\.[^/]*$/) print }'"
+#alias doh2   'ls -ap | grep "^\.[^/]*$"'
 
 # mpv
 alias mpv.image   'mpv --no-config --pause --vo=tct'
@@ -756,7 +784,7 @@ alias scat         'svn cat'
 # --Actions
 alias sa           'svn add'
 alias san          'svn add -N'
-alias sr           'svn revert `--use-commit-times`'
+#alias sr           'svn revert `--use-commit-times`'
 alias scc          'svn copy'
 alias sm           'svn move'
 alias ci           'svn commit'
@@ -939,9 +967,9 @@ alias p         'python'
 alias pi        'ipython --TerminalInteractiveShell.editing_mode=vi'
 alias py.exe    'python -c'
 alias qenv      'deactivate'
-alias venv.init 'python3 -m venv venv'
-alias venv      'source venv/bin/activate'
-alias tre       'tree -I "venv|__pycache__"'
+alias venv.init 'python3 -m venv .venv'
+alias venv      'source .venv/bin/activate'
+alias tre       'tree -I "__pycache__"'
 
 # C
 alias gdb.super 'gdb --batch --ex run --ex bt --ex q --args'
@@ -993,10 +1021,10 @@ alias xres.show 'xrdb -query -all'
 # 27. Temporary (maybe they will stick)
 #------------------------------------------------------------------------------
 
-alias books    '${EDITOR} -c "e ${PRO}/2022/books/bibliography.bib | :cd %:p:h"'
+alias books    '${EDITOR} -c "e ${PRO}/archived/2022/books/bibliography.bib | :cd %:p:h"'
 alias get.date '--datetime | tr -d '\n' | copy'
 alias pasta    '${EDITOR} "${DOTSHARE}/misc/pastes.lst"'
-alias pst      'cd ${PRO}/2022/npBuild && ./packageStats'
+alias pst      'cd ${PRO}/archived/2022/npBuild && ./packageStats'
 alias sg       'cd ${MP1}/SG_shell_settings'
 alias xav      'xargs ${EDITOR}'
 alias dq       'cd ${MP1}/dataquest'
@@ -1027,8 +1055,10 @@ alias dv       'sudo docker volume ls'
 alias dn       'sudo docker network ls'
 alias ms       'mongosh'
 
-alias run  'npm start'
+#alias run  'npm start'
+alias run  'npm run dev'
 alias det  'bg && disown'
 alias down 'sudo downgrade'
 alias dir  'vidir'
 alias rux  'npx react-scripts start'
+alias pak  "${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/plugins.lua"
