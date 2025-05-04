@@ -1,0 +1,47 @@
+!------------------------------------------------------------------------------
+! User: 00riddle00 (Tomas Giedraitis)
+! Date: 2025-05-04 23:22:17 EEST
+! Path: ~/.config/X11/urxvt-colors/addy
+! URL:  https://github.com/00riddle00/dotfiles
+!------------------------------------------------------------------------------
+! Author: addy-dclxvi (Addy) (https://github.com/addy-dclxvi)
+! Orig. URL: https://raw.githubusercontent.com/addy-dclxvi/i3-starterpack/63aec23f01f93c05aa1629dead9c278117dbf3fc/.Xresources
+! Orig. URL/File Retrieval: 2025-05-04 22:55:18 EEST
+!------------------------------------------------------------------------------
+
+! special
+*.foreground: #93a1a1
+*.background: #141c21
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! green
+*.color2: #819400
+*.color10: #a4bd00
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
