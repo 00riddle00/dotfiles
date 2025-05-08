@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-09-16 17:13:28 EEST
-* Path:   ~/.config/VSCodium/User/settings.json
+* Date:   2025-05-08 12:51:18 EEST
+* Path:   ~/.config/Code/User/settings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
-* VSCodium allows to have comments in this file.
+* VS Code allows to have comments in this file.
 */
 
 {
@@ -56,5 +56,17 @@
     "asvetliakov.vscode-neovim": 1
   },
   "editor.fontLigatures": true,
-  "editor.columnSelection": true
+  "editor.columnSelection": true,
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "none",
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.unicodeHighlight.allowedCharacters": {
+    "–": true
+  },
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.matchBrackets": "never",
+  "terminal.integrated.mouseWheelZoom": true
 }
