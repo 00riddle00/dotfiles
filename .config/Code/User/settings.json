@@ -68,5 +68,10 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.guides.bracketPairsHorizontal": false,
   "editor.matchBrackets": "never",
-  "terminal.integrated.mouseWheelZoom": true
+  "terminal.integrated.mouseWheelZoom": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#004e62",           // background when not debugging
+    "statusBar.foreground": "#9ccae6",           // text color
+  },
+  "editor.minimap.enabled": false
 }
