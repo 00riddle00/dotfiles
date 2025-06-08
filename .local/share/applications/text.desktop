@@ -2,6 +2,6 @@
 Type=Application
 Name=EDITOR
 GenericName=Text Editor
-Exec=bash -c '/usr/bin/urxvt -e $EDITOR %u'
+Exec=bash -c '/usr/bin/kitty --hold tmux new-session ${EDITOR} %u'
 Terminal=false
 Comment=Launches $EDITOR in terminal
