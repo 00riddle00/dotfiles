@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-04-13 16:11:33 EEST
+# Date:   2025-06-08 23:30:43 EEST
 # Path:   ~/.config/GIMP/3.0/shortcutsrc.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -11,9 +11,11 @@
 
 (file-version 1)
 
+( action "edit-paste"                 "<Primary>v"      )
 ( action "tools-crop"                 "c"               )
 ( action "dialogs-gradients"                            )
 ( action "view-zoom-fit-in"           "<Primary>0"      )
+( action "tools-gradient"                               )
 ( action "layers-new"                 "equal"           )
 ( action "tools-scale"                "<Primary>t"      )
 ( action "image-resize"               "<Primary><Alt>c" )
@@ -36,7 +38,7 @@
 ( action "file-open-recent-10"                          )
 ( action "tools-clone"                                  )
 ( action "tools-iscissors"                              )
-( action "tools-bucket-fill"          "<Primary>g"      )
+( action "tools-bucket-fill"          "g"               )
 ( action "view-shrink-wrap"                             )
 ( action "tools-convolve"             "b"               )
 # ...
