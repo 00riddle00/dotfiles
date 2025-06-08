@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2025-05-08 12:51:18 EEST
+* Date:   2025-06-08 23:27:27 EEST
 * Path:   ~/.config/Code/User/settings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -73,5 +73,11 @@
     "statusBar.background": "#004e62",           // background when not debugging
     "statusBar.foreground": "#9ccae6",           // text color
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.sqlite": "default"
+  },
+  "database-client.autoSync": true,
+  "makefile.configureOnOpen": true
 }
