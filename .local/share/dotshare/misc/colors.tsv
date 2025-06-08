@@ -1,4 +1,4 @@
-NAME	HEX/RGB
+NAME	HEX CODE
 arch_blue	#1793d1
 pretty_blue	#268bd2
 another_blue	#47afdf
@@ -7,8 +7,16 @@ pretty_light_blue	#00afd7
 aquamarine	#06989a
 i3_bar_bg	#002b36
 urxvt_black	#080c0e
-cyan	rgb(0, 255, 255)
-green	rgb(0, 255, 0)
-orange	rgb(255, 153, 0)
-yellow	rgb(255, 255, 0)
-grey	rgb(204, 204, 204)
+bg_seacolor	#073542
+cyan	#00ffff
+green	#00ff00
+orange	#ff9900
+yellow	#ffff00
+grey	#cccccc
+obsidian_editor_blue	#1574bc
+vs_code_bg_blue	#007acc
+vs_code_bg_standard_black	#1e2227
+vs_code_fg_standard_grey	#9ba0af
+vs_code_bg_seacolor	#004e62
+vs_code_fg_seacolor_1	#86b1ca
+vs_code_fg_seacolor_2	#9ccae6
