@@ -18,7 +18,7 @@
 #* USAGE:
 #*   ${0} BIBTEX_FILE [BIBTEX_FILE ...]
 #**
-grep '^ *keywords *= *{' "${@}" \
+rg '^ *keywords *= *\{' "${@}" \
   | perl -lne 'print $1 if /\{(.*)\}/' \
   | sed 's/; */\n/g' \
   | sort | uniq -c | sort -nr -k1,1

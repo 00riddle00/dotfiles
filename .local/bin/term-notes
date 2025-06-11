@@ -13,10 +13,18 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 135x61 \
-  -name notes \
-  -hold \
-  -e tmux new-session \
-    "${EDITOR}" -c \
-      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose"
+#urxvt \
+  #-geometry 135x61 \
+  #-name notes \
+  #-hold \
+  #-e tmux new-session \
+    #"${EDITOR}" -c \
+      #"e ${NOTES}/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose"
+
+kitty \
+  --class notes \
+  --override initial_window_columns=135 \
+  --override initial_window_lines=61 \
+  --hold \
+    tmux new-session "${EDITOR}" -c \
+      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .."

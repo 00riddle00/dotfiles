@@ -18,9 +18,9 @@
 win_names_regex="$(echo "${@}" | tr ' ' '|')"
 
 if wmctrl -lx \
-    | grep "brave-browser.Brave-browser.*$" \
+    | rg "brave-browser\.Brave-browser.*$" \
     | awk -v names="${win_names_regex}" '$NF !~ names {print}' \
-    | grep -q .
+    | rg -q .
 then
     wmctrl -a "brave"
 else

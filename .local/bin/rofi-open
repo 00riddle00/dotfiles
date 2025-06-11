@@ -19,7 +19,7 @@ if [[ "${#}" -gt 0 ]]; then
   program="${1}"
 
   # No program is running, so start one.
-  if ! wmctrl -lx | grep -i -q -- "${program}"; then
+  if ! wmctrl -lx | rg -i -q -- "${program}"; then
     coproc "${program}" > /dev/null 2>&1
     exec 1>&-
     exit;

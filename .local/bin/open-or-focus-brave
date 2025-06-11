@@ -14,7 +14,7 @@
 #* USAGE:
 #*   ${0} WINDOW_NAME
 #**
-if wmctrl -lx | grep -q "brave-browser.Brave-browser.*${1}$"; then
+if wmctrl -lx | rg -q "brave-browser\.Brave-browser.*${1}$"; then
     wmctrl -F -a "${1}"
 else
     brave --window-name="${1}"

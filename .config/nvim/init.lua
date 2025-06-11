@@ -6,8 +6,8 @@
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
-require("plugins")
-require("keybindings")
-require("autocmd")
-require("commands")
-require("options")
+require("config.lazy")
+require("config.keybindings")
+require("config.autocmd")
+require("config.commands")
+require("config.options")

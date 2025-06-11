@@ -18,25 +18,25 @@
 #**
 
 # Auto-detect the GPU brand using lspci.
-lspci_output=$(lspci | grep -i --color=never "VGA\|3D\|Display")
+lspci_output=$(lspci | rg -i "VGA|3D|Display")
 
-if grep -iq "nvidia" <<< "${lspci_output}"; then
+if rg -iq "nvidia" <<< "${lspci_output}"; then
   temp=$( \
     nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader \
       | tr -d ' '
   )
-elif grep -iq "amd\|radeon" <<< "${lspci_output}"; then
+elif rg -iq "amd|radeon" <<< "${lspci_output}"; then
   temp=$( \
     sensors \
-      | grep -i 'edge\|junction' \
+      | rg -i 'edge|junction' \
       | awk '{print $2}' \
       | sed 's/+//g' \
       | head -n1
   )
-elif grep -iq "intel" <<< "${lspci_output}"; then
+elif rg -iq "intel" <<< "${lspci_output}"; then
   temp=$( \
     sensors \
-      | grep -i 'Package id 0' \
+      | rg -i 'Package id 0' \
       | awk '{print $4}' \
       | sed 's/+//g' \
       | head -n1

@@ -13,10 +13,18 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 105x40 \
-  -name nvim-config \
-  -hold \
-  -e tmux new-session \
-    "${EDITOR}" -c \
+#urxvt \
+  #-geometry 105x40 \
+  #-name nvim-config \
+  #-hold \
+  #-e tmux new-session \
+    #"${EDITOR}" -c \
+      #"e ${XDG_CONFIG_HOME}/nvim | :cd %:p:h"
+
+kitty \
+  --class nvim-config \
+  --override initial_window_columns=105 \
+  --override initial_window_lines=40 \
+  --hold \
+    tmux new-session "${EDITOR}" -c \
       "e ${XDG_CONFIG_HOME}/nvim | :cd %:p:h"

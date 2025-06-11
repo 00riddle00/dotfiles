@@ -29,10 +29,13 @@ xscreensaver -no-splash &
 flameshot &
 dropbox &
 dunst &
+copyq &
 
 # Spawn SSH Agent
 eval "$(ssh-agent -s)"
 
 # Window manager
 #exec i3
+export XDG_SESSION_TYPE=x11
+unset WAYLAND_DISPLAY
 exec openbox-session

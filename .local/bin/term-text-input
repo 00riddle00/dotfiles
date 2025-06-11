@@ -14,10 +14,19 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 105x40 \
-  -name text-input \
-  -hold \
-  -e tmux new-session \
-    "${EDITOR}" -c \
-      "e /tmp/temp_$(date +%F_%H_%M_%S).md | :cd %:p:h | :NvimTreeClose"
+#urxvt \
+  #-geometry 105x40 \
+  #-name text-input \
+  #-hold \
+  #-e tmux new-session \
+    #"${EDITOR}" -c \
+      #"e /tmp/temp_$(date +%F_%H_%M_%S).md | :cd %:p:h"
+
+kitty \
+  --class text-input \
+  --override initial_window_columns=105 \
+  --override initial_window_lines=40 \
+  --hold \
+    tmux new-session "${EDITOR}" -c \
+      "e /tmp/temp_$(date +%F_%H_%M_%S).md | :cd %:p:h"
+

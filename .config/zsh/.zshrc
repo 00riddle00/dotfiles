@@ -47,6 +47,10 @@ autoload -Uz compinit
 zmodload zsh/complist
 # Initialize the completion system
 compinit
+#compdef dot=git
+compdef uv-run=python
+#compdef dsd=cat
+#compdef <command>=cat
 
 # Configure various aspects of the Zsh completion system
 zstyle ':completion:*' completer _complete _correct _approximate
@@ -171,11 +175,6 @@ setopt NO_BEEP
 # Disable XON/XOFF flow control
 stty -ixon
 
-# Use autojump package / plugin
-if [[ -s /etc/profile.d/autojump.sh ]]; then
-  source /etc/profile.d/autojump.sh
-fi
-
 # Use the key bindings of the fzf package / plugin
 if [[ -x "$(command -v fzf)"  ]]; then
   source /usr/share/fzf/key-bindings.zsh
@@ -204,13 +203,46 @@ fi
 # Launch programs
 # -------------------------------------------
 
+#source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.zsh
+
+## disable sort when completing `git checkout`
+#zstyle ':completion:*:git-checkout:*' sort false
+## set descriptions format to enable group support
+## NOTE: don't use escape sequences (like '%F{red}%d%f') here, fzf-tab will ignore them
+#zstyle ':completion:*:descriptions' format '[%d]'
+## set list-colors to enable filename colorizing
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+## force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
+#zstyle ':completion:*' menu no
+## preview directory's content with eza when completing cd
+#zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+## custom fzf flags
+## NOTE: fzf-tab does not follow FZF_DEFAULT_OPTS by default
+#zstyle ':fzf-tab:*' fzf-flags --color=fg:1,fg+:2 --bind=tab:accept
+## To make fzf-tab follow FZF_DEFAULT_OPTS.
+## NOTE: This may lead to unexpected behavior since some flags break this plugin. See Aloxaf/fzf-tab#455.
+#zstyle ':fzf-tab:*' use-fzf-default-opts yes
+## switch group using `<` and `>`
+#zstyle ':fzf-tab:*' switch-group '<' '>'
+
 # Launch system information tool
 #archey
 #neofetch
 
+if [[ -n $HYPRLAND_INSTANCE_SIGNATURE ]]; then
+  tmux set-environment -g HYPRLAND_INSTANCE_SIGNATURE "$HYPRLAND_INSTANCE_SIGNATURE"
+fi
+
 # Launch tmux
-tmux > /dev/null 2>&1
-true
+if [[ -z "$TMUX" && "$TERM_PROGRAM" != "vscode" && -z "$INSIDE_JETBRAINS" ]]; then
+  tmux > /dev/null 2>&1
+  true
+fi
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
 # Pyenv
 eval "$(pyenv init - zsh)"
+
+eval "$(github-copilot-cli alias -- "$0")"

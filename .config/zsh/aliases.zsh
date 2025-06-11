@@ -36,7 +36,7 @@
 #  26. Misc
 #  27. Temporary
 
-alias() {
+alas() {
   builtin alias -- ${1}="${2}"
 }
 
@@ -46,80 +46,89 @@ alias() {
 
 # Going up ('c' is a custom Shell function)
 #alias up    'c ..'
-alias ./    'c ..'
-alias ..    'c ..'
-alias ...   'c ../..'
-alias ....  'c ../../..'
-alias ..... 'c ../../../..'
-alias -     'c "${OLDPWD}"'
-alias c-    'c "${OLDPWD}"'
+alas ./    'c ..'
+alas ..    'c ..'
+alas ...   'c ../..'
+alas ....  'c ../../..'
+alas ..... 'c ../../../..'
+alas -     'c "${OLDPWD}"'
+alas c-    'c "${OLDPWD}"'
+
+#alias cd 'echo "*** Use '\'"c"\'' ***"'
+alas ls   'echo "*** Use '\'"l"\'' ***"'
+alas cat  'echo "*** Use '\'"ca"\'' ***"'
+alas exit 'echo "*** Use '\'"q"\'' ***"'
 
 # Temporary directories
-alias mp  'cd ${MP} '
-alias mp1 'cd ${MP1}'
-alias mp2 'cd ${MP2}'
-alias mp3 'cd ${MP3}'
-alias mp4 'cd ${MP4}'
-alias mp5 'cd ${MP5}'
-alias mp6 'cd ${MP6}'
-alias mp7 'cd ${MP7}'
-alias mp8 'cd ${MP8}'
-alias mp0 'cd ${MP0}'
+alas mp  'c ${MP} '
+alas mp1 'c ${MP1}'
+alas mp2 'c ${MP2}'
+alas mp3 'c ${MP3}'
+alas mp4 'c ${MP4}'
+alas mp5 'c ${MP5}'
+alas mp6 'c ${MP6}'
+alas mp7 'c ${MP7}'
+alas mp8 'c ${MP8}'
+alas mp0 'c ${MP0}'
 
 # Various locations
-alias bak      'cd ${HOME}/backups'
-alias bin      'cd ${BIN}'
-alias cache    'cd ${XDG_CACHE_HOME}'
-alias can      'cd ${CANDY}'
-alias conf     'cd ${XDG_CONFIG_HOME}'
-alias drop     'cd ${DROPBOX}'
-alias drop.bak 'cd ${DROPBOX}/backup'
-alias dw       'cd ${XDG_DOWNLOAD_DIR}'
-alias hist     'cd ${HOME}/histfiles/'
-alias lok      'cd ${HOME}/.local'
-alias share    'cd ${XDG_DATA_HOME}'
-alias dots     'cd ${DOTSHARE}'
-alias notes    'cd ${NOTES}'
-alias op       'cd ${XDG_CONFIG_HOME}/openbox'
-alias pro      'cd ${PRO}'
-alias np       'cd ${PRO}/archived/2022/npBuild'
-alias sol      'cd ${PRO}/archived/2023/Solutions-To-Problems/Codewars'
-alias tem      'cd ${PRO}/archived/2023/Solutions-To-Problems/Codewars/temp'
-alias res      'cd ${XDG_DATA_HOME}/tmux/resurrect'
-alias sk       'cd ${SCREENSHOTS}'
-alias we       'cd ${MP1}/webuzz && venv'
-alias bu       'cd ${MP1}/budget && venv'
-alias vid      'cd ${XDG_VIDEOS_DIR}'
-alias was      'cd ${HOME}/wastebasket'
-alias zdot     'cd ${ZDOTDIR}'
-alias home     'cd'
+alas bak      'c ${HOME}/backups'
+alas bin      'c ${BIN}'
+alas cache    'c ${XDG_CACHE_HOME}'
+alas can      'c ${CANDY}'
+alas conf     'c ${XDG_CONFIG_HOME}'
+alas drop     'c ${DROPBOX}'
+alas drop.bak 'c ${DROPBOX}/backups'
+alas dw       'c ${XDG_DOWNLOAD_DIR}'
+alas hist     'c ${HOME}/histfiles/'
+alas lok      'c ${HOME}/.local'
+alas share    'c ${XDG_DATA_HOME}'
+alas data     'c ${XDG_DATA_HOME}'
+alas dat      'c ${XDG_DATA_HOME}'
+alas dots     'c ${DOTSHARE}'
+alas notes    'c ${NOTES}'
+#alas n        'c ${NOTES}'
+alas op       'c ${XDG_CONFIG_HOME}/openbox'
+alas pro      'c ${PRO}'
+alas np       'c ${PRO}/archived/2022/npBuild'
+alas sol      'c ${PRO}/archived/2023/Solutions-To-Problems/Codewars'
+alas tem      'c ${PRO}/archived/2023/Solutions-To-Problems/Codewars/temp'
+alas res      'c ${XDG_DATA_HOME}/tmux/resurrect'
+alas sk       'c ${SCREENSHOTS}'
+alas we       'c ${MP1}/webuzz && venv'
+alas bu       'c ${MP1}/budget && venv'
+alas vid      'c ${XDG_VIDEOS_DIR}'
+alas was      'c ${HOME}/wastebasket'
+alas ws       'c ${HOME}/wastebasket'
+alas zdot     'c ${ZDOTDIR}'
+alas home     'c'
 
 #------------------------------------------------------------------------------
 # 2. Getting information
 #------------------------------------------------------------------------------
 
 # Hostname and path
-alias host 'echo ${HOST}'
-alias path 'echo ${PATH} | tr ":" "\n"'
+alas host 'echo ${HOST}'
+alas path 'echo ${PATH} | tr ":" "\n"'
 
 # Disk info
-alias fl 'sudo fdisk -l'
-alias lf 'lsblk -f'
+alas fl 'sudo fdisk -l'
+alas lf 'lsblk -f'
 
 # Video info
-alias gpu.load   'watch -n 1 nvidia-smi'
-alias gpu.which  'glxinfo | grep -E "OpenGL vendor|OpenGL renderer"'
-alias info.video 'lspci | grep -e VGA -e 3D'
+alas gpu.load   'watch -n 1 nvidia-smi'
+alas gpu.which  'glxinfo | rg "OpenGL vendor|OpenGL renderer"'
+alas info.video 'lspci | rg -e VGA -e 3D'
 
 # Window info
-alias get.win_class    'xprop | grep -i class'
-alias get.win_pos_size 'xwininfo'
-alias getpos           'xwininfo -id $(xdotool getactivewindow)'
+alas get.win_class    'xprop | rg -i class'
+alas get.win_pos_size 'xwininfo'
+alas getpos           'xwininfo -id $(xdotool getactivewindow)'
 
 # Keyboard keys info
-alias get.key_code_1 'sed -n l'
-alias get.key_code_2 'showkey --ascii'
-alias get.keyname    'xev'
+alas get.key_code_1 'sed -n l'
+alas get.key_code_2 'showkey --ascii'
+alas get.keyname    'xev'
 # ^--press keys and Enter (`cat` also can be used)
 
 #------------------------------------------------------------------------------
@@ -127,201 +136,204 @@ alias get.keyname    'xev'
 #------------------------------------------------------------------------------
 
 #alias c     'cat'
-alias x     'clear'
-alias cls   'clear'
-alias q     'exit'
+alas x     'clear'
+alas cls   'clear'
+alas q     '\exit'
 #alias h     'history'
 #alias j     'jobs'
+#alias j     'journalctl -xe'
 #alias cp    'cp -i'
 #alias mv    'mv -i'
-alias more  'less'
-alias m     'less'
-alias re    'reboot'
-alias off   'poweroff'
-alias prego 'sudo $(fc -ln -1)'
-alias cpr   'cp -r'
-alias rmr   'rm -rf'
-alias rmrf  'sudo rm -r'
+alas more  'less'
+#alas m     'less'
+alas re    'reboot'
+alas off   'poweroff'
+alas prego 'sudo $(fc -ln -1)'
+alas cpr   'cp -r'
+alas rmr   'rm -rf'
+alas rmrf  'sudo rm -r'
 
 #------------------------------------------------------------------------------
 # 4. Modifying shell behavior
 #------------------------------------------------------------------------------
 
-alias show_hidden 'setopt -s glob_dots'
+alas show_hidden 'setopt -s glob_dots'
 
 #------------------------------------------------------------------------------
 # 5. Permissions
 #------------------------------------------------------------------------------
 
-alias exe   'chmod +x'
-alias noexe 'chmod -x'
-alias let   'chmod 755'
-alias letr  'chmod -R 755'
-alias ch    'sudo chown -R ${USER}:${USER}'
+alas exe   'chmod +x'
+alas ex    'chmod +x'
+alas noexe 'chmod -x'
+alas noex  'chmod -x'
+alas let   'chmod 755'
+alas letr  'chmod -R 755'
+alas ch    'sudo chown -R ${USER}:${USER}'
 
 #------------------------------------------------------------------------------
 # 6. Clipboard
 #------------------------------------------------------------------------------
 
-alias copy       'xclip -selection clipboard'
-alias ll         'xclip -selection clipboard'
-alias xclip.clip 'xclip -selection clipboard'
-alias xclip.prim 'xclip -selection primary'
-alias xclip.sec  'xclip -selection secondary'
+alas copy       'xclip -selection clipboard'
+alas ll         'xclip -selection clipboard'
+alas xclip.clip 'xclip -selection clipboard'
+alas xclip.prim 'xclip -selection primary'
+alas xclip.sec  'xclip -selection secondary'
 
 #------------------------------------------------------------------------------
 # 7. Fonts
 #------------------------------------------------------------------------------
 
-alias fonts.current 'fc-match --verbose Sans'
-alias fonts.list    "fc-list ':' file"
-alias fonts.find    'fc-list | grep -i'
-alias fonts.match   'fc-match'
-alias fonts.update  'fc-cache -fv'
+alas fonts.current 'fc-match --verbose Sans'
+alas fonts.list    "fc-list ':' file"
+alas fonts.find    'fc-list | rg -i'
+alas fonts.match   'fc-match'
+alas fonts.update  'fc-cache -fv'
 
 #------------------------------------------------------------------------------
 # 8. Keyboard layouts
 #------------------------------------------------------------------------------
 #
-alias lt           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
+alas lt           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt'
 # ^-- Choosing 'lt' also resets languages to the usual 'us,lt' combination
-alias de           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
-alias es           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,es'
-alias he           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
-alias ru           "setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
-alias emacs.caps   'setxkbmap -option && set-keyboard-layout'
-alias emacs.nocaps 'setxkbmap -option ctrl:nocaps'
-alias nocaps       'sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
+alas de           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,de'
+alas es           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,es'
+#alas he           'setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle us,lt,il'
+alas ru           "setxkbmap -option grp:setxkbmap -option grp:alt_shift_toggle -layout 'us,lt,ru' -variant ',,phonetic'"
+alas emacs.caps   'setxkbmap -option && set-keyboard-layout'
+alas emacs.nocaps 'setxkbmap -option ctrl:nocaps'
+alas nocaps       'sudo dumpkeys | sed "s/\s*58\s*=\s*Caps_Lock/ 58 = Control/" | sudo loadkeys'
 
 #------------------------------------------------------------------------------
 # 9. Screen brightness
 #------------------------------------------------------------------------------
 
-alias xminus 'light -U 10'
-alias xplus  'light -A 10'
+alas xminus 'light -U 10'
+alas xplus  'light -A 10'
 
 #------------------------------------------------------------------------------
 # 10. Sound
 #------------------------------------------------------------------------------
 
-alias aminus 'amixer set Master 10%-'
-alias aplus  'amixer set Master 10%+'
-alias mute   'amixer -q sset Master toggle'
+alas aminus 'amixer set Master 10%-'
+alas aplus  'amixer set Master 10%+'
+alas mute   'amixer -q sset Master toggle'
 
 #------------------------------------------------------------------------------
 # 11. Clock and time
 #------------------------------------------------------------------------------
 
-alias clock.sync      'sudo ntpd -qg'
-alias timezone.update 'timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
+alas clock.sync      'sudo ntpd -qg'
+alas timezone.update 'timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
 
 #------------------------------------------------------------------------------
 # 12. Systemd
 #------------------------------------------------------------------------------
 
 # General
-alias systemd.boot       'systemd-analyze blame'
-alias systemd.boot_total 'systemd-analyze time'
-alias systemd.enabled    'systemctl list-unit-files | grep enabled'
-alias systemd.enabled.2  'find /etc/systemd -type l -exec test -f {} \; -print | awk -F'\''/'\'' '\''{ printf ("%-40s | %s\n", $(NF-0), $(NF-1)) }'\'' | sort -f'
+alas systemd.boot       'systemd-analyze blame'
+alas systemd.boot_total 'systemd-analyze time'
+alas systemd.enabled    'systemctl list-unit-files | rg enabled'
+alas systemd.enabled.2  'find /etc/systemd -type l -exec test -f {} \; -print | awk -F'\''/'\'' '\''{ printf ("%-40s | %s\n", $(NF-0), $(NF-1)) }'\'' | sort -f'
 # ^--- Kudos to seth! (https://bbs.archlinux.org/profile.php?id=63451)
-alias systemd.list       'systemctl list-unit-files'
-alias systemd.running    'systemctl --type=service'
+alas systemd.list       'systemctl list-unit-files'
+alas systemd.running    'systemctl --type=service'
 
 # Databases
-alias most 'systemctl start mongodb'
-alias myst 'systemctl start mysqld'
-alias post 'systemctl start postgresql'
+alas most 'systemctl start mongodb'
+alas myst 'systemctl start mysqld'
+alas post 'systemctl start postgresql'
 
 # Servers
-alias apache   'systemctl start httpd.service'
-alias reapache 'systemctl restart httpd'
+alas apache   'systemctl start httpd.service'
+alas reapache 'systemctl restart httpd'
 
 # Wired
-alias net     "systemctl start dhcpcd@$(basename -a /sys/class/net/enp*).service"
-alias renet   "systemctl restart dhcpcd@$(basename -a /sys/class/net/enp*).service"
-alias lan.on  "sudo ip link set $(basename -a /sys/class/net/enp*) up"
-alias lan.off "sudo ip link set $(basename -a /sys/class/net/enp*) down"
+alas net     "systemctl start dhcpcd@$(basename -a /sys/class/net/enp*).service"
+alas renet   "systemctl restart dhcpcd@$(basename -a /sys/class/net/enp*).service"
+alas lan.on  "sudo ip link set $(basename -a /sys/class/net/enp*) up"
+alas lan.off "sudo ip link set $(basename -a /sys/class/net/enp*) down"
 
 # Wireless
-alias wnet     "systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
-alias rewnet   "systemctl restart dhcpcd@$(basename -a /sys/class/net/wlp*).service"
-alias wifi.on  "sudo ip link set $(basename -a /sys/class/net/wlp*) up"
-alias wifi.off "sudo ip link set $(basename -a /sys/class/net/wlp*) down"
+alas wnet     "systemctl start dhcpcd@$(basename -a /sys/class/net/wlp*).service"
+alas rewnet   "systemctl restart dhcpcd@$(basename -a /sys/class/net/wlp*).service"
+alas wifi.on  "sudo ip link set $(basename -a /sys/class/net/wlp*) up"
+alas wifi.off "sudo ip link set $(basename -a /sys/class/net/wlp*) down"
 
 #------------------------------------------------------------------------------
 # 13. Network
 #------------------------------------------------------------------------------
 
-alias pp                'ping -c 3 www.google.com'
-alias pwp               'watch -n 0.5 "ping -c 3 www.google.com"'
-alias check.ip          'whois'
-alias check.dns         'nslookup'
-alias check.domain      'whois'
-alias get.my_ip         'curl -w "\n" ifconfig.me'
-alias get.local_ip      'ip route --color=always | head -n 1'
-alias get.gateway       'ip route --color=always | head -n 1'
-alias get.net_interface 'ip route --color=always | head -n 1'  # Get the current active interface name
+alas pp                'ping -c 3 www.google.com'
+alas pwp               'watch -n 0.5 "ping -c 3 www.google.com"'
+alas check.ip          'whois'
+alas check.dns         'nslookup'
+alas check.domain      'whois'
+alas get.my_ip         'curl -w "\n" ifconfig.me'
+alas get.local_ip      'ip route --color=always | head -n 1'
+alas get.gateway       'ip route --color=always | head -n 1'
+alas get.net_interface 'ip route --color=always | head -n 1'  # Get the current active interface name
 
 #------------------------------------------------------------------------------
 # 14. WPA Supplicant
 #------------------------------------------------------------------------------
 
-alias wpa.android  "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/android.conf"
-alias wpa.caffeine "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/caffeine.conf"
-alias wpa.comet    "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/comet.conf"
-alias wpa.home     "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/home.conf"
-alias wpa.huracan  "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/huracan.conf"
-alias wpa.iphone   "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/iphone.conf"
-alias wpa.sodas    "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/sodas.conf"
-alias wpa.wpa      "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/wpa_supplicant.conf"
+alas wpa.android  "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/android.conf"
+alas wpa.caffeine "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/caffeine.conf"
+alas wpa.comet    "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/comet.conf"
+alas wpa.home     "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/home.conf"
+alas wpa.huracan  "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/huracan.conf"
+alas wpa.iphone   "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/iphone.conf"
+alas wpa.sodas    "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/sodas.conf"
+alas wpa.wpa      "sudo wpa_supplicant -B -i $(basename -a /sys/class/net/wlp*) -c /etc/wpa_supplicant/wpa_supplicant.conf"
 
 #------------------------------------------------------------------------------
 # 15. Mount/Unmount
 #------------------------------------------------------------------------------
 
-alias phone.on  'simple-mtpfs ${HOME}/iPhone'  # If problems, remount + restart thunar
-alias phone.off 'umount ${HOME}/iPhone'
+alas phone.on  'simple-mtpfs ${HOME}/iPhone'  # If problems, remount + restart thunar
+alas phone.off 'umount ${HOME}/iPhone'
 
 #------------------------------------------------------------------------------
 # 16. Process Management
 #------------------------------------------------------------------------------
 
-alias kil 'kill -9'
+alas kil 'kill -9'
 
 # `ps -e` displays every active process on a Linux system in Unix format
-alias ae 'ps -e | grep -v grep | grep -i'
+alas ae 'ps -e | rg -v " rg$" | rg -i'
 #     Use `ps c -ef` for a simple name of executable (as well as showing process status)
 
 # '-f' performs a full-format listing
-alias aef 'ps -ef | grep -m1 ""  && ps -ef | grep -v grep | grep -i'
+alas aef 'ps -ef | rg -v "[[:space:]]rg( |$)" | tee >(head -n1) | rg -i'
 
 # Another way of listing (shows session id)
-alias aes "ps -e -o 'user,pid,pgid,sess,args' | grep -m1 \"\" && ps -e -o 'user,pid,pgid,sess,args' | grep -v grep | grep -i"
+alas aes "ps -e -o user,pid,pgid,sess,args | rg -v '[[:space:]]rg( |$)' | tee >(head -n1) | rg -i"
 
 # Display all processes in BSD format
 #     'a' option displays the processes belonging to every user
 #     'x' option tells ps to show all the processes regardless of
 #         what terminal (if any) they are controlled ('?" in TTY column indicated
 #         no controlling terminal)
-alias au 'ps ax | grep -v grep | grep -i'
+alas au 'ps ax | rg -v "^[ ]*[0-9]+.* rg( |$)" | rg -i'
 #     Use `ps cax` for a simple name of executable (as well as showing process status)
 
 #     'u' option is for user-oriented format
-alias aux 'ps aux | grep -v grep | grep -i'
+alas aux "ps aux | rg -v '\brg\b' | rg -i"
 
 # Also show parent PID
-alias aup 'ps ax l | grep -v grep | grep -i'
+alas aup 'ps ax l | rg -v "^[ ]*[0-9]+.* rg( |$)" | rg -i'
 
 # Show sleeping processes
-alias asleep 'ps ax | grep -v grep | grep sleep'
+alas asleep 'ps ax | rg -v "^[ ]*[0-9]+.* rg( |$)" | rg -- sleep'
 
 # fuser -v {file/socket name(s)} - show info about process, working with the file(s)/socket(s)
-alias fuserv 'fuser -v'
+alas fuserv 'fuser -v'
 
 # fuser -vk {file/socket name(s)} - kill the process working with the file(s)/socket(s)
 # E.g. usage: fuser -vk *.log
-alias fuserk 'fuser -vk'
+alas fuserk 'fuser -vk'
 
 #------------------------------------------------------------------------------
 # 17. Package management
@@ -331,8 +343,8 @@ alias fuserk 'fuser -vk'
 # npm
 #---------------------------------------
 
-alias npm.ls   'npm list --depth=0'
-alias npm.ls.g 'npm list -g --depth=0'
+alas npm.ls   'npm list --depth=0'
+alas npm.ls.g 'npm list -g --depth=0'
 
 #---------------------------------------
 # Pacman
@@ -342,100 +354,102 @@ alias npm.ls.g 'npm list -g --depth=0'
 # -Q flag
 #------------------
 
-alias orphans             'pacman -Qdtq'
-alias is                  'pacman -Qeq | grepi '                     # Grep for explicitly installed package (package 'is' in the system)
-alias isa                 'pacman -Qq | grepi '                      # Grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
-alias visa                'pacman -Q --color=always | grepi '        # Grep for installed package with version info ('visa' = 'is -a -v')
-alias pl                  'pacman -Qeq'                              # List explicitly installed packages
-alias ple                 'pacman -Qeq'                              # ------||------
-alias ple_no_aur          'a_minus_b <(ple) <(plm)'                  # List explicitly installed packages (without showing AUR packages)
-alias pla                 'pacman -Qq'                               # List all installed packages
-alias pld                 'pacman -Qdq'                              # List packages dependencies
-alias plm                 'pacman -Qmq | sort'                       # List foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
-alias pac.owner           'pacman -Qo'                               # Which package owns the specified file(s)
-alias pac.group           'pacman -Qgq'                              # List installed packages belonging to a group (or list all groups and packages if no argument is passed)
-alias pac.group.belongs   'pacman -Qgq | grepi'                      # Show which group the installed package belongs to
-alias pac.base            'a_and_b <(pac.base_remote) <(pla)'        # List installed packages depending on `base` metapackage
-alias pac.base-devel      'a_and_b <(pac.base-devel_remote) <(pla)'  # List installed packages depending on `base-devel` metapackage
-alias pac.info            'pacman -Qi'                               # Display info on a given installed package
-alias pac.search          'pacman -Qs'                               # Search each installed package for names or descriptions that match regexp
-alias pac.check_files     'pacman -Qk'                               # For all installed pkgs, check that all files owned by the given package(s) are present on the system.
-alias pac.check_files_det 'pacman -Qkk'                              # More detailed checking (+ permissions, file sizes, and modification times) for pkgs that contain the needed mtree file.
+alas orphans             'pacman -Qdtq'
+alas is                  'pacman -Qeq | grepi '                     # Grep for explicitly installed package (package 'is' in the system)
+alas isa                 'pacman -Qq | grepi '                      # Grep for installed package ('isa' = 'is -a' as in 'ls -a', with 'implicitly installed packages' as 'hidden files')
+alas visa                'pacman -Q --color=always | grepi '        # Grep for installed package with version info ('visa' = 'is -a -v')
+alas pl                  'pacman -Qeq'                              # List explicitly installed packages
+alas ple                 'pacman -Qeq'                              # ------||------
+alas ple_no_aur          'a_minus_b <(ple) <(plm)'                  # List explicitly installed packages (without showing AUR packages)
+alas pla                 'pacman -Qq'                               # List all installed packages
+alas pld                 'pacman -Qdq'                              # List packages dependencies
+alas plm                 'pacman -Qmq | sort'                       # List foreign packages (mainly from AUR) (pacman lists packages in a different way than "sort" command!)
+alas pac.owner           'pacman -Qo'                               # Which package owns the specified file(s)
+alas pac.group           'pacman -Qgq'                              # List installed packages belonging to a group (or list all groups and packages if no argument is passed)
+alas pac.group.belongs   'pacman -Qgq | grepi'                      # Show which group the installed package belongs to
+alas pac.base            'a_and_b <(pac.base_remote) <(pla)'        # List installed packages depending on `base` metapackage
+alas pac.base-devel      'a_and_b <(pac.base-devel_remote) <(pla)'  # List installed packages depending on `base-devel` metapackage
+alas pac.info            'pacman -Qi'                               # Display info on a given installed package
+alas pac.search          'pacman -Qs'                               # Search each installed package for names or descriptions that match regexp
+alas pac.check_files     'pacman -Qk'                               # For all installed pkgs, check that all files owned by the given package(s) are present on the system.
+alas pac.check_files_det 'pacman -Qkk'                              # More detailed checking (+ permissions, file sizes, and modification times) for pkgs that contain the needed mtree file.
 
 #------------------
 # -R flag
 #------------------
 
-alias pacr         'sudo pacman -Rns'
-alias freeorphans  'sudo pacman -Rns $(pacman -Qdtq)'
+alas pacr         'sudo pacman -Rns'
+alas freeorphans  'sudo pacman -Rns $(pacman -Qdtq)'
+alas free         'sudo pacman -Rns $(pacman -Qdtq)'
 # Avoid using the -d option with pacman. pacman -Rdd package skips dependency checks during package removal.
 # As a result, a package providing a critical dependency could be removed, resulting in a broken system.
-alias pac.forcedel 'sudo -k pacman -Rdd'
+alas pac.forcedel 'sudo -k pacman -Rdd'
 
 #------------------
 # -S flag
 #------------------
 
-alias pacfile               'sudo pacman -S --noconfirm - --needed <'      # Install from file
-alias pacs                  'sudo pacman -S --noconfirm --needed'          # `needed` does not reinstall targets that are up to date
-alias pac.group_remote      'pacman -Sgq'                                  # List packages from sync database belonging to a group
-alias pac.base_remote       'expac -S '%E' base | xargs -n1 | sort'        # List packages from sync database depending on `base` metapackage
-alias pac.base-devel_remote 'expac -S '%E' base-devel | xargs -n1 | sort'  # List packages from sync database depending on `base-devel` metapackage
-alias pac.info_remote       'pacman -Si'                                   # Display info on a given sync database package
-alias pac.info_remote_full  'pacman -Sii'                                  # ^--- and also display those packages in all repos that depend on this package.
-alias pac.search_remote     'pacman -Ss'                                   # Search each package from sync database for names or descriptions that match regexp
+alas pacfile               'sudo pacman -S --noconfirm - --needed <'      # Install from file
+alas pacs                  'sudo pacman -S --noconfirm --needed'          # `needed` does not reinstall targets that are up to date
+alas pac.group_remote      'pacman -Sgq'                                  # List packages from sync database belonging to a group
+alas pac.base_remote       'expac -S '%E' base | xargs -n1 | sort'        # List packages from sync database depending on `base` metapackage
+alas pac.base-devel_remote 'expac -S '%E' base-devel | xargs -n1 | sort'  # List packages from sync database depending on `base-devel` metapackage
+alas pac.info_remote       'pacman -Si'                                   # Display info on a given sync database package
+alas pac.info_remote_full  'pacman -Sii'                                  # ^--- and also display those packages in all repos that depend on this package.
+alas pac.search_remote     'pacman -Ss'                                   # Search each package from sync database for names or descriptions that match regexp
 # Removes uninstalled packages from /var/cache/pacman/pkg and cleans unused
 # repos in /var/lib/pacman
-alias pac.clear             'sudo pacman -Sc'
+alas pac.clear             'sudo pacman -Sc'
 # Removes ALL packages from /var/cache/pacman/pkg and ...
-alias pac.clear_all         'sudo pacman -Scc'
+alas pac.clear_all         'sudo pacman -Scc'
 # Fuzzy-search through all available packages, with package info shown in a preview window, and then install selected packages
-alias fzf.pac               'pacman -Slq | fzf -m --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
+alas fzf.pac               'pacman -Slq | fzf -m --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S'
 # -------------------------------------------------------------------------
 # Updates the pkg databases if the repositories haven’t been checked
 # recently, and upgrades any new package versions.
 # -y -> update
 # -u -> upgrade
-alias up                    'sudo pacman -Syu'
+alas up                    'sudo pacman -Syu'
 # Forces updates of the databases for all repositories (even if it
 # was just updated recently) and upgrades any new package versions.
-alias up1                   'sudo pacman -Syyu'
+alas up1                   'sudo pacman -Syyu'
 #  Upgrades packages and also downgrades packages (if one happens to have a
 #  newer version than in the repository). Normally this should not be used.
 #  Only if one is trying to fix a specific issue due to a new package being
 #  removed from the repository.
-alias up2                   'sudo pacman -Syuu'
+alas up2                   'sudo pacman -Syuu'
 # -------------------------------------------------------------------------
 
 #---------------------------------------
 # Paru
 #---------------------------------------
 
-alias parus     'paru -S'  # Install a package from AUR
-alias paru.info 'paru -Si' # Display info on a given installed package
-alias parug     'paru -G'  # Download PKGBUILD and other files for a package
+alas paru      'paru --bottomup'
+alas parus     'paru -S'  # Install a package from AUR
+alas paru.info 'paru -Si' # Display info on a given installed package
+alas parug     'paru -G'  # Download PKGBUILD and other files for a package
 # Fuzzy-search through the AUR, preview info and install selected packages
-alias fzf.paru  'paru -Slq | fzf -m --preview "paru -Si {1}" | xargs -ro paru -S --noconfirm'
+alas fzf.paru  'paru -Slq | fzf -m --preview "paru -Si {1}" | xargs -ro paru -S --noconfirm'
 
 #---------------------------------------
 # PIP
 #---------------------------------------
 
-alias pii   'pip install'
-alias pipir 'pip uninstall'
-alias pir   'pip install -r requirements.txt'
-alias piu   'pip install --upgrade pip'
-alias wpi   'which pip'
+alas pii   'pip install'
+alas pipir 'pip uninstall'
+alas pir   'pip install -r requirements.txt'
+alas piu   'pip install --upgrade pip'
+alas wpi   'which pip'
 
 #------------------------------------------------------------------------------
 # 18. ABS (Arch Build System)
 #------------------------------------------------------------------------------
-alias mpo  'makepkg -o'      # --nobuild (only extract sources, don't build yet)
-alias mpe  'makepkg -e'      # --noextract (reuse the extracted sources, so the changes stay in place)
-alias mps  'makepkg -s'      # --syncdeps
-alias mpi  'makepkg -si'     # --install
-alias mpic 'makepkg -sic'    # --clean
-alias pacu 'sudo pacman -U'  # Argument: pkgname-pkgver.pkg.tar.zst
+alas mpo  'makepkg -o'      # --nobuild (only extract sources, don't build yet)
+alas mpe  'makepkg -e'      # --noextract (reuse the extracted sources, so the changes stay in place)
+alas mps  'makepkg -s'      # --syncdeps
+alas mpi  'makepkg -si'     # --install
+alas mpic 'makepkg -sic'    # --clean
+alas pacu 'sudo pacman -U'  # Argument: pkgname-pkgver.pkg.tar.zst
 
 #------------------------------------------------------------------------------
 # 19. Programs
@@ -446,128 +460,128 @@ alias pacu 'sudo pacman -U'  # Argument: pkgname-pkgver.pkg.tar.zst
 #--------------------------------------
 
 # Adhering to XDG BASE DIR spec:
-alias dosbox 'dosbox -conf "${XDG_CONFIG_HOME}/dosbox/dosbox.conf"'
-alias irssi  'irssi --config="${XDG_CONFIG_HOME}/irssi/config" --home="${XDG_CONFIG_HOME}/irssi"'
-alias lynx   'lynx -lss="${XDG_CONFIG_HOME}/lynx/lynx.lss"'
+alas dosbox 'dosbox -conf "${XDG_CONFIG_HOME}/dosbox/dosbox.conf"'
+alas irssi  'irssi --config="${XDG_CONFIG_HOME}/irssi/config" --home="${XDG_CONFIG_HOME}/irssi"'
+alas lynx   'lynx -lss="${XDG_CONFIG_HOME}/lynx/lynx.lss"'
 #alias svn    'svn --config-dir "${XDG_CONFIG_HOME}/subversion"'
 
-alias bs     'basename'
-alias bl     'bluetoothctl'
-alias cat    'bat'
-alias e      'echo'
-alias enc    'uchardet'
-alias espeak 'espeak -ven-uk'
+alas bs     'basename'
+alas bl     'bluetoothctl'
+alas ca     'bat'
+alas e      'echo'
+alas enc    'uchardet'
+alas espeak 'espeak -ven-uk'
 #alias f      'fzf'
-alias fire   'firefox'
-alias g      'grep'
-alias h      'head'
-alias ink    'inkscape'
-alias libre  'libreoffice'
-alias mann   'MANPAGER=less; man '
-alias mc     'mc --nosubshell'
-alias mi     'nomacs'
-alias nn     'neofetch'
-alias play   'mpv'
-alias r      'ranger'
-alias rss    'newsboat'
-alias show   'sqlitebrowser'
-alias t      'tail'
-alias ta     'tail'
-#alias t      'thunar'
-alias tu     'thunar'
-alias th     'thunar'
-alias tt     'thunar'
+alas fire   'firefox'
+alas h      'head'
+alas ink    'inkscape'
+alas libre  'libreoffice'
+alas mann   'MANPAGER=less; man '
+alas mc     'mc --nosubshell'
+alas mi     'nomacs'
+alas nn     'neofetch'
+alas play   'mpv'
+#alas r      'ranger'
+alas ra     'ranger'
+alas rss    'newsboat'
+alas show   'sqlitebrowser'
+alas t      'tail'
+alas ta     'tail'
+#alias t      'GTK_THEME=Adwaita-dark thunar'
+alas tu     'GTK_THEME=Adwaita-dark thunar'
+alas th     'GTK_THEME=Adwaita-dark thunar'
+alas tt     'GTK_THEME=Adwaita-dark thunar'
 #alias tar    'tar -xvf'
-alias tarr   'tar -xvf'
-alias timer  'termdown -B | lolcat'
-alias ti     'termdown -B | lolcat'
-alias tl     'translit'
-alias unrar  'unrar x'
-alias v      '${EDITOR}'
-alias vim    '${EDITOR}'
-alias vmi    '${EDITOR}'
-alias vv     'sudo -E ${EDITOR}'
+alas tarr   'tar -xvf'
+alas timer  'termdown -B | lolcat'
+alas ti     'termdown -B | lolcat'
+alas tl     'translit'
+alas unrar  'unrar x'
+alas v      '${EDITOR}'
+alas vim    '${EDITOR}'
+alas vmi    '${EDITOR}'
+alas vv     'sudo -E ${EDITOR}'
 # A trailing space in `xargs ` causes the next word to be checked for
 # alias substitution when the alias is expanded.
-alias xargs   'xargs '
-alias xa      'xargs '
-alias yd      'yt-dlp'
+alas xargs   'xargs '
+alas xa      'xargs '
+alas yd      'yt-dlp'
 # A trailing space in `watch ` causes the next word to be checked for
 # alias substitution when the alias is expanded.
 #
 # Usage:
-# watch ple                      # OK:  alias `ple` is expanded as `pacman -Qeq`
-# watch ple | grep ^z            # BAD: multiple commands, need to quote everything
-# watch "ple | grep ^z"          # BAD: when quoted, aliases do not expand in this case
-# watch "pacman -Qeq | grep ^z"  # OK:  no aliases inside quotes
+# watch ple                    # OK:  alias `ple` is expanded as `pacman -Qeq`
+# watch ple | rg ^z            # BAD: multiple commands, need to quote everything
+# watch "ple | rg ^z"          # BAD: when quoted, aliases do not expand in this case
+# watch "pacman -Qeq | rg ^z"  # OK:  no aliases inside quotes
 #
 # `watch -n 0` is equivalent to `watch -n 0.1`
-alias watch   'watch '
+alas watch   'watch '
 
 #--------------------------------------
 # Using programs
 #--------------------------------------
 
 # AWK
-alias awk-1    'awk '\''{OFS=FS} {print $1}'\'
-alias awk-2    'awk '\''{OFS=FS} {print $2}'\'
-alias awk-3    'awk '\''{OFS=FS} {print $3}'\'
-alias awk-4    'awk '\''{OFS=FS} {print $4}'\'
-alias awk--4   'awk '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk--3   'awk '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
-alias awk--2   'awk '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
-alias awk--1   'awk '\''{OFS=FS} {print $(NF)}'\'
-alias awk--    'awk '\''{OFS=FS} {print $NF}'\'
+alas awk-1    'awk '\''{OFS=FS} {print $1}'\'
+alas awk-2    'awk '\''{OFS=FS} {print $2}'\'
+alas awk-3    'awk '\''{OFS=FS} {print $3}'\'
+alas awk-4    'awk '\''{OFS=FS} {print $4}'\'
+alas awk--4   'awk '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alas awk--3   'awk '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alas awk--2   'awk '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alas awk--1   'awk '\''{OFS=FS} {print $(NF)}'\'
+alas awk--    'awk '\''{OFS=FS} {print $NF}'\'
 #-----------------------------
-alias awk-t-1  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $1}'\'
-alias awk-t-2  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $2}'\'
-alias awk-t-3  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $3}'\'
-alias awk-t-4  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $4}'\'
-alias awk-t--4 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-t--3 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
-alias awk-t--2 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
-alias awk-t--1 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF)}'\'
-alias awk-t--  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $NF}'\'
+alas awk-t-1  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $1}'\'
+alas awk-t-2  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $2}'\'
+alas awk-t-3  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $3}'\'
+alas awk-t-4  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $4}'\'
+alas awk-t--4 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alas awk-t--3 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alas awk-t--2 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alas awk-t--1 'awk -F$'\''\t'\'' '\''{OFS=FS} {print $(NF)}'\'
+alas awk-t--  'awk -F$'\''\t'\'' '\''{OFS=FS} {print $NF}'\'
 #-----------------------------
-alias awk-c-1  'awk -F: '\''{OFS=FS} {print $1}'\'
-alias awk-c-2  'awk -F: '\''{OFS=FS} {print $2}'\'
-alias awk-c-3  'awk -F: '\''{OFS=FS} {print $3}'\'
-alias awk-c-4  'awk -F: '\''{OFS=FS} {print $4}'\'
-alias awk-c--4 'awk -F: '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-c--3 'awk -F: '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
-alias awk-c--2 'awk -F: '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
-alias awk-c--1 'awk -F: '\''{OFS=FS} {print $(NF)}'\'
-alias awk-c--  'awk -F: '\''{OFS=FS} {print $NF}'\'
+alas awk-c-1  'awk -F: '\''{OFS=FS} {print $1}'\'
+alas awk-c-2  'awk -F: '\''{OFS=FS} {print $2}'\'
+alas awk-c-3  'awk -F: '\''{OFS=FS} {print $3}'\'
+alas awk-c-4  'awk -F: '\''{OFS=FS} {print $4}'\'
+alas awk-c--4 'awk -F: '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alas awk-c--3 'awk -F: '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alas awk-c--2 'awk -F: '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alas awk-c--1 'awk -F: '\''{OFS=FS} {print $(NF)}'\'
+alas awk-c--  'awk -F: '\''{OFS=FS} {print $NF}'\'
 #-----------------------------
-alias awk-s-1  'awk -F/ '\''{OFS=FS} {print $1}'\'
-alias awk-s-2  'awk -F/ '\''{OFS=FS} {print $2}'\'
-alias awk-s-3  'awk -F/ '\''{OFS=FS} {print $3}'\'
-alias awk-s-4  'awk -F/ '\''{OFS=FS} {print $4}'\'
-alias awk-s--4 'awk -F/ '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-s--3 'awk -F/ '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
-alias awk-s--2 'awk -F/ '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
-alias awk-s--1 'awk -F/ '\''{OFS=FS} {print $(NF)}'\'
-alias awk-s--  'awk -F/ '\''{OFS=FS} {print $NF}'\'
+alas awk-s-1  'awk -F/ '\''{OFS=FS} {print $1}'\'
+alas awk-s-2  'awk -F/ '\''{OFS=FS} {print $2}'\'
+alas awk-s-3  'awk -F/ '\''{OFS=FS} {print $3}'\'
+alas awk-s-4  'awk -F/ '\''{OFS=FS} {print $4}'\'
+alas awk-s--4 'awk -F/ '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alas awk-s--3 'awk -F/ '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alas awk-s--2 'awk -F/ '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alas awk-s--1 'awk -F/ '\''{OFS=FS} {print $(NF)}'\'
+alas awk-s--  'awk -F/ '\''{OFS=FS} {print $NF}'\'
 #-----------------------------
-alias awk-o-1  'awk -F, '\''{OFS=FS} {print $1}'\'
-alias awk-o-2  'awk -F, '\''{OFS=FS} {print $2}'\'
-alias awk-o-3  'awk -F, '\''{OFS=FS} {print $3}'\'
-alias awk-o-4  'awk -F, '\''{OFS=FS} {print $4}'\'
-alias awk-o--4 'awk -F, '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-o--3 'awk -F, '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
-alias awk-o--2 'awk -F, '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
-alias awk-o--1 'awk -F, '\''{OFS=FS} {print $(NF)}'\'
-alias awk-o--  'awk -F, '\''{OFS=FS} {print $NF}'\'
+alas awk-o-1  'awk -F, '\''{OFS=FS} {print $1}'\'
+alas awk-o-2  'awk -F, '\''{OFS=FS} {print $2}'\'
+alas awk-o-3  'awk -F, '\''{OFS=FS} {print $3}'\'
+alas awk-o-4  'awk -F, '\''{OFS=FS} {print $4}'\'
+alas awk-o--4 'awk -F, '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alas awk-o--3 'awk -F, '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alas awk-o--2 'awk -F, '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alas awk-o--1 'awk -F, '\''{OFS=FS} {print $(NF)}'\'
+alas awk-o--  'awk -F, '\''{OFS=FS} {print $NF}'\'
 #-----------------------------
-alias awk-p-1  'awk -F. '\''{OFS=FS} {print $1}'\'
-alias awk-p-2  'awk -F. '\''{OFS=FS} {print $2}'\'
-alias awk-p-3  'awk -F. '\''{OFS=FS} {print $3}'\'
-alias awk-p-4  'awk -F. '\''{OFS=FS} {print $4}'\'
-alias awk-p--4 'awk -F. '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
-alias awk-p--3 'awk -F. '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
-alias awk-p--2 'awk -F. '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
-alias awk-p--1 'awk -F. '\''{OFS=FS} {print $(NF)}'\'
-alias awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
+alas awk-p-1  'awk -F. '\''{OFS=FS} {print $1}'\'
+alas awk-p-2  'awk -F. '\''{OFS=FS} {print $2}'\'
+alas awk-p-3  'awk -F. '\''{OFS=FS} {print $3}'\'
+alas awk-p-4  'awk -F. '\''{OFS=FS} {print $4}'\'
+alas awk-p--4 'awk -F. '\''{OFS=FS} {print $((NF-1)&&(NF-2)?NF-3:0)}'\'
+alas awk-p--3 'awk -F. '\''{OFS=FS} {print $(NF-1?NF-2:0)}'\'
+alas awk-p--2 'awk -F. '\''{OFS=FS} {print $(NF?NF-1:0)}'\'
+alas awk-p--1 'awk -F. '\''{OFS=FS} {print $(NF)}'\'
+alas awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
 
 # Colorls
 #alias colorls '\colorls ${COLORLS_COLOR}'
@@ -581,7 +595,7 @@ alias awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
 #alias lsal    'colorls -al'
 #alias lsla    'colorls -al'
 #alias lsl     'colorls -l'
-#alias ih      '\colorls -al ${COLORLS_COLOR_ALWAYS} | grep -i'
+#alias ih      '\colorls -al ${COLORLS_COLOR_ALWAYS} | rg -i'
 #alias lsh     'colorls -ld .[^.]*'
 #alias lsr     'colorls --T'
 #alias since   '\colorls -lt ${COLORLS_COLOR_ALWAYS} | head'
@@ -600,73 +614,77 @@ alias awk-p--  'awk -F. '\''{OFS=FS} {print $NF}'\'
 #alias doh2    "colorls -1A | awk '\$NF ~ /^\.[^/]*$/ { print }'"
 
 # Cowfortune
-alias cff 'fortune | cowsay'
-alias cfr 'fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
+alas cff 'fortune | cowsay'
+alas cfr 'fortune -c | cowthink -f $(find /usr/share/cows -type f | shuf -n 1)'
 
 # Crontab
-alias ce 'crontab -e'
-alias cl 'crontab -l'
+alas ce 'crontab -e'
+alas cl 'crontab -l'
 
 # du
-alias dusort       'du -chs -- * | sort -h'
-alias dus          'du -chs -- * | sort -h'
-alias dusort.all   'du -chs -- * .* | sort -h'  # include hidden files
-alias trackmem     'watch -n 5 "du -chs -- * | sort -h"'
-alias trackmem.all 'watch -n 5 "du -chs -- * .* | sort -h"'
+alas dusort       'du -chs -- * | sort -h'
+alas dus          'du -chs -- * | sort -h'
+alas dusort.all   'du -chs -- * .* | sort -h'  # include hidden files
+alas trackmem     'watch -n 5 "du -chs -- * | sort -h"'
+alas trackmem.all 'watch -n 5 "du -chs -- * .* | sort -h"'
 
 # eza
-alias eza     '\eza ${EZA_COLOR}'
-alias ls      'eza'
-alias l       'eza'
-alias la      'eza -al'
-alias las     'eza -al'
-alias lc      'eza -1'
-alias ll      'eza -lX'
-alias lsa     'eza -a'
-alias lsal    'eza -al'
-alias lsla    'eza -al'
-alias lsl     'eza -l'
-alias ih      '\eza -al ${EZA_COLOR_ALWAYS} ${EZA_ICONS_ALWAYS} | grep -i'
-alias lsh     'eza -ld .[^.]*'
-alias lsr     'eza -T'
-alias since   '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS} ${EZA_ICONS_ALWAYS} | head'
-alias sincee  '\eza --sort=oldest -l'
+alas eza     '\eza ${EZA_COLOR}'
+alas l       'eza'
+alas la      'eza -al'
+alas las     'eza -al'
+alas lc      'eza -1'
+#alias ll      'eza -lX'
+#alias lsa     'eza -a'
+alas lsal    'eza -al'
+alas lsla    'eza -al'
+alas lsl     'eza -l'
+#alias ll      'eza -l'
+alas ih      '\eza -al ${EZA_COLOR_ALWAYS} ${EZA_ICONS_ALWAYS} | rg -i'
+alas lsh     'eza -ld .[^.]*'
+alas lsr     'eza -T'
+alas since   '\eza --sort=oldest -l ${EZA_COLOR_ALWAYS} ${EZA_ICONS_ALWAYS} | head'
+alas sincee  '\eza --sort=oldest -l'
 # Display only directories:
-alias dod     'eza -lD --classify=auto'
-alias dod2    'eza -D1 --classify=auto'
+alas dod     'eza -lD --classify=auto'
+alas dod2    'eza -D1 --classify=auto'
 # Display only files:
-alias dof     'eza -lf'
-alias dof2    'eza -f1'
+alas dof     'eza -lf'
+alas dof2    'eza -f1'
 # Display only hidden directories:
-alias dohd    'eza -ld .[^.]*/ --classify=auto'
-alias dohd2   'eza -d1 .[^.]*/ --classify=auto'
+alas dohd    'eza -ld .[^.]*/ --classify=auto'
+alas dohd2   'eza -d1 .[^.]*/ --classify=auto'
 # Display only hidden files:
-alias doh     'eza -lfa ${EZA_ICONS_ALWAYS} | grep "^\."'
-alias doh2    'eza -fa | grep "^\."'
+alas doh     'eza -lfa ${EZA_ICONS_ALWAYS} | rg "^\."'
+alas doh2    'eza -fa | rg "^\."'
+alas tree    'eza -T'
 
 # feh
-alias wall 'feh --bg-scale'
+alas wall 'feh --bg-scale'
 
 # find
-alias ff 'find . -name'
+#alas ff 'find . -name'
 
 # Git
-alias ga    'git add'
-alias gau   'git add -u .'
-alias gb    'git branch'
-alias gc    'git commit'
-alias gco   'git commit --only'
-alias gch   'git checkout'
-alias gd    'git diff'
-alias gdc   'git diff --cached'
-alias gl    'git pull'
-alias glg   'git lg'
-alias gp    'git push'
-alias gr    'git restore'
-alias grem  'git remote -v'
-alias grs   'git restore --staged'
-alias gitr  'git rev-list --all --pretty=oneline -- '
-alias gs    'git status'
+alas ga    'git add'
+alas gap   'git add -p'
+alas gau   'git add -u .'
+alas gb    'git branch'
+alas gc    'git commit'
+alas gm    "git commit -m '"
+alas gco   'git commit --only'
+alas gch   'git checkout'
+alas gd    'git diff'
+alas gdc   'git diff --cached'
+alas gl    'git pull'
+alas glg   'git lg'
+alas gp    'git push'
+alas gr    'git restore'
+alas grem  'git remote -v'
+alas grs   'git restore --staged'
+alas grc   'git rm -r --cached'
+alas gitr  'git rev-list --all --pretty=oneline -- '
+alas gs    'git status'
 #alias clone 'git clone'
 # By default, `git fetch` does not remove remote branches that
 # no longer have a counterpart branch on the remote. In order
@@ -675,40 +693,44 @@ alias gs    'git status'
 # that no longer exist on the remote. Afterwards, `git branch --remote`
 # will show an updated list of branches that really exist on the
 # remote: And those one can delete using git push.
-alias gfp   'git fetch --prune'
-alias gaa   'git add . && git commit -m '.' && git push'
-alias gcp   'git commit -m '.' && git push'
+alas gfp   'git fetch --prune'
+alas gaa   'git add . && git commit -m '.' && git push'
+alas gcp   'git commit -m '.' && git push'
 # Git bare repository for dotfiles
-alias dot   '/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
-alias dsa   'dot add'
-alias dsau  'dot add -u .'
-alias dsua  'dot add -u .'
-alias dsc   'dot commit'
-alias dsco  'dot commit --only'
-alias dsd   'dot diff'
-alias dsde  'PAGER=delta dot diff'
-alias dsdc  'dot diff --staged'
-alias dsdce 'PAGER=delta dot diff --staged'
-alias dsg   'dot lg'
-alias dsl   'dot pull'
-alias dsp   'dot push'
-alias dsr   'dot restore'
-alias dsrc  'dot restore --staged'
-alias dotr  'dot rev-list --all --pretty=oneline -- '
-alias ds    'dot status'
-alias dsu   'dot status -u .'
+#alas dot   '/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
+alas dsa   'dot add'
+alas dsau  'dot add -u .'
+alas dsua  'dot add -u .'
+alas dsc   'dot commit'
+alas dm    "dot commit -m '"
+alas dsco  'dot commit --only'
+alas dsd   'dot diff'
+alas dd    'dot diff'
+alas dsd.  'dot diff .'
+alas dd.   'dot diff .'
+alas dsde  'PAGER=delta dot diff'
+alas dsdc  'dot diff --staged'
+alas dsdce 'PAGER=delta dot diff --staged'
+alas dsg   'dot lg'
+alas dsl   'dot pull'
+alas dsp   'dot push'
+alas dsr   'dot restore'
+alas dsrc  'dot restore --staged'
+alas dotr  'dot rev-list --all --pretty=oneline -- '
+alas ds    'dot status'
+alas ds.   'dot status .'
+alas dsu   'dot status -u .'
 
 # GitHub CLI
-alias gg 'gh copilot suggest'
-alias ge 'gh copilot explain'
+alas gg 'gh copilot suggest'
+alas ge 'gh copilot explain'
 
 # Grep
-alias grep       'grep --color=auto'
-alias grepc      'grep --color=always'
-alias grepi      'grep -i'
-alias grep.find  'grep -rHn'
-alias grepi.find 'grep -i -rHn'
-alias grepp      'grep -P'
+#alias grep       'grep --color=auto'
+#alias grepc      'grep --color=always'
+#alias grepi      'grep -i'
+#alias grep.find  'grep -rHn'
+#alias grepi.find 'grep -i -rHn'
 
 # ls
 #alias ls     '\ls ${LS_COLOR}'
@@ -721,109 +743,115 @@ alias grepp      'grep -P'
 #alias lsal   'ls -al'
 #alias lsla   'ls -al'
 #alias lsl    'ls -l'
-#alias ih     '\ls -al ${LS_COLOR_ALWAYS} | grep -i'
+#alias ih     '\ls -al ${LS_COLOR_ALWAYS} | rg -i'
 #alias lsh    'ls -ld .[^.]*'
 #alias lsr    'ls -R'
 #alias since  '\ls -ltL ${LS_COLOR_ALWAYS} | head'
 #alias sincee '\ls -ltL'
 # Display only directories:
-#alias dod    '\ls -l ${LS_COLOR_ALWAYS} | grep ^d'
-#alias dod2   '\ls -1F ${LS_COLOR_ALWAYS} | grep /'
+#alias dod    '\ls -l ${LS_COLOR_ALWAYS} | rg ^d'
+#alias dod2   '\ls -1F ${LS_COLOR_ALWAYS} | rg /'
 # Display only files:
-#alias dof    '\ls -l ${LS_COLOR_ALWAYS} | grep ^-'
-#alias dof2   '\ls -1F ${LS_COLOR_ALWAYS} | grep -v /'
+#alias dof    '\ls -l ${LS_COLOR_ALWAYS} | rg ^-'
+#alias dof2   '\ls -1F ${LS_COLOR_ALWAYS} | rg -v /'
 # Display only hidden directories:
 #alias dohd   'ls -ld .[^.]*/'
 #alias dohd2  'ls -ad1 .[^.]*/'
 # Display only hidden files:
 #alias doh    "ls -lAp | awk '{ if ($NF ~ /^\.[^/]*$/) print }'"
-#alias doh2   'ls -ap | grep "^\.[^/]*$"'
+#alias doh2   'ls -ap | rg "^\.[^/]*$"'
 
 # mpv
-alias mpv.image   'mpv --no-config --pause --vo=tct'
-alias mpv.video   'mpv --no-config --vo=tct'
-alias mpv.youtube 'mpv -vo=caca'
+alas mpv.image   'mpv --no-config --pause --vo=tct'
+alas mpv.video   'mpv --no-config --vo=tct'
+alas mpv.youtube 'mpv -vo=caca'
 
 # Neovim
-alias vib              '${EDITOR} -b'
-alias vim.bare         '${EDITOR} -u NONE'
-alias vim.plug.up      '${EDITOR} +PackerSync'
-alias vim.plug.clean   '${EDITOR} +PackerClean'
-alias vim.plug.list    '${EDITOR} +PackerStatus'
+alas vib              '${EDITOR} -b'
+alas vim.bare         '${EDITOR} -u NONE'
+alas vim.plug.up      '${EDITOR} +PackerSync'
+alas vim.plug.clean   '${EDITOR} +PackerClean'
+alas vim.plug.list    '${EDITOR} +PackerStatus'
 
 # Redshift
-alias red.norm 'redshift -P -O 6500'
-alias red.warm 'redshift -P -O 5000'
+alas red.norm 'redshift -P -O 6500'
+alas red.warm 'redshift -P -O 5000'
 
-# Silver Searcher
-alias agi          'ag -i'
-alias ag.find      'ag -rs --noheading'
-alias agi.find     'ag -rsi --noheading'
-alias ag.find_all  'ag -rs --noheading --hidden'
-alias agi.find_all 'ag -rsi --noheading --hidden'
+# Ripgrep
+alas rg             'rg --color=auto --no-heading'    # Basic colored search
+alas grep           'rg --color=auto --no-heading'    # Basic colored search
+alas grepc          'rg --color=always --no-heading'  # Force color always
+alas grepi          'rg -i --no-heading'              # Case-insensitive search
+alas grep.find      'rg -Hn --no-heading'             # Recursive is default; show filename + line number
+alas grep.find_all  'rg -Hn --no-heading --hidden'    # Same, but include hidden files
+alas grepi.find     'rg -i -Hn --no-heading'          # Same, but case-insensitive
+alas grepi.find_all 'rg -i -Hn --no-heading --hidden' # Same, but case-insensitive
 
 # Scrot
-alias pic 'scrot -s ${HOME}/Screenshots/screenshot-%F-%H%M%S.png'
+alas pic 'scrot -s ${HOME}/Screenshots/screenshot-%F-%H%M%S.png'
 
 # SSH
 #alias sa   'ssh-add'
-alias sl   'ssh-add -l'
-alias ssid 'eval $(ssh-agent -s)'
+alas sl   'ssh-add -l'
+alas ssid 'eval $(ssh-agent -s)'
 
 # Subversion
 # --Preview
-alias s            'svn status'
-alias si           'svn info'
-alias sd           'svndiff'
+#alias s            'svn status'
+alas s            'git status'
+alas si           'svn info'
+alas sd           'svndiff'
 #alias sdd          'svn diff'
-alias ssd          'svn diff --diff-cmd="meld"'
-alias svn.log      'svn log -r 1:HEAD'
-alias svn.log.head 'svn log -r HEAD:1 --limit 5'
-alias slg          'svn log -r HEAD:1 --limit 5'
-alias scat         'svn cat'
+alas ssd          'svn diff --diff-cmd="meld"'
+alas svn.log      'svn log -r 1:HEAD'
+alas svn.log.head 'svn log -r HEAD:1 --limit 5'
+alas slg          'svn log -r HEAD:1 --limit 5'
+alas scat         'svn cat'
 # --Actions
-alias sa           'svn add'
-alias san          'svn add -N'
+alas sa           'svn add'
+alas san          'svn add -N'
 #alias sr           'svn revert `--use-commit-times`'
-alias scc          'svn copy'
-alias sm           'svn move'
-alias ci           'svn commit'
-alias cim          'svn commit -m'
-alias sc           'confirm "svn cleanup --remove-unversioned"'
-alias key          'svn propset svn:keywords "Author Date Revision URL Id"'
-alias ex           'svn propset svn:executable on'
-alias svn.checkout 'svn checkout `--use-commit-times`'
-alias svn.up       'svn update `--use-commit-times`'
-alias sup          'svn update `--use-commit-times`'
-alias svn.recommit 'svn commit -F svn-commit.tmp'
-alias svn.clean    'svn cleanup --remove-unversioned'
+alas scc          'svn copy'
+alas sm           'svn move'
+alas ci           'svn commit'
+alas cim          'svn commit -m'
+#alas sc           'confirm "svn cleanup --remove-unversioned"'
+#alas key          'svn propset svn:keywords "Author Date Revision URL Id"'
+#alas ex           'svn propset svn:executable on'
+alas svn.checkout 'svn checkout `--use-commit-times`'
+alas svn.up       'svn update `--use-commit-times`'
+alas sup          'svn update `--use-commit-times`'
+alas svn.recommit 'svn commit -F svn-commit.tmp'
+alas svn.clean    'svn cleanup --remove-unversioned'
 
 # Tmux
-alias tmux.ls    'tmux ls'
-alias tl         'tmux ls'
-alias tmux.which "tmux display-message -p '#S'"
+alas tmux.ls    'tmux ls'
+alas tl         'tmux ls'
+alas tmux.which "tmux display-message -p '#S'"
 
 # wmctrl
-alias win  'wmctrl -l'
-alias winx 'wmctrl -lx'
-alias wing 'wmctrl -l -G'
+alas win  'wmctrl -l'
+alas winx 'wmctrl -lx'
+alas wing 'wmctrl -l -G'
 
 # yt-dlp
-alias ydn             'yt-dlp --no-playlist'
-alias yda             'yt-dlp --extract-audio'
+alas ydn             'yt-dlp --no-playlist'
+alas yda             'yt-dlp --extract-audio'
 # ^--- Extract audio from a whole playlist
-alias ydna            'yt-dlp --no-playlist --extract-audio'
-alias ydna3           'yt-dlp --no-playlist --extract-audio --audio-format mp3'
-alias ydl-clean-cache 'yt-dlp --rm-cache-dir'
+alas ydna            'yt-dlp --no-playlist --extract-audio'
+alas ydna3           'yt-dlp --no-playlist --extract-audio --audio-format mp3'
+alas ydl-clean-cache 'yt-dlp --rm-cache-dir'
+
+# Zoxide
+# ...
 
 #--------------------------------------
 # Killing programs
 #--------------------------------------
 
-alias kc    'killall cmus'
-alias stop  'killall mpg123'
-alias x.out 'killall xinit'
-alias dout  'killall xinit'
+alas kc    'killall cmus'
+alas stop  'killall mpg123'
+alas x.out 'killall xinit'
 
 #------------------------------------------------------------------------------
 # 20. Configs
@@ -833,47 +861,47 @@ alias dout  'killall xinit'
 # Switching configs
 #---------------------------------------
 
-alias emacs.gnu  'ln -nsf ${XDG_CONFIG_HOME}/emacs-gnu ${XDG_CONFIG_HOME}/emacs'
-alias emacs.doom 'ln -nsf ${XDG_CONFIG_HOME}/emacs-doom ${XDG_CONFIG_HOME}/emacs'
+alas emacs.gnu  'ln -nsf ${XDG_CONFIG_HOME}/emacs-gnu ${XDG_CONFIG_HOME}/emacs'
+alas emacs.doom 'ln -nsf ${XDG_CONFIG_HOME}/emacs-doom ${XDG_CONFIG_HOME}/emacs'
 
 #---------------------------------------
 # Reloading configs
 #---------------------------------------
 
-alias mkgrub       'sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias mkinit       'sudo mkinitcpio -p linux'
-alias xres.restart 'xrdb ${XDG_CONFIG_HOME}/X11/Xresources'
-alias retmux       'tmux kill-server; tmux source-file ~/.tmux.conf; tmux'
-alias reh          'rehash'
-alias z            'source ${ZDOTDIR}/.zshrc'
+alas mkgrub       'sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alas mkinit       'sudo mkinitcpio -p linux'
+alas xres.restart 'xrdb ${XDG_CONFIG_HOME}/X11/Xresources'
+alas retmux       'tmux kill-server; tmux source-file ~/.tmux.conf; tmux'
+alas reh          'rehash'
+alas a            'source ${ZDOTDIR}/.zshrc'
 
 #---------------------------------------
 # Editing configs
 #---------------------------------------
 
-alias al     '${EDITOR} ${ZDOTDIR}/aliases.zsh'
-alias cm     '${EDITOR} ${XDG_CONFIG_HOME}/picom/picom.conf'
-alias dun    '${EDITOR} ${XDG_CONFIG_HOME}/dunst/dunstrc'
-alias ee     '${EDITOR} ${XDG_CONFIG_HOME}/emacs-gnu/init.el'
-alias eed    '${EDITOR} ${XDG_CONFIG_HOME}/doom/init.el'
-alias fn     '${EDITOR} ${ZDOTDIR}/functions.zsh'
-alias fn.fzf '${EDITOR} ${ZDOTDIR}/fzf-functions.zsh'
-alias gconf  '${EDITOR} ${XDG_CONFIG_HOME}/git/config'
-alias ic     '${EDITOR} ${XDG_CONFIG_HOME}/i3/config'
-alias icc    '${EDITOR} ${XDG_CONFIG_HOME}/i3blocks/config'
-alias lal    '${EDITOR} ${ZDOTDIR}/aliases.local.zsh'
-alias lfn    '${EDITOR} ${ZDOTDIR}/functions.local.zsh'
-alias mime   '${EDITOR} ${XDG_CONFIG_HOME}/mimeapps.list'
-alias rc     '${EDITOR} ${XDG_CONFIG_HOME}/openbox/rc.xml'
-alias rr     '${EDITOR} ${XDG_CONFIG_HOME}/ranger/rc.conf'
-alias start  '${EDITOR} ${XDG_CONFIG_HOME}/openbox/autostart'
-alias tg     '${EDITOR} ${XDG_CONFIG_HOME}/tig/config'
-alias tintrc '${EDITOR} ${XDG_CONFIG_HOME}/tint2/tint2rc'
-alias tmuxr  '${EDITOR} ${XDG_CONFIG_HOME}/tmux/tmux.conf'
-alias xi     '${EDITOR} ${XDG_CONFIG_HOME}/X11/xinitrc'
-alias xres   '${EDITOR} ${XDG_CONFIG_HOME}/X11/Xresources'
-alias zenv   '${EDITOR} ${ZDOTDIR}/.zshenv'
-alias zr     '${EDITOR} ${ZDOTDIR}/.zshrc'
+alas al     '${EDITOR} ${ZDOTDIR}/aliases.zsh'
+alas cm     '${EDITOR} ${XDG_CONFIG_HOME}/picom/picom.conf'
+alas dun    '${EDITOR} ${XDG_CONFIG_HOME}/dunst/dunstrc'
+alas ee     '${EDITOR} ${XDG_CONFIG_HOME}/emacs-gnu/init.el'
+alas eed    '${EDITOR} ${XDG_CONFIG_HOME}/doom/init.el'
+alas fn     '${EDITOR} ${ZDOTDIR}/functions.zsh'
+alas fn.fzf '${EDITOR} ${ZDOTDIR}/fzf-functions.zsh'
+alas gconf  '${EDITOR} ${XDG_CONFIG_HOME}/git/config'
+alas ic     '${EDITOR} ${XDG_CONFIG_HOME}/i3/config'
+alas icc    '${EDITOR} ${XDG_CONFIG_HOME}/i3blocks/config'
+alas lal    '${EDITOR} ${ZDOTDIR}/aliases.local.zsh'
+alas lfn    '${EDITOR} ${ZDOTDIR}/functions.local.zsh'
+alas mime   '${EDITOR} ${XDG_CONFIG_HOME}/mimeapps.list'
+alas rc     '${EDITOR} ${XDG_CONFIG_HOME}/openbox/rc.xml'
+alas rr     '${EDITOR} ${XDG_CONFIG_HOME}/ranger/rc.conf'
+alas start  '${EDITOR} ${XDG_CONFIG_HOME}/openbox/autostart'
+alas tg     '${EDITOR} ${XDG_CONFIG_HOME}/tig/config'
+alas tintrc '${EDITOR} ${XDG_CONFIG_HOME}/tint2/tint2rc'
+alas tmuxr  '${EDITOR} ${XDG_CONFIG_HOME}/tmux/tmux.conf'
+alas xi     '${EDITOR} ${XDG_CONFIG_HOME}/X11/xinitrc'
+alas xres   '${EDITOR} ${XDG_CONFIG_HOME}/X11/Xresources'
+alas zenv   '${EDITOR} ${ZDOTDIR}/.zshenv'
+alas zr     '${EDITOR} ${ZDOTDIR}/.zshrc'
 
 #------------------------------------------------------------------------------
 # 21. Window manager-specific
@@ -883,76 +911,94 @@ alias zr     '${EDITOR} ${ZDOTDIR}/.zshrc'
 # i3
 #---------------------------------------
 
-alias i3.out       'i3-msg exit'
-alias cmus.run     'urxvt -name dropdown_aux -e tmux new-session cmus &'
-alias cmus.scratch "i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
+alas i3.out       'i3-msg exit'
+alas cmus.run     'urxvt -name dropdown_aux -e tmux new-session cmus &'
+alas cmus.scratch "i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux new-session cmus\;'"
 # Avoid tmux session using an old I3SOCK environment variable after i3 restart
 # Run this instead of `i3-msg` while in tmux
-alias i3-msg-tmux  'i3-msg --socket "${XDG_RUNTIME_DIR}/i3/$(\ls -t ${XDG_RUNTIME_DIR}/i3/ | awk "{OFS=FS} {print $1}" | grep ipc | head -n 1)"'
+alas i3-msg-tmux  'i3-msg --socket "${XDG_RUNTIME_DIR}/i3/$(\ls -t ${XDG_RUNTIME_DIR}/i3/ | awk "{OFS=FS} {print $1}" | rg ipc | head -n 1)"'
+
+#----------------------------------------
+# Hyprland
+# ---------------------------------------
+
+alas hout         'hyprctl dispatch exit'
 
 #---------------------------------------
 # Openbox
 #---------------------------------------
 
-alias autostart    '${XDG_CONFIG_HOME}/openbox/autostart'
-alias op.out       'openbox --exit'
-alias theme.matrix '${BIN}/openbox-themes/matrix/enable'
-alias theme.riddle '${BIN}/openbox-themes/riddle/enable'
-alias f2of         'openbox-disable-F2-keybinding'
-alias f2on         'openbox-reenable-F2-keybinding'
-alias reop         'openbox --reconfigure'
+alas autostart    '${XDG_CONFIG_HOME}/openbox/autostart'
+alas dout         'openbox --exit'
+alas theme.matrix '${BIN}/openbox-themes/matrix/enable'
+alas theme.riddle '${BIN}/openbox-themes/riddle/enable'
+alas f2of         'openbox-disable-F2-keybinding'
+alas f2on         'openbox-reenable-F2-keybinding'
+alas reop         'openbox --reconfigure'
+
+#----------------------------------------
+# Sway
+# ---------------------------------------
+
+# Run this instead of `swaymsg` while in tmux
+alas swaymsg-tmux 'swaymsg --socket "$(find /run/user/$(id -u)/sway-ipc.* -type s 2>/dev/null | sort -t. -k2 -n | tail -n1)"'
+alas sout         'swaymsg-tmux exit'
 
 #------------------------------------------------------------------------------
 # 22. Aliases to Zsh functions
 #------------------------------------------------------------------------------
 
-alias fe     'edit-file'
-alias fea    'edit-file --hidden'
-alias f      'fieldc tab'
-alias cols   'colv tab'
-alias hs     'https_to_ssh'
-alias clones 'git_clone_ssh'
-alias tc     'tmux-clean'
-alias ver    'version'
-alias clone  'git_clone_ssh'
+alas fe     'edit-file'
+alas fea    'edit-file --hidden'
+alas f      'fieldc tab'
+alas cols   'colv tab'
+alas hs     'https_to_ssh'
+alas clones 'git_clone_ssh'
+alas tc     'tmux-clean'
+alas ver    'version'
+alas clone  'git_clone_ssh'
+alas wa     'waste'
+alas ff     'find.file'
 
 #------------------------------------------------------------------------------
 # 23. Aliases to scripts
 #------------------------------------------------------------------------------
 
-alias setx   'set-keyboard-layout'
-alias thanks '(${BIN}/sounds/thanks-hal &) > /dev/null'
+alas setx   'set-keyboard-layout'
+alas thanks '(${BIN}/sounds/thanks-hal &) > /dev/null'
+alas dark   'set-dark-gtk-theme'
+alas light  'set-light-gtk-theme'
 
 #------------------------------------------------------------------------------
 # 24. Aliases as flags
 #------------------------------------------------------------------------------
 
 # Usage: command `--use-commit-times`
-alias --use-commit-times 'echo --config-option=config:miscellany:use-commit-times=yes'
-alias -uname             'uname -sm | sed -e "s/-.* / /" -e "s/ /-/g"'
-alias --uname            'uname -srm | sed -e "s/-.* / /" -e "s/ /-/g"'
-alias --datetime         'date +%F_%H_%M_%S'
-alias --retrieved-time   'date '\''+%F %H:%M'\'''
-alias --datecomment      'date "+#DATE: %F %T %Z"'
+alas --use-commit-times 'echo --config-option=config:miscellany:use-commit-times=yes'
+alas -uname             'uname -sm | sed -e "s/-.* / /" -e "s/ /-/g"'
+alas --uname            'uname -srm | sed -e "s/-.* / /" -e "s/ /-/g"'
+alas --datetime         'date +%F_%H_%M_%S'
+alas --retrieved-time   'date '\''+%F %H:%M'\'''
+alas --datecomment      'date "+#DATE: %F %T %Z"'
 
-alias -time              'date +%H:%M:%S'
-alias --time             'date +%H:%M:%S'
-alias -date              'date +%Y.%m.%d'
-alias --date             'date +%Y-%m-%d'
-alias -today             'date +%Y.%m.%d'
-alias --today            'date +%Y-%m-%d'
-alias -tomorrow          'date -d now+1day +%Y.%m.%d'
-alias --tomorrow         'date -d now+1day +%Y-%m-%d'
-alias -after-tomorrow    'date -d now+2days +%Y.%m.%d'
-alias --after-tomorrow   'date -d now+2days +%Y-%m-%d'
-alias -yesterday         'date -d now-1day +%Y.%m.%d'
-alias --yesterday        'date -d now-1day +%Y-%m-%d'
-alias -before-yesterday  'date -d now-2days +%Y.%m.%d'
-alias --before-yesterday 'date -d now-2days +%Y-%m-%d'
-alias -a-week-ago        'date -d now-7days +%Y.%m.%d'
-alias --a-week-ago       'date -d now-7days +%Y-%m-%d'
-alias -in-a-week         'date -d now+7days +%Y.%m.%d'
-alias --in-a-week        'date -d now+7days +%Y-%m-%d'
+alas -time              'date +%H:%M:%S'
+alas --time             'date +%H:%M:%S'
+alas -date              'date +%Y.%m.%d'
+alas --date             'date +%Y-%m-%d'
+alas -today             'date +%Y.%m.%d'
+alas --today            'date +%Y-%m-%d'
+alas -tomorrow          'date -d now+1day +%Y.%m.%d'
+alas --tomorrow         'date -d now+1day +%Y-%m-%d'
+alas -after-tomorrow    'date -d now+2days +%Y.%m.%d'
+alas --after-tomorrow   'date -d now+2days +%Y-%m-%d'
+alas -yesterday         'date -d now-1day +%Y.%m.%d'
+alas --yesterday        'date -d now-1day +%Y-%m-%d'
+alas -before-yesterday  'date -d now-2days +%Y.%m.%d'
+alas --before-yesterday 'date -d now-2days +%Y-%m-%d'
+alas -a-week-ago        'date -d now-7days +%Y.%m.%d'
+alas --a-week-ago       'date -d now-7days +%Y-%m-%d'
+alas -in-a-week         'date -d now+7days +%Y.%m.%d'
+alas --in-a-week        'date -d now+7days +%Y-%m-%d'
 
 #------------------------------------------------------------------------------
 # 25. Programming
@@ -963,103 +1009,179 @@ alias --in-a-week        'date -d now+7days +%Y-%m-%d'
 #---------------------------------------
 
 # Python
-alias p         'python'
-alias pi        'ipython --TerminalInteractiveShell.editing_mode=vi'
-alias py.exe    'python -c'
-alias qenv      'deactivate'
-alias venv.init 'python3 -m venv .venv'
-alias venv      'source .venv/bin/activate'
-alias tre       'tree -I "__pycache__"'
+alas p         'python'
+alas pi        'ipython --TerminalInteractiveShell.editing_mode=vi'
+alas py.exe    'python -c'
+alas qenv      'deactivate'
+alas venv.init 'python3 -m venv .venv'
+alas venv      'source .venv/bin/activate'
 
 # C
-alias gdb.super 'gdb --batch --ex run --ex bt --ex q --args'
-alias vl        'valgrind'
-alias vll       'vlt --leak-check=full --show-leak-kinds=all'
-alias vllv      'vlt --leak-check=full --show-leak-kinds=all -v'
-alias vlt       'valgrind --track-origins=yes --leak-check=full'
-alias vt        'valgrind --track-origins=yes'
+alas gdb.super 'gdb --batch --ex run --ex bt --ex q --args'
+alas vl        'valgrind'
+alas vll       'vlt --leak-check=full --show-leak-kinds=all'
+alas vllv      'vlt --leak-check=full --show-leak-kinds=all -v'
+alas vlt       'valgrind --track-origins=yes --leak-check=full'
+alas vt        'valgrind --track-origins=yes'
 
 #---------------------------------------
 # Frameworks
 #---------------------------------------
 
 # Django
-alias pmp  'python manage.py'
-alias runs 'python manage.py runserver'
-alias mig  'pmp makemigrations && pmp migrate'
+alas pmp  'python manage.py'
+alas runs 'python manage.py runserver'
+alas mig  'pmp makemigrations && pmp migrate'
 
 #---------------------------------------
 # Databases
 #---------------------------------------
 
-alias mg  'mysql -u root -p'
-alias mgu 'mysql -u user -p'
-alias pg  'sudo -iu postgres psql postgres'
+alas mg  'mysql -u root -p'
+alas mgu 'mysql -u user -p'
+alas pg  'sudo -iu postgres psql postgres'
 
 #------------------------------------------------------------------------------
 # 26. Misc
 #------------------------------------------------------------------------------
 
 # Count files in the directory:
-alias cf        'setopt CSH_NULL_GLOB; files=(*); echo ${#files[@]};'
+alas cf        'setopt CSH_NULL_GLOB; files=(*); echo ${#files[@]};'
 # Count only hidden files in the directory:
-alias cfa       'setopt CSH_NULL_GLOB; files=(.*); echo ${#files[@]};'
+alas cfa       'setopt CSH_NULL_GLOB; files=(.*); echo ${#files[@]};'
 # Count directories:
-alias cfd       'setopt CSH_NULL_GLOB; dirs=(*/); echo ${#dirs[@]};'
-alias empty     'truncate -s 0'
-alias fld       'fold -w 80 -s'
-alias immutable 'sudo chattr +i'
-alias mutable   'sudo chattr -i'
-alias prun      'perldoc perlrun'  # Similar text can be shown with `man perlrun`
-alias rl        'readlink -f'
-alias rows      'tr "\\n" " "'  # Used in a pipe, ... | rows
-alias tag       'ctags -R .'
-alias wl        'wc -l'
-alias xres.show 'xrdb -query -all'
+alas cfd       'setopt CSH_NULL_GLOB; dirs=(*/); echo ${#dirs[@]};'
+alas empty     'truncate -s 0'
+alas fld       'fold -w 80 -s'
+alas immutable 'sudo chattr +i'
+alas mutable   'sudo chattr -i'
+alas prun      'perldoc perlrun'  # Similar text can be shown with `man perlrun`
+alas rl        'readlink -f'
+alas rows      'tr "\\n" " "'  # Used in a pipe, ... | rows
+alas tag       'ctags -R .'
+alas wl        'wc -l'
+alas xres.show 'xrdb -query -all'
 
 #------------------------------------------------------------------------------
 # 27. Temporary (maybe they will stick)
 #------------------------------------------------------------------------------
 
-alias books    '${EDITOR} -c "e ${PRO}/archived/2022/books/bibliography.bib | :cd %:p:h"'
-alias get.date '--datetime | tr -d '\n' | copy'
-alias pasta    '${EDITOR} "${DOTSHARE}/misc/pastes.lst"'
-alias pst      'cd ${PRO}/archived/2022/npBuild && ./packageStats'
-alias sg       'cd ${MP1}/SG_shell_settings'
-alias xav      'xargs ${EDITOR}'
-alias dq       'cd ${MP1}/dataquest'
-alias irc      '${EDITOR} "${XDG_CONFIG_HOME}/ideavim/ideavimrc"'
-#alias sc       'shellcheck'
-alias paco     'pacman -Qo'
-alias rehist   'fc -R'
-alias smv      'sudo mv'
+alas books    '${EDITOR} -c "e ${PRO}/archived/2022/books/bibliography.bib | :c %:p:h"'
+alas get.date '--datetime | tr -d '\n' | copy'
+alas pasta    '${EDITOR} "${DOTSHARE}/misc/pastes.tsv"'
+alas pst      'c ${PRO}/archived/2022/npBuild && ./packageStats'
+alas sg       'c ${MP1}/SG_shell_settings'
+alas xav      'xargs ${EDITOR}'
+alas dq       'c ${MP1}/dataquest'
+alas irc      '${EDITOR} "${XDG_CONFIG_HOME}/ideavim/ideavimrc"'
+alas sc       'shellcheck'
+alas paco     'pacman -Qo'
+alas rehist   'fc -R'
+alas smv      'sudo mv'
 #alias scp      'sudo cp -r'
-alias srm      'sudo rm -r'
+alas srm      'sudo rm -r'
 # Find word differences in a unified diff stream and colourise them:
 # Intended possible use: 'svn diff | wd'
-alias wd       'wdiff -d | colordiff'
-alias mydata   'whoami; pwd; hostname -f; test -d .svn && svnversion; test -d .svn && svn info; date'
-alias pd       'pushd'
-alias pop      'popd'
-alias md       'mkdir'
-alias rd       'rmdir'
-alias go       'xdg-open'
-alias gonull   'xdg-open &> /dev/null'
-alias cutc     'cut -b 1-${COLUMNS}'
-alias ddf      'df -hP | grep ^/'
-alias mf       'manf'
-alias p3       'python3.13'
-alias d        'sudo docker'
-alias di       'sudo docker images'
-alias dv       'sudo docker volume ls'
-alias dn       'sudo docker network ls'
-alias ms       'mongosh'
+alas wd       'wdiff -d | colordiff'
+alas mydata   'whoami; pwd; hostname -f; test -d .svn && svnversion; test -d .svn && svn info; date'
+alas pd       'pushd'
+alas pop      'popd'
+alas md       'mkdir'
+alas rd       'rmdir'
+alas go       'xdg-open'
+alas gonull   'xdg-open &> /dev/null'
+alas cutc     'cut -b 1-${COLUMNS}'
+alas ddf      'df -hP | rg ^/'
+alas mf       'manf'
+alas p3       'python3.13'
+alas d        'sudo docker'
+alas di       'sudo docker images'
+alas dv       'sudo docker volume ls'
+alas dn       'sudo docker network ls'
+alas ms       'mongosh'
 
-#alias run  'npm start'
-alias run  'npm run dev'
-alias det  'bg && disown'
-alias down 'sudo downgrade'
-alias dir  'vidir'
-alias rux  'npx react-scripts start'
-alias pak  "${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/plugins.lua"
-alias glh  'git lg --color=always | head -n 15'
+#alias run   'npm start'
+alas run   'npm run dev'
+alas det   'bg && disown'
+alas down  'sudo downgrade'
+alas dir   'vidir'
+alas rux   'npx react-scripts start'
+alas glh   'git lg --color=always | head -n 15'
+#alas del   "sed -i '/^\[core\]/,/^\[/{s/^[ \t]*#\s*pager/    pager/}' ${XDG_CONFIG_HOME}/git/config"
+#alas nodel "sed -i '/^\[core\]/,/^\[/{s/^\([ \t]*\)pager/\1#pager/}' ${XDG_CONFIG_HOME}/git/config"
+# “del”: uncomment only the “pager = delta” line
+alas del "sed -i '/^\[core\]/,/^\[/{s/^\([[:space:]]*\)#\s*\(pager[[:space:]]*=[[:space:]]*delta\)/\1\2/}' ${XDG_CONFIG_HOME}/git/config"
+# “nodel”: comment out only the “pager = delta” line
+alas nodel "sed -i '/^\[core\]/,/^\[/{s/^\([[:space:]]*\)\(pager[[:space:]]*=[[:space:]]*delta\)/\1#\2/}' ${XDG_CONFIG_HOME}/git/config"
+alas vr    "c ${XDG_CONFIG_HOME}/nvim/lua"
+alas hyp   '${EDITOR} ${XDG_CONFIG_HOME}/hypr/hyprland.conf'
+alas zo    '${EDITOR} ${ZDOTDIR}/.zprofile'
+alas ala   '${EDITOR} ${XDG_CONFIG_HOME}/alacritty/alacritty.toml'
+alas j     'z'
+alas gi    '${EDITOR} .gitignore'
+alas ig    '${EDITOR} .gitignore'
+alas o    'bat'
+alas parup '\paru'
+alas swa   'c ${XDG_CONFIG_HOME}/sway/'
+alas ic   '${EDITOR} ${XDG_CONFIG_HOME}/sway/config'
+alas w 'wlprop'
+alas nv '${EDITOR} -u NONE'
+alas or '${EDITOR} ${XDG_CONFIG_HOME}/obsidian/obsidian.vimrc'
+alas key '${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/config/keybindings.lua'
+alas mak '${EDITOR} Makefile'
+alas gcl 'git clean'
+alas ve  'source .venv/bin/activate'
+alas gpf 'git push --force'
+alas w  'which'
+alas kx 'killall swaybar'
+alas r      'rm'
+alas kh 'killall Hyprland'
+alas mdir 'mkdir'
+alas cprf 'sudo cp -r'
+
+alas lrc     '${EDITOR} ${XDG_CONFIG_HOME}/labwc/rc.xml'
+alas lstart  '${EDITOR} ${XDG_CONFIG_HOME}/labwc/autostart'
+alas lreop  'labwc --reconfigure'
+alas lab 'cd ${XDG_CONFIG_HOME}/labwc'
+alas kl 'killall labwc'
+alas lout 'labwc --exit'
+alas ka 'killall'
+alas dif 'diff'
+
+alas gf   'rg -Hn --no-heading'             # Recursive is default; show filename + line number
+alas gfa  'rg -Hn --no-heading --hidden'    # Same, but include hidden files
+alas gfi  'rg -i -Hn --no-heading'          # Same, but case-insensitive
+alas gfai 'rg -i -Hn --no-heading --hidden' # Same, but case-insensitive
+
+alas he 'help'
+alas gitconf  '${EDITOR} ${XDG_CONFIG_HOME}/git/config'
+alas gitc  '${EDITOR} ${XDG_CONFIG_HOME}/git/config'
+alas caa '\cat'
+alas h-1 'head -n 1'
+alas t-1 'tail -n 1'
+alas me 'make extract'
+alas calc 'qalc'
+alas his '${EDITOR} ${ZDOTDIR}/histfile'
+
+alas t-1 'tail -n 1'
+alas t-2 'tail -n 2'
+alas t-3 'tail -n 3'
+alas t-4 'tail -n 4'
+alas t-5 'tail -n 5'
+
+alas plug  "${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/plugins/init.lua"
+alas lsp  "${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/plugins/nvim-lspconfig.lua"
+alas cmd  "${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/config/commands.lua"
+
+alas lk './list-keyword-lengths.sh amazon_ms_keywords/v4/amazon_ms_keywords_2025-06-05_13_24_55.ttsv'
+
+#alas b 'btm'
+alas b 'bat'
+alas g 'glow'
+alas i 'cheat -c'
+alas k 'kubectl'
+alas m 'mv'
+alas n 'npm'
+alas u 'uv-run'
+alas y 'yazi'
+alas bro 'bro 2>/dev/null'

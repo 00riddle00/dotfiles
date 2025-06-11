@@ -16,4 +16,4 @@ hsetroot -solid "#073542" &
 
 tint2 > /dev/null 2>&1 &
 
-urxvt -name t2 &
+kitty --class t2 &

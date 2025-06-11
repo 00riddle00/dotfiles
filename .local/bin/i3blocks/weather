@@ -43,7 +43,7 @@ getforecast() {
 
 showweather() {
   sed '4q;d' "${XDG_DATA_HOME}/weatherreport" |
-  grep -o "m\\([-+]\\)*[0-9]\\+" |
+  rg -o "m([-+])*[0-9]+" |
   sed -e 1b -e '$!d' | tr '\n|m' ' ' |
   awk '{print $1 "°" ".." $2 "°"}'
 }

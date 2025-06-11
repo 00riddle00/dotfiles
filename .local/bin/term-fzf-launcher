@@ -14,7 +14,13 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 70x30 \
-  -name fzf-launcher \
-  -e sh -c "fzf-launcher"
+#urxvt \
+  #-geometry 70x30 \
+  #-name fzf-launcher \
+  #-e sh -c "fzf-launcher"
+
+kitty \
+  --class fzf-launcher \
+  --override initial_window_columns=70 \
+  --override initial_window_lines=30 \
+    sh -c "fzf-launcher"

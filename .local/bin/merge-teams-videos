@@ -24,7 +24,7 @@ files=("${PWD}"/Python*.mp4)
 file1="${files[0]}"
 file2="${files[1]}"
 
-_date=$(basename "${file1}" | grep -oP '20\d{6}')
+_date=$(basename "${file1}" | rg -o '20\d{6}')
 iso_date="${_date:0:4}-${_date:4:2}-${_date:6:2}"
 
 # The placeholder number 999 will need to be replaced with the actual lecture

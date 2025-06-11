@@ -13,8 +13,15 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 105x40 \
-  -name timer \
-  -hold \
-  -e tmux new-session "termdown -B | lolcat"
+#urxvt \
+  #-geometry 105x40 \
+  #-name timer \
+  #-hold \
+  #-e tmux new-session "termdown -B | lolcat"
+
+kitty \
+  --class timer \
+  --override initial_window_columns=105 \
+  --override initial_window_lines=40 \
+  --hold \
+    tmux new-session "termdown -B | lolcat"

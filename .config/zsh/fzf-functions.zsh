@@ -79,30 +79,30 @@ cpf() {
 #* USAGE:
 #*   ${0} [--hidden] [DIRECTORY]
 #**
-fd() {
-  local include_hidden=false
-  local dir_
+#fd() {
+  #local include_hidden=false
+  #local dir_
 
-  if [[ "$1" == "--hidden" ]]; then
-    include_hidden=true
-    shift
-  fi
+  #if [[ "$1" == "--hidden" ]]; then
+    #include_hidden=true
+    #shift
+  #fi
 
-  if $include_hidden; then
-    dir_="$(
-      find "${1:-.}" -type d 2> /dev/null | fzf +m
-    )" || return
-  else
-    dir_="$(
-      find "${1:-.}" \
-        -path '*/\.*' -prune \
-        -o -type d -print 2> /dev/null \
-      | fzf +m
-    )" || return
-  fi
+  #if $include_hidden; then
+    #dir_="$(
+      #find "${1:-.}" -type d 2> /dev/null | fzf +m
+    #)" || return
+  #else
+    #dir_="$(
+      #find "${1:-.}" \
+        #-path '*/\.*' -prune \
+        #-o -type d -print 2> /dev/null \
+      #| fzf +m
+    #)" || return
+  #fi
 
-  cd "${dir_}" || return
-}
+  #cd "${dir_}" || return
+#}
 
 # Interactively select a process to kill
 #* USAGE:
@@ -144,7 +144,7 @@ ftpane() {
 
   target="$(
     echo "${panes}" \
-      | grep -v "${current_pane}" \
+      | rg -v "${current_pane}" \
       | fzf +m --reverse
   )" || return
 

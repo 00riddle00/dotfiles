@@ -9,3 +9,8 @@
 vim.g.EmacsCommandLineSearchCommandLineDisable        = 1
 vim.g.EmacsCommandLineOlderMatchingCommandLineDisable = 1
 vim.g.EmacsCommandLineNewerMatchingCommandLineDisable = 1
+
+--Remove the plugin's <C-R> mapping in command-line mode, which intercepts the
+--keypress and runs the plugin’s code instead of Neovim’s internal “insert
+--register contents” function.
+vim.api.nvim_del_keymap("c", "<C-R>")

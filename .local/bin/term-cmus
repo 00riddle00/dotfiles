@@ -13,7 +13,13 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 105x40 \
-  -name cmus \
-  -e tmux new-session "cmus"
+#urxvt \
+  #-geometry 105x40 \
+  #-name cmus \
+  #-e tmux new-session "cmus"
+
+kitty \
+  --class cmus \
+  --override initial_window_columns=105 \
+  --override initial_window_lines=40 \
+    tmux new-session "cmus"

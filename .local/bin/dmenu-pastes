@@ -14,12 +14,28 @@
 #*   ${0}
 #**
 
-# xclip needs to be installed to even show the menu.
-xclip -h 2>/dev/null || exit 1
+set -euo pipefail
 
-text="$(dmenu -i -l 20 < "${DOTSHARE}/misc/pastes.lst")"
+PASTES_FILE="${DOTSHARE}/misc/pastes.tsv"
+TEMP_FILE="$(mktemp)"
 
-[[ -z "${text}" ]] && exit 1
+xclip -h &>/dev/null || exit 1
+touch "$PASTES_FILE"
 
-echo "${text}" | tr -d '\n' | xclip -selection clipboard
-notify-send "${text} copied to clipboard."
+# Show only the text column, sorted by frequency descending
+choice=$(sort -t$'\t' -k2,2nr "$PASTES_FILE" | cut -f1 | dmenu -i -l 20)
+
+[[ -z "$choice" ]] && exit 1
+
+# Update frequency
+awk -F'\t' -v txt="$choice" -v OFS='\t' '
+  $1 == txt { $2 += 1; found=1 }
+  { print }
+  END { if (!found) print txt, 1 }
+' "$PASTES_FILE" > "$TEMP_FILE"
+
+mv "$TEMP_FILE" "$PASTES_FILE"
+
+# Copy to clipboard
+echo -n "$choice" | xclip -selection clipboard
+notify-send "$choice copied to clipboard."

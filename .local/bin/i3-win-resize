@@ -25,7 +25,7 @@ fi
 resize_amount="2 px or 2 ppt"
 
 resize_window() {
-  i3-msg resize "${1}" "${2}" "${resize_amount}" | grep -q '"success":true' \
+  i3-msg resize "${1}" "${2}" "${resize_amount}" | rg -q '"success":true' \
     || i3-msg resize "${3}" "${4}" "${resize_amount}"
 }
 

@@ -21,7 +21,7 @@
 #* The script needs to be run in a Subversion working directory.
 #**
 svn status \
-  | grep '^?' \
+  | rg '^?' \
   | sed 's/^\? *//' \
   | awk '{printf "%s@\0", $0}' \
   | xargs -0 --no-run-if-empty \

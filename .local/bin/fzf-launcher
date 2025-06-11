@@ -232,7 +232,7 @@ function generate-command() {
 }
 
 function shouldAutostart() {
-    local condition="$(cat $1 | grep "AutostartCondition" | cut -d'=' -f2)"
+    local condition="$(cat $1 | rg "AutostartCondition" | cut -d'=' -f2)"
     local filename="${XDG_CONFIG_HOME-${HOME}/.config}/${condition#* }"
     case $condition in
         if-exists*)

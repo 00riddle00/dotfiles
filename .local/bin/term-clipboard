@@ -13,10 +13,18 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 135x61 \
-  -name clipboard \
-  -hold \
-  -e tmux new-session \
-    "${EDITOR}" -c \
-      "e ${NOTES}/coding/clipboard.md | :cd %:p:h | :NvimTreeClose"
+#urxvt \
+  #-geometry 135x61 \
+  #-name clipboard \
+  #-hold \
+  #-e tmux new-session \
+    #"${EDITOR}" -c \
+      #"e ${NOTES}/coding/clipboard.md | :cd %:p:h | :NvimTreeClose"
+
+kitty \
+  --class clipboard \
+  --override initial_window_columns=135 \
+  --override initial_window_lines=61 \
+  --hold \
+    tmux new-session "${EDITOR}" -c \
+      "e ${NOTES}/coding/clipboard.md | :cd %:p:h"

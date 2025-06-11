@@ -20,7 +20,7 @@
 #*   ${0} --options COMMAND --COMMAND-OPTIONS
 #*   ${0} --options -i COMMAND --COMMAND-OPTIONS {} OTHER-ARGUMENTS
 #* e.g.:
-#*   echo "a:b" | buffer -i awk -F: '{OFS=FS} {print $1}' {} | grep "a"
+#*   echo "aaa:bbb" | buffer -i awk -F: '{OFS=FS} {print $1}' {} | rg "aa"
 #*
 #* OPTIONS:
 #*   -e, --extension EXT     Use the specified extension for the temporary file.

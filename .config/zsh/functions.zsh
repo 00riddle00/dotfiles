@@ -69,7 +69,7 @@ kk() {
 #*  ${0} PATTERN
 #**
 find.file() {
-  find . -iname "*${1}*" \
+  fd -i --hidden --no-ignore "$1" . \
     | sort -u
 }
 
@@ -85,7 +85,7 @@ find.path() {
    readlink -f **/.* ;
   } \
     | sed "s|$(pwd)||" \
-    | grep -i "${1}" \
+    | rg -i "${1}" \
     | sort -u
 }
 
@@ -163,7 +163,7 @@ a_and_b() {
 #*   ${0} FILE1 FILE2
 #**
 a_and_string_in_b() {
-  grep -F -f "${2}" "${1}" \
+  rg -F -f "${2}" "${1}" \
     | sort
 }
 
@@ -172,7 +172,7 @@ a_and_string_in_b() {
 #*   ${0} FILE1 FILE2
 #**
 a_minus_b() {
-  grep -Fvx -f "${2}" "${1}" \
+  rg -Fvx -f "${2}" "${1}" \
     | sort
 }
 
@@ -181,7 +181,7 @@ a_minus_b() {
 #*   ${0} FILE1 FILE2
 #**
 a_minus_string_in_b() {
-  grep -Fv -f "${2}" "${1}" \
+  rg -Fv -f "${2}" "${1}" \
     | sort
 }
 
@@ -276,8 +276,8 @@ date-to-epoch() {
 #**
 auf() {
   ps ax \
-    | grep -v grep \
-    | grep -i "${1}" \
+    | rg -v '^[ ]*[0-9]+.*\brg\b' \
+    | rg -i -- "${1}" \
     | awk '{print $1}'
 }
 
@@ -285,11 +285,33 @@ auf() {
 #* USAGE:
 #*   ${0} FILE1|DIR1 [FILE2|DIR2 ...]
 #**
-bsc() {
+bc() {
   for item in "${@}" ; do
     basename "${item}"
   done \
     | xclip -selection clipboard
+}
+
+#* Copy the path to a file / directory to the clipboard.
+#* This command also works when all the text after it needs to be copied
+#* to the clipboard, separated by newlines.
+#* USAGE:
+#*   ${0} FILE1|DIR1 [FILE2|DIR2 ...]
+#*   ${0} ANY_TEXT_TO_COPY [ANY_OTHER_TEXT ...]
+#**
+ec() {
+  for item in "${@}" ; do
+    echo "${item}"
+  done \
+    | xclip -selection clipboard
+}
+
+#* Copy all the text to the clipboard.
+#* USAGE:
+#*   ${0} ANY_TEXT_TO_COPY [ANY_OTHER_TEXT ...]
+#**
+ecc() {
+    echo "${@}" | xclip -selection clipboard
 }
 
 #* Copy the absolute path of a file / directory to the clipboard.
@@ -309,17 +331,16 @@ rlc() {
 #**
 c() {
   if [[ -z "${1}" ]] ; then
-    cd
-  elif [[ "$(find "${1}" -maxdepth 1 -type f \
-           | head -n 51 \
-           | wc -l)" \
-        -gt 50 ]] ; then
-    cd "${1}"
+    builtin cd
+  elif (("$(\ls "${1}" 2>/dev/null | wc -l)" > 50 )) ; then
+    builtin cd "${1}"
     echo "Large dir"
   else
-    cd "${1}" && ls
+    builtin cd "${1}" && eza
   fi
 }
+
+alias cd 'echo "*** Use '\'"c"\'' ***"'
 
 #* Check if ${2} is a symlink of ${1}.
 #* USAGE:
@@ -347,7 +368,7 @@ git_clone_ssh() {
 
 #* Go to a command's flag description in its man page.
 #* USAGE e.g.:
-#*   ${0} grep -r
+#*   ${0} ls -r
 #**
 manf () {
   man "${1}" \
@@ -360,9 +381,9 @@ manf () {
 #**
 recent () {
   history -100 \
-    | grep "${1}" \
-    | grep -v "recent ${1}" \
-    | grep -v "grep ${1}" \
+    | rg -- "${1}" \
+    | rg -v -- "^\s*[0-9]+\s+recent ${1}\$" \
+    | rg -v -- "^\s*[0-9]+\s+rg ${1}\$" \
     | tail -1
 }
 
@@ -400,9 +421,23 @@ tmux-clean() {
   echo "Before:"
   tmux ls
   tmux ls \
-    | grep -v attached \
+    | rg -v attached \
     | cut -d: -f1 \
     | xargs -I{} tmux kill-session -t {}
   echo "After:"
   tmux ls
+}
+
+waste() {mv -v "${1}" ~/wastebasket/}
+
+# Moved from aliases to functions in order to use the standard Zsh file
+# completions for this command.
+dot() {
+  /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME "$@"
+}
+
+# Put into a function in order to use the standard Zsh file completions for
+# this command.
+uv-run() {
+  uv run "$@"
 }
