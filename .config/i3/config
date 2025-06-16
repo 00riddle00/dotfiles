@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 12:18:03 EEST
+# Date:   2025-06-16 21:38:23 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -31,6 +31,7 @@ set $gap_size_top   0
 set $gap_size_inner 8
 set $gap_size_outer 4
 
+set $col_bg_seacolor       #073542
 set $col_i3_bar_bg         #002b36
 set $col_arch_blue         #1793d1
 set $col_light_blue        #79bac1
@@ -59,7 +60,7 @@ set $wspace10 "10:  "
 $run /usr/lib/pam_kwallet_init
 
 # Background color
-$run hsetroot -solid "#073542" &
+$run sh -c "hsetroot -solid '$col_bg_seacolor' &"
 
 # This amazing script uses the python-i3ipc library to switch the layout
 # between horizontal and vertical splits depending on the currently focused
@@ -67,7 +68,7 @@ $run hsetroot -solid "#073542" &
 $run_always autotiling
 
 # Open notes
-$run i3-term-notes
+$run term-notes
 
 # ================================================
 #  Appearance
@@ -314,7 +315,7 @@ bindsym $mod + F1  $run "killall picom"
 bindsym F2         $run focus t2.URxvt -c
 bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
 bindsym F3         $run open-or-focus i3-term-notes notes.URxvt -c
-bindsym F4         $run open-or-focus i3-urxvt-clipboard clipboard.URxvt -c
+bindsym F4         $run open-or-focus i3-term-clipboard clipboard.URxvt -c
 bindsym F5         $run open-or-focus chromium
 bindsym F7         $run open-or-focus thunderbird
 bindsym F9         $run open-or-focus-brave-ignoring alpha bravo
