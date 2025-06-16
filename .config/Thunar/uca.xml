@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
 *------------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-09-27 21:23:24 EEST
+* Date:   2025-06-16 16:37:26 EEST
 * Path:   ~/.config/Thunar/uca.xml
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
 * Additional custom actions for Thunar's context menu.
 -->
 
+<?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
     <icon>terminal</icon>
     <name>Open Terminal Here</name>
     <submenu></submenu>
     <unique-id>1712922767337151-1</unique-id>
-    <command>exo-open --working-directory %f --launch TerminalEmulator</command>
+    <command>$TERMINAL %f</command>
     <description>Open Terminal in the current directory.</description>
     <range>*</range>
     <patterns>*</patterns>
