@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-30 15:54:57 EEST
+# Date:   2025-06-16 16:42:52 EEST
 # Path:   ~/.config/git/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,6 +10,7 @@
     name       = Tomas Giedraitis
     signingkey = CD0549B10F810F8F
 [core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
     #pager = delta
     editor = nvim
 [credential]
@@ -24,7 +25,8 @@
 [difftool]
     prompt = false
 [interactive]
-    diffFilter = delta --color-only
+    #diffFilter = delta --color-only
+    diffFilter = diff-so-fancy --patch
 [alias]
     lgfirstparent = log --first-parent
     lgnomerges    = log --no-merges --oneline
@@ -46,11 +48,26 @@
     ff     = only
 [push]
     recurseSubmodules = check
-[delta]
-    navigate      = true
-    light         = false
-    side-by-side  = true
 [smartgit "submodule"]
     fetchalways   = false
     update        = true
     initializenew = true
+[delta]
+  navigate      = true
+  light         = false
+  side-by-side  = true
+  minus-style                   = syntax "#3a273a"
+  minus-non-emph-style          = syntax "#3a273a"
+  minus-emph-style              = syntax "#6b2e43"
+  minus-empty-line-marker-style = syntax "#3a273a"
+  line-numbers-minus-style      = "#e26a75"
+  plus-style                    = syntax "#273849"
+  plus-non-emph-style           = syntax "#273849"
+  plus-emph-style               = syntax "#305f6f"
+  plus-empty-line-marker-style  = syntax "#273849"
+  line-numbers-plus-style       = "#b8db87"
+  line-numbers-zero-style       = "#3b4261"
+[clean]
+	requireForce = false
+[color]
+	ui = true
