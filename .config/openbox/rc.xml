@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-04 23:21:08 EEST
+# Date:   2025-06-16 22:08:58 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -130,7 +130,7 @@
      other applications, or saved in a session.
 
      Use obconf if one wants to change these without having to log out and
-     back in. -->
+  back in. -->
   <desktops>
     <number>4</number>
     <firstdesk>1</firstdesk>
@@ -313,7 +313,7 @@
       <action name="ToggleAlwaysOnTop"/>
     </keybind>
     <!-- Close active window -->
-    <keybind key="A-Escape">
+    <keybind key="A-Tab">
       <action name="Close"/>
     </keybind>
     <!-- =========================================
@@ -337,19 +337,6 @@
     <!-- ===========================
   Window switching
   ============================ -->
-    <keybind key="A-Tab">
-      <action name="ForEach">
-        <desktop>current</desktop>
-        <then>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </then>
-      </action>
-      <action name="Execute">
-        <command>skippy-xd</command>
-      </action>
-    </keybind>
     <keybind key="W-Tab">
       <action name="NextWindow">
         <bar>no</bar>
@@ -518,34 +505,28 @@
     <!-- ===========================
   RUN: Terminal
   ============================ -->
-    <!-- Open Urxvt with a custom window class name. -->
+    <!-- Open terminal with a custom window class name. -->
     <keybind key="A-F2">
       <action name="Execute">
-        <command>urxvt -name t2</command>
+        <command>kitty --class t2</command>
       </action>
     </keybind>
-    <!-- Focus URxvt window for main terminal (codename: t2) by its class name. -->
+    <!-- Focus terminal window for main terminal (codename: t2) by its class name. -->
     <keybind key="F2">
       <action name="Execute">
-        <command>focus t2.URxvt -c</command>
+        <command>focus t2.t2 -c</command>
       </action>
     </keybind>
-    <!-- Open URxvt notes window. -->
-    <keybind key="A-F3">
-      <action name="Execute">
-        <command>term-notes</command>
-      </action>
-    </keybind>
-    <!-- Open/focus URxvt window for notes by its class name. -->
+    <!-- Open/focus terminal window for notes by its class name. -->
     <keybind key="F3">
       <action name="Execute">
-        <command>open-or-focus term-notes notes.URxvt -c</command>
+        <command>open-or-focus term-notes notes.notes -c</command>
       </action>
     </keybind>
-    <!-- Open/focus Urxvt window for clipboard by its class name. -->
+    <!-- Open/focus terminal window for clipboard by its class name. -->
     <keybind key="F4">
       <action name="Execute">
-        <command>open-or-focus term-clipboard clipboard.URxvt -c</command>
+        <command>open-or-focus term-clipboard clipboard.clipboard -c</command>
       </action>
     </keybind>
     <!-- ===========================
@@ -567,11 +548,21 @@
   RUN: Text Editors / IDEs
   ============================ -->
     <!-- Open/focus VS Code window by its name/title. -->
+    <!--
     <keybind key="W-c">
       <action name="Execute">
         <command>open-or-focus code</command>
       </action>
     </keybind>
+    -->
+    <!-- Open/focus Cursor window by its name/title. -->
+    <!--
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>open-or-focus cursor</command>
+      </action>
+    </keybind>
+    -->
     <!-- Open/focus PyCharm window by its class name. -->
     <keybind key="W-p">
       <action name="Execute">
@@ -579,18 +570,32 @@
       </action>
     </keybind>
     <!-- Open/focus Emacs window by its class name. -->
+    <!--
     <keybind key="W-q">
       <action name="Execute">
         <command>open-or-focus emacs emacs.Emacs -c</command>
       </action>
     </keybind>
+    -->
+    <!-- Open/focus CopyQ window by its class name. -->
+    <keybind key="W-q">
+      <action name="Execute">
+        <command>copyq show</command>
+      </action>
+    </keybind>
     <!-- ===========================
   RUN: dmenu
   ============================ -->
-    <!-- Open/focus PyCharm window by its class name. -->
+    <!-- Open the menu of commonly used strings for pasting. -->
     <keybind key="W-S-p">
       <action name="Execute">
         <command>dmenu-pastes</command>
+      </action>
+    </keybind>
+    <!-- Open the menu of commonly used color codes for pasting. -->
+    <keybind key="W-S-c">
+      <action name="Execute">
+        <command>dmenu-colors</command>
       </action>
     </keybind>
     <!-- ===========================
@@ -602,21 +607,27 @@
         <command>open-or-focus-brave-ignoring alpha bravo</command>
       </action>
     </keybind>
+    <!-- Open/focus Brave window named "alpha". -->
     <keybind key="F1">
       <action name="Execute">
-        <!-- Open/focus Brave window named "alpha". -->
         <command>open-or-focus-brave alpha</command>
       </action>
     </keybind>
+    <!-- Open/focus Brave window named "bravo". -->
     <keybind key="F12">
       <action name="Execute">
-        <!-- Open/focus Brave window named "bravo". -->
         <command>open-or-focus-brave bravo</command>
       </action>
     </keybind>
+    <!-- Open/focus Brave window named "charlie". -->
+    <keybind key="F11">
+      <action name="Execute">
+        <command>open-or-focus-brave charlie</command>
+      </action>
+    </keybind>
+    <!-- Open/focus Chromium window by its name. -->
     <keybind key="F5">
       <action name="Execute">
-        <!-- Open/focus Chromium window by its name. -->
         <command>open-or-focus chromium</command>
       </action>
     </keybind>
@@ -658,42 +669,38 @@
     </keybind>
     <!-- Open/focus Discord window by its name. -->
     <!--
-  <keybind key="A-c">
-    <action name="Execute">
-      <command>open-or-focus discord</command>
-    </action>
-  </keybind>
-  -->
-    <!-- Open/focus C* Music Player window by its class name. -->
-    <!--
     <keybind key="A-c">
       <action name="Execute">
-        <command>open-or-focus term-cmus cmus.URxvt -c</command>
+        <command>open-or-focus discord</command>
+      </action>
+    </keybind>
+    -->
+    <!-- Open/focus C* Music Player window by its class name. -->
+    <!--
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>open-or-focus term-cmus cmus.cmus -c</command>
       </action>
     </keybind>
     -->
     <!-- Open/focus Obsidian note-taking app window by its class name. -->
-    <keybind key="A-c">
+    <keybind key="W-c">
       <action name="Execute">
         <command>open-or-focus obsidian obsidian.Obsidian -c</command>
       </action>
     </keybind>
-    <!-- Open/focus Termdown timer window by its class name. -->
-    <!--
-  <keybind key="A-c">
-    <action name="Execute">
-      <command>open-or-focus term-timer timer.URxvt -c</command>
-    </action>
-  </keybind>
-  -->
     <!-- Open/focus text input window (Vim + GitHub Copilot) by its class name. -->
-    <!--
-  <keybind key="A-f">
-    <action name="Execute">
-      <command>open-or-focus term-text-input text-input.URxvt -c</command>
-    </action>
-  </keybind>
-  -->
+    <keybind key="A-n">
+      <action name="Execute">
+        <command>open-or-focus term-text-input text-input.text-input -c</command>
+      </action>
+    </keybind>
+    <!-- Open/focus nvim config terminal window by its class name. -->
+    <keybind key="S-A-n">
+      <action name="Execute">
+        <command>open-or-focus term-nvim-config nvim-config.nvim-config -c</command>
+      </action>
+    </keybind>
     <!-- Open/focus pavucontrol. -->
     <keybind key="A-p">
       <action name="Execute">
@@ -708,12 +715,12 @@
     </keybind>
     <!-- Open/focus LibreOffice window by its name. -->
     <!--
-  <keybind key="W-l">
-    <action name="Execute">
-      <command>open-or-focus libreoffice</command>
-    </action>
-  </keybind>
-  -->
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>open-or-focus libreoffice</command>
+      </action>
+    </keybind>
+    -->
     <keybind key="W-o">
       <action name="Execute">
         <command>keepassxc</command>
