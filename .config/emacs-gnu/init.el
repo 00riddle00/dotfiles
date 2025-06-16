@@ -1,7 +1,7 @@
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-07-30 16:10:46 EEST
-; Path:   ~/.config/emacs.gnu/init.el
+; Date:   2025-06-16 16:41:46 EEST
+; Path:   ~/.config/emacs-gnu/init.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
 
@@ -12,8 +12,9 @@
 ;; Move point (cursor) from window to window with Shift and arrow keys
 (windmove-default-keybindings)
 
-(global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "C-z") 'evil-mode)
+(global-set-key (kbd "<f1>") 'help-command)
+(global-set-key (kbd "C-h")  'delete-backward-char)
+(global-set-key (kbd "C-z")  'evil-mode)
 
 ;; Enable the disabled commands in all future editing sessions.
 ;; These commands were disabled since they can sometimes be found confusing.
