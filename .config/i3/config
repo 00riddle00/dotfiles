@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-16 21:38:23 EEST
+# Date:   2025-06-17 12:40:41 EEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,9 +10,9 @@
 # ================================================
 
 # i3 'exec' command in this config file, e.g.:
-#   exec --no-startup-id urxvt -name dropdown_math -e R -q
+#   exec --no-startup-id ${TERMINAL} --class dropdown_math R
 # To run the same command from a terminal (but not inside Tmux):
-#   i3-msg 'exec --no-startup-id urxvt -name dropdown_math -e R -q'
+#   i3-msg 'exec --no-startup-id ${TERMINAL} --class dropdown_math R'
 # For Tmux, use the alias 'i3-msg-tmux' instead of 'i3-msg'
 #   (see ${ZDOTDIR}/aliases.zsh).
 #
@@ -37,6 +37,8 @@ set $col_arch_blue         #1793d1
 set $col_light_blue        #79bac1
 set $col_pretty_blue       #268bd2
 set $col_pretty_light_blue #00afd7
+set $col_dark_red          #b71c1c
+set $col_black             #000000
 
 set $wspace1  "1:  "
 set $wspace2  "2:  "
@@ -53,14 +55,15 @@ set $wspace10 "10:  "
 #  Startup
 # ================================================
 
-# Programs are started via $XDG_CONFIG_HOME/X11/xinitrc
+# These user-specific programs are run when an i3 X Session is started.
+# All the other autostart programs are started in $XDG_CONFIG_HOME/X11/xinitrc.
+
+# Background color
+$run sh -c "hsetroot -solid '${COL_BG_SEACOLOR}' &"
 
 # To automatically unlock KWallet protected by the login password,
 # in addition to configuring PAM.
 $run /usr/lib/pam_kwallet_init
-
-# Background color
-$run sh -c "hsetroot -solid '$col_bg_seacolor' &"
 
 # This amazing script uses the python-i3ipc library to switch the layout
 # between horizontal and vertical splits depending on the currently focused
@@ -68,7 +71,7 @@ $run sh -c "hsetroot -solid '$col_bg_seacolor' &"
 $run_always autotiling
 
 # Open notes
-$run term-notes
+$run i3-term-notes
 
 # ================================================
 #  Appearance
@@ -109,7 +112,7 @@ bar {
     active_workspace   $col_i3_bar_bg $col_i3_bar_bg $col_arch_blue
     inactive_workspace $col_i3_bar_bg $col_i3_bar_bg $col_light_blue
     urgent_workspace   $col_arch_blue $col_arch_blue $col_i3_bar_bg
-    binding_mode       #b71c1c        #b71c1c        #000000
+    binding_mode       $col_dark_red  $col_dark_red  $col_black
   }
 }
 
@@ -190,10 +193,10 @@ for_window [class="Spotify"]     move workspace $wspace9
 #  Escape, Return, Space keys
 # ----------------------------
 
-bindsym $mod + Return        $run     $TERMINAL
+bindsym $mod + Return        $run     ${TERMINAL}
 bindsym $mod + space         floating toggle
 bindsym $mod + Shift + space focus    mode_toggle
-bindsym $alt + Escape        kill
+bindsym $alt + Tab           kill
 
 # ----------------------------
 #  Letter keys
@@ -206,24 +209,24 @@ bindsym $mod + b         $run open-or-focus gimp Gimp -c
 bindsym $mod + c         $run open-or-focus code
 bindsym $mod + e         $run focus "- Thunar"
 bindsym $mod + g         $run open-or-focus smartsvn
-bindsym $mod + i         $run $TERMINAL -e htop
+bindsym $mod + i         $run ${TERMINAL} -e htop
 bindsym $mod + m         $run open-or-focus nomacs
 bindsym $mod + n         workspace $wspace2; $run brave
 bindsym $mod + o         $run keepassxc
 bindsym $mod + p         $run open-or-focus pycharm jetbrains-pycharm -c
 bindsym $mod + Shift + p $run dmenu-pastes
 bindsym $mod + q         $run open-or-focus emacs emacs.Emacs -c emacs
-bindsym $mod + r         $run $TERMINAL -e ranger
+bindsym $mod + r         $run ${TERMINAL} -e ranger
 bindsym $mod + s         $run xscreensaver-command --lock
 bindsym $mod + t         $run qutebrowser-wallpaper
-bindsym $mod + y         $run $TERMINAL -e calcurse -D $XDG_CONFIG_HOME/calcurse
+bindsym $mod + y         $run ${TERMINAL} -e calcurse -D $XDG_CONFIG_HOME/calcurse
 bindsym $mod + semicolon $run open-or-focus libreoffice
 
 # Imitate "Show Desktop"
 bindsym $mod + d           $run i3-show-desktop $wspace10
 # Imitate "Alt+Tab"
 #   Also very useful for switching between two displays
-bindsym $alt + Tab         $run i3-msg 'workspace back_and_forth'
+#bindsym $alt + Tab         $run i3-msg 'workspace back_and_forth'
 # Imitate "Win+Tab"
 bindsym $mod + Tab         $run i3-msg 'workspace next'
 # Imitate "Win+Shift+Tab"
@@ -312,10 +315,10 @@ bindsym $mod + Shift + 0 move container to workspace number $wspace10
 
 bindsym F1         $run "picom -b"
 bindsym $mod + F1  $run "killall picom"
-bindsym F2         $run focus t2.URxvt -c
-bindsym $alt + F2  $run i3-msg '$run $TERMINAL -name t2'
-bindsym F3         $run open-or-focus i3-term-notes notes.URxvt -c
-bindsym F4         $run open-or-focus i3-term-clipboard clipboard.URxvt -c
+bindsym F2         $run focus term-standard.term-standard -c
+bindsym $alt + F2  $run i3-msg '$run term-standard'
+bindsym F3         $run open-or-focus i3-term-notes notes.notes -c
+bindsym F4         $run open-or-focus i3-term-clipboard clipboard.clipboard -c
 bindsym F5         $run open-or-focus chromium
 bindsym F7         $run open-or-focus thunderbird
 bindsym F9         $run open-or-focus-brave-ignoring alpha bravo
@@ -353,8 +356,8 @@ bindsym $mod + Next   $run  redshift -P -O 5000
 # Just for fun
 bindsym $mod + Pause  $run  redshift -P -O 1000
 
-bindsym Print         $run flameshot gui -p $SCREENSHOTS
-bindsym Shift + Print $run scrot $SCREENSHOTS/screenshot-%F-%H%M%S.png
+bindsym Print         $run flameshot gui -p ${SCREENSHOTS}
+bindsym Shift + Print $run scrot ${SCREENSHOTS}/screenshot-%F-%H%M%S.png
 
 # ----------------------------
 #  Arrow keys
