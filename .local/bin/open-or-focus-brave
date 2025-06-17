@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 19:20:21 EEST
+# Date:   2025-06-17 13:22:15 EEST
 # Path:   ~/.local/bin/open-or-focus-brave
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 #* USAGE:
 #*   ${0} WINDOW_NAME
 #**
-if wmctrl -lx | grep -q "brave-browser.Brave-browser.*${1}$"; then
+if wmctrl -lx | rg -q "brave-browser\.Brave-browser.*${1}$"; then
     wmctrl -F -a "${1}"
 else
     brave --window-name="${1}"

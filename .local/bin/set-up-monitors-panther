@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 20:04:00 EEST
+# Date:   2025-06-17 13:22:22 EEST
 # Path:   ~/.local/bin/set-up-monitors-panther
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 # Check if X is running.
 if xset q &>/dev/null; then
   # If external monitor is connected, use it.
-  if xrandr | awk '/ connected/{print $1}' | grep -q "${HDMI1_SCREEN}"; then
+  if xrandr | awk '/ connected/{print $1}' | rg -q -- "${HDMI1_SCREEN}"; then
     xrandr \
       --output "${HDMI1_SCREEN}" --auto \
       --output "${LAPTOP_SCREEN}" --off

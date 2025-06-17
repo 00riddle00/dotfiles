@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-01 12:34:15 EEST
+# Date:   2025-06-17 13:22:09 EEST
 # Path:   ~/.local/bin/i3blocks/weather
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ getforecast() {
 
 showweather() {
   sed '4q;d' "${XDG_DATA_HOME}/weatherreport" |
-  grep -o "m\\([-+]\\)*[0-9]\\+" |
+  rg -o "m([-+])*[0-9]+" |
   sed -e 1b -e '$!d' | tr '\n|m' ' ' |
   awk '{print $1 "°" ".." $2 "°"}'
 }

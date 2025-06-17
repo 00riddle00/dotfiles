@@ -2,7 +2,7 @@
 # vim:ft=bash:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-05-04 22:58:32 EEST
+# Date: 2025-06-17 13:22:02 EEST
 # Path: ~/.local/bin/fzf-launcher
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -232,7 +232,7 @@ function generate-command() {
 }
 
 function shouldAutostart() {
-    local condition="$(cat $1 | grep "AutostartCondition" | cut -d'=' -f2)"
+    local condition="$(cat $1 | rg "AutostartCondition" | cut -d'=' -f2)"
     local filename="${XDG_CONFIG_HOME-${HOME}/.config}/${condition#* }"
     case $condition in
         if-exists*)

@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 22:03:46 EEST
+# Date:   2025-06-17 13:22:19 EEST
 # Path:   ~/.local/bin/rofi-open
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ if [[ "${#}" -gt 0 ]]; then
   program="${1}"
 
   # No program is running, so start one.
-  if ! wmctrl -lx | grep -i -q -- "${program}"; then
+  if ! wmctrl -lx | rg -i -q -- "${program}"; then
     coproc "${program}" > /dev/null 2>&1
     exec 1>&-
     exit;

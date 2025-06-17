@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-10-03 14:45:55 EEST
+# Date: 2025-06-17 13:22:00 EEST
 # Path: ~/.local/bin/buffer
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -20,7 +20,7 @@
 #*   ${0} --options COMMAND --COMMAND-OPTIONS
 #*   ${0} --options -i COMMAND --COMMAND-OPTIONS {} OTHER-ARGUMENTS
 #* e.g.:
-#*   echo "a:b" | buffer -i awk -F: '{OFS=FS} {print $1}' {} | grep "a"
+#*   echo "aaa:bbb" | buffer -i awk -F: '{OFS=FS} {print $1}' {} | rg "aa"
 #*
 #* OPTIONS:
 #*   -e, --extension EXT     Use the specified extension for the temporary file.

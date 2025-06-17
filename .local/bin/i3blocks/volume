@@ -3,7 +3,7 @@
 # shellcheck disable=SC2016
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-05-04 23:13:13 EEST
+# Date: 2025-06-17 13:22:07 EEST
 # Path: ~/.local/bin/i3blocks/volume
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ CAPABILITY=$( \
 
 function move_sinks_to_new_default {
   DEFAULT_SINK="${1}"
-  pactl list sink-inputs | grep 'Sink Input #' | grep -o '[0-9]\+' \
+  pactl list sink-inputs | rg -o '^Sink Input #([0-9]+)' | rg -o '[0-9]+' \
     | while read -r SINK; do
         pactl move-sink-input "${SINK}" "${DEFAULT_SINK}"
       done
@@ -93,9 +93,9 @@ function move_sinks_to_new_default {
 
 function set_default_playback_device_next {
   inc="${1:-1}"
-  num_devices=$(pactl list sinks | grep -c Name:)
+  num_devices=$(pactl list sinks | rg -c Name:)
   mapfile -t sink_arr < \
-    <(pactl list sinks | grep Name: | sed -r 's/\s+Name: (.+)/\1/')
+    <(pactl list sinks | rg Name: | sed -r 's/\s+Name: (.+)/\1/')
   default_sink=$(pactl get-default-sink)
 
   default_sink_index=$(
@@ -130,35 +130,35 @@ function print_format {
 }
 
 function print_block {
-  ACTIVE="$(pactl list sinks | grep "State: RUNNING" -B4 -A55)"
+  ACTIVE="$(pactl list sinks | rg "State: RUNNING" -B4 -A55)"
   if [[ -z "${ACTIVE}" ]] ; then
-    ACTIVE="$(pactl list sinks | grep "$(pactl get-default-sink)" -B4 -A55)"
+    ACTIVE="$(pactl list sinks | rg "$(pactl get-default-sink)" -B4 -A55)"
   fi
   ACTIVE="$( \
     echo "${ACTIVE}" \
-      | grep "Name:\|Volume: \(front-left\|mono\)\|Mute:\|api.alsa.pcm.card = \|node.nick = "
+      | rg 'Name:|Volume: (front-left|mono)|Mute:|api.alsa.pcm.card = |node.nick = '
   )"
   # shellcheck disable=SC2229
   for Name in NAME MUTED VOL INDEX NICK; do
     read -r ${Name}
   done < <(echo "${ACTIVE}")
-  INDEX=$(echo "${INDEX}" | grep -o '".*"' | sed 's/"//g')
-  VOL=$(echo "${VOL}" | grep -o "[0-9]*%" | head -1 )
+  INDEX=$(echo "${INDEX}" | rg -o '".*"' | sed 's/"//g')
+  VOL=$(echo "${VOL}" | rg -o "[0-9]*%" | head -1 )
   VOL="${VOL%?}"
-  NAME=$(echo "${NICK}" | grep -o '".*"' | sed 's/"//g')
+  NAME=$(echo "${NICK}" | rg -o '".*"' | sed 's/"//g')
 
   if [[ "${USE_ALSA_NAME}" == 1 ]] ; then
     ALSA_NAME=$(pactl list sinks | \
     awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' | \
-    grep "alsa.name\|alsa.mixer_name" | \
+    rg "alsa.name|alsa.mixer_name" | \
     head -n1 | \
     sed 's/.*= "\(.*\)".*/\1/')
     NAME="${ALSA_NAME:-${NAME}}"
   elif [[ "${USE_DESCRIPTION}" == 1 ]] ; then
     DESCRIPTION=$( \
       pactl list sinks \
-        | grep "State RUNNING" -B4 -A55 \
-        | grep 'Description: ' \
+        | rg "State RUNNING" -B4 -A55 \
+        | rg 'Description: ' \
         | sed 's/^.*: //'
     )
     NAME="${DESCRIPTION:-${NAME}}"
@@ -206,5 +206,5 @@ print_block
 if [[ "${SUBSCRIBE}" == 1 ]] ; then
   while read -r _; do
     print_block
-  done < <(pactl subscribe | stdbuf -oL grep change)
+  done < <(pactl subscribe | stdbuf -oL rg change)
 fi

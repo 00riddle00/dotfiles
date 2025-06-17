@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-10-01 16:25:21 EEST
+# Date: 2025-06-17 13:21:59 EEST
 # Path: ~/.local/bin/bibtex-list-keywords
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 #* USAGE:
 #*   ${0} BIBTEX_FILE [BIBTEX_FILE ...]
 #**
-grep '^ *keywords *= *{' "${@}" \
+rg '^ *keywords *= *\{' "${@}" \
   | perl -lne 'print $1 if /\{(.*)\}/' \
   | sed 's/; */\n/g' \
   | sort | uniq -c | sort -nr -k1,1

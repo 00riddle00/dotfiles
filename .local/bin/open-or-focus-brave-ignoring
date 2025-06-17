@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 19:23:22 EEST
+# Date:   2025-06-17 13:22:17 EEST
 # Path:   ~/.local/bin/open-or-focus-brave-ignoring
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,9 +18,9 @@
 win_names_regex="$(echo "${@}" | tr ' ' '|')"
 
 if wmctrl -lx \
-    | grep "brave-browser.Brave-browser.*$" \
+    | rg "brave-browser\.Brave-browser.*$" \
     | awk -v names="${win_names_regex}" '$NF !~ names {print}' \
-    | grep -q .
+    | rg -q .
 then
     wmctrl -a "brave"
 else

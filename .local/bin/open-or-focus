@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 17:09:31 EEST
+# Date:   2025-06-17 13:22:14 EEST
 # Path:   ~/.local/bin/open-or-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ else
   win_name_or_class="${program}"
 fi
 
-if ! wmctrl -lx | grep -i -q -- "${win_name_or_class}"; then
+if ! wmctrl -lx | rg -i -q -- "${win_name_or_class}"; then
   # No program is running, so start one.
   "${program}" &
 else

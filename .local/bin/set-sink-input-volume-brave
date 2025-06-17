@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 14:22:01 EEST
+# Date:   2025-06-17 13:22:20 EEST
 # Path:   ~/.local/bin/set-sink-input-volume-brave
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ brave_sink_id=$( \
         s/.*? *Sink Input #([0-9]+).+?application.name = "([^\r]+)"\r.+?(?=Sink Input #|$)/\2:\1\r/g
     ' \
     | tr '\r' '\n' \
-    | grep -i brave \
+    | rg -i brave \
     | awk -F':' '{print $2}'
 )
 pactl set-sink-input-volume "${brave_sink_id}" "${1}"

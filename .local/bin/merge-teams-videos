@@ -2,7 +2,7 @@
 # vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-10-01 07:58:02 EEST
+# Date:   2025-06-17 13:22:12 EEST
 # Path:   ~/.local/bin/merge-teams-videos
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ files=("${PWD}"/Python*.mp4)
 file1="${files[0]}"
 file2="${files[1]}"
 
-_date=$(basename "${file1}" | grep -oP '20\d{6}')
+_date=$(basename "${file1}" | rg -o '20\d{6}')
 iso_date="${_date:0:4}-${_date:4:2}-${_date:6:2}"
 
 # The placeholder number 999 will need to be replaced with the actual lecture

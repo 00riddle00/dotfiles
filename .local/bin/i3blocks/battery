@@ -2,7 +2,7 @@
 # vim:tw=80
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-05-04 23:08:32 EEST
+# Date: 2025-06-17 13:22:05 EEST
 # Path: ~/.local/bin/i3blocks/battery
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ my $label;
 my $bat_number = $ENV{BAT_NUMBER} || 0;
 
 # Read the first line of the "acpi" command output.
-open (ACPI, "acpi -b 2>/dev/null| grep 'Battery ${bat_number}' |") or die;
+open (ACPI, "acpi -b 2>/dev/null| rg 'Battery ${bat_number}' |") or die;
 $acpi = <ACPI>;
 close(ACPI);
 
