@@ -26,16 +26,19 @@ fi
 
 # Launch applications
 xscreensaver -no-splash &
-flameshot &
+desktop-wakatime &
 dropbox &
+flameshot &
 dunst &
 copyq &
 
 # Spawn SSH Agent
 eval "$(ssh-agent -s)"
 
-# Window manager
-export XDG_SESSION_TYPE=x11
+# Set environment variables for X11
 unset WAYLAND_DISPLAY
+export XDG_SESSION_TYPE=x11
+
+# Window manager
 #exec i3
 exec openbox-session
