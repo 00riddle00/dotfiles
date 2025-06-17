@@ -7,13 +7,13 @@
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# These user-specific things are run when an Openbox X Session is started.
+# These user-specific programs are run when an Openbox X Session is started.
+# All the other autostart programs are started in $XDG_CONFIG_HOME/X11/xinitrc.
 #**
-
-picom -b > /dev/null 2>&1 &
-
 hsetroot -solid "${COL_BG_SEACOLOR}" &
 
 tint2 > /dev/null 2>&1 &
 
-kitty --class t2 &
+picom -b > /dev/null 2>&1 &
+
+term-standard &

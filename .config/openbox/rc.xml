@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-16 22:08:58 EEST
+# Date:   2025-06-17 12:41:15 EEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -505,16 +505,16 @@
     <!-- ===========================
   RUN: Terminal
   ============================ -->
-    <!-- Open terminal with a custom window class name. -->
+    <!-- Open the standard terminal (with a custom window class name). -->
     <keybind key="A-F2">
       <action name="Execute">
-        <command>kitty --class t2</command>
+        <command>term-standard</command>
       </action>
     </keybind>
-    <!-- Focus terminal window for main terminal (codename: t2) by its class name. -->
+    <!-- Focus the standard terminal window by its class name. -->
     <keybind key="F2">
       <action name="Execute">
-        <command>focus t2.t2 -c</command>
+        <command>focus term-standard.term-standard -c</command>
       </action>
     </keybind>
     <!-- Open/focus terminal window for notes by its class name. -->
