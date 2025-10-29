@@ -1,0 +1,32 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2025-10-29 21:35:48 EET
+# Path:   ~/.config/kritashortcutsrc
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+[Shortcuts]
+KisToolSelectOutline=L
+KisToolSelectRectangular=R
+KisToolSelectSimilar=W
+KisToolTransform=Shift+T
+KritaFill/KisToolFill=G
+KritaFill/KisToolGradient=none
+KritaSelected/KisToolColorSampler=I
+KritaShape/KisToolBrush=P
+KritaShape/KisToolRectangle=none
+KritaTransform/KisToolMove=V
+add_new_paint_layer==
+command_bar_open=Ctrl+Alt+P
+convert-to-path=none
+decrease_opacity=none
+deselect=Ctrl+D
+duplicatelayer=Alt+D
+make_brush_color_lighter=none
+merge_layer=Ctrl+Alt+M
+options_configure_keybinding=Ctrl+Alt+S
+remove_layer=-
+save_incremental_version=none
+selectionscale=Ctrl+T
+zoom_to_100pct=none
+zoom_to_fit=Ctrl+0
