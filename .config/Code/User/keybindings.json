@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2025-06-08 23:26:39 EEST
+* Date:   2026-01-28 17:18:26 EET
 * Path:   ~/.config/Code/User/keybindings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -349,5 +349,24 @@
     "key": "alt+v",
     "command": "markdown.extension.editing.paste",
     "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
-  }
+  },
+  {
+    "key": "shift+f10",
+    "command": "python.execInTerminal-icon"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-vscode-neovim.escape",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal.c && neovim.init && !dirtyDiffVisible && !findWidgetVisible && !inReferenceSearchEditor && !markersNavigationVisible && !notebookCellFocused && !notificationCenterVisible && !parameterHintsVisible && !referenceSearchVisible && neovim.mode == 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-vscode-neovim.escape",
+    "when": "editorTextFocus && neovim.ctrlKeysInsert.c && neovim.init && neovim.mode != 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "shift+r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
 ]

@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2025-06-08 23:27:27 EEST
+* Date:   2026-01-28 17:18:41 EET
 * Path:   ~/.config/Code/User/settings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -11,9 +11,10 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
   "editor.fontSize": 16,
-  // "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "none",
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
+  "editor.columnSelection": false,
   "editor.rulers": [88],
   "files.autoSave": "afterDelay",
   "keyboard.dispatch": "keyCode",
@@ -44,7 +45,7 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.enabled": false,
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
@@ -56,9 +57,7 @@
     "asvetliakov.vscode-neovim": 1
   },
   "editor.fontLigatures": true,
-  "editor.columnSelection": true,
   "editor.mouseWheelZoom": true,
-  "editor.renderLineHighlight": "none",
   "editor.selectionHighlight": false,
   "editor.occurrencesHighlight": "off",
   "editor.unicodeHighlight.allowedCharacters": {
@@ -79,5 +78,19 @@
     "*.sqlite": "default"
   },
   "database-client.autoSync": true,
-  "makefile.configureOnOpen": true
+  "makefile.configureOnOpen": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.banner": "never",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "terminal.integrated.fontSize": 34,
+  "git.autofetch": true,
+  "chat.mcp.gallery.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "git.suggestSmartCommit": false,
+  "vscode-neovim.useCtrlKeysForNormalMode": false,
+  "vscode-neovim.useCtrlKeysForInsertMode": false,
+  "vscode-neovim.useCtrlKeysForVisualMode": false
 }
