@@ -1,6 +1,7 @@
+/* vim: set ft=jsonc nu ai et ts=2 sw=2: */
 /*-----------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2026-01-28 17:18:26 EET
+* Date:   2026-08-07 01:36:42 CEST
 * Path:   ~/.config/Code/User/keybindings.json
 * URL:    https://github.com/00riddle00/dotfiles
 *------------------------------------------------------------------------------
@@ -18,8 +19,28 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "alt+f7",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+f7",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+0",
+    "command": "workbench.action.lastEditorInGroup"
+  },
+  {
     "key": "alt+1",
-    "command": "workbench.action.focusSideBar"
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible && activeViewlet == 'workbench.view.explorer' && sideBarFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.view.explorer",
+    "when": "!sideBarVisible || activeViewlet != 'workbench.view.explorer' || !sideBarFocus"
   },
   {
     "key": "alt+2",
@@ -34,13 +55,32 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
+    "key": "alt+`",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
     "key": "alt+r",
     "command": "editor.action.startFindReplaceAction"
   },
   {
     "key": "alt+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "textInputFocus && !terminalFocus"
+  },
+  {
+    "key": "alt+v",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "alt+v",
     "command": "workbench.action.terminal.paste",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    "when": "terminalFocus && (terminalHasBeenCreated || terminalProcessSupported)"
+  },
+  {
+    "key": "alt+v",
+    "command": "markdown.extension.editing.paste",
+    "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
   },
   // Ctrl + {}
   {
@@ -57,6 +97,25 @@
     "when": "inFilesPicker && inQuickOpen"
   },
   {
+    "key": "ctrl+'",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "workbench.action.openSettings"
+  },
+  {
     "key": "ctrl+.",
     "command": "workbench.action.openGlobalKeybindings"
   },
@@ -64,6 +123,10 @@
     "key": "ctrl+/",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.lastEditorInGroup"
   },
   {
     "key": "ctrl+1",
@@ -102,8 +165,9 @@
     "command": "workbench.action.openEditorAtIndex9"
   },
   {
-    "key": "ctrl+b",
-    "command": "workbench.action.toggleSidebarVisibility"
+    "key": "ctrl+c",
+    "command": "workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalTextSelected && (terminalHasBeenCreated || terminalProcessSupported)"
   },
   {
     "key": "ctrl+e",
@@ -129,13 +193,61 @@
     "key": "ctrl+t",
     "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
   },
+  {
+    "key": "ctrl+v",
+    "command": "extension.vim_ctrl+v",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus && (terminalHasBeenCreated || terminalProcessSupported)"
+  },
+  // Ctrl + Alt + {}
+  {
+    "key": "ctrl+alt+3",
+    "command": "openInIntegratedTerminal"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "notebook.format",
+    "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "notebook.formatCell",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.openSettings"
+  },
   // Ctrl + Shift + {}
   {
     "key": "ctrl+shift+tab",
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "ctrl+shift+s",
+    "key": "ctrl+shift+,",
     "command": "workbench.action.openApplicationSettingsJson"
   },
   {
@@ -148,8 +260,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+c",
-    "command": "editor.action.toggleColumnSelection"
+    "key": "ctrl+shift+e",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.openApplicationSettingsJson"
   },
   {
     "key": "ctrl+shift+p",
@@ -159,21 +275,62 @@
     "key": "ctrl+shift+r",
     "command": "workbench.action.replaceInFiles"
   },
+  // Shift + {}
+  {
+    "key": "shift+f7",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "shift+f7",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  {
+    "key": "shift+f10",
+    "command": "python.execInTerminal-icon"
+  },
+  {
+    "key": "shift+r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
   /* ---------------------
    * Disabled actions
    * ---------------------
    */
-  // Function keys
+  // Disabled: Function keys
   {
     "key": "f1",
     "command": "-workbench.action.showCommands"
   },
-  // Alt + {}
+  // Disabled: Alt + {}
   {
     "key": "alt+f1",
     "command": "-editor.action.showAccessibilityHelp"
   },
-  // Ctrl + {}
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  // Disabled: Shift + Alt + {}
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+  },
+  // Disabled: Ctrl + {}
   {
     "key": "ctrl+tab",
     "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
@@ -182,21 +339,6 @@
   {
     "key": "ctrl+0",
     "command": "-workbench.action.focusSideBar"
-  },
-  {
-    "key": "ctrl+a",
-    "command": "-extension.vim_ctrl+a",
-    "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "-extension.vim_ctrl+e",
-    "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+f",
-    "command": "-extension.vim_ctrl+f",
-    "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
   },
   {
     "key": "ctrl+h",
@@ -211,10 +353,14 @@
     "command": "-workbench.action.showAllSymbols"
   },
   {
+    "key": "ctrl+v",
+    "command": "-editor.action.clipboardPasteAction"
+  },
+  {
     "key": "ctrl+w",
     "command": "-workbench.action.closeActiveEditor"
   },
-  // Ctrl + k  Ctrl + {}
+  // Disabled: Ctrl + k  Ctrl + {}
   {
     "key": "ctrl+k ctrl+up",
     "command": "-workbench.action.focusAboveGroup"
@@ -244,17 +390,16 @@
     "key": "ctrl+k ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
   },
-  // Ctrl + Alt + {}
-  {
-    "key": "ctrl+alt+o",
-    "command": "workbench.action.files.openFolder",
-    "when": "openFolderWorkspaceSupport"
-  },
-  // Ctrl + Shift + {}
+  // Disabled: Ctrl + Shift + {}
   {
     "key": "ctrl+shift+tab",
     "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
     "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
   },
   {
     "key": "ctrl+shift+p",
@@ -271,102 +416,20 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "alt+f7",
-    "command": "workbench.action.compareEditor.nextChange",
-    "when": "textCompareEditorVisible"
-  },
-  {
-    "key": "alt+f5",
-    "command": "-workbench.action.compareEditor.nextChange",
-    "when": "textCompareEditorVisible"
-  },
-  {
-    "key": "alt+f7",
-    "command": "workbench.action.editor.nextChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "alt+f5",
-    "command": "-workbench.action.editor.nextChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "shift+f7",
-    "command": "workbench.action.compareEditor.previousChange",
-    "when": "textCompareEditorVisible"
-  },
-  {
-    "key": "shift+alt+f5",
-    "command": "-workbench.action.compareEditor.previousChange",
-    "when": "textCompareEditorVisible"
-  },
-  {
-    "key": "shift+f7",
-    "command": "workbench.action.editor.previousChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "shift+alt+f5",
-    "command": "-workbench.action.editor.previousChange",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
-    "key": "ctrl+alt+s",
-    "command": "workbench.action.openSettings"
-  },
-  {
-    "key": "ctrl+,",
-    "command": "-workbench.action.openSettings"
-  },
-  {
-    "key": "ctrl+,",
-    "command": "workbench.action.openSettings"
-  },
-  {
-    "key": "ctrl+shift+,",
-    "command": "workbench.action.openApplicationSettingsJson"
-  },
-  {
-    "key": "ctrl+shift+e",
-    "command": "workbench.view.extensions",
-    "when": "viewContainer.workbench.view.extensions.enabled"
-  },
-  {
     "key": "ctrl+shift+x",
     "command": "-workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
-  },
-  {
-    "key": "alt+v",
-    "command": "editor.action.clipboardPasteAction"
-  },
-  {
-    "key": "alt+v",
-    "command": "filesExplorer.paste",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "alt+v",
-    "command": "markdown.extension.editing.paste",
-    "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
-  },
-  {
-    "key": "shift+f10",
-    "command": "python.execInTerminal-icon"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "-vscode-neovim.escape",
-    "when": "editorTextFocus && neovim.ctrlKeysNormal.c && neovim.init && !dirtyDiffVisible && !findWidgetVisible && !inReferenceSearchEditor && !markersNavigationVisible && !notebookCellFocused && !notificationCenterVisible && !parameterHintsVisible && !referenceSearchVisible && neovim.mode == 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "-vscode-neovim.escape",
-    "when": "editorTextFocus && neovim.ctrlKeysInsert.c && neovim.init && neovim.mode != 'normal' && editorLangId not in 'neovim.editorLangIdExclusions'"
-  },
-  {
-    "key": "shift+r",
-    "command": "renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
+}
+  /* ---------------------
+   * New and unsorted
+   * ---------------------
+   */
 ]
