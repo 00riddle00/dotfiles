@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:16:09 CEST
+# Date:   2026-08-06 21:45:30 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -195,12 +195,20 @@ exp FZF_CTRL_T_OPTS "--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} 
 exp FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 exp FZF_ALT_C_OPTS "--preview 'tree -C {} | head -200'"
 
+# Colors
+exp COL_BG_SEACOLOR '#073542'
+
 # Monitor connections
+exp LAPTOP_SCREEN 'eDP-1'
 exp DP1_SCREEN    'DP-0'
 exp DP2_SCREEN    'DP-2'
 exp DP3_SCREEN    'DP-4'
-exp HDMI1_SCREEN  'HDMI-0'
-exp LAPTOP_SCREEN 'eDP-1'
+
+if [[ "$(hostname)" == "panther" ]]; then
+  exp HDMI1_SCREEN  'HDMI-1'
+else
+  exp HDMI1_SCREEN  'HDMI-0'
+fi
 
 # Python
 exp PYENV_ROOT "$XDG_DATA_HOME/pyenv"
