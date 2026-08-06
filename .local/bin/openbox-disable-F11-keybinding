@@ -2,13 +2,13 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:36:44 CEST
-# Path:   ~/.local/bin/openbox-disable-F2-keybinding
+# Date:   2026-08-07 00:35:50 CEST
+# Path:   ~/.local/bin/openbox-disable-F11-keybinding
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Disable the F2 keybinding in Openbox, since it's very useful in spreadsheet
-# programs and other applications. The script wraps the F2 keybinding's XML
+# Disable the F11 keybinding in Openbox, since it's very useful in spreadsheet
+# programs and other applications. The script wraps the F11 keybinding's XML
 # block with <!-- and -->, effectively commenting it out.
 #
 # CAUTION: Disabling the already disabled keybinding will break the Openbox XML
@@ -18,7 +18,7 @@
 #*   ${0}
 #**
 sed -i '
-  /<keybind key="F2">/{
+  /<keybind key="F11">/{
     :loop
     N
     /\(\(.*\n\)\{4\}\).*/{
