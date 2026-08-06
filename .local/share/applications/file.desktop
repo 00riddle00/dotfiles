@@ -2,6 +2,6 @@
 Type=Application
 Name=ranger
 GenericName=File Manager
-Exec=/usr/bin/urxvt -e ranger %u
-Terminal=true
-Comment=Launches ranger in terminal
+Exec=/usr/bin/kitty -e ranger %u
+Terminal=false
+Comment=Launches ranger in Kitty

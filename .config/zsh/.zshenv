@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:45:30 CEST
+# Date:   2026-08-06 23:32:12 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ exp EDITOR   'nvim'
 exp FILE     'ranger'
 exp PAGER    'bat'
 exp READER   'zathura'
-exp TERMINAL 'urxvt'
+exp TERMINAL 'kitty'
 exp VISUAL   'nvim'
 
 # Locale
