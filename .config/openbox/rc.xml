@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 12:41:15 EEST
+# Date:   2026-08-07 00:31:47 CEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -54,8 +54,8 @@
                   'Active' - where the active window is. -->
   </placement>
   <theme>
-    <name>Numix-Archblue</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>Arc-Dark-OSX</name>
+    <titleLayout>CIML</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -132,7 +132,7 @@
      Use obconf if one wants to change these without having to log out and
   back in. -->
   <desktops>
-    <number>4</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
       <!--
@@ -486,12 +486,18 @@
     </keybind>
     <keybind key="W-F11">
       <action name="Execute">
+        <command>wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-</command>
+        <!--
         <command>amixer set Master 10%-</command>
+        -->
       </action>
     </keybind>
     <keybind key="W-F12">
       <action name="Execute">
+        <command>wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+</command>
+        <!--
         <command>amixer set Master 10%+</command>
+        -->
       </action>
     </keybind>
     <!-- ===========================
@@ -526,7 +532,9 @@
     <!-- Open/focus terminal window for clipboard by its class name. -->
     <keybind key="F4">
       <action name="Execute">
-        <command>open-or-focus term-clipboard clipboard.clipboard -c</command>
+        <!-- <command>open-or-focus term-clipboard clipboard.clipboard -c</command> -->
+        <command>open-or-focus firefox Navigator.firefox -c</command>
+        <!-- <command>open-or-focus chromium chromium.Chromium -c</command> -->
       </action>
     </keybind>
     <!-- ===========================
@@ -548,25 +556,35 @@
   RUN: Text Editors / IDEs
   ============================ -->
     <!-- Open/focus VS Code window by its name/title. -->
-    <!--
-    <keybind key="W-c">
+    <!-- Be careful since A-c is also used in Zsh fzf/key-bindings -->
+    <keybind key="A-c">
       <action name="Execute">
-        <command>open-or-focus code</command>
+        <command>open-or-focus code code.code -c</command>
       </action>
     </keybind>
-    -->
     <!-- Open/focus Cursor window by its name/title. -->
     <!--
-    <keybind key="W-c">
+    <keybind key="W-q">
       <action name="Execute">
         <command>open-or-focus cursor</command>
       </action>
     </keybind>
     -->
+    <!-- Copy latest screenshot to clipboard -->
+    <keybind key="W-q">
+      <action name="Execute">
+        <command>copy-latest-screenshot</command>
+      </action>
+    </keybind>
     <!-- Open/focus PyCharm window by its class name. -->
     <keybind key="W-p">
       <action name="Execute">
         <command>open-or-focus pycharm jetbrains-pycharm -c</command>
+      </action>
+    </keybind>
+    <keybind key="A-r">
+      <action name="Execute">
+        <command>open-or-focus rstudio rstudio.rstudio -c</command>
       </action>
     </keybind>
     <!-- Open/focus Emacs window by its class name. -->
@@ -578,11 +596,13 @@
     </keybind>
     -->
     <!-- Open/focus CopyQ window by its class name. -->
+    <!--
     <keybind key="W-q">
       <action name="Execute">
         <command>copyq show</command>
       </action>
     </keybind>
+    -->
     <!-- ===========================
   RUN: dmenu
   ============================ -->
@@ -604,33 +624,35 @@
     <!-- Open/focus Brave window, unless its name is "alpha" or "bravo". -->
     <keybind key="F9">
       <action name="Execute">
-        <command>open-or-focus-brave-ignoring alpha bravo</command>
+        <!-- <command>open-or-focus-brave-ignoring alpha bravo</command> -->
+        <!-- <command>open-or-focus chromium chromium.Chromium -c</command> -->
+        <command>open-or-focus firefox Navigator.firefox -c</command>
       </action>
     </keybind>
     <!-- Open/focus Brave window named "alpha". -->
     <keybind key="F1">
       <action name="Execute">
-        <command>open-or-focus-brave alpha</command>
+        <!-- <command>rename-window-x11</command> -->
+        <!-- <command>open-or-focus-brave alpha</command> -->
+        <!-- <command>open-or-focus chromium chromium.Chromium -c</command> -->
+        <command>open-or-focus firefox Navigator.firefox -c</command>
       </action>
     </keybind>
     <!-- Open/focus Brave window named "bravo". -->
     <keybind key="F12">
       <action name="Execute">
-        <command>open-or-focus-brave bravo</command>
+        <!-- <command>open-or-focus-brave bravo</command> -->
+        <command>open-or-focus chromium chromium.Chromium -c</command>
       </action>
     </keybind>
     <!-- Open/focus Brave window named "charlie". -->
+    <!--
     <keybind key="F11">
       <action name="Execute">
         <command>open-or-focus-brave charlie</command>
       </action>
     </keybind>
-    <!-- Open/focus Chromium window by its name. -->
-    <keybind key="F5">
-      <action name="Execute">
-        <command>open-or-focus chromium</command>
-      </action>
-    </keybind>
+    -->
     <!-- ===========================
   RUN: Images
   ============================ -->
@@ -652,7 +674,7 @@
     <!-- Open/focus Thunderbird window by its name. -->
     <keybind key="F7">
       <action name="Execute">
-        <command>open-or-focus thunderbird</command>
+        <command>open-or-focus thunderbird Mail.org.mozilla.Thunderbird -c</command>
       </action>
     </keybind>
     <!-- Open/focus Qalculate! window by its name. -->
@@ -669,7 +691,7 @@
     </keybind>
     <!-- Open/focus Discord window by its name. -->
     <!--
-    <keybind key="A-c">
+    <keybind key="A-d">
       <action name="Execute">
         <command>open-or-focus discord</command>
       </action>
@@ -683,6 +705,11 @@
       </action>
     </keybind>
     -->
+    <keybind key="W-n">
+      <action name="Execute">
+        <command>normcap</command>
+      </action>
+    </keybind>
     <!-- Open/focus Obsidian note-taking app window by its class name. -->
     <keybind key="W-c">
       <action name="Execute">
