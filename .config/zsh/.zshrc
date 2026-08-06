@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 20:02:20 CEST
+# Date:   2026-08-06 20:40:08 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -174,11 +174,6 @@ setopt NO_BEEP
 # Disable XON/XOFF flow control
 stty -ixon
 
-# Use autojump package / plugin
-if [[ -s /etc/profile.d/autojump.sh ]]; then
-  source /etc/profile.d/autojump.sh
-fi
-
 # Use the key bindings of the fzf package / plugin
 if [[ -x "$(command -v fzf)"  ]]; then
   source /usr/share/fzf/key-bindings.zsh
@@ -214,6 +209,9 @@ fi
 # Launch tmux
 tmux > /dev/null 2>&1
 true
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
 # Pyenv
 eval "$(pyenv init - zsh)"
