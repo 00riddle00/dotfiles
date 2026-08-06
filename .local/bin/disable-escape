@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 21:47:34 CEST
+# Path:   ~/.local/bin/disable-escape
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Disable Escape globally through hwdb.
+#**
+
+#* USAGE:
+#*   ${0} [MELD_ARGUMENTS...]
+#*
+#* EXAMPLES:
+#*   ${0} file1 file2
+#*   ${0} --diff fileA fileB
+#**
+set -euo pipefail
+
+HWDB_FILE="/etc/udev/hwdb.d/90-disable-escape.hwdb"
+BACKUP_DIR="${HOME}/.hwdb_backups"
+BACKUP_FILE="${BACKUP_DIR}/90-disable-escape.hwdb.bak"
+
+mkdir -p "${BACKUP_DIR}"
+
+# Backup existing file (if any)
+if [ -f "${HWDB_FILE}" ]; then
+  echo "Backing up existing file to ${BACKUP_FILE}"
+  sudo cp "${HWDB_FILE}" "${BACKUP_FILE}"
+fi
+
+echo "Writing new hwdb rule to disable Escape…"
+sudo tee "${HWDB_FILE}" > /dev/null <<'EOF'
+# Disable Escape globally (HID usage 0x29)
+
+evdev:atkbd:dmi:*:
+ KEYBOARD_KEY_70029=reserved
+
+evdev:input:b0003*
+ KEYBOARD_KEY_70029=reserved
+EOF
+
+echo "Updating hwdb…"
+sudo systemd-hwdb update
+
+echo "Triggering udev…"
+sudo udevadm trigger /dev/input/event*
+
+echo "✔ Escape key disabled (requires reboot for all programs)"

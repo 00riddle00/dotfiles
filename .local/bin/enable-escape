@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 21:47:31 CEST
+# Path:   ~/.local/bin/enable-escape
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Re-enable Escape globally by removing/restoring hwdb rule.
+#**
+
+#* USAGE:
+#*   ${0} [MELD_ARGUMENTS...]
+#*
+#* EXAMPLES:
+#*   ${0} file1 file2
+#*   ${0} --diff fileA fileB
+#**
+set -euo pipefail
+
+HWDB_FILE="/etc/udev/hwdb.d/90-disable-escape.hwdb"
+BACKUP_DIR="${HOME}/.hwdb_backups"
+BACKUP_FILE="${BACKUP_DIR}/90-disable-escape.hwdb.bak"
+
+# If a backup exists, restore it; otherwise remove rule
+if [ -f "${BACKUP_FILE}" ]; then
+  echo "Restoring backup from ${BACKUP_FILE}"
+  sudo cp "${BACKUP_FILE}" "${HWDB_FILE}"
+else
+  if [ -f "${HWDB_FILE}" ]; then
+    echo "No backup found; removing ${HWDB_FILE}"
+    sudo rm "${HWDB_FILE}"
+  else
+    echo "Nothing to restore or remove – Escape is already default."
+  fi
+fi
+
+echo "Updating hwdb…"
+sudo systemd-hwdb update
+
+echo "Triggering udev…"
+sudo udevadm trigger /dev/input/event*
+
+echo "✔ Escape key restored (requires reboot for all programs)"

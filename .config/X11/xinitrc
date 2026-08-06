@@ -2,15 +2,13 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:44:32 CEST
+# Date:   2026-08-06 21:52:32 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 # Load X resources
 [[ -f ~/.config/X11/Xresources ]] && xrdb ~/.config/X11/Xresources
-
-set-keyboard-layout
 
 # Configure multiple monitors
 if [[ "$(hostname)" == "panther" ]]; then
@@ -49,6 +47,12 @@ copyq &
 # Set environment variables for X11
 unset WAYLAND_DISPLAY
 export XDG_SESSION_TYPE=x11
+
+# Reapply keyboard layout after X input devices finish initializing.
+(
+  sleep 2
+  set-keyboard-layout
+) &
 
 # Window manager
 #exec i3
