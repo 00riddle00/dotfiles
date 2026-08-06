@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-19 14:10:45 EEST
+# Date:   2026-08-06 21:11:27 CEST
 # Path:   ~/.config/zsh/fzf-functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ se() {
           ${BIN}/{}" \
       --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
       --preview-window=right:60%:nowrap \
-    | xargs -I {} -r ${EDITOR} "${BIN}/{}"
+    | command xargs -I {} -r ${EDITOR} "${BIN}/{}"
 }
 
 # --------------------------------------------
@@ -70,7 +70,7 @@ se() {
 #**
 cpf() {
   cp -rv "${@}" \
-    "$(\ls ~ \
+    "$(command ls ~ \
       | fzf \
       | sed "s|^|${HOME}/|")"
 }
@@ -79,7 +79,7 @@ cpf() {
 #* USAGE:
 #*   ${0} [--hidden] [DIRECTORY]
 #**
-fd() {
+fdd() {
   local include_hidden=false
   local dir_
 
@@ -89,19 +89,12 @@ fd() {
   fi
 
   if $include_hidden; then
-    dir_="$(
-      find "${1:-.}" -type d 2> /dev/null | fzf +m
-    )" || return
+    dir_="$(fd -H -t d . "${1:-.}" | fzf +m)" || return
   else
-    dir_="$(
-      find "${1:-.}" \
-        -path '*/\.*' -prune \
-        -o -type d -print 2> /dev/null \
-      | fzf +m
-    )" || return
+    dir_="$(fd -t d . "${1:-.}" | fzf +m)" || return
   fi
 
-  cd "${dir_}" || return
+  builtin cd "${dir_}" || return
 }
 
 # Interactively select a process to kill
@@ -144,7 +137,7 @@ ftpane() {
 
   target="$(
     echo "${panes}" \
-      | grep -v "${current_pane}" \
+      | command rg -v "${current_pane}" \
       | fzf +m --reverse
   )" || return
 
@@ -153,7 +146,7 @@ ftpane() {
       | awk 'BEGIN{FS=":|-"} {print $1}'
   )"
 
-  target_pane="${}(}
+  target_pane="$(
     echo "$target" \
       | awk 'BEGIN{FS=":|-"} {print $2}' \
       | cut -c 1
