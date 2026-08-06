@@ -2,7 +2,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:55:26 CEST
+# Date:   2026-08-06 21:57:18 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -32,6 +32,12 @@ if [[ "$(hostname)" == "panther" ]]; then
 fi
 
 # Launch applications
+(
+  sleep 1
+  obsidian &
+  keepassxc &
+  ente &
+) &
 xscreensaver -no-splash &
 desktop-wakatime &
 dropbox &
@@ -44,9 +50,19 @@ copyq &
 # to point at whichever one won the race, breaking KeePassXC's agent link.
 #eval "$(ssh-agent -s)"
 
-# Set environment variables for X11
-unset WAYLAND_DISPLAY
-export XDG_SESSION_TYPE=x11
+# See Arch Wiki: https://wiki.archlinux.org/title/Xinit#xinitrc
+#   Note: At the very least, ensure that the last if block in
+#   /etc/X11/xinit/xinitrc is present in your ~/.xinitrc file to ensure that
+#   the scripts in /etc/X11/xinit/xinitrc.d are sourced.
+xinitdir="/etc/X11/xinit"
+
+if [ -d "$xinitdir"/xinitrc.d ]; then
+  for f in "$xinitdir/xinitrc.d"/?*.sh; do
+    # shellcheck disable=SC1090
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
 
 # Reapply keyboard layout after X input devices finish initializing.
 (
