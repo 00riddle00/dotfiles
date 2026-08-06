@@ -1,6 +1,6 @@
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2024-10-02 19:22:22 EEST
+! Date:   2026-08-07 00:47:19 CEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
@@ -105,20 +105,13 @@ xterm*color15: #EEEEEC
 ! ------------- Xscreensaver ------------- !
 
 ! Font settings
-xscreensaver-auth.?.Dialog.headingFont: \
-  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.bodyFont: \
-  -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.labelFont: \
-  -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.unameFont: \
-  -misc-dejavu sans-medium-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.buttonFont: \
-  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
-xscreensaver-auth.?.Dialog.dateFont: \
-  -misc-dejavu sans-medium-r-*-*-16-*-*-*-*-*-*-*
-xscreensaver-auth.?.passwd.passwdFont: \
-  -misc-dejavu sans-bold-r-*-*-18-*-*-*-*-*-*-*
+xscreensaver-auth.?.Dialog.headingFont: DejaVu Sans Bold 18
+xscreensaver-auth.?.Dialog.bodyFont:    DejaVu Sans 18
+xscreensaver-auth.?.Dialog.labelFont:   DejaVu Sans 18
+xscreensaver-auth.?.Dialog.unameFont:   DejaVu Sans 18
+xscreensaver-auth.?.Dialog.buttonFont:  DejaVu Sans Bold 18
+xscreensaver-auth.?.Dialog.dateFont:    DejaVu Sans 16
+xscreensaver-auth.?.passwd.passwdFont:  DejaVu Sans Bold 18
 
 ! General dialog box (affects main hostname, username, password text)
 xscreensaver-auth.?.Dialog.foreground:        #1792d0
