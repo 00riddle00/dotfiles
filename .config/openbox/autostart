@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:08:28 EEST
+# Date:   2026-08-07 00:38:02 CEST
 # Path:   ~/.config/openbox/autostart
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -12,8 +12,18 @@
 #**
 hsetroot -solid "${COL_BG_SEACOLOR}" &
 
-tint2 > /dev/null 2>&1 &
+if [[ "$(hostname)" == "tulkun" ]]; then
+  picom -b > "${XDG_RUNTIME_DIR}/picom.log" 2>&1
+fi
 
-picom -b > /dev/null 2>&1 &
+tint2 > "${XDG_RUNTIME_DIR}/tint2.log" 2>&1 &
+
+# Bridge modern AppIndicator (SNI) tray icons to XEmbed (tint2)
+(
+  sleep 2
+  snixembed > "${XDG_RUNTIME_DIR}/snixembed.log" 2>&1
+) &
 
 term-standard &
+
+pgrep -x anydesk >/dev/null || anydesk &
