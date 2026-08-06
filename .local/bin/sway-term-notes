@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:02:17 CEST
+# Path:   ~/.local/bin/sway-term-notes
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Open the notes file in Neovim in a new Urxvt terminal window, and move it a
+# few times to the left, in i3 window manager. Preferably, this window (with
+# the instance name "notes") should be placed on the 1st (i.e. leftmost)
+# workspace in i3 config.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+urxvt \
+  -geometry 135x61 \
+  -name notes \
+  -hold \
+  -e tmux new-session \
+    "${EDITOR}" -c \
+      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose" &
+
+sleep 0.05
+
+# shellcheck disable=SC2034
+for i in {1..3}; do
+  i3-msg "[instance=\"notes\"] move left" > /dev/null 2>&1
+done

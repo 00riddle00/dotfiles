@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:01:45 CEST
+# Path:   ~/.local/bin/sway-open-or-focus-brave
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#
+# Focus a Brave window by title, or open a new one with that title.
+#
+# USAGE:
+#   sway-brave-focus WINDOW_NAME
+#
+
+win_name="$1"
+
+if [[ -z "$win_name" ]]; then
+  echo "Usage: $0 WINDOW_NAME" >&2
+  exit 1
+fi
+
+# Try native Wayland Brave first:
+if swaymsg "[app_id=\"brave-browser\" title=\"$win_name\"]" focus 2>/dev/null; then
+  exit 0
+fi
+
+# Fallback to Xwayland Brave:
+if swaymsg "[class=\"Brave-browser\" title=\"$win_name\"]" focus 2>/dev/null; then
+  exit 0
+fi
+
+# Otherwise launch a new window:
+#brave \
+  #--enable-features=UseOzonePlatform \
+  #--ozone-platform=wayland \
+  #--enable-features=WebRTCPipeWireCapturer \
+  #--enable-features=WaylandWindowDecorations \
+  #--disable-features=WaylandFractionalScaleV1 \
+  #--window-name="$win_name" &
+
+brave --window-name="$win_name" &

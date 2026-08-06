@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:01:56 CEST
+# Path:   ~/.local/bin/sway-open-or-focus-brave-ignoring
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#
+# Check if there exists a Brave window whose title does not match any of the
+# given ignore patterns. If there is, focus it; otherwise launch a new Brave
+# window with the default title.
+#
+# USAGE:
+#   sway-brave-switch IGNORE_PATTERN [IGNORE_PATTERN ...]
+#
+
+# Ensure at least one ignore pattern is provided
+if [[ $# -lt 1 ]]; then
+  echo "Usage: $0 WINDOW_NAME_TO_IGNORE [WINDOW_NAME_TO_IGNORE ...]" >&2
+  exit 1
+fi
+
+# Build a single regex from all ignore patterns
+ignore_regex=$(printf "|%s" "$@")
+ignore_regex=${ignore_regex:1}  # strip leading '|'
+
+# Find the first Brave window whose title does NOT match any ignore pattern
+candidate=$(swaymsg -t get_tree | \
+  jq -r --arg regex "$ignore_regex" '
+    .. | objects
+    | select(.app_id=="brave-browser" or .window_properties.class=="Brave-browser")
+    | .name as $title
+    | if ($title | test($regex)) then empty else $title end
+  ' | head -n1)
+
+echo "cand: $candidate"
+
+if [[ -n "$candidate" ]]; then
+  # Focus the found window
+  swaymsg "[title=\"$candidate\"]" focus
+else
+  # No matching window → launch Brave
+  #brave \
+    #--enable-features=UseOzonePlatform \
+    #--ozone-platform=wayland \
+    #--enable-features=WebRTCPipeWireCapturer \
+    #--enable-features=WaylandWindowDecorations \
+    #--disable-features=WaylandFractionalScaleV1 &
+  brave &
+fi

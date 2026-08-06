@@ -1,0 +1,553 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2024-09-28 12:18:03 EEST
+# Path:   ${XDG_CONFIG_HOME}/sway/config
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+# ================================================
+#  Definitions
+# ================================================
+
+# 'exec' command in this config file, e.g.:
+#   exec kitty --class dropdown_math -e R -q
+# To run the same command from a terminal (but not inside Tmux):
+#   swaymsg 'exec kitty --class dropdown_math -e R -q'
+# For Tmux, use the alias 'swaymsg-tmux' instead of 'swaymsg'
+#   (see ${ZDOTDIR}/aliases.zsh).
+#
+# `exec_always` – runs the command every time the config is reloaded,
+# including on Sway startup.
+
+set $mod Mod4
+set $alt Mod1
+
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button+$mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $alt normal
+
+set $gap_size_top   0
+set $gap_size_inner 8
+set $gap_size_outer 4
+
+set $col_bg_seacolor       #073542
+set $col_swaybar_bg        #002b36
+set $col_arch_blue         #1793d1
+set $col_light_blue        #79bac1
+set $col_pretty_blue       #268bd2
+set $col_pretty_light_blue #00afd7
+
+set $wspace1  "1:  "
+set $wspace2  "2:  "
+set $wspace3  "3:  "
+set $wspace4  "4:  "
+set $wspace5  "5:  "
+set $wspace6  "6:  "
+set $wspace7  "7: 󰇮 "
+set $wspace8  "8:  "
+set $wspace9  "9: ♫ "
+set $wspace10 "10:  "
+
+# ================================================
+#  Startup
+# ================================================
+
+# To automatically unlock KWallet protected by the login password,
+# in addition to configuring PAM.
+exec /usr/lib/pam_kwallet_init
+
+# This amazing script uses the python-i3ipc library to switch the layout
+# between horizontal and vertical splits depending on the currently focused
+# window dimensions.
+exec autotiling
+
+# Open notes
+#exec sway-term-notes
+
+# This will lock the screen after 300 seconds of inactivity, then turn off
+# the displays after another 300 seconds, and turn the screens back on when
+# resumed. It will also lock the screen before the computer goes to sleep.
+exec swayidle -w \
+    timeout 300 'swaylock -f -c 000000' \
+    timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    before-sleep 'swaylock -f -c 000000'
+
+exec dropbox start
+
+exec mako
+
+# ================================================
+# Output
+# ================================================
+
+# Monitors
+
+output HDMI-A-1 resolution 2560x1440@60hz transform 90 position 0 0
+output DP-1 resolution 3840x2160@60hz transform normal position 1440 0
+output DP-2 resolution 2560x1440@60hz transform 270 position 5280 0
+
+# For gaming:
+output HDMI-A-1 disable
+output DP-1 resolution 3840x2160@60hz transform normal position 1440 0
+output DP-2 disable
+
+# Background color
+output * background $col_bg_seacolor solid_color
+
+# ================================================
+# Input
+# ================================================
+
+# Keyboard layouts: US and Lithuanian, toggle with Alt+Shift, Caps Lock as Escape
+input * {
+    xkb_layout us,lt
+    xkb_options grp:alt_shift_toggle,caps:escape
+}
+
+# Disable touchpad on a ThinkPad
+input "SYNA8005:00 06CB:CD8C Touchpad" {
+    events disabled
+}
+
+# ================================================
+#  Workspaces
+# ================================================
+
+# Assign workspaces 1,4,7 to the left monitor:
+workspace $wspace1 output HDMI-A-1
+workspace $wspace4 output HDMI-A-1
+workspace $wspace7 output HDMI-A-1
+
+# Assign workspace 2,5,8,10 to the middle monitor:
+workspace $wspace2  output DP-1
+workspace $wspace5  output DP-1
+workspace $wspace8  output DP-1
+workspace $wspace10 output DP-1
+
+# Assign workspace 3,6,9 to the right monitor:
+workspace $wspace3 output DP-2
+workspace $wspace6 output DP-2
+workspace $wspace9 output DP-2
+
+# ================================================
+#  Appearance
+# ================================================
+
+# Gaps
+#gaps top   $gap_size_top
+#gaps outer $gap_size_outer
+#gaps inner $gap_size_inner
+# Smart gaps turn off gaps if only one
+# container on the workspace is present
+smart_gaps on
+#smart_gaps off
+
+# Window borders
+#for_window [class="^.*"] border pixel 1
+
+default_border none
+default_floating_border none
+titlebar_border_thickness 0
+
+smart_borders on
+#smart_borders off
+
+ # Status bar
+bar {
+  font                    pango:Source Code Pro Bold 12
+  status_command          i3blocks
+  position                top
+  tray_padding            5
+  # Hide tray icons:
+  #tray_output             none
+  bindsym button4         nop
+  bindsym button5         nop
+  workspace_buttons       yes
+  strip_workspace_numbers no
+
+  colors {
+    separator  $col_pretty_blue
+    background $col_swaybar_bg
+    statusline $col_pretty_blue
+
+    #                  Border          Background      Text
+    focused_workspace  $col_swaybar_bg $col_swaybar_bg $col_pretty_light_blue
+    active_workspace   $col_swaybar_bg $col_swaybar_bg $col_arch_blue
+    inactive_workspace $col_swaybar_bg $col_swaybar_bg $col_light_blue
+    urgent_workspace   $col_arch_blue  $col_arch_blue  $col_swaybar_bg
+    binding_mode       #b71c1c         #b71c1c         #000000
+  }
+}
+
+# Colors
+# Class                 Border         Background             Text             Indicator
+client.focused          $col_arch_blue $col_pretty_light_blue $col_light_blue  $col_arch_blue
+client.focused_inactive $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+client.unfocused        $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+client.urgent           $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+client.placeholder      $col_arch_blue $col_arch_blue         $col_light_blue  $col_arch_blue
+
+# ================================================
+#  Window traits
+# ================================================
+
+for_window [instance="notes"]               move workspace $wspace1
+for_window [app_id="gimp-3.0"]              move workspace $wspace5
+for_window [app_id="org.inkscape.Inkscape"] move workspace $wspace5
+for_window [class="SmartSVN"]               move workspace $wspace6
+for_window [app_id="thunderbird"]           move workspace $wspace7
+for_window [class="discord"]                move workspace $wspace8
+for_window [app_id="com.obsproject.Studio"] move workspace $wspace8
+for_window [class="steam"]                  move workspace $wspace8
+for_window [class="Spotify"]                move workspace $wspace9
+
+# Dropdown windows (the order can matter)
+for_window [instance="dropdown_.*"] floating enable
+for_window [instance="dropdown_.*"] sticky   enable
+for_window [instance="dropdown_.*"] border   pixel    3
+for_window [instance="dropdown_.*"] resize   set      841 571
+for_window [instance="dropdown_.*"] move     position 2953 722
+for_window [instance="dropdown_.*"] move     scratchpad
+
+for_window [instance="clipboard"] floating enable
+for_window [instance="clipboard"] sticky   enable
+for_window [instance="clipboard"] border   pixel    3
+for_window [instance="clipboard"] resize   set      1075 1222
+for_window [instance="clipboard"] move     position 183  768
+
+for_window [instance="i3blocks_calendar"] floating enable
+for_window [instance="i3blocks_calendar"] border   pixel    2
+for_window [instance="i3blocks_calendar"] resize   set      184  151
+for_window [instance="i3blocks_calendar"] move     position 4783 37
+
+for_window [instance="i3blocks_weather"] floating enable
+for_window [instance="i3blocks_weather"] border   pixel    2
+for_window [instance="i3blocks_weather"] resize   set      1165 865
+for_window [instance="i3blocks_weather"] move     position 4103 37
+
+for_window [app_id="org.keepassxc.KeePassXC"] floating enable
+for_window [app_id="org.keepassxc.KeePassXC"] sticky   enable
+for_window [app_id="org.keepassxc.KeePassXC"] resize   set      922 937
+for_window [app_id="org.keepassxc.KeePassXC"] move     position 278 887
+
+for_window [app_id="lxappearance"] floating enable
+for_window [app_id="lxappearance"] sticky   enable
+for_window [app_id="lxappearance"] border   pixel    3
+for_window [app_id="lxappearance"] resize   set      710 504
+for_window [app_id="lxappearance"] move     position 3004 757
+
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
+for_window [app_id="org.pulseaudio.pavucontrol"] sticky   enable
+for_window [app_id="org.pulseaudio.pavucontrol"] border   pixel    3
+for_window [app_id="org.pulseaudio.pavucontrol"] resize   set      852 596
+for_window [app_id="org.pulseaudio.pavucontrol"] move     position 261 1500
+
+for_window [app_id="qalculate-gtk"] floating enable
+for_window [app_id="qalculate-gtk"] sticky   enable
+for_window [app_id="qalculate-gtk"] border   pixel    3
+for_window [app_id="qalculate-gtk"] resize   set      782 545
+for_window [app_id="qalculate-gtk"] move     position 3963 1360
+
+for_window [instance="obsidian"] floating enable
+for_window [instance="obsidian"] sticky   enable
+for_window [instance="obsidian"] border   pixel    2
+for_window [instance="obsidian"] resize   set      922 937
+for_window [instance="obsidian"] move     position 278 887
+
+# ================================================
+#  Keybindings
+# ================================================
+
+# ----------------------------
+#  Escape, Return, Space keys
+# ----------------------------
+
+bindsym $mod+Return      exec     kitty
+bindsym $alt+w       floating toggle
+bindsym $alt+Tab         kill
+
+# ----------------------------
+#  Letter keys
+# ----------------------------
+
+bindsym $alt+c         exec sway-open-or-focus obsidian
+bindsym $alt+e         exec GTK_THEME=Adwaita-dark thunar
+bindsym $alt+p         exec pavucontrol
+bindsym $mod+b         exec sway-open-or-focus gimp-3.0
+bindsym $mod+c         exec sway-open-or-focus code
+#bindsym $mod+e         exec sway-focus "thunar"
+bindsym $mod+g         exec sway-open-or-focus smartsvn SmartSVN
+bindsym $mod+i         exec kitty -e htop
+bindsym $mod+m         exec sway-open-or-focus nomacs org.nomacs.ImageLounge
+bindsym $mod+o         exec sway-open-or-focus keepassxc org.keepassxc.KeePassXC
+bindsym $mod+p         exec sway-open-or-focus pycharm jetbrains-pycharm
+bindsym $mod+Shift+p   exec dmenu-pastes
+bindsym $mod+q         exec sway-open-or-focus emacs
+bindsym $mod+r         exec kitty -e ranger
+#bindsym $mod+s         exec xscreensaver-command --lock
+bindsym $mod+t         exec qutebrowser-wallpaper
+bindsym $mod+y         exec kitty -e calcurse -D $XDG_CONFIG_HOME/calcurse
+bindsym $mod+semicolon exec sway-open-or-focus libreoffice
+
+## Imitate "Show Desktop"
+bindsym $mod+d           exec sway-show-desktop $wspace10
+## Imitate "Alt+Tab"
+##   Also very useful for switching between two displays
+#bindsym $alt+Tab         exec sway workspace back_and_forth
+## Imitate "Win+Tab"
+bindsym $mod+Tab         exec sway workspace next
+## Imitate "Win+Shift+Tab"
+bindsym $mod+Shift+Tab exec sway workspace prev
+
+#bindsym $alt+q         [instance="dropdown_*"] move scratchpad
+bindsym $alt+q         move scratchpad
+bindsym $alt+u         exec sway-open-or-focus-dropdown-term "dropdown_aux"
+bindsym $alt+z         sticky toggle
+bindsym $mod+Shift+b bar mode toggle
+
+# **********************
+# Scratchpad:
+# **********************
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+# Move the currently focused window to the scratchpad
+#bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $alt+minus scratchpad show
+
+# **********************
+# Layout:
+# **********************
+
+## Distraction free mode
+##   Turn on: (holding $mod key glances at the statusbar)
+bindsym $mod+grave bar mode hide; \
+  gaps inner current set 0; \
+  gaps outer current set 0; \
+  gaps top current set 0; \
+  smart_gaps on; \
+  smart_borders on
+
+##   Turn off:
+bindsym $mod+Shift+grave bar mode dock; \
+  gaps inner current set $gap_size_inner; \
+  gaps outer current set $gap_size_outer; \
+  gaps top current set $gap_size_top; \
+  smart_gaps off; \
+  smart_borders off
+
+## Place new windows to the right of the current one
+#bindsym $mod+apostrophe split horizontal
+## Place new windows below the current one
+#bindsym $mod+slash      split vertical
+
+# Switch the current container between different layout styles
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+
+# Move focus to the parent container
+#bindsym $mod+a focus parent
+
+## Enter fullscreen mode for the focused container
+#bindsym $mod+f fullscreen
+bindsym $mod+x fullscreen toggle
+
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+Shift+e exec \
+  swaynag -t warning -m \
+    'You pressed the exit shortcut. Do you really want to exit sway? \
+    This will end your Wayland session.' \
+    -B 'Yes, exit sway' 'swaymsg exit'
+
+## Change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+## Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+## Resize focused window
+##   Also works by holding the right mouse button
+##   near the edge and dragging the window
+## To restore window sizes, move one of the windows around
+## a few times (e.g. $mod+Shift+l and $mod+Shift+h)
+bindsym $mod+Shift+y exec sway-win-resize left
+bindsym $mod+Shift+u exec sway-win-resize down
+bindsym $mod+Shift+i exec sway-win-resize up
+bindsym $mod+Shift+o exec sway-win-resize right
+
+## Switch to certain workspace
+bindsym $mod+1 workspace number $wspace1
+bindsym $mod+2 workspace number $wspace2
+bindsym $mod+3 workspace number $wspace3
+bindsym $mod+4 workspace number $wspace4
+bindsym $mod+5 workspace number $wspace5
+bindsym $mod+6 workspace number $wspace6
+bindsym $mod+7 workspace number $wspace7
+bindsym $mod+8 workspace number $wspace8
+bindsym $mod+9 workspace number $wspace9
+bindsym $mod+0 workspace number $wspace10
+
+## Move focused container to a certain workspace
+bindsym $mod+Shift+1 move container to workspace number $wspace1
+bindsym $mod+Shift+2 move container to workspace number $wspace2
+bindsym $mod+Shift+3 move container to workspace number $wspace3
+bindsym $mod+Shift+4 move container to workspace number $wspace4
+bindsym $mod+Shift+5 move container to workspace number $wspace5
+bindsym $mod+Shift+6 move container to workspace number $wspace6
+bindsym $mod+Shift+7 move container to workspace number $wspace7
+bindsym $mod+Shift+8 move container to workspace number $wspace8
+bindsym $mod+Shift+9 move container to workspace number $wspace9
+bindsym $mod+Shift+0 move container to workspace number $wspace10
+
+## ----------------------------
+##  Function keys
+## ----------------------------
+
+#bindsym F1       exec sway-open-or-focus-brave alpha
+#bindsym F2       exec sway-focus "t2" -c
+bindsym $alt+F2  exec kitty --class t2
+bindsym F3       exec sway-open-or-focus term-notes notes
+bindsym F4       exec sway-open-or-focus term-clipboard clipboard
+bindsym F5       exec sway-open-or-focus chromium
+bindsym F7       exec sway-open-or-focus thunderbird
+bindsym F9       exec sway-open-or-focus-brave-ignoring alpha bravo charlie
+bindsym F10      exec sway-open-or-focus qalculate-gtk
+bindsym F11      exec sway-open-or-focus-brave charlie
+bindsym F12      exec sway-open-or-focus-brave bravo
+
+bindsym Pause reload
+
+bindsym $mod+F5             exec light -U 10                  && pkill -RTMIN+2 i3blocks
+bindsym $mod+F6             exec light -A 10                  && pkill -RTMIN+2 i3blocks
+#bindsym $mod+F11            exec amixer     set Master 10%-   && pkill -RTMIN+1 i3blocks
+#bindsym $mod+F12            exec amixer     set Master 10%+   && pkill -RTMIN+1 i3blocks
+bindsym $mod+F11 exec sh -c 'amixer set Master 10%- && pkill -RTMIN+1 i3blocks'
+bindsym $mod+F12 exec sh -c 'amixer set Master 10%+ && pkill -RTMIN+1 i3blocks'
+
+#bindsym $mod+Shift+Delete exec amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
+
+## Open programs
+bindsym Insert                exec fuzzel
+## Run scripts
+bindsym $mod+Insert         exec rofi -show run
+## Run dmenu
+bindsym $mod+Shift+Insert exec dmenu_run
+## Open/focus a program
+#bindsym $mod+Insert         exec rofi -show Open  -modi Open:rofi-open
+## Open logout/shutdown/reboot prompt
+bindsym $mod+End            exec rofi -show Power -modi Power:rofi-power
+## Kill a process by its name/PID
+bindsym $mod+Delete         exec rofi -show Kill  -modi Kill:rofi-kill
+
+## Standard light
+bindsym $mod+Page_Up  exec  gammastep -m wayland -o -P -O 6500
+## Warm light
+bindsym $mod+Page_Down   exec  gammastep -m wayland -o -P -O 5000
+## Just for fun
+bindsym $mod+Pause  exec  gammastep -m wayland -o -P -O 1000
+
+
+bindsym Print exec grim -g "$(slurp)" $SCREENSHOTS/screenshot-%F-%H%M%S.png
+#bindsym Print         exec flameshot gui -p $SCREENSHOTS
+#bindsym Shift+Print exec scrot $SCREENSHOTS/screenshot-%F-%H%M%S.png
+
+## ----------------------------
+##  +/=, -, <, >, [, ] keys
+## ----------------------------
+
+## Volume keys
+#bindsym $mod+plus          exec amixer sset Master 5%+  && pkill -RTMIN+1 i3blocks
+#bindsym $mod+Shift+plus  exec amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
+#bindsym $mod+minus         exec amixer sset Master 5%-  && pkill -RTMIN+1 i3blocks
+#bindsym $mod+Shift+minus exec amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
+
+## MPD server: switching between songs, advancing forward/backward in a song
+#bindsym $mod+less                 exec mpc prev
+#bindsym $mod+Shift+less         exec mpc seek 0%
+#bindsym $mod+greater              exec mpc next
+#bindsym $mod+Shift+greater      exec mpc next
+#bindsym $mod+bracketleft          exec mpc seek -10
+#bindsym $mod+Shift+bracketleft  exec mpc seek -120
+#bindsym $mod+bracketright         exec mpc seek +10
+#bindsym $mod+Shift+bracketright exec mpc seek +120
+
+## ----------------------------
+##  Extra XF86 keys
+## ----------------------------
+
+## Caution: Airplane mode button turns off the internet!
+#bindsym XF86AudioRaiseVolume  exec amixer sset Master 10%+ && pkill -RTMIN+1 i3blocks
+#bindsym XF86AudioLowerVolume  exec amixer sset Master 10%- && pkill -RTMIN+1 i3blocks
+#bindsym XF86MonBrightnessUp   exec light -A 10 && pkill -RTMIN+2 i3blocks
+#bindsym XF86MonBrightnessDown exec light -U 10 && pkill -RTMIN+2 i3blocks
+#bindsym XF86RFKill            nop
+
+# Special keys to adjust volume via PulseAudio
+bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+# Special keys to adjust brightness via brightnessctl
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+include ${XDG_CONFIG_HOME}/sway/config.d/*
+
+#for_window [class=".*"] floating enable
+
+# ── Blur Effects ──
+blur enable
+blur_xray enable
+#blur_ignore_transparent disable
+blur_passes 3
+blur_radius 5
+blur_noise 0.1
+blur_brightness 1.0
+blur_contrast 1.2
+blur_saturation 1.0
+
+# ── Rounded Corners ──
+smart_corner_radius enable
+corner_radius 10
+
+# ── Window Shadows ──
+shadows enable
+shadows_on_csd enable
+shadow_blur_radius 15
+shadow_color        #000000AA
+shadow_inactive_color #00000066
+shadow_offset       0 6
+
+# ── Dim Inactive Windows ──
+default_dim_inactive      0.025
+dim_inactive_colors.unfocused #000000FF
+dim_inactive_colors.urgent   #FF0000FF
+
+# ── LayerShell Effects (e.g., panels) ──
+layer_effects "waybar" {
+    blur enable;
+    shadows enable;
+    corner_radius 6;
+}
+
+# ── Titlebar Separator ──
+titlebar_separator enable
+
+# ── Scratchpad Behavior ──
+scratchpad_minimize enable
+
+# ── Application Saturation Control ──
+for_window [class="Spotify"] saturation set 0.8

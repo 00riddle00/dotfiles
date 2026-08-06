@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:02:24 CEST
+# Path:   ~/.local/bin/sway-win-resize
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Resize the focused window in the specified direction (for i3 window manager).
+#
+# Kudos to Mr. Goferito (https://github.com/goferito) and Luke Smith
+# (https://github.com/lukesmithxyz).
+#**
+
+#* USAGE:
+#*   ${0} up|down|left|right
+#**
+if [[ -z "${1}" ]]; then
+  echo "No direction provided"
+  echo "Usage: ${0} up|down|left|right"
+  exit 1
+fi
+
+resize_amount="2 px or 2 ppt"
+
+resize_window() {
+  swaymsg resize "${1}" "${2}" "${resize_amount}" | rg -q '"success":true' \
+    || swaymsg resize "${3}" "${4}" "${resize_amount}"
+}
+
+{
+  case "${1}" in
+    up) resize_window grow up shrink down ;;
+    down) resize_window shrink up grow down ;;
+    left) resize_window shrink right grow left ;;
+    right) resize_window grow right shrink left ;;
+  esac
+} > /dev/null 2>&1

@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:01:29 CEST
+# Path:   ~/.local/bin/sway-focus
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Focus a program window in Sway by title (default) or class (-c).
+#**
+
+# USAGE:
+#   ${0} WINDOW_NAME       # fuzzy match on window title
+#   ${0} WINDOW_CLASS -c   # fuzzy match on window class
+# e.g.:
+#   ${0} "- Thunar"
+#   ${0} org.pwmt.zathura.Zathura -c
+
+win="$1"
+
+if [[ -z "$win" ]]; then
+  echo "Usage: $0 WINDOW_NAME [-c]"
+  exit 1
+fi
+
+
+if [[ "$2" == "-c" ]]; then
+  # Match on WM_CLASS (Wayland apps set app_id; Xwayland apps set class)
+  swaymsg "[app_id=\"$win\"] focus" || swaymsg "[class=\"$win\"] focus" || swaymsg "[title=\"$win\"] focus"
+else
+  # Match on window title (case-insensitive substring)
+  swaymsg "[app_id=\"$win\"] focus"
+fi
