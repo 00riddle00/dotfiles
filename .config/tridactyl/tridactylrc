@@ -1,0 +1,70 @@
+" vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
+"------------------------------------------------------------------------------
+" Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 00:49:27 CEST
+# Path:   ~/.config/tridactyl/tridactylrc
+" URL:    https://github.com/00riddle00/dotfiles
+"------------------------------------------------------------------------------
+
+" ============================================================================
+" General
+" ============================================================================
+
+" Config file format version
+set configversion 2.0
+
+" Use Neovim as the external editor for text areas and form inputs
+set editorcmd nvim
+
+" ============================================================================
+" UI
+" ============================================================================
+
+" Colours
+colours dark
+
+" Show the current mode and pressed keys in the status indicator
+set modeindicatorshowkeys true
+
+" Better hint visibility: home-row keys used for link hint labels when selecting
+" elements on a page
+set hintchars asdfghjkl
+
+" ============================================================================
+" Commands
+" ============================================================================
+
+" Easier reload config
+command retry source ~/.config/tridactyl/tridactylrc
+
+" ============================================================================
+" Keybindings
+" ============================================================================
+
+" -------------------------------------
+" Unbind default keybindings
+" -------------------------------------
+
+" Prevent accidental tab close
+unbind d
+
+" I barely use these even in Vim
+" <C-f> - use default Firefox search
+unbind <C-f>
+unbind <C-b>
+unbind <C-e>
+unbind <C-y>
+
+" -------------------------------------
+" Tabs
+" -------------------------------------
+bind <A-s> pin
+bind <A-d> tabduplicate
+bind <A-h> tabprev
+bind <A-l> tabnext
+
+" -------------------------------------
+" Misc
+" -------------------------------------
+
+bind <Space>a open about:preferences

@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 23:32:12 CEST
+# Date:   2026-08-07 00:51:01 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -85,6 +85,7 @@ exp TEXMFCONFIG                 "${XDG_CONFIG_HOME}/texlive/texmf-config"
 exp TEXMFHOME                   "${XDG_DATA_HOME}/texmf"
 exp TEXMFVAR                    "${XDG_CACHE_HOME}/texlive/texmf-var"
 exp TMUX_PLUGIN_MANAGER_PATH    "${XDG_CONFIG_HOME}/tmux/plugins/"
+exp TRIDACTYL_RCPATH            "${XDG_CONFIG_HOME}/tridactyl/tridactylrc"
 exp W3M_DIR                     "${XDG_STATE_HOME}/w3m"
 exp WAKATIME_HOME               "${XDG_CONFIG_HOME}/wakatime"
 exp XAUTHORITY                  "${XDG_RUNTIME_DIR}/Xauthority"
