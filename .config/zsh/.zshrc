@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:06:59 CEST
+# Date:   2026-08-06 22:18:11 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -227,6 +227,10 @@ fi
 # Launch system information tool
 #archey
 #neofetch
+
+if [[ -n $HYPRLAND_INSTANCE_SIGNATURE ]]; then
+  tmux set-environment -g HYPRLAND_INSTANCE_SIGNATURE "$HYPRLAND_INSTANCE_SIGNATURE"
+fi
 
 # Launch tmux
 tmux > /dev/null 2>&1

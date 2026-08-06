@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:15:43 CEST
+# Path:   ~/.local/bin/hyprland-show-desktop
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+TMP_FILE="${XDG_RUNTIME_DIR}/hyprland-show-desktop"
+
+CURRENT_WORKSPACE="$(
+  hyprctl monitors -j |
+    jq -r '.[] | .activeWorkspace.name'
+)"
+
+WORKSPACE_FILE="${TMP_FILE}-${CURRENT_WORKSPACE}"
+
+if [[ -s "${WORKSPACE_FILE}" ]]; then
+  readarray -t ADDRESS_ARRAY < "${WORKSPACE_FILE}"
+
+  for address in "${ADDRESS_ARRAY[@]}"; do
+    CMDS+="dispatch movetoworkspacesilent name:${CURRENT_WORKSPACE},address:${address};"
+  done
+
+  hyprctl --batch "${CMDS}"
+  rm -- "${WORKSPACE_FILE}"
+else
+  readarray -t ADDRESS_ARRAY < <(
+    hyprctl clients -j |
+      jq -r --arg workspace "${CURRENT_WORKSPACE}" \
+        '.[] | select(.workspace.name == $workspace) | .address'
+  )
+
+  for address in "${ADDRESS_ARRAY[@]}"; do
+    if [[ -n "${address}" ]]; then
+      printf '%s\n' "${address}" >> "${WORKSPACE_FILE}"
+      CMDS+="dispatch movetoworkspacesilent special:desktop,address:${address};"
+    fi
+  done
+
+  if [[ -n "${CMDS:-}" ]]; then
+    hyprctl --batch "${CMDS}"
+  fi
+fi
