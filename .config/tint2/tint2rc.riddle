@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 17:58:01 EEST
+# Date:   2026-08-06 23:51:52 CEST
 # Path:   ~/.config/tint2/tint2rc.riddle
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ task_urgent_icon_asb    = 100 0 0
 task_iconified_icon_asb = 100 0 0
 
 # Fonts
-task_font                 = Noto Sans 9
+task_font                 = Inter 9
 task_font_color           = #dcdcdc 100
 task_active_font_color    = #FFFFFF 100
 task_urgent_font_color    = #FFFFFF 100
@@ -78,7 +78,7 @@ systray_icon_asb      = 100 0 0
 
 # Clock
 time1_format           = %H:%M
-time1_font             = Noto Sans 9
+time1_font             = Inter 9
 clock_font_color       = #FFFFFF 100
 clock_tooltip          =
 clock_padding          = 10 6
@@ -94,7 +94,7 @@ tooltip_padding       = 2 2
 tooltip_show_timeout  = 0.0
 tooltip_hide_timeout  = 0.0
 tooltip_background_id = 2
-tooltip_font          = Noto Sans 9
+tooltip_font          = Inter 9
 tooltip_font_color    = #FFFFFF 100
 
 # Mouse
