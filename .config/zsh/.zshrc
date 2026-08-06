@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 22:18:11 CEST
+# Date:   2026-08-06 23:35:38 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -233,8 +233,10 @@ if [[ -n $HYPRLAND_INSTANCE_SIGNATURE ]]; then
 fi
 
 # Launch tmux
-tmux > /dev/null 2>&1
-true
+if [[ -z "$TMUX" && "$TERM_PROGRAM" != "vscode" && -z "$INSIDE_JETBRAINS" && -z "$INSIDE_PYCHARM" ]]; then
+  tmux > /dev/null 2>&1
+  true
+fi
 
 # Zoxide
 eval "$(zoxide init zsh)"
