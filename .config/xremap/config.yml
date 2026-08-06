@@ -1,0 +1,48 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 21:53:49 CEST
+# Path:   ~/.config/xremap/config.yml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+modmap:
+  - name: CapsLock to Escape
+    device:
+      only:
+        - "AT Translated Set 2 keyboard"
+        - "BlackWidow Tournament"
+        - "Ducky One 3 TKL"
+      not:
+        - "YubiKey"
+        - "Naga Trinity"
+        - "Razer Razer Naga V2 Pro"
+        - "Razer Razer Naga V2 Pro Keyboard"
+        - "Razer Razer Naga V2 Pro Mouse"
+    remap:
+      CapsLock: Esc
+
+keymap:
+  - name: Paste with Alt-v
+    application:
+      only:
+        - brave-browser
+        - Brave-browser
+        - brave
+        - Brave
+        - firefox
+        - Firefox
+        - obsidian
+        - Obsidian
+    device: &kb_allow
+      only:
+        - "AT Translated Set 2 keyboard"
+        - "BlackWidow Tournament"
+        - "Ducky One 3 TKL"
+      not:
+        - "YubiKey"
+        - "Naga Trinity"
+        - "Razer Razer Naga V2 Pro"
+        - "Razer Razer Naga V2 Pro Keyboard"
+        - "Razer Razer Naga V2 Pro Mouse"
+    remap:
+      Alt-v: C-v

@@ -2,7 +2,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:52:32 CEST
+# Date:   2026-08-06 21:55:26 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -53,6 +53,12 @@ export XDG_SESSION_TYPE=x11
   sleep 2
   set-keyboard-layout
 ) &
+
+# Start xremap after the X session (after the X session is initialized) so
+# application-specific remaps can connect to the X server.
+xremap --watch \
+  "${XDG_CONFIG_HOME}/xremap/config.yml" \
+  > "${XDG_RUNTIME_DIR}/xremap.log" 2>&1 &
 
 # Window manager
 #exec i3
