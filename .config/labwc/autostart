@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-06 22:31:31 CEST
+# Path:   ~/.config/labwc/autostart
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+wlr-randr --output HDMI-A-1 --mode 2560x1440@59.951000Hz --scale 1 --transform 270 --pos 0,0 &
+wlr-randr --output DP-1 --mode 3840x2160@59.997002Hz --scale 1 --transform normal --pos 1440,0 &
+wlr-randr --output DP-2 --mode 2560x1440@59.951000Hz --scale 1 --transform 90 --pos 5280,0 &
+
+# To automatically unlock KWallet protected by the login password,
+# in addition to configuring PAM.
+/usr/lib/pam_kwallet_init >/dev/null 2>&1 &
+
+# Set background color.
+swaybg -c '#073542' >/dev/null 2>&1 &
+
+# Configure output directives such as mode, position, scale and transform.
+# Use wlr-randr to get your output names
+# Example ~/.config/kanshi/config below:
+#   profile {
+#     output HDMI-A-1 position 1366,0
+#     output eDP-1 position 0,0
+#   }
+kanshi >/dev/null 2>&1 &
+
+# Launch a panel such as yambar or waybar.
+swaybar >/dev/null 2>&1 &
+
+# Enable notifications. Typically GNOME/KDE application notifications go
+# through the org.freedesktop.Notifications D-Bus API and require a client such
+# as mako to function correctly. Thunderbird is an example of this.
+mako >/dev/null 2>&1 &
+
+# Lock screen after 5 minutes; turn off display after another 5 minutes.
+#
+# Note that in the context of idle system power management, it is *NOT* a good
+# idea to turn off displays by 'disabling outputs' for example by
+# `wlr-randr --output <whatever> --off` because this re-arranges views
+# (since a837fef). Instead use a wlr-output-power-management client such as
+# https://git.sr.ht/~leon_plickat/wlopm
+swayidle -w \
+	timeout 300 'swaylock -f -c 000000' \
+	timeout 600 'wlopm --off \*' \
+	resume 'wlopm --on \*' \
+	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
