@@ -2,7 +2,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:08:24 EEST
+# Date:   2026-08-06 21:20:25 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -32,8 +32,10 @@ flameshot &
 dunst &
 copyq &
 
-# Spawn SSH Agent
-eval "$(ssh-agent -s)"
+# Disabled: replaced by systemd --user ssh-agent.service (SSH_AUTH_SOCK
+# exported in .zprofile). Having both spawn agents caused SSH_AUTH_SOCK
+# to point at whichever one won the race, breaking KeePassXC's agent link.
+#eval "$(ssh-agent -s)"
 
 # Set environment variables for X11
 unset WAYLAND_DISPLAY

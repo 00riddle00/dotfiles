@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:10:27 CEST
+# Date:   2026-08-06 21:16:09 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -79,7 +79,8 @@ exp PYTHONUSERBASE              "${XDG_DATA_HOME}/python"
 exp PYTHON_HISTORY              "${XDG_STATE_HOME}/python/history"
 exp RXVT_SOCKET                 "${XDG_RUNTIME_DIR}/urxvtd"
 exp SQLITE_HISTORY              "${XDG_DATA_HOME}/sqlite_history"
-exp SSH_AUTH_SOCK               "$(gpgconf --list-dirs agent-ssh-socket)"
+exp SSH_AUTH_SOCK               "${XDG_RUNTIME_DIR}/ssh-agent.socket"
+#exp SSH_AUTH_SOCK               "$(gpgconf --list-dirs agent-ssh-socket)"
 exp TEXMFCONFIG                 "${XDG_CONFIG_HOME}/texlive/texmf-config"
 exp TEXMFHOME                   "${XDG_DATA_HOME}/texmf"
 exp TEXMFVAR                    "${XDG_CACHE_HOME}/texlive/texmf-var"
