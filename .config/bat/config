@@ -1,11 +1,12 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-08-04 23:53:32 EEST
+# Date:   2026-08-06 23:46:08 CEST
 # Path:   ~/.config/bat/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
---theme="OneHalfDark"
+# Use the "tokyonight_moon" theme
+--theme="tokyonight_moon"
 
 # Use "less" as a pager
 --pager="less"
