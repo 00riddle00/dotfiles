@@ -1,0 +1,149 @@
+/* vim: set ft=jsonc nu ai et ts=2 sw=2: */
+/*-----------------------------------------------------------------------------
+* Author: 00riddle00 (Tomas Giedraitis)
+* Date:   2026-08-07 01:37:51 CEST
+* Path:   ~/.config/Cursor/User/settings.json
+* URL:    https://github.com/00riddle00/dotfiles
+*------------------------------------------------------------------------------
+* Cursor allows to have comments in this file.
+*/
+
+{
+  /* --- Editor & Typography --- */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.lineNumbers": "relative",
+  "editor.renderLineHighlight": "none",
+  "editor.linkedEditing": true,
+  "editor.rulers": [88, 120],
+  "editor.mouseWheelZoom": true,
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": "off",  /* <-- Can be very useful sometimes */
+  "editor.matchBrackets": "near",
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.bracketPairsHorizontal": false,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "–": true
+  },
+
+  /* --- Workbench --- */
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#004e62",
+    "statusBar.foreground": "#9ccae6"
+  },
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.sqlite": "default"
+  },
+
+  /* --- Window & Files --- */
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "window.menuBarVisibility": "toggle",
+  "window.openFoldersInNewWindow": "on",
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*html": "jinja-html"
+  },
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  /* --- Terminal --- */
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  /* --- Neovim Extension --- */
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.ctrlKeysForNormalMode": ["d", "i", "o", "r", "u", "v"],
+  "vscode-neovim.ctrlKeysForInsertMode": ["d", "i", "o", "r", "u"],
+
+  /* --- Git & Source Control --- */
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.suggestSmartCommit": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  /* --- AI & Telemetry --- */
+  "telemetry.telemetryLevel": "off",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.mcp.gallery.enabled": true,
+  "claudeCode.preferredLocation": "panel",
+
+  /* --- Cursor UI --- */
+  "cursor.composer.textSizeScale": 1.3,
+  "chat.editor.lineHeight": 1,
+  "apc.stylesheet": {
+    ".anysphere-markdown-container-root": "font-size: 30px !important; line-height: 2 !important;",
+    ".view-line": "font-size: 30px !important;",
+    ".aislash-editor-input": "font-size: 30px !important; line-height: 2 !important;"
+  },
+
+  /* --- Language Specifics --- */
+  "[python]": {
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": null
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": null
+  },
+  "cSpell.enableFiletypes": ["jinja-html"],
+
+  /* --- Key Promoter --- */
+  "Key Promoter.ignoredCommands": [
+    "type",
+    "inlineChat.hideHint",
+    "list.focusUp",
+    "noop",
+    "editor.action.inlineSuggest.hide",
+    "closeParameterHints",
+    "hideSuggestWidget"
+  ],
+  "Key Promoter.suggestKeybindingCreation": false,
+
+  /* --- Misc / Technical --- */
+  "keyboard.dispatch": "keyCode",
+  "database-client.autoSync": true,
+  "makefile.configureOnOpen": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.banner": "never",
+  "jupyter.askForKernelRestart": false,
+  "sqltools.useNodeRuntime": true,
+  "http.systemCertificatesNode": true,
+  "update.showReleaseNotes": false,
+
+  /* --- Extension-Specific --- */
+  "claude-dev-experimental.api.currentModel": {
+    "uiId": "gpt-5.2-medium",
+    "mode": "responsive"
+  },
+  "geminicodeassist.project": "vaulted-bloom-0sf6z",
+  "geminicodeassist.displayInlineContextHint": false,
+  "geminicodeassist.inlineSuggestions.enableAuto": true
+}
