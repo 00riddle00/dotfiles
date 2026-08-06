@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 00:27:09 CEST
+# Path:   ~/.local/bin/set-light-gtk-theme
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Change gtk-theme-name from "Adwaita-dark" to "Adwaita" in:
+#   ~/.config/gtk-3.0/settings.ini
+# Usage:
+#   ${0}
+#**
+
+CONFIG="${XDG_CONFIG_HOME}/gtk-3.0/settings.ini"
+
+# In-place replacement using sed -E:
+sed -E -i '
+  s/^gtk-theme-name=Adwaita-dark$/gtk-theme-name=Adwaita/
+' "${CONFIG}"
