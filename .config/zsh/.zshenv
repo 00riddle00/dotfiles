@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:51:01 CEST
+# Date:   2026-08-07 01:01:43 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ exp DOTSHARE    "${HOME}/.local/share/dotshare"
 exp CANDY       "${DROPBOX}/candy"
 exp DROPBOX     "${HOME}/Dropbox"
 exp NOTES       "${DROPBOX}/gtd/"
-exp PRO         "${HOME}/pro"
+exp PRO         "${HOME}/Projects"
 exp SCREENSHOTS "${HOME}/Screenshots"
 exp MP          "${HOME}/tmp1"
 exp MP1         "${HOME}/tmp1"
