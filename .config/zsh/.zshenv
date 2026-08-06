@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-04 19:39:22 EEST
+# Date:   2026-08-06 21:10:27 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -167,10 +167,32 @@ exp SAVEHIST "$((HISTSIZE/2))"
 
 # fzf, a command-line fuzzy finder
 exp FZF_DEFAULT_OPTS " \
+  --border=none \
   --height 100% \
   --layout=reverse \
-  --border \
+  --highlight-line \
+  --info=inline-right \
+  --ansi \
+  --color=bg+:#2d3f76 \
+  --color=bg:#1e2030 \
+  --color=border:#589ed7 \
+  --color=fg:#c8d3f5 \
+  --color=gutter:#1e2030 \
+  --color=header:#ff966c \
+  --color=hl+:#65bcff \
+  --color=hl:#65bcff \
+  --color=info:#545c7e \
+  --color=marker:#ff007c \
+  --color=pointer:#ff007c \
+  --color=prompt:#65bcff \
+  --color=query:#c8d3f5:regular \
+  --color=scrollbar:#589ed7 \
+  --color=separator:#ff966c \
+  --color=spinner:#ff007c \
 "
+exp FZF_CTRL_T_OPTS "--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+exp FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
+exp FZF_ALT_C_OPTS "--preview 'tree -C {} | head -200'"
 
 # Monitor connections
 exp DP1_SCREEN    'DP-0'
