@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 12:40:41 EEST
+# Date:   2026-08-07 00:46:43 CEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -61,10 +61,6 @@ set $wspace10 "10:  "
 # Background color
 $run sh -c "hsetroot -solid '${COL_BG_SEACOLOR}' &"
 
-# To automatically unlock KWallet protected by the login password,
-# in addition to configuring PAM.
-$run /usr/lib/pam_kwallet_init
-
 # This amazing script uses the python-i3ipc library to switch the layout
 # between horizontal and vertical splits depending on the currently focused
 # window dimensions.
@@ -88,6 +84,9 @@ smart_gaps off
 # Window borders
 for_window [class="^.*"] border pixel 1
 smart_borders on
+# For rounded corners, set this in ${XDG_CONFIG_HOME}/picom.conf:
+#   round-borders = true;
+#   corner-radius = XY;
 
 # Status bar
 bar {
