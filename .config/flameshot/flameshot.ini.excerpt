@@ -1,12 +1,26 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 15:41:43 EEST
+# Date:   2026-08-07 04:28:51 CEST
 # Path:   ~/.config/flameshot/flameshot.ini.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 [General]
+# ...
+# ...
 savePath=/home/riddle/Screenshots
 showDesktopNotification=false
-# ...
-# ...
+uiColor=#0061c0
+userColors=picker, #ffffff, #000000, #f7035f, #ff9500, #ffd60a, #34c759, #27aeb9, #02ccfe, #bebebe
+# Due to a problem with xdg-desktop-portal, the workaround for flameshot v14:
+useX11LegacyScreenshot=true
+captureActiveMonitor=true
+
+[Shortcuts]
+TYPE_ACCEPT=Ctrl+s
+TYPE_CIRCLE=e
+TYPE_CIRCLECOUNT=n
+TYPE_DRAWER=l
+TYPE_MOVESELECTION=v
+TYPE_PIXELATE=f
+TYPE_TOGGLE_PANEL=Alt+1
