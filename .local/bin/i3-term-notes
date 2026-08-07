@@ -2,12 +2,12 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 17:28:03 CEST
+# Date:   2026-08-07 23:49:55 CEST
 # Path:   ~/.local/bin/i3-term-notes
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open the notes file in Neovim in a new Urxvt terminal window, and move it a
+# Open the notes file in Neovim in a new Kitty terminal window, and move it a
 # few times to the left, in i3 window manager. Preferably, this window (with
 # the instance name "notes") should be placed on the 1st (i.e. leftmost)
 # workspace in i3 config.

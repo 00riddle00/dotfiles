@@ -2,12 +2,12 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 17:33:26 CEST
+# Date:   2026-08-07 23:50:07 CEST
 # Path:   ~/.local/bin/term-text-input
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open a temporary Markdown file in Neovim in a new Urxvt terminal window.
+# Open a temporary Markdown file in Neovim in a new Kitty terminal window.
 # This is useful for quick writing with the help of GitHub Copilot.
 #**
 

@@ -2,12 +2,12 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 17:31:58 CEST
+# Date:   2026-08-07 23:50:03 CEST
 # Path:   ~/.local/bin/term-notes
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open the notes file in Neovim in a new Urxvt terminal window.
+# Open the notes file in Neovim in a new Kitty terminal window.
 #**
 
 #* USAGE:

@@ -2,12 +2,12 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 17:28:37 CEST
+# Date:   2026-08-07 23:49:58 CEST
 # Path:   ~/.local/bin/term-clipboard
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open the clipboard file in Neovim in a new Urxvt terminal window.
+# Open the clipboard file in Neovim in a new Kitty terminal window.
 #**
 
 #* USAGE:

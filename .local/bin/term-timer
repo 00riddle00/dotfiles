@@ -2,12 +2,12 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 17:34:03 CEST
+# Date:   2026-08-07 23:50:11 CEST
 # Path:   ~/.local/bin/term-timer
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open the timer/stopwatch in a new Urxvt terminal window.
+# Open the timer/stopwatch in a new Kitty terminal window.
 #**
 
 #* USAGE:
