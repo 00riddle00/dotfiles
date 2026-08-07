@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:20:50 CEST
+# Date:   2026-08-07 03:24:17 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -235,12 +235,15 @@ export PERL_MM_OPT
 # Path
 typeset -U path
 
+# ${HOME}/.local/bin/jetbrains was also added before crashes
 path=(
   ${HOME}/.local/bin
   ${HOME}/.local/bin/cron
+  ${XDG_DATA_HOME}/JetBrains/Toolbox/scripts
   ${PYENV_ROOT}/bin
   ${PERL5_HOME}/bin
   ${GEM_HOME}/bin
+  ${CARGO_HOME}/bin
   ${path}
 )
 
