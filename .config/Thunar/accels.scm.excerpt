@@ -1,0 +1,16 @@
+;------------------------------------------------------------------------------
+; Author: 00riddle00 (Tomas Giedraitis)
+; Date:   2026-08-07 04:36:10 CEST
+; Path:   ~/.config/Thunar/accels.scm.excerpt
+; URL:    https://github.com/00riddle00/dotfiles
+;------------------------------------------------------------------------------
+
+; thunar GtkAccelMap rc-file         -*- scheme -*-
+; this file is an automated accelerator map dump
+;
+; ...
+; ...
+(gtk_accel_path "<Actions>/ThunarActions/uca-action-1712922860051143-2" "<Primary><Shift>i")
+; ...
+(gtk_accel_path "<Actions>/ThunarActions/uca-action-1712922767337151-1" "<Alt>m")
+; ...

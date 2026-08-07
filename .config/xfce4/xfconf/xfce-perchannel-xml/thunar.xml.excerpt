@@ -1,0 +1,26 @@
+<!--
+*------------------------------------------------------------------------------
+* Author: 00riddle00 (Tomas Giedraitis)
+* Date:   2026-08-07 04:37:11 CEST
+* Path:   ~/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml.excerpt
+* URL:    https://github.com/00riddle00/dotfiles
+*------------------------------------------------------------------------------
+* Thunar settings
+-->
+
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="thunar" version="1.0">
+  <property name="last-view" type="string" value="ThunarCompactView"/>
+  <!-- ... -->
+  <property name="last-side-pane" type="string" value="THUNAR_SIDEPANE_TYPE_SHORTCUTS"/>
+  <property name="last-show-hidden" type="bool" value="false"/>
+  <!-- ... -->
+  <property name="last-compact-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
+  <property name="last-menubar-visible" type="bool" value="false"/>
+  <!-- ... -->
+  <property name="last-statusbar-visible" type="bool" value="true"/>
+  <property name="misc-symbolic-icons-in-toolbar" type="bool" value="true"/>
+  <property name="misc-single-click" type="bool" value="false"/>
+  <property name="misc-highlighting-enabled" type="bool" value="true"/>
+</channel>
