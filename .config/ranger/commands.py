@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-30 16:11:21 EEST
+# Date:   2026-08-07 03:46:33 CEST
 # Path:   ~/.config/ranger/commands.py
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -31,12 +31,10 @@ class fzf_select(Command):
 
         if self.quantifier:
             # match only directories
-            command = r"find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
-            -o -type d -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
+            command = r"fd -L -t d . --exclude dev --exclude proc | fzf +m"
         else:
             # match files and directories
-            command = r"find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
-            -o -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
+            command = r"fd -L . --exclude dev --exclude proc | fzf +m"
         fzf = self.fm.execute_command(command, stdout=subprocess.PIPE)
         stdout, stderr = fzf.communicate()
         if fzf.returncode == 0:
@@ -85,12 +83,10 @@ class fzf_bring(Command):
 
         if self.quantifier:
             # match only directories
-            command = r"find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
-            -o -type d -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
+            command = r"fd -L -t d . --exclude dev --exclude proc | fzf +m"
         else:
             # match files and directories
-            command = r"find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
-            -o -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
+            command = r"fd -L . --exclude dev --exclude proc | fzf +m"
         fzf = self.fm.execute_command(command, stdout=subprocess.PIPE)
         stdout, stderr = fzf.communicate()
         if fzf.returncode == 0:
