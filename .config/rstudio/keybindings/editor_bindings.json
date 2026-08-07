@@ -1,0 +1,16 @@
+{
+    "run_current_line": "Ctrl+Enter",
+    "run_current_line_and_move_down": "Ctrl+Shift+Enter",
+    "source_active_document": "Ctrl+Shift+S",
+    "reindent": "Ctrl+Alt+L",
+    "insert_pipe_operator": "Ctrl+Shift+M",
+    "insert_assignment_operator": "Alt+-",
+    "jump_to_matching": "Ctrl+]",
+    "fold": "Ctrl+Alt+[",
+    "unfold": "Ctrl+Alt+]",
+    "comment_uncomment": "Ctrl+/",
+    "duplicate_line": "Ctrl+Shift+D",
+    "delete_line": "Ctrl+Shift+K",
+    "move_lines_up": "Alt+Up",
+    "move_lines_down": "Alt+Down"
+}

@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 01:01:43 CEST
+# Date:   2026-08-07 03:20:50 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -213,6 +213,11 @@ fi
 
 # Python
 exp PYENV_ROOT "$XDG_DATA_HOME/pyenv"
+
+# R
+#exp R_PROFILE_USER "${XDG_CONFIG_HOME}/R/profile"
+exp R_HISTFILE     "${XDG_STATE_HOME}/R/history"
+exp R_LIBS_USER    "${XDG_DATA_HOME}/R/library"
 
 # Perl
 setvar PERL5_HOME          = "${HOME}/perl5"
