@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-08 01:57:05 CEST
+# Path:   ~/.local/bin/svn-replace
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Replace a 'cp' copied file (DST) by moving it from the source file (SRC) in a
+# Subversion repository.
+#**
+
+#* USAGE:
+#*   ${0} SRC_FILE DST_FILE
+#**
+set -ue
+
+SRC="${1}"
+DST="${2}"
+
+if [[ ! -f "${SRC}" ]]; then
+  svn revert "${SRC}"
+fi
+
+if diff "${SRC}" "${DST}"; then
+  svn del --force "${DST}"
+  svn mv "${SRC}" "${DST}"
+fi
