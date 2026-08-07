@@ -1,13 +1,11 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 04:33:09 CEST
-# Path:   ~/.config/qalculate/qalculate-gtk.cfg.excerpt
+# Date:   2026-08-07 04:32:59 CEST
+# Path:   ~/.config/qalculate/qalc.cfg.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 [General]
-always_on_top=1
-gtk_theme=1
 decimal_comma=0
 comma_as_separator=1
 dot_as_separator=0
