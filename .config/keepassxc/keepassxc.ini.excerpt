@@ -1,14 +1,25 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 15:41:52 EEST
+# Date:   2026-08-07 04:29:23 CEST
 # Path:   ~/.config/keepassxc/keepassxc.ini.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 [GUI]
+ApplicationTheme=dark
+CompactMode=false
+HideMenubar=true
 HidePreviewPanel=true
 HideUsernames=true
-# ...
+MinimizeToTray=true
+ShowTrayIcon=true
+TrayIconAppearance=monochrome-dark
 
-# ...
-# ...
+[PasswordGenerator]
+Length=25
+Logograms=true
+SpecialChars=true
+
+[Security]
+ClearClipboardTimeout=20
+LockDatabaseIdleSeconds=10800
