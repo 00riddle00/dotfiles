@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:35:21 EEST
+# Date:   2026-08-07 17:29:41 CEST
 # Path:   ~/.local/bin/term-fzf-launcher
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,8 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 70x30 \
-  -name fzf-launcher \
-  -e sh -c "fzf-launcher"
+kitty \
+  --class fzf-launcher \
+  --override initial_window_columns=70 \
+  --override initial_window_lines=30 \
+    sh -c "fzf-launcher"

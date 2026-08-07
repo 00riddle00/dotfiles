@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 21:42:26 EEST
+# Date:   2026-08-07 17:34:03 CEST
 # Path:   ~/.local/bin/term-timer
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,8 +13,9 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 105x40 \
-  -name timer \
-  -hold \
-  -e tmux new-session "termdown -B | lolcat"
+kitty \
+  --class timer \
+  --override initial_window_columns=105 \
+  --override initial_window_lines=40 \
+  --hold \
+    tmux new-session "termdown -B | lolcat"

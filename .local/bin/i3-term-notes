@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 13:27:45 EEST
+# Date:   2026-08-07 17:28:03 CEST
 # Path:   ~/.local/bin/i3-term-notes
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,13 +16,13 @@
 #* USAGE:
 #*   ${0}
 #**
-urxvt \
-  -geometry 135x61 \
-  -name notes \
-  -hold \
-  -e tmux new-session \
-    "${EDITOR}" -c \
-      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .. | :NvimTreeClose" &
+kitty \
+  --class notes \
+  --override initial_window_columns=135 \
+  --override initial_window_lines=61 \
+  --hold \
+    tmux new-session "${EDITOR}" -c \
+      "e ${NOTES}/coding/main.md | :cd %:p:h | :cd .."
 
 sleep 0.05
 
