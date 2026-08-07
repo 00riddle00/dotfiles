@@ -1,0 +1,15 @@
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 04:27:01 CEST
+# Path:   ~/.config/ruff/ruff.toml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Ruff default configuration file. Neovim's Ruff uses this config is no other
+# config file (e.g. pyproject.toml) is found in the project directory.
+#**
+line-length = 88
+
+[lint]
+select = ["E", "F", "I"]
+fixable = ["ALL"]
