@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 22:30:40 CEST
+# Path:   ~/.local/bin/set-up-monitors-panther-u27-laptop
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Set up the U27 + laptop monitor layout using xrandr for the computer with
+# hostname "panther".
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+
+# Check if X is running.
+if xset q &> /dev/null; then
+  # If external monitor is connected, use it.
+  if xrandr | awk '/ connected/{print $1}' | rg -q -- "${HDMI1_SCREEN}"; then
+    xrandr \
+      --output "${HDMI1_SCREEN}" \
+      --auto --rotate normal --primary \
+      --output "${LAPTOP_SCREEN}" \
+      --auto --rotate normal --right-of "${HDMI1_SCREEN}"
+  else
+    xrandr --output "${LAPTOP_SCREEN}" --auto
+  fi
+fi
