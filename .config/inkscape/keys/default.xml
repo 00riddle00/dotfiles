@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 04:39:31 CEST
+# Path:   ~/.config/inkscape/keys/default.xml
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+-->
 <keys
    name="User Shortcuts">
-  <bind
-     gaction="app.duplicate"
-     keys="&lt;Alt&gt;d" />
-  <bind
-     gaction="app.object-rotate-90-cw"
-     keys="&lt;Primary&gt;r" />
-  <bind
-     gaction="app.object-set-clip"
-     keys="c" />
-  <bind
-     gaction="app.object-set-inverse-clip"
-     keys="&lt;Shift&gt;c" />
-  <bind
-     gaction="app.preferences"
-     keys="&lt;Primary&gt;&lt;Alt&gt;s" />
-  <bind
-     gaction="app.swap-fill-and-stroke"
-     keys="x" />
   <bind
      gaction="win.canvas-rulers"
      keys="&lt;Primary&gt;&lt;Shift&gt;r" />
   <bind
-     gaction="win.canvas-zoom-drawing"
-     keys="&lt;Primary&gt;0" />
+     gaction="win.tool-switch('PaintBucket')"
+     keys="g" />
   <bind
-     gaction="win.dialog-open('DocumentProperties')"
-     keys="&lt;Primary&gt;&lt;Alt&gt;c" />
+     gaction="win.tool-switch('Dropper')"
+     keys="i" />
+  <bind
+     gaction="win.select-invert"
+     keys="&lt;Primary&gt;i" />
   <bind
      gaction="win.dialog-open('FillStroke')"
      keys="&lt;Primary&gt;f" />
@@ -35,15 +28,51 @@
      gaction="win.dialog-open('Find')"
      keys="&lt;Primary&gt;&lt;Shift&gt;f" />
   <bind
-     gaction="win.select-invert"
-     keys="&lt;Alt&gt;i" />
+     gaction="win.canvas-command-palette"
+     keys="&lt;Primary&gt;&lt;Alt&gt;p" />
   <bind
-     gaction="win.tool-switch('Dropper')"
-     keys="i" />
+     gaction="app.swap-fill-and-stroke"
+     keys="x" />
   <bind
-     gaction="win.tool-switch('PaintBucket')"
-     keys="&lt;Primary&gt;g" />
+     gaction="app.duplicate"
+     keys="&lt;Alt&gt;d" />
+  <bind
+     gaction="win.dialog-open('DocumentProperties')"
+     keys="&lt;Primary&gt;&lt;Alt&gt;c" />
+  <bind
+     gaction="app.object-set-clip"
+     keys="c" />
+  <bind
+     gaction="win.layer-delete"
+     keys="minus" />
   <bind
      gaction="win.tool-switch('Select')"
      keys="v" />
+  <bind
+     gaction="win.canvas-zoom-out"
+     keys="&lt;Primary&gt;minus" />
+  <bind
+     gaction="app.object-rotate-90-cw"
+     keys="&lt;Primary&gt;r" />
+  <bind
+     gaction="app.object-set-inverse-clip"
+     keys="&lt;Shift&gt;c" />
+  <bind
+     gaction="app.preferences"
+     keys="&lt;Primary&gt;&lt;Alt&gt;s" />
+  <bind
+     gaction="win.layer-new"
+     keys="equal" />
+  <bind
+     gaction="win.canvas-scroll-bars"
+     keys="&lt;Primary&gt;b" />
+  <bind
+     gaction="win.canvas-zoom-in"
+     keys="&lt;Primary&gt;plus" />
+  <bind
+     gaction="win.canvas-zoom-drawing"
+     keys="&lt;Primary&gt;0" />
+  <bind
+     gaction="win.layer-duplicate"
+     keys="&lt;Primary&gt;j" />
 </keys>
