@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 22:03:37 CEST
+# Path:   ~/.local/bin/set-up-monitors-tulkun-wacom
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Set up multiple monitors and the Wacom Cintiq 16 using xrandr for the
+# computer with hostname "tulkun". The Cintiq connects via HDMI1 (default
+# orientation). DisplayPort connects three desk monitors: DP1 (rotated to
+# the right), DP2 (primary monitor, default orientation), DP3 (rotated to
+# the left).
+#
+# Also maps the Cintiq pen's coordinate space to its own display only (not
+# the whole desktop), and binds its two side buttons to Undo/Redo.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+
+## Check if X is running.
+if xset q &> /dev/null; then
+  xrandr \
+    --output "${HDMI1_SCREEN}" \
+    --auto --rotate normal \
+    --output "${DP1_SCREEN}" \
+    --auto --rotate right --right-of "${HDMI1_SCREEN}" \
+    --output "${DP2_SCREEN}" \
+    --primary --auto --rotate normal --right-of "${DP1_SCREEN}" \
+    --output "${DP3_SCREEN}" \
+    --auto --rotate left --right-of "${DP2_SCREEN}"
+fi
+
+# --------------------
+# TODO add delay here
+# --------------------
+# Map the pen input device's coordinate space to the Cintiq monitor only,
+# not to the whole desktop (all 4 monitors).
+xsetwacom --set "Wacom Cintiq 16 Pen stylus" MapToOutput HEAD-1
+xsetwacom --set "Wacom Cintiq 16 Pen eraser" MapToOutput HEAD-1
+# Map the Wacom Cintiq 16 pen buttons to Undo/Redo shortcuts.
+# Button 3 = the bottom one (longer).
+# Button 2 = the top one (shorter)
+xsetwacom --set "Wacom Cintiq 16 Pen stylus" Button 3 "key ctrl z"
+xsetwacom --set "Wacom Cintiq 16 Pen stylus" Button 2 "key ctrl shift z"
