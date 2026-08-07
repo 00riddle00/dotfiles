@@ -1,7 +1,7 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 23:35:38 CEST
+# Date:   2026-08-07 03:35:19 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -47,9 +47,10 @@ autoload -Uz compinit
 zmodload zsh/complist
 # Initialize the completion system
 compinit
-compdef dot=git
+#compdef dot=git
+# ^-- `dot` mostly takes plain filenames as args (dot add <path>), so default
+#      filename completion is more useful here than git subcommand completion.
 compdef uv-run=python
-compdef dsd=cat
 
 # Configure various aspects of the Zsh completion system
 zstyle ':completion:*' completer _complete _correct _approximate
