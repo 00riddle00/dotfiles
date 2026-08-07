@@ -1,17 +1,14 @@
 # vim:tw=79:sw=2:ts=2:sts=2:et
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:24:17 CEST
+# Date:   2026-08-07 03:26:56 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
+# Temporary helper; unset at the end of this file.
 exp() {
-  builtin export ${1}="${2}"
-}
-
-setvar() {
-  eval ${1}="\"${3}\""
+  builtin export "${1}=${2}"
 }
 
 # System directories
@@ -220,17 +217,11 @@ exp R_HISTFILE     "${XDG_STATE_HOME}/R/history"
 exp R_LIBS_USER    "${XDG_DATA_HOME}/R/library"
 
 # Perl
-setvar PERL5_HOME          = "${HOME}/perl5"
-setvar PERL5LIB            = "${PERL5_HOME}/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-setvar PERL_LOCAL_LIB_ROOT = "${PERL5_HOME}${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-setvar PERL_MB_OPT         = "--install_base \"${PERL5_HOME}\""
-setvar PERL_MM_OPT         = "INSTALL_BASE=${PERL5_HOME}"
-
-export PERL5_HOME
-export PERL5LIB
-export PERL_LOCAL_LIB_ROOT
-export PERL_MB_OPT
-export PERL_MM_OPT
+exp PERL5_HOME          "${HOME}/perl5"
+exp PERL5LIB            "${PERL5_HOME}/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+exp PERL_LOCAL_LIB_ROOT "${PERL5_HOME}${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+exp PERL_MB_OPT         "--install_base \"${PERL5_HOME}\""
+exp PERL_MM_OPT         "INSTALL_BASE=${PERL5_HOME}"
 
 # Path
 typeset -U path
@@ -254,4 +245,3 @@ export PATH
 systemctl --user import-environment PATH
 
 unset -f exp
-unset -f setvar
