@@ -2,12 +2,12 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 22:01:59 CEST
+# Date:   2026-08-08 00:18:56 CEST
 # Path:   ~/.local/bin/sway-open-or-focus-dropdown-term
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Open or focus Urxvt dropdown terminal (i.e. scratchpad) in i3 window manager
+# Open or focus Kitty dropdown terminal (i.e. scratchpad) in i3 window manager
 # by the specified window class name.
 #**
 
