@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 23:14:26 CEST
+# Path:   ~/.local/bin/meld-max
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Run Meld with explicit scaling overrides for UHD/4K environments.
+# This wrapper is intended for terminal use and fully forwards any arguments.
+#**
+
+#* USAGE:
+#*   ${0} [MELD_ARGUMENTS...]
+#*
+#* EXAMPLES:
+#*   ${0} file1 file2
+#*   ${0} --diff fileA fileB
+#**
+GDK_SCALE=2 GDK_DPI_SCALE=1 exec meld "${@}"

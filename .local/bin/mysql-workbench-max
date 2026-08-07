@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-07 23:16:24 CEST
+# Path:   ~/.local/bin/mysql-workbench-max
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Launch a scaled MySQL Workbench for screen sharing while using UHD/4K
+# monitors. This is put in a separate script so that it can be launched from
+# the fzf-launcher or any other application launcher.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+
+# Use GDK_DPI_SCALE=1 for even bigger scaling
+GDK_SCALE=2 GDK_DPI_SCALE=0.75 mysql-workbench
