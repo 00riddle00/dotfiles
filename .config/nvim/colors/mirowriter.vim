@@ -1,6 +1,6 @@
 "------------------------------------------------------------------------------
 " User: 00riddle00 (Tomas Giedraitis)
-" Date: 2024-09-28 12:25:27 EEST
+" Date: 2026-08-07 04:56:03 CEST
 " Path: ~/.config/nvim/colors/mirowriter.vim
 " URL:  https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------

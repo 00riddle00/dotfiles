@@ -1,12 +1,12 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-30 16:11:03 EEST
--- Path:   ~/.config/nvim/lua/autocmd.lua
+-- Date:   2026-08-07 04:59:09 CEST
+-- Path:   ~/.config/nvim/lua/config/autocmd.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
-local General = require("general")
+local General = require("config.general")
 local vim     = vim or {}
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
@@ -54,12 +54,15 @@ autocmd("syntax", {
 })
 
 -- Automatically remove trailing whitespaces unless file is blacklisted.
---autocmd("BufWritePre", {
-  --callback = function()
-    --General.Preserve(function() vim.cmd("%s/\\s\\+$//e") end)
-  --end,
-  --group = general
---})
+autocmd("BufWritePre", {
+  callback = function()
+    -- For debugging:
+    --print("BUFWRITEPRE, filetype="..vim.bo.filetype)
+    General.Preserve(function() vim.cmd("%s/\\s\\+$//e") end)
+  end,
+  group = general,
+  pattern = "*",
+})
 
 -- Ensure directory structure exists when opening a new file.
 autocmd("BufNewFile", {
@@ -74,11 +77,28 @@ autocmd("FileType", {
   group   = general,
 })
 
+-- Global: Show a ruler at textwidth whenever textwidth is > 0
+autocmd({ "BufWinEnter", "BufWritePost", "FileType" }, {
+  group = general,
+  callback = function()
+    local tw = vim.opt_local.textwidth:get()
+    if tw > 0 then
+      vim.opt_local.colorcolumn = tostring(tw)
+      -- Clear the default blocky background so the 'virt-column'
+      -- plugin can draw a thin character in its place.
+      -- << THIS IS STILL HACKY >>
+      vim.api.nvim_set_hl(0, "ColorColumn", { bg = "NONE", ctermbg = "NONE" })
+    end
+  end,
+})
+
 autocmd("FileType", {
   pattern = "python",
   callback = function()
-    vim.opt.colorcolumn = "-1"
-    vim.cmd("highlight ColorColumn cterm=NONE ctermbg=black")
+    -- 1. Use an absolute number so it doesn't care about 'textwidth'
+    vim.opt_local.colorcolumn = "88"
+    -- 2. Ensure auto-wrap is OFF even if a plugin tries to turn it on
+    vim.opt_local.textwidth = 0
   end,
   group = general,
 })
@@ -89,7 +109,6 @@ autocmd("FileType", {
     vim.opt_local.shiftwidth  = 2
     vim.opt_local.tabstop     = 2
     vim.opt_local.softtabstop = 2
-    vim.cmd("colorscheme miro8")
   end,
   group = general,
 })
@@ -155,6 +174,29 @@ autocmd("QuickFixCmdPost", {
 })
 
 ---------------------------------------------
+-- [Plugin] "neovim/nvim-lspconfig"
+---------------------------------------------
+
+-- If using Ruff alongside another language server (like Pyright), one may want
+-- to defer to that language server for certain capabilities, like
+-- textDocument/hover:
+autocmd("LspAttach", {
+  group = vim.api.nvim_create_augroup(
+    "lsp_attach_disable_ruff_hover", { clear = true }),
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+    if client == nil then
+      return
+    end
+    if client.name == "ruff" then
+      -- Disable hover in favor of Pyright
+      client.server_capabilities.hoverProvider = false
+    end
+  end,
+  desc = "LSP: Disable hover capability from Ruff",
+})
+
+---------------------------------------------
 -- [Plugin] "nvim-treesitter/nvim-treesitter"
 ---------------------------------------------
 -- Users of packer.nvim have reported that when using treesitter for folds,
@@ -195,4 +237,32 @@ autocmd("QuitPre", {
       end
     end
   end
+})
+
+autocmd("VimEnter", {
+  callback = function()
+    for _, win in ipairs(vim.api.nvim_list_wins()) do
+      if vim.api.nvim_win_get_option(win, "diff") then
+        vim.api.nvim_win_set_option(win, "foldenable", false)
+        vim.api.nvim_win_set_option(win, "foldmethod", "manual")
+      end
+    end
+  end,
+})
+
+autocmd({"BufWinEnter"}, {
+  callback = function()
+    if vim.wo.diff then
+      vim.opt_local.foldenable = false
+      vim.opt_local.foldmethod = "manual"
+    end
+  end,
+})
+
+-- markdown treesitter emergency disable
+autocmd("FileType", {
+  pattern = { "markdown", "markdown_inline" },
+  callback = function(args)
+    pcall(vim.treesitter.stop, args.buf)
+  end,
 })

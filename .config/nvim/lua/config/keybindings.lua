@@ -1,18 +1,18 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2025-04-25 15:11:44 EEST
--- Path:   ~/.config/nvim/lua/keybindings.lua
+-- Date:   2026-08-07 05:00:32 CEST
+-- Path:   ~/.config/nvim/lua/config/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
-local Util = require("util")
+local Util = require("config.util")
 
 local nmap = Util.nmap
 local vmap = Util.vmap
 local imap = Util.imap
 local xmap = Util.xmap
-local map  = vim.keymap.set
+local nunmap = Util.nunmap
 
 local noremap  = Util.noremap
 local inoremap = Util.inoremap
@@ -25,6 +25,8 @@ local xnoremap = Util.xnoremap
 -------------------------------------------
 
 vim.g.mapleader = "\\"
+-- Default value for `maplocalleader` is the same as `mapleader`
+--vim.g.maplocalleader = "\\"
 
 nmap("ss",        [[:wq<CR>]])
 nmap("qq",        [[:q<CR>]])
@@ -32,14 +34,28 @@ nmap("<C-s>",     [[:w!<CR>]])
 nmap("<F5>",      [[:cnext<CR>]])
 nmap("<S-F5>",    [[:cprevious<CR>]])
 nmap("<C-F5>",    [[:cc<CR>]])
-nmap("<leader>d", [[:pwd<CR>]])
+--nmap("<leader>d", [[:pwd<CR>]])
 nmap("<leader>h", [[:set hlsearch!<CR>]])
-nmap("<leader>n", [[:set relativenumber!<CR>]])
+
+--nmap("<leader>n", [[:set relativenumber!<CR>]])
+
+-- Enable both absolute and relative numbers
+vim.keymap.set("n", "<leader>n", function()
+  vim.opt.number       = true
+  vim.opt.relativenumber = true
+end, { noremap = true, silent = true })
+
+-- Disable both absolute and relative numbers
+vim.keymap.set("n", "<leader>N", function()
+  vim.opt.relativenumber = false
+  vim.opt.number       = false
+end, { noremap = true, silent = true })
+
 nmap("<leader>p", [[:setlocal paste!<CR>]])
 nmap("<leader>s", [[:split<CR>]])
 nmap("<leader>v", [[:vsplit<CR>]])
 nmap("<leader>e", [[:edit<CR>]])
-nmap("<leader>u", [[:!urlview %<CR>]])
+--nmap("<leader>u", [[:!urlview %<CR>]])
 --inoremap("jk",    [[<esc>]]) -- "<C-[>" does the same
 
 -- Move between buffers
@@ -81,6 +97,25 @@ nmap("<leader>l", [[:set list!<CR>]])
 -- \s* - Allow any amount of whitespace on this new line
 -- \+  - Allow any number of occurrences of this group (one or more).
 -- \%$ - Match the end of the file
+
+-------------------------------------------
+-- Comments
+-------------------------------------------
+
+-- Get Alt + F1, sent from Alacritty, in the form of <F49>
+nmap("<F49>", "gccj0", { remap = true })
+vmap("<F49>", "gcj0", { remap = true })
+imap("<F49>", "<Esc>gccj0", { remap = true })
+
+-- Alt + F1
+nmap("<M-F1>", "gccj0", { remap = true })
+vmap("<M-F1>", "gcj0", { remap = true })
+imap("<M-F1>", "<Esc>gccj0", { remap = true })
+
+-- Vim registers <C-/> as <C-_>
+nmap("<C-_>", "gccj0", { remap = true })
+vmap("<C-_>", "gcj0", { remap = true })
+imap("<C-_>", "<Esc>gccj0", { remap = true })
 
 -------------------------------------------
 -- Emacs-like insert mode
@@ -211,7 +246,9 @@ noremap("zz", [[z-]])
 -- Yank into the system secondary clipboard register
 vmap(    "<C-c>",  [["+y]])
 vnoremap("Y",      [["+y]])
+nnoremap("Y",      [["+yy]])
 nnoremap("YY",     [["+yy]])
+vnoremap("D",      [["+D]])
 
 -- Yank into the system secondary clipboard register and delete the visually
 -- selected text.
@@ -227,7 +264,7 @@ nnoremap("YY",     [["+yy]])
 
 -- Paste from system secondary clipboard register
 -- (works for multiline indented text - as if "paste" option has been set)
-nmap("tp", [[:r !xsel -b<CR>]])
+nmap("tp", [[:r !xclip -selection clipboard -o<CR>]])
 
 -------------------------------------------
 -- Shell
@@ -260,54 +297,50 @@ nmap("m/", [[/\<def ]])
 --~/.config/vim/output<CR>:split ~/.config/vim/output<CR>:redraw!<CR>]])
 
 -------------------------------------------
--- [Plugin] "jlanzarotta/bufexplorer"
+-- [Plugin] "stevearc/aerial.nvim"
 -------------------------------------------
 
-noremap("<leader>o", [[:BufExplorer<CR>]])
+nmap("<leader>a", "<cmd>AerialToggle!<CR>")
+
 
 -------------------------------------------
 -- [Plugin] "smjonas/inc-rename.nvim"
 -------------------------------------------
 
-map("n", "<leader>rn", ":IncRename ")
+-- map("n", "<leader>rn", ":IncRename ")
 
--------------------------------------------
--- [Plugin] "preservim/nerdcommenter"
--------------------------------------------
+--------------------------------------------------
+--- [Plugin] "lukas-reineke/indent-blankline.nvim"
+--------------------------------------------------
 
-nmap("<M-F1>", [[<Plug>NERDCommenterToggle<CR>]])
-vmap("<M-F1>", [[<Plug>NERDCommenterToggle<CR>]])
-imap("<M-F1>", [[<ESC><Plug>NERDCommenterToggle<CR>]])
+vim.keymap.set("n", "<leader>ti", function()
+  require("plugins.ibl").toggle()
+end, { desc = "Toggle indent guides" })
 
--- vim registers <C-/> as <C-_>
-nmap("<C-_>", [[<Plug>NERDCommenterToggle<CR>]])
-vmap("<C-_>", [[<Plug>NERDCommenterToggle<CR>]])
-imap("<C-_>", [[<ESC><Plug>NERDCommenterToggle<CR>]])
+
+--------------------------------------------------
+-- [Plugin] "kdheepak/lazygit.nvim"
+--------------------------------------------------
+
+--nmap("<leader>lg", "<cmd>LazyGit<cr>")
 
 -------------------------------------------
 -- [Plugin] "nvim-tree/nvim-tree.lua
 -- ----------------------------------------
 
-noremap("<C-n>", [[:NvimTreeToggle<CR>]])
---noremap("<C-x>", [[:NvimTreeFocus<CR>]])
+noremap("<C-n>", [[:Neotree<CR>]])
+--noremap("<C-x>", [[:Neotree close<CR>]])
 
 -------------------------------------------
 -- [Plugin] "nvim-telescope/telescope.nvim"
 -------------------------------------------
 
-nmap("<C-p>", [[<cmd>lua require("telescope.builtin").find_files()<CR>]])
+nmap("<C-p>", function() require("telescope.builtin").find_files() end)
 
--------------------------------------------
--- [Plugin] "preservim/tagbar"
--------------------------------------------
-
-nmap("<leader>b", [[:TagbarToggle<CR>]])
-
--------------------------------------------
--- [Plugin] "vim-autoformat/vim-autoformat"
--------------------------------------------
-
-noremap("<F6>", [[:Autoformat<CR>]])
+noremap("<leader>o", "<cmd>Telescope buffers<CR>")
+nmap("<leader>r", ":Telescope command_history<CR>")
+nmap("<leader>s", ":Telescope search_history<CR>")
+nmap("<leader>v", ":Telescope builtin<CR>")
 
 -------------------------------------------
 -- [Plugin] "junegunn/vim-easy-align"
@@ -323,7 +356,7 @@ xmap("ga", [[<Plug>(EasyAlign)]])
 -------------------------------------------
 
 nmap("<leader><leader>", [[<Plug>(easymotion-overwin-f)]])
-nmap("<Leader>w",        [[<Plug>(easymotion-overwin-w)]])
+nmap("<leader>w",        [[<Plug>(easymotion-overwin-w)]])
 
 -------------------------------------------
 -- [Plugin] "tpope/vim-fugitive"
@@ -333,7 +366,8 @@ nnoremap("<space>ga",  [[:Git add %:p<CR><CR>]])
 nnoremap("<space>gs",  [[:Git<CR>]])
 nnoremap("<space>gc",  [[:Gcommit -v -q<CR>]])
 noremap("<space>gt",   [[:Gcommit -v -q %:p<CR>]])
-nnoremap("<space>gd",  [[:Gdiff<CR>]])
+--nnoremap("<space>gd",  [[:Gdiff<CR>]])
+nnoremap("<space>gd",  [[:Git diff<CR>]])
 nnoremap("<space>ge",  [[:Gedit<CR>]])
 nnoremap("<space>gr",  [[:Gread<CR>]])
 nnoremap("<space>gw",  [[:Gwrite<CR><CR>]])
@@ -349,5 +383,122 @@ nnoremap("<space>gpl", [[:Dispatch! git pull<CR>]])
 -- [Plugin] "lervag/vimtex"
 -------------------------------------------
 
-nmap("<leader>s", [[:VimtexStop<CR>]])
-nmap("<leader>v", [[:VimtexCompile<CR>]])
+-- nmap("<leader>s", [[:VimtexStop<CR>]])
+-- nmap("<leader>v", [[:VimtexCompile<CR>]])
+--
+--
+--
+--
+--
+--
+
+nmap("<leader>d", function() vim.diagnostic.open_float() end)
+
+
+
+--nmap("<leader>f", function() vim.lsp.buf.format() end)
+nmap("<leader>f", function()
+  require("conform").format({
+    async = false,
+    lsp_format = "never",
+  })
+end, { desc = "Format buffer" })
+
+nmap("<leader>g", function() vim.lsp.buf.code_action() end)
+
+-- Big J/K jumps multiple lines (compared to their smaller siblings j/k)
+-- To be able to remap keys, they need to be unmapped first
+--nunmap("J")
+--nunmap("K")
+
+nmap("<leader>c", [[:%s/\n\n\n\+/\r\r/g<CR>]])
+
+--nmap("J", [[15j]])
+nmap("K", [[15k]])
+
+-- in your init.lua:
+
+vim.api.nvim_create_user_command('UpdateHeader', function()
+  local date = vim.fn.trim(vim.fn.system("date '+%F %T %Z'"))
+  local fname = vim.api.nvim_buf_get_name(0)
+  local raw  = vim.fn.system("readlink -f " .. vim.fn.shellescape(fname))
+  local path = vim.fn.trim(vim.fn.system(
+    "echo " .. vim.fn.shellescape(raw)
+    .. " | sed -E 's|^" .. vim.env.HOME .. "|~|'"
+  ))
+
+  -- accept ; # / * - and spaces as the comment markers
+  local prefix_cls = "[;%#/%%*%-%s]"
+
+  for i = 1, 30 do
+    local l = vim.api.nvim_buf_get_lines(0, i-1, i, false)[1]
+    if not l then break end
+
+    if l:match(prefix_cls .. "+Date:") then
+      local new = l:gsub(
+        "^(%s*"..prefix_cls.."*Date:%s*).*",
+        "%1"..date
+      )
+      vim.api.nvim_buf_set_lines(0, i-1, i, false, { new })
+
+    elseif l:match(prefix_cls .. "+Path:") then
+      local new = l:gsub(
+        "^(%s*"..prefix_cls.."*Path:%s*).*",
+        "%1"..path
+      )
+      vim.api.nvim_buf_set_lines(0, i-1, i, false, { new })
+    end
+  end
+end, {
+  desc = "Refresh header Date and Path (lines 1–30), supports ; # /* - comments",
+})
+
+vim.keymap.set('n', '<leader>u', ':UpdateHeader<CR>', { desc = "Update file header metadata" })
+
+--local builtin = require("telescope.builtin")
+--vim.keymap.set("n", "<leader>fs", builtin.git_status, { desc = "Git status (Telescope)" })
+
+-------------------------------------------
+-- <TAB> character in insert mode
+-------------------------------------------
+
+-- Smart <Tab> and <S-Tab>
+vim.defer_fn(function()
+  local cmp_ok, cmp = pcall(require, "cmp")
+  local ls_ok, ls = pcall(require, "luasnip")
+
+  vim.keymap.set("i", "<Tab>", function()
+    if cmp_ok and cmp.visible() then
+      cmp.select_next_item()
+      return ""
+    elseif ls_ok and ls.expand_or_jumpable() then
+      ls.expand_or_jump()
+      return ""
+    elseif vim.snippet and vim.snippet.active({ direction = 1 }) then
+      vim.snippet.jump(1)
+      return ""
+    else
+      -- accept Copilot only if visible; otherwise real Tab
+      local ok, s = pcall(require, "copilot.suggestion")
+      if ok and s.is_visible() then
+        s.accept()
+        return ""
+      end
+      return "<Tab>"
+    end
+  end, { expr = true, silent = true })
+
+  vim.keymap.set("i", "<S-Tab>", function()
+    if cmp_ok and cmp.visible() then
+      cmp.select_prev_item()
+      return ""
+    elseif ls_ok and ls.jumpable(-1) then
+      ls.jump(-1)
+      return ""
+    elseif vim.snippet and vim.snippet.active({ direction = -1 }) then
+      vim.snippet.jump(-1)
+      return ""
+    end
+    return "<S-Tab>"
+  end, { expr = true, silent = true })
+end, 20)

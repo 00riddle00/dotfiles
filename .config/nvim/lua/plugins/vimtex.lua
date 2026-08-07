@@ -1,7 +1,7 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-13 16:00:49 EEST
+-- Date:   2026-08-07 05:05:50 CEST
 -- Path:   ~/.config/nvim/lua/plugins/vimtex.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------

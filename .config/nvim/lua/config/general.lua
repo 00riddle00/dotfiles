@@ -1,12 +1,12 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-18 16:26:00 EEST
--- Path:   ~/.config/nvim/lua/general.lua
+-- Date:   2026-08-07 05:00:27 CEST
+-- Path:   ~/.config/nvim/lua/config/general.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
-local Util = require("util")
+local Util = require("config.util")
 
 local mkdir = Util.mkdir
 local cmd   = Util.nvim_command
@@ -40,7 +40,7 @@ function General.Preserve(callback)
   local col    = vim.fn.col(".")
 
   -- Do the business unless filetype is blacklisted
-  local blacklist = {"sql"}
+  local blacklist = {"sql", "csv", "tcsv", "tsv", "ttsv"}
 
   local in_blacklist = false
   for _, value in pairs(blacklist) do

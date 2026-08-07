@@ -1,8 +1,8 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-28 18:22:13 EEST
--- Path:   ~/.config/nvim/lua/util.lua
+-- Date:   2026-08-07 05:00:53 CEST
+-- Path:   ~/.config/nvim/lua/config/util.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
@@ -80,15 +80,22 @@ end
 
 local function map(mode, key, action, options, buffer)
   options = options or {}
-  buffer = buffer or false
 
-  local default_opts = { noremap = true, silent = true  }
+  local default_opts = { silent = true }
   local opts = vim.tbl_extend("force", default_opts, options)
 
   if buffer then
-    api.nvim_buf_set_keymap(0, mode, key, action, opts)
+    opts.buffer = true
+  end
+
+  vim.keymap.set(mode, key, action, opts)
+end
+
+local function unmap(mode, key, buffer)
+  if buffer then
+    pcall(vim.keymap.del, mode, key, { buffer = 0 })
   else
-    api.nvim_set_keymap(mode, key, action, opts)
+    pcall(vim.keymap.del, mode, key)
   end
 end
 
@@ -138,6 +145,26 @@ end
 
 function Util.noremap(key, action, options, buffer)
   map("", key, action, options, buffer)
+end
+
+function Util.nunmap(key, buffer)
+  unmap("n", key, buffer)
+end
+
+function Util.iunmap(key, buffer)
+  unmap("i", key, buffer)
+end
+
+function Util.vunmap(key, buffer)
+  unmap("v", key, buffer)
+end
+
+function Util.xunmap(key, buffer)
+  unmap("x", key, buffer)
+end
+
+function Util.tunmap(key, buffer)
+  unmap("t", key, buffer)
 end
 
 return Util

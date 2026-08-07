@@ -1,21 +1,34 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-07-16 15:47:27 EEST
+-- Date:   2026-08-07 05:05:07 CEST
 -- Path:   ~/.config/nvim/lua/plugins/_telescope.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
-require("telescope").setup{
+local telescope = require("telescope")
+
+telescope.setup({
   defaults = {
     layout_strategy = "flex",
+    sorting_strategy = "ascending",
+    layout_config = {
+      prompt_position = "top",
+      -- width = 0.45,
+      -- height = 0.52,
+    },
     mappings = {
       i = {
-        -- Close in insert mode
-        ["<esc>"] = require("telescope.actions").close
-      }
-    }
-  }
-}
+        ["<esc>"] = require("telescope.actions").close,
+      },
+    },
+  },
+  extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown({}),
+    },
+  },
+})
 
-require("telescope").load_extension("fzf")
+telescope.load_extension("fzf")
+telescope.load_extension("ui-select")

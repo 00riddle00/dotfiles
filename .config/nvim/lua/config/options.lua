@@ -1,10 +1,12 @@
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2024-08-04 23:54:15 EEST
--- Path:   ~/.config/nvim/lua/options.lua
+-- Date:   2026-08-07 05:00:47 CEST
+-- Path:   ~/.config/nvim/lua/config/options.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
+
+vim.g.loaded_perl_provider = 0
 
 -- Meta accessors for vim options {{{
   local o  = vim.opt
@@ -27,10 +29,15 @@ vim.g.loaded_netrwPlugin = 1
 -------------------------------------------
 -- Colors
 -------------------------------------------
+vim.cmd[[colorscheme tokyonight-moon]]
 
-vim.cmd [[colorscheme miro8]]
-o.background    = "dark"
-o.termguicolors = false
+--vim.cmd [[colorscheme miro8]]
+--vim.cmd [[
+  --highlight LineNr ctermfg=7 ctermbg=NONE
+  --highlight CursorLineNr ctermfg=15 ctermbg=NONE
+--]]
+--o.background    = "dark"
+o.termguicolors = true
 
 -------------------------------------------
 -- Appearance
@@ -69,12 +76,13 @@ o.statusline = table.concat(stl)
 --Set character encoding used inside Vim
 o.encoding = "utf-8"
 --Set character encoding for the current buffer.
-o.fileencoding = "utf-8"
+--Update: fileencoding is not a good option to set globally
+--o.fileencoding = "utf-8"
 -- Enable syntax highlighting
 vim.cmd [[syntax enable]]
 -- Do not fold text/code
 o.foldenable = false
--- Do not wrap lines
+-- Disable visual line wrapping (soft wrap)
 o.wrap = false
 -- Spelling
 o.spelllang = { "en_gb", "lt" }
@@ -84,7 +92,8 @@ o.spelllang = { "en_gb", "lt" }
 -------------------------------------------
 
 -- Text wrapping
-o.textwidth = 199 -- temporary setting
+--o.textwidth = 199 -- temporary setting
+o.textwidth = 0  -- Disables automatic line breaking
 -- Auto/smart indent
 o.autoindent  = true
 o.smartindent = true
@@ -215,3 +224,5 @@ o.softtabstop = 4
 -- Show tabs as "|___"
 -- enable with ":set list"
 o.listchars:append("tab:|_,extends:>,precedes:<,nbsp:+")
+
+o.iskeyword:remove('_')
