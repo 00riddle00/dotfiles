@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# vim:ft=bash:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 13:13:58 EEST
+# Date:   2026-08-07 03:48:48 CEST
 # Path:   ~/.local/bin/dmenu-pastes
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,12 +14,28 @@
 #*   ${0}
 #**
 
-# xclip needs to be installed to even show the menu.
-xclip -h 2>/dev/null || exit 1
+set -euo pipefail
 
-text="$(dmenu -i -l 20 < "${DOTSHARE}/misc/pastes.lst")"
+PASTES_FILE="${DOTSHARE}/misc/pastes.tsv"
+TEMP_FILE="$(mktemp)"
 
-[[ -z "${text}" ]] && exit 1
+xclip -h &>/dev/null || exit 1
+touch "$PASTES_FILE"
 
-echo "${text}" | tr -d '\n' | xclip -selection clipboard
-notify-send "${text} copied to clipboard."
+# Show only the text column, sorted by frequency descending
+choice=$(sort -t$'\t' -k2,2nr "$PASTES_FILE" | cut -f1 | dmenu -i -l 20)
+
+[[ -z "$choice" ]] && exit 1
+
+# Update frequency
+awk -F'\t' -v txt="$choice" -v OFS='\t' '
+  $1 == txt { $2 += 1; found=1 }
+  { print }
+  END { if (!found) print txt, 1 }
+' "$PASTES_FILE" > "$TEMP_FILE"
+
+mv "$TEMP_FILE" "$PASTES_FILE"
+
+# Copy to clipboard
+echo -n "$choice" | xclip -selection clipboard
+notify-send "$choice copied to clipboard."
