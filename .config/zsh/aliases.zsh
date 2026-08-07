@@ -1,7 +1,7 @@
 # vim:fenc=utf-8:tw=88:nu:ai:si:et:ts=2:sw=2
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-05 19:15:58 CEST
+# Date:   2026-08-08 01:03:29 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -1159,9 +1159,9 @@ def pasta '${EDITOR} "${DOTSHARE}/misc/pastes.tsv"'
 #---------------------------------------
 
 def i3.out       'i3-msg exit'
-def cmus.run     'urxvt -name dropdown_aux -e tmux new-session cmus &'
+def cmus.run     'kitty --class dropdown_aux tmux new-session cmus &'
 def cmus.scratch \
-  "i3-msg 'exec --no-startup-id urxvt -name dropdown_aux -e tmux "\
+  "i3-msg 'exec --no-startup-id kitty --class dropdown_aux tmux "\
 "new-session cmus\;'"
 # Avoid tmux session using an old I3SOCK environment variable after i3 restart
 # Run this instead of `i3-msg` while in tmux

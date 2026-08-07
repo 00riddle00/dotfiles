@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-28 16:52:13 EEST
+# Date: 2026-08-08 01:03:04 CEST
 # Path: ~/.config/qutebrowser/config.py
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ c.url.default_page                 = \
 c.url.start_pages                  = \
     f"file://{os.getenv('DOTSHARE')}/qutebrowser-homepage/index.html"
 c.editor.command                   = \
-    ["urxvt", "-name", "dropdown_vim", "-e", "vim", "-f", "{}"]
+    ["kitty", "--class", "dropdown_vim", "vim", "-f", "{}"]
 c.new_instance_open_target         = "tab-bg"
 c.prompt.filebrowser               = False
 c.completion.height                = "30%"

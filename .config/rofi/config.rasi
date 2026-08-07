@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-07-13 22:19:03 EEST
+* Date:   2026-08-08 01:03:21 CEST
 * Path:   ~/.config/rofi/config.rasi
 * URL:    https://github.com/00riddle00/dotfiles
 *-----------------------------------------------------------------------------*/
@@ -14,7 +14,7 @@ configuration {
     yoffset: -130;
     fixed-num-lines: false;
     show-icons: true;
-    terminal: "urxvt -hold";
+    terminal: "kitty --hold";
     sorting-method: "fzf";
     combi-modi: "drun,run";
     combi-hide-mode-prefix: true;
