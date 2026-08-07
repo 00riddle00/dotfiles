@@ -1,17 +1,60 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 15:42:39 EEST
+# Date:   2026-08-07 04:32:06 CEST
 # Path:   ~/.config/nomacs/Image Lounge.conf.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
+[General]
+firstTime=false
+windowMaximized=false
+# ...
+
 [AppSettings]
-appMode=1
+appMode=0
 currentAppMode=1
+defaultJpgQuality=97
+showExplorer=@Variant(\0\0\0\r\0\0\0\x6\0)
+showFilePreview=@Variant(\0\0\0\r\0\0\0\x6\x1)
+showMenuBar=false
+showPlayer=@Variant(\0\0\0\r\0\0\0\x6\x2)
+showToolBar=false
+# ...
+
+# ...
 # ...
 
 [DisplaySettings]
+bgColorNoMacsRGBA=4294111976
+bgColorWidgetRGBA=2281701376
+defaultBackgroundColor=false
+defaultForegroundColor=true
+defaultIconColor=true
+fgColorNoMacsRGBA=4281545523
+fontColorRGBA=4294967295
+highlightColorRGBA=4278225151
+iconColorRGBA=4281545523
+stylePlugin=fusion
+themeName312=Light-Theme.css
+thumbPreviewSize=190
 transition=0
+# ...
+
+# ...
+# ...
+
+[DkDialog]
+deleteFileDialog=true
+overwriteDialog=false
+saveEditDialog=true
+saveTabsDialog=false
+# ...
+
+# ...
+# ...
+
+[GlobalSettings]
+showBgImage=false
 # ...
 
 # ...
