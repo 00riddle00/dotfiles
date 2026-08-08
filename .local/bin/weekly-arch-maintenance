@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-08 03:39:43 CEST
+# Path:   ~/.local/bin/weekly-arch-maintenance
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Weekly Arch Linux system maintenance: refresh the locate database, clear
+# the Pacman cache, remove orphaned packages, refresh the mirrorlist,
+# update lazy.nvim-managed Neovim plugins, clear the paru cache, update
+# outdated CPAN modules, and run pacnews for .pacnew merges.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+set -euo pipefail
+
+echo "=== Starting system maintenance: $(date '+%Y-%m-%d %H:%M:%S') ==="
+
+# 1. Update the file-location database
+echo "-> Running updatedb to refresh locate database..."
+sudo updatedb
+echo "   ✔ updatedb completed."
+
+# 2. Clear Pacman's cache without confirmation
+echo "-> Clearing Pacman cache (pacman -Scc --noconfirm)..."
+sudo pacman -Scc --noconfirm
+echo "   ✔ Pacman cache cleared."
+
+# 3. Remove orphaned packages, if any exist
+echo "-> Checking for orphaned packages..."
+orphans=$(pacman -Qdtq || true)
+if [[ -n "${orphans}" ]]; then
+  mapfile -t orphans_arr <<< "${orphans}"
+  echo "   Found orphans:"
+  printf '     • %s\n' "${orphans_arr[@]}"
+  echo "   Removing orphaned packages (pacman -Rns)..."
+  sudo pacman -Rns "${orphans_arr[@]}" --noconfirm
+  echo "   ✔ Orphaned packages removed."
+else
+  echo "   No orphaned packages found."
+fi
+
+# 4. Refresh your mirrorlist using reflector
+echo "-> Updating mirrorlist with reflector (latest 10, sorted by rate)..."
+sudo reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
+echo "   ✔ Mirrorlist updated."
+
+# 5. Update all lazy.nvim-managed plugins in headless Neovim
+echo "-> Updating Neovim plugins via lazy.nvim (headless)..."
+nvim --headless "+Lazy! update" +qa
+echo "   ✔ Neovim plugins updated."
+
+# 6. Clear paru's cache (remove any stale AUR build files)
+echo "-> Removing paru cache directory (${HOME}/.cache/paru)..."
+rm -rf "${HOME}/.cache/paru"
+echo "   ✔ paru cache cleared."
+
+# 7. Update all CPAN modules that are outdated
+echo "-> Checking for outdated CPAN modules..."
+outdated_cpan=$(cpan-outdated -p || true)
+if [[ -n "${outdated_cpan}" ]]; then
+  mapfile -t outdated_cpan_arr <<< "${outdated_cpan}"
+  echo "   Outdated CPAN modules:"
+  printf '     • %s\n' "${outdated_cpan_arr[@]}"
+  echo "   Installing updates with cpanm..."
+  cpanm "${outdated_cpan_arr[@]}"
+  echo "   ✔ CPAN modules updated."
+else
+  echo "   No outdated CPAN modules found."
+fi
+
+# 8. Run pacdiff to merge .pacnew files; leave interactive by default
+echo "-> Launching pacdiff (may require manual input)..."
+echo "   If you want to auto-discard all .pacnew files (keep current configs unchanged),"
+echo "   uncomment the 'yes r | sudo -E pacdiff' line below."
+# Uncomment to auto-answer "r" (remove .pacnew, keep current file) for every prompt:
+# yes r | sudo -E pacdiff
+sudo -E pacdiff
+echo "   ✔ pacdiff session completed."
+
+echo "=== System maintenance finished: $(date '+%Y-%m-%d %H:%M:%S') ==="
