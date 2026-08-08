@@ -15,7 +15,7 @@
 #*   ${0}
 #**
 tmpfile="/tmp/temp_$(date +%F_%H_%M_%S).md"
-printf '<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->\n\n\n' > "$tmpfile"
+printf '<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->\n\n\n' > "${tmpfile}"
 
 kitty \
   --class text-input \
@@ -23,4 +23,4 @@ kitty \
   --override initial_window_width=105c \
   --override initial_window_height=40c \
   --hold \
-    tmux new-session "${EDITOR}" -c "3" "$tmpfile"
+    tmux new-session "${EDITOR}" -c "3" "${tmpfile}"

@@ -7,7 +7,7 @@
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #
-# Imitate the “Show Desktop” behavior in Sway:
+# Imitate the "Show Desktop" behavior in Sway:
 # Switch to DESKTOP_WORKSPACE if you’re on something else,
 # otherwise toggle back to the previous workspace.
 #
@@ -15,10 +15,10 @@
 #   sway-show-desktop DESKTOP_WORKSPACE
 #
 
-desktop_wspace="$1"
+desktop_wspace="${1}"
 
-if [[ -z "$desktop_wspace" ]]; then
-  echo "Usage: $0 DESKTOP_WORKSPACE" >&2
+if [[ -z "${desktop_wspace}" ]]; then
+  echo "Usage: ${0} DESKTOP_WORKSPACE" >&2
   exit 1
 fi
 
@@ -26,13 +26,13 @@ fi
 current_wspace=$(swaymsg -t get_workspaces \
   | jq -r '.[] | select(.focused).name')
 
-if [[ "$current_wspace" == "$desktop_wspace" ]]; then
-  # already on “desktop” → go back and forth
+if [[ "${current_wspace}" == "${desktop_wspace}" ]]; then
+  # already on "desktop" → go back and forth
   swaymsg workspace back_and_forth
 else
-  # not on “desktop” → switch there
-  swaymsg workspace $wspace10 output DP-1
+  # not on "desktop" → switch there
+  swaymsg workspace "${desktop_wspace}" output DP-1
 fi
 
-# remember which workspace is your “desktop” (optional)
-echo "$desktop_wspace" > /tmp/sway-show-desktop
+# remember which workspace is your "desktop" (optional)
+echo "${desktop_wspace}" > /tmp/sway-show-desktop

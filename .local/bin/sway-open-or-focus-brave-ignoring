@@ -16,29 +16,29 @@
 #
 
 # Ensure at least one ignore pattern is provided
-if [[ $# -lt 1 ]]; then
-  echo "Usage: $0 WINDOW_NAME_TO_IGNORE [WINDOW_NAME_TO_IGNORE ...]" >&2
+if [[ ${#} -lt 1 ]]; then
+  echo "Usage: ${0} WINDOW_NAME_TO_IGNORE [WINDOW_NAME_TO_IGNORE ...]" >&2
   exit 1
 fi
 
 # Build a single regex from all ignore patterns
-ignore_regex=$(printf "|%s" "$@")
+ignore_regex=$(printf "|%s" "${@}")
 ignore_regex=${ignore_regex:1}  # strip leading '|'
 
 # Find the first Brave window whose title does NOT match any ignore pattern
 candidate=$(swaymsg -t get_tree | \
-  jq -r --arg regex "$ignore_regex" '
+  jq -r --arg regex "${ignore_regex}" '
     .. | objects
     | select(.app_id=="brave-browser" or .window_properties.class=="Brave-browser")
     | .name as $title
     | if ($title | test($regex)) then empty else $title end
   ' | head -n1)
 
-echo "cand: $candidate"
+echo "cand: ${candidate}"
 
-if [[ -n "$candidate" ]]; then
+if [[ -n "${candidate}" ]]; then
   # Focus the found window
-  swaymsg "[title=\"$candidate\"]" focus
+  swaymsg "[title=\"${candidate}\"]" focus
 else
   # No matching window → launch Brave
   #brave \

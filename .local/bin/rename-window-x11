@@ -15,4 +15,4 @@
 #**
 win=$(xdotool getactivewindow)
 name=$(zenity --entry --title="Rename Window" --text="Window name:")
-xdotool set_window --name "$name" "$win"
+xdotool set_window --name "${name}" "${win}"

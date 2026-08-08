@@ -33,7 +33,7 @@
 #
 #   svn commit --editor-cmd "${0} 'emacs -nw'"
 #**
-if [[ $# -gt 1 ]]; then
+if [[ ${#} -gt 1 ]]; then
   OUR_EDITOR="${1}"
   shift
 else

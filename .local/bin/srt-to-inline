@@ -35,8 +35,8 @@ basename = os.path.basename(__file__)
 
 
 #** USAGE:
-#**   $0 file.srt [file2.srt ...]
-#**   $0 <<< "$(cat file.srt)"
+#**   ${0} file.srt [file2.srt ...]
+#**   ${0} <<< "$(cat file.srt)"
 #**
 #** OPTIONS:
 #**  --help                   display this help and exit
