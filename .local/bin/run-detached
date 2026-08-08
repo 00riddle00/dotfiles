@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-08 02:10:07 CEST
+# Path:   ~/.local/bin/run-detached
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Run a given command detached from the terminal, so it keeps running after
+# the launching shell or terminal closes.
+#**
+
+#* USAGE:
+#*   ${0} COMMAND [ARGS...]
+#**
+
+# Exit if no command is given
+if [[ ${#} -eq 0 ]]; then
+  echo "Usage: $(basename "${0}") <command> [args...]"
+  exit 1
+fi
+
+# Run the command detached from terminal
+nohup "${@}" > /dev/null 2>&1 &
+disown
