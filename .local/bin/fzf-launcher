@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 18:27:14 CEST
+# Date: 2026-08-08 18:28:56 CEST
 # Path: ~/.local/bin/fzf-launcher
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -29,8 +29,8 @@
 #**
 shopt -s nullglob globstar
 set -o pipefail
-if ! { exec 0>&3; } 1>/dev/null 2>&1; then
-  exec 3>/dev/null # If file descriptor 3 is unused in parent shell, output to /dev/null
+if ! { exec 0>&3; } 1> /dev/null 2>&1; then
+  exec 3> /dev/null # If file descriptor 3 is unused in parent shell, output to /dev/null
 fi
 # shellcheck disable=SC2154
 trap 's=${?}; echo "${0}: Error on line "${LINENO}": ${BASH_COMMAND}"; exit ${s}' ERR
@@ -48,7 +48,7 @@ if [[ "${PROVIDERS_FILE#/}" == "${PROVIDERS_FILE}" ]]; then
   PROVIDERS_FILE="${CONFIG_DIR}/${PROVIDERS_FILE}"
 fi
 if [[ ! -v PREVIEW_WINDOW ]]; then
-    PREVIEW_WINDOW=up:2:noborder
+  PREVIEW_WINDOW=up:2:noborder
 fi
 
 # Provider config entries are separated by the field separator \034 and have the following structure:
@@ -85,12 +85,12 @@ PROVIDERS['user']="exit${DEL}exit${DEL}{1}" # Fallback provider that simply exec
 
 if [[ -n "${HIST_FILE}" ]]; then
   mkdir -p "${HIST_FILE%/*}" && touch "${HIST_FILE}"
-  readarray HIST_LINES <"${HIST_FILE}"
+  readarray HIST_LINES < "${HIST_FILE}"
 fi
 
 function describe() {
   # shellcheck disable=SC2086
-  readarray -d ${DEL} -t PROVIDER_ARGS <<<${PROVIDERS[${1}]}
+  readarray -d ${DEL} -t PROVIDER_ARGS <<< ${PROVIDERS[${1}]}
   # shellcheck disable=SC2086
   [ -n "${PROVIDER_ARGS[1]}" ] && eval "${PROVIDER_ARGS[1]//\{1\}/${2}}"
 }
@@ -100,7 +100,7 @@ function describe-desktop() {
   echo "${description:-No description}"
 }
 function describe-command() {
-  readarray arr < <(whatis -l "${1}" 2>/dev/null)
+  readarray arr < <(whatis -l "${1}" 2> /dev/null)
   description="${arr[0]}"
   description="${description#* - }"
   echo -e "\033[33m${1}\033[0m"
@@ -109,20 +109,20 @@ function describe-command() {
 
 function provide() {
   # shellcheck disable=SC2086
-  readarray -d ${DEL} -t PROVIDER_ARGS <<<${PROVIDERS[${1}]}
+  readarray -d ${DEL} -t PROVIDER_ARGS <<< ${PROVIDERS[${1}]}
   eval "${PROVIDER_ARGS[0]}"
 }
 function list-commands() {
-  IFS=: read -ra path <<<"${PATH}"
+  IFS=: read -ra path <<< "${PATH}"
   for dir in "${path[@]}"; do
-    printf '%s\n' "${dir}/"* |
-      awk -F / -v pre="${GLYPH_COMMAND}" '{print $NF "\034command\034\033[31m" pre "\033[0m" $NF;}'
+    printf '%s\n' "${dir}/"* \
+      | awk -F / -v pre="${GLYPH_COMMAND}" '{print $NF "\034command\034\033[31m" pre "\033[0m" $NF;}'
   done | sort -u
 }
 function list-entries() {
   # Get locations of desktop application folders according to spec
   # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
-  IFS=':' read -ra DIRS <<<"${XDG_DATA_HOME-${HOME}/.local/share}:${XDG_DATA_DIRS-/usr/local/share:/usr/share}"
+  IFS=':' read -ra DIRS <<< "${XDG_DATA_HOME-${HOME}/.local/share}:${XDG_DATA_DIRS-/usr/local/share:/usr/share}"
   for i in "${!DIRS[@]}"; do
     if [[ ! -d "${DIRS[i]}" ]]; then
       unset -v 'DIRS[${i}]'
@@ -183,7 +183,7 @@ function entries() {
                       print FILENAME "\034desktop\034\033[33m" pre name "\033[0m (" actions[i, "name"] ")\034" actions[i, "key"]
       }
     }' \
-    ${@} </dev/null
+    ${@} < /dev/null
   # the empty stdin is needed in case no *.desktop files
 }
 function run-desktop() {
@@ -232,34 +232,34 @@ function generate-command() {
 }
 
 function shouldAutostart() {
-    local condition
-    condition="$(cat "${1}" | rg "AutostartCondition" | cut -d'=' -f2)"
-    local filename="${XDG_CONFIG_HOME-${HOME}/.config}/${condition#* }"
-    case ${condition} in
-        if-exists*)
-            [[ -e ${filename} ]]
-            ;;
-        unless-exists*)
-            [[ ! -e ${filename} ]]
-            ;;
-        *)
-            return 0
-            ;;
-    esac
+  local condition
+  condition="$(cat "${1}" | rg "AutostartCondition" | cut -d'=' -f2)"
+  local filename="${XDG_CONFIG_HOME-${HOME}/.config}/${condition#* }"
+  case ${condition} in
+    if-exists*)
+      [[ -e ${filename} ]]
+      ;;
+    unless-exists*)
+      [[ ! -e ${filename} ]]
+      ;;
+    *)
+      return 0
+      ;;
+  esac
 }
 
 function autostart() {
   for application in $(list-autostart); do
-      if shouldAutostart "${application}" ; then
-          (exec setsid /bin/sh -c "$(run-desktop "${application}")" &>/dev/null &)
-      fi
+    if shouldAutostart "${application}"; then
+      (exec setsid /bin/sh -c "$(run-desktop "${application}")" &> /dev/null &)
+    fi
   done
 }
 
 function list-autostart() {
   # Get locations of desktop application folders according to spec
   # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
-  IFS=':' read -ra DIRS <<<"${XDG_CONFIG_HOME-${HOME}/.config}:${XDG_CONFIG_DIRS-/etc/xdg}"
+  IFS=':' read -ra DIRS <<< "${XDG_CONFIG_HOME-${HOME}/.config}:${XDG_CONFIG_DIRS-/etc/xdg}"
   for i in "${!DIRS[@]}"; do
     if [[ ! -d "${DIRS[i]}" ]]; then
       unset -v 'DIRS[${i}]'
@@ -297,24 +297,24 @@ function list-autostart() {
           print FILENAME;
       }
     }' \
-    ${DIRS[@]} </dev/null
+    ${DIRS[@]} < /dev/null
 }
 
 purge() {
- # shellcheck disable=SC2188
- > "${HIST_FILE}"
- declare -A PURGE_CMDS
- for PROVIDER_NAME in "${!PROVIDERS[@]}"; do
-   readarray -td ${DEL} PROVIDER_ARGS <<<"${PROVIDERS[${PROVIDER_NAME}]}"
-   PURGE_CMD=${PROVIDER_ARGS[3]}
-   [ -z "${PURGE_CMD}" ] && PURGE_CMD='test -f "{1}" || exit 43'
-   PURGE_CMDS[${PROVIDER_NAME}]="${PURGE_CMD%$'\n'}"
+  # shellcheck disable=SC2188
+  > "${HIST_FILE}"
+  declare -A PURGE_CMDS
+  for PROVIDER_NAME in "${!PROVIDERS[@]}"; do
+    readarray -td ${DEL} PROVIDER_ARGS <<< "${PROVIDERS[${PROVIDER_NAME}]}"
+    PURGE_CMD=${PROVIDER_ARGS[3]}
+    [ -z "${PURGE_CMD}" ] && PURGE_CMD='test -f "{1}" || exit 43'
+    PURGE_CMDS[${PROVIDER_NAME}]="${PURGE_CMD%$'\n'}"
   done
   for HIST_LINE in "${HIST_LINES[@]#*' '}"; do
-    readarray -td $'\034' HIST_ENTRY <<<"${HIST_LINE}"
+    readarray -td $'\034' HIST_ENTRY <<< "${HIST_LINE}"
     ENTRY=${HIST_ENTRY[1]}
-    readarray -td ' ' FILTER <<<"${PURGE_CMDS[${ENTRY}]//\{1\}/${HIST_ENTRY[0]}}"
-    ("${FILTER[@]}" 1>/dev/null) # Run filter command discarding output. We only want the exit status
+    readarray -td ' ' FILTER <<< "${PURGE_CMDS[${ENTRY}]//\{1\}/${HIST_ENTRY[0]}}"
+    ("${FILTER[@]}" 1> /dev/null) # Run filter command discarding output. We only want the exit status
     if [[ ${?} -ne 43 ]]; then
       echo "1 ${HIST_LINE%$'\n'}" >> "${HIST_FILE}"
     fi
@@ -322,10 +322,10 @@ purge() {
 }
 
 case "${1}" in
-describe | describe-desktop | describe-command | entries | list-entries | list-commands | list-autostart | generate-command | autostart | run-desktop | provide | purge)
-  "${@}"
-  exit
-  ;;
+  describe | describe-desktop | describe-command | entries | list-entries | list-commands | list-autostart | generate-command | autostart | run-desktop | provide | purge)
+    "${@}"
+    exit
+    ;;
 esac
 echo "Starting launcher instance with the following providers:" "${!PROVIDERS[@]}" >&3
 
@@ -334,14 +334,14 @@ mkfifo "${FZFPIPE}"
 trap 'rm "${FZFPIPE}"' EXIT INT
 
 # Append Launcher History, removing usage count
-(printf '%s' "${HIST_LINES[@]#* }" >>"${FZFPIPE}") &
+(printf '%s' "${HIST_LINES[@]#* }" >> "${FZFPIPE}") &
 
 # Iterate over providers and run their list-command
 for PROVIDER_NAME in "${!PROVIDERS[@]}"; do
-  (bash -c "${0} provide ${PROVIDER_NAME}" >>"${FZFPIPE}") &
+  (bash -c "${0} provide ${PROVIDER_NAME}" >> "${FZFPIPE}") &
 done
 
-readarray -t COMMAND_STR <<<"$(
+readarray -t COMMAND_STR <<< "$(
   ${FZF_COMMAND} --ansi +s -x -d '\034' --nth ..3 --with-nth 3 \
     --print-query \
     --preview "${0} describe {2} {1}" \
@@ -350,7 +350,7 @@ readarray -t COMMAND_STR <<<"$(
     --prompt="${GLYPH_PROMPT-# }" \
     --header='' --no-info --margin='1,2' \
     --color='16,gutter:-1' \
-    <"${FZFPIPE}"
+    < "${FZFPIPE}"
 )" || exit 1
 # Get the last line of the fzf output. If there were no matches, it contains the query which we'll treat as a custom command
 # If there were matches, it contains the selected item
@@ -360,8 +360,8 @@ COMMAND_STR=$(printf '%s\n' "${COMMAND_STR[@]: -1}")
 # We check for the presence of field separator character to determine if we're dealing with a custom command
 # shellcheck disable=SC2128,SC2178
 if [[ ${COMMAND_STR} != *$'\034'* ]]; then
-    COMMAND_STR="${COMMAND_STR}"$'\034user\034'"${COMMAND_STR}"$'\034'
-    SKIP_HIST=1 # I chose not to include custom commands in the history. If this is a bad idea, open an issue please
+  COMMAND_STR="${COMMAND_STR}"$'\034user\034'"${COMMAND_STR}"$'\034'
+  SKIP_HIST=1 # I chose not to include custom commands in the history. If this is a bad idea, open an issue please
 fi
 
 # shellcheck disable=SC2128
@@ -381,13 +381,13 @@ if [[ -n "${HIST_FILE}" && ! "${SKIP_HIST}" ]]; then
     HIST_LINES+=("1 ${COMMAND_STR}"$'\n')
   fi
 
-  printf '%s' "${HIST_LINES[@]}" | sort -nr >"${HIST_FILE}"
+  printf '%s' "${HIST_LINES[@]}" | sort -nr > "${HIST_FILE}"
 fi
 
 # shellcheck disable=SC2086
-readarray -d $'\034' -t PARAMS <<<${COMMAND_STR}
+readarray -d $'\034' -t PARAMS <<< ${COMMAND_STR}
 # shellcheck disable=SC2086
-readarray -d ${DEL} -t PROVIDER_ARGS <<<${PROVIDERS[${PARAMS[1]}]}
+readarray -d ${DEL} -t PROVIDER_ARGS <<< ${PROVIDERS[${PARAMS[1]}]}
 # Substitute {1}, {2} etc with the correct values
 COMMAND=${PROVIDER_ARGS[2]//\{1\}/${PARAMS[0]}}
 COMMAND=${COMMAND//\{2\}/${PARAMS[3]}}
@@ -395,7 +395,7 @@ COMMAND=${COMMAND%%[[:space:]]}
 
 if [ -t 1 ]; then
   echo "Launching command: ${COMMAND}" >&3
-  setsid /bin/sh -c "${COMMAND}" >&/dev/null </dev/null &
+  setsid /bin/sh -c "${COMMAND}" >&/dev/null < /dev/null &
   sleep 0.01
 else
   echo "${COMMAND}"
