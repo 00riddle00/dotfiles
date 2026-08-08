@@ -2,7 +2,7 @@
 # vim: set ft=awk tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-10-02 20:40:35 EEST
+# Date: 2026-08-08 23:12:17 CEST
 # Path: ~/.local/bin/biblisting
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ END {
     print STRING[j]
   }
 
-  sub("\.[^\./]*$", "", FILENAME)  # remove extension from the file name
+  sub("\\.[^\\./]*$", "", FILENAME)  # remove extension from the file name
   # printf("\n\n\\nocite{TitlesOn}\n")
   printf("\\bibliographystyle{" STYLE "}\n")
   printf("\\bibliography{" FILENAME "}\n\n")
