@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:22:09 EEST
+# Date:   2026-08-08 23:09:28 CEST
 # Path:   ~/.local/bin/i3blocks/weather
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -21,6 +21,18 @@
 #**
 title="i3blocks_weather"
 
+getforecast() {
+  ping -q -c 1 8.8.8.8 >/dev/null || exit 1
+  curl -s "wttr.in" > "${XDG_DATA_HOME}/weatherreport" || exit 1;
+}
+
+showweather() {
+  sed '4q;d' "${XDG_DATA_HOME}/weatherreport" |
+  rg -o "m([-+])*[0-9]+" |
+  sed -e 1b -e '$!d' | tr '\n|m' ' ' |
+  awk '{print $1 "°" ".." $2 "°"}'
+}
+
 # The ${BLOCK_BUTTON} value is set by i3blocks, its values correspond to these
 # mouse actions:
 #   1 - left click
@@ -35,17 +47,5 @@ case "${BLOCK_BUTTON}" in
     pid=$(pgrep -f "urxvt -name ${title}");
     kill -9 "${pid}" ;;
 esac
-
-getforecast() {
-  ping -q -c 1 8.8.8.8 >/dev/null || exit 1
-  curl -s "wttr.in" > "${XDG_DATA_HOME}/weatherreport" || exit 1;
-}
-
-showweather() {
-  sed '4q;d' "${XDG_DATA_HOME}/weatherreport" |
-  rg -o "m([-+])*[0-9]+" |
-  sed -e 1b -e '$!d' | tr '\n|m' ' ' |
-  awk '{print $1 "°" ".." $2 "°"}'
-}
 
 getforecast && showweather
