@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:45:06 CEST
+# Date:   2026-08-08 23:34:35 CEST
 # Path:   ~/.local/bin/qutebrowser-wallpaper
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 #* USAGE:
 #*   ${0}
 #**
-image=$( \
+image=$(
   fd -i -e jpg . "${XDG_PICTURES_DIR}/Wallpapers" \
     | shuf -n 1
 )

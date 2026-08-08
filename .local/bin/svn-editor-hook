@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-10-07 13:06:46 EEST
+# Date: 2026-08-08 23:35:19 CEST
 # Path: ~/.local/bin/svn-editor-hook
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -58,15 +58,15 @@ else
 fi
 
 DIR="$(echo "${BRANCH}" \
-| sed "s|^${REPO}||" \
-| sed "s|^/||" \
-| sed 's/%20/ /g')"
+  | sed "s|^${REPO}||" \
+  | sed "s|^/||" \
+  | sed 's/%20/ /g')"
 
 [[ -z "${DIR}" && -n "${REPO}" ]] && DIR="$(basename "${REPO}")"
 
 # Check if the URI::Encode module exists
 if perl -MURI::Encode -e 'exit 0' 2> /dev/null; then
-  DECODED_DIR=$( \
+  DECODED_DIR=$(
     perl -MURI::Encode -le "print URI::Encode::uri_decode(\"${DIR}\")"
   )
 else
@@ -76,7 +76,7 @@ fi
 [[ -n "${DECODED_DIR}" ]] && DIR="${DECODED_DIR}"
 
 case "${SVN_COMMIT_TMP}" in
-  svn-commit.* )
+  svn-commit.*)
     (
       # Check if we are working under 'sudo', if yes -- let's add the "real"
       # user name to the log:
@@ -87,12 +87,13 @@ case "${SVN_COMMIT_TMP}" in
       fi
       tail -n +2 "${SVN_COMMIT_TMP}"
     ) \
-    | if type sponge > /dev/null 2>&1; then
-      sponge "${SVN_COMMIT_TMP}"
-    else
-      cat > "${SVN_COMMIT_TMP}.${$}.aux"
-      mv "${SVN_COMMIT_TMP}.${$}.aux" "${SVN_COMMIT_TMP}"
-    fi
+      | if type sponge > /dev/null 2>&1; then
+        sponge "${SVN_COMMIT_TMP}"
+      else
+        cat > "${SVN_COMMIT_TMP}.${$}.aux"
+        mv "${SVN_COMMIT_TMP}.${$}.aux" "${SVN_COMMIT_TMP}"
+      fi
+    ;;
 esac
 
 eval exec "${OUR_EDITOR}" "${SVN_COMMIT_TMP}"

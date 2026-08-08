@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:22:12 EEST
+# Date:   2026-08-08 23:34:26 CEST
 # Path:   ~/.local/bin/merge-teams-videos
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -32,11 +32,11 @@ iso_date="${_date:0:4}-${_date:4:2}-${_date:6:2}"
 merged_file="${PWD}/999_Python_${iso_date}_NAME.mp4"
 
 ffmpeg \
-    -loglevel info \
-    -f concat \
-    -safe 0 \
-    -i <(
-        echo "file '${file1}'"
-        echo "file '${file2}'"
-    ) \
-    -c copy "${merged_file}"
+  -loglevel info \
+  -f concat \
+  -safe 0 \
+  -i <(
+    echo "file '${file1}'"
+    echo "file '${file2}'"
+  ) \
+  -c copy "${merged_file}"

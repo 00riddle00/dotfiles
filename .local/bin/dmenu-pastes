@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:48:48 CEST
+# Date:   2026-08-08 23:34:10 CEST
 # Path:   ~/.local/bin/dmenu-pastes
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ set -euo pipefail
 PASTES_FILE="${DOTSHARE}/misc/pastes.tsv"
 TEMP_FILE="$(mktemp)"
 
-xclip -h &>/dev/null || exit 1
+xclip -h &> /dev/null || exit 1
 touch "${PASTES_FILE}"
 
 # Show only the text column, sorted by frequency descending

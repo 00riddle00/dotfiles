@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-06-17 13:22:31 EEST
+# Date: 2026-08-08 23:35:06 CEST
 # Path: ~/.local/bin/svn-del-missing
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ svn status \
   | sed 's/^\! *//' \
   | awk '{printf "%s@\0", $0}' \
   | xargs -0 --no-run-if-empty svn delete --force \
-      ${1+"${@}"}
+    ${1+"${@}"}
 
 SVN_VERSION=$(svn --version | head -1 | awk '{print $3}')
 
@@ -37,12 +37,12 @@ if [[ -n "${SVN_VERSION}" ]]; then
   SVN_MINOR=$(echo "${SVN_VERSION}" | awk -F. '{print $2}')
 
   if [[ "${SVN_MAJOR}" -gt 1 ||
-          ("${SVN_MAJOR}" -eq 1 && "${SVN_MINOR}" -ge 9) ]]; then
+    ("${SVN_MAJOR}" -eq 1 && "${SVN_MINOR}" -ge 9) ]]; then
     svn status \
       | rg '^~' \
       | sed 's/^~ *//' \
       | awk '{printf "%s@\0", $0}' \
       | xargs -0 --no-run-if-empty svn delete --keep-local \
-          ${1+"${@}"}
+        ${1+"${@}"}
   fi
 fi

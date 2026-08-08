@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 12:23:49 EEST
+# Date:   2026-08-08 23:34:14 CEST
 # Path:   ~/.local/bin/dmenu-surfraw
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,7 +16,7 @@
 #*   ${0}
 #**
 while [[ -z "${engine}" ]]; do
-  engine="$( \
+  engine="$(
     sr -elvi \
       | awk '{if (NR!=1) { print $1 }}' \
       | dmenu -i -p "Search engine?"

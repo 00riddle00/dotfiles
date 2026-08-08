@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:22:06 EEST
+# Date:   2026-08-08 23:30:48 CEST
 # Path:   ~/.local/bin/i3blocks/gpu-temp
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -21,12 +21,12 @@
 lspci_output=$(lspci | rg -i "VGA|3D|Display")
 
 if rg -iq "nvidia" <<< "${lspci_output}"; then
-  temp=$( \
+  temp=$(
     nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader \
       | tr -d ' '
   )
 elif rg -iq "amd|radeon" <<< "${lspci_output}"; then
-  temp=$( \
+  temp=$(
     sensors \
       | rg -i 'edge|junction' \
       | awk '{print $2}' \
@@ -34,7 +34,7 @@ elif rg -iq "amd|radeon" <<< "${lspci_output}"; then
       | head -n1
   )
 elif rg -iq "intel" <<< "${lspci_output}"; then
-  temp=$( \
+  temp=$(
     sensors \
       | rg -i 'Package id 0' \
       | awk '{print $4}' \

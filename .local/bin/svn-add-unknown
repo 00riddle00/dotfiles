@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-06-17 13:22:23 EEST
+# Date:   2026-08-08 23:35:04 CEST
 # Path: ~/.local/bin/svn-add-unknown
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -25,4 +25,4 @@ svn status \
   | sed 's/^\? *//' \
   | awk '{printf "%s@\0", $0}' \
   | xargs -0 --no-run-if-empty \
-      svn add ${1+"${@}"}
+    svn add ${1+"${@}"}

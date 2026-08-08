@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:35:55 CEST
+# Date:   2026-08-08 23:34:31 CEST
 # Path:   ~/.local/bin/openbox-reenable-F11-keybinding
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -21,6 +21,6 @@ nvim -e \
   -c 'g/<keybind key="F11">/.-1d' \
   -c 'g/<keybind key="F11">/.+5d' \
   -c 'wq' \
-"${XDG_CONFIG_HOME}/openbox/rc.xml"
+  "${XDG_CONFIG_HOME}/openbox/rc.xml"
 
 openbox --reconfigure

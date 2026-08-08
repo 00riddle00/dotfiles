@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 12:21:39 EEST
+# Date:   2026-08-08 23:34:07 CEST
 # Path:   ~/.local/bin/dmenu-kill
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,14 +13,14 @@
 #* USAGE:
 #*   ${0}
 #**
-pid="$( \
+pid="$(
   ps -a -u "${USER}" -o pid,comm \
     | dmenu -i -l 20 -p "Type to search and select process to kill" \
-    | awk '{print $1" "$4}' \
-)";
+    | awk '{print $1" "$4}'
+)"
 
 if [[ -n "${pid}" ]]; then
-  choice="$( \
+  choice="$(
     echo -e "Yes\nNo" \
       | dmenu -i -l 20 -p "${pid} will be killed, are you sure?"
   )"

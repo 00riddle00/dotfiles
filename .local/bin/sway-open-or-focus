@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 22:39:13 CEST
+# Date:   2026-08-08 23:35:24 CEST
 # Path:   ~/.local/bin/sway-open-or-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -30,20 +30,20 @@ if [[ -z "${prog}" ]]; then
 fi
 
 # Try to focus a native Wayland window first:
-if swaymsg "[app_id=\"${ident}\"] focus" 2>/dev/null; then
+if swaymsg "[app_id=\"${ident}\"] focus" 2> /dev/null; then
   exit 0
 fi
 
 # Fallback to Xwayland WM_CLASS:
-if swaymsg "[class=\"${ident}\"] focus" 2>/dev/null; then
+if swaymsg "[class=\"${ident}\"] focus" 2> /dev/null; then
   exit 0
 fi
 
 # 3) Fallback to instance
-if swaymsg "[instance=\"${ident}\"] focus" 2>/dev/null; then
+if swaymsg "[instance=\"${ident}\"] focus" 2> /dev/null; then
   exit 0
 fi
 
 # Nothing matched – launch the program:
-setsid "${prog}" >/dev/null 2>&1 &
+setsid "${prog}" > /dev/null 2>&1 &
 exit 0

@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:48:32 CEST
+# Date:   2026-08-08 23:34:40 CEST
 # Path:   ~/.local/bin/set-keyboard-layout
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 #* USAGE:
 #*   ${0}
 #**
-if type setxkbmap >/dev/null 2>&1; then
+if type setxkbmap > /dev/null 2>&1; then
   setxkbmap \
     -layout us,lt \
     -option grp:alt_shift_toggle

@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 22:33:13 EEST
+# Date:   2026-08-08 23:30:57 CEST
 # Path:   ~/.local/bin/i3blocks/vpn
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -24,9 +24,10 @@
 #   2 - middle click
 #   3 - right click
 case ${BLOCK_BUTTON} in
-  1|2|3)
+  1 | 2 | 3)
     vpn_info=$(curl -s ipinfo.io | jq -r '.ip, .country' | tr '\n' ' ')
-    pgrep -x dunst >/dev/null && notify-send "${vpn_info}" > /dev/null 2>&1
+    pgrep -x dunst > /dev/null && notify-send "${vpn_info}" > /dev/null 2>&1
+    ;;
 esac
 
 echo "vpn"

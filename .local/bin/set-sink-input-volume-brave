@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:22:20 EEST
+# Date:   2026-08-08 23:34:52 CEST
 # Path:   ~/.local/bin/set-sink-input-volume-brave
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -14,7 +14,7 @@
 #* USAGE:
 #*   ${0}
 #**
-brave_sink_id=$( \
+brave_sink_id=$(
   pactl list sink-inputs \
     | tr '\n' '\r' \
     | perl -pe '

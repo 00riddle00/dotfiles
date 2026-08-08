@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 11:19:34 EEST
+# Date:   2026-08-08 23:33:50 CEST
 # Path:   ~/.local/bin/dmenu-colors
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,9 +16,9 @@
 #**
 
 # xclip needs to be installed to even show the menu.
-xclip -h 2>/dev/null || exit 1
+xclip -h 2> /dev/null || exit 1
 
-color_code="$( \
+color_code="$(
   expand -t 8 "${DOTSHARE}/misc/colors.tsv" \
     | dmenu -i -l 20 \
     | awk '{print $2}' \

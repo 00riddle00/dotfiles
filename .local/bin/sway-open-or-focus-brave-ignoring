@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 22:01:56 CEST
+# Date:   2026-08-08 23:35:29 CEST
 # Path:   ~/.local/bin/sway-open-or-focus-brave-ignoring
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -23,11 +23,11 @@ fi
 
 # Build a single regex from all ignore patterns
 ignore_regex=$(printf "|%s" "${@}")
-ignore_regex=${ignore_regex:1}  # strip leading '|'
+ignore_regex=${ignore_regex:1} # strip leading '|'
 
 # Find the first Brave window whose title does NOT match any ignore pattern
-candidate=$(swaymsg -t get_tree | \
-  jq -r --arg regex "${ignore_regex}" '
+candidate=$(swaymsg -t get_tree \
+  | jq -r --arg regex "${ignore_regex}" '
     .. | objects
     | select(.app_id=="brave-browser" or .window_properties.class=="Brave-browser")
     | .name as $title
@@ -42,10 +42,10 @@ if [[ -n "${candidate}" ]]; then
 else
   # No matching window → launch Brave
   #brave \
-    #--enable-features=UseOzonePlatform \
-    #--ozone-platform=wayland \
-    #--enable-features=WebRTCPipeWireCapturer \
-    #--enable-features=WaylandWindowDecorations \
-    #--disable-features=WaylandFractionalScaleV1 &
+  #--enable-features=UseOzonePlatform \
+  #--ozone-platform=wayland \
+  #--enable-features=WebRTCPipeWireCapturer \
+  #--enable-features=WaylandWindowDecorations \
+  #--disable-features=WaylandFractionalScaleV1 &
   brave &
 fi

@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-04 23:02:37 EEST
+# Date: 2026-08-08 23:35:50 CEST
 # Path: ~/.local/bin/tint2-volume-icon
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -34,7 +34,7 @@
 #*   However, the main purpose of the script is to be used as a command in the
 #*   tint2 configuration file.
 #**
-status="$( \
+status="$(
   amixer sget Master \
     | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {print $4}'
 )"
@@ -43,7 +43,7 @@ if [[ "$status" = "on" ]]; then
   # Search for the lines containing 'Right:' or 'Mono:', when more than 1 field
   # exists we strip the trailing '%' and round it up with printf "%0.0f" just
   # in case.
-  vol="$( \
+  vol="$(
     amixer sget Master \
       | awk -F'[][]' '
           /Right:|Mono:/ && NF > 1 {sub(/%/, ""); printf "%0.0f\n", $2}

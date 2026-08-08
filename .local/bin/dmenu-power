@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 13:24:20 EEST
+# Date:   2026-08-08 23:34:12 CEST
 # Path:   ~/.local/bin/dmenu-power
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -15,7 +15,7 @@
 #**
 [[ -z "${DISPLAY}" ]] && exit 1
 
-choice="$( \
+choice="$(
   echo -e "0:  Logout\n1:  Reboot\n2:  Shutdown" \
     | dmenu -i \
     | cut -d ':' -f 1

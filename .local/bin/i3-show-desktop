@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 11:54:15 EEST
+# Date:   2026-08-08 23:34:22 CEST
 # Path:   ~/.local/bin/i3-show-desktop
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -17,10 +17,10 @@
 #**
 desktop_wspace="${1}"
 
-current_wspace="$( \
+current_wspace="$(
   i3-msg -t get_workspaces \
-  | jq '.[] | select(.focused==true).name' \
-  | cut -d"\"" -f2
+    | jq '.[] | select(.focused==true).name' \
+    | cut -d"\"" -f2
 )"
 
 {

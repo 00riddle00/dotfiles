@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 20:03:48 EEST
+# Date:   2026-08-08 23:34:56 CEST
 # Path:   ~/.local/bin/set-up-monitors-tulkun
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,12 +18,12 @@
 #**
 
 ## Check if X is running.
-if xset q &>/dev/null; then
+if xset q &> /dev/null; then
   xrandr \
     --output "${HDMI1_SCREEN}" \
-      --auto --rotate right \
+    --auto --rotate right \
     --output "${DP1_SCREEN}" \
-      --primary --auto --rotate normal --right-of "${HDMI1_SCREEN}" \
+    --primary --auto --rotate normal --right-of "${HDMI1_SCREEN}" \
     --output "${DP2_SCREEN}" \
-      --auto --rotate left --right-of "${DP1_SCREEN}"
+    --auto --rotate left --right-of "${DP1_SCREEN}"
 fi

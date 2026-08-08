@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-06-17 13:22:19 EEST
+# Date:   2026-08-08 23:34:37 CEST
 # Path:   ~/.local/bin/rofi-open
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ if [[ "${#}" -gt 0 ]]; then
   if ! wmctrl -lx | rg -i -q -- "${program}"; then
     coproc "${program}" > /dev/null 2>&1
     exec 1>&-
-    exit;
+    exit
   else
     # Program is running, so focus on it.
     wmctrl -x -R "${program}"

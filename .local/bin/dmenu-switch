@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-09-28 12:23:51 EEST
+# Date: 2026-08-08 23:34:16 CEST
 # Path: ~/.local/bin/dmenu-switch
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 #* USAGE:
 #*   ${0}
 #**
-windows="$( \
+windows="$(
   wmctrl -lx \
     | tr -s '[:blank:]' \
     | cut -d ' ' -f 3-3,5- \
@@ -28,12 +28,12 @@ windows="$( \
 )"
 
 # Add spaces to align the WM_NAMEs of the windows.
-max="$( \
+max="$(
   echo "${windows}" \
     | awk '{cur=length($1); max=(cur>max?cur:max)} END{print max}'
 )"
 
-windows="$( \
+windows="$(
   echo "${windows}" \
     | awk -v max="$max" '{
       cur=length($1); printf $1; \
@@ -42,7 +42,7 @@ windows="$( \
     }'
 )"
 
-target="$( \
+target="$(
   echo "${windows}" \
     | dmenu -i -l 10 -p "switch:" \
     | tr -s '[:blank:]' \

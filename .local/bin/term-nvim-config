@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 23:59:04 CEST
+# Date:   2026-08-08 23:35:40 CEST
 # Path:   ~/.local/bin/term-nvim-config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -19,5 +19,5 @@ kitty \
   --override initial_window_width=105c \
   --override initial_window_height=40c \
   --hold \
-    tmux new-session "${EDITOR}" -c \
-      "e ${XDG_CONFIG_HOME}/nvim | :cd %:p:h"
+  tmux new-session "${EDITOR}" -c \
+  "e ${XDG_CONFIG_HOME}/nvim | :cd %:p:h"

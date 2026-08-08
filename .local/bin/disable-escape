@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:47:34 CEST
+# Date:   2026-08-08 23:33:48 CEST
 # Path:   ~/.local/bin/disable-escape
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ if [ -f "${HWDB_FILE}" ]; then
 fi
 
 echo "Writing new hwdb rule to disable Escape…"
-sudo tee "${HWDB_FILE}" > /dev/null <<'EOF'
+sudo tee "${HWDB_FILE}" > /dev/null << 'EOF'
 # Disable Escape globally (HID usage 0x29)
 
 evdev:atkbd:dmi:*:

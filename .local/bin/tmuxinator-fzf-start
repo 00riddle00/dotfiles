@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-05-04 23:06:16 EEST
+# Date: 2026-08-08 23:35:53 CEST
 # Path: ~/.local/bin/tmuxinator-fzf-start
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -45,7 +45,7 @@
 #**
 
 # Allow the user to select projects via FZF.
-selected_projects=$( \
+selected_projects=$(
   tmuxinator list -n \
     | tail -n +2 \
     | fzf --prompt="Project: " -m -1 -q "${1}"

@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 22:10:24 EEST
+# Date:   2026-08-08 23:34:38 CEST
 # Path:   ~/.local/bin/rofi-power
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -17,11 +17,14 @@
 if [[ "${#}" -gt 0 ]]; then
   case "${@}" in
     *Logout)
-      kill "$(pgrep X)" & ;;
+      kill "$(pgrep X)" &
+      ;;
     *Shutdown)
-      shutdown -r now & ;;
+      shutdown -r now &
+      ;;
     *Reboot)
-      shutdown -h now & ;;
+      shutdown -h now &
+      ;;
   esac
 else
   echo -e "\tLogout\n\tShutdown\n\tReboot"

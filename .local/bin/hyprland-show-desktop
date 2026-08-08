@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 22:15:43 CEST
+# Date:   2026-08-08 23:34:20 CEST
 # Path:   ~/.local/bin/hyprland-show-desktop
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,8 +10,8 @@
 TMP_FILE="${XDG_RUNTIME_DIR}/hyprland-show-desktop"
 
 CURRENT_WORKSPACE="$(
-  hyprctl monitors -j |
-    jq -r '.[] | .activeWorkspace.name'
+  hyprctl monitors -j \
+    | jq -r '.[] | .activeWorkspace.name'
 )"
 
 WORKSPACE_FILE="${TMP_FILE}-${CURRENT_WORKSPACE}"
@@ -27,8 +27,8 @@ if [[ -s "${WORKSPACE_FILE}" ]]; then
   rm -- "${WORKSPACE_FILE}"
 else
   readarray -t ADDRESS_ARRAY < <(
-    hyprctl clients -j |
-      jq -r --arg workspace "${CURRENT_WORKSPACE}" \
+    hyprctl clients -j \
+      | jq -r --arg workspace "${CURRENT_WORKSPACE}" \
         '.[] | select(.workspace.name == $workspace) | .address'
   )
 

@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 23:58:41 CEST
+# Date:   2026-08-08 23:35:35 CEST
 # Path:   ~/.local/bin/term-cmus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,4 +18,4 @@ kitty \
   --override remember_window_size=no \
   --override initial_window_width=105c \
   --override initial_window_height=40c \
-    tmux new-session "cmus"
+  tmux new-session "cmus"

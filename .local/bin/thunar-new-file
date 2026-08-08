@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-28 13:33:54 EEST
+# Date:   2026-08-08 23:35:46 CEST
 # Path:   ~/.local/bin/thunar-new-file
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,7 +16,7 @@
 #*   The script is not supposed to be run directly, but rather from within
 #*   Thunar file manager.
 #**
-file=$( \
+file=$(
   zenity \
     --entry \
     --title "Create New File" \

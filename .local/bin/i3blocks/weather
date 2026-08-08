@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 23:09:28 CEST
+# Date:   2026-08-08 23:31:00 CEST
 # Path:   ~/.local/bin/i3blocks/weather
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -22,15 +22,15 @@
 title="i3blocks_weather"
 
 getforecast() {
-  ping -q -c 1 8.8.8.8 >/dev/null || exit 1
-  curl -s "wttr.in" > "${XDG_DATA_HOME}/weatherreport" || exit 1;
+  ping -q -c 1 8.8.8.8 > /dev/null || exit 1
+  curl -s "wttr.in" > "${XDG_DATA_HOME}/weatherreport" || exit 1
 }
 
 showweather() {
-  sed '4q;d' "${XDG_DATA_HOME}/weatherreport" |
-  rg -o "m([-+])*[0-9]+" |
-  sed -e 1b -e '$!d' | tr '\n|m' ' ' |
-  awk '{print $1 "°" ".." $2 "°"}'
+  sed '4q;d' "${XDG_DATA_HOME}/weatherreport" \
+    | rg -o "m([-+])*[0-9]+" \
+    | sed -e 1b -e '$!d' | tr '\n|m' ' ' \
+    | awk '{print $1 "°" ".." $2 "°"}'
 }
 
 # The ${BLOCK_BUTTON} value is set by i3blocks, its values correspond to these
@@ -40,12 +40,14 @@ showweather() {
 #   3 - right click
 case "${BLOCK_BUTTON}" in
   1)
-    getforecast && showweather;
+    getforecast && showweather
     i3-msg -q "exec --no-startup-id \
-      urxvt -name ${title} -hold -e curl wttr.in" ;;
+      urxvt -name ${title} -hold -e curl wttr.in"
+    ;;
   3)
-    pid=$(pgrep -f "urxvt -name ${title}");
-    kill -9 "${pid}" ;;
+    pid=$(pgrep -f "urxvt -name ${title}")
+    kill -9 "${pid}"
+    ;;
 esac
 
 getforecast && showweather

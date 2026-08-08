@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-06-17 13:22:10 EEST
+# Date: 2026-08-08 23:31:04 CEST
 # Path: ~/.local/bin/i3blocks/wifi
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -62,9 +62,9 @@ COLOR_DOWN=${COLOR_DOWN:-#81C784}
 #   2 - middle click
 #   3 - right click
 case "${BLOCK_BUTTON}" in
-  1|2|3)
+  1 | 2 | 3)
     essid=$(iwconfig "${interface}" 2> /dev/null | awk -F\" '{print $2}')
-    pgrep -x dunst >/dev/null && notify-send "${essid}"
+    pgrep -x dunst > /dev/null && notify-send "${essid}"
     ;;
 esac
 
@@ -84,7 +84,7 @@ fi
 
 #------------------------------------------------------------------------
 
-quality=$( \
+quality=$(
   iw dev "${interface}" link \
     | rg 'dBm$' \
     | rg -oe '-[0-9]{2}' \

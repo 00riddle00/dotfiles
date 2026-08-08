@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:45:50 CEST
+# Date:   2026-08-08 23:35:00 CEST
 # Path:   ~/.local/bin/sounds/arch-updated
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -16,7 +16,7 @@
 #*   The script is not supposed to be run directly, but rather by Dunst
 #*   notification system.
 #**
-sound=$( \
+sound=$(
   fd -t f . "${DOTSHARE}/sounds/arch-updated" \
     | sort -R \
     | head -1

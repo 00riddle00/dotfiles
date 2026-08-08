@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-29 22:33:12 EEST
+# Date:   2026-08-08 23:30:43 CEST
 # Path:   ~/.local/bin/i3blocks/calendar
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -26,7 +26,10 @@ title="i3blocks_calendar"
 #   3 - right click
 case "${BLOCK_BUTTON}" in
   1) i3-msg -q "exec --no-startup-id urxvt -name ${title} -hold -e cal -m" ;;
-  3) pid=$(pgrep -f "urxvt -name ${title}"); kill -9 "${pid}";
+  3)
+    pid=$(pgrep -f "urxvt -name ${title}")
+    kill -9 "${pid}"
+    ;;
 esac
 
 date '+%A %e'
