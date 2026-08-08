@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-08 18:28:56 CEST
+# Date:   2026-08-08 18:37:18 CEST
 # Path: ~/.local/bin/fzf-launcher
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ FZF_COMMAND="${FZF_COMMAND:=fzf}"
 TERMINAL_COMMAND="${TERMINAL_COMMAND:="${TERMINAL} -e"}"
 GLYPH_COMMAND="${GLYPH_COMMAND-  }"
 GLYPH_DESKTOP="${GLYPH_DESKTOP-  }"
-CONFIG_DIR="${XDG_CONFIG_HOME:-${HOME}/.config}/sway-launcher-desktop"
+CONFIG_DIR="${XDG_CONFIG_HOME:-${HOME}/.config}/${0##*/}"
 PROVIDERS_FILE="${PROVIDERS_FILE:=providers.conf}"
 if [[ "${PROVIDERS_FILE#/}" == "${PROVIDERS_FILE}" ]]; then
   # ${PROVIDERS_FILE} is a relative path, prepend ${CONFIG_DIR}
