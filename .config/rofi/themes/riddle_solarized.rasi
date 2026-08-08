@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------
 * Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2024-07-13 22:11:56 EEST
+* Date:   2026-08-09 01:36:48 CEST
 * Path:   ~/.config/rofi/themes/riddle_solarized.rasi
 * URL:    https://github.com/00riddle00/dotfiles
 *-----------------------------------------------------------------------------*/
@@ -166,4 +166,15 @@
     str:        ":";
     margin:     0px 0.3em 0em 0em ;
     text-color: @normal-foreground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    highlight:        inherit;
+}
+
+element-icon {
+    background-color: inherit;
+    size:             1em;
 }
