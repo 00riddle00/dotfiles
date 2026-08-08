@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-08 02:20:11 CEST
+# Path:   ~/.local/bin/xdg-ify
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Abbreviate a path to its XDG or project base-directory variable (e.g.
+# ${XDG_CONFIG_HOME}/nvim/init.lua for an XDG path, or
+# ${PRO}/codewars/README.md for a non-XDG one) and copy the result to the
+# clipboard.
+#**
+
+#* USAGE:
+#*   ${0} PATH
+#**
+set -euo pipefail
+
+XDG_CACHE_HOME="${XDG_CACHE_HOME:-${HOME}/.cache}"
+XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
+XDG_DATA_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}"
+XDG_STATE_HOME="${XDG_STATE_HOME:-${HOME}/.local/state}"
+BIN="${HOME}/.local/bin"
+PRO="${HOME}/Projects"
+DOTSHARE="${XDG_DATA_HOME}/dotshare"
+DROPBOX="${HOME}/Dropbox"
+CANDY="${DROPBOX}/candy"
+NOTES="${DROPBOX}/gtd"
+
+input="${1:-}"
+[ -n "${input}" ] || exit 1
+
+# resolve absolute path
+if command -v readlink > /dev/null 2>&1; then
+  abs="$(readlink -f -- "${input}" 2> /dev/null || true)"
+fi
+
+if [ -z "${abs:-}" ] && command -v realpath > /dev/null 2>&1; then
+  abs="$(realpath -- "${input}" 2> /dev/null || true)"
+fi
+
+[ -n "${abs:-}" ] || exit 1
+
+case "${abs}" in
+  "${XDG_CONFIG_HOME}"/*)
+    out="\${XDG_CONFIG_HOME}${abs#"${XDG_CONFIG_HOME}"}"
+    ;;
+  "${XDG_CACHE_HOME}"/*)
+    out="\${XDG_CACHE_HOME}${abs#"${XDG_CACHE_HOME}"}"
+    ;;
+  "${XDG_DATA_HOME}"/*)
+    out="\${XDG_DATA_HOME}${abs#"${XDG_DATA_HOME}"}"
+    ;;
+  "${XDG_STATE_HOME}"/*)
+    out="\${XDG_STATE_HOME}${abs#"${XDG_STATE_HOME}"}"
+    ;;
+  "${BIN}"/*)
+    out="\${BIN}${abs#"${BIN}"}"
+    ;;
+  "${PRO}"/*)
+    out="\${PRO}${abs#"${PRO}"}"
+    ;;
+  "${DOTSHARE}"/*)
+    out="\${DOTSHARE}${abs#"${DOTSHARE}"}"
+    ;;
+  "${CANDY}"/*)
+    out="\${CANDY}${abs#"${CANDY}"}"
+    ;;
+  "${NOTES}"/*)
+    out="\${NOTES}${abs#"${NOTES}"}"
+    ;;
+  "${DROPBOX}"/*)
+    out="\${DROPBOX}${abs#"${DROPBOX}"}"
+    ;;
+  "${HOME}"/*)
+    out="\${HOME}${abs#"${HOME}"}"
+    ;;
+  *)
+    out="${abs}"
+    ;;
+esac
+
+# copy to clipboard (Wayland/X11 fallback)
+if [ "${XDG_SESSION_TYPE:-}" = "wayland" ] && command -v wl-copy > /dev/null 2>&1; then
+  printf '%s' "${out}" | wl-copy
+  echo "Copied to clipboard."
+elif command -v xclip > /dev/null 2>&1; then
+  printf '%s' "${out}" | xclip -selection clipboard
+  echo "Copied to clipboard."
+elif command -v xsel > /dev/null 2>&1; then
+  printf '%s' "${out}" | xsel --clipboard --input
+  echo "Copied to clipboard."
+else
+  exit 1
+fi
