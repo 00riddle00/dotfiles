@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 18:37:18 CEST
+# Date: 2026-08-08 19:46:35 CEST
 # Path: ~/.local/bin/fzf-launcher
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -327,6 +327,17 @@ case "${1}" in
     exit
     ;;
 esac
+
+# Guard sits after subcommand dispatch, not before: describe/provide/etc.
+# self-invoke headlessly through the FIFO and would get killed by this check
+# if it ran earlier. Bare invocation with no terminal (gmrun, a raw exec
+# keybinding) used to leave orphaned FIFO writers blocked forever, freezing
+# the system; now it exits cleanly here instead.
+if [[ ! -t 1 ]]; then
+  echo "fzf-launcher must be run inside a terminal (try term-fzf-launcher instead)." >&2
+  exit 1
+fi
+
 echo "Starting launcher instance with the following providers:" "${!PROVIDERS[@]}" >&3
 
 FZFPIPE=$(mktemp -u)
