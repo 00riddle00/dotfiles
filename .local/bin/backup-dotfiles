@@ -1,0 +1,90 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-08 02:51:07 CEST
+# Path:   ~/.local/bin/backup-dotfiles
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Disaster-recovery backup for the dotfiles bare repo. If dotfiles haven't
+# been committed in a while, this preserves git status, staged/unstaged
+# diffs, and the current staged contents of hidden config directories, both
+# locally and to Dropbox.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+set -euo pipefail
+
+DOTFILES_DIR="${HOME}/.dotfiles"
+LOCAL_BACKUP_DIR="${HOME}/backups/dotfiles.$(date +%F_%H-%M-%S).bak"
+REMOTE_BACKUP_DIR="${DROPBOX}/backups/dotfiles.$(date +%F_%H-%M-%S).bak"
+
+mkdir -p "${LOCAL_BACKUP_DIR}" "${REMOTE_BACKUP_DIR}"
+
+dot() {
+  /usr/bin/git --git-dir="${DOTFILES_DIR}" --work-tree="${HOME}" "${@}"
+}
+
+dot status --short \
+  | tee "${LOCAL_BACKUP_DIR}/status.short.txt" \
+    "${REMOTE_BACKUP_DIR}/status.short.txt" \
+    > /dev/null
+
+dot status \
+  | tee "${LOCAL_BACKUP_DIR}/status.txt" \
+    "${REMOTE_BACKUP_DIR}/status.txt" \
+    > /dev/null
+
+dot diff --cached \
+  | tee "${LOCAL_BACKUP_DIR}/staged.patch" \
+    "${REMOTE_BACKUP_DIR}/staged.patch" \
+    > /dev/null
+
+dot diff \
+  | tee "${LOCAL_BACKUP_DIR}/unstaged.patch" \
+    "${REMOTE_BACKUP_DIR}/unstaged.patch" \
+    > /dev/null
+
+dot diff --cached --name-only --diff-filter=D \
+  | tee "${LOCAL_BACKUP_DIR}/deleted.staged.txt" \
+    "${REMOTE_BACKUP_DIR}/deleted.staged.txt" \
+    > /dev/null
+
+{
+  dot diff --cached --name-only -z --diff-filter=ACMR
+  dot diff --name-only -z --diff-filter=ACMR
+  dot ls-files --others --exclude-standard -z
+} \
+  | sort -zu \
+  | tee "${LOCAL_BACKUP_DIR}/files.zlist" \
+    "${REMOTE_BACKUP_DIR}/files.zlist" \
+    > /dev/null
+
+hidden_dirnames=(config local)
+
+for _dirname in "${hidden_dirnames[@]}"; do
+  backup_dirname="${_dirname}.bak"
+
+  mkdir -p "${HOME}/.${_dirname}/${backup_dirname}" \
+    && cd "${HOME}/.${_dirname}" \
+    && rsync -av \
+      --files-from=<(
+        dot diff \
+          --cached \
+          --name-only \
+          --diff-filter=ACMR "${HOME}/.${_dirname}" | sed -E "s|^\.${_dirname}/||"
+      ) ./ ./"${backup_dirname}"/
+
+  cp -rv \
+    "${backup_dirname}" \
+    "${LOCAL_BACKUP_DIR}/$(basename "${backup_dirname}").$(date +%F_%H-%M-%S).bak"
+
+  cp -rv \
+    "${backup_dirname}" \
+    "${REMOTE_BACKUP_DIR}/$(basename "${backup_dirname}").$(date +%F_%H-%M-%S).bak"
+
+  rm -rf "${backup_dirname}"
+done
