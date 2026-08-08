@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2025-06-17 13:22:00 EEST
+# Date: 2026-08-08 23:12:46 CEST
 # Path: ~/.local/bin/buffer
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -20,7 +20,7 @@
 #*   ${0} --options COMMAND --COMMAND-OPTIONS
 #*   ${0} --options -i COMMAND --COMMAND-OPTIONS {} OTHER-ARGUMENTS
 #* e.g.:
-#*   echo "aaa:bbb" | buffer -i awk -F: '{OFS=FS} {print $1}' {} | rg "aa"
+#*   echo "aaa:bbb" | ${0} -i awk -F: '{OFS=FS} {print $1}' {} | rg "aa"
 #*
 #* OPTIONS:
 #*   -e, --extension EXT     Use the specified extension for the temporary file.
