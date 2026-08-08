@@ -24,7 +24,7 @@
 prog="${1}"
 ident="${2:-${1}}"
 
-if [[ -z "${prog}" ]]; then
+if [[ -z ${prog} ]]; then
   echo "Usage: ${0} PROGRAM [IDENTIFIER]" >&2
   exit 1
 fi

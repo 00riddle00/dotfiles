@@ -20,6 +20,6 @@ bri="$(light 2> /dev/null)"
 
 # If brightness is "0.00" or no backlight controller is found, do not output
 # anything.
-if [[ "${bri}" != "0.00" && -n "${bri}" ]]; then
+if [[ ${bri} != "0.00" && -n ${bri} ]]; then
   printf '%s\n' "${bri::-3}"
 fi

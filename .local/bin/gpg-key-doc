@@ -26,7 +26,7 @@ set -euo pipefail
 PUB_PATH="${1:?Usage: ${0} <path-to-exported-public-key.asc>}"
 PUB_PATH="${PUB_PATH/#\~/${HOME}}"
 
-if [[ ! -f "${PUB_PATH}" ]]; then
+if [[ ! -f ${PUB_PATH} ]]; then
   echo "Error: file not found at ${PUB_PATH}" >&2
   exit 1
 fi
@@ -47,10 +47,10 @@ algo_name() {
 
 usage_name() {
   local u="${1}" out=""
-  [[ "${u}" == *s* ]] && out+="Sign, "
-  [[ "${u}" == *c* ]] && out+="Certify, "
-  [[ "${u}" == *e* ]] && out+="Encrypt, "
-  [[ "${u}" == *a* ]] && out+="Authenticate, "
+  [[ ${u} == *s* ]] && out+="Sign, "
+  [[ ${u} == *c* ]] && out+="Certify, "
+  [[ ${u} == *e* ]] && out+="Encrypt, "
+  [[ ${u} == *a* ]] && out+="Authenticate, "
   echo "${out%, }"
 }
 
@@ -74,7 +74,7 @@ fmt_fpr() {
 }
 
 fmt_date() {
-  if [[ -z "${1}" || "${1}" == "0" ]]; then
+  if [[ -z ${1} || ${1} == "0" ]]; then
     echo "Never"
   else
     date -d "@${1}" +%Y-%m-%d
@@ -85,10 +85,10 @@ fmt_date() {
 add_unique() {
   local -n arr="${1}"
   local val="${2}"
-  [[ -z "${val}" ]] && return
+  [[ -z ${val} ]] && return
   local existing
   for existing in "${arr[@]}"; do
-    [[ "${existing}" == "${val}" ]] && return
+    [[ ${existing} == "${val}" ]] && return
   done
   arr+=("${val}")
 }
@@ -135,14 +135,14 @@ CURVE_LIST=()
 IS_ECC=0
 add_unique ALGO_LIST "${P_ALGO}"
 case "${P_ALGO_NUM}" in 18 | 19 | 22) IS_ECC=1 ;; esac
-[[ -n "${P_CURVE_RAW}" ]] && add_unique CURVE_LIST "$(curve_name "${P_CURVE_RAW}")"
+[[ -n ${P_CURVE_RAW} ]] && add_unique CURVE_LIST "$(curve_name "${P_CURVE_RAW}")"
 
 for line in "${SUB_LINES[@]}"; do
   s_algo_num=$(awk -F: '{print $4}' <<< "${line}")
   add_unique ALGO_LIST "$(algo_name "${s_algo_num}")"
   case "${s_algo_num}" in 18 | 19 | 22) IS_ECC=1 ;; esac
   s_curve_raw=$(awk -F: '{print $17}' <<< "${line}")
-  [[ -n "${s_curve_raw}" ]] && add_unique CURVE_LIST "$(curve_name "${s_curve_raw}")"
+  [[ -n ${s_curve_raw} ]] && add_unique CURVE_LIST "$(curve_name "${s_curve_raw}")"
 done
 
 if ((IS_ECC)); then

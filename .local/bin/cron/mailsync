@@ -16,7 +16,7 @@
 PID="$(pgrep offlineimap)"
 
 # Exit if offlineimap is already running
-[[ -n "${PID}" ]] && exit 1
+[[ -n ${PID} ]] && exit 1
 
 offlineimap -o -u quiet &> /dev/null &
 

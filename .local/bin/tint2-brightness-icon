@@ -49,16 +49,16 @@ bri="$(echo "(${b}+0.5)/1" | bc)"
 # The paths need to be hardcoded, because tint2 might be run by the Openbox
 # window manager, which does not have the same environment variables as the
 # user's shell.
-if [[ "${bri}" -gt "90" ]]; then
+if [[ ${bri} -gt "90" ]]; then
   echo ~/Dropbox/candy/icons/tint2/bri-full.png
-elif [[ "${bri}" -gt "50" ]]; then
+elif [[ ${bri} -gt "50" ]]; then
   echo ~/Dropbox/candy/icons/tint2/bri-high.png
-elif [[ "${bri}" -gt "30" ]]; then
+elif [[ ${bri} -gt "30" ]]; then
   echo ~/Dropbox/candy/icons/tint2/bri-medium.png
 else
   echo ~/Dropbox/candy/icons/tint2/bri-low.png
 fi
 
-if [[ "${1}" = "--text" ]]; then
+if [[ ${1} == "--text" ]]; then
   echo "${bri}%"
 fi

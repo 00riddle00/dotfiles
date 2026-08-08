@@ -26,16 +26,16 @@ latest="$(
     | tail -n 1
 )"
 
-if [[ -z "${latest}" ]]; then
+if [[ -z ${latest} ]]; then
   echo "No screenshots found in ${dir}" >&2
   exit 1
 fi
 
-if command -v wl-copy &> /dev/null && [[ -n "${WAYLAND_DISPLAY:-}" ]]; then
+if command -v wl-copy &> /dev/null && [[ -n ${WAYLAND_DISPLAY:-} ]]; then
   wl-copy --type image/png < "${latest}"
-elif command -v xclip &> /dev/null && [[ -n "${DISPLAY:-}" ]]; then
+elif command -v xclip &> /dev/null && [[ -n ${DISPLAY:-} ]]; then
   xclip -selection clipboard -target image/png -i "${latest}"
-elif command -v xsel &> /dev/null && [[ -n "${DISPLAY:-}" ]]; then
+elif command -v xsel &> /dev/null && [[ -n ${DISPLAY:-} ]]; then
   xsel --clipboard --input < "${latest}"
 else
   echo "No clipboard tool found: install wl-clipboard, xclip, or xsel" >&2

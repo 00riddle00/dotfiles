@@ -16,7 +16,7 @@ CURRENT_WORKSPACE="$(
 
 WORKSPACE_FILE="${TMP_FILE}-${CURRENT_WORKSPACE}"
 
-if [[ -s "${WORKSPACE_FILE}" ]]; then
+if [[ -s ${WORKSPACE_FILE} ]]; then
   readarray -t ADDRESS_ARRAY < "${WORKSPACE_FILE}"
 
   for address in "${ADDRESS_ARRAY[@]}"; do
@@ -33,13 +33,13 @@ else
   )
 
   for address in "${ADDRESS_ARRAY[@]}"; do
-    if [[ -n "${address}" ]]; then
+    if [[ -n ${address} ]]; then
       printf '%s\n' "${address}" >> "${WORKSPACE_FILE}"
       CMDS+="dispatch movetoworkspacesilent special:desktop,address:${address};"
     fi
   done
 
-  if [[ -n "${CMDS:-}" ]]; then
+  if [[ -n ${CMDS:-} ]]; then
     hyprctl --batch "${CMDS}"
   fi
 fi

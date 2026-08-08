@@ -15,7 +15,7 @@
 
 win_name="${1}"
 
-if [[ -z "${win_name}" ]]; then
+if [[ -z ${win_name} ]]; then
   echo "Usage: ${0} WINDOW_NAME" >&2
   exit 1
 fi

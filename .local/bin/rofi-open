@@ -15,7 +15,7 @@
 #*   The script is not supposed to be run directly, but rather from Rofi, which
 #*   links to it.
 #**
-if [[ "${#}" -gt 0 ]]; then
+if [[ ${#} -gt 0 ]]; then
   program="${1}"
 
   # No program is running, so start one.

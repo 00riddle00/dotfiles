@@ -13,7 +13,7 @@
 #* USAGE:
 #*   ${0}
 #**
-[[ -z "${DISPLAY}" ]] && exit 1
+[[ -z ${DISPLAY} ]] && exit 1
 
 choice="$(
   echo -e "0:  Logout\n1:  Reboot\n2:  Shutdown" \
@@ -21,7 +21,7 @@ choice="$(
     | cut -d ':' -f 1
 )"
 
-[[ -z "${choice}" ]] && exit 1
+[[ -z ${choice} ]] && exit 1
 
 # Gracefully close all open apps.
 while read -r app; do

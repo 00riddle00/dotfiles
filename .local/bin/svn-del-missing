@@ -32,12 +32,12 @@ svn status \
 
 SVN_VERSION=$(svn --version | head -1 | awk '{print $3}')
 
-if [[ -n "${SVN_VERSION}" ]]; then
+if [[ -n ${SVN_VERSION} ]]; then
   SVN_MAJOR=$(echo "${SVN_VERSION}" | awk -F. '{print $1}')
   SVN_MINOR=$(echo "${SVN_VERSION}" | awk -F. '{print $2}')
 
-  if [[ "${SVN_MAJOR}" -gt 1 ||
-    ("${SVN_MAJOR}" -eq 1 && "${SVN_MINOR}" -ge 9) ]]; then
+  if [[ ${SVN_MAJOR} -gt 1 ||
+    (${SVN_MAJOR} -eq 1 && ${SVN_MINOR} -ge 9) ]]; then
     svn status \
       | rg '^~' \
       | sed 's/^~ *//' \

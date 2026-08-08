@@ -16,7 +16,7 @@
 #* USAGE:
 #*   ${0} up|down|left|right
 #**
-if [[ -z "${1}" ]]; then
+if [[ -z ${1} ]]; then
   echo "No direction provided"
   echo "Usage: ${0} up|down|left|right"
   exit 1

@@ -46,9 +46,9 @@ else
   exit 1
 fi
 
-if [[ "${temp}" == *".0°C" ]]; then
+if [[ ${temp} == *".0°C" ]]; then
   echo "${temp}"
-elif [[ "${temp}" == *"°C" ]]; then
+elif [[ ${temp} == *"°C" ]]; then
   temp="${temp/°C/.0°C}"
   echo "${temp}"
 else

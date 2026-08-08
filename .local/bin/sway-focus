@@ -19,12 +19,12 @@
 
 win="${1}"
 
-if [[ -z "${win}" ]]; then
+if [[ -z ${win} ]]; then
   echo "Usage: ${0} WINDOW_NAME [-c]"
   exit 1
 fi
 
-if [[ "${2}" == "-c" ]]; then
+if [[ ${2} == "-c" ]]; then
   # Match on WM_CLASS (Wayland apps set app_id; Xwayland apps set class)
   swaymsg "[app_id=\"${win}\"] focus" || swaymsg "[class=\"${win}\"] focus" || swaymsg "[title=\"${win}\"] focus"
 else

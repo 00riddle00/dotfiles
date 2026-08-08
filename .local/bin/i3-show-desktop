@@ -24,7 +24,7 @@ current_wspace="$(
 )"
 
 {
-  if [[ "${current_wspace}" == "${desktop_wspace}" ]]; then
+  if [[ ${current_wspace} == "${desktop_wspace}" ]]; then
     i3-msg workspace back_and_forth
   else
     i3-msg workspace number "${desktop_wspace}"

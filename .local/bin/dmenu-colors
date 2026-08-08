@@ -25,7 +25,7 @@ color_code="$(
     | sed "s/ *//"
 )"
 
-[[ -z "${color_code}" ]] && exit 1
+[[ -z ${color_code} ]] && exit 1
 
 echo "${color_code}" | tr -d '\n' | xclip -selection clipboard
 notify-send "${color_code} copied to clipboard."

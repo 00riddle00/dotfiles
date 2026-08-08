@@ -61,9 +61,9 @@ if [[ -n ${selected_projects} ]]; then
   done
 
   # If inside Tmux then select session to switch, otherwise just attach.
-  if [[ -n "${TMUX}" ]]; then
+  if [[ -n ${TMUX} ]]; then
     session="$(tmux list-sessions -F "#S" | fzf --prompt="Session: ")"
-    if [[ -n "${session}" ]]; then
+    if [[ -n ${session} ]]; then
       tmux switch-client -t "${session}"
     fi
   else

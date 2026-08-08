@@ -19,13 +19,13 @@ pid="$(
     | awk '{print $1" "$4}'
 )"
 
-if [[ -n "${pid}" ]]; then
+if [[ -n ${pid} ]]; then
   choice="$(
     echo -e "Yes\nNo" \
       | dmenu -i -l 20 -p "${pid} will be killed, are you sure?"
   )"
 
-  if [[ "${choice}" == "Yes" ]]; then
+  if [[ ${choice} == "Yes" ]]; then
     kill -9 "${pid}"
   fi
 fi

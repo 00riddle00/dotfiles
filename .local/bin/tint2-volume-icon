@@ -39,7 +39,7 @@ status="$(
     | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {print $4}'
 )"
 
-if [[ "$status" = "on" ]]; then
+if [[ $status == "on" ]]; then
   # Search for the lines containing 'Right:' or 'Mono:', when more than 1 field
   # exists we strip the trailing '%' and round it up with printf "%0.0f" just
   # in case.
@@ -53,17 +53,17 @@ if [[ "$status" = "on" ]]; then
   # The paths need to be hardcoded, because tint2 might be run by the Openbox
   # window manager, which does not have the same environment variables as the
   # user's shell.
-  if [[ "${vol}" -ge 90 ]]; then
+  if [[ ${vol} -ge 90 ]]; then
     echo ~/Dropbox/candy/icons/tint2/vol-full.png
-  elif [[ "${vol}" -ge 40 ]]; then
+  elif [[ ${vol} -ge 40 ]]; then
     echo ~/Dropbox/candy/icons/tint2/vol-medium.png
-  elif [[ "${vol}" -ge 10 ]]; then
+  elif [[ ${vol} -ge 10 ]]; then
     echo ~/Dropbox/candy/icons/tint2/vol-low.png
   else
     echo ~/Dropbox/candy/icons/tint2/vol-lowest.png
   fi
 
-  if [[ "${1}" = "--text" ]]; then
+  if [[ ${1} == "--text" ]]; then
     echo "${vol}%"
   fi
 else

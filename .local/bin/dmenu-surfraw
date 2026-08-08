@@ -15,7 +15,7 @@
 #* USAGE:
 #*   ${0}
 #**
-while [[ -z "${engine}" ]]; do
+while [[ -z ${engine} ]]; do
   engine="$(
     sr -elvi \
       | awk '{if (NR!=1) { print $1 }}' \
@@ -23,7 +23,7 @@ while [[ -z "${engine}" ]]; do
   )" || exit
 done
 
-while [[ -z "${query}" ]]; do
+while [[ -z ${query} ]]; do
   query="$(echo "" | dmenu -i -p "Searching ${engine}")" || exit
 done
 

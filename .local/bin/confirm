@@ -22,7 +22,7 @@ echo
 echo -n "Answer 'yes' or 'no': "
 
 read -r choice
-if [[ "${choice}" == "yes" ]]; then
+if [[ ${choice} == "yes" ]]; then
   eval "${cmd}"
 else
   echo "Aborted."

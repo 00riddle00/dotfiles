@@ -36,7 +36,7 @@ candidate=$(swaymsg -t get_tree \
 
 echo "cand: ${candidate}"
 
-if [[ -n "${candidate}" ]]; then
+if [[ -n ${candidate} ]]; then
   # Focus the found window
   swaymsg "[title=\"${candidate}\"]" focus
 else

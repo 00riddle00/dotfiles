@@ -35,13 +35,13 @@ cows_list="$(printf "'%s', " "${cows[@]}")"
 err_msg="ERR: USAGE: WHO { ${cows_list%,*} } should say WHAT \
 {'gnu-wisdom', 'gnu-linux', '<your text>'}?"
 
-if [[ -n "${1}" ]]; then
+if [[ -n ${1} ]]; then
   cow="${1}"
 else
   error "${err_msg}"
 fi
 
-if [[ -n "${2}" ]]; then
+if [[ -n ${2} ]]; then
   phrase="${2}"
 else
   error "${err_msg}"
@@ -54,7 +54,7 @@ fi
 case "${phrase}" in
   gnu-wisdom)
     file="${phrases_dir}/gnu-wisdom"
-    [[ -f "${file}" ]] || error "ERR: there is no 'gnu-wisdom'"
+    [[ -f ${file} ]] || error "ERR: there is no 'gnu-wisdom'"
     [[ -f "${file}.dat" ]] || strfile "${file}" &> /dev/null
     fortune "${phrases_dir}/gnu-wisdom" \
       | cowsay -f "${cows_dir}/${cow}.cow" \
@@ -62,7 +62,7 @@ case "${phrase}" in
     ;;
   gnu-linux)
     file="${phrases_dir}/gnu-linux"
-    [[ -f "${file}" ]] || error "ERR: there is no 'gnu-linux'"
+    [[ -f ${file} ]] || error "ERR: there is no 'gnu-linux'"
     cowsay -f "${cows_dir}/${cow}.cow" < "${phrases_dir}/gnu-linux" \
       | lolcat
     ;;

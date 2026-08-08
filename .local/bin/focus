@@ -19,7 +19,7 @@
 #**
 win_name_or_class="${1}"
 
-if [[ "${2}" == "-c" ]]; then
+if [[ ${2} == "-c" ]]; then
   # Raise and focus window by its class (fuzzy match).
   wmctrl -x -a "${win_name_or_class}"
 else

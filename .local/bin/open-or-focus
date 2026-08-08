@@ -20,7 +20,7 @@
 #**
 program="${1}"
 
-if [[ -n "${2}" ]]; then
+if [[ -n ${2} ]]; then
   win_name_or_class="${2}"
 else
   win_name_or_class="${program}"
@@ -31,7 +31,7 @@ if ! wmctrl -lx | rg -i -q -- "${win_name_or_class}"; then
   "${program}" &
 else
   # Program is running, so raise and focus its window.
-  if [[ "${3}" == "-c" ]]; then
+  if [[ ${3} == "-c" ]]; then
     # Focus window by its class (fuzzy match).
     wmctrl -x -a "${win_name_or_class}"
   else

@@ -62,7 +62,7 @@ DIR="$(echo "${BRANCH}" \
   | sed "s|^/||" \
   | sed 's/%20/ /g')"
 
-[[ -z "${DIR}" && -n "${REPO}" ]] && DIR="$(basename "${REPO}")"
+[[ -z ${DIR} && -n ${REPO} ]] && DIR="$(basename "${REPO}")"
 
 # Check if the URI::Encode module exists
 if perl -MURI::Encode -e 'exit 0' 2> /dev/null; then
@@ -73,14 +73,14 @@ else
   DECODED_DIR="${DIR}"
 fi
 
-[[ -n "${DECODED_DIR}" ]] && DIR="${DECODED_DIR}"
+[[ -n ${DECODED_DIR} ]] && DIR="${DECODED_DIR}"
 
 case "${SVN_COMMIT_TMP}" in
   svn-commit.*)
     (
       # Check if we are working under 'sudo', if yes -- let's add the "real"
       # user name to the log:
-      if [[ -n "${SUDO_USER:-}" ]]; then
+      if [[ -n ${SUDO_USER:-} ]]; then
         echo -e "\n\n${DIR}/ ($(whoami)@$(hostname -f), user \"${SUDO_USER}\")"
       else
         echo -e "\n\n${DIR}/ ($(whoami)@$(hostname -f))"

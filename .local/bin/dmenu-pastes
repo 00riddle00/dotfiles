@@ -25,7 +25,7 @@ touch "${PASTES_FILE}"
 # Show only the text column, sorted by frequency descending
 choice=$(sort -t$'\t' -k2,2nr "${PASTES_FILE}" | cut -f1 | dmenu -i -l 20)
 
-[[ -z "${choice}" ]] && exit 1
+[[ -z ${choice} ]] && exit 1
 
 # Update frequency
 awk -F'\t' -v txt="${choice}" -v OFS='\t' '

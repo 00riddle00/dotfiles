@@ -14,7 +14,7 @@
 #*   The script is not supposed to be run directly, but rather from Rofi, which
 #*   links to it.
 #**
-if [[ "${#}" -gt 0 ]]; then
+if [[ ${#} -gt 0 ]]; then
   case "${@}" in
     *Logout)
       kill "$(pgrep X)" &

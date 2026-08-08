@@ -33,7 +33,7 @@ echo "   ✔ Pacman cache cleared."
 # 3. Remove orphaned packages, if any exist
 echo "-> Checking for orphaned packages..."
 orphans=$(pacman -Qdtq || true)
-if [[ -n "${orphans}" ]]; then
+if [[ -n ${orphans} ]]; then
   mapfile -t orphans_arr <<< "${orphans}"
   echo "   Found orphans:"
   printf '     • %s\n' "${orphans_arr[@]}"
@@ -62,7 +62,7 @@ echo "   ✔ paru cache cleared."
 # 7. Update all CPAN modules that are outdated
 echo "-> Checking for outdated CPAN modules..."
 outdated_cpan=$(cpan-outdated -p || true)
-if [[ -n "${outdated_cpan}" ]]; then
+if [[ -n ${outdated_cpan} ]]; then
   mapfile -t outdated_cpan_arr <<< "${outdated_cpan}"
   echo "   Outdated CPAN modules:"
   printf '     • %s\n' "${outdated_cpan_arr[@]}"

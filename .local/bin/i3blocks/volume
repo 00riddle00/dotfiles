@@ -63,14 +63,14 @@ MIXER="${MIXER:-""}"
 # Use the given scontrol.
 SCONTROL="${SCONTROL:-""}"
 
-if [[ -z "${MIXER}" ]]; then
+if [[ -z ${MIXER} ]]; then
   MIXER="default"
   if amixer -D pulse info > /dev/null 2>&1; then
     MIXER="pulse"
   fi
 fi
 
-if [[ -z "${SCONTROL}" ]]; then
+if [[ -z ${SCONTROL} ]]; then
   SCONTROL=$(
     amixer -D "${MIXER}" scontrols \
       | sed -n "s/Simple mixer control '\([^']*\)',0/\1/p" \
@@ -100,7 +100,7 @@ function set_default_playback_device_next {
 
   default_sink_index=$(
     for i in "${!sink_arr[@]}"; do
-      if [[ "${default_sink}" = "${sink_arr[${i}]}" ]]; then
+      if [[ ${default_sink} == "${sink_arr[${i}]}" ]]; then
         echo "${i}"
       fi
     done
@@ -130,7 +130,7 @@ function print_format {
 
 function print_block {
   ACTIVE="$(pactl list sinks | rg "State: RUNNING" -B4 -A55)"
-  if [[ -z "${ACTIVE}" ]]; then
+  if [[ -z ${ACTIVE} ]]; then
     ACTIVE="$(pactl list sinks | rg "$(pactl get-default-sink)" -B4 -A55)"
   fi
   ACTIVE="$(
@@ -146,14 +146,14 @@ function print_block {
   VOL="${VOL%?}"
   NAME=$(echo "${NICK}" | rg -o '".*"' | sed 's/"//g')
 
-  if [[ "${USE_ALSA_NAME}" == 1 ]]; then
+  if [[ ${USE_ALSA_NAME} == 1 ]]; then
     ALSA_NAME=$(pactl list sinks \
       | awk '/^\s*\*/{f=1}/^\s*index:/{f=0}f' \
       | rg "alsa.name|alsa.mixer_name" \
       | head -n1 \
       | sed 's/.*= "\(.*\)".*/\1/')
     NAME="${ALSA_NAME:-${NAME}}"
-  elif [[ "${USE_DESCRIPTION}" == 1 ]]; then
+  elif [[ ${USE_DESCRIPTION} == 1 ]]; then
     DESCRIPTION=$(
       pactl list sinks \
         | rg "State RUNNING" -B4 -A55 \
@@ -163,8 +163,8 @@ function print_block {
     NAME="${DESCRIPTION:-${NAME}}"
   fi
 
-  if [[ "${MUTED}" =~ "no" ]]; then
-    if [[ "${VOL}" -eq 0 ]]; then
+  if [[ ${MUTED} =~ "no" ]]; then
+    if [[ ${VOL} -eq 0 ]]; then
       # Use the zero volume format (only symbol, no percentage), just like with
       # muted.
       # shellcheck disable=SC2034
@@ -173,8 +173,8 @@ function print_block {
     else
       # shellcheck disable=SC2034
       SYMB="${AUDIO_HIGH_SYMBOL}"
-      [[ "${VOL}" -le "${AUDIO_MED_THRESH}" ]] && SYMB="${AUDIO_MED_SYMBOL}"
-      [[ "${VOL}" -le "${AUDIO_LOW_THRESH}" ]] && SYMB="${AUDIO_LOW_SYMBOL}"
+      [[ ${VOL} -le ${AUDIO_MED_THRESH} ]] && SYMB="${AUDIO_MED_SYMBOL}"
+      [[ ${VOL} -le ${AUDIO_LOW_THRESH} ]] && SYMB="${AUDIO_LOW_SYMBOL}"
       COLOR="${DEFAULT_COLOR}"
       CUSTOM_FORMAT='${SYMB} ${VOL}%'
     fi
@@ -185,12 +185,12 @@ function print_block {
     CUSTOM_FORMAT='${SYMB}'
   fi
 
-  if [[ -z "${ACTIVE}" ]]; then
+  if [[ -z ${ACTIVE} ]]; then
     echo "Sound inactive"
     COLOR='#222225'
   fi
 
-  if [[ "${SUBSCRIBE}" == 1 ]]; then
+  if [[ ${SUBSCRIBE} == 1 ]]; then
     #print_format "${LONG_FORMAT}"
     print_format "${CUSTOM_FORMAT}"
   else
@@ -202,7 +202,7 @@ function print_block {
 }
 
 print_block
-if [[ "${SUBSCRIBE}" == 1 ]]; then
+if [[ ${SUBSCRIBE} == 1 ]]; then
   while read -r _; do
     print_block
   done < <(pactl subscribe | stdbuf -oL rg change)

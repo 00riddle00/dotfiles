@@ -49,6 +49,6 @@ target="$(
     | cut -d ' ' -f 2-
 )"
 
-if [[ -n "${target}" ]]; then
+if [[ -n ${target} ]]; then
   wmctrl -a "${target}"
 fi

@@ -19,7 +19,7 @@ set -ue
 SRC="${1}"
 DST="${2}"
 
-if [[ ! -f "${SRC}" ]]; then
+if [[ ! -f ${SRC} ]]; then
   svn revert "${SRC}"
 fi
 

@@ -28,11 +28,11 @@ RAW_INPUT="${RAW_INPUT/#\~/${HOME}}"
 KEY_PATH="$(realpath -m "${RAW_INPUT}")"
 PUB_PATH="${KEY_PATH}.pub"
 
-if [[ ! -f "${KEY_PATH}" ]]; then
+if [[ ! -f ${KEY_PATH} ]]; then
   echo "Error: private key not found at ${KEY_PATH}" >&2
   exit 1
 fi
-if [[ ! -f "${PUB_PATH}" ]]; then
+if [[ ! -f ${PUB_PATH} ]]; then
   echo "Error: public key not found at ${PUB_PATH}" >&2
   exit 1
 fi

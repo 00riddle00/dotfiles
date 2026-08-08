@@ -17,7 +17,7 @@
 
 desktop_wspace="${1}"
 
-if [[ -z "${desktop_wspace}" ]]; then
+if [[ -z ${desktop_wspace} ]]; then
   echo "Usage: ${0} DESKTOP_WORKSPACE" >&2
   exit 1
 fi
@@ -26,7 +26,7 @@ fi
 current_wspace=$(swaymsg -t get_workspaces \
   | jq -r '.[] | select(.focused).name')
 
-if [[ "${current_wspace}" == "${desktop_wspace}" ]]; then
+if [[ ${current_wspace} == "${desktop_wspace}" ]]; then
   # already on "desktop" → go back and forth
   swaymsg workspace back_and_forth
 else
