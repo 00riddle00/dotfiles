@@ -2,91 +2,25 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 22:01:43 CEST
+# Date:   2026-08-08 22:39:13 CEST
 # Path:   ~/.local/bin/sway-open-or-focus
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
-# Focus a program window if it's running or open a program if it's not.
-# Works under Wayland + Sway.
+# Focus a Sway window by its app_id (Wayland) or WM_CLASS (Xwayland),
+# or launch the program if no matching window exists.
 #**
 
 #* USAGE:
-#   ${0} PROGRAM [WINDOW_NAME]
-#   ${0} PROGRAM WINDOW_CLASS -c
-# e.g.:
-#   ${0} thunderbird
-#   ${0} qalculate-gtk qalculate
-#   ${0} pycharm jetbrains-pycharm -c
+#*   ${0} PROGRAM [IDENTIFIER]
+#* e.g.:
+#*   ${0} keepassxc org.keepassxc.KeePassXC
+#*   ${0} thunar  # matches app_id "thunar"
+#*
+#*   PROGRAM    – the command you'd run (e.g. thunar, keepassxc, kitty)
+#*   IDENTIFIER – optional; the app_id or WM_CLASS to match
+#*                (defaults to PROGRAM)
 #**
-#program="${1}"
-
-#if [[ -n "${2}" ]]; then
-  #win_name_or_class="${2}"
-#else
-  #win_name_or_class="${program}"
-#fi
-
-#if [[ -n "${2}" ]]; then
-  #win_id="${2}"
-#else
-  #win_id="${program}"
-#fi
-
-
-# Check if a matching window is already present in the Sway tree
-#if swaymsg -t get_tree | jq '.. | objects | select(.type? == "con") | select(.app_id? == "'"${win_id}"'" or .window_properties.class? == "'"${win_id}"'")' | grep -q .; then
-  # Focus the matching window
-  #swaymsg "[app_id=\"${win_id}\"] focus" || swaymsg "[class=\"${win_id}\"] focus"
-#else
-  # Start the program
-  #"${program}" &
-#fi
-
-
-
-
-
-
-
-
-#if ! wmctrl -lx | rg -i -q -- "${win_name_or_class}"; then
-  ## No program is running, so start one.
-  #"${program}" &
-#else
-  ## Program is running, so raise and focus its window.
-  #if [[ "${3}" == "-c" ]]; then
-    ## Focus window by its class (fuzzy match).
-    #wmctrl -x -a "${win_name_or_class}"
-  #else
-    ## Focus window by its name (title) (fuzzy match).
-    #wmctrl -a "${win_name_or_class}"
-  #fi
-#fi
-
-
-
-
-
-
-
-#!/usr/bin/env bash
-#
-# Focus a Sway window by its app_id (Wayland) or WM_CLASS (Xwayland),
-# or launch the program if no matching window exists.
-#
-# USAGE:
-#   sway-open-or-focus PROGRAM [IDENTIFIER]
-#
-#   PROGRAM       – the command you’d run (e.g. thunar, keepassxc, kitty)
-#   IDENTIFIER    – optional; the app_id or WM_CLASS to match
-#                   (defaults to PROGRAM)
-#
-# Example:
-#   sway-open-or-focus keepassxc org.keepassxc.KeePassXC
-#   sway-open-or-focus thunar      # matches app_id "thunar"
-#
-
 prog="${1}"
 ident="${2:-${1}}"
 
@@ -96,14 +30,12 @@ if [[ -z "${prog}" ]]; then
 fi
 
 # Try to focus a native Wayland window first:
-if swaymsg "[app_id=\"${ident}\"]" focus 2>/dev/null; then
-    echo "HERE"
+if swaymsg "[app_id=\"${ident}\"] focus" 2>/dev/null; then
   exit 0
 fi
 
 # Fallback to Xwayland WM_CLASS:
-if swaymsg "[class=\"${ident}\"]" focus 2>/dev/null; then
-    echo "HERE2"
+if swaymsg "[class=\"${ident}\"] focus" 2>/dev/null; then
   exit 0
 fi
 
