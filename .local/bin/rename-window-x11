@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 01:48:28 CEST
+# Date:   2026-08-08 02:08:11 CEST
 # Path:   ~/.local/bin/rename-window-x11
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,7 +10,6 @@
 # Rename the active X11 window by prompting for a new name via zenity.
 #**
 
-#**
 #* USAGE:
 #*   ${0}
 #**
