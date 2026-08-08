@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-08 18:08:03 CEST
+# Date:   2026-08-08 18:27:14 CEST
 # Path: ~/.local/bin/fzf-launcher
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ function list-entries() {
     if [[ ! -d "${DIRS[i]}" ]]; then
       unset -v 'DIRS[${i}]'
     else
-      DIRS[${i}]="${DIRS[i]}/applications/**/*.desktop"
+      DIRS[i]="${DIRS[i]}/applications/**/*.desktop"
     fi
   done
 
@@ -232,7 +232,8 @@ function generate-command() {
 }
 
 function shouldAutostart() {
-    local condition="$(cat ${1} | rg "AutostartCondition" | cut -d'=' -f2)"
+    local condition
+    condition="$(cat "${1}" | rg "AutostartCondition" | cut -d'=' -f2)"
     local filename="${XDG_CONFIG_HOME-${HOME}/.config}/${condition#* }"
     case ${condition} in
         if-exists*)
@@ -263,7 +264,7 @@ function list-autostart() {
     if [[ ! -d "${DIRS[i]}" ]]; then
       unset -v 'DIRS[${i}]'
     else
-      DIRS[${i}]="${DIRS[i]}/autostart/*.desktop"
+      DIRS[i]="${DIRS[i]}/autostart/*.desktop"
     fi
   done
 
@@ -304,18 +305,18 @@ purge() {
  > "${HIST_FILE}"
  declare -A PURGE_CMDS
  for PROVIDER_NAME in "${!PROVIDERS[@]}"; do
-   readarray -td ${DEL} PROVIDER_ARGS <<<${PROVIDERS[${PROVIDER_NAME}]}
+   readarray -td ${DEL} PROVIDER_ARGS <<<"${PROVIDERS[${PROVIDER_NAME}]}"
    PURGE_CMD=${PROVIDER_ARGS[3]}
    [ -z "${PURGE_CMD}" ] && PURGE_CMD='test -f "{1}" || exit 43'
    PURGE_CMDS[${PROVIDER_NAME}]="${PURGE_CMD%$'\n'}"
   done
   for HIST_LINE in "${HIST_LINES[@]#*' '}"; do
-    readarray -td $'\034' HIST_ENTRY <<<${HIST_LINE}
+    readarray -td $'\034' HIST_ENTRY <<<"${HIST_LINE}"
     ENTRY=${HIST_ENTRY[1]}
-    readarray -td ' ' FILTER <<<${PURGE_CMDS[${ENTRY}]//\{1\}/${HIST_ENTRY[0]}}
-    (eval "${FILTER[@]}" 1>/dev/null) # Run filter command discarding output. We only want the exit status
+    readarray -td ' ' FILTER <<<"${PURGE_CMDS[${ENTRY}]//\{1\}/${HIST_ENTRY[0]}}"
+    ("${FILTER[@]}" 1>/dev/null) # Run filter command discarding output. We only want the exit status
     if [[ ${?} -ne 43 ]]; then
-      echo "1 ${HIST_LINE[@]%$'\n'}" >> "${HIST_FILE}"
+      echo "1 ${HIST_LINE%$'\n'}" >> "${HIST_FILE}"
     fi
   done
 }
@@ -340,7 +341,7 @@ for PROVIDER_NAME in "${!PROVIDERS[@]}"; do
   (bash -c "${0} provide ${PROVIDER_NAME}" >>"${FZFPIPE}") &
 done
 
-readarray -t COMMAND_STR <<<$(
+readarray -t COMMAND_STR <<<"$(
   ${FZF_COMMAND} --ansi +s -x -d '\034' --nth ..3 --with-nth 3 \
     --print-query \
     --preview "${0} describe {2} {1}" \
@@ -350,17 +351,20 @@ readarray -t COMMAND_STR <<<$(
     --header='' --no-info --margin='1,2' \
     --color='16,gutter:-1' \
     <"${FZFPIPE}"
-) || exit 1
+)" || exit 1
 # Get the last line of the fzf output. If there were no matches, it contains the query which we'll treat as a custom command
 # If there were matches, it contains the selected item
+# shellcheck disable=SC2178
 COMMAND_STR=$(printf '%s\n' "${COMMAND_STR[@]: -1}")
 # We still need to format the query to conform to our fallback provider.
 # We check for the presence of field separator character to determine if we're dealing with a custom command
+# shellcheck disable=SC2128,SC2178
 if [[ ${COMMAND_STR} != *$'\034'* ]]; then
     COMMAND_STR="${COMMAND_STR}"$'\034user\034'"${COMMAND_STR}"$'\034'
     SKIP_HIST=1 # I chose not to include custom commands in the history. If this is a bad idea, open an issue please
 fi
 
+# shellcheck disable=SC2128
 [ -z "${COMMAND_STR}" ] && exit 1
 
 if [[ -n "${HIST_FILE}" && ! "${SKIP_HIST}" ]]; then
@@ -368,7 +372,7 @@ if [[ -n "${HIST_FILE}" && ! "${SKIP_HIST}" ]]; then
   for i in "${!HIST_LINES[@]}"; do
     if [[ "${HIST_LINES[i]}" == *" ${COMMAND_STR}"$'\n' ]]; then
       HIST_COUNT=${HIST_LINES[i]%% *}
-      HIST_LINES[${i}]="$((HIST_COUNT + 1)) ${COMMAND_STR}"$'\n'
+      HIST_LINES[i]="$((HIST_COUNT + 1)) ${COMMAND_STR}"$'\n'
       match=1
       break
     fi
