@@ -1,7 +1,7 @@
-# vim:tw=88:sw=2:ts=2:sts=2:et
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 20:02:48 CEST
+# Date:   2026-08-09 02:05:10 CEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ macd() {
 #*  ${0} [DIR]
 #**
 c() {
-  if [[ -z "${1}" ]]; then
+  if [[ -z ${1} ]]; then
     builtin cd || return
   elif (("$(command ls "${1}" 2> /dev/null | wc -l)" > 50)); then
     builtin cd "${1}" || return
@@ -181,7 +181,7 @@ ext-filtered() {
 #*   ${0} TARGET SYMLINK
 #**
 is_symlink() {
-  [[ -L "${2}" && "$(readlink "${2}")" == "${1}" ]]
+  [[ -L ${2} && "$(readlink "${2}")" == "${1}" ]]
 }
 
 # -----------------------------------------------------------------------------
@@ -329,10 +329,10 @@ reverse-lines() {
 #**
 chead() {
   local n=10
-  if [[ "${1}" == -n ]]; then
+  if [[ ${1} == -n ]]; then
     n="${2}"
     shift 2
-  elif [[ "${1}" =~ ^-[0-9]+$ ]]; then
+  elif [[ ${1} =~ ^-[0-9]+$ ]]; then
     n="${1#-}"
     shift
   fi
@@ -359,10 +359,10 @@ ccat() {
   local count=""
   local use_bat=0
 
-  if [[ "${1}" == -c ]]; then
+  if [[ ${1} == -c ]]; then
     count="${2}"
     shift 2
-  elif [[ "${1}" =~ ^-[0-9]+$ ]]; then
+  elif [[ ${1} =~ ^-[0-9]+$ ]]; then
     count="${1#-}"
     shift
   fi
@@ -381,20 +381,20 @@ ccat() {
 
     if ((use_bat)); then
       if alias cat 2> /dev/null | rg -q 'bat'; then
-        if [[ -n "${count}" ]]; then
+        if [[ -n ${count} ]]; then
           cat --paging=never --line-range "1:${count}" -- "${f}"
         else
           cat --paging=never -- "${f}"
         fi
       else
-        if [[ -n "${count}" ]]; then
+        if [[ -n ${count} ]]; then
           bat --paging=never --line-range "1:${count}" -- "${f}"
         else
           bat --paging=never -- "${f}"
         fi
       fi
     else
-      if [[ -n "${count}" ]]; then
+      if [[ -n ${count} ]]; then
         sed -n "1,${count}p" -- "${f}"
       else
         command cat -- "${f}"
@@ -703,7 +703,7 @@ tmux-clean() {
 #**
 temp() {
   ext="${1}"
-  if [[ -z "${ext}" ]]; then
+  if [[ -z ${ext} ]]; then
     ext="md"
     tmpfile="/tmp/temp_$(date +%F_%H_%M_%S).${ext}"
 
@@ -980,7 +980,7 @@ ffcut() {
   local start="${2}"
   local end="${3}"
 
-  if [[ ! -f "${input}" ]]; then
+  if [[ ! -f ${input} ]]; then
     print -u2 "Input file does not exist: ${input}"
     return 1
   fi

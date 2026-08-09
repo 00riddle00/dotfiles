@@ -1,7 +1,7 @@
-# vim:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:08:21 CEST
+# Date:   2026-08-09 02:05:27 CEST
 # Path:   ~/.config/zsh/fzf-key-bindings-customized.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -15,9 +15,10 @@ fzf-cd-widget() {
   setopt localoptions pipefail no_aliases 2> /dev/null
   local dir="$(
     FZF_DEFAULT_COMMAND=${FZF_ALT_C_COMMAND:-} \
-    FZF_DEFAULT_OPTS=$(__fzf_defaults "--reverse --walker=dir,follow,hidden --scheme=path" "${FZF_ALT_C_OPTS-} +m") \
-    FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd) < /dev/tty)"
-  if [[ -z "$dir" ]]; then
+      FZF_DEFAULT_OPTS=$(__fzf_defaults "--reverse --walker=dir,follow,hidden --scheme=path" "${FZF_ALT_C_OPTS-} +m") \
+      FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd) < /dev/tty
+  )"
+  if [[ -z $dir ]]; then
     zle redisplay
     return 0
   fi
@@ -29,8 +30,8 @@ fzf-cd-widget() {
   zle reset-prompt
   return $ret
 }
-if [[ "${FZF_ALT_C_COMMAND-x}" != "" ]]; then
-  zle     -N             fzf-cd-widget
+if [[ ${FZF_ALT_C_COMMAND-x} != "" ]]; then
+  zle -N fzf-cd-widget
   bindkey -M emacs '\ec' fzf-cd-widget
   bindkey -M vicmd '\ec' fzf-cd-widget
   bindkey -M viins '\ec' fzf-cd-widget
@@ -42,20 +43,20 @@ fi
 
 # CTRL-R - Paste the selected command from history into the command line
 fzf-history-widget() {
-  fc -R  # Reload the history from the file to ensure the latest history is available
+  fc -R # Reload the history from the file to ensure the latest history is available
   local selected
   setopt localoptions noglobsubst noposixbuiltins pipefail no_aliases noglob nobash_rematch 2> /dev/null
   # Ensure the module is loaded if not already, and the required features, such
   # as the associative 'history' array, which maps event numbers to full history
   # lines, are set. Also, make sure Perl is installed for multi-line output.
-  if zmodload -F zsh/parameter p:{commands,history} 2>/dev/null && (( ${+commands[perl]} )); then
-    selected="$(printf '%s\t%s\000' "${(kv)history[@]}" |
-      perl -0 -ne 'if (!$seen{(/^\s*[0-9]+\**\t(.*)/s, $1)}++) { s/\n/\n\t/g; print; }' |
-      FZF_DEFAULT_OPTS=$(__fzf_defaults "" "-n2..,.. --scheme=history --bind=ctrl-r:toggle-sort --wrap-sign '\t↳ ' --highlight-line ${FZF_CTRL_R_OPTS-} --query=${(qqq)LBUFFER} +m --read0") \
+  if zmodload -F zsh/parameter p:{commands,history} 2> /dev/null && ((${+commands[perl]})); then
+    selected="$(printf '%s\t%s\000' "${(kv)history[@]}" \
+      | perl -0 -ne 'if (!$seen{(/^\s*[0-9]+\**\t(.*)/s, $1)}++) { s/\n/\n\t/g; print; }' \
+      | FZF_DEFAULT_OPTS=$(__fzf_defaults "" "-n2..,.. --scheme=history --bind=ctrl-r:toggle-sort --wrap-sign '\t↳ ' --highlight-line ${FZF_CTRL_R_OPTS-} --query=${(qqq)LBUFFER} +m --read0") \
       FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd))"
   else
-    selected="$(fc -rl 1 | awk '{ cmd=$0; sub(/^[ \t]*[0-9]+\**[ \t]+/, "", cmd); if (!seen[cmd]++) print $0 }' |
-      FZF_DEFAULT_OPTS=$(__fzf_defaults "" "-n2..,.. --scheme=history --bind=ctrl-r:toggle-sort --wrap-sign '\t↳ ' --highlight-line ${FZF_CTRL_R_OPTS-} --query=${(qqq)LBUFFER} +m") \
+    selected="$(fc -rl 1 | awk '{ cmd=$0; sub(/^[ \t]*[0-9]+\**[ \t]+/, "", cmd); if (!seen[cmd]++) print $0 }' \
+      | FZF_DEFAULT_OPTS=$(__fzf_defaults "" "-n2..,.. --scheme=history --bind=ctrl-r:toggle-sort --wrap-sign '\t↳ ' --highlight-line ${FZF_CTRL_R_OPTS-} --query=${(qqq)LBUFFER} +m") \
       FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd))"
   fi
   local ret=$?

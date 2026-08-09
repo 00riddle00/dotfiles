@@ -1,7 +1,7 @@
-# vim:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:35:19 CEST
+# Date:   2026-08-09 02:05:03 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -176,7 +176,7 @@ setopt NO_BEEP
 stty -ixon
 
 # Use the key bindings of the fzf package / plugin
-if [[ -x "$(command -v fzf)"  ]]; then
+if [[ -x "$(command -v fzf)" ]]; then
   source /usr/share/fzf/key-bindings.zsh
 fi
 # ^--- There may exist a file ${ZDOTDIR}/fzf-key-bindings-customized.zsh which
@@ -193,7 +193,7 @@ fi
 
 # Organize Zsh configuration across multiple files
 # (mainly for aliases and functions)
-if [[ -d "${ZDOTDIR}" ]]; then
+if [[ -d ${ZDOTDIR} ]]; then
   for file in "${ZDOTDIR}"/*.zsh; do
     source "${file}"
   done
@@ -234,7 +234,7 @@ if [[ -n $HYPRLAND_INSTANCE_SIGNATURE ]]; then
 fi
 
 # Launch tmux
-if [[ -z "$TMUX" && "$TERM_PROGRAM" != "vscode" && -z "$INSIDE_JETBRAINS" && -z "$INSIDE_PYCHARM" ]]; then
+if [[ -z $TMUX && $TERM_PROGRAM != "vscode" && -z $INSIDE_JETBRAINS && -z $INSIDE_PYCHARM ]]; then
   tmux > /dev/null 2>&1
   true
 fi

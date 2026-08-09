@@ -1,6 +1,7 @@
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-29 11:10:36 EEST
+# Date: 2026-08-09 02:05:33 CEST
 # Path: ~/.config/zsh/zsh-vi-search.zsh
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -20,13 +21,18 @@ function _index-of {
   local START=${3:-0}
   local DIRECTION=${4:-1}
 
-  [[ $STRLEN -ge 0 ]]      || return 1
-  [[ $SUBSTRLEN -ge 0 ]]   || return 2
-  [[ $START -ge 0 ]]       || return 3
+  [[ $STRLEN -ge 0 ]] || return 1
+  [[ $SUBSTRLEN -ge 0 ]] || return 2
+  [[ $START -ge 0 ]] || return 3
   [[ $START -lt $STRLEN ]] || return 4
   [[ $DIRECTION -eq 1 || $DIRECTION -eq -1 ]] || return 5
 
-  for ((INDEX = $START; INDEX >= 0 && INDEX < $STRLEN; INDEX = INDEX + $DIRECTION)); do
+  for ((INDEX = START; INDEX >= 0 && INDEX < STRLEN; INDEX = INDEX + DIRECTION)); do
+    # NOTE: keep the $ inside ${STR:$INDEX:$SUBSTRLEN} — zsh parses the
+    # bareword form as a parameter-expansion modifier flag and errors with
+    # "unrecognized modifier". shfmt's zsh dialect strips this $ anyway
+    # (confirmed bug, not a style choice); re-fix by hand if a future
+    # shfmt -ln=zsh run touches this line again.
     if [[ "${STR:$INDEX:$SUBSTRLEN}" == "$SUBSTR" ]]; then
       echo $INDEX
       return
@@ -39,27 +45,27 @@ function _index-of {
 function _vi-search-forward {
   setopt localoptions no_sh_word_split
   read-from-minibuffer
-  INDEX=$(_index-of $BUFFER $REPLY $(($CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $REPLY 0) && CURSOR=$INDEX
+  INDEX=$(_index-of $BUFFER $REPLY $((CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $REPLY 0) && CURSOR=$INDEX
   export VISEARCHSTR=$REPLY
   export VISEARCHDIRECTION=1
 }
 
 function _vi-search-forward-repeat {
   setopt localoptions no_sh_word_split
-  INDEX=$(_index-of $BUFFER $VISEARCHSTR $(($CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $VISEARCHSTR 0) && CURSOR=$INDEX
+  INDEX=$(_index-of $BUFFER $VISEARCHSTR $((CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $VISEARCHSTR 0) && CURSOR=$INDEX
 }
 
 function _vi-search-backward {
   setopt localoptions no_sh_word_split
   read-from-minibuffer
-  INDEX=$(_index-of $BUFFER $REPLY $(($CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $REPLY $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
+  INDEX=$(_index-of $BUFFER $REPLY $((CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $REPLY $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
   export VISEARCHSTR=$REPLY
   export VISEARCHDIRECTION=-1
 }
 
 function _vi-search-backward-repeat {
   setopt localoptions no_sh_word_split
-  INDEX=$(_index-of $BUFFER $VISEARCHSTR $(($CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $VISEARCHSTR $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
+  INDEX=$(_index-of $BUFFER $VISEARCHSTR $((CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $VISEARCHSTR $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
 }
 
 function _vi-search-repeat {
@@ -80,9 +86,9 @@ function _vi-search-repeat-reverse {
   fi
 }
 
-zle -N vi-search-backward       _vi-search-backward
-zle -N vi-search-forward        _vi-search-forward
-zle -N vi-search-repeat         _vi-search-repeat
+zle -N vi-search-backward _vi-search-backward
+zle -N vi-search-forward _vi-search-forward
+zle -N vi-search-repeat _vi-search-repeat
 zle -N vi-search-repeat-reverse _vi-search-repeat-reverse
 
 bindkey -M vicmd '?' vi-search-backward

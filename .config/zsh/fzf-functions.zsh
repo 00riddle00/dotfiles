@@ -1,7 +1,7 @@
-# vim:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 21:11:27 CEST
+# Date:   2026-08-09 02:05:18 CEST
 # Path:   ~/.config/zsh/fzf-functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ edit-file() {
   local include_hidden=""
   local file
 
-  if [[ "$1" == "--hidden" ]]; then
+  if [[ $1 == "--hidden" ]]; then
     include_hidden="--hidden"
   fi
 
@@ -29,7 +29,7 @@ edit-file() {
       --follow \
       --exclude .git \
       --max-depth=1 \
-        2> /dev/null \
+      2> /dev/null \
       | fzf +m \
         --preview "bat \
           --color=always \
@@ -83,7 +83,7 @@ fdd() {
   local include_hidden=false
   local dir_
 
-  if [[ "$1" == "--hidden" ]]; then
+  if [[ $1 == "--hidden" ]]; then
     include_hidden=true
     shift
   fi
@@ -152,7 +152,7 @@ ftpane() {
       | cut -c 1
   )"
 
-  if [[ "${current_window}" -eq "${target_window}" ]] ; then
+  if [[ ${current_window} -eq ${target_window} ]]; then
     tmux select-pane -t "${target_window}.${target_pane}"
   else
     tmux select-pane -t "${target_window}.${target_pane}" \
