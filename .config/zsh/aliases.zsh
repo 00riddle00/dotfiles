@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:17:59 CEST
+# Date:   2026-08-09 04:48:50 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -478,9 +478,8 @@ def pac.clear_all         'sudo pacman -Scc'
 # Fuzzy-search through all available packages, with package info shown in a
 # preview window, and then install selected packages
 def fzf.pac \
-  'pacman -Slq | fzf -m --preview '\
-pacman -Si {1}\
-' | command xargs -ro sudo pacman -S'
+  'pacman -Slq | fzf -m --preview "pacman -Si {1}" | '\
+'command xargs -ro sudo pacman -S'
 # -------------------------------------------------------------------------
 # Updates the pkg databases if the repositories haven’t been checked recently,
 # and upgrades any new package versions.
@@ -596,7 +595,7 @@ def tarr   'tar -xvf'
 #def th     'thunar'
 def ti     'termdown -B | lolcat'
 def timer  'termdown -B | lolcat'
-def tl     'translit'
+#def tl     'translit'
 def tre    '\tree'
 def tt     'thunar'
 def tu     'thunar'
@@ -1167,7 +1166,7 @@ def cmus.scratch \
 # Run this instead of `i3-msg` while in tmux
 def i3-msg-tmux \
   'i3-msg --socket "${XDG_RUNTIME_DIR}/i3/$(command ls -t '\
-'${XDG_RUNTIME_DIR}/i3/ | awk "{OFS=FS} {print $1}" | rg ipc | head -n 1)"'
+'${XDG_RUNTIME_DIR}/i3/ | awk "{OFS=FS} {print \$1}" | rg ipc | head -n 1)"'
 
 #----------------------------------------
 # Hyprland
