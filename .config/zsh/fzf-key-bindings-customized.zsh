@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:05:27 CEST
+# Date:   2026-08-09 18:21:25 CEST
 # Path:   ~/.config/zsh/fzf-key-bindings-customized.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,7 +13,8 @@
 # ALT-C - cd into the selected directory
 fzf-cd-widget() {
   setopt localoptions pipefail no_aliases 2> /dev/null
-  local dir="$(
+  local dir
+  dir="$(
     FZF_DEFAULT_COMMAND=${FZF_ALT_C_COMMAND:-} \
       FZF_DEFAULT_OPTS=$(__fzf_defaults "--reverse --walker=dir,follow,hidden --scheme=path" "${FZF_ALT_C_OPTS-} +m") \
       FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd) < /dev/tty
@@ -62,7 +63,7 @@ fzf-history-widget() {
   local ret=$?
   if [ -n "$selected" ]; then
     if [[ $(awk '{print $1; exit}' <<< "$selected") =~ ^[1-9][0-9]* ]]; then
-      zle vi-fetch-history -n $MATCH
+      zle vi-fetch-history -n "$MATCH"
     else # selected is a custom query, not from history
       LBUFFER="$selected"
     fi
