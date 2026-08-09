@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-09 02:05:33 CEST
+# Date: 2026-08-09 04:05:28 CEST
 # Path: ~/.config/zsh/zsh-vi-search.zsh
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -39,33 +39,33 @@ function _index-of {
     fi
   done
 
-  return -1
+  return 6
 }
 
 function _vi-search-forward {
   setopt localoptions no_sh_word_split
   read-from-minibuffer
-  INDEX=$(_index-of $BUFFER $REPLY $((CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $REPLY 0) && CURSOR=$INDEX
+  INDEX=$(_index-of "${BUFFER}" "${REPLY}" $((CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of "${BUFFER}" "${REPLY}" 0) && CURSOR=$INDEX
   export VISEARCHSTR=$REPLY
   export VISEARCHDIRECTION=1
 }
 
 function _vi-search-forward-repeat {
   setopt localoptions no_sh_word_split
-  INDEX=$(_index-of $BUFFER $VISEARCHSTR $((CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $VISEARCHSTR 0) && CURSOR=$INDEX
+  INDEX=$(_index-of "${BUFFER}" "${VISEARCHSTR}" $((CURSOR + 1))) && CURSOR=$INDEX || INDEX=$(_index-of "${BUFFER}" "${VISEARCHSTR}" 0) && CURSOR=$INDEX
 }
 
 function _vi-search-backward {
   setopt localoptions no_sh_word_split
   read-from-minibuffer
-  INDEX=$(_index-of $BUFFER $REPLY $((CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $REPLY $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
+  INDEX=$(_index-of "${BUFFER}" "${REPLY}" $((CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of "${BUFFER}" "${REPLY}" $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
   export VISEARCHSTR=$REPLY
   export VISEARCHDIRECTION=-1
 }
 
 function _vi-search-backward-repeat {
   setopt localoptions no_sh_word_split
-  INDEX=$(_index-of $BUFFER $VISEARCHSTR $((CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of $BUFFER $VISEARCHSTR $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
+  INDEX=$(_index-of "${BUFFER}" "${VISEARCHSTR}" $((CURSOR - 1)) -1) && CURSOR=$INDEX || INDEX=$(_index-of "${BUFFER}" "${VISEARCHSTR}" $((${#BUFFER} - 1)) -1) && CURSOR=$INDEX
 }
 
 function _vi-search-repeat {

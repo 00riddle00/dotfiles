@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:05:18 CEST
+# Date:   2026-08-09 04:17:10 CEST
 # Path:   ~/.config/zsh/fzf-functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ edit-file() {
         --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
         --preview-window=right:60%:nowrap
   )" || return
-  ${EDITOR} "${file}" || return
+  "${EDITOR}" "${file}" || return
 }
 
 #* Open a selected script in ${BIN} for editing.
@@ -46,7 +46,7 @@ edit-file() {
 #*   ${0}
 #**
 se() {
-  du -a ${BIN}/* \
+  du -a "${BIN}"/* \
     | awk '{print $2}' \
     | sed "s|^${BIN}/||" \
     | fzf +m \
@@ -57,7 +57,7 @@ se() {
           ${BIN}/{}" \
       --bind 'ctrl-u:preview-page-up,ctrl-d:preview-page-down' \
       --preview-window=right:60%:nowrap \
-    | command xargs -I {} -r ${EDITOR} "${BIN}/{}"
+    | command xargs -I {} -r "${EDITOR}" "${BIN}/{}"
 }
 
 # --------------------------------------------

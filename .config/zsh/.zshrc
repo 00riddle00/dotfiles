@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:05:03 CEST
+# Date:   2026-08-09 04:04:47 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(
 
 # Set up directory colors in the terminal
 if [[ -f ${DIRCOLORS} ]]; then
-  eval $(dircolors ${DIRCOLORS})
+  eval "$(dircolors "${DIRCOLORS}")"
 fi
 
 # Use zsh-fast-syntax-highlighting package / plugin
