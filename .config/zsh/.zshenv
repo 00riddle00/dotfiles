@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:17:52 CEST
+# Date:   2026-08-09 02:19:46 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -32,8 +32,8 @@ exp XDG_VIDEOS_DIR      "${HOME}/Videos"
 # Additional user directories
 exp BIN         "${HOME}/.local/bin"
 exp DOTSHARE    "${HOME}/.local/share/dotshare"
-exp CANDY       "${DROPBOX}/candy"
 exp DROPBOX     "${HOME}/Dropbox"
+exp CANDY       "${DROPBOX}/candy"
 exp NOTES       "${DROPBOX}/gtd/"
 exp PRO         "${HOME}/Projects"
 exp SCREENSHOTS "${HOME}/Screenshots"
@@ -162,7 +162,7 @@ exp SVN_EDITOR 'svn-editor-hook nvim'
 # Zsh history
 exp HISTFILE "${ZDOTDIR}/histfile"
 exp HISTSIZE '400000'
-exp SAVEHIST "$((HISTSIZE/2))"
+exp SAVEHIST "$((HISTSIZE / 2))"
 
 # fzf, a command-line fuzzy finder
 exp FZF_DEFAULT_OPTS " \
@@ -191,7 +191,7 @@ exp FZF_DEFAULT_OPTS " \
 "
 exp FZF_CTRL_T_OPTS "--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 exp FZF_CTRL_R_OPTS "--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
-exp FZF_ALT_C_OPTS "--preview 'tree -C {} | head -200'"
+exp FZF_ALT_C_OPTS  "--preview 'tree -C {} | head -200'"
 
 # Colors
 exp COL_BG_SEACOLOR '#073542'
@@ -203,9 +203,9 @@ exp DP2_SCREEN    'DP-2'
 exp DP3_SCREEN    'DP-4'
 
 if [[ "$(hostname)" == "panther" ]]; then
-  exp HDMI1_SCREEN  'HDMI-1'
+  exp HDMI1_SCREEN 'HDMI-1'
 else
-  exp HDMI1_SCREEN  'HDMI-0'
+  exp HDMI1_SCREEN 'HDMI-0'
 fi
 
 # Python
