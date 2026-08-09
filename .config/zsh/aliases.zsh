@@ -1,7 +1,7 @@
-# vim:fenc=utf-8:tw=88:nu:ai:si:et:ts=2:sw=2
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 01:03:29 CEST
+# Date:   2026-08-09 02:17:59 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------

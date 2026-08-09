@@ -1,7 +1,7 @@
-# vim:tw=79:sw=2:ts=2:sts=2:et
+# vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:26:56 CEST
+# Date:   2026-08-09 02:17:52 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
