@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 04:17:10 CEST
+# Date:   2026-08-09 19:15:55 CEST
 # Path:   ~/.config/zsh/fzf-functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,14 +18,14 @@ edit-file() {
   local include_hidden=""
   local file
 
-  if [[ $1 == "--hidden" ]]; then
+  if [[ ${1} == "--hidden" ]]; then
     include_hidden="--hidden"
   fi
 
   file="$(
     /usr/bin/fd \
       --type f \
-      $include_hidden \
+      ${include_hidden} \
       --follow \
       --exclude .git \
       --max-depth=1 \
@@ -83,12 +83,12 @@ fdd() {
   local include_hidden=false
   local dir_
 
-  if [[ $1 == "--hidden" ]]; then
+  if [[ ${1} == "--hidden" ]]; then
     include_hidden=true
     shift
   fi
 
-  if $include_hidden; then
+  if ${include_hidden}; then
     dir_="$(fd -H -t d . "${1:-.}" | fzf +m)" || return
   else
     dir_="$(fd -t d . "${1:-.}" | fzf +m)" || return
@@ -112,8 +112,8 @@ fkill() {
       | awk '{print $1}'
   )" || return
 
-  if kill -"$signal" "${pid}"; then
-    echo "Killed PID ${pid} with signal $signal"
+  if kill -"${signal}" "${pid}"; then
+    echo "Killed PID ${pid} with signal ${signal}"
   fi
 }
 
@@ -147,7 +147,7 @@ ftpane() {
   )"
 
   target_pane="$(
-    echo "$target" \
+    echo "${target}" \
       | awk 'BEGIN{FS=":|-"} {print $2}' \
       | cut -c 1
   )"

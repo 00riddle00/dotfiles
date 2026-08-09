@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-08 23:34:16 CEST
+# Date: 2026-08-09 19:15:06 CEST
 # Path: ~/.local/bin/dmenu-switch
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ max="$(
 
 windows="$(
   echo "${windows}" \
-    | awk -v max="$max" '{
+    | awk -v max="${max}" '{
       cur=length($1); printf $1; \
       for(i=0; i < max - cur + 1; i++) printf " "; \
       $1 = ""; printf "%s\n", $0

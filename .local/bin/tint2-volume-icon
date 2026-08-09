@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-08 23:35:50 CEST
+# Date: 2026-08-09 19:15:13 CEST
 # Path: ~/.local/bin/tint2-volume-icon
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ status="$(
     | awk -F'[][]' '/Right:|Mono:/ && NF > 1 {print $4}'
 )"
 
-if [[ $status == "on" ]]; then
+if [[ ${status} == "on" ]]; then
   # Search for the lines containing 'Right:' or 'Mono:', when more than 1 field
   # exists we strip the trailing '%' and round it up with printf "%0.0f" just
   # in case.

@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 18:21:25 CEST
+# Date:   2026-08-09 19:15:57 CEST
 # Path:   ~/.config/zsh/fzf-key-bindings-customized.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -19,17 +19,17 @@ fzf-cd-widget() {
       FZF_DEFAULT_OPTS=$(__fzf_defaults "--reverse --walker=dir,follow,hidden --scheme=path" "${FZF_ALT_C_OPTS-} +m") \
       FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd) < /dev/tty
   )"
-  if [[ -z $dir ]]; then
+  if [[ -z ${dir} ]]; then
     zle redisplay
     return 0
   fi
   zle push-line # Clear buffer. Auto-restored on next prompt.
   BUFFER="c ${(q)dir:a}"
   zle accept-line
-  local ret=$?
+  local ret=${?}
   unset dir # ensure this doesn't end up appearing in prompt expansion
   zle reset-prompt
-  return $ret
+  return ${ret}
 }
 if [[ ${FZF_ALT_C_COMMAND-x} != "" ]]; then
   zle -N fzf-cd-widget
@@ -60,14 +60,14 @@ fzf-history-widget() {
       | FZF_DEFAULT_OPTS=$(__fzf_defaults "" "-n2..,.. --scheme=history --bind=ctrl-r:toggle-sort --wrap-sign '\t↳ ' --highlight-line ${FZF_CTRL_R_OPTS-} --query=${(qqq)LBUFFER} +m") \
       FZF_DEFAULT_OPTS_FILE='' $(__fzfcmd))"
   fi
-  local ret=$?
-  if [ -n "$selected" ]; then
-    if [[ $(awk '{print $1; exit}' <<< "$selected") =~ ^[1-9][0-9]* ]]; then
-      zle vi-fetch-history -n "$MATCH"
+  local ret=${?}
+  if [ -n "${selected}" ]; then
+    if [[ $(awk '{print $1; exit}' <<< "${selected}") =~ ^[1-9][0-9]* ]]; then
+      zle vi-fetch-history -n "${MATCH}"
     else # selected is a custom query, not from history
-      LBUFFER="$selected"
+      LBUFFER="${selected}"
     fi
   fi
   zle reset-prompt
-  return $ret
+  return ${ret}
 }
