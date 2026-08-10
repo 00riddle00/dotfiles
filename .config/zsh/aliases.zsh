@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 04:48:50 CEST
+# Date:   2026-08-10 06:15:12 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -908,7 +908,7 @@ def doc 'libreoffice --headless --convert-to pdf *.docx'
 #def dohd   'ls -ld .[^.]*/'
 #def dohd2  'ls -ad1 .[^.]*/'
 # Display only hidden files:
-#def doh    "ls -lAp | awk '{ if ($NF ~ /^\.[^/]*$/) print }'"
+#def doh    "ls -lAp | awk '{ if (\$NF ~ /^\.[^/]*$/) print }'"
 #def doh2   'ls -ap | rg "^\.[^/]*$"'
 
 # mpv

@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:19:46 CEST
+# Date:   2026-08-10 06:15:03 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -87,7 +87,7 @@ exp W3M_DIR                     "${XDG_STATE_HOME}/w3m"
 exp WAKATIME_HOME               "${XDG_CONFIG_HOME}/wakatime"
 exp XAUTHORITY                  "${XDG_RUNTIME_DIR}/Xauthority"
 exp XINITRC                     "${XDG_CONFIG_HOME}/X11/xinitrc"
-exp ZDOTDIR                     "${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}"
+exp ZDOTDIR                     "${ZDOTDIR:-${XDG_CONFIG_HOME}/zsh}"
 exp _JAVA_OPTIONS               "-Djava.util.prefs.userRoot=\"${XDG_CONFIG_HOME}/java\" -Djavafx.cachedir=\"${XDG_CACHE_HOME}/openjfx\""
 # ^-- `export ZDOTDIR="${HOME}/.config/zsh"` is set in /etc/zsh/zshenv
 
@@ -209,7 +209,7 @@ else
 fi
 
 # Python
-exp PYENV_ROOT "$XDG_DATA_HOME/pyenv"
+exp PYENV_ROOT "${XDG_DATA_HOME}/pyenv"
 
 # R
 #exp R_PROFILE_USER "${XDG_CONFIG_HOME}/R/profile"

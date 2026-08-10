@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 03:58:06 CEST
+# Date:   2026-08-10 06:13:28 CEST
 # Path:   ~/.config/git/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -35,7 +35,7 @@
     #      \dot -Tpng graph.dot -o graph.png
     #      xdg-open graph.png
     graphviz = "!f() { echo 'digraph git { ' ; git log --pretty='format:  %h -> \
-        { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+        { %p }' \"${@}\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
     # Pretty log
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s \
         %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative

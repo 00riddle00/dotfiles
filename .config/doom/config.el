@@ -1,7 +1,7 @@
-;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+;;; ${DOOMDIR}/config.el -*- lexical-binding: t; -*-
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-07-16 15:40:55 EEST
+; Date:   2026-08-10 06:12:38 CEST
 ; Path:   ~/.config/doom/config.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
@@ -81,8 +81,8 @@
 ;; they are implemented.
 
 (after! org
-  (setq org-directory      "$NOTES/org/")
-  (setq org-agenda-files '("$NOTES/org/agenda.org"))
+  (setq org-directory      "${NOTES}/org/")
+  (setq org-agenda-files '("${NOTES}/org/agenda.org"))
   ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
   (require 'org-bullets)
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

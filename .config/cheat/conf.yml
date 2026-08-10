@@ -1,11 +1,11 @@
 ---
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 04:23:22 CEST
+# Date:   2026-08-10 06:12:04 CEST
 # Path:   ~/.config/cheat/conf.yml
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
-# The editor to use with 'cheat -e <sheet>'. Defaults to $EDITOR or $VISUAL.
+# The editor to use with 'cheat -e <sheet>'. Defaults to ${EDITOR} or ${VISUAL}
 editor: nvim
 
 # Should 'cheat' always colorize output?

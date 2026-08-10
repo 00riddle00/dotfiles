@@ -2,7 +2,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:31:47 CEST
+# Date:   2026-08-10 06:14:23 CEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -1076,7 +1076,7 @@
   <menu>
     <!-- One can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless. -->
-    <!-- Default menu file (or custom one in $HOME/.config/openbox/) -->
+    <!-- Default menu file (or custom one in ${XDG_CONFIG_HOME}/openbox/) -->
     <file>menu.xml</file>
     <!-- If a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again. -->

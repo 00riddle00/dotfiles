@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 15:45:14 EEST
+# Date:   2026-08-10 06:13:35 CEST
 # Path:   ~/.config/mutt/gmail.muttrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -8,7 +8,7 @@
 # Gmail specific options
 
 set from        = "tomasgiedraitis@gmail.com"
-set signature   = "$XDG_CONFIG_HOME/mutt/tg_gmail.sig"
+set signature   = "${XDG_CONFIG_HOME}/mutt/tg_gmail.sig"
 set sendmail    = "/usr/bin/msmtp -a gmail"
 set folder      = "~/Mail/Gmail"
 set spoolfile   = "+INBOX"

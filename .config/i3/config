@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:46:43 CEST
+# Date:   2026-08-10 06:13:31 CEST
 # Path:   ~/.config/i3/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -40,15 +40,15 @@ set $col_pretty_light_blue #00afd7
 set $col_dark_red          #b71c1c
 set $col_black             #000000
 
-set $wspace1  "1:  "
-set $wspace2  "2:  "
-set $wspace3  "3:  "
-set $wspace4  "4:  "
-set $wspace5  "5:  "
-set $wspace6  "6:  "
-set $wspace7  "7: 󰇮 "
-set $wspace8  "8:  "
-set $wspace9  "9: ♫ "
+set $wspace1   "1:  "
+set $wspace2   "2:  "
+set $wspace3   "3:  "
+set $wspace4   "4:  "
+set $wspace5   "5:  "
+set $wspace6   "6:  "
+set $wspace7   "7: 󰇮 "
+set $wspace8   "8:  "
+set $wspace9   "9: ♫ "
 set $wspace10 "10:  "
 
 # ================================================
@@ -56,7 +56,7 @@ set $wspace10 "10:  "
 # ================================================
 
 # These user-specific programs are run when an i3 X Session is started.
-# All the other autostart programs are started in $XDG_CONFIG_HOME/X11/xinitrc.
+# All the other autostart programs are started in ${XDG_CONFIG_HOME}/X11/xinitrc.
 
 # Background color
 $run sh -c "hsetroot -solid '${COL_BG_SEACOLOR}' &"
@@ -130,26 +130,26 @@ client.placeholder      $col_arch_blue $col_arch_blue         $col_light_blue  $
 # Dropdown windows (the order can matter)
 for_window [instance="dropdown_*"] floating enable
 for_window [instance="dropdown_*"] sticky   enable
-for_window [instance="dropdown_*"] border   pixel    3
-for_window [instance="dropdown_*"] resize   set      841 571
+for_window [instance="dropdown_*"] border   pixel           3
+for_window [instance="dropdown_*"] resize   set       841 571
 for_window [instance="dropdown_*"] move     position 2953 722
 for_window [instance="dropdown_*"] move     scratchpad
 
 for_window [instance="clipboard"] floating enable
 for_window [instance="clipboard"] sticky   enable
-for_window [instance="clipboard"] border   pixel    3
+for_window [instance="clipboard"] border   pixel            3
 for_window [instance="clipboard"] resize   set      1075 1222
-for_window [instance="clipboard"] move     position 183  768
+for_window [instance="clipboard"] move     position  183  768
 
 for_window [instance="i3blocks_calendar"] floating enable
-for_window [instance="i3blocks_calendar"] border   pixel    2
-for_window [instance="i3blocks_calendar"] resize   set      184  151
-for_window [instance="i3blocks_calendar"] move     position 4783 37
+for_window [instance="i3blocks_calendar"] border   pixel            2
+for_window [instance="i3blocks_calendar"] resize   set       184  151
+for_window [instance="i3blocks_calendar"] move     position 4783   37
 
 for_window [instance="i3blocks_weather"] floating enable
-for_window [instance="i3blocks_weather"] border   pixel    2
+for_window [instance="i3blocks_weather"] border   pixel           2
 for_window [instance="i3blocks_weather"] resize   set      1165 865
-for_window [instance="i3blocks_weather"] move     position 4103 37
+for_window [instance="i3blocks_weather"] move     position 4103  37
 
 for_window [class="KeePassXC"] floating enable
 for_window [class="KeePassXC"] sticky   enable
@@ -158,20 +158,20 @@ for_window [class="KeePassXC"] move     position 278 887
 
 for_window [class="Lxappearance"] floating enable
 for_window [class="Lxappearance"] sticky   enable
-for_window [class="Lxappearance"] border   pixel    3
-for_window [class="Lxappearance"] resize   set      710 504
+for_window [class="Lxappearance"] border   pixel           3
+for_window [class="Lxappearance"] resize   set       710 504
 for_window [class="Lxappearance"] move     position 3004 757
 
 for_window [class="pavucontrol"] floating enable
 for_window [class="pavucontrol"] sticky   enable
-for_window [class="pavucontrol"] border   pixel    3
-for_window [class="pavucontrol"] resize   set      852 596
+for_window [class="pavucontrol"] border   pixel          3
+for_window [class="pavucontrol"] resize   set      852  596
 for_window [class="pavucontrol"] move     position 261 1500
 
 for_window [class="Qalculate-gtk"] floating enable
 for_window [class="Qalculate-gtk"] sticky   enable
-for_window [class="Qalculate-gtk"] border   pixel    3
-for_window [class="Qalculate-gtk"] resize   set      782 545
+for_window [class="Qalculate-gtk"] border   pixel            3
+for_window [class="Qalculate-gtk"] resize   set       782  545
 for_window [class="Qalculate-gtk"] move     position 3963 1360
 
 for_window [instance="notes"]    move workspace $wspace1
@@ -218,7 +218,7 @@ bindsym $mod + q         $run open-or-focus emacs emacs.Emacs -c emacs
 bindsym $mod + r         $run ${TERMINAL} -e ranger
 bindsym $mod + s         $run xscreensaver-command --lock
 bindsym $mod + t         $run qutebrowser-wallpaper
-bindsym $mod + y         $run ${TERMINAL} -e calcurse -D $XDG_CONFIG_HOME/calcurse
+bindsym $mod + y         $run ${TERMINAL} -e calcurse -D ${XDG_CONFIG_HOME}/calcurse
 bindsym $mod + semicolon $run open-or-focus libreoffice
 
 # Imitate "Show Desktop"
@@ -241,12 +241,12 @@ bindsym $mod + Shift + b bar mode toggle
 bindsym $mod + grave bar mode hide; \
   gaps inner current set 0; \
   gaps outer current set 0; \
-  gaps top current set 0
+  gaps top   current set 0
 #   Turn off:
 bindsym $mod + Shift + grave bar mode dock; \
   gaps inner current set $gap_size_inner; \
   gaps outer current set $gap_size_outer; \
-  gaps top current set $gap_size_top
+  gaps top   current set $gap_size_top
 
 # Place new windows to the right of the current one
 bindsym $mod + apostrophe split horizontal
@@ -258,9 +258,9 @@ bindsym $mod + x fullscreen toggle
 
 # Exit i3 (logs out of the X session)
 bindsym $mod + Shift + e $run \
-    "i3-nagbar -t warning -m 'You pressed the exit shortcut. \
-     Do you really want to exit i3? This will end your X session.' \
-     -B 'Yes, exit i3' 'i3-msg exit'"
+  "i3-nagbar -t warning -m 'You pressed the exit shortcut. \
+   Do you really want to exit i3? This will end your X session.' \
+   -B 'Yes, exit i3' 'i3-msg exit'"
 
 # Change focus
 bindsym $mod+h   focus left
@@ -331,8 +331,8 @@ bindsym F12 restart
 
 bindsym $mod + F5             $run light -U 10                  && pkill -RTMIN+2 i3blocks
 bindsym $mod + F6             $run light -A 10                  && pkill -RTMIN+2 i3blocks
-bindsym $mod + F11            $run amixer     set Master 10%-   && pkill -RTMIN+1 i3blocks
-bindsym $mod + F12            $run amixer     set Master 10%+   && pkill -RTMIN+1 i3blocks
+bindsym $mod + F11            $run amixer  set Master 10%-      && pkill -RTMIN+1 i3blocks
+bindsym $mod + F12            $run amixer  set Master 10%+      && pkill -RTMIN+1 i3blocks
 bindsym $mod + Shift + Delete $run amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
 
 # Open programs
@@ -349,11 +349,11 @@ bindsym $mod + End            $run rofi -show Power -modi Power:rofi-power
 bindsym $mod + Delete         $run rofi -show Kill  -modi Kill:rofi-kill
 
 # Standard light (PageUp key)
-bindsym $mod + Prior  $run  redshift -P -O 6500
+bindsym $mod + Prior  $run redshift -P -O 6500
 # Warm light (PageDown key)
-bindsym $mod + Next   $run  redshift -P -O 5000
+bindsym $mod + Next   $run redshift -P -O 5000
 # Just for fun
-bindsym $mod + Pause  $run  redshift -P -O 1000
+bindsym $mod + Pause  $run redshift -P -O 1000
 
 bindsym Print         $run flameshot gui -p ${SCREENSHOTS}
 bindsym Shift + Print $run scrot ${SCREENSHOTS}/screenshot-%F-%H%M%S.png
@@ -372,19 +372,19 @@ bindsym $mod + Shift + Right move right
 # ----------------------------
 
 # Volume keys
-bindsym $mod + plus          $run amixer sset Master 5%+  && pkill -RTMIN+1 i3blocks
+bindsym $mod + plus          $run amixer sset Master  5%+ && pkill -RTMIN+1 i3blocks
 bindsym $mod + Shift + plus  $run amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
-bindsym $mod + minus         $run amixer sset Master 5%-  && pkill -RTMIN+1 i3blocks
+bindsym $mod + minus         $run amixer sset Master  5%- && pkill -RTMIN+1 i3blocks
 bindsym $mod + Shift + minus $run amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
 
 # MPD server: switching between songs, advancing forward/backward in a song
 bindsym $mod + less                 $run mpc prev
-bindsym $mod + Shift + less         $run mpc seek 0%
+bindsym $mod + Shift + less         $run mpc seek   0%
 bindsym $mod + greater              $run mpc next
 bindsym $mod + Shift + greater      $run mpc next
-bindsym $mod + bracketleft          $run mpc seek -10
+bindsym $mod + bracketleft          $run mpc seek  -10
 bindsym $mod + Shift + bracketleft  $run mpc seek -120
-bindsym $mod + bracketright         $run mpc seek +10
+bindsym $mod + bracketright         $run mpc seek  +10
 bindsym $mod + Shift + bracketright $run mpc seek +120
 
 # ----------------------------

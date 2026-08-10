@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-06 23:20:32 CEST
+# Date:   2026-08-10 06:11:59 CEST
 # Path:   ~/.config/alacritty/alacritty.toml
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -278,7 +278,7 @@ bindings = [
 live_config_reload = true  # Default: true
 
 # Shell program and its arguments
-# Default for Linux/BSD/macOS is $SHELL or user's login shell
+# Default for Linux/BSD/macOS is ${SHELL} or user's login shell
 # Default for Windows is "powershell"
 #[shell]
 #program = "/bin/zsh"  # Example for Linux/BSD/macOS

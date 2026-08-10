@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 04:45:16 CEST
+# Date:   2026-08-10 06:14:47 CEST
 # Path:   ~/.config/sway/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -40,15 +40,15 @@ set $col_light_blue        #79bac1
 set $col_pretty_blue       #268bd2
 set $col_pretty_light_blue #00afd7
 
-set $wspace1  "1:  "
-set $wspace2  "2:  "
-set $wspace3  "3:  "
-set $wspace4  "4:  "
-set $wspace5  "5:  "
-set $wspace6  "6:  "
-set $wspace7  "7: 󰇮 "
-set $wspace8  "8:  "
-set $wspace9  "9: ♫ "
+set $wspace1   "1:  "
+set $wspace2   "2:  "
+set $wspace3   "3:  "
+set $wspace4   "4:  "
+set $wspace5   "5:  "
+set $wspace6   "6:  "
+set $wspace7   "7: 󰇮 "
+set $wspace8   "8:  "
+set $wspace9   "9: ♫ "
 set $wspace10 "10:  "
 
 # ================================================
@@ -71,9 +71,9 @@ exec autotiling
 # the displays after another 300 seconds, and turn the screens back on when
 # resumed. It will also lock the screen before the computer goes to sleep.
 exec swayidle -w \
-    timeout 300 'swaylock -f -c 000000' \
-    timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-    before-sleep 'swaylock -f -c 000000'
+  timeout 300 'swaylock -f -c 000000' \
+  timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+  before-sleep 'swaylock -f -c 000000'
 
 exec dropbox start
 
@@ -85,14 +85,14 @@ exec mako
 
 # Monitors
 
-output HDMI-A-1 resolution 2560x1440@60hz transform 90 position 0 0
-output DP-1 resolution 3840x2160@60hz transform normal position 1440 0
-output DP-2 resolution 2560x1440@60hz transform 270 position 5280 0
+output HDMI-A-1 resolution 2560x1440@60hz transform     90 position    0 0
+output DP-1     resolution 3840x2160@60hz transform normal position 1440 0
+output DP-2     resolution 2560x1440@60hz transform    270 position 5280 0
 
 # For gaming:
 output HDMI-A-1 disable
-output DP-1 resolution 3840x2160@60hz transform normal position 1440 0
-output DP-2 disable
+output DP-1     resolution 3840x2160@60hz transform normal position 1440 0
+output DP-2     disable
 
 # Background color
 output * background $col_bg_seacolor solid_color
@@ -103,13 +103,13 @@ output * background $col_bg_seacolor solid_color
 
 # Keyboard layouts: US and Lithuanian, toggle with Alt+Shift, Caps Lock as Escape
 input * {
-    xkb_layout us,lt
-    xkb_options grp:alt_shift_toggle,caps:escape
+  xkb_layout us,lt
+  xkb_options grp:alt_shift_toggle,caps:escape
 }
 
 # Disable touchpad on a ThinkPad
 input "SYNA8005:00 06CB:CD8C Touchpad" {
-    events disabled
+  events disabled
 }
 
 # ================================================
@@ -148,8 +148,8 @@ smart_gaps on
 # Window borders
 #for_window [class="^.*"] border pixel 1
 
-default_border none
-default_floating_border none
+default_border            none
+default_floating_border   none
 titlebar_border_thickness 0
 
 smart_borders on
@@ -207,26 +207,26 @@ for_window [class="Spotify"]                move workspace $wspace9
 # Dropdown windows (the order can matter)
 for_window [instance="dropdown_.*"] floating enable
 for_window [instance="dropdown_.*"] sticky   enable
-for_window [instance="dropdown_.*"] border   pixel    3
-for_window [instance="dropdown_.*"] resize   set      841 571
+for_window [instance="dropdown_.*"] border   pixel           3
+for_window [instance="dropdown_.*"] resize   set       841 571
 for_window [instance="dropdown_.*"] move     position 2953 722
 for_window [instance="dropdown_.*"] move     scratchpad
 
 for_window [instance="clipboard"] floating enable
 for_window [instance="clipboard"] sticky   enable
-for_window [instance="clipboard"] border   pixel    3
+for_window [instance="clipboard"] border   pixel            3
 for_window [instance="clipboard"] resize   set      1075 1222
-for_window [instance="clipboard"] move     position 183  768
+for_window [instance="clipboard"] move     position  183  768
 
 for_window [instance="i3blocks_calendar"] floating enable
-for_window [instance="i3blocks_calendar"] border   pixel    2
-for_window [instance="i3blocks_calendar"] resize   set      184  151
-for_window [instance="i3blocks_calendar"] move     position 4783 37
+for_window [instance="i3blocks_calendar"] border   pixel           2
+for_window [instance="i3blocks_calendar"] resize   set       184 151
+for_window [instance="i3blocks_calendar"] move     position 4783  37
 
 for_window [instance="i3blocks_weather"] floating enable
-for_window [instance="i3blocks_weather"] border   pixel    2
+for_window [instance="i3blocks_weather"] border   pixel           2
 for_window [instance="i3blocks_weather"] resize   set      1165 865
-for_window [instance="i3blocks_weather"] move     position 4103 37
+for_window [instance="i3blocks_weather"] move     position  4103 37
 
 for_window [app_id="org.keepassxc.KeePassXC"] floating enable
 for_window [app_id="org.keepassxc.KeePassXC"] sticky   enable
@@ -235,25 +235,25 @@ for_window [app_id="org.keepassxc.KeePassXC"] move     position 278 887
 
 for_window [app_id="lxappearance"] floating enable
 for_window [app_id="lxappearance"] sticky   enable
-for_window [app_id="lxappearance"] border   pixel    3
-for_window [app_id="lxappearance"] resize   set      710 504
+for_window [app_id="lxappearance"] border   pixel           3
+for_window [app_id="lxappearance"] resize   set       710 504
 for_window [app_id="lxappearance"] move     position 3004 757
 
 for_window [app_id="org.pulseaudio.pavucontrol"] floating enable
 for_window [app_id="org.pulseaudio.pavucontrol"] sticky   enable
-for_window [app_id="org.pulseaudio.pavucontrol"] border   pixel    3
-for_window [app_id="org.pulseaudio.pavucontrol"] resize   set      852 596
+for_window [app_id="org.pulseaudio.pavucontrol"] border   pixel           3
+for_window [app_id="org.pulseaudio.pavucontrol"] resize   set      852  596
 for_window [app_id="org.pulseaudio.pavucontrol"] move     position 261 1500
 
 for_window [app_id="qalculate-gtk"] floating enable
 for_window [app_id="qalculate-gtk"] sticky   enable
-for_window [app_id="qalculate-gtk"] border   pixel    3
-for_window [app_id="qalculate-gtk"] resize   set      782 545
+for_window [app_id="qalculate-gtk"] border   pixel            3
+for_window [app_id="qalculate-gtk"] resize   set       782  545
 for_window [app_id="qalculate-gtk"] move     position 3963 1360
 
 for_window [instance="obsidian"] floating enable
 for_window [instance="obsidian"] sticky   enable
-for_window [instance="obsidian"] border   pixel    2
+for_window [instance="obsidian"] border   pixel          2
 for_window [instance="obsidian"] resize   set      922 937
 for_window [instance="obsidian"] move     position 278 887
 
@@ -265,9 +265,9 @@ for_window [instance="obsidian"] move     position 278 887
 #  Escape, Return, Space keys
 # ----------------------------
 
-bindsym $mod+Return      exec     kitty
-bindsym $alt+w       floating toggle
-bindsym $alt+Tab         kill
+bindsym $mod+Return exec kitty
+bindsym $alt+w      floating toggle
+bindsym $alt+Tab    kill
 
 # ----------------------------
 #  Letter keys
@@ -289,16 +289,16 @@ bindsym $mod+q         exec sway-open-or-focus emacs
 bindsym $mod+r         exec kitty -e ranger
 #bindsym $mod+s         exec xscreensaver-command --lock
 bindsym $mod+t         exec qutebrowser-wallpaper
-bindsym $mod+y         exec kitty -e calcurse -D $XDG_CONFIG_HOME/calcurse
+bindsym $mod+y         exec kitty -e calcurse -D ${XDG_CONFIG_HOME}/calcurse
 bindsym $mod+semicolon exec sway-open-or-focus libreoffice
 
 ## Imitate "Show Desktop"
-bindsym $mod+d           exec sway-show-desktop $wspace10
+bindsym $mod+d         exec sway-show-desktop $wspace10
 ## Imitate "Alt+Tab"
 ##   Also very useful for switching between two displays
-#bindsym $alt+Tab         exec sway workspace back_and_forth
+#bindsym $alt+Tab       exec sway workspace back_and_forth
 ## Imitate "Win+Tab"
-bindsym $mod+Tab         exec sway workspace next
+bindsym $mod+Tab       exec sway workspace next
 ## Imitate "Win+Shift+Tab"
 bindsym $mod+Shift+Tab exec sway workspace prev
 
@@ -306,7 +306,7 @@ bindsym $mod+Shift+Tab exec sway workspace prev
 bindsym $alt+q         move scratchpad
 bindsym $alt+u         exec sway-open-or-focus-dropdown-term "dropdown_aux"
 bindsym $alt+z         sticky toggle
-bindsym $mod+Shift+b bar mode toggle
+bindsym $mod+Shift+b   bar mode toggle
 
 # **********************
 # Scratchpad:
@@ -330,16 +330,16 @@ bindsym $alt+minus scratchpad show
 bindsym $mod+grave bar mode hide; \
   gaps inner current set 0; \
   gaps outer current set 0; \
-  gaps top current set 0; \
-  smart_gaps on; \
+  gaps top current set   0; \
+  smart_gaps    on; \
   smart_borders on
 
 ##   Turn off:
 bindsym $mod+Shift+grave bar mode dock; \
   gaps inner current set $gap_size_inner; \
   gaps outer current set $gap_size_outer; \
-  gaps top current set $gap_size_top; \
-  smart_gaps off; \
+  gaps top current set   $gap_size_top; \
+  smart_gaps    off; \
   smart_borders off
 
 ## Place new windows to the right of the current one
@@ -432,56 +432,56 @@ bindsym Pause reload
 
 bindsym $mod+F5             exec light -U 10                  && pkill -RTMIN+2 i3blocks
 bindsym $mod+F6             exec light -A 10                  && pkill -RTMIN+2 i3blocks
-#bindsym $mod+F11            exec amixer     set Master 10%-   && pkill -RTMIN+1 i3blocks
-#bindsym $mod+F12            exec amixer     set Master 10%+   && pkill -RTMIN+1 i3blocks
+bindsym $mod+F11            exec amixer  set Master 10%-      && pkill -RTMIN+1 i3blocks
+bindsym $mod+F12            exec amixer  set Master 10%+      && pkill -RTMIN+1 i3blocks
 bindsym $mod+F11 exec sh -c 'amixer set Master 10%- && pkill -RTMIN+1 i3blocks'
 bindsym $mod+F12 exec sh -c 'amixer set Master 10%+ && pkill -RTMIN+1 i3blocks'
 
 #bindsym $mod+Shift+Delete exec amixer -q sset Master toggle && pkill -RTMIN+1 i3blocks
 
 ## Open programs
-bindsym Insert                exec fuzzel
+bindsym Insert            exec fuzzel
 ## Run scripts
-bindsym $mod+Insert         exec rofi -show run
+bindsym $mod+Insert       exec rofi -show run
 ## Run dmenu
 bindsym $mod+Shift+Insert exec dmenu_run
 ## Open/focus a program
-#bindsym $mod+Insert         exec rofi -show Open  -modi Open:rofi-open
+#bindsym $mod+Insert       exec rofi -show Open  -modi Open:rofi-open
 ## Open logout/shutdown/reboot prompt
-bindsym $mod+End            exec rofi -show Power -modi Power:rofi-power
+bindsym $mod+End          exec rofi -show Power -modi Power:rofi-power
 ## Kill a process by its name/PID
-bindsym $mod+Delete         exec rofi -show Kill  -modi Kill:rofi-kill
+bindsym $mod+Delete       exec rofi -show Kill  -modi Kill:rofi-kill
 
 ## Standard light
-bindsym $mod+Page_Up  exec  gammastep -m wayland -o -P -O 6500
+bindsym $mod+Page_Up   exec gammastep -m wayland -o -P -O 6500
 ## Warm light
-bindsym $mod+Page_Down   exec  gammastep -m wayland -o -P -O 5000
+bindsym $mod+Page_Down exec gammastep -m wayland -o -P -O 5000
 ## Just for fun
-bindsym $mod+Pause  exec  gammastep -m wayland -o -P -O 1000
+bindsym $mod+Pause     exec gammastep -m wayland -o -P -O 1000
 
 
-bindsym Print exec grim -g "$(slurp)" $SCREENSHOTS/screenshot-%F-%H%M%S.png
-#bindsym Print         exec flameshot gui -p $SCREENSHOTS
-#bindsym Shift+Print exec scrot $SCREENSHOTS/screenshot-%F-%H%M%S.png
+bindsym Print       exec grim -g "$(slurp)" ${SCREENSHOTS}/screenshot-%F-%H%M%S.png
+#bindsym Print       exec flameshot gui -p ${SCREENSHOTS}
+#bindsym Shift+Print exec scrot ${SCREENSHOTS}/screenshot-%F-%H%M%S.png
 
 ## ----------------------------
 ##  +/=, -, <, >, [, ] keys
 ## ----------------------------
 
 ## Volume keys
-#bindsym $mod+plus          exec amixer sset Master 5%+  && pkill -RTMIN+1 i3blocks
+#bindsym $mod+plus        exec amixer sset Master 5%+  && pkill -RTMIN+1 i3blocks
 #bindsym $mod+Shift+plus  exec amixer sset Master 15%+ && pkill -RTMIN+1 i3blocks
-#bindsym $mod+minus         exec amixer sset Master 5%-  && pkill -RTMIN+1 i3blocks
+#bindsym $mod+minus       exec amixer sset Master 5%-  && pkill -RTMIN+1 i3blocks
 #bindsym $mod+Shift+minus exec amixer sset Master 15%- && pkill -RTMIN+1 i3blocks
 
 ## MPD server: switching between songs, advancing forward/backward in a song
-#bindsym $mod+less                 exec mpc prev
-#bindsym $mod+Shift+less         exec mpc seek 0%
-#bindsym $mod+greater              exec mpc next
+#bindsym $mod+less               exec mpc prev
+#bindsym $mod+Shift+less         exec mpc seek   0%
+#bindsym $mod+greater            exec mpc next
 #bindsym $mod+Shift+greater      exec mpc next
-#bindsym $mod+bracketleft          exec mpc seek -10
+#bindsym $mod+bracketleft        exec mpc seek  -10
 #bindsym $mod+Shift+bracketleft  exec mpc seek -120
-#bindsym $mod+bracketright         exec mpc seek +10
+#bindsym $mod+bracketright       exec mpc seek  +10
 #bindsym $mod+Shift+bracketright exec mpc seek +120
 
 ## ----------------------------
@@ -496,51 +496,51 @@ bindsym Print exec grim -g "$(slurp)" $SCREENSHOTS/screenshot-%F-%H%M%S.png
 #bindsym XF86RFKill            nop
 
 # Special keys to adjust volume via PulseAudio
-bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+bindsym --locked XF86AudioMute        exec pactl set-sink-mute   \@DEFAULT_SINK@   toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@      -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@      +5%
+bindsym --locked XF86AudioMicMute     exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 # Special keys to adjust brightness via brightnessctl
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
-bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym --locked XF86MonBrightnessUp   exec brightnessctl set 5%+
 
 include ${XDG_CONFIG_HOME}/sway/config.d/*
 
 #for_window [class=".*"] floating enable
 
 # ── Blur Effects ──
-blur enable
+blur      enable
 blur_xray enable
 #blur_ignore_transparent disable
-blur_passes 3
-blur_radius 5
-blur_noise 0.1
+blur_passes       3
+blur_radius       5
+blur_noise      0.1
 blur_brightness 1.0
-blur_contrast 1.2
+blur_contrast   1.2
 blur_saturation 1.0
 
 # ── Rounded Corners ──
 smart_corner_radius enable
-corner_radius 10
+corner_radius       10
 
 # ── Window Shadows ──
-shadows enable
-shadows_on_csd enable
-shadow_blur_radius 15
-shadow_color        #000000AA
+shadows               enable
+shadows_on_csd        enable
+shadow_blur_radius    15
+shadow_color          #000000AA
 shadow_inactive_color #00000066
-shadow_offset       0 6
+shadow_offset         0 6
 
 # ── Dim Inactive Windows ──
-default_dim_inactive      0.025
+default_dim_inactive          0.025
 dim_inactive_colors.unfocused #000000FF
-dim_inactive_colors.urgent   #FF0000FF
+dim_inactive_colors.urgent    #FF0000FF
 
 # ── LayerShell Effects (e.g., panels) ──
 layer_effects "waybar" {
-    blur enable;
-    shadows enable;
-    corner_radius 6;
+  blur          enable;
+  shadows       enable;
+  corner_radius 6;
 }
 
 # ── Titlebar Separator ──

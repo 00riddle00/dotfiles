@@ -1,6 +1,6 @@
 # -----------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 23:51:00 EEST
+# Date:   2026-08-10 06:12:09 CEST
 # Path:   ~/.config/conky/clock_blue
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -80,7 +80,7 @@ ${voffset 6}
 ${GOTO 280}${color1}Mem ${GOTO 330}${color1}:${color}${GOTO 345}${memperc}%\
 # Signal strength
 ${GOTO 435}${color1}Signal${GOTO 515}:${color}${GOTO 530}\
-${if_up ${iface 1}\
+${if_up ${iface 1}}\
 ${if_match "unk" != "${wireless_link_qual_perc ${iface 1}}"}\
 ${wireless_link_qual_perc ${iface 1}}%\
 ${else}\
@@ -88,5 +88,4 @@ N/A\
 ${endif}\
 ${else}\
 N/A\
-${endif}\
 ${endif}

@@ -2,13 +2,13 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:38:02 CEST
+# Date:   2026-08-10 06:14:21 CEST
 # Path:   ~/.config/openbox/autostart
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 #*
 # These user-specific programs are run when an Openbox X Session is started.
-# All the other autostart programs are started in $XDG_CONFIG_HOME/X11/xinitrc.
+# All the other autostart programs are started in ${XDG_CONFIG_HOME}/X11/xinitrc
 #**
 hsetroot -solid "${COL_BG_SEACOLOR}" &
 

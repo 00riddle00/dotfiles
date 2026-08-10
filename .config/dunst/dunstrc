@@ -1,7 +1,7 @@
 # vim:ft=cfg
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 22:07:47 EEST
+# Date:   2026-08-10 06:13:15 CEST
 # Path:   ~/.config/dunst/dunstrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -136,12 +136,12 @@
 
 [sound_beep]
 summary = "beep"
-script  = $BIN/bin/sounds/beep
+script  = ${BIN}/sounds/beep
 
 [sound_email]
 summary = "email"
-script  = $BIN/sounds/email-synced
+script  = ${BIN}/sounds/email-synced
 
 [sound_update]
 summary = "update"
-script  = $BIN/sounds/arch-updated
+script  = ${BIN}/sounds/arch-updated

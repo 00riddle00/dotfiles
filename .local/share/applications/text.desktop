@@ -2,6 +2,6 @@
 Type=Application
 Name=EDITOR
 GenericName=Text Editor
-Exec=bash -c 'kitty --hold tmux new-session "$EDITOR" "$@"' _ %F
+Exec=bash -c 'kitty --hold tmux new-session "${EDITOR}" "${@}"' _ %F
 Terminal=false
-Comment=Launches $EDITOR in terminal
+Comment=Launches ${EDITOR} in terminal

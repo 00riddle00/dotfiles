@@ -1,18 +1,18 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-09-27 18:07:47 EEST
+# Date:   2026-08-10 06:13:39 CEST
 # Path:   ~/.config/mutt/muttrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
 # Directories and commands
-set alias_file       = $XDG_CONFIG_HOME/mutt/alias          # Alias file
-set header_cache     = $XDG_CONFIG_HOME/mutt/cache/headers  # Where to store headers
-set message_cachedir = $XDG_CONFIG_HOME/mutt/cache/bodies   # Where to store bodies
-set certificate_file = $XDG_CONFIG_HOME/mutt/certificates   # Where to store certs
-set mailcap_path     = $XDG_CONFIG_HOME/mutt/mailcap        # Entries for filetypes
-set tmpdir           = $XDG_CONFIG_HOME/mutt/temp           # Where to keep temp files
-set editor           = `echo \$EDITOR`
+set alias_file       = ${XDG_CONFIG_HOME}/mutt/alias          # Alias file
+set header_cache     = ${XDG_CONFIG_HOME}/mutt/cache/headers  # Where to store headers
+set message_cachedir = ${XDG_CONFIG_HOME}/mutt/cache/bodies   # Where to store bodies
+set certificate_file = ${XDG_CONFIG_HOME}/mutt/certificates   # Where to store certs
+set mailcap_path     = ${XDG_CONFIG_HOME}/mutt/mailcap        # Entries for filetypes
+set tmpdir           = ${XDG_CONFIG_HOME}/mutt/temp           # Where to keep temp files
+set editor           = `echo \${EDITOR}`
 set ispell           = "/usr/bin/aspell -e -c"              # Use aspell as ispell
 set imap_peek        = no                                   # Gmail mark as read
 set sleep_time       = 0                                    # Instantaneous mailbox change
@@ -96,14 +96,14 @@ unignore from: to: cc: date: subject:   # show only these
 hdr_order from: to: cc: date: subject:  # and in this order
 
 # Always sourced
-source $alias_file                            # Required for functionality
-source $XDG_CONFIG_HOME/mutt/colors01.muttrc  # Source colors file
-source sidebar.muttrc                         # Source sidebar config
-source $XDG_CONFIG_HOME/mutt/gmail.muttrc     # Source as default
+source ${alias_file}                            # Required for functionality
+source ${XDG_CONFIG_HOME}/mutt/colors01.muttrc  # Source colors file
+source sidebar.muttrc                           # Source sidebar config
+source ${XDG_CONFIG_HOME}/mutt/gmail.muttrc     # Source as default
 
 # Account specific sources
-folder-hook "~/Mail/Gmail"  'source $XDG_CONFIG_HOME/mutt/gmail.muttrc'
-folder-hook "~/Mail/Posteo" 'source $XDG_CONFIG_HOME/mutt/posteo.muttrc'
+folder-hook "~/Mail/Gmail"  'source ${XDG_CONFIG_HOME}/mutt/gmail.muttrc'
+folder-hook "~/Mail/Posteo" 'source ${XDG_CONFIG_HOME}/mutt/posteo.muttrc'
 
 # Mailing lists
 lists     arch-announce@archlinux.org  # Arch announcements
@@ -155,11 +155,11 @@ bind generic     zz        current-bottom
 
 # Macros
 ## General
-macro index,pager gm "<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/gmail.muttrc\
+macro index,pager gm "<sync-mailbox><enter-command>source ${XDG_CONFIG_HOME}/mutt/gmail.muttrc\
 <enter><change-folder>!<enter>"
-macro index,pager gp "<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/mutt/posteo.muttrc\
+macro index,pager gp "<sync-mailbox><enter-command>source ${XDG_CONFIG_HOME}/mutt/posteo.muttrc\
 <enter><change-folder>!<enter>"
-macro index,pager <F8> ":source $XDG_CONFIG_HOME/mutt/muttrc\n" "Reload the muttrc"
+macro index,pager <F8> ":source ${XDG_CONFIG_HOME}/mutt/muttrc\n" "Reload the muttrc"
 ## Gmail
 macro index,pager a  "<save-message>=[Gmail].All Mail<enter><enter>" "archive"
 macro index,pager d  "<save-message>=[Gmail].Trash<enter><enter>"    "delete"

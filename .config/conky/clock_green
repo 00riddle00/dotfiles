@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-16 23:51:03 EEST
-# Path:   ~/.config/conky/clock_green
+# Date:   2026-08-10 06:12:13 CEST
+# Path:   ~/.config/conky/clock_blue
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 
@@ -40,15 +40,52 @@ color0 DD3A21
 # Size and position
 alignment    top_left
 minimum_size 650 80
-gap_x        2250
-gap_y        0
 #   For 2 monitors:
-#gap_x        500
+#gap_x 500
+#gap_y 0
 #   For laptop:
-#gap_x        300
+gap_x 900
+gap_y 50
 
 TEXT
 # Hours and minutes
 ${GOTO 30}${font Noto Sans:bold:size=36}${color1}${time %H}:${color}${time %M}${font}\
 # Seconds
 ${voffset -3}${font Noto Sans:bold:size=12}: ${time %S}${font}\
+# CPU0
+${GOTO 280}${voffset -22}${color1}Proc${GOTO 330}:${color}${GOTO 345}${cpu cpu0}%\
+# IP address
+${if_match "${addr ${iface 1}}" != "No Address"}\
+${GOTO 435}${color1}IP address${GOTO 515}:${color}${GOTO 530}${addr ${iface 1}}\
+${else}\
+${GOTO 435}${color1}IP Locale${GOTO 515}:${color}${GOTO 530}Not Connected\
+${endif}\
+${voffset 20}
+\
+# Date
+${GOTO 40}${voffset 6}${font Noto Sans:bold:size=12}${color1}${time %A %d }${color}\
+${time %B %Y}${font}\
+# CPU1
+${voffset -24}${GOTO 330}${color1}:${color}${GOTO 345}${cpu cpu1}%\
+# SSID
+${GOTO 435}${color1}SSID${GOTO 515}:${color}${GOTO 530}\
+${if_up ${iface 1}}\
+${wireless_essid ${iface 1}}\
+${else}\
+N/A\
+${endif}\
+${voffset 6}
+\
+# RAM
+${GOTO 280}${color1}Mem ${GOTO 330}${color1}:${color}${GOTO 345}${memperc}%\
+# Signal strength
+${GOTO 435}${color1}Signal${GOTO 515}:${color}${GOTO 530}\
+${if_up ${iface 1}}\
+${if_match "unk" != "${wireless_link_qual_perc ${iface 1}}"}\
+${wireless_link_qual_perc ${iface 1}}%\
+${else}\
+N/A\
+${endif}\
+${else}\
+N/A\
+${endif}

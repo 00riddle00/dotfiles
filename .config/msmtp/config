@@ -1,7 +1,7 @@
 # vim:ft=msmtp
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-28 16:44:35 EEST
+# Date:   2026-08-10 06:13:33 CEST
 # Path:   ~/.config/msmtp/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ port           587
 tls            on
 tls_starttls   on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
-logfile        $XDG_CACHE_HOME/.msmtp.log
+logfile        ~/.cache/.msmtp.log
 
 # Gmail
 account      gmail
@@ -21,14 +21,14 @@ host         smtp.gmail.com
 from         tomasgiedraitis@gmail.com
 user         tomasgiedraitis@gmail.com
 passwordeval "gpg --quiet --for-your-eyes-only --no-tty --decrypt \
-                  $XDG_CONFIG_HOME/mutt/.mail_passwd_gmail.gpg"
+                  ${XDG_CONFIG_HOME}/mutt/.mail_passwd_gmail.gpg"
 # Posteo
 account      posteo
 host         posteo.de
 from         tomasgiedraitis@posteo.net
 user         tomasgiedraitis@posteo.net
 passwordeval "gpg --quiet --for-your-eyes-only --no-tty --decrypt \
-                  $XDG_CONFIG_HOME/mutt/.mail_passwd_posteo.gpg"
+                  ${XDG_CONFIG_HOME}/mutt/.mail_passwd_posteo.gpg"
 
 # Set a default account
 account default : gmail

@@ -1,8 +1,8 @@
 ;; -*- no-byte-compile: t; -*-
-;;; $DOOMDIR/packages.el
+;;; ${DOOMDIR}/packages.el
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-04-07 02:10:58 EEST
+; Date:   2026-08-10 06:12:46 CEST
 ; Path:   ~/.config/doom/packages.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------

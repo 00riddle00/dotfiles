@@ -1,5 +1,5 @@
 #### Important note
-`.zshenv` was moved to [`$XDG_CONFIG_HOME/zsh/.zshenv`](.config/zsh/.zshenv)
+`.zshenv` was moved to [`${XDG_CONFIG_HOME}/zsh/.zshenv`](.config/zsh/.zshenv)
 To allow for this, wider system configuration needs to set the `ZDOTDIR` enviroment
 variable beforehand. This can be done in e.g. `/etc/zsh/zshenv`:
 ```bash

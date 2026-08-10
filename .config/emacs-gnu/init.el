@@ -1,6 +1,6 @@
 ;------------------------------------------------------------------------------
 ; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2025-06-16 16:41:46 EEST
+; Date:   2026-08-10 06:13:23 CEST
 ; Path:   ~/.config/emacs-gnu/init.el
 ; URL:    https://github.com/00riddle00/dotfiles
 ;------------------------------------------------------------------------------
@@ -73,8 +73,8 @@
 (define-key evil-normal-state-map (kbd "C-l")   'evil-window-right)
 
 (require 'org)
-(setq org-directory      "$NOTES/org/")
-(setq org-agenda-files '("$NOTES/org/agenda.org"))
+(setq org-directory      "${NOTES}/org/")
+(setq org-agenda-files '("${NOTES}/org/agenda.org"))
 ; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

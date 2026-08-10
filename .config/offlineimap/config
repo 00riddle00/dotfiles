@@ -1,7 +1,7 @@
 [general]
 ui         = ttyui
 accounts   = Gmail, Posteo
-pythonfile = $XDG_CONFIG_HOME/mutt/offlineimap_gpg.py
+pythonfile = ${XDG_CONFIG_HOME}/mutt/offlineimap_gpg.py
 
 [Account Gmail]
 localrepository  = Gmail-Local

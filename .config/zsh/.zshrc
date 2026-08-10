@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 04:04:47 CEST
+# Date:   2026-08-10 06:15:07 CEST
 # Path:   ~/.config/zsh/.zshrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -20,8 +20,8 @@ else
   host_color="red"
 fi
 
-PS1="┌─[%{$fg[$host_color]%}%m%{$fg_bold[blue]%} %~%{$fg_no_bold[yellow]%}%(0?..
-%?)%{$reset_color%}]
+PS1="┌─[%{${fg[${host_color}]}%}%m%{${fg_bold[blue]}%} %~%{${fg_no_bold[yellow]}%}%(0?..
+%?)%{${reset_color}%}]
 └─╼ "
 
 # Set up directory colors in the terminal
@@ -215,7 +215,7 @@ fi
 ## force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
 #zstyle ':completion:*' menu no
 ## preview directory's content with eza when completing cd
-#zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+#zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always ${realpath}'
 ## custom fzf flags
 ## NOTE: fzf-tab does not follow FZF_DEFAULT_OPTS by default
 #zstyle ':fzf-tab:*' fzf-flags --color=fg:1,fg+:2 --bind=tab:accept
@@ -229,12 +229,12 @@ fi
 #archey
 #neofetch
 
-if [[ -n $HYPRLAND_INSTANCE_SIGNATURE ]]; then
-  tmux set-environment -g HYPRLAND_INSTANCE_SIGNATURE "$HYPRLAND_INSTANCE_SIGNATURE"
+if [[ -n ${HYPRLAND_INSTANCE_SIGNATURE} ]]; then
+  tmux set-environment -g HYPRLAND_INSTANCE_SIGNATURE "${HYPRLAND_INSTANCE_SIGNATURE}"
 fi
 
 # Launch tmux
-if [[ -z $TMUX && $TERM_PROGRAM != "vscode" && -z $INSIDE_JETBRAINS && -z $INSIDE_PYCHARM ]]; then
+if [[ -z ${TMUX} && ${TERM_PROGRAM} != "vscode" && -z ${INSIDE_JETBRAINS} && -z ${INSIDE_PYCHARM} ]]; then
   tmux > /dev/null 2>&1
   true
 fi
