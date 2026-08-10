@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-10 06:15:12 CEST
+# Date:   2026-08-10 22:52:01 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -1054,6 +1054,7 @@ def wing 'wmctrl -l -G'
 def xav 'command xargs ${EDITOR}'
 def xak 'command xargs kill -9'
 def xar 'command xargs rm -v'
+def xag 'command xargs rg --no-heading'
 
 # yt-dlp
 def ydn             'yt-dlp --no-playlist'
@@ -1373,3 +1374,5 @@ def nodel \
 #------------------------------------------------------------------------------
 # 27. Temporary aliases (maybe they will stick)
 #------------------------------------------------------------------------------
+
+def dff 'dot ls-files'
