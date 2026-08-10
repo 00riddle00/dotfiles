@@ -1,4 +1,10 @@
-# vim:ft=perl
+# vim: set ft=perl tw=88 nu ai et ts=4 sw=4:
+#------------------------------------------------------------------------------
+# User: 00riddle00 (Tomas Giedraitis)
+# Date: 2026-08-11 00:57:09 CEST
+# Path: ~/.local/share/dotshare/cowsay/cows/r2d2.cow
+# URL:  https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
 # R2-D2 - from https://www.ascii-art.de/ascii/s/starwars.txt
 
 $the_cow = <<EOC;

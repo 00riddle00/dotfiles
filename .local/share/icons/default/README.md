@@ -1,4 +1,4 @@
-Last updated: `2024-07-17 11:03:46 EEST`
+<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->
 
 Having [index.theme](index.theme) file here with the contents
 

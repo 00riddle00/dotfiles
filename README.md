@@ -1,3 +1,5 @@
+<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->
+
 #### Important note
 `.zshenv` was moved to [`${XDG_CONFIG_HOME}/zsh/.zshenv`](.config/zsh/.zshenv)
 To allow for this, wider system configuration needs to set the `ZDOTDIR` enviroment

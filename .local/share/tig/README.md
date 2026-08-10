@@ -1,4 +1,4 @@
-Last updated: `2024-07-17 11:00:18 EEST`
+<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->
 
 `~/.local/share/tig` directory must exist, otherwise Tig writes to
 `~/.tig_history`.
