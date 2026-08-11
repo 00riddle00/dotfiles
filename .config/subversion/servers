@@ -1,2 +1,10 @@
+# vim: set ft=dosini noai nu et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-11 19:27:39 CEST
+# Path:   ~/.config/subversion/servers
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
 [global]
 store-passwords = yes

@@ -1,6 +1,7 @@
+" vim: set ft=vim tw=79 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2026-08-07 03:22:23 CEST
+" Date:   2026-08-11 19:24:15 CEST
 " Path:   ~/.config/obsidian/obsidian.vimrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------

@@ -1,6 +1,7 @@
+" vim: set ft=vim tw=79 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " User: 00riddle00 (Tomas Giedraitis)
-" Date: 2026-08-07 04:56:03 CEST
+" Date: 2026-08-11 19:24:08 CEST
 " Path: ~/.config/nvim/colors/mirowriter.vim
 " URL:  https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------

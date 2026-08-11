@@ -1,3 +1,4 @@
+# vim: set ft=dosini noai nu et ts=2 sw=2:
 [Default Applications]
 application/epub+zip=calibre-gui.desktop;zathura.desktop;
 application/msword=libreoffice-writer.desktop;

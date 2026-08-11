@@ -1,6 +1,7 @@
+# vim: set ft=python tw=88 nu ai et ts=4 sw=4:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-08 01:03:04 CEST
+# Date: 2026-08-11 19:24:33 CEST
 # Path: ~/.config/qutebrowser/config.py
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------

@@ -1,10 +1,11 @@
 ;;; ${DOOMDIR}/config.el -*- lexical-binding: t; -*-
-;------------------------------------------------------------------------------
-; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2026-08-10 06:12:38 CEST
-; Path:   ~/.config/doom/config.el
-; URL:    https://github.com/00riddle00/dotfiles
-;------------------------------------------------------------------------------
+;; vim: set ft=lisp tw=79 nu ai et ts=2 sw=2:
+;;-----------------------------------------------------------------------------
+;; Author: 00riddle00 (Tomas Giedraitis)
+;; Date:   2026-08-11 19:14:08 CEST
+;; Path:   ~/.config/doom/config.el
+;; URL:    https://github.com/00riddle00/dotfiles
+;;-----------------------------------------------------------------------------
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!

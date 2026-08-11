@@ -1,15 +1,14 @@
-<!--
-*------------------------------------------------------------------------------
-* Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2026-08-07 04:37:11 CEST
-* Path:   ~/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml.excerpt
-* URL:    https://github.com/00riddle00/dotfiles
-*------------------------------------------------------------------------------
-* Thunar settings
--->
-
 <?xml version="1.1" encoding="UTF-8"?>
-
+<!-- vim: set ft=xml tw=100 nu ai et ts=2 sw=2: -->
+<!--
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-11 19:28:08 CEST
+# Path:   ~/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml.excerpt
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+# Thunar settings
+-->
 <channel name="thunar" version="1.0">
   <property name="last-view" type="string" value="ThunarCompactView"/>
   <!-- ... -->

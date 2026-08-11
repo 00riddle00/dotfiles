@@ -1,6 +1,7 @@
+# vim: set ft=python tw=88 nu ai et ts=4 sw=4:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2024-07-13 20:28:20 EEST
+# Date:   2026-08-11 19:24:36 CEST
 # Path:   ~/.config/ranger/colorschemes/riddle.py
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------

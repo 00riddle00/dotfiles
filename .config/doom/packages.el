@@ -1,11 +1,12 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; ${DOOMDIR}/packages.el
-;------------------------------------------------------------------------------
-; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2026-08-10 06:12:46 CEST
-; Path:   ~/.config/doom/packages.el
-; URL:    https://github.com/00riddle00/dotfiles
-;------------------------------------------------------------------------------
+;; vim: set ft=lisp tw=79 nu ai et ts=2 sw=2:
+;;-----------------------------------------------------------------------------
+;; Author: 00riddle00 (Tomas Giedraitis)
+;; Date:   2026-08-11 19:18:01 CEST
+;; Path:   ~/.config/doom/packages.el
+;; URL:    https://github.com/00riddle00/dotfiles
+;;-----------------------------------------------------------------------------
 
 ;; To install a package with Doom you must declare them here and run 'doom sync'
 ;; on the command line, then restart Emacs for the changes to take effect -- or

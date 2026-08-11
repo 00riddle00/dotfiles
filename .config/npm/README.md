@@ -1,4 +1,4 @@
-Last updated: `2024-07-17 12:37:54 EEST`
+<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->
 
 This config file is needed to adhere to XDG Base Directory Specification.
 

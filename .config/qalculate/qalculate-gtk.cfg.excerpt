@@ -1,6 +1,7 @@
+# vim: set ft=dosini noai nu et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 04:33:09 CEST
+# Date:   2026-08-11 19:24:31 CEST
 # Path:   ~/.config/qalculate/qalculate-gtk.cfg.excerpt
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -11,7 +12,7 @@ gtk_theme=1
 decimal_comma=0
 comma_as_separator=1
 dot_as_separator=0
-...
+# ...
 
-...
-...
+# ...
+# ...

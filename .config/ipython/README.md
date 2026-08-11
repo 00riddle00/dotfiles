@@ -1,4 +1,4 @@
-Last updated: `2024-07-17 11:12:29 EEST`
+<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->
 
 `~/.config/ipython` directory must exist, otherwise IPython uses `~/.ipython`.
 

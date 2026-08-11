@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
+# vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2026-08-10 06:14:29 CEST
+# Date: 2026-08-11 19:26:42 CEST
 # Path: ~/.config/ranger/scope.sh
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------

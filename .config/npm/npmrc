@@ -1,3 +1,10 @@
+# vim: set ft=dosini noai nu et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-11 19:23:37 CEST
+# Path:   ~/.config/npm/npmrc
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
 prefix=${XDG_DATA_HOME}/npm
 cache=${XDG_CACHE_HOME}/npm
 init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js

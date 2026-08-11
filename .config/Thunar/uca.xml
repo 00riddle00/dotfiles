@@ -1,16 +1,16 @@
-<!--
-*------------------------------------------------------------------------------
-* Author: 00riddle00 (Tomas Giedraitis)
-* Date:   2026-08-10 06:11:34 CEST
-* Path:   ~/.config/Thunar/uca.xml
-* URL:    https://github.com/00riddle00/dotfiles
-*------------------------------------------------------------------------------
-* Additional custom actions for Thunar's context menu.
--->
-
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- vim: set ft=xml tw=79 nu ai et ts=2 sw=2: -->
+<!--
+#==============================================================================
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-11 19:12:48 CEST
+# Path:   ~/.config/Thunar/uca.xml
+# URL:    https://github.com/00riddle00/dotfiles
+#==============================================================================
+# Additional custom actions for Thunar's context menu.
+-->
 <actions>
-<action>
+  <action>
     <icon>terminal</icon>
     <name>Open Terminal Here</name>
     <submenu></submenu>
@@ -20,8 +20,8 @@
     <range>*</range>
     <patterns>*</patterns>
     <directories/>
-</action>
-<action>
+  </action>
+  <action>
     <icon>anydo</icon>
     <name>Create New File</name>
     <submenu></submenu>
@@ -31,5 +31,5 @@
     <range>*</range>
     <patterns>*</patterns>
     <directories/>
-</action>
+  </action>
 </actions>

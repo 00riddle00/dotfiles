@@ -1,4 +1,4 @@
-Last updated: `2024-07-17 11:43:14 EEST`.
+<!-- vim: set ft=markdown tw=88 nu ai et ts=2 sw=2: -->
 
 This is GNU Emacs configuration. For Doom Emacs, see [`doom`](../doom)
 directory.

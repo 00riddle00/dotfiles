@@ -1,10 +1,11 @@
-;;; init.el -*- lexical-binding: t; -*-
-;------------------------------------------------------------------------------
-; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-04-07 02:10:54 EEST
-; Path:   ~/.config/doom/init.el
-; URL:    https://github.com/00riddle00/dotfiles
-;------------------------------------------------------------------------------
+;;; ${DOOMDIR}/init.el -*- lexical-binding: t; -*-
+;; vim: set ft=lisp tw=79 nu ai et ts=2 sw=2:
+;;-----------------------------------------------------------------------------
+;; Author: 00riddle00 (Tomas Giedraitis)
+;; Date:   2026-08-11 19:14:48 CEST
+;; Path:   ~/.config/doom/init.el
+;; URL:    https://github.com/00riddle00/dotfiles
+;;-----------------------------------------------------------------------------
 
 ;; This file controls what Doom modules are enabled and what order they load
 ;; in. Remember to run 'doom sync' after modifying it!

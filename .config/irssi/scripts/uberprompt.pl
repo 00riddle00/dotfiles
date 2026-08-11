@@ -1,6 +1,7 @@
+# vim: set ft=perl tw=88 nu ai et ts=4 sw=4:
 #------------------------------------------------------------------------------
 # User: 00riddle00 (Tomas Giedraitis)
-# Date: 2024-07-17 11:54:09 EEST
+# Date: 2026-08-11 19:19:22 CEST
 # Path: ~/.config/irssi/scripts/uberprompt.pl
 # URL:  https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------

@@ -1,9 +1,10 @@
-;------------------------------------------------------------------------------
-; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2026-08-10 06:13:23 CEST
-; Path:   ~/.config/emacs-gnu/init.el
-; URL:    https://github.com/00riddle00/dotfiles
-;------------------------------------------------------------------------------
+;; vim: set ft=lisp tw=79 nu ai et ts=2 sw=2:
+;;-----------------------------------------------------------------------------
+;; Author: 00riddle00 (Tomas Giedraitis)
+;; Date:   2026-08-11 19:18:12 CEST
+;; Path:   ~/.config/emacs-gnu/init.el
+;; URL:    https://github.com/00riddle00/dotfiles
+;;-----------------------------------------------------------------------------
 
 ;; -------------------------------------------------------------
 ;; Keybindings
@@ -59,9 +60,9 @@
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 (package-initialize)
 
-; Needs to appear before (require 'evil)
+;; Needs to appear before (require 'evil)
 (setq evil-want-C-u-scroll t )
-;
+
 (require 'evil)
 (setq evil-toggle-key "C-z")
 (evil-mode 0)
@@ -75,7 +76,7 @@
 (require 'org)
 (setq org-directory      "${NOTES}/org/")
 (setq org-agenda-files '("${NOTES}/org/agenda.org"))
-; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
+;; Use UTF-8 bullet chars (https://github.com/sabof/org-bullets)
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 

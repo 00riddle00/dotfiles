@@ -1,6 +1,7 @@
+! vim: set ft=xdefaults tw=79 nu ai et ts=2 sw=2:
 !------------------------------------------------------------------------------
 ! Author: 00riddle00 (Tomas Giedraitis)
-! Date:   2026-08-10 06:11:45 CEST
+! Date:   2026-08-11 19:12:53 CEST
 ! Path:   ~/.config/X11/Xresources
 ! URL:    https://github.com/00riddle00/dotfiles
 !------------------------------------------------------------------------------
@@ -47,7 +48,8 @@ URxvt.font: xft:FONT1, \
             xft:FONT6
 
 ! --  Extensions -- !
-URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,keyboard-select,resize-font
+URxvt.perl-ext-common: eval,matcher,selection,selection-to-clipboard,\
+keyboard-select,resize-font
 
 ! Copy and paste
 !URxvt.keysym.M-c:                eval:selection_to_clipboard

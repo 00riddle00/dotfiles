@@ -1,3 +1,12 @@
+/* vim: set ft=jsonc tw=120 nu ai et ts=2 sw=2: */
+/*
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-11 19:27:59 CEST
+# Path:   ~/.config/waybar/config.jsonc
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+*/
 {
     "layer": "top",
     "position": "top",
@@ -36,7 +45,7 @@
         "max-length": 40,
         "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{artist}} - {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
         "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl next",
+        "on-click-right": "playerctl next"
     },
 
     "custom/weather": {

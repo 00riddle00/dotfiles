@@ -1,10 +1,12 @@
-/*------------------------------------------------------------------------------
- * Author: 00riddle00 (Tomas Giedraitis)
- * Date:   2026-08-06 22:08:02 CEST
- * Path:   ~/.config/waybar/style.css
- * URL:    https://github.com/00riddle00/dotfiles
- *------------------------------------------------------------------------------
- */
+/* vim: set ft=css tw=79 nu ai et ts=2 sw=2: */
+/*
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-11 19:28:01 CEST
+# Path:   ~/.config/waybar/style.css
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+*/
 
 /*Colorschemes, there are Gruvbox, Tokyo Night, and Everforest by default. The
  * way it works is whichever colorscheme section is defined last will be used.

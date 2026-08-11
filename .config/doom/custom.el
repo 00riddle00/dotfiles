@@ -1,9 +1,10 @@
-;------------------------------------------------------------------------------
-; Author: 00riddle00 (Tomas Giedraitis)
-; Date:   2024-07-30 16:10:42 EEST
-; Path:   ~/.config/doom/custom.el
-; URL:    https://github.com/00riddle00/dotfiles
-;------------------------------------------------------------------------------
+;; vim: set ft=lisp tw=79 nu ai et ts=2 sw=2:
+;;-----------------------------------------------------------------------------
+;; Author: 00riddle00 (Tomas Giedraitis)
+;; Date:   2026-08-11 19:14:39 CEST
+;; Path:   ~/.config/doom/custom.el
+;; URL:    https://github.com/00riddle00/dotfiles
+;;-----------------------------------------------------------------------------
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
