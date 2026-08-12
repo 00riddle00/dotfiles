@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-11 19:20:00 CEST
+# Date:   2026-08-12 03:43:43 CEST
 # Path:   ~/.config/labwc/autostart
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,10 +13,10 @@ wlr-randr --output DP-2 --mode 2560x1440@59.951000Hz --scale 1 --transform 90 --
 
 # To automatically unlock KWallet protected by the login password,
 # in addition to configuring PAM.
-/usr/lib/pam_kwallet_init >/dev/null 2>&1 &
+/usr/lib/pam_kwallet_init > /dev/null 2>&1 &
 
 # Set background color.
-swaybg -c '#073542' >/dev/null 2>&1 &
+swaybg -c '#073542' > /dev/null 2>&1 &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
@@ -25,15 +25,15 @@ swaybg -c '#073542' >/dev/null 2>&1 &
 #     output HDMI-A-1 position 1366,0
 #     output eDP-1 position 0,0
 #   }
-kanshi >/dev/null 2>&1 &
+kanshi > /dev/null 2>&1 &
 
 # Launch a panel such as yambar or waybar.
-swaybar >/dev/null 2>&1 &
+swaybar > /dev/null 2>&1 &
 
 # Enable notifications. Typically GNOME/KDE application notifications go
 # through the org.freedesktop.Notifications D-Bus API and require a client such
 # as mako to function correctly. Thunderbird is an example of this.
-mako >/dev/null 2>&1 &
+mako > /dev/null 2>&1 &
 
 # Lock screen after 5 minutes; turn off display after another 5 minutes.
 #
@@ -43,7 +43,7 @@ mako >/dev/null 2>&1 &
 # (since a837fef). Instead use a wlr-output-power-management client such as
 # https://git.sr.ht/~leon_plickat/wlopm
 swayidle -w \
-	timeout 300 'swaylock -f -c 000000' \
-	timeout 600 'wlopm --off \*' \
-	resume 'wlopm --on \*' \
-	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+  timeout 300 'swaylock -f -c 000000' \
+  timeout 600 'wlopm --off \*' \
+  resume 'wlopm --on \*' \
+  before-sleep 'swaylock -f -c 000000' > /dev/null 2>&1 &

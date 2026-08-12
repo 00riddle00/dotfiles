@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-10 06:14:21 CEST
+# Date:   2026-08-12 03:43:51 CEST
 # Path:   ~/.config/openbox/autostart
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -26,4 +26,4 @@ tint2 > "${XDG_RUNTIME_DIR}/tint2.log" 2>&1 &
 
 term-standard &
 
-pgrep -x anydesk >/dev/null || anydesk &
+pgrep -x anydesk > /dev/null || anydesk &
