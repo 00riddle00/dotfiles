@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-12 03:43:41 CEST
+# Date:   2026-08-20 04:12:09 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ fi
   sleep 1
   obsidian &
   keepassxc &
-  ente &
+  #ente &
 ) &
 xscreensaver -no-splash &
 desktop-wakatime &
