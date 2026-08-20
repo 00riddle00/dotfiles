@@ -1,7 +1,7 @@
 " vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-07 00:49:27 CEST
+# Date:   2026-08-20 04:22:19 CEST
 # Path:   ~/.config/tridactyl/tridactylrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -47,6 +47,10 @@ command retry source ~/.config/tridactyl/tridactylrc
 
 " Prevent accidental tab close
 unbind d
+
+" Restore native Ctrl+A / Ctrl+X behavior
+unbind <C-a>
+unbind <C-x>
 
 " I barely use these even in Vim
 " <C-f> - use default Firefox search
