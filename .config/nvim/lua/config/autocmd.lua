@@ -1,13 +1,13 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:11:01 CEST
+-- Date:   2026-08-23 20:25:56 CEST
 -- Path:   ~/.config/nvim/lua/config/autocmd.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
 local General = require("config.general")
-local vim     = vim or {}
+local vim = vim or {}
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
@@ -16,13 +16,15 @@ local general = augroup("00RIDDLE00_GENERAL_LUA", {})
 -- Autosave when text changes or when exiting insert mode.
 autocmd({ "TextChanged", "InsertLeave" }, {
   pattern = "*",
-  callback = function ()
+  callback = function()
     if
       vim.bo.readonly
       or vim.api.nvim_buf_get_name(0) == ""
       or vim.bo.buftype ~= ""
       or not (vim.bo.modifiable and vim.bo.modified)
-    then return end
+    then
+      return
+    end
     vim.cmd("silent w")
     vim.cmd("doau BufWritePost")
   end,
@@ -38,7 +40,7 @@ autocmd("BufReadPre", {
       vim.g.coc_enabled = 0
     end
   end,
-  group = general
+  group = general,
 })
 
 -- https://vim.wikia.com/wiki/Speed_up_Syntax_Highlighting
@@ -50,7 +52,7 @@ autocmd("syntax", {
       vim.cmd("syntax sync maxlines=200")
     end
   end,
-  group = general
+  group = general,
 })
 
 -- Automatically remove trailing whitespaces unless file is blacklisted.
@@ -58,7 +60,9 @@ autocmd("BufWritePre", {
   callback = function()
     -- For debugging:
     --print("BUFWRITEPRE, filetype="..vim.bo.filetype)
-    General.Preserve(function() vim.cmd("%s/\\s\\+$//e") end)
+    General.Preserve(function()
+      vim.cmd("%s/\\s\\+$//e")
+    end)
   end,
   group = general,
   pattern = "*",
@@ -66,15 +70,17 @@ autocmd("BufWritePre", {
 
 -- Ensure directory structure exists when opening a new file.
 autocmd("BufNewFile", {
-  callback = function() General.EnsureDirExists() end,
-  group = general
+  callback = function()
+    General.EnsureDirExists()
+  end,
+  group = general,
 })
 
 -- Open help window vertically.
 autocmd("FileType", {
   pattern = "help",
   command = "wincmd L",
-  group   = general,
+  group = general,
 })
 
 -- Global: Show a ruler at textwidth whenever textwidth is > 0
@@ -106,15 +112,15 @@ autocmd("FileType", {
 autocmd("FileType", {
   pattern = "markdown",
   callback = function()
-    vim.opt_local.shiftwidth  = 2
-    vim.opt_local.tabstop     = 2
+    vim.opt_local.shiftwidth = 2
+    vim.opt_local.tabstop = 2
     vim.opt_local.softtabstop = 2
   end,
   group = general,
 })
 
-autocmd({"BufNewFile", "BufRead"}, {
-  pattern = {"*.asm", "*.ASM", "*.bat", "*.BAT", "*.bnf", "*.lst"},
+autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = { "*.asm", "*.ASM", "*.bat", "*.BAT", "*.bnf", "*.lst" },
   callback = function(args)
     local filetypes = {
       asm = "tasm",
@@ -139,20 +145,37 @@ autocmd("FileType", {
     vim.g.Tex_GotoError = 0
     -- ^--- This is a temporary fix - to keep the cursor inside the editor
     --      buffer after compilation, and not moving it to the quickfix buffer.
-    vim.opt.textwidth   = 100
+    vim.opt.textwidth = 100
     vim.opt.colorcolumn = "-1"
     vim.cmd("highlight ColorColumn cterm=NONE ctermbg=black")
-    vim.api.nvim_buf_set_keymap(0, "n", "<space><space>", "/(<>)<CR>",
-      {noremap = true})
-    vim.api.nvim_buf_set_keymap(0, "i", ";c",
+    vim.api.nvim_buf_set_keymap(
+      0,
+      "n",
+      "<space><space>",
+      "/(<>)<CR>",
+      { noremap = true }
+    )
+    vim.api.nvim_buf_set_keymap(
+      0,
+      "i",
+      ";c",
       "\\ctext[RGB]{0,255,255}{} (<>)<Esc>T{i",
-      {noremap = true})
-    vim.api.nvim_buf_set_keymap(0, "i", ";it",
+      { noremap = true }
+    )
+    vim.api.nvim_buf_set_keymap(
+      0,
+      "i",
+      ";it",
       "\\textit{} (<>)<Esc>T{i",
-      {noremap = true})
-    vim.api.nvim_buf_set_keymap(0, "i", ';"',
+      { noremap = true }
+    )
+    vim.api.nvim_buf_set_keymap(
+      0,
+      "i",
+      ';"',
       "„“ (<>)<Esc>T„i",
-      {noremap = true})
+      { noremap = true }
+    )
   end,
   group = general,
 })
@@ -164,13 +187,13 @@ local qf_group = augroup("00RIDDLE00__QF", {})
 autocmd("QuickFixCmdPost", {
   pattern = "[^l]*",
   command = "cwindow",
-  group   = qf_group
+  group = qf_group,
 })
 
 autocmd("QuickFixCmdPost", {
   pattern = "l*",
   command = "lwindow",
-  group   = qf_group
+  group = qf_group,
 })
 
 ---------------------------------------------
@@ -182,7 +205,9 @@ autocmd("QuickFixCmdPost", {
 -- textDocument/hover:
 autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup(
-    "lsp_attach_disable_ruff_hover", { clear = true }),
+    "lsp_attach_disable_ruff_hover",
+    { clear = true }
+  ),
   callback = function(args)
     local client = vim.lsp.get_client_by_id(args.data.client_id)
     if client == nil then
@@ -203,12 +228,12 @@ autocmd("LspAttach", {
 -- they sometimes receive an error "No folds found", or that treesitter
 -- highlighting does not apply. A workaround for this is to set the folding
 -- options in an autocmd:
-autocmd({"BufEnter","BufAdd","BufNew","BufNewFile","BufWinEnter"}, {
+autocmd({ "BufEnter", "BufAdd", "BufNew", "BufNewFile", "BufWinEnter" }, {
   group = vim.api.nvim_create_augroup("TS_FOLD_WORKAROUND", {}),
   callback = function()
     vim.opt.foldmethod = "expr"
-    vim.opt.foldexpr   = "nvim_treesitter#foldexpr()"
-  end
+    vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+  end,
 })
 
 ---------------------------------------------
@@ -218,15 +243,15 @@ autocmd({"BufEnter","BufAdd","BufNew","BufNewFile","BufWinEnter"}, {
 -- Close the tab/nvim when nvim-tree is the last window.
 autocmd("QuitPre", {
   callback = function()
-    local tree_wins     = {}
+    local tree_wins = {}
     local floating_wins = {}
-    local wins          = vim.api.nvim_list_wins()
+    local wins = vim.api.nvim_list_wins()
     for _, w in ipairs(wins) do
       local bufname = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(w))
       if bufname:match("NvimTree_") ~= nil then
         table.insert(tree_wins, w)
       end
-      if vim.api.nvim_win_get_config(w).relative ~= '' then
+      if vim.api.nvim_win_get_config(w).relative ~= "" then
         table.insert(floating_wins, w)
       end
     end
@@ -236,7 +261,7 @@ autocmd("QuitPre", {
         vim.api.nvim_win_close(w, true)
       end
     end
-  end
+  end,
 })
 
 autocmd("VimEnter", {
@@ -250,7 +275,7 @@ autocmd("VimEnter", {
   end,
 })
 
-autocmd({"BufWinEnter"}, {
+autocmd({ "BufWinEnter" }, {
   callback = function()
     if vim.wo.diff then
       vim.opt_local.foldenable = false

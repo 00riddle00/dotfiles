@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-10 06:14:02 CEST
+-- Date:   2026-08-23 20:26:08 CEST
 -- Path:   ~/.config/nvim/lua/config/options.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -9,10 +9,10 @@
 vim.g.loaded_perl_provider = 0
 
 -- Meta accessors for vim options {{{
-  local o  = vim.opt
-  --local bo = vim.bo
-  --local wo = vim.wo
-  --local fn = vim.fn
+local o = vim.opt
+--local bo = vim.bo
+--local wo = vim.wo
+--local fn = vim.fn
 -- }}}
 
 -- In Arch linux, Neovim reads the /etc/xdg/nvim/sysinit.vim,
@@ -23,18 +23,18 @@ vim.g.loaded_perl_provider = 0
 -- Netrw
 -------------------------------------------
 -- disable netrw
-vim.g.loaded_netrw       = 1
+vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -------------------------------------------
 -- Colors
 -------------------------------------------
-vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd([[colorscheme tokyonight-moon]])
 
 --vim.cmd [[colorscheme miro8]]
 --vim.cmd [[
-  --highlight LineNr ctermfg=7 ctermbg=NONE
-  --highlight CursorLineNr ctermfg=15 ctermbg=NONE
+--highlight LineNr ctermfg=7 ctermbg=NONE
+--highlight CursorLineNr ctermfg=15 ctermbg=NONE
 --]]
 --o.background    = "dark"
 o.termguicolors = true
@@ -61,9 +61,13 @@ o.fillchars = { vert = "|", eob = " " }
 -- Last element in statusline - escaped space character,
 --  do not remove it when removing trailing spaces from a file.
 local stl = {
-    " %f%m%r%h%w", " ::", " %y", " [%{&ff}]",
-    " %{&fileencoding?&fileencoding:&encoding}%=",
-    " %c", " [%p%%: %l/%L]"
+  " %f%m%r%h%w",
+  " ::",
+  " %y",
+  " [%{&ff}]",
+  " %{&fileencoding?&fileencoding:&encoding}%=",
+  " %c",
+  " [%p%%: %l/%L]",
 }
 -- ^---- Kudos to jasonwryan (Jason Ryan) (https://jasonwryan.com) for the
 --       statusline!
@@ -79,7 +83,7 @@ o.encoding = "utf-8"
 --Update: fileencoding is not a good option to set globally
 --o.fileencoding = "utf-8"
 -- Enable syntax highlighting
-vim.cmd [[syntax enable]]
+vim.cmd([[syntax enable]])
 -- Do not fold text/code
 o.foldenable = false
 -- Disable visual line wrapping (soft wrap)
@@ -93,9 +97,9 @@ o.spelllang = { "en_gb", "lt" }
 
 -- Text wrapping
 --o.textwidth = 199 -- temporary setting
-o.textwidth = 0  -- Disables automatic line breaking
+o.textwidth = 0 -- Disables automatic line breaking
 -- Auto/smart indent
-o.autoindent  = true
+o.autoindent = true
 o.smartindent = true
 
 -------------------------------------------
@@ -225,4 +229,4 @@ o.softtabstop = 4
 -- enable with ":set list"
 o.listchars:append("tab:|_,extends:>,precedes:<,nbsp:+")
 
-o.iskeyword:remove('_')
+o.iskeyword:remove("_")

@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 --------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:11:17 CEST
+-- Date:   2026-08-23 20:26:17 CEST
 -- Path:   ~/.config/nvim/lua/plugins/init.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 --------------------------------------------------------------------------------
@@ -23,9 +23,14 @@ return {
           alig_style = "default", -- default, left, center, right
         },
       })
-    end
+    end,
   },
-  { "lewis6991/gitsigns.nvim", config = function() require("plugins.gitsigns") end },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("plugins.gitsigns")
+    end,
+  },
   --[[
   -- Left here for testing it
   {
@@ -61,16 +66,18 @@ return {
   {
     "sindrets/diffview.nvim",
     opts = {},
-    config = function() require("diffview").setup({
-      hooks = {
-        diff_buf_read = function()
-          vim.cmd("norm! gg]ckzt") -- Set cursor on the first hunk
-        end,
-        diff_buf_win_enter = function()
-          vim.opt_local.foldlevel = 99
-        end,
-      },
-    }) end,
+    config = function()
+      require("diffview").setup({
+        hooks = {
+          diff_buf_read = function()
+            vim.cmd("norm! gg]ckzt") -- Set cursor on the first hunk
+          end,
+          diff_buf_win_enter = function()
+            vim.opt_local.foldlevel = 99
+          end,
+        },
+      })
+    end,
   },
   -- UI / Color
   {
@@ -85,7 +92,7 @@ return {
     "m4xshen/hardtime.nvim",
     enabled = false,
     dependencies = { "MunifTanjim/nui.nvim" },
-    opts = {}
+    opts = {},
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -143,13 +150,17 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope-ui-select.nvim",
     },
-    config = function() require("plugins._telescope") end,
+    config = function()
+      require("plugins._telescope")
+    end,
   },
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
   -- LSP / Treesitter
   {
     "neovim/nvim-lspconfig",
-    config = function() require("plugins.nvim_lspconfig") end,
+    config = function()
+      require("plugins.nvim_lspconfig")
+    end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -165,20 +176,48 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",
-    config = function() require("plugins.copilot_config") end,
+    config = function()
+      require("plugins.copilot_config")
+    end,
   },
   { "junegunn/vim-easy-align" },
-  { "houtsnip/vim-emacscommandline", config = function() require("plugins.vim_emacscommandline") end },
-  { "cameron-wags/rainbow_csv.nvim", config = function() require("plugins.rainbow_csv") end },
-  { "HiPhish/rainbow-delimiters.nvim", config = function() require("plugins.rainbow_delimiters") end },
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", config = function() require("plugins.ibl") end },
+  {
+    "houtsnip/vim-emacscommandline",
+    config = function()
+      require("plugins.vim_emacscommandline")
+    end,
+  },
+  {
+    "cameron-wags/rainbow_csv.nvim",
+    config = function()
+      require("plugins.rainbow_csv")
+    end,
+  },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    config = function()
+      require("plugins.rainbow_delimiters")
+    end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    config = function()
+      require("plugins.ibl")
+    end,
+  },
   -- Git
   { "tpope/vim-fugitive" },
   -- Misc
   { "kylechui/nvim-surround", config = true },
   { "christoomey/vim-tmux-navigator" },
   -- { "wakatime/vim-wakatime" },
-  { "lervag/vimtex", config = function() require("plugins.vimtex") end },
+  {
+    "lervag/vimtex",
+    config = function()
+      require("plugins.vimtex")
+    end,
+  },
   {
     "stevearc/conform.nvim",
     config = function()
@@ -201,8 +240,13 @@ return {
     end,
   },
   { "mbbill/undotree" },
-  { "akinsho/toggleterm.nvim", version = "*", config = true},
-  { "xiyaowong/virtcolumn.nvim", config = function() require("plugins.virtcolumn") end },
-  { 'windwp/nvim-autopairs', event = "InsertEnter", config = true},
-  { "tridactyl/vim-tridactyl"},
+  { "akinsho/toggleterm.nvim", version = "*", config = true },
+  {
+    "xiyaowong/virtcolumn.nvim",
+    config = function()
+      require("plugins.virtcolumn")
+    end,
+  },
+  { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
+  { "tridactyl/vim-tridactyl" },
 }

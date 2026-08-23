@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:00:18 CEST
+-- Date:   2026-08-23 20:25:59 CEST
 -- Path:   ~/.config/nvim/lua/config/commands.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -10,17 +10,17 @@ local Util = require("config.util")
 
 local command = Util.user_command
 
-command("W",         "write",               {})
-command("CD",        "cd %:p:h",            {})
+command("W", "write", {})
+command("CD", "cd %:p:h", {})
 
-command("Bin",       "%!xxd -b -c 8",       {})
-command("Hex",       "%!xxd -c 16 -g 1 -u", {})
-command("HexRevert", "%!xxd -c 16 -r",      {})
-command("ReHex",     "HexRevert",           {})
-command("HexDump",   "%!hexdump -C",        {})
+command("Bin", "%!xxd -b -c 8", {})
+command("Hex", "%!xxd -c 16 -g 1 -u", {})
+command("HexRevert", "%!xxd -c 16 -r", {})
+command("ReHex", "HexRevert", {})
+command("HexDump", "%!hexdump -C", {})
 
-command("FFunix",    "e ++ff=unix",         {})
-command("FFdos",     "e ++ff=dos",          {})
+command("FFunix", "e ++ff=unix", {})
+command("FFdos", "e ++ff=dos", {})
 command("VER", "windo wincmd H", {})
 command("HOR", "windo wincmd K", {})
 
@@ -36,7 +36,7 @@ end, {})
 
 command("WE", function(opts)
   vim.cmd("write " .. opts.args)
-  vim.cmd("edit "  .. opts.args)
+  vim.cmd("edit " .. opts.args)
 end, { nargs = 1 })
 
 command("GB", "lua require('gitsigns').blame_line({ full = true })", {})

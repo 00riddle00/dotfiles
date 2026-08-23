@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:11:13 CEST
+-- Date:   2026-08-23 20:26:10 CEST
 -- Path:   ~/.config/nvim/lua/config/util.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -12,8 +12,8 @@ local api = vim.api
 
 local Util = {}
 
-Util.nvim_command       = api.nvim_command
-Util.user_command       = api.nvim_create_user_command
+Util.nvim_command = api.nvim_command
+Util.user_command = api.nvim_create_user_command
 Util.nvim_call_function = api.nvim_call_function
 
 -- Check if a file or directory exists in this path
@@ -23,23 +23,26 @@ end
 
 -- Create directory if it does not exist yet
 function Util.mkdir(path)
-  if Util.exists(path) then return false end
+  if Util.exists(path) then
+    return false
+  end
   return os.execute("mkdir " .. path) and true or false
 end
 
 function Util.getPath(str)
-  local s = str:gsub("%-","")
+  local s = str:gsub("%-", "")
   return s:match("(.*[/\\])")
 end
 
-function Util.noop() --[[ do nothing ]] end
+function Util.noop() --[[ do nothing ]]
+end
 
 -- Slice table as this is not included in lua 5.1
 function Util.tbl_slice(tbl, start_idx, end_idx)
   local slice = {}
   end_idx = end_idx or #tbl
 
-  for idx=start_idx, end_idx do
+  for idx = start_idx, end_idx do
     table.insert(slice, tbl[idx])
   end
 
@@ -56,7 +59,7 @@ function Util.confirm(options, msg)
   local callback_tbl = {}
 
   for option, callback in pairs(options) do
-    table.insert(option_tbl, "&"..option)
+    table.insert(option_tbl, "&" .. option)
     table.insert(callback_tbl, callback)
   end
 
@@ -72,9 +75,9 @@ end
 
 -- Check if the current directory is a git repo
 function Util.ensure_git()
- if os.execute("git rev-parse --is-inside-work-tree 2>/dev/null") ~= 0 then
-   error("Not a git repository")
- end
+  if os.execute("git rev-parse --is-inside-work-tree 2>/dev/null") ~= 0 then
+    error("Not a git repository")
+  end
 end
 
 local function map(mode, key, action, options, buffer)

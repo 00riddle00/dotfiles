@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:11:08 CEST
+-- Date:   2026-08-23 20:26:03 CEST
 -- Path:   ~/.config/nvim/lua/config/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ local vmap = Util.vmap
 local imap = Util.imap
 local xmap = Util.xmap
 
-local noremap  = Util.noremap
+local noremap = Util.noremap
 local inoremap = Util.inoremap
 local nnoremap = Util.nnoremap
 local vnoremap = Util.vnoremap
@@ -26,12 +26,12 @@ vim.g.mapleader = "\\"
 -- Default value for `maplocalleader` is the same as `mapleader`
 --vim.g.maplocalleader = "\\"
 
-nmap("ss",        [[:wq<CR>]])
-nmap("qq",        [[:q<CR>]])
-nmap("<C-s>",     [[:w!<CR>]])
-nmap("<F5>",      [[:cnext<CR>]])
-nmap("<S-F5>",    [[:cprevious<CR>]])
-nmap("<C-F5>",    [[:cc<CR>]])
+nmap("ss", [[:wq<CR>]])
+nmap("qq", [[:q<CR>]])
+nmap("<C-s>", [[:w!<CR>]])
+nmap("<F5>", [[:cnext<CR>]])
+nmap("<S-F5>", [[:cprevious<CR>]])
+nmap("<C-F5>", [[:cc<CR>]])
 --nmap("<leader>d", [[:pwd<CR>]])
 nmap("<leader>h", [[:set hlsearch!<CR>]])
 
@@ -39,14 +39,14 @@ nmap("<leader>h", [[:set hlsearch!<CR>]])
 
 -- Enable both absolute and relative numbers
 vim.keymap.set("n", "<leader>n", function()
-  vim.opt.number       = true
+  vim.opt.number = true
   vim.opt.relativenumber = true
 end, { noremap = true, silent = true })
 
 -- Disable both absolute and relative numbers
 vim.keymap.set("n", "<leader>N", function()
   vim.opt.relativenumber = false
-  vim.opt.number       = false
+  vim.opt.number = false
 end, { noremap = true, silent = true })
 
 nmap("<leader>p", [[:setlocal paste!<CR>]])
@@ -202,9 +202,9 @@ inoremap("<C-t>", [[<ESC>BB"xdiWdWep"xpa]])
 -- [Windows] resize
 -------------------------------------------
 
-nmap("<C-Up>",    [[:resize -2<CR>]])
-nmap("<C-Down>",  [[:resize +2<CR>]])
-nmap("<C-Left>",  [[:vertical resize -2<CR>]])
+nmap("<C-Up>", [[:resize -2<CR>]])
+nmap("<C-Down>", [[:resize +2<CR>]])
+nmap("<C-Left>", [[:vertical resize -2<CR>]])
 nmap("<C-Right>", [[:vertical resize +2<CR>]])
 
 -------------------------------------------
@@ -242,11 +242,11 @@ noremap("zz", [[z-]])
 -------------------------------------------
 
 -- Yank into the system secondary clipboard register
-vmap(    "<C-c>",  [["+y]])
-vnoremap("Y",      [["+y]])
-nnoremap("Y",      [["+yy]])
-nnoremap("YY",     [["+yy]])
-vnoremap("D",      [["+D]])
+vmap("<C-c>", [["+y]])
+vnoremap("Y", [["+y]])
+nnoremap("Y", [["+yy]])
+nnoremap("YY", [["+yy]])
+vnoremap("D", [["+D]])
 
 -- Yank into the system secondary clipboard register and delete the visually
 -- selected text.
@@ -300,7 +300,6 @@ nmap("m/", [[/\<def ]])
 
 nmap("<leader>a", "<cmd>AerialToggle!<CR>")
 
-
 -------------------------------------------
 -- [Plugin] "smjonas/inc-rename.nvim"
 -------------------------------------------
@@ -314,7 +313,6 @@ nmap("<leader>a", "<cmd>AerialToggle!<CR>")
 vim.keymap.set("n", "<leader>ti", function()
   require("plugins.ibl").toggle()
 end, { desc = "Toggle indent guides" })
-
 
 --------------------------------------------------
 -- [Plugin] "kdheepak/lazygit.nvim"
@@ -333,7 +331,9 @@ noremap("<C-n>", [[:Neotree<CR>]])
 -- [Plugin] "nvim-telescope/telescope.nvim"
 -------------------------------------------
 
-nmap("<C-p>", function() require("telescope.builtin").find_files() end)
+nmap("<C-p>", function()
+  require("telescope.builtin").find_files()
+end)
 
 noremap("<leader>o", "<cmd>Telescope buffers<CR>")
 nmap("<leader>r", ":Telescope command_history<CR>")
@@ -354,26 +354,26 @@ xmap("ga", [[<Plug>(EasyAlign)]])
 -------------------------------------------
 
 nmap("<leader><leader>", [[<Plug>(easymotion-overwin-f)]])
-nmap("<leader>w",        [[<Plug>(easymotion-overwin-w)]])
+nmap("<leader>w", [[<Plug>(easymotion-overwin-w)]])
 
 -------------------------------------------
 -- [Plugin] "tpope/vim-fugitive"
 -------------------------------------------
 
-nnoremap("<space>ga",  [[:Git add %:p<CR><CR>]])
-nnoremap("<space>gs",  [[:Git<CR>]])
-nnoremap("<space>gc",  [[:Gcommit -v -q<CR>]])
-noremap("<space>gt",   [[:Gcommit -v -q %:p<CR>]])
+nnoremap("<space>ga", [[:Git add %:p<CR><CR>]])
+nnoremap("<space>gs", [[:Git<CR>]])
+nnoremap("<space>gc", [[:Gcommit -v -q<CR>]])
+noremap("<space>gt", [[:Gcommit -v -q %:p<CR>]])
 --nnoremap("<space>gd",  [[:Gdiff<CR>]])
-nnoremap("<space>gd",  [[:Git diff<CR>]])
-nnoremap("<space>ge",  [[:Gedit<CR>]])
-nnoremap("<space>gr",  [[:Gread<CR>]])
-nnoremap("<space>gw",  [[:Gwrite<CR><CR>]])
-nnoremap("<space>gl",  [[:silent! Glog<CR>:bot copen<CR>]])
-nnoremap("<space>gp",  [[:Ggrep<Space>]])
-nnoremap("<space>gm",  [[:Gmove<Space>]])
-nnoremap("<space>gb",  [[:Git branch<Space>]])
-nnoremap("<space>go",  [[:Git checkout<Space>]])
+nnoremap("<space>gd", [[:Git diff<CR>]])
+nnoremap("<space>ge", [[:Gedit<CR>]])
+nnoremap("<space>gr", [[:Gread<CR>]])
+nnoremap("<space>gw", [[:Gwrite<CR><CR>]])
+nnoremap("<space>gl", [[:silent! Glog<CR>:bot copen<CR>]])
+nnoremap("<space>gp", [[:Ggrep<Space>]])
+nnoremap("<space>gm", [[:Gmove<Space>]])
+nnoremap("<space>gb", [[:Git branch<Space>]])
+nnoremap("<space>go", [[:Git checkout<Space>]])
 nnoremap("<space>gps", [[:Dispatch! git push<CR>]])
 nnoremap("<space>gpl", [[:Dispatch! git pull<CR>]])
 
@@ -390,9 +390,9 @@ nnoremap("<space>gpl", [[:Dispatch! git pull<CR>]])
 --
 --
 
-nmap("<leader>d", function() vim.diagnostic.open_float() end)
-
-
+nmap("<leader>d", function()
+  vim.diagnostic.open_float()
+end)
 
 --nmap("<leader>f", function() vim.lsp.buf.format() end)
 nmap("<leader>f", function()
@@ -402,7 +402,9 @@ nmap("<leader>f", function()
   })
 end, { desc = "Format buffer" })
 
-nmap("<leader>g", function() vim.lsp.buf.code_action() end)
+nmap("<leader>g", function()
+  vim.lsp.buf.code_action()
+end)
 
 -- Big J/K jumps multiple lines (compared to their smaller siblings j/k)
 -- To be able to remap keys, they need to be unmapped first
@@ -416,42 +418,47 @@ nmap("K", [[15k]])
 
 -- in your init.lua:
 
-vim.api.nvim_create_user_command('UpdateHeader', function()
+vim.api.nvim_create_user_command("UpdateHeader", function()
   local date = vim.fn.trim(vim.fn.system("date '+%F %T %Z'"))
   local fname = vim.api.nvim_buf_get_name(0)
-  local raw  = vim.fn.system("readlink -f " .. vim.fn.shellescape(fname))
-  local path = vim.fn.trim(vim.fn.system(
-    "echo " .. vim.fn.shellescape(raw)
-    .. " | sed -E 's|^" .. vim.env.HOME .. "|~|'"
-  ))
+  local raw = vim.fn.system("readlink -f " .. vim.fn.shellescape(fname))
+  local path = vim.fn.trim(
+    vim.fn.system(
+      "echo "
+        .. vim.fn.shellescape(raw)
+        .. " | sed -E 's|^"
+        .. vim.env.HOME
+        .. "|~|'"
+    )
+  )
 
   -- accept ; # / * - and spaces as the comment markers
   local prefix_cls = "[;%#/%%*%-%s]"
 
   for i = 1, 30 do
-    local l = vim.api.nvim_buf_get_lines(0, i-1, i, false)[1]
-    if not l then break end
+    local l = vim.api.nvim_buf_get_lines(0, i - 1, i, false)[1]
+    if not l then
+      break
+    end
 
     if l:match(prefix_cls .. "+Date:") then
-      local new = l:gsub(
-        "^(%s*"..prefix_cls.."*Date:%s*).*",
-        "%1"..date
-      )
-      vim.api.nvim_buf_set_lines(0, i-1, i, false, { new })
-
+      local new = l:gsub("^(%s*" .. prefix_cls .. "*Date:%s*).*", "%1" .. date)
+      vim.api.nvim_buf_set_lines(0, i - 1, i, false, { new })
     elseif l:match(prefix_cls .. "+Path:") then
-      local new = l:gsub(
-        "^(%s*"..prefix_cls.."*Path:%s*).*",
-        "%1"..path
-      )
-      vim.api.nvim_buf_set_lines(0, i-1, i, false, { new })
+      local new = l:gsub("^(%s*" .. prefix_cls .. "*Path:%s*).*", "%1" .. path)
+      vim.api.nvim_buf_set_lines(0, i - 1, i, false, { new })
     end
   end
 end, {
   desc = "Refresh header Date and Path (lines 1–30), supports ; # /* - comments",
 })
 
-vim.keymap.set('n', '<leader>u', ':UpdateHeader<CR>', { desc = "Update file header metadata" })
+vim.keymap.set(
+  "n",
+  "<leader>u",
+  ":UpdateHeader<CR>",
+  { desc = "Update file header metadata" }
+)
 
 --local builtin = require("telescope.builtin")
 --vim.keymap.set("n", "<leader>fs", builtin.git_status, { desc = "Git status (Telescope)" })

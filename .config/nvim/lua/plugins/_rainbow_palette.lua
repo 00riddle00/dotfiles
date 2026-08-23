@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:05:00 CEST
+-- Date:   2026-08-23 20:26:12 CEST
 -- Path:   ~/.config/nvim/lua/plugins/_rainbow_palette.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -30,13 +30,13 @@ M.indent_highlight = {
 
 function M.set_highlights()
   -- Brighter colors (brackets/delimiters)
-  vim.api.nvim_set_hl(0, "RainbowRed",    { fg = "#e06c75" })
+  vim.api.nvim_set_hl(0, "RainbowRed", { fg = "#e06c75" })
   vim.api.nvim_set_hl(0, "RainbowYellow", { fg = "#e5c07b" })
-  vim.api.nvim_set_hl(0, "RainbowBlue",   { fg = "#61afef" })
+  vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#61afef" })
   vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#d19a66" })
-  vim.api.nvim_set_hl(0, "RainbowGreen",  { fg = "#98c379" })
+  vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#98c379" })
   vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#c678dd" })
-  vim.api.nvim_set_hl(0, "RainbowCyan",   { fg = "#56b6c2" })
+  vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56b6c2" })
 
   -- Brighter colors (vertical indent guides)
   --vim.api.nvim_set_hl(0, "IndentRed",    { fg = "#e06c75" })
@@ -57,13 +57,13 @@ function M.set_highlights()
   --vim.api.nvim_set_hl(0, "RainbowCyan",   { fg = "#4aa8a0" })
 
   -- Even more dimm colors (vertical indent guides)
-  vim.api.nvim_set_hl(0, "IndentRed",    { fg = "#8f5b62" })
+  vim.api.nvim_set_hl(0, "IndentRed", { fg = "#8f5b62" })
   vim.api.nvim_set_hl(0, "IndentYellow", { fg = "#8f7a58" })
-  vim.api.nvim_set_hl(0, "IndentBlue",   { fg = "#4f789c" })
+  vim.api.nvim_set_hl(0, "IndentBlue", { fg = "#4f789c" })
   vim.api.nvim_set_hl(0, "IndentOrange", { fg = "#8a6647" })
-  vim.api.nvim_set_hl(0, "IndentGreen",  { fg = "#65875c" })
+  vim.api.nvim_set_hl(0, "IndentGreen", { fg = "#65875c" })
   vim.api.nvim_set_hl(0, "IndentViolet", { fg = "#816397" })
-  vim.api.nvim_set_hl(0, "IndentCyan",   { fg = "#4a7f7b" })
+  vim.api.nvim_set_hl(0, "IndentCyan", { fg = "#4a7f7b" })
 end
 
 return M

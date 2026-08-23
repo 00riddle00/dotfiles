@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:05:34 CEST
+-- Date:   2026-08-23 20:26:20 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_treesitter.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -33,10 +33,8 @@ vim.api.nvim_create_autocmd("FileType", {
       return
     end
 
-    local ok, stats = pcall(
-      vim.loop.fs_stat,
-      vim.api.nvim_buf_get_name(args.buf)
-    )
+    local ok, stats =
+      pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(args.buf))
 
     if ok and stats and stats.size > 100 * 1024 then
       return
@@ -44,7 +42,6 @@ vim.api.nvim_create_autocmd("FileType", {
 
     pcall(vim.treesitter.start, args.buf)
 
-    vim.bo[args.buf].indentexpr =
-      "v:lua.require'nvim-treesitter'.indentexpr()"
+    vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
   end,
 })

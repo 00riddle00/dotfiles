@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:05:12 CEST
+-- Date:   2026-08-23 20:26:14 CEST
 -- Path:   ~/.config/nvim/lua/plugins/copilot_config.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -15,11 +15,11 @@ require("copilot").setup({
       jump_prev = "[[", -- was <C-p>
       accept = "<CR>",
       refresh = "gr",
-      open = "<M-r>"
+      open = "<M-r>",
     },
     layout = {
       position = "bottom", -- | top | left | right | horizontal | vertical
-      ratio = 0.4
+      ratio = 0.4,
     },
   },
   suggestion = {
@@ -27,7 +27,7 @@ require("copilot").setup({
     auto_trigger = true,
     keymap = {
       --accept = "<TAB>",
-      accept = false,  -- <TAB> is used, but it's handled by the smart-tab mapping in lua/config/keybindings.lua
+      accept = false, -- <TAB> is used, but it's handled by the smart-tab mapping in lua/config/keybindings.lua
       accept_word = "<M-CR>",
       next = "<C-n>",
       prev = "<C-p>",
@@ -41,7 +41,7 @@ require("copilot").setup({
     settings = {
       telemetry = {
         telemetryLevel = "off",
-      }
-    }
-  }
+      },
+    },
+  },
 })
