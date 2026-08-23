@@ -1,0 +1,14 @@
+/* vim: set ft=jsonc tw=88 nu ai et ts=2 sw=2: */
+/*
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-23 20:40:02 EEST
+# Path:   ~/.config/nvim/.luarc.json
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+*/
+{
+  "diagnostics.globals": [
+    "vim"
+  ]
+}

@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:00:53 CEST
+-- Date:   2026-08-23 20:11:13 CEST
 -- Path:   ~/.config/nvim/lua/config/util.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -9,7 +9,6 @@
 --- Neovim specific shortcuts
 local vim = vim or {}
 local api = vim.api
-local fn  = vim.fn
 
 local Util = {}
 

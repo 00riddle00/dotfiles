@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 --------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:42:33 EEST
+-- Date:   2026-08-23 20:11:17 CEST
 -- Path:   ~/.config/nvim/lua/plugins/init.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 --------------------------------------------------------------------------------
@@ -63,10 +63,10 @@ return {
     opts = {},
     config = function() require("diffview").setup({
       hooks = {
-        diff_buf_read = function(bufnr)
+        diff_buf_read = function()
           vim.cmd("norm! gg]ckzt") -- Set cursor on the first hunk
         end,
-        diff_buf_win_enter = function(bufnr)
+        diff_buf_win_enter = function()
           vim.opt_local.foldlevel = 99
         end,
       },

@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:00:32 CEST
+-- Date:   2026-08-23 20:11:08 CEST
 -- Path:   ~/.config/nvim/lua/config/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -12,13 +12,11 @@ local nmap = Util.nmap
 local vmap = Util.vmap
 local imap = Util.imap
 local xmap = Util.xmap
-local nunmap = Util.nunmap
 
 local noremap  = Util.noremap
 local inoremap = Util.inoremap
 local nnoremap = Util.nnoremap
 local vnoremap = Util.vnoremap
-local xnoremap = Util.xnoremap
 
 -------------------------------------------
 -- General

@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 04:59:09 CEST
+-- Date:   2026-08-23 20:11:01 CEST
 -- Path:   ~/.config/nvim/lua/config/autocmd.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ autocmd("FileType", {
 autocmd({ "BufWinEnter", "BufWritePost", "FileType" }, {
   group = general,
   callback = function()
-    local tw = vim.opt_local.textwidth:get()
+    local tw = vim.bo.textwidth
     if tw > 0 then
       vim.opt_local.colorcolumn = tostring(tw)
       -- Clear the default blocky background so the 'virt-column'
