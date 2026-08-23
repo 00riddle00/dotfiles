@@ -1,0 +1,40 @@
+# vim: set ft=toml tw=88 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-23 19:23:58 EEST
+# Path:   ~/.config/yazi/keymap.toml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+# Open a shell in Yazi's current directory.
+#
+# Unlike ranger's `S`, this does NOT enter the directory currently under the
+# cursor first. It simply opens a shell wherever Yazi itself currently is.
+#
+# This is still useful when you're already inside the directory you want.
+[[mgr.prepend_keymap]]
+on = "!"
+for = "unix"
+run = 'shell "$SHELL" --block'
+desc = "Open shell here"
+
+# Open a shell inside the directory currently under the cursor.
+#
+# This compensates for an important difference from ranger:
+# in ranger, you can enter even an empty directory and then press `S`.
+# In Yazi, entering an empty directory may instead open it in the configured
+# editor, so there is no opportunity to "enter it first, then open a shell".
+#
+# `%h` is the hovered path, so this explicitly `cd`s into that directory
+# before starting the shell.
+[[mgr.prepend_keymap]]
+on = "S"
+for = "unix"
+run = '''shell 'cd -- "%h" && exec "$SHELL"' --block'''
+desc = "Open shell in hovered directory"
+
+# Make Enter behave like ranger: enter the hovered directory.
+[[mgr.prepend_keymap]]
+on = "<Enter>"
+run = "enter"
+desc = "Enter hovered directory"

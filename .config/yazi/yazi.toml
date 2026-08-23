@@ -1,0 +1,17 @@
+# vim: set ft=toml tw=88 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-23 19:45:19 EEST
+# Path:   ~/.config/yazi/yazi.toml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+[mgr]
+# Show dotfiles by default.
+show_hidden = true
+
+# Keep directories grouped before files.
+sort_dir_first = true
+
+# Show file size and modification time on each row.
+linemode = "size_and_mtime"

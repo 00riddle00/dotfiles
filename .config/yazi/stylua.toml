@@ -1,0 +1,11 @@
+# vim: set ft=toml tw=88 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-23 20:37:46 EEST
+# Path:   ~/.config/yazi/stylua.toml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+indent_type = "Spaces"
+indent_width = 2
+column_width = 79

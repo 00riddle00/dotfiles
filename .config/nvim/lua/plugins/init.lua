@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 --------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:05:25 CEST
+-- Date:   2026-08-23 20:42:33 EEST
 -- Path:   ~/.config/nvim/lua/plugins/init.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 --------------------------------------------------------------------------------
@@ -186,6 +186,7 @@ return {
         formatters_by_ft = {
           python = { "ruff_format" },
           --python = { "black" },
+          lua = { "stylua" },
         },
         --formatters = {
         --  black = {
