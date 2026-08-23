@@ -1,7 +1,7 @@
 # vim: set ft=toml tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-23 19:23:58 EEST
+# Date:   2026-08-23 22:19:04 EEST
 # Path:   ~/.config/yazi/keymap.toml
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -33,8 +33,8 @@ for = "unix"
 run = '''shell 'cd -- "%h" && exec "$SHELL"' --block'''
 desc = "Open shell in hovered directory"
 
-# Make Enter behave like ranger: enter the hovered directory.
+# Make Enter behave like ranger: enter directories, open files.
 [[mgr.prepend_keymap]]
 on = "<Enter>"
-run = "enter"
-desc = "Enter hovered directory"
+run = "plugin smart-enter"
+desc = "Enter directory or open file"
