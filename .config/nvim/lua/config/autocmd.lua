@@ -83,6 +83,15 @@ autocmd("FileType", {
   group = general,
 })
 
+-- Git commit message: 50-char subject guide, 72-char body wrap.
+autocmd("FileType", {
+  pattern = "gitcommit",
+  callback = function()
+    vim.opt_local.colorcolumn = "50,72"
+    vim.opt_local.formatoptions:append("t")
+  end,
+})
+
 -- Global: Show a ruler at textwidth whenever textwidth is > 0
 autocmd({ "BufWinEnter", "BufWritePost", "FileType" }, {
   group = general,
