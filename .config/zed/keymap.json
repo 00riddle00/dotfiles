@@ -1,0 +1,44 @@
+/* vim: set ft=jsonc tw=120 nu ai et ts=2 sw=2: */
+/*
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-30 20:22:46 CEST
+# Path:   ~/.config/zed/keymap.json
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Zed allows to have comments in this file.
+#
+# Zed keymap
+#
+# For information on binding keys, see the Zed
+# documentation: https://zed.dev/docs/key-bindings
+#
+# To see the default key bindings run `zed: open default keymap`
+# from the command palette.
+*/
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-.": "zed::OpenKeymap"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-k ctrl-s": "zed::OpenKeymap"
+    }
+  }
+]

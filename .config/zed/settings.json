@@ -1,0 +1,91 @@
+/* vim: set ft=jsonc tw=88 nu ai et ts=2 sw=2: */
+/*
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-08-30 20:18:14 CEST
+# Path:   ~/.config/zed/settings.json
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Zed allows to have comments in this file.
+#
+# Zed settings
+#
+# For information on how to configure Zed, see the Zed
+# documentation: https://zed.dev/docs/configuring-zed
+#
+# To see all of Zed's default settings without changing your
+# custom settings, run `zed: open default settings` from the
+# command palette (cmd-shift-p / ctrl-shift-p)
+*/
+{
+  "vim_mode": false,
+  "terminal": {
+    "font_size": 17.0
+  },
+  "relative_line_numbers": "enabled",
+  "mouse_wheel_zoom": true,
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "selection_highlight": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "buffer_font_fallbacks": [
+    "monospace",
+    "monospace"
+  ],
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "file_types": {
+    "jinja-html": [
+      "*html"
+    ]
+  },
+  "colorize_brackets": true,
+  "linked_edits": true,
+  "show_edit_predictions": true,
+  "wrap_guides": [
+    88,
+    120
+  ],
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "agent_servers": {
+    "cursor": {
+      "type": "registry"
+    },
+    "github-copilot-cli": {
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "base_keymap": "VSCode",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}
