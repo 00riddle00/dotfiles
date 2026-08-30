@@ -11,11 +11,11 @@
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
   "markdown-table-mode.nvim": { "branch": "main", "commit": "0b768b58ec45afb7cb091175e837b7f5461663af" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "ebd66767191714e008ce73b769518a763ff31bdc" },
-  "nui.nvim": { "branch": "main", "commit": "a25dd472316d806eb38a5dd667c2e40da5570c75" },
-  "nvim-autopairs": { "branch": "master", "commit": "7b9923abad60b903ece7c52940e1321d39eccc79" },
-  "nvim-lspconfig": { "branch": "master", "commit": "bff1bd61cb1455040533201ca1edf1e84efa578f" },
+  "nui.nvim": { "branch": "main", "commit": "10fc361835c856ba4233ef5ea135b919bf3dce97" },
+  "nvim-autopairs": { "branch": "master", "commit": "430522f95fe4fb7c511ec64f8c1a90cc6a66c05c" },
+  "nvim-lspconfig": { "branch": "master", "commit": "684cb45c2faa24ce463b4fe9aaf011bfe1e0fb26" },
   "nvim-surround": { "branch": "main", "commit": "8b47db616ef658b8fc27e61db2896aa2f40134de" },
-  "nvim-treesitter": { "branch": "main", "commit": "074aa4422bf029908338e855d0c0f71470a971bb" },
+  "nvim-treesitter": { "branch": "main", "commit": "857651fce37eba032ebe28f3a206283cdc65c45a" },
   "nvim-web-devicons": { "branch": "master", "commit": "2ae6958df7ced50baac5035cec0c15799eedfbf7" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "012f1480cd9a5fc99fce7678e0a536421a53fc46" },
@@ -31,6 +31,6 @@
   "vim-fugitive": { "branch": "master", "commit": "3b753cf8c6a4dcde6edee8827d464ba9b8c4a6f0" },
   "vim-tmux-navigator": { "branch": "master", "commit": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432" },
   "vim-tridactyl": { "branch": "master", "commit": "fdd069bde3a34c786abed4601b6d59a065590ad9" },
-  "vimtex": { "branch": "master", "commit": "390aa658832a84223b559ef3c8fb34837fc72cad" },
+  "vimtex": { "branch": "master", "commit": "cb81778aee678b513af3de7f1ca5943e7ee31b2f" },
   "virtcolumn.nvim": { "branch": "main", "commit": "4d385b4aa42aa3af6fa2cb8527462fa4badbd163" }
 }
