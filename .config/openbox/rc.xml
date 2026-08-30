@@ -3,7 +3,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-30 16:09:14 CEST
+# Date:   2026-08-30 16:16:15 CEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -436,7 +436,7 @@
     <!-- ===========================
   RUN: Program launcher
   ============================ -->
-    <keybind key="S-Insert">
+    <keybind key="W-Insert">
       <action name="Execute">
         <command>term-fzf-launcher</command>
       </action>
