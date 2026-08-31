@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-20 04:12:09 CEST
+# Date:   2026-09-01 01:17:30 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -63,6 +63,9 @@ if [ -d "${xinitdir}"/xinitrc.d ]; then
   done
   unset f
 fi
+
+# Export variables needed by systemd-launched desktop applications.
+systemctl --user import-environment TERMINAL
 
 # Reapply keyboard layout after X input devices finish initializing.
 (
