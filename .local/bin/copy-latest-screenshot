@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 23:33:36 CEST
+# Date:   2026-09-01 00:53:26 CEST
 # Path:   ~/.local/bin/copy-latest-screenshot
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -21,9 +21,10 @@ set -euo pipefail
 dir="${HOME}/Screenshots"
 
 latest="$(
-  fd -d 1 -t f -e png . "${dir}" \
-    | sort \
-    | tail -n 1
+  fd -d 1 -t f -e png . "${dir}" -x stat -c '%Y %n' \
+    | sort -nr \
+    | head -n 1 \
+    | cut -d ' ' -f 2-
 )"
 
 if [[ -z ${latest} ]]; then
