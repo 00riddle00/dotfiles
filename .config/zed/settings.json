@@ -2,59 +2,108 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-30 20:18:14 CEST
+# Date:   2026-08-31 02:41:01 CEST
 # Path:   ~/.config/zed/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Zed allows to have comments in this file.
-#
-# Zed settings
-#
-# For information on how to configure Zed, see the Zed
-# documentation: https://zed.dev/docs/configuring-zed
-#
-# To see all of Zed's default settings without changing your
-# custom settings, run `zed: open default settings` from the
-# command palette (cmd-shift-p / ctrl-shift-p)
 */
 {
-  "vim_mode": false,
-  "terminal": {
-    "font_size": 17.0
+  /* --- Appearance & Typography --- */
+  "theme": "Tokyo Night Storm",
+  "icon_theme": "VSCode Great Icons Theme",
+  "ui_font_family": "Inter",
+  "ui_font_size": 20.0,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 16.0,
+  "theme_overrides": {
+    "Tokyo Night Storm": {
+      // Disable matching-bracket background highlight by making it fully transparent.
+      "editor.document_highlight.bracket_background": "#00000000",
+      // Disable semantic occurrence highlights for the symbol under the cursor.
+      "editor.document_highlight.read_background": "#00000000",
+      "editor.document_highlight.write_background": "#00000000",
+      "status_bar.background": "#004e62",
+      "players": [
+        {
+          "cursor": "#02ccfe"
+        }
+      ]
+    }
   },
-  "relative_line_numbers": "enabled",
-  "mouse_wheel_zoom": true,
-  "gutter": {
-    "line_numbers": true
-  },
-  "minimap": {
-    "show": "never"
-  },
+
+  /* --- Editor --- */
+  "current_line_highlight": "none",
   "selection_highlight": false,
+  "relative_line_numbers": "enabled",
+  "colorize_brackets": true,
+  "wrap_guides": [
+    88,
+    120
+  ],
+  "mouse_wheel_zoom": true,
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
     }
   },
-  "buffer_font_fallbacks": [
-    "monospace",
-    "monospace"
-  ],
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "file_types": {
-    "jinja-html": [
-      "*html"
-    ]
+  "format_on_save": "off",
+
+  /* --- Vim --- */
+  "vim_mode": true,
+  "vim": {
+    "cursor_shape": {
+      "normal": "block",
+      "visual": "block"
+    },
+    "highlight_on_yank_duration": 0,
+    "toggle_relative_line_numbers": true,
+    "use_smartcase_find": true,
+    "use_system_clipboard": "never"
   },
-  "colorize_brackets": true,
-  "linked_edits": true,
-  "show_edit_predictions": true,
-  "wrap_guides": [
-    88,
-    120
-  ],
+
+  /* --- Languages & Formatting --- */
+  "languages": {
+    "Markdown": {
+      "show_edit_predictions": false
+    },
+    "JavaScript": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": [
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
+        }
+      }
+    }
+  },
+
+  /* --- Project & Workspace --- */
+  "project_panel": {
+    "dock": "left"
+  },
+  "cli_default_open_behavior": "new_window",
   "session": {
     "trust_all_worktrees": true
+  },
+
+  /* --- Terminal --- */
+  "terminal": {
+    "font_size": 17.0
+  },
+
+  /* --- Git --- */
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+
+  /* --- AI --- */
+  "edit_predictions": {
+    "provider": "copilot"
   },
   "agent_servers": {
     "cursor": {
@@ -70,22 +119,11 @@
       "type": "registry"
     }
   },
-  "base_keymap": "VSCode",
-  "icon_theme": {
-    "mode": "dark",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)"
-  },
+
+  /* --- Privacy & Telemetry --- */
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
     "anthropic_retention": false
-  },
-  "ui_font_size": 16,
-  "buffer_font_size": 16.0,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "One Dark",
-  },
+  }
 }
