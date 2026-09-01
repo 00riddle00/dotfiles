@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-31 02:41:01 CEST
+# Date:   2026-09-01 03:12:47 CEST
 # Path:   ~/.config/zed/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -18,12 +18,22 @@
   "buffer_font_size": 16.0,
   "theme_overrides": {
     "Tokyo Night Storm": {
+      "accents": [
+        "#bb9af7ff",
+        "#7aa2f7ff",
+        "#9ece6aff",
+        "#73dacaff",
+        "#e0af68ff",
+        "#ff9e64ff",
+        "#f7768eff"
+      ],
+      "pane_group.border": "#00000000",
       // Disable matching-bracket background highlight by making it fully transparent.
       "editor.document_highlight.bracket_background": "#00000000",
       // Disable semantic occurrence highlights for the symbol under the cursor.
       "editor.document_highlight.read_background": "#00000000",
       "editor.document_highlight.write_background": "#00000000",
-      "status_bar.background": "#004e62",
+      // "status_bar.background": "#004e62",
       "players": [
         {
           "cursor": "#02ccfe"
@@ -37,6 +47,12 @@
   "selection_highlight": false,
   "relative_line_numbers": "enabled",
   "colorize_brackets": true,
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 2,
+    "active_line_width": 3,
+    "coloring": "indent_aware"
+  },
   "wrap_guides": [
     88,
     120
@@ -80,7 +96,13 @@
     }
   },
 
-  /* --- Project & Workspace --- */
+  /* --- Interface & Workspace --- */
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+    // For heavy usage of horizontal splits:
+    // "show": false
+  },
   "project_panel": {
     "dock": "left"
   },
