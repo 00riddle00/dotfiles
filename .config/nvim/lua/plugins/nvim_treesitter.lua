@@ -1,23 +1,34 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:26:20 CEST
+-- Date:   2026-09-02 17:59:59 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_treesitter.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
-
--- vim:fenc=utf-8:tw=79:nu:ai:si:et:ts=2:sw=2:ft=lua
 
 local ts = require("nvim-treesitter")
 
 ts.setup()
 
 local ensure_installed = {
+  "bash",
   "c",
+  "css",
+  "html",
+  "javascript",
+  "json",
   "lua",
+  "markdown",
+  "markdown_inline",
+  "python",
+  "query",
+  "r",
+  "sql",
+  "toml",
   "vim",
   "vimdoc",
-  "query",
+  "xml",
+  "yaml",
 }
 
 ts.install(ensure_installed)
