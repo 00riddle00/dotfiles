@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-07 05:05:29 CEST
+-- Date:   2026-09-02 17:57:20 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -9,10 +9,6 @@
 -- Initialize default Neovim LSP capabilities
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.general = capabilities.general or {}
-
--- LSP was originally created by Microsoft for VS Code, which natively counts characters in UTF-16.
--- Force UTF-16 to prevent column offset bugs when using multi-byte characters (like emojis or accents).
-capabilities.general.positionEncodings = { "utf-16" }
 
 -- Define all servers & their configs
 local servers = {
