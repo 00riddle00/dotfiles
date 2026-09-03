@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:26:03 CEST
+-- Date:   2026-09-03 20:13:08 CEST
 -- Path:   ~/.config/nvim/lua/config/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -310,9 +310,12 @@ nmap("<leader>a", "<cmd>AerialToggle!<CR>")
 --- [Plugin] "lukas-reineke/indent-blankline.nvim"
 --------------------------------------------------
 
-vim.keymap.set("n", "<leader>ti", function()
-  require("plugins.ibl").toggle()
-end, { desc = "Toggle indent guides" })
+vim.keymap.set(
+  "n",
+  "<leader>ti",
+  "<cmd>IBLToggle<CR>",
+  { desc = "Toggle indent guides" }
+)
 
 --------------------------------------------------
 -- [Plugin] "kdheepak/lazygit.nvim"
