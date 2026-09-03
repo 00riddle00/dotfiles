@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-02 17:58:26 CEST
+-- Date:   2026-09-03 18:44:51 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -21,8 +21,13 @@ local servers = {
       },
       python = {
         analysis = {
-          -- Let Ruff handle lint-like diagnostics.
-          -- Pyright still provides hover / go-to / rename / type intelligence.
+          -- Ruff handles linting and import-related diagnostics/code actions.
+          -- Pyright handles static type analysis and Python language intelligence.
+          diagnosticMode = "openFilesOnly",
+          typeCheckingMode = "standard",
+
+          -- Temporarily suppress Pyright diagnostics while reviewing unfamiliar code.
+          -- Remove this to re-enable Pyright's type-analysis diagnostics.
           ignore = { "*" },
         },
       },
