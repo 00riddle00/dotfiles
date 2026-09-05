@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-11 19:12:21 CEST
+# Date:   2026-09-05 02:53:56 CEST
 # Path:   ~/.config/Code/User/keybindings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -30,6 +30,11 @@
     "when": "editorTextFocus && !textCompareEditorActive"
   },
   {
+    "key": "alt+enter",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
     "key": "alt+0",
     "command": "workbench.action.lastEditorInGroup"
   },
@@ -54,6 +59,10 @@
   {
     "key": "alt+4",
     "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "alt+5",
+    "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "alt+`",
@@ -206,6 +215,11 @@
   },
   // Ctrl + Alt + {}
   {
+    "key": "ctrl+alt+.",
+    "command": "editor.action.quickFix",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "ctrl+alt+3",
     "command": "openInIntegratedTerminal"
   },
@@ -237,6 +251,11 @@
     "key": "ctrl+alt+o",
     "command": "workbench.action.files.openFolder",
     "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+alt+s",
@@ -420,15 +439,17 @@
     "key": "ctrl+shift+x",
     "command": "-workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
-},
-{
+  },
+  // Claude Code multiline input: Shift+Enter sends Esc + Enter so Claude
+  // inserts a newline instead of submitting the prompt.
+  {
     "key": "shift+enter",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
         "text": "\u001b\r"
     },
     "when": "terminalFocus"
-}
+  }
   /* ---------------------
    * New and unsorted
    * ---------------------
