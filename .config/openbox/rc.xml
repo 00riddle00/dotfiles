@@ -3,7 +3,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-30 16:16:15 CEST
+# Date:   2026-09-05 03:02:07 CEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -537,13 +537,15 @@
       </action>
     </keybind>
     <!-- Open/focus terminal window for clipboard by its class name. -->
+    <!--
     <keybind key="F4">
       <action name="Execute">
-        <!-- <command>open-or-focus term-clipboard clipboard.clipboard -c</command> -->
+        <!/-/- <command>open-or-focus term-clipboard clipboard.clipboard -c</command> /-/->
         <command>open-or-focus firefox Navigator.firefox -c</command>
-        <!-- <command>open-or-focus chromium chromium.Chromium -c</command> -->
+        <!/-/- <command>open-or-focus chromium chromium.Chromium -c</command> /-/->
       </action>
     </keybind>
+    -->
     <!-- ===========================
   RUN: File Manager
   ============================ -->
@@ -562,11 +564,12 @@
     <!-- ===========================
   RUN: Text Editors / IDEs
   ============================ -->
-    <!-- Open/focus VS Code window by its name/title. -->
+    <!-- Open/focus Zed / VS Code window by its name/title. -->
     <!-- Be careful since A-c is also used in Zsh fzf/key-bindings -->
     <keybind key="A-c">
       <action name="Execute">
-        <command>open-or-focus code code.code -c</command>
+        <!-- <command>open-or-focus code code.code -c</command> -->
+        <command>open-or-focus zed dev.zed.Zed.dev.zed.Zed -c</command>
       </action>
     </keybind>
     <!-- Open/focus Cursor window by its name/title. -->
@@ -589,11 +592,14 @@
         <command>open-or-focus pycharm jetbrains-pycharm -c</command>
       </action>
     </keybind>
+    <!-- Be careful since A-r is also used in VS Code/Zed key-bindings -->
+    <!--
     <keybind key="A-r">
       <action name="Execute">
         <command>open-or-focus rstudio rstudio.rstudio -c</command>
       </action>
     </keybind>
+    -->
     <!-- Open/focus Emacs window by its class name. -->
     <!--
     <keybind key="W-q">
