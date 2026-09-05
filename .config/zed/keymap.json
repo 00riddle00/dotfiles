@@ -2,43 +2,300 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-30 20:22:46 CEST
+# Date:   2026-09-05 02:58:20 CEST
 # Path:   ~/.config/zed/keymap.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Zed allows to have comments in this file.
-#
-# Zed keymap
-#
-# For information on binding keys, see the Zed
-# documentation: https://zed.dev/docs/key-bindings
-#
-# To see the default key bindings run `zed: open default keymap`
-# from the command palette.
 */
 [
+  // --------------------------------------------------------------------------
+  // Global / workbench
+  // --------------------------------------------------------------------------
+
+  {
+    "bindings": {
+      "alt-`": "workspace::ToggleLeftDock",
+      "alt-1": "project_panel::ToggleFocus",
+      "alt-2": "workspace::FocusCenterPane",
+      "alt-3": "workspace::ToggleBottomDock",
+      "alt-4": "terminal_panel::Toggle",
+      "alt-5": "workspace::ToggleRightDock",
+
+      "ctrl-0": "pane::ActivateLastItem",
+
+      "ctrl-alt-3": "workspace::OpenInTerminal",
+      "ctrl-alt-m": "projects::OpenRecent",
+      "ctrl-alt-o": "workspace::Open",
+      "ctrl-alt-s": "zed::OpenSettings",
+
+      "ctrl-shift-e": "zed::Extensions",
+      "ctrl-shift-g": "git_panel::ToggleFocus",
+      "ctrl-shift-s": "zed::OpenSettingsFile",
+      "ctrl-shift-t": "pane::ReopenClosedItem",
+
+      "ctrl->": "zed::OpenKeymapFile",
+      "ctrl-<": "zed::OpenSettingsFile"
+    },
+    "unbind": {
+      "ctrl-alt-,": "zed::OpenSettingsFile"
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Workspace / search
+  // --------------------------------------------------------------------------
+
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    },
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-.": "zed::OpenKeymap"
+      "f1": null,
+
+      "shift shift": "file_finder::Toggle",
+
+      "ctrl-.": "zed::OpenKeymap",
+      "ctrl-'": "command_palette::Toggle",
+
+      "ctrl-t": "pane::AlternateFile",
+
+      "ctrl-shift-r": [
+        "pane::DeploySearch",
+        {
+          "replace_enabled": true
+        }
+      ]
     }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "ctrl-k ctrl-s": "zed::OpenKeymap"
+      "ctrl-k ctrl-s": "zed::OpenKeymap",
+      "ctrl-shift-p": "command_palette::Toggle",
+      "ctrl-shift-x": "zed::Extensions"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-p": "project_symbols::Toggle"
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Panes / tabs
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+
+      "ctrl-1": ["pane::ActivateItem", 0],
+      "ctrl-2": ["pane::ActivateItem", 1],
+      "ctrl-3": ["pane::ActivateItem", 2],
+      "ctrl-4": ["pane::ActivateItem", 3],
+      "ctrl-5": ["pane::ActivateItem", 4],
+      "ctrl-6": ["pane::ActivateItem", 5],
+      "ctrl-7": ["pane::ActivateItem", 6],
+      "ctrl-8": ["pane::ActivateItem", 7],
+      "ctrl-9": ["pane::ActivateItem", 8],
+
+      "ctrl-e": [
+        "pane::CloseActiveItem",
+        {
+          "close_pinned": false
+        }
+      ]
+    },
+    "unbind": {
+      "ctrl-w": [
+        "pane::CloseActiveItem",
+        {
+          "close_pinned": false
+        }
+      ]
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Vim navigation
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+
+      "ctrl-up": "vim::ResizePaneUp",
+      "ctrl-down": "vim::ResizePaneDown",
+      "ctrl-left": "vim::ResizePaneLeft",
+      "ctrl-right": "vim::ResizePaneRight",
+
+      "ctrl-t": "pane::AlternateFile"
+    },
+    "unbind": {
+      "ctrl-e": "vim::LineDown"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "unbind": {
+      "ctrl-e": "vim::InsertFromBelow"
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Editor
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-x": "editor::Cut",
+      "ctrl-c": "editor::Copy",
+      "alt-v": "editor::Paste",
+
+      "alt-f1": [
+        "action::Sequence",
+        [
+          "editor::ToggleComments",
+          "editor::MoveDown",
+          "editor::MoveToBeginningOfLine"
+        ]
+      ],
+      "ctrl-/": [
+        "action::Sequence",
+        [
+          "editor::ToggleComments",
+          "editor::MoveDown",
+          "editor::MoveToBeginningOfLine"
+        ]
+      ],
+      "ctrl-shift-a": "editor::ToggleBlockComments",
+
+      "alt-r": "buffer_search::DeployReplace",
+
+      "ctrl-alt-.": "editor::ToggleCodeActions",
+      "ctrl-alt-l": "editor::Format",
+      "ctrl-alt-r": "editor::Rename",
+
+      "alt-f7": "editor::GoToHunk",
+      "shift-f7": "editor::GoToPreviousHunk",
+
+      "shift-f10": [
+        "task::Spawn",
+        {
+          "task_name": "Python: Run File"
+        }
+      ]
+    },
+    "unbind": {
+      "ctrl-insert": "editor::Copy",
+      "shift-insert": "editor::Paste",
+
+      "ctrl-'": "editor::ToggleSelectedDiffHunks",
+      "ctrl-.": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "ctrl-v": "editor::Paste"
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // AI / edit predictions
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "Editor && edit_prediction",
+    "bindings": {
+      "alt-enter": "editor::AcceptNextWordEditPrediction"
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Terminal
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-e": [
+        "pane::CloseActiveItem",
+        {
+          "close_pinned": false
+        }
+      ],
+
+      "ctrl-v": "terminal::Paste",
+      "alt-v": "terminal::Paste",
+
+      // Claude Code multiline input: Shift+Enter sends Esc + Enter so Claude
+      // inserts a newline instead of submitting the prompt.
+      "shift-enter": ["terminal::SendText", "\u001b\r"]
+    },
+    "unbind": {
+      "shift-insert": "terminal::Paste",
+      "ctrl-shift-v": "terminal::Paste"
+    }
+  },
+  {
+    "context": "Terminal && selection",
+    "bindings": {
+      "ctrl-c": "terminal::Copy"
+    }
+  },
+  {
+    "context": "Terminal && !selection",
+    "bindings": {
+      "ctrl-c": [
+        "terminal::SendKeystroke",
+        "ctrl-c"
+      ]
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Project panel
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "alt-v": "project_panel::Paste"
+    },
+    "unbind": {
+      "shift-insert": "project_panel::Paste"
+    }
+  },
+
+  // --------------------------------------------------------------------------
+  // Context-specific conflict removal
+  // --------------------------------------------------------------------------
+
+  {
+    "context": "AcpThread > Editor",
+    "unbind": {
+      "ctrl-'": "agent::CycleThinkingEffort"
+    }
+  },
+  {
+    "context": "KeymapEditor",
+    "unbind": {
+      "alt-c": "keymap_editor::ToggleConflictFilter",
+      "ctrl-e": "zed::OpenKeymapFile"
     }
   }
 ]
