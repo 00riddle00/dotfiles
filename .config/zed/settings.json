@@ -2,20 +2,94 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-01 03:12:47 CEST
+# Date:   2026-09-05 02:54:58 CEST
 # Path:   ~/.config/zed/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 # Zed allows to have comments in this file.
 */
+
 {
+  /* --- Extensions --- */
+  "auto_install_extensions": {
+    "csv": true,
+    "lua": true,
+    "perl": true,
+    "r": true,
+    "rainbow-csv": true,
+    "sql": true,
+    "postgres-language-server": true,
+    "xml": true,
+
+    "django-snippets": true,
+    "fastapi-snippets": true,
+    "flask-snippets": true,
+    "python-autodoc-lsp": true,
+    "python-refactoring": true,
+    "python-requirements": true,
+    "python-snippets": true,
+    "pytest-language-server": true,
+
+    "emmet": true,
+    "html": true,
+    "html-jinja": true,
+    "javascript-snippets": true,
+    "jinja2": true,
+    "live-server": true,
+
+    "latex": true,
+    "latex-snippets": true,
+    "markdown-snippets": true,
+    "markdownlint": true,
+    "marksman": true,
+    "mermaid": true,
+
+    "dockerfile": true,
+    "env": true,
+    "github-actions": true,
+    "ini": true,
+    "make": true,
+    "nginx": true,
+    "ssh-config": true,
+    "toml": true,
+    "tombi": true,
+
+    "color-highlight": true,
+    "comment": true,
+    "cspell": true,
+    "git-firefly": true,
+    "harper": true,
+    "log": true,
+    "path-server-lsp": true,
+    "wakatime": true,
+
+    "charmed-icons": true,
+    "colored-zed-icons-theme": true,
+    "vscode-great-icons": true,
+    "one-dark-pro": true,
+    "synthwave": true,
+    "tokyo-night": true,
+    "tokyo-night-dark": true
+  },
+
   /* --- Appearance & Typography --- */
-  "theme": "Tokyo Night Storm",
-  "icon_theme": "VSCode Great Icons Theme",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Tokyo Night Storm"
+  },
+
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Colored Zed Icons Theme Dark",
+    "dark": "Colored Zed Icons Theme Dark"
+  },
+
   "ui_font_family": "Inter",
-  "ui_font_size": 20.0,
+  "ui_font_size": 21.0,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 16.0,
+
   "theme_overrides": {
     "Tokyo Night Storm": {
       "accents": [
@@ -27,13 +101,19 @@
         "#ff9e64ff",
         "#f7768eff"
       ],
+
       "pane_group.border": "#00000000",
-      // Disable matching-bracket background highlight by making it fully transparent.
+
+      // Disable matching-bracket background highlight by making it fully
+      // transparent.
       "editor.document_highlight.bracket_background": "#00000000",
+
       // Disable semantic occurrence highlights for the symbol under the cursor.
       "editor.document_highlight.read_background": "#00000000",
       "editor.document_highlight.write_background": "#00000000",
+
       // "status_bar.background": "#004e62",
+
       "players": [
         {
           "cursor": "#02ccfe"
@@ -47,26 +127,32 @@
   "selection_highlight": false,
   "relative_line_numbers": "enabled",
   "colorize_brackets": true,
+
   "indent_guides": {
     "enabled": true,
     "line_width": 2,
     "active_line_width": 3,
     "coloring": "indent_aware"
   },
+
   "wrap_guides": [
     88,
     120
   ],
+
   "mouse_wheel_zoom": true,
+
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
     }
   },
+
   "format_on_save": "off",
 
   /* --- Vim --- */
   "vim_mode": true,
+
   "vim": {
     "cursor_shape": {
       "normal": "block",
@@ -79,10 +165,61 @@
   },
 
   /* --- Languages & Formatting --- */
+  "file_types": {
+    "HTML-Jinja": [
+      "**/templates/**/*.html",
+      "*.jinja",
+      "*.jinja2",
+      "*.j2"
+    ]
+  },
+
   "languages": {
+    "Python": {
+      "formatter": {
+        "language_server": {
+          "name": "ruff"
+        }
+      }
+    },
+
+    "SQL": {
+      "formatter": {
+        "external": {
+          "command": "sqlfluff",
+          "arguments": [
+            "format",
+            "--stdin-filename",
+            "{buffer_path}",
+            "-"
+          ]
+        }
+      }
+    },
+
+    "Shell Script": {
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          "arguments": [
+            "--filename",
+            "{buffer_path}",
+            "-ln=bash",
+            "-s",
+            "-i",
+            "2",
+            "-bn",
+            "-ci",
+            "-sr"
+          ]
+        }
+      }
+    },
+
     "Markdown": {
       "show_edit_predictions": false
     },
+
     "JavaScript": {
       "formatter": {
         "external": {
@@ -100,20 +237,25 @@
   "tab_bar": {
     "show_nav_history_buttons": false,
     "show_tab_bar_buttons": false
+
     // For heavy usage of horizontal splits:
     // "show": false
   },
+
   "project_panel": {
     "dock": "left"
   },
+
   "cli_default_open_behavior": "new_window",
+
   "session": {
     "trust_all_worktrees": true
   },
 
   /* --- Terminal --- */
   "terminal": {
-    "font_size": 17.0
+    "font_size": 17.0,
+    "detect_venv": "off"
   },
 
   /* --- Git --- */
@@ -127,6 +269,7 @@
   "edit_predictions": {
     "provider": "copilot"
   },
+
   "agent_servers": {
     "cursor": {
       "type": "registry"
