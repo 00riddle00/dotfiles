@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-20 04:16:27 CEST
+# Date:   2026-09-05 03:03:02 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -166,7 +166,7 @@ def srm    'sudo rm -r'
 def cprf   'sudo cp -r'
 def dir    'vidir'
 def dir-   'vidir -'
-def r      'rm -i'
+#def r      'rm -i'
 def w      'which'
 def rehist 'fc -R'
 def diff   'diff --color=auto'
@@ -831,6 +831,7 @@ def da         'dot add'
 def dsau       'dot add -u .'
 def dsua       'dot add -u .'
 def dsc        'dot commit'
+def dc         'dot commit'
 def dm         "dot commit -m '"
 def dsco       'dot commit --only'
 def dsd        'dot diff'
@@ -841,10 +842,12 @@ def dd.        'dot diff .'
 def d.         'dot diff .'
 def dsde       'PAGER=delta dot diff'
 def dsdc       'dot diff --staged'
+def ddc        'dot diff --staged'
 def dsdce      'PAGER=delta dot diff --staged'
 def dsg        'dot lg'
 def dsl        'dot pull'
 def dsp        'dot push'
+def dp         'dot push'
 def dsr        'dot restore'
 def dsrc       'dot restore --staged'
 def dsrs       'dot restore --staged'
@@ -1378,3 +1381,4 @@ def nodel \
 def dff 'dot ls-files'
 def gff 'git ls-files'
 def tri '${EDITOR} ${XDG_CONFIG_HOME}/tridactyl/tridactylrc'
+def r   'yazi'
