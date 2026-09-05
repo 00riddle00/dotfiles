@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-11 19:12:23 CEST
+# Date:   2026-09-05 02:51:13 CEST
 # Path:   ~/.config/Code/User/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,120 +10,180 @@
 */
 
 {
-  /* --- Editor & Typography --- */
+  /* --- Editor --- */
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.lineNumbers": "relative",
-  "editor.renderLineHighlight": "none",
-  "editor.linkedEditing": true,
   "editor.rulers": [88, 120],
-  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "none",
   "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+
+  "editor.linkedEditing": true,
   "editor.inlineSuggest.enabled": true,
+
   "editor.selectionHighlight": false,
-  "editor.occurrencesHighlight": "off",  /* <-- Can be very useful sometimes */
+  "editor.occurrencesHighlight": "off", /* <-- Can be very useful sometimes */
   "editor.matchBrackets": "near",
-  "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": false,
+  "editor.guides.highlightActiveBracketPair": true,
+
   "editor.unicodeHighlight.allowedCharacters": {
     "–": true
   },
 
-  /* --- Workbench --- */
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+
+  /* --- Workbench & Appearance --- */
+  "workbench.colorTheme": "One Dark Pro Mix",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.startupEditor": "none",
   "workbench.editor.empty.hint": "hidden",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+
   "workbench.colorCustomizations": {
     "statusBar.background": "#004e62",
     "statusBar.foreground": "#9ccae6"
   },
+
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.sqlite": "default"
   },
 
-  /* --- Window & Files --- */
+  /* --- Window --- */
   "window.titleBarStyle": "custom",
-  "window.customMenuBarAltFocus": false,
   "window.menuBarVisibility": "toggle",
+  "window.customMenuBarAltFocus": false,
   "window.openFoldersInNewWindow": "on",
+
+  /* --- Files & Explorer --- */
   "files.autoSave": "afterDelay",
+
   "files.associations": {
-    "*html": "jinja-html"
+    "*.dbclient-js": "javascript",
+    "**/templates/**/*.html": "jinja-html",
+    "*.jinja": "jinja-html",
+    "*.jinja2": "jinja-html",
+    "*.j2": "jinja-html",
+    ".env*": "dotenv"
   },
+
   "files.exclude": {
     "**/__pycache__": true
   },
-  "explorer.confirmDragAndDrop": false,
+
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
   /* --- Terminal --- */
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.mouseWheelZoom": true,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
 
-  /* --- Neovim Extension --- */
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  "vscode-neovim.ctrlKeysForNormalMode": ["d", "i", "o", "r", "u", "v"],
-  "vscode-neovim.ctrlKeysForInsertMode": ["d", "i", "o", "r", "u"],
-
   /* --- Git & Source Control --- */
-  "git.confirmSync": false,
   "git.autofetch": true,
+  "git.confirmSync": false,
   "git.suggestSmartCommit": false,
   "diffEditor.ignoreTrimWhitespace": false,
 
-  /* --- AI & Telemetry --- */
-  "telemetry.telemetryLevel": "off",
+  /* --- VSCode-Neovim --- */
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  "vscode-neovim.ctrlKeysForNormalMode": ["d", "i", "o", "r", "u", "v"],
+  "vscode-neovim.ctrlKeysForInsertMode": ["d", "i", "o", "r", "u"],
+
+  /* --- AI --- */
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
     "markdown": false,
     "scminput": false
   },
+
   "github.copilot.nextEditSuggestions.enabled": true,
   "chat.mcp.gallery.enabled": true,
   "claudeCode.preferredLocation": "panel",
 
-  /* --- Language Specifics --- */
+  /* --- Language-Specific --- */
   "[python]": {
-    "editor.formatOnPaste": false,
-    "editor.defaultFormatter": null
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnPaste": false
   },
+
+  "[sql]": {
+    "editor.defaultFormatter": "sqlfluff.vscode-sqlfluff"
+  },
+
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[jinja-html]": {
     "editor.defaultFormatter": null
   },
-  "cSpell.enableFiletypes": ["jinja-html"],
+
+  /* --- Extension-Specific --- */
+  "cSpell.enabledFileTypes": {
+    "jinja-html": true
+  },
+
+  "database-client.autoSync": true,
+  "jupyter.askForKernelRestart": false,
+  "makefile.configureOnOpen": true,
+
+  "shellcheck.executablePath": "shellcheck",
+
+  "shfmt.executableArgs": [
+    "-ln=bash",
+    "-s",
+    "-i",
+    "2",
+    "-bn",
+    "-ci",
+    "-sr"
+  ],
+
+  "sqlfluff.linter.run": "onType",
+  "sqlfluff.format.enabled": true,
+
+  "yaml.disableSchemaDetection": [
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+
+  /* --- Security, Privacy & Updates --- */
+  "telemetry.telemetryLevel": "off",
+
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.banner": "never",
+
+  "update.showReleaseNotes": false,
 
   /* --- Misc / Technical --- */
   "keyboard.dispatch": "keyCode",
-  "database-client.autoSync": true,
-  "makefile.configureOnOpen": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "security.workspace.trust.banner": "never",
-  "jupyter.askForKernelRestart": false,
-  "sqltools.useNodeRuntime": true,
-  "http.systemCertificatesNode": true,
-  "update.showReleaseNotes": false,
 
-  /* --- Extension-Specific --- */
-  "claude-dev-experimental.api.currentModel": {
-    "uiId": "gpt-5.2-medium",
-    "mode": "responsive"
-  },
-  "geminicodeassist.project": "vaulted-bloom-0sf6z",
-  "geminicodeassist.displayInlineContextHint": false,
-  "geminicodeassist.inlineSuggestions.enableAuto": true
+  /* --- New and unsorted --- */
 }
