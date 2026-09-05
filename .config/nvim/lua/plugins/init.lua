@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 --------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-03 20:27:42 CEST
+-- Date:   2026-09-05 02:59:55 CEST
 -- Path:   ~/.config/nvim/lua/plugins/init.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 --------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return {
     opts = {
       notifier = { enabled = true },
       quickfile = { enabled = true },
-      words = { enabled = true },
+      words = { enabled = not vim.g.vscode },
     },
   },
 
