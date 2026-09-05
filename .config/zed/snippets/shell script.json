@@ -1,0 +1,22 @@
+{
+  "dash separator 79": {
+    "prefix": "sep",
+    "body": ["# -----------------------------------------------------------------------------"],
+    "description": "79-character dash separator"
+  },
+  "dash separator 88": {
+    "prefix": "sep8",
+    "body": ["# --------------------------------------------------------------------------------------"],
+    "description": "88-character dash separator"
+  },
+  "equals separator 79": {
+    "prefix": "esep",
+    "body": ["# ============================================================================="],
+    "description": "79-character equals separator"
+  },
+  "equals separator 88": {
+    "prefix": "esep8",
+    "body": ["# ======================================================================================"],
+    "description": "88-character equals separator"
+  }
+}
