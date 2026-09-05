@@ -1,0 +1,23 @@
+/* vim: set ft=jsonc tw=120 nu ai et ts=2 sw=2: */
+/*
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-09-05 02:56:00 CEST
+# Path:   ~/.config/zed/tasks.json
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+# Zed allows to have comments in this file.
+*/
+[
+  {
+    "label": "Python: Run File",
+    "command": "if [[ -x \"$ZED_WORKTREE_ROOT/.venv/bin/python\" ]]; then \"$ZED_WORKTREE_ROOT/.venv/bin/python\" \"$ZED_FILE\"; else python \"$ZED_FILE\"; fi",
+    "shell": {
+      "program": "/bin/bash"
+    },
+    "use_new_terminal": false,
+    "save": "current",
+    "show_summary": false,
+    "show_command": false
+  }
+]
