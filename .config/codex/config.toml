@@ -1,0 +1,28 @@
+# vim: set ft=toml tw=88 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-09-07 01:26:38 CEST
+# Path:   ~/.config/codex/config.toml
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+
+model_reasoning_effort = "medium"
+model_verbosity = "medium"
+personality = "pragmatic"
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+web_search = "live"
+
+file_opener = "none"
+cli_auth_credentials_store = "keyring"
+
+[tui]
+show_tooltips = false
+status_line = [
+  "model-with-reasoning",
+  "git-branch",
+  "current-dir",
+  "context-remaining",
+]
+terminal_title = ["project", "git-branch", "status"]
