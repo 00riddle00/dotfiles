@@ -1,7 +1,7 @@
 # vim: set ft=dosini noai nu et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-11 19:24:19 CEST
+# Date:   2026-09-07 03:25:36 CEST
 # Path:   ~/.config/offlineimap/config
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -10,6 +10,7 @@
 ui         = ttyui
 accounts   = Gmail, Posteo
 pythonfile = ${XDG_CONFIG_HOME}/mutt/offlineimap_gpg.py
+metadata   = ${XDG_DATA_HOME}/offlineimap
 
 [Account Gmail]
 localrepository  = Gmail-Local
