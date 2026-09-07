@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-03 18:44:51 CEST
+-- Date:   2026-09-07 23:19:47 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -76,38 +76,19 @@ local servers = {
     },
   },
 
-  --[[ Example: enable later if you need it
+  --[[ Enable if needed
   harper_ls = {
     capabilities = capabilities,
     settings = {
       ["harper-ls"] = {
-        userDictPath = "${XDG_CONFIG_HOME}/harper-ls/riddle-dict.txt",
-        fileDictPath = "",
         linters = {
-          SpellCheck = true,
-          SpelledNumbers = false,
-          AnA = true,
-          SentenceCapitalization = true,
-          UnclosedQuotes = true,
-          WrongQuotes = false,
-          LongSentences = true,
-          RepeatedWords = true,
-          Spaces = true,
-          Matcher = true,
-          CorrectNumberSuffix = true,
+          SpellCheck = false,
         },
-        codeActions = { ForceStable = false },
-        markdown = { IgnoreLinkTitle = false },
-        diagnosticSeverity = "hint",
-        isolateEnglish = false,
-        dialect = "American",
-        maxFileLength = 120000,
       },
     },
   },
   --]]
 }
-
 -- Apply definitions
 for name, cfg in pairs(servers) do
   vim.lsp.config(name, cfg)
