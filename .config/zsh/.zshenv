@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-10 06:15:03 CEST
+# Date:   2026-09-07 02:20:59 CEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -54,6 +54,9 @@ exp AWS_CONFIG_FILE             "${XDG_CONFIG_HOME}/aws/config"
 exp AWS_SHARED_CREDENTIALS_FILE "${XDG_CONFIG_HOME}/aws/credentials"
 exp CARGO_HOME                  "${XDG_DATA_HOME}/cargo"
 exp CGDB_DIR                    "${XDG_CONFIG_HOME}/cgdb"
+exp CLAUDE_CONFIG_DIR           "${XDG_CONFIG_HOME}/claude"
+exp CODEX_HOME                  "${XDG_CONFIG_HOME}/codex"
+exp COPILOT_HOME                "${XDG_CONFIG_HOME}/copilot"
 exp CUDA_CACHE_PATH             "${XDG_CACHE_HOME}/nv"
 exp DIRCOLORS                   "${XDG_CONFIG_HOME}/dircolors"
 exp DOCKER_CONFIG               "${XDG_CONFIG_HOME}/docker"
@@ -74,6 +77,7 @@ exp PERL_CPANM_HOME             "${XDG_CACHE_HOME}/cpanm"
 exp PYTHONPYCACHEPREFIX         "${XDG_CACHE_HOME}/python"
 exp PYTHONUSERBASE              "${XDG_DATA_HOME}/python"
 exp PYTHON_HISTORY              "${XDG_STATE_HOME}/python/history"
+exp RUSTUP_HOME                 "${XDG_DATA_HOME}/rustup"
 exp RXVT_SOCKET                 "${XDG_RUNTIME_DIR}/urxvtd"
 exp SQLITE_HISTORY              "${XDG_DATA_HOME}/sqlite_history"
 exp SSH_AUTH_SOCK               "${XDG_RUNTIME_DIR}/ssh-agent.socket"
