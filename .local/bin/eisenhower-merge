@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+# vim: set ft=python tw=88 nu ai et ts=4 sw=4:
+# ------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-09-07 19:30:00 CEST
+# Path:   ~/.local/bin/eisenhower-merge
+# URL:    https://github.com/00riddle00/dotfiles
+# ------------------------------------------------------------------------------
+#*
+# Merge the Eisenhower-matrix quadrant files into one markdown document.
+#
+# INPUTS:
+# -------
+# A directory containing the six matrix files, by fixed name:
+#   a0_conventions.md, a1🔴.md, a2🟠.md, a3🔵.md, a4🟢.md, a_broader_vision.md
+#
+# OUTPUT:
+# -------
+# One markdown document on standard output. Each file's own top-level heading
+# (first line starting with "# ") is replaced by a fixed section title; any
+# other headings in the file are demoted by one level so they nest under it.
+#
+# EXIT STATUS:
+# ------------
+# 0 if all six files were merged; 1 if some were missing (the merge still runs
+# with the rest, with a warning per missing file on stderr); 2 on a usage error.
+#**
+import argparse
+import inspect
+import os
+import sys
+from pathlib import Path
+
+Id = "eisenhower-merge v1.1.0"
+basename = os.path.basename(__file__)
+
+#** USAGE:
+#**   ${0} VAULT_DIR > eisenhower-matrix.md
+#**
+#** OPTIONS:
+#**  --help                   display this help and exit
+#**  --version                output version information and exit
+
+# NOTE: This could be an eight-line shell loop (cat, tail -n +2, sed 's/^#/##/').
+# It is Python for the same reason every script in this directory is: --help with
+# examples, --version, validated arguments, and distinct exit codes, so it behaves
+# like a tool rather than a snippet. The logic itself is trivial.
+
+# NOTE: Filenames and section titles are deliberately hardcoded. The script exists
+# to merge exactly these six files in exactly this order with exactly these
+# titles; making any of it configurable would add surface without a use.
+# (filename, section title), in output order.
+SECTIONS = [
+    ("a0_conventions.md", "Conventions"),
+    ("a1🔴.md", "Urgent & Important (DO NOW) (Priority: High)"),
+    ("a2🟠.md", "Not Urgent & Important (DECIDE – SCHEDULE) (Priority: Medium)"),
+    ("a3🔵.md", "Urgent & Unimportant (DELEGATE) (Priority: Low)"),
+    ("a4🟢.md", "Not Urgent & Unimportant (DELETE – IGNORE) (Priority: None)"),
+    ("a_broader_vision.md", "A Broader Vision"),
+]
+
+
+def existing_dir(arg):
+    path = Path(arg)
+    if not path.is_dir():
+        raise argparse.ArgumentTypeError(f"not a directory: {arg}")
+    return path
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=inspect.cleandoc(f"""
+            Merge the Eisenhower-matrix quadrant files into one markdown document.
+            INPUTS:
+            -------
+            A directory containing the six matrix files, by fixed name:
+              a0_conventions.md, a1🔴.md, a2🟠.md, a3🔵.md, a4🟢.md,
+              a_broader_vision.md
+            OUTPUT:
+            -------
+            One markdown document on standard output, with each file under a
+            fixed section title and its inner headings demoted by one level.
+            usage examples:
+              {basename} . > eisenhower-matrix.md
+              {basename} ~/Dropbox/gtd > eisenhower-matrix.md
+            """),
+        formatter_class=argparse.RawTextHelpFormatter,
+    )
+    parser.add_argument(
+        "vault_dir",
+        type=existing_dir,
+        help="Directory containing the quadrant files.",
+    )
+    parser.add_argument("-v", "--version", action="version", version=Id)
+    return parser.parse_args()
+
+
+def process_body(text):
+    lines = text.splitlines()
+    if lines and lines[0].startswith("# "):
+        lines = lines[1:]
+    demoted = ["#" + line if line.startswith("#") else line for line in lines]
+    return "\n".join(demoted).strip()
+
+
+def main():
+    args = parse_args()
+    output = ["# Eisenhower Matrix\n"]
+    missing = 0
+    for filename, title in SECTIONS:
+        path = args.vault_dir / filename
+        if not path.is_file():
+            sys.stderr.write(f"WARNING: {path} not found, skipping.\n")
+            missing += 1
+            continue
+        output.append(f"## {title}\n\n{process_body(path.read_text())}\n")
+    sys.stdout.write("\n".join(output) + "\n")
+    sys.exit(1 if missing else 0)
+
+
+if __name__ == "__main__":
+    main()
