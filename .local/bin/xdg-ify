@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-08 02:20:11 CEST
+# Date:   2026-09-09 05:10:39 CEST
 # Path:   ~/.local/bin/xdg-ify
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -15,6 +15,7 @@
 
 #* USAGE:
 #*   ${0} PATH
+#*   COMMAND | ${0}
 #**
 set -euo pipefail
 
@@ -29,10 +30,17 @@ DROPBOX="${HOME}/Dropbox"
 CANDY="${DROPBOX}/candy"
 NOTES="${DROPBOX}/gtd"
 
-input="${1:-}"
+if [ "${#}" -gt 0 ]; then
+  input="${1}"
+elif [ ! -t 0 ]; then
+  IFS= read -r input
+else
+  exit 1
+fi
+
 [ -n "${input}" ] || exit 1
 
-# resolve absolute path
+# Resolve absolute path.
 if command -v readlink > /dev/null 2>&1; then
   abs="$(readlink -f -- "${input}" 2> /dev/null || true)"
 fi
