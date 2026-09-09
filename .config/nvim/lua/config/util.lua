@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:26:10 CEST
+-- Date:   2026-09-09 17:11:53 CEST
 -- Path:   ~/.config/nvim/lua/config/util.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ end
 
 function Util.nmap(key, action, options, buffer)
   options = options or {}
-  local opts = vim.tbl_extend("force", options, { noremap = false })
+  local opts = vim.tbl_extend("force", options, { remap = true })
   map("n", key, action, opts, buffer)
 end
 
@@ -117,7 +117,7 @@ end
 
 function Util.imap(key, action, options, buffer)
   options = options or {}
-  local opts = vim.tbl_extend("force", options, { noremap = false })
+  local opts = vim.tbl_extend("force", options, { remap = true })
   map("i", key, action, opts, buffer)
 end
 
@@ -129,15 +129,19 @@ function Util.xnoremap(key, action, options, buffer)
   map("x", key, action, options, buffer)
 end
 
+function Util.onoremap(key, action, options, buffer)
+  map("o", key, action, options, buffer)
+end
+
 function Util.vmap(key, action, options, buffer)
   options = options or {}
-  local opts = vim.tbl_extend("force", options, { noremap = false })
+  local opts = vim.tbl_extend("force", options, { remap = true })
   map("v", key, action, opts, buffer)
 end
 
 function Util.xmap(key, action, options, buffer)
   options = options or {}
-  local opts = vim.tbl_extend("force", options, { noremap = false })
+  local opts = vim.tbl_extend("force", options, { remap = true })
   map("x", key, action, opts, buffer)
 end
 
