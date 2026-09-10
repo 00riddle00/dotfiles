@@ -64,6 +64,9 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-tree/nvim-web-devicons", -- optional, but recommended
     },
+    opts = {
+      close_if_last_window = true,
+    },
     lazy = false, -- neo-tree will lazily load itself
   },
 
