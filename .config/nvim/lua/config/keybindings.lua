@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-09 17:11:51 CEST
+-- Date:   2026-09-10 23:00:27 CEST
 -- Path:   ~/.config/nvim/lua/config/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -172,6 +172,7 @@ inoremap("<S-Tab>", function()
 
   return "<S-Tab>"
 end, { expr = true })
+
 -------------------------------------------
 -- Command-line mode
 -------------------------------------------
@@ -431,6 +432,10 @@ textobject_move("]m", "goto_next_start", "Next function start")
 textobject_move("[m", "goto_previous_start", "Previous function start")
 textobject_move("]M", "goto_next_end", "Next function end")
 textobject_move("[M", "goto_previous_end", "Previous function end")
+-- [[ and ]] are historical Vim section motions, so reclaim them for function
+-- navigation as well.
+textobject_move("]]", "goto_next_start", "Next function start")
+textobject_move("[[", "goto_previous_start", "Previous function start")
 
 -------------------------------------------
 -- [Plugin] "nvim-telescope/telescope.nvim"
