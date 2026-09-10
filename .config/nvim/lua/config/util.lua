@@ -6,7 +6,7 @@
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
---- Neovim specific shortcuts
+-- Neovim-specific shortcuts.
 local vim = vim or {}
 local api = vim.api
 
@@ -16,12 +16,12 @@ Util.nvim_command = api.nvim_command
 Util.user_command = api.nvim_create_user_command
 Util.nvim_call_function = api.nvim_call_function
 
--- Check if a file or directory exists in this path
+-- Check whether a file or directory exists at the given path.
 function Util.exists(path)
   return io.open(path, "r") and true or false
 end
 
--- Create directory if it does not exist yet
+-- Create a directory if it does not exist yet.
 function Util.mkdir(path)
   if Util.exists(path) then
     return false
@@ -29,15 +29,17 @@ function Util.mkdir(path)
   return os.execute("mkdir " .. path) and true or false
 end
 
+-- Extract the directory portion of a path after removing hyphens.
 function Util.getPath(str)
   local s = str:gsub("%-", "")
   return s:match("(.*[/\\])")
 end
 
-function Util.noop() --[[ do nothing ]]
+-- No-op callback for places where a callable function is required.
+function Util.noop()
 end
 
--- Slice table as this is not included in lua 5.1
+-- Slice a table, as this is not included in Lua 5.1.
 function Util.tbl_slice(tbl, start_idx, end_idx)
   local slice = {}
   end_idx = end_idx or #tbl
@@ -49,7 +51,7 @@ function Util.tbl_slice(tbl, start_idx, end_idx)
   return slice
 end
 
--- Show confirm dialog before executing predicate
+-- Show a confirmation dialog before executing the selected callback.
 function Util.confirm(options, msg)
   local defaults = { Yes = Util.noop, No = Util.noop }
   msg = msg or "Are you sure ?"
@@ -73,13 +75,14 @@ function Util.confirm(options, msg)
   end
 end
 
--- Check if the current directory is a git repo
+-- Ensure the current directory is inside a Git repository.
 function Util.ensure_git()
   if os.execute("git rev-parse --is-inside-work-tree 2>/dev/null") ~= 0 then
     error("Not a git repository")
   end
 end
 
+-- Define a keymap with silent mode enabled by default.
 local function map(mode, key, action, options, buffer)
   options = options or {}
 
@@ -93,6 +96,7 @@ local function map(mode, key, action, options, buffer)
   vim.keymap.set(mode, key, action, opts)
 end
 
+-- Delete a keymap, optionally only for the current buffer.
 local function unmap(mode, key, buffer)
   if buffer then
     pcall(vim.keymap.del, mode, key, { buffer = 0 })
@@ -101,6 +105,8 @@ local function unmap(mode, key, buffer)
   end
 end
 
+-- Vim-style mapping wrappers; *map variants are recursive and *noremap
+-- variants are nonrecursive.
 function Util.nmap(key, action, options, buffer)
   options = options or {}
   local opts = vim.tbl_extend("force", options, { remap = true })
@@ -153,6 +159,7 @@ function Util.noremap(key, action, options, buffer)
   map("", key, action, options, buffer)
 end
 
+-- Vim-style mapping deletion wrappers.
 function Util.nunmap(key, buffer)
   unmap("n", key, buffer)
 end

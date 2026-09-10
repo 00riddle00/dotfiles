@@ -13,6 +13,7 @@ local cmd = Util.nvim_command
 
 local General = {}
 
+-- Ensure the current file's parent directory exists, creating it if needed.
 -- NOTE: Inspired by a similar function in Damian Conway's vimrc
 -- SOURCE: https://github.com/thoughtstream/Damian-Conway-s-Vim-Setup/blob/master/.vimrc
 function General.EnsureDirExists()
@@ -37,6 +38,7 @@ function General.EnsureDirExists()
   end
 end
 
+-- Run a callback while preserving the current search and cursor position.
 function General.Preserve(callback)
   -- Preparation: save last search, and cursor position.
   local search = vim.fn.getreg("/")
