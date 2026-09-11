@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-09 17:11:48 CEST
+-- Date:   2026-09-12 00:19:59 CEST
 -- Path:   ~/.config/nvim/lua/config/commands.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -11,10 +11,10 @@ local Util = require("config.util")
 local command = Util.user_command
 
 -- Change the working directory to the current file's directory.
-command("CD", "cd %:p:h", {})
+command("CD", "cd %:p:h", { bar = true })
 
 -- Write the current buffer.
-command("W", "write", {})
+command("W", "write", { bar = true })
 
 -- Write the current buffer to a path and then open that file.
 command("WE", function(opts)
@@ -31,9 +31,9 @@ command("HOR", "windo wincmd K", {})
 command("GB", "lua require('gitsigns').blame_line({ full = true })", {})
 
 -- Reopen the current file using Unix line endings.
-command("FFunix", "e ++ff=unix", {})
+command("FFunix", "e ++ff=unix", { bar = true })
 -- Reopen the current file using DOS line endings.
-command("FFdos", "e ++ff=dos", {})
+command("FFdos", "e ++ff=dos", { bar = true })
 
 -- Convert the current buffer to a binary dump.
 command("Bin", "%!xxd -b -c 8", {})
@@ -54,7 +54,7 @@ command("SortPa", function()
   vim.cmd("%s/\\n\\(# \\)\\@!/@/g")
   vim.cmd("sort")
   vim.cmd("%s/@/\\r/g")
-end, {})
+end, { bar = true })
 
 -- Run any command and capture its output in a new scratch buffer.
 -- Usage:
@@ -103,5 +103,6 @@ command("UpdateHeader", function()
     end
   end
 end, {
+  bar = true,
   desc = "Refresh header Date and Path (lines 1–30), supports ; # /* - comments",
 })
