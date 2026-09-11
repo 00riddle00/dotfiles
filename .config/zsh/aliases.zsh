@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-05 03:03:02 CEST
+# Date:   2026-09-12 00:25:06 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -827,6 +827,7 @@ def gcp        'git commit -m '.' && git push'
 #def dot        '/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
 def dotalias   '/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME} "${@}"'
 def dsa        'dot add'
+def dap        'dot add -p'
 def da         'dot add'
 def dsau       'dot add -u .'
 def dsua       'dot add -u .'
