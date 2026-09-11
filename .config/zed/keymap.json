@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-05 02:58:20 CEST
+# Date:   2026-09-12 00:27:39 CEST
 # Path:   ~/.config/zed/keymap.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -29,6 +29,7 @@
       "ctrl-alt-o": "workspace::Open",
       "ctrl-alt-s": "zed::OpenSettings",
 
+      "ctrl-shift-a": "agent::Toggle",
       "ctrl-shift-e": "zed::Extensions",
       "ctrl-shift-g": "git_panel::ToggleFocus",
       "ctrl-shift-s": "zed::OpenSettingsFile",
@@ -181,7 +182,7 @@
           "editor::MoveToBeginningOfLine"
         ]
       ],
-      "ctrl-shift-a": "editor::ToggleBlockComments",
+      // "ctrl-shift-a": "editor::ToggleBlockComments",
 
       "alt-r": "buffer_search::DeployReplace",
 

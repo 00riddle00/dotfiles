@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-05 02:54:58 CEST
+# Date:   2026-09-12 00:27:46 CEST
 # Path:   ~/.config/zed/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -58,7 +58,7 @@
     "comment": true,
     "cspell": true,
     "git-firefly": true,
-    "harper": true,
+    "harper": false,
     "log": true,
     "path-server-lsp": true,
     "wakatime": true,
@@ -270,6 +270,11 @@
     "provider": "copilot"
   },
 
+  "agent": {
+    "dock": "right",
+    "single_file_review": true
+  },
+
   "agent_servers": {
     "cursor": {
       "type": "registry"
@@ -281,6 +286,9 @@
       "type": "registry"
     },
     "claude-acp": {
+      "default_config_options": {
+        "model": "opus[1m]"
+      },
       "type": "registry"
     }
   },
