@@ -1,0 +1,55 @@
+-- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
+-------------------------------------------------------------------------------
+-- Author: 00riddle00 (Tomas Giedraitis)
+-- Date:   2026-09-12 00:11:41 CEST
+-- Path:   ~/.config/nvim/lua/plugins/copilot.lua
+-- URL:    https://github.com/00riddle00/dotfiles
+-------------------------------------------------------------------------------
+
+return {
+  "zbirenbaum/copilot.lua",
+  cmd = "Copilot",
+  event = "InsertEnter",
+  config = function()
+    require("copilot").setup({
+      panel = {
+        enabled = true,
+        auto_refresh = false,
+        keymap = {
+          jump_next = "]]", -- was <C-n>
+          jump_prev = "[[", -- was <C-p>
+          accept = "<CR>",
+          refresh = "gr",
+          open = "<M-r>",
+        },
+        layout = {
+          position = "bottom", -- | top | left | right | horizontal | vertical
+          ratio = 0.4,
+        },
+      },
+      suggestion = {
+        enabled = true,
+        auto_trigger = true,
+        keymap = {
+          --accept = "<TAB>",
+          -- <TAB> is handled by the smart-tab mapping in keybindings.lua.
+          accept = false,
+          accept_word = "<M-CR>",
+          next = "<C-n>",
+          prev = "<C-p>",
+        },
+      },
+      filetypes = {
+        ["*"] = true,
+      },
+      server_opts_overrides = {
+        offset_encoding = "utf-16",
+        settings = {
+          telemetry = {
+            telemetryLevel = "off",
+          },
+        },
+      },
+    })
+  end,
+}

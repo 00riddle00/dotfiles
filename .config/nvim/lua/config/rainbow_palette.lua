@@ -1,8 +1,8 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:26:12 CEST
--- Path:   ~/.config/nvim/lua/plugins/_rainbow_palette.lua
+-- Date:   2026-09-12 00:12:17 CEST
+-- Path:   ~/.config/nvim/lua/config/rainbow_palette.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 

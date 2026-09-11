@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:26:06 CEST
+-- Date:   2026-09-12 00:11:33 CEST
 -- Path:   ~/.config/nvim/lua/config/lazy.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -30,14 +30,20 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- NOTE: Both are set in ~/.config/nvim/init.lua before
+-- `require("config.lazy")`, so they are already configured here.
+
 -- Setup lazy.nvim
 require("lazy").setup({
-  spec = require("plugins"),
+  spec = {
+    -- import your plugins
+    { import = "plugins" },
+  },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "tokyonight", "habamax" } },
-  checker = {
-    enabled = true, -- check for plugin updates periodically
-    notify = false, -- notify on update
-  },
+  -- automatically check for plugin updates, but don't notify
+  checker = { enabled = true, notify = false },
 })
