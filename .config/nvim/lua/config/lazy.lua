@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-12 00:11:33 CEST
+-- Date:   2026-09-12 04:20:26 CEST
 -- Path:   ~/.config/nvim/lua/config/lazy.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -44,6 +44,8 @@ require("lazy").setup({
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "tokyonight", "habamax" } },
-  -- automatically check for plugin updates, but don't notify
+  -- automatically check for plugin updates, but don't notify.
   checker = { enabled = true, notify = false },
+  -- automatically reload Lazy when plugin specs change, but don't notify.
+  change_detection = { enabled = true, notify = false },
 })
