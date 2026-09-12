@@ -1,14 +1,16 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-12 00:11:50 CEST
+-- Date:   2026-09-12 04:21:40 CEST
 -- Path:   ~/.config/nvim/lua/plugins/vimtex.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
 
 return {
   "lervag/vimtex",
-  config = function()
+  lazy = false,
+
+  init = function()
     -- Set the VimTeX PDF viewer using the generic viewer interface.
     vim.g.vimtex_view_general_viewer = "zathura"
 
