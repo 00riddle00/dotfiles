@@ -1,7 +1,7 @@
 " vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-20 04:22:19 CEST
+# Date:   2026-09-12 04:14:20 CEST
 # Path:   ~/.config/tridactyl/tridactylrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -60,15 +60,54 @@ unbind <C-e>
 unbind <C-y>
 
 " -------------------------------------
-" Tabs
+" Tab navigation
 " -------------------------------------
-bind <A-s> pin
-bind <A-d> tabduplicate
-bind <A-h> tabprev
-bind <A-l> tabnext
+
+bind --mode=browser <A-h> tabprev
+bind --mode=browser <A-l> tabnext
+bind --mode=browser <A-ArrowLeft> tabprev
+bind --mode=browser <A-ArrowRight> tabnext
+
+" -------------------------------------
+" Tab search
+" -------------------------------------
+
+bind --mode=browser <C-,> fillcmdline tab
+bind --mode=browser <C-.> fillcmdline tab
+bind --mode=browser <AC-,> open about:firefoxview#recentlyclosed
+bind --mode=browser <AC-.> open about:firefoxview#recentlyclosed
+
+" -------------------------------------
+" Tab management
+" -------------------------------------
+
+bind --mode=browser <A-s> pin
+bind --mode=browser <A-w> tabonly
+bind --mode=browser <C-1> tabdetach
+
+" -------------------------------------
+" Tab movement
+" -------------------------------------
+
+bind --mode=browser <AC-h> tabmove -1
+bind --mode=browser <AC-l> tabmove +1
+bind --mode=browser <AC-ArrowLeft> tabmove -1
+bind --mode=browser <AC-ArrowRight> tabmove +1
+
+" -------------------------------------
+" Tab groups
+" -------------------------------------
+
+command groupcurrent jsb browser.tabs.query({active:true,currentWindow:true}).then(([tab])=>browser.tabs.group({tabIds:tab.id}))
+command groupall jsb browser.tabs.query({currentWindow:true,pinned:false}).then(tabs=>tabs.length&&browser.tabs.group({tabIds:tabs.map(tab=>tab.id)}))
+command ungroupcurrentgroup jsb browser.tabs.query({active:true,currentWindow:true}).then(([tab])=>tab.groupId===-1?null:browser.tabs.query({currentWindow:true,groupId:tab.groupId}).then(tabs=>browser.tabs.ungroup(tabs.map(tab=>tab.id))))
+
+bind --mode=browser <C-3> groupcurrent
+bind --mode=browser <C-g> groupall
+bind --mode=browser <AC-g> ungroupcurrentgroup
 
 " -------------------------------------
 " Misc
 " -------------------------------------
 
-bind <Space>a open about:preferences
+bind --mode=browser <AC-s> open about:preferences
