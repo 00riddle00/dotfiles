@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-08-23 20:25:56 CEST
+-- Date:   2026-09-12 04:56:19 CEST
 -- Path:   ~/.config/nvim/lua/config/autocmd.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -203,6 +203,20 @@ autocmd("QuickFixCmdPost", {
 autocmd("User", {
   pattern = "BlinkCmpMenuOpen",
   callback = function()
+    -- Uncomment to dismiss the current Copilot suggestion when Blink opens.
+    -- This avoids preserving potentially stale/overlapping Copilot ghost text
+    -- and, with the current keymaps, restores the convenient Tab behavior used
+    -- before. The downside is that closing Blink with Ctrl+E cannot immediately
+    -- reveal the previous Copilot suggestion; Copilot usually needs another
+    -- text change before producing one again.
+    --
+    -- Leave commented to preserve the Copilot suggestion behind Blink, so
+    -- Ctrl+E can close Blink and potentially reveal Copilot immediately.
+    -- While Blink is still open, however, Tab may remain handled by Blink
+    -- rather than accepting the hidden Copilot suggestion.
+    -- ----------------------------------------
+    -- require("copilot.suggestion").dismiss()
+    -- ----------------------------------------
     vim.b.copilot_suggestion_hidden = true
   end,
   group = general,
