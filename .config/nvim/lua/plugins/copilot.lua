@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-12 00:11:41 CEST
+-- Date:   2026-09-12 04:20:56 CEST
 -- Path:   ~/.config/nvim/lua/plugins/copilot.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -11,6 +11,7 @@ return {
   cmd = "Copilot",
   event = "InsertEnter",
   config = function()
+    ---@diagnostic disable-next-line: undefined-field
     require("copilot").setup({
       panel = {
         enabled = true,
