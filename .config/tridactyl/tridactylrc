@@ -1,7 +1,7 @@
 " vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-12 04:14:20 CEST
+# Date:   2026-09-12 04:55:57 CEST
 # Path:   ~/.config/tridactyl/tridactylrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -103,8 +103,8 @@ command groupall jsb browser.tabs.query({currentWindow:true,pinned:false}).then(
 command ungroupcurrentgroup jsb browser.tabs.query({active:true,currentWindow:true}).then(([tab])=>tab.groupId===-1?null:browser.tabs.query({currentWindow:true,groupId:tab.groupId}).then(tabs=>browser.tabs.ungroup(tabs.map(tab=>tab.id))))
 
 bind --mode=browser <C-3> groupcurrent
-bind --mode=browser <C-g> groupall
-bind --mode=browser <AC-g> ungroupcurrentgroup
+bind --mode=browser <C-g> ungroupcurrentgroup
+bind --mode=browser <AC-g> groupall
 
 " -------------------------------------
 " Misc
