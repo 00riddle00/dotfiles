@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-14 00:47:48 CEST
+-- Date:   2026-09-14 00:48:35 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -14,6 +14,15 @@ return {
     capabilities.general = capabilities.general or {}
 
     -- Define all servers and their configs.
+    --
+    -- Possible future LSP candidates:
+    -- * C / C++
+    -- * CMake
+    -- * CSS
+    -- * HTML
+    -- * Java
+    -- * Perl
+    -- * SQL
     local servers = {
       basedpyright = {
         capabilities = capabilities,
@@ -103,6 +112,7 @@ return {
 
       marksman = {
         capabilities = capabilities,
+        filetypes = { "markdown" },
       },
 
       bashls = {
@@ -122,6 +132,36 @@ return {
             telemetry = { enable = false },
           },
         },
+      },
+
+      dockerls = {
+        capabilities = capabilities,
+      },
+
+      jsonls = {
+        capabilities = capabilities,
+      },
+
+      texlab = {
+        capabilities = capabilities,
+      },
+
+      r_language_server = {
+        capabilities = capabilities,
+      },
+
+      tombi = {
+        capabilities = capabilities,
+      },
+
+      lemminx = {
+        capabilities = capabilities,
+        filetypes = { "xml" },
+      },
+
+      yamlls = {
+        capabilities = capabilities,
+        filetypes = { "yaml" },
       },
 
       --[[ Enable if needed
