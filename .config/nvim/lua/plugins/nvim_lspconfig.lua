@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-12 00:11:45 CEST
+-- Date:   2026-09-14 00:44:50 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -42,6 +42,48 @@ return {
         init_options = {
           settings = {
             organizeImports = true,
+          },
+        },
+      },
+
+      ts_ls = {
+        capabilities = capabilities,
+      },
+
+      eslint = {
+        capabilities = capabilities,
+
+        -- nvim-lspconfig normally starts ESLint only when it finds an ESLint
+        -- config file. Since the configuration is supplied below directly by
+        -- Neovim, use the Git root or the current file's directory instead.
+        root_dir = function(bufnr, on_dir)
+          local root = vim.fs.root(bufnr, { ".git" })
+            or vim.fs.dirname(vim.api.nvim_buf_get_name(bufnr))
+
+          on_dir(root)
+        end,
+
+        settings = {
+          -- Arch installs globally packaged Node modules here. Tell the ESLint
+          -- language server where to find the system-wide ESLint library.
+          nodePath = "/usr/lib/node_modules",
+
+          options = {
+            -- This disables project-local ESLint configuration lookup, so the
+            -- settings below override project eslint.config.* / .eslintrc*
+            -- files. If needed, this setup can instead be extended to respect
+            -- project-local config when present and fall back to these
+            -- Neovim-defined rules otherwise.
+            overrideConfigFile = true,
+
+            overrideConfig = {
+              rules = {
+                ["no-constant-condition"] = "error",
+                ["no-undef"] = "error",
+                ["no-unreachable"] = "error",
+                ["no-unused-vars"] = "warn",
+              },
+            },
           },
         },
       },
