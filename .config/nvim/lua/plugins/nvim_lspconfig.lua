@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-14 00:44:50 CEST
+-- Date:   2026-09-14 00:47:48 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -15,22 +15,25 @@ return {
 
     -- Define all servers and their configs.
     local servers = {
-      pyright = {
+      basedpyright = {
         capabilities = capabilities,
         settings = {
-          pyright = {
-            -- Use Ruff for import organization instead of Pyright.
+          basedpyright = {
+            -- Use Ruff for import organization instead of BasedPyright.
             disableOrganizeImports = true,
-          },
-          python = {
+
             analysis = {
-              -- Ruff handles linting and import-related diagnostics/code actions.
-              -- Pyright handles static type analysis and Python language intelligence.
+              -- Ruff handles linting and import-related diagnostics/code
+              -- actions.
+              -- BasedPyright handles static type analysis and Python language
+              -- intelligence.
               diagnosticMode = "openFilesOnly",
               typeCheckingMode = "standard",
 
-              -- Temporarily suppress Pyright diagnostics while reviewing unfamiliar code.
-              -- Remove this to re-enable Pyright's type-analysis diagnostics.
+              -- Temporarily suppress BasedPyright diagnostics while reviewing
+              -- unfamiliar code.
+              -- Remove this to re-enable BasedPyright's type-analysis
+              -- diagnostics.
               ignore = { "*" },
             },
           },
