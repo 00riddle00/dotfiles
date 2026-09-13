@@ -1,7 +1,7 @@
 " vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-12 04:55:57 CEST
+# Date:   2026-09-14 00:27:19 CEST
 # Path:   ~/.config/tridactyl/tridactylrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -36,6 +36,10 @@ set hintchars asdfghjkl
 
 " Easier reload config
 command retry source ~/.config/tridactyl/tridactylrc
+
+" Bookmark all tabs into a new folder at a fixed position in the Bookmarks Toolbar
+" The position is configured by `TOOLBAR_POSITION` in bookmark-tabs.js.
+command bookmarktabs jsb -d§ -r bookmark-tabs.js§
 
 " ============================================================================
 " Keybindings
@@ -83,7 +87,8 @@ bind --mode=browser <AC-.> open about:firefoxview#recentlyclosed
 
 bind --mode=browser <A-s> pin
 bind --mode=browser <A-w> tabonly
-bind --mode=browser <C-1> tabdetach
+" bind --mode=browser <C-1> tabdetach
+bind --mode=browser <C-1> fillcmdline bookmarktabs
 
 " -------------------------------------
 " Tab movement
