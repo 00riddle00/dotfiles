@@ -3,7 +3,7 @@
 <!--
 #==============================================================================
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-05 03:02:07 CEST
+# Date:   2026-09-18 01:26:34 CEST
 # Path:   ~/.config/openbox/rc.xml
 # URL:    https://github.com/00riddle00/dotfiles
 #==============================================================================
@@ -609,13 +609,11 @@
     </keybind>
     -->
     <!-- Open/focus CopyQ window by its class name. -->
-    <!--
-    <keybind key="W-q">
+    <keybind key="W-Delete">
       <action name="Execute">
         <command>copyq show</command>
       </action>
     </keybind>
-    -->
     <!-- ===========================
   RUN: dmenu
   ============================ -->
