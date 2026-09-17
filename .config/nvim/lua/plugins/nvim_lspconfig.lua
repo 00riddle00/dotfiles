@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-18 01:18:24 CEST
+-- Date:   2026-09-18 01:23:32 CEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -21,6 +21,7 @@ return {
     -- * CSS
     -- * HTML
     -- * Java
+    -- * Julia
     -- * Perl
     -- * SQL
     local servers = {
@@ -129,6 +130,10 @@ return {
         },
       },
 
+      awk_ls = {
+        capabilities = capabilities,
+      },
+
       dockerls = {
         capabilities = capabilities,
       },
@@ -157,6 +162,14 @@ return {
       yamlls = {
         capabilities = capabilities,
         filetypes = { "yaml" },
+      },
+
+      systemd_lsp = {
+        capabilities = capabilities,
+      },
+
+      vimls = {
+        capabilities = capabilities,
       },
 
       --[[ Enable if needed
