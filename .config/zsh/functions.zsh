@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:05:10 CEST
+# Date:   2026-09-18 01:29:26 CEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -35,26 +35,31 @@
 
 #* Create a Zsh alias.
 #* NOTE: Function 'c()' is used for cd.
+#
 #* USAGE e.g.:
 #*   ${0} "edit" "${EDITOR} $(readlink -f file_to_edit.txt)"
-#*   ${0} "cdhere" "c $(pwd)"
+#*   ${0} "cdproj" "c $(pwd)"
+#*   ${0} "todos" "rg 'TODO|FIXME'"
+#*   ${0} "glog" 'git log --pretty=format:"%h %ad %s" --date=short'
+#*   ${0} "pyfiles" "fd --type f --extension py | rg 'test|spec'"
+#*   ${0} "serve" 'python -m http.server "${PORT:-8000}"'
 #**
 ma() {
-  echo alias "${1}  '${2}'" >> "${ZDOTDIR}/aliases.zsh"
+  printf 'def %q  %q\n' "${1}" "${2}" >> "${ZDOTDIR}/aliases.zsh"
   echo "*** Alias added ***"
-  echo "alias ${1}='${2}'"
+  printf 'def %q  %q\n' "${1}" "${2}"
   source "${ZDOTDIR}/.zshrc"
 }
 
 #* Create a Zsh alias to cd into current directory.
 #* NOTE: Function 'c()' is used for cd.
 #* USAGE e.g.:
-#*   ${0} "cdhere"
+#*   ${0} "cdproj"
 #**
 macd() {
-  echo alias "${1}='c $(pwd)'" >> "${ZDOTDIR}/aliases.zsh"
-  echo "*** Alias added ***
-  alias ${1}='c $(pwd)'"
+  printf "def %s  'c %s'\n" "${1}" "$(pwd)" >> "${ZDOTDIR}/aliases.zsh"
+  echo "*** Alias added ***"
+  printf "def %s  'c %s'\n" "${1}" "$(pwd)"
   source "${ZDOTDIR}/.zshrc"
 }
 
