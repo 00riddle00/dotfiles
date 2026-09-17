@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-09 05:10:39 CEST
+# Date:   2026-09-18 01:28:16 CEST
 # Path:   ~/.local/bin/xdg-ify
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -96,10 +96,10 @@ if [ "${XDG_SESSION_TYPE:-}" = "wayland" ] && command -v wl-copy > /dev/null 2>&
   echo "Copied to clipboard."
 elif command -v xclip > /dev/null 2>&1; then
   printf '%s' "${out}" | xclip -selection clipboard
-  echo "Copied to clipboard."
+  printf 'Copied to clipboard: %s\n' "${out}"
 elif command -v xsel > /dev/null 2>&1; then
   printf '%s' "${out}" | xsel --clipboard --input
-  echo "Copied to clipboard."
+  printf 'Copied to clipboard: %s\n' "${out}"
 else
   exit 1
 fi
