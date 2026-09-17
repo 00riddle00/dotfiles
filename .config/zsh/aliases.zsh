@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-12 00:25:06 CEST
+# Date:   2026-09-18 01:34:36 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -1104,6 +1104,7 @@ def a            'source ${ZDOTDIR}/.zshrc'
 
 def al      '${EDITOR} ${ZDOTDIR}/aliases.zsh'
 def com     '${EDITOR} ${XDG_CONFIG_HOME}/picom/picom.conf'
+def aucmd   '${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/config/autocmd.lua'
 def cmd     '${EDITOR} ${XDG_CONFIG_HOME}/nvim/lua/config/commands.lua'
 def dun     '${EDITOR} ${XDG_CONFIG_HOME}/dunst/dunstrc'
 def ee      '${EDITOR} ${XDG_CONFIG_HOME}/emacs-gnu/init.el'
@@ -1383,3 +1384,5 @@ def dff 'dot ls-files'
 def gff 'git ls-files'
 def tri '${EDITOR} ${XDG_CONFIG_HOME}/tridactyl/tridactylrc'
 def r   'yazi'
+def be  '${EDITOR} ${PRO}/cmspilot-eval/BENCHMARK.md'
+def arch '${EDITOR} ${NOTES}/coding/wiki/arch_install.md'
