@@ -1,7 +1,7 @@
 # vim: set ft=yaml tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-11 19:22:46 CEST
+# Date:   2026-09-20 22:37:36 CEST
 # Path:   ~/.config/lazygit/config.yml
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -82,12 +82,14 @@ disableStartupPopups: true
 # Don't prompt to return from subprocess when closing child processes (commitizen, etc)
 promptToReturnFromSubprocess: false
 git:
-  pagers:
+  diffRenderers:
     - # Displays inline diff with syntax highlighting
       # Requires: https://github.com/Wilfred/difftastic
       #externalDiffCommand: difft --color=always --syntax-highlight=on --tab-width=2 --display=inline
-      externalDiffCommand: difft --color=always --syntax-highlight=on --tab-width=2 --display=side-by-side
+      command: difft --color=always --syntax-highlight=on --tab-width=2 --display=side-by-side
       #externalDiffCommand: difft --color=always --syntax-highlight=on --tab-width=2 --display=side-by-side-show-both
+
+      type: extDiff
 customCommands:
   # Shortcut to prune branches that have been deleted from remote
   - key: "<c-p>" # Prune deleted remote branches
