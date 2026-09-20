@@ -1,0 +1,15 @@
+# vim: set ft=dosini tw=79 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-09-20 22:34:13 CEST
+# Path:   ~/.config/sqlfluff/.sqlfluff
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# SQLFluff default configuration file. SQLFluff uses this config when no
+# project-local configuration overrides these settings.
+#**
+
+[sqlfluff]
+max_line_length = 79
+exclude_rules = CP02

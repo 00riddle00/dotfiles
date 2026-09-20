@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 --------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-20 22:33:18 CEST
+-- Date:   2026-09-20 22:34:35 CEST
 -- Path:   ~/.config/nvim/lua/plugins/conform.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 --------------------------------------------------------------------------------
@@ -26,6 +26,10 @@ return {
         -- python = { "black" },
         rust = { "rustfmt" },
         sh = { "shfmt" },
+        -- SQLFluff uses ~/.config/sqlfluff/.sqlfluff as a global fallback;
+        -- projects can override it and should specify their SQL dialect
+        -- locally.
+        sql = { "sqlfluff" },
         tex = { "latexindent" },
         toml = { "tombi" },
         typescript = { "prettier" },
