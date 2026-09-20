@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-18 01:34:36 CEST
+# Date:   2026-09-20 22:38:01 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -859,7 +859,11 @@ def dsu        'dot status -u .'
 
 # Git difftool command
 def gdd          'git difftool'
+# plain `meld` <-- HEAD vs working tree
+# index vs working tree:
 def gmeld        'git difftool --tool=meld --'
+# ^-- (If nothing from the file is staged, produces the same comparison as plain `meld`)
+# HEAD vs index:
 def gmeld.cached 'git difftool --tool meld --cached --'
 def dmeld        'dot difftool --tool=meld --'
 def dmeld.cached 'dot difftool --tool meld --cached --'
