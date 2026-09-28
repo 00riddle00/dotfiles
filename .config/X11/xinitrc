@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-01 01:17:30 CEST
+# Date:   2026-09-29 00:35:47 CEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -13,11 +13,25 @@
 # Configure multiple monitors
 if [[ "$(hostname)" == "panther" ]]; then
   # set-up-monitors-panther
+  #
   # set-up-monitors-panther-laptop-u27_dp-u27_hdmi_port
+  #
+  # Bottom-align all three monitors to work around tint2's incorrect screen-space
+  # reservations on monitors of different heights. Otherwise, Openbox may maximize
+  # windows beneath panels or leave unused space. Without tint2, this works normally.
+  # TODO: Fix tint2's screen-space reservations to eliminate this workaround.
+  # xrandr \
+  #   --output eDP-1 --pos 0x1480 \
+  #   --output DP-2 --primary --pos 1920x400 \
+  #   --output HDMI-1 --rotate right --pos 5760x0
+  #
+  # Bottom-align all three monitors to work around tint2's incorrect screen-space
+  # reservations on monitors of different heights. Otherwise, Openbox may maximize
+  # windows beneath panels or leave unused space. Without tint2, this works normally.
+  # TODO: Fix tint2's screen-space reservations to eliminate this workaround.
   xrandr \
-    --output eDP-1 --pos 0x1480 \
-    --output DP-2 --primary --pos 1920x400 \
-    --output HDMI-1 --rotate right --pos 5760x0
+    --output eDP-1 --auto --pos 0x360 \
+    --output HDMI-1 --auto --primary --rotate normal --pos 1920x0
 elif [[ "$(hostname)" == "tulkun" ]]; then
   # set-up-monitors-tulkun
   xrandr \
