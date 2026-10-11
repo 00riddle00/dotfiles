@@ -2,7 +2,7 @@
 # vim: set ft=bash tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-10-11 22:22:21 EEST
+# Date:   2026-10-11 22:24:45 EEST
 # Path:   ~/.config/X11/xinitrc
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -26,10 +26,16 @@ if [[ "$(hostname)" == "panther" ]]; then
     --output HDMI-1 --rotate right --pos 5760x0
 elif [[ "$(hostname)" == "tulkun" ]]; then
   # set-up-monitors-tulkun
+  #
+  # xrandr \
+  #   --output HDMI-0 --mode 2560x1440 --rotate right --pos 0x0 \
+  #   --output DP-0 --mode 3840x2160 --primary --rotate normal --pos 1440x400 \
+  #   --output DP-2 --mode 2560x1440 --rotate left --pos 5280x0
+  #
   xrandr \
-    --output HDMI-0 --mode 2560x1440 --rotate right --pos 0x0 \
-    --output DP-0 --mode 3840x2160 --primary --rotate normal --pos 1440x400 \
-    --output DP-2 --mode 2560x1440 --rotate left --pos 5280x0
+    --output DP-2 --mode 3840x2160 --rotate left --pos 0x0 \
+    --output DP-0 --mode 3840x2160 --primary --rotate normal --pos 2160x1680 \
+    --output HDMI-0 --mode 2560x1440 --rotate left --pos 6000x1280
 fi
 
 # Disable touchpad on a ThinkPad
