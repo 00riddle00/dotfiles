@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-20 22:38:01 CEST
+# Date:   2026-10-11 21:09:53 CEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -1261,7 +1261,7 @@ def pst    'c ${PRO}/archived/2022/npBuild && ./packageStats'
 # 24. Aliases as flags
 #------------------------------------------------------------------------------
 
-# Usage: command `--use-commit-times`
+# Usage: command `--use-commit-times`, or, better, $(--use-commit-times)
 def --use-commit-times 'echo --config-option=config:miscellany:use-commit-times=yes'
 def -uname             'uname -sm | sed -e "s/-.* / /" -e "s/ /-/g"'
 def --uname            'uname -srm | sed -e "s/-.* / /" -e "s/ /-/g"'
