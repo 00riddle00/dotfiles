@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-10-11 21:09:53 CEST
+# Date:   2026-10-12 00:21:02 EEST
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -275,7 +275,7 @@ def mute   'amixer -q sset Master toggle'
 
 def clock.sync      'sudo ntpd -qg'
 def get.date        '--datetime | tr -d "\n" | copy'
-def timezone.update 'timedatectl set-timezone "$(curl --fail https://ipapi.co/timezone)"'
+def timezone.update 'curl -fLsS https://ipwho.is/ | jq -er ".timezone.id" | xargs -r timedatectl set-timezone'
 
 #------------------------------------------------------------------------------
 # 12. Systemd
