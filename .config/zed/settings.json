@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-12 00:27:46 CEST
+# Date:   2026-10-25 01:27:53 EEST
 # Path:   ~/.config/zed/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -247,6 +247,13 @@
   },
 
   "cli_default_open_behavior": "new_window",
+
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "max_severity": "warning"
+    }
+  },
 
   "session": {
     "trust_all_worktrees": true
