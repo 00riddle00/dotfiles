@@ -248,6 +248,13 @@
 
   "cli_default_open_behavior": "new_window",
 
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "max_severity": "warning"
+    }
+  },
+
   "session": {
     "trust_all_worktrees": true
   },

@@ -8,6 +8,7 @@
 
 return {
   "saghen/blink.cmp",
+  cond = not vim.g.vscode,
   enabled = true,
   version = "1.*",
   config = function()

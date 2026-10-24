@@ -132,6 +132,7 @@ waste() {
 #* Find files / directories (incl. hidden ones) in the current directory
 #* (recursively) by a case-insensitive pattern for a substring of the filename /
 #* directory name.
+#* Respects .gitignore, .ignore, and other ignore rules.
 #* USAGE:
 #*  ${0} PATTERN
 #*
@@ -161,6 +162,7 @@ find.path() {
 }
 
 #* List all file extensions in the current directory (recursively).
+#* Includes hidden and ignored files (including .git/).
 #* USAGE:
 #*   ${0}
 #**
@@ -172,11 +174,12 @@ ext() {
 
 #* List all file extensions in the current directory (recursively), excluding
 #* .git/, .idea/, venv/ directories and dotfiles.
+#* Respects .gitignore, .ignore, and other ignore rules.
 #* USAGE:
 #*   ${0}
 #**
 ext-filtered() {
-  fd -t f -H -E .git -E .venv -E venv -E .idea . \
+  fd -t f -E .git -E .venv -E venv -E .idea . \
     | perl -ne 'print "$1\n" if m|\.([^./]+)$|' \
     | sort -u
 }

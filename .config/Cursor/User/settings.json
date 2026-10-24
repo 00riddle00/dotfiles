@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-12 00:23:14 CEST
+# Date:   2026-10-17 20:13:55 EEST
 # Path:   ~/.config/Cursor/User/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -52,6 +52,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.useModal": "off",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
   "workbench.colorCustomizations": {
@@ -68,6 +69,7 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
   "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
   "window.openFoldersInNewWindow": "on",
 
   /* --- Files & Explorer --- */
@@ -190,6 +192,8 @@
     "markdown",
     "scminput"
   ],
+  "Key Promoter.suggestKeybindingCreation": false,
+  "claudeCode.hideOnboarding": true
 
   /* --- New and unsorted --- */
 }

@@ -111,6 +111,19 @@ return {
         },
       },
 
+      gopls = {
+        capabilities = capabilities,
+        filetypes = { "go", "gomod", "gowork" },
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+            },
+            staticcheck = true,
+          },
+        },
+      },
+
       marksman = {
         capabilities = capabilities,
         filetypes = { "markdown" },

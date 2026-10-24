@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-05 02:51:13 CEST
+# Date:   2026-10-18 20:59:29 EEST
 # Path:   ~/.config/Code/User/settings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -36,22 +36,12 @@
     "–": true
   },
 
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "keyword.other.dotenv",
-        "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
-  },
-
   /* --- Workbench & Appearance --- */
   "workbench.colorTheme": "One Dark Pro Mix",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.useModal": "off",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
   "workbench.colorCustomizations": {
@@ -68,6 +58,7 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
   "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
   "window.openFoldersInNewWindow": "on",
 
   /* --- Files & Explorer --- */
@@ -144,6 +135,7 @@
   },
 
   /* --- Extension-Specific --- */
+  "cSpell.enabled": false,
   "cSpell.enabledFileTypes": {
     "jinja-html": true
   },
@@ -184,6 +176,7 @@
 
   /* --- Misc / Technical --- */
   "keyboard.dispatch": "keyCode",
+  "claudeCode.hideOnboarding": true
 
   /* --- New and unsorted --- */
 }

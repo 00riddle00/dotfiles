@@ -563,7 +563,7 @@ def espeak 'command espeak -ven-uk'
 #def f      'fzf'
 def fire   'firefox'
 def g      'glow'
-def go     'xdg-open'
+#def go     'xdg-open'
 def gonull 'xdg-open &> /dev/null'
 def h      'head'
 def i      'cheat -c'
@@ -1335,6 +1335,7 @@ def mig  'pmp makemigrations && pmp migrate'
 
 # Jupyter
 def jup-to-md 'jupyter nbconvert --to markdown'
+def jup-to-py 'jupytext --to py:percent'
 
 # VS Code
 def drop-service-worker 'rm -rf -v "${XDG_CONFIG_HOME}/Code/Service Worker"'
@@ -1390,3 +1391,6 @@ def tri '${EDITOR} ${XDG_CONFIG_HOME}/tridactyl/tridactylrc'
 def r   'yazi'
 def be  '${EDITOR} ${PRO}/cmspilot-eval/BENCHMARK.md'
 def arch '${EDITOR} ${NOTES}/coding/wiki/arch_install.md'
+def par 'c ${PRO}/param/'
+def rop 'c ${PRO}/cs2-rop/'
+def fun 'c ${PRO}/functional'

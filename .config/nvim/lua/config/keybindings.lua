@@ -363,6 +363,14 @@ nnoremap("<leader>f", function()
 end, { desc = "Format buffer" })
 
 -------------------------------------------
+-- [Plugin] "lewis6991/gitsigns.nvim"
+-------------------------------------------
+
+nnoremap("<leader>i", "<cmd>Gitsigns preview_hunk_inline<CR>", {
+  desc = "Preview Git hunk inline",
+})
+
+-------------------------------------------
 -- [Plugin] "smjonas/inc-rename.nvim"
 -------------------------------------------
 

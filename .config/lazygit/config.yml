@@ -33,12 +33,12 @@ gui:
     defaultFgColor:
       - "#c8d3f5"
       - "#f9e2af"
-  # Customize the color highlights of the branch
-  branchColors:
-    "docs": "#11aaff"
-    "dev*": "#ebad6c"
-    "main": "#af92fc"
-    "master": "#af92fc"
+    # Customize the color highlights of the branch
+    branchColorPatterns:
+      "^docs(/|$)": "#11aaff"
+      "^dev\\*(/|$)": "#ebad6c"
+      "^main(/|$)": "#af92fc"
+      "^master(/|$)": "#af92fc"
   # Use latest Nerd Fonts glyphs
   # Requires: https://github.com/ryanoasis/nerd-fonts
   nerdFontsVersion: "3"

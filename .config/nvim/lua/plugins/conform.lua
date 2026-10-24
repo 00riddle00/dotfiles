@@ -13,6 +13,7 @@ return {
       formatters_by_ft = {
         awk = { "gawk" },
         bash = { "shfmt" },
+        go = { "goimports" },
         javascript = { "prettier" },
         javascriptreact = { "prettier" },
         json = { "prettier" },

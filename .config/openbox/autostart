@@ -25,5 +25,3 @@ tint2 > "${XDG_RUNTIME_DIR}/tint2.log" 2>&1 &
 ) &
 
 term-standard &
-
-pgrep -x anydesk > /dev/null || anydesk &
