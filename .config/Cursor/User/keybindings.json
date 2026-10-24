@@ -2,7 +2,7 @@
 /*
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-12 00:23:13 CEST
+# Date:   2026-10-25 01:25:58 EEST
 # Path:   ~/.config/Cursor/User/keybindings.json
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -75,7 +75,7 @@
   {
     "key": "alt+v",
     "command": "editor.action.clipboardPasteAction",
-    "when": "textInputFocus && !terminalFocus"
+    "when": "!terminalFocus"
   },
   {
     "key": "alt+v",
@@ -212,6 +212,16 @@
     "key": "ctrl+v",
     "command": "workbench.action.terminal.paste",
     "when": "terminalFocus && (terminalHasBeenCreated || terminalProcessSupported)"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "!editorTextFocus && !terminalFocus && !filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
   },
   // Ctrl + Alt + {}
   {
