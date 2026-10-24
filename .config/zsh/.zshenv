@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-07 02:20:59 CEST
+# Date:   2026-10-25 01:32:36 EEST
 # Path:   ~/.config/zsh/.zshenv
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -222,10 +222,15 @@ exp R_LIBS_USER    "${XDG_DATA_HOME}/R/library"
 
 # Perl
 exp PERL5_HOME          "${HOME}/perl5"
-exp PERL5LIB            "${PERL5_HOME}/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-exp PERL_LOCAL_LIB_ROOT "${PERL5_HOME}${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
 exp PERL_MB_OPT         "--install_base \"${PERL5_HOME}\""
 exp PERL_MM_OPT         "INSTALL_BASE=${PERL5_HOME}"
+
+typeset -U perl5lib perl_local_lib_root
+perl5lib=("${PERL5_HOME}/lib/perl5" ${(@s.:.)PERL5LIB})
+perl_local_lib_root=("${PERL5_HOME}" ${(@s.:.)PERL_LOCAL_LIB_ROOT})
+
+exp PERL5LIB "${(j.:.)perl5lib}"
+exp PERL_LOCAL_LIB_ROOT "${(j.:.)perl_local_lib_root}"
 
 # Path
 typeset -U path
