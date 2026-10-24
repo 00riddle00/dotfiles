@@ -1,7 +1,7 @@
 # vim: set ft=yaml tw=79 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-20 22:37:36 CEST
+# Date:   2026-10-25 01:28:38 EEST
 # Path:   ~/.config/lazygit/config.yml
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -33,12 +33,12 @@ gui:
     defaultFgColor:
       - "#c8d3f5"
       - "#f9e2af"
-  # Customize the color highlights of the branch
-  branchColors:
-    "docs": "#11aaff"
-    "dev*": "#ebad6c"
-    "main": "#af92fc"
-    "master": "#af92fc"
+    # Customize the color highlights of the branch
+    branchColorPatterns:
+      "^docs(/|$)": "#11aaff"
+      "^dev\\*(/|$)": "#ebad6c"
+      "^main(/|$)": "#af92fc"
+      "^master(/|$)": "#af92fc"
   # Use latest Nerd Fonts glyphs
   # Requires: https://github.com/ryanoasis/nerd-fonts
   nerdFontsVersion: "3"
