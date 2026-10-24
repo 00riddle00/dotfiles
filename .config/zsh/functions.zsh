@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-18 01:29:26 CEST
+# Date:   2026-10-25 01:32:58 EEST
 # Path:   ~/.config/zsh/functions.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -132,6 +132,7 @@ waste() {
 #* Find files / directories (incl. hidden ones) in the current directory
 #* (recursively) by a case-insensitive pattern for a substring of the filename /
 #* directory name.
+#* Respects .gitignore, .ignore, and other ignore rules.
 #* USAGE:
 #*  ${0} PATTERN
 #*
@@ -161,6 +162,7 @@ find.path() {
 }
 
 #* List all file extensions in the current directory (recursively).
+#* Includes hidden and ignored files (including .git/).
 #* USAGE:
 #*   ${0}
 #**
@@ -172,11 +174,12 @@ ext() {
 
 #* List all file extensions in the current directory (recursively), excluding
 #* .git/, .idea/, venv/ directories and dotfiles.
+#* Respects .gitignore, .ignore, and other ignore rules.
 #* USAGE:
 #*   ${0}
 #**
 ext-filtered() {
-  fd -t f -H -E .git -E .venv -E venv -E .idea . \
+  fd -t f -E .git -E .venv -E venv -E .idea . \
     | perl -ne 'print "$1\n" if m|\.([^./]+)$|' \
     | sort -u
 }
