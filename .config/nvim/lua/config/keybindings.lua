@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-10 23:00:27 CEST
+-- Date:   2026-10-25 01:27:27 EEST
 -- Path:   ~/.config/nvim/lua/config/keybindings.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -361,6 +361,14 @@ nnoremap("<leader>f", function()
     lsp_format = "never",
   })
 end, { desc = "Format buffer" })
+
+-------------------------------------------
+-- [Plugin] "lewis6991/gitsigns.nvim"
+-------------------------------------------
+
+nnoremap("<leader>i", "<cmd>Gitsigns preview_hunk_inline<CR>", {
+  desc = "Preview Git hunk inline",
+})
 
 -------------------------------------------
 -- [Plugin] "smjonas/inc-rename.nvim"
