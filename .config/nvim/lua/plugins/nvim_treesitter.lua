@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-12 00:11:46 CEST
+-- Date:   2026-10-25 01:26:52 EEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_treesitter.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -19,6 +19,7 @@ return {
       "bash",
       "c",
       "css",
+      "go",
       "html",
       "javascript",
       "json",

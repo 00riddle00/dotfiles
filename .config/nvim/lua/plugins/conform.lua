@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 --------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-20 22:34:35 CEST
+-- Date:   2026-10-25 01:26:48 EEST
 -- Path:   ~/.config/nvim/lua/plugins/conform.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 --------------------------------------------------------------------------------
@@ -13,6 +13,7 @@ return {
       formatters_by_ft = {
         awk = { "gawk" },
         bash = { "shfmt" },
+        go = { "goimports" },
         javascript = { "prettier" },
         javascriptreact = { "prettier" },
         json = { "prettier" },

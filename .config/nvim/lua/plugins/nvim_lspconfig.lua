@@ -1,7 +1,7 @@
 -- vim: set ft=lua tw=79 nu ai et ts=2 sw=2:
 -------------------------------------------------------------------------------
 -- Author: 00riddle00 (Tomas Giedraitis)
--- Date:   2026-09-18 01:23:32 CEST
+-- Date:   2026-10-25 01:26:50 EEST
 -- Path:   ~/.config/nvim/lua/plugins/nvim_lspconfig.lua
 -- URL:    https://github.com/00riddle00/dotfiles
 -------------------------------------------------------------------------------
@@ -107,6 +107,19 @@ return {
           ["rust-analyzer"] = {
             check = { command = "clippy" },
             diagnostics = { enable = true },
+          },
+        },
+      },
+
+      gopls = {
+        capabilities = capabilities,
+        filetypes = { "go", "gomod", "gowork" },
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+            },
+            staticcheck = true,
           },
         },
       },
