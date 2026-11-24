@@ -1,0 +1,104 @@
+#!/usr/bin/env bash
+# vim: set ft=bash tw=88 nu ai et ts=2 sw=2:
+#------------------------------------------------------------------------------
+# Author: 00riddle00 (Tomas Giedraitis)
+# Date:   2026-11-25 01:52:11 EET
+# Path:   ~/.local/bin/daily-note-rollover
+# URL:    https://github.com/00riddle00/dotfiles
+#------------------------------------------------------------------------------
+#*
+# Daily note rollover for Obsidian's Daily notes feature. Carry the most recent
+# non-empty daily note (YYYY-MM-DD.md) in ${NOTES} over to today's date.
+# Today's note is kept if it has text, otherwise it is deleted and older notes
+# are searched. Yesterday's note is moved without asking, older ones only
+# after confirmation, and notes from a previous month need a second
+# confirmation. If nothing gets moved, an empty note for today is created.
+#**
+
+#* USAGE:
+#*   ${0}
+#**
+set -euo pipefail
+
+# Byte-order sorting and comparison, so ISO dates order chronologically.
+export LC_COLLATE=C
+
+notes="${NOTES:?NOTES is not set}"
+if [[ ! -d ${notes} ]]; then
+  echo "Notes directory does not exist: ${notes}" >&2
+  exit 1
+fi
+today="$(date +%F)"
+# Calendar arithmetic in UTC, which has no DST transitions.
+yesterday="$(date -u -d "${today} -1 day" +%F)"
+target="${notes}/${today}.md"
+readonly notes today yesterday target
+
+confirm() {
+  local answer
+  if ! read -r -p "${1} [y/N] " answer; then
+    echo
+    return 1
+  fi
+  [[ ${answer,,} == y || ${answer,,} == yes ]]
+}
+
+create_empty_target() {
+  # noclobber makes the redirection fail if the file already exists.
+  if (set -C && : > "${target}") 2> /dev/null; then
+    echo "Created empty note: ${today}.md"
+  elif [[ -e ${target} ]]; then
+    echo "${today}.md already exists; left untouched."
+  else
+    echo "Could not create ${today}.md." >&2
+    return 1
+  fi
+}
+
+# Today's note: keep it if it has text, otherwise delete it and search back.
+if [[ -f ${target} ]]; then
+  content="$(< "${target}")" || exit 1
+  [[ ${content} == *[![:space:]]* ]] && exit 0
+  rm -f -- "${target}"
+fi
+
+shopt -s nullglob
+files=("${notes}"/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].md)
+
+for ((i = ${#files[@]} - 1; i >= 0; i--)); do
+  path="${files[i]}"
+  name="${path##*/}"
+  day="${name%.md}"
+
+  # Only real, past dates; regular files only.
+  [[ ${day} < ${today} ]] || continue
+  [[ -f ${path} ]] || continue
+  [[ "$(date -d "${day}" +%F 2> /dev/null)" == "${day}" ]] || continue
+
+  # Older empty notes are skipped, never deleted.
+  content="$(< "${path}")" || continue
+  [[ ${content} == *[![:space:]]* ]] || continue
+
+  cross_month=false
+  [[ ${day:0:7} != "${today:0:7}" ]] && cross_month=true
+
+  if [[ ${day} != "${yesterday}" || ${cross_month} == true ]]; then
+    printf '\n--- %s ---\n\n%s\n\n---\n\n' "${name}" "${content}"
+  fi
+  if [[ ${day} != "${yesterday}" ]]; then
+    confirm "Move ${name} to ${today}.md?" || break
+  fi
+  if [[ ${cross_month} == true ]]; then
+    confirm "Note is from a previous month (${day:0:7}). Proceed?" || break
+  fi
+
+  # -n refuses to overwrite a note created meanwhile (e.g. by Obsidian).
+  if mv -nT -- "${path}" "${target}" && [[ ! -e ${path} ]]; then
+    echo "Moved ${name} -> ${today}.md"
+    exit 0
+  fi
+  echo "Could not move ${name}." >&2
+  break
+done
+
+create_empty_target
