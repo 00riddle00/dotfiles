@@ -85,6 +85,7 @@ exmap surround_curly_brackets surround { }
 map [[ :surround_wiki<CR>
 nunmap s
 vunmap s
+unmap <C-a>
 map s" :surround_double_quotes<CR>
 map s' :surround_single_quotes<CR>
 map s` :surround_backticks<CR>
