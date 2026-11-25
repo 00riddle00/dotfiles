@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-08-09 02:18:03 CEST
+# Date:   2026-11-25 02:07:02 EET
 # Path:   ~/.config/zsh/bookmarks.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -11,5 +11,7 @@
 # Use hash -d to list all bookmarks
 # Use unhash -d <name> to remove a bookmark
 # Use ~<name> to reference a bookmark
-hash -d ms_fun=~/CS/MS_2_Semester/01_Functional_Data_Analysis
-hash -d ms_bda=~/CS/MS_2_Semester/02_Big_Data_Analysis
+hash -d ms=~/CS/MS_3_Semester/
+hash -d ms_nlp=~/CS/MS_3_Semester/01_Natural_Language_Processing/
+hash -d ms_data=~/CS/MS_3_Semester/02_Data_Mining/
+hash -d ms_param=~/CS/MS_3_Semester/03_Parametric_and_Nonparametric_Statistics/
