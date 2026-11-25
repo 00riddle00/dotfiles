@@ -1,7 +1,7 @@
 # vim: set ft=zsh tw=88 nu ai et ts=2 sw=2:
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-10-25 01:18:03 EEST
+# Date:   2026-11-25 02:07:28 EET
 # Path:   ~/.config/zsh/aliases.zsh
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
@@ -135,6 +135,7 @@ def lf  'lsblk -f'
 
 # Video info
 def gpu.load   'command watch -n 1 nvidia-smi'
+def gpu.load.2 'nvtop'
 def gpu.which  'glxinfo | rg "OpenGL vendor|OpenGL renderer"'
 def info.video 'lspci | rg -e VGA -e 3D'
 
@@ -282,16 +283,17 @@ def timezone.update 'curl -fLsS https://ipwho.is/ | jq -er ".timezone.id" | xarg
 #------------------------------------------------------------------------------
 
 # General
-def systemd.boot       'systemd-analyze blame'
-def systemd.boot_total 'systemd-analyze time'
-def systemd.enabled    'systemctl list-unit-files | rg enabled'
+def systemd.boot          'systemd-analyze blame'
+def systemd.boot_total    'systemd-analyze time'
+def systemd.boot_critical 'systemd-analyze critical-chain'
+def systemd.enabled       'systemctl list-unit-files --state=enabled'
 def systemd.enabled.2 \
   'find /etc/systemd -type l -exec test -f {} \; -print | awk -F'\
 \''/'\'' '\''{ printf ("%-40s | %s\n", $(NF-0), $(NF-1)) }'\
 \'' | sort -f'
 # ^--- Kudos to seth! (https://bbs.archlinux.org/profile.php?id=63451)
 def systemd.list       'systemctl list-unit-files'
-def systemd.running    'systemctl --type=service'
+def systemd.running    'systemctl --type=service --state=running'
 
 # Databases
 def most 'systemctl start mongodb'
@@ -451,7 +453,7 @@ def pac.check_files_det 'pacman -Qkk'                              # More detail
 
 def pacr         'sudo pacman -Rns'
 def freeorphans  'sudo pacman -Rns $(pacman -Qdtq)'
-def free         'sudo pacman -Rns $(pacman -Qdtq)'
+#def free         'sudo pacman -Rns $(pacman -Qdtq)'
 # Avoid using the -d option with pacman. pacman -Rdd package skips dependency
 # checks during package removal.
 # As a result, a package providing a critical dependency could be removed,
@@ -1156,7 +1158,9 @@ def gru   '${EDITOR} ${HOME}/.gmrun_history'
 def his   '${EDITOR} ${ZDOTDIR}/histfile'
 def ig    '${EDITOR} ./.gitignore'
 def mak   '${EDITOR} ./Makefile'
+def meka  '${EDITOR} ./Makefile'
 def mk    '${EDITOR} ./Makefile'
+def red   '${EDITOR} ./README.md'
 def pasta '${EDITOR} "${DOTSHARE}/misc/pastes.tsv"'
 
 #------------------------------------------------------------------------------
@@ -1394,3 +1398,13 @@ def arch '${EDITOR} ${NOTES}/coding/wiki/arch_install.md'
 def par 'c ${PRO}/param/'
 def rop 'c ${PRO}/cs2-rop/'
 def fun 'c ${PRO}/functional'
+def dama  'c /home/riddle/CS/MS_3_Semester/02_Data_Mining'
+def free 'watch -n 1 free -h'
+def ram 'watch -n 1 "awk '"'"'/^MemAvailable:/ {printf \"Available RAM: %.2f GiB\n\", \$2 / 1024 / 1024}'"'"' /proc/meminfo"'
+def cg 'upower -b | awk '\''/state:/ {print $2}'\'
+# Global alias (`alias -g ALLFILES=...`) expands anywhere without `$()`, but is avoided
+# for safety as it silently replaces matching tokens.
+def -allfiles 'print -l **/*(.)'
+def cola 'print -l --'  # cola <item> <item> ...
+def cole "tr ' ' '\n'"  # echo <word> <word> ... | cole
+def pl 'print -rl --'
