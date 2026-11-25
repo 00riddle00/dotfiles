@@ -2,7 +2,7 @@
 # vim: set ft=python tw=88 nu ai et ts=4 sw=4:
 # ------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2025-05-01 23:42:52 EEST
+# Date:   2026-11-25 02:04:59 EET
 # Path:   ~/.local/bin/srt-to-inline
 # URL:    https://github.com/00riddle00/dotfiles
 # ------------------------------------------------------------------------------
@@ -43,8 +43,7 @@ basename = os.path.basename(__file__)
 #**  --version                output version information and exit
 def parse_args():
     parser = argparse.ArgumentParser(
-        description=inspect.cleandoc(
-            f"""
+        description=inspect.cleandoc(f"""
             Convert .srt subtitle files to inline format with timestamps.
 
             INPUTS:
@@ -63,8 +62,7 @@ def parse_args():
               {basename} file.srt
               {basename} file1.srt file2.srt
               {basename} <<< "$(cat file.srt)"
-            """
-        ),
+            """),
         formatter_class=argparse.RawTextHelpFormatter,
     )
 
@@ -95,7 +93,7 @@ def convert_srt_to_inline(file_obj):
 def main():
     args = parse_args()
     if not args.input_files:
-        sys.stderr.write(f"ERROR: no input provided. See --help for usage.\n")
+        sys.stderr.write("ERROR: no input provided. See --help for usage.\n")
     for file_obj in args.input_files:
         convert_srt_to_inline(file_obj)
 
