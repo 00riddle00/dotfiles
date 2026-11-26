@@ -1,8 +1,8 @@
 " vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-# Date:   2026-09-14 00:27:19 CEST
-# Path:   ~/.config/tridactyl/tridactylrc
+" Date:   2026-11-26 19:36:42 EET
+" Path:   ~/.config/tridactyl/tridactylrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ set editorcmd nvim
 " UI
 " ============================================================================
 
-" Colours
+" Use the dark colour scheme
 colours dark
 
 " Show the current mode and pressed keys in the status indicator
@@ -34,12 +34,24 @@ set hintchars asdfghjkl
 " Commands
 " ============================================================================
 
-" Easier reload config
+" Reload Tridactyl configuration
 command retry source ~/.config/tridactyl/tridactylrc
 
 " Bookmark all tabs into a new folder at a fixed position in the Bookmarks Toolbar
 " The position is configured by `TOOLBAR_POSITION` in bookmark-tabs.js.
-command bookmarktabs jsb -d§ -r bookmark-tabs.js§
+command bookmarktabs jsb -d§ -r scripts/bookmark-tabs.js§
+
+" Create a new tab group containing the current tab
+command groupcurrent jsb -d§ -r scripts/group-current-tab.js§
+
+" Group all unpinned tabs in the current window into a single group
+command groupall jsb -d§ -r scripts/group-all-tabs.js§
+
+" Ungroup all tabs belonging to the current tab's group
+command ungroupcurrentgroup jsb -d§ -r scripts/ungroup-current-group.js§
+
+" Clear Microsoft cookies and site data
+command clearms jsb -d§ -r scripts/clear-microsoft-data.js§
 
 " ============================================================================
 " Keybindings
@@ -102,10 +114,6 @@ bind --mode=browser <AC-ArrowRight> tabmove +1
 " -------------------------------------
 " Tab groups
 " -------------------------------------
-
-command groupcurrent jsb browser.tabs.query({active:true,currentWindow:true}).then(([tab])=>browser.tabs.group({tabIds:tab.id}))
-command groupall jsb browser.tabs.query({currentWindow:true,pinned:false}).then(tabs=>tabs.length&&browser.tabs.group({tabIds:tabs.map(tab=>tab.id)}))
-command ungroupcurrentgroup jsb browser.tabs.query({active:true,currentWindow:true}).then(([tab])=>tab.groupId===-1?null:browser.tabs.query({currentWindow:true,groupId:tab.groupId}).then(tabs=>browser.tabs.ungroup(tabs.map(tab=>tab.id))))
 
 bind --mode=browser <C-3> groupcurrent
 bind --mode=browser <C-g> ungroupcurrentgroup

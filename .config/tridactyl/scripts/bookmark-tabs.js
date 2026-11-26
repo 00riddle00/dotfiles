@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------
 # Author: 00riddle00 (Tomas Giedraitis)
 # Date:   2026-09-14 00:27:13 CEST
-# Path:   ~/.config/tridactyl/bookmark-tabs.js
+# Path:   ~/.config/tridactyl/scripts/bookmark-tabs.js
 # URL:    https://github.com/00riddle00/dotfiles
 #------------------------------------------------------------------------------
 */
