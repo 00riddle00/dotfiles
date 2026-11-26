@@ -1,7 +1,7 @@
 " vim: set ft=tridactyl tw=88 nu ai et ts=2 sw=2:
 "------------------------------------------------------------------------------
 " Author: 00riddle00 (Tomas Giedraitis)
-" Date:   2026-11-26 19:36:42 EET
+" Date:   2026-11-26 19:52:02 EET
 " Path:   ~/.config/tridactyl/tridactylrc
 " URL:    https://github.com/00riddle00/dotfiles
 "------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ command groupall jsb -d§ -r scripts/group-all-tabs.js§
 " Ungroup all tabs belonging to the current tab's group
 command ungroupcurrentgroup jsb -d§ -r scripts/ungroup-current-group.js§
 
-" Clear Microsoft cookies and site data
+" Clear Microsoft cookies and site data to resolve the Outlook sign-in loop
 command clearms jsb -d§ -r scripts/clear-microsoft-data.js§
 
 " ============================================================================
